@@ -1,0 +1,29 @@
+name: Verify Next.js on Bun
+on:
+  push:
+    branches: [codex/nextjs-bun-v5]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - name: Install dependencies
+        run: bun install
+      - name: Typecheck
+        run: bun run typecheck
+      - name: Test learning engine
+        run: bun run test
+      - name: Production build on Bun
+        run: bun run build
+      - name: Save generated Bun lockfile
+        uses: actions/upload-artifact@v4
+        with:
+          name: bun-lockfile
+          path: bun.lock

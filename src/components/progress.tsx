@@ -1,0 +1,74 @@
+"use client";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { ArrowRight, Search, Download, Upload, X, CheckCircle2, AlertTriangle, Database, RotateCcw, ChevronLeft, ChevronRight } from "lucide-react";
+import { getLevel, items, lessons, skills, skillName, type Item, type Mode } from "@/lib/content";
+import { emptyProgress, mastery, mergeStore, parseBackup, status, type Store, type Settings } from "@/lib/engine";
+import { useStore } from "./store";
+import { Badge, Empty, Meter, SectionTitle, skillIcons, statusLabels } from "./ui";
+import type { StartSession } from "./trainer";
+
+export function ProgressPage({ start, query }: { start: StartSession; query: string }) {
+  const params = new URLSearchParams(query);
+  const { data } = useStore();
+  const [level, setLevel] = useState("all");
+  const [lesson, setLesson] = useState(params.get("lesson") || "all");
+  const [skill, setSkill] = useState(params.get("skill") || "all");
+  const [state, setState] = useState(params.get("status") || "all");
+  const [collection, setCollection] = useState(params.get("collection") || "all");
+  const [search, setSearch] = useState("");
+  const [selected, setSelected] = useState<Item | null>(null);
+  const [page, setPage] = useState(0);
+  const filtered = items.filter(i => (level === "all" || getLevel(i.lessonId) === level) && (lesson === "all" || i.lessonId === lesson) && (skill === "all" || i.skill === skill) && (collection === "all" || i.collection === collection) && (state === "all" || (state === "practiced" ? !!data.progress[i.id] && data.progress[i.id].right + data.progress[i.id].wrong > 0 : status(data.progress[i.id]) === state)) && `${i.title} ${i.meaning} ${i.group}`.toLocaleLowerCase().includes(search.toLocaleLowerCase()));
+  const visible = filtered.slice(page * 30, page * 30 + 30);
+  function change(action: () => void) { action(); setPage(0); }
+  function resetFilters() { setLevel("all"); setLesson("all"); setSkill("all"); setState("all"); setCollection("all"); setSearch(""); setPage(0); }
+  return <><div className="page-heading"><div><span className="eyebrow">DEIN FORTSCHRITT</span><h1>เห็นทุกก้าวที่คุณเติบโต</h1><p>ดูสิ่งที่จำได้ ค้นหาจุดที่ยังไม่แม่น แล้วกลับไปฝึกได้ทันที</p></div><Link href="/settings" className="button secondary"><Download size={16} />สำรองข้อมูล</Link></div><div className="skill-progress-grid">{skills.map(s => {
+    const pool = items.filter(i => i.skill === s.id); const pct = Math.round(pool.reduce((sum, i) => sum + mastery(data.progress[i.id]), 0) / pool.length);
+    const Icon = skillIcons[s.id];
+    return <button className={`skill-summary ${skill === s.id ? "selected" : ""}`} key={s.id} onClick={() => change(() => { setSkill(s.id); setCollection("all"); })}><span className={`icon-tile ${s.color}`}><Icon size={19} /></span><span>{s.th}<strong>{pct}%</strong></span><Meter value={pct} label={`ความชำนาญ ${s.th}`} /></button>;
+  })}</div><section className="panel progress-panel"><SectionTitle title="คลังการเรียนรู้ของคุณ"><span className="quiet-pill">{filtered.length} รายการ</span></SectionTitle><div className="search-field"><Search size={19} /><input aria-label="ค้นหาคำศัพท์หรือหัวข้อ" placeholder="ค้นหาคำศัพท์ คำแปล หรือหัวข้อ…" value={search} onChange={e => change(() => setSearch(e.target.value))} /></div><div className="progress-filters">
+    <label>ระดับ<select value={level} onChange={e => change(() => { setLevel(e.target.value); setLesson("all"); })}><option value="all">ทุกระดับ</option><option>A1.1</option><option>A1.2</option></select></label>
+    <label>บทเรียน<select value={lesson} onChange={e => change(() => setLesson(e.target.value))}><option value="all">ทุกบท</option>{lessons.filter(l => level === "all" || l.level === level).map(l => <option key={l.id} value={l.id}>{l.id} · {l.thai}</option>)}</select></label>
+    <label>ทักษะ<select value={skill} onChange={e => change(() => { setSkill(e.target.value); setCollection("all"); })}><option value="all">ทุกทักษะ</option>{skills.map(s => <option key={s.id} value={s.id}>{s.th}</option>)}</select></label>
+    <label>สถานะ<select value={state} onChange={e => change(() => setState(e.target.value))}><option value="all">ทุกสถานะ</option><option value="practiced">เคยฝึกแล้ว</option>{Object.entries(statusLabels).map(([k,v]) => <option key={k} value={k}>{v}</option>)}</select></label>
+    <label>ชุดเนื้อหา<select value={collection} onChange={e => change(() => { setCollection(e.target.value); if (e.target.value !== "all") setSkill("vocabulary"); })}><option value="all">ทุกชุด</option><option value="core">ศัพท์หลัก 181 คำ</option><option value="extra">ศัพท์เสริม</option></select></label>
+    <button className="clear-filter" onClick={resetFilters}>ล้างตัวกรอง</button>
+  </div>{filtered.length === 0 ? <Empty title="ยังไม่มีรายการที่ตรงกับตัวกรอง" text="ลองเปลี่ยนตัวกรอง หรือเริ่มฝึกเพื่อเพิ่มประวัติการเรียน"><button className="button secondary" onClick={resetFilters}>ดูเนื้อหาทั้งหมด</button></Empty> : <><div className="table-scroll"><table className="progress-table"><caption className="sr-only">ความก้าวหน้ารายข้อ คลิกเนื้อหาเพื่อดูรายละเอียด</caption><thead><tr><th>เนื้อหา</th><th>บท / ทักษะ</th><th>ถูก / ผิด</th><th>ความชำนาญ</th><th>สถานะ</th><th><span className="sr-only">ดูข้อมูล</span></th></tr></thead><tbody>{visible.map(i => { const p = data.progress[i.id]; return <tr key={i.id}><td><button className="item-link" onClick={() => setSelected(i)}><strong>{i.title}</strong><small>{i.meaning}</small>{i.pluralOnly && <span className="plural-tag">Plural</span>}</button></td><td><span>{i.lessonId} · {skillName(i.skill)}</span><small>{i.group}</small></td><td><span className="right-count">{p?.right || 0}</span><span className="slash">/</span><span className="wrong-count">{p?.wrong || 0}</span></td><td><div className="table-mastery"><Meter value={mastery(p)} label={`ความชำนาญ ${i.title}`} /><small>{mastery(p)}%</small></div></td><td><Badge state={status(p)} /></td><td><button className="icon-button" aria-label={`ดูรายละเอียด ${i.title}`} onClick={() => setSelected(i)}><ChevronRight size={17} /></button></td></tr>; })}</tbody></table></div><div className="pagination"><span>{page * 30 + 1}–{Math.min((page + 1) * 30, filtered.length)} จาก {filtered.length} รายการ</span><div><button className="icon-button" aria-label="หน้าก่อนหน้า" disabled={page === 0} onClick={() => setPage(p => p - 1)}><ChevronLeft size={18} /></button><button className="icon-button" aria-label="หน้าถัดไป" disabled={(page + 1) * 30 >= filtered.length} onClick={() => setPage(p => p + 1)}><ChevronRight size={18} /></button></div></div></>}</section>{selected && <ItemDetail item={selected} close={() => setSelected(null)} start={start} />}</>;
+}
+function ItemDetail({ item, close, start }: { item: Item; close: () => void; start: StartSession }) {
+  const { data } = useStore(); const p = data.progress[item.id] || emptyProgress();
+  const dialog = useRef<HTMLDialogElement>(null);
+  useEffect(() => { dialog.current?.showModal(); }, []);
+  const format = (date: number) => date ? new Date(date).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" }) : "ยังไม่มีประวัติ";
+  const mode: Mode = ["reading", "listening"].includes(item.skill) ? "choice" : item.group === "Satzbau" ? "order" : "typing";
+  return <dialog ref={dialog} className="detail-dialog" onCancel={e => { e.preventDefault(); close(); }} onClick={e => { if (e.target === e.currentTarget) close(); }} aria-labelledby="detail-title"><div className="dialog-inner"><button className="icon-button dialog-close" aria-label="ปิดรายละเอียด" onClick={close}><X size={21} /></button><span className="eyebrow">{item.lessonId} · {skillName(item.skill)} · {item.group}</span><h2 id="detail-title">{item.title}</h2><p>{item.meaning}</p>{item.plural && <p>Plural: die {item.plural}</p>}{item.pluralOnly && <p>Plural · คำพหูพจน์ ใช้ die</p>}<Badge state={status(p)} /><div className="detail-stats"><div><strong>{p.right}</strong><span>ตอบถูก</span></div><div><strong>{p.wrong}</strong><span>ตอบผิด</span></div><div><strong>{p.streak}</strong><span>ถูกต่อเนื่อง</span></div></div><Meter value={mastery(p)} label="ความชำนาญ" /><dl><div><dt>ความชำนาญ</dt><dd>{mastery(p)}%</dd></div><div><dt>ฝึกครั้งล่าสุด</dt><dd>{format(p.lastPracticed)}</dd></div><div><dt>ทบทวนครั้งถัดไป</dt><dd>{p.nextReview ? format(p.nextReview) : "เริ่มฝึกเพื่อกำหนดวัน"}</dd></div>{item.skill === "vocabulary" && <><div><dt>ผิดที่ Artikel</dt><dd>{p.articleWrong} ครั้ง</dd></div><div><dt>ผิดที่การสะกด</dt><dd>{p.spellingWrong} ครั้ง</dd></div></>}</dl><button className="button primary wide" onClick={() => { close(); start([item], mode, 1, `ฝึกเฉพาะข้อ · ${item.lessonId}`, "/progress"); }}>ฝึกข้อนี้ <ArrowRight size={17} /></button></div></dialog>;
+}
+
+export function SettingsPage() {
+  const { data, commit, reset } = useStore();
+  const [message, setMessage] = useState(""); const [error, setError] = useState("");
+  const [pending, setPending] = useState<Store | null>(null);
+  const [resetStep, setResetStep] = useState(0);
+  const [confirmation, setConfirmation] = useState("");
+  const input = useRef<HTMLInputElement>(null);
+  function update(partial: Partial<Settings>) { try { commit({ ...data, settings: { ...data.settings, ...partial } }); setMessage("บันทึกการตั้งค่าแล้ว"); setError(""); } catch(e) { setError((e as Error).message); } }
+  function download() {
+    const blob = new Blob([JSON.stringify({ ...data, exportedAt: new Date().toISOString() }, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob); const a = document.createElement("a"); a.href = url; a.download = `deutsch-progress-${new Date().toISOString().slice(0,10)}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); setMessage("สร้างไฟล์สำรองแล้ว เก็บไฟล์นี้เพื่อนำเข้าในอุปกรณ์อื่นได้");
+  }
+  async function readFile(file?: File) {
+    if (!file) return;
+    setError(""); setMessage("");
+    try { if (file.size > 5 * 1024 * 1024) throw new Error("ไฟล์ใหญ่เกิน 5 MB"); const parsed = parseBackup(JSON.parse(await file.text())); setPending(parsed); }
+    catch(e) { setError(`นำเข้าไม่สำเร็จ: ${(e as Error).message}`); }
+    if (input.current) input.current.value = "";
+  }
+  function importFile() { if (!pending) return; try { commit(mergeStore(data, pending)); setMessage(`รวมประวัติ ${Object.keys(pending.progress).length} รายการแล้ว เก็บรายการที่ใหม่กว่าของแต่ละข้อ`); setPending(null); } catch(e) { setError((e as Error).message); } }
+  return <><div className="page-heading"><div><span className="eyebrow">DEIN LERNRAUM, DEINE DATEN</span><h1>ตั้งค่าและข้อมูลของฉัน</h1><p>ปรับรอบฝึกให้เหมาะกับคุณ และพาประวัติการเรียนไปด้วยทุกที่</p></div></div><div className="settings-layout"><section className="panel"><SectionTitle title="รอบฝึกของคุณ" eyebrow="PREFERENCES" /><label className="setting-label">จำนวนข้อเริ่มต้นต่อรอบ</label><div className="count-options">{[5, 10, 20, 0].map(n => <button key={n} className={data.settings.sessionSize === n ? "selected" : ""} onClick={() => update({ sessionSize: n })}>{n || "ทั้งหมด"}{n > 0 && <small>ข้อ</small>}</button>)}</div><label className="setting-label" htmlFor="default-direction">ทิศทางเริ่มต้นของ Quiz คำศัพท์</label><select id="default-direction" value={data.settings.direction} onChange={e => update({ direction: e.target.value as Settings["direction"] })}><option value="de-th">เยอรมัน → ไทย</option><option value="th-de">ไทย → เยอรมัน</option></select><label className="check-label"><input type="checkbox" checked={data.settings.prioritize} onChange={e => update({ prioritize: e.target.checked })} />เน้นข้อที่เคยผิดหรือถึงเวลาทบทวน</label><p className="muted-text">ตัวเลือกคำตอบจะสุ่มใหม่ในแต่ละรอบ เพื่อฝึกจำจากเนื้อหา</p></section><section className="panel"><SectionTitle title="เก็บทุกก้าวของการเรียน" eyebrow="YOUR PROGRESS" /><div className="data-summary"><span className="icon-tile large green"><Database size={25} /></span><div><strong>{Object.keys(data.progress).length} รายการมีประวัติ</strong><span>บันทึกในเบราว์เซอร์และอุปกรณ์นี้</span></div></div><p>ส่งออกไฟล์ JSON แล้วนำเข้าใน Mac, Windows หรือมือถือได้ ประวัติยังไม่ซิงก์อัตโนมัติระหว่างเครื่อง</p><div className="settings-actions"><button className="button primary" onClick={download}><Download size={17} />ส่งออก Progress</button><button className="button secondary" onClick={() => input.current?.click()}><Upload size={17} />นำเข้า Progress</button><input ref={input} type="file" accept=".json,application/json" className="sr-only" aria-label="เลือกไฟล์ Progress" onChange={e => readFile(e.target.files?.[0])} /></div><small className="muted-text">รองรับไฟล์เดิมที่มี progress และรหัส V001–V181 นำเข้าโดยเก็บประวัติที่ใหม่กว่ารายข้อ</small></section></div>
+    {pending && <section className="panel import-preview"><h3>พร้อมนำเข้าข้อมูล</h3><p>พบประวัติ {Object.keys(pending.progress).length} รายการ ระบบจะรวมกับข้อมูลในเครื่องโดยไม่ลบข้ออื่น และใช้ประวัติที่ใหม่กว่าของแต่ละข้อ</p><div className="settings-actions"><button className="button primary" onClick={importFile}>ยืนยันรวมประวัติ</button><button className="button secondary" onClick={() => setPending(null)}>ยกเลิก</button></div></section>}
+    {message && <div role="status" className="notice success"><CheckCircle2 size={19} />{message}</div>}{error && <div role="alert" className="notice error">{error}</div>}
+    <section className="panel data-info"><span className="icon-tile yellow"><CheckCircle2 size={21} /></span><div><h3>คำศัพท์หลักครบทุกคำ</h3><p>181 คำหลักจากข้อมูลเดิม · 12 บท · ศัพท์เสริมเก็บแยก · เพิ่มเนื้อหาได้โดยรักษารหัส Progress เดิม</p><p>หากย้ายจากเว็บเดิมบน GitHub Pages ให้ส่งออกจากเว็บเดิมแล้วนำเข้าที่นี่ เพราะแต่ละที่อยู่เว็บเก็บประวัติแยกกัน</p></div></section>
+    <section className="reset-section"><div><h3>เริ่มประวัติใหม่</h3><p>ล้างประวัติและการตั้งค่าในเว็บนี้ ควรส่งออกไฟล์สำรองก่อน</p></div>{resetStep === 0 ? <button className="button danger-outline" onClick={() => setResetStep(1)}>รีเซ็ต Progress</button> : <div className="reset-confirm"><strong><AlertTriangle size={17} />ขั้นที่ 1: ยืนยันว่าต้องการล้างข้อมูล</strong>{resetStep === 1 ? <button className="button danger-outline" onClick={() => setResetStep(2)}>เข้าใจแล้ว ไปขั้นยืนยันสุดท้าย</button> : <><label htmlFor="reset-confirmation">ขั้นที่ 2: พิมพ์ RESET เพื่อยืนยัน</label><input id="reset-confirmation" value={confirmation} onChange={e => setConfirmation(e.target.value)} placeholder="RESET" /><button className="button danger" disabled={confirmation !== "RESET"} onClick={() => { try { reset(); setResetStep(0); setConfirmation(""); setMessage("รีเซ็ตประวัติและการตั้งค่าแล้ว"); setError(""); } catch(e) { setError((e as Error).message); } }}>ล้างประวัติทั้งหมด</button></>}<button className="text-link" onClick={() => { setResetStep(0); setConfirmation(""); }}>ยกเลิก</button></div>}</section>
+  </>;
+}
