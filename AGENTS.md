@@ -7,3 +7,12 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Filesystem scope
+
+Only modify files inside this repository.
+
+Do not create, edit, move, or delete files outside the current repository.
+
+Do not modify system configuration, shell configuration, files in the home
+directory, or files belonging to other projects.

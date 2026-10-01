@@ -10,16 +10,23 @@ import { useSession } from "./session-store";
 import { Badge, Empty, Meter, SectionTitle, skillIcons } from "./ui";
 import { PracticeSetup, Session } from "./practice";
 import { ProgressPage, SettingsPage } from "./progress";
+import { AuthScreen } from "./auth-screen";
 
 export type StartSession = (pool: Item[], mode: Mode | "review", count: number, title: string, origin: string, prioritize?: boolean) => void;
 const nav = [
   { path: "/", label: "วันนี้ของฉัน", icon: LayoutDashboard }, { path: "/learn", label: "บทเรียน", icon: BookOpen },
   { path: "/review", label: "ทบทวน", icon: RotateCcw }, { path: "/progress", label: "ความก้าวหน้า", icon: ChartNoAxesCombined },
 ];
-export default function Trainer() { return <Suspense fallback={<div className="loading">กำลังเปิดบทเรียน…</div>}><App /></Suspense>; }
+export default function Trainer() { return <Suspense fallback={<div className="loading">กำลังเปิดบทเรียน…</div>}><AuthenticatedApp /></Suspense>; }
+function AuthenticatedApp() {
+  const { ready, user } = useStore();
+  if (!ready) return <div className="loading"><Sun className="spin" size={32} /><p>กำลังเชื่อมต่อพื้นที่เรียนรู้ของคุณ…</p></div>;
+  if (!user) return <AuthScreen />;
+  return <App />;
+}
 function App() {
   const path = usePathname(); const router = useRouter(); const searchParams = useSearchParams();
-  const { data, ready, error } = useStore();
+  const { data, ready, error, user, signOut } = useStore();
   const { session, setSession } = useSession();
   const [mobileMenu, setMobileMenu] = useState(false);
   const due = items.filter(i => status(data.progress[i.id]) === "review").length;
@@ -53,12 +60,12 @@ function App() {
       <span className="nav-label">MEIN LERNRAUM</span>
       <nav aria-label="เมนูหลัก">{nav.map(n => <Link href={n.path} key={n.path} className={`nav-item ${active(n.path) ? "active" : ""}`} onClick={() => setMobileMenu(false)}><n.icon size={20} /><span>{n.label}</span>{n.path === "/review" && due > 0 && <span className="nav-count">{due}</span>}</Link>)}</nav>
       <div className="sidebar-note"><span className="note-sun">✳</span><p>ทุกคำที่จำได้<br />คืออีกก้าวที่ไกลขึ้น</p><small>Ein Schritt nach dem anderen.</small><span className="note-line" /></div>
-      <div className="sidebar-bottom"><Link className={`nav-item ${active("/settings") ? "active" : ""}`} href="/settings" onClick={() => setMobileMenu(false)}><Settings size={20} />ตั้งค่าและข้อมูล</Link><div className="profile"><span className="avatar">S</span><div><strong>Sun</strong><small>German learner · A1</small></div><span className="online-dot" /></div></div>
+      <div className="sidebar-bottom"><Link className={`nav-item ${active("/settings") ? "active" : ""}`} href="/settings" onClick={() => setMobileMenu(false)}><Settings size={20} />ตั้งค่าและข้อมูล</Link><div className="profile"><span className="avatar">{(user?.email || "S").slice(0, 1).toUpperCase()}</span><div><strong>{user?.email || "ผู้เรียน"}</strong><small>บัญชีผู้เรียน · A1</small></div><span className="online-dot" /></div><button className="auth-signout" onClick={() => void signOut()}>ออกจากระบบ</button></div>
     </aside>
     <div className="app-content">
-      <header className="topbar"><div className="topbar-left"><button className="icon-button menu-toggle" aria-label={mobileMenu ? "ปิดเมนู" : "เปิดเมนู"} onClick={() => setMobileMenu(!mobileMenu)}>{mobileMenu ? <X /> : <Menu />}</button><span className="topbar-label">พื้นที่เรียนภาษาเยอรมันของคุณ</span><span className="topbar-mobile">Deutsch mit Sun</span></div><div className="topbar-right"><span className="level-pill"><span className="german-flag" />A1.1 — A1.2</span><span className="topbar-divider" /><span className="small-avatar">S</span></div></header>
+      <header className="topbar"><div className="topbar-left"><button className="icon-button menu-toggle" aria-label={mobileMenu ? "ปิดเมนู" : "เปิดเมนู"} onClick={() => setMobileMenu(!mobileMenu)}>{mobileMenu ? <X /> : <Menu />}</button><span className="topbar-label">พื้นที่เรียนภาษาเยอรมันของคุณ</span><span className="topbar-mobile">Deutsch mit Sun</span></div><div className="topbar-right"><span className="level-pill"><span className="german-flag" />A1.1 — A1.2</span><span className="topbar-divider" /><span className="small-avatar">{(user?.email || "S").slice(0, 1).toUpperCase()}</span></div></header>
       <main id="main" className={path === "/session" ? "main-content session-main" : "main-content"}>{error && <div role="alert" className="notice error">{error}</div>}{page}</main>
-      <footer className="footer"><span><Leaf size={14} />เรียนทีละนิด เติบโตทุกวัน</span><Link href="/settings">บันทึกในเบราว์เซอร์นี้ · สำรองข้อมูล <ArrowUpRight size={13} /></Link></footer>
+      <footer className="footer"><span><Leaf size={14} />เรียนทีละนิด เติบโตทุกวัน</span><Link href="/settings">บันทึกบนบัญชีของคุณ · สำรองข้อมูล <ArrowUpRight size={13} /></Link></footer>
     </div>
   </div>;
 }

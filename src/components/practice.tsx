@@ -36,10 +36,10 @@ export function PracticeSetup({ lessonId, skill, start }: { lessonId: string; sk
   const pool = all.filter(i => (skill !== "vocabulary" || collection === "all" || i.collection === collection) && (skill !== "grammar" || i.group === group));
   const available = mode === "article" ? pool.filter(i => i.article) : pool;
   const modes = availableModes(skill, group);
-  function begin() {
+  async function begin() {
     if (!available.length) { setNotice(mode === "article" ? "ชุดนี้ไม่มีคำนามที่มี Artikel เลือกศัพท์เสริม หรือเลือกรูปแบบฝึกอื่นได้เลย" : "ชุดนี้ยังไม่มีเนื้อหาสำหรับฝึก"); return; }
     if (skill === "listening" && !voice) { setNotice("ยังไม่พบเสียงภาษาเยอรมันในอุปกรณ์ กรุณาเปิดหรือติดตั้งเสียงภาษาเยอรมัน แล้วโหลดหน้านี้ใหม่"); return; }
-    try { commit({ ...data, settings: { ...data.settings, prioritize } }); }
+    try { await commit({ ...data, settings: { ...data.settings, prioritize } }); }
     catch (e) { setNotice((e as Error).message); return; }
     start(available, mode, count, `${lessonId} · ${skillName(skill)}`, `/practice/${lessonId}/${skill}`, prioritize);
   }
@@ -84,15 +84,16 @@ function QuestionCard({ question: q, onRecorded, onNext, isLast }: { question: Q
   const isFlash = q.mode === "flash";
   const isOrder = q.mode === "order";
   const isListening = q.item.skill === "listening";
-  function check(value = answer, selfReport?: boolean) {
+  async function check(value = answer, selfReport?: boolean) {
     if (answered.current) return;
+    answered.current = true;
     const correct = selfReport ?? isCorrect(value, q.answer, q.item.accepted);
     const firstWord = value.trim().split(/\s+/)[0];
     const articleWrong = !!q.item.article && !correct && (q.mode === "article" || (q.mode === "typing" && firstWord !== q.item.article));
     const spellingWrong = q.mode === "typing" && !correct && (!q.item.article || !isCorrect(value.replace(/^(der|die|das)\s+/, ""), q.item.word || q.answer));
-    try { commit(record(data, q.item.id, correct, q.mode, Date.now(), { hidden: q.hint?.hidden, articleWrong, spellingWrong })); }
-    catch (e) { setError((e as Error).message); return; }
-    answered.current = true; setAnswer(value); setFeedback(correct); setError(""); onRecorded(correct, value);
+    try { await commit(record(data, q.item.id, correct, q.mode, Date.now(), { hidden: q.hint?.hidden, articleWrong, spellingWrong })); }
+    catch (e) { answered.current = false; setError((e as Error).message); return; }
+    setAnswer(value); setFeedback(correct); setError(""); onRecorded(correct, value);
   }
   function speak() {
     if (!voice || !("speechSynthesis" in window)) { setError("อุปกรณ์นี้ยังไม่มีเสียงภาษาเยอรมัน กรุณาเปิดใช้งานเสียงก่อน"); return; }
