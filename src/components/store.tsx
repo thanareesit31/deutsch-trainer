@@ -60,7 +60,8 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   const loading = useRef(false);
   useEffect(() => { dataRef.current = data; }, [data]);
   useEffect(() => {
-    if (!supabase) { setError("ไม่พบ NEXT_PUBLIC_SUPABASE_URL หรือ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ในการตั้งค่า"); setReady(true); return; }
+    const client = supabase;
+    if (!client) { setError("ไม่พบ NEXT_PUBLIC_SUPABASE_URL หรือ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ในการตั้งค่า"); setReady(true); return; }
     let alive = true;
     async function hydrate(nextUser: User | null) {
       if (!alive) return;
@@ -85,11 +86,21 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         if (alive) setError(cause instanceof Error ? cause.message : "เชื่อมต่อฐานข้อมูลไม่สำเร็จ");
       } finally { loading.current = false; if (alive) setReady(true); }
     }
-    void supabase.auth.getUser().then(({ data: result, error: authError }) => {
+    void client.auth.getSession().then(async ({ data: result, error: sessionError }) => {
+      if (sessionError) throw sessionError;
+      if (!result.session) { await hydrate(null); return; }
+      const { data: verified, error: authError } = await client.auth.getUser();
       if (authError) throw authError;
-      return hydrate(result.user);
-    }).catch(() => { if (alive) { setError("ตรวจสอบบัญชีไม่สำเร็จ ลองโหลดหน้าใหม่"); setReady(true); } });
-    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => { void hydrate(session?.user ?? null); });
+      await hydrate(verified.user);
+    }).catch((cause: unknown) => {
+      if (alive) {
+        const details = cause as { message?: string; status?: number; code?: string };
+        const reason = [details.message, details.code, details.status ? `HTTP ${details.status}` : ""].filter(Boolean).join(" · ");
+        setError(`ตรวจสอบบัญชีไม่สำเร็จ${reason ? `: ${reason}` : " ลองโหลดหน้าใหม่"}`);
+        setReady(true);
+      }
+    });
+    const { data: listener } = client.auth.onAuthStateChange((_event, session) => { void hydrate(session?.user ?? null); });
     return () => { alive = false; listener.subscription.unsubscribe(); };
   }, []);
 
