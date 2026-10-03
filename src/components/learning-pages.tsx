@@ -32,26 +32,6 @@ import {
 import { useLearning } from "./learning-store";
 import { Empty, Meter, SectionTitle, skillIcons } from "./ui";
 import type { StartSession } from "./trainer";
-export function ResumeSessions() {
-  const h = useLearning();
-  return (
-    <>
-      {h.sessions
-        .filter((s) => !s.completed)
-        .map((s) => (
-          <div className="review-banner" key={s.id}>
-            <div>
-              <h3>{s.title}</h3>
-              <p>ฝึกต่อข้อ {s.position + 1}</p>
-            </div>
-            <Link className="button primary" href={`/session?id=${s.id}`}>
-              ฝึกต่อ
-            </Link>
-          </div>
-        ))}
-    </>
-  );
-}
 export function LearningHome() {
   const h = useLearning();
   const { items, lessons, coreVocabulary } = useContent();
@@ -212,7 +192,6 @@ export function LearningHome() {
           </Link>
         ))}
       </div>
-      <ResumeSessions />
       <div className="dashboard-columns">
         <section>
           <SectionTitle eyebrow="DEIN LERNWEG" title="เลือกเส้นทางการเรียน">
@@ -335,7 +314,6 @@ export function PracticeEntry({ start }: { start: StartSession }) {
           <p>ฝึกเฉพาะเนื้อหาที่เคยเรียน เลือกบทได้โดยไม่ต้องเรียนซ้ำ</p>
         </div>
       </div>
-      <ResumeSessions />
       <label className="setting-label">
         บทเรียน
         <select value={lesson} onChange={(e) => setLesson(e.target.value)}>
@@ -405,7 +383,6 @@ export function ReviewPage({ start }: { start: StartSession }) {
         </div>
         <span className="quiet-pill">{reviewItems.length} รายการ</span>
       </div>
-      <ResumeSessions />
       {reviewItems.length ? (
         <section className="panel review-summary">
           <h2>{reviewItems.length} รายการที่รอทบทวน</h2>
@@ -1159,7 +1136,6 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
           สำรองข้อมูล
         </Link>
       </div>
-      <ResumeSessions />
       <div className="skill-progress-grid">
         {skills.map((entry) => {
           const pool = items.filter((item) => item.skill === entry.id);

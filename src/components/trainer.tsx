@@ -44,6 +44,8 @@ import { Badge, Empty, Meter, SectionTitle, skillIcons } from "./ui";
 import { PracticeSetup, Session } from "./practice";
 import { SettingsPage } from "./progress";
 import { AuthScreen } from "./auth-screen";
+import { VocabularyLearningActivity } from "./vocabulary-learning";
+import { AlphabetLearningPage } from "./alphabet-learning";
 
 export type StartSession = (
   pool: Item[],
@@ -195,15 +197,24 @@ function App() {
     );
   else if (path === "/practice") page = <PracticeEntry start={start} />;
   else if (path === "/review") page = <ReviewPage start={start} />;
+  else if (path === "/learn/L01/vocabulary/alphabet")
+    page = <AlphabetLearningPage />;
   else if (parts[0] === "learn" && parts[1] && parts[2])
-    page = (
-      <LearnActivity
-        key={path}
-        lessonId={parts[1]}
-        skill={parts[2] as Skill}
-        start={start}
-      />
-    );
+    page =
+      parts[1] === "L01" && parts[2] === "vocabulary" ? (
+        <VocabularyLearningActivity
+          key={path}
+          lessonId={parts[1]}
+          items={items}
+        />
+      ) : (
+        <LearnActivity
+          key={path}
+          lessonId={parts[1]}
+          skill={parts[2] as Skill}
+          start={start}
+        />
+      );
   else if (path === "/progress")
     page = <HistoryProgress query={searchParams.toString()} />;
   else if (path === "/settings") page = <SettingsPage />;

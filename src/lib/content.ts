@@ -1,5 +1,12 @@
 export type Skill =
   "vocabulary" | "grammar" | "phrases" | "writing" | "listening" | "reading";
+export type VocabularyWordType =
+  | "noun"
+  | "verb"
+  | "adjective"
+  | "country"
+  | "expression"
+  | "other";
 export type Mode =
   | "flash"
   | "de-th"
@@ -27,6 +34,11 @@ export interface Item {
   reply?: string;
   passage?: string;
   audio?: string;
+  type?: VocabularyWordType;
+  example?: string;
+  chunk?: string;
+  image?: string;
+  notes?: string;
   accepted?: string[];
 }
 export const skills: {

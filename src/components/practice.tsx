@@ -30,6 +30,7 @@ import { Empty, Meter, SectionTitle } from "./ui";
 import type { StartSession } from "./trainer";
 import { useLearning } from "./learning-store";
 import { diagnose, dimensionLabels } from "@/lib/learning";
+import { speakGermanText, useGermanVoice } from "./german-audio";
 
 export interface SessionPlan {
   id: string;
@@ -38,25 +39,6 @@ export interface SessionPlan {
   origin: string;
   position: number;
   completed: boolean;
-}
-function useGermanVoice() {
-  const [voice, setVoice] = useState<SpeechSynthesisVoice | null>(null);
-  useEffect(() => {
-    if (!("speechSynthesis" in window)) return;
-    const load = () =>
-      setVoice(
-        window.speechSynthesis
-          .getVoices()
-          .find((v) => v.lang.startsWith("de")) || null,
-      );
-    load();
-    window.speechSynthesis.addEventListener("voiceschanged", load);
-    return () => {
-      window.speechSynthesis.removeEventListener("voiceschanged", load);
-      window.speechSynthesis.cancel();
-    };
-  }, []);
-  return voice;
 }
 export function PracticeSetup({
   lessonId,
@@ -583,24 +565,27 @@ function QuestionCard({
       setError("อุปกรณ์นี้ยังไม่มีเสียงภาษาเยอรมัน กรุณาเปิดใช้งานเสียงก่อน");
       return;
     }
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(
-      q.item.audio || q.item.title,
-    );
-    utterance.lang = "de-DE";
-    utterance.voice = voice;
-    utterance.rate = 0.8;
-    utterance.onend = () => {
-      setSpeaking(false);
-      setHeard(true);
-    };
-    utterance.onerror = () => {
-      setSpeaking(false);
-      setError("เล่นเสียงไม่สำเร็จ ลองกดฟังอีกครั้ง");
-    };
     setError("");
     setSpeaking(true);
-    window.speechSynthesis.speak(utterance);
+    const started = speakGermanText(
+      q.item.audio || q.item.title,
+      voice,
+      {
+        onEnd: () => {
+          setSpeaking(false);
+          setHeard(true);
+        },
+        onError: () => {
+          setSpeaking(false);
+          setError("เล่นเสียงไม่สำเร็จ ลองกดฟังอีกครั้ง");
+        },
+      },
+      0.8,
+    );
+    if (!started) {
+      setSpeaking(false);
+      setError("อุปกรณ์นี้ยังไม่มีเสียงภาษาเยอรมัน กรุณาเปิดใช้งานเสียงก่อน");
+    }
   }
   function addChar(char: string) {
     const field = inputRef.current;
