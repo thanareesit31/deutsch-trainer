@@ -11,6 +11,8 @@ bun run dev
 
 เปิด http://localhost:3000
 
+**รีสตาร์ตเว็บบน Mac:** ดับเบิลคลิก `restart.command` ในโฟลเดอร์โปรเจกต์ หรือรัน `npm run dev:restart` ใน Terminal หน้าต่าง Terminal จะแสดง log และปล่อยเปิดค้างไว้ขณะเว็บทำงาน ใช้ `Ctrl+C` เพื่อปิดเว็บ
+
 ```sh
 bun run typecheck
 bun run test
@@ -72,7 +74,9 @@ Vercel ใช้ `bunVersion` เพื่อเลือก Bun เป็น ru
 
 ```text
 src/data/                 ข้อมูลเดิมจาก German Trainer V1
-src/lib/content.ts        โครงเนื้อหาและแบบฝึกที่แต่งขึ้นใหม่
+src/lib/content.ts        ชนิดข้อมูลและการตั้งค่าโหมด
+src/components/content-provider.tsx โหลดคลังเนื้อหาจาก Supabase
+supabase/seed/catalog.json สำเนาเนื้อหาเดิมสำหรับ seed/กู้คืน (ใช้ชั่วคราวเฉพาะก่อนติดตั้งตาราง)
 src/lib/engine.ts         Session, Progress, review และ backup validation
 src/components/           หน้าเว็บและการฝึก
 src/app/                  Next.js layout, routes, styles และ health endpoint
@@ -83,3 +87,7 @@ tests/browser.mjs         ทดสอบ browser และสร้างภา
 ทดสอบ browser หลังเปิด production server ด้วย `bun run test:e2e` โดยกำหนด `CHROME_PATH` หาก Chrome อยู่คนละที่ และ `TEST_BASE_URL` หากไม่ได้ใช้ localhost:3000
 
 Mac เครื่องที่ใช้พัฒนาปัจจุบันเป็น macOS 10.15 จึงทดสอบในเครื่องด้วย Node 20.20.2 ที่เก็บเฉพาะใน `.tools/` และ `next build --webpack` Bun รุ่นปัจจุบันต้อง macOS 13 ขึ้นไป การตั้งค่า production ยังคงเป็น Bun ตามที่ระบุข้างต้น
+
+## คลังเนื้อหาในฐานข้อมูล
+
+ก่อนเปิดเว็บเวอร์ชันนี้ ให้รัน `supabase/migrations/20261003010000_content_catalog.sql` ตาม [คู่มือย้ายเนื้อหา](docs/content-database.md) เนื้อหาทั้งหมดอ่านจาก Supabase โดยคงรหัสและประวัติเดิม

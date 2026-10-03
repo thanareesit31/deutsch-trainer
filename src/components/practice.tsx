@@ -1,4 +1,5 @@
 "use client";
+import { useContent } from "./content-provider";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -17,8 +18,6 @@ import {
 } from "lucide-react";
 import {
   availableModes,
-  items,
-  lessons,
   modeLabels,
   skillName,
   type Item,
@@ -48,7 +47,7 @@ function useGermanVoice() {
       setVoice(
         window.speechSynthesis
           .getVoices()
-          .find((v) => v.lang.startsWith("de")) || null
+          .find((v) => v.lang.startsWith("de")) || null,
       );
     load();
     window.speechSynthesis.addEventListener("voiceschanged", load);
@@ -68,6 +67,7 @@ export function PracticeSetup({
   skill: Skill;
   start: StartSession;
 }) {
+  const { items, lessons } = useContent();
   const { data } = useStore();
   const voice = useGermanVoice();
   const history = useLearning();
@@ -79,7 +79,7 @@ export function PracticeSetup({
   const [mode, setMode] = useState<Mode>(
     skill === "vocabulary"
       ? data.settings.direction
-      : availableModes(skill, groups[0])[0]
+      : availableModes(skill, groups[0])[0],
   );
   const [count, setCount] = useState(data.settings.sessionSize);
   const [notice, setNotice] = useState("");
@@ -89,10 +89,10 @@ export function PracticeSetup({
       (skill !== "vocabulary" ||
         collection === "all" ||
         i.collection === collection) &&
-      (skill !== "grammar" || i.group === group)
+      (skill !== "grammar" || i.group === group),
   );
   const learnedPool = pool.filter((i) =>
-    history.exposures.some((e) => e.item_id === i.id)
+    history.exposures.some((e) => e.item_id === i.id),
   );
   const available =
     mode === "article" ? learnedPool.filter((i) => i.article) : learnedPool;
@@ -102,13 +102,13 @@ export function PracticeSetup({
       setNotice(
         mode === "article"
           ? "ชุดนี้ไม่มีคำนามที่มี Artikel เลือกศัพท์เสริม หรือเลือกรูปแบบฝึกอื่นได้เลย"
-          : "ชุดนี้ยังไม่มีเนื้อหาสำหรับฝึก"
+          : "ชุดนี้ยังไม่มีเนื้อหาสำหรับฝึก",
       );
       return;
     }
     if (skill === "listening" && !voice) {
       setNotice(
-        "ยังไม่พบเสียงภาษาเยอรมันในอุปกรณ์ กรุณาเปิดหรือติดตั้งเสียงภาษาเยอรมัน แล้วโหลดหน้านี้ใหม่"
+        "ยังไม่พบเสียงภาษาเยอรมันในอุปกรณ์ กรุณาเปิดหรือติดตั้งเสียงภาษาเยอรมัน แล้วโหลดหน้านี้ใหม่",
       );
       return;
     }
@@ -118,7 +118,7 @@ export function PracticeSetup({
       count,
       `${lessonId} · ${skillName(skill)}`,
       `/practice/${lessonId}/${skill}`,
-      prioritize
+      prioritize,
     );
   }
   return (
@@ -179,7 +179,7 @@ export function PracticeSetup({
                       <span>
                         {
                           all.filter(
-                            (i) => c.id === "all" || i.collection === c.id
+                            (i) => c.id === "all" || i.collection === c.id,
                           ).length
                         }{" "}
                         คำ
@@ -439,7 +439,7 @@ export function Session({
                     : "review",
                   0,
                   "ฝึกข้อที่ผิด",
-                  plan.origin
+                  plan.origin,
                 )
               }
             >
@@ -456,7 +456,7 @@ export function Session({
                   : "review",
                 data.settings.sessionSize,
                 plan.title,
-                plan.origin
+                plan.origin,
               )
             }
           >
@@ -529,7 +529,7 @@ function QuestionCard({
 }) {
   const history = useLearning();
   const attempt = history.attempts.find(
-    (a) => a.session_id === sessionId && a.ordinal === position
+    (a) => a.session_id === sessionId && a.ordinal === position,
   );
   const pending = useRef<{
     input: string;
@@ -585,7 +585,7 @@ function QuestionCard({
     }
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(
-      q.item.audio || q.item.title
+      q.item.audio || q.item.title,
     );
     utterance.lang = "de-DE";
     utterance.voice = voice;
@@ -656,12 +656,12 @@ function QuestionCard({
               {isFlash
                 ? "นึกความหมายก่อน แล้วค่อยพลิกดู"
                 : isOrder
-                ? "เรียงคำให้เป็นประโยคที่ถูกต้อง"
-                : q.mode === "article"
-                ? "เลือก Artikel ให้ตรงกับคำศัพท์"
-                : q.mode === "typing"
-                ? "พิมพ์คำตอบให้ตรงกับคำใบ้"
-                : "เลือกคำตอบที่ถูกต้อง"}
+                  ? "เรียงคำให้เป็นประโยคที่ถูกต้อง"
+                  : q.mode === "article"
+                    ? "เลือก Artikel ให้ตรงกับคำศัพท์"
+                    : q.mode === "typing"
+                      ? "พิมพ์คำตอบให้ตรงกับคำใบ้"
+                      : "เลือกคำตอบที่ถูกต้อง"}
             </span>
             <h2
               className={q.mode === "dialogue" ? "dialogue-prompt" : ""}
@@ -777,8 +777,8 @@ function QuestionCard({
               {feedback === null
                 ? "ตรวจคำตอบ"
                 : isLast
-                ? "ดูผลการฝึก"
-                : "ข้อต่อไป"}
+                  ? "ดูผลการฝึก"
+                  : "ข้อต่อไป"}
               <ArrowRight size={17} />
             </button>
           </form>
@@ -838,8 +838,8 @@ function QuestionCard({
                     ? option === q.answer
                       ? "correct"
                       : option === answer
-                      ? "incorrect"
-                      : "muted"
+                        ? "incorrect"
+                        : "muted"
                     : ""
                 }
                 disabled={
@@ -912,7 +912,7 @@ function QuestionCard({
               (e) =>
                 e.session_id === sessionId &&
                 e.ordinal === position &&
-                !e.correct
+                !e.correct,
             )
             .map((e) => dimensionLabels[e.dimension])
             .join(", ")}

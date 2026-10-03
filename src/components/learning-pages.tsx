@@ -1,7 +1,15 @@
 "use client";
+import { dayKey } from "@/lib/engine";
+import { useContent } from "./content-provider";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
+  Sun,
+  Check,
+  BookOpen,
+  Flame,
+  ArrowUpRight,
+  Sparkles,
   Search,
   X,
   ChevronLeft,
@@ -11,8 +19,6 @@ import {
 } from "lucide-react";
 import {
   getLevel,
-  items,
-  lessons,
   skills,
   skillName,
   type Item,
@@ -48,56 +54,277 @@ export function ResumeSessions() {
 }
 export function LearningHome() {
   const h = useLearning();
+  const { items, lessons, coreVocabulary } = useContent();
   const completed = completedAttempts(h.attempts);
+  const seen = new Set(h.exposures.map((e) => e.item_id));
+  const practiced = h.knowledge.filter((k) => Number(k.attempts) > 0);
+  const review = reviewCandidates(items, h.sessionItems, h.attempts);
+  const latestExposure = [...h.exposures].sort((a, b) =>
+    b.seen_at.localeCompare(a.seen_at),
+  )[0];
+  const last = items.find((item) => item.id === latestExposure?.item_id);
+  const lesson = lessons.find((l) => l.id === last?.lessonId) || lessons[0];
+  const counts = new Map<string, number>();
+  for (const attempt of completed) {
+    const key = dayKey(new Date(attempt.submitted_at));
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  const today = counts.get(dayKey()) || 0;
+  const week = Array.from({ length: 7 }, (_, index) => {
+    const date = new Date();
+    date.setDate(date.getDate() - 6 + index);
+    return {
+      day: date.toLocaleDateString("th-TH", { weekday: "short" }),
+      count: counts.get(dayKey(date)) || 0,
+      today: index === 6,
+    };
+  });
+  const stats = [
+    {
+      label: "คำศัพท์หลัก",
+      value: coreVocabulary.length,
+      caption: `ครบทั้ง ${lessons.length} บทเรียน`,
+      icon: BookOpen,
+      color: "green",
+      href: "/progress?skill=vocabulary&collection=core",
+    },
+    {
+      label: "เคยฝึกแล้ว",
+      value: practiced.length,
+      caption: "เริ่มต้นแล้ว นับทุกทักษะ",
+      icon: Flame,
+      color: "orange",
+      href: "/progress?status=practiced",
+    },
+    {
+      label: "เคยเรียนแล้ว",
+      value: seen.size,
+      caption: "เนื้อหาที่เคยเปิดเรียน",
+      icon: Check,
+      color: "purple",
+      href: "/progress?status=learned",
+    },
+    {
+      label: "ควรทบทวน",
+      value: review.length,
+      caption: "กลับไปฝึกสิ่งที่ยังไม่แม่น",
+      icon: RotateCcw,
+      color: "pink",
+      href: "/review",
+    },
+  ];
   return (
     <>
       <div className="page-heading">
         <div>
           <span className="eyebrow">DEIN DEUTSCH, JEDEN TAG</span>
-          <h1>Hallo, Sun ☀</h1>
-          <p>เรียนทีละนิด เติบโตทุกวัน</p>
+          <h1>
+            Hallo, Sun <span className="wave">☀</span>
+          </h1>
+          <p>วันนี้มาเก่งภาษาเยอรมันขึ้นอีกนิดกัน</p>
         </div>
+        <span className="date-label">
+          {new Date().toLocaleDateString("th-TH", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })}
+        </span>
       </div>
       <section className="hero">
         <div className="hero-copy">
-          <span className="hero-tag">Ein Schritt nach dem anderen.</span>
+          <span className="hero-tag">
+            <span />
+            เล็กน้อยทุกวัน เปลี่ยนเป็นความมั่นใจ
+          </span>
           <h2>
             ภาษาใหม่ เริ่มได้
             <br />
-            ด้วยก้าวเล็ก ๆ ของเรา
+            ด้วย<span>ก้าวเล็ก ๆ ของเรา</span>
           </h2>
-          <p>เรียนเนื้อหาใหม่ หรือฝึกสิ่งที่เคยเรียนได้ทันที</p>
-          <div className="result-actions">
-            <Link className="button primary" href="/learn">
-              ไปเรียน
-            </Link>
-            <Link className="button secondary" href="/practice">
-              ไปแบบฝึกหัด
-            </Link>
+          <p>
+            ฝึกคำศัพท์ เข้าใจไวยากรณ์ และค่อย ๆ พูดในแบบของคุณ
+            <br className="desktop-break" />
+            เลือกบทที่อยากเรียน แล้วไปต่อด้วยกัน
+          </p>
+          <Link className="button primary" href={`/lesson/${lesson.id}`}>
+            {last ? "เรียนต่อจากครั้งก่อน" : "เริ่มบทเรียนแรก"}
+            <ArrowRight size={18} />
+          </Link>
+          <Link className="button secondary" href="/practice">
+            ไปแบบฝึกหัด <ArrowRight size={18} />
+          </Link>
+          <span className="hero-footnote">
+            {lesson.id} · {lesson.title}
+          </span>
+        </div>
+        <div className="hero-art" aria-hidden="true">
+          <div className="art-orbit" />
+          <span className="art-spark spark-one">✳</span>
+          <span className="art-spark spark-two">✦</span>
+          <span className="art-dot" />
+          <div className="speech-card">
+            <span className="german-flag" />
+            <small>EIN WORT, EIN ANFANG</small>
+            <strong>Hallo!</strong>
+            <span>สวัสดี จุดเริ่มต้นเล็ก ๆ ของเรา</span>
+            <div className="speech-rule" />
+            <span className="art-audio">
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+            </span>
+            <span className="sound-label">/haˈloː/</span>
+          </div>
+          <div className="mini-card">
+            <span className="mini-sun">
+              <Sun size={23} />
+            </span>
+            <span>
+              Schön, dass du da bist.<small>ดีใจที่คุณอยู่ตรงนี้นะ</small>
+            </span>
+            <Check size={17} />
+          </div>
+          <div className="art-caption">
+            Übung macht den Meister.<span>เก่งขึ้นได้ด้วยการฝึกฝน</span>
           </div>
         </div>
       </section>
       <div className="stats-grid">
-        {[
-          ["เคยเรียน", h.exposures.length],
-          ["ส่งคำตอบแล้ว", completed.length],
-          ["ตอบถูก", completed.filter((a) => a.correct).length],
-          [
-            "รายการที่เคยฝึก",
-            h.knowledge.filter((k) => Number(k.attempts) > 0).length,
-          ],
-        ].map(([label, value]) => (
-          <Link href="/progress" className="stat-card" key={label}>
-            <strong>{value}</strong>
-            <span className="stat-label">{label}</span>
+        {stats.map((s) => (
+          <Link className="stat-card" href={s.href} key={s.label}>
+            <div className="stat-top">
+              <span className={`icon-tile ${s.color}`}>
+                <s.icon size={19} />
+              </span>
+              <ArrowUpRight size={17} />
+            </div>
+            <strong>
+              {s.value}
+              <small>{s.label === "คำศัพท์หลัก" ? "คำ" : "รายการ"}</small>
+            </strong>
+            <span className="stat-label">{s.label}</span>
+            <small>{s.caption}</small>
           </Link>
         ))}
       </div>
       <ResumeSessions />
+      <div className="dashboard-columns">
+        <section>
+          <SectionTitle eyebrow="DEIN LERNWEG" title="เลือกเส้นทางการเรียน">
+            <Link className="text-link" href="/learn">
+              ดูทุกบท <ArrowRight size={15} />
+            </Link>
+          </SectionTitle>
+          <div className="level-cards">
+            {["A1.1", "A1.2"].map((level, i) => {
+              const pool = coreVocabulary.filter(
+                (w) => getLevel(w.lessonId) === level,
+              );
+              const learned = pool.filter((w) => seen.has(w.id)).length;
+              const pct = pool.length
+                ? Math.round((learned / pool.length) * 100)
+                : 0;
+              return (
+                <Link
+                  className={`level-card level-${i}`}
+                  href={`/learn?level=${level}`}
+                  key={level}
+                >
+                  <div className="level-card-top">
+                    <span className="level-number">{level}</span>
+                    <ArrowUpRight size={21} />
+                  </div>
+                  <h3>
+                    {i === 0 ? "เริ่มต้นอย่างมั่นใจ" : "ต่อยอดให้คล่องขึ้น"}
+                  </h3>
+                  <p>
+                    {i === 0
+                      ? "ทักทาย แนะนำตัว และเรื่องใกล้ตัว"
+                      : "งานอดิเรก ชีวิตประจำวัน และการเดินทาง"}
+                  </p>
+                  <div className="level-meta">
+                    <span>Lektion {i === 0 ? "01–06" : "07–12"}</span>
+                    <span>6 บท · {pool.length} คำ</span>
+                  </div>
+                  <Meter value={pct} label={`คำศัพท์ ${level} ที่เคยเรียน`} />
+                  <div className="level-progress">
+                    <span>
+                      เคยเรียนแล้ว {learned} / {pool.length} คำ
+                    </span>
+                    <b>{pct}%</b>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+        <section className="weekly-card">
+          <div className="weekly-title">
+            <span className="icon-tile orange">
+              <Flame size={18} />
+            </span>
+            <h3>ทีละนิด แต่สม่ำเสมอ</h3>
+          </div>
+          <p>ความพยายามใน 7 วันที่ผ่านมา</p>
+          <div className="week-days">
+            {week.map((d, i) => (
+              <div className={`week-day ${d.today ? "today" : ""}`} key={i}>
+                <span>{d.day}</span>
+                <div className={d.count ? "done" : ""}>
+                  {d.count ? <Check size={17} /> : <i />}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="weekly-summary">
+            <span>
+              <strong>{today}</strong> / 10 ข้อวันนี้
+            </span>
+            <span>
+              {today >= 10 ? "ครบเป้าหมายแล้ว!" : "เริ่มเมื่อไหร่ก็ดีเสมอ"}
+            </span>
+          </div>
+          <Meter value={Math.min(100, today * 10)} label="เป้าหมายวันนี้" />
+          <small>ทุกครั้งที่ฝึก ความจำจะค่อย ๆ แข็งแรงขึ้น</small>
+        </section>
+      </div>
+      <section className="review-banner">
+        <div className="review-orb">
+          <RotateCcw size={24} />
+        </div>
+        <div>
+          <h3>
+            {review.length
+              ? `มี ${review.length} รายการรอให้คุณทบทวน`
+              : "เว้นจังหวะ แล้วกลับมาทบทวน"}
+          </h3>
+          <p>
+            {review.length
+              ? "กลับมาฝึกสิ่งที่ยังไม่แม่น ให้จำได้นานกว่าเดิม"
+              : "เมื่อเริ่มฝึก ระบบจะช่วยเลือกสิ่งที่ยังไม่แม่นให้คุณ"}
+          </p>
+        </div>
+        <Link href="/review" className="button secondary">
+          ไปทบทวน <ArrowRight size={17} />
+        </Link>
+      </section>
+      <div className="bottom-note">
+        <Sparkles size={15} />
+        <span>
+          ไม่ต้องเก่งทุกอย่างในวันเดียว แค่วันนี้ได้เรียนรู้อะไรเพิ่มก็พอแล้ว
+        </span>
+      </div>
     </>
   );
 }
+
 export function PracticeEntry({ start }: { start: StartSession }) {
+  const { items, lessons } = useContent();
   const h = useLearning();
   const [lesson, setLesson] = useState(lessons[0].id);
   return (
@@ -125,7 +352,7 @@ export function PracticeEntry({ start }: { start: StartSession }) {
             (i) =>
               i.lessonId === lesson &&
               i.skill === s.id &&
-              h.exposures.some((e) => e.item_id === i.id)
+              h.exposures.some((e) => e.item_id === i.id),
           ).length;
           return (
             <Link
@@ -145,22 +372,23 @@ export function PracticeEntry({ start }: { start: StartSession }) {
 }
 
 export function ReviewPage({ start }: { start: StartSession }) {
+  const { items, lessons } = useContent();
   const history = useLearning();
   const reviewItems = reviewCandidates(
     items,
     history.sessionItems,
-    history.attempts
+    history.attempts,
   );
   const itemByAttempt = new Map(
     history.sessionItems.map((entry) => [
       `${entry.session_id}:${entry.ordinal}`,
       entry.item_id,
-    ])
+    ]),
   );
   const latestByItem = new Map<string, (typeof history.attempts)[number]>();
   for (const attempt of completedAttempts(history.attempts)) {
     const itemId = itemByAttempt.get(
-      `${attempt.session_id}:${attempt.ordinal}`
+      `${attempt.session_id}:${attempt.ordinal}`,
     );
     if (!itemId) continue;
     const previous = latestByItem.get(itemId);
@@ -189,10 +417,10 @@ export function ReviewPage({ start }: { start: StartSession }) {
               const reason = !latest.correct
                 ? "ตอบผิดล่าสุด"
                 : confidence === "guess"
-                ? "ตอบถูกแต่เดา"
-                : confidence === "thought"
-                ? "ตอบถูกแต่ต้องคิด"
-                : "รอระบุความมั่นใจ";
+                  ? "ตอบถูกแต่เดา"
+                  : confidence === "thought"
+                    ? "ตอบถูกแต่ต้องคิด"
+                    : "รอระบุความมั่นใจ";
               return (
                 <div className="review-row" key={item.id}>
                   <span
@@ -226,7 +454,7 @@ export function ReviewPage({ start }: { start: StartSession }) {
                 "review",
                 0,
                 "ทบทวนสิ่งที่ยังไม่แม่น",
-                "/review"
+                "/review",
               )
             }
           >
@@ -248,6 +476,7 @@ export function ReviewPage({ start }: { start: StartSession }) {
 }
 
 function VerbLesson() {
+  const { items, lessons } = useContent();
   const history = useLearning();
   const verbs = [
     ...new Set(
@@ -256,9 +485,9 @@ function VerbLesson() {
           (i) =>
             i.lessonId === "L01" &&
             i.skill === "grammar" &&
-            (i.group.startsWith("Verbkonjugation") || i.group === "sein")
+            (i.group.startsWith("Verbkonjugation") || i.group === "sein"),
         )
-        .map((i) => (i.group === "sein" ? "sein" : i.group.split(" · ")[1]))
+        .map((i) => (i.group === "sein" ? "sein" : i.group.split(" · ")[1])),
     ),
   ];
   const learningStorageKey = "deutsch-trainer-verb-learning-L01";
@@ -279,7 +508,7 @@ function VerbLesson() {
       i.skill === "grammar" &&
       (verb === "sein"
         ? i.group === "sein"
-        : i.group === `Verbkonjugation · ${verb}`)
+        : i.group === `Verbkonjugation · ${verb}`),
   );
   const sessionItems = verbItems;
   const forms = sessionItems.map((i) => i.answer);
@@ -307,7 +536,7 @@ function VerbLesson() {
     };
   }, [restored, verb, exposureKey, history.busy]); // eslint-disable-line react-hooks/exhaustive-deps
   const learned = verbItems.every((i) =>
-    history.exposures.some((e) => e.item_id === i.id)
+    history.exposures.some((e) => e.item_id === i.id),
   );
   const matches = matchesByVerb[verb] || {};
   const [selectedToken, setSelectedToken] = useState<number | null>(null);
@@ -323,8 +552,8 @@ function VerbLesson() {
         if (Array.isArray(state.completedVerbs))
           setCompletedVerbs(
             state.completedVerbs.filter(
-              (v: unknown) => typeof v === "string" && verbs.includes(v)
-            )
+              (v: unknown) => typeof v === "string" && verbs.includes(v),
+            ),
           );
         if (state.matchesByVerb && typeof state.matchesByVerb === "object")
           setMatchesByVerb(state.matchesByVerb);
@@ -351,7 +580,7 @@ function VerbLesson() {
         resultsByVerb,
         orderByVerb,
         showSummary,
-      })
+      }),
     );
   }, [
     restored,
@@ -393,7 +622,7 @@ function VerbLesson() {
       })),
     }));
     setCompletedVerbs((previous) =>
-      previous.includes(verb) ? previous : [...previous, verb]
+      previous.includes(verb) ? previous : [...previous, verb],
     );
   }
   const selectedIndex = verbs.indexOf(verb);
@@ -432,7 +661,7 @@ function VerbLesson() {
   const renderSummaryForm = (
     form: string,
     verbName: string,
-    person: string
+    person: string,
   ) => {
     if (verbName === "sein") {
       if (["ich", "du", "er / sie / es"].includes(person))
@@ -492,7 +721,7 @@ function VerbLesson() {
                     const item = items.find(
                       (entry) =>
                         entry.group === group &&
-                        entry.title.startsWith(`${person} +`)
+                        entry.title.startsWith(`${person} +`),
                     );
                     return (
                       <td lang="de" key={v}>
@@ -501,7 +730,7 @@ function VerbLesson() {
                     );
                   })}
                 </tr>
-              )
+              ),
             )}
           </tbody>
         </table>
@@ -689,9 +918,10 @@ export function LearnActivity({
   skill: Skill;
   start?: StartSession;
 }) {
+  const { items } = useContent();
   const h = useLearning();
   const pool = items.filter(
-    (i) => i.lessonId === lessonId && i.skill === skill
+    (i) => i.lessonId === lessonId && i.skill === skill,
   );
   const [position, setPosition] = useState(0);
   const [error, setError] = useState("");
@@ -805,6 +1035,7 @@ export function LearnActivity({
   );
 }
 export function HistoryProgress({ query = "" }: { query?: string }) {
+  const { items, lessons } = useContent();
   const history = useLearning();
   const params = useMemo(() => new URLSearchParams(query), [query]);
   const [level, setLevel] = useState("all");
@@ -812,14 +1043,14 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
   const [skill, setSkill] = useState(params.get("skill") || "all");
   const [state, setState] = useState(params.get("status") || "all");
   const [collection, setCollection] = useState(
-    params.get("collection") || "all"
+    params.get("collection") || "all",
   );
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState<Item | null>(null);
   const [page, setPage] = useState(0);
   const learned = useMemo(
     () => new Set(history.exposures.map((exposure) => exposure.item_id)),
-    [history.exposures]
+    [history.exposures],
   );
   const attempts = useMemo(() => {
     const result = new Map<string, { right: number; wrong: number }>();
@@ -827,11 +1058,11 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
       completedAttempts(history.attempts).map((attempt) => [
         `${attempt.session_id}:${attempt.ordinal}`,
         attempt,
-      ])
+      ]),
     );
     for (const sessionItem of history.sessionItems) {
       const attempt = byAttempt.get(
-        `${sessionItem.session_id}:${sessionItem.ordinal}`
+        `${sessionItem.session_id}:${sessionItem.ordinal}`,
       );
       if (!attempt) continue;
       const counts = result.get(sessionItem.item_id) || { right: 0, wrong: 0 };
@@ -844,14 +1075,14 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
   const errors = useMemo(() => {
     const completedKeys = new Set(
       completedAttempts(history.attempts).map(
-        (attempt) => `${attempt.session_id}:${attempt.ordinal}`
-      )
+        (attempt) => `${attempt.session_id}:${attempt.ordinal}`,
+      ),
     );
     const byAttempt = new Map(
       history.sessionItems.map((sessionItem) => [
         `${sessionItem.session_id}:${sessionItem.ordinal}`,
         sessionItem.item_id,
-      ])
+      ]),
     );
     const result = new Map<string, Map<string, number>>();
     for (const evidence of history.evidence) {
@@ -861,13 +1092,13 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
       )
         continue;
       const itemId = byAttempt.get(
-        `${evidence.session_id}:${evidence.ordinal}`
+        `${evidence.session_id}:${evidence.ordinal}`,
       );
       if (!itemId) continue;
       const dimensions = result.get(itemId) || new Map<string, number>();
       dimensions.set(
         evidence.dimension,
-        (dimensions.get(evidence.dimension) || 0) + 1
+        (dimensions.get(evidence.dimension) || 0) + 1,
       );
       result.set(itemId, dimensions);
     }
@@ -1052,7 +1283,7 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
               }
             >
               <option value="all">ทุกชุด</option>
-              <option value="core">ศัพท์หลัก 181 คำ</option>
+              <option value="core">ศัพท์หลัก</option>
               <option value="extra">ศัพท์เสริม</option>
             </select>
           </label>
@@ -1130,7 +1361,7 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
                                       dimensionLabels[
                                         dimension as keyof typeof dimensionLabels
                                       ]
-                                    } ${total}`
+                                    } ${total}`,
                                 )
                                 .join(" · ")
                             : "—"}
@@ -1231,8 +1462,8 @@ function ProgressItemDetail({
         (sessionItem) =>
           sessionItem.item_id === item.id &&
           sessionItem.session_id === attempt.session_id &&
-          sessionItem.ordinal === attempt.ordinal
-      )
+          sessionItem.ordinal === attempt.ordinal,
+      ),
     )
     .sort((a, b) => b.submitted_at.localeCompare(a.submitted_at));
   return (

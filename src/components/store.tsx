@@ -1,4 +1,5 @@
 "use client";
+import { useContent } from "./content-provider";
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import type { User } from "@supabase/supabase-js";
 import {
@@ -43,7 +44,7 @@ async function loadUserStore(userId: string): Promise<Store> {
   ]);
   if (progressResult.error || settingsResult.error || daysResult.error)
     throw new Error(
-      "โหลดข้อมูลจากฐานข้อมูลไม่สำเร็จ ตรวจสอบตารางและนโยบาย RLS ใน Supabase"
+      "โหลดข้อมูลจากฐานข้อมูลไม่สำเร็จ ตรวจสอบตารางและนโยบาย RLS ใน Supabase",
     );
   const store = emptyStore();
   for (const row of progressResult.data || [])
@@ -59,7 +60,7 @@ async function persistStore(previous: Store, next: Store, userId: string) {
   const progressRows = Object.entries(next.progress)
     .filter(
       ([id, value]) =>
-        JSON.stringify(previous.progress[id]) !== JSON.stringify(value)
+        JSON.stringify(previous.progress[id]) !== JSON.stringify(value),
     )
     .map(([item_id, progress]) => ({ user_id: userId, item_id, progress }));
   const dayRows = Object.entries(next.days)
@@ -73,7 +74,7 @@ async function persistStore(previous: Store, next: Store, userId: string) {
       });
       if (error)
         throw new Error(
-          "บันทึกความก้าวหน้าไม่สำเร็จ ตรวจสอบ migration ใน Supabase"
+          "บันทึกความก้าวหน้าไม่สำเร็จ ตรวจสอบ migration ใน Supabase",
         );
     }
   }
@@ -92,6 +93,7 @@ async function persistStore(previous: Store, next: Store, userId: string) {
 }
 
 export function StoreProvider({ children }: { children: React.ReactNode }) {
+  const { items } = useContent();
   const [data, setData] = useState<Store>(emptyStore);
   const [ready, setReady] = useState(false);
   const [error, setError] = useState("");
@@ -106,7 +108,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     const client = supabase;
     if (!client) {
       setError(
-        "ไม่พบ NEXT_PUBLIC_SUPABASE_URL หรือ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ในการตั้งค่า"
+        "ไม่พบ NEXT_PUBLIC_SUPABASE_URL หรือ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ในการตั้งค่า",
       );
       setReady(true);
       return;
@@ -133,7 +135,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           localStorage.getItem(STORAGE_KEY) ??
           localStorage.getItem("deutschProgress");
         if (localRaw) {
-          const imported = parseBackup(JSON.parse(localRaw));
+          const imported = parseBackup(items, JSON.parse(localRaw));
           const merged = mergeStore(loaded, imported);
           if (
             !Object.keys(loaded.progress).length &&
@@ -156,7 +158,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           setError(
             cause instanceof Error
               ? cause.message
-              : "เชื่อมต่อฐานข้อมูลไม่สำเร็จ"
+              : "เชื่อมต่อฐานข้อมูลไม่สำเร็จ",
           );
       } finally {
         loading.current = false;
@@ -193,7 +195,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
           setError(
             `ตรวจสอบบัญชีไม่สำเร็จ${
               reason ? `: ${reason}` : " ลองโหลดหน้าใหม่"
-            }`
+            }`,
           );
           setReady(true);
         }
@@ -201,7 +203,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     const { data: listener } = client.auth.onAuthStateChange(
       (_event, session) => {
         void hydrate(session?.user ?? null);
-      }
+      },
     );
     return () => {
       alive = false;
@@ -218,7 +220,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
     if (error) {
       if (error.message.toLowerCase().includes("email not confirmed"))
         throw new Error(
-          "อีเมลนี้ยังไม่ได้ยืนยัน กรุณาเปิดลิงก์ยืนยันจากอีเมลก่อนเข้าสู่ระบบ"
+          "อีเมลนี้ยังไม่ได้ยืนยัน กรุณาเปิดลิงก์ยืนยันจากอีเมลก่อนเข้าสู่ระบบ",
         );
       throw new Error(error.message);
     }

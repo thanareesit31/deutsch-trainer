@@ -1,0 +1,31 @@
+// Run with Node 20: node --env-file=.env.local scripts/migrate-content.mjs
+import pg from "pg";
+import { readFile } from "node:fs/promises";
+const connectionString = process.env.DATABASE_URL;
+if (!connectionString)
+  throw new Error("DATABASE_URL is required in .env.local");
+const client = new pg.Client({
+  connectionString,
+  connectionTimeoutMillis: 15000,
+});
+try {
+  await client.connect();
+  const sql = await readFile(
+    new URL(
+      "../supabase/migrations/20261003010000_content_catalog.sql",
+      import.meta.url,
+    ),
+    "utf8",
+  );
+  await client.query(sql);
+  const result = await client.query(
+    "select 'lessons' as kind,count(*)::int as count from public.content_lessons union all select 'items',count(*)::int from public.content_items",
+  );
+  console.log(JSON.stringify(result.rows));
+} catch (err) {
+  // Connection strings/passwords must never appear in logs.
+  console.error("Content migration failed:", err.code || err.name);
+  process.exitCode = 1;
+} finally {
+  await client.end();
+}

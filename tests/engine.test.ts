@@ -1,3 +1,4 @@
+import type { Item } from "../src/lib/content";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
@@ -6,7 +7,7 @@ import {
   items,
   lessons,
   itemById,
-} from "../src/lib/content";
+} from "./catalog-fixture";
 import {
   adaptiveHint,
   emptyStore,
@@ -38,7 +39,7 @@ test("keeps articles on nouns, distinguishes plural-only nouns", () => {
     assert(w.title.startsWith(w.article + " "));
   assert.equal(
     coreVocabulary.filter((w) => w.lessonId === "L01" && w.article).length,
-    0
+    0,
   );
 });
 test("sessions cap at available content and never duplicate IDs", () => {
@@ -49,32 +50,32 @@ test("sessions cap at available content and never duplicate IDs", () => {
   assert.equal(sessionItems(pool, 5, {}, false).length, 5);
 });
 test("wrong answers become due immediately and are prioritized", () => {
-  const state = record(emptyStore(), "V001", false, "typing", 1000);
+  const state = record(items, emptyStore(), "V001", false, "typing", 1000);
   assert.equal(status(state.progress.V001, 1000), "review");
   assert.equal(
     sessionItems(coreVocabulary, 5, state.progress, true, 1000)[0].id,
-    "V001"
+    "V001",
   );
 });
 test("one correct choice is not mastery and review intervals grow", () => {
-  let state = record(emptyStore(), "V001", true, "de-th", 1000);
+  let state = record(items, emptyStore(), "V001", true, "de-th", 1000);
   assert.equal(status(state.progress.V001, 1000), "learning");
   const firstDue = state.progress.V001.nextReview;
-  state = record(state, "V001", true, "typing", 2000);
-  state = record(state, "V001", true, "typing", 3000);
-  state = record(state, "V001", true, "typing", 4000);
+  state = record(items, state, "V001", true, "typing", 2000);
+  state = record(items, state, "V001", true, "typing", 3000);
+  state = record(items, state, "V001", true, "typing", 4000);
   assert.equal(status(state.progress.V001, 4000), "mastered");
   assert(state.progress.V001.nextReview > firstDue);
   assert.equal(
     status(state.progress.V001, state.progress.V001.nextReview),
-    "review"
+    "review",
   );
 });
 test("typing has higher weight and errors distinguish article from spelling", () => {
-  const choice = record(emptyStore(), "V008", true, "th-de", 1000);
-  const typed = record(emptyStore(), "V008", true, "typing", 1000);
+  const choice = record(items, emptyStore(), "V008", true, "th-de", 1000);
+  const typed = record(items, emptyStore(), "V008", true, "typing", 1000);
   assert(mastery(typed.progress.V008) > mastery(choice.progress.V008));
-  const wrong = record(typed, "V008", false, "typing", 2000, {
+  const wrong = record(items, typed, "V008", false, "typing", 2000, {
     articleWrong: true,
     spellingWrong: false,
   });
@@ -88,39 +89,40 @@ test("answer normalization preserves German capitalization and umlauts", () => {
   assert(!isCorrect("schon", "schön"));
   assert(!isCorrect("sie", "Sie"));
   assert(
-    isCorrect("Mein Name ist Sun.", "Ich heiße Sun.", ["Mein Name ist Sun."])
+    isCorrect("Mein Name ist Sun.", "Ich heiße Sun.", ["Mein Name ist Sun."]),
   );
 });
 test("adaptive hint avoids the last mask and eventually reaches full recall", () => {
   const first = adaptiveHint("Deutschland", undefined, () => 0.3);
-  let state = record(emptyStore(), "extra-L01-2", true, "typing", 1000, {
+  let state = record(items, emptyStore(), "extra-L01-2", true, "typing", 1000, {
     hidden: first.hidden,
   });
   const second = adaptiveHint(
     "Deutschland",
     state.progress["extra-L01-2"],
-    () => 0.3
+    () => 0.3,
   );
   assert.notDeepEqual(first.hidden, second.hidden);
   for (let i = 0; i < 3; i++)
-    state = record(state, "extra-L01-2", true, "typing", 2000 + i);
+    state = record(items, state, "extra-L01-2", true, "typing", 2000 + i);
   assert.equal(
     adaptiveHint("Deutschland", state.progress["extra-L01-2"]).text,
-    "___________"
+    "___________",
   );
 });
 test("question choices include exactly one correct answer", () => {
   for (const item of items) {
     const q = makeQuestion(
+      items,
       item,
-      item.skill === "vocabulary" ? "de-th" : "choice"
+      item.skill === "vocabulary" ? "de-th" : "choice",
     );
     assert.equal(q.options.filter((v) => v === q.answer).length, 1);
     assert.equal(new Set(q.options).size, q.options.length);
   }
 });
 test("legacy progress imports counters with the original IDs", () => {
-  const result = parseBackup({
+  const result = parseBackup(items, {
     version: 1,
     progress: {
       V001: {
@@ -150,26 +152,30 @@ test("malformed backups fail without accepting arbitrary objects", () => {
     { progress: [] },
     { progress: { V001: { right: Infinity } } },
   ])
-    assert.throws(() => parseBackup(input));
+    assert.throws(() => parseBackup(items, input));
 });
 test("backup roundtrip keeps settings, counters, modes and daily activity", () => {
   const state = record(
+    items,
     emptyStore(),
     "V001",
     true,
     "typing",
-    Date.UTC(2026, 8, 24, 9)
+    Date.UTC(2026, 8, 24, 9),
   );
   state.settings.sessionSize = 20;
-  assert.deepEqual(parseBackup(JSON.parse(JSON.stringify(state))), state);
+  assert.deepEqual(
+    parseBackup(items, JSON.parse(JSON.stringify(state))),
+    state,
+  );
 });
 test("imports merge latest per item, preserve other items and avoid double counting", () => {
-  let current = record(emptyStore(), "V001", true, "typing", 3000);
-  current = record(current, "V002", true, "typing", 2000);
-  const older = record(emptyStore(), "V001", false, "typing", 1000);
+  let current = record(items, emptyStore(), "V001", true, "typing", 3000);
+  current = record(items, current, "V002", true, "typing", 2000);
+  const older = record(items, emptyStore(), "V001", false, "typing", 1000);
   assert.deepEqual(mergeStore(current, older).progress, current.progress);
   assert.deepEqual(mergeStore(current, current), current);
-  const newer = record(emptyStore(), "V001", false, "typing", 4000);
+  const newer = record(items, emptyStore(), "V001", false, "typing", 4000);
   assert.equal(mergeStore(current, newer).progress.V001.lastResult, "wrong");
   assert(mergeStore(current, newer).progress.V002);
 });

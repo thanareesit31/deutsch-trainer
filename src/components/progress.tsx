@@ -1,4 +1,5 @@
 "use client";
+import { useContent } from "./content-provider";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import {
@@ -26,6 +27,7 @@ import { SectionTitle } from "./ui";
 import type { StartSession } from "./trainer";
 
 export function SettingsPage() {
+  const { items, lessons, coreVocabulary } = useContent();
   const { data, commit, reset } = useStore();
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -48,10 +50,10 @@ export function SettingsPage() {
         JSON.stringify(
           { ...data, exportedAt: new Date().toISOString() },
           null,
-          2
+          2,
         ),
       ],
-      { type: "application/json" }
+      { type: "application/json" },
     );
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -69,7 +71,7 @@ export function SettingsPage() {
     setMessage("");
     try {
       if (file.size > 5 * 1024 * 1024) throw new Error("ไฟล์ใหญ่เกิน 5 MB");
-      const parsed = parseBackup(JSON.parse(await file.text()));
+      const parsed = parseBackup(items, JSON.parse(await file.text()));
       setPending(parsed);
     } catch (e) {
       setError(`นำเข้าไม่สำเร็จ: ${(e as Error).message}`);
@@ -83,7 +85,7 @@ export function SettingsPage() {
       setMessage(
         `รวมประวัติ ${
           Object.keys(pending.progress).length
-        } รายการแล้ว เก็บรายการที่ใหม่กว่าของแต่ละข้อ`
+        } รายการแล้ว เก็บรายการที่ใหม่กว่าของแต่ละข้อ`,
       );
       setPending(null);
     } catch (e) {
@@ -217,8 +219,8 @@ export function SettingsPage() {
         <div>
           <h3>คำศัพท์หลักครบทุกคำ</h3>
           <p>
-            181 คำหลักจากข้อมูลเดิม · 12 บท · ศัพท์เสริมเก็บแยก ·
-            เพิ่มเนื้อหาได้โดยรักษารหัส Progress เดิม
+            {coreVocabulary.length} คำหลัก · {lessons.length} บท ·
+            ศัพท์เสริมเก็บแยก · เพิ่มเนื้อหาได้โดยรักษารหัส Progress เดิม
           </p>
           <p>
             หากย้ายจากเว็บเดิมบน GitHub Pages

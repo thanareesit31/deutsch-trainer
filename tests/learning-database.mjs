@@ -12,6 +12,7 @@ export async function createDatabase() {
     "20261001000000_learner_data.sql",
     "20261002000000_learning_history.sql",
     "20261003000000_completed_attempts_no_response_time.sql",
+    "20261003010000_content_catalog.sql",
   ])
     await db.exec(
       await readFile(

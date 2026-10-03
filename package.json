@@ -10,7 +10,9 @@
     "test": "bun test tests/engine.test.ts tests/learning.test.ts",
     "test:e2e": "node tests/browser.mjs",
     "test:learning-db": "node tests/learning-database.mjs",
-    "test:learning-browser": "node tests/learning-browser.mjs"
+    "test:learning-browser": "node tests/learning-browser.mjs",
+    "db:migrate-content": "node --env-file=.env.local scripts/migrate-content.mjs",
+    "dev:restart": "bash scripts/restart-local.sh"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.78.0",
@@ -24,6 +26,7 @@
     "@types/node": "26.6.2",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
+    "pg": "^8.23.1",
     "playwright-core": "1.63.0",
     "tsx": "4.15.7",
     "typescript": "5.9.3"

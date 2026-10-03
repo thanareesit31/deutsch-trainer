@@ -1,3 +1,4 @@
+import type { Item } from "../src/lib/content";
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
@@ -7,7 +8,7 @@ import {
   reviewCandidates,
 } from "../src/lib/learning";
 import { makeQuestion } from "../src/lib/engine";
-import { items, type Item } from "../src/lib/content";
+import { items } from "./catalog-fixture";
 const noun: Item = {
   id: "noun",
   lessonId: "L01",
@@ -20,7 +21,7 @@ const noun: Item = {
   meaning: "โต๊ะ",
 };
 test("noun diagnosis retains simultaneous article and spelling errors", () => {
-  const q = makeQuestion(noun, "typing");
+  const q = makeQuestion(items, noun, "typing");
   assert.deepEqual(diagnose(q, "die Tish"), {
     correct: false,
     evidence: [
@@ -48,7 +49,7 @@ test("choice, verb, grammar, structure and application assess their actual dimen
     [items.find((i) => i.group === "Satzbau")!, "order", "sentenceStructure"],
     [items.find((i) => i.skill === "writing")!, "typing", "application"],
   ] as const) {
-    const q = makeQuestion(item, mode);
+    const q = makeQuestion(items, item, mode);
     assert.deepEqual(diagnose(q, q.answer).evidence, [
       { dimension, correct: true },
     ]);
@@ -58,8 +59,8 @@ test("choice, verb, grammar, structure and application assess their actual dimen
 test("accepted writing alternatives are evidence of a correct answer", () => {
   const item = items.find((i) => i.skill === "writing" && i.accepted?.length)!;
   assert.equal(
-    diagnose(makeQuestion(item, "typing"), item.accepted![0]).correct,
-    true
+    diagnose(makeQuestion(items, item, "typing"), item.accepted![0]).correct,
+    true,
   );
 });
 test("a correct attempt is pending until confidence and wrong attempts complete immediately", () => {
@@ -67,11 +68,11 @@ test("a correct attempt is pending until confidence and wrong attempts complete 
   assert.equal(isCompletedAttempt({ correct: true, confidence: "easy" }), true);
   assert.equal(
     isCompletedAttempt({ correct: true, confidence: "thought" }),
-    true
+    true,
   );
   assert.equal(
     isCompletedAttempt({ correct: true, confidence: "guess" }),
-    true
+    true,
   );
   assert.equal(isCompletedAttempt({ correct: false, confidence: null }), true);
   assert.equal(
@@ -79,12 +80,12 @@ test("a correct attempt is pending until confidence and wrong attempts complete 
       { correct: true, confidence: null },
       { correct: false, confidence: null },
     ]).length,
-    1
+    1,
   );
 });
 test("review candidates use the latest completed answer, ignoring pending correct attempts", () => {
   const selected = items.filter((item) =>
-    ["V001", "V002", "V003", "V004", "V005", "V006"].includes(item.id)
+    ["V001", "V002", "V003", "V004", "V005", "V006"].includes(item.id),
   );
   const sessionItems = selected.map((item, ordinal) => ({
     session_id: "review-session",
@@ -167,6 +168,6 @@ test("review candidates use the latest completed answer, ignoring pending correc
   ];
   assert.deepEqual(
     reviewCandidates(selected, sessionItems, attempts).map((item) => item.id),
-    ["V001", "V002", "V006"]
+    ["V001", "V002", "V006"],
   );
 });

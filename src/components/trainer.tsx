@@ -1,4 +1,5 @@
 "use client";
+import { useContent } from "./content-provider";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
@@ -22,10 +23,7 @@ import {
   CircleHelp,
 } from "lucide-react";
 import {
-  coreVocabulary,
   getLevel,
-  items,
-  lessons,
   skills,
   skillName,
   type Item,
@@ -54,7 +52,7 @@ export type StartSession = (
   title: string,
   origin: string,
   prioritize?: boolean,
-  ordered?: boolean
+  ordered?: boolean,
 ) => void;
 const nav = [
   { path: "/", label: "หน้าแรก", icon: LayoutDashboard },
@@ -83,6 +81,7 @@ function AuthenticatedApp() {
   return <App />;
 }
 function App() {
+  const { items, lessons, coreVocabulary } = useContent();
   const path = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -112,7 +111,7 @@ function App() {
     title,
     origin,
     _prioritize,
-    ordered
+    ordered,
   ) => {
     try {
       const learned = new Set(history.exposures.map((e) => e.item_id));
@@ -130,10 +129,10 @@ function App() {
             ? item.skill === "reading" || item.skill === "listening"
               ? "choice"
               : item.group === "Satzbau"
-              ? "order"
-              : "typing"
+                ? "order"
+                : "typing"
             : mode;
-        const question = makeQuestion(item, selectedMode);
+        const question = makeQuestion(items, item, selectedMode);
         return { ...question, hint: undefined };
       });
       const id = crypto.randomUUID();
@@ -347,6 +346,7 @@ function App() {
 }
 
 function LessonList({ initialLevel }: { initialLevel: string }) {
+  const { items, lessons, coreVocabulary } = useContent();
   const { data } = useStore();
   const history = useLearning();
   const [level, setLevel] = useState(initialLevel);
@@ -358,7 +358,9 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
           <h1>บทเรียนของคุณ</h1>
           <p>เลือกบทที่อยากฝึกได้เลย ทุกบทเปิดให้เรียนอย่างอิสระ</p>
         </div>
-        <span className="quiet-pill">12 บทเรียน · 181 คำหลัก</span>
+        <span className="quiet-pill">
+          {lessons.length} บทเรียน · {coreVocabulary.length} คำหลัก
+        </span>
       </div>
       <div className="segmented level-switch" aria-label="เลือกระดับ">
         {["A1.1", "A1.2"].map((l) => (
@@ -378,7 +380,7 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
           .map((l) => {
             const pool = coreVocabulary.filter((w) => w.lessonId === l.id);
             const learned = pool.filter((w) =>
-              history.exposures.some((e) => e.item_id === w.id)
+              history.exposures.some((e) => e.item_id === w.id),
             ).length;
             const pct = Math.round((learned / pool.length) * 100);
             const any = learned > 0;
@@ -419,6 +421,7 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
   );
 }
 function LessonDetail({ id }: { id: string }) {
+  const { items, lessons, coreVocabulary } = useContent();
   const lesson = lessons.find((l) => l.id === id)!;
   const { data } = useStore();
   const history = useLearning();
@@ -447,15 +450,15 @@ function LessonDetail({ id }: { id: string }) {
         {skills.map((s) => {
           const Icon = skillIcons[s.id];
           const pool = items.filter(
-            (i) => i.lessonId === id && i.skill === s.id
+            (i) => i.lessonId === id && i.skill === s.id,
           );
           const pct = pool.length
             ? Math.round(
                 (pool.filter((i) =>
-                  history.exposures.some((e) => e.item_id === i.id)
+                  history.exposures.some((e) => e.item_id === i.id),
                 ).length *
                   100) /
-                  pool.length
+                  pool.length,
               )
             : 0;
           const content = (

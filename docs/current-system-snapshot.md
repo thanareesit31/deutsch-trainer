@@ -251,3 +251,7 @@ Diagnosis ผูกกับกลุ่ม content/mode แบบ hard-coded �
 ## ข้อจำกัดการตรวจ
 
 Tests, browser flow, typecheck และ production build ตรวจบน local environment เท่านั้น ไม่ยืนยัน live Supabase schema, RLS behavior บน project จริง, Vercel environment หรือ migration history บนฐานข้อมูลที่ใช้งานจริง. ต้องตรวจ environment/deployment แยกต่างหาก
+
+## อัปเดต 2026-10-03: คลังเนื้อหาในฐานข้อมูล
+
+ข้อมูล catalog ที่เคยประกาศใน `src/lib/content.ts` ย้ายเป็น `content_lessons` และ `content_items` บน Supabase ตาม `docs/content-database.md` โค้ด production อ่านจาก `ContentProvider`; JSON เดิมและ `supabase/seed/catalog.json` เหลือไว้เป็นแหล่งอ้างอิง/seed คำอธิบายเรื่อง catalog hard-coded ข้างต้นเป็นสถานะก่อนการย้ายนี้ จำนวนบท/ศัพท์บนหน้าบทเรียนคำนวณจาก catalog ปัจจุบัน ต้องรัน migration ใหม่ก่อนใช้งาน ไม่มีการเปลี่ยน source of truth ของประวัติหรือการแยก Learn/Practice

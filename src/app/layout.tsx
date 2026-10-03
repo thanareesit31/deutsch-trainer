@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { ContentProvider } from "@/components/content-provider";
 import { StoreProvider } from "@/components/store";
 import { LearningProvider } from "@/components/learning-store";
 
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="th">
       <body>
-        <StoreProvider>
-          <LearningProvider>{children}</LearningProvider>
-        </StoreProvider>
+        <ContentProvider>
+          <StoreProvider>
+            <LearningProvider>{children}</LearningProvider>
+          </StoreProvider>
+        </ContentProvider>
       </body>
     </html>
   );

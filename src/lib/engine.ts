@@ -1,4 +1,4 @@
-import { items, itemById, type Item, type Mode } from "./content";
+import { type Item, type Mode } from "./content";
 
 export type Status = "new" | "learning" | "mastered" | "review";
 export interface Progress {
@@ -59,10 +59,11 @@ export const mastery = (p?: Progress) =>
 export function dayKey(date = new Date()) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
     2,
-    "0"
+    "0",
   )}-${String(date.getDate()).padStart(2, "0")}`;
 }
 export function record(
+  items: Item[],
   store: Store,
   id: string,
   correct: boolean,
@@ -72,9 +73,9 @@ export function record(
     hidden?: number[];
     articleWrong?: boolean;
     spellingWrong?: boolean;
-  } = {}
+  } = {},
 ): Store {
-  if (!itemById.has(id)) throw new Error("ไม่พบเนื้อหานี้");
+  if (!items.some((item) => item.id === id)) throw new Error("ไม่พบเนื้อหานี้");
   const previous = store.progress[id] || emptyProgress();
   const weight = ["typing", "order", "dialogue"].includes(mode) ? 2 : 1;
   const streak = correct ? previous.streak + 1 : 0;
@@ -121,14 +122,14 @@ export function sessionItems(
   count: number,
   progress: Store["progress"],
   prioritize: boolean,
-  now = Date.now()
+  now = Date.now(),
 ): Item[] {
   let result = shuffled([...new Map(pool.map((i) => [i.id, i])).values()]);
   if (prioritize)
     result = result.sort(
       (a, b) =>
         Number(status(progress[b.id], now) === "review") -
-        Number(status(progress[a.id], now) === "review")
+        Number(status(progress[a.id], now) === "review"),
     );
   return count === 0 ? result : result.slice(0, count);
 }
@@ -142,12 +143,12 @@ export function normalize(input: string): string {
 export const isCorrect = (
   input: string,
   answer: string,
-  accepted: string[] = []
+  accepted: string[] = [],
 ) => [answer, ...accepted].some((a) => normalize(input) === normalize(a));
 export function adaptiveHint(
   word: string,
   p?: Progress,
-  rng = Math.random
+  rng = Math.random,
 ): { text: string; hidden: number[] } {
   const chars = Array.from(word);
   const eligible = chars
@@ -179,9 +180,10 @@ export interface Question {
   hint?: ReturnType<typeof adaptiveHint>;
 }
 export function makeQuestion(
+  items: Item[],
   item: Item,
   mode: Mode,
-  progress?: Progress
+  progress?: Progress,
 ): Question {
   let prompt = item.prompt || item.meaning;
   let answer = item.answer;
@@ -191,7 +193,7 @@ export function makeQuestion(
       (i) =>
         i.skill === "vocabulary" &&
         i.lessonId === item.lessonId &&
-        i.id !== item.id
+        i.id !== item.id,
     );
     if (mode === "de-th") {
       prompt = item.title;
@@ -236,7 +238,7 @@ function nonnegative(value: unknown, fallback = 0) {
     throw new Error("ไฟล์มีตัวเลข Progress ไม่ถูกต้อง");
   return value;
 }
-export function parseBackup(input: unknown): Store {
+export function parseBackup(items: Item[], input: unknown): Store {
   if (!isObject(input)) throw new Error("ไฟล์สำรองต้องเป็น JSON object");
   if (
     input.version !== undefined &&
@@ -249,7 +251,7 @@ export function parseBackup(input: unknown): Store {
   const entries = Object.entries(source);
   let recognized = 0;
   for (const [id, value] of entries) {
-    if (!itemById.has(id)) continue;
+    if (!items.some((item) => item.id === id)) continue;
     recognized++;
     if (!isObject(value)) throw new Error(`ข้อมูล ${id} ไม่ถูกต้อง`);
     const p = emptyProgress();
@@ -258,7 +260,7 @@ export function parseBackup(input: unknown): Store {
     p.streak = nonnegative(value.streak);
     p.score = Math.min(
       10,
-      nonnegative(value.score, Math.max(0, Math.min(10, p.right - p.wrong)))
+      nonnegative(value.score, Math.max(0, Math.min(10, p.right - p.wrong))),
     );
     p.lastPracticed = nonnegative(value.lastPracticed ?? value.lastSeen);
     p.lastWrong = nonnegative(value.lastWrong);
@@ -267,8 +269,8 @@ export function parseBackup(input: unknown): Store {
       value.lastResult === "right"
         ? "right"
         : value.lastResult === "wrong"
-        ? "wrong"
-        : "";
+          ? "wrong"
+          : "";
     p.articleWrong = nonnegative(value.articleWrong);
     p.spellingWrong = nonnegative(value.spellingWrong);
     p.lastHidden = Array.isArray(value.lastHidden)
