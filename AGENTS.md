@@ -16,3 +16,10 @@ Do not create, edit, move, or delete files outside the current repository.
 
 Do not modify system configuration, shell configuration, files in the home
 directory, or files belonging to other projects.
+
+## Product requirements and behavior
+
+- Before changing product behavior, read `docs/PRODUCT_BASELINE.md`.
+- If existing behavior conflicts with `docs/PRODUCT_BASELINE.md`, the baseline has higher priority.
+- After changing a requirement or user-facing behavior, update `docs/CHANGELOG_RE.md` with the date, what changed, why, and impact.
+- Do not change a core requirement without documenting its impact.

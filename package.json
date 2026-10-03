@@ -7,8 +7,10 @@
     "build": "bun run --bun next build",
     "start": "bun run --bun next start",
     "typecheck": "bun run --bun next typegen && tsc --noEmit",
-    "test": "bun test tests/engine.test.ts",
-    "test:e2e": "node tests/browser.mjs"
+    "test": "bun test tests/engine.test.ts tests/learning.test.ts",
+    "test:e2e": "node tests/browser.mjs",
+    "test:learning-db": "node tests/learning-database.mjs",
+    "test:learning-browser": "node tests/learning-browser.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.78.0",
@@ -18,6 +20,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
     "@types/node": "26.6.2",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
