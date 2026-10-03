@@ -59,26 +59,32 @@ test("accepted writing alternatives are evidence of a correct answer", () => {
   const item = items.find((i) => i.skill === "writing" && i.accepted?.length)!;
   assert.equal(
     diagnose(makeQuestion(item, "typing"), item.accepted![0]).correct,
-    true,
+    true
   );
 });
 test("a correct attempt is pending until confidence and wrong attempts complete immediately", () => {
   assert.equal(isCompletedAttempt({ correct: true, confidence: null }), false);
   assert.equal(isCompletedAttempt({ correct: true, confidence: "easy" }), true);
-  assert.equal(isCompletedAttempt({ correct: true, confidence: "thought" }), true);
-  assert.equal(isCompletedAttempt({ correct: true, confidence: "guess" }), true);
+  assert.equal(
+    isCompletedAttempt({ correct: true, confidence: "thought" }),
+    true
+  );
+  assert.equal(
+    isCompletedAttempt({ correct: true, confidence: "guess" }),
+    true
+  );
   assert.equal(isCompletedAttempt({ correct: false, confidence: null }), true);
   assert.equal(
     completedAttempts([
       { correct: true, confidence: null },
       { correct: false, confidence: null },
     ]).length,
-    1,
+    1
   );
 });
 test("review candidates use the latest completed answer, ignoring pending correct attempts", () => {
   const selected = items.filter((item) =>
-    ["V001", "V002", "V003", "V004", "V005", "V006"].includes(item.id),
+    ["V001", "V002", "V003", "V004", "V005", "V006"].includes(item.id)
   );
   const sessionItems = selected.map((item, ordinal) => ({
     session_id: "review-session",
@@ -161,6 +167,6 @@ test("review candidates use the latest completed answer, ignoring pending correc
   ];
   assert.deepEqual(
     reviewCandidates(selected, sessionItems, attempts).map((item) => item.id),
-    ["V001", "V002", "V006"],
+    ["V001", "V002", "V006"]
   );
 });

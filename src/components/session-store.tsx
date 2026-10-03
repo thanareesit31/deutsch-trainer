@@ -1,11 +1,24 @@
 "use client";
-import { createContext, useContext, useState, type Dispatch, type SetStateAction } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  type Dispatch,
+  type SetStateAction,
+} from "react";
 import type { SessionPlan } from "./practice";
 
-const SessionContext = createContext<{ session: SessionPlan | null; setSession: Dispatch<SetStateAction<SessionPlan | null>> } | null>(null);
+const SessionContext = createContext<{
+  session: SessionPlan | null;
+  setSession: Dispatch<SetStateAction<SessionPlan | null>>;
+} | null>(null);
 export function SessionProvider({ children }: { children: React.ReactNode }) {
   const [session, setSession] = useState<SessionPlan | null>(null);
-  return <SessionContext.Provider value={{ session, setSession }}>{children}</SessionContext.Provider>;
+  return (
+    <SessionContext.Provider value={{ session, setSession }}>
+      {children}
+    </SessionContext.Provider>
+  );
 }
 export function useSession() {
   const value = useContext(SessionContext);

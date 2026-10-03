@@ -54,7 +54,7 @@ export type StartSession = (
   title: string,
   origin: string,
   prioritize?: boolean,
-  ordered?: boolean,
+  ordered?: boolean
 ) => void;
 const nav = [
   { path: "/", label: "หน้าแรก", icon: LayoutDashboard },
@@ -105,11 +105,21 @@ function App() {
   const [startError, setStartError] = useState("");
   const [mobileMenu, setMobileMenu] = useState(false);
 
-  const start: StartSession = async (pool, mode, count, title, origin, _prioritize, ordered) => {
+  const start: StartSession = async (
+    pool,
+    mode,
+    count,
+    title,
+    origin,
+    _prioritize,
+    ordered
+  ) => {
     try {
       const learned = new Set(history.exposures.map((e) => e.item_id));
       const eligible = pool.filter((i) => learned.has(i.id));
-      const selected = ordered ? eligible : sessionItems(eligible, count, {}, false);
+      const selected = ordered
+        ? eligible
+        : sessionItems(eligible, count, {}, false);
       if (!selected.length) {
         router.push("/practice");
         return;
@@ -120,8 +130,8 @@ function App() {
             ? item.skill === "reading" || item.skill === "listening"
               ? "choice"
               : item.group === "Satzbau"
-                ? "order"
-                : "typing"
+              ? "order"
+              : "typing"
             : mode;
         const question = makeQuestion(item, selectedMode);
         return { ...question, hint: undefined };
@@ -188,7 +198,12 @@ function App() {
   else if (path === "/review") page = <ReviewPage start={start} />;
   else if (parts[0] === "learn" && parts[1] && parts[2])
     page = (
-      <LearnActivity key={path} lessonId={parts[1]} skill={parts[2] as Skill} start={start} />
+      <LearnActivity
+        key={path}
+        lessonId={parts[1]}
+        skill={parts[2] as Skill}
+        start={start}
+      />
     );
   else if (path === "/progress")
     page = <HistoryProgress query={searchParams.toString()} />;
@@ -363,7 +378,7 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
           .map((l) => {
             const pool = coreVocabulary.filter((w) => w.lessonId === l.id);
             const learned = pool.filter((w) =>
-              history.exposures.some((e) => e.item_id === w.id),
+              history.exposures.some((e) => e.item_id === w.id)
             ).length;
             const pct = Math.round((learned / pool.length) * 100);
             const any = learned > 0;
@@ -432,15 +447,15 @@ function LessonDetail({ id }: { id: string }) {
         {skills.map((s) => {
           const Icon = skillIcons[s.id];
           const pool = items.filter(
-            (i) => i.lessonId === id && i.skill === s.id,
+            (i) => i.lessonId === id && i.skill === s.id
           );
           const pct = pool.length
             ? Math.round(
                 (pool.filter((i) =>
-                  history.exposures.some((e) => e.item_id === i.id),
+                  history.exposures.some((e) => e.item_id === i.id)
                 ).length *
                   100) /
-                  pool.length,
+                  pool.length
               )
             : 0;
           const content = (

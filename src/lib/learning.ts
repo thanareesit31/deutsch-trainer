@@ -37,12 +37,12 @@ export interface LearningAttempt {
   submitted_at: string;
 }
 export function isCompletedAttempt(
-  attempt: Pick<LearningAttempt, "correct" | "confidence">,
+  attempt: Pick<LearningAttempt, "correct" | "confidence">
 ) {
   return !attempt.correct || attempt.confidence !== null;
 }
 export function completedAttempts<
-  T extends { correct: boolean; confidence: Confidence | null },
+  T extends { correct: boolean; confidence: Confidence | null }
 >(attempts: T[]) {
   return attempts.filter(isCompletedAttempt);
 }
@@ -73,18 +73,18 @@ export function reviewCandidates(
   attempts: Pick<
     LearningAttempt,
     "session_id" | "ordinal" | "correct" | "confidence" | "submitted_at"
-  >[],
+  >[]
 ) {
   const itemByAttempt = new Map(
     sessionItems.map((entry) => [
       `${entry.session_id}:${entry.ordinal}`,
       entry.item_id,
-    ]),
+    ])
   );
   const latestByItem = new Map<string, (typeof attempts)[number]>();
   for (const attempt of completedAttempts(attempts)) {
     const itemId = itemByAttempt.get(
-      `${attempt.session_id}:${attempt.ordinal}`,
+      `${attempt.session_id}:${attempt.ordinal}`
     );
     if (!itemId) continue;
     const previous = latestByItem.get(itemId);
@@ -98,7 +98,7 @@ export function reviewCandidates(
 }
 export function diagnose(
   q: Question,
-  input: string,
+  input: string
 ): {
   correct: boolean;
   evidence: { dimension: Dimension; correct: boolean }[];

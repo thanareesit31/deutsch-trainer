@@ -61,12 +61,12 @@ export function LearningProvider({ children }: { children: React.ReactNode }) {
               table === "item_exposures" || table === "knowledge_state"
                 ? "item_id"
                 : table === "practice_sessions"
-                  ? "id"
-                  : "session_id",
+                ? "id"
+                : "session_id"
             );
           if (
             ["session_items", "learning_attempts", "attempt_evidence"].includes(
-              table,
+              table
             )
           )
             query = query.order("ordinal");
@@ -87,7 +87,7 @@ export function LearningProvider({ children }: { children: React.ReactNode }) {
             "knowledge_state",
             "practice_sessions",
             "session_items",
-          ].map(read),
+          ].map(read)
         );
       if (owner.current !== id) return;
       setHistory({
@@ -103,7 +103,9 @@ export function LearningProvider({ children }: { children: React.ReactNode }) {
     } catch (cause) {
       if (owner.current === id) {
         setError(
-          `โหลดประวัติการเรียนไม่สำเร็จ ตรวจสอบการเชื่อมต่อและ migration: ${(cause as Error).message}`,
+          `โหลดประวัติการเรียนไม่สำเร็จ ตรวจสอบการเชื่อมต่อและ migration: ${
+            (cause as Error).message
+          }`
         );
         setReady(false);
       }
@@ -130,7 +132,7 @@ export function LearningProvider({ children }: { children: React.ReactNode }) {
       await reload();
     } catch (cause) {
       setError(
-        `บันทึกหรือโหลดผลไม่สำเร็จ กรุณาลองใหม่: ${(cause as Error).message}`,
+        `บันทึกหรือโหลดผลไม่สำเร็จ กรุณาลองใหม่: ${(cause as Error).message}`
       );
       throw cause;
     } finally {

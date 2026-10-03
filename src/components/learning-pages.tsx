@@ -1,7 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Search, X, ChevronLeft, ChevronRight, RotateCcw, ArrowRight } from "lucide-react";
+import {
+  Search,
+  X,
+  ChevronLeft,
+  ChevronRight,
+  RotateCcw,
+  ArrowRight,
+} from "lucide-react";
 import {
   getLevel,
   items,
@@ -118,7 +125,7 @@ export function PracticeEntry({ start }: { start: StartSession }) {
             (i) =>
               i.lessonId === lesson &&
               i.skill === s.id &&
-              h.exposures.some((e) => e.item_id === i.id),
+              h.exposures.some((e) => e.item_id === i.id)
           ).length;
           return (
             <Link
@@ -142,18 +149,18 @@ export function ReviewPage({ start }: { start: StartSession }) {
   const reviewItems = reviewCandidates(
     items,
     history.sessionItems,
-    history.attempts,
+    history.attempts
   );
   const itemByAttempt = new Map(
     history.sessionItems.map((entry) => [
       `${entry.session_id}:${entry.ordinal}`,
       entry.item_id,
-    ]),
+    ])
   );
   const latestByItem = new Map<string, (typeof history.attempts)[number]>();
   for (const attempt of completedAttempts(history.attempts)) {
     const itemId = itemByAttempt.get(
-      `${attempt.session_id}:${attempt.ordinal}`,
+      `${attempt.session_id}:${attempt.ordinal}`
     );
     if (!itemId) continue;
     const previous = latestByItem.get(itemId);
@@ -182,14 +189,17 @@ export function ReviewPage({ start }: { start: StartSession }) {
               const reason = !latest.correct
                 ? "ตอบผิดล่าสุด"
                 : confidence === "guess"
-                  ? "ตอบถูกแต่เดา"
-                  : confidence === "thought"
-                    ? "ตอบถูกแต่ต้องคิด"
-                    : "รอระบุความมั่นใจ";
+                ? "ตอบถูกแต่เดา"
+                : confidence === "thought"
+                ? "ตอบถูกแต่ต้องคิด"
+                : "รอระบุความมั่นใจ";
               return (
                 <div className="review-row" key={item.id}>
                   <span
-                    className={`icon-tile ${skills.find((entry) => entry.id === item.skill)?.color || "green"}`}
+                    className={`icon-tile ${
+                      skills.find((entry) => entry.id === item.skill)?.color ||
+                      "green"
+                    }`}
                   >
                     <RotateCcw size={17} />
                   </span>
@@ -216,7 +226,7 @@ export function ReviewPage({ start }: { start: StartSession }) {
                 "review",
                 0,
                 "ทบทวนสิ่งที่ยังไม่แม่น",
-                "/review",
+                "/review"
               )
             }
           >
@@ -239,32 +249,66 @@ export function ReviewPage({ start }: { start: StartSession }) {
 
 function VerbLesson() {
   const history = useLearning();
-  const verbs = [...new Set(items.filter(i => i.lessonId === "L01" && i.skill === "grammar" && (i.group.startsWith("Verbkonjugation") || i.group === "sein")).map(i => i.group === "sein" ? "sein" : i.group.split(" · ")[1]))];
+  const verbs = [
+    ...new Set(
+      items
+        .filter(
+          (i) =>
+            i.lessonId === "L01" &&
+            i.skill === "grammar" &&
+            (i.group.startsWith("Verbkonjugation") || i.group === "sein")
+        )
+        .map((i) => (i.group === "sein" ? "sein" : i.group.split(" · ")[1]))
+    ),
+  ];
   const learningStorageKey = "deutsch-trainer-verb-learning-L01";
   const [verb, setVerb] = useState(verbs[0] || "kommen");
   const [completedVerbs, setCompletedVerbs] = useState<string[]>([]);
-  const [matchesByVerb, setMatchesByVerb] = useState<Record<string, Record<number, number>>>({});
-  const [resultsByVerb, setResultsByVerb] = useState<Record<string, { item: Item; input: string; correct: boolean }[]>>({});
+  const [matchesByVerb, setMatchesByVerb] = useState<
+    Record<string, Record<number, number>>
+  >({});
+  const [resultsByVerb, setResultsByVerb] = useState<
+    Record<string, { item: Item; input: string; correct: boolean }[]>
+  >({});
   const [orderByVerb, setOrderByVerb] = useState<Record<string, number[]>>({});
   const [restored, setRestored] = useState(false);
   const [showSummary, setShowSummary] = useState(false);
-  const verbItems = items.filter(i => i.lessonId === "L01" && i.skill === "grammar" && (verb === "sein" ? i.group === "sein" : i.group === `Verbkonjugation · ${verb}`));
+  const verbItems = items.filter(
+    (i) =>
+      i.lessonId === "L01" &&
+      i.skill === "grammar" &&
+      (verb === "sein"
+        ? i.group === "sein"
+        : i.group === `Verbkonjugation · ${verb}`)
+  );
   const sessionItems = verbItems;
-  const forms = sessionItems.map(i => i.answer);
-  const exposureKey = verbItems.map(i => `${i.id}:${history.exposures.some(e => e.item_id === i.id)}`).join("|");
+  const forms = sessionItems.map((i) => i.answer);
+  const exposureKey = verbItems
+    .map((i) => `${i.id}:${history.exposures.some((e) => e.item_id === i.id)}`)
+    .join("|");
   useEffect(() => {
-    if (!restored || document.visibilityState !== "visible" || history.busy) return;
+    if (!restored || document.visibilityState !== "visible" || history.busy)
+      return;
     let cancelled = false;
-    const exposed = new Set(history.exposures.map(e => e.item_id));
+    const exposed = new Set(history.exposures.map((e) => e.item_id));
     void (async () => {
       for (const entry of verbItems) {
         if (cancelled || exposed.has(entry.id)) continue;
-        try { await history.act("expose", { itemId: entry.id }); exposed.add(entry.id); } catch { break; }
+        try {
+          await history.act("expose", { itemId: entry.id });
+          exposed.add(entry.id);
+        } catch {
+          break;
+        }
       }
     })();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, [restored, verb, exposureKey, history.busy]); // eslint-disable-line react-hooks/exhaustive-deps
-  const learned = verbItems.every(i => history.exposures.some(e => e.item_id === i.id));
+  const learned = verbItems.every((i) =>
+    history.exposures.some((e) => e.item_id === i.id)
+  );
   const matches = matchesByVerb[verb] || {};
   const [selectedToken, setSelectedToken] = useState<number | null>(null);
   const formOrder = orderByVerb[verb] || [];
@@ -274,74 +318,366 @@ function VerbLesson() {
       const saved = localStorage.getItem(learningStorageKey);
       if (saved) {
         const state = JSON.parse(saved);
-        if (typeof state.verb === "string" && verbs.includes(state.verb)) setVerb(state.verb);
-        if (Array.isArray(state.completedVerbs)) setCompletedVerbs(state.completedVerbs.filter((v: unknown) => typeof v === "string" && verbs.includes(v)));
-        if (state.matchesByVerb && typeof state.matchesByVerb === "object") setMatchesByVerb(state.matchesByVerb);
-        if (state.resultsByVerb && typeof state.resultsByVerb === "object") setResultsByVerb(state.resultsByVerb);
-        if (state.orderByVerb && typeof state.orderByVerb === "object") setOrderByVerb(state.orderByVerb);
-        if (typeof state.showSummary === "boolean") setShowSummary(state.showSummary);
+        if (typeof state.verb === "string" && verbs.includes(state.verb))
+          setVerb(state.verb);
+        if (Array.isArray(state.completedVerbs))
+          setCompletedVerbs(
+            state.completedVerbs.filter(
+              (v: unknown) => typeof v === "string" && verbs.includes(v)
+            )
+          );
+        if (state.matchesByVerb && typeof state.matchesByVerb === "object")
+          setMatchesByVerb(state.matchesByVerb);
+        if (state.resultsByVerb && typeof state.resultsByVerb === "object")
+          setResultsByVerb(state.resultsByVerb);
+        if (state.orderByVerb && typeof state.orderByVerb === "object")
+          setOrderByVerb(state.orderByVerb);
+        if (typeof state.showSummary === "boolean")
+          setShowSummary(state.showSummary);
       }
-    } catch { localStorage.removeItem(learningStorageKey); }
+    } catch {
+      localStorage.removeItem(learningStorageKey);
+    }
     setRestored(true);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!restored) return;
-    localStorage.setItem(learningStorageKey, JSON.stringify({ verb, completedVerbs, matchesByVerb, resultsByVerb, orderByVerb, showSummary }));
-  }, [restored, verb, completedVerbs, matchesByVerb, resultsByVerb, orderByVerb, showSummary]);
+    localStorage.setItem(
+      learningStorageKey,
+      JSON.stringify({
+        verb,
+        completedVerbs,
+        matchesByVerb,
+        resultsByVerb,
+        orderByVerb,
+        showSummary,
+      })
+    );
+  }, [
+    restored,
+    verb,
+    completedVerbs,
+    matchesByVerb,
+    resultsByVerb,
+    orderByVerb,
+    showSummary,
+  ]);
   useEffect(() => {
-    if (!orderByVerb[verb]) setOrderByVerb(previous => ({ ...previous, [verb]: forms.map((_, i) => i).sort(() => Math.random() - .5) }));
+    if (!orderByVerb[verb])
+      setOrderByVerb((previous) => ({
+        ...previous,
+        [verb]: forms.map((_, i) => i).sort(() => Math.random() - 0.5),
+      }));
     setSelectedToken(null);
   }, [verb, orderByVerb, forms.length]);
   function assign(row: number) {
     if (selectedToken === null) return;
     const token = selectedToken;
-    setMatchesByVerb(previous => { const next = { ...(previous[verb] || {}) }; for (const [key, value] of Object.entries(next)) if (value === token) delete next[Number(key)]; next[row] = token; return { ...previous, [verb]: next }; });
+    setMatchesByVerb((previous) => {
+      const next = { ...(previous[verb] || {}) };
+      for (const [key, value] of Object.entries(next))
+        if (value === token) delete next[Number(key)];
+      next[row] = token;
+      return { ...previous, [verb]: next };
+    });
     setSelectedToken(null);
   }
   async function checkMatches() {
     if (Object.keys(matches).length !== sessionItems.length) return;
-    setResultsByVerb(previous => ({ ...previous, [verb]: sessionItems.map((item, i) => ({ item, input: forms[matches[i]], correct: forms[matches[i]] === item.answer })) }));
-    setCompletedVerbs(previous => previous.includes(verb) ? previous : [...previous, verb]);
+    setResultsByVerb((previous) => ({
+      ...previous,
+      [verb]: sessionItems.map((item, i) => ({
+        item,
+        input: forms[matches[i]],
+        correct: forms[matches[i]] === item.answer,
+      })),
+    }));
+    setCompletedVerbs((previous) =>
+      previous.includes(verb) ? previous : [...previous, verb]
+    );
   }
   const selectedIndex = verbs.indexOf(verb);
   const nextVerb = verbs[selectedIndex + 1];
   const renderForm = (form: string, item: Item) => {
     if (verb === "sein") {
       const person = item.title.split(" + ")[0];
-      if (["ich", "du", "er / sie / es"].includes(person)) return <strong lang="de" className="ending-result">{form}</strong>;
-      if (form === "sind") return <strong lang="de">s<span className="ending-result">in</span>d</strong>;
+      if (["ich", "du", "er / sie / es"].includes(person))
+        return (
+          <strong lang="de" className="ending-result">
+            {form}
+          </strong>
+        );
+      if (form === "sind")
+        return (
+          <strong lang="de">
+            s<span className="ending-result">in</span>d
+          </strong>
+        );
       return <strong lang="de">{form}</strong>;
     }
-    if (verb === "heißen" && item.title.startsWith("du +")) return <strong lang="de">hei<span className="ending-result">ßt</span></strong>;
+    if (verb === "heißen" && item.title.startsWith("du +"))
+      return (
+        <strong lang="de">
+          hei<span className="ending-result">ßt</span>
+        </strong>
+      );
     const stemLength = verb.slice(0, -2).length;
-    return <strong lang="de">{form.slice(0, stemLength)}<span className="ending-result">{form.slice(stemLength)}</span></strong>;
+    return (
+      <strong lang="de">
+        {form.slice(0, stemLength)}
+        <span className="ending-result">{form.slice(stemLength)}</span>
+      </strong>
+    );
   };
-  const renderSummaryForm = (form: string, verbName: string, person: string) => {
+  const renderSummaryForm = (
+    form: string,
+    verbName: string,
+    person: string
+  ) => {
     if (verbName === "sein") {
-      if (["ich", "du", "er / sie / es"].includes(person)) return <strong className="ending-result">{form}</strong>;
-      if (form === "sind") return <strong>s<span className="ending-result">in</span>d</strong>;
+      if (["ich", "du", "er / sie / es"].includes(person))
+        return <strong className="ending-result">{form}</strong>;
+      if (form === "sind")
+        return (
+          <strong>
+            s<span className="ending-result">in</span>d
+          </strong>
+        );
       return <strong>{form}</strong>;
     }
-    if (verbName === "heißen" && person === "du") return <strong>hei<span className="ending-result">ßt</span></strong>;
+    if (verbName === "heißen" && person === "du")
+      return (
+        <strong>
+          hei<span className="ending-result">ßt</span>
+        </strong>
+      );
     const stemLength = verbName.slice(0, -2).length;
-    return <strong>{form.slice(0, stemLength)}<span className="ending-result">{form.slice(stemLength)}</span></strong>;
+    return (
+      <strong>
+        {form.slice(0, stemLength)}
+        <span className="ending-result">{form.slice(stemLength)}</span>
+      </strong>
+    );
   };
-  const summaryTable = <section className="verb-summary"><h2>สรุปการผันกริยาที่เรียน</h2><div className="verb-summary-scroll" role="region" aria-label="ตารางสรุปการผันกริยาทั้งหมด" tabIndex={0}><table><thead><tr><th scope="col">ประธาน</th>{verbs.map(v=><th scope="col" lang="de" key={v}>{v}</th>)}</tr></thead><tbody>{["ich","du","er / sie / es","wir","ihr","sie / Sie"].map(person=><tr key={person}><th scope="row" lang="de">{person}</th>{verbs.map(v=>{const group=v==="sein"?"sein":`Verbkonjugation · ${v}`;const item=items.find(entry=>entry.group===group&&entry.title.startsWith(`${person} +`));return <td lang="de" key={v}>{item?renderSummaryForm(item.answer,v,person):"—"}</td>;})}</tr>)}</tbody></table></div></section>;
-  return <>
-    <Link href="/lesson/L01" className="back-link">← กลับบทเรียน</Link>
-    <div className="page-heading"><div><span className="eyebrow">L01 · VERBKONJUGATION</span><h1>จับคู่คำกริยา</h1><p>เรียนทีละคำ จับคู่ประธานกับรูปกริยาเพื่อดูเนื้อหาของบทนี้</p></div></div>
-    <section className="panel conjugation-panel">
-      <div className="verb-sequence" aria-label="ลำดับคำกริยา">{verbs.map((v,i)=><button key={v} disabled={i>selectedIndex&&!completedVerbs.includes(verbs[i-1])} className={!showSummary&&v===verb?"selected":""} onClick={()=>{setVerb(v);setShowSummary(false);}}>{v}</button>)}<button disabled={!verbs.every(v=>completedVerbs.includes(v))} className={showSummary?"selected":""} onClick={()=>setShowSummary(true)}>สรุป</button></div>
-      {showSummary?<>{summaryTable}<div className="result-actions"><Link className="button primary" href="/lesson/L01">กลับหน้าบทเรียน</Link><Link className="button secondary" href="/practice/L01/grammar">ไปฝึกผันกริยา</Link></div></>:results ? <><section className="matching-feedback"><h2>ผลการจับคู่ · {results.filter(r=>r.correct).length}/{results.length} คู่ถูก</h2>{results.map(r=><div className="matching-result" key={r.item.id}><span lang="de">{r.item.title.split(" + ")[0]}</span><span>{r.correct?renderForm(r.input,r.item):<><del lang="de">{r.input}</del> → {renderForm(r.item.answer,r.item)}</>}</span></div>)}</section>{nextVerb?<button className="button primary wide" onClick={()=>setVerb(nextVerb)}>เรียนคำถัดไป · {nextVerb}<ArrowRight size={17}/></button>:<button className="button primary wide" onClick={()=>setShowSummary(true)}>ดูตารางสรุป<ArrowRight size={17}/></button>}</> : <>
-      <div className="matching-board" aria-label={`จับคู่รูปผัน ${verb}`}>
-        <div className="matching-column"><h2>ประธาน</h2>{sessionItems.map((item,i)=><button key={item.id} className={`matching-subject ${selectedToken!==null?"target-ready":""}`} onClick={()=>assign(i)}><span lang="de">{item.title.split(" + ")[0]}</span><span className={`matching-drop ${matches[i]!==undefined?"filled":""}`} onClick={e=>{if(matches[i]!==undefined){e.stopPropagation();setMatchesByVerb(previous=>{const next={...(previous[verb]||{})};delete next[i];return {...previous,[verb]:next};});}}}>{matches[i]!==undefined?<span lang="de">{forms[matches[i]]}</span>:"เลือกคำตอบ"}</span></button>)}</div>
-        <div className="matching-column"><h2>รูปกริยา · แตะเลือกก่อน</h2><div className="matching-bank">{formOrder.filter(token=>!Object.values(matches).includes(token)).map(token=><button className={`matching-token ${selectedToken===token?"selected":""}`} key={token} onClick={()=>setSelectedToken(token)} lang="de">{forms[token]}</button>)}</div><p className="conjugation-hint">แตะกล่องรูปกริยาทางขวา แล้วแตะช่อง “เลือกคำตอบ” ของประธานทางซ้าย</p></div>
+  const summaryTable = (
+    <section className="verb-summary">
+      <h2>สรุปการผันกริยาที่เรียน</h2>
+      <div
+        className="verb-summary-scroll"
+        role="region"
+        aria-label="ตารางสรุปการผันกริยาทั้งหมด"
+        tabIndex={0}
+      >
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">ประธาน</th>
+              {verbs.map((v) => (
+                <th scope="col" lang="de" key={v}>
+                  {v}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {["ich", "du", "er / sie / es", "wir", "ihr", "sie / Sie"].map(
+              (person) => (
+                <tr key={person}>
+                  <th scope="row" lang="de">
+                    {person}
+                  </th>
+                  {verbs.map((v) => {
+                    const group =
+                      v === "sein" ? "sein" : `Verbkonjugation · ${v}`;
+                    const item = items.find(
+                      (entry) =>
+                        entry.group === group &&
+                        entry.title.startsWith(`${person} +`)
+                    );
+                    return (
+                      <td lang="de" key={v}>
+                        {item ? renderSummaryForm(item.answer, v, person) : "—"}
+                      </td>
+                    );
+                  })}
+                </tr>
+              )
+            )}
+          </tbody>
+        </table>
       </div>
-      <button className="button primary wide" disabled={!learned||Object.keys(matches).length!==sessionItems.length} onClick={checkMatches}>ตรวจการจับคู่<ArrowRight size={17}/></button>
-      {!learned&&<p className="conjugation-hint">กำลังบันทึกเนื้อหาที่เห็น</p>}
-      </>}
     </section>
-  </>;
+  );
+  return (
+    <>
+      <Link href="/lesson/L01" className="back-link">
+        ← กลับบทเรียน
+      </Link>
+      <div className="page-heading">
+        <div>
+          <span className="eyebrow">L01 · VERBKONJUGATION</span>
+          <h1>จับคู่คำกริยา</h1>
+          <p>เรียนทีละคำ จับคู่ประธานกับรูปกริยาเพื่อดูเนื้อหาของบทนี้</p>
+        </div>
+      </div>
+      <section className="panel conjugation-panel">
+        <div className="verb-sequence" aria-label="ลำดับคำกริยา">
+          {verbs.map((v, i) => (
+            <button
+              key={v}
+              disabled={
+                i > selectedIndex && !completedVerbs.includes(verbs[i - 1])
+              }
+              className={!showSummary && v === verb ? "selected" : ""}
+              onClick={() => {
+                setVerb(v);
+                setShowSummary(false);
+              }}
+            >
+              {v}
+            </button>
+          ))}
+          <button
+            disabled={!verbs.every((v) => completedVerbs.includes(v))}
+            className={showSummary ? "selected" : ""}
+            onClick={() => setShowSummary(true)}
+          >
+            สรุป
+          </button>
+        </div>
+        {showSummary ? (
+          <>
+            {summaryTable}
+            <div className="result-actions">
+              <Link className="button primary" href="/lesson/L01">
+                กลับหน้าบทเรียน
+              </Link>
+              <Link className="button secondary" href="/practice/L01/grammar">
+                ไปฝึกผันกริยา
+              </Link>
+            </div>
+          </>
+        ) : results ? (
+          <>
+            <section className="matching-feedback">
+              <h2>
+                ผลการจับคู่ · {results.filter((r) => r.correct).length}/
+                {results.length} คู่ถูก
+              </h2>
+              {results.map((r) => (
+                <div className="matching-result" key={r.item.id}>
+                  <span lang="de">{r.item.title.split(" + ")[0]}</span>
+                  <span>
+                    {r.correct ? (
+                      renderForm(r.input, r.item)
+                    ) : (
+                      <>
+                        <del lang="de">{r.input}</del> →{" "}
+                        {renderForm(r.item.answer, r.item)}
+                      </>
+                    )}
+                  </span>
+                </div>
+              ))}
+            </section>
+            {nextVerb ? (
+              <button
+                className="button primary wide"
+                onClick={() => setVerb(nextVerb)}
+              >
+                เรียนคำถัดไป · {nextVerb}
+                <ArrowRight size={17} />
+              </button>
+            ) : (
+              <button
+                className="button primary wide"
+                onClick={() => setShowSummary(true)}
+              >
+                ดูตารางสรุป
+                <ArrowRight size={17} />
+              </button>
+            )}
+          </>
+        ) : (
+          <>
+            <div className="matching-board" aria-label={`จับคู่รูปผัน ${verb}`}>
+              <div className="matching-column">
+                <h2>ประธาน</h2>
+                {sessionItems.map((item, i) => (
+                  <button
+                    key={item.id}
+                    className={`matching-subject ${
+                      selectedToken !== null ? "target-ready" : ""
+                    }`}
+                    onClick={() => assign(i)}
+                  >
+                    <span lang="de">{item.title.split(" + ")[0]}</span>
+                    <span
+                      className={`matching-drop ${
+                        matches[i] !== undefined ? "filled" : ""
+                      }`}
+                      onClick={(e) => {
+                        if (matches[i] !== undefined) {
+                          e.stopPropagation();
+                          setMatchesByVerb((previous) => {
+                            const next = { ...(previous[verb] || {}) };
+                            delete next[i];
+                            return { ...previous, [verb]: next };
+                          });
+                        }
+                      }}
+                    >
+                      {matches[i] !== undefined ? (
+                        <span lang="de">{forms[matches[i]]}</span>
+                      ) : (
+                        "เลือกคำตอบ"
+                      )}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <div className="matching-column">
+                <h2>รูปกริยา · แตะเลือกก่อน</h2>
+                <div className="matching-bank">
+                  {formOrder
+                    .filter((token) => !Object.values(matches).includes(token))
+                    .map((token) => (
+                      <button
+                        className={`matching-token ${
+                          selectedToken === token ? "selected" : ""
+                        }`}
+                        key={token}
+                        onClick={() => setSelectedToken(token)}
+                        lang="de"
+                      >
+                        {forms[token]}
+                      </button>
+                    ))}
+                </div>
+                <p className="conjugation-hint">
+                  แตะกล่องรูปกริยาทางขวา แล้วแตะช่อง “เลือกคำตอบ”
+                  ของประธานทางซ้าย
+                </p>
+              </div>
+            </div>
+            <button
+              className="button primary wide"
+              disabled={
+                !learned || Object.keys(matches).length !== sessionItems.length
+              }
+              onClick={checkMatches}
+            >
+              ตรวจการจับคู่
+              <ArrowRight size={17} />
+            </button>
+            {!learned && (
+              <p className="conjugation-hint">กำลังบันทึกเนื้อหาที่เห็น</p>
+            )}
+          </>
+        )}
+      </section>
+    </>
+  );
 }
 
 export function LearnActivity({
@@ -355,7 +691,7 @@ export function LearnActivity({
 }) {
   const h = useLearning();
   const pool = items.filter(
-    (i) => i.lessonId === lessonId && i.skill === skill,
+    (i) => i.lessonId === lessonId && i.skill === skill
   );
   const [position, setPosition] = useState(0);
   const [error, setError] = useState("");
@@ -476,14 +812,14 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
   const [skill, setSkill] = useState(params.get("skill") || "all");
   const [state, setState] = useState(params.get("status") || "all");
   const [collection, setCollection] = useState(
-    params.get("collection") || "all",
+    params.get("collection") || "all"
   );
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState<Item | null>(null);
   const [page, setPage] = useState(0);
   const learned = useMemo(
     () => new Set(history.exposures.map((exposure) => exposure.item_id)),
-    [history.exposures],
+    [history.exposures]
   );
   const attempts = useMemo(() => {
     const result = new Map<string, { right: number; wrong: number }>();
@@ -491,11 +827,11 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
       completedAttempts(history.attempts).map((attempt) => [
         `${attempt.session_id}:${attempt.ordinal}`,
         attempt,
-      ]),
+      ])
     );
     for (const sessionItem of history.sessionItems) {
       const attempt = byAttempt.get(
-        `${sessionItem.session_id}:${sessionItem.ordinal}`,
+        `${sessionItem.session_id}:${sessionItem.ordinal}`
       );
       if (!attempt) continue;
       const counts = result.get(sessionItem.item_id) || { right: 0, wrong: 0 };
@@ -508,14 +844,14 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
   const errors = useMemo(() => {
     const completedKeys = new Set(
       completedAttempts(history.attempts).map(
-        (attempt) => `${attempt.session_id}:${attempt.ordinal}`,
-      ),
+        (attempt) => `${attempt.session_id}:${attempt.ordinal}`
+      )
     );
     const byAttempt = new Map(
       history.sessionItems.map((sessionItem) => [
         `${sessionItem.session_id}:${sessionItem.ordinal}`,
         sessionItem.item_id,
-      ]),
+      ])
     );
     const result = new Map<string, Map<string, number>>();
     for (const evidence of history.evidence) {
@@ -525,13 +861,13 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
       )
         continue;
       const itemId = byAttempt.get(
-        `${evidence.session_id}:${evidence.ordinal}`,
+        `${evidence.session_id}:${evidence.ordinal}`
       );
       if (!itemId) continue;
       const dimensions = result.get(itemId) || new Map<string, number>();
       dimensions.set(
         evidence.dimension,
-        (dimensions.get(evidence.dimension) || 0) + 1,
+        (dimensions.get(evidence.dimension) || 0) + 1
       );
       result.set(itemId, dimensions);
     }
@@ -603,7 +939,9 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
           const Icon = skillIcons[entry.id];
           return (
             <button
-              className={`skill-summary ${skill === entry.id ? "selected" : ""}`}
+              className={`skill-summary ${
+                skill === entry.id ? "selected" : ""
+              }`}
               key={entry.id}
               onClick={() =>
                 change(() => {
@@ -788,7 +1126,11 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
                             ? [...dimensions]
                                 .map(
                                   ([dimension, total]) =>
-                                    `${dimensionLabels[dimension as keyof typeof dimensionLabels]} ${total}`,
+                                    `${
+                                      dimensionLabels[
+                                        dimension as keyof typeof dimensionLabels
+                                      ]
+                                    } ${total}`
                                 )
                                 .join(" · ")
                             : "—"}
@@ -889,8 +1231,8 @@ function ProgressItemDetail({
         (sessionItem) =>
           sessionItem.item_id === item.id &&
           sessionItem.session_id === attempt.session_id &&
-          sessionItem.ordinal === attempt.ordinal,
-      ),
+          sessionItem.ordinal === attempt.ordinal
+      )
     )
     .sort((a, b) => b.submitted_at.localeCompare(a.submitted_at));
   return (
@@ -959,7 +1301,11 @@ function ProgressItemDetail({
               <dd>
                 {attempt.correct ? "ถูก" : "ผิด"}
                 {attempt.confidence
-                  ? ` · ${{ easy: "ง่าย", thought: "ต้องคิด", guess: "เดา" }[attempt.confidence]}`
+                  ? ` · ${
+                      { easy: "ง่าย", thought: "ต้องคิด", guess: "เดา" }[
+                        attempt.confidence
+                      ]
+                    }`
                   : ""}
               </dd>
             </div>
