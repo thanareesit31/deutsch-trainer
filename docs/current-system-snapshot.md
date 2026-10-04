@@ -52,16 +52,15 @@ Navigation หลักมี 5 เมนู: หน้าแรก, บทเ�
 - หน้า `/learn` เลือกระดับและบท; หน้า `/lesson/:id` เลือกทักษะ
 - Learn activity แสดงรายการในบท/ทักษะตามลำดับจาก content catalog
 - ทักษะทั่วไป: เมื่อการ์ดปัจจุบัน mount และเอกสาร visible ระบบเรียก `learning_action('expose')`; กลับมาหน้าเดิม/รายการเดิมไม่สร้าง exposure ซ้ำเพราะ unique key ต่อ user/item
-- `/learn/L01/vocabulary` ใช้ชุดละ 4 คำ: INTRODUCE → RECOGNIZE → GUIDED RECALL → RECALL → CONTEXT; คำชุดแรกจัดเป็น Deutschland, Österreich, Thailand, kommen
-- Prototype เก็บ `introduced`, `learningCompleted`, performance ภายใน session และ event log ใน localStorage ผ่าน `src/lib/vocabulary-learning-storage.ts`; legacy ItemExposure ไม่อ่านเป็น learningCompleted
-- Error ในกิจกรรม Learn แสดงคำตอบและมีทางไปต่อ; คำที่ต้องการแรงช่วยซ้ำจะถูกแทรกใหม่ในกิจกรรมที่ตามมา มี summary ชุดโดยไม่สรุป mastery; dev build มี Debug panel/reset
-- Lektion 1 prototype ยังไม่เชื่อม `learningCompleted` กับ Practice gating; Practice และหน้าทักษะอื่นใช้ flow/eligibility เดิม
+- `/learn/L01/vocabulary` แสดงทางเข้า Das Alphabet และ WORTSCHATZ สำหรับจับคู่คำกับภาพ; ชุดกิจกรรม INTRODUCE/recall เดิมถูกถอดออกจาก Learn
+- สถานะ WORTSCHATZ อ่านจาก `src/lib/vocabulary-image-learning-storage.ts`; ระบบไม่อ่านหรือเขียน localStorage ของ vocabulary-learning prototype ที่ถอดออกแล้ว; key เก่าถ้ายังมีอยู่จะไม่ถูกใช้งาน และไม่กระทบสถานะจับคู่ภาพหรือ Alphabet
+- Practice และหน้าทักษะอื่นยังใช้ flow/eligibility เดิม
 - ปุ่ม “รายการถัดไป” ปลดล็อกหลังบันทึก exposure สำเร็จ; ผู้ใช้ย้อนดูรายการก่อนหน้าได้
 - Vocabulary Learn แบบเดิมสำหรับ Lektion/route อื่นยังใช้การ์ดจาก catalog; Vocabulary prototype ของ L01 เลือกการแสดง Artikel, Plural, example, chunk ตาม metadata ของคำ
 - L01 Wortschatz มี entry tile “Das Alphabet” ซึ่งเปิด route `/learn/L01/vocabulary/alphabet`; ใช้ภาพตัวอย่าง ABCD และวาง badge หลังชื่อบท: “เรียนแล้ว” เมื่อครบ 30 ตัว, “เรียนซ้ำ” ระหว่าง replay; configuration ใน `src/data/alphabet.json` เก็บ stable IDs, symbol, order, pronunciation text/audio reference, item IDs ต่อกลุ่ม และ activity type
 - Activity components ใน `src/components/alphabet-activities.tsx` รับ items ผ่าน props; ใช้ Listen and Choose / Find Sound สลับกัน ไม่มีหน้าจบกลุ่ม และไม่เฉลยเมื่อเลือกผิด
 - Alphabet learned IDs, resume index และตำแหน่ง replay เก็บแยกกันใน localStorage ผ่าน `src/lib/alphabet-learning-storage.ts`; ย้อนกลับไป replay ไม่ลด resume index และ state นี้ไม่ใช่ mastery หรือ Progress score
-- หลัง learned ครบ 30 ตัว route เปิด Alphabet Board ให้กดเล่นเสียงแต่ละตัวได้และกด “เรียนใหม่” ที่อยู่แถวเดียวกับ “กลับ Wortschatz” เพื่อ replay ตั้งแต่ A โดยไม่ลบ learned/resume state; ปุ่มย้อนกลับเปิดกิจกรรมตัวที่เพิ่งเรียนเพื่อ replay โดยไม่ลด resume index; replay position คงอยู่หลังออกจากหน้าแล้วกลับมา และปุ่มกลับ Board อยู่แถวเดียวกับปุ่มนำทางกิจกรรม; อีกปุ่มไป Practice Vocabulary การเข้าซ้ำโดยไม่ replay ยังเปิด completed view
+- หลัง learned ครบ 30 ตัว route เปิด Alphabet Board ให้กดเล่นเสียงแต่ละตัวได้และกด “เรียนซ้ำ” ที่อยู่แถวเดียวกับ “กลับ Wortschatz” เพื่อ replay ตั้งแต่ A โดยไม่ลบ learned/resume state; ปุ่มย้อนกลับเปิดกิจกรรมตัวที่เพิ่งเรียนเพื่อ replay โดยไม่ลด resume index; replay position คงอยู่หลังออกจากหน้าแล้วกลับมา; Board มีปุ่ม “เรียนคำศัพท์ต่อ” ไปหน้า Begrüßung และ “แบบฝึกหัด” ไป Practice Vocabulary
 - ไม่พบ audio assets สำหรับ A–Z, Ä, Ö, Ü, ß ใน repository; `audio` เป็น `null`, ระบบใช้ shared browser German voice synthesis จาก `src/components/german-audio.ts` และแสดงข้อความแจ้งแหล่งเสียง
 
 ### 3. Practice
@@ -185,7 +184,7 @@ Diagnosis ผูกกับกลุ่ม content/mode แบบ hard-coded �
 | `src/app/layout.tsx` | metadata และ `StoreProvider` + `LearningProvider` |
 | `src/components/trainer.tsx` | auth gate, nav/sidebar, route dispatch, lesson list/detail, สร้าง session |
 | `src/components/learning-pages.tsx` | Home, PracticeEntry, ReviewPage, LearnActivity, HistoryProgress, progress detail |
-| `src/components/vocabulary-learning.tsx` | L01 Wortschatz set UI, phase interactions, summary, developer Debug panel |
+| `src/components/vocabulary-learning.tsx` | L01 Wortschatz entry points for Alphabet and image matching |
 | `src/components/alphabet-learning.tsx` | Das Alphabet configuration-to-activity routing, item navigation, resume, completion board |
 | `src/components/alphabet-activities.tsx` | Reusable ListenAndChoose, FindSound activities |
 | `src/components/alphabet-audio.ts` | Alphabet audio-file playback and German speech fallback |
@@ -193,8 +192,6 @@ Diagnosis ผูกกับกลุ่ม content/mode แบบ hard-coded �
 | `src/components/practice.tsx` | PracticeSetup, session screen, input widgets, feedback, confidence, listening, summary |
 | `src/components/learning-store.tsx` | load history, context, `learning_action` RPC, reload/error/busy |
 | `src/lib/learning.ts` | types, dimension diagnosis, confidence types, review candidate logic |
-| `src/lib/vocabulary-learning.ts` | set builder, activity schedule, feedback/adaptive repeats, vocabulary events/state |
-| `src/lib/vocabulary-learning-storage.ts` | localStorage persistence/reset สำหรับ L01 vocabulary prototype |
 | `src/lib/alphabet-learning.ts` | Alphabet content/set types, resolver, shuffle and config validation |
 | `src/lib/alphabet-learning-storage.ts` | Alphabet learned IDs และ resume index ใน localStorage |
 | `src/components/store.tsx` | Supabase Auth และ legacy store hydration/persistence/import/reset |

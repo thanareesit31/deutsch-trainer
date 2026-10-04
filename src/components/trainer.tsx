@@ -44,8 +44,10 @@ import { Badge, Empty, Meter, SectionTitle, skillIcons } from "./ui";
 import { PracticeSetup, Session } from "./practice";
 import { SettingsPage } from "./progress";
 import { AuthScreen } from "./auth-screen";
-import { VocabularyLearningActivity } from "./vocabulary-learning";
+import { VocabularyLearningEntryPoints } from "./vocabulary-learning";
 import { AlphabetLearningPage } from "./alphabet-learning";
+import { VocabularyImageMatching } from "./vocabulary-image-matching";
+import { vocabularyImageGroups } from "@/lib/vocabulary-image-content";
 
 export type StartSession = (
   pool: Item[],
@@ -199,13 +201,20 @@ function App() {
   else if (path === "/review") page = <ReviewPage start={start} />;
   else if (path === "/learn/L01/vocabulary/alphabet")
     page = <AlphabetLearningPage />;
+  else if (vocabularyImageGroups.some((group) => group.route === path))
+    page = (
+      <VocabularyImageMatching
+        key={path}
+        items={items}
+        groupId={vocabularyImageGroups.find((group) => group.route === path)!.id}
+      />
+    );
   else if (parts[0] === "learn" && parts[1] && parts[2])
     page =
       parts[1] === "L01" && parts[2] === "vocabulary" ? (
-        <VocabularyLearningActivity
+        <VocabularyLearningEntryPoints
           key={path}
           lessonId={parts[1]}
-          items={items}
         />
       ) : (
         <LearnActivity

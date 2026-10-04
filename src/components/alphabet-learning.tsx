@@ -64,7 +64,7 @@ export function AlphabetLearningPage() {
       <main className="alphabet-learning-page">
         <div className="alphabet-board-top-navigation">
           <Link className="back-link" href="/learn/L01/vocabulary">← กลับ Wortschatz</Link>
-          <button className="button secondary" onClick={startReplayFromBeginning}>เรียนใหม่</button>
+          <button className="button secondary" onClick={startReplayFromBeginning}>เรียนซ้ำ</button>
         </div>
         <header className="alphabet-learning-heading">
           <span className="eyebrow">LEKTION 1 · WORTSCHATZ</span>
@@ -85,8 +85,11 @@ export function AlphabetLearningPage() {
               }));
             }}
           >← ย้อนกลับ</button>
+          <Link className="button secondary" href="/learn/L01/vocabulary/core-images">
+            เรียนคำศัพท์ต่อ
+          </Link>
           <Link className="button primary" href="/practice/L01/vocabulary">
-            ไปฝึกทักษะต่อ
+            แบบฝึกหัด
           </Link>
         </div>
       </main>

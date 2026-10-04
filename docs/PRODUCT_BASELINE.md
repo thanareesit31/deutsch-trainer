@@ -22,27 +22,29 @@
 ## Learn และ Learned Content Boundary
 
 - การมี content อยู่ใน catalog ไม่ได้แปลว่าผู้เรียนเคยเรียนแล้ว
-- Vocabulary Learning ของ Lektion 1 ใช้ learning state แยกจาก Practice: `introduced` เกิดเมื่อคำแสดงในช่วงแนะนำ; `learningCompleted` เกิดเมื่อทำ INTRODUCE, RECOGNIZE, GUIDED RECALL, RECALL และ CONTEXT ของชุดครบ
-- `introduced=true` ไม่ทำให้ vocabulary เข้า Practice; eligibility ที่เตรียมไว้คือ `learningCompleted=true` เท่านั้น Legacy `ItemExposure` ไม่ใช้แทนสถานะนี้
-- Vocabulary Learning เก็บ learning events แยกจาก mastery, Practice score และ Review score; คำตอบผิดใน Learn ไม่ใช่การสอบตกและไม่ใช่หลักฐานว่าไม่รู้คำ
+- หน้า Learn → Wortschatz ของ Lektion 1 มีทางเข้า Das Alphabet และ WORTSCHATZ (จับคู่คำกับภาพ); ไม่แสดงชุดกิจกรรมที่ให้ผู้เรียนนึกหรือพิมพ์คำจากความหมาย
+- กิจกรรมนึกคำจากคำใบ้/ความหมายและเติมคำตามบริบทอยู่ใน Practice; สถานะของการ์ด WORTSCHATZ มาจากข้อมูลการจับคู่ภาพเท่านั้น
 - Vocabulary nouns เรียนรูป Artikel + Nomen พร้อม plural เมื่อมีข้อมูล; ประเภทคำอื่นแสดง metadata ตามความเหมาะสม
-- Prototype ปัจจุบันบันทึก vocabulary learning state ใน localStorage; การเชื่อม eligibility นี้กับ Practice ยังอยู่นอก scope ของการ implement รอบ prototype
 - Lektion 1 → Wortschatz → Das Alphabet สอน 30 ตัวอักษรใน 6 กลุ่มจาก content configuration โดยสลับ Listen and Choose กับ Find Sound; กลุ่มเป็น implementation detail ไม่มีหน้าจบคั่น และไม่มีคะแนนหรือ mastery data
 - Alphabet item จะเป็น Learned หลังผู้เรียนเลือกคำตอบถูก; learned IDs แยกจาก resume position ซึ่งระบุตัวถัดไปที่ควรเรียน และการ revisit ไม่ลด resume position
 - Alphabet learning state prototype อยู่ใน localStorage แยกจาก Progress mastery; หลังครบ 30 ตัวให้เปิด Alphabet Board ที่กดเล่นเสียงแต่ละตัวได้
-- Alphabet Board มีทางย้อนกลับไปตัวอักษรที่เพิ่งเรียนจบเพื่อดู/ฟังซ้ำ โดยไม่แก้ learned state หรือ resume position และมีทางไปฝึกทักษะ Vocabulary ของบทเดียวกัน
-- Alphabet Board ให้เริ่มเรียนซ้ำตั้งแต่ A ได้โดยสมัครใจ; การเรียนซ้ำเป็นรอบเพิ่มและต้องคง learned IDs กับ resume position เดิมไว้
+- Alphabet Board มีทางย้อนกลับไปตัวอักษรที่เพิ่งเรียนจบเพื่อดู/ฟังซ้ำ โดยไม่แก้ learned state หรือ resume position และมีปุ่ม “เรียนคำศัพท์ต่อ” ไปหน้า Begrüßung ซึ่งเป็นหน้าแรกของการจับคู่ภาพ และ “แบบฝึกหัด” ไปหน้า Practice คำศัพท์ของบทเดียวกัน
+- Alphabet Board ให้เริ่มเรียนซ้ำตั้งแต่ A ได้โดยสมัครใจผ่านปุ่ม “เรียนซ้ำ”; การเรียนซ้ำเป็นรอบเพิ่มและต้องคง learned IDs กับ resume position เดิมไว้
 - การ์ด Das Alphabet แสดงป้าย “เรียนแล้ว” เมื่อครบทุกตัว และเปลี่ยนเป็น “เรียนซ้ำ” ระหว่าง replay โดยไม่เปลี่ยน learned state
 - ตำแหน่งตัวอักษรระหว่าง replay ที่เริ่มจาก Board คงอยู่เมื่อออกจากหน้าแล้วกลับมา โดยแยกจาก resume position สำหรับเนื้อหาที่ยังไม่เคยเรียน
+- Lektion 1 → Wortschatz มีหัวข้อย่อย “คำศัพท์หลัก” เป็นบทจับคู่คำกับภาพ 5 หมวด รวม 30 รายการ เรียงหน้าตามนี้: “คำทักทาย” 4 คำ (ขึ้นต้น Hallo แล้วตามด้วย Guten Morgen, Guten Tag, Guten Abend), “คำบอกลา” 3 คำ, “ชื่อ-สกุล” 3 คำ (der Name, der Vorname, der Familienname), “ประเทศ” 15 คำ (Frankreich, Australien, Thailand, Japan, China, Österreich, die Türkei, Spanien, die USA, Deutschland, Italien, die Schweiz, Laos, Eritrea, Argentinien) และ “ความรู้สึก” 5 คำ (gut, sehr gut, super, es geht, nicht so gut); แต่ละหมวดอยู่คนละหน้าและปลดล็อกหน้าถัดไปหลังจับคู่หมวดปัจจุบันครบ; หมวดประเทศใช้ธงเป็นภาพจับคู่ ส่วนหมวดอื่นใช้ภาพประกอบ; เมื่อจับคู่หมวดครบแสดงปุ่ม “เรียนซ้ำ” เพื่อเริ่มจับคู่หมวดนั้นอีกครั้ง โดยไม่เปลี่ยนสถานะที่เรียนแล้ว; ในหน้าคำทักทาย Guten Morgen แสดงอาทิตย์ขึ้น, Guten Tag มีอาทิตย์สูงกลางฟ้า, Guten Abend มีอาทิตย์ใกล้ตก และภาพสลับตำแหน่ง; ไม่แสดงข้อความแจ้งว่าจับคู่ครบ; มีปุ่ม “ย้อนกลับ” และปุ่ม “ไปต่อ” ที่ไม่ระบุชื่อหมวดถัดไป; แสดงชื่อหมวดภาษาเยอรมันเหนือชื่อไทย; ผู้เรียนเลือกคำหรือภาพก่อนก็ได้โดยไม่มีข้อความแนะนำ; ตอบผิดแสดง “ลองใหม่” โดยไม่ให้คะแนน; ตอบถูกย้ายภาพและคำไปการ์ดคู่แนวตั้ง และแสดงคำแปลไทยกับคำอ่านในวงเล็บ โดยไม่ติดป้าย “เรียนแล้ว” บนภาพหรือคำ ไม่มีปุ่มเสียง
+- การ์ดทางเข้ากิจกรรมจับคู่ภาพแสดง eyebrow “BILDER”, ชื่อ “WORTSCHATZ” และคำอธิบาย “เรียนรู้คำศัพท์ประจำบท”
+- สถานะของกิจกรรมจับคู่ภาพเก็บใน localStorage แยกจากสถานะ Alphabet; การถอดชุดกิจกรรมนึกคำออกจากหน้า Learn ต้องไม่ลบหรือเปลี่ยนสถานะจับคู่ภาพ
 - ปุ่มย้อนกลับและไปต่อในกิจกรรม Alphabet อยู่ใต้เนื้อหากิจกรรมในตำแหน่งเดียวกัน
 - Alphabet symbols, canonical order, pronunciation reference และ set membership อยู่ใน content layer แยกจาก vocabulary items ที่นับใน Practice/Progress
+- หน้ากิจกรรม Vocabulary Learning ไม่แสดง Developer Debug panel หรือปุ่ม reset ข้อมูลแก่ผู้เรียน
 - การดู catalog, เข้า Practice, นำเข้าข้อมูลเก่า หรือมี content ในระบบ ไม่สร้าง Learned state
 - Vocabulary noun เรียนเป็น **Artikel + Nomen**
 
 ### Practice gating
 
 - สำหรับ flow ที่ใช้ ItemExposure, Learned item เข้า Practice หรือ Review ได้ทันที โดยไม่ต้องกลับไป Learn ซ้ำ
-- Vocabulary eligibility ที่กำหนดไว้คือ `learningCompleted=true`; introduced state หรือ legacy exposure เพียงอย่างเดียวไม่เพียงพอ
+- Vocabulary eligibility มาจากการเรียนเนื้อหาใน Learn; สำหรับ WORTSCHATZ ของ Lektion 1 การจับคู่คำกับภาพสำเร็จคือหลักฐานว่าเรียนคำนั้นแล้ว และคำนั้นพร้อมเข้า Practice
 - Not Seen item ห้ามถูกนำมาเป็นคำถามใน Practice หรือ Review; Practice ใน prototype รอบนี้ยังไม่เชื่อม vocabulary learning state ใหม่
 - การเลือก scope ที่ไม่มี Learned item ต้องแสดง Empty State พร้อมทางไปเรียน
 
