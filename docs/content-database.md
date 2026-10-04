@@ -36,3 +36,13 @@ RLS อนุญาต anon/authenticated อ่านเฉพาะ published 
 - `src/data/*.json` เป็นไฟล์ต้นฉบับเก่าสำหรับอ้างอิงเท่านั้น การแก้ไฟล์เหล่านี้ไม่มีผลกับเว็บแล้ว
 
 ค่าทั้ง DATABASE_URL และรหัสผ่านอยู่เฉพาะเครื่องที่รัน migration ไม่ส่งเข้า browser
+
+## Introduction ของ Verben Lektion 1
+
+รัน `20261005000000_l01_verb_introductions.sql` หลัง migration catalog (คำสั่ง `db:migrate-content` รันทั้งสองไฟล์ตามลำดับ) เพิ่ม `verbIntroductions` ใน `content_lessons.data` เฉพาะ L01: infinitive, thaiMeaning, meaningNote (optional), examples [{de, th}]. ไม่เพิ่ม content_items หรือเปลี่ยนประวัติผู้เรียน และรันซ้ำไม่เขียนทับ metadata ที่มีแล้ว
+
+Supabase เป็นแหล่งเนื้อหา Introduction เพียงแห่งเดียว ไม่มีสำเนาเพิ่มใน seed JSON; deployment ที่ยังไม่ได้ติดตั้ง migration หรือใช้ fallback ตารางที่ยังไม่มีจะใช้กิจกรรมเดิมจนติดตั้ง migration และโหลดใหม่
+
+`20261005010000_l01_verb_principles.sql` เพิ่ม `content_lessons.data.verbPrinciples` ของ L01 (หัวข้อ, ส่วนหลัก/ส่วนท้าย, ตาราง Endung และหมายเหตุ) โดย runner รันต่อจาก Introduction; ไม่เพิ่ม practice items หรือสำเนา JSON
+
+`20261005020000_l01_verb_pronoun_translations.sql` เติม `thaiSubject` ให้แต่ละแถวใน `verbPrinciples.rows` ของ L01; ตารางใช้คอลัมน์นี้ถัดจากประธาน

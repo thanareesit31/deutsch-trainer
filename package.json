@@ -11,6 +11,7 @@
     "test:e2e": "node tests/browser.mjs",
     "test:learning-db": "node tests/learning-database.mjs",
     "test:learning-browser": "node tests/learning-browser.mjs",
+    "test:verb-browser": "node tests/verb-learning-browser.mjs",
     "db:migrate-content": "node --env-file=.env.local scripts/migrate-content.mjs",
     "dev:restart": "bash scripts/restart-local.sh"
   },

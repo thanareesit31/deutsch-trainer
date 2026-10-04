@@ -470,6 +470,7 @@ function VerbLesson() {
   const learningStorageKey = "deutsch-trainer-verb-learning-L01";
   const [verb, setVerb] = useState(verbs[0] || "kommen");
   const [completedVerbs, setCompletedVerbs] = useState<string[]>([]);
+  const [replayingVerbs, setReplayingVerbs] = useState<string[]>([]);
   const [matchesByVerb, setMatchesByVerb] = useState<
     Record<string, Record<number, number>>
   >({});
@@ -479,6 +480,15 @@ function VerbLesson() {
   const [orderByVerb, setOrderByVerb] = useState<Record<string, number[]>>({});
   const [restored, setRestored] = useState(false);
   const [showSummary, setShowSummary] = useState(false);
+  const [showIntroduction, setShowIntroduction] = useState(true);
+  const [showPrinciples, setShowPrinciples] = useState(true);
+  const principles = lessons.find(
+    (lesson) => lesson.id === "L01",
+  )?.verbPrinciples;
+  const introduction = lessons
+    .find((lesson) => lesson.id === "L01")
+    ?.verbIntroductions?.find((entry) => entry.infinitive === verb);
+  const isIntroduction = showIntroduction && Boolean(introduction);
   const verbItems = items.filter(
     (i) =>
       i.lessonId === "L01" &&
@@ -493,7 +503,14 @@ function VerbLesson() {
     .map((i) => `${i.id}:${history.exposures.some((e) => e.item_id === i.id)}`)
     .join("|");
   useEffect(() => {
-    if (!restored || document.visibilityState !== "visible" || history.busy)
+    if (
+      !restored ||
+      isIntroduction ||
+      showPrinciples ||
+      showSummary ||
+      document.visibilityState !== "visible" ||
+      history.busy
+    )
       return;
     let cancelled = false;
     const exposed = new Set(history.exposures.map((e) => e.item_id));
@@ -511,12 +528,25 @@ function VerbLesson() {
     return () => {
       cancelled = true;
     };
-  }, [restored, verb, exposureKey, history.busy]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [
+    restored,
+    verb,
+    exposureKey,
+    history.busy,
+    isIntroduction,
+    showSummary,
+    showPrinciples,
+  ]); // eslint-disable-line react-hooks/exhaustive-deps
   const learned = verbItems.every((i) =>
     history.exposures.some((e) => e.item_id === i.id),
   );
   const matches = matchesByVerb[verb] || {};
   const [selectedToken, setSelectedToken] = useState<number | null>(null);
+  const [incorrectPlacement, setIncorrectPlacement] = useState<{
+    row: number;
+    token: number;
+  } | null>(null);
+  const incorrectTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const formOrder = orderByVerb[verb] || [];
   const results = resultsByVerb[verb] || null;
   useEffect(() => {
@@ -526,20 +556,87 @@ function VerbLesson() {
         const state = JSON.parse(saved);
         if (typeof state.verb === "string" && verbs.includes(state.verb))
           setVerb(state.verb);
-        if (Array.isArray(state.completedVerbs))
-          setCompletedVerbs(
-            state.completedVerbs.filter(
+        const savedReplayingVerbs = Array.isArray(state.replayingVerbs)
+          ? state.replayingVerbs.filter(
               (v: unknown) => typeof v === "string" && verbs.includes(v),
-            ),
+            )
+          : [];
+        setReplayingVerbs(savedReplayingVerbs);
+        const correctMatches: Record<string, Record<number, number>> = {};
+        if (state.matchesByVerb && typeof state.matchesByVerb === "object") {
+          for (const [name, assignments] of Object.entries(
+            state.matchesByVerb,
+          )) {
+            if (!assignments || typeof assignments !== "object") continue;
+            const group =
+              name === "sein" ? "sein" : `Verbkonjugation · ${name}`;
+            const entries = items.filter(
+              (item) =>
+                item.lessonId === "L01" &&
+                item.skill === "grammar" &&
+                item.group === group,
+            );
+            const correct: Record<number, number> = {};
+            for (const [row, token] of Object.entries(
+              assignments as Record<string, unknown>,
+            )) {
+              const rowIndex = Number(row);
+              if (
+                Number.isInteger(rowIndex) &&
+                Number.isInteger(token) &&
+                entries[rowIndex]?.answer === entries[token as number]?.answer
+              )
+                correct[rowIndex] = token as number;
+            }
+            correctMatches[name] = correct;
+          }
+        }
+        setMatchesByVerb(correctMatches);
+        const verifiedResults: typeof resultsByVerb = {};
+        for (const [name, assignments] of Object.entries(correctMatches)) {
+          const group =
+            name === "sein" ? "sein" : `Verbkonjugation · ${name}`;
+          const entries = items.filter(
+            (item) =>
+              item.lessonId === "L01" &&
+              item.skill === "grammar" &&
+              item.group === group,
           );
-        if (state.matchesByVerb && typeof state.matchesByVerb === "object")
-          setMatchesByVerb(state.matchesByVerb);
-        if (state.resultsByVerb && typeof state.resultsByVerb === "object")
-          setResultsByVerb(state.resultsByVerb);
+          if (
+            entries.length === 6 &&
+            entries.every(
+              (item, row) =>
+                assignments[row] !== undefined &&
+                entries[assignments[row]]?.answer === item.answer,
+            )
+          ) {
+            verifiedResults[name] = entries.map((item, row) => ({
+              item,
+              input: entries[assignments[row]].answer,
+              correct: true,
+            }));
+          }
+        }
+        setResultsByVerb(verifiedResults);
+        const verifiedVerbs = Object.keys(verifiedResults);
+        const safeCompleted = Array.isArray(state.completedVerbs)
+          ? state.completedVerbs.filter(
+              (v: unknown) =>
+                typeof v === "string" &&
+                verbs.includes(v) &&
+                (verifiedVerbs.includes(v) || savedReplayingVerbs.includes(v)),
+            )
+          : [];
+        setCompletedVerbs(safeCompleted);
         if (state.orderByVerb && typeof state.orderByVerb === "object")
           setOrderByVerb(state.orderByVerb);
+        setShowPrinciples(state.showPrinciples === true);
+        // Older saves without a principles flag resume their saved verb.
+        setShowIntroduction(state.showIntroduction === true);
         if (typeof state.showSummary === "boolean")
-          setShowSummary(state.showSummary);
+          setShowSummary(
+            state.showSummary && verbs.every((name) => safeCompleted.includes(name)),
+          );
       }
     } catch {
       localStorage.removeItem(learningStorageKey);
@@ -553,20 +650,26 @@ function VerbLesson() {
       JSON.stringify({
         verb,
         completedVerbs,
+        replayingVerbs,
         matchesByVerb,
         resultsByVerb,
         orderByVerb,
         showSummary,
+        showIntroduction,
+        showPrinciples,
       }),
     );
   }, [
     restored,
     verb,
     completedVerbs,
+    replayingVerbs,
     matchesByVerb,
     resultsByVerb,
     orderByVerb,
     showSummary,
+    showIntroduction,
+    showPrinciples,
   ]);
   useEffect(() => {
     if (!orderByVerb[verb])
@@ -575,66 +678,66 @@ function VerbLesson() {
         [verb]: forms.map((_, i) => i).sort(() => Math.random() - 0.5),
       }));
     setSelectedToken(null);
+    setIncorrectPlacement(null);
+    if (incorrectTimer.current) clearTimeout(incorrectTimer.current);
   }, [verb, orderByVerb, forms.length]);
-  function assign(row: number) {
-    if (selectedToken === null) return;
-    const token = selectedToken;
-    setMatchesByVerb((previous) => {
-      const next = { ...(previous[verb] || {}) };
-      for (const [key, value] of Object.entries(next))
-        if (value === token) delete next[Number(key)];
-      next[row] = token;
-      return { ...previous, [verb]: next };
-    });
+  function replayVerbs(targets: string[]) {
+    // Reset only the activity draft; learned completion and database history persist.
+    function keepOtherVerbs<T>(previous: Record<string, T>) {
+      return Object.fromEntries(
+        Object.entries(previous).filter(([name]) => !targets.includes(name)),
+      );
+    }
+    setMatchesByVerb(keepOtherVerbs);
+    setResultsByVerb(keepOtherVerbs);
+    setOrderByVerb(keepOtherVerbs);
+    setReplayingVerbs((previous) => [
+      ...new Set([...previous, ...targets]),
+    ]);
     setSelectedToken(null);
+    setVerb(targets[0]);
+    setShowPrinciples(false);
+    setShowSummary(false);
+    setShowIntroduction(true);
   }
-  async function checkMatches() {
-    if (Object.keys(matches).length !== sessionItems.length) return;
-    setResultsByVerb((previous) => ({
-      ...previous,
-      [verb]: sessionItems.map((item, i) => ({
-        item,
-        input: forms[matches[i]],
-        correct: forms[matches[i]] === item.answer,
-      })),
-    }));
-    setCompletedVerbs((previous) =>
-      previous.includes(verb) ? previous : [...previous, verb],
-    );
+  function assign(row: number, offeredToken = selectedToken) {
+    if (results || offeredToken === null || offeredToken === undefined) return;
+    const item = sessionItems[row];
+    if (!item || forms[offeredToken] === undefined) return;
+    setSelectedToken(null);
+    if (forms[offeredToken] !== item.answer) {
+      if (incorrectTimer.current) clearTimeout(incorrectTimer.current);
+      setIncorrectPlacement({ row, token: offeredToken });
+      incorrectTimer.current = setTimeout(() => {
+        setIncorrectPlacement(null);
+        incorrectTimer.current = null;
+      }, 650);
+      return;
+    }
+    if (incorrectTimer.current) clearTimeout(incorrectTimer.current);
+    setIncorrectPlacement(null);
+    const next = { ...matches };
+    for (const [key, value] of Object.entries(next))
+      if (value === offeredToken) delete next[Number(key)];
+    next[row] = offeredToken;
+    setMatchesByVerb((previous) => ({ ...previous, [verb]: next }));
+    if (Object.keys(next).length === sessionItems.length) {
+      setResultsByVerb((previous) => ({
+        ...previous,
+        [verb]: sessionItems.map((matchedItem, index) => ({
+          item: matchedItem,
+          input: forms[next[index]],
+          correct: true,
+        })),
+      }));
+      setCompletedVerbs((previous) =>
+        previous.includes(verb) ? previous : [...previous, verb],
+      );
+      setReplayingVerbs((previous) => previous.filter((name) => name !== verb));
+    }
   }
   const selectedIndex = verbs.indexOf(verb);
   const nextVerb = verbs[selectedIndex + 1];
-  const renderForm = (form: string, item: Item) => {
-    if (verb === "sein") {
-      const person = item.title.split(" + ")[0];
-      if (["ich", "du", "er / sie / es"].includes(person))
-        return (
-          <strong lang="de" className="ending-result">
-            {form}
-          </strong>
-        );
-      if (form === "sind")
-        return (
-          <strong lang="de">
-            s<span className="ending-result">in</span>d
-          </strong>
-        );
-      return <strong lang="de">{form}</strong>;
-    }
-    if (verb === "heißen" && item.title.startsWith("du +"))
-      return (
-        <strong lang="de">
-          hei<span className="ending-result">ßt</span>
-        </strong>
-      );
-    const stemLength = verb.slice(0, -2).length;
-    return (
-      <strong lang="de">
-        {form.slice(0, stemLength)}
-        <span className="ending-result">{form.slice(stemLength)}</span>
-      </strong>
-    );
-  };
   const renderSummaryForm = (
     form: string,
     verbName: string,
@@ -716,28 +819,57 @@ function VerbLesson() {
   );
   return (
     <>
-      <Link href="/lesson/L01" className="back-link">
-        ← กลับบทเรียน
-      </Link>
-      <div className="page-heading">
+      <div className="verb-learning-navigation">
+        <Link href="/lesson/L01" className="back-link">
+          ← กลับบทเรียน
+        </Link>
+      </div>
+      <div className="page-heading verb-learning-heading">
         <div>
           <span className="eyebrow">L01 · VERBKONJUGATION</span>
           <h1>จับคู่คำกริยา</h1>
-          <p>เรียนทีละคำ จับคู่ประธานกับรูปกริยาเพื่อดูเนื้อหาของบทนี้</p>
+          <div className="verb-learning-description">
+            <p>เรียนทีละคำ จับคู่ประธานกับรูปกริยาเพื่อดูเนื้อหาของบทนี้</p>
+            {!showPrinciples &&
+              (showSummary || completedVerbs.includes(verb)) && (
+                <button
+                  className="button secondary"
+                  type="button"
+                  onClick={() => replayVerbs(showSummary ? verbs : [verb])}
+                >
+                  {showSummary ? "เรียนซ้ำ" : `เรียนซ้ำคำนี้ · ${verb}`}
+                </button>
+              )}
+          </div>
         </div>
       </div>
       <section className="panel conjugation-panel">
         <div className="verb-sequence" aria-label="ลำดับคำกริยา">
+          <button
+            className={showPrinciples ? "selected" : ""}
+            onClick={() => setShowPrinciples(true)}
+          >
+            หลักการผัน
+          </button>
           {verbs.map((v, i) => (
             <button
               key={v}
               disabled={
                 i > selectedIndex && !completedVerbs.includes(verbs[i - 1])
               }
-              className={!showSummary && v === verb ? "selected" : ""}
+              className={
+                !showPrinciples && !showSummary && v === verb ? "selected" : ""
+              }
               onClick={() => {
+                if (v !== verb || showSummary)
+                  setShowIntroduction(
+                    !resultsByVerb[v] &&
+                      !Object.keys(matchesByVerb[v] || {}).length,
+                  );
                 setVerb(v);
+                setShowPrinciples(false);
                 setShowSummary(false);
+                setSelectedToken(null);
               }}
             >
               {v}
@@ -745,64 +877,128 @@ function VerbLesson() {
           ))}
           <button
             disabled={!verbs.every((v) => completedVerbs.includes(v))}
-            className={showSummary ? "selected" : ""}
-            onClick={() => setShowSummary(true)}
+            className={!showPrinciples && showSummary ? "selected" : ""}
+            onClick={() => {
+              setShowPrinciples(false);
+              setShowSummary(true);
+            }}
           >
             สรุป
           </button>
         </div>
-        {showSummary ? (
+        {showPrinciples ? (
+          principles ? (
+            <section className="verb-summary verb-principles">
+              <h2>{principles.title}</h2>
+              <p lang="de">
+                {principles.infinitive} → {principles.stem} +{" "}
+                <strong className="ending-result">
+                  {principles.infinitiveEnding}
+                </strong>
+              </p>
+              <p>{principles.explanation}</p>
+              <div
+                className="verb-summary-scroll"
+                role="region"
+                aria-label="ตารางหลักการผัน"
+                tabIndex={0}
+              >
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">ประธาน</th>
+                      <th scope="col">คำแปล</th>
+                      <th scope="col">Endung</th>
+                      <th scope="col">ตัวอย่าง</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {principles.rows.map((row) => (
+                      <tr key={row.subject}>
+                        <th scope="row" lang="de">
+                          {row.subject}
+                        </th>
+                        <td>{row.thaiSubject}</td>
+                        <td lang="de">
+                          <strong className="ending-result">
+                            -{row.ending}
+                          </strong>
+                        </td>
+                        <td lang="de">
+                          {principles.stem}
+                          <strong className="ending-result">
+                            {row.ending}
+                          </strong>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p>{principles.note}</p>
+              <button
+                className="button primary verb-principles-next"
+                onClick={() => {
+                  setVerb(verbs[0] || "kommen");
+                  setShowPrinciples(false);
+                  setShowSummary(false);
+                  setShowIntroduction(true);
+                  setSelectedToken(null);
+                }}
+              >
+                ไปต่อ <ArrowRight size={17} />
+              </button>
+            </section>
+          ) : (
+            <p role="status">ยังไม่มีเนื้อหาหลักการผัน</p>
+          )
+        ) : showSummary ? (
           <>
             {summaryTable}
             <div className="result-actions">
-              <Link className="button primary" href="/lesson/L01">
-                กลับหน้าบทเรียน
-              </Link>
+              <button
+                className="button primary"
+                onClick={() => {
+                  setVerb(verbs[verbs.length - 1] || "sein");
+                  setShowPrinciples(false);
+                  setShowSummary(false);
+                  setShowIntroduction(false);
+                  setSelectedToken(null);
+                }}
+              >
+                ย้อนกลับ
+              </button>
               <Link className="button secondary" href="/practice/L01/grammar">
                 ไปฝึกผันกริยา
               </Link>
             </div>
           </>
-        ) : results ? (
+        ) : isIntroduction && introduction ? (
           <>
-            <section className="matching-feedback">
-              <h2>
-                ผลการจับคู่ · {results.filter((r) => r.correct).length}/
-                {results.length} คู่ถูก
-              </h2>
-              {results.map((r) => (
-                <div className="matching-result" key={r.item.id}>
-                  <span lang="de">{r.item.title.split(" + ")[0]}</span>
-                  <span>
-                    {r.correct ? (
-                      renderForm(r.input, r.item)
-                    ) : (
-                      <>
-                        <del lang="de">{r.input}</del> →{" "}
-                        {renderForm(r.item.answer, r.item)}
-                      </>
-                    )}
-                  </span>
-                </div>
-              ))}
+            <section
+              className="verb-introduction"
+              aria-label={`Introduction · ${verb}`}
+            >
+              <h2 lang="de">{introduction.infinitive}</h2>
+              <p>{introduction.thaiMeaning}</p>
+              {introduction.meaningNote && (
+                <p className="muted-text">{introduction.meaningNote}</p>
+              )}
+              <div className="verb-introduction-examples">
+                {introduction.examples.map((example) => (
+                  <div key={example.de}>
+                    <p lang="de">{example.de}</p>
+                    <p className="muted-text">{example.th}</p>
+                  </div>
+                ))}
+              </div>
             </section>
-            {nextVerb ? (
-              <button
-                className="button primary wide"
-                onClick={() => setVerb(nextVerb)}
-              >
-                เรียนคำถัดไป · {nextVerb}
-                <ArrowRight size={17} />
-              </button>
-            ) : (
-              <button
-                className="button primary wide"
-                onClick={() => setShowSummary(true)}
-              >
-                ดูตารางสรุป
-                <ArrowRight size={17} />
-              </button>
-            )}
+            <button
+              className="button primary verb-introduction-next"
+              onClick={() => setShowIntroduction(false)}
+            >
+              เรียนการผัน <ArrowRight size={17} />
+            </button>
           </>
         ) : (
           <>
@@ -816,14 +1012,24 @@ function VerbLesson() {
                       selectedToken !== null ? "target-ready" : ""
                     }`}
                     onClick={() => assign(i)}
+                    onDragOver={(event) => event.preventDefault()}
+                    onDrop={(event) => {
+                      event.preventDefault();
+                      const token = event.dataTransfer.getData("text/plain");
+                      if (/^\d+$/.test(token)) assign(i, Number(token));
+                    }}
                   >
                     <span lang="de">{item.title.split(" + ")[0]}</span>
                     <span
                       className={`matching-drop ${
-                        matches[i] !== undefined ? "filled" : ""
+                        matches[i] !== undefined
+                          ? "filled correct"
+                          : incorrectPlacement?.row === i
+                            ? "incorrect"
+                            : ""
                       }`}
                       onClick={(e) => {
-                        if (matches[i] !== undefined) {
+                        if (!results && matches[i] !== undefined) {
                           e.stopPropagation();
                           setMatchesByVerb((previous) => {
                             const next = { ...(previous[verb] || {}) };
@@ -843,7 +1049,7 @@ function VerbLesson() {
                 ))}
               </div>
               <div className="matching-column">
-                <h2>รูปกริยา · แตะเลือกก่อน</h2>
+                <h2>รูปกริยา</h2>
                 <div className="matching-bank">
                   {formOrder
                     .filter((token) => !Object.values(matches).includes(token))
@@ -851,8 +1057,17 @@ function VerbLesson() {
                       <button
                         className={`matching-token ${
                           selectedToken === token ? "selected" : ""
-                        }`}
+                        } ${incorrectPlacement?.token === token ? "incorrect" : ""}`}
                         key={token}
+                        draggable
+                        onDragStart={(event) => {
+                          event.dataTransfer.effectAllowed = "move";
+                          event.dataTransfer.setData(
+                            "text/plain",
+                            String(token),
+                          );
+                          setSelectedToken(token);
+                        }}
                         onClick={() => setSelectedToken(token)}
                         lang="de"
                       >
@@ -861,21 +1076,39 @@ function VerbLesson() {
                     ))}
                 </div>
                 <p className="conjugation-hint">
-                  แตะกล่องรูปกริยาทางขวา แล้วแตะช่อง “เลือกคำตอบ”
-                  ของประธานทางซ้าย
+                  ลากรูปกริยาไปวางข้างประธาน หรือแตะรูปกริยาแล้วแตะช่องประธาน
                 </p>
               </div>
             </div>
-            <button
-              className="button primary wide"
-              disabled={
-                !learned || Object.keys(matches).length !== sessionItems.length
-              }
-              onClick={checkMatches}
-            >
-              ตรวจการจับคู่
-              <ArrowRight size={17} />
-            </button>
+            <div className="conjugation-actions">
+              {introduction && (
+                <button
+                  className="button secondary"
+                  onClick={() => {
+                    setShowIntroduction(true);
+                    setSelectedToken(null);
+                  }}
+                >
+                  ย้อนกลับ
+                </button>
+              )}
+              {results && (
+                <button
+                  className="button primary"
+                  onClick={() => {
+                    if (nextVerb) {
+                      setVerb(nextVerb);
+                      setShowIntroduction(true);
+                    } else {
+                      setShowSummary(true);
+                    }
+                  }}
+                >
+                  ไปต่อ
+                  <ArrowRight size={17} />
+                </button>
+              )}
+            </div>
             {!learned && (
               <p className="conjugation-hint">กำลังบันทึกเนื้อหาที่เห็น</p>
             )}

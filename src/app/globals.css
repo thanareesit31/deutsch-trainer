@@ -1664,13 +1664,15 @@ select {
   margin: 0 auto;
   padding-bottom: 28px;
 }
-.vocabulary-image-navigation {
+.vocabulary-image-navigation,
+.verb-learning-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
 }
-.vocabulary-image-navigation .back-link {
+.vocabulary-image-navigation .back-link,
+.verb-learning-navigation .back-link {
   margin-bottom: 0;
 }
 .vocabulary-image-heading {
@@ -4455,11 +4457,30 @@ select {
   color: #9aa494;
   text-align: center;
 }
-.matching-drop.filled {
+.matching-drop.filled,
+.matching-drop.correct {
   border-style: solid;
-  background: #eef4e9;
-  color: var(--green);
+  border-color: #84b589;
+  background: #e7f4e6;
+  color: #28613b;
   font-weight: 600;
+}
+.matching-drop.incorrect {
+  border-color: #c8564d;
+  border-style: solid;
+  background: #fff0ee;
+  color: #a24f43;
+}
+.matching-token.incorrect {
+  border-color: #c8564d;
+  background: #fff0ee;
+  color: #a24f43;
+  animation: matching-return 650ms ease-out;
+}
+@keyframes matching-return {
+  0% { transform: translateX(-18px) scale(0.94); }
+  55% { transform: translateX(5px) scale(1.03); }
+  100% { transform: translateX(0) scale(1); }
 }
 .matching-bank {
   display: flex;
@@ -4559,6 +4580,16 @@ select {
 }
 .conjugation-panel .button {
   margin-top: 7px;
+}
+.conjugation-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+.conjugation-actions .button {
+  margin-top: 0;
 }
 .result-correct {
   color: #35694b !important;
@@ -4698,4 +4729,78 @@ select {
   font: inherit;
   font-size: 10px;
   cursor: pointer;
+}
+
+.verb-introduction {
+  padding: 12px 0 24px;
+  text-align: center;
+}
+.verb-introduction h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.verb-introduction-examples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 18px 28px;
+  margin-top: 24px;
+}
+.verb-introduction-examples > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+.verb-introduction-examples p {
+  margin: 4px 0;
+}
+.verb-introduction-examples [lang="de"] {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.verb-introduction-examples .muted-text {
+  font-size: 1rem !important;
+  text-align: center;
+}
+
+.verb-learning-navigation {
+  max-width: 900px;
+  margin-bottom: 18px;
+}
+
+.verb-learning-heading {
+  max-width: 900px;
+}
+.verb-learning-heading > div {
+  width: 100%;
+}
+.verb-learning-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.verb-learning-description .button {
+  flex-shrink: 0;
+}
+.verb-principles-next {
+  display: flex;
+  width: max-content;
+  margin: 22px auto 0;
+}
+.verb-introduction-next {
+  display: flex;
+  width: max-content;
+  margin: 7px auto 0;
+}
+@media (max-width: 600px) {
+  .verb-learning-description {
+    flex-wrap: wrap;
+  }
+  .verb-learning-description .button {
+    margin-left: auto;
+  }
 }

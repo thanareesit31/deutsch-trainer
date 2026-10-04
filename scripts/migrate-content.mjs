@@ -10,14 +10,18 @@ const client = new pg.Client({
 });
 try {
   await client.connect();
-  const sql = await readFile(
-    new URL(
-      "../supabase/migrations/20261003010000_content_catalog.sql",
-      import.meta.url,
-    ),
-    "utf8",
-  );
-  await client.query(sql);
+  for (const file of [
+    "20261003010000_content_catalog.sql",
+    "20261005000000_l01_verb_introductions.sql",
+    "20261005010000_l01_verb_principles.sql",
+    "20261005020000_l01_verb_pronoun_translations.sql",
+  ]) {
+    const sql = await readFile(
+      new URL("../supabase/migrations/" + file, import.meta.url),
+      "utf8",
+    );
+    await client.query(sql);
+  }
   const result = await client.query(
     "select 'lessons' as kind,count(*)::int as count from public.content_lessons union all select 'items',count(*)::int from public.content_items",
   );

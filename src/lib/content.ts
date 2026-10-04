@@ -91,6 +91,12 @@ export const skills: {
     color: "yellow",
   },
 ];
+export interface VerbIntroduction {
+  infinitive: string;
+  thaiMeaning: string;
+  meaningNote?: string;
+  examples: { de: string; th: string }[];
+}
 export interface Lesson {
   id: string;
   number: number;
@@ -98,6 +104,16 @@ export interface Lesson {
   title: string;
   thai: string;
   topics: string;
+  verbIntroductions?: VerbIntroduction[];
+  verbPrinciples?: {
+    title: string;
+    infinitive: string;
+    stem: string;
+    infinitiveEnding: string;
+    explanation: string;
+    note: string;
+    rows: { subject: string; thaiSubject: string; ending: string }[];
+  };
 }
 export interface Catalog {
   lessons: Lesson[];
