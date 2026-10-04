@@ -27,6 +27,11 @@
 - Vocabulary nouns เรียนรูป Artikel + Nomen พร้อม plural เมื่อมีข้อมูล; ประเภทคำอื่นแสดง metadata ตามความเหมาะสม
 - Lektion 1 → Wortschatz → Das Alphabet สอน 30 ตัวอักษรใน 6 กลุ่มจาก content configuration โดยสลับ Listen and Choose กับ Find Sound; กลุ่มเป็น implementation detail ไม่มีหน้าจบคั่น และไม่มีคะแนนหรือ mastery data
 - Alphabet item จะเป็น Learned หลังผู้เรียนเลือกคำตอบถูก; learned IDs แยกจาก resume position ซึ่งระบุตัวถัดไปที่ควรเรียน และการ revisit ไม่ลด resume position
+- เสียงสังเคราะห์ตัว C ใช้คำอ่าน “Ceh” เพื่อให้ผู้เรียนทดลองฟังเทียบเสียง
+- เสียงสังเคราะห์ตัว E ใช้คำอ่าน “Eh” ซึ่งใกล้เคียงเสียงที่ผู้ใช้ต้องการที่สุดจากตัวเลือกที่ลอง
+- เสียงสังเคราะห์ตัว Ö ใช้ข้อความ “öh” ตัวพิมพ์เล็ก เพื่อให้ browser voice ออกเสียงสระโดยตรง
+- เสียงสังเคราะห์ตัว F ใช้รูปสะกดช่วยออกเสียง “Äff” เพื่อให้เป็นเสียงพยางค์เดียว ไม่อ่านชื่อ E และ F แยกกัน
+- แจ้งผู้เรียนว่าเสียงสังเคราะห์ Alphabet อาจแตกต่างกันตามเครื่องและเบราว์เซอร์; ข้อความนี้เป็นข้อมูลประกอบ ไม่ใช่ error และใช้สีข้อความกลาง
 - Alphabet learning state prototype อยู่ใน localStorage แยกจาก Progress mastery; หลังครบ 30 ตัวให้เปิด Alphabet Board ที่กดเล่นเสียงแต่ละตัวได้
 - Alphabet Board มีทางย้อนกลับไปตัวอักษรที่เพิ่งเรียนจบเพื่อดู/ฟังซ้ำ โดยไม่แก้ learned state หรือ resume position และมีปุ่ม “เรียนคำศัพท์ต่อ” ไปหน้า Begrüßung ซึ่งเป็นหน้าแรกของการจับคู่ภาพ และ “แบบฝึกหัด” ไปหน้า Practice คำศัพท์ของบทเดียวกัน
 - Alphabet Board ให้เริ่มเรียนซ้ำตั้งแต่ A ได้โดยสมัครใจผ่านปุ่ม “เรียนซ้ำ”; การเรียนซ้ำเป็นรอบเพิ่มและต้องคง learned IDs กับ resume position เดิมไว้
@@ -37,6 +42,10 @@
 - สถานะของกิจกรรมจับคู่ภาพเก็บใน localStorage แยกจากสถานะ Alphabet; การถอดชุดกิจกรรมนึกคำออกจากหน้า Learn ต้องไม่ลบหรือเปลี่ยนสถานะจับคู่ภาพ
 - ปุ่มย้อนกลับและไปต่อในกิจกรรม Alphabet อยู่ใต้เนื้อหากิจกรรมในตำแหน่งเดียวกัน
 - Alphabet symbols, canonical order, pronunciation reference และ set membership อยู่ใน content layer แยกจาก vocabulary items ที่นับใน Practice/Progress
+- กิจกรรม Find Sound ของ Ü แสดงคำแนะนำว่าให้ออกเสียงคล้าย “อือ” โดยห่อริมฝีปากเป็นรูป “อู”
+- กิจกรรม Find Sound ของ Ö แสดงคำแนะนำว่าให้ออกเสียงคล้าย “เออ” โดยห่อริมฝีปากเป็นรูป “โอ”
+- กิจกรรม Find Sound ของ Ä แสดงคำแนะนำว่าให้ออกเสียงคล้ายสระ “แอ”
+- กิจกรรม Find Sound ของ ß แสดงคำแนะนำว่าให้ออกเสียงเป็น “ส” ไม่ก้อง เหมือน ss (scharfes S)
 - หน้ากิจกรรม Vocabulary Learning ไม่แสดง Developer Debug panel หรือปุ่ม reset ข้อมูลแก่ผู้เรียน
 - การดู catalog, เข้า Practice, นำเข้าข้อมูลเก่า หรือมี content ในระบบ ไม่สร้าง Learned state
 - Vocabulary noun เรียนเป็น **Artikel + Nomen**

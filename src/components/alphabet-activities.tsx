@@ -109,6 +109,26 @@ export function FindSound({ item, items, play, audioError, onLearned, onContinue
             : "ตามหาเสียงเรียกของตัวอักษรนี้"}
       </p>
       <p className="alphabet-find-target">{item.symbol}</p>
+      {item.id === "alphabet_ue" && (
+        <p className="alphabet-activity-instruction">
+          ออกเสียงคล้าย “อือ” โดยห่อริมฝีปากเป็นรูป “อู”
+        </p>
+      )}
+      {item.id === "alphabet_oe" && (
+        <p className="alphabet-activity-instruction">
+          ออกเสียงคล้าย “เออ” โดยห่อริมฝีปากเป็นรูป “โอ”
+        </p>
+      )}
+      {item.id === "alphabet_ae" && (
+        <p className="alphabet-activity-instruction">
+          ออกเสียงคล้ายสระ “แอ”
+        </p>
+      )}
+      {item.id === "alphabet_sz" && (
+        <p className="alphabet-activity-instruction">
+          ออกเสียงเป็น “ส” ไม่ก้อง เหมือน ss (scharfes S)
+        </p>
+      )}
       <div className="alphabet-sound-options" aria-label="ตัวเลือกเสียง">
         {options.map((option, index) => (
           <button

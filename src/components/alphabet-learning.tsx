@@ -163,7 +163,7 @@ export function AlphabetLearningPage() {
       </div>
       {hasMissingAudio && (
         <p className="alphabet-audio-notice">
-          ไฟล์เสียงต้นฉบับยังไม่มี ระบบใช้เสียงสังเคราะห์ภาษาเยอรมันจาก browser เมื่ออุปกรณ์มี German voice
+          เสียงสังเคราะห์อาจแตกต่างกันตามเครื่องและเบราว์เซอร์ที่ใช้เรียน
         </p>
       )}
       {!voiceAvailable && hasMissingAudio && (

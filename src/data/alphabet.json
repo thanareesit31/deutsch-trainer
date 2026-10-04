@@ -7,69 +7,289 @@
       "id": "alphabet-set-01",
       "position": 1,
       "activity": "listen_and_choose",
-      "itemIds": ["alphabet_a", "alphabet_b", "alphabet_c", "alphabet_d", "alphabet_e"]
+      "itemIds": [
+        "alphabet_a",
+        "alphabet_b",
+        "alphabet_c",
+        "alphabet_d",
+        "alphabet_e"
+      ]
     },
     {
       "id": "alphabet-set-02",
       "position": 2,
       "activity": "find_sound",
-      "itemIds": ["alphabet_f", "alphabet_g", "alphabet_h", "alphabet_i", "alphabet_j"]
+      "itemIds": [
+        "alphabet_f",
+        "alphabet_g",
+        "alphabet_h",
+        "alphabet_i",
+        "alphabet_j"
+      ]
     },
     {
       "id": "alphabet-set-03",
       "position": 3,
       "activity": "listen_and_choose",
-      "itemIds": ["alphabet_k", "alphabet_l", "alphabet_m", "alphabet_n", "alphabet_o"]
+      "itemIds": [
+        "alphabet_k",
+        "alphabet_l",
+        "alphabet_m",
+        "alphabet_n",
+        "alphabet_o"
+      ]
     },
     {
       "id": "alphabet-set-04",
       "position": 4,
       "activity": "find_sound",
-      "itemIds": ["alphabet_p", "alphabet_q", "alphabet_r", "alphabet_s", "alphabet_t"]
+      "itemIds": [
+        "alphabet_p",
+        "alphabet_q",
+        "alphabet_r",
+        "alphabet_s",
+        "alphabet_t"
+      ]
     },
     {
       "id": "alphabet-set-05",
       "position": 5,
       "activity": "listen_and_choose",
-      "itemIds": ["alphabet_u", "alphabet_v", "alphabet_w", "alphabet_x", "alphabet_y"]
+      "itemIds": [
+        "alphabet_u",
+        "alphabet_v",
+        "alphabet_w",
+        "alphabet_x",
+        "alphabet_y"
+      ]
     },
     {
       "id": "alphabet-set-06",
       "position": 6,
       "activity": "find_sound",
-      "itemIds": ["alphabet_z", "alphabet_ae", "alphabet_oe", "alphabet_ue", "alphabet_sz"]
+      "itemIds": [
+        "alphabet_z",
+        "alphabet_ae",
+        "alphabet_oe",
+        "alphabet_ue",
+        "alphabet_sz"
+      ]
     }
   ],
   "items": [
-    {"id":"alphabet_a","symbol":"A","order":1,"pronunciation":"Aah","audio":null},
-    {"id":"alphabet_b","symbol":"B","order":2,"pronunciation":"Beh","audio":null},
-    {"id":"alphabet_c","symbol":"C","order":3,"pronunciation":"Tseh","audio":null},
-    {"id":"alphabet_d","symbol":"D","order":4,"pronunciation":"Deh","audio":null},
-    {"id":"alphabet_e","symbol":"E","order":5,"pronunciation":"Eh","audio":null},
-    {"id":"alphabet_f","symbol":"F","order":6,"pronunciation":"Eff","audio":null},
-    {"id":"alphabet_g","symbol":"G","order":7,"pronunciation":"Geh","audio":null},
-    {"id":"alphabet_h","symbol":"H","order":8,"pronunciation":"Hah","audio":null},
-    {"id":"alphabet_i","symbol":"I","order":9,"pronunciation":"Ih","audio":null},
-    {"id":"alphabet_j","symbol":"J","order":10,"pronunciation":"Jott","audio":null},
-    {"id":"alphabet_k","symbol":"K","order":11,"pronunciation":"Kah","audio":null},
-    {"id":"alphabet_l","symbol":"L","order":12,"pronunciation":"Ell","audio":null},
-    {"id":"alphabet_m","symbol":"M","order":13,"pronunciation":"Emm","audio":null},
-    {"id":"alphabet_n","symbol":"N","order":14,"pronunciation":"Enn","audio":null},
-    {"id":"alphabet_o","symbol":"O","order":15,"pronunciation":"Oh","audio":null},
-    {"id":"alphabet_p","symbol":"P","order":16,"pronunciation":"Peh","audio":null},
-    {"id":"alphabet_q","symbol":"Q","order":17,"pronunciation":"Kuh","audio":null},
-    {"id":"alphabet_r","symbol":"R","order":18,"pronunciation":"Err","audio":null},
-    {"id":"alphabet_s","symbol":"S","order":19,"pronunciation":"Ess","audio":null},
-    {"id":"alphabet_t","symbol":"T","order":20,"pronunciation":"Teh","audio":null},
-    {"id":"alphabet_u","symbol":"U","order":21,"pronunciation":"Uh","audio":null},
-    {"id":"alphabet_v","symbol":"V","order":22,"pronunciation":"Fau","audio":null},
-    {"id":"alphabet_w","symbol":"W","order":23,"pronunciation":"Weh","audio":null},
-    {"id":"alphabet_x","symbol":"X","order":24,"pronunciation":"Iks","audio":null},
-    {"id":"alphabet_y","symbol":"Y","order":25,"pronunciation":"Ypsilon","audio":null},
-    {"id":"alphabet_z","symbol":"Z","order":26,"pronunciation":"Zett","audio":null},
-    {"id":"alphabet_ae","symbol":"Ä","order":27,"pronunciation":"Äh","audio":null,"specialSoundType":"umlaut"},
-    {"id":"alphabet_oe","symbol":"Ö","order":28,"pronunciation":"Öh","audio":null,"specialSoundType":"umlaut"},
-    {"id":"alphabet_ue","symbol":"Ü","order":29,"pronunciation":"Üh","audio":null,"specialSoundType":"umlaut"},
-    {"id":"alphabet_sz","symbol":"ß","order":30,"pronunciation":"Eszett","audio":null,"specialSoundType":"eszett"}
+    {
+      "id": "alphabet_a",
+      "symbol": "A",
+      "order": 1,
+      "pronunciation": "Aah",
+      "audio": null
+    },
+    {
+      "id": "alphabet_b",
+      "symbol": "B",
+      "order": 2,
+      "pronunciation": "Beh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_c",
+      "symbol": "C",
+      "order": 3,
+      "pronunciation": "Ceh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_d",
+      "symbol": "D",
+      "order": 4,
+      "pronunciation": "Deh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_e",
+      "symbol": "E",
+      "order": 5,
+      "pronunciation": "Eh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_f",
+      "symbol": "F",
+      "order": 6,
+      "pronunciation": "Äff",
+      "audio": null
+    },
+    {
+      "id": "alphabet_g",
+      "symbol": "G",
+      "order": 7,
+      "pronunciation": "Geh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_h",
+      "symbol": "H",
+      "order": 8,
+      "pronunciation": "Hah",
+      "audio": null
+    },
+    {
+      "id": "alphabet_i",
+      "symbol": "I",
+      "order": 9,
+      "pronunciation": "Ih",
+      "audio": null
+    },
+    {
+      "id": "alphabet_j",
+      "symbol": "J",
+      "order": 10,
+      "pronunciation": "Jott",
+      "audio": null
+    },
+    {
+      "id": "alphabet_k",
+      "symbol": "K",
+      "order": 11,
+      "pronunciation": "Kah",
+      "audio": null
+    },
+    {
+      "id": "alphabet_l",
+      "symbol": "L",
+      "order": 12,
+      "pronunciation": "Ell",
+      "audio": null
+    },
+    {
+      "id": "alphabet_m",
+      "symbol": "M",
+      "order": 13,
+      "pronunciation": "Emm",
+      "audio": null
+    },
+    {
+      "id": "alphabet_n",
+      "symbol": "N",
+      "order": 14,
+      "pronunciation": "Enn",
+      "audio": null
+    },
+    {
+      "id": "alphabet_o",
+      "symbol": "O",
+      "order": 15,
+      "pronunciation": "Oh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_p",
+      "symbol": "P",
+      "order": 16,
+      "pronunciation": "Peh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_q",
+      "symbol": "Q",
+      "order": 17,
+      "pronunciation": "Kuh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_r",
+      "symbol": "R",
+      "order": 18,
+      "pronunciation": "Err",
+      "audio": null
+    },
+    {
+      "id": "alphabet_s",
+      "symbol": "S",
+      "order": 19,
+      "pronunciation": "Ess",
+      "audio": null
+    },
+    {
+      "id": "alphabet_t",
+      "symbol": "T",
+      "order": 20,
+      "pronunciation": "Teh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_u",
+      "symbol": "U",
+      "order": 21,
+      "pronunciation": "Uh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_v",
+      "symbol": "V",
+      "order": 22,
+      "pronunciation": "Fau",
+      "audio": null
+    },
+    {
+      "id": "alphabet_w",
+      "symbol": "W",
+      "order": 23,
+      "pronunciation": "Weh",
+      "audio": null
+    },
+    {
+      "id": "alphabet_x",
+      "symbol": "X",
+      "order": 24,
+      "pronunciation": "Iks",
+      "audio": null
+    },
+    {
+      "id": "alphabet_y",
+      "symbol": "Y",
+      "order": 25,
+      "pronunciation": "Ypsilon",
+      "audio": null
+    },
+    {
+      "id": "alphabet_z",
+      "symbol": "Z",
+      "order": 26,
+      "pronunciation": "Zett",
+      "audio": null
+    },
+    {
+      "id": "alphabet_ae",
+      "symbol": "Ä",
+      "order": 27,
+      "pronunciation": "Äh",
+      "audio": null,
+      "specialSoundType": "umlaut"
+    },
+    {
+      "id": "alphabet_oe",
+      "symbol": "Ö",
+      "order": 28,
+      "pronunciation": "öh",
+      "audio": null,
+      "specialSoundType": "umlaut"
+    },
+    {
+      "id": "alphabet_ue",
+      "symbol": "Ü",
+      "order": 29,
+      "pronunciation": "Üh",
+      "audio": null,
+      "specialSoundType": "umlaut"
+    },
+    {
+      "id": "alphabet_sz",
+      "symbol": "ß",
+      "order": 30,
+      "pronunciation": "Eszett",
+      "audio": null,
+      "specialSoundType": "eszett"
+    }
   ]
 }
