@@ -2,6 +2,7 @@
 import { FormEvent, useState } from "react";
 import { Sun } from "lucide-react";
 import { useStore } from "./store";
+import { TestWorkspaceNotice } from "./test-workspace-notice";
 
 export function AuthScreen() {
   const { signIn, signUp, resendConfirmation, error: setupError } = useStore();
@@ -66,6 +67,7 @@ export function AuthScreen() {
           {mode === "signin" ? "เข้าสู่บัญชีของคุณ" : "สร้างบัญชีผู้เรียน"}
         </h1>
         <p>บันทึกความก้าวหน้าไว้ในบัญชี แล้วเรียนต่อได้จากทุกอุปกรณ์</p>
+        <TestWorkspaceNotice />
         <form onSubmit={submit} className="auth-form">
           <label htmlFor="auth-email">อีเมล</label>
           <input

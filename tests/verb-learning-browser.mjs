@@ -89,6 +89,19 @@ await context.route(projectUrl + "/**", async (route) => {
         JSON.stringify(body.payload),
       ]);
       result = null;
+    } else if (
+      parts[0] === "rest" &&
+      parts[1] === "v1" &&
+      parts[2] === "learner_lesson_states" &&
+      req.method() === "POST"
+    ) {
+      const body = JSON.parse(req.postData());
+      await db.query(
+        `insert into learner_lesson_states(user_id,lesson_key,state) values ($1,$2,$3::jsonb)
+        on conflict(user_id,lesson_key) ${req.headers()["prefer"]?.includes("ignore-duplicates") ? "do nothing" : "do update set state=excluded.state"}`,
+        [body.user_id, body.lesson_key, JSON.stringify(body.state)],
+      );
+      result = null;
     } else if (parts[0] === "rest" && parts[1] === "v1") {
       const table = parts[2];
       let rows = (await db.query("select * from public." + table)).rows;
@@ -100,15 +113,17 @@ await context.route(projectUrl + "/**", async (route) => {
           key === "limit"
         )
           continue;
-        if (key === "user_id" && value.startsWith("eq."))
-          rows = rows.filter((r) => r.user_id === value.slice(3));
+        if (["user_id", "lesson_key"].includes(key) && value.startsWith("eq."))
+          rows = rows.filter((r) => r[key] === value.slice(3));
       }
       const range = req.headers()["range"];
       if (range) {
         const [lo, hi] = range.split("-").map(Number);
         rows = rows.slice(lo, hi + 1);
       }
-      result = rows;
+      result = req.headers()["accept"]?.includes("vnd.pgrst.object")
+        ? (rows[0] ?? null)
+        : rows;
     } else {
       status = 404;
       result = { message: "mock endpoint not found" };
@@ -119,19 +134,45 @@ await context.route(projectUrl + "/**", async (route) => {
   }
   return route.fulfill({ status, headers, body: JSON.stringify(result) });
 });
-async function reloadAndResume() {
-  const state = await page.evaluate(() =>
-    JSON.parse(localStorage.getItem("deutsch-trainer-verb-learning-L01")),
+const verbKey = "deutsch-trainer-verb-learning-L01";
+async function savedVerbState() {
+  await page.waitForFunction(
+    () =>
+      !localStorage.getItem(
+        "deutsch-trainer-pending-lessons:11111111-1111-4111-8111-111111111111",
+      ),
   );
+  return (
+    await db.query(
+      "select state from learner_lesson_states where lesson_key=$1",
+      [verbKey],
+    )
+  ).rows[0]?.state;
+}
+async function replaceVerbState(state) {
+  await db.query(
+    "update learner_lesson_states set state=$1::jsonb where lesson_key=$2",
+    [JSON.stringify(state), verbKey],
+  );
+}
+async function reloadAndResume() {
+  const state = await savedVerbState();
   await page.reload();
   if (state.showPrinciples) {
-    await page.getByRole("heading", { name: "กริยาผันตามประธาน", exact: true }).waitFor();
+    await page
+      .getByRole("heading", { name: "กริยาผันตามประธาน", exact: true })
+      .waitFor();
   } else if (state.showSummary) {
     await page.locator(".verb-summary table").waitFor();
   } else if (state.showIntroduction) {
-    await page.locator(".verb-introduction").getByRole("heading", { name: state.verb, exact: true }).waitFor();
+    await page
+      .locator(".verb-introduction")
+      .getByRole("heading", { name: state.verb, exact: true })
+      .waitFor();
   } else {
-    await page.getByLabel(`จับคู่รูปผัน ${state.verb}`, { exact: true }).waitFor();
+    await page
+      .getByLabel(`จับคู่รูปผัน ${state.verb}`, { exact: true })
+      .waitFor();
   }
 }
 try {
@@ -293,10 +334,14 @@ try {
         await page.locator(".matching-board").waitFor();
         assert.equal(await page.locator(".matching-drop.correct").count(), 1);
         if (index === 1) {
-          await page.getByRole("link", { name: "← กลับบทเรียน", exact: true }).click();
+          await page
+            .getByRole("link", { name: "← กลับบทเรียน", exact: true })
+            .click();
           await page.waitForURL("**/lesson/L01");
           await page.goto(base + "/learn/L01/grammar");
-          await page.getByLabel(`จับคู่รูปผัน ${entry.infinitive}`, { exact: true }).waitFor();
+          await page
+            .getByLabel(`จับคู่รูปผัน ${entry.infinitive}`, { exact: true })
+            .waitFor();
           assert.equal(await page.locator(".matching-drop.correct").count(), 1);
         }
       }
@@ -308,8 +353,7 @@ try {
       await page.getByRole("button", { name: "ตรวจการจับคู่" }).count(),
       0,
     );
-    if (index < 3)
-      await page.getByRole("button", { name: "ไปต่อ" }).click();
+    if (index < 3) await page.getByRole("button", { name: "ไปต่อ" }).click();
     else await page.getByRole("button", { name: "ไปต่อ" }).click();
   }
   await page.locator(".verb-summary table").waitFor();
@@ -355,55 +399,33 @@ try {
     .click();
   await page.locator(".matching-drop.correct").nth(5).waitFor();
   // Legacy saves keep their original activity and completion when the new field is absent.
-  await page.evaluate(() => {
-    const key = "deutsch-trainer-verb-learning-L01";
-    const saved = JSON.parse(localStorage.getItem(key));
-    delete saved.showIntroduction;
-    localStorage.setItem(key, JSON.stringify(saved));
-  });
+  const legacyState = await savedVerbState();
+  delete legacyState.showIntroduction;
+  await replaceVerbState(legacyState);
   await reloadAndResume();
   await page.locator(".matching-drop.correct").nth(5).waitFor();
   // A legacy completion flag with one incorrect saved pair must resume the board.
-  const validSavedState = await page.evaluate(() =>
-    JSON.parse(
-      localStorage.getItem("deutsch-trainer-verb-learning-L01"),
-    ),
+  const validSavedState = await savedVerbState();
+  const corruptState = structuredClone(validSavedState);
+  const entries = catalog.filter(
+    (item) =>
+      item.lessonId === "L01" &&
+      item.skill === "grammar" &&
+      item.group === "Verbkonjugation · kommen",
   );
-  await page.evaluate((catalog) => {
-    const key = "deutsch-trainer-verb-learning-L01";
-    const saved = JSON.parse(localStorage.getItem(key));
-    const entries = catalog.filter(
-      (item) =>
-        item.lessonId === "L01" &&
-        item.skill === "grammar" &&
-        item.group === "Verbkonjugation · kommen",
-    );
-    const wrongToken = entries.findIndex(
-      (item) => item.answer !== entries[0].answer,
-    );
-    saved.matchesByVerb.kommen[0] = wrongToken;
-    saved.showIntroduction = false;
-    saved.showSummary = false;
-    saved.verb = "kommen";
-    localStorage.setItem(key, JSON.stringify(saved));
-  }, catalog);
+  corruptState.matchesByVerb.kommen[0] = entries.findIndex(
+    (item) => item.answer !== entries[0].answer,
+  );
+  corruptState.showIntroduction = false;
+  corruptState.showSummary = false;
+  corruptState.verb = "kommen";
+  await replaceVerbState(corruptState);
   await reloadAndResume();
   await page.locator(".matching-board").waitFor();
   assert.equal(await page.locator(".matching-drop.filled").count(), 5);
   assert.equal(await page.locator(".matching-feedback").count(), 0);
-  assert(
-    !(await page.evaluate(() =>
-      JSON.parse(
-        localStorage.getItem("deutsch-trainer-verb-learning-L01"),
-      ).completedVerbs.includes("kommen"),
-    )),
-  );
-  await page.evaluate((saved) => {
-    localStorage.setItem(
-      "deutsch-trainer-verb-learning-L01",
-      JSON.stringify(saved),
-    );
-  }, validSavedState);
+  assert(!(await savedVerbState()).completedVerbs.includes("kommen"));
+  await replaceVerbState(validSavedState);
   await reloadAndResume();
   await page.locator(".matching-drop.correct").nth(5).waitFor();
   await page
@@ -426,10 +448,6 @@ try {
       () => document.documentElement.scrollWidth <= window.innerWidth,
     ),
   );
-  const savedVerbState = () =>
-    page.evaluate(() =>
-      JSON.parse(localStorage.getItem("deutsch-trainer-verb-learning-L01")),
-    );
   const beforeReplay = await savedVerbState();
   const exposureBeforeReplay = (
     await db.query("select * from item_exposures order by item_id")
@@ -517,8 +535,7 @@ try {
     await page.locator(".matching-drop.correct").nth(5).waitFor();
     assert.equal(await page.locator(".matching-feedback").count(), 0);
     assert.equal(await page.locator(".matching-result").count(), 0);
-    if (index < 3)
-      await page.getByRole("button", { name: "ไปต่อ" }).click();
+    if (index < 3) await page.getByRole("button", { name: "ไปต่อ" }).click();
     else await page.getByRole("button", { name: "ไปต่อ" }).click();
   }
   await page.locator(".verb-summary table").waitFor();
@@ -542,6 +559,7 @@ try {
     "PASS: four introductions, no premature exposure, matching, back, reload, legacy resume, endings, summary, migration idempotency and mobile layout",
   );
 } finally {
-  await browser.close();
+  await page.close({ runBeforeUnload: false });
   await db.close();
+  await browser.close();
 }

@@ -4719,16 +4719,30 @@ select {
   font-size: 9px;
   margin-top: 30px;
 }
-.auth-signout {
-  width: 100%;
-  border: 0;
-  background: transparent;
-  text-align: left;
-  padding: 10px 14px;
-  color: #a28c76;
+.topbar-signout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-shrink: 0;
+  min-height: 40px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--green);
   font: inherit;
-  font-size: 10px;
+  font-size: 12px;
+  white-space: nowrap;
   cursor: pointer;
+}
+.topbar-signout:hover {
+  background: #edf2e8;
+}
+@media (max-width: 720px) {
+  .topbar-right .level-pill {
+    display: none;
+  }
 }
 
 .verb-introduction {
@@ -4803,4 +4817,27 @@ select {
   .verb-learning-description .button {
     margin-left: auto;
   }
+}
+
+.lesson-save-error {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 200;
+  width: min(420px, calc(100vw - 48px));
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 12%);
+}
+.lesson-save-error p { margin: 0 0 12px; }
+.test-workspace-notice {
+  display: grid;
+  gap: 4px;
+  padding: 10px 16px;
+  background: #fff0c2;
+  color: #513e10;
+  font-size: 13px;
+  text-align: center;
 }

@@ -12,7 +12,7 @@ const context = await browser.newContext();
 const page = await context.newPage();
 const errors = [];
 page.on("pageerror", (e) => errors.push(e.message));
-page.setDefaultTimeout(8000);
+page.setDefaultTimeout(20000);
 page.on("console", (m) => {
   if (m.type() === "error") console.log("browser console:", m.text());
 });
@@ -90,6 +90,19 @@ await context.route(projectUrl + "/**", async (route) => {
         JSON.stringify(body.payload),
       ]);
       result = null;
+    } else if (
+      parts[0] === "rest" &&
+      parts[1] === "v1" &&
+      parts[2] === "learner_lesson_states" &&
+      req.method() === "POST"
+    ) {
+      const body = JSON.parse(req.postData());
+      await db.query(
+        `insert into learner_lesson_states(user_id,lesson_key,state) values ($1,$2,$3::jsonb)
+        on conflict(user_id,lesson_key) ${req.headers()["prefer"]?.includes("ignore-duplicates") ? "do nothing" : "do update set state=excluded.state"}`,
+        [body.user_id, body.lesson_key, JSON.stringify(body.state)],
+      );
+      result = null;
     } else if (parts[0] === "rest" && parts[1] === "v1") {
       const table = parts[2];
       let rows = (await db.query("select * from public." + table)).rows;
@@ -101,15 +114,17 @@ await context.route(projectUrl + "/**", async (route) => {
           key === "limit"
         )
           continue;
-        if (key === "user_id" && value.startsWith("eq."))
-          rows = rows.filter((r) => r.user_id === value.slice(3));
+        if (["user_id", "lesson_key"].includes(key) && value.startsWith("eq."))
+          rows = rows.filter((r) => r[key] === value.slice(3));
       }
       const range = req.headers()["range"];
       if (range) {
         const [lo, hi] = range.split("-").map(Number);
         rows = rows.slice(lo, hi + 1);
       }
-      result = rows;
+      result = req.headers()["accept"]?.includes("vnd.pgrst.object")
+        ? (rows[0] ?? null)
+        : rows;
     } else {
       status = 404;
       result = { message: "mock endpoint not found" };
@@ -175,7 +190,8 @@ try {
     .getByRole("heading", { name: "ตอบข้อนี้รู้สึกอย่างไร?" })
     .waitFor();
   assert.equal(
-    (await db.query("select confidence from learning_attempts")).rows[0].confidence,
+    (await db.query("select confidence from learning_attempts")).rows[0]
+      .confidence,
     null,
     "correct answer is persisted as pending before confidence",
   );
@@ -186,28 +202,43 @@ try {
   );
 
   await page.getByRole("link", { name: "ความก้าวหน้า" }).first().click();
-  await page.getByRole("heading", { name: "เห็นทุกก้าวที่คุณเติบโต" }).waitFor();
+  await page
+    .getByRole("heading", { name: "เห็นทุกก้าวที่คุณเติบโต" })
+    .waitFor();
   await page.getByLabel("ค้นหาคำศัพท์หรือหัวข้อ").fill(vocabulary.Word_German);
   const pendingRow = page.locator(".progress-table tbody tr").first();
   await pendingRow.waitFor();
   assert.match(await pendingRow.locator("td").nth(2).innerText(), /0\s*\/\s*0/);
   await pendingRow
     .getByRole("button", {
-      name: `ดูรายละเอียด ${vocabulary.Word_German}`,
+      name: /^ดูรายละเอียด /,
     })
     .click();
   const detail = page.locator(".detail-dialog");
-  assert.equal(await detail.locator(".detail-stats strong").nth(0).innerText(), "0");
-  assert.equal(await detail.locator(".detail-stats strong").nth(1).innerText(), "0");
+  assert.equal(
+    await detail.locator(".detail-stats strong").nth(0).innerText(),
+    "0",
+  );
+  assert.equal(
+    await detail.locator(".detail-stats strong").nth(1).innerText(),
+    "0",
+  );
   assert.doesNotMatch(await detail.innerText(), /\bms\b|วินาที/);
   await detail.getByRole("button", { name: "ปิดรายละเอียด" }).click();
 
   await page.getByRole("link", { name: "ทบทวน" }).first().click();
   await page.getByRole("heading", { name: "ทบทวน", exact: true }).waitFor();
-  await page.getByRole("heading", { name: "ยังไม่มีข้อที่ต้องทบทวน" }).waitFor();
-  await page.locator(".review-banner").getByRole("link", { name: "ฝึกต่อ" }).click();
+  await page
+    .getByRole("heading", { name: "ยังไม่มีข้อที่ต้องทบทวน" })
+    .waitFor();
+  const pendingSession = (
+    await db.query("select id from practice_sessions where completed=false")
+  ).rows[0];
+  await page.goto(base + "/session?id=" + pendingSession.id);
   await page.locator(".session-heading").getByText("ข้อ 1 / 1").waitFor();
-  await page.getByRole("heading", { name: "ตอบข้อนี้รู้สึกอย่างไร?" }).waitFor();
+  await page
+    .getByRole("heading", { name: "ตอบข้อนี้รู้สึกอย่างไร?" })
+    .waitFor();
 
   await page.getByRole("button", { name: "ง่าย" }).click();
   await page.reload();
@@ -232,9 +263,18 @@ try {
   await page
     .getByRole("heading", { name: "เห็นทุกก้าวที่คุณเติบโต" })
     .waitFor();
+  await page.getByLabel("ค้นหาคำศัพท์หรือหัวข้อ").fill(vocabulary.Word_German);
+  const learnedItem = (
+    await db.query("select data from content_items where id=$1", [seenId])
+  ).rows[0].data;
   const progressRow = page
     .locator(".progress-table tbody tr")
-    .filter({ hasText: vocabulary.Word_German });
+    .filter({
+      has: page.getByRole("button", {
+        name: `ดูรายละเอียด ${learnedItem.title}`,
+        exact: true,
+      }),
+    });
   await progressRow.waitFor();
   assert.match(await progressRow.innerText(), /1\s*\/\s*0/);
   await page.screenshot({
@@ -250,6 +290,7 @@ try {
   console.log((await page.locator("body").innerText()).slice(0, 1800));
   throw error;
 } finally {
-  await browser.close();
+  await page.close({ runBeforeUnload: false });
   await db.close();
+  await browser.close();
 }

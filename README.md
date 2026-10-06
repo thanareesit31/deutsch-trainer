@@ -1,5 +1,7 @@
 # Deutsch mit Sun
 
+พื้นที่ทดสอบและบัญชีทดสอบแยกจากข้อมูลจริง: เปิด `npm run dev:test` แล้วเข้า http://localhost:3002 ใช้ `tester@deutsch.test` / `TestOnly123!` เริ่มประวัติว่างใหม่ได้ด้วย Ctrl+C แล้วเปิดคำสั่งอีกครั้ง ดูรายละเอียดใน [คู่มือพื้นที่ทดสอบ](docs/test-workspace.md)
+
 เว็บฝึกภาษาเยอรมันสำหรับผู้เรียนไทย A1.1–A1.2 สร้างด้วย Next.js App Router, React, TypeScript และ Bun สำหรับ Vercel
 
 ## เริ่มใช้งาน
@@ -91,3 +93,11 @@ Mac เครื่องที่ใช้พัฒนาปัจจุบั�
 ## คลังเนื้อหาในฐานข้อมูล
 
 ก่อนเปิดเว็บเวอร์ชันนี้ ให้รัน `supabase/migrations/20261003010000_content_catalog.sql` ตาม [คู่มือย้ายเนื้อหา](docs/content-database.md) เนื้อหาทั้งหมดอ่านจาก Supabase โดยคงรหัสและประวัติเดิม
+
+### สถานะบทเรียนแยกตามบัญชี
+
+Alphabet, คำศัพท์จับคู่ภาพ และ Verben ใช้ `learner_lesson_states` ใน Supabase แยกจาก Practice history/mastery รัน `npm run db:migrate-lessons` ด้วย Node 20.9+ และ `DATABASE_URL` ใน `.env.local` ก่อนเปิดโค้ดรุ่นนี้ SQL เพิ่มตารางและ RLS โดยไม่ลบข้อมูลเดิม และรันซ้ำได้
+
+เพื่อย้ายข้อมูล prototype เดิมบนเบราว์เซอร์ ให้ตั้ง `NEXT_PUBLIC_LEGACY_LESSON_OWNER_ID` เป็น UUID บัญชีเจ้าของที่ตรวจยืนยันแล้วใน environment ของเว็บ (ทั้ง local และ deployment ที่ใช้งาน) แล้ว restart/rebuild เมื่อเจ้าของเปิดเว็บ ระบบตรวจบัญชีและย้ายเฉพาะคีย์บทเรียนที่ยังไม่มีข้อมูลบน cloud; ข้อมูล cloud ที่มีแล้วมีลำดับความสำคัญสูงกว่า บัญชีอื่นไม่อ่าน/นำเข้าข้อมูล prototype นี้ และคีย์เดิมที่ยังไม่ย้ายคงอยู่จนเจ้าของกลับมา
+
+`localStorage` หลังย้ายใช้เฉพาะสำรองข้อมูลที่รอส่งแยกตาม UUID เพื่อกู้คืนเมื่อเน็ตขัดข้อง; ไม่ใช่แหล่งข้อมูลหลักของบทเรียน ทดสอบด้วย `npm run test:lesson-db`, `node tests/lesson-states-browser.mjs` และ `npm run test:verb-browser` โดยเปิด dev server ก่อน browser tests

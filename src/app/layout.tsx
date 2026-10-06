@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ContentProvider } from "@/components/content-provider";
 import { StoreProvider } from "@/components/store";
+import { LessonStateProvider } from "@/components/lesson-state-provider";
 import { LearningProvider } from "@/components/learning-store";
 
 export const metadata: Metadata = {
@@ -22,7 +23,9 @@ export default function RootLayout({
       <body>
         <ContentProvider>
           <StoreProvider>
-            <LearningProvider>{children}</LearningProvider>
+            <LessonStateProvider>
+              <LearningProvider>{children}</LearningProvider>
+            </LessonStateProvider>
           </StoreProvider>
         </ContentProvider>
       </body>

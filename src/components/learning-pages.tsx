@@ -29,6 +29,7 @@ import {
   dimensionLabels,
   reviewCandidates,
 } from "@/lib/learning";
+import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
 import { useLearning } from "./learning-store";
 import { Empty, Meter, SectionTitle, skillIcons } from "./ui";
 import type { StartSession } from "./trainer";
@@ -467,7 +468,8 @@ function VerbLesson() {
         .map((i) => (i.group === "sein" ? "sein" : i.group.split(" · ")[1])),
     ),
   ];
-  const learningStorageKey = "deutsch-trainer-verb-learning-L01";
+  const lessonState = useLessonState();
+  const learningStorageKey = lessonStateKeys.verbs;
   const [verb, setVerb] = useState(verbs[0] || "kommen");
   const [completedVerbs, setCompletedVerbs] = useState<string[]>([]);
   const [replayingVerbs, setReplayingVerbs] = useState<string[]>([]);
@@ -551,7 +553,7 @@ function VerbLesson() {
   const results = resultsByVerb[verb] || null;
   useEffect(() => {
     try {
-      const saved = localStorage.getItem(learningStorageKey);
+      const saved = lessonState.read(learningStorageKey);
       if (saved) {
         const state = JSON.parse(saved);
         if (typeof state.verb === "string" && verbs.includes(state.verb))
@@ -639,13 +641,13 @@ function VerbLesson() {
           );
       }
     } catch {
-      localStorage.removeItem(learningStorageKey);
+      // Invalid activity drafts are replaced by the validated initial state.
     }
     setRestored(true);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [lessonState.read]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!restored) return;
-    localStorage.setItem(
+    lessonState.write(
       learningStorageKey,
       JSON.stringify({
         verb,
@@ -660,6 +662,7 @@ function VerbLesson() {
       }),
     );
   }, [
+    lessonState.write,
     restored,
     verb,
     completedVerbs,

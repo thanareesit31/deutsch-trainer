@@ -12,8 +12,14 @@
     "test:learning-db": "node tests/learning-database.mjs",
     "test:learning-browser": "node tests/learning-browser.mjs",
     "test:verb-browser": "node tests/verb-learning-browser.mjs",
+    "db:migrate-lessons": "node --env-file=.env.local scripts/migrate-lesson-states.mjs",
+    "test:lesson-browser": "node tests/lesson-states-browser.mjs",
+    "test:lesson-db": "node tests/lesson-states-database.mjs",
     "db:migrate-content": "node --env-file=.env.local scripts/migrate-content.mjs",
-    "dev:restart": "bash scripts/restart-local.sh"
+    "dev:restart": "bash scripts/restart-local.sh",
+    "dev:test": "bash scripts/start-test-workspace.sh",
+    "test:workspace": "node --test tests/test-workspace.test.mjs",
+    "test:workspace-browser": "node tests/test-workspace-browser.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.78.0",

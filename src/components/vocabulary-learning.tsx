@@ -7,9 +7,12 @@ import { readAlphabetLearningState } from "@/lib/alphabet-learning-storage";
 import { readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
 import { vocabularyImageEntries } from "@/lib/vocabulary-image-content";
 
+import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
+
 const alphabetItemIds = alphabetData.items.map((item) => item.id);
 
 export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }) {
+  const lessonState = useLessonState();
   const [alphabetStatus, setAlphabetStatus] = useState<"learned" | "replaying" | null>(null);
   const [imageVocabularyLearned, setImageVocabularyLearned] = useState(false);
 
@@ -17,13 +20,13 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
     if (lessonId !== "L01") return;
 
     const syncImageVocabularyStatus = () => {
-      const learnedIds = new Set(readLearnedImageVocabularyIds());
+      const learnedIds = new Set(readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.images)));
       setImageVocabularyLearned(
         vocabularyImageEntries.every((entry) => learnedIds.has(entry.id)),
       );
     };
     const syncAlphabetLearning = () => {
-      const learningState = readAlphabetLearningState();
+      const learningState = readAlphabetLearningState(lessonState.read(lessonStateKeys.alphabet));
       const learnedIds = new Set(learningState.learnedItemIds);
       const isLearned = alphabetItemIds.every((id) => learnedIds.has(id));
       setAlphabetStatus(
@@ -39,7 +42,7 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
       window.removeEventListener("storage", syncImageVocabularyStatus);
       window.removeEventListener("storage", syncAlphabetLearning);
     };
-  }, [lessonId]);
+  }, [lessonId, lessonState.read]);
 
   return (
     <main className="vocabulary-learning">

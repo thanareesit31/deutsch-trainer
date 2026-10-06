@@ -8,6 +8,8 @@ Baseline ที่ใช้เทียบ: [Product Baseline](./PRODUCT_BASELIN
 
 ## ภาพรวม
 
+เพิ่มพื้นที่ทดสอบบนเครื่องด้วย `npm run dev:test` ที่พอร์ต 3002 ใช้บัญชีทดสอบและฐานข้อมูล PGlite แยก; ประวัติเริ่มว่างทุกรอบโดยไม่เพิ่มปุ่มรีเซตในแอป ดู [คู่มือพื้นที่ทดสอบ](./test-workspace.md) Auth/REST เป็น adapter จำลอง ไม่ใช่ hosted Supabase
+
 เว็บปัจจุบันมีสองระบบข้อมูลอยู่ร่วมกัน:
 
 1. **ระบบใหม่ Learning History** ใช้ `item_exposures`, `practice_sessions`, `session_items`, `learning_attempts`, `attempt_evidence` และ view `knowledge_state` ใน Supabase สำหรับ Learn/Practice/Review/Progress รุ่นปัจจุบัน
@@ -22,7 +24,7 @@ Baseline ที่ใช้เทียบ: [Product Baseline](./PRODUCT_BASELIN
 | `/` | หน้าแรก สรุปจำนวนเคยเรียน/ส่งคำตอบ/ตอบถูก/รายการที่ฝึก และแสดงรอบที่ยังไม่จบ |
 | `/learn` | เลือกระดับ A1.1/A1.2 และบทเรียน L01–L12 |
 | `/lesson/:lessonId` | ภาพรวมบทและทักษะ พร้อมทางเข้า Learn และแบบฝึก |
-| `/learn/L01/vocabulary` | Vocabulary Learning prototype แบ่งชุดและบันทึก learning events แยกใน localStorage |
+| `/learn/L01/vocabulary` | ทางเข้า Das Alphabet และ WORTSCHATZ; สถานะบทเรียนใน Supabase แยกตามบัญชี |
 | `/learn/L01/vocabulary/alphabet` | Das Alphabet: 30 ตัวใน 6 content-configured groups, learned/resume state แยกกัน; หลังครบเปิด Alphabet Board |
 | `/learn/:lessonId/:skill` อื่น ๆ | Learn activity เดิมตามทักษะและบันทึก exposure |
 | `/practice` | จุดเริ่มต้น Practice อิสระจาก Learn เลือกบทและทักษะ |
@@ -53,13 +55,13 @@ Navigation หลักมี 5 เมนู: หน้าแรก, บทเ�
 - Learn activity แสดงรายการในบท/ทักษะตามลำดับจาก content catalog
 - ทักษะทั่วไป: เมื่อการ์ดปัจจุบัน mount และเอกสาร visible ระบบเรียก `learning_action('expose')`; กลับมาหน้าเดิม/รายการเดิมไม่สร้าง exposure ซ้ำเพราะ unique key ต่อ user/item
 - `/learn/L01/vocabulary` แสดงทางเข้า Das Alphabet และ WORTSCHATZ สำหรับจับคู่คำกับภาพ; ชุดกิจกรรม INTRODUCE/recall เดิมถูกถอดออกจาก Learn
-- สถานะ WORTSCHATZ อ่านจาก `src/lib/vocabulary-image-learning-storage.ts`; ระบบไม่อ่านหรือเขียน localStorage ของ vocabulary-learning prototype ที่ถอดออกแล้ว; key เก่าถ้ายังมีอยู่จะไม่ถูกใช้งาน และไม่กระทบสถานะจับคู่ภาพหรือ Alphabet
+- สถานะ WORTSCHATZ โหลดจาก `learner_lesson_states` ผ่าน `LessonStateProvider` และตรวจรูปแบบด้วย `src/lib/vocabulary-image-learning-storage.ts`; ระบบไม่อ่านหรือเขียน localStorage ของ vocabulary-learning prototype ที่ถอดออกแล้ว; key เก่าถ้ายังมีอยู่จะไม่ถูกใช้งาน และไม่กระทบสถานะจับคู่ภาพหรือ Alphabet
 - Practice และหน้าทักษะอื่นยังใช้ flow/eligibility เดิม
 - ปุ่ม “รายการถัดไป” ปลดล็อกหลังบันทึก exposure สำเร็จ; ผู้ใช้ย้อนดูรายการก่อนหน้าได้
 - Vocabulary Learn แบบเดิมสำหรับ Lektion/route อื่นยังใช้การ์ดจาก catalog; Vocabulary prototype ของ L01 เลือกการแสดง Artikel, Plural, example, chunk ตาม metadata ของคำ
 - L01 Wortschatz มี entry tile “Das Alphabet” ซึ่งเปิด route `/learn/L01/vocabulary/alphabet`; ใช้ภาพตัวอย่าง ABCD และวาง badge หลังชื่อบท: “เรียนแล้ว” เมื่อครบ 30 ตัว, “เรียนซ้ำ” ระหว่าง replay; configuration ใน `src/data/alphabet.json` เก็บ stable IDs, symbol, order, pronunciation text/audio reference, item IDs ต่อกลุ่ม และ activity type
 - Activity components ใน `src/components/alphabet-activities.tsx` รับ items ผ่าน props; ใช้ Listen and Choose / Find Sound สลับกัน ไม่มีหน้าจบกลุ่ม และไม่เฉลยเมื่อเลือกผิด
-- Alphabet learned IDs, resume index และตำแหน่ง replay เก็บแยกกันใน localStorage ผ่าน `src/lib/alphabet-learning-storage.ts`; ย้อนกลับไป replay ไม่ลด resume index และ state นี้ไม่ใช่ mastery หรือ Progress score
+- Alphabet learned IDs, resume index และตำแหน่ง replay เก็บแยกกันใน Supabase ผ่าน `LessonStateProvider` โดย `src/lib/alphabet-learning-storage.ts` ตรวจรูปแบบ state; ย้อนกลับไป replay ไม่ลด resume index และ state นี้ไม่ใช่ mastery หรือ Progress score
 - หลัง learned ครบ 30 ตัว route เปิด Alphabet Board ให้กดเล่นเสียงแต่ละตัวได้และกด “เรียนซ้ำ” ที่อยู่แถวเดียวกับ “กลับ Wortschatz” เพื่อ replay ตั้งแต่ A โดยไม่ลบ learned/resume state; ปุ่มย้อนกลับเปิดกิจกรรมตัวที่เพิ่งเรียนเพื่อ replay โดยไม่ลด resume index; replay position คงอยู่หลังออกจากหน้าแล้วกลับมา; Board มีปุ่ม “เรียนคำศัพท์ต่อ” ไปหน้า Begrüßung และ “แบบฝึกหัด” ไป Practice Vocabulary
 - ไม่พบ audio assets สำหรับ A–Z, Ä, Ö, Ü, ß ใน repository; `audio` เป็น `null`, ระบบใช้ shared browser German voice synthesis จาก `src/components/german-audio.ts` และแสดงข้อความแจ้งแหล่งเสียง
 
@@ -193,7 +195,8 @@ Diagnosis ผูกกับกลุ่ม content/mode แบบ hard-coded �
 | `src/components/learning-store.tsx` | load history, context, `learning_action` RPC, reload/error/busy |
 | `src/lib/learning.ts` | types, dimension diagnosis, confidence types, review candidate logic |
 | `src/lib/alphabet-learning.ts` | Alphabet content/set types, resolver, shuffle and config validation |
-| `src/lib/alphabet-learning-storage.ts` | Alphabet learned IDs และ resume index ใน localStorage |
+| `src/lib/alphabet-learning-storage.ts` | ตรวจและ normalize Alphabet state จาก Supabase |
+| `src/components/lesson-state-provider.tsx` | โหลด/บันทึกสถานะ Alphabet, image matching และ Verben แยกตามบัญชี; ย้าย legacy เฉพาะเจ้าของและสำรองรายการรอส่ง |
 | `src/components/store.tsx` | Supabase Auth และ legacy store hydration/persistence/import/reset |
 | `src/components/progress.tsx` | Settings และ Legacy export/import/reset |
 | `src/components/session-store.tsx` | in-memory SessionProvider เก่า; ไม่ถูกใช้จาก root layout/route ปัจจุบัน |
@@ -271,3 +274,5 @@ Tests, browser flow, typecheck และ production build ตรวจบน loc
 ## อัปเดต 2026-10-03: คลังเนื้อหาในฐานข้อมูล
 
 ข้อมูล catalog ที่เคยประกาศใน `src/lib/content.ts` ย้ายเป็น `content_lessons` และ `content_items` บน Supabase ตาม `docs/content-database.md` โค้ด production อ่านจาก `ContentProvider`; JSON เดิมและ `supabase/seed/catalog.json` เหลือไว้เป็นแหล่งอ้างอิง/seed คำอธิบายเรื่อง catalog hard-coded ข้างต้นเป็นสถานะก่อนการย้ายนี้ จำนวนบท/ศัพท์บนหน้าบทเรียนคำนวณจาก catalog ปัจจุบัน ต้องรัน migration ใหม่ก่อนใช้งาน ไม่มีการเปลี่ยน source of truth ของประวัติหรือการแยก Learn/Practice
+
+สถานะบทเรียนอัปเดต 7 ตุลาคม 2026: `learner_lesson_states` เก็บ Alphabet, image matching และ Verben แยกตาม `user_id` พร้อม RLS; บทเรียนและรอบเรียนซ้ำยังใช้กติกาเดิม localStorage คงไว้เฉพาะ legacy ที่รอย้ายและรายการรอส่งแยกบัญชี ไม่ใช่ source หลักของบทเรียน

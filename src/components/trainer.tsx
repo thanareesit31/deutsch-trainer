@@ -21,6 +21,7 @@ import {
   Menu,
   X,
   CircleHelp,
+  LogOut,
 } from "lucide-react";
 import {
   getLevel,
@@ -44,6 +45,7 @@ import { Badge, Empty, Meter, SectionTitle, skillIcons } from "./ui";
 import { PracticeSetup, Session } from "./practice";
 import { SettingsPage } from "./progress";
 import { AuthScreen } from "./auth-screen";
+import { TestWorkspaceNotice } from "./test-workspace-notice";
 import { VocabularyLearningEntryPoints } from "./vocabulary-learning";
 import { AlphabetLearningPage } from "./alphabet-learning";
 import { VocabularyImageMatching } from "./vocabulary-image-matching";
@@ -107,6 +109,25 @@ function App() {
     : null;
   const [startError, setStartError] = useState("");
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [signingOut, setSigningOut] = useState(false);
+  const [signOutError, setSignOutError] = useState("");
+
+  async function handleSignOut() {
+    if (signingOut) return;
+    setSigningOut(true);
+    setSignOutError("");
+    try {
+      await signOut();
+    } catch (cause) {
+      setSignOutError(
+        `ออกจากระบบไม่สำเร็จ กรุณาลองอีกครั้ง: ${
+          cause instanceof Error ? cause.message : "เชื่อมต่อไม่ได้"
+        }`,
+      );
+    } finally {
+      setSigningOut(false);
+    }
+  }
 
   const start: StartSession = async (
     pool,
@@ -309,12 +330,10 @@ function App() {
             </div>
             <span className="online-dot" />
           </div>
-          <button className="auth-signout" onClick={() => void signOut()}>
-            ออกจากระบบ
-          </button>
         </div>
       </aside>
       <div className="app-content">
+        <TestWorkspaceNotice />
         <header className="topbar">
           <div className="topbar-left">
             <button
@@ -336,6 +355,15 @@ function App() {
             <span className="small-avatar">
               {(user?.email || "S").slice(0, 1).toUpperCase()}
             </span>
+            <button
+              className="topbar-signout"
+              onClick={() => void handleSignOut()}
+              disabled={signingOut || history.busy}
+              aria-label="ออกจากระบบ"
+            >
+              <LogOut size={16} aria-hidden="true" />
+              <span>{signingOut ? "กำลังออก…" : "ออกจากระบบ"}</span>
+            </button>
           </div>
         </header>
         <main
@@ -344,9 +372,9 @@ function App() {
             path === "/session" ? "main-content session-main" : "main-content"
           }
         >
-          {(error || startError || history.error) && (
+          {(signOutError || error || startError || history.error) && (
             <div role="alert" className="notice error">
-              {error || startError || history.error}
+              {signOutError || error || startError || history.error}
             </div>
           )}
           {page}

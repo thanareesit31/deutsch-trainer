@@ -11,15 +11,17 @@ import {
 import {
   emptyAlphabetLearningState,
   readAlphabetLearningState,
-  writeAlphabetLearningState,
   type AlphabetLearningState,
 } from "@/lib/alphabet-learning-storage";
 import { useAlphabetAudio } from "./alphabet-audio";
 import { FindSound, ListenAndChoose } from "./alphabet-activities";
 
+import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
+
 const configuration = alphabetData as AlphabetLessonConfiguration;
 
 export function AlphabetLearningPage() {
+  const lessonState = useLessonState();
   const sets = useMemo(
     () => [...configuration.sets].sort((left, right) => left.position - right.position),
     [],
@@ -35,7 +37,7 @@ export function AlphabetLearningPage() {
   const hasMissingAudio = configuration.items.some((item) => !item.audio);
 
   useEffect(() => {
-    const saved = readAlphabetLearningState();
+    const saved = readAlphabetLearningState(lessonState.read(lessonStateKeys.alphabet));
     const resumeIndex = Math.min(saved.resumeIndex, flow.length);
     const revisitIndex = resumeIndex >= flow.length ? saved.revisitIndex : null;
     const isRevisiting = revisitIndex !== null;
@@ -44,11 +46,11 @@ export function AlphabetLearningPage() {
     setRevisitingFromBoard(isRevisiting);
     setShowBoard(resumeIndex >= flow.length && !isRevisiting);
     setHydrated(true);
-  }, [flow.length]);
+  }, [flow.length, lessonState.read]);
 
   useEffect(() => {
-    if (hydrated) writeAlphabetLearningState(learningState);
-  }, [hydrated, learningState]);
+    if (hydrated) lessonState.write(lessonStateKeys.alphabet, JSON.stringify(learningState));
+  }, [hydrated, learningState, lessonState.write]);
 
   function startReplayFromBeginning() {
     setCurrentIndex(0);

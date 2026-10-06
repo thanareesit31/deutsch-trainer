@@ -12,8 +12,9 @@ import {
 } from "@/lib/vocabulary-image-content";
 import {
   readLearnedImageVocabularyIds,
-  writeLearnedImageVocabularyIds,
 } from "@/lib/vocabulary-image-learning-storage";
+
+import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
 
 function CountryFlag({ flag }: { flag: CountryFlagId }) {
   const common = { viewBox: "0 0 3 2", className: "vocabulary-image-flag", "aria-hidden": true as const };
@@ -37,6 +38,7 @@ function CountryFlag({ flag }: { flag: CountryFlagId }) {
 }
 
 export function VocabularyImageMatching({ items, groupId }: { items: Item[]; groupId: VocabularyImageGroupId }) {
+  const lessonState = useLessonState();
   const groupIndex = vocabularyImageGroups.findIndex((entry) => entry.id === groupId);
   const group = vocabularyImageGroups[groupIndex] ?? vocabularyImageGroups[0];
   const entries = useMemo(() => vocabularyImageEntries.map((definition) => {
@@ -57,9 +59,9 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    setLearnedIds(readLearnedImageVocabularyIds());
+    setLearnedIds(readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.images)));
     setHydrated(true);
-  }, []);
+  }, [lessonState.read]);
 
   const learned = new Set(learnedIds);
   const replayMatched = new Set(replayMatchedIds);
@@ -118,7 +120,7 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
     }
     const nextLearnedIds = [...new Set([...learnedIds, entry.itemId])];
     setLearnedIds(nextLearnedIds);
-    writeLearnedImageVocabularyIds(nextLearnedIds);
+    lessonState.write(lessonStateKeys.images, JSON.stringify(nextLearnedIds));
     setIncorrectIds([]);
     setSelectedId(null);
     setFeedback("");
