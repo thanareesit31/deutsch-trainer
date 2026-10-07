@@ -8,15 +8,16 @@ const client = new pg.Client({
 });
 try {
   await client.connect();
-  await client.query(
-    await readFile(
-      new URL(
-        "../supabase/migrations/20261007000000_learner_lesson_states.sql",
-        import.meta.url,
+  for (const file of [
+    "20261007000000_learner_lesson_states.sql",
+    "20261007020000_l02_lesson_states.sql",
+  ])
+    await client.query(
+      await readFile(
+        new URL("../supabase/migrations/" + file, import.meta.url),
+        "utf8",
       ),
-      "utf8",
-    ),
-  );
+    );
   console.log(
     "Lesson state migration applied; existing learning history preserved.",
   );

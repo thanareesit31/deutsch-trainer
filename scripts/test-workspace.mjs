@@ -47,7 +47,10 @@ await writeFile(
   ) + "\n",
 );
 const originalNextEnv = await readFile("next-env.d.ts", "utf8");
-const api = await startTestApi({ port: apiPort, webPort });
+const recovery = process.env.TEST_WORKSPACE_RECOVERY === "1"
+  ? JSON.parse(await readFile(".tools/test-workspace-recovery.json", "utf8"))
+  : undefined;
+const api = await startTestApi({ port: apiPort, webPort, restore: recovery });
 const child = spawn(
   process.execPath,
   [
@@ -76,7 +79,7 @@ const child = spawn(
   },
 );
 console.log(
-  `\nพื้นที่ทดสอบ: http://localhost:${webPort}\nบัญชี: tester@deutsch.test หรือ tester2@deutsch.test\nรหัสผ่าน: TestOnly123!\nข้อมูลเริ่มว่างทุกครั้งที่เปิดคำสั่งนี้; refresh หน้าเว็บยังเรียนต่อได้\nเริ่มใหม่: Ctrl+C แล้ว npm run dev:test\n`,
+  `\nพื้นที่ทดสอบ: http://localhost:${webPort}\nบัญชี: tester@deutsch.test หรือ tester2@deutsch.test\nรหัสผ่าน: TestOnly123!\n${recovery ? "คืนประวัติทดสอบเดิมแล้ว พร้อม catalog ปัจจุบัน; กรุณาล็อกอินใหม่" : "ข้อมูลเริ่มว่างทุกครั้งที่เปิดคำสั่งนี้; refresh หน้าเว็บยังเรียนต่อได้"}\nเริ่มใหม่: Ctrl+C แล้ว npm run dev:test\n`,
 );
 let closing = false;
 async function cleanup(code = 0) {

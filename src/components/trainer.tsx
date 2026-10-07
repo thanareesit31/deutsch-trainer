@@ -50,6 +50,7 @@ import { VocabularyLearningEntryPoints } from "./vocabulary-learning";
 import { AlphabetLearningPage } from "./alphabet-learning";
 import { VocabularyImageMatching } from "./vocabulary-image-matching";
 import { vocabularyImageGroups } from "@/lib/vocabulary-image-content";
+import { GuidedLearningPage } from "./guided-learning";
 
 export type StartSession = (
   pool: Item[],
@@ -220,6 +221,16 @@ function App() {
     );
   else if (path === "/practice") page = <PracticeEntry start={start} />;
   else if (path === "/review") page = <ReviewPage start={start} />;
+  else if (path === "/learn/L02/vocabulary")
+    page = <VocabularyLearningEntryPoints key={path} lessonId="L02" />;
+  else if (
+    parts[0] === "learn" && parts[1] === "L02" && parts[2] === "vocabulary" && parts.length === 4 &&
+    (parts[3] === "numbers" || parts[3] === "core")
+  ) page = <GuidedLearningPage key={path} lessonId="L02" skill="vocabulary" track={parts[3]} />;
+  else if (
+    parts[0] === "learn" && parts[1] === "L02" && parts.length === 3 &&
+    parts[2] === "grammar"
+  ) page = <GuidedLearningPage key={path} lessonId="L02" skill={parts[2]} />;
   else if (path === "/learn/L01/vocabulary/alphabet")
     page = <AlphabetLearningPage />;
   else if (vocabularyImageGroups.some((group) => group.route === path))
@@ -461,8 +472,8 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
       <div className="notice">
         <CircleHelp size={19} />
         <span>
-          L01 มีแบบฝึกทั้ง 6 ทักษะ ส่วน L02–L12 มีคำศัพท์เดิมครบ
-          พร้อมเพิ่มเนื้อหาทักษะอื่นเมื่อจัดเตรียมบทเรียนแล้ว
+          L01 มีแบบฝึกทั้ง 6 ทักษะ ส่วน L02 เลือกเรียนตัวเลขหรือคำศัพท์ประจำบท และเรียน Grammatik แบบต่อเนื่อง
+          บทอื่นพร้อมเพิ่มเนื้อหาเมื่อจัดเตรียมบทเรียนแล้ว
         </span>
       </div>
     </>
@@ -473,6 +484,7 @@ function LessonDetail({ id }: { id: string }) {
   const lesson = lessons.find((l) => l.id === id)!;
   const { data } = useStore();
   const history = useLearning();
+  const lessonSkills = skills.filter((s) => id !== "L02" || s.id === "vocabulary" || s.id === "grammar");
   return (
     <>
       <Link className="back-link" href={`/learn?level=${lesson.level}`}>
@@ -495,7 +507,7 @@ function LessonDetail({ id }: { id: string }) {
         eyebrow="EIN SCHRITT WEITER"
       />
       <div className="skills-grid">
-        {skills.map((s) => {
+        {lessonSkills.map((s) => {
           const Icon = skillIcons[s.id];
           const pool = items.filter(
             (i) => i.lessonId === id && i.skill === s.id,

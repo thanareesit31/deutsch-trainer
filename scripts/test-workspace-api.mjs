@@ -44,10 +44,10 @@ async function bodyOf(req) {
   return data ? JSON.parse(data) : {};
 }
 
-export async function startTestApi({ port = 54329, webPort = 3002 } = {}) {
+export async function startTestApi({ port = 54329, webPort = 3002, restore } = {}) {
   const db = await createDatabase();
   await db.exec("reset role");
-  const accounts = ["tester@deutsch.test", "tester2@deutsch.test"].map(
+  const accounts = restore?.accounts ?? ["tester@deutsch.test", "tester2@deutsch.test"].map(
     (email) => ({
       id: randomUUID(),
       email,
@@ -61,6 +61,24 @@ export async function startTestApi({ port = 54329, webPort = 3002 } = {}) {
   );
   for (const account of accounts)
     await db.query("insert into auth.users(id) values ($1)", [account.id]);
+  // Local recovery only: install current content first, then restore learner rows.
+  // This keeps existing evidence intact when a running test catalog needs an update.
+  if (restore) {
+    await db.transaction(async (tx) => {
+      for (const table of tables) {
+        if (table.startsWith("content_") || table === "knowledge_state") continue;
+        for (const row of restore.rows[table] ?? []) {
+          if (!accounts.some((account) => account.id === row.user_id))
+            throw new Error("Recovery contains an unknown test account");
+          const columns = Object.keys(row);
+          await tx.query(
+            `insert into ${identifier(table)} (${columns.map(identifier).join(",")}) values (${columns.map((_, i) => "$" + (i + 1)).join(",")})`,
+            columns.map((column) => typeof row[column] === "object" && row[column] !== null ? JSON.stringify(row[column]) : row[column]),
+          );
+        }
+      }
+    });
+  }
   const sessions = new Map();
   const refreshTokens = new Map();
   const origins = new Set([

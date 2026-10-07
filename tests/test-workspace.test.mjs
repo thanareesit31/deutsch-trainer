@@ -4,6 +4,36 @@ import { spawnSync } from "node:child_process";
 import { createClient } from "@supabase/supabase-js";
 import { startTestApi, password } from "../scripts/test-workspace-api.mjs";
 
+test("catalog recovery keeps test lesson state and exposures while adding page-four numbers", async () => {
+  const account = { id: "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa", email: "tester@deutsch.test", role: "authenticated", aud: "authenticated" };
+  const state = { matches: { "L02-number-matching-21-100": ["L02-number-21"] } };
+  const api = await startTestApi({ port: 0, restore: {
+    accounts: [account],
+    rows: {
+      learner_lesson_states: [{ user_id: account.id, lesson_key: "deutsch-trainer-guided-learning-L02-vocabulary", state }],
+      item_exposures: [{ user_id: account.id, item_id: "L02-number-21", seen_at: "2026-10-08T00:00:00Z" }],
+      knowledge_state: [{ user_id: account.id, item_id: "L02-number-21", attempts: 0, correct: 0, errors: 0 }],
+    },
+  } });
+  const client = createClient(api.url, "local-test-key", { auth: { persistSession: false, autoRefreshToken: false } });
+  try {
+    const login = await client.auth.signInWithPassword({ email: account.email, password });
+    assert.ifError(login.error);
+    const lessons = await client.from("learner_lesson_states").select("state");
+    assert.ifError(lessons.error);
+    assert.deepEqual(lessons.data.map((row) => row.state), [state]);
+    const exposures = await client.from("item_exposures").select("item_id");
+    assert.ifError(exposures.error);
+    assert.deepEqual(exposures.data, [{ item_id: "L02-number-21" }]);
+    const knowledge = await client.from("knowledge_state").select("item_id,attempts");
+    assert.ifError(knowledge.error);
+    assert.deepEqual(knowledge.data, [{ item_id: "L02-number-21", attempts: 0 }]);
+    const content = await client.from("content_items").select("data").eq("lesson_id", "L02");
+    assert.ifError(content.error);
+    assert.deepEqual(content.data.map((row) => row.data.numberContent?.value).filter((n) => [21, 48, 63, 89, 100].includes(n)).sort((a,b) => a-b), [21,48,63,89,100]);
+  } finally { await client.auth.stopAutoRefresh(); await api.close(); }
+});
+
 test("test configuration refuses production and hosted database connections", () => {
   for (const env of [
     {

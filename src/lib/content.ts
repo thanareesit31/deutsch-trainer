@@ -1,12 +1,7 @@
 export type Skill =
   "vocabulary" | "grammar" | "phrases" | "writing" | "listening" | "reading";
 export type VocabularyWordType =
-  | "noun"
-  | "verb"
-  | "adjective"
-  | "country"
-  | "expression"
-  | "other";
+  "noun" | "verb" | "adjective" | "country" | "expression" | "other";
 export type Mode =
   | "flash"
   | "de-th"
@@ -40,6 +35,39 @@ export interface Item {
   image?: string;
   notes?: string;
   accepted?: string[];
+  sourceScope?: "core_book" | "teacher_extension" | "worksheet_support";
+  sources?: { document: string; pdfPage?: number; printedPage?: number }[];
+  thaiPronunciation?: string;
+  numberContent?: {
+    value: number;
+    written: string;
+    group: string;
+    pattern?: string;
+    audioRef: string | null;
+    order: number;
+  };
+  pronounContent?: {
+    pronoun: string;
+    personReference: string;
+    number: "singular" | "plural" | "both";
+    politeness?: string;
+  };
+  professionContent?: {
+    conceptKey: string;
+    masculine: string;
+    feminine?: string;
+    masculineReading: string;
+    feminineReading?: string;
+    masculineAudioRef: string | null;
+    feminineAudioRef: string | null;
+    formScopes: { masculine: string; feminine?: string };
+  };
+  verbContent?: {
+    infinitive: string;
+    stem: string;
+    examples: { de: string; th: string }[];
+    conjugations: { subject: string; form: string; ending: string }[];
+  };
 }
 export const skills: {
   id: Skill;
@@ -104,6 +132,9 @@ export interface Lesson {
   title: string;
   thai: string;
   topics: string;
+  learningFlows?: Partial<
+    Record<"vocabulary" | "grammar", import("./guided-learning").LearningFlow>
+  >;
   verbIntroductions?: VerbIntroduction[];
   verbPrinciples?: {
     title: string;

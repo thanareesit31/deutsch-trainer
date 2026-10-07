@@ -15,6 +15,8 @@ try {
     "20261005000000_l01_verb_introductions.sql",
     "20261005010000_l01_verb_principles.sql",
     "20261005020000_l01_verb_pronoun_translations.sql",
+    "20261007010000_l02_learning_content.sql",
+    "20261008000000_l02_number_page_four.sql",
   ]) {
     const sql = await readFile(
       new URL("../supabase/migrations/" + file, import.meta.url),

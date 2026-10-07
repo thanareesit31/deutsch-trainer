@@ -15,7 +15,14 @@ export const lessonStateKeys = {
   alphabet: "deutsch-trainer-alphabet-learning-v1-L01",
   images: "deutsch-trainer-vocabulary-image-learning-v1-L01",
   verbs: "deutsch-trainer-verb-learning-L01",
+  l02Vocabulary: "deutsch-trainer-guided-learning-L02-vocabulary",
+  l02Grammar: "deutsch-trainer-guided-learning-L02-grammar",
 } as const;
+const legacyLessonKeys = [
+  lessonStateKeys.alphabet,
+  lessonStateKeys.images,
+  lessonStateKeys.verbs,
+];
 type Snapshot = Record<string, string>;
 const Context = createContext<{
   read: (key: string) => string | null;
@@ -115,7 +122,7 @@ function AccountLessonState({
           const verified = await supabase!.auth.getUser();
           if (verified.error || verified.data.user?.id !== userId)
             throw new Error("Account changed during migration");
-          for (const key of Object.values(lessonStateKeys)) {
+          for (const key of legacyLessonKeys) {
             let raw: string | null = null;
             try {
               raw = localStorage.getItem(key);

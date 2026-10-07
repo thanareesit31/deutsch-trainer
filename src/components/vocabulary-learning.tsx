@@ -6,6 +6,9 @@ import alphabetData from "@/data/alphabet.json";
 import { readAlphabetLearningState } from "@/lib/alphabet-learning-storage";
 import { readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
 import { vocabularyImageEntries } from "@/lib/vocabulary-image-content";
+import { readGuidedState, vocabularyTrackActivities } from "@/lib/guided-learning";
+import { useContent } from "./content-provider";
+import { prepareL02VocabularyFlow } from "@/lib/l02-number-learning";
 
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
 
@@ -13,6 +16,10 @@ const alphabetItemIds = alphabetData.items.map((item) => item.id);
 
 export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }) {
   const lessonState = useLessonState();
+  const { lessons, items } = useContent();
+  const catalogFlow = lessons.find((lesson) => lesson.id === lessonId)?.learningFlows?.vocabulary;
+  const flow = catalogFlow && lessonId === "L02" ? prepareL02VocabularyFlow(catalogFlow, items) : catalogFlow;
+  const guidedState = flow ? readGuidedState(lessonState.read(flow.stateKey), flow, items) : null;
   const [alphabetStatus, setAlphabetStatus] = useState<"learned" | "replaying" | null>(null);
   const [imageVocabularyLearned, setImageVocabularyLearned] = useState(false);
 
@@ -49,6 +56,32 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
       <Link className="back-link" href={`/lesson/${lessonId}`}>
         ← กลับ Lektion {lessonId.slice(1)}
       </Link>
+
+      {lessonId === "L02" && (
+        <>
+          {([
+            { id: "numbers", symbol: "123", eyebrow: "HÖREN & ZUORDNEN", title: "Die Zahlen", description: "เรียนรู้การอ่านและจับคู่ตัวเลขภาษาเยอรมัน" },
+            { id: "core", symbol: "Beruf", eyebrow: "BILDER", title: "WORTSCHATZ", description: "เรียนรู้คำศัพท์ประจำบท" },
+          ] as const).map((track) => {
+            const activities = flow ? vocabularyTrackActivities(flow, items, track.id) : [];
+            const learned = activities.length > 0 && activities.every((activity) => guidedState?.learnedActivityIds.includes(activity.id));
+            return (
+              <Link key={track.id} className={`alphabet-entry-card${track.id === "core" ? " vocabulary-image-entry-card" : ""}`} href={`/learn/${lessonId}/vocabulary/${track.id}`}>
+                <span className={track.id === "numbers" ? "alphabet-entry-symbols" : "vocabulary-image-entry-art"} aria-hidden="true">{track.symbol}</span>
+                <span className="alphabet-entry-copy">
+                  <span className="eyebrow">{track.eyebrow}</span>
+                  <span className="alphabet-entry-title">
+                    <strong>{track.title}</strong>
+                    {learned && <span className="alphabet-entry-status">เรียนแล้ว</span>}
+                  </span>
+                  <small>{track.description}</small>
+                </span>
+                <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
+              </Link>
+            );
+          })}
+        </>
+      )}
 
       {lessonId === "L01" && (
         <>

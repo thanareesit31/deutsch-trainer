@@ -46,3 +46,13 @@ Supabase เป็นแหล่งเนื้อหา Introduction เพี
 `20261005010000_l01_verb_principles.sql` เพิ่ม `content_lessons.data.verbPrinciples` ของ L01 (หัวข้อ, ส่วนหลัก/ส่วนท้าย, ตาราง Endung และหมายเหตุ) โดย runner รันต่อจาก Introduction; ไม่เพิ่ม practice items หรือสำเนา JSON
 
 `20261005020000_l01_verb_pronoun_translations.sql` เติม `thaiSubject` ให้แต่ละแถวใน `verbPrinciples.rows` ของ L01; ตารางใช้คอลัมน์นี้ถัดจากประธาน
+
+## Lektion 2 guided flow
+
+`20261007010000_l02_learning_content.sql` เพิ่ม/เติม metadata ของ L02 ใน catalog เดิม (109 records: 92 ใหม่, 17 IDs เดิม) และ `content_lessons.data.learningFlows`. Activity config แยกจาก content และอ้างอิง `content_items.id`; จำนวน 113 vocabulary / 22 grammar activities ไม่ใช่จำนวนคำศัพท์หรือ mastery. Numbers ใช้ 29 base/tens กับ 12 compound examples ไม่ใช่ 101 cards. Profession concepts มี forms ที่ยืนยันจริง, source ของแต่ละรูป, optional image/audio refs และคำอ่านไทย; teacher forms ไม่ถูกอ้างว่าพิมพ์อยู่ในหนังสือ ทุก record มี `sourceScope`/`sources`. คำอ่านไทยเป็นคำช่วยเรียนที่เรียบเรียง ส่วนเสียงสังเคราะห์ใช้ helper เดิมเมื่อไม่มี static asset.
+
+`sein` อ้างอิง `grammar-L01-sein-0` ถึง `-5`; ไม่เพิ่ม L02 sein content. เก็บ IDs เดิมของรูปหญิงไว้เพื่อรักษาประวัติ และการจับคู่รูปหญิง expose IDs เดิมด้วยโดยไม่สร้าง Practice attempts. Seed ใช้ version guards: รันซ้ำไม่เขียนทับ metadata ที่แก้ภายหลัง. ดู inventory/source ambiguities ใน `lektion-2-content-inventory.md`.
+
+ใช้ `npm run db:migrate-content` และ `npm run db:migrate-lessons` (Node 20.9+) เพื่อติดตั้งทั้ง content และ state. `20261007020000_l02_lesson_states.sql` ขยาย check constraint ในตารางเดิมและคง RLS; provider whitelist รองรับสอง L02 keys แต่ legacy import ยังคงเฉพาะ L01. ไม่มีตาราง progress ใหม่หรือ local JSON content. localStorage ใช้เฉพาะ pending writes เดิม.
+
+Validation: `npm run test:l02` ตรวจ catalog references, dependencies, source tags, assets, replay-safe resume และ migration/RLS. `npm run test:l02-browser` ใช้ server ที่ `TEST_BASE_URL` (default localhost:3000), intercept Supabase ไปยัง PGlite ไม่เขียน learner data จริง; ตรวจทุก activity และใช้ mock German voice สำหรับความถูกต้องของ playback/choice flow ไม่ใช่ทดสอบคุณภาพเสียงพูด.

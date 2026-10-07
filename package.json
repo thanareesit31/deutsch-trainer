@@ -19,7 +19,9 @@
     "dev:restart": "bash scripts/restart-local.sh",
     "dev:test": "bash scripts/start-test-workspace.sh",
     "test:workspace": "node --test tests/test-workspace.test.mjs",
-    "test:workspace-browser": "node tests/test-workspace-browser.mjs"
+    "test:workspace-browser": "node tests/test-workspace-browser.mjs",
+    "test:l02": "node --import tsx --test tests/l02-learning.test.ts",
+    "test:l02-browser": "node --import tsx tests/l02-learning-browser.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.78.0",
