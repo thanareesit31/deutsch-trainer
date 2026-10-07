@@ -10,6 +10,12 @@ const additionalNumbers = [
   { value: 76, written: "sechsundsiebzig" },
 ].map((number) => ({
   id: `number-summary-${number.value}`,
+  lessonId: "L02",
+  skill: "vocabulary" as const,
+  group: "summary",
+  title: number.written,
+  meaning: number.written,
+  answer: number.written,
   numberContent: { ...number, audioRef: null, group: "summary", order: number.value },
 }));
 type SummaryItem = Item & { numberContent: NonNullable<Item["numberContent"]> };
