@@ -3,6 +3,8 @@ import { Sun } from "lucide-react";
 import { createContext, useContext, useEffect, useState } from "react";
 import type { Catalog, Item, Lesson } from "@/lib/content";
 import { supabase } from "@/lib/supabase";
+import { prepareProfessionItem } from "@/lib/profession-learning";
+import { prepareL02PhraseItem } from "@/lib/l02-phrase-content";
 
 type Content = Catalog & { coreVocabulary: Item[]; extraVocabulary: Item[] };
 const ContentContext = createContext<Content | null>(null);
@@ -49,7 +51,7 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
         if (!active) return;
         if (!lessons.length) throw new Error("ยังไม่มีบทเรียนที่เผยแพร่");
         const lessonIds = new Set(lessons.map((l) => l.id));
-        const items = allItems.filter((i) => lessonIds.has(i.lessonId));
+        const items = allItems.filter((i) => lessonIds.has(i.lessonId)).map(prepareProfessionItem).map(prepareL02PhraseItem);
         setContent({
           lessons,
           items,

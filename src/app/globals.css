@@ -5265,3 +5265,219 @@ select {
     animation: none;
   }
 }
+
+/* Lektion 2: paired people and article dots, without answer-color hints. */
+.article-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; flex: 0 0 9px; margin-right: 6px; }
+.article-legend { position: sticky; top: 0; z-index: 5; display: flex; justify-content: center; gap: 8px 18px; flex-wrap: wrap; padding: 10px; background: var(--surface, #fff); border: 1px solid #e1e5dc; border-radius: 12px; font-size: .8rem; }
+.article-legend > span { display: inline-flex; align-items: center; }
+.profession-page-count { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.profession-options { padding: 12px; border: 1px solid #d9ded5; border-radius: 12px; background: #fafaf7; display: flex; gap: 8px; flex-wrap: wrap; }
+.profession-learning .profession-options-sticky {
+  position: sticky;
+  top: calc(var(--article-legend-height, 56px) + var(--profession-progress-height, 40px));
+  z-index: 4;
+  isolation: isolate;
+}
+.profession-learning .profession-options-sticky::before {
+  content: "";
+  position: absolute;
+  inset: 0 calc(-1 * var(--profession-card-inset));
+  z-index: -1;
+  background: var(--paper);
+}
+.profession-learning .profession-options {
+  max-height: 35dvh;
+  overflow-y: auto;
+  box-shadow: 0 3px 8px rgb(36 59 50 / 8%);
+}
+.profession-option { background: #fff; color: #243b32; border: 1px solid #89978f; border-radius: 9px; padding: 12px 15px; font-size: 1rem; min-height: 44px; }
+.profession-option.selected { outline: 3px solid #344d45; outline-offset: 1px; }
+.profession-options p { width: 100%; margin: 6px 0 0; font-size: .9rem; }
+.profession-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
+.profession-pair { border: 1px solid #d9ded5; border-radius: 14px; padding: 12px; min-width: 0; }
+.profession-pair > p:first-child { margin: 0 0 10px; }
+.profession-pair small { display: block; font-size: .75rem; color: #526257; }
+.profession-people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.profession-person { width: 100%; height: auto; display: block; }
+.profession-label, .profession-slot { min-height: 56px; width: 100%; display: flex; align-items: center; justify-content: center; padding: 8px 3px; font-size: clamp(.85rem, 1.5vw, 1.05rem); overflow-wrap: anywhere; }
+.profession-label { display: block; text-align: center; }
+.profession-label .article-dot { vertical-align: middle; }
+.profession-slot { border: 1px dashed #7c897e; border-radius: 9px; background: #fff; color: #344d45; cursor: pointer; }
+.profession-slot:disabled { cursor: default; opacity: .65; }
+.profession-form-scope { text-align: center; margin-top: 4px; }
+.profession-pair .guided-audio { margin: 4px 0; justify-content: center; }
+.profession-pair .guided-audio .button { min-height: 44px; padding: 8px; font-size: .8rem; max-width: 100%; }
+.profession-pair .guided-audio > small { display: none; }
+.profession-audio-note { font-size: .8rem; color: #526257; }
+.profession-explanation, .profession-error, .profession-hint { font-size: .85rem; margin: 10px 0 0; }
+.profession-error { color: #963c34; }
+.profession-hint { background: #f6f2e8; padding: 8px; border-radius: 8px; }
+.profession-intro { max-width: 650px; margin: 0 auto; line-height: 1.8; }
+.profession-matching button:focus-visible { outline: 3px solid #344d45; outline-offset: 3px; }
+@media (max-width: 700px) { .profession-grid { grid-template-columns: 1fr; } .article-legend { gap: 6px 12px; font-size: .7rem; } .profession-option { flex: 1 1 auto; } .profession-label, .profession-slot { font-size: .95rem; } }
+
+/* Compact Berufe lesson: one paired illustration and two aligned word labels. */
+.profession-learning .vocabulary-image-heading { margin: 8px 0 10px; }
+.profession-learning .vocabulary-image-heading h1 { font-size: clamp(24px, 3vw, 34px); margin: 3px 0; }
+.profession-learning .article-legend { padding: 7px 10px; gap: 5px 14px; margin-bottom: 10px; border: 0; border-radius: 0; justify-content: center; font-size: .8rem; }
+.profession-category { font-weight: 600; color: #526257; }
+.profession-learning .vocabulary-image-progress {
+  position: sticky;
+  top: var(--article-legend-height, 56px);
+  z-index: 5;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  background: var(--paper);
+}
+.profession-learning-card { padding: 14px; --profession-card-inset: 15px; }
+.profession-learning-card .profession-grid { margin-top: 12px; gap: 14px; }
+@media (min-width: 1100px) { .profession-learning-card .profession-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.profession-learning-card .profession-pair { padding: 10px; }
+.profession-meaning { font-size: .9rem; }
+.profession-pair-image { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; display: block; border-radius: 10px; }
+.profession-pair-image.mirrored { transform: scaleX(-1); }
+.profession-learning-card .profession-people { margin-top: 4px; gap: 8px; }
+.profession-learning-card .guided-audio { margin: 0; width: 100%; }
+.profession-audio-word { background: transparent; border: 0; border-radius: 6px; color: var(--ink); cursor: pointer; text-align: center; font: inherit; }
+.profession-audio-word:hover { background: #f3f4ef; }
+.profession-learning-card .profession-label { min-height: 44px; padding: 8px 2px; font-size: clamp(.85rem, 1.3vw, 1.05rem); }
+.profession-learning-card .profession-slot { min-height: 44px; font-size: .85rem; }
+.profession-first-note { margin: 6px 0 0; font-size: .8rem; line-height: 1.5; color: #526257; }
+.profession-complete { margin: 0; font-size: .85rem; }
+.profession-learning-card .guided-navigation { margin-top: 14px; }
+@media (max-width: 700px) {
+  .profession-learning .article-legend { font-size: .7rem; gap: 4px 10px; }
+  .profession-learning-card { padding: 10px; --profession-card-inset: 11px; }
+  .profession-learning-card .profession-pair { padding: 8px; }
+}
+
+/* Account controls live in the desktop sidebar; mobile keeps a small menu bar. */
+.topbar { display: none; }
+.sidebar { overflow-y: auto; }
+.sidebar-bottom { flex-shrink: 0; padding-bottom: 14px; }
+.sidebar .profile { padding: 14px 7px 10px; }
+.sidebar .profile > div { min-width: 0; }
+.sidebar .profile strong { overflow-wrap: anywhere; }
+.sidebar .avatar, .sidebar .online-dot { flex-shrink: 0; }
+.sidebar-account-actions { display: flex; flex-direction: column; gap: 10px; padding: 0 7px; }
+.sidebar-account-actions .level-pill { font-size: 11px; }
+.sidebar-signout { width: 100%; }
+@media (max-height: 850px) { .sidebar-note { display: none; } }
+@media (max-width: 720px) {
+  .topbar { display: flex; height: 56px; flex-shrink: 0; padding: 0 16px; }
+  .sidebar-signout { display: none; }
+}
+
+/* A compact, reload-safe path and horizontal vocabulary category navigation. */
+.learning-breadcrumbs { margin: 0 0 14px; color: var(--muted); font-size: 13px; }
+.learning-breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 5px 9px; list-style: none; margin: 0; padding: 0; }
+.learning-breadcrumbs li { display: flex; align-items: center; gap: 9px; min-height: 32px; }
+.learning-breadcrumbs a { text-decoration: none; color: var(--green); }
+.learning-breadcrumbs a:hover { text-decoration: underline; }
+.learning-breadcrumbs [aria-current="page"] { color: var(--ink); }
+.breadcrumb-separator { color: #9ca59c; }
+.learning-category-tabs { display: flex; gap: 0; overflow-x: auto; padding: 0; margin-bottom: 14px; border-bottom: 1px solid var(--line); scrollbar-width: thin; }
+.learning-category-tabs > a, .learning-category-tabs > button, .learning-category-tabs > span { flex: 0 0 auto; min-height: 44px; padding: 10px 14px; border: 0; border-bottom: 3px solid transparent; border-radius: 0; background: transparent; color: var(--muted); text-decoration: none; font: inherit; font-size: 13px; white-space: nowrap; text-align: center; }
+.learning-category-tabs > button, .learning-category-tabs > a { cursor: pointer; }
+.learning-category-tabs > [aria-current="page"] { border-bottom-color: var(--green); color: var(--green); font-weight: 600; }
+.learning-category-tabs > [aria-disabled="true"], .learning-category-tabs > :disabled { opacity: .5; cursor: default; }
+.learning-category-tabs > :focus-visible, .learning-breadcrumbs a:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.vocabulary-image-navigation:empty { display: none; }
+@media (max-width: 720px) {
+  .learning-breadcrumbs { font-size: 12px; margin-bottom: 10px; }
+  .learning-category-tabs > a, .learning-category-tabs > button, .learning-category-tabs > span { padding: 9px 11px; }
+}
+.learning-category-tabs .category-tab-german { display: block; }
+.learning-category-tabs .category-tab-thai { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--muted); }
+.verb-sequence { max-width: 900px; padding-bottom: 0; }
+.verb-sequence .learning-category-tabs { width: 100%; margin-bottom: 0; }
+.verb-replay-action { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+.conjugation-panel .verb-introduction { padding: 0 0 14px; margin-bottom: 16px; border-bottom: 1px solid var(--line); }
+.conjugation-panel .verb-introduction h2 { font-size: 26px; margin: 0 0 6px; }
+.conjugation-panel .verb-introduction > p { margin: 4px 0; }
+.conjugation-panel .verb-introduction-examples { margin-top: 10px; gap: 8px 20px; }
+.l02-phrase-learning h2 { font-size: clamp(20px, 3vw, 27px); margin-top: 0; }
+.l02-phrase-learning h2 small { font-size: .75em; font-weight: 400; }
+.phrase-source { color: var(--muted); font-size: 12px; }
+.phrase-vocabulary-table { width: 100%; border-collapse: collapse; margin: 18px 0 24px; }
+.phrase-vocabulary-table th, .phrase-vocabulary-table td { padding: 10px 6px; text-align: left; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.phrase-vocabulary-table td:first-child { width: 45%; }
+.phrase-example-list { display: grid; gap: 12px; }
+.phrase-example-list > div { padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+.phrase-example-list p { margin: 5px 0 0; overflow-wrap: anywhere; }
+.l02-phrase-learning .vocabulary-word-audio { text-align: left; justify-content: flex-start; }
+@media (max-width: 700px) { .phrase-vocabulary-table { font-size: 13px; } .phrase-example-list > div { padding: 10px; } }
+.vocabulary-audio-icon { display: inline-block; vertical-align: middle; flex-shrink: 0; margin-left: 6px; opacity: .7; }
+.vocabulary-word-audio { display: inline-flex; align-items: center; justify-content: center; border: 0; background: transparent; padding: 5px 2px; color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; }
+.vocabulary-word-audio:hover { color: var(--green); }
+.vocabulary-word-audio:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 4px; }
+.vocabulary-image-paired-word .vocabulary-word-audio { font-size: 15px; color: #2f513d; max-width: 100%; text-align: left; }
+.vocabulary-word-audio > span { overflow-wrap: anywhere; min-width: 0; }
+
+.german-listen-text { display: inline-flex; align-items: center; gap: 6px; padding: 4px 2px; border: 0; background: transparent; color: inherit; font: inherit; text-align: inherit; cursor: pointer; }
+.german-listen-text svg { flex-shrink: 0; opacity: .7; }
+.german-listen-text:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 4px; }
+.audio-listen-error { display: block; font-size: 13px; font-weight: 400; }
+.matching-drop > span { display: inline-flex; align-items: center; gap: 5px; }
+
+/* Pronouns: existing anime artwork with explicit speaker / addressee context. */
+.matching-options-sticky { position: sticky; top: 0; z-index: 8; padding: 8px 0; background: var(--paper); }
+.pronoun-word-bank { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 10px; }
+.pronoun-picture-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.pronoun-second-person-grid > [data-pronoun-id="L02-pronoun-Sie"] { grid-column: 1 / -1; }
+.pronoun-picture { display: flex; flex-direction: column; gap: 12px; padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: #fff; color: var(--ink); font: inherit; cursor: pointer; min-width: 0; }
+.pronoun-picture.correct { border-color: #84b589; }
+.pronoun-picture.incorrect { border-color: #c8564d; background: #fff0ee; }
+.pronoun-scene { display: grid; grid-template-columns: 1fr 28px 1.45fr; align-items: center; gap: 8px; width: 100%; }
+.pronoun-scene.self { grid-template-columns: 28px 1fr; }
+.pronoun-person { display: flex; flex-direction: column; align-items: center; gap: 7px; min-width: 0; }
+.pronoun-person img { width: 100%; height: 150px; object-fit: cover; object-position: center 28%; border-radius: 12px; }
+.pronoun-person.speaker img { height: 105px; border-radius: 50%; }
+.pronoun-person small { font-size: 12px; }
+.pronoun-arrow { color: var(--green); width: 26px; height: 26px; }
+.pronoun-scene-caption { font-size: 14px; min-height: 22px; }
+.pronoun-sie-scenes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 12px; width: 100%; }
+.pronoun-sie-context { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; }
+.pronoun-sie-context .pronoun-scene-caption { min-height: 42px; }
+.pronoun-answer { display: flex; align-items: center; justify-content: center; gap: 7px; width: 100%; min-height: 44px; border: 1px dashed #b9c8b2; border-radius: 9px; color: var(--muted); }
+.pronoun-answer.correct { border-style: solid; border-color: #84b589; background: #e7f4e6; color: #28613b; font-weight: 600; }
+.pronoun-meaning { font-size: 13px; }
+.pronoun-summary td small { display: block; margin-top: 4px; color: var(--muted); }
+.pronoun-summary-table { width: 100%; table-layout: fixed; border-collapse: collapse; margin: 18px 0 24px; }
+.pronoun-summary-table .pronoun-col-group { width: 17%; }
+.pronoun-summary-table .pronoun-col-number { width: 20%; }
+.pronoun-summary-table .pronoun-col-thai { width: 15%; }
+.pronoun-summary-table .pronoun-col-german { width: 13%; }
+.pronoun-summary-table .pronoun-col-context { width: 35%; }
+.pronoun-summary-table th, .pronoun-summary-table td { padding: 16px 10px; border: 1px solid var(--line); text-align: center; vertical-align: middle; overflow-wrap: anywhere; }
+.pronoun-summary-table thead { background: var(--surface); }
+.pronoun-summary-table tbody + tbody { border-top: 3px solid #a5ad99; }
+.pronoun-summary-table .pronoun-summary-group { background: #fff0e8; font-weight: 500; }
+.pronoun-summary-table .pronoun-summary-word { font-size: 30px; }
+@media (max-width: 600px) {
+  .pronoun-summary-table { font-size: 11px; }
+  .pronoun-summary-table .pronoun-col-group { width: 17%; }
+  .pronoun-summary-table .pronoun-col-number { width: 20%; }
+  .pronoun-summary-table .pronoun-col-thai { width: 19%; }
+  .pronoun-summary-table .pronoun-col-german { width: 15%; }
+  .pronoun-summary-table .pronoun-col-context { width: 29%; }
+  .pronoun-summary-table th, .pronoun-summary-table td { padding: 10px 4px; }
+  .pronoun-summary-table .pronoun-summary-word { font-size: 20px; }
+  .pronoun-summary-table .german-listen-text { flex-wrap: wrap; justify-content: center; }
+}
+.pronoun-picture:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+@media (max-width: 600px) {
+  .pronoun-picture-grid { grid-template-columns: minmax(0, 1fr); }
+  .pronoun-picture { padding: 12px; }
+  .pronoun-person img { height: 170px; }
+}
+
+/* Full pronoun scenes keep speakers, listeners and referred people in frame. */
+.pronoun-scene.full-scene { display: block; width: 100%; }
+.pronoun-scene.full-scene .pronoun-person img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; border-radius: 12px; }
+.pronoun-number-badge { align-self: flex-start; }
+.conjugation-audio-form { display: inline-flex; align-items: center; justify-content: center; gap: 6px; max-width: 100%; padding: 5px 7px; border: 0; border-radius: 7px; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+.conjugation-audio-form:hover { background: #edf3e9; }
+.conjugation-audio-form:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.conjugation-audio-form svg { flex: 0 0 auto; opacity: .65; }
+.verb-summary td .conjugation-audio-form { width: 100%; }

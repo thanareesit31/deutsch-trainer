@@ -30,6 +30,7 @@ const config: NextConfig = {
   ...(testWorkspace
     ? {
         distDir: ".tools/test-workspace-next",
+        allowedDevOrigins: (process.env.TEST_WORKSPACE_LAN_HOSTS ?? "").split(",").filter(Boolean),
         typescript: { tsconfigPath: ".tools/test-workspace-tsconfig.json" },
         rewrites() {
           return {

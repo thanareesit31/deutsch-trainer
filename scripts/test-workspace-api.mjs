@@ -44,7 +44,7 @@ async function bodyOf(req) {
   return data ? JSON.parse(data) : {};
 }
 
-export async function startTestApi({ port = 54329, webPort = 3002, restore } = {}) {
+export async function startTestApi({ port = 54329, webPort = 3002, webHosts = [], restore } = {}) {
   const db = await createDatabase();
   await db.exec("reset role");
   const accounts = restore?.accounts ?? ["tester@deutsch.test", "tester2@deutsch.test"].map(
@@ -84,6 +84,7 @@ export async function startTestApi({ port = 54329, webPort = 3002, restore } = {
   const origins = new Set([
     `http://localhost:${webPort}`,
     `http://127.0.0.1:${webPort}`,
+    ...webHosts.map((host) => `http://${host}:${webPort}`),
   ]);
   function issueSession(user) {
     const expiresAt = Math.floor(Date.now() / 1000) + 3600;

@@ -20,7 +20,7 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
   const catalogFlow = lessons.find((lesson) => lesson.id === lessonId)?.learningFlows?.vocabulary;
   const flow = catalogFlow && lessonId === "L02" ? prepareL02VocabularyFlow(catalogFlow, items) : catalogFlow;
   const guidedState = flow ? readGuidedState(lessonState.read(flow.stateKey), flow, items) : null;
-  const [alphabetStatus, setAlphabetStatus] = useState<"learned" | "replaying" | null>(null);
+  const [alphabetStatus, setAlphabetStatus] = useState<"learned" | null>(null);
   const [imageVocabularyLearned, setImageVocabularyLearned] = useState(false);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
       const learnedIds = new Set(learningState.learnedItemIds);
       const isLearned = alphabetItemIds.every((id) => learnedIds.has(id));
       setAlphabetStatus(
-        isLearned ? learningState.revisitIndex !== null ? "replaying" : "learned" : null,
+        isLearned ? "learned" : null,
       );
     };
 
@@ -53,9 +53,6 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
 
   return (
     <main className="vocabulary-learning">
-      <Link className="back-link" href={`/lesson/${lessonId}`}>
-        ← กลับ Lektion {lessonId.slice(1)}
-      </Link>
 
       {lessonId === "L02" && (
         <>
@@ -93,7 +90,7 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
                 <strong>Das Alphabet</strong>
                 {alphabetStatus && (
                   <span className="alphabet-entry-status">
-                    {alphabetStatus === "replaying" ? "เรียนซ้ำ" : "เรียนแล้ว"}
+                    เรียนแล้ว
                   </span>
                 )}
               </span>

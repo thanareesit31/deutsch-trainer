@@ -28,10 +28,12 @@ export interface LearningPair {
   right: LearningOption;
   contentIds: string[];
   legacyActivityIds?: string[];
+  legacyMatches?: { activityId: string; pairId: string }[];
 }
 export interface LearningActivity {
   id: string;
   type:
+    | "profession_matching"
     | "number_matching"
     | "number_to_word"
     | "word_to_number"
@@ -42,6 +44,7 @@ export interface LearningActivity {
     | "image_to_word"
     | "pair_matching"
     | "pronoun_choice"
+    | "pronoun_matching"
     | "conjugation"
     | "sentence_completion";
   section: string;
@@ -72,8 +75,13 @@ export function vocabularyTrackActivities(
   items: Item[],
   track: VocabularyTrack,
 ): LearningActivity[] {
+  const hasProfessionBoards = flow.activities.some((a) => a.type === "profession_matching");
   const hasNumberBoards = flow.activities.some((activity) => activity.type === "number_matching");
-  return flow.activities.filter((activity) => {
+  const activities = flow.activities.filter((activity) => {
+    // Retire this page from navigation without deleting its historical evidence.
+    if (activity.id === "L02-dream-meaning") return false;
+    if (activity.id.startsWith("L02-berufe-") && !activity.id.startsWith("L02-berufe-v2-")) return false;
+    if (activity.section.split(" · ")[0] === "Arbeitsstatus") return false;
     const isNumberActivity = activity.contentIds.some((id) => {
       const item = items.find((candidate) => candidate.id === id);
       return !!item?.numberContent || item?.group === "Handynummer";
@@ -82,10 +90,22 @@ export function vocabularyTrackActivities(
     // Keep older number activities in the full flow for restoring historical state.
     return track === "numbers"
       ? isNumberActivity && (!hasNumberBoards || activity.type === "number_matching")
-      : !isNumberActivity;
+      : !isNumberActivity && (!hasProfessionBoards || activity.type === "profession_matching" || !activity.contentIds.some((id) => items.find((i) => i.id === id)?.professionContent));
   });
+  if (track === "core" && hasProfessionBoards) {
+    const sections = ["Berufe", "Traumberuf", "Arbeitsstatus"];
+    const rank = (activity: LearningActivity) => {
+      const index = sections.indexOf(activity.section.split(" · ")[0]);
+      return index < 0 ? sections.length : index;
+    };
+    // Sort the visible track only; historical flow IDs and stored evidence stay intact.
+    activities.sort((left, right) => rank(left) - rank(right));
+  }
+  return activities;
 }
 export interface GuidedState {
+  professionIntroSeen?: boolean;
+  professionAnswers?: Record<string, { correct: number; wrong: number; hints: number }>;
   numberEndPage?: "observations" | "board";
   learnedActivityIds: string[];
   learnedContentIds: string[];
@@ -216,11 +236,11 @@ export function readGuidedState(
         matches[a.id] = [...new Set([...matches[a.id], ...legacyMatches.filter((id) => validIds.has(id))])];
     }
     for (const pair of pairs) {
-      if (pair.legacyActivityIds?.some((id) => completed.has(id)) && !matches[a.id].includes(pair.id))
+      if ((pair.legacyActivityIds?.some((id) => completed.has(id)) || pair.legacyMatches?.some(({ activityId, pairId }) => saved.matches?.[activityId]?.includes(pairId))) && !matches[a.id].includes(pair.id))
         matches[a.id].push(pair.id);
     }
     if (
-      (completed.has(a.id) || (a.type === "number_matching" && pairs.length > 0 && matches[a.id].length === pairs.length)) &&
+      (completed.has(a.id) || (["number_matching", "profession_matching", "pronoun_matching"].includes(a.type) && pairs.length > 0 && matches[a.id].length === pairs.length)) &&
       (!pairs.length || matches[a.id].length === pairs.length)
     ) {
       learnedActivityIds.push(a.id);
@@ -236,6 +256,8 @@ export function readGuidedState(
   );
   return {
     learnedActivityIds,
+    professionIntroSeen: saved.professionIntroSeen === true,
+    professionAnswers: Object.fromEntries(Object.entries(saved.professionAnswers ?? {}).filter(([, value]) => value && [value.correct, value.wrong, value.hints].every((n) => Number.isInteger(n) && n >= 0))),
     ...(saved.numberEndPage === "observations" || saved.numberEndPage === "board" ? { numberEndPage: saved.numberEndPage } : {}),
     learnedContentIds: [...learnedContentIds],
     matches,

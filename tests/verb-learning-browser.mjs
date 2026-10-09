@@ -52,6 +52,15 @@ await page.addInitScript(
   },
   { userId, ref },
 );
+await page.addInitScript(() => {
+  window.__spoken = null;
+  Object.defineProperty(window, "SpeechSynthesisUtterance", {configurable: true, value: class {constructor(text) {this.text = text;}}});
+  Object.defineProperty(window, "speechSynthesis", {configurable: true, value: {
+    getVoices: () => [{lang: "de-DE", name: "Test German"}],
+    speak: utterance => {window.__spoken = utterance.text; utterance.onstart?.(); utterance.onend?.();},
+    cancel: () => {}, addEventListener: () => {}, removeEventListener: () => {},
+  }});
+});
 await context.route(projectUrl + "/**", async (route) => {
   const req = route.request(),
     u = new URL(req.url()),
@@ -177,6 +186,13 @@ async function reloadAndResume() {
 }
 try {
   await page.goto(base + "/learn/L01/grammar");
+  await page.locator(".grammar-learning-entry").waitFor();
+  assert.equal(await page.locator(".alphabet-entry-card").count(), 1);
+  assert.equal(await page.getByRole("link", {name: /Personalpronomen/}).count(), 0);
+  await page.goto(base + "/learn/L01/grammar/pronouns");
+  await page.waitForURL("**/learn/L01/grammar");
+  assert.equal((await db.query("select * from item_exposures")).rows.length, 0);
+  await page.getByRole("link", {name: /Verben/}).click();
   await page
     .getByRole("heading", { name: "กริยาผันตามประธาน", exact: true })
     .waitFor();
@@ -200,10 +216,10 @@ try {
     0,
   );
   assert.equal((await db.query("select * from item_exposures")).rows.length, 0);
-  await page.getByRole("button", { name: "ไปต่อ", exact: true }).click();
+  await page.getByRole("button", { name: "หน้าถัดไป", exact: true }).click();
   const intro = page.locator(".verb-introduction");
   await intro.getByRole("heading", { name: "kommen", exact: true }).waitFor();
-  assert.equal((await db.query("select * from item_exposures")).rows.length, 0);
+  await page.locator(".matching-board").waitFor();
   await page
     .locator(".verb-sequence")
     .getByRole("button", { name: "หลักการผัน", exact: true })
@@ -268,32 +284,17 @@ try {
       assert((await intro.innerText()).includes(example.de));
       assert((await intro.innerText()).includes(example.th));
     }
-    assert.equal(
-      (await db.query("select * from item_exposures")).rows.length,
-      index * 6,
-    );
-    assert.equal(await page.locator(".matching-board").count(), 0);
-    await reloadAndResume();
-    await intro
-      .getByRole("heading", { name: entry.infinitive, exact: true })
-      .waitFor();
-    await page
-      .getByRole("button", { name: "เรียนการผัน", exact: true })
-      .click();
     await page.locator(".matching-board").waitFor();
-    assert.equal(
-      await page.getByRole("button", { name: "ตรวจการจับคู่" }).count(),
-      0,
-    );
-    assert.equal(
-      await page.locator(".conjugation-actions > button").count(),
-      1,
-    );
-    await page.getByRole("button", { name: "ย้อนกลับ", exact: true }).click();
-    await intro.waitFor();
-    await page
-      .getByRole("button", { name: "เรียนการผัน", exact: true })
-      .click();
+    await intro.getByRole("button", {name: `ฟังเสียง ${entry.infinitive}`, exact: true}).click();
+    assert.equal(await page.evaluate(() => window.__spoken), entry.infinitive);
+    await intro.getByRole("button", {name: `ฟังเสียง ${entry.examples[0].de}`, exact: true}).click();
+    assert.equal(await page.evaluate(() => window.__spoken), entry.examples[0].de);
+    assert.equal(await page.getByRole("button", { name: "เรียนการผัน", exact: true }).count(), 0);
+    await page.waitForFunction(() => !document.querySelector(".conjugation-hint")?.textContent?.includes("กำลังบันทึก"));
+    await reloadAndResume();
+    await page.getByLabel(`จับคู่รูปผัน ${entry.infinitive}`, { exact: true }).waitFor();
+    assert.equal(await page.getByRole("button", { name: "ตรวจการจับคู่" }).count(), 0);
+    assert.equal(await page.evaluate(() => window.__spoken), null, "reload does not autoplay");
     const group =
       entry.infinitive === "sein"
         ? "sein"
@@ -327,6 +328,7 @@ try {
         .first()
         .click();
       await page.locator(".matching-subject").nth(row).click();
+      assert.equal(await page.evaluate(() => window.__spoken), `${item.title.split(" + ")[0].split("/")[0].trim()} ${item.answer}`);
       if (row < forms.length - 1)
         await page.locator(".matching-drop.correct").nth(row).waitFor();
       if (row === 0) {
@@ -335,10 +337,10 @@ try {
         assert.equal(await page.locator(".matching-drop.correct").count(), 1);
         if (index === 1) {
           await page
-            .getByRole("link", { name: "← กลับบทเรียน", exact: true })
+            .locator('.learning-breadcrumbs a[href="/lesson/L01"]')
             .click();
           await page.waitForURL("**/lesson/L01");
-          await page.goto(base + "/learn/L01/grammar");
+          await page.goto(base + "/learn/L01/grammar/verbs");
           await page
             .getByLabel(`จับคู่รูปผัน ${entry.infinitive}`, { exact: true })
             .waitFor();
@@ -347,14 +349,17 @@ try {
       }
     }
     await page.locator(".matching-drop.correct").nth(5).waitFor();
+    await page.locator(".matching-subject").first().click();
+    assert.equal(await page.evaluate(() => window.__spoken), `ich ${forms[0].answer}`);
+    assert.equal(await page.locator(".matching-drop.correct").count(), 6, "listening retains correct matches");
     assert.equal(await page.locator(".matching-feedback").count(), 0);
     assert.equal(await page.locator(".matching-result").count(), 0);
     assert.equal(
       await page.getByRole("button", { name: "ตรวจการจับคู่" }).count(),
       0,
     );
-    if (index < 3) await page.getByRole("button", { name: "ไปต่อ" }).click();
-    else await page.getByRole("button", { name: "ไปต่อ" }).click();
+    if (index < 3) await page.getByRole("button", { name: "หน้าถัดไป" }).click();
+    else await page.getByRole("button", { name: "หน้าถัดไป" }).click();
   }
   await page.locator(".verb-summary table").waitFor();
   await page.getByRole("button", { name: "ย้อนกลับ", exact: true }).click();
@@ -383,7 +388,7 @@ try {
     .getByRole("button", { name: "heißen", exact: true })
     .click();
   await page.getByLabel("จับคู่รูปผัน heißen", { exact: true }).waitFor();
-  await page.getByRole("button", { name: "ไปต่อ", exact: true }).click();
+  await page.getByRole("button", { name: "หน้าถัดไป", exact: true }).click();
   await page
     .locator(".verb-introduction")
     .getByRole("heading", { name: "lernen", exact: true })
@@ -434,7 +439,8 @@ try {
     .click();
   await page.locator(".matching-drop.correct").nth(5).waitFor();
   await page.getByRole("button", { name: "ย้อนกลับ", exact: true }).click();
-  await intro.waitFor();
+  await intro.getByRole("heading", {name: "lernen", exact: true}).waitFor();
+  await page.locator(".verb-sequence").getByRole("button", {name: "sein", exact: true}).click();
   await page.setViewportSize({ width: 390, height: 844 });
   await reloadAndResume();
   await intro.getByRole("heading", { name: "sein", exact: true }).waitFor();
@@ -457,7 +463,6 @@ try {
       "select * from learning_attempts order by session_id, ordinal",
     )
   ).rows;
-  await page.getByRole("button", { name: "เรียนการผัน", exact: true }).click();
   await page
     .getByRole("button", { name: "เรียนซ้ำคำนี้ · sein", exact: true })
     .click();
@@ -477,7 +482,6 @@ try {
     );
   }
   assert.equal(singleReplay.resultsByVerb.sein, undefined);
-  await page.getByRole("button", { name: "เรียนการผัน", exact: true }).click();
   await page.locator(".matching-board").waitFor();
   assert.equal(await page.locator(".matching-drop.filled").count(), 0);
   assert.equal(await page.locator(".matching-token").count(), 6);
@@ -509,9 +513,6 @@ try {
     await intro
       .getByRole("heading", { name: entry.infinitive, exact: true })
       .waitFor();
-    await page
-      .getByRole("button", { name: "เรียนการผัน", exact: true })
-      .click();
     await page.locator(".matching-board").waitFor();
     assert.equal(await page.locator(".matching-drop.filled").count(), 0);
     const replayGroup =
@@ -535,8 +536,8 @@ try {
     await page.locator(".matching-drop.correct").nth(5).waitFor();
     assert.equal(await page.locator(".matching-feedback").count(), 0);
     assert.equal(await page.locator(".matching-result").count(), 0);
-    if (index < 3) await page.getByRole("button", { name: "ไปต่อ" }).click();
-    else await page.getByRole("button", { name: "ไปต่อ" }).click();
+    if (index < 3) await page.getByRole("button", { name: "หน้าถัดไป" }).click();
+    else await page.getByRole("button", { name: "หน้าถัดไป" }).click();
   }
   await page.locator(".verb-summary table").waitFor();
   assert.deepEqual(
@@ -556,7 +557,7 @@ try {
   );
   assert.deepEqual(errors, []);
   console.log(
-    "PASS: four introductions, no premature exposure, matching, back, reload, legacy resume, endings, summary, migration idempotency and mobile layout",
+    "PASS: four inline explanations, principles before matching, matching, back, reload, legacy resume, endings, summary, migration idempotency and mobile layout",
   );
 } finally {
   await page.close({ runBeforeUnload: false });

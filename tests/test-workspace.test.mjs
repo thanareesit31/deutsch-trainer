@@ -7,7 +7,7 @@ import { startTestApi, password } from "../scripts/test-workspace-api.mjs";
 test("catalog recovery keeps test lesson state and exposures while adding page-four numbers", async () => {
   const account = { id: "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa", email: "tester@deutsch.test", role: "authenticated", aud: "authenticated" };
   const state = { matches: { "L02-number-matching-21-100": ["L02-number-21"] } };
-  const api = await startTestApi({ port: 0, restore: {
+  const api = await startTestApi({ port: 0, webHosts: ["192.168.1.43"], restore: {
     accounts: [account],
     rows: {
       learner_lesson_states: [{ user_id: account.id, lesson_key: "deutsch-trainer-guided-learning-L02-vocabulary", state }],
@@ -17,6 +17,10 @@ test("catalog recovery keeps test lesson state and exposures while adding page-f
   } });
   const client = createClient(api.url, "local-test-key", { auth: { persistSession: false, autoRefreshToken: false } });
   try {
+    const lanLogin = await fetch(`${api.url}/auth/v1/token?grant_type=password`, { method: "POST", headers: { "Content-Type": "application/json", Origin: "http://192.168.1.43:3002" }, body: JSON.stringify({ email: account.email, password }) });
+    assert.equal(lanLogin.status, 200, "configured LAN origin can log in through the web proxy");
+    const foreignLogin = await fetch(`${api.url}/auth/v1/token?grant_type=password`, { method: "POST", headers: { "Content-Type": "application/json", Origin: "http://untrusted.example:3002" }, body: JSON.stringify({ email: account.email, password }) });
+    assert.equal(foreignLogin.status, 403, "unconfigured origins stay blocked");
     const login = await client.auth.signInWithPassword({ email: account.email, password });
     assert.ifError(login.error);
     const lessons = await client.from("learner_lesson_states").select("state");

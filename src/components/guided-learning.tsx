@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useRef, useState } from "react";
+import { CategoryTabLabel, LearningCategoryTabs } from "./learning-breadcrumbs";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
   activityPairs,
   completeActivity,
@@ -21,6 +22,13 @@ import { NumberSummaryBoard } from "./number-summary-board";
 import { TeenNumberExample } from "./teen-number-example";
 import { prepareL02VocabularyFlow } from "@/lib/l02-number-learning";
 import { Empty } from "./ui";
+import { ArticleLegend, ProfessionMatching } from "./profession-matching";
+import { recordProfessionAnswer } from "@/lib/profession-learning";
+import { grammarTrackActivities, type GrammarTrack } from "@/lib/grammar-learning";
+import { GermanListenText } from "./german-listen-text";
+import { ConjugationMatching, ConjugationSummary } from "./conjugation-matching";
+import { PronounMatching, PronounSummary } from "./pronoun-matching";
+import { prepareL02GrammarFlow, pronounGroups } from "@/lib/pronoun-learning";
 
 const sectionDescriptions: Record<string, string> = {
   "Zahlen · Einer + und + Zehner": "ตัวเลข · หลักหน่วย + und + หลักสิบ",
@@ -48,14 +56,16 @@ export function GuidedLearningPage({
   lessonId,
   skill,
   track,
+  grammarTrack,
 }: {
   lessonId: string;
   skill: "vocabulary" | "grammar";
   track?: VocabularyTrack;
+  grammarTrack?: GrammarTrack;
 }) {
   const { lessons, items } = useContent();
   const catalogFlow = lessons.find((l) => l.id === lessonId)?.learningFlows?.[skill];
-  const flow = useMemo(() => catalogFlow && lessonId === "L02" && skill === "vocabulary" ? prepareL02VocabularyFlow(catalogFlow, items) : catalogFlow, [catalogFlow, lessonId, skill, items]);
+  const flow = useMemo(() => catalogFlow && lessonId === "L02" ? skill === "vocabulary" ? prepareL02VocabularyFlow(catalogFlow, items) : prepareL02GrammarFlow(catalogFlow, items) : catalogFlow, [catalogFlow, lessonId, skill, items]);
   const errors = useMemo(
     () => (flow ? validateFlow(flow, items) : []),
     [flow, items],
@@ -73,11 +83,12 @@ export function GuidedLearningPage({
     );
   return (
     <GuidedFlow
-      key={`${lessonId}-${skill}-${track ?? "all"}`}
+      key={`${lessonId}-${skill}-${track ?? grammarTrack ?? "all"}`}
       flow={flow}
       lessonId={lessonId}
       skill={skill}
       track={track}
+      grammarTrack={grammarTrack}
     />
   );
 }
@@ -87,11 +98,13 @@ function GuidedFlow({
   lessonId,
   skill,
   track,
+  grammarTrack,
 }: {
   flow: LearningFlow;
   lessonId: string;
   skill: "vocabulary" | "grammar";
   track?: VocabularyTrack;
+  grammarTrack?: GrammarTrack;
 }) {
   const { items } = useContent(),
     history = useLearning(),
@@ -100,11 +113,18 @@ function GuidedFlow({
   const [state, setState] = useState(() =>
     readGuidedState(storage.read(stateKey), flow, items),
   );
-  const activities = track ? vocabularyTrackActivities(flow, items, track) : flow.activities;
+  const activities = grammarTrack ? grammarTrackActivities(flow, items, grammarTrack) : track ? vocabularyTrackActivities(flow, items, track) : flow.activities;
+  const hasEndContent = track === "numbers" || grammarTrack === "verbs" || grammarTrack === "pronouns";
   const [position, setPosition] = useState(() => {
     const first = activities.findIndex((a) => !state.learnedActivityIds.includes(a.id));
-    return first < 0 ? activities.length + (track === "numbers" && state.numberEndPage === "board" ? 1 : 0) : first;
+    return first < 0 ? hasEndContent ? activities.length + (track === "numbers" && state.numberEndPage === "board" ? 1 : 0) : Math.max(0, activities.length - 1) : first;
   });
+  const previousPosition = useRef(position);
+  useLayoutEffect(() => {
+    if (previousPosition.current === position) return;
+    previousPosition.current = position;
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [position]);
   const [busy, setBusy] = useState(false),
     [error, setError] = useState("");
   const lock = useRef(false);
@@ -113,15 +133,33 @@ function GuidedFlow({
   const summaryIds = new Set(activities.flatMap((a) => a.contentIds));
   const summaryItems = items.filter((item) => item.numberContent && summaryIds.has(item.id));
   const title = track === "numbers" ? "Zahlen" : track === "core" ? "WORTSCHATZ" : flow.title;
-  const eyebrowTitle = track === "numbers" || track === "core" ? "WORTSCHATZ" : title;
-  const sectionTitle = activity?.section.split(" · ")[0] ?? (track === "numbers" ? showNumberBoard ? "Zahlen" : "Beobachtungen" : "เรียนครบแล้ว");
+  const sectionTitle = activity?.section.split(" · ")[0] ?? (track === "numbers" ? showNumberBoard ? "Zahlen" : "Beobachtungen" : "Übersicht");
   const sectionDescription = activity
     ? sectionDescriptions[activity.section] ?? (activity.section.startsWith("Zahlen · ") ? activity.section.replace("Zahlen · ", "ตัวเลข · ") : "")
     : track === "numbers" ? showNumberBoard ? "0–100" : "จุดสังเกต" : title;
-  const completedCount = activities.filter((a) => state.learnedActivityIds.includes(a.id)).length
-    + (track === "numbers" && position >= activities.length ? 1 : 0)
-    + (showNumberBoard ? 1 : 0);
-  const activityCount = activities.length + (track === "numbers" ? 2 : 0);
+  const progressItemIds = [...new Set(activities.flatMap((entry) => {
+    const pairs = activityPairs(entry, items);
+    return pairs.length ? pairs.flatMap((pair) => pair.contentIds) : entry.contentIds;
+  }))];
+  const progressTotal = progressItemIds.length;
+  const progressLearned = progressItemIds.filter((id) => state.learnedContentIds.includes(id)).length;
+  const progressUnit = track === "numbers" ? "จำนวน" : grammarTrack === "sentences" ? "ประโยค" : grammarTrack === "verbs" ? "คำกริยา" : "คำ";
+  const categories: { key: string; label: string; thai: string; positions: number[] }[] = [];
+  if (skill === "vocabulary" || grammarTrack) {
+    activities.forEach((entry, index) => {
+      const pronoun = grammarTrack === "pronouns" ? items.find((item) => item.id === entry.contentIds[0])?.pronounContent?.pronoun : undefined;
+      const key = track === "numbers" || grammarTrack === "pronouns" ? entry.id : entry.section.split(" · ")[0];
+      const existing = categories.find((category) => category.key === key);
+      if (existing) existing.positions.push(index);
+      else categories.push({ key, label: track === "numbers" ? entry.section.replace("Zahlen · ", "")
+        : entry.type === "pronoun_matching" ? entry.section.split(" · ")[1] : pronoun ?? key, thai: entry.type === "pronoun_matching" ? (pronounGroups.find(group => entry.section.endsWith(group.label))?.thai ?? "") : track === "numbers" ? "ตัวเลข" : grammarTrack ? (items.find((item) => item.id === (entry.verbId ?? entry.contentIds[0]))?.meaning ?? "") : ({ Berufe: "อาชีพ", Arbeitsstatus: "สถานะการทำงาน", Traumberuf: "อาชีพในฝัน" }[key] ?? ""), positions: [index] });
+    });
+    if (track === "numbers") categories.push(
+      { key: "observations", label: "Beobachtungen", thai: "จุดสังเกต", positions: [activities.length] },
+      { key: "summary", label: "Übersicht", thai: "ตารางสรุป", positions: [activities.length + 1] },
+    );
+    if (grammarTrack === "verbs" || grammarTrack === "pronouns") categories.push({ key: "summary", label: "Übersicht", thai: "ตารางสรุป", positions: [activities.length] });
+  }
   const completed =
     !!activity && state.learnedActivityIds.includes(activity.id);
   const pairs = activity ? activityPairs(activity, items) : [];
@@ -159,6 +197,7 @@ function GuidedFlow({
           ? { ...state.matches, [activity.id]: nextMatches }
           : state.matches,
       };
+      if (activity.type === "profession_matching" && pairId) next = recordProfessionAnswer(next, pairId, true);
       if (done) next = completeActivity(next, activity, flow.activities.indexOf(activity));
       persist(next);
     } catch {
@@ -170,33 +209,60 @@ function GuidedFlow({
       setBusy(false);
     }
   }
+  const isProfession = activity?.type === "profession_matching";
+  const professionActivities = activities.filter((a) => a.type === "profession_matching");
   const study = (activity?.studyIds ?? [])
     .map((id) => items.find((i) => i.id === id))
     .filter((i) => !!i);
   const verb = activity?.verbId
     ? items.find((i) => i.id === activity.verbId)?.verbContent
     : null;
+  const continuation = skill === "vocabulary"
+    ? { href: `/learn/${lessonId}/phrases`, label: "เรียนประโยคและสำนวนต่อ" }
+    : grammarTrack === "pronouns"
+      ? { href: `/learn/${lessonId}/grammar/verbs`, label: "เรียนการผันกริยาต่อ" }
+      : grammarTrack === "sentences"
+        ? { href: `/learn/${lessonId}/phrases`, label: "กลับประโยคและสำนวน" }
+      : { href: `/lesson/${lessonId}`, label: "กลับบทเรียน" };
   return (
-    <main className="guided-learning">
-      <div className="vocabulary-image-navigation">
-        <Link className="back-link" href={track ? `/learn/${lessonId}/vocabulary` : `/lesson/${lessonId}`}>
-          {track ? "← กลับ Wortschatz" : "← กลับบทเรียน"}
-        </Link>
-      </div>
-      <header className="vocabulary-image-heading">
-        <span className="eyebrow">LEKTION {Number(lessonId.slice(1))} · {eyebrowTitle}</span>
-        <h1 lang={activity || track === "numbers" ? "de" : "th"}>{sectionTitle}</h1>
+    <main className={`guided-learning${isProfession ? " profession-learning" : ""}`}>
+      {skill === "vocabulary" && (activity || track === "numbers") && <h1 className="sr-only">{isProfession ? "Berufe" : sectionTitle}</h1>}
+      {skill === "vocabulary" || grammarTrack ? (
+        <LearningCategoryTabs currentKey={position} ariaLabel={skill === "grammar" ? "หมวดไวยากรณ์" : "หมวดคำศัพท์"}>
+          {categories.map((category) => {
+            const first = category.positions[0];
+            const active = category.positions.includes(position);
+            const previouslyLearned = category.positions.every((index) => index < activities.length && state.learnedActivityIds.includes(activities[index].id));
+            const available = previouslyLearned || activities.slice(0, Math.min(first, activities.length))
+              .every((entry) => state.learnedActivityIds.includes(entry.id))
+              && (first <= activities.length || position >= activities.length || !!state.numberEndPage);
+            return <button key={category.key} type="button" disabled={!available || busy}
+              aria-current={active ? "page" : undefined}
+              onClick={() => {
+                const unfinished = category.positions.find((index) => index < activities.length && !state.learnedActivityIds.includes(activities[index].id));
+                const target = unfinished !== undefined && activities.slice(0, unfinished).every((entry) => state.learnedActivityIds.includes(entry.id)) ? unfinished : first;
+                setPosition(target);
+                if (target >= activities.length && track === "numbers")
+                  persist({ ...state, numberEndPage: target > activities.length ? "board" : "observations" });
+              }}>
+              <CategoryTabLabel german={category.label} thai={category.thai} />
+            </button>;
+          })}
+        </LearningCategoryTabs>
+      ) : <header className="vocabulary-image-heading">
+        <h1 lang={activity ? "de" : "th"}>{sectionTitle}</h1>
         <p>{sectionDescription}</p>
-      </header>
+      </header>}
+      {isProfession && <ArticleLegend />}
       <div className="vocabulary-image-progress" aria-live="polite">
-        <span>เรียนแล้ว {completedCount} / {activityCount} กิจกรรม</span>
+        <span>เรียนแล้ว {progressLearned} / {progressTotal} {progressUnit}</span>
         <div className="vocabulary-image-progress-track" aria-hidden="true">
-          <span style={{ width: `${activityCount ? completedCount / activityCount * 100 : 0}%` }} />
+          <span style={{ width: `${progressTotal ? progressLearned / progressTotal * 100 : 0}%` }} />
         </div>
       </div>
       {activity ? (
-        <section className={`guided-card${activity.type === "number_matching" ? " number-learning-card" : ""}${["L02-number-matching-13-19", "L02-number-matching-20-90", "L02-number-matching-21-100"].includes(activity.id) ? " teen-number-learning-card" : ""}${activity.id === "L02-number-matching-21-100" ? " compound-number-learning-card" : ""}`} key={activity.id}>
-          {activity.sourceScope !== "core_book" && (
+        <section className={`guided-card${isProfession ? " profession-learning-card" : ""}${activity.type === "number_matching" ? " number-learning-card" : ""}${["L02-number-matching-13-19", "L02-number-matching-20-90", "L02-number-matching-21-100"].includes(activity.id) ? " teen-number-learning-card" : ""}${activity.id === "L02-number-matching-21-100" ? " compound-number-learning-card" : ""}`} key={activity.id}>
+          {!isProfession && activity.type !== "pronoun_matching" && activity.sourceScope !== "core_book" && (
             <span className="quiet-pill">
               {activity.sourceScope === "teacher_extension"
                 ? "เนื้อหาเสริมจากอาจารย์"
@@ -205,11 +271,11 @@ function GuidedFlow({
           )}
           {verb && (
             <div className="guided-verb-intro">
-              <h2 lang="de">{verb.infinitive}</h2>
+              <h2 lang="de" aria-label={verb.infinitive}><GermanListenText text={verb.infinitive} /></h2>
               <p>{items.find((i) => i.id === activity.verbId)?.meaning}</p>
               {verb.examples.map((e) => (
                 <div key={e.de}>
-                  <strong lang="de">{e.de}</strong>
+                  <strong lang="de"><GermanListenText text={e.de} /></strong>
                   <p>{e.th}</p>
                 </div>
               ))}
@@ -222,7 +288,7 @@ function GuidedFlow({
           {activity.id === "L02-number-matching-13-19" && <TeenNumberExample />}
           {activity.id === "L02-number-matching-20-90" && <TeenNumberExample tens />}
           {activity.id === "L02-number-matching-21-100" && <TeenNumberExample compound />}
-          <p className="guided-instruction">{activity.instruction}</p>
+          {!isProfession && activity.type !== "pronoun_matching" && <p className="guided-instruction">{activity.instruction}</p>}
           {activity.note && <p className="guided-note">{activity.note}</p>}
           {!!study.length && (
             <details className="guided-reference">
@@ -246,15 +312,7 @@ function GuidedFlow({
                           ? `${i.professionContent.masculine}${i.professionContent.feminine ? ` / ${i.professionContent.feminine}` : ""}`
                           : i.title}
                     </strong>
-                    <span>
-                      {i.thaiPronunciation && `(${i.thaiPronunciation})`}{" "}
-                      {i.meaning}
-                    </span>
-                    {i.professionContent?.feminineReading && (
-                      <small>
-                        รูปหญิง: ({i.professionContent.feminineReading})
-                      </small>
-                    )}
+                    <span>{i.meaning}</span>
                     <AudioChoice ids={[i.id]} items={items} />
                     {i.professionContent?.feminine && (
                       <AudioChoice ids={[i.id]} items={items} feminine />
@@ -264,8 +322,12 @@ function GuidedFlow({
               </div>
             </details>
           )}
-          {activity.type === "number_matching" ? (
+          {isProfession ? <ProfessionMatching activity={activity} items={items} matchedIds={matchedIds} busy={busy} wrongCounts={state.professionAnswers ?? {}} onMatch={saveCorrect} onWrong={(id) => persist(recordProfessionAnswer(state, id, false))} showFormNote={activity.id === professionActivities[0]?.id} /> : activity.type === "number_matching" ? (
             <NumberMatching activity={activity} items={items} matchedIds={matchedIds} busy={busy} onMatch={saveCorrect} />
+          ) : activity.type === "pronoun_matching" ? (
+            <PronounMatching activity={activity} items={items} matchedIds={matchedIds} busy={busy} onMatch={saveCorrect} />
+          ) : activity.type === "conjugation" && activity.verbId ? (
+            <ConjugationMatching activity={activity} items={items} matchedIds={matchedIds} busy={busy} onMatch={saveCorrect} />
           ) : pairs.length ? (
             <PairMatching
               activity={activity}
@@ -317,22 +379,21 @@ function GuidedFlow({
             >
               ย้อนกลับ
             </button>
-            <button
+            {completed && position === activities.length - 1 && !hasEndContent ? (
+              <Link className="button primary" href={continuation.href}>{continuation.label}</Link>
+            ) : <button
               type="button"
               className="button primary"
               disabled={!completed || busy}
               onClick={() => setPosition((p) => p + 1)}
             >
-              ไปต่อ
-            </button>
+              {isProfession || grammarTrack ? "หน้าถัดไป" : "ไปต่อ"}
+            </button>}
           </div>
         </section>
       ) : (
         <section className="guided-card">
-          {track === "numbers" ? showNumberBoard ? <NumberSummaryBoard items={summaryItems} /> : <NumberObservations items={items} /> : <>
-            <h2>{title}</h2>
-            <p>ย้อนกลับไปดูสิ่งที่เรียนได้ โดยสถานะการเรียนยังคงอยู่</p>
-          </>}
+          {grammarTrack === "pronouns" ? <PronounSummary items={items} /> : grammarTrack === "verbs" ? <ConjugationSummary activities={activities} items={items} /> : track === "numbers" ? showNumberBoard ? <NumberSummaryBoard items={summaryItems} /> : <NumberObservations items={items} /> : null}
           <div className="guided-navigation">
             <button
               type="button"
@@ -358,9 +419,13 @@ function GuidedFlow({
             ) : skill === "vocabulary" ? (
               <Link
                 className="button primary"
-                href={`/learn/${lessonId}/grammar`}
+                href={`/learn/${lessonId}/phrases`}
               >
-                เรียน Grammatik ต่อ
+                เรียนประโยคและสำนวนต่อ
+              </Link>
+            ) : grammarTrack && grammarTrack !== "sentences" ? (
+              <Link className="button primary" href={grammarTrack === "pronouns" ? `/learn/${lessonId}/grammar/verbs` : `/learn/${lessonId}/phrases/sentences`}>
+                {grammarTrack === "pronouns" ? "เรียนการผันกริยาต่อ" : "เรียนคำถามและประโยคต่อ"}
               </Link>
             ) : (
               <Link className="button primary" href={`/lesson/${lessonId}`}>

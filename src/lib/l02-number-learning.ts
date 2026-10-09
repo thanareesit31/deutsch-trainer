@@ -1,3 +1,4 @@
+import { professionBoards } from "./profession-learning";
 import type { Item } from "./content";
 import type { LearningActivity, LearningFlow } from "./guided-learning";
 
@@ -26,8 +27,8 @@ export function prepareL02VocabularyFlow(flow: LearningFlow, items: Item[]): Lea
   const replacedTypes = new Set(["number_to_word", "word_to_number", "audio_to_number", "compound_pattern"]);
   return {
     ...flow,
-    activities: [...boards, ...flow.activities.filter((activity) => {
-      if (activity.type === "number_matching") return false;
+    activities: [...boards, ...professionBoards(flow, items), ...professionBoards(flow, items, 4), ...flow.activities.filter((activity) => {
+      if (["number_matching", "profession_matching"].includes(activity.type)) return false;
       return !(replacedTypes.has(activity.type) && activity.contentIds.some((id) => {
         const number = items.find((item) => item.id === id)?.numberContent;
         return number && (number.value <= 19 || (number.value >= 20 && number.value <= 90 && number.value % 10 === 0) || [21, 48, 63, 89, 100].includes(number.value));

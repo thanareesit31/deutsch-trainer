@@ -20,6 +20,8 @@ export async function createDatabase() {
     "20261007010000_l02_learning_content.sql",
     "20261008000000_l02_number_page_four.sql",
     "20261007020000_l02_lesson_states.sql",
+    "20261009000000_l02_model_spelling.sql",
+    "20261009010000_l02_status_phrases.sql",
   ])
     await db.exec(
       await readFile(

@@ -77,7 +77,7 @@ try {
   await page.locator(".alphabet-set-progress-count").waitFor();
   assert.equal(
     await page.locator(".alphabet-set-progress-count").innerText(),
-    "1 / 30",
+    "เรียนแล้ว 0 / 30 คำ",
   );
   await page
     .getByRole("button", { name: "ฟังเสียงตัวอักษร", exact: true })
@@ -94,7 +94,7 @@ try {
   await page.locator(".alphabet-set-progress-count").waitFor();
   assert.equal(
     await page.locator(".alphabet-set-progress-count").innerText(),
-    "2 / 30",
+    "เรียนแล้ว 1 / 30 คำ",
   );
   await page.goto(base + "/learn/L01/vocabulary/core-images");
   await page.locator(".vocabulary-image-matching").waitFor();
@@ -175,14 +175,14 @@ try {
   await page.locator(".alphabet-set-progress-count").waitFor();
   assert.equal(
     await page.locator(".alphabet-set-progress-count").innerText(),
-    "1 / 30",
+    "เรียนแล้ว 0 / 30 คำ",
   );
   await page.getByRole("button", { name: "ออกจากระบบ", exact: true }).click();
   await login();
   await page.locator(".alphabet-set-progress-count").waitFor();
   assert.equal(
     await page.locator(".alphabet-set-progress-count").innerText(),
-    "2 / 30",
+    "เรียนแล้ว 1 / 30 คำ",
   );
   // Deliberately leave a draft in the browser. Restart must still produce a fresh lesson.
   await page.evaluate(() => {
@@ -210,7 +210,7 @@ try {
   await page.locator(".alphabet-set-progress-count").waitFor();
   assert.equal(
     await page.locator(".alphabet-set-progress-count").innerText(),
-    "1 / 30",
+    "เรียนแล้ว 0 / 30 คำ",
   );
   await page.goto(base + "/learn/L01/vocabulary/core-images");
   await page.locator(".vocabulary-image-matching").waitFor();

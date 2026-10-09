@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { Volume2 } from "lucide-react";
+import { useVocabularyAudio } from "./vocabulary-audio";
+import { CategoryTabLabel, LearningCategoryTabs } from "./learning-breadcrumbs";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import type { Item } from "@/lib/content";
@@ -48,13 +51,12 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
       (candidate.collection === "core" || candidate.collection === "extra") &&
       candidates.includes((candidate.word || candidate.answer).trim().toLocaleLowerCase("de")),
     );
-    return { ...definition, itemId: item?.id ?? definition.id, meaning: item?.meaning ?? definition.meaning };
+    return { ...definition, itemId: item?.id ?? definition.id, meaning: item?.meaning ?? definition.meaning, audioRef: item?.audio };
   }), [items]);
+  const { play, error: audioError } = useVocabularyAudio();
   const [learnedIds, setLearnedIds] = useState<string[]>([]);
   const [selectedId, setSelectedId] = useState<{ id: string; type: "word" | "image" } | null>(null);
-  const [incorrectIds, setIncorrectIds] = useState<string[]>([]);
-  const [replaying, setReplaying] = useState(false);
-  const [replayMatchedIds, setReplayMatchedIds] = useState<string[]>([]);
+  const [incorrectPair, setIncorrectPair] = useState<{ wordId: string; imageId: string } | null>(null);
   const [feedback, setFeedback] = useState("");
   const [hydrated, setHydrated] = useState(false);
 
@@ -64,126 +66,105 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
   }, [lessonState.read]);
 
   const learned = new Set(learnedIds);
-  const replayMatched = new Set(replayMatchedIds);
   const byId = new Map(entries.map((entry) => [entry.id, entry] as const));
   const completedCount = entries.filter((entry) => learned.has(entry.itemId)).length;
   const groupEntries = entries.filter((entry) => entry.groupId === group.id);
   const groupCompletedCount = groupEntries.filter((entry) => learned.has(entry.itemId)).length;
   const groupWords = group.wordOrder.flatMap((id) => {
     const entry = byId.get(id);
-    return entry && (replaying ? !replayMatched.has(entry.id) : !learned.has(entry.itemId)) ? [entry] : [];
+    return entry && !learned.has(entry.itemId) ? [entry] : [];
   });
   const groupPictures = group.pictureOrder.flatMap((id) => {
     const entry = byId.get(id);
-    return entry && (replaying ? !replayMatched.has(entry.id) : !learned.has(entry.itemId)) ? [entry] : [];
+    return entry && !learned.has(entry.itemId) ? [entry] : [];
   });
   const matchedEntries = group.wordOrder.flatMap((id) => {
     const entry = byId.get(id);
-    return entry && (replaying ? replayMatched.has(entry.id) : learned.has(entry.itemId)) ? [entry] : [];
+    return entry && learned.has(entry.itemId) ? [entry] : [];
   });
   const previousGroup = vocabularyImageGroups[groupIndex - 1];
   const nextGroup = vocabularyImageGroups[groupIndex + 1];
   const previousGroupsComplete = vocabularyImageGroups.slice(0, groupIndex).every((previous) =>
     entries.filter((entry) => entry.groupId === previous.id).every((entry) => learned.has(entry.itemId)),
   );
-  const groupIsComplete = groupEntries.length > 0 && groupCompletedCount === groupEntries.length;
-
-  function startReplay() {
-    setReplaying(true);
-    setReplayMatchedIds([]);
-    setSelectedId(null);
-    setIncorrectIds([]);
-    setFeedback("");
-  }
-
   function chooseMatch(id: string, type: "word" | "image") {
+    const entry = byId.get(id);
+    if (!entry) return;
+    if (type === "word" && (!selectedId || selectedId.type === "word" || selectedId.id !== id)) play(entry.german, entry.audioRef);
     if (!selectedId || selectedId.type === type) {
       setSelectedId({ id, type });
-      setIncorrectIds([]);
+      setIncorrectPair(null);
       setFeedback("");
       return;
     }
     if (selectedId.id !== id) {
-      setIncorrectIds([selectedId.id, id]);
+      setIncorrectPair({
+        wordId: selectedId.type === "word" ? selectedId.id : id,
+        imageId: selectedId.type === "image" ? selectedId.id : id,
+      });
       setSelectedId(null);
       setFeedback("ลองใหม่");
       return;
     }
-    const entry = byId.get(id);
-    if (!entry) return;
-    if (replaying) {
-      setReplayMatchedIds((current) => [...new Set([...current, entry.id])]);
-      setSelectedId(null);
-      setIncorrectIds([]);
-      setFeedback("");
-      return;
-    }
+    play(entry.german, entry.audioRef);
     const nextLearnedIds = [...new Set([...learnedIds, entry.itemId])];
     setLearnedIds(nextLearnedIds);
     lessonState.write(lessonStateKeys.images, JSON.stringify(nextLearnedIds));
-    setIncorrectIds([]);
+    setIncorrectPair(null);
     setSelectedId(null);
     setFeedback("");
   }
 
   if (!hydrated) return <main className="vocabulary-image-matching" aria-busy="true" />;
 
-  if (!previousGroupsComplete) {
-    const firstIncompleteGroup = vocabularyImageGroups.slice(0, groupIndex).find((previous) =>
-      entries.filter((entry) => entry.groupId === previous.id).some((entry) => !learned.has(entry.itemId)),
-    );
-    return (
-      <main className="vocabulary-image-matching">
-        <Link className="back-link" href="/learn/L01/vocabulary">← กลับ Wortschatz</Link>
-        <section className="vocabulary-image-locked">
-          <span className="eyebrow">LEKTION 1 · WORTSCHATZ</span>
-          <h1>{group.title}</h1>
-          <p>จับคู่หมวดก่อนหน้าให้ครบ แล้วจึงไปต่อ</p>
-          <Link className="button primary" href={firstIncompleteGroup?.route ?? vocabularyImageGroups[0].route}>ย้อนกลับ</Link>
-        </section>
-      </main>
-    );
-  }
-
   return (
     <main className="vocabulary-image-matching">
-      <div className="vocabulary-image-navigation">
-        <Link className="back-link" href="/learn/L01/vocabulary">← กลับ Wortschatz</Link>
-        {groupIsComplete && <button className="button secondary" type="button" onClick={startReplay}>เรียนซ้ำ</button>}
-      </div>
-      <header className="vocabulary-image-heading">
-        <span className="eyebrow">LEKTION 1 · WORTSCHATZ</span>
-        <h1 lang="de">{group.germanTitle}</h1>
-        <p>{group.title}</p>
-      </header>
+      <h1 className="sr-only">Bilder Wortschatz</h1>
+      <LearningCategoryTabs currentKey={group.id}>
+        {vocabularyImageGroups.map((category, index) => {
+          const available = vocabularyImageGroups.slice(0, index).every((previous) =>
+            entries.filter((entry) => entry.groupId === previous.id).every((entry) => learned.has(entry.itemId)));
+          return available ? <Link key={category.id} href={category.route} title={category.germanTitle}
+            aria-current={category.id === group.id ? "page" : undefined}><CategoryTabLabel german={category.germanTitle} thai={category.title} /></Link>
+            : <span key={category.id} aria-disabled="true" title="เรียนหมวดก่อนหน้าให้ครบก่อน"><CategoryTabLabel german={category.germanTitle} thai={category.title} /></span>;
+        })}
+      </LearningCategoryTabs>
       <div className="vocabulary-image-progress" aria-live="polite">
         <span>เรียนแล้ว {completedCount} / {entries.length} คำ</span>
         <div className="vocabulary-image-progress-track" aria-hidden="true"><span style={{ width: `${entries.length ? completedCount / entries.length * 100 : 0}%` }} /></div>
       </div>
+      {!previousGroupsComplete ? <section className="vocabulary-image-locked">
+        <h1>{group.title}</h1>
+        <p>จับคู่หมวดก่อนหน้าให้ครบ แล้วจึงไปต่อ</p>
+        <Link className="button primary" href={vocabularyImageGroups.find((previous) =>
+          entries.filter((entry) => entry.groupId === previous.id).some((entry) => !learned.has(entry.itemId)))?.route ?? vocabularyImageGroups[0].route}>กลับหมวดที่กำลังเรียน</Link>
+      </section> : <>
       <div className="vocabulary-image-groups">
         <section className={`vocabulary-image-group group-${group.id}`}>
           <header className="vocabulary-image-group-heading"><span>{groupCompletedCount} / {groupEntries.length} คำ</span></header>
           {matchedEntries.length > 0 && <section className="vocabulary-image-paired-grid" aria-label="คำศัพท์ที่จับคู่แล้ว">
             {matchedEntries.map((entry) => <article className="vocabulary-image-paired-card" key={entry.itemId}>
               {entry.flag ? <CountryFlag flag={entry.flag} /> : <Image src={`/images/lektion-1-core-vocabulary-images/${entry.image}.jpg`} alt={`ภาพสำหรับ ${entry.german}`} width={960} height={960} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 28vw, 220px" />}
-              <div className="vocabulary-image-paired-word"><strong lang="de">{entry.german}</strong><span>({entry.reading})</span><small>{entry.meaning}</small></div>
+              <div className="vocabulary-image-paired-word"><button type="button" className="vocabulary-word-audio" aria-label={`ฟัง ${entry.german}`} title="กดเพื่อฟังเสียง" onClick={() => play(entry.german, entry.audioRef)}><span lang="de">{entry.german}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button><small>{entry.meaning}</small></div>
             </article>)}
           </section>}
           <section className="vocabulary-image-word-list" aria-label={`${group.title} — คำภาษาเยอรมัน`}>
-            {groupWords.map((entry) => <button className={`vocabulary-image-word ${selectedId?.type === "word" && selectedId.id === entry.id ? "selected" : ""} ${incorrectIds.includes(entry.id) ? "incorrect" : ""}`} key={entry.id} type="button" aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}><span lang="de">{entry.german}</span></button>)}
+            {groupWords.map((entry) => <button className={`vocabulary-image-word ${selectedId?.type === "word" && selectedId.id === entry.id ? "selected" : ""} ${incorrectPair?.wordId === entry.id ? "incorrect" : ""}`} key={entry.id} type="button" aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}><span lang="de">{entry.german}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button>)}
           </section>
           <section className={`vocabulary-image-picture-grid count-${groupPictures.length}`} aria-label={`${group.title} — เลือกรูปภาพ`}>
-            {groupPictures.map((entry) => <button className={`vocabulary-image-picture ${selectedId?.type === "image" && selectedId.id === entry.id ? "selected" : ""} ${incorrectIds.includes(entry.id) ? "incorrect" : ""}`} key={entry.id} type="button" aria-label="เลือกภาพนี้" aria-pressed={selectedId?.type === "image" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "image")}>
+            {groupPictures.map((entry) => <button className={`vocabulary-image-picture ${selectedId?.type === "image" && selectedId.id === entry.id ? "selected" : ""} ${incorrectPair?.imageId === entry.id ? "incorrect" : ""}`} key={entry.id} type="button" aria-label="เลือกภาพนี้" aria-pressed={selectedId?.type === "image" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "image")}>
               {entry.flag ? <CountryFlag flag={entry.flag} /> : <Image src={`/images/lektion-1-core-vocabulary-images/${entry.image}.jpg`} alt="ภาพประกอบสำหรับจับคู่คำศัพท์" width={960} height={960} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 28vw, 220px" />}
             </button>)}
           </section>
         </section>
       </div>
       <p className={`vocabulary-image-feedback ${feedback === "ลองใหม่" ? "incorrect" : ""}`} role="status">{feedback}</p>
+      </>}
+      {audioError && <p role="status" className="alphabet-audio-error">{audioError}</p>}
       <div className="vocabulary-image-done-actions">
         <Link className="button secondary" href={previousGroup?.route ?? "/learn/L01/vocabulary/alphabet"}>ย้อนกลับ</Link>
-        {groupCompletedCount === groupEntries.length && groupEntries.length > 0 && (nextGroup
-          ? <Link className="button primary" href={nextGroup.route}>ไปต่อ</Link>
+        {previousGroupsComplete && groupCompletedCount === groupEntries.length && groupEntries.length > 0 && (nextGroup
+          ? <Link className="button primary" href={nextGroup.route}>หน้าถัดไป</Link>
           : <Link className="button primary" href="/learn/L01/vocabulary">กลับไปที่คำศัพท์</Link>)}
       </div>
     </main>

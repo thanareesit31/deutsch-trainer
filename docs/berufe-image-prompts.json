@@ -1,0 +1,220 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "public/images/lektion-1-core-vocabulary-images/auf-wiedersehen.jpg",
+  "style": "Japanese anime film illustration, detailed painted backgrounds, warm cinematic light, expressive friendly faces.",
+  "composition": "One profession per landscape image. Exactly one male entirely in left half, one female entirely in right half. No words, labels or logos. Mirroring the whole image changes both persons together; word labels use the same left/right form metadata.",
+  "assets": [
+    {
+      "key": "teacher",
+      "scene": "Teachers holding books in a sunlit classroom",
+      "file": "teacher.webp"
+    },
+    {
+      "key": "engineer",
+      "scene": "engineers with technical blueprints and hard hats at an industrial design office",
+      "file": "engineer.webp"
+    },
+    {
+      "key": "mechanic",
+      "scene": "automotive mechanics in coveralls holding wrenches beside a car engine in a tidy garage",
+      "file": "mechanic.webp"
+    },
+    {
+      "key": "student",
+      "scene": "university students holding books and backpacks on a university campus",
+      "file": "student.webp"
+    },
+    {
+      "key": "journalist",
+      "scene": "journalists with microphones and notebooks in a newsroom",
+      "file": "journalist.webp"
+    },
+    {
+      "key": "hairdresser",
+      "scene": "hairdressers holding hair scissors and combs in a hair salon",
+      "file": "hairdresser.webp"
+    },
+    {
+      "key": "architect",
+      "scene": "architects holding rolled building plans with a scale architectural model in a design studio",
+      "file": "architect.webp"
+    },
+    {
+      "key": "doctor",
+      "scene": "doctors wearing white medical coats and stethoscopes in a clinic",
+      "file": "doctor.webp"
+    },
+    {
+      "key": "seller",
+      "scene": "shop assistants holding shopping bags and arranging goods in a retail store",
+      "file": "seller.webp"
+    },
+    {
+      "key": "waiter",
+      "scene": "restaurant waiters in aprons holding trays with dishes",
+      "file": "waiter.webp"
+    },
+    {
+      "key": "courier",
+      "scene": "parcel delivery workers in courier uniforms carrying cardboard parcels beside a delivery van",
+      "file": "courier.webp"
+    },
+    {
+      "key": "autor",
+      "scene": "authors holding handwritten notebooks and pens in a writing studio",
+      "file": "autor.webp"
+    },
+    {
+      "key": "cafébesitzer",
+      "scene": "cafe owners in aprons holding keys and coffee cups inside their cafe",
+      "file": "cafébesitzer.webp"
+    },
+    {
+      "key": "diplomat",
+      "scene": "diplomats in formal suits with folders at an international conference",
+      "file": "diplomat.webp"
+    },
+    {
+      "key": "dolmetscher",
+      "scene": "interpreters wearing conference headsets with microphones inside an interpretation booth",
+      "file": "dolmetscher.webp"
+    },
+    {
+      "key": "flugbegleiter",
+      "scene": "flight attendants in professional cabin uniforms inside an airplane cabin",
+      "file": "flugbegleiter.webp"
+    },
+    {
+      "key": "fotograf",
+      "scene": "photographers holding professional cameras in a photo studio",
+      "file": "fotograf.webp"
+    },
+    {
+      "key": "geschäftsmann",
+      "scene": "business people in formal office clothing with briefcases in a business office",
+      "file": "geschäftsmann.webp"
+    },
+    {
+      "key": "hausmann",
+      "scene": "homemakers in casual clothes doing household work with laundry baskets in a cozy home",
+      "file": "hausmann.webp"
+    },
+    {
+      "key": "influencer",
+      "scene": "social media content creators recording with smartphones on tripods and ring lights in a creator studio",
+      "file": "influencer.webp"
+    },
+    {
+      "key": "investor",
+      "scene": "investors in business attire studying financial charts on screens in an investment office",
+      "file": "investor.webp"
+    },
+    {
+      "key": "jurist",
+      "scene": "legal professionals in business attire holding law books in a law office",
+      "file": "jurist.webp"
+    },
+    {
+      "key": "koch",
+      "scene": "chefs in white chef coats and chef hats holding cooking utensils in a professional kitchen",
+      "file": "koch.webp"
+    },
+    {
+      "key": "krankenpfleger",
+      "scene": "Nurses in recognizable white nursing uniforms holding patient charts in a hospital: male left in white short-sleeved tunic, female right in white nursing dress and nurse cap; no stethoscopes.",
+      "file": "krankenpfleger.webp",
+      "editedOn": "2026-10-09",
+      "editTool": "built-in image_gen",
+      "editPrompt": "Use case: precise-object-edit. Edit target: the attached paired nurse illustration used in a German beginner vocabulary app. Replace their clothing with immediately recognizable traditional white nursing uniforms: the adult man on the LEFT wears a crisp white short-sleeved nursing tunic and white trousers with a small hospital ID badge; the adult woman on the RIGHT wears a modest white short-sleeved nursing dress with a neat collar and a small classic white nurse cap, hair tied neatly back. Remove both stethoscopes to reduce confusion with doctors. Retain patient chart clipboards, and show a nursing trolley and neatly made hospital bed in the background. Keep their faces, friendly expressions, adult proportions, warm detailed anime illustration style, golden hospital lighting, and the same horizontal 3:2 framing. Critical invariant: exactly one adult MALE on the LEFT and one adult FEMALE on the RIGHT, never exchange sides; each clearly readable and centered in their own half, as word labels must align beneath them. No text, letters, logos, red cross emblems, or watermark. This is an educational illustration of nurses, not a costume; professional, practical, nonsexualized uniforms."
+    },
+    {
+      "key": "modell",
+      "scene": "adult fashion models in tasteful contemporary clothes posing at a fashion photo studio",
+      "file": "modell.webp"
+    },
+    {
+      "key": "musiker",
+      "scene": "musicians, man playing acoustic guitar and woman playing violin in a music studio",
+      "file": "musiker.webp"
+    },
+    {
+      "key": "politiker",
+      "scene": "politicians in formal suits holding speech folders near a podium in a parliamentary hall",
+      "file": "politiker.webp"
+    },
+    {
+      "key": "polizist",
+      "scene": "police officers in navy police uniforms with badges in front of a police station",
+      "file": "polizist.webp"
+    },
+    {
+      "key": "programmierer",
+      "scene": "computer programmers with laptops showing abstract code in a software studio",
+      "file": "programmierer.webp"
+    },
+    {
+      "key": "regisseur",
+      "scene": "film directors holding a clapperboard and directing with a film camera in a movie studio",
+      "file": "regisseur.webp"
+    },
+    {
+      "key": "reiseleiter",
+      "scene": "tour guides holding small unmarked guide flags and a map in a European town square",
+      "file": "reiseleiter.webp"
+    },
+    {
+      "key": "rezeptionist",
+      "scene": "hotel receptionists behind a hotel reception desk with room keys",
+      "file": "rezeptionist.webp"
+    },
+    {
+      "key": "sänger",
+      "scene": "singers holding microphones on a warmly lit music stage",
+      "file": "sänger.webp"
+    },
+    {
+      "key": "schauspieler",
+      "scene": "actors in elegant stage costumes holding scripts at a theater stage",
+      "file": "schauspieler.webp"
+    },
+    {
+      "key": "schüler",
+      "scene": "teenage school pupils with school backpacks and notebooks outside a school",
+      "file": "schüler.webp"
+    },
+    {
+      "key": "sekretär",
+      "scene": "office secretaries with document folders and a desk phone at an office reception",
+      "file": "sekretär.webp"
+    },
+    {
+      "key": "soldat",
+      "scene": "soldiers in olive military uniforms without weapons at a peaceful military training base",
+      "file": "soldat.webp"
+    },
+    {
+      "key": "millionär",
+      "scene": "millionaires in elegant tasteful clothes beside a luxury house and car, conveying wealth",
+      "file": "millionär.webp"
+    },
+    {
+      "key": "fußballspieler",
+      "scene": "football players in sports jerseys with a football on a football pitch",
+      "file": "fußballspieler.webp"
+    },
+    {
+      "key": "astronaut",
+      "scene": "astronauts in white space suits holding helmets at a space launch facility",
+      "file": "astronaut.webp"
+    }
+  ],
+  "output": {
+    "directory": "public/images/lektion-2-profession-pairs",
+    "format": "WebP",
+    "width": 1024,
+    "quality": 85,
+    "sourceLeftForm": "masculine",
+    "sourceRightForm": "feminine",
+    "review": "All 40 images visually checked for matching occupations and male-left/female-right positions. Model image corrected to show a male fashion model rather than a photographer."
+  }
+}

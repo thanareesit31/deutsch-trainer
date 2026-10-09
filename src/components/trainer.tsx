@@ -1,5 +1,7 @@
 "use client";
 import { useContent } from "./content-provider";
+import { L02PhraseLearning } from "./l02-phrase-learning";
+import { GrammarLearningEntryPoints, L01GrammarEntryRedirect, L02SentencesRedirect } from "./grammar-learning";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
@@ -50,6 +52,7 @@ import { VocabularyLearningEntryPoints } from "./vocabulary-learning";
 import { AlphabetLearningPage } from "./alphabet-learning";
 import { VocabularyImageMatching } from "./vocabulary-image-matching";
 import { vocabularyImageGroups } from "@/lib/vocabulary-image-content";
+import { LearningBreadcrumbs } from "./learning-breadcrumbs";
 import { GuidedLearningPage } from "./guided-learning";
 
 export type StartSession = (
@@ -221,16 +224,21 @@ function App() {
     );
   else if (path === "/practice") page = <PracticeEntry start={start} />;
   else if (path === "/review") page = <ReviewPage start={start} />;
+  else if (path === "/learn/L02/phrases") page = <L02PhraseLearning key={path} />;
+  else if (path === "/learn/L02/phrases/sentences") page = <GuidedLearningPage key={path} lessonId="L02" skill="grammar" grammarTrack="sentences" />;
+  else if (path === "/learn/L02/grammar/sentences") page = <L02SentencesRedirect />;
   else if (path === "/learn/L02/vocabulary")
     page = <VocabularyLearningEntryPoints key={path} lessonId="L02" />;
   else if (
     parts[0] === "learn" && parts[1] === "L02" && parts[2] === "vocabulary" && parts.length === 4 &&
     (parts[3] === "numbers" || parts[3] === "core")
   ) page = <GuidedLearningPage key={path} lessonId="L02" skill="vocabulary" track={parts[3]} />;
-  else if (
-    parts[0] === "learn" && parts[1] === "L02" && parts.length === 3 &&
-    parts[2] === "grammar"
-  ) page = <GuidedLearningPage key={path} lessonId="L02" skill={parts[2]} />;
+  else if (parts[0] === "learn" && ["L01", "L02"].includes(parts[1]) && parts[2] === "grammar" && parts.length === 3)
+    page = <GrammarLearningEntryPoints lessonId={parts[1]} />;
+  else if (path === "/learn/L01/grammar/pronouns") page = <L01GrammarEntryRedirect />;
+  else if (path === "/learn/L01/grammar/verbs") page = <LearnActivity key={path} lessonId="L01" skill="grammar" start={start} />;
+  else if (parts[0] === "learn" && parts[1] === "L02" && parts[2] === "grammar" && ["pronouns", "verbs"].includes(parts[3]))
+    page = <GuidedLearningPage key={path} lessonId="L02" skill="grammar" grammarTrack={parts[3] as import("@/lib/grammar-learning").GrammarTrack} />;
   else if (path === "/learn/L01/vocabulary/alphabet")
     page = <AlphabetLearningPage />;
   else if (vocabularyImageGroups.some((group) => group.route === path))
@@ -337,9 +345,24 @@ function App() {
             </span>
             <div>
               <strong>{user?.email || "ผู้เรียน"}</strong>
-              <small>บัญชีผู้เรียน · A1</small>
+              <small>บัญชีผู้เรียน</small>
             </div>
             <span className="online-dot" />
+          </div>
+          <div className="sidebar-account-actions">
+            <span className="level-pill">
+              <span className="german-flag" />
+              A1.1 — A1.2
+            </span>
+            <button
+              className="topbar-signout sidebar-signout"
+              onClick={() => void handleSignOut()}
+              disabled={signingOut || history.busy}
+              aria-label="ออกจากระบบ"
+            >
+              <LogOut size={16} aria-hidden="true" />
+              <span>{signingOut ? "กำลังออก…" : "ออกจากระบบ"}</span>
+            </button>
           </div>
         </div>
       </aside>
@@ -354,18 +377,9 @@ function App() {
             >
               {mobileMenu ? <X /> : <Menu />}
             </button>
-            <span className="topbar-label">พื้นที่เรียนภาษาเยอรมันของคุณ</span>
             <span className="topbar-mobile">Deutsch mit Sun</span>
           </div>
           <div className="topbar-right">
-            <span className="level-pill">
-              <span className="german-flag" />
-              A1.1 — A1.2
-            </span>
-            <span className="topbar-divider" />
-            <span className="small-avatar">
-              {(user?.email || "S").slice(0, 1).toUpperCase()}
-            </span>
             <button
               className="topbar-signout"
               onClick={() => void handleSignOut()}
@@ -388,6 +402,7 @@ function App() {
               {signOutError || error || startError || history.error}
             </div>
           )}
+          <LearningBreadcrumbs />
           {page}
         </main>
         <footer className="footer">
@@ -484,12 +499,11 @@ function LessonDetail({ id }: { id: string }) {
   const lesson = lessons.find((l) => l.id === id)!;
   const { data } = useStore();
   const history = useLearning();
-  const lessonSkills = skills.filter((s) => id !== "L02" || s.id === "vocabulary" || s.id === "grammar");
+  const lessonSkills = skills.filter((skill) =>
+    items.some((item) => item.lessonId === id && item.skill === skill.id),
+  );
   return (
     <>
-      <Link className="back-link" href={`/learn?level=${lesson.level}`}>
-        ← กลับไปเลือกบทเรียน
-      </Link>
       <div className="lesson-heading">
         <span className="lesson-heading-num">
           {String(lesson.number).padStart(2, "0")}

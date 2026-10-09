@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Volume2 } from "lucide-react";
 import type { Item } from "@/lib/content";
 import {
@@ -10,6 +10,8 @@ import {
   type LearningOption,
 } from "@/lib/guided-learning";
 import { speakGermanText, useGermanVoice } from "./german-audio";
+import { useVocabularyAudio } from "./vocabulary-audio";
+import { GermanListenText } from "./german-listen-text";
 
 function shuffled<T>(values: T[]): T[] {
   const result = [...values];
@@ -47,11 +49,19 @@ export function AudioChoice({
   items,
   onPlayed,
   feminine = false,
+  label,
+  buttonClassName = "button secondary",
+  showNotice = true,
+  ariaLabel,
 }: {
   ids: string[];
   items: Item[];
   onPlayed?: () => void;
   feminine?: boolean;
+  label?: ReactNode;
+  buttonClassName?: string;
+  showNotice?: boolean;
+  ariaLabel?: string;
 }) {
   const voice = useGermanVoice();
   const audio = useRef<HTMLAudioElement | null>(null);
@@ -116,11 +126,10 @@ export function AudioChoice({
   }
   return (
     <div className="guided-audio">
-      <button type="button" className="button secondary" onClick={play}>
-        <Volume2 size={20} />
-        {feminine ? "ฟังรูปหญิง" : "ฟังเสียง"}
+      <button type="button" className={buttonClassName} onClick={play} aria-label={ariaLabel}>
+        {label ?? <><Volume2 size={20} />{feminine ? "ฟังรูปหญิง" : "ฟังเสียง"}</>}
       </button>
-      {!targets.every((i) =>
+      {showNotice && !targets.every((i) =>
         feminine
           ? i.professionContent?.feminineAudioRef
           : (i.numberContent?.audioRef ??
@@ -166,7 +175,9 @@ export function NumberChoice({
     <>
       {activity.prompt && (
         <div className="guided-prompt">
-          <LearningValue option={activity.prompt} items={items} />
+          {activity.type === "pronoun_choice"
+            ? <GermanListenText text={optionValue(activity.prompt, items)} />
+            : <LearningValue option={activity.prompt} items={items} />}
         </div>
       )}
       {activity.audioIds && (
@@ -212,7 +223,12 @@ export function PairMatching({
   busy: boolean;
   onMatch: (id: string) => Promise<void>;
 }) {
+  const { play, error: audioError } = useVocabularyAudio();
+  const hasSpeech = activity.type === "conjugation";
   const pairs = activityPairs(activity, items);
+  function readPair(pair: (typeof pairs)[number]) {
+    play(`${optionValue(pair.left, items).split("/")[0].trim()} ${optionValue(pair.right, items)}`);
+  }
   const [rightOrder] = useState(() => shuffled(pairs));
   const [selection, setSelection] = useState<{
     side: "left" | "right";
@@ -247,6 +263,7 @@ export function PairMatching({
       timer.current = setTimeout(() => setWrong([]), 700);
       return;
     }
+    if (hasSpeech) readPair(left);
     await onMatch(leftId);
   }
   const remainingRight = [...rightOrder];
@@ -268,7 +285,10 @@ export function PairMatching({
       disabled={busy || !!wrong.length}
       className={`guided-choice ${selection?.id === pair.id && selection.side === side ? "selected" : ""} ${wrong.includes(`${side}:${pair.id}`) ? "wrong" : ""}`}
       aria-pressed={selection?.id === pair.id && selection.side === side}
-      onClick={() => void choose(side, pair.id)}
+      onClick={() => {
+        if (hasSpeech && (!selection || selection.side === side)) play(optionValue(pair[side], items));
+        void choose(side, pair.id);
+      }}
       onDragStart={(event) =>
         event.dataTransfer.setData("text/plain", `${side}:${pair.id}`)
       }
@@ -299,7 +319,10 @@ export function PairMatching({
               optionValue(left.right, items) ===
                 optionValue(right.right, items))
           ) {
-            if (!busy && !wrong.length) void onMatch(left.id);
+            if (!busy && !wrong.length) {
+              if (hasSpeech) readPair(left);
+              void onMatch(left.id);
+            }
           } else {
             setWrong([`left:${left.id}`, `right:${right.id}`]);
             timer.current = setTimeout(() => setWrong([]), 700);
@@ -308,6 +331,7 @@ export function PairMatching({
       }}
     >
       <LearningValue option={pair[side]} items={items} />
+      {hasSpeech && <Volume2 size={16} aria-hidden="true" />}
     </button>
   );
   return (
@@ -319,6 +343,9 @@ export function PairMatching({
             <div key={p.id} className="guided-locked-pair">
               <LearningValue option={p.left} items={items} />
               <LearningValue option={p.right} items={items} />
+              {hasSpeech && <button type="button" className="german-listen-text"
+                aria-label={`ฟังเสียง ${optionValue(p.left, items)} ${optionValue(p.right, items)}`}
+                onClick={() => readPair(p)}><Volume2 size={16} aria-hidden="true" /></button>}
               {activity.type !== "conjugation" && (
                 <small>
                   {items.find((i) => i.id === p.contentIds[0])?.meaning}
@@ -340,6 +367,7 @@ export function PairMatching({
       <p role="status" className="guided-feedback wrong">
         {wrong.length ? "ลองใหม่" : ""}
       </p>
+      {audioError && <p role="status">{audioError}</p>}
     </>
   );
 }

@@ -1,4 +1,6 @@
 import { chromium } from "playwright-core";
+import { prepareL02GrammarFlow } from "../src/lib/pronoun-learning.ts";
+import { grammarTrackActivities } from "../src/lib/grammar-learning.ts";
 import { vocabularyTrackActivities } from "../src/lib/guided-learning.ts";
 import { prepareL02VocabularyFlow } from "../src/lib/l02-number-learning.ts";
 import assert from "node:assert/strict";
@@ -168,6 +170,7 @@ const lesson = (
   await db.query("select data from content_lessons where id='L02'")
 ).rows[0].data;
 lesson.learningFlows.vocabulary = prepareL02VocabularyFlow(lesson.learningFlows.vocabulary, catalog);
+lesson.learningFlows.grammar = prepareL02GrammarFlow(lesson.learningFlows.grammar, catalog);
 function value(option) {
   if (!option.ref) return option.text;
   const i = catalog.find((i) => i.id === option.ref.itemId),
@@ -211,6 +214,11 @@ async function saved(skill) {
   throw new Error("Lesson draft did not flush");
 }
 async function pairButton(pair, side) {
+  if (await page.locator(".matching-board").count()) {
+    return side === "left"
+      ? page.locator(`.matching-subject[data-pair-id="${pair.id}"]`)
+      : page.locator(".matching-bank").getByRole("button", {name: value(pair.right), exact: true}).first();
+  }
   const column = page
     .locator(".guided-match-board > div")
     .nth(side === "left" ? 0 : 1);
@@ -238,8 +246,8 @@ try {
   // Vocabulary can be opened directly, before learning any numbers.
   await page.locator('a[href="/learn/L02/vocabulary/core"]').click();
   await page.locator(".guided-card").waitFor();
-  assert.equal(await page.locator(".guided-instruction").innerText(), lesson.learningFlows.vocabulary.activities.find((a) => a.type === "image_matching").instruction);
-  await page.locator(".back-link").click();
+  assert.equal(await page.locator(".profession-pair").count(), lesson.learningFlows.vocabulary.activities.find((a) => a.type === "profession_matching").pairs.length);
+  await page.locator('.learning-breadcrumbs a[href="/learn/L02/vocabulary"]').click();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.locator(".alphabet-entry-card").first().waitFor();
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), "entry cards fit mobile");
@@ -274,6 +282,12 @@ try {
     await (await pairButton(firstPairs[n], 'left')).click();
     await (await pairButton(firstPairs[n], 'right')).click();
     await page.waitForFunction((count) => document.querySelectorAll('.guided-locked-pair').length === count, n + 1);
+    assert.equal(await page.evaluate(() => window.__spoken), value(firstPairs[n].right), "correct number pair reads immediately");
+    if (n === 0) {
+      await page.getByRole("button", {name: `ฟังเสียง ${value(firstPairs[n].right)}`, exact: true}).click();
+      assert.equal(await page.evaluate(() => window.__spoken), value(firstPairs[n].right));
+      assert.equal(await page.locator(".guided-locked-pair").count(), 1);
+    }
     if (n === 10) {
       assert.deepEqual(await page.locator('.number-digit-bank .number-digit').allTextContents(), ['11', '12']);
       assert.equal(await page.locator('.number-word-bank button').count(), 2);
@@ -323,15 +337,40 @@ try {
     testedDrag = false;
   for (const skill of ["vocabulary", "grammar"]) {
     const catalogFlow = lesson.learningFlows[skill];
-    const flow = skill === "vocabulary" ? {...catalogFlow, activities: [...vocabularyTrackActivities(catalogFlow, catalog, "numbers"), ...vocabularyTrackActivities(catalogFlow, catalog, "core")]} : catalogFlow;
-    if (skill === "grammar") await page.goto(base + `/learn/L02/${skill}`);
+    const flow = skill === "vocabulary" ? {...catalogFlow, activities: [...vocabularyTrackActivities(catalogFlow, catalog, "numbers"), ...vocabularyTrackActivities(catalogFlow, catalog, "core")]} : {...catalogFlow, activities: ["pronouns", "verbs", "sentences"].flatMap(track => grammarTrackActivities(catalogFlow, catalog, track))};
+    if (skill === "grammar") {
+      await page.goto(base + "/learn/L02/grammar");
+      await page.locator(".grammar-learning-entry").waitFor();
+      assert.equal(await page.locator(".alphabet-entry-card").count(), 3);
+      await page.getByRole("link", {name: /Personalpronomen/}).click();
+    }
     await page.locator(".guided-card").waitFor();
     let start = skill === "vocabulary" ? 1 : 0;
     for (let index = start; index < flow.activities.length; index++) {
       const a = flow.activities[index],
         pairs = pairsOf(a);
-      if (skill === "vocabulary" && a.id === "L02-profession-images-0") {
-        await page.getByRole("heading", { name: "Beobachtungen", exact: true }).waitFor();
+      if (skill === "grammar") {
+        const track = ["pronoun_choice", "pronoun_matching"].includes(a.type) ? "pronouns" : a.verbId ? "verbs" : "sentences";
+        const previous = flow.activities[index - 1];
+        const previousTrack = ["pronoun_choice", "pronoun_matching"].includes(previous?.type) ? "pronouns" : previous?.verbId ? "verbs" : "sentences";
+        if (index && track !== previousTrack) {
+          await saved(skill);
+          await page.goto(base + `/learn/L02/grammar/${track}`);
+          await page.locator(".guided-card").waitFor();
+        }
+        if (track === "verbs") {
+          assert.deepEqual(await page.locator(".category-tab-german").allTextContents(), ["arbeiten", "machen", "Übersicht"]);
+          await page.locator(".guided-verb-intro").getByRole("heading", {name: a.verbId === "L02-verb-arbeiten" ? "arbeiten" : "machen", exact: true}).waitFor();
+        }
+      }
+      if (skill === "vocabulary" && a.type === "profession_matching" && flow.activities[index - 1]?.type !== "profession_matching") {
+        await page.locator('.learning-category-tabs [aria-current="page"]').filter({hasText:"จุดสังเกต"}).waitFor();
+        assert.equal(await page.locator('.vocabulary-image-progress').innerText(), 'เรียนแล้ว 33 / 33 คำ');
+        await page.getByRole('navigation', {name:'หมวดคำศัพท์'}).getByRole('button', {name:'0–12'}).click();
+        await page.locator('.number-completed-pairs').waitFor();
+        assert.equal(await page.locator('.vocabulary-image-progress').innerText(), 'เรียนแล้ว 33 / 33 คำ');
+        await page.getByRole('navigation', {name:'หมวดคำศัพท์'}).getByRole('button', {name:'จุดสังเกต'}).click();
+        await page.locator('.number-observation-card').first().waitFor();
         assert.equal(await page.locator('.number-observation-card').count(), 3);
         assert.ok(await page.locator('.number-observation-digit').evaluateAll(els => els.every(el => {const range = document.createRange(); range.selectNodeContents(el); return range.getClientRects().length === 1;})), 'observation digits stay on one line');
         assert.deepEqual(await page.locator('.number-removed-ending').allTextContents(), ['s', 's', 'en']);
@@ -340,30 +379,30 @@ try {
         for (const [digit, word] of [[1,'eins'],[21,'einundzwanzig'],[6,'sechs'],[16,'sechzehn'],[60,'sechzig'],[7,'sieben'],[17,'siebzehn'],[70,'siebzig']]) {
           await page.getByRole('button', {name:`ฟังเสียง ${digit}`,exact:true}).click();
           assert.equal(await page.evaluate(() => window.__spoken), word);
-          assert.equal(await page.evaluate(() => window.__utterances.at(-1).rate), 0.65);
+          assert.equal(await page.evaluate(() => window.__utterances.at(-1).rate), 0.5);
         }
         assert.equal(await page.getByRole('button', {name:'ฟังเสียง 21',exact:true}).locator('.teen-tens').textContent(), 'zwanzig');
         assert.equal(await page.getByRole('button', {name:'ฟังเสียง 21',exact:true}).locator('.compound-connector').textContent(), 'und');
         assert.equal((await db.query('select * from item_exposures')).rows.length, exposuresBeforeSummary);
         await page.reload();
-        await page.getByRole('heading', {name: 'Beobachtungen', exact: true}).waitFor();
+        await page.locator('.learning-category-tabs [aria-current="page"]').filter({hasText:'จุดสังเกต'}).waitFor();
         assert.equal((await db.query('select * from item_exposures')).rows.length, exposuresBeforeSummary);
         await page.screenshot({path: 'test-results/l02-number-observations.png', fullPage: true});
         await page.setViewportSize({width: 390, height: 844});
         assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1));
         await page.screenshot({path: 'test-results/l02-number-observations-mobile.png', fullPage: true});
         await page.setViewportSize({width: 1440, height: 900});
-        await page.locator(".back-link").click();
+        await page.locator('.learning-breadcrumbs a[href="/learn/L02/vocabulary"]').click();
         await page.locator('a[href="/learn/L02/vocabulary/numbers"] .alphabet-entry-status').waitFor();
         assert.equal(await page.locator('a[href="/learn/L02/vocabulary/core"] .alphabet-entry-status').count(), 0);
         await page.locator('a[href="/learn/L02/vocabulary/numbers"]').click();
         await page.getByRole('button', {name: 'ไปต่อ', exact: true}).click();
         await page.locator('.number-summary-grid').waitFor();
-        const expectedNumbers = [...Array.from({length: 22}, (_, n) => String(n)), '30','40','48','50','60','63','70','80','89','90','100'];
+        const expectedNumbers = [...Array.from({length: 22}, (_, n) => String(n)), '26','30','37','40','48','50','60','63','70','76','80','89','90','100'];
         assert.deepEqual(await page.locator('.number-summary-digit').allTextContents(), expectedNumbers);
-        assert.equal(await page.locator('.number-summary-word').count(), 33);
+        assert.equal(await page.locator('.number-summary-word').count(), 36);
         const firstRow = await page.locator('.number-summary-grid button').evaluateAll(buttons => buttons.filter(button => button.offsetTop === buttons[0].offsetTop).map(button => button.querySelector('.number-summary-digit').textContent));
-        assert.deepEqual(firstRow, Array.from({length:13},(_,n)=>String(n)));
+        assert.deepEqual(firstRow, Array.from({length:6},(_,n)=>String(n)));
         await page.getByRole('button', {name: 'ฟังเสียง 100', exact: true}).click();
         assert.equal(await page.evaluate(() => window.__spoken), 'hundert');
         assert.equal((await db.query('select * from item_exposures')).rows.length, exposuresBeforeSummary);
@@ -380,11 +419,10 @@ try {
         await page.getByRole('button', {name:'ไปต่อ', exact:true}).click();
         await page.getByRole("link", { name: "เรียนคำศัพท์ต่อ", exact: true }).click();
       }
-      await page.locator(".guided-instruction").waitFor();
-      assert.equal(
-        await page.locator(".guided-instruction").innerText(),
-        a.instruction,
-      );
+      if (a.type !== "profession_matching") {
+        await page.locator(".guided-instruction").waitFor();
+        assert.equal(await page.locator(".guided-instruction").innerText(), a.instruction);
+      }
       if (a.id === 'L02-number-matching-21-100') {
         assert.deepEqual(await page.locator('.number-digit').allTextContents(), ['21', '48', '63', '89', '100']);
         for (const pair of pairs) {
@@ -433,7 +471,58 @@ try {
         await page.evaluate(() => {window.__utterances[1].onend(); window.__manualSpeech = false;});
         assert.equal((await db.query('select * from item_exposures')).rows.length, before);
       }
-      if (pairs.length) {
+      if (a.type === "pronoun_matching") {
+        await page.locator(".pronoun-picture").first().waitFor();
+        assert.equal(await page.locator(".pronoun-picture").count(), pairs.length);
+        assert.ok(await page.locator(".pronoun-picture img").evaluateAll(imgs => imgs.every(img => img.complete && img.naturalWidth > 0)));
+        const word = p => page.locator(".pronoun-word-bank").getByRole("button", {name: value(p.right), exact: true}).first();
+        const picture = p => page.locator(`[data-pronoun-id="${p.id}"]`);
+        if (pairs.length > 1) {
+        await word(pairs[0]).click();
+        await picture(pairs[1]).click();
+        assert.equal(await page.locator(".pronoun-picture.correct").count(), 0);
+        assert.equal(await page.locator(".pronoun-picture.incorrect").count(), 1);
+        assert.equal(await page.locator(".pronoun-word-bank button").count(), pairs.length);
+        }
+        for (let n = 0; n < pairs.length; n++) {
+          if (n === 1) await word(pairs[n]).dragTo(picture(pairs[n]), {targetPosition: {x: 30, y: 25}});
+          else {await word(pairs[n]).click(); await picture(pairs[n]).click();}
+          try {
+            await page.waitForFunction(count => document.querySelectorAll(".pronoun-picture.correct").length === count, n + 1);
+          } catch (error) {
+            await page.screenshot({path: "test-results/pronoun-failure.png", fullPage: true});
+            console.error("Pronoun match failed", a.id, pairs[n].id, await page.locator(".guided-card").innerText());
+            throw error;
+          }
+          assert.equal(await page.evaluate(() => window.__spoken), value(pairs[n].right));
+          await picture(pairs[n]).click();
+          assert.equal(await page.locator(".pronoun-picture.correct").count(), n + 1);
+          if (n === 0) {
+            await saved(skill);
+            await page.reload(); await page.locator(".pronoun-picture").first().waitFor();
+            assert.equal(await page.locator(".pronoun-picture.correct").count(), 1);
+            assert.ok(!await page.evaluate(() => window.__spoken));
+          }
+        }
+        await page.screenshot({path:`test-results/${a.id}-desktop.png`, fullPage:true});
+        await page.setViewportSize({width:390,height:844});
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+        await page.screenshot({path:`test-results/${a.id}-mobile.png`, fullPage:true});
+        await page.setViewportSize({width:1440,height:1000});
+      } else if (a.type === "profession_matching") {
+        await page.locator(`[data-profession-id="${a.pairs[0].id}"]`).waitFor();
+        for (const row of await page.locator('.profession-pair').all()) {
+          const slot = row.locator('.profession-slot');
+          if (!await slot.count()) continue;
+          const id = await row.getAttribute('data-profession-id');
+          const item = catalog.find(i => i.id === id);
+          const form = await slot.locator('..').getAttribute('data-form');
+          const article = item.professionContent.conceptKey === 'modell' ? 'das' : form === 'masculine' ? 'der' : 'die';
+          await page.getByRole('button', {name:article+' '+item.professionContent[form], exact:true}).click();
+          await slot.click();
+          await row.locator('.profession-slot').waitFor({state:'detached'});
+        }
+      } else if (pairs.length) {
         if (!testedWrongPair && pairs.length > 1) {
           await (await pairButton(pairs[0], "left")).click();
           await (await pairButton(pairs[1], "right")).click();
@@ -446,6 +535,17 @@ try {
           await sleep(800);
           testedWrongPair = true;
         }
+        if (a.verbId) {
+          assert.equal(await page.locator(".matching-subject").count(), 6);
+          const wrongPair = pairs.find(p => value(p.right) !== value(pairs[0].right));
+          await page.evaluate(() => {window.__spoken = "unchanged";});
+          await (await pairButton(wrongPair, "right")).dragTo(await pairButton(pairs[0], "left"));
+          await page.locator(".matching-drop.incorrect").waitFor();
+          assert.equal(await page.locator(".matching-drop.correct").count(), 0);
+          assert.equal(await page.evaluate(() => window.__spoken), "unchanged", "wrong drop does not read answer");
+          assert.equal(await page.locator(".matching-token").count(), 6);
+          await sleep(700);
+        }
         for (let n = 0; n < pairs.length; n++) {
           const pair = pairs[n];
           if (a.verbId && !testedDrag) {
@@ -453,15 +553,33 @@ try {
               await pairButton(pair, "right")
             ).dragTo(await pairButton(pair, "left"));
             testedDrag = true;
+          } else if (a.verbId) {
+            await (await pairButton(pair, "right")).click();
+            await (await pairButton(pair, "left")).click();
           } else {
             await (await pairButton(pair, "left")).click();
             await (await pairButton(pair, "right")).click();
           }
           await page.waitForFunction(
-            (count) =>
-              document.querySelectorAll(".guided-locked-pair").length === count,
-            n + 1,
+            ({count, verb}) =>
+              document.querySelectorAll(verb ? ".matching-drop.correct" : ".guided-locked-pair").length === count,
+            {count: n + 1, verb: !!a.verbId},
           );
+          if (a.verbId) {
+            const expectedSpeech = `${value(pair.left).split("/")[0].trim()} ${value(pair.right)}`;
+            assert.equal(await page.evaluate(() => window.__spoken), expectedSpeech);
+            await (await pairButton(pair, "left")).click();
+            assert.equal(await page.evaluate(() => window.__spoken), expectedSpeech);
+            assert.equal(await page.locator(".matching-drop.correct").count(), n + 1);
+            assert.equal(await page.locator(".guided-locked-pair").count(), 0, "correct forms stay in subject rows");
+            assert.equal(await page.locator(".matching-subject").count(), 6);
+            if (n === 0) {
+              await saved(skill);
+              await page.reload(); await page.locator(".matching-board").waitFor();
+              assert.equal(await page.locator(".matching-drop.correct").count(), 1);
+              assert.ok(!await page.evaluate(() => window.__spoken), "restoring pairs does not autoplay");
+            }
+          }
           if (!testedPartial && n === 0 && pairs.length > 1) {
             await saved(skill);
             await page.reload();
@@ -527,22 +645,31 @@ try {
         });
         await page.setViewportSize({ width: 1440, height: 1000 });
       }
-      await page.getByRole("button", { name: "ไปต่อ", exact: true }).click();
+      const next = page.getByRole("button", { name: a.type === "profession_matching" || skill === "grammar" ? "หน้าถัดไป" : "ไปต่อ", exact: true });
+      if (await next.count()) await next.click();
+      else await page.locator(".guided-navigation a.primary").waitFor();
       if (index % 20 === 0)
         console.log(`L02 ${skill} ${index + 1}/${flow.activities.length}`);
     }
-    await page
-      .getByRole("heading", { name: "เรียนครบแล้ว", exact: true })
-      .waitFor();
+    assert.equal(await page.getByText("เรียนครบแล้ว", {exact:true}).count(), 0);
+    assert.equal(await page.getByText("ย้อนกลับไปดูสิ่งที่เรียนได้ โดยสถานะการเรียนยังคงอยู่", {exact:true}).count(), 0);
+    if (skill === "grammar") {
+      await page.goto(base + "/learn/L02/grammar/verbs");
+      await page.locator(".verb-summary table").waitFor();
+      assert.deepEqual(await page.locator(".verb-summary thead th").allTextContents(), ["ประธาน", "arbeiten", "machen"]);
+      assert.equal(await page.locator(".verb-summary tbody tr").count(), 6);
+      assert.deepEqual(await page.locator(".verb-summary .ending-result").allTextContents(), ["e", "e", "est", "st", "et", "t", "en", "en", "et", "t", "en", "en"]);
+      await page.screenshot({path:"test-results/l02-verb-summary.png", fullPage:true});
+    }
     const complete = await saved(skill);
-    assert.equal(complete.learnedActivityIds.length, flow.activities.length);
+    assert.ok(flow.activities.every(a => complete.learnedActivityIds.includes(a.id)));
     await page.reload();
-    await page
-      .getByRole("heading", { name: "เรียนครบแล้ว", exact: true })
-      .waitFor();
+    await page.locator(".guided-card").waitFor();
+    assert.equal(await page.getByText("เรียนครบแล้ว", {exact:true}).count(), 0);
+    assert.equal(await page.getByText("ย้อนกลับไปดูสิ่งที่เรียนได้ โดยสถานะการเรียนยังคงอยู่", {exact:true}).count(), 0);
     await page.getByRole("button", { name: "ย้อนกลับ", exact: true }).click();
     const restored = await saved(skill);
-    assert.equal(restored.resumeIndex, catalogFlow.activities.length);
+    assert.deepEqual(restored.learnedActivityIds, complete.learnedActivityIds);
   }
   assert.equal(
     (await db.query("select * from learning_attempts")).rows.length,

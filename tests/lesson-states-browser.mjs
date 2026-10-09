@@ -236,7 +236,7 @@ try {
   await page.locator(".alphabet-item-progress-track").waitFor();
   assert.equal(
     await page.locator(".alphabet-set-progress-count").innerText(),
-    "1 / 30",
+    "เรียนแล้ว 0 / 30 คำ",
   );
   await page.goto(base + "/learn/L01/vocabulary/core-images");
   await page.locator(".vocabulary-image-matching").waitFor();

@@ -61,17 +61,24 @@ export function AlphabetLearningPage() {
 
   if (!hydrated) return <main className="alphabet-learning-page" aria-busy="true" />;
 
+  const learned = new Set(learningState.learnedItemIds);
+  const learnedCount = flow.filter(({ item }) => learned.has(item.id)).length;
+
   if (learningState.resumeIndex >= flow.length && showBoard) {
     return (
       <main className="alphabet-learning-page">
         <div className="alphabet-board-top-navigation">
-          <Link className="back-link" href="/learn/L01/vocabulary">← กลับ Wortschatz</Link>
           <button className="button secondary" onClick={startReplayFromBeginning}>เรียนซ้ำ</button>
         </div>
         <header className="alphabet-learning-heading">
-          <span className="eyebrow">LEKTION 1 · WORTSCHATZ</span>
           <h1>Das Alphabet</h1>
         </header>
+        <div className="alphabet-set-progress">
+          <div className="alphabet-set-progress-count"><strong>เรียนแล้ว {learnedCount} / {flow.length} คำ</strong></div>
+          <div className="alphabet-item-progress-track" aria-label={`เรียนแล้ว ${learnedCount} จาก ${flow.length} คำ`}>
+            <span style={{ width: `${learnedCount / flow.length * 100}%` }} />
+          </div>
+        </div>
         <AlphabetBoard items={configuration.items} play={play} />
         {error && <p className="alphabet-audio-error" role="status">{error}</p>}
         <div className="result-actions alphabet-board-actions">
@@ -102,8 +109,6 @@ export function AlphabetLearningPage() {
   if (!current) return null;
   const groupItems = resolveAlphabetSetItems(current.set, configuration.items);
   const Activity = current.set.activity === "listen_and_choose" ? ListenAndChoose : FindSound;
-  const learned = new Set(learningState.learnedItemIds);
-
   function markLearned() {
     if (currentIndex === flow.length - 1 && !revisitingFromBoard) setShowBoard(true);
     setLearningState((state) => {
@@ -150,17 +155,15 @@ export function AlphabetLearningPage() {
 
   return (
     <main className="alphabet-learning-page">
-      <Link className="back-link" href="/learn/L01/vocabulary">← กลับ Wortschatz</Link>
       <header className="alphabet-learning-heading">
-        <span className="eyebrow">LEKTION 1 · WORTSCHATZ</span>
         <h1>Das Alphabet</h1>
       </header>
       <div className="alphabet-set-progress">
         <div className="alphabet-set-progress-count">
-          <strong>{currentIndex + 1} / {flow.length}</strong>
+          <strong>เรียนแล้ว {learnedCount} / {flow.length} คำ</strong>
         </div>
-        <div className="alphabet-item-progress-track" aria-label={`ตัวอักษรที่ ${currentIndex + 1} จาก ${flow.length}`}>
-          <span style={{ width: `${((currentIndex + 1) / flow.length) * 100}%` }} />
+        <div className="alphabet-item-progress-track" aria-label={`เรียนแล้ว ${learnedCount} จาก ${flow.length} คำ`}>
+          <span style={{ width: `${(learnedCount / flow.length) * 100}%` }} />
         </div>
       </div>
       {hasMissingAudio && (

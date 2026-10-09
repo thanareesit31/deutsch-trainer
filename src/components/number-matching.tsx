@@ -68,6 +68,7 @@ export function NumberMatching({ activity, items, matchedIds, busy, onMatch }: {
       timer.current = setTimeout(() => { setWrong(null); setSelected(null); }, 700);
       return;
     }
+    listen(id);
     await onMatch(id);
     if (active.current) setSelected(null);
   }
@@ -117,7 +118,10 @@ export function NumberMatching({ activity, items, matchedIds, busy, onMatch }: {
           {pairs.filter((pair) => matchedIds.includes(pair.id)).map((pair) => (
             <div key={pair.id} className="number-match-row guided-locked-pair">
               {numberButton(pair, true)}
-              <span className="number-matched-word" lang="de">{writtenWord(pair)}</span>
+              <button type="button" className="number-matched-word german-listen-text" lang="de"
+                aria-label={`ฟังเสียง ${optionValue(pair.right, items)}`} onClick={() => listen(pair.id)}>
+                {writtenWord(pair)}<Volume2 size={16} aria-hidden="true" />
+              </button>
             </div>
           ))}
         </section>

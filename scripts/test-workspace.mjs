@@ -3,12 +3,14 @@ import { randomUUID } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { createServer } from "node:net";
+import { networkInterfaces } from "node:os";
 import { startTestApi } from "./test-workspace-api.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 process.chdir(root);
 const webPort = Number(process.env.TEST_WORKSPACE_PORT ?? 3002);
 const apiPort = Number(process.env.TEST_WORKSPACE_API_PORT ?? 54329);
+const lanHosts = [...new Set(Object.values(networkInterfaces()).flat().filter((address) => address && !address.internal && address.family === "IPv4").map((address) => address.address))];
 for (const port of [webPort, apiPort]) {
   if (
     !Number.isSafeInteger(port) ||
@@ -26,7 +28,7 @@ if (webPort === apiPort)
 await new Promise((resolve, reject) => {
   const probe = createServer();
   probe.once("error", reject);
-  probe.listen(webPort, "127.0.0.1", () => probe.close(resolve));
+  probe.listen(webPort, "0.0.0.0", () => probe.close(resolve));
 });
 await mkdir(".tools", { recursive: true });
 await writeFile(
@@ -50,14 +52,14 @@ const originalNextEnv = await readFile("next-env.d.ts", "utf8");
 const recovery = process.env.TEST_WORKSPACE_RECOVERY === "1"
   ? JSON.parse(await readFile(".tools/test-workspace-recovery.json", "utf8"))
   : undefined;
-const api = await startTestApi({ port: apiPort, webPort, restore: recovery });
+const api = await startTestApi({ port: apiPort, webPort, webHosts: lanHosts, restore: recovery });
 const child = spawn(
   process.execPath,
   [
     "node_modules/next/dist/bin/next",
     "dev",
     "--hostname",
-    "127.0.0.1",
+    "0.0.0.0",
     "--port",
     String(webPort),
   ],
@@ -68,6 +70,7 @@ const child = spawn(
       ...process.env,
       NODE_ENV: "development",
       DEUTSCH_TEST_WORKSPACE: "1",
+      TEST_WORKSPACE_LAN_HOSTS: lanHosts.join(","),
       NEXT_PUBLIC_TEST_WORKSPACE_ID: randomUUID(),
       NEXT_PUBLIC_SUPABASE_URL: api.url,
       NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: "local-test-publishable-key",
@@ -81,6 +84,7 @@ const child = spawn(
 console.log(
   `\nพื้นที่ทดสอบ: http://localhost:${webPort}\nบัญชี: tester@deutsch.test หรือ tester2@deutsch.test\nรหัสผ่าน: TestOnly123!\n${recovery ? "คืนประวัติทดสอบเดิมแล้ว พร้อม catalog ปัจจุบัน; กรุณาล็อกอินใหม่" : "ข้อมูลเริ่มว่างทุกครั้งที่เปิดคำสั่งนี้; refresh หน้าเว็บยังเรียนต่อได้"}\nเริ่มใหม่: Ctrl+C แล้ว npm run dev:test\n`,
 );
+for (const host of lanHosts) console.log(`เปิดจากโทรศัพท์ใน Wi-Fi เดียวกัน: http://${host}:${webPort}`);
 let closing = false;
 async function cleanup(code = 0) {
   if (closing) return;
