@@ -25,6 +25,8 @@ try {
     "20261010010000_l13_image_learning_state.sql",
     "20261010020000_l13_verb_adjective_grammar.sql",
     "20261010030000_l13_grammar_card_split.sql",
+    "20261010040000_l13_verb_learning_state.sql",
+    "20261011010000_l13_place_image_vocabulary.sql",
   ]) {
     const sql = await readFile(
       new URL("../supabase/migrations/" + file, import.meta.url),

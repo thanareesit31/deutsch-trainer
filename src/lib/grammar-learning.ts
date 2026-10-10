@@ -12,7 +12,7 @@ export function grammarTrackActivities(
     if (track === "pronouns") return flow.activities.some(a => a.id === "L02-pronoun-images-v4-1") ? activity.id.startsWith("L02-pronoun-images-v4-") : flow.activities.some(a => a.id === "L02-pronoun-images-v2-1") ? activity.id.startsWith("L02-pronoun-images-v2-") : flow.activities.some(a => a.type === "pronoun_matching") ? activity.type === "pronoun_matching" : activity.type === "pronoun_choice";
     if (track === "verbs")
       return !!activity.verbId && items.some(
-        (item) => item.id === activity.verbId && item.lessonId === "L02",
+        (item) => item.id === activity.verbId && !!item.verbContent,
       );
     return activity.type !== "pronoun_choice" && activity.type !== "pronoun_matching"
       && !activity.verbId && activity.id !== "L02-sein-reuse";

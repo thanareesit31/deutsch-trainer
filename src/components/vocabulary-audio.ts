@@ -14,7 +14,7 @@ export function useVocabularyAudio() {
     active.current = true;
     return () => { active.current = false; audio.current?.pause(); };
   }, []);
-  function play(text: string, source?: string | null) {
+  function play(text: string, source?: string | null, rate = 0.8) {
     const current = ++attempt.current;
     audio.current?.pause();
     audio.current = null;
@@ -28,7 +28,7 @@ export function useVocabularyAudio() {
       audio.current = sound;
       sound.onerror = failed;
       void sound.play().catch(failed);
-    } else if (!speakGermanText(text, voice, { onError: failed })) {
+    } else if (!speakGermanText(text, voice, { onError: failed }, rate)) {
       setError("อุปกรณ์นี้ยังไม่มีเสียงภาษาเยอรมัน กรุณาเปิด German voice แล้วกดคำศัพท์อีกครั้ง");
     }
   }

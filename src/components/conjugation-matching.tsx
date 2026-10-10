@@ -115,14 +115,17 @@ export function ConjugationSummary({ activities, items }: { activities: Learning
     <h2>สรุปการผันกริยาที่เรียน</h2>
     <div className="verb-summary-scroll" role="region" aria-label="ตารางสรุปการผันกริยาทั้งหมด" tabIndex={0}>
       <table><thead><tr><th scope="col">ประธาน</th>{verbs.map(verb => <th scope="col" key={verb.infinitive} lang="de">{verb.infinitive}</th>)}</tr></thead>
-        <tbody>{verbs[0]?.conjugations.map((row, index) => <tr key={row.subject}>
-          <th scope="row" lang="de">{row.subject}</th>
+        <tbody>{[...new Set(verbs.flatMap(verb => verb.conjugations.map(row => row.subject)))].map(subjectLabel => <tr key={subjectLabel}>
+          <th scope="row" lang="de">{subjectLabel}</th>
           {verbs.map(verb => {
-            const form = verb.conjugations[index];
+            const form = verb.conjugations.find(row => row.subject === subjectLabel);
+            if (!form) return <td key={verb.infinitive}>—</td>;
             const split = form.ending && form.form.endsWith(form.ending) ? form.form.length - form.ending.length : form.form.length;
-            const subject = row.subject.split("/")[0].trim();
+            const subject = subjectLabel.split("/")[0].trim();
             return <td key={verb.infinitive}><ConjugationAudioForm speechText={`${subject} ${form.form}`}>
-              <strong>{form.form.slice(0, split)}<span className="ending-result">{form.form.slice(split)}</span></strong>
+              <strong>{form.segments
+                ? form.segments.map((segment, index) => <span key={index} className={segment.changed ? "ending-result" : undefined}>{segment.text}</span>)
+                : <>{form.form.slice(0, split)}<span className="ending-result">{form.form.slice(split)}</span></>}</strong>
             </ConjugationAudioForm></td>;
           })}
         </tr>)}</tbody>

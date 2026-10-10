@@ -1,6 +1,7 @@
 "use client";
 import { useContent } from "./content-provider";
 import { L02PhraseLearning } from "./l02-phrase-learning";
+import { L13ContextLesson } from "./l13-context-reading";
 import { GrammarLearningEntryPoints, L01GrammarEntryRedirect, L02SentencesRedirect } from "./grammar-learning";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -231,13 +232,19 @@ function App() {
     page = <VocabularyLearningEntryPoints key={path} lessonId="L02" />;
   else if (path === "/learn/L13/vocabulary")
     page = <VocabularyLearningEntryPoints key={path} lessonId="L13" />;
+  else if (process.env.NODE_ENV !== "production" && path === "/__prototype/L13/context-reading")
+    page = <L13ContextLesson key={path} mode="reading" />;
+  else if (process.env.NODE_ENV !== "production" && path === "/__prototype/L13/context-listening")
+    page = <L13ContextLesson key={path} mode="listening" />;
   else if (path === "/learn/L13/grammar") page = <L13GrammarEntryPoints key={path} />;
   else if (
     parts[0] === "learn" && parts[1] === "L02" && parts[2] === "vocabulary" && parts.length === 4 &&
     (parts[3] === "numbers" || parts[3] === "core")
   ) page = <GuidedLearningPage key={path} lessonId="L02" skill="vocabulary" track={parts[3]} />;
-  else if (parts[0] === "learn" && parts[1] === "L13" && parts[2] === "grammar" && ["verben", "adjektive"].includes(parts[3]))
-    page = <LearnActivity key={path} lessonId="L13" skill="grammar" group={parts[3] === "verben" ? "Verben" : "Adjektive"} start={start} />;
+  else if (parts[0] === "learn" && parts[1] === "L13" && parts[2] === "grammar" && ["verbs", "verben"].includes(parts[3]))
+    page = <GuidedLearningPage key={path} lessonId="L13" skill="grammar" grammarTrack="verbs" />;
+  else if (path === "/learn/L13/grammar/adjektive")
+    page = <LearnActivity key={path} lessonId="L13" skill="grammar" group="Adjektive" start={start} />;
   else if (
     parts[0] === "learn" && parts[1] === "L13" && parts[2] === "vocabulary" &&
     parts.length === 4 && ["extra"].includes(parts[3])

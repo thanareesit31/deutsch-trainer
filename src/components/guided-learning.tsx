@@ -29,6 +29,7 @@ import { GermanListenText } from "./german-listen-text";
 import { ConjugationMatching, ConjugationSummary } from "./conjugation-matching";
 import { PronounMatching, PronounSummary } from "./pronoun-matching";
 import { prepareL02GrammarFlow, pronounGroups } from "@/lib/pronoun-learning";
+import { buildL13VerbFlow } from "@/lib/l13-grammar-learning";
 
 const sectionDescriptions: Record<string, string> = {
   "Zahlen · Einer + und + Zehner": "ตัวเลข · หลักหน่วย + und + หลักสิบ",
@@ -65,7 +66,13 @@ export function GuidedLearningPage({
 }) {
   const { lessons, items } = useContent();
   const catalogFlow = lessons.find((l) => l.id === lessonId)?.learningFlows?.[skill];
-  const flow = useMemo(() => catalogFlow && lessonId === "L02" ? skill === "vocabulary" ? prepareL02VocabularyFlow(catalogFlow, items) : prepareL02GrammarFlow(catalogFlow, items) : catalogFlow, [catalogFlow, lessonId, skill, items]);
+  const flow = useMemo(() => {
+    if (lessonId === "L13" && skill === "grammar") return buildL13VerbFlow(items);
+    if (catalogFlow && lessonId === "L02") return skill === "vocabulary"
+      ? prepareL02VocabularyFlow(catalogFlow, items)
+      : prepareL02GrammarFlow(catalogFlow, items);
+    return catalogFlow;
+  }, [catalogFlow, lessonId, skill, items]);
   const errors = useMemo(
     () => (flow ? validateFlow(flow, items) : []),
     [flow, items],

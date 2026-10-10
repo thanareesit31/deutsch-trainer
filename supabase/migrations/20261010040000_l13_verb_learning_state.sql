@@ -1,4 +1,3 @@
--- Add L02 drafts to the existing account-scoped state table; retain L01 keys/RLS.
 begin;
 alter table public.learner_lesson_states drop constraint if exists learner_lesson_states_lesson_key_check;
 alter table public.learner_lesson_states add constraint learner_lesson_states_lesson_key_check check (lesson_key in (

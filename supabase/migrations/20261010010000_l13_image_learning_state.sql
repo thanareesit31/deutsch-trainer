@@ -7,6 +7,7 @@ alter table public.learner_lesson_states add constraint learner_lesson_states_le
  'deutsch-trainer-verb-learning-L01',
  'deutsch-trainer-guided-learning-L02-vocabulary',
  'deutsch-trainer-guided-learning-L02-grammar',
- 'deutsch-trainer-vocabulary-image-learning-v1-L13'
+ 'deutsch-trainer-vocabulary-image-learning-v1-L13',
+ 'deutsch-trainer-guided-learning-L13-grammar'
 ));
 commit;

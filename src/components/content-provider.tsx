@@ -5,6 +5,7 @@ import type { Catalog, Item, Lesson } from "@/lib/content";
 import { supabase } from "@/lib/supabase";
 import { prepareProfessionItem } from "@/lib/profession-learning";
 import { prepareL02PhraseItem } from "@/lib/l02-phrase-content";
+import { prepareL13VerbItem } from "@/lib/l13-grammar-learning";
 
 type Content = Catalog & { coreVocabulary: Item[]; extraVocabulary: Item[] };
 const ContentContext = createContext<Content | null>(null);
@@ -51,7 +52,7 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
         if (!active) return;
         if (!lessons.length) throw new Error("ยังไม่มีบทเรียนที่เผยแพร่");
         const lessonIds = new Set(lessons.map((l) => l.id));
-        const items = allItems.filter((i) => lessonIds.has(i.lessonId)).map(prepareProfessionItem).map(prepareL02PhraseItem);
+        const items = allItems.filter((i) => lessonIds.has(i.lessonId)).map(prepareProfessionItem).map(prepareL02PhraseItem).map(prepareL13VerbItem);
         setContent({
           lessons,
           items,

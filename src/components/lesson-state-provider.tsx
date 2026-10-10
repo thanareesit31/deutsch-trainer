@@ -18,6 +18,7 @@ export const lessonStateKeys = {
   verbs: "deutsch-trainer-verb-learning-L01",
   l02Vocabulary: "deutsch-trainer-guided-learning-L02-vocabulary",
   l02Grammar: "deutsch-trainer-guided-learning-L02-grammar",
+  l13Grammar: "deutsch-trainer-guided-learning-L13-grammar",
 } as const;
 const legacyLessonKeys = [
   lessonStateKeys.alphabet,

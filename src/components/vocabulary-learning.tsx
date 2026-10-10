@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import alphabetData from "@/data/alphabet.json";
 import { readAlphabetLearningState } from "@/lib/alphabet-learning-storage";
 import { readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
-import { vocabularyImageEntries } from "@/lib/vocabulary-image-content";
+import { l13VocabularyImageEntries, vocabularyImageEntries } from "@/lib/vocabulary-image-content";
 import { readGuidedState, vocabularyTrackActivities } from "@/lib/guided-learning";
 import { useContent } from "./content-provider";
 import { prepareL02VocabularyFlow } from "@/lib/l02-number-learning";
@@ -83,11 +83,10 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
       {lessonId === "L13" && (
         <>
           {([
-            { id: "images/urban", eyebrow: "BILDER WORTSCHATZ", title: "Orte in der Stadt", description: "สถานที่ในเมือง · จับคู่คำศัพท์กับรูปภาพ", symbol: "Stadt", count: 21 },
-            { id: "extra", eyebrow: "ZUSATZWORTSCHATZ", title: "คำศัพท์เสริม", description: "คำเพิ่มเติมจากเรื่องและกิจกรรมในบท", symbol: "Wörter" },
+            { id: "images/urban", eyebrow: "BILDER WORTSCHATZ", title: "Orte in der Stadt", description: "สถานที่ในเมือง · จับคู่คำศัพท์กับรูปภาพ", symbol: "Stadt" },
           ] as const).map((collection) => {
             const count = items.filter(
-              (item) => item.lessonId === lessonId && item.skill === "vocabulary" && item.collection === (collection.id === "extra" ? "extra" : "core"),
+              (item) => item.lessonId === lessonId && item.skill === "vocabulary" && l13VocabularyImageEntries.some((entry) => entry.id === item.id),
             ).length;
             return (
               <Link key={collection.id} className={`alphabet-entry-card${collection.id === "images/urban" ? " vocabulary-image-entry-card" : ""}`} href={`/learn/${lessonId}/vocabulary/${collection.id}`}>
@@ -95,7 +94,7 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
                 <span className="alphabet-entry-copy">
                   <span className="eyebrow">{collection.eyebrow}</span>
                   <span className="alphabet-entry-title"><strong>{collection.title}</strong></span>
-                  <small>{collection.description} · {"count" in collection ? collection.count : count} คำ</small>
+                  <small>{collection.description} · {count} คำ</small>
                 </span>
                 <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
               </Link>
@@ -145,11 +144,11 @@ export function L13GrammarEntryPoints() {
   const { items } = useContent();
   return <main className="vocabulary-learning">
     {([
-      { group: "Verben", title: "Verben", description: "กริยาที่ใช้พูดถึงเมืองและสถานที่", symbol: "V" },
-      { group: "Adjektive", title: "Adjektive", description: "คำคุณศัพท์และคำบอกลักษณะ", symbol: "A" },
+      { group: "Verben", route: "verbs", title: "Verben", description: "กริยาที่ใช้พูดถึงเมืองและสถานที่", symbol: "V" },
+      { group: "Adjektive", route: "adjektive", title: "Adjektive", description: "คำคุณศัพท์และคำบอกลักษณะ", symbol: "A" },
     ] as const).map((card) => {
       const count = items.filter((item) => item.lessonId === "L13" && item.skill === "grammar" && item.group === card.group).length;
-      return <Link key={card.group} className="alphabet-entry-card" href={`/learn/L13/grammar/${card.group.toLowerCase()}`}>
+      return <Link key={card.group} className="alphabet-entry-card" href={`/learn/L13/grammar/${card.route}`}>
         <span className="alphabet-entry-symbols" aria-hidden="true">{card.symbol}</span>
         <span className="alphabet-entry-copy"><span className="eyebrow">GRAMMATIK</span><span className="alphabet-entry-title"><strong>{card.title}</strong></span><small>{card.description} · {count} คำ</small></span>
         <span className="alphabet-entry-arrow" aria-hidden="true">→</span>

@@ -166,9 +166,10 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
               {groupEntries.map((entry) => {
                 const matched = learned.has(entry.itemId);
                 const wrong = incorrectPair?.imageId === entry.id;
+                const image = entry.image ?? "";
                 return <article className={`l13-city-card${matched ? " matched" : ""}${wrong ? " incorrect" : ""}`} key={entry.id}>
                   <button type="button" className="l13-city-image" aria-label={matched ? `ภาพ ${entry.german}` : "เลือกภาพนี้เพื่อจับคู่"} aria-pressed={selectedId?.type === "image" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "image")}>
-                    <Image src={`/images/lektion-13-city/${entry.image}.webp`} alt="ภาพสถานที่สำหรับจับคู่" width={960} height={640} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 29vw, (max-width: 1600px) 27vw, 25vw" />
+                    <Image src={`/images/lektion-13-city/${image}-places.webp`} alt={`ภาพ ${entry.german}`} width={960} height={640} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 29vw, (max-width: 1600px) 27vw, 25vw" />
                   </button>
                   {matched ? <div className="l13-city-answer"><button type="button" className="profession-label profession-audio-word" onClick={() => play(entry.german, entry.audioRef)}><ArticleDot article={entry.german.split(" ")[0]} /><span lang="de">{entry.german}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /> ✓</button><small>{entry.meaning}</small></div>
                     : <button className="profession-slot l13-city-slot" type="button" disabled={selectedId?.type !== "word"} onClick={() => chooseMatch(entry.id, "image")}>{selectedId?.type === "word" ? "จับคู่คำนี้กับภาพ" : "เลือกคำศัพท์ด้านบนก่อน"}</button>}

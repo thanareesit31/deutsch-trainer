@@ -66,7 +66,12 @@ export interface Item {
     infinitive: string;
     stem: string;
     examples: { de: string; th: string }[];
-    conjugations: { subject: string; form: string; ending: string }[];
+    conjugations: {
+      subject: string;
+      form: string;
+      ending: string;
+      segments?: { text: string; changed: boolean }[];
+    }[];
   };
 }
 export const skills: {
