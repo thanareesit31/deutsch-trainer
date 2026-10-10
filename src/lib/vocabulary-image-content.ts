@@ -57,7 +57,25 @@ export const vocabularyImageGroups = [
   },
 ] as const;
 
-export type VocabularyImageGroupId = (typeof vocabularyImageGroups)[number]["id"];
+export const l13VocabularyImageGroups = [
+  { id: "l13-urban", title: "สถานที่ในเมือง", germanTitle: "Orte in der Stadt", route: "/learn/L13/vocabulary/images/urban", wordOrder: ["L13-V001", "L13-V002", "L13-V003", "L13-V004", "L13-V005", "L13-V006", "L13-V007"], pictureOrder: ["L13-V004", "L13-V002", "L13-V006", "L13-V001", "L13-V007", "L13-V003", "L13-V005"] },
+  { id: "l13-culture", title: "ร้านค้าและวัฒนธรรม", germanTitle: "Einkaufen und Kultur", route: "/learn/L13/vocabulary/images/culture", wordOrder: ["L13-V008", "L13-V009", "L13-V010", "L13-V018", "L13-V019", "L13-V020", "L13-V021"], pictureOrder: ["L13-V019", "L13-V010", "L13-V021", "L13-V008", "L13-V018", "L13-V009", "L13-V020"] },
+  { id: "l13-leisure", title: "สันทนาการและธรรมชาติ", germanTitle: "Freizeit und Natur", route: "/learn/L13/vocabulary/images/leisure", wordOrder: ["L13-V011", "L13-V012", "L13-V013", "L13-V014", "L13-V015", "L13-V016", "L13-V017"], pictureOrder: ["L13-V014", "L13-V017", "L13-V012", "L13-V015", "L13-V011", "L13-V016", "L13-V013"] },
+] as const;
+
+const l13CityWords = [
+  ["L13-V001", "die Stadt", "เมือง", "stadt"], ["L13-V002", "die Altstadt", "ย่านเมืองเก่า", "altstadt"], ["L13-V003", "der Park", "สวนสาธารณะ", "park"], ["L13-V004", "die Kirche", "โบสถ์", "kirche"], ["L13-V005", "das Schloss", "ปราสาท", "schloss"], ["L13-V006", "der Brunnen", "น้ำพุ", "brunnen"], ["L13-V007", "das Rathaus", "ศาลาว่าการเมือง", "rathaus"],
+  ["L13-V008", "das Geschäft", "ร้านค้า", "geschaeft"], ["L13-V009", "der Laden", "ร้านค้า", "laden"], ["L13-V010", "der Markt", "ตลาด", "markt"], ["L13-V011", "der Zoo", "สวนสัตว์", "zoo"], ["L13-V012", "der Tierpark", "สวนสัตว์หรือสวนสัตว์เปิด", "tierpark"], ["L13-V013", "der Spielplatz", "สนามเด็กเล่น", "spielplatz"], ["L13-V014", "der Hafen", "ท่าเรือ", "hafen"], ["L13-V015", "der See", "ทะเลสาบ", "see"], ["L13-V016", "die Mauer", "กำแพง", "mauer"], ["L13-V017", "die Straße", "ถนน", "strasse"],
+  ["L13-V018", "das Café", "คาเฟ่", "cafe"], ["L13-V019", "das Museum", "พิพิธภัณฑ์", "museum"], ["L13-V020", "das Kino", "โรงภาพยนตร์", "kino"], ["L13-V021", "die Wohnung", "ที่พักหรืออพาร์ตเมนต์", "wohnung"],
+] as const;
+
+export const l13VocabularyImageEntries: VocabularyImageEntryDefinition[] = l13CityWords.map(([id, german, meaning, image]) => ({
+  id, german, reading: "", meaning,
+  groupId: id <= "L13-V007" ? "l13-urban" : id <= "L13-V010" || id >= "L13-V018" ? "l13-culture" : "l13-leisure",
+  image, lookup: [german.replace(/^(der|die|das) /, "")],
+} as VocabularyImageEntryDefinition));
+
+export type VocabularyImageGroupId = (typeof vocabularyImageGroups)[number]["id"] | (typeof l13VocabularyImageGroups)[number]["id"];
 export type CountryFlagId =
   | "france" | "australia" | "thailand" | "germany" | "austria"
   | "switzerland" | "turkey" | "japan" | "china" | "spain" | "italy"

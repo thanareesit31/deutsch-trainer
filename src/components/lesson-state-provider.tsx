@@ -14,6 +14,7 @@ import { useStore } from "./store";
 export const lessonStateKeys = {
   alphabet: "deutsch-trainer-alphabet-learning-v1-L01",
   images: "deutsch-trainer-vocabulary-image-learning-v1-L01",
+  l13Images: "deutsch-trainer-vocabulary-image-learning-v1-L13",
   verbs: "deutsch-trainer-verb-learning-L01",
   l02Vocabulary: "deutsch-trainer-guided-learning-L02-vocabulary",
   l02Grammar: "deutsch-trainer-guided-learning-L02-grammar",

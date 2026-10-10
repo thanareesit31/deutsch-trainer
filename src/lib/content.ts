@@ -152,8 +152,12 @@ export interface Catalog {
 }
 export const skillName = (id: Skill) =>
   skills.find((s) => s.id === id)?.th || id;
-export const getLevel = (id: string) =>
-  Number(id.slice(1)) <= 6 ? "A1.1" : "A1.2";
+export const getLevel = (id: string) => {
+  const lessonNumber = Number(id.slice(1));
+  if (lessonNumber <= 6) return "A1.1";
+  if (lessonNumber <= 12) return "A1.2";
+  return "A1.3";
+};
 export const modeLabels: Record<Mode, string> = {
   flash: "Flashcards",
   "de-th": "เยอรมัน → ไทย",

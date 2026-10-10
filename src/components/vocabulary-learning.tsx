@@ -80,6 +80,30 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
         </>
       )}
 
+      {lessonId === "L13" && (
+        <>
+          {([
+            { id: "images/urban", eyebrow: "BILDER WORTSCHATZ", title: "Orte in der Stadt", description: "สถานที่ในเมือง · จับคู่คำศัพท์กับรูปภาพ", symbol: "Stadt", count: 21 },
+            { id: "extra", eyebrow: "ZUSATZWORTSCHATZ", title: "คำศัพท์เสริม", description: "คำเพิ่มเติมจากเรื่องและกิจกรรมในบท", symbol: "Wörter" },
+          ] as const).map((collection) => {
+            const count = items.filter(
+              (item) => item.lessonId === lessonId && item.skill === "vocabulary" && item.collection === (collection.id === "extra" ? "extra" : "core"),
+            ).length;
+            return (
+              <Link key={collection.id} className={`alphabet-entry-card${collection.id === "images/urban" ? " vocabulary-image-entry-card" : ""}`} href={`/learn/${lessonId}/vocabulary/${collection.id}`}>
+                <span className="alphabet-entry-symbols" aria-hidden="true">{collection.symbol}</span>
+                <span className="alphabet-entry-copy">
+                  <span className="eyebrow">{collection.eyebrow}</span>
+                  <span className="alphabet-entry-title"><strong>{collection.title}</strong></span>
+                  <small>{collection.description} · {"count" in collection ? collection.count : count} คำ</small>
+                </span>
+                <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
+              </Link>
+            );
+          })}
+        </>
+      )}
+
       {lessonId === "L01" && (
         <>
           <Link className="alphabet-entry-card" href="/learn/L01/vocabulary/alphabet">
@@ -115,4 +139,21 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
       )}
     </main>
   );
+}
+
+export function L13GrammarEntryPoints() {
+  const { items } = useContent();
+  return <main className="vocabulary-learning">
+    {([
+      { group: "Verben", title: "Verben", description: "กริยาที่ใช้พูดถึงเมืองและสถานที่", symbol: "V" },
+      { group: "Adjektive", title: "Adjektive", description: "คำคุณศัพท์และคำบอกลักษณะ", symbol: "A" },
+    ] as const).map((card) => {
+      const count = items.filter((item) => item.lessonId === "L13" && item.skill === "grammar" && item.group === card.group).length;
+      return <Link key={card.group} className="alphabet-entry-card" href={`/learn/L13/grammar/${card.group.toLowerCase()}`}>
+        <span className="alphabet-entry-symbols" aria-hidden="true">{card.symbol}</span>
+        <span className="alphabet-entry-copy"><span className="eyebrow">GRAMMATIK</span><span className="alphabet-entry-title"><strong>{card.title}</strong></span><small>{card.description} · {count} คำ</small></span>
+        <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
+      </Link>;
+    })}
+  </main>;
 }

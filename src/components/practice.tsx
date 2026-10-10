@@ -61,7 +61,7 @@ export function PracticeSetup({
   const [mode, setMode] = useState<Mode>(
     skill === "vocabulary"
       ? data.settings.direction
-      : availableModes(skill, groups[0])[0],
+      : availableModes(skill, groups[0]).find((candidate) => candidate !== "flash") || "choice",
   );
   const [count, setCount] = useState(data.settings.sessionSize);
   const [notice, setNotice] = useState("");
@@ -78,7 +78,9 @@ export function PracticeSetup({
   );
   const available =
     mode === "article" ? learnedPool.filter((i) => i.article) : learnedPool;
-  const modes = availableModes(skill, group).filter((m) => m !== "flash");
+  const modes = availableModes(skill, group).filter(
+    (m) => m !== "flash" && (m !== "dialogue" || pool.every((item) => !!item.reply)),
+  );
   async function begin() {
     if (!available.length) {
       setNotice(

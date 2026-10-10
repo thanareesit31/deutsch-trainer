@@ -21,7 +21,7 @@
 | content_lessons | id บทเรียน, position ลำดับ, status, data JSONB (id/number/level/title/thai/topics), updated_at |
 | content_items | id เนื้อหา, lesson_id, skill, position, status, data JSONB ของ Item เดิม, updated_at |
 
-`data` ของ Item มี id, lessonId, skill, group, title, meaning, answer และฟิลด์เฉพาะทักษะ เช่น article/plural, options, accepted, passage, audio โดยชนิดข้อมูลอ้างอิง `src/lib/content.ts` ตัวอย่างครบทุกแบบอยู่ใน `supabase/seed/catalog.json` (12 บท / 260 รายการ: ศัพท์หลัก181 ศัพท์เสริม16 ไวยากรณ์37 สำนวน9 เขียน5 อ่าน5 ฟัง7)
+`data` ของ Item มี id, lessonId, skill, group, title, meaning, answer และฟิลด์เฉพาะทักษะ เช่น article/plural, options, accepted, passage, audio โดยชนิดข้อมูลอ้างอิง `src/lib/content.ts` ตัวอย่างครบทุกแบบอยู่ใน `supabase/seed/catalog.json` ปัจจุบันมีบท 1–18; Lektion 13 เพิ่ม 120 รายการ ได้แก่ Wortschatz หลัก 43, เสริม 26, Grammatik 22 และ Redemittel 29
 
 RLS อนุญาต anon/authenticated อ่านเฉพาะ published และ item ต้องอยู่ในบทที่ published ผู้เรียนเพิ่ม/แก้/ลบเนื้อหาไม่ได้ ระบบแอดมินในอนาคตต้องตรวจสิทธิ์ที่ server ก่อนเขียนด้วย credentials ฝั่ง server; ยังไม่ได้สร้างหน้าแอดมินในงานนี้
 

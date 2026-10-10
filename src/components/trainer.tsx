@@ -48,10 +48,10 @@ import { PracticeSetup, Session } from "./practice";
 import { SettingsPage } from "./progress";
 import { AuthScreen } from "./auth-screen";
 import { TestWorkspaceNotice } from "./test-workspace-notice";
-import { VocabularyLearningEntryPoints } from "./vocabulary-learning";
+import { L13GrammarEntryPoints, VocabularyLearningEntryPoints } from "./vocabulary-learning";
 import { AlphabetLearningPage } from "./alphabet-learning";
 import { VocabularyImageMatching } from "./vocabulary-image-matching";
-import { vocabularyImageGroups } from "@/lib/vocabulary-image-content";
+import { l13VocabularyImageGroups, vocabularyImageGroups } from "@/lib/vocabulary-image-content";
 import { LearningBreadcrumbs } from "./learning-breadcrumbs";
 import { GuidedLearningPage } from "./guided-learning";
 
@@ -229,10 +229,19 @@ function App() {
   else if (path === "/learn/L02/grammar/sentences") page = <L02SentencesRedirect />;
   else if (path === "/learn/L02/vocabulary")
     page = <VocabularyLearningEntryPoints key={path} lessonId="L02" />;
+  else if (path === "/learn/L13/vocabulary")
+    page = <VocabularyLearningEntryPoints key={path} lessonId="L13" />;
+  else if (path === "/learn/L13/grammar") page = <L13GrammarEntryPoints key={path} />;
   else if (
     parts[0] === "learn" && parts[1] === "L02" && parts[2] === "vocabulary" && parts.length === 4 &&
     (parts[3] === "numbers" || parts[3] === "core")
   ) page = <GuidedLearningPage key={path} lessonId="L02" skill="vocabulary" track={parts[3]} />;
+  else if (parts[0] === "learn" && parts[1] === "L13" && parts[2] === "grammar" && ["verben", "adjektive"].includes(parts[3]))
+    page = <LearnActivity key={path} lessonId="L13" skill="grammar" group={parts[3] === "verben" ? "Verben" : "Adjektive"} start={start} />;
+  else if (
+    parts[0] === "learn" && parts[1] === "L13" && parts[2] === "vocabulary" &&
+    parts.length === 4 && ["extra"].includes(parts[3])
+  ) page = <LearnActivity key={path} lessonId="L13" skill="vocabulary" collection={parts[3] as "core" | "extra"} start={start} />;
   else if (parts[0] === "learn" && ["L01", "L02"].includes(parts[1]) && parts[2] === "grammar" && parts.length === 3)
     page = <GrammarLearningEntryPoints lessonId={parts[1]} />;
   else if (path === "/learn/L01/grammar/pronouns") page = <L01GrammarEntryRedirect />;
@@ -249,6 +258,8 @@ function App() {
         groupId={vocabularyImageGroups.find((group) => group.route === path)!.id}
       />
     );
+  else if (l13VocabularyImageGroups.some((group) => group.route === path))
+    page = <VocabularyImageMatching key={path} items={items} groupId={l13VocabularyImageGroups.find((group) => group.route === path)!.id} />;
   else if (parts[0] === "learn" && parts[1] && parts[2])
     page =
       parts[1] === "L01" && parts[2] === "vocabulary" ? (
@@ -352,7 +363,7 @@ function App() {
           <div className="sidebar-account-actions">
             <span className="level-pill">
               <span className="german-flag" />
-              A1.1 — A1.2
+              A1.1 — A1.3
             </span>
             <button
               className="topbar-signout sidebar-signout"
@@ -437,14 +448,14 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
         </span>
       </div>
       <div className="segmented level-switch" aria-label="เลือกระดับ">
-        {["A1.1", "A1.2"].map((l) => (
+        {["A1.1", "A1.2", "A1.3"].map((l) => (
           <button
             className={level === l ? "selected" : ""}
             onClick={() => setLevel(l)}
             key={l}
           >
             {l}
-            <span>Lektion {l === "A1.1" ? "01–06" : "07–12"}</span>
+            <span>Lektion {l === "A1.1" ? "01–06" : l === "A1.2" ? "07–12" : "13–18"}</span>
           </button>
         ))}
       </div>
@@ -456,7 +467,7 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
             const learned = pool.filter((w) =>
               history.exposures.some((e) => e.item_id === w.id),
             ).length;
-            const pct = Math.round((learned / pool.length) * 100);
+            const pct = pool.length ? Math.round((learned / pool.length) * 100) : 0;
             const any = learned > 0;
             return (
               <Link className="lesson-card" href={`/lesson/${l.id}`} key={l.id}>
@@ -499,9 +510,7 @@ function LessonDetail({ id }: { id: string }) {
   const lesson = lessons.find((l) => l.id === id)!;
   const { data } = useStore();
   const history = useLearning();
-  const lessonSkills = skills.filter((skill) =>
-    items.some((item) => item.lessonId === id && item.skill === skill.id),
-  );
+  const lessonSkills = skills;
   return (
     <>
       <div className="lesson-heading">

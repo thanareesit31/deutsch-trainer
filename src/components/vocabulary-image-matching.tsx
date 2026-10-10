@@ -10,6 +10,8 @@ import type { Item } from "@/lib/content";
 import {
   vocabularyImageEntries,
   vocabularyImageGroups,
+  l13VocabularyImageEntries,
+  l13VocabularyImageGroups,
   type CountryFlagId,
   type VocabularyImageGroupId,
 } from "@/lib/vocabulary-image-content";
@@ -18,6 +20,7 @@ import {
 } from "@/lib/vocabulary-image-learning-storage";
 
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
+import { ArticleDot, ArticleLegend } from "./profession-matching";
 
 function CountryFlag({ flag }: { flag: CountryFlagId }) {
   const common = { viewBox: "0 0 3 2", className: "vocabulary-image-flag", "aria-hidden": true as const };
@@ -40,19 +43,29 @@ function CountryFlag({ flag }: { flag: CountryFlagId }) {
   }
 }
 
+function GermanNoun({ value }: { value: string }) {
+  const match = /^(der|die|das)\s+(.+)$/u.exec(value);
+  if (!match) return <span lang="de">{value}</span>;
+  return <span lang="de"><span className={`vocabulary-gender gender-${match[1]}`}>{match[1]}</span> {match[2]}</span>;
+}
+
 export function VocabularyImageMatching({ items, groupId }: { items: Item[]; groupId: VocabularyImageGroupId }) {
   const lessonState = useLessonState();
-  const groupIndex = vocabularyImageGroups.findIndex((entry) => entry.id === groupId);
-  const group = vocabularyImageGroups[groupIndex] ?? vocabularyImageGroups[0];
-  const entries = useMemo(() => vocabularyImageEntries.map((definition) => {
+  const isL13 = groupId.startsWith("l13-");
+  const groups = isL13 ? l13VocabularyImageGroups : vocabularyImageGroups;
+  const definitions = isL13 ? l13VocabularyImageEntries : vocabularyImageEntries;
+  const stateKey = isL13 ? lessonStateKeys.l13Images : lessonStateKeys.images;
+  const groupIndex = groups.findIndex((entry) => entry.id === groupId);
+  const group = groups[groupIndex] ?? groups[0];
+  const entries = useMemo(() => definitions.map((definition) => {
     const candidates = [definition.german, ...(definition.lookup ?? [])].map((word) => word.toLocaleLowerCase("de"));
     const item = items.find((candidate) =>
-      candidate.skill === "vocabulary" &&
+      candidate.lessonId === (isL13 ? "L13" : "L01") && candidate.skill === "vocabulary" &&
       (candidate.collection === "core" || candidate.collection === "extra") &&
-      candidates.includes((candidate.word || candidate.answer).trim().toLocaleLowerCase("de")),
+      (isL13 ? candidate.id === definition.id : candidates.includes((candidate.word || candidate.answer).trim().toLocaleLowerCase("de"))),
     );
     return { ...definition, itemId: item?.id ?? definition.id, meaning: item?.meaning ?? definition.meaning, audioRef: item?.audio };
-  }), [items]);
+  }), [items, definitions, isL13]);
   const { play, error: audioError } = useVocabularyAudio();
   const [learnedIds, setLearnedIds] = useState<string[]>([]);
   const [selectedId, setSelectedId] = useState<{ id: string; type: "word" | "image" } | null>(null);
@@ -61,9 +74,9 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    setLearnedIds(readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.images)));
+    setLearnedIds(readLearnedImageVocabularyIds(lessonState.read(stateKey)));
     setHydrated(true);
-  }, [lessonState.read]);
+  }, [lessonState.read, stateKey]);
 
   const learned = new Set(learnedIds);
   const byId = new Map(entries.map((entry) => [entry.id, entry] as const));
@@ -82,9 +95,9 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
     const entry = byId.get(id);
     return entry && learned.has(entry.itemId) ? [entry] : [];
   });
-  const previousGroup = vocabularyImageGroups[groupIndex - 1];
-  const nextGroup = vocabularyImageGroups[groupIndex + 1];
-  const previousGroupsComplete = vocabularyImageGroups.slice(0, groupIndex).every((previous) =>
+  const previousGroup = groups[groupIndex - 1];
+  const nextGroup = groups[groupIndex + 1];
+  const previousGroupsComplete = groups.slice(0, groupIndex).every((previous) =>
     entries.filter((entry) => entry.groupId === previous.id).every((entry) => learned.has(entry.itemId)),
   );
   function chooseMatch(id: string, type: "word" | "image") {
@@ -109,7 +122,7 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
     play(entry.german, entry.audioRef);
     const nextLearnedIds = [...new Set([...learnedIds, entry.itemId])];
     setLearnedIds(nextLearnedIds);
-    lessonState.write(lessonStateKeys.images, JSON.stringify(nextLearnedIds));
+    lessonState.write(stateKey, JSON.stringify(nextLearnedIds));
     setIncorrectPair(null);
     setSelectedId(null);
     setFeedback("");
@@ -118,17 +131,18 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
   if (!hydrated) return <main className="vocabulary-image-matching" aria-busy="true" />;
 
   return (
-    <main className="vocabulary-image-matching">
+    <main className={`vocabulary-image-matching${isL13 ? " profession-learning l13-city-learning" : ""}`}>
       <h1 className="sr-only">Bilder Wortschatz</h1>
       <LearningCategoryTabs currentKey={group.id}>
-        {vocabularyImageGroups.map((category, index) => {
-          const available = vocabularyImageGroups.slice(0, index).every((previous) =>
+        {groups.map((category, index) => {
+          const available = groups.slice(0, index).every((previous) =>
             entries.filter((entry) => entry.groupId === previous.id).every((entry) => learned.has(entry.itemId)));
           return available ? <Link key={category.id} href={category.route} title={category.germanTitle}
             aria-current={category.id === group.id ? "page" : undefined}><CategoryTabLabel german={category.germanTitle} thai={category.title} /></Link>
             : <span key={category.id} aria-disabled="true" title="เรียนหมวดก่อนหน้าให้ครบก่อน"><CategoryTabLabel german={category.germanTitle} thai={category.title} /></span>;
         })}
       </LearningCategoryTabs>
+      {isL13 && <ArticleLegend />}
       <div className="vocabulary-image-progress" aria-live="polite">
         <span>เรียนแล้ว {completedCount} / {entries.length} คำ</span>
         <div className="vocabulary-image-progress-track" aria-hidden="true"><span style={{ width: `${entries.length ? completedCount / entries.length * 100 : 0}%` }} /></div>
@@ -136,36 +150,58 @@ export function VocabularyImageMatching({ items, groupId }: { items: Item[]; gro
       {!previousGroupsComplete ? <section className="vocabulary-image-locked">
         <h1>{group.title}</h1>
         <p>จับคู่หมวดก่อนหน้าให้ครบ แล้วจึงไปต่อ</p>
-        <Link className="button primary" href={vocabularyImageGroups.find((previous) =>
-          entries.filter((entry) => entry.groupId === previous.id).some((entry) => !learned.has(entry.itemId)))?.route ?? vocabularyImageGroups[0].route}>กลับหมวดที่กำลังเรียน</Link>
+        <Link className="button primary" href={groups.find((previous) =>
+          entries.filter((entry) => entry.groupId === previous.id).some((entry) => !learned.has(entry.itemId)))?.route ?? groups[0].route}>กลับหมวดที่กำลังเรียน</Link>
       </section> : <>
       <div className="vocabulary-image-groups">
         <section className={`vocabulary-image-group group-${group.id}`}>
-          <header className="vocabulary-image-group-heading"><span>{groupCompletedCount} / {groupEntries.length} คำ</span></header>
+          <header className="vocabulary-image-group-heading"><div><span className="eyebrow">{group.germanTitle}</span><h2>{group.title}</h2></div><span>{groupCompletedCount} / {groupEntries.length} คำ</span></header>
+          {isL13 ? <>
+            {groupWords.length > 0 && <div className="matching-options-sticky profession-options-sticky">
+              <div className="profession-options" role="group" aria-label="ตัวเลือกคำศัพท์">
+                {groupWords.map((entry) => <button key={entry.id} type="button" className={`profession-option${selectedId?.type === "word" && selectedId.id === entry.id ? " selected" : ""}`} aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}><ArticleDot article={entry.german.split(" ")[0]} />{entry.german}</button>)}
+              </div>
+            </div>}
+            <section className="l13-city-grid" aria-label="ภาพสถานที่ จับคู่กับคำศัพท์">
+              {groupEntries.map((entry) => {
+                const matched = learned.has(entry.itemId);
+                const wrong = incorrectPair?.imageId === entry.id;
+                return <article className={`l13-city-card${matched ? " matched" : ""}${wrong ? " incorrect" : ""}`} key={entry.id}>
+                  <button type="button" className="l13-city-image" aria-label={matched ? `ภาพ ${entry.german}` : "เลือกภาพนี้เพื่อจับคู่"} aria-pressed={selectedId?.type === "image" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "image")}>
+                    <Image src={`/images/lektion-13-city/${entry.image}.webp`} alt="ภาพสถานที่สำหรับจับคู่" width={960} height={640} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 29vw, (max-width: 1600px) 27vw, 25vw" />
+                  </button>
+                  {matched ? <div className="l13-city-answer"><button type="button" className="profession-label profession-audio-word" onClick={() => play(entry.german, entry.audioRef)}><ArticleDot article={entry.german.split(" ")[0]} /><span lang="de">{entry.german}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /> ✓</button><small>{entry.meaning}</small></div>
+                    : <button className="profession-slot l13-city-slot" type="button" disabled={selectedId?.type !== "word"} onClick={() => chooseMatch(entry.id, "image")}>{selectedId?.type === "word" ? "จับคู่คำนี้กับภาพ" : "เลือกคำศัพท์ด้านบนก่อน"}</button>}
+                  {wrong && <p className="profession-error" role="status">ยังไม่ตรงกัน ลองเลือกใหม่ได้เลย</p>}
+                </article>;
+              })}
+            </section>
+          </> : <>
           {matchedEntries.length > 0 && <section className="vocabulary-image-paired-grid" aria-label="คำศัพท์ที่จับคู่แล้ว">
             {matchedEntries.map((entry) => <article className="vocabulary-image-paired-card" key={entry.itemId}>
-              {entry.flag ? <CountryFlag flag={entry.flag} /> : <Image src={`/images/lektion-1-core-vocabulary-images/${entry.image}.jpg`} alt={`ภาพสำหรับ ${entry.german}`} width={960} height={960} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 28vw, 220px" />}
-              <div className="vocabulary-image-paired-word"><button type="button" className="vocabulary-word-audio" aria-label={`ฟัง ${entry.german}`} title="กดเพื่อฟังเสียง" onClick={() => play(entry.german, entry.audioRef)}><span lang="de">{entry.german}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button><small>{entry.meaning}</small></div>
+              {entry.flag ? <CountryFlag flag={entry.flag} /> : <Image src={`/images/${isL13 ? "lektion-13-city" : "lektion-1-core-vocabulary-images"}/${entry.image}.${isL13 ? "svg" : "jpg"}`} alt={`ภาพสำหรับ ${entry.german}`} width={960} height={960} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 28vw, 220px" />}
+              <div className="vocabulary-image-paired-word"><button type="button" className="vocabulary-word-audio" aria-label={`ฟัง ${entry.german}`} title="กดเพื่อฟังเสียง" onClick={() => play(entry.german, entry.audioRef)}><GermanNoun value={entry.german} /><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button><small>{entry.meaning}</small></div>
             </article>)}
           </section>}
           <section className="vocabulary-image-word-list" aria-label={`${group.title} — คำภาษาเยอรมัน`}>
-            {groupWords.map((entry) => <button className={`vocabulary-image-word ${selectedId?.type === "word" && selectedId.id === entry.id ? "selected" : ""} ${incorrectPair?.wordId === entry.id ? "incorrect" : ""}`} key={entry.id} type="button" aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}><span lang="de">{entry.german}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button>)}
+            {groupWords.map((entry) => <button className={`vocabulary-image-word ${selectedId?.type === "word" && selectedId.id === entry.id ? "selected" : ""} ${incorrectPair?.wordId === entry.id ? "incorrect" : ""}`} key={entry.id} type="button" aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}><GermanNoun value={entry.german} /><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button>)}
           </section>
           <section className={`vocabulary-image-picture-grid count-${groupPictures.length}`} aria-label={`${group.title} — เลือกรูปภาพ`}>
             {groupPictures.map((entry) => <button className={`vocabulary-image-picture ${selectedId?.type === "image" && selectedId.id === entry.id ? "selected" : ""} ${incorrectPair?.imageId === entry.id ? "incorrect" : ""}`} key={entry.id} type="button" aria-label="เลือกภาพนี้" aria-pressed={selectedId?.type === "image" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "image")}>
-              {entry.flag ? <CountryFlag flag={entry.flag} /> : <Image src={`/images/lektion-1-core-vocabulary-images/${entry.image}.jpg`} alt="ภาพประกอบสำหรับจับคู่คำศัพท์" width={960} height={960} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 28vw, 220px" />}
+              {entry.flag ? <CountryFlag flag={entry.flag} /> : <Image src={`/images/${isL13 ? "lektion-13-city" : "lektion-1-core-vocabulary-images"}/${entry.image}.${isL13 ? "svg" : "jpg"}`} alt="ภาพประกอบสำหรับจับคู่คำศัพท์" width={960} height={960} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 28vw, 220px" />}
             </button>)}
           </section>
+          </>}
         </section>
       </div>
       <p className={`vocabulary-image-feedback ${feedback === "ลองใหม่" ? "incorrect" : ""}`} role="status">{feedback}</p>
       </>}
       {audioError && <p role="status" className="alphabet-audio-error">{audioError}</p>}
       <div className="vocabulary-image-done-actions">
-        <Link className="button secondary" href={previousGroup?.route ?? "/learn/L01/vocabulary/alphabet"}>ย้อนกลับ</Link>
+        <Link className="button secondary" href={previousGroup?.route ?? (isL13 ? "/learn/L13/vocabulary" : "/learn/L01/vocabulary/alphabet")}>ย้อนกลับ</Link>
         {previousGroupsComplete && groupCompletedCount === groupEntries.length && groupEntries.length > 0 && (nextGroup
           ? <Link className="button primary" href={nextGroup.route}>หน้าถัดไป</Link>
-          : <Link className="button primary" href="/learn/L01/vocabulary">กลับไปที่คำศัพท์</Link>)}
+          : <Link className="button primary" href={isL13 ? "/learn/L13/vocabulary" : "/learn/L01/vocabulary"}>กลับไปที่คำศัพท์</Link>)}
       </div>
     </main>
   );

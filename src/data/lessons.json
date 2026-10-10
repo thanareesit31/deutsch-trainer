@@ -94,5 +94,53 @@
     "Title_German": "Im Frühling bin ich nach Hamburg gefahren.",
     "Title_Thai": "ฤดูกาลและการเดินทางในอดีต",
     "Main_Topics": "Jahresablauf, Reisen, Perfekt mit sein, Präteritum von sein/haben"
+  },
+  {
+    "Lesson_ID": "L13",
+    "Modul": "Modul 5",
+    "Lektion_No": "Lektion 13",
+    "Title_German": "Berlin gefällt mir.",
+    "Title_Thai": "สถานที่ในเมือง",
+    "Main_Topics": "In der Stadt — สถานที่ในเมือง, es gibt + Akkusativ, กริยาที่ใช้ Dativ/Personalpronomen im Dativ, Das gefällt mir, การประเมินและพูดเกี่ยวกับสถานที่"
+  },
+  {
+    "Lesson_ID": "L14",
+    "Modul": "Modul 5",
+    "Lektion_No": "Lektion 14",
+    "Title_German": "Vor dem Kaufhaus nach rechts.",
+    "Title_Thai": "การบอกทาง",
+    "Main_Topics": "Wege beschreiben — การบอกทาง, Institutionen und Plätze in der Stadt, lokale Präpositionen: vor, neben, an ..., ถามทาง/อธิบายทาง"
+  },
+  {
+    "Lesson_ID": "L15",
+    "Modul": "Modul 5",
+    "Lektion_No": "Lektion 15",
+    "Title_German": "Ich finde Ihr Zimmer schön.",
+    "Title_Thai": "บ้าน ห้องพัก และเฟอร์นิเจอร์",
+    "Main_Topics": "Wohnen — บ้าน/ห้องพัก/เฟอร์นิเจอร์, Possessivartikel im Nominativ und Akkusativ: ihr, sein, บรรยายที่อยู่อาศัย"
+  },
+  {
+    "Lesson_ID": "L16",
+    "Modul": "Modul 5",
+    "Lektion_No": "Lektion 16",
+    "Title_German": "Wir haben hier ein Problem.",
+    "Title_Thai": "อุปกรณ์และการนัดหมาย",
+    "Main_Topics": "Termine — อุปกรณ์/เครื่องใช้, temporale Präpositionen: in, vor, nach, เสนอความช่วยเหลือ, นัด/เลื่อน/ยกเลิกนัด, ตอบสนองต่อคำขอ"
+  },
+  {
+    "Lesson_ID": "L17",
+    "Modul": "Modul 5",
+    "Lektion_No": "Lektion 17",
+    "Title_German": "Ich will … werden.",
+    "Title_Thai": "แผนและความต้องการ",
+    "Main_Topics": "Pläne und Wünsche — แผนและความต้องการ, modale Präpositionen: mit, ohne, Konjunktion: werden, Modalverb: wollen, พูดความปรารถนาและแผน"
+  },
+  {
+    "Lesson_ID": "L18",
+    "Modul": "Modul 5",
+    "Lektion_No": "Lektion 18",
+    "Title_German": "Ich soll diese Übung machen.",
+    "Title_Thai": "สุขภาพและความเจ็บป่วย",
+    "Main_Topics": "Gesundheit und Krankheit — ส่วนต่าง ๆ ของร่างกาย, Imperativ Sie, Modalverb: sollen, อธิบายอาการ, ขอคำแนะนำ/ให้คำแนะนำ และความแตกต่างทางวัฒนธรรม"
   }
 ]

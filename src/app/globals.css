@@ -1843,6 +1843,23 @@ select {
   transform: translateY(-1px);
   border-color: #a7bba2;
 }
+.vocabulary-image-word .vocabulary-gender,
+.vocabulary-image-paired-word .vocabulary-gender {
+  display: inline-grid;
+  min-width: 32px;
+  min-height: 25px;
+  place-items: center;
+  margin-right: 5px;
+  padding: 1px 6px;
+  border-radius: 7px;
+  background: #edf1e8;
+  color: #526c50;
+  font-size: .78em;
+  font-weight: 750;
+}
+.vocabulary-gender.gender-der { background: #eaf1fa; color: #4c6f9a; }
+.vocabulary-gender.gender-die { background: #f9eaf0; color: #a15d78; }
+.vocabulary-gender.gender-das { background: #fbf2dc; color: #927635; }
 .vocabulary-image-word.selected {
   border-color: #4c805d;
   background: #eff6eb;
@@ -5345,10 +5362,32 @@ select {
 .profession-first-note { margin: 6px 0 0; font-size: .8rem; line-height: 1.5; color: #526257; }
 .profession-complete { margin: 0; font-size: .85rem; }
 .profession-learning-card .guided-navigation { margin-top: 14px; }
+.l13-city-learning .vocabulary-image-heading { margin: 8px 0 10px; }
+.l13-city-learning .vocabulary-image-heading h1 { font-size: clamp(24px, 3vw, 34px); margin: 3px 0; }
+.l13-city-learning .profession-options-sticky { margin: 0 calc(-1 * var(--profession-card-inset, 15px)); padding: 0 var(--profession-card-inset, 15px) 10px; }
+.l13-city-learning .profession-options { justify-content: center; }
+.l13-city-learning .profession-option { display: inline-flex; align-items: center; gap: 3px; }
+.l13-city-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 12px; }
+.l13-city-card { min-width: 0; padding: 10px; border: 1px solid #d9ded5; border-radius: 14px; background: #fff; }
+.l13-city-card.incorrect { border-color: #c8564d; background: #fff9f8; }
+.l13-city-image { position: relative; display: block; width: 100%; aspect-ratio: 3 / 2; padding: 0; overflow: hidden; border: 2px solid transparent; border-radius: 10px; background: #f5f7f2; cursor: pointer; }
+.l13-city-image:focus-visible, .l13-city-image[aria-pressed="true"] { outline: 3px solid #91ad82; outline-offset: 2px; }
+.l13-city-image img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
+.l13-city-answer { display: grid; justify-items: center; margin-top: 4px; }
+.l13-city-answer .profession-label { min-height: 44px; display: inline-flex; align-items: center; gap: 3px; }
+.l13-city-answer small { min-height: 20px; text-align: center; }
+.l13-city-slot { margin-top: 8px; width: 100%; }
+.l13-city-slot:disabled { color: #7c897e; opacity: .75; }
+.l13-city-card .profession-error { margin: 6px 0 0; text-align: center; }
 @media (max-width: 700px) {
   .profession-learning .article-legend { font-size: .7rem; gap: 4px 10px; }
   .profession-learning-card { padding: 10px; --profession-card-inset: 11px; }
   .profession-learning-card .profession-pair { padding: 8px; }
+  .l13-city-learning .profession-options-sticky { margin: 0 -11px; padding: 0 11px 8px; }
+  .l13-city-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .l13-city-card { padding: 7px; }
+  .l13-city-slot { min-height: 42px; padding: 5px; font-size: .72rem; }
+  .l13-city-answer .profession-label { font-size: .78rem; }
 }
 
 /* Account controls live in the desktop sidebar; mobile keeps a small menu bar. */

@@ -19,6 +19,12 @@ try {
     "20261008000000_l02_number_page_four.sql",
     "20261009000000_l02_model_spelling.sql",
     "20261009010000_l02_status_phrases.sql",
+    "20261009030000_a13_lessons.sql",
+    "20261009040000_a13_lesson_outlines.sql",
+    "20261010000000_l13_learning_content.sql",
+    "20261010010000_l13_image_learning_state.sql",
+    "20261010020000_l13_verb_adjective_grammar.sql",
+    "20261010030000_l13_grammar_card_split.sql",
   ]) {
     const sql = await readFile(
       new URL("../supabase/migrations/" + file, import.meta.url),

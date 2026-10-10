@@ -20,14 +20,23 @@ export function LearningBreadcrumbs() {
   if (parts[0] === "learn" && parts[2]) {
     crumbs.push({ label: skills.find((skill) => skill.id === parts[2])?.de ?? parts[2], href: `/learn/${lesson.id}/${parts[2]}` });
     if (parts[3]) {
-      const label = parts[3] === "alphabet" ? "Das Alphabet"
+      const l13Label = lesson.id === "L13" ? ({
+        "vocabulary:images": "Bilder Wortschatz",
+        "vocabulary:extra": "Zusatzwortschatz",
+        "grammar:verben": "Verben",
+        "grammar:adjektive": "Adjektive",
+      } as Record<string, string>)[`${parts[2]}:${parts[3]}`] : undefined;
+      const label = l13Label ?? (parts[3] === "alphabet" ? "Das Alphabet"
         : parts[3] === "numbers" ? "Die Zahlen"
         : ["core-images", "core"].includes(parts[3]) ? "Bilder Wortschatz"
         : parts[3] === "pronouns" ? "Personalpronomen"
         : parts[3] === "verbs" ? "Verben"
         : parts[3] === "sentences" ? "Fragen und Sätze"
-        : parts[3];
-      crumbs.push({ label, href: `/learn/${lesson.id}/${parts[2]}/${parts[3]}` });
+        : parts[3].replaceAll("-", " ").replace(/\b\p{L}/gu, (letter) => letter.toLocaleUpperCase("de")));
+      const href = lesson.id === "L13" && parts[2] === "vocabulary" && parts[3] === "images"
+        ? "/learn/L13/vocabulary/images/urban"
+        : `/learn/${lesson.id}/${parts[2]}/${parts[3]}`;
+      crumbs.push({ label, href });
     }
   }
   return (

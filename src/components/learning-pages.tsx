@@ -206,7 +206,7 @@ export function LearningHome() {
             </Link>
           </SectionTitle>
           <div className="level-cards">
-            {["A1.1", "A1.2"].map((level, i) => {
+            {["A1.1", "A1.2", "A1.3"].map((level, i) => {
               const pool = coreVocabulary.filter(
                 (w) => getLevel(w.lessonId) === level,
               );
@@ -225,15 +225,13 @@ export function LearningHome() {
                     <ArrowUpRight size={21} />
                   </div>
                   <h3>
-                    {i === 0 ? "เริ่มต้นอย่างมั่นใจ" : "ต่อยอดให้คล่องขึ้น"}
+                    {["เริ่มต้นอย่างมั่นใจ", "ต่อยอดให้คล่องขึ้น", "ก้าวต่อไปในระดับ A1"][i]}
                   </h3>
                   <p>
-                    {i === 0
-                      ? "ทักทาย แนะนำตัว และเรื่องใกล้ตัว"
-                      : "งานอดิเรก ชีวิตประจำวัน และการเดินทาง"}
+                    {["ทักทาย แนะนำตัว และเรื่องใกล้ตัว", "งานอดิเรก ชีวิตประจำวัน และการเดินทาง", "บทเรียน 13–18"][i]}
                   </p>
                   <div className="level-meta">
-                    <span>Lektion {i === 0 ? "01–06" : "07–12"}</span>
+                    <span>Lektion {i === 0 ? "01–06" : i === 1 ? "07–12" : "13–18"}</span>
                     <span>6 บท · {pool.length} คำ</span>
                   </div>
                   <Meter value={pct} label={`คำศัพท์ ${level} ที่เคยเรียน`} />
@@ -1109,23 +1107,31 @@ function VerbLesson() {
 export function LearnActivity({
   lessonId,
   skill,
+  collection,
+  group,
   start,
 }: {
   lessonId: string;
   skill: Skill;
+  collection?: "core" | "extra";
+  group?: string;
   start?: StartSession;
 }) {
   const { items } = useContent();
   const h = useLearning();
   const pool = items.filter(
-    (i) => i.lessonId === lessonId && i.skill === skill,
+    (i) =>
+      i.lessonId === lessonId &&
+      i.skill === skill &&
+      (!collection || i.collection === collection) &&
+      (!group || i.group === group),
   );
   const [position, setPosition] = useState(0);
   const [error, setError] = useState("");
   const [retry, setRetry] = useState(0);
   const exposing = useRef<string | null>(null);
   const item = pool[position];
-  if (skill === "grammar" && start) {
+  if (skill === "grammar" && lessonId === "L01" && start) {
     return <VerbLesson />;
   }
   const seen = !!item && h.exposures.some((e) => e.item_id === item.id);
@@ -1166,7 +1172,11 @@ export function LearnActivity({
         <div>
           <h1>เรียน{skillName(skill)}</h1>
           <p>
-            {position + 1} / {pool.length} รายการ
+            {collection === "core"
+              ? `${position + 1} / ${pool.length} รายการ · Hauptwortschatz · คำศัพท์หลัก`
+              : collection === "extra"
+                ? `${position + 1} / ${pool.length} รายการ · Zusatzwortschatz · คำศัพท์เสริม`
+                : `${position + 1} / ${pool.length} รายการ`}
           </p>
         </div>
       </div>
@@ -1175,6 +1185,8 @@ export function LearnActivity({
         {item.passage && <p lang="de">{item.passage}</p>}
         <h2 lang="de">{item.answer}</h2>
         <p>{item.meaning}</p>
+        {item.example && <p lang="de">Beispiel: {item.example}</p>}
+        {item.notes && <p>{item.notes}</p>}
         {item.prompt && item.prompt !== item.meaning && <p>{item.prompt}</p>}
         {item.plural && <p lang="de">Plural: die {item.plural}</p>}
         {item.reply && <p lang="de">คู่สนทนา: {item.reply}</p>}
@@ -1414,6 +1426,7 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
               <option value="all">ทุกระดับ</option>
               <option>A1.1</option>
               <option>A1.2</option>
+              <option>A1.3</option>
             </select>
           </label>
           <label>
