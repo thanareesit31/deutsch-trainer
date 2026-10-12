@@ -42,14 +42,14 @@ try {
   assert.equal(await page.locator(".stat-card").count(), 4);
   const health = await (await context.request.get(base + "/api/health")).json();
   assert.equal(health.status, "ok");
-  assert.equal(health.vocabulary, 181);
+  assert.equal(health.vocabulary, 188);
   console.log("PASS: dashboard, core count, health route", health.runtime);
 
   await page.locator(".stat-card").first().click();
   await page.getByRole("heading", { name: "คลังการเรียนรู้ของคุณ" }).waitFor();
   assert.match(
     await page.locator(".progress-panel .quiet-pill").innerText(),
-    /181/
+    /188/
   );
   await page.getByRole("button", { name: "Hallo สวัสดี (เป็นกันเอง)" }).click();
   await page.getByRole("dialog").waitFor();

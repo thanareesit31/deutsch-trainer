@@ -5,8 +5,8 @@ import Link from "next/link";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { LearningCategoryTabs } from "./learning-breadcrumbs";
 import { GermanListenText } from "./german-listen-text";
-import { useVocabularyAudio } from "./vocabulary-audio";
-import { ConjugationAudioForm } from "./conjugation-matching";
+import { ConjugationAudioForm, ConjugationBoard } from "./conjugation-matching";
+import { isTestWorkspaceUser, useStore } from "./store";
 import {
   Sun,
   Check,
@@ -20,7 +20,6 @@ import {
   ChevronRight,
   RotateCcw,
   ArrowRight,
-  Volume2,
 } from "lucide-react";
 import {
   getLevel,
@@ -308,6 +307,8 @@ export function LearningHome() {
 
 export function PracticeEntry({ start }: { start: StartSession }) {
   const { items, lessons } = useContent();
+  const { user } = useStore();
+  const allowUnlearnedPractice = isTestWorkspaceUser(user);
   const h = useLearning();
   const [lesson, setLesson] = useState(lessons[0].id);
   return (
@@ -315,7 +316,7 @@ export function PracticeEntry({ start }: { start: StartSession }) {
       <div className="page-heading">
         <div>
           <h1>แบบฝึกหัด</h1>
-          <p>ฝึกเฉพาะเนื้อหาที่เคยเรียน เลือกบทได้โดยไม่ต้องเรียนซ้ำ</p>
+          <p>{allowUnlearnedPractice ? "พื้นที่ทดสอบ: เลือกบทและทักษะเพื่อเริ่มฝึกจากเนื้อหาในระบบได้ทันที" : "ฝึกเฉพาะเนื้อหาที่เคยเรียน เลือกบทได้โดยไม่ต้องเรียนซ้ำ"}</p>
         </div>
       </div>
       <label className="setting-label">
@@ -456,8 +457,7 @@ export function ReviewPage({ start }: { start: StartSession }) {
   );
 }
 
-function VerbLesson() {
-  const { play, error: audioError } = useVocabularyAudio();
+function VerbLesson({ allowIncompleteNavigation = false }: { allowIncompleteNavigation?: boolean }) {
   const { items, lessons } = useContent();
   const history = useLearning();
   const verbs = [
@@ -551,12 +551,6 @@ function VerbLesson() {
     history.exposures.some((e) => e.item_id === i.id),
   );
   const matches = matchesByVerb[verb] || {};
-  const [selectedToken, setSelectedToken] = useState<number | null>(null);
-  const [incorrectPlacement, setIncorrectPlacement] = useState<{
-    row: number;
-    token: number;
-  } | null>(null);
-  const incorrectTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const formOrder = orderByVerb[verb] || [];
   const results = resultsByVerb[verb] || null;
   useEffect(() => {
@@ -686,9 +680,6 @@ function VerbLesson() {
         ...previous,
         [verb]: forms.map((_, i) => i).sort(() => Math.random() - 0.5),
       }));
-    setSelectedToken(null);
-    setIncorrectPlacement(null);
-    if (incorrectTimer.current) clearTimeout(incorrectTimer.current);
   }, [verb, orderByVerb, forms.length]);
   function replayVerbs(targets: string[]) {
     // Reset only the activity draft; learned completion and database history persist.
@@ -703,31 +694,15 @@ function VerbLesson() {
     setReplayingVerbs((previous) => [
       ...new Set([...previous, ...targets]),
     ]);
-    setSelectedToken(null);
     setVerb(targets[0]);
     setShowPrinciples(false);
     setShowSummary(false);
   }
-  function assign(row: number, offeredToken = selectedToken) {
-    if (results || matches[row] !== undefined || offeredToken === null || offeredToken === undefined) return;
+  function assign(row: number, offeredToken: number) {
+    if (results || matches[row] !== undefined) return;
     const item = sessionItems[row];
     if (!item || forms[offeredToken] === undefined) return;
-    setSelectedToken(null);
-    if (forms[offeredToken] !== item.answer) {
-      if (incorrectTimer.current) clearTimeout(incorrectTimer.current);
-      setIncorrectPlacement({ row, token: offeredToken });
-      incorrectTimer.current = setTimeout(() => {
-        setIncorrectPlacement(null);
-        incorrectTimer.current = null;
-      }, 650);
-      return;
-    }
-    if (incorrectTimer.current) clearTimeout(incorrectTimer.current);
-    setIncorrectPlacement(null);
-    play(`${item.title.split(" + ")[0].split("/")[0].trim()} ${item.answer}`);
     const next = { ...matches };
-    for (const [key, value] of Object.entries(next))
-      if (value === offeredToken) delete next[Number(key)];
     next[row] = offeredToken;
     setMatchesByVerb((previous) => ({ ...previous, [verb]: next }));
     if (Object.keys(next).length === sessionItems.length) {
@@ -854,21 +829,20 @@ function VerbLesson() {
             <button
               key={v}
               disabled={
-                i > selectedIndex && !completedVerbs.includes(verbs[i - 1])
+                !allowIncompleteNavigation && i > selectedIndex && !completedVerbs.includes(verbs[i - 1])
               }
               aria-current={!showPrinciples && !showSummary && v === verb ? "page" : undefined}
               onClick={() => {
                 setVerb(v);
                 setShowPrinciples(false);
                 setShowSummary(false);
-                setSelectedToken(null);
               }}
             >
               {v}
             </button>
           ))}
           <button
-            disabled={!verbs.every((v) => completedVerbs.includes(v))}
+            disabled={!allowIncompleteNavigation && !verbs.every((v) => completedVerbs.includes(v))}
             aria-current={!showPrinciples && showSummary ? "page" : undefined}
             onClick={() => {
               setShowPrinciples(false);
@@ -942,7 +916,6 @@ function VerbLesson() {
                   setVerb(verbs[0] || "kommen");
                   setShowPrinciples(false);
                   setShowSummary(false);
-                  setSelectedToken(null);
                 }}
               >
                 หน้าถัดไป <ArrowRight size={17} />
@@ -961,7 +934,6 @@ function VerbLesson() {
                   setVerb(verbs[verbs.length - 1] || "sein");
                   setShowPrinciples(false);
                   setShowSummary(false);
-                  setSelectedToken(null);
                 }}
               >
                 ย้อนกลับ
@@ -991,79 +963,33 @@ function VerbLesson() {
                     </div>
                   ))}
                 </div>
+                {introduction.learningNote && (
+                  <p className="guided-note">{introduction.learningNote}</p>
+                )}
               </section>
             )}
-            <div className="matching-board" aria-label={`จับคู่รูปผัน ${verb}`}>
-              <div className="matching-column">
-                <h2>ประธาน</h2>
-                {sessionItems.map((item, i) => (
-                  <button
-                    key={item.id}
-                    className={`matching-subject ${
-                      selectedToken !== null ? "target-ready" : ""
-                    }`}
-                    onClick={() => matches[i] !== undefined
-                      ? play(`${item.title.split(" + ")[0].split("/")[0].trim()} ${item.answer}`)
-                      : assign(i)}
-                    onDragOver={(event) => event.preventDefault()}
-                    onDrop={(event) => {
-                      event.preventDefault();
-                      const token = event.dataTransfer.getData("text/plain");
-                      if (/^\d+$/.test(token)) assign(i, Number(token));
-                    }}
-                  >
-                    <span lang="de">{item.title.split(" + ")[0]}</span>
-                    <span
-                      className={`matching-drop ${
-                        matches[i] !== undefined
-                          ? "filled correct"
-                          : incorrectPlacement?.row === i
-                            ? "incorrect"
-                            : ""
-                      }`}
-                    >
-                      {matches[i] !== undefined ? (
-                        <span lang="de">{forms[matches[i]]} <Volume2 size={15} aria-hidden="true" /></span>
-                      ) : (
-                        "เลือกคำตอบ"
-                      )}
-                    </span>
-                  </button>
-                ))}
-              </div>
-              <div className="matching-column">
-                <h2>รูปกริยา</h2>
-                <div className="matching-bank">
-                  {formOrder
-                    .filter((token) => !Object.values(matches).includes(token))
-                    .map((token) => (
-                      <button
-                        className={`matching-token ${
-                          selectedToken === token ? "selected" : ""
-                        } ${incorrectPlacement?.token === token ? "incorrect" : ""}`}
-                        key={token}
-                        draggable
-                        onDragStart={(event) => {
-                          event.dataTransfer.effectAllowed = "move";
-                          event.dataTransfer.setData(
-                            "text/plain",
-                            String(token),
-                          );
-                          setSelectedToken(token);
-                        }}
-                        onClick={() => { setSelectedToken(token); play(forms[token]); }}
-                        lang="de"
-                      >
-                        {forms[token]}
-                        <Volume2 size={15} aria-hidden="true" />
-                      </button>
-                    ))}
-                </div>
-                <p className="conjugation-hint">
-                  ลากรูปกริยาไปวางข้างประธาน หรือแตะรูปกริยาแล้วแตะช่องประธาน
-                </p>
-              </div>
-            </div>
+            <ConjugationBoard
+              key={verb}
+              ariaLabel={`จับคู่รูปผัน ${verb}`}
+              pairs={sessionItems.map((item) => ({
+                id: item.id,
+                left: item.title.split(" + ")[0],
+                right: item.answer,
+              }))}
+              matchedIds={Object.keys(matches)
+                .map((row) => sessionItems[Number(row)]?.id)
+                .filter((id): id is string => !!id)}
+              matchedTokenByRow={Object.fromEntries(Object.entries(matches)
+                .map(([row, token]) => [sessionItems[Number(row)]?.id, sessionItems[token]?.id])
+                .filter((entry): entry is [string, string] => !!entry[0] && !!entry[1]))}
+              tokenOrder={formOrder.map((token) => sessionItems[token]?.id).filter((id): id is string => !!id)}
+              busy={false}
+              onMatch={(rowId, tokenId) => {
+                const row = sessionItems.findIndex((item) => item.id === rowId);
+                const token = sessionItems.findIndex((item) => item.id === tokenId);
+                if (row >= 0 && token >= 0) assign(row, token);
+              }}
+            />
             <div className="conjugation-actions">
               {introduction && (
                 <button
@@ -1071,7 +997,6 @@ function VerbLesson() {
                   onClick={() => {
                     if (selectedIndex > 0) setVerb(verbs[selectedIndex - 1]);
                     else setShowPrinciples(true);
-                    setSelectedToken(null);
                   }}
                 >
                   ย้อนกลับ
@@ -1096,7 +1021,6 @@ function VerbLesson() {
             {!learned && (
               <p className="conjugation-hint">กำลังบันทึกเนื้อหาที่เห็น</p>
             )}
-            {audioError && <p role="status">{audioError}</p>}
           </>
         )}
       </section>
@@ -1117,6 +1041,8 @@ export function LearnActivity({
   group?: string;
   start?: StartSession;
 }) {
+  const { user } = useStore();
+  const allowIncompleteNavigation = isTestWorkspaceUser(user);
   const { items } = useContent();
   const h = useLearning();
   const pool = items.filter(
@@ -1132,7 +1058,7 @@ export function LearnActivity({
   const exposing = useRef<string | null>(null);
   const item = pool[position];
   if (skill === "grammar" && lessonId === "L01" && start) {
-    return <VerbLesson />;
+    return <VerbLesson allowIncompleteNavigation={allowIncompleteNavigation} />;
   }
   const seen = !!item && h.exposures.some((e) => e.item_id === item.id);
   // Only the mounted, visible Learn card produces an exposure. Catalog/Practice never do.
@@ -1212,7 +1138,7 @@ export function LearnActivity({
         <div className="result-actions">
           <button
             className="button secondary"
-            disabled={position === 0 || h.busy}
+              disabled={position === 0 || h.busy}
             onClick={() => setPosition((p) => p - 1)}
           >
             ก่อนหน้า
@@ -1220,7 +1146,7 @@ export function LearnActivity({
           {position < pool.length - 1 && (
             <button
               className="button primary"
-              disabled={!seen || h.busy}
+              disabled={(!seen && !allowIncompleteNavigation) || h.busy}
               onClick={() => {
                 setError("");
                 setPosition((p) => p + 1);

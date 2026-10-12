@@ -732,6 +732,166 @@
       "collection": "core"
     },
     {
+      "id": "V190",
+      "lessonId": "L03",
+      "skill": "vocabulary",
+      "group": "Familie",
+      "title": "der Mann",
+      "meaning": "ผู้ชาย / สามี",
+      "answer": "der Mann",
+      "word": "Mann",
+      "article": "der",
+      "plural": "Männer",
+      "collection": "extra",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 29
+        }
+      ]
+    },
+    {
+      "id": "V191",
+      "lessonId": "L03",
+      "skill": "vocabulary",
+      "group": "Familie",
+      "title": "die Frau",
+      "meaning": "ผู้หญิง / ภรรยา",
+      "answer": "die Frau",
+      "word": "Frau",
+      "article": "die",
+      "plural": "Frauen",
+      "collection": "extra",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 29
+        }
+      ]
+    },
+    {
+      "id": "V192",
+      "lessonId": "L03",
+      "skill": "vocabulary",
+      "group": "Familie",
+      "title": "der Onkel",
+      "meaning": "ลุง / น้า / อา",
+      "answer": "der Onkel",
+      "word": "Onkel",
+      "article": "der",
+      "plural": "Onkel",
+      "collection": "extra",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 29
+        }
+      ]
+    },
+    {
+      "id": "V193",
+      "lessonId": "L03",
+      "skill": "vocabulary",
+      "group": "Familie",
+      "title": "die Tante",
+      "meaning": "ป้า / น้า / อา",
+      "answer": "die Tante",
+      "word": "Tante",
+      "article": "die",
+      "plural": "Tanten",
+      "collection": "extra",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 29
+        }
+      ]
+    },
+    {
+      "id": "V194",
+      "lessonId": "L03",
+      "skill": "vocabulary",
+      "group": "Familie",
+      "title": "der Neffe",
+      "meaning": "หลานชาย / ลูกของพี่น้อง",
+      "answer": "der Neffe",
+      "word": "Neffe",
+      "article": "der",
+      "plural": "Neffen",
+      "collection": "extra",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 29
+        }
+      ]
+    },
+    {
+      "id": "V195",
+      "lessonId": "L03",
+      "skill": "vocabulary",
+      "group": "Familie",
+      "title": "die Nichte",
+      "meaning": "หลานสาว / ลูกของพี่น้อง",
+      "answer": "die Nichte",
+      "word": "Nichte",
+      "article": "die",
+      "plural": "Nichten",
+      "collection": "extra",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 29
+        }
+      ]
+    },
+    {
+      "id": "V196",
+      "lessonId": "L03",
+      "skill": "vocabulary",
+      "group": "Familie",
+      "title": "der Freund",
+      "meaning": "เพื่อนชาย / แฟนชาย",
+      "answer": "der Freund",
+      "word": "Freund",
+      "article": "der",
+      "plural": "Freunde",
+      "collection": "extra",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 29
+        }
+      ]
+    },
+    {
+      "id": "V197",
+      "lessonId": "L03",
+      "skill": "vocabulary",
+      "group": "Familie",
+      "title": "die Freundin",
+      "meaning": "เพื่อนหญิง / แฟนหญิง",
+      "answer": "die Freundin",
+      "word": "Freundin",
+      "article": "die",
+      "plural": "Freundinnen",
+      "collection": "extra",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 29
+        }
+      ]
+    },
+    {
       "id": "V044",
       "lessonId": "L04",
       "skill": "vocabulary",
@@ -763,7 +923,7 @@
       "id": "V046",
       "lessonId": "L04",
       "skill": "vocabulary",
-      "group": "Möbel",
+      "group": "Elektrogeräte",
       "title": "die Lampe",
       "meaning": "โคมไฟ",
       "answer": "die Lampe",
@@ -798,20 +958,6 @@
       "word": "Sessel",
       "article": "der",
       "plural": "Sessel",
-      "pluralOnly": false,
-      "collection": "core"
-    },
-    {
-      "id": "V049",
-      "lessonId": "L04",
-      "skill": "vocabulary",
-      "group": "Möbel",
-      "title": "die Couch",
-      "meaning": "โซฟา",
-      "answer": "die Couch",
-      "word": "Couch",
-      "article": "die",
-      "plural": "Couches",
       "pluralOnly": false,
       "collection": "core"
     },
@@ -896,6 +1042,118 @@
       "word": "Spiegel",
       "article": "der",
       "plural": "Spiegel",
+      "pluralOnly": false,
+      "collection": "core"
+    },
+    {
+      "id": "V182",
+      "lessonId": "L04",
+      "skill": "vocabulary",
+      "group": "Elektrogeräte",
+      "title": "der Fernseher",
+      "meaning": "โทรทัศน์",
+      "answer": "der Fernseher",
+      "word": "Fernseher",
+      "article": "der",
+      "plural": "Fernseher",
+      "pluralOnly": false,
+      "collection": "core"
+    },
+    {
+      "id": "V183",
+      "lessonId": "L04",
+      "skill": "vocabulary",
+      "group": "Elektrogeräte",
+      "title": "der Herd",
+      "meaning": "เตา",
+      "answer": "der Herd",
+      "word": "Herd",
+      "article": "der",
+      "plural": "Herde",
+      "pluralOnly": false,
+      "collection": "core"
+    },
+    {
+      "id": "V184",
+      "lessonId": "L04",
+      "skill": "vocabulary",
+      "group": "Elektrogeräte",
+      "title": "der Kühlschrank",
+      "meaning": "ตู้เย็น",
+      "answer": "der Kühlschrank",
+      "word": "Kühlschrank",
+      "article": "der",
+      "plural": "Kühlschränke",
+      "pluralOnly": false,
+      "collection": "core"
+    },
+    {
+      "id": "V185",
+      "lessonId": "L04",
+      "skill": "vocabulary",
+      "group": "Elektrogeräte",
+      "title": "die Waschmaschine",
+      "meaning": "เครื่องซักผ้า",
+      "answer": "die Waschmaschine",
+      "word": "Waschmaschine",
+      "article": "die",
+      "plural": "Waschmaschinen",
+      "pluralOnly": false,
+      "collection": "core"
+    },
+    {
+      "id": "V186",
+      "lessonId": "L04",
+      "skill": "vocabulary",
+      "group": "Elektrogeräte",
+      "title": "der Ventilator",
+      "meaning": "พัดลม",
+      "answer": "der Ventilator",
+      "word": "Ventilator",
+      "article": "der",
+      "plural": "Ventilatoren",
+      "pluralOnly": false,
+      "collection": "core"
+    },
+    {
+      "id": "V187",
+      "lessonId": "L04",
+      "skill": "vocabulary",
+      "group": "Bad",
+      "title": "die Badewanne",
+      "meaning": "อ่างอาบน้ำ",
+      "answer": "die Badewanne",
+      "word": "Badewanne",
+      "article": "die",
+      "plural": "Badewannen",
+      "pluralOnly": false,
+      "collection": "core"
+    },
+    {
+      "id": "V188",
+      "lessonId": "L04",
+      "skill": "vocabulary",
+      "group": "Bad",
+      "title": "die Dusche",
+      "meaning": "ฝักบัว / ห้องอาบน้ำ",
+      "answer": "die Dusche",
+      "word": "Dusche",
+      "article": "die",
+      "plural": "Duschen",
+      "pluralOnly": false,
+      "collection": "core"
+    },
+    {
+      "id": "V189",
+      "lessonId": "L04",
+      "skill": "vocabulary",
+      "group": "Bad",
+      "title": "das Waschbecken",
+      "meaning": "อ่างล้างหน้า",
+      "answer": "das Waschbecken",
+      "word": "Waschbecken",
+      "article": "das",
+      "plural": "Waschbecken",
       "pluralOnly": false,
       "collection": "core"
     },
@@ -4780,6 +5038,14 @@
         "keine Kirche",
         "kein Schloss",
         "keine Parks"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4800,6 +5066,14 @@
         "keine Kirche",
         "kein Schloss",
         "keine Parks"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4820,6 +5094,14 @@
         "keine Kirche",
         "kein Schloss",
         "keine Parks"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4840,6 +5122,14 @@
         "keine Kirche",
         "kein Schloss",
         "keine Parks"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4860,6 +5150,14 @@
         "keine Kirche",
         "kein Schloss",
         "keine Parks"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4880,6 +5178,14 @@
         "keine Kirche",
         "kein Schloss",
         "keine Parks"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4900,6 +5206,14 @@
         "keine Kirche",
         "kein Schloss",
         "keine Parks"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4920,6 +5234,14 @@
         "keine Kirche",
         "kein Schloss",
         "keine Parks"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4940,6 +5262,14 @@
         "euch",
         "ihnen",
         "Ihnen"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4960,6 +5290,14 @@
         "euch",
         "ihnen",
         "Ihnen"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -4980,6 +5318,14 @@
         "euch",
         "ihnen",
         "Ihnen"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5000,6 +5346,14 @@
         "euch",
         "ihnen",
         "Ihnen"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5020,6 +5374,14 @@
         "euch",
         "ihnen",
         "Ihnen"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5040,6 +5402,14 @@
         "euch",
         "ihnen",
         "Ihnen"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5060,6 +5430,14 @@
         "euch",
         "ihnen",
         "Ihnen"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5080,6 +5458,14 @@
         "euch",
         "ihnen",
         "Ihnen"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5100,6 +5486,14 @@
         "euch",
         "ihnen",
         "Ihnen"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5115,6 +5509,14 @@
         "Dativ",
         "Akkusativ",
         "Nominativ"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5130,6 +5532,14 @@
         "Dativ",
         "Akkusativ",
         "Nominativ"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5145,6 +5555,14 @@
         "Dativ",
         "Akkusativ",
         "Nominativ"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5160,6 +5578,14 @@
         "Dativ",
         "Akkusativ",
         "Nominativ"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5175,6 +5601,14 @@
         "Der Park",
         "mir",
         "gefällt"
+      ],
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     },
     {
@@ -5738,6 +6172,1636 @@
         "Ich finde die Stadt zu groß.",
         "Was gefällt Ihnen besonders?",
         "Was fehlt Ihnen?"
+      ]
+    },
+    {
+      "id": "L14-V001",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Institutionen",
+      "title": "das Kaufhaus",
+      "answer": "das Kaufhaus",
+      "word": "Kaufhaus",
+      "article": "das",
+      "meaning": "ห้างสรรพสินค้า",
+      "type": "noun",
+      "image": "kaufhaus",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        }
+      ]
+    },
+    {
+      "id": "L14-V002",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Institutionen",
+      "title": "der Kindergarten",
+      "answer": "der Kindergarten",
+      "word": "Kindergarten",
+      "article": "der",
+      "meaning": "โรงเรียนอนุบาล",
+      "type": "noun",
+      "image": "kindergarten",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        }
+      ]
+    },
+    {
+      "id": "L14-V003",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Institutionen",
+      "title": "die Schule",
+      "answer": "die Schule",
+      "word": "Schule",
+      "article": "die",
+      "meaning": "โรงเรียน",
+      "type": "noun",
+      "image": "schule",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        }
+      ]
+    },
+    {
+      "id": "L14-V004",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Institutionen",
+      "title": "die Post",
+      "answer": "die Post",
+      "word": "Post",
+      "article": "die",
+      "meaning": "ที่ทำการไปรษณีย์",
+      "type": "noun",
+      "image": "post",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        }
+      ]
+    },
+    {
+      "id": "L14-V005",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Institutionen",
+      "title": "die Bank",
+      "answer": "die Bank",
+      "word": "Bank",
+      "article": "die",
+      "meaning": "ธนาคาร",
+      "type": "noun",
+      "image": "bank",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        }
+      ]
+    },
+    {
+      "id": "L14-V006",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Institutionen",
+      "title": "die Apotheke",
+      "answer": "die Apotheke",
+      "word": "Apotheke",
+      "article": "die",
+      "meaning": "ร้านขายยา",
+      "type": "noun",
+      "image": "apotheke",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        }
+      ]
+    },
+    {
+      "id": "L14-V007",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Institutionen",
+      "title": "die Polizei",
+      "answer": "die Polizei",
+      "word": "Polizei",
+      "article": "die",
+      "meaning": "สถานีตำรวจ",
+      "type": "noun",
+      "image": "polizei",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        }
+      ]
+    },
+    {
+      "id": "L14-V008",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Institutionen",
+      "title": "das Krankenhaus",
+      "answer": "das Krankenhaus",
+      "word": "Krankenhaus",
+      "article": "das",
+      "meaning": "โรงพยาบาล",
+      "type": "noun",
+      "image": "krankenhaus",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        }
+      ]
+    },
+    {
+      "id": "L14-V009",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Institutionen",
+      "title": "der Bahnhof",
+      "answer": "der Bahnhof",
+      "word": "Bahnhof",
+      "article": "der",
+      "meaning": "สถานีรถไฟ",
+      "type": "noun",
+      "image": "bahnhof",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        }
+      ]
+    },
+    {
+      "id": "L14-V010",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Plätze und Wege",
+      "title": "das Zentrum",
+      "answer": "das Zentrum",
+      "word": "Zentrum",
+      "article": "das",
+      "meaning": "ใจกลางเมือง",
+      "type": "noun",
+      "image": "zentrum",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "id": "L14-V011",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Plätze und Wege",
+      "title": "die Straße",
+      "answer": "die Straße",
+      "word": "Straße",
+      "article": "die",
+      "meaning": "ถนน",
+      "type": "noun",
+      "image": "/images/lektion-13-city/strasse-places.webp",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "id": "L14-V012",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Plätze und Wege",
+      "title": "die Ampel",
+      "answer": "die Ampel",
+      "word": "Ampel",
+      "article": "die",
+      "meaning": "สัญญาณไฟจราจร",
+      "type": "noun",
+      "image": "ampel",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "id": "L14-V013",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Plätze und Wege",
+      "title": "die Brücke",
+      "answer": "die Brücke",
+      "word": "Brücke",
+      "article": "die",
+      "meaning": "สะพาน",
+      "type": "noun",
+      "image": "/images/lektion-13-city/bruecke-v2-places.webp",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "id": "L14-V014",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Plätze und Wege",
+      "title": "der Platz",
+      "answer": "der Platz",
+      "word": "Platz",
+      "article": "der",
+      "meaning": "ลานหรือจัตุรัส",
+      "type": "noun",
+      "image": "platz",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "id": "L14-V015",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Plätze und Wege",
+      "title": "die Kreuzung",
+      "answer": "die Kreuzung",
+      "word": "Kreuzung",
+      "article": "die",
+      "meaning": "สี่แยก",
+      "type": "noun",
+      "image": "kreuzung",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "id": "L14-V016",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Plätze und Wege",
+      "title": "die Ecke",
+      "answer": "die Ecke",
+      "word": "Ecke",
+      "article": "die",
+      "meaning": "หัวมุมถนน",
+      "type": "noun",
+      "image": "ecke",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "id": "L14-V017",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "die Stadtmitte",
+      "answer": "die Stadtmitte",
+      "word": "die Stadtmitte",
+      "meaning": "ใจกลางเมือง · อีกคำหนึ่งของ das Zentrum",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        }
+      ]
+    },
+    {
+      "id": "L14-V018",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "der Hauptbahnhof",
+      "answer": "der Hauptbahnhof",
+      "word": "der Hauptbahnhof",
+      "meaning": "สถานีรถไฟหลัก",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 5,
+          "printedPage": 13
+        }
+      ]
+    },
+    {
+      "id": "L14-V019",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "geradeaus",
+      "answer": "geradeaus",
+      "word": "geradeaus",
+      "meaning": "ตรงไป",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 5,
+          "printedPage": 13
+        }
+      ]
+    },
+    {
+      "id": "L14-V020",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "nach rechts",
+      "answer": "nach rechts",
+      "word": "nach rechts",
+      "meaning": "ไปทางขวา",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 5,
+          "printedPage": 13
+        }
+      ]
+    },
+    {
+      "id": "L14-V021",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "nach links",
+      "answer": "nach links",
+      "word": "nach links",
+      "meaning": "ไปทางซ้าย",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 5,
+          "printedPage": 13
+        }
+      ]
+    },
+    {
+      "id": "L14-V022",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "rechts abbiegen",
+      "answer": "rechts abbiegen",
+      "word": "rechts abbiegen",
+      "meaning": "เลี้ยวขวา",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 5,
+          "printedPage": 13
+        }
+      ]
+    },
+    {
+      "id": "L14-V023",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "links abbiegen",
+      "answer": "links abbiegen",
+      "word": "links abbiegen",
+      "meaning": "เลี้ยวซ้าย",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 8,
+          "printedPage": 16
+        }
+      ]
+    },
+    {
+      "id": "L14-V024",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "über die Straße",
+      "answer": "über die Straße",
+      "word": "über die Straße",
+      "meaning": "ข้ามถนน",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 5,
+          "printedPage": 13
+        }
+      ]
+    },
+    {
+      "id": "L14-V025",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "zu Fuß",
+      "answer": "zu Fuß",
+      "word": "zu Fuß",
+      "meaning": "เดินเท้า",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 8,
+          "printedPage": 16
+        }
+      ]
+    },
+    {
+      "id": "L14-V026",
+      "lessonId": "L14",
+      "skill": "vocabulary",
+      "collection": "extra",
+      "group": "Wegbeschreibung",
+      "title": "nach 50 Metern",
+      "answer": "nach 50 Metern",
+      "word": "nach 50 Metern",
+      "meaning": "หลังจาก 50 เมตร",
+      "type": "expression",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 5,
+          "printedPage": 13
+        }
+      ]
+    },
+    {
+      "id": "L15-V001",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Wohnen und Zimmer",
+      "title": "das Haus",
+      "answer": "das Haus",
+      "word": "Haus",
+      "article": "das",
+      "meaning": "บ้าน",
+      "type": "noun",
+      "image": "haus",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "id": "L15-V002",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Wohnen und Zimmer",
+      "title": "die Wohnung",
+      "answer": "die Wohnung",
+      "word": "Wohnung",
+      "article": "die",
+      "meaning": "อพาร์ตเมนต์หรือห้องชุด",
+      "type": "noun",
+      "image": "/images/lektion-13-city/wohnung-places.webp",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "id": "L15-V003",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Wohnen und Zimmer",
+      "title": "das Zimmer",
+      "answer": "das Zimmer",
+      "word": "Zimmer",
+      "article": "das",
+      "meaning": "ห้อง",
+      "type": "noun",
+      "image": "zimmer",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "id": "L15-V004",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Wohnen und Zimmer",
+      "title": "das Arbeitszimmer",
+      "answer": "das Arbeitszimmer",
+      "word": "Arbeitszimmer",
+      "article": "das",
+      "meaning": "ห้องทำงาน",
+      "type": "noun",
+      "image": "arbeitszimmer",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "id": "L15-V005",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Wohnen und Zimmer",
+      "title": "das Wohnzimmer",
+      "answer": "das Wohnzimmer",
+      "word": "Wohnzimmer",
+      "article": "das",
+      "meaning": "ห้องนั่งเล่น",
+      "type": "noun",
+      "image": "wohnzimmer",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "id": "L15-V006",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Wohnen und Zimmer",
+      "title": "das Schlafzimmer",
+      "answer": "das Schlafzimmer",
+      "word": "Schlafzimmer",
+      "article": "das",
+      "meaning": "ห้องนอน",
+      "type": "noun",
+      "image": "schlafzimmer",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "id": "L15-V007",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Wohnen und Zimmer",
+      "title": "das Kinderzimmer",
+      "answer": "das Kinderzimmer",
+      "word": "Kinderzimmer",
+      "article": "das",
+      "meaning": "ห้องเด็ก",
+      "type": "noun",
+      "image": "kinderzimmer",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "id": "L15-V008",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Wohnen und Zimmer",
+      "title": "das Bad",
+      "answer": "das Bad",
+      "word": "Bad",
+      "article": "das",
+      "meaning": "ห้องน้ำ",
+      "type": "noun",
+      "image": "bad",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "id": "L15-V009",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Teile der Wohnung",
+      "title": "die Küche",
+      "answer": "die Küche",
+      "word": "Küche",
+      "article": "die",
+      "meaning": "ห้องครัว",
+      "type": "noun",
+      "image": "kueche",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V010",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Teile der Wohnung",
+      "title": "die Toilette",
+      "answer": "die Toilette",
+      "word": "Toilette",
+      "article": "die",
+      "meaning": "ห้องสุขา",
+      "type": "noun",
+      "image": "toilette",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V011",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Teile der Wohnung",
+      "title": "der Flur",
+      "answer": "der Flur",
+      "word": "Flur",
+      "article": "der",
+      "meaning": "โถงทางเดิน",
+      "type": "noun",
+      "image": "flur",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V012",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Teile der Wohnung",
+      "title": "der Balkon",
+      "answer": "der Balkon",
+      "word": "Balkon",
+      "article": "der",
+      "meaning": "ระเบียง",
+      "type": "noun",
+      "image": "balkon",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V013",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Teile der Wohnung",
+      "title": "der Garten",
+      "answer": "der Garten",
+      "word": "Garten",
+      "article": "der",
+      "meaning": "สวน",
+      "type": "noun",
+      "image": "garten",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V014",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Teile der Wohnung",
+      "title": "die Treppe",
+      "answer": "die Treppe",
+      "word": "Treppe",
+      "article": "die",
+      "meaning": "บันได",
+      "type": "noun",
+      "image": "treppe",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V015",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Teile der Wohnung",
+      "title": "das Fenster",
+      "answer": "das Fenster",
+      "word": "Fenster",
+      "article": "das",
+      "meaning": "หน้าต่าง",
+      "type": "noun",
+      "image": "fenster",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V016",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Teile der Wohnung",
+      "title": "die Tür",
+      "answer": "die Tür",
+      "word": "Tür",
+      "article": "die",
+      "meaning": "ประตู",
+      "type": "noun",
+      "image": "tuer",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V017",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Möbel",
+      "title": "das Bett",
+      "answer": "das Bett",
+      "word": "Bett",
+      "article": "das",
+      "meaning": "เตียง",
+      "type": "noun",
+      "image": "/images/lektion-04-vocabulary/V045-isolated-v2.jpg",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 15,
+          "printedPage": 23
+        }
+      ]
+    },
+    {
+      "id": "L15-V018",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Möbel",
+      "title": "die Lampe",
+      "answer": "die Lampe",
+      "word": "Lampe",
+      "article": "die",
+      "meaning": "โคมไฟ",
+      "type": "noun",
+      "image": "/images/lektion-04-vocabulary/V046-isolated-v2.jpg",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V019",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Möbel",
+      "title": "der Sessel",
+      "answer": "der Sessel",
+      "word": "Sessel",
+      "article": "der",
+      "meaning": "เก้าอี้นวม",
+      "type": "noun",
+      "image": "/images/lektion-04-vocabulary/V048-isolated-v2.jpg",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V020",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Möbel",
+      "title": "das Sofa",
+      "answer": "das Sofa",
+      "word": "Sofa",
+      "article": "das",
+      "meaning": "โซฟา",
+      "type": "noun",
+      "image": "/images/lektion-04-vocabulary/V050-isolated-v2.jpg",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ]
+    },
+    {
+      "id": "L15-V021",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Möbel",
+      "title": "der Tisch",
+      "answer": "der Tisch",
+      "word": "Tisch",
+      "article": "der",
+      "meaning": "โต๊ะ",
+      "type": "noun",
+      "image": "/images/lektion-04-vocabulary/V051-isolated-v2.jpg",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 15,
+          "printedPage": 23
+        }
+      ]
+    },
+    {
+      "id": "L15-V022",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Möbel",
+      "title": "der Schrank",
+      "answer": "der Schrank",
+      "word": "Schrank",
+      "article": "der",
+      "meaning": "ตู้",
+      "type": "noun",
+      "image": "/images/lektion-04-vocabulary/V052-isolated-v2.jpg",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 15,
+          "printedPage": 23
+        }
+      ]
+    },
+    {
+      "id": "L15-V023",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Möbel",
+      "title": "der Teppich",
+      "answer": "der Teppich",
+      "word": "Teppich",
+      "article": "der",
+      "meaning": "พรมปูพื้น",
+      "type": "noun",
+      "image": "/images/lektion-04-vocabulary/V053-isolated-v3.jpg",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ]
+    },
+    {
+      "id": "L15-V024",
+      "lessonId": "L15",
+      "skill": "vocabulary",
+      "collection": "core",
+      "group": "Möbel",
+      "title": "der Stuhl",
+      "answer": "der Stuhl",
+      "word": "Stuhl",
+      "article": "der",
+      "meaning": "เก้าอี้",
+      "type": "noun",
+      "image": "/images/lektion-04-vocabulary/V044-isolated-v2.jpg",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 15,
+          "printedPage": 23
+        }
+      ]
+    },
+    {
+      "id": "L14-G001",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Lokale Präpositionen",
+      "title": "in",
+      "answer": "in",
+      "meaning": "ใน",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G002",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Lokale Präpositionen",
+      "title": "auf",
+      "answer": "auf",
+      "meaning": "บน",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G003",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Lokale Präpositionen",
+      "title": "über",
+      "answer": "über",
+      "meaning": "เหนือ",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G004",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Lokale Präpositionen",
+      "title": "unter",
+      "answer": "unter",
+      "meaning": "ใต้",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G005",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Lokale Präpositionen",
+      "title": "an",
+      "answer": "an",
+      "meaning": "ชิดหรือที่",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G006",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Lokale Präpositionen",
+      "title": "vor",
+      "answer": "vor",
+      "meaning": "ด้านหน้า",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G007",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Lokale Präpositionen",
+      "title": "hinter",
+      "answer": "hinter",
+      "meaning": "ด้านหลัง",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G008",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Lokale Präpositionen",
+      "title": "neben",
+      "answer": "neben",
+      "meaning": "ข้าง",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G009",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Lokale Präpositionen",
+      "title": "zwischen",
+      "answer": "zwischen",
+      "meaning": "ระหว่าง",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 6,
+          "printedPage": 14
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G010",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Wo? + Dativ",
+      "title": "vor dem Baum",
+      "answer": "vor dem Baum",
+      "meaning": "อยู่หน้าต้นไม้ · der → dem",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G011",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Wo? + Dativ",
+      "title": "neben einem Kaufhaus",
+      "answer": "neben einem Kaufhaus",
+      "meaning": "อยู่ข้างห้างแห่งหนึ่ง · ein → einem",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G012",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Wo? + Dativ",
+      "title": "an der Ampel",
+      "answer": "an der Ampel",
+      "meaning": "อยู่ที่สัญญาณไฟ · die → der",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G013",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Wo? + Dativ",
+      "title": "zwischen den Bäumen",
+      "answer": "zwischen den Bäumen",
+      "meaning": "อยู่ระหว่างต้นไม้ · พหูพจน์ die → den และเติม -n",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G014",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Wo? + Dativ",
+      "title": "im",
+      "answer": "im",
+      "meaning": "รูปย่อของ in dem",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L14-G015",
+      "lessonId": "L14",
+      "skill": "grammar",
+      "group": "Wo? + Dativ",
+      "title": "am",
+      "answer": "am",
+      "meaning": "รูปย่อของ an dem",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 7,
+          "printedPage": 15
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G001",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "ihr Sessel",
+      "answer": "ihr Sessel",
+      "meaning": "เก้าอี้นวมของเธอ · Nominativ ชาย",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G002",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "ihr Zimmer",
+      "answer": "ihr Zimmer",
+      "meaning": "ห้องของเธอ · Nominativ กลาง",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G003",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "ihre Lampe",
+      "answer": "ihre Lampe",
+      "meaning": "โคมไฟของเธอ · Nominativ หญิง",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G004",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "ihre Lampen",
+      "answer": "ihre Lampen",
+      "meaning": "โคมไฟหลายดวงของเธอ · Nominativ พหูพจน์",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G005",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "ihren Teppich",
+      "answer": "ihren Teppich",
+      "meaning": "พรมของเธอ · Akkusativ ชาย",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G006",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "sein Sessel",
+      "answer": "sein Sessel",
+      "meaning": "เก้าอี้นวมของเขา · Nominativ ชาย",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G007",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "sein Zimmer",
+      "answer": "sein Zimmer",
+      "meaning": "ห้องของเขา · Nominativ กลาง",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G008",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "seine Lampe",
+      "answer": "seine Lampe",
+      "meaning": "โคมไฟของเขา · Nominativ หญิง",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G009",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "seine Lampen",
+      "answer": "seine Lampen",
+      "meaning": "โคมไฟหลายดวงของเขา · Nominativ พหูพจน์",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
+      ]
+    },
+    {
+      "id": "L15-G010",
+      "lessonId": "L15",
+      "skill": "grammar",
+      "group": "Possessivartikel",
+      "title": "seinen Teppich",
+      "answer": "seinen Teppich",
+      "meaning": "พรมของเขา · Akkusativ ชาย",
+      "sourceScope": "core_book",
+      "sources": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        },
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 17,
+          "printedPage": 25
+        }
       ]
     }
   ]

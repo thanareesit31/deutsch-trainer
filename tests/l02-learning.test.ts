@@ -286,7 +286,7 @@ test("L02 catalog references, provenance, dependencies, assets and state migrati
           "select count(*)::int as count from public.content_items where lesson_id='L02'",
         )
       ).rows[0].count,
-      112,
+      118,
     );
     await db.exec("set role authenticated");
     for (const skill of ["vocabulary", "grammar"])

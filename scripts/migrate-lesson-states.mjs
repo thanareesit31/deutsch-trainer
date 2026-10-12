@@ -11,6 +11,8 @@ try {
   for (const file of [
     "20261007000000_learner_lesson_states.sql",
     "20261007020000_l02_lesson_states.sql",
+    "20261012000000_l03_l12_vocabulary_image_states.sql",
+    "20261012050000_a13_l14_l15_states.sql",
   ])
     await client.query(
       await readFile(

@@ -22,6 +22,8 @@ export async function createDatabase() {
     "20261007020000_l02_lesson_states.sql",
     "20261009000000_l02_model_spelling.sql",
     "20261009010000_l02_status_phrases.sql",
+    "20261012010000_l02_familienstand_learning.sql",
+    "20261012030000_l02_familienstand_image_matching.sql",
     "20261009030000_a13_lessons.sql",
     "20261009040000_a13_lesson_outlines.sql",
     "20261010000000_l13_learning_content.sql",
@@ -29,6 +31,12 @@ export async function createDatabase() {
     "20261010020000_l13_verb_adjective_grammar.sql",
     "20261010030000_l13_grammar_card_split.sql",
     "20261010040000_l13_verb_learning_state.sql",
+    "20261011020000_l01_verb_learning_notes.sql",
+    "20261011030000_l04_vocabulary_categories.sql",
+    "20261012000000_l03_l12_vocabulary_image_states.sql",
+    "20261012020000_l03_family_plural_learning.sql",
+    "20261012040000_a13_l14_l15_content.sql",
+    "20261012050000_a13_l14_l15_states.sql",
   ])
     await db.exec(
       await readFile(

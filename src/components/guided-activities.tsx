@@ -40,7 +40,7 @@ export function LearningValue({
       height={180}
     />
   ) : (
-    <span lang="de">{value}</span>
+    <span lang={/[\u0e00-\u0e7f]/u.test(value) ? "th" : "de"}>{value}</span>
   );
 }
 
@@ -224,10 +224,12 @@ export function PairMatching({
   onMatch: (id: string) => Promise<void>;
 }) {
   const { play, error: audioError } = useVocabularyAudio();
-  const hasSpeech = activity.type === "conjugation";
+  const hasSpeech = activity.type === "conjugation" || !!activity.speakRight;
   const pairs = activityPairs(activity, items);
   function readPair(pair: (typeof pairs)[number]) {
-    play(`${optionValue(pair.left, items).split("/")[0].trim()} ${optionValue(pair.right, items)}`);
+    play(activity.speakRight
+      ? optionValue(pair.right, items)
+      : `${optionValue(pair.left, items).split("/")[0].trim()} ${optionValue(pair.right, items)}`);
   }
   const [rightOrder] = useState(() => shuffled(pairs));
   const [selection, setSelection] = useState<{
@@ -286,7 +288,8 @@ export function PairMatching({
       className={`guided-choice ${selection?.id === pair.id && selection.side === side ? "selected" : ""} ${wrong.includes(`${side}:${pair.id}`) ? "wrong" : ""}`}
       aria-pressed={selection?.id === pair.id && selection.side === side}
       onClick={() => {
-        if (hasSpeech && (!selection || selection.side === side)) play(optionValue(pair[side], items));
+        if (hasSpeech && (!selection || selection.side === side) && (activity.type === "conjugation" || side === "right"))
+          play(optionValue(pair[side], items));
         void choose(side, pair.id);
       }}
       onDragStart={(event) =>
@@ -331,7 +334,7 @@ export function PairMatching({
       }}
     >
       <LearningValue option={pair[side]} items={items} />
-      {hasSpeech && <Volume2 size={16} aria-hidden="true" />}
+      {hasSpeech && (activity.type === "conjugation" || side === "right") && <Volume2 size={16} aria-hidden="true" />}
     </button>
   );
   return (

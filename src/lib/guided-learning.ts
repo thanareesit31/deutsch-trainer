@@ -62,13 +62,14 @@ export interface LearningActivity {
   verbId?: string;
   prerequisiteRefs?: string[];
   personalWriting?: { prompt: string; placeholders: [string, string] };
+  speakRight?: boolean;
 }
 export interface LearningFlow {
   stateKey: string;
   title: string;
   activities: LearningActivity[];
 }
-export type VocabularyTrack = "numbers" | "core";
+export type VocabularyTrack = "numbers" | "core" | "familienstand";
 
 export function vocabularyTrackActivities(
   flow: LearningFlow,
@@ -78,6 +79,9 @@ export function vocabularyTrackActivities(
   const hasProfessionBoards = flow.activities.some((a) => a.type === "profession_matching");
   const hasNumberBoards = flow.activities.some((activity) => activity.type === "number_matching");
   const activities = flow.activities.filter((activity) => {
+    const isFamilyStatusActivity = activity.section.split(" · ")[0] === "Familienstand";
+    if (track === "familienstand") return isFamilyStatusActivity;
+    if (isFamilyStatusActivity) return false;
     // Retire this page from navigation without deleting its historical evidence.
     if (activity.id === "L02-dream-meaning") return false;
     if (activity.id.startsWith("L02-berufe-") && !activity.id.startsWith("L02-berufe-v2-")) return false;

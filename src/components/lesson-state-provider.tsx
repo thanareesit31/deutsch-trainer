@@ -15,16 +15,25 @@ export const lessonStateKeys = {
   alphabet: "deutsch-trainer-alphabet-learning-v1-L01",
   images: "deutsch-trainer-vocabulary-image-learning-v1-L01",
   l13Images: "deutsch-trainer-vocabulary-image-learning-v1-L13",
+  vocabularyImages: (lessonId: string) => `deutsch-trainer-vocabulary-image-learning-v1-${lessonId}`,
+  l03FamilyPlural: "deutsch-trainer-family-plural-learning-v1-L03",
   verbs: "deutsch-trainer-verb-learning-L01",
   l02Vocabulary: "deutsch-trainer-guided-learning-L02-vocabulary",
   l02Grammar: "deutsch-trainer-guided-learning-L02-grammar",
   l13Grammar: "deutsch-trainer-guided-learning-L13-grammar",
+  l14Vocabulary: "deutsch-trainer-guided-learning-L14-vocabulary",
+  l14Grammar: "deutsch-trainer-guided-learning-L14-grammar",
+  l15Grammar: "deutsch-trainer-guided-learning-L15-grammar",
 } as const;
 const legacyLessonKeys = [
   lessonStateKeys.alphabet,
   lessonStateKeys.images,
   lessonStateKeys.verbs,
 ];
+const supportedLessonStateKeys = new Set([
+  ...Object.values(lessonStateKeys).flatMap((key) => typeof key === "string" ? [key] : []),
+  ...["L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10", "L11", "L12", "L14", "L15"].map(lessonStateKeys.vocabularyImages),
+]);
 type Snapshot = Record<string, string>;
 const Context = createContext<{
   read: (key: string) => string | null;
@@ -179,9 +188,7 @@ function AccountLessonState({
           if (cached && typeof cached === "object" && !Array.isArray(cached)) {
             for (const [key, raw] of Object.entries(cached)) {
               if (
-                !Object.values(lessonStateKeys).includes(
-                  key as typeof lessonStateKeys.alphabet,
-                ) ||
+                !supportedLessonStateKeys.has(key) ||
                 typeof raw !== "string"
               )
                 continue;
@@ -232,9 +239,25 @@ function AccountLessonState({
   const read = useCallback((key: string) => values.current[key] ?? null, []);
   const write = useCallback(
     (key: string, value: string) => {
-      if (!userId || !active.current || values.current[key] === value) return;
-      values.current[key] = value;
-      pending.current[key] = value;
+      let nextValue = value;
+      if (key === lessonStateKeys.l02Vocabulary) {
+        try {
+          const previous: unknown = JSON.parse(values.current[key] ?? "null");
+          const next: unknown = JSON.parse(value);
+          if (previous && next && typeof previous === "object" && typeof next === "object" && !Array.isArray(previous) && !Array.isArray(next)) {
+            const previousState = Object.fromEntries(Object.entries(previous));
+            const nextState = Object.fromEntries(Object.entries(next));
+            const imageIds: unknown = previousState.imageVocabularyIds;
+            if (Array.isArray(imageIds) && !Object.hasOwn(nextState, "imageVocabularyIds"))
+              nextValue = JSON.stringify({ ...nextState, imageVocabularyIds: imageIds });
+          }
+        } catch {
+          // A new guided state replaces malformed data; valid image progress is merged above.
+        }
+      }
+      if (!userId || !active.current || values.current[key] === nextValue) return;
+      values.current[key] = nextValue;
+      pending.current[key] = nextValue;
       cachePending();
       void flush();
     },

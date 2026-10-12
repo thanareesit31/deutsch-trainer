@@ -1,16 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import Image from "next/image";
+import { useEffect, useMemo, useState } from "react";
 import alphabetData from "@/data/alphabet.json";
 import { readAlphabetLearningState } from "@/lib/alphabet-learning-storage";
 import { readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
-import { l13VocabularyImageEntries, vocabularyImageEntries } from "@/lib/vocabulary-image-content";
+import { vocabularyImageActivity, vocabularyImageGroups, l13VocabularyImageGroups, l13VocabularyImageEntries, vocabularyImageEntries, lessonVocabularyImageEntries, lessonVocabularyImageGroups, catalogVocabularyImageSource } from "@/lib/vocabulary-image-content";
 import { readGuidedState, vocabularyTrackActivities } from "@/lib/guided-learning";
 import { useContent } from "./content-provider";
 import { prepareL02VocabularyFlow } from "@/lib/l02-number-learning";
 
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
+import { CountryFlag } from "./vocabulary-image-matching";
+import { l03FamilyPluralPairs } from "@/lib/vocabulary-image-content";
+import { FamilyPluralLearning } from "./family-plural-learning";
+import { buildL14VocabularyFlow } from "@/lib/a13-grammar-learning";
 
 const alphabetItemIds = alphabetData.items.map((item) => item.id);
 
@@ -19,18 +24,28 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
   const { lessons, items } = useContent();
   const catalogFlow = lessons.find((lesson) => lesson.id === lessonId)?.learningFlows?.vocabulary;
   const flow = catalogFlow && lessonId === "L02" ? prepareL02VocabularyFlow(catalogFlow, items) : catalogFlow;
+  const catalogImageGroups = useMemo(
+    () => lessonId === "L02"
+      ? lessonVocabularyImageGroups(items, lessonId, ["Familienstand"])
+      : /^L(?:0[3-9]|1[0-2]|1[4-5])$/u.test(lessonId) ? lessonVocabularyImageGroups(items, lessonId) : [],
+    [items, lessonId],
+  );
+  const catalogImageDefinitions = useMemo(() => lessonVocabularyImageEntries(items, catalogImageGroups), [items, catalogImageGroups]);
+  const imageGroups = lessonId === "L01" ? vocabularyImageGroups : lessonId === "L13" ? l13VocabularyImageGroups : catalogImageGroups;
+  const imageDefinitions = lessonId === "L01" ? vocabularyImageEntries : lessonId === "L13" ? l13VocabularyImageEntries : catalogImageDefinitions;
   const guidedState = flow ? readGuidedState(lessonState.read(flow.stateKey), flow, items) : null;
   const [alphabetStatus, setAlphabetStatus] = useState<"learned" | null>(null);
-  const [imageVocabularyLearned, setImageVocabularyLearned] = useState(false);
+  const [learnedImageVocabularyIds, setLearnedImageVocabularyIds] = useState<string[]>([]);
+  const [learnedFamilyPluralIds, setLearnedFamilyPluralIds] = useState<string[]>([]);
 
   useEffect(() => {
-    if (lessonId !== "L01") return;
+    const imageLesson = lessonId === "L01" || lessonId === "L02" || lessonId === "L13" || /^L(?:0[3-9]|1[0-2]|1[4-5])$/u.test(lessonId);
+    if (!imageLesson) return;
 
     const syncImageVocabularyStatus = () => {
-      const learnedIds = new Set(readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.images)));
-      setImageVocabularyLearned(
-        vocabularyImageEntries.every((entry) => learnedIds.has(entry.id)),
-      );
+      const stateKey = lessonId === "L01" ? lessonStateKeys.images : lessonId === "L02" ? lessonStateKeys.l02Vocabulary : lessonId === "L13" ? lessonStateKeys.l13Images : lessonStateKeys.vocabularyImages(lessonId);
+      const learnedIds = readLearnedImageVocabularyIds(lessonState.read(stateKey));
+      setLearnedImageVocabularyIds(learnedIds);
     };
     const syncAlphabetLearning = () => {
       const learningState = readAlphabetLearningState(lessonState.read(lessonStateKeys.alphabet));
@@ -42,14 +57,15 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
     };
 
     syncImageVocabularyStatus();
+    if (lessonId === "L03") setLearnedFamilyPluralIds(readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.l03FamilyPlural)));
     syncAlphabetLearning();
     window.addEventListener("storage", syncImageVocabularyStatus);
-    window.addEventListener("storage", syncAlphabetLearning);
+    if (lessonId === "L01") window.addEventListener("storage", syncAlphabetLearning);
     return () => {
       window.removeEventListener("storage", syncImageVocabularyStatus);
-      window.removeEventListener("storage", syncAlphabetLearning);
+      if (lessonId === "L01") window.removeEventListener("storage", syncAlphabetLearning);
     };
-  }, [lessonId, lessonState.read]);
+  }, [lessonId, lessonState.read, catalogImageGroups]);
 
   return (
     <main className="vocabulary-learning">
@@ -58,13 +74,13 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
         <>
           {([
             { id: "numbers", symbol: "123", eyebrow: "HÖREN & ZUORDNEN", title: "Die Zahlen", description: "เรียนรู้การอ่านและจับคู่ตัวเลขภาษาเยอรมัน" },
-            { id: "core", symbol: "Beruf", eyebrow: "BILDER", title: "WORTSCHATZ", description: "เรียนรู้คำศัพท์ประจำบท" },
+            { id: "core", symbol: "Beruf", eyebrow: vocabularyImageActivity.eyebrow.toLocaleUpperCase("de"), title: vocabularyImageActivity.title.toLocaleUpperCase("de"), description: "เรียนรู้คำศัพท์ประจำบท" },
           ] as const).map((track) => {
             const activities = flow ? vocabularyTrackActivities(flow, items, track.id) : [];
             const learned = activities.length > 0 && activities.every((activity) => guidedState?.learnedActivityIds.includes(activity.id));
             return (
               <Link key={track.id} className={`alphabet-entry-card${track.id === "core" ? " vocabulary-image-entry-card" : ""}`} href={`/learn/${lessonId}/vocabulary/${track.id}`}>
-                <span className={track.id === "numbers" ? "alphabet-entry-symbols" : "vocabulary-image-entry-art"} aria-hidden="true">{track.symbol}</span>
+                <span className={track.id === "core" ? "vocabulary-image-entry-art" : "alphabet-entry-symbols"} aria-hidden="true">{track.symbol}</span>
                 <span className="alphabet-entry-copy">
                   <span className="eyebrow">{track.eyebrow}</span>
                   <span className="alphabet-entry-title">
@@ -80,75 +96,101 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
         </>
       )}
 
-      {lessonId === "L13" && (
-        <>
-          {([
-            { id: "images/urban", eyebrow: "BILDER WORTSCHATZ", title: "Orte in der Stadt", description: "สถานที่ในเมือง · จับคู่คำศัพท์กับรูปภาพ", symbol: "Stadt" },
-          ] as const).map((collection) => {
-            const count = items.filter(
-              (item) => item.lessonId === lessonId && item.skill === "vocabulary" && l13VocabularyImageEntries.some((entry) => entry.id === item.id),
-            ).length;
-            return (
-              <Link key={collection.id} className={`alphabet-entry-card${collection.id === "images/urban" ? " vocabulary-image-entry-card" : ""}`} href={`/learn/${lessonId}/vocabulary/${collection.id}`}>
-                <span className="alphabet-entry-symbols" aria-hidden="true">{collection.symbol}</span>
-                <span className="alphabet-entry-copy">
-                  <span className="eyebrow">{collection.eyebrow}</span>
-                  <span className="alphabet-entry-title"><strong>{collection.title}</strong></span>
-                  <small>{collection.description} · {count} คำ</small>
-                </span>
-                <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
-              </Link>
-            );
-          })}
-        </>
-      )}
-
       {lessonId === "L01" && (
-        <>
-          <Link className="alphabet-entry-card" href="/learn/L01/vocabulary/alphabet">
-            <span className="alphabet-entry-symbols" aria-hidden="true">ABCD</span>
-            <span className="alphabet-entry-copy">
-              <span className="eyebrow">AUSSPRACHE</span>
-              <span className="alphabet-entry-title">
-                <strong>Das Alphabet</strong>
-                {alphabetStatus && (
-                  <span className="alphabet-entry-status">
-                    เรียนแล้ว
-                  </span>
-                )}
-              </span>
-              <small>เรียนรู้ตัวอักษรและเสียงภาษาเยอรมัน</small>
+        <Link className="alphabet-entry-card" href="/learn/L01/vocabulary/alphabet">
+          <span className="alphabet-entry-symbols" aria-hidden="true">ABCD</span>
+          <span className="alphabet-entry-copy">
+            <span className="eyebrow">AUSSPRACHE</span>
+            <span className="alphabet-entry-title">
+              <strong>Das Alphabet</strong>
+              {alphabetStatus && (
+                <span className="alphabet-entry-status">
+                  เรียนแล้ว
+                </span>
+              )}
             </span>
-            <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
-          </Link>
-
-          <Link className="alphabet-entry-card vocabulary-image-entry-card" href="/learn/L01/vocabulary/core-images">
-            <span className="vocabulary-image-entry-art" aria-hidden="true">Hallo!</span>
-            <span className="alphabet-entry-copy">
-              <span className="eyebrow">BILDER</span>
-              <span className="alphabet-entry-title">
-                <strong>WORTSCHATZ</strong>
-                {imageVocabularyLearned && <span className="alphabet-entry-status">เรียนแล้ว</span>}
-              </span>
-              <small>เรียนรู้คำศัพท์ประจำบท</small>
-            </span>
-            <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
-          </Link>
-        </>
+            <small>เรียนรู้ตัวอักษรและเสียงภาษาเยอรมัน</small>
+          </span>
+          <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
+        </Link>
       )}
+
+      {(lessonId === "L01" || lessonId === "L02" || lessonId === "L13" || catalogImageGroups.length > 0) && imageGroups.map((group) => {
+        const learnedCount = group.wordOrder.filter((id) => learnedImageVocabularyIds.includes(id)).length;
+        const previewEntry = group.wordOrder.map((id) => imageDefinitions.find((entry) => entry.id === id)).find((entry) => entry?.image || entry?.flag);
+        const previewSrc = lessonId === "L01" && previewEntry?.image
+          ? `/images/lektion-1-core-vocabulary-images/${previewEntry.image}.jpg`
+          : lessonId === "L13" && previewEntry?.image
+            ? `/images/lektion-13-city/${previewEntry.image}-places.webp`
+            : lessonId !== "L01" && lessonId !== "L13" && previewEntry?.image
+              ? catalogVocabularyImageSource(lessonId, previewEntry.image)
+              : undefined;
+        return (
+          <Link key={group.id} className="alphabet-entry-card vocabulary-image-entry-card" href={group.route}>
+            <span className="vocabulary-image-entry-art" aria-hidden="true">
+              {lessonId === "L01" && previewEntry?.flag
+                ? <CountryFlag flag={previewEntry.flag} />
+                : previewSrc && <Image src={previewSrc} alt="" width={960} height={640} sizes="88px" />}
+            </span>
+            <span className="alphabet-entry-copy">
+              <span className="eyebrow">{vocabularyImageActivity.germanTitle.toLocaleUpperCase("de")}</span>
+              <span className="alphabet-entry-title"><strong>{group.germanTitle}</strong>{learnedCount === group.wordOrder.length && <span className="alphabet-entry-status">เรียนแล้ว</span>}</span>
+              <small>{group.title} · จับคู่คำศัพท์กับรูปภาพ · {learnedCount} / {group.wordOrder.length} คำ</small>
+            </span>
+            <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
+          </Link>
+        );
+      })}
+
+      {lessonId === "L03" && <Link className="alphabet-entry-card vocabulary-image-entry-card" href="/learn/L03/vocabulary/familie-plural">
+        <span className="vocabulary-image-entry-art" aria-hidden="true">Plural</span>
+        <span className="alphabet-entry-copy">
+          <span className="eyebrow">WORTSCHATZ</span>
+          <span className="alphabet-entry-title"><strong>Familienplural</strong>{learnedFamilyPluralIds.length === l03FamilyPluralPairs.length && <span className="alphabet-entry-status">เรียนแล้ว</span>}</span>
+          <small>ครอบครัว · จับคู่เอกพจน์กับพหูพจน์ · {learnedFamilyPluralIds.length} / {l03FamilyPluralPairs.length} คู่</small>
+        </span>
+        <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
+      </Link>}
+
+      {lessonId === "L14" && (() => {
+        const directionFlow = buildL14VocabularyFlow();
+        const learnedCount = readGuidedState(lessonState.read(directionFlow.stateKey), directionFlow, items).learnedContentIds.length;
+        return <Link className="alphabet-entry-card" href="/learn/L14/vocabulary/directions">
+          <span className="alphabet-entry-symbols" aria-hidden="true">→</span>
+          <span className="alphabet-entry-copy">
+            <span className="eyebrow">WORTSCHATZ</span>
+            <span className="alphabet-entry-title"><strong>Wege und Richtungen</strong>{learnedCount === 10 && <span className="alphabet-entry-status">เรียนแล้ว</span>}</span>
+            <small>คำบอกทาง · จับคู่ความหมายกับคำเยอรมัน · {learnedCount} / 10 คำ</small>
+          </span>
+          <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
+        </Link>;
+      })()}
+
     </main>
   );
 }
 
-export function L13GrammarEntryPoints() {
+export function L03FamilyPluralPage() {
   const { items } = useContent();
+  return <FamilyPluralLearning items={items.filter((item) => item.lessonId === "L03" && item.group === "Familie" && typeof item.plural === "string")} />;
+}
+
+export function A13GrammarEntryPoints({ lessonId }: { lessonId: "L13" | "L14" | "L15" }) {
+  const { items } = useContent();
+  const cards = lessonId === "L13" ? [
+    { group: "es gibt + Akkusativ", route: "es-gibt", title: "Es gibt + Akkusativ", description: "รูปคำนามหลัง es gibt", symbol: "A" },
+    { group: "Personalpronomen im Dativ", route: "dativ", title: "Personalpronomen im Dativ", description: "สรรพนามรูป Dativ", symbol: "D" },
+    { group: "Verben", route: "verbs", title: "Verben", description: "กริยาที่ใช้พูดถึงเมืองและสถานที่", symbol: "V" },
+    { group: "Adjektive", route: "adjektive", title: "Adjektive", description: "คำคุณศัพท์และคำบอกลักษณะ", symbol: "A" },
+  ] : lessonId === "L14" ? [
+    { group: "Lokale Präpositionen", route: "lokale-praepositionen", title: "Lokale Präpositionen", description: "ตำแหน่งและ Wo? + Dativ", symbol: "Wo?" },
+  ] : [
+    { group: "Possessivartikel", route: "possessivartikel", title: "Possessivartikel: ihr / sein", description: "คำแสดงความเป็นเจ้าของใน Nominativ และ Akkusativ", symbol: "ihr" },
+  ];
   return <main className="vocabulary-learning">
-    {([
-      { group: "Verben", route: "verbs", title: "Verben", description: "กริยาที่ใช้พูดถึงเมืองและสถานที่", symbol: "V" },
-      { group: "Adjektive", route: "adjektive", title: "Adjektive", description: "คำคุณศัพท์และคำบอกลักษณะ", symbol: "A" },
-    ] as const).map((card) => {
-      const count = items.filter((item) => item.lessonId === "L13" && item.skill === "grammar" && item.group === card.group).length;
-      return <Link key={card.group} className="alphabet-entry-card" href={`/learn/L13/grammar/${card.route}`}>
+    {cards.map((card) => {
+      const count = items.filter((item) => item.lessonId === lessonId && item.skill === "grammar" && item.group === card.group).length;
+      return <Link key={card.group} className="alphabet-entry-card" href={`/learn/${lessonId}/grammar/${card.route}`}>
         <span className="alphabet-entry-symbols" aria-hidden="true">{card.symbol}</span>
         <span className="alphabet-entry-copy"><span className="eyebrow">GRAMMATIK</span><span className="alphabet-entry-title"><strong>{card.title}</strong></span><small>{card.description} · {count} คำ</small></span>
         <span className="alphabet-entry-arrow" aria-hidden="true">→</span>

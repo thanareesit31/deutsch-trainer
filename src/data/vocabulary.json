@@ -387,6 +387,30 @@
     "Category": "Familie"
   },
   {
+    "Vocab_ID": "V190", "Lesson_ID": "L03", "Word_German": "Mann", "Gender": "der", "Plural": "Männer", "Word_Thai": "ผู้ชาย / สามี", "Category": "Familie", "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V191", "Lesson_ID": "L03", "Word_German": "Frau", "Gender": "die", "Plural": "Frauen", "Word_Thai": "ผู้หญิง / ภรรยา", "Category": "Familie", "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V192", "Lesson_ID": "L03", "Word_German": "Onkel", "Gender": "der", "Plural": "Onkel", "Word_Thai": "ลุง / น้า / อา", "Category": "Familie", "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V193", "Lesson_ID": "L03", "Word_German": "Tante", "Gender": "die", "Plural": "Tanten", "Word_Thai": "ป้า / น้า / อา", "Category": "Familie", "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V194", "Lesson_ID": "L03", "Word_German": "Neffe", "Gender": "der", "Plural": "Neffen", "Word_Thai": "หลานชาย / ลูกของพี่น้อง", "Category": "Familie", "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V195", "Lesson_ID": "L03", "Word_German": "Nichte", "Gender": "die", "Plural": "Nichten", "Word_Thai": "หลานสาว / ลูกของพี่น้อง", "Category": "Familie", "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V196", "Lesson_ID": "L03", "Word_German": "Freund", "Gender": "der", "Plural": "Freunde", "Word_Thai": "เพื่อนชาย / แฟนชาย", "Category": "Familie", "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V197", "Lesson_ID": "L03", "Word_German": "Freundin", "Gender": "die", "Plural": "Freundinnen", "Word_Thai": "เพื่อนหญิง / แฟนหญิง", "Category": "Familie", "Source_Scope": "worksheet_support"
+  },
+  {
     "Vocab_ID": "V044",
     "Lesson_ID": "L04",
     "Word_German": "Stuhl",
@@ -411,7 +435,7 @@
     "Gender": "die",
     "Plural": "Lampen",
     "Word_Thai": "โคมไฟ",
-    "Category": "Möbel"
+    "Category": "Elektrogeräte"
   },
   {
     "Vocab_ID": "V047",
@@ -429,15 +453,6 @@
     "Gender": "der",
     "Plural": "Sessel",
     "Word_Thai": "เก้าอี้นวม / โซฟาเดี่ยว",
-    "Category": "Möbel"
-  },
-  {
-    "Vocab_ID": "V049",
-    "Lesson_ID": "L04",
-    "Word_German": "Couch",
-    "Gender": "die",
-    "Plural": "Couches",
-    "Word_Thai": "โซฟา",
     "Category": "Möbel"
   },
   {
@@ -493,6 +508,78 @@
     "Plural": "Spiegel",
     "Word_Thai": "กระจกเงา",
     "Category": "Möbel"
+  },
+  {
+    "Vocab_ID": "V182",
+    "Lesson_ID": "L04",
+    "Word_German": "Fernseher",
+    "Gender": "der",
+    "Plural": "Fernseher",
+    "Word_Thai": "โทรทัศน์",
+    "Category": "Elektrogeräte"
+  },
+  {
+    "Vocab_ID": "V183",
+    "Lesson_ID": "L04",
+    "Word_German": "Herd",
+    "Gender": "der",
+    "Plural": "Herde",
+    "Word_Thai": "เตา",
+    "Category": "Elektrogeräte"
+  },
+  {
+    "Vocab_ID": "V184",
+    "Lesson_ID": "L04",
+    "Word_German": "Kühlschrank",
+    "Gender": "der",
+    "Plural": "Kühlschränke",
+    "Word_Thai": "ตู้เย็น",
+    "Category": "Elektrogeräte"
+  },
+  {
+    "Vocab_ID": "V185",
+    "Lesson_ID": "L04",
+    "Word_German": "Waschmaschine",
+    "Gender": "die",
+    "Plural": "Waschmaschinen",
+    "Word_Thai": "เครื่องซักผ้า",
+    "Category": "Elektrogeräte"
+  },
+  {
+    "Vocab_ID": "V186",
+    "Lesson_ID": "L04",
+    "Word_German": "Ventilator",
+    "Gender": "der",
+    "Plural": "Ventilatoren",
+    "Word_Thai": "พัดลม",
+    "Category": "Elektrogeräte"
+  },
+  {
+    "Vocab_ID": "V187",
+    "Lesson_ID": "L04",
+    "Word_German": "Badewanne",
+    "Gender": "die",
+    "Plural": "Badewannen",
+    "Word_Thai": "อ่างอาบน้ำ",
+    "Category": "Bad"
+  },
+  {
+    "Vocab_ID": "V188",
+    "Lesson_ID": "L04",
+    "Word_German": "Dusche",
+    "Gender": "die",
+    "Plural": "Duschen",
+    "Word_Thai": "ฝักบัว / ห้องอาบน้ำ",
+    "Category": "Bad"
+  },
+  {
+    "Vocab_ID": "V189",
+    "Lesson_ID": "L04",
+    "Word_German": "Waschbecken",
+    "Gender": "das",
+    "Plural": "Waschbecken",
+    "Word_Thai": "อ่างล้างหน้า",
+    "Category": "Bad"
   },
   {
     "Vocab_ID": "V056",

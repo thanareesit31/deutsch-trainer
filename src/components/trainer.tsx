@@ -35,7 +35,7 @@ import {
   type Skill,
 } from "@/lib/content";
 import { makeQuestion, sessionItems, type Question } from "@/lib/engine";
-import { useStore } from "./store";
+import { isTestWorkspaceUser, useStore } from "./store";
 import { useLearning } from "./learning-store";
 import {
   LearnActivity,
@@ -49,10 +49,10 @@ import { PracticeSetup, Session } from "./practice";
 import { SettingsPage } from "./progress";
 import { AuthScreen } from "./auth-screen";
 import { TestWorkspaceNotice } from "./test-workspace-notice";
-import { L13GrammarEntryPoints, VocabularyLearningEntryPoints } from "./vocabulary-learning";
+import { A13GrammarEntryPoints, L03FamilyPluralPage, VocabularyLearningEntryPoints } from "./vocabulary-learning";
 import { AlphabetLearningPage } from "./alphabet-learning";
 import { VocabularyImageMatching } from "./vocabulary-image-matching";
-import { l13VocabularyImageGroups, vocabularyImageGroups } from "@/lib/vocabulary-image-content";
+import { l13VocabularyImageGroups, vocabularyImageGroups, lessonVocabularyImageGroups } from "@/lib/vocabulary-image-content";
 import { LearningBreadcrumbs } from "./learning-breadcrumbs";
 import { GuidedLearningPage } from "./guided-learning";
 
@@ -97,6 +97,7 @@ function App() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { data, ready, error, user, signOut } = useStore();
+  const allowUnlearnedPractice = isTestWorkspaceUser(user);
   const history = useLearning();
   const selectedSession =
     history.sessions.find((s) => s.id === searchParams.get("id")) ||
@@ -145,7 +146,9 @@ function App() {
   ) => {
     try {
       const learned = new Set(history.exposures.map((e) => e.item_id));
-      const eligible = pool.filter((i) => learned.has(i.id));
+      const eligible = allowUnlearnedPractice
+        ? pool
+        : pool.filter((i) => learned.has(i.id));
       const selected = ordered
         ? eligible
         : sessionItems(eligible, count, {}, false);
@@ -179,6 +182,9 @@ function App() {
       : path.startsWith(p) || (p === "/learn" && path.startsWith("/lesson"));
   let page: React.ReactNode;
   const parts = path.split("/").filter(Boolean);
+  const catalogVocabularyImageGroups = ["L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10", "L11", "L12", "L14", "L15"]
+    .flatMap((lessonId) => lessonVocabularyImageGroups(items, lessonId));
+  const l02FamilienstandImageGroups = lessonVocabularyImageGroups(items, "L02", ["Familienstand"]);
   if (!ready)
     page = (
       <div className="loading">
@@ -232,17 +238,32 @@ function App() {
     page = <VocabularyLearningEntryPoints key={path} lessonId="L02" />;
   else if (path === "/learn/L13/vocabulary")
     page = <VocabularyLearningEntryPoints key={path} lessonId="L13" />;
+  else if (path === "/learn/L14/vocabulary" || path === "/learn/L15/vocabulary")
+    page = <VocabularyLearningEntryPoints key={path} lessonId={parts[1]} />;
+  else if (path === "/learn/L14/vocabulary/directions")
+    page = <GuidedLearningPage key={path} lessonId="L14" skill="vocabulary" />;
+  else if (path === "/learn/L03/vocabulary/familie-plural")
+    page = <L03FamilyPluralPage key={path} />;
+  else if (parts[0] === "learn" && parts[1] && /^L(?:0[3-9]|1[0-2])$/u.test(parts[1]) && parts[2] === "vocabulary" && parts.length === 3)
+    page = <VocabularyLearningEntryPoints key={path} lessonId={parts[1]} />;
   else if (process.env.NODE_ENV !== "production" && path === "/__prototype/L13/context-reading")
     page = <L13ContextLesson key={path} mode="reading" />;
   else if (process.env.NODE_ENV !== "production" && path === "/__prototype/L13/context-listening")
     page = <L13ContextLesson key={path} mode="listening" />;
-  else if (path === "/learn/L13/grammar") page = <L13GrammarEntryPoints key={path} />;
+  else if (["L13", "L14", "L15"].some((lessonId) => path === `/learn/${lessonId}/grammar`))
+    page = <A13GrammarEntryPoints key={path} lessonId={parts[1] as "L13" | "L14" | "L15"} />;
   else if (
     parts[0] === "learn" && parts[1] === "L02" && parts[2] === "vocabulary" && parts.length === 4 &&
     (parts[3] === "numbers" || parts[3] === "core")
   ) page = <GuidedLearningPage key={path} lessonId="L02" skill="vocabulary" track={parts[3]} />;
   else if (parts[0] === "learn" && parts[1] === "L13" && parts[2] === "grammar" && ["verbs", "verben"].includes(parts[3]))
     page = <GuidedLearningPage key={path} lessonId="L13" skill="grammar" grammarTrack="verbs" />;
+  else if (parts[0] === "learn" && parts[1] === "L13" && parts[2] === "grammar" && ["es-gibt", "dativ"].includes(parts[3]))
+    page = <GuidedLearningPage key={path} lessonId="L13" skill="grammar" grammarTrack={parts[3] as "es-gibt" | "dativ"} />;
+  else if (path === "/learn/L14/grammar/lokale-praepositionen")
+    page = <GuidedLearningPage key={path} lessonId="L14" skill="grammar" grammarTrack="lokale-praepositionen" />;
+  else if (path === "/learn/L15/grammar/possessivartikel")
+    page = <GuidedLearningPage key={path} lessonId="L15" skill="grammar" grammarTrack="possessivartikel" />;
   else if (path === "/learn/L13/grammar/adjektive")
     page = <LearnActivity key={path} lessonId="L13" skill="grammar" group="Adjektive" start={start} />;
   else if (
@@ -263,10 +284,19 @@ function App() {
         key={path}
         items={items}
         groupId={vocabularyImageGroups.find((group) => group.route === path)!.id}
+        lessonId="L01"
       />
     );
   else if (l13VocabularyImageGroups.some((group) => group.route === path))
-    page = <VocabularyImageMatching key={path} items={items} groupId={l13VocabularyImageGroups.find((group) => group.route === path)!.id} />;
+    page = <VocabularyImageMatching key={path} items={items} groupId={l13VocabularyImageGroups.find((group) => group.route === path)!.id} lessonId="L13" />;
+  else if (l02FamilienstandImageGroups.some((group) => group.route === path)) {
+    const group = l02FamilienstandImageGroups.find((entry) => entry.route === path);
+    if (group) page = <VocabularyImageMatching key={path} items={items} groupId={group.id} lessonId="L02" />;
+  }
+  else if (catalogVocabularyImageGroups.some((group) => group.route === path)) {
+    const group = catalogVocabularyImageGroups.find((entry) => entry.route === path);
+    if (group) page = <VocabularyImageMatching key={path} items={items} groupId={group.id} lessonId={path.split("/")[2] || ""} />;
+  }
   else if (parts[0] === "learn" && parts[1] && parts[2])
     page =
       parts[1] === "L01" && parts[2] === "vocabulary" ? (
@@ -439,7 +469,6 @@ function App() {
 
 function LessonList({ initialLevel }: { initialLevel: string }) {
   const { items, lessons, coreVocabulary } = useContent();
-  const { data } = useStore();
   const history = useLearning();
   const [level, setLevel] = useState(initialLevel);
   return (
@@ -515,7 +544,7 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
 function LessonDetail({ id }: { id: string }) {
   const { items, lessons, coreVocabulary } = useContent();
   const lesson = lessons.find((l) => l.id === id)!;
-  const { data } = useStore();
+  const { user } = useStore();
   const history = useLearning();
   const lessonSkills = skills;
   return (
@@ -580,7 +609,7 @@ function LessonDetail({ id }: { id: string }) {
               )}
             </>
           );
-          return pool.length ? (
+          return pool.length || isTestWorkspaceUser(user) ? (
             <Link
               key={s.id}
               href={`/learn/${id}/${s.id}`}

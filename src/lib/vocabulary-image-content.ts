@@ -1,3 +1,38 @@
+import type { Item } from "@/lib/content";
+
+export const vocabularyImageActivity = {
+  eyebrow: "Bilder",
+  title: "Wortschatz",
+  germanTitle: "Bilder Wortschatz",
+};
+
+export type FamilyPluralPair = {
+  id: string;
+  singular: string;
+  plural: string;
+};
+
+export const l03FamilyPluralPairs: readonly FamilyPluralPair[] = [
+  { id: "V025", singular: "Vater", plural: "Väter" },
+  { id: "V027", singular: "Mutter", plural: "Mütter" },
+  { id: "V035", singular: "Großvater", plural: "Großväter" },
+  { id: "V037", singular: "Großmutter", plural: "Großmütter" },
+  { id: "V030", singular: "Sohn", plural: "Söhne" },
+  { id: "V031", singular: "Tochter", plural: "Töchter" },
+  { id: "V032", singular: "Bruder", plural: "Brüder" },
+  { id: "V033", singular: "Schwester", plural: "Schwestern" },
+  { id: "V040", singular: "Enkel", plural: "Enkel" },
+  { id: "V041", singular: "Enkelin", plural: "Enkelinnen" },
+  { id: "V190", singular: "Mann", plural: "Männer" },
+  { id: "V191", singular: "Frau", plural: "Frauen" },
+  { id: "V192", singular: "Onkel", plural: "Onkel" },
+  { id: "V193", singular: "Tante", plural: "Tanten" },
+  { id: "V194", singular: "Neffe", plural: "Neffen" },
+  { id: "V195", singular: "Nichte", plural: "Nichten" },
+  { id: "V196", singular: "Freund", plural: "Freunde" },
+  { id: "V197", singular: "Freundin", plural: "Freundinnen" },
+];
+
 export const vocabularyImageGroups = [
   {
     id: "greeting",
@@ -76,7 +111,111 @@ export const l13VocabularyImageEntries: VocabularyImageEntryDefinition[] = l13Ci
   image, lookup: [german.replace(/^(der|die|das) /, "")],
 } as VocabularyImageEntryDefinition));
 
-export type VocabularyImageGroupId = (typeof vocabularyImageGroups)[number]["id"] | (typeof l13VocabularyImageGroups)[number]["id"];
+export type VocabularyImageGroupId = string;
+
+export type VocabularyImageGroup = {
+  id: string;
+  title: string;
+  germanTitle: string;
+  route: string;
+  wordOrder: readonly string[];
+  pictureOrder: readonly string[];
+};
+
+export function vocabularyImagePages(wordOrder: readonly string[]): string[][] {
+  const count = Math.max(1, Math.ceil(wordOrder.length / 6));
+  const pages: string[][] = [];
+  for (let page = 0, offset = 0; page < count; page++) {
+    const size = Math.ceil((wordOrder.length - offset) / (count - page));
+    pages.push(wordOrder.slice(offset, offset + size));
+    offset += size;
+  }
+  return pages;
+}
+
+const vocabularyImageGroupThai: Record<string, string> = {
+  Familie: "ครอบครัว",
+  Familienstand: "สถานภาพครอบครัว",
+  Möbel: "เฟอร์นิเจอร์",
+  Elektrogeräte: "เครื่องใช้ไฟฟ้า",
+  Bad: "ห้องน้ำ",
+  Gegenstände: "สิ่งของ",
+  "Büro & Technik": "สำนักงานและเทคโนโลยี",
+  Freizeitaktivitäten: "กิจกรรมยามว่าง",
+  Orte: "สถานที่",
+  Wochentage: "วันในสัปดาห์",
+  Tageszeiten: "ช่วงเวลาของวัน",
+  "Essen und Trinken": "อาหารและเครื่องดื่ม",
+  "Verkehrsmittel & Reise": "การเดินทางและยานพาหนะ",
+  Alltagsaktivitäten: "กิจวัตรประจำวัน",
+  Jahreszeiten: "ฤดูกาล",
+  Monate: "เดือน",
+  Institutionen: "สถานที่บริการในเมือง",
+  "Plätze und Wege": "สถานที่และทางในเมือง",
+  "Wohnen und Zimmer": "บ้านและห้อง",
+  "Teile der Wohnung": "ส่วนต่าง ๆ ของที่อยู่อาศัย",
+};
+
+const l03FamilyImageAliases = new Map([
+  ["V026", "V025"],
+  ["V028", "V027"],
+  ["V036", "V035"],
+  ["V038", "V037"],
+]);
+
+export function catalogVocabularyImageSource(lessonId: string, image: string): string {
+  if (image.startsWith("/images/")) return image;
+  if (lessonId === "L02") return `/images/lektion-2-vocabulary/${image}-v2.webp`;
+  if (lessonId === "L14" || lessonId === "L15") return `/images/lektion-${lessonId.slice(1)}-vocabulary/${image}.png`;
+  const filename = lessonId === "L03" ? `${image}-family-v2.png`
+    : lessonId === "L04" && image === "V053" ? `${image}-isolated-v3.jpg`
+    : ["L04", "L05"].includes(lessonId) ? `${image}-isolated-v2.jpg`
+      : `${image}.jpg`;
+  return `/images/lektion-${lessonId.slice(1)}-vocabulary/${filename}`;
+}
+
+export function lessonVocabularyImageGroups(items: Item[], lessonId: string, onlyGroups?: readonly string[]): VocabularyImageGroup[] {
+  const lessonItems = items.filter((item) =>
+    item.lessonId === lessonId && item.skill === "vocabulary" && item.collection === "core" &&
+    (!onlyGroups || onlyGroups.includes(item.group)),
+  );
+  const groupNames = [...new Set(lessonItems.map((item) => item.group))];
+  return groupNames.map((germanTitle) => {
+    const wordOrder = lessonItems.filter((item) => item.group === germanTitle && !(lessonId === "L03" && l03FamilyImageAliases.has(item.id))).map((item) => item.id);
+    const slug = germanTitle.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("de")
+      .replace(/&/g, " ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    return {
+      id: `${lessonId.toLocaleLowerCase("de")}-${slug}`,
+      title: vocabularyImageGroupThai[germanTitle] ?? germanTitle,
+      germanTitle,
+      route: `/learn/${lessonId}/vocabulary/images/${slug}`,
+      wordOrder,
+      pictureOrder: [...wordOrder].reverse(),
+    };
+  });
+}
+
+export function lessonVocabularyImageEntries(
+  items: Item[],
+  groups: VocabularyImageGroup[],
+): VocabularyImageEntryDefinition[] {
+  const groupByItem = new Map(groups.flatMap((group) => group.wordOrder.map((id) => [id, group.id] as const)));
+  const entries: VocabularyImageEntryDefinition[] = [];
+  for (const item of items) {
+    const groupId = groupByItem.get(item.id);
+    if (groupId) entries.push({
+      id: item.id,
+      german: [item, ...items.filter((candidate) => candidate.lessonId === "L03" && l03FamilyImageAliases.get(candidate.id) === item.id)]
+        .map((member, index) => index === 0 ? member.answer : member.answer.replace(/^(der|die|das) /u, "")).join(" / "),
+      itemIds: [item.id, ...items.filter((candidate) => candidate.lessonId === "L03" && l03FamilyImageAliases.get(candidate.id) === item.id).map((member) => member.id)],
+      reading: "",
+      meaning: item.meaning,
+      groupId,
+      image: item.image ?? (item.lessonId === "L03" ? l03FamilyImageAliases.get(item.id) ?? item.id : item.id),
+    });
+  }
+  return entries;
+}
 export type CountryFlagId =
   | "france" | "australia" | "thailand" | "germany" | "austria"
   | "switzerland" | "turkey" | "japan" | "china" | "spain" | "italy"
@@ -91,6 +230,7 @@ export type VocabularyImageEntryDefinition = {
   image?: string;
   flag?: CountryFlagId;
   lookup?: string[];
+  itemIds?: readonly string[];
 };
 
 export const vocabularyImageEntries: VocabularyImageEntryDefinition[] = [

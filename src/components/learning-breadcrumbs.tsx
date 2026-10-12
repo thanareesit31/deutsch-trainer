@@ -3,37 +3,57 @@
 import Link from "next/link";
 import { useEffect, useRef, type ReactNode } from "react";
 import { usePathname } from "next/navigation";
-import { skills } from "@/lib/content";
+import { lessonVocabularyImageGroups, vocabularyImageActivity, vocabularyImageGroups, l13VocabularyImageGroups } from "@/lib/vocabulary-image-content";
+import { getLevel, skills } from "@/lib/content";
 import { useContent } from "./content-provider";
 
 // Derive the learning hierarchy from the route, so direct links and reloads keep it.
 export function LearningBreadcrumbs() {
   const path = usePathname();
-  const { lessons } = useContent();
+  const { lessons, items } = useContent();
   const parts = path.split("/").filter(Boolean);
   if (!["lesson", "learn"].includes(parts[0]) || !parts[1]) return null;
   const lesson = lessons.find((entry) => entry.id === parts[1]);
   if (!lesson) return null;
+  const level = getLevel(lesson.id);
+  const imageGroup = parts[2] === "vocabulary"
+    ? lesson.id === "L01" ? vocabularyImageGroups.find((group) => group.route === path)
+      : lesson.id === "L13" ? l13VocabularyImageGroups.find((group) => group.route === path)
+        : /^L(?:0[3-9]|1[0-2]|1[4-5])$/u.test(lesson.id) ? lessonVocabularyImageGroups(items, lesson.id).find((group) => group.route === path)
+          : undefined
+    : undefined;
   const crumbs = [
+    { label: level, href: `/learn?level=${level}` },
     { label: `Lektion ${String(lesson.number).padStart(2, "0")}`, href: `/lesson/${lesson.id}` },
   ];
   if (parts[0] === "learn" && parts[2]) {
     crumbs.push({ label: skills.find((skill) => skill.id === parts[2])?.de ?? parts[2], href: `/learn/${lesson.id}/${parts[2]}` });
     if (parts[3]) {
       const l13Label = lesson.id === "L13" ? ({
-        "vocabulary:images": "Bilder Wortschatz",
         "vocabulary:extra": "Zusatzwortschatz",
         "grammar:verben": "Verben",
         "grammar:adjektive": "Adjektive",
+        "grammar:es-gibt": "Es gibt + Akkusativ",
+        "grammar:dativ": "Personalpronomen im Dativ",
       } as Record<string, string>)[`${parts[2]}:${parts[3]}`] : undefined;
-      const label = l13Label ?? (parts[3] === "alphabet" ? "Das Alphabet"
+      const a13Label = ({
+        "L14:vocabulary:directions": "Wege und Richtungen",
+        "L14:grammar:lokale-praepositionen": "Lokale Präpositionen",
+        "L15:grammar:possessivartikel": "Possessivartikel",
+      } as Record<string, string>)[`${lesson.id}:${parts[2]}:${parts[3]}`];
+      const familyLabel = lesson.id === "L03" && parts[2] === "vocabulary" && parts[3] === "familie-plural" ? "Familienplural" : undefined;
+      const label = l13Label ?? a13Label ?? familyLabel ?? (parts[3] === "alphabet" ? "Das Alphabet"
         : parts[3] === "numbers" ? "Die Zahlen"
-        : ["core-images", "core"].includes(parts[3]) ? "Bilder Wortschatz"
+        : imageGroup ? imageGroup.germanTitle
+        : parts[2] === "vocabulary" && ["images", "core-images", "core"].includes(parts[3]) ? vocabularyImageActivity.germanTitle
         : parts[3] === "pronouns" ? "Personalpronomen"
         : parts[3] === "verbs" ? "Verben"
         : parts[3] === "sentences" ? "Fragen und Sätze"
         : parts[3].replaceAll("-", " ").replace(/\b\p{L}/gu, (letter) => letter.toLocaleUpperCase("de")));
-      const href = lesson.id === "L13" && parts[2] === "vocabulary" && parts[3] === "images"
+      const href = imageGroup ? imageGroup.route
+        : lesson.id === "L13" && parts[2] === "vocabulary" && parts[3] === "images" && !parts[4]
+        ? "/learn/L13/vocabulary/images/urban"
+        : lesson.id === "L13" && parts[2] === "vocabulary" && parts[3] === "images"
         ? "/learn/L13/vocabulary/images/urban"
         : `/learn/${lesson.id}/${parts[2]}/${parts[3]}`;
       crumbs.push({ label, href });

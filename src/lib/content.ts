@@ -128,6 +128,7 @@ export interface VerbIntroduction {
   infinitive: string;
   thaiMeaning: string;
   meaningNote?: string;
+  learningNote?: string;
   examples: { de: string; th: string }[];
 }
 export interface Lesson {

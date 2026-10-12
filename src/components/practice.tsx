@@ -25,7 +25,7 @@ import {
   type Skill,
 } from "@/lib/content";
 import { type Question } from "@/lib/engine";
-import { useStore } from "./store";
+import { isTestWorkspaceUser, useStore } from "./store";
 import { Empty, Meter, SectionTitle } from "./ui";
 import type { StartSession } from "./trainer";
 import { useLearning } from "./learning-store";
@@ -50,7 +50,8 @@ export function PracticeSetup({
   start: StartSession;
 }) {
   const { items, lessons } = useContent();
-  const { data } = useStore();
+  const { data, user } = useStore();
+  const allowUnlearnedPractice = isTestWorkspaceUser(user);
   const voice = useGermanVoice();
   const history = useLearning();
   const lesson = lessons.find((l) => l.id === lessonId)!;
@@ -76,8 +77,9 @@ export function PracticeSetup({
   const learnedPool = pool.filter((i) =>
     history.exposures.some((e) => e.item_id === i.id),
   );
+  const practicePool = allowUnlearnedPractice ? pool : learnedPool;
   const available =
-    mode === "article" ? learnedPool.filter((i) => i.article) : learnedPool;
+    mode === "article" ? practicePool.filter((i) => i.article) : practicePool;
   const modes = availableModes(skill, group).filter(
     (m) => m !== "flash" && (m !== "dialogue" || pool.every((item) => !!item.reply)),
   );

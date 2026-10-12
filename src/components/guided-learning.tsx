@@ -6,6 +6,7 @@ import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
   activityPairs,
   completeActivity,
+  optionValue,
   readGuidedState,
   validateFlow,
   vocabularyTrackActivities,
@@ -29,7 +30,10 @@ import { GermanListenText } from "./german-listen-text";
 import { ConjugationMatching, ConjugationSummary } from "./conjugation-matching";
 import { PronounMatching, PronounSummary } from "./pronoun-matching";
 import { prepareL02GrammarFlow, pronounGroups } from "@/lib/pronoun-learning";
-import { buildL13VerbFlow } from "@/lib/l13-grammar-learning";
+import { buildL13GrammarFlow, buildL14GrammarFlow, buildL14VocabularyFlow, buildL15GrammarFlow } from "@/lib/a13-grammar-learning";
+import { isTestWorkspaceUser, useStore } from "./store";
+import type { Item } from "@/lib/content";
+import type { LearningActivity } from "@/lib/guided-learning";
 
 const sectionDescriptions: Record<string, string> = {
   "Zahlen · Einer + und + Zehner": "ตัวเลข · หลักหน่วย + und + หลักสิบ",
@@ -53,6 +57,30 @@ const sectionDescriptions: Record<string, string> = {
   "Beruf und Traumberuf": "อาชีพและอาชีพในฝัน",
 };
 
+function PatternSummary({ title, activities, items }: {
+  title: string;
+  activities: LearningActivity[];
+  items: Item[];
+}) {
+  return <div className="guided-pattern-summary">
+    <h2>{title}</h2>
+    <p>ทบทวนคู่คำและรูปที่เรียนแล้ว กดคำเยอรมันเพื่อฟังเสียงได้</p>
+    <div className="guided-pattern-summary-scroll">
+      <table>
+        <thead><tr><th scope="col">จุดสังเกต</th><th scope="col">รูปที่ใช้</th></tr></thead>
+        <tbody>{activities.flatMap((activity) => activityPairs(activity, items).map((pair) => {
+          const left = optionValue(pair.left, items);
+          const right = optionValue(pair.right, items);
+          return <tr key={pair.id}>
+            <td lang={/[\u0e00-\u0e7f]/u.test(left) ? "th" : "de"}>{left}</td>
+            <td><GermanListenText text={right} /></td>
+          </tr>;
+        }))}</tbody>
+      </table>
+    </div>
+  </div>;
+}
+
 export function GuidedLearningPage({
   lessonId,
   skill,
@@ -67,7 +95,10 @@ export function GuidedLearningPage({
   const { lessons, items } = useContent();
   const catalogFlow = lessons.find((l) => l.id === lessonId)?.learningFlows?.[skill];
   const flow = useMemo(() => {
-    if (lessonId === "L13" && skill === "grammar") return buildL13VerbFlow(items);
+    if (lessonId === "L13" && skill === "grammar") return buildL13GrammarFlow(items);
+    if (lessonId === "L14" && skill === "vocabulary") return buildL14VocabularyFlow();
+    if (lessonId === "L14" && skill === "grammar") return buildL14GrammarFlow();
+    if (lessonId === "L15" && skill === "grammar") return buildL15GrammarFlow();
     if (catalogFlow && lessonId === "L02") return skill === "vocabulary"
       ? prepareL02VocabularyFlow(catalogFlow, items)
       : prepareL02GrammarFlow(catalogFlow, items);
@@ -113,6 +144,8 @@ function GuidedFlow({
   track?: VocabularyTrack;
   grammarTrack?: GrammarTrack;
 }) {
+  const { user } = useStore();
+  const allowIncompleteNavigation = isTestWorkspaceUser(user);
   const { items } = useContent(),
     history = useLearning(),
     storage = useLessonState();
@@ -121,7 +154,9 @@ function GuidedFlow({
     readGuidedState(storage.read(stateKey), flow, items),
   );
   const activities = grammarTrack ? grammarTrackActivities(flow, items, grammarTrack) : track ? vocabularyTrackActivities(flow, items, track) : flow.activities;
-  const hasEndContent = track === "numbers" || grammarTrack === "verbs" || grammarTrack === "pronouns";
+  const hasPatternSummary = (lessonId === "L14" && skill === "vocabulary") ||
+    ["es-gibt", "dativ", "lokale-praepositionen", "possessivartikel"].includes(grammarTrack ?? "");
+  const hasEndContent = track === "numbers" || grammarTrack === "verbs" || grammarTrack === "pronouns" || hasPatternSummary;
   const [position, setPosition] = useState(() => {
     const first = activities.findIndex((a) => !state.learnedActivityIds.includes(a.id));
     return first < 0 ? hasEndContent ? activities.length + (track === "numbers" && state.numberEndPage === "board" ? 1 : 0) : Math.max(0, activities.length - 1) : first;
@@ -139,7 +174,10 @@ function GuidedFlow({
   const showNumberBoard = track === "numbers" && position > activities.length;
   const summaryIds = new Set(activities.flatMap((a) => a.contentIds));
   const summaryItems = items.filter((item) => item.numberContent && summaryIds.has(item.id));
-  const title = track === "numbers" ? "Zahlen" : track === "core" ? "WORTSCHATZ" : flow.title;
+  const title = track === "numbers" ? "Zahlen" : track === "core" ? "WORTSCHATZ" : track === "familienstand" ? "Familienstand"
+    : grammarTrack === "es-gibt" ? "Es gibt + Akkusativ"
+    : grammarTrack === "dativ" ? "Personalpronomen im Dativ"
+    : flow.title;
   const sectionTitle = activity?.section.split(" · ")[0] ?? (track === "numbers" ? showNumberBoard ? "Zahlen" : "Beobachtungen" : "Übersicht");
   const sectionDescription = activity
     ? sectionDescriptions[activity.section] ?? (activity.section.startsWith("Zahlen · ") ? activity.section.replace("Zahlen · ", "ตัวเลข · ") : "")
@@ -150,7 +188,7 @@ function GuidedFlow({
   }))];
   const progressTotal = progressItemIds.length;
   const progressLearned = progressItemIds.filter((id) => state.learnedContentIds.includes(id)).length;
-  const progressUnit = track === "numbers" ? "จำนวน" : grammarTrack === "sentences" ? "ประโยค" : grammarTrack === "verbs" ? "คำกริยา" : "คำ";
+  const progressUnit = track === "numbers" ? "จำนวน" : track === "familienstand" || grammarTrack === "sentences" ? "ประโยค" : grammarTrack === "verbs" ? "คำกริยา" : hasPatternSummary && skill === "grammar" ? "รูป" : "คำ";
   const categories: { key: string; label: string; thai: string; positions: number[] }[] = [];
   if (skill === "vocabulary" || grammarTrack) {
     activities.forEach((entry, index) => {
@@ -165,10 +203,11 @@ function GuidedFlow({
       { key: "observations", label: "Beobachtungen", thai: "จุดสังเกต", positions: [activities.length] },
       { key: "summary", label: "Übersicht", thai: "ตารางสรุป", positions: [activities.length + 1] },
     );
-    if (grammarTrack === "verbs" || grammarTrack === "pronouns") categories.push({ key: "summary", label: "Übersicht", thai: "ตารางสรุป", positions: [activities.length] });
+    if (grammarTrack === "verbs" || grammarTrack === "pronouns" || hasPatternSummary) categories.push({ key: "summary", label: "Übersicht", thai: "ตารางสรุป", positions: [activities.length] });
   }
   const completed =
     !!activity && state.learnedActivityIds.includes(activity.id);
+  const canAdvance = completed || allowIncompleteNavigation;
   const pairs = activity ? activityPairs(activity, items) : [];
   const matchedIds = activity ? (state.matches[activity.id] ?? []) : [];
   function persist(next: typeof state) {
@@ -224,8 +263,16 @@ function GuidedFlow({
   const verb = activity?.verbId
     ? items.find((i) => i.id === activity.verbId)?.verbContent
     : null;
-  const continuation = skill === "vocabulary"
-    ? { href: `/learn/${lessonId}/phrases`, label: "เรียนประโยคและสำนวนต่อ" }
+  const continuation = lessonId === "L14" && skill === "vocabulary"
+    ? { href: "/learn/L14/grammar", label: "เรียนไวยากรณ์ต่อ" }
+    : grammarTrack === "es-gibt"
+      ? { href: "/learn/L13/grammar/dativ", label: "เรียน Dativ ต่อ" }
+      : grammarTrack === "dativ"
+        ? { href: "/learn/L13/grammar/verbs", label: "เรียนกริยาต่อ" }
+        : hasPatternSummary && skill === "grammar"
+          ? { href: `/learn/${lessonId}/grammar`, label: "กลับหัวข้อไวยากรณ์" }
+    : skill === "vocabulary"
+      ? { href: `/learn/${lessonId}/phrases`, label: "เรียนประโยคและสำนวนต่อ" }
     : grammarTrack === "pronouns"
       ? { href: `/learn/${lessonId}/grammar/verbs`, label: "เรียนการผันกริยาต่อ" }
       : grammarTrack === "sentences"
@@ -240,7 +287,7 @@ function GuidedFlow({
             const first = category.positions[0];
             const active = category.positions.includes(position);
             const previouslyLearned = category.positions.every((index) => index < activities.length && state.learnedActivityIds.includes(activities[index].id));
-            const available = previouslyLearned || activities.slice(0, Math.min(first, activities.length))
+            const available = allowIncompleteNavigation || previouslyLearned || activities.slice(0, Math.min(first, activities.length))
               .every((entry) => state.learnedActivityIds.includes(entry.id))
               && (first <= activities.length || position >= activities.length || !!state.numberEndPage);
             return <button key={category.key} type="button" disabled={!available || busy}
@@ -386,12 +433,12 @@ function GuidedFlow({
             >
               ย้อนกลับ
             </button>
-            {completed && position === activities.length - 1 && !hasEndContent ? (
+            {canAdvance && position === activities.length - 1 && !hasEndContent ? (
               <Link className="button primary" href={continuation.href}>{continuation.label}</Link>
             ) : <button
               type="button"
               className="button primary"
-              disabled={!completed || busy}
+              disabled={!canAdvance || busy}
               onClick={() => setPosition((p) => p + 1)}
             >
               {isProfession || grammarTrack ? "หน้าถัดไป" : "ไปต่อ"}
@@ -400,7 +447,7 @@ function GuidedFlow({
         </section>
       ) : (
         <section className="guided-card">
-          {grammarTrack === "pronouns" ? <PronounSummary items={items} /> : grammarTrack === "verbs" ? <ConjugationSummary activities={activities} items={items} /> : track === "numbers" ? showNumberBoard ? <NumberSummaryBoard items={summaryItems} /> : <NumberObservations items={items} /> : null}
+          {grammarTrack === "pronouns" ? <PronounSummary items={items} /> : grammarTrack === "verbs" ? <ConjugationSummary activities={activities} items={items} /> : hasPatternSummary ? <PatternSummary title={title} activities={activities} items={items} /> : track === "numbers" ? showNumberBoard ? <NumberSummaryBoard items={summaryItems} /> : <NumberObservations items={items} /> : null}
           <div className="guided-navigation">
             <button
               type="button"
@@ -423,6 +470,8 @@ function GuidedFlow({
               <Link className="button primary" href={`/learn/${lessonId}/vocabulary/core`}>
                 เรียนคำศัพท์ต่อ
               </Link>
+            ) : hasPatternSummary ? (
+              <Link className="button primary" href={continuation.href}>{continuation.label}</Link>
             ) : skill === "vocabulary" ? (
               <Link
                 className="button primary"

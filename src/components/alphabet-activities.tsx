@@ -13,10 +13,11 @@ interface AlphabetActivityProps {
   onContinue: () => void;
   onBack: () => void;
   canGoBack: boolean;
+  canSkip?: boolean;
   onReturnToBoard?: () => void;
 }
 
-export function ListenAndChoose({ item, items, play, audioError, onLearned, onContinue, onBack, canGoBack, onReturnToBoard }: AlphabetActivityProps) {
+export function ListenAndChoose({ item, items, play, audioError, onLearned, onContinue, onBack, canGoBack, canSkip = false, onReturnToBoard }: AlphabetActivityProps) {
   const [options] = useState(() => shuffle(items));
   const [heard, setHeard] = useState(false);
   const [feedback, setFeedback] = useState<"wrong" | "correct" | null>(null);
@@ -66,13 +67,13 @@ export function ListenAndChoose({ item, items, play, audioError, onLearned, onCo
       <div className="alphabet-activity-navigation">
         <button className="button secondary" disabled={!canGoBack} onClick={onBack}>← ย้อนกลับ</button>
         {onReturnToBoard && <button className="button secondary" onClick={onReturnToBoard}>กลับกระดานตัวอักษร</button>}
-        {feedback === "correct" && <button className="button primary" onClick={onContinue}>ไปต่อ</button>}
+        {(feedback === "correct" || canSkip) && <button className="button primary" onClick={onContinue}>ไปต่อ</button>}
       </div>
     </section>
   );
 }
 
-export function FindSound({ item, items, play, audioError, onLearned, onContinue, onBack, canGoBack, onReturnToBoard }: AlphabetActivityProps) {
+export function FindSound({ item, items, play, audioError, onLearned, onContinue, onBack, canGoBack, canSkip = false, onReturnToBoard }: AlphabetActivityProps) {
   const [options] = useState(() => shuffle(items));
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [wrongId, setWrongId] = useState<string | null>(null);
@@ -152,7 +153,7 @@ export function FindSound({ item, items, play, audioError, onLearned, onContinue
       <div className="alphabet-activity-navigation">
         <button className="button secondary" disabled={!canGoBack} onClick={onBack}>← ย้อนกลับ</button>
         {onReturnToBoard && <button className="button secondary" onClick={onReturnToBoard}>กลับกระดานตัวอักษร</button>}
-        {feedback === "correct" && <button className="button primary" onClick={onContinue}>ไปต่อ</button>}
+        {(feedback === "correct" || canSkip) && <button className="button primary" onClick={onContinue}>ไปต่อ</button>}
       </div>
     </section>
   );

@@ -23,15 +23,38 @@ export function ConjugationMatching({ activity, items, matchedIds, busy, onMatch
   onMatch: (id: string) => Promise<void>;
 }) {
   const pairs = activityPairs(activity, items);
+  return <ConjugationBoard ariaLabel={`จับคู่รูปผัน ${items.find(i => i.id === activity.verbId)?.verbContent?.infinitive ?? ""}`}
+    pairs={pairs.map(pair => ({ id: pair.id, left: optionValue(pair.left, items), right: optionValue(pair.right, items) }))}
+    matchedIds={matchedIds} busy={busy} onMatch={id => onMatch(id)} />;
+}
+
+export type ConjugationBoardPair = { id: string; left: string; right: string };
+
+export function ConjugationBoard({ pairs, matchedIds, busy, onMatch, ariaLabel, tokenOrder, matchedTokenByRow }: {
+  pairs: ConjugationBoardPair[];
+  matchedIds: string[];
+  busy: boolean;
+  onMatch: (rowId: string, tokenId: string) => void | Promise<void>;
+  ariaLabel: string;
+  tokenOrder?: string[];
+  matchedTokenByRow?: Record<string, string>;
+}) {
   const { play, error } = useVocabularyAudio();
-  const [order] = useState(() => {
-    const ids = pairs.map(p => p.id);
+  const [order, setOrder] = useState(() => {
+    const ids = tokenOrder?.filter(id => pairs.some(pair => pair.id === id)) ?? pairs.map(p => p.id);
+    for (const pair of pairs) if (!ids.includes(pair.id)) ids.push(pair.id);
+    if (tokenOrder) return ids;
     for (let index = ids.length - 1; index > 0; index--) {
       const other = Math.floor(Math.random() * (index + 1));
       [ids[index], ids[other]] = [ids[other], ids[index]];
     }
     return ids;
   });
+  const tokenOrderKey = tokenOrder?.join("\u0000");
+  useEffect(() => {
+    if (!tokenOrder) return;
+    setOrder(tokenOrder.filter(id => pairs.some(pair => pair.id === id)));
+  }, [tokenOrderKey]); // eslint-disable-line react-hooks/exhaustive-deps
   const [selected, setSelected] = useState<string | null>(null);
   const [wrong, setWrong] = useState<{ row: string; token: string } | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -41,11 +64,14 @@ export function ConjugationMatching({ activity, items, matchedIds, busy, onMatch
   for (const id of matchedIds) {
     const pair = pairs.find(p => p.id === id);
     if (!pair) continue;
-    const index = remaining.findIndex(token => optionValue(pairs.find(p => p.id === token)!.right, items) === optionValue(pair.right, items));
+    const matchedTokenId = matchedTokenByRow?.[id];
+    const index = matchedTokenId
+      ? remaining.indexOf(matchedTokenId)
+      : remaining.findIndex(token => pairs.find(p => p.id === token)?.right === pair.right);
     if (index >= 0) remaining.splice(index, 1);
   }
-  function readPair(pair: (typeof pairs)[number]) {
-    play(`${optionValue(pair.left, items).split("/")[0].trim()} ${optionValue(pair.right, items)}`);
+  function readPair(pair: ConjugationBoardPair) {
+    play(`${pair.left.split("/")[0].trim()} ${pair.right}`);
   }
   async function assign(rowId: string, tokenId = selected) {
     if (busy || saving.current || matchedIds.includes(rowId) || !tokenId || !remaining.includes(tokenId)) return;
@@ -54,7 +80,7 @@ export function ConjugationMatching({ activity, items, matchedIds, busy, onMatch
     if (!row || !token) return;
     setSelected(null);
     if (timer.current) clearTimeout(timer.current);
-    if (optionValue(row.right, items) !== optionValue(token.right, items)) {
+    if (row.right !== token.right) {
       setWrong({ row: rowId, token: tokenId });
       timer.current = setTimeout(() => setWrong(null), 650);
       return;
@@ -62,11 +88,11 @@ export function ConjugationMatching({ activity, items, matchedIds, busy, onMatch
     setWrong(null);
     readPair(row);
     saving.current = true;
-    try { await onMatch(rowId); }
+    try { await onMatch(rowId, tokenId); }
     finally { saving.current = false; }
   }
   return <>
-    <div className="matching-board" aria-label={`จับคู่รูปผัน ${items.find(i => i.id === activity.verbId)?.verbContent?.infinitive ?? ""}`}>
+    <div className="matching-board" aria-label={ariaLabel}>
       <div className="matching-column">
         <h2>ประธาน</h2>
         {pairs.map(pair => {
@@ -81,9 +107,9 @@ export function ConjugationMatching({ activity, items, matchedIds, busy, onMatch
               event.preventDefault();
               void assign(pair.id, event.dataTransfer.getData("text/plain"));
             }}>
-            <span lang="de">{optionValue(pair.left, items)}</span>
+            <span lang="de">{pair.left}</span>
             <span className={`matching-drop${correct ? " filled correct" : wrong?.row === pair.id ? " incorrect" : ""}`}>
-              {correct ? <span lang="de">{optionValue(pair.right, items)} <Volume2 size={15} aria-hidden="true" /></span> : "เลือกคำตอบ"}
+              {correct ? <span lang="de">{pair.right} <Volume2 size={15} aria-hidden="true" /></span> : "เลือกคำตอบ"}
             </span>
           </button>;
         })}
@@ -96,9 +122,9 @@ export function ConjugationMatching({ activity, items, matchedIds, busy, onMatch
             return <button type="button" key={id} lang="de" disabled={busy} draggable={!busy}
               className={`matching-token${selected === id ? " selected" : ""}${wrong?.token === id ? " incorrect" : ""}`}
               aria-pressed={selected === id}
-              onClick={() => { setSelected(id); play(optionValue(pair.right, items)); }}
+              onClick={() => { setSelected(id); play(pair.right); }}
               onDragStart={event => { event.dataTransfer.setData("text/plain", id); event.dataTransfer.effectAllowed = "move"; setSelected(id); }}>
-              {optionValue(pair.right, items)} <Volume2 size={15} aria-hidden="true" />
+              {pair.right} <Volume2 size={15} aria-hidden="true" />
             </button>;
           })}
         </div>

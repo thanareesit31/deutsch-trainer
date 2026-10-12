@@ -306,3 +306,14 @@ export function useStore() {
   if (!value) throw new Error("StoreProvider is required");
   return value;
 }
+
+const testWorkspaceEmails = new Set([
+  "tester@deutsch.test",
+  "tester2@deutsch.test",
+]);
+
+export function isTestWorkspaceUser(user: User | null) {
+  return process.env.NODE_ENV !== "production" &&
+    Boolean(process.env.NEXT_PUBLIC_TEST_WORKSPACE_ID) &&
+    testWorkspaceEmails.has(user?.email?.toLowerCase() ?? "");
+}

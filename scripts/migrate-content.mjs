@@ -19,6 +19,7 @@ try {
     "20261008000000_l02_number_page_four.sql",
     "20261009000000_l02_model_spelling.sql",
     "20261009010000_l02_status_phrases.sql",
+    "20261012010000_l02_familienstand_learning.sql",
     "20261009030000_a13_lessons.sql",
     "20261009040000_a13_lesson_outlines.sql",
     "20261010000000_l13_learning_content.sql",
@@ -27,6 +28,9 @@ try {
     "20261010030000_l13_grammar_card_split.sql",
     "20261010040000_l13_verb_learning_state.sql",
     "20261011010000_l13_place_image_vocabulary.sql",
+    "20261011030000_l04_vocabulary_categories.sql",
+    "20261012040000_a13_l14_l15_content.sql",
+    "20261012050000_a13_l14_l15_states.sql",
   ]) {
     const sql = await readFile(
       new URL("../supabase/migrations/" + file, import.meta.url),

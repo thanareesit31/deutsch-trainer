@@ -21,15 +21,16 @@ import {
   status,
 } from "../src/lib/engine";
 
-test("preserves all 181 core identifiers across 12 lessons and keeps extra vocabulary separate", () => {
-  assert.equal(coreVocabulary.length, 181);
+test("preserves 188 core vocabulary identifiers across 12 lessons and keeps extra vocabulary separate", () => {
+  assert.equal(coreVocabulary.length, 188);
   assert.equal(lessons.length, 12);
-  assert.equal(new Set(coreVocabulary.map((w) => w.id)).size, 181);
+  assert.equal(new Set(coreVocabulary.map((w) => w.id)).size, 188);
   assert.equal(coreVocabulary.filter((w) => w.lessonId === "L01").length, 7);
   assert.equal(extraVocabulary.length, 16);
   assert.equal(new Set(items.map((i) => i.id)).size, items.length);
-  for (let i = 1; i <= 181; i++)
-    assert(itemById.has(`V${String(i).padStart(3, "0")}`));
+  for (let i = 1; i <= 189; i++)
+    if (i !== 49)
+      assert(itemById.has(`V${String(i).padStart(3, "0")}`));
 });
 test("keeps articles on nouns, distinguishes plural-only nouns", () => {
   const parent = coreVocabulary.find((w) => w.word === "Eltern")!;

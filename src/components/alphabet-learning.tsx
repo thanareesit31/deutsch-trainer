@@ -17,10 +17,13 @@ import { useAlphabetAudio } from "./alphabet-audio";
 import { FindSound, ListenAndChoose } from "./alphabet-activities";
 
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
+import { isTestWorkspaceUser, useStore } from "./store";
 
 const configuration = alphabetData as AlphabetLessonConfiguration;
 
 export function AlphabetLearningPage() {
+  const { user } = useStore();
+  const allowIncompleteNavigation = isTestWorkspaceUser(user);
   const lessonState = useLessonState();
   const sets = useMemo(
     () => [...configuration.sets].sort((left, right) => left.position - right.position),
@@ -185,6 +188,7 @@ export function AlphabetLearningPage() {
         onContinue={continueFlow}
         onBack={() => goToIndex(currentIndex - 1)}
         canGoBack={currentIndex > 0}
+        canSkip={allowIncompleteNavigation}
         onReturnToBoard={revisitingFromBoard ? returnToBoard : undefined}
       />
     </main>
