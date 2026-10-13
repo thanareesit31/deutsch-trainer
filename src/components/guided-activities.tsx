@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { Volume2 } from "lucide-react";
 import type { Item } from "@/lib/content";
 import {
@@ -8,6 +8,7 @@ import {
   optionValue,
   type LearningActivity,
   type LearningOption,
+  type LearningPair,
 } from "@/lib/guided-learning";
 import { speakGermanText, useGermanVoice } from "./german-audio";
 import { useVocabularyAudio } from "./vocabulary-audio";
@@ -42,6 +43,49 @@ export function LearningValue({
   ) : (
     <span lang={/[\u0e00-\u0e7f]/u.test(value) ? "th" : "de"}>{value}</span>
   );
+}
+
+export function RouteDiagram({ route }: { route: NonNullable<LearningPair["leftVisual"]>["route"] }) {
+  const markerId = `route-${useId().replaceAll(":", "")}`;
+  if (route === "distance") return <svg className="guided-route-diagram" viewBox="0 0 150 120" role="img" aria-label="เส้นทางจากจุดเริ่มถึงหลักระยะ 50 เมตร">
+    <path d="M18 78H132" stroke="#d8dfd6" strokeWidth="24" strokeLinecap="round" />
+    <path d="M18 78H132" stroke="#fff" strokeWidth="2" strokeDasharray="5 7" />
+    <circle cx="29" cy="78" r="10" fill="#258db3" stroke="#fff" strokeWidth="3" />
+    <path d="M44 78H103" stroke="#258db3" strokeWidth="5" strokeLinecap="round" strokeDasharray="7 6" />
+    <path d="M105 78L96 72V84Z" fill="#258db3" />
+    <path d="M116 41V86" stroke="#315344" strokeWidth="3" strokeLinecap="round" />
+    <path d="M116 42H134L128 52L134 62H116Z" fill="#e8b845" />
+    <rect x="58" y="29" width="48" height="27" rx="8" fill="#fff" stroke="#8ba99a" strokeWidth="2" />
+    <text x="82" y="47" textAnchor="middle" className="guided-route-distance-label">50 m</text>
+  </svg>;
+  const paths = {
+    straight: "M75 104V20",
+    right: "M28 55H116",
+    left: "M122 55H34",
+    "turn-right": "M75 111V55H125",
+    "turn-left": "M75 111V55H25",
+    cross: "M28 90L122 20",
+  } as const;
+  const end = {
+    straight: [75, 20], right: [122, 55], left: [28, 55],
+    "turn-right": [125, 55], "turn-left": [25, 55], cross: [122, 20],
+  } as const;
+  const labels = {
+    straight: "แผนผังถนน ลูกศรตรงไป",
+    right: "แผนผังถนน ลูกศรไปทางขวา",
+    left: "แผนผังถนน ลูกศรไปทางซ้าย",
+    "turn-right": "แผนผังถนน เลี้ยวขวาที่แยก",
+    "turn-left": "แผนผังถนน เลี้ยวซ้ายที่แยก",
+    cross: "แผนผังถนน เส้นทางข้ามถนน",
+  } as const;
+  const [x, y] = end[route];
+  return <svg className="guided-route-diagram" viewBox="0 0 150 120" role="img" aria-label={labels[route]}>
+    <defs><marker id={markerId} markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#258db3" /></marker></defs>
+    <path d="M15 55H135M75 12V108" stroke="#d8dfd6" strokeWidth="20" strokeLinecap="round" />
+    <path d="M15 55H135M75 12V108" stroke="#fff" strokeWidth="2" strokeDasharray="5 7" />
+    <path d={paths[route]} fill="none" stroke="#258db3" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" markerEnd={`url(#${markerId})`} />
+    <circle cx={x} cy={y} r="4" fill="#258db3" />
+  </svg>;
 }
 
 export function AudioChoice({
@@ -333,10 +377,39 @@ export function PairMatching({
         }
       }}
     >
-      <LearningValue option={pair[side]} items={items} />
+      {side === "left" && pair.leftVisual?.kind === "l14-route"
+        ? <RouteDiagram route={pair.leftVisual.route} />
+        : <LearningValue option={pair[side]} items={items} />}
       {hasSpeech && (activity.type === "conjugation" || side === "right") && <Volume2 size={16} aria-hidden="true" />}
     </button>
   );
+  if (pairs.length > 0 && pairs.every((pair) => pair.leftVisual?.kind === "l14-route")) {
+    return <>
+      <div className="matching-options-sticky guided-route-options" aria-label="เลือกคำบอกทาง">
+        {remainingRight.map((pair) => token(pair, "right"))}
+      </div>
+      <div className="guided-route-picture-grid" aria-label="จับคู่รูปกับคำบอกทาง">
+        {pairs.map((pair) => {
+          const matched = matchedIds.includes(pair.id);
+          return <article key={pair.id} className={`guided-route-picture-card${matched ? " matched" : ""}`}>
+            {matched && pair.leftVisual
+              ? <RouteDiagram route={pair.leftVisual.route} />
+              : token(pair, "left")}
+            {matched ? <>
+              <button type="button" className="german-listen-text" onClick={() => readPair(pair)}>
+                <LearningValue option={pair.right} items={items} /><Volume2 size={16} aria-hidden="true" />
+              </button>
+              <small>{items.find((item) => item.id === pair.contentIds[0])?.meaning}</small>
+            </> : <button type="button" className="guided-route-slot" disabled={busy || !!wrong.length || selection?.side !== "right"} onClick={() => void choose("left", pair.id)}>
+              {selection?.side === "right" ? "จับคู่คำนี้กับภาพ" : "เลือกคำศัพท์ด้านบนก่อน"}
+            </button>}
+          </article>;
+        })}
+      </div>
+      <p role="status" className="guided-feedback wrong">{wrong.length ? "ลองใหม่" : ""}</p>
+      {audioError && <p role="status">{audioError}</p>}
+    </>;
+  }
   return (
     <>
       <div className="guided-locked">
@@ -344,7 +417,7 @@ export function PairMatching({
           .filter((p) => matchedIds.includes(p.id))
           .map((p) => (
             <div key={p.id} className="guided-locked-pair">
-              <LearningValue option={p.left} items={items} />
+              {p.leftVisual?.kind === "l14-route" ? <RouteDiagram route={p.leftVisual.route} /> : <LearningValue option={p.left} items={items} />}
               <LearningValue option={p.right} items={items} />
               {hasSpeech && <button type="button" className="german-listen-text"
                 aria-label={`ฟังเสียง ${optionValue(p.left, items)} ${optionValue(p.right, items)}`}

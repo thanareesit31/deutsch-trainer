@@ -1,6 +1,6 @@
 # พื้นที่ทดสอบบนเครื่อง
 
-เปิดจากโฟลเดอร์โปรเจกต์ด้วย `npm run dev:test` แล้วเข้า **http://localhost:3002**
+เปิดจากโฟลเดอร์โปรเจกต์ด้วย `npm run dev:test` แล้วเข้า **http://localhost:3002** หากเครื่องไม่มี native binding ของ Turbopack ให้เปิดด้วย `TEST_WORKSPACE_WEBPACK=1 npm run dev:test`
 
 บน Mac ดับเบิลคลิก `test-workspace.command` เพื่อเปิดได้เช่นกัน ปล่อย Terminal เปิดไว้ระหว่างใช้งาน
 

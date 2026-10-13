@@ -1396,6 +1396,167 @@
       "collection": "core"
     },
     {
+      "id": "V217",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Materialien",
+      "title": "das Holz",
+      "meaning": "ไม้",
+      "answer": "das Holz",
+      "word": "Holz",
+      "article": "das",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V217-holz-v2.jpg"
+    },
+    {
+      "id": "V218",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Materialien",
+      "title": "das Papier",
+      "meaning": "กระดาษ",
+      "answer": "das Papier",
+      "word": "Papier",
+      "article": "das",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V218-papier-v2.jpg"
+    },
+    {
+      "id": "V219",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Materialien",
+      "title": "das Metall",
+      "meaning": "โลหะ",
+      "answer": "das Metall",
+      "word": "Metall",
+      "article": "das",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V219-metall-v2.jpg"
+    },
+    {
+      "id": "V220",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Materialien",
+      "title": "das Plastik",
+      "meaning": "พลาสติก",
+      "answer": "das Plastik",
+      "word": "Plastik",
+      "article": "das",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V220-plastik-v2.jpg"
+    },
+    {
+      "id": "V221",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Materialien",
+      "title": "das Glas",
+      "meaning": "แก้ว / กระจก",
+      "answer": "das Glas",
+      "word": "Glas",
+      "article": "das",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V221-glas-v2.jpg"
+    },
+    {
+      "id": "V222",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Farben",
+      "title": "weiß",
+      "meaning": "สีขาว",
+      "answer": "weiß",
+      "word": "weiß",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V222-weiss-v2.svg"
+    },
+    {
+      "id": "V223",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Farben",
+      "title": "gelb",
+      "meaning": "สีเหลือง",
+      "answer": "gelb",
+      "word": "gelb",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V223-gelb-v2.svg"
+    },
+    {
+      "id": "V224",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Farben",
+      "title": "orange",
+      "meaning": "สีส้ม",
+      "answer": "orange",
+      "word": "orange",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V224-orange-v2.svg"
+    },
+    {
+      "id": "V225",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Farben",
+      "title": "rot",
+      "meaning": "สีแดง",
+      "answer": "rot",
+      "word": "rot",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V225-rot-v2.svg"
+    },
+    {
+      "id": "V226",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Farben",
+      "title": "grün",
+      "meaning": "สีเขียว",
+      "answer": "grün",
+      "word": "grün",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V226-gruen-v2.svg"
+    },
+    {
+      "id": "V227",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Farben",
+      "title": "blau",
+      "meaning": "สีน้ำเงิน",
+      "answer": "blau",
+      "word": "blau",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V227-blau-v2.svg"
+    },
+    {
+      "id": "V228",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Farben",
+      "title": "braun",
+      "meaning": "สีน้ำตาล",
+      "answer": "braun",
+      "word": "braun",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V228-braun-v2.svg"
+    },
+    {
+      "id": "V229",
+      "lessonId": "L05",
+      "skill": "vocabulary",
+      "group": "Farben",
+      "title": "schwarz",
+      "meaning": "สีดำ",
+      "answer": "schwarz",
+      "word": "schwarz",
+      "collection": "core",
+      "image": "/images/lektion-05-vocabulary/V229-schwarz-v2.svg"
+    },
+    {
       "id": "V073",
       "lessonId": "L06",
       "skill": "vocabulary",
@@ -2348,7 +2509,7 @@
       "id": "V143",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Orte",
       "title": "der Bahnhof",
       "meaning": "สถานีรถไฟ",
       "answer": "der Bahnhof",
@@ -2362,7 +2523,7 @@
       "id": "V144",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Verkehrsmittel",
       "title": "der Bus",
       "meaning": "รถบัส",
       "answer": "der Bus",
@@ -2376,7 +2537,7 @@
       "id": "V145",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Verkehrsmittel",
       "title": "der Zug",
       "meaning": "รถไฟ",
       "answer": "der Zug",
@@ -2390,7 +2551,7 @@
       "id": "V146",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Orte",
       "title": "der Flughafen",
       "meaning": "สนามบิน",
       "answer": "der Flughafen",
@@ -2404,7 +2565,7 @@
       "id": "V147",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Gepäck",
       "title": "der Koffer",
       "meaning": "กระเป๋าเดินทาง",
       "answer": "der Koffer",
@@ -2418,7 +2579,7 @@
       "id": "V148",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Gepäck",
       "title": "der Rucksack",
       "meaning": "กระเป๋าเป้",
       "answer": "der Rucksack",
@@ -2432,7 +2593,7 @@
       "id": "V149",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Verkehrsmittel",
       "title": "die U-Bahn",
       "meaning": "รถไฟฟ้าใต้ดิน",
       "answer": "die U-Bahn",
@@ -2446,7 +2607,7 @@
       "id": "V150",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Verkehrsmittel",
       "title": "die Straßenbahn",
       "meaning": "รถราง",
       "answer": "die Straßenbahn",
@@ -2457,24 +2618,10 @@
       "collection": "core"
     },
     {
-      "id": "V151",
-      "lessonId": "L10",
-      "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
-      "title": "die Bahn",
-      "meaning": "รถไฟ / ระบบรถไฟ",
-      "answer": "die Bahn",
-      "word": "Bahn",
-      "article": "die",
-      "plural": "Bahnen",
-      "pluralOnly": false,
-      "collection": "core"
-    },
-    {
       "id": "V152",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Gepäck",
       "title": "die Tasche",
       "meaning": "กระเป๋า",
       "answer": "die Tasche",
@@ -2488,7 +2635,7 @@
       "id": "V153",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Verkehrsmittel",
       "title": "das Taxi",
       "meaning": "แท็กซี่",
       "answer": "das Taxi",
@@ -2502,7 +2649,7 @@
       "id": "V154",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Verkehrsmittel",
       "title": "das Flugzeug",
       "meaning": "เครื่องบิน",
       "answer": "das Flugzeug",
@@ -2516,7 +2663,7 @@
       "id": "V155",
       "lessonId": "L10",
       "skill": "vocabulary",
-      "group": "Verkehrsmittel & Reise",
+      "group": "Gepäck",
       "title": "das Gepäck",
       "meaning": "สัมภาระ",
       "answer": "das Gepäck",
@@ -2524,6 +2671,395 @@
       "article": "das",
       "pluralOnly": false,
       "collection": "core"
+    },
+    {
+      "id": "V198",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Verkehrsmittel",
+      "title": "die S-Bahn",
+      "meaning": "รถไฟชานเมือง",
+      "answer": "die S-Bahn",
+      "word": "S-Bahn",
+      "article": "die",
+      "plural": "S-Bahnen",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 115
+        }
+      ]
+    },
+    {
+      "id": "V199",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Verkehrsmittel",
+      "title": "der Skytrain",
+      "meaning": "รถไฟฟ้าเหนือดิน (BTS)",
+      "answer": "der Skytrain",
+      "word": "Skytrain",
+      "article": "der",
+      "plural": "Skytrains",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 115
+        }
+      ]
+    },
+    {
+      "id": "V200",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Verkehrsmittel",
+      "title": "das Auto",
+      "meaning": "รถยนต์",
+      "answer": "das Auto",
+      "word": "Auto",
+      "article": "das",
+      "plural": "Autos",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 115
+        }
+      ]
+    },
+    {
+      "id": "V201",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Verkehrsmittel",
+      "title": "das Tuk-Tuk",
+      "meaning": "รถตุ๊กตุ๊ก",
+      "answer": "das Tuk-Tuk",
+      "word": "Tuk-Tuk",
+      "article": "das",
+      "plural": "Tuk-Tuks",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 115
+        }
+      ]
+    },
+    {
+      "id": "V202",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Verkehrsmittel",
+      "title": "das Motorradtaxi",
+      "meaning": "วินมอเตอร์ไซค์",
+      "answer": "das Motorradtaxi",
+      "word": "Motorradtaxi",
+      "article": "das",
+      "plural": "Motorradtaxis",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 115
+        }
+      ]
+    },
+    {
+      "id": "V203",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Verkehrsmittel",
+      "title": "das Fahrrad",
+      "meaning": "จักรยาน",
+      "answer": "das Fahrrad",
+      "word": "Fahrrad",
+      "article": "das",
+      "plural": "Fahrräder",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 115
+        }
+      ]
+    },
+    {
+      "id": "V204",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Verkehrsmittel",
+      "title": "zu Fuß",
+      "meaning": "เดินเท้า",
+      "answer": "zu Fuß",
+      "word": "zu Fuß",
+      "type": "expression",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 115
+        }
+      ]
+    },
+    {
+      "id": "V205",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "das Gleis",
+      "meaning": "รางรถไฟ",
+      "answer": "das Gleis",
+      "word": "Gleis",
+      "article": "das",
+      "plural": "Gleise",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V206",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Orte",
+      "title": "der Bahnsteig",
+      "meaning": "ชานชาลา",
+      "answer": "der Bahnsteig",
+      "word": "Bahnsteig",
+      "article": "der",
+      "plural": "Bahnsteige",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V207",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "die Durchsage",
+      "meaning": "ประกาศตามสาย",
+      "answer": "die Durchsage",
+      "word": "Durchsage",
+      "article": "die",
+      "plural": "Durchsagen",
+      "image": "V207",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V208",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "der Abflug",
+      "meaning": "การออกเดินทางของเครื่องบิน",
+      "answer": "der Abflug",
+      "word": "Abflug",
+      "article": "der",
+      "plural": "Abflüge",
+      "image": "V208",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V209",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "der Schalter",
+      "meaning": "เคาน์เตอร์บริการ",
+      "answer": "der Schalter",
+      "word": "Schalter",
+      "article": "der",
+      "plural": "Schalter",
+      "image": "V209",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V210",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "die Abfahrt",
+      "meaning": "การออกเดินทาง",
+      "answer": "die Abfahrt",
+      "word": "Abfahrt",
+      "article": "die",
+      "plural": "Abfahrten",
+      "image": "V210",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V211",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "die Ankunft",
+      "meaning": "การมาถึง (ใช้กับการเดินทางหลายแบบ)",
+      "answer": "die Ankunft",
+      "word": "Ankunft",
+      "article": "die",
+      "plural": "Ankünfte",
+      "image": "V211",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V212",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "die Flugnummer",
+      "meaning": "หมายเลขเที่ยวบิน",
+      "answer": "die Flugnummer",
+      "word": "Flugnummer",
+      "article": "die",
+      "plural": "Flugnummern",
+      "image": "V212",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V213",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "aussteigen",
+      "meaning": "ลงจากยานพาหนะ",
+      "answer": "aussteigen",
+      "word": "aussteigen",
+      "type": "verb",
+      "plural": "ausgestiegen",
+      "image": "V213",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V214",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "umsteigen",
+      "meaning": "เปลี่ยน/ต่อยานพาหนะ",
+      "answer": "umsteigen",
+      "word": "umsteigen",
+      "type": "verb",
+      "plural": "umgestiegen",
+      "image": "V214",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V215",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "einsteigen",
+      "meaning": "ขึ้นยานพาหนะ",
+      "answer": "einsteigen",
+      "word": "einsteigen",
+      "type": "verb",
+      "plural": "eingestiegen",
+      "image": "V215",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
+    },
+    {
+      "id": "V216",
+      "lessonId": "L10",
+      "skill": "vocabulary",
+      "group": "Fahrpläne und Durchsage",
+      "title": "die Fahrkarte",
+      "meaning": "ตั๋วโดยสาร",
+      "answer": "die Fahrkarte",
+      "word": "Fahrkarte",
+      "article": "die",
+      "plural": "Fahrkarten",
+      "image": "V216",
+      "collection": "core",
+      "sourceScope": "worksheet_support",
+      "sources": [
+        {
+          "document": "ชีท Lektion 1-12.pdf",
+          "pdfPage": 117
+        }
+      ]
     },
     {
       "id": "V156",
@@ -6208,7 +6744,7 @@
       "article": "der",
       "meaning": "โรงเรียนอนุบาล",
       "type": "noun",
-      "image": "kindergarten",
+      "image": "/images/lektion-14-vocabulary/kindergarten-v2.jpg",
       "sourceScope": "core_book",
       "sources": [
         {
@@ -6230,7 +6766,7 @@
       "article": "die",
       "meaning": "โรงเรียน",
       "type": "noun",
-      "image": "schule",
+      "image": "/images/lektion-14-vocabulary/schule-v2.jpg",
       "sourceScope": "core_book",
       "sources": [
         {
@@ -6252,7 +6788,7 @@
       "article": "die",
       "meaning": "ที่ทำการไปรษณีย์",
       "type": "noun",
-      "image": "post",
+      "image": "/images/lektion-14-vocabulary/post-v2.jpg",
       "sourceScope": "core_book",
       "sources": [
         {
@@ -6274,7 +6810,7 @@
       "article": "die",
       "meaning": "ธนาคาร",
       "type": "noun",
-      "image": "bank",
+      "image": "/images/lektion-14-vocabulary/bank-v2.jpg",
       "sourceScope": "core_book",
       "sources": [
         {
@@ -6450,7 +6986,7 @@
       "article": "die",
       "meaning": "สะพาน",
       "type": "noun",
-      "image": "/images/lektion-13-city/bruecke-v2-places.webp",
+      "image": "/images/lektion-14-vocabulary/bruecke-v2.jpg",
       "sourceScope": "core_book",
       "sources": [
         {
@@ -6530,12 +7066,12 @@
       "id": "L14-V017",
       "lessonId": "L14",
       "skill": "vocabulary",
-      "collection": "extra",
-      "group": "Wegbeschreibung",
+      "collection": "core",
+      "group": "Plätze und Wege",
       "title": "die Stadtmitte",
       "answer": "die Stadtmitte",
       "word": "die Stadtmitte",
-      "meaning": "ใจกลางเมือง · อีกคำหนึ่งของ das Zentrum",
+      "meaning": "ใจกลางเมือง · มีความหมายใกล้กับ das Zentrum",
       "type": "expression",
       "sourceScope": "core_book",
       "sources": [
@@ -6544,14 +7080,15 @@
           "pdfPage": 7,
           "printedPage": 15
         }
-      ]
+      ],
+      "image": "/images/lektion-14-vocabulary/zentrum.png"
     },
     {
       "id": "L14-V018",
       "lessonId": "L14",
       "skill": "vocabulary",
-      "collection": "extra",
-      "group": "Wegbeschreibung",
+      "collection": "core",
+      "group": "Plätze und Wege",
       "title": "der Hauptbahnhof",
       "answer": "der Hauptbahnhof",
       "word": "der Hauptbahnhof",
@@ -6564,7 +7101,8 @@
           "pdfPage": 5,
           "printedPage": 13
         }
-      ]
+      ],
+      "image": "/images/lektion-14-vocabulary/bahnhof.png"
     },
     {
       "id": "L14-V019",
@@ -6683,26 +7221,6 @@
           "document": "หนังสือเรียน บท13-15.pdf",
           "pdfPage": 5,
           "printedPage": 13
-        }
-      ]
-    },
-    {
-      "id": "L14-V025",
-      "lessonId": "L14",
-      "skill": "vocabulary",
-      "collection": "extra",
-      "group": "Wegbeschreibung",
-      "title": "zu Fuß",
-      "answer": "zu Fuß",
-      "word": "zu Fuß",
-      "meaning": "เดินเท้า",
-      "type": "expression",
-      "sourceScope": "core_book",
-      "sources": [
-        {
-          "document": "หนังสือเรียน บท13-15.pdf",
-          "pdfPage": 8,
-          "printedPage": 16
         }
       ]
     },

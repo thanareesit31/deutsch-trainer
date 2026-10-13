@@ -16,6 +16,7 @@ import { CountryFlag } from "./vocabulary-image-matching";
 import { l03FamilyPluralPairs } from "@/lib/vocabulary-image-content";
 import { FamilyPluralLearning } from "./family-plural-learning";
 import { buildL14VocabularyFlow } from "@/lib/a13-grammar-learning";
+import { L12MonthCalendar } from "./l12-month-calendar";
 
 const alphabetItemIds = alphabetData.items.map((item) => item.id);
 
@@ -128,7 +129,9 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
         return (
           <Link key={group.id} className="alphabet-entry-card vocabulary-image-entry-card" href={group.route}>
             <span className="vocabulary-image-entry-art" aria-hidden="true">
-              {lessonId === "L01" && previewEntry?.flag
+              {lessonId === "L12" && group.id === "l12-monate"
+                ? <L12MonthCalendar itemId="V172" />
+                : lessonId === "L01" && previewEntry?.flag
                 ? <CountryFlag flag={previewEntry.flag} />
                 : previewSrc && <Image src={previewSrc} alt="" width={960} height={640} sizes="88px" />}
             </span>
@@ -154,13 +157,14 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
 
       {lessonId === "L14" && (() => {
         const directionFlow = buildL14VocabularyFlow();
-        const learnedCount = readGuidedState(lessonState.read(directionFlow.stateKey), directionFlow, items).learnedContentIds.length;
+        const directionIds = new Set(directionFlow.activities.flatMap((activity) => activity.contentIds));
+        const learnedCount = readGuidedState(lessonState.read(directionFlow.stateKey), directionFlow, items).learnedContentIds.filter((id) => directionIds.has(id)).length;
         return <Link className="alphabet-entry-card" href="/learn/L14/vocabulary/directions">
           <span className="alphabet-entry-symbols" aria-hidden="true">→</span>
           <span className="alphabet-entry-copy">
             <span className="eyebrow">WORTSCHATZ</span>
-            <span className="alphabet-entry-title"><strong>Wege und Richtungen</strong>{learnedCount === 10 && <span className="alphabet-entry-status">เรียนแล้ว</span>}</span>
-            <small>คำบอกทาง · จับคู่ความหมายกับคำเยอรมัน · {learnedCount} / 10 คำ</small>
+            <span className="alphabet-entry-title"><strong>Wege und Richtungen</strong>{learnedCount === 7 && <span className="alphabet-entry-status">เรียนแล้ว</span>}</span>
+            <small>คำบอกทาง · จับคู่แผนผังกับคำเยอรมัน · {learnedCount} / 7 คำ</small>
           </span>
           <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
         </Link>;

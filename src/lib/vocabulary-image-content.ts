@@ -122,6 +122,23 @@ export type VocabularyImageGroup = {
   pictureOrder: readonly string[];
 };
 
+export const l12MonthSeasonPages = [
+  { seasonId: "V166", monthIds: ["V172", "V173", "V174"] },
+  { seasonId: "V167", monthIds: ["V175", "V176", "V177"] },
+  { seasonId: "V168", monthIds: ["V178", "V179", "V180"] },
+  { seasonId: "V169", monthIds: ["V181", "V170", "V171"] },
+] as const;
+
+export const l12SeasonUnits = [
+  { id: "l12-jahreszeiten", title: "ฤดูกาล", germanTitle: "Jahreszeiten", route: "/learn/L12/vocabulary/images/jahreszeiten", wordOrder: ["V166", "V167", "V168", "V169"], pictureOrder: ["V168", "V166", "V169", "V167"] },
+  { id: "l12-monate", title: "เดือน", germanTitle: "Monate", route: "/learn/L12/vocabulary/images/monate", wordOrder: l12MonthSeasonPages.flatMap((page) => page.monthIds), pictureOrder: ["V173", "V172", "V174", "V176", "V177", "V175", "V179", "V180", "V178", "V170", "V171", "V181"] },
+] satisfies readonly VocabularyImageGroup[];
+
+export const l12MonthNumberById: Readonly<Partial<Record<string, number>>> = {
+  V170: 1, V171: 2, V172: 3, V173: 4, V174: 5, V175: 6,
+  V176: 7, V177: 8, V178: 9, V179: 10, V180: 11, V181: 12,
+};
+
 export function vocabularyImagePages(wordOrder: readonly string[]): string[][] {
   const count = Math.max(1, Math.ceil(wordOrder.length / 6));
   const pages: string[][] = [];
@@ -140,13 +157,17 @@ const vocabularyImageGroupThai: Record<string, string> = {
   Elektrogeräte: "เครื่องใช้ไฟฟ้า",
   Bad: "ห้องน้ำ",
   Gegenstände: "สิ่งของ",
+  Materialien: "วัสดุ",
+  Farben: "สี",
   "Büro & Technik": "สำนักงานและเทคโนโลยี",
   Freizeitaktivitäten: "กิจกรรมยามว่าง",
   Orte: "สถานที่",
   Wochentage: "วันในสัปดาห์",
   Tageszeiten: "ช่วงเวลาของวัน",
   "Essen und Trinken": "อาหารและเครื่องดื่ม",
-  "Verkehrsmittel & Reise": "การเดินทางและยานพาหนะ",
+  Verkehrsmittel: "ยานพาหนะและการเดินทาง",
+  Gepäck: "สัมภาระ",
+  "Fahrpläne und Durchsage": "ตารางเวลาและประกาศการเดินทาง",
   Alltagsaktivitäten: "กิจวัตรประจำวัน",
   Jahreszeiten: "ฤดูกาล",
   Monate: "เดือน",
@@ -163,8 +184,49 @@ const l03FamilyImageAliases = new Map([
   ["V038", "V037"],
 ]);
 
+const reframedVocabularyImageIds = new Set([
+  "V056", "V064", "V065", "V066", "V067", "V069",
+  "V073", "V074", "V075", "V076", "V077", "V078", "V079",
+  "V080", "V081", "V082", "V083", "V084", "V085", "V086",
+  "V182", "V183", "V184", "V185", "V186", "V187", "V188", "V189",
+]);
+
+const vocabularyImageOverrides = new Map<string, string>([
+  ...["V057", "V058", "V059", "V060", "V061", "V062", "V063", "V068", "V070", "V071"]
+    .map((id) => [id, `/images/lektion-05-vocabulary/${id}-landscape-v2.jpg`] as const),
+  ...Array.from({ length: 14 }, (_, index) => `V${String(87 + index).padStart(3, "0")}`)
+    .map((id) => [id, `/images/lektion-07-vocabulary/${id}-landscape-v2.jpg`] as const),
+  ...Array.from({ length: 12 }, (_, index) => `V${String(101 + index).padStart(3, "0")}`)
+    .map((id) => [id, `/images/lektion-08-vocabulary/${id}-place-v2.jpg`] as const),
+  ...Array.from({ length: 8 }, (_, index) => `V${String(113 + index).padStart(3, "0")}`)
+    .map((id) => [id, `/images/lektion-08-vocabulary/${id}-calendar-v2.svg`] as const),
+  ...Array.from({ length: 6 }, (_, index) => `V${String(121 + index).padStart(3, "0")}`)
+    .map((id) => [id, `/images/lektion-08-vocabulary/${id}-daytime-v3.jpg`] as const),
+  ...Array.from({ length: 16 }, (_, index) => `V${String(127 + index).padStart(3, "0")}`)
+    .map((id) => [id, `/images/lektion-09-vocabulary/${id}-landscape-v2.jpg`] as const),
+  ["V140", "/images/lektion-09-vocabulary/V140-sliced-loaf-v3.jpg"],
+  ...[
+    ...Array.from({ length: 8 }, (_, index) => 143 + index),
+    ...Array.from({ length: 4 }, (_, index) => 152 + index),
+    ...Array.from({ length: 19 }, (_, index) => 198 + index),
+  ]
+    .map((number) => [`V${number}`, `/images/lektion-10-vocabulary/V${number}-transport-v2.jpg`] as const),
+  ["V207", "/images/lektion-10-vocabulary/V207-announcement-v3.jpg"],
+  ["V208", "/images/lektion-10-vocabulary/V208-flight-takeoff-v4.jpg"],
+  ["V209", "/images/lektion-10-vocabulary/V209-service-counter-v3.jpg"],
+  ["V210", "/images/lektion-10-vocabulary/V210-timetable-v3.svg"],
+  ["V211", "/images/lektion-10-vocabulary/V211-timetable-v3.svg"],
+  ["V214", "/images/lektion-10-vocabulary/V214-transfer-v3.jpg"],
+  ...Array.from({ length: 10 }, (_, index) => `V${String(156 + index).padStart(3, "0")}`)
+    .map((id) => [id, `/images/lektion-11-vocabulary/${id}-landscape-v2.jpg`] as const),
+]);
+
 export function catalogVocabularyImageSource(lessonId: string, image: string): string {
   if (image.startsWith("/images/")) return image;
+  const override = vocabularyImageOverrides.get(image);
+  if (override) return override;
+  if (image === "V085") return "/images/lektion-06-vocabulary/V085-business-card-v1.svg";
+  if (reframedVocabularyImageIds.has(image)) return `/images/lektion-${lessonId.slice(1)}-vocabulary/${image}-framed-v3.webp`;
   if (lessonId === "L02") return `/images/lektion-2-vocabulary/${image}-v2.webp`;
   if (lessonId === "L14" || lessonId === "L15") return `/images/lektion-${lessonId.slice(1)}-vocabulary/${image}.png`;
   const filename = lessonId === "L03" ? `${image}-family-v2.png`
@@ -179,7 +241,15 @@ export function lessonVocabularyImageGroups(items: Item[], lessonId: string, onl
     item.lessonId === lessonId && item.skill === "vocabulary" && item.collection === "core" &&
     (!onlyGroups || onlyGroups.includes(item.group)),
   );
+  if (lessonId === "L12" && !onlyGroups) {
+    const availableIds = new Set(lessonItems.map((item) => item.id));
+    return l12SeasonUnits.filter((unit) => unit.wordOrder.every((id) => availableIds.has(id)));
+  }
   const groupNames = [...new Set(lessonItems.map((item) => item.group))];
+  if (lessonId === "L10") {
+    const groupOrder = ["Orte", "Verkehrsmittel", "Gepäck", "Fahrpläne und Durchsage"];
+    groupNames.sort((left, right) => groupOrder.indexOf(left) - groupOrder.indexOf(right));
+  }
   return groupNames.map((germanTitle) => {
     const wordOrder = lessonItems.filter((item) => item.group === germanTitle && !(lessonId === "L03" && l03FamilyImageAliases.has(item.id))).map((item) => item.id);
     const slug = germanTitle.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("de")

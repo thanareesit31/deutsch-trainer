@@ -141,13 +141,15 @@ export function FamilyPluralLearning({ items }: { items: { id: string; article?:
 
   return <main className="family-plural-learning">
     <div className="vocabulary-image-heading"><div><span className="eyebrow">WORTSCHATZ</span><h1>Familie: Singular und Plural</h1><p>{summary ? "สรุปรูปเอกพจน์และพหูพจน์ กดคำเพื่อฟังเสียง" : "จับคู่เอกพจน์ทางซ้ายกับพหูพจน์ทางขวา กดคำเพื่อฟังเสียง"}</p></div></div>
-    <div className="family-plural-legend" aria-label="สี Artikel">
-      <span><ArticleDot article="der" />der · Maskulin</span>
-      <span><ArticleDot article="die" />die · Feminin</span>
-      <span><ArticleDot article="das" />das · Neutrum</span>
-      <span><ArticleDot article="plural" />die · Plural (ไม่ใช่เพศ)</span>
+    <div className="family-plural-learning-sticky">
+      <div className="family-plural-legend" aria-label="สี Artikel">
+        <span><ArticleDot article="der" />der · Maskulin</span>
+        <span><ArticleDot article="die" />die · Feminin</span>
+        <span><ArticleDot article="das" />das · Neutrum</span>
+        <span><ArticleDot article="plural" />die · Plural (ไม่ใช่เพศ)</span>
+      </div>
+      <div className="vocabulary-image-progress" aria-live="polite"><span>เรียนแล้ว {completedCount} / {pairs.length} คู่</span><div className="vocabulary-image-progress-track" aria-hidden="true"><span style={{ width: `${pairs.length ? completedCount / pairs.length * 100 : 0}%` }} /></div></div>
     </div>
-    <div className="vocabulary-image-progress" aria-live="polite"><span>เรียนแล้ว {completedCount} / {pairs.length} คู่</span><div className="vocabulary-image-progress-track" aria-hidden="true"><span style={{ width: `${pairs.length ? completedCount / pairs.length * 100 : 0}%` }} /></div></div>
     {!unlocked ? <section className="vocabulary-image-locked">
       <h2>{summary ? "ตารางสรุป" : "จับคู่หน้าก่อนให้ครบ"}</h2>
       <p>จับคู่คำในหน้าก่อนให้ครบ แล้วจึงไปต่อ</p>

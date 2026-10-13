@@ -16,7 +16,7 @@ import {
 import { useContent } from "./content-provider";
 import { useLearning } from "./learning-store";
 import { useLessonState } from "./lesson-state-provider";
-import { AudioChoice, NumberChoice, PairMatching } from "./guided-activities";
+import { AudioChoice, NumberChoice, PairMatching, RouteDiagram } from "./guided-activities";
 import { NumberMatching } from "./number-matching";
 import { NumberObservations } from "./number-observations";
 import { NumberSummaryBoard } from "./number-summary-board";
@@ -62,16 +62,18 @@ function PatternSummary({ title, activities, items }: {
   activities: LearningActivity[];
   items: Item[];
 }) {
+  const hasRoutePictures = activities.some((activity) => activityPairs(activity, items).some((pair) => pair.leftVisual?.kind === "l14-route"));
   return <div className="guided-pattern-summary">
     <h2>{title}</h2>
     <p>ทบทวนคู่คำและรูปที่เรียนแล้ว กดคำเยอรมันเพื่อฟังเสียงได้</p>
     <div className="guided-pattern-summary-scroll">
-      <table>
-        <thead><tr><th scope="col">จุดสังเกต</th><th scope="col">รูปที่ใช้</th></tr></thead>
+      <table className={hasRoutePictures ? "guided-route-summary" : undefined}>
+        <thead><tr>{hasRoutePictures && <th scope="col">รูปภาพ</th>}<th scope="col">{hasRoutePictures ? "ความหมาย" : "จุดสังเกต"}</th><th scope="col">{hasRoutePictures ? "คำบอกทาง" : "รูปที่ใช้"}</th></tr></thead>
         <tbody>{activities.flatMap((activity) => activityPairs(activity, items).map((pair) => {
           const left = optionValue(pair.left, items);
           const right = optionValue(pair.right, items);
           return <tr key={pair.id}>
+            {hasRoutePictures && <td>{pair.leftVisual?.kind === "l14-route" && <RouteDiagram route={pair.leftVisual.route} />}</td>}
             <td lang={/[\u0e00-\u0e7f]/u.test(left) ? "th" : "de"}>{left}</td>
             <td><GermanListenText text={right} /></td>
           </tr>;

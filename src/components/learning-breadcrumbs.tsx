@@ -42,7 +42,8 @@ export function LearningBreadcrumbs() {
         "L15:grammar:possessivartikel": "Possessivartikel",
       } as Record<string, string>)[`${lesson.id}:${parts[2]}:${parts[3]}`];
       const familyLabel = lesson.id === "L03" && parts[2] === "vocabulary" && parts[3] === "familie-plural" ? "Familienplural" : undefined;
-      const label = l13Label ?? a13Label ?? familyLabel ?? (parts[3] === "alphabet" ? "Das Alphabet"
+      const l12ImageLabel = lesson.id === "L12" && parts[2] === "vocabulary" && parts[3] === "images" ? imageGroup?.germanTitle ?? "Bilder Wortschatz" : undefined;
+      const label = l13Label ?? a13Label ?? familyLabel ?? l12ImageLabel ?? (parts[3] === "alphabet" ? "Das Alphabet"
         : parts[3] === "numbers" ? "Die Zahlen"
         : imageGroup ? imageGroup.germanTitle
         : parts[2] === "vocabulary" && ["images", "core-images", "core"].includes(parts[3]) ? vocabularyImageActivity.germanTitle

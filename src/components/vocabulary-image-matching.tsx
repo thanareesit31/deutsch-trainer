@@ -18,6 +18,8 @@ import {
   lessonVocabularyImageGroups,
   vocabularyImagePages,
   catalogVocabularyImageSource,
+  l12MonthNumberById,
+  l12MonthSeasonPages,
   type CountryFlagId,
   type VocabularyImageGroupId,
   type VocabularyImageGroup,
@@ -31,6 +33,7 @@ import {
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
 import { isTestWorkspaceUser, useStore } from "./store";
 import { ArticleDot, ArticleLegend } from "./profession-matching";
+import { L12MonthCalendar } from "./l12-month-calendar";
 
 export function CountryFlag({ flag }: { flag: CountryFlagId }) {
   const viewBox = flag === "switzerland" ? "0 0 2 2" : ["australia", "eritrea"].includes(flag) ? "0 0 4 2" : flag === "usa" ? "0 0 3.8 2" : "0 0 3 2";
@@ -66,6 +69,10 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
   const allowIncompleteNavigation = isTestWorkspaceUser(user);
   const lessonState = useLessonState();
   const isL13 = groupId.startsWith("l13-");
+  const isL12 = lessonId === "L12";
+  const isL12SeasonGroup = isL12 && groupId === "l12-jahreszeiten";
+  const isL12MonthGroup = isL12 && groupId === "l12-monate";
+  const isL12MonthSummary = isL12MonthGroup && searchParams.get("summary") === "1";
   const isL02Familienstand = lessonId === "L02";
   const isCatalogLesson = isL02Familienstand || /^L(?:0[3-9]|1[0-2]|1[4-5])$/u.test(lessonId);
   const isGroupedImageVocabulary = lessonId === "L01" || isL13 || isCatalogLesson;
@@ -96,6 +103,7 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
   const [incorrectPair, setIncorrectPair] = useState<{ wordId: string; imageId: string } | null>(null);
   const [feedback, setFeedback] = useState("");
   const [hydrated, setHydrated] = useState(false);
+  const [l12Stage, setL12Stage] = useState<"study" | "match">(isL12 ? "study" : "match");
 
   useEffect(() => {
     setLearnedIds(readLearnedImageVocabularyIds(lessonState.read(stateKey)));
@@ -105,8 +113,10 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
   const learned = new Set(learnedIds);
   const byId = new Map(entries.map((entry) => [entry.id, entry] as const));
   const isPaginated = isCatalogLesson || isCountryGroup;
-  const pages = isPaginated ? vocabularyImagePages(group.wordOrder) : [[...group.wordOrder]];
-  const requestedPage = Number(searchParams.get("page") ?? "1");
+  const pages = isL12MonthGroup
+    ? l12MonthSeasonPages.map((seasonPage) => [...seasonPage.monthIds])
+    : isPaginated ? vocabularyImagePages(group.wordOrder) : [[...group.wordOrder]];
+  const requestedPage = isL12MonthSummary ? pages.length : Number(searchParams.get("page") ?? "1");
   const pageIndex = isPaginated && Number.isSafeInteger(requestedPage) && requestedPage > 0
     ? Math.min(requestedPage, pages.length) - 1 : 0;
   const currentPageIds = new Set(pages[pageIndex]);
@@ -119,7 +129,12 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
   const allItemIds = entries.flatMap((entry) => entry.itemIds);
   const completedCount = allItemIds.filter((id) => learned.has(id)).length;
   const groupEntries = entries.filter((entry) => entry.groupId === group.id);
-  const pageEntries = groupEntries.filter((entry) => currentPageIds.has(entry.id));
+  const pageEntries = isL12
+    ? group.pictureOrder.flatMap((id) => {
+      const entry = byId.get(id);
+      return entry && currentPageIds.has(id) ? [entry] : [];
+    })
+    : groupEntries.filter((entry) => currentPageIds.has(entry.id));
   const groupCompletedCount = groupEntries.filter((entry) => entry.itemIds.every((id) => learned.has(id))).length;
   const groupWords = group.wordOrder.flatMap((id) => {
     const entry = byId.get(id);
@@ -140,6 +155,22 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
   );
   const currentPageComplete = pageComplete(pages[pageIndex]);
   const canContinue = allowIncompleteNavigation || (previousGroupsComplete && previousPagesComplete && currentPageComplete);
+  const l12MonthSummaryAvailable = previousGroupsComplete && pages.every(pageComplete);
+  const l12SeasonItem = isL12MonthGroup
+    ? entries.find((entry) => entry.id === l12MonthSeasonPages[pageIndex]?.seasonId)
+    : undefined;
+  const l12MonthSummarySeasons = isL12MonthGroup ? l12MonthSeasonPages.flatMap((seasonPage) => {
+    const season = byId.get(seasonPage.seasonId);
+    if (!season) return [];
+    const months = seasonPage.monthIds.flatMap((id) => {
+      const month = byId.get(id);
+      const number = l12MonthNumberById[id];
+      return month && number ? [{ entry: month, number }] : [];
+    });
+    return [{ season, months }];
+  }) : [];
+  const displayMeaning = (entry: VocabularyImageEntryDefinition) =>
+    isL12MonthGroup && l12MonthNumberById[entry.id] ? `เดือน${entry.meaning}` : entry.meaning;
 
   useEffect(() => {
     setSelectedId(null);
@@ -180,7 +211,7 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
   if (!hydrated) return <main className="vocabulary-image-matching" aria-busy="true" />;
 
   return (
-    <main className={`vocabulary-image-matching${isL13 || isCatalogLesson ? " profession-learning l13-city-learning" : isCountryGroup ? " profession-learning l01-country-learning" : ""}${isCatalogLesson && lessonId !== "L03" ? " vocabulary-object-image-learning" : ""}${isPaginated ? " vocabulary-paged-learning" : ""}`}>
+    <main className={`vocabulary-image-matching${isL13 || isCatalogLesson ? " profession-learning l13-city-learning" : isCountryGroup ? " profession-learning l01-country-learning" : ""}${isCatalogLesson && lessonId !== "L03" ? " vocabulary-object-image-learning" : ""}${lessonId === "L14" ? " l14-vocabulary-image-learning" : ""}${isPaginated ? " vocabulary-paged-learning" : ""}${isL12 ? " l12-season-learning" : ""}${isL12MonthGroup ? " l12-month-group-learning" : ""}`}>
       <h1 className="sr-only">{isGroupedImageVocabulary ? group.germanTitle : vocabularyImageActivity.germanTitle}</h1>
       {!isGroupedImageVocabulary && <LearningCategoryTabs currentKey={group.id}>
         {groups.map((category, index) => {
@@ -192,20 +223,57 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
         })}
       </LearningCategoryTabs>}
       {(isL13 || ((isCatalogLesson || isCountryGroup) && entries.some((entry) => /^(der|die|das)\s/u.test(entry.german)))) && <ArticleLegend />}
+      {isL12MonthGroup && <nav className="l12-month-season-tabs-sticky" aria-label="เลือกฤดูกาลของเดือน">
+        <div className="l12-month-season-tabs" role="tablist" aria-label="ฤดูกาล">
+          {l12MonthSummarySeasons.map(({ season }, index) => {
+            const selected = !isL12MonthSummary && l12MonthSeasonPages[pageIndex]?.seasonId === season.id;
+            const available = allowIncompleteNavigation || (previousGroupsComplete && l12MonthSeasonPages.slice(0, index).every((seasonPage) => seasonPage.monthIds.every((id) => {
+              const entry = byId.get(id);
+              return entry !== undefined && entry.itemIds.every((itemId) => learned.has(itemId));
+            })));
+            const className = `l12-month-season-tab${selected ? " selected" : ""}`;
+            const content = <GermanNoun value={season.german} />;
+            return available ? <Link key={season.id} id={`tab-${season.id}`} className={className} role="tab" aria-selected={selected} aria-current={selected ? "page" : undefined} href={pageHref(index)}>{content}</Link>
+              : <button key={season.id} id={`tab-${season.id}`} className={className} type="button" role="tab" aria-selected={false} disabled aria-label={`เรียนหน้าก่อนหน้าก่อนเพื่อปลดล็อก ${season.german}`}>{content}</button>;
+          })}
+          {allowIncompleteNavigation || l12MonthSummaryAvailable
+            ? <Link className={`l12-month-season-tab${isL12MonthSummary ? " selected" : ""}`} role="tab" aria-selected={isL12MonthSummary} aria-current={isL12MonthSummary ? "page" : undefined} href={`${group.route}?summary=1`}>สรุป</Link>
+            : <button className="l12-month-season-tab" type="button" role="tab" aria-selected={false} disabled aria-label="จับคู่เดือนทั้งสี่ฤดูให้ครบก่อนดูสรุป">สรุป</button>}
+        </div>
+      </nav>}
       <div className="vocabulary-image-progress" aria-live="polite">
         <span>เรียนแล้ว {completedCount} / {allItemIds.length} คำ</span>
         <div className="vocabulary-image-progress-track" aria-hidden="true"><span style={{ width: `${allItemIds.length ? completedCount / allItemIds.length * 100 : 0}%` }} /></div>
       </div>
-      {(!previousGroupsComplete || !previousPagesComplete) && !allowIncompleteNavigation ? <section className="vocabulary-image-locked">
+      {isL12MonthGroup && !isL12MonthSummary && l12SeasonItem && <section className="l12-month-season-banner" aria-label={`ฤดู ${l12SeasonItem.german}`}>
+        <Image src={catalogVocabularyImageSource(lessonId, l12SeasonItem.image ?? l12SeasonItem.id)} alt="" width={240} height={160} sizes="112px" />
+        <button type="button" className="l12-month-season-word" onClick={() => play(l12SeasonItem.german, l12SeasonItem.audioRef)}><GermanNoun value={l12SeasonItem.german} /><Volume2 size={18} aria-hidden="true" /></button>
+        <span>{l12SeasonItem.meaning}</span>
+      </section>}
+      {((!previousGroupsComplete || !previousPagesComplete) || (isL12MonthSummary && !l12MonthSummaryAvailable)) && !allowIncompleteNavigation ? <section className="vocabulary-image-locked">
         <h1>{group.title}</h1>
         <p>จับคู่หน้าหรือหมวดก่อนหน้าให้ครบ แล้วจึงไปต่อ</p>
         <Link className="button primary" href={!previousGroupsComplete ? groups.find((previous) =>
           entries.filter((entry) => entry.groupId === previous.id).some((entry) => !entry.itemIds.every((id) => learned.has(id))))?.route ?? groups[0].route
           : pageHref(Math.max(0, pages.findIndex((ids) => !pageComplete(ids))))}>กลับหน้าที่กำลังเรียน</Link>
       </section> : <>
-      <div className="vocabulary-image-groups">
+      {isL12MonthSummary ? <section className="l12-month-summary" aria-labelledby="l12-month-summary-title">
+        <h2 id="l12-month-summary-title" className="sr-only">สรุปเดือนในแต่ละฤดู</h2>
+        <section className="l12-month-summary-table-section" aria-labelledby="l12-month-summary-table-title">
+          <h3 id="l12-month-summary-table-title">ตารางเดือนทั้ง 4 ฤดู</h3>
+          <div className="l12-month-summary-rows">{l12MonthSummarySeasons.map(({ season, months }) => <article className="l12-month-summary-row" key={season.id}>
+            <div className="l12-month-summary-season-side">
+              <Image src={catalogVocabularyImageSource(lessonId, season.image ?? season.id)} alt={`ภาพ${season.meaning}`} width={480} height={320} sizes="(max-width: 760px) 90vw, 22vw" />
+              <button type="button" className="l12-month-summary-season-button" aria-label={`ฟัง ${season.german} — ${season.meaning}`} onClick={() => play(season.german, season.audioRef)}><GermanNoun value={season.german} /><small>{season.meaning}</small><Volume2 size={16} aria-hidden="true" /></button>
+            </div>
+            <div className="l12-month-summary-months" aria-label={`เดือนใน${season.meaning}`}>
+              {months.map(({ entry, number }) => <button type="button" className="l12-month-summary-month-button" key={entry.id} aria-label={`ฟัง ${entry.german} — ${displayMeaning(entry)}`} onClick={() => play(entry.german, entry.audioRef)}><span>{String(number).padStart(2, "0")}</span><strong>{entry.german}</strong><small>{displayMeaning(entry)}</small><Volume2 size={15} aria-hidden="true" /></button>)}
+            </div>
+          </article>)}</div>
+        </section>
+      </section> : <div className="vocabulary-image-groups" id={isL12MonthGroup && l12SeasonItem ? `panel-${l12SeasonItem.id}` : undefined} role={isL12MonthGroup && l12SeasonItem ? "tabpanel" : undefined} aria-labelledby={isL12MonthGroup && l12SeasonItem ? `tab-${l12SeasonItem.id}` : undefined} tabIndex={isL12MonthGroup && l12SeasonItem ? 0 : undefined}>
         <section className={`vocabulary-image-group group-${group.id}`}>
-          <header className="vocabulary-image-group-heading"><div><span className="eyebrow">{group.germanTitle}</span><h2>{group.title}</h2></div><span>{groupCompletedCount} / {groupEntries.length} {lessonId === "L03" ? "คู่" : "คำ"}</span></header>
+          <header className="vocabulary-image-group-heading"><div><span className="eyebrow">{group.germanTitle}</span><h2>{isL12 ? isL12MonthGroup ? "จับคู่เดือนในฤดูนี้" : isL12SeasonGroup ? "จับคู่ภาพกับฤดูกาล" : group.title : group.title}</h2></div><span>{groupCompletedCount} / {groupEntries.length} {lessonId === "L03" ? "คู่" : "คำ"}</span></header>
           {isL13 || isCatalogLesson ? <>
             {groupWords.length > 0 && <div className="matching-options-sticky profession-options-sticky">
               <div className="profession-options" role="group" aria-label="ตัวเลือกคำศัพท์">
@@ -220,17 +288,20 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
                 const matched = entry.itemIds.every((id) => learned.has(id));
                 const wrong = incorrectPair?.imageId === entry.id;
                 const image = entry.image ?? "";
+                const l12ImageLabel = isL12 && l12MonthNumberById[entry.id]
+                  ? `ปฏิทินเลข ${String(l12MonthNumberById[entry.id]).padStart(2, "0")}`
+                  : isL12 ? "ภาพฤดูกาล" : "เลือกภาพนี้เพื่อจับคู่";
                 return <article className={`l13-city-card${matched ? " matched" : ""}${wrong ? " incorrect" : ""}`} key={entry.id} data-vocabulary-id={entry.id} data-matched={matched}>
-                  <button type="button" className="l13-city-image" aria-label={matched ? `ภาพ ${entry.german}` : "เลือกภาพนี้เพื่อจับคู่"} aria-pressed={selectedId?.type === "image" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "image")}>
-                    <Image src={isCatalogLesson ? catalogVocabularyImageSource(lessonId, image) : `/images/lektion-13-city/${image}-places.webp`} alt={matched ? `ภาพ ${entry.german}` : "ภาพประกอบสำหรับจับคู่คำศัพท์"} width={960} height={640} sizes={isCatalogLesson ? "(max-width: 700px) 90vw, (max-width: 1100px) 29vw, (max-width: 1600px) 27vw, 25vw" : "(max-width: 700px) 42vw, (max-width: 1100px) 29vw, (max-width: 1600px) 27vw, 25vw"} />
+                  <button type="button" className="l13-city-image" aria-label={matched ? `ภาพ ${entry.german}` : l12ImageLabel} aria-pressed={selectedId?.type === "image" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "image")}>
+                    {isL12 && l12MonthNumberById[entry.id] ? <L12MonthCalendar itemId={entry.id} /> : <Image src={isCatalogLesson ? catalogVocabularyImageSource(lessonId, image) : `/images/lektion-13-city/${image}-places.webp`} alt={matched ? `ภาพ ${entry.german}` : "ภาพประกอบสำหรับจับคู่คำศัพท์"} width={960} height={640} sizes={isCatalogLesson ? "(max-width: 700px) 90vw, (max-width: 1100px) 29vw, (max-width: 1600px) 27vw, 25vw" : "(max-width: 700px) 42vw, (max-width: 1100px) 29vw, (max-width: 1600px) 27vw, 25vw"} loading={lessonId === "L05" ? "eager" : "lazy"} unoptimized={lessonId === "L05"} />}
                   </button>
                   {matched ? <div className="l13-city-answer">{entry.itemIds.length > 1 ? <div className="vocabulary-synonym-answer">{entry.itemIds.map((id, index) => {
                     const word = items.find((item) => item.id === id);
                     if (!word) return null;
                     const article = /^(der|die|das)\s/u.exec(word.answer)?.[1];
                     return <span key={id}>{index > 0 && " / "}<button type="button" className="profession-label profession-audio-word" aria-label={`ฟัง ${word.answer}`} onClick={() => play(word.answer, word.audio)}>{index === 0 && article && <ArticleDot article={article} />}<span lang="de">{index === 0 ? word.answer : word.answer.replace(/^(der|die|das) /u, "")}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button></span>;
-                  })} ✓</div> : <button type="button" className="profession-label profession-audio-word" onClick={() => play(entry.german, entry.audioRef)}>{/^(der|die|das)\s/u.test(entry.german) && <ArticleDot article={entry.german.split(" ")[0]} />}<span lang="de">{entry.german}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /> ✓</button>}<small>{entry.meaning}</small></div>
-                    : <button className="profession-slot l13-city-slot" type="button" disabled={selectedId?.type !== "word"} onClick={() => chooseMatch(entry.id, "image")}>{selectedId?.type === "word" ? "จับคู่คำนี้กับภาพ" : "เลือกคำศัพท์ด้านบนก่อน"}</button>}
+                  })} ✓</div> : <button type="button" className="profession-label profession-audio-word" onClick={() => play(entry.german, entry.audioRef)}>{/^(der|die|das)\s/u.test(entry.german) && <ArticleDot article={entry.german.split(" ")[0]} />}<span lang="de">{entry.german}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /> ✓</button>}<small>{displayMeaning(entry)}</small></div>
+                    : <button className="profession-slot l13-city-slot" type="button" aria-label={isL12 ? `จับคู่กับ${l12ImageLabel}` : undefined} disabled={selectedId?.type !== "word"} onClick={() => chooseMatch(entry.id, "image")}>{selectedId?.type === "word" ? "จับคู่คำนี้กับภาพ" : "เลือกคำศัพท์ด้านบนก่อน"}</button>}
                   {wrong && <p className="profession-error" role="status">ยังไม่ตรงกัน ลองเลือกใหม่ได้เลย</p>}
                 </article>;
               })}
@@ -261,14 +332,16 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
           </section>
           </>}
         </section>
-      </div>
+      </div>}
       <p className={`vocabulary-image-feedback ${feedback === "ลองใหม่" ? "incorrect" : ""}`} role="status">{feedback}</p>
       </>}
       {audioError && <p role="status" className="alphabet-audio-error">{audioError}</p>}
       <div className="vocabulary-image-done-actions">
         <Link className="button secondary" href={pageIndex > 0 ? pageHref(pageIndex - 1) : previousGroup?.route ?? (isL13 || isCatalogLesson ? `/learn/${lessonId}/vocabulary` : "/learn/L01/vocabulary/alphabet")}>ย้อนกลับ</Link>
-        {canContinue && pageEntries.length > 0 && (pageIndex < pages.length - 1
+        {canContinue && pageEntries.length > 0 && !isL12MonthSummary && (pageIndex < pages.length - 1
           ? <Link className="button primary" href={pageHref(pageIndex + 1)}>หน้าถัดไป</Link>
+          : isL12MonthGroup
+          ? <Link className="button primary" href={`${group.route}?summary=1`}>สรุปฤดูและเดือน</Link>
           : nextGroup
           ? <Link className="button primary" href={nextGroup.route}>หน้าถัดไป</Link>
           : <Link className="button primary" href={isL13 || isCatalogLesson ? `/learn/${lessonId}/vocabulary` : "/learn/L01/vocabulary"}>กลับไปที่คำศัพท์</Link>)}

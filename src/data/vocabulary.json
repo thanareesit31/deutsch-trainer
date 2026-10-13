@@ -734,6 +734,19 @@
     "Word_Thai": "โทรศัพท์มือถือ",
     "Category": "Gegenstände"
   },
+  { "Vocab_ID": "V217", "Lesson_ID": "L05", "Word_German": "Holz", "Gender": "das", "Word_Thai": "ไม้", "Category": "Materialien" },
+  { "Vocab_ID": "V218", "Lesson_ID": "L05", "Word_German": "Papier", "Gender": "das", "Word_Thai": "กระดาษ", "Category": "Materialien" },
+  { "Vocab_ID": "V219", "Lesson_ID": "L05", "Word_German": "Metall", "Gender": "das", "Word_Thai": "โลหะ", "Category": "Materialien" },
+  { "Vocab_ID": "V220", "Lesson_ID": "L05", "Word_German": "Plastik", "Gender": "das", "Word_Thai": "พลาสติก", "Category": "Materialien" },
+  { "Vocab_ID": "V221", "Lesson_ID": "L05", "Word_German": "Glas", "Gender": "das", "Word_Thai": "แก้ว / กระจก", "Category": "Materialien" },
+  { "Vocab_ID": "V222", "Lesson_ID": "L05", "Word_German": "weiß", "Word_Thai": "สีขาว", "Category": "Farben" },
+  { "Vocab_ID": "V223", "Lesson_ID": "L05", "Word_German": "gelb", "Word_Thai": "สีเหลือง", "Category": "Farben" },
+  { "Vocab_ID": "V224", "Lesson_ID": "L05", "Word_German": "orange", "Word_Thai": "สีส้ม", "Category": "Farben" },
+  { "Vocab_ID": "V225", "Lesson_ID": "L05", "Word_German": "rot", "Word_Thai": "สีแดง", "Category": "Farben" },
+  { "Vocab_ID": "V226", "Lesson_ID": "L05", "Word_German": "grün", "Word_Thai": "สีเขียว", "Category": "Farben" },
+  { "Vocab_ID": "V227", "Lesson_ID": "L05", "Word_German": "blau", "Word_Thai": "สีน้ำเงิน", "Category": "Farben" },
+  { "Vocab_ID": "V228", "Lesson_ID": "L05", "Word_German": "braun", "Word_Thai": "สีน้ำตาล", "Category": "Farben" },
+  { "Vocab_ID": "V229", "Lesson_ID": "L05", "Word_German": "schwarz", "Word_Thai": "สีดำ", "Category": "Farben" },
   {
     "Vocab_ID": "V073",
     "Lesson_ID": "L06",
@@ -1371,7 +1384,7 @@
     "Gender": "der",
     "Plural": "Bahnhöfe",
     "Word_Thai": "สถานีรถไฟ",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Orte"
   },
   {
     "Vocab_ID": "V144",
@@ -1380,7 +1393,7 @@
     "Gender": "der",
     "Plural": "Busse",
     "Word_Thai": "รถบัส",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Verkehrsmittel"
   },
   {
     "Vocab_ID": "V145",
@@ -1389,7 +1402,7 @@
     "Gender": "der",
     "Plural": "Züge",
     "Word_Thai": "รถไฟ",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Verkehrsmittel"
   },
   {
     "Vocab_ID": "V146",
@@ -1398,7 +1411,7 @@
     "Gender": "der",
     "Plural": "Flughäfen",
     "Word_Thai": "สนามบิน",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Orte"
   },
   {
     "Vocab_ID": "V147",
@@ -1407,7 +1420,7 @@
     "Gender": "der",
     "Plural": "Koffer",
     "Word_Thai": "กระเป๋าเดินทาง",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Gepäck"
   },
   {
     "Vocab_ID": "V148",
@@ -1416,7 +1429,7 @@
     "Gender": "der",
     "Plural": "Rucksäcke",
     "Word_Thai": "กระเป๋าเป้",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Gepäck"
   },
   {
     "Vocab_ID": "V149",
@@ -1425,7 +1438,7 @@
     "Gender": "die",
     "Plural": "U-Bahnen",
     "Word_Thai": "รถไฟฟ้าใต้ดิน",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Verkehrsmittel"
   },
   {
     "Vocab_ID": "V150",
@@ -1434,16 +1447,7 @@
     "Gender": "die",
     "Plural": "Straßenbahnen",
     "Word_Thai": "รถราง",
-    "Category": "Verkehrsmittel & Reise"
-  },
-  {
-    "Vocab_ID": "V151",
-    "Lesson_ID": "L10",
-    "Word_German": "Bahn",
-    "Gender": "die",
-    "Plural": "Bahnen",
-    "Word_Thai": "รถไฟ / ระบบรถไฟ",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Verkehrsmittel"
   },
   {
     "Vocab_ID": "V152",
@@ -1452,7 +1456,7 @@
     "Gender": "die",
     "Plural": "Taschen",
     "Word_Thai": "กระเป๋า",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Gepäck"
   },
   {
     "Vocab_ID": "V153",
@@ -1461,7 +1465,7 @@
     "Gender": "das",
     "Plural": "Taxis",
     "Word_Thai": "แท็กซี่",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Verkehrsmittel"
   },
   {
     "Vocab_ID": "V154",
@@ -1470,7 +1474,7 @@
     "Gender": "das",
     "Plural": "Flugzeuge",
     "Word_Thai": "เครื่องบิน",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Verkehrsmittel"
   },
   {
     "Vocab_ID": "V155",
@@ -1479,7 +1483,197 @@
     "Gender": "das",
     "Plural": "-",
     "Word_Thai": "สัมภาระ",
-    "Category": "Verkehrsmittel & Reise"
+    "Category": "Gepäck"
+  },
+  {
+    "Vocab_ID": "V198",
+    "Lesson_ID": "L10",
+    "Word_German": "S-Bahn",
+    "Gender": "die",
+    "Plural": "S-Bahnen",
+    "Word_Thai": "รถไฟชานเมือง",
+    "Category": "Verkehrsmittel",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V199",
+    "Lesson_ID": "L10",
+    "Word_German": "Skytrain",
+    "Gender": "der",
+    "Plural": "Skytrains",
+    "Word_Thai": "รถไฟฟ้าเหนือดิน (BTS)",
+    "Category": "Verkehrsmittel",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V200",
+    "Lesson_ID": "L10",
+    "Word_German": "Auto",
+    "Gender": "das",
+    "Plural": "Autos",
+    "Word_Thai": "รถยนต์",
+    "Category": "Verkehrsmittel",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V201",
+    "Lesson_ID": "L10",
+    "Word_German": "Tuk-Tuk",
+    "Gender": "das",
+    "Plural": "Tuk-Tuks",
+    "Word_Thai": "รถตุ๊กตุ๊ก",
+    "Category": "Verkehrsmittel",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V202",
+    "Lesson_ID": "L10",
+    "Word_German": "Motorradtaxi",
+    "Gender": "das",
+    "Plural": "Motorradtaxis",
+    "Word_Thai": "วินมอเตอร์ไซค์",
+    "Category": "Verkehrsmittel",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V203",
+    "Lesson_ID": "L10",
+    "Word_German": "Fahrrad",
+    "Gender": "das",
+    "Plural": "Fahrräder",
+    "Word_Thai": "จักรยาน",
+    "Category": "Verkehrsmittel",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V204",
+    "Lesson_ID": "L10",
+    "Word_German": "zu Fuß",
+    "Gender": "-",
+    "Plural": "-",
+    "Word_Thai": "เดินเท้า",
+    "Category": "Verkehrsmittel",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V205",
+    "Lesson_ID": "L10",
+    "Word_German": "Gleis",
+    "Gender": "das",
+    "Plural": "Gleise",
+    "Word_Thai": "รางรถไฟ",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V206",
+    "Lesson_ID": "L10",
+    "Word_German": "Bahnsteig",
+    "Gender": "der",
+    "Plural": "Bahnsteige",
+    "Word_Thai": "ชานชาลา",
+    "Category": "Orte",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V207",
+    "Lesson_ID": "L10",
+    "Word_German": "Durchsage",
+    "Gender": "die",
+    "Plural": "Durchsagen",
+    "Word_Thai": "ประกาศตามสาย",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V208",
+    "Lesson_ID": "L10",
+    "Word_German": "Abflug",
+    "Gender": "der",
+    "Plural": "Abflüge",
+    "Word_Thai": "การออกเดินทางของเครื่องบิน",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V209",
+    "Lesson_ID": "L10",
+    "Word_German": "Schalter",
+    "Gender": "der",
+    "Plural": "Schalter",
+    "Word_Thai": "เคาน์เตอร์บริการ",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V210",
+    "Lesson_ID": "L10",
+    "Word_German": "Abfahrt",
+    "Gender": "die",
+    "Plural": "Abfahrten",
+    "Word_Thai": "การออกเดินทาง",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V211",
+    "Lesson_ID": "L10",
+    "Word_German": "Ankunft",
+    "Gender": "die",
+    "Plural": "Ankünfte",
+    "Word_Thai": "การมาถึง (ใช้กับการเดินทางหลายแบบ)",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V212",
+    "Lesson_ID": "L10",
+    "Word_German": "Flugnummer",
+    "Gender": "die",
+    "Plural": "Flugnummern",
+    "Word_Thai": "หมายเลขเที่ยวบิน",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V213",
+    "Lesson_ID": "L10",
+    "Word_German": "aussteigen",
+    "Gender": "Verb",
+    "Plural": "ausgestiegen",
+    "Word_Thai": "ลงจากยานพาหนะ",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V214",
+    "Lesson_ID": "L10",
+    "Word_German": "umsteigen",
+    "Gender": "Verb",
+    "Plural": "umgestiegen",
+    "Word_Thai": "เปลี่ยน/ต่อยานพาหนะ",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V215",
+    "Lesson_ID": "L10",
+    "Word_German": "einsteigen",
+    "Gender": "Verb",
+    "Plural": "eingestiegen",
+    "Word_Thai": "ขึ้นยานพาหนะ",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
+  },
+  {
+    "Vocab_ID": "V216",
+    "Lesson_ID": "L10",
+    "Word_German": "Fahrkarte",
+    "Gender": "die",
+    "Plural": "Fahrkarten",
+    "Word_Thai": "ตั๋วโดยสาร",
+    "Category": "Fahrpläne und Durchsage",
+    "Source_Scope": "worksheet_support"
   },
   {
     "Vocab_ID": "V156",

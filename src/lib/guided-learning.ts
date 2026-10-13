@@ -17,6 +17,7 @@ export interface ContentRef {
   itemId: string;
   field: ContentField;
 }
+export type L14RouteKind = "straight" | "right" | "left" | "turn-right" | "turn-left" | "cross" | "distance";
 export interface LearningOption {
   id: string;
   ref?: ContentRef;
@@ -29,6 +30,7 @@ export interface LearningPair {
   contentIds: string[];
   legacyActivityIds?: string[];
   legacyMatches?: { activityId: string; pairId: string }[];
+  leftVisual?: { kind: "l14-route"; route: L14RouteKind };
 }
 export interface LearningActivity {
   id: string;

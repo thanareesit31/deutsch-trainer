@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">
+  <defs>
+    <linearGradient id="desk" x2="0" y2="1"><stop stop-color="#d9c1a1"/><stop offset="1" stop-color="#9d7552"/></linearGradient>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#f1eee5"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#33251a" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="960" height="640" fill="url(#desk)"/>
+  <rect x="0" y="0" width="960" height="230" fill="#f3dfbd" opacity=".2"/>
+  <circle cx="820" cy="120" r="95" fill="#f8e1ac" opacity=".22"/>
+  <g transform="rotate(-3 480 320)" filter="url(#shadow)">
+    <rect x="115" y="154" width="730" height="330" rx="18" fill="url(#paper)"/>
+    <rect x="115" y="154" width="18" height="330" rx="9" fill="#597c65"/>
+    <circle cx="205" cy="244" r="38" fill="#e5eee3"/>
+    <path d="M188 246h34M205 229v34" stroke="#597c65" stroke-width="7" stroke-linecap="round"/>
+    <text x="270" y="232" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#26382d">Mia Schneider</text>
+    <text x="272" y="278" font-family="Arial, sans-serif" font-size="23" fill="#597c65">SPRACHLEHRERIN</text>
+    <path d="M175 312h610" stroke="#d8ddd4" stroke-width="2"/>
+    <text x="178" y="362" font-family="Arial, sans-serif" font-size="24" fill="#35453a">Sprachschule Morgenlicht</text>
+    <text x="178" y="406" font-family="Arial, sans-serif" font-size="22" fill="#526057">mia.schneider@example.de</text>
+    <text x="178" y="446" font-family="Arial, sans-serif" font-size="22" fill="#526057">+49 30 5550 1842</text>
+    <text x="710" y="446" font-family="Arial, sans-serif" font-size="16" fill="#8b948c">BERLIN</text>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+begin;
+
+insert into public.content_items(id, lesson_id, skill, position, status, data) values
+('V217','L05','vocabulary',217,'published','{"id":"V217","lessonId":"L05","skill":"vocabulary","group":"Materialien","title":"das Holz","meaning":"ไม้","answer":"das Holz","word":"Holz","article":"das","collection":"core","image":"/images/lektion-05-vocabulary/V217-holz-v2.jpg"}'::jsonb),
+('V218','L05','vocabulary',218,'published','{"id":"V218","lessonId":"L05","skill":"vocabulary","group":"Materialien","title":"das Papier","meaning":"กระดาษ","answer":"das Papier","word":"Papier","article":"das","collection":"core","image":"/images/lektion-05-vocabulary/V218-papier-v2.jpg"}'::jsonb),
+('V219','L05','vocabulary',219,'published','{"id":"V219","lessonId":"L05","skill":"vocabulary","group":"Materialien","title":"das Metall","meaning":"โลหะ","answer":"das Metall","word":"Metall","article":"das","collection":"core","image":"/images/lektion-05-vocabulary/V219-metall-v2.jpg"}'::jsonb),
+('V220','L05','vocabulary',220,'published','{"id":"V220","lessonId":"L05","skill":"vocabulary","group":"Materialien","title":"das Plastik","meaning":"พลาสติก","answer":"das Plastik","word":"Plastik","article":"das","collection":"core","image":"/images/lektion-05-vocabulary/V220-plastik-v2.jpg"}'::jsonb),
+('V221','L05','vocabulary',221,'published','{"id":"V221","lessonId":"L05","skill":"vocabulary","group":"Materialien","title":"das Glas","meaning":"แก้ว / กระจก","answer":"das Glas","word":"Glas","article":"das","collection":"core","image":"/images/lektion-05-vocabulary/V221-glas-v2.jpg"}'::jsonb),
+('V222','L05','vocabulary',222,'published','{"id":"V222","lessonId":"L05","skill":"vocabulary","group":"Farben","title":"weiß","meaning":"สีขาว","answer":"weiß","word":"weiß","collection":"core","image":"/images/lektion-05-vocabulary/V222-weiss-v2.svg"}'::jsonb),
+('V223','L05','vocabulary',223,'published','{"id":"V223","lessonId":"L05","skill":"vocabulary","group":"Farben","title":"gelb","meaning":"สีเหลือง","answer":"gelb","word":"gelb","collection":"core","image":"/images/lektion-05-vocabulary/V223-gelb-v2.svg"}'::jsonb),
+('V224','L05','vocabulary',224,'published','{"id":"V224","lessonId":"L05","skill":"vocabulary","group":"Farben","title":"orange","meaning":"สีส้ม","answer":"orange","word":"orange","collection":"core","image":"/images/lektion-05-vocabulary/V224-orange-v2.svg"}'::jsonb),
+('V225','L05','vocabulary',225,'published','{"id":"V225","lessonId":"L05","skill":"vocabulary","group":"Farben","title":"rot","meaning":"สีแดง","answer":"rot","word":"rot","collection":"core","image":"/images/lektion-05-vocabulary/V225-rot-v2.svg"}'::jsonb),
+('V226','L05','vocabulary',226,'published','{"id":"V226","lessonId":"L05","skill":"vocabulary","group":"Farben","title":"grün","meaning":"สีเขียว","answer":"grün","word":"grün","collection":"core","image":"/images/lektion-05-vocabulary/V226-gruen-v2.svg"}'::jsonb),
+('V227','L05','vocabulary',227,'published','{"id":"V227","lessonId":"L05","skill":"vocabulary","group":"Farben","title":"blau","meaning":"สีน้ำเงิน","answer":"blau","word":"blau","collection":"core","image":"/images/lektion-05-vocabulary/V227-blau-v2.svg"}'::jsonb),
+('V228','L05','vocabulary',228,'published','{"id":"V228","lessonId":"L05","skill":"vocabulary","group":"Farben","title":"braun","meaning":"สีน้ำตาล","answer":"braun","word":"braun","collection":"core","image":"/images/lektion-05-vocabulary/V228-braun-v2.svg"}'::jsonb),
+('V229','L05','vocabulary',229,'published','{"id":"V229","lessonId":"L05","skill":"vocabulary","group":"Farben","title":"schwarz","meaning":"สีดำ","answer":"schwarz","word":"schwarz","collection":"core","image":"/images/lektion-05-vocabulary/V229-schwarz-v2.svg"}'::jsonb)
+on conflict (id) do update set position = excluded.position, status = excluded.status, data = excluded.data;
+
+commit;

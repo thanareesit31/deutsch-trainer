@@ -58,6 +58,7 @@ const child = spawn(
   [
     "node_modules/next/dist/bin/next",
     "dev",
+    ...(process.env.TEST_WORKSPACE_WEBPACK === "1" ? ["--webpack"] : []),
     "--hostname",
     "0.0.0.0",
     "--port",

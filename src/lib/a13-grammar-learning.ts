@@ -1,16 +1,17 @@
 import type { Item } from "./content";
-import type { LearningActivity, LearningFlow, LearningPair } from "./guided-learning";
+import type { L14RouteKind, LearningActivity, LearningFlow, LearningPair } from "./guided-learning";
 import { buildL13VerbFlow } from "./l13-grammar-learning";
 
 function pairs(
   activityId: string,
-  entries: readonly { ids: string[]; left: string; answerId: string }[],
+  entries: readonly { ids: string[]; left: string; answerId: string; route?: L14RouteKind; pairIndex?: number }[],
 ): LearningPair[] {
-  return entries.map(({ ids, left, answerId }, index) => ({
-    id: `${activityId}-${index + 1}`,
+  return entries.map(({ ids, left, answerId, route, pairIndex }, index) => ({
+    id: `${activityId}-${pairIndex ?? index + 1}`,
     left: { id: `left-${index + 1}`, text: left },
     right: { id: `right-${index + 1}`, ref: { itemId: answerId, field: "answer" } },
     contentIds: ids,
+    ...(route ? { leftVisual: { kind: "l14-route" as const, route } } : {}),
   }));
 }
 
@@ -19,7 +20,7 @@ function board(
   section: string,
   instruction: string,
   note: string,
-  entries: readonly { ids: string[]; left: string; answerId: string }[],
+  entries: readonly { ids: string[]; left: string; answerId: string; route?: L14RouteKind; pairIndex?: number }[],
 ): LearningActivity {
   return {
     id, type: "pair_matching", section, instruction, note,
@@ -30,8 +31,8 @@ function board(
   };
 }
 
-function entry(id: string, left: string, ids = [id]) {
-  return { ids, left, answerId: id };
+function entry(id: string, left: string, ids = [id], route?: L14RouteKind, pairIndex?: number) {
+  return { ids, left, answerId: id, ...(route ? { route } : {}), ...(pairIndex ? { pairIndex } : {}) };
 }
 
 export function buildL13GrammarFlow(items: Item[]): LearningFlow {
@@ -82,29 +83,21 @@ export function buildL13GrammarFlow(items: Item[]): LearningFlow {
 export function buildL14VocabularyFlow(): LearningFlow {
   const blocks = [
     board("L14-directions-basic", "Wegbeschreibung · ทิศทาง",
-      "จับคู่ความหมายกับคำบอกทาง",
-      "เริ่มจากคำบอกทิศทางสั้น ๆ แล้วจึงใช้ในประโยคบอกทาง",
+      "เลือกคำบอกทางด้านบน แล้วจับคู่กับรูปด้านล่าง",
+      "",
       [
-        entry("L14-V019", "ตรงไป"),
-        entry("L14-V020", "ไปทางขวา"),
-        entry("L14-V021", "ไปทางซ้าย"),
-        entry("L14-V022", "เลี้ยวขวา"),
+        entry("L14-V019", "ตรงไป", ["L14-V019"], "straight"),
+        entry("L14-V020", "ไปทางขวา", ["L14-V020"], "right"),
+        entry("L14-V021", "ไปทางซ้าย", ["L14-V021"], "left"),
+        entry("L14-V022", "เลี้ยวขวา", ["L14-V022"], "turn-right"),
       ]),
     board("L14-directions-next", "Wegbeschreibung · ระหว่างทาง",
-      "จับคู่ความหมายกับคำที่ใช้บอกทาง",
-      "คำว่า über die Straße หมายถึงข้ามถนน; zu Fuß หมายถึงเดินเท้า",
+      "เลือกคำบอกทางด้านบน แล้วจับคู่กับรูปด้านล่าง",
+      "",
       [
-        entry("L14-V023", "เลี้ยวซ้าย"),
-        entry("L14-V024", "ข้ามถนน"),
-        entry("L14-V025", "เดินเท้า"),
-        entry("L14-V026", "หลังจาก 50 เมตร"),
-      ]),
-    board("L14-directions-places", "Wegbeschreibung · ชื่อสถานที่",
-      "จับคู่คำเรียกสถานที่ที่พบในการบอกทาง",
-      "Stadtmitte มีความหมายใกล้กับ Zentrum; Hauptbahnhof คือสถานีรถไฟหลัก",
-      [
-        entry("L14-V017", "ใจกลางเมือง"),
-        entry("L14-V018", "สถานีรถไฟหลัก"),
+        entry("L14-V023", "เลี้ยวซ้าย", ["L14-V023"], "turn-left"),
+        entry("L14-V024", "ข้ามถนน", ["L14-V024"], "cross"),
+        entry("L14-V026", "หลังจาก 50 เมตร", ["L14-V026"], "distance", 4),
       ]),
   ];
   return {

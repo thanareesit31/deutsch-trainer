@@ -31,6 +31,15 @@ try {
     "20261011030000_l04_vocabulary_categories.sql",
     "20261012040000_a13_l14_l15_content.sql",
     "20261012050000_a13_l14_l15_states.sql",
+    "20261013010000_l10_transport_vocabulary.sql",
+    "20261013020000_l10_vocabulary_groups.sql",
+    "20261013030000_l10_fahrplaene_vocabulary.sql",
+    "20261013040000_l10_archive_bahn.sql",
+    "20261013050000_l10_ankunft_meaning.sql",
+    "20261014010000_l05_materialien_farben.sql",
+    "20261014090000_l14_place_matching.sql",
+    "20261014100000_l14_visual_vocabulary.sql",
+    "20261014110000_l05_visual_refresh.sql",
   ]) {
     const sql = await readFile(
       new URL("../supabase/migrations/" + file, import.meta.url),
