@@ -5,6 +5,7 @@ import { useEffect, useRef, type ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { lessonVocabularyImageGroups, vocabularyImageActivity, vocabularyImageGroups, l13VocabularyImageGroups } from "@/lib/vocabulary-image-content";
 import { getLevel, skills } from "@/lib/content";
+import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
 import { useContent } from "./content-provider";
 
 // Derive the learning hierarchy from the route, so direct links and reloads keep it.
@@ -42,8 +43,9 @@ export function LearningBreadcrumbs() {
         "L15:grammar:possessivartikel": "Possessivartikel",
       } as Record<string, string>)[`${lesson.id}:${parts[2]}:${parts[3]}`];
       const familyLabel = lesson.id === "L03" && parts[2] === "vocabulary" && parts[3] === "familie-plural" ? "Familienplural" : undefined;
+      const discoveryLabel = parts[2] === "grammar" ? grammarDiscoveryLesson(lesson.id)?.topics.find((topic) => topic.slug === parts[3])?.title : undefined;
       const l12ImageLabel = lesson.id === "L12" && parts[2] === "vocabulary" && parts[3] === "images" ? imageGroup?.germanTitle ?? "Bilder Wortschatz" : undefined;
-      const label = l13Label ?? a13Label ?? familyLabel ?? l12ImageLabel ?? (parts[3] === "alphabet" ? "Das Alphabet"
+      const label = l13Label ?? a13Label ?? familyLabel ?? discoveryLabel ?? l12ImageLabel ?? (parts[3] === "alphabet" ? "Das Alphabet"
         : parts[3] === "numbers" ? "Die Zahlen"
         : imageGroup ? imageGroup.germanTitle
         : parts[2] === "vocabulary" && ["images", "core-images", "core"].includes(parts[3]) ? vocabularyImageActivity.germanTitle

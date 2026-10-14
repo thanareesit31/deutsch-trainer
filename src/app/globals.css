@@ -4885,6 +4885,46 @@ select {
   border-radius: var(--radius);
   padding: clamp(18px, 4vw, 36px);
 }
+.grammar-discovery .guided-card h1 {
+  margin: 8px 0 2px;
+}
+.grammar-discovery-examples {
+  display: grid;
+  gap: 12px;
+  margin: 26px 0;
+}
+.grammar-discovery-example {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft);
+}
+.grammar-discovery-example > span {
+  color: var(--text);
+}
+.grammar-discovery-rule {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+.grammar-discovery-rule svg { flex: 0 0 auto; }
+.grammar-discovery-apply {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.grammar-discovery-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
 .guided-instruction {
   font-size: 18px;
   font-weight: 600;
@@ -5307,6 +5347,9 @@ select {
   }
 }
 @media (max-width: 600px) {
+  .grammar-discovery .guided-choices {
+    grid-template-columns: 1fr;
+  }
   .guided-choice {
     font-size: 16px;
     padding: 14px 8px;

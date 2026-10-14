@@ -55,6 +55,8 @@ import { VocabularyImageMatching } from "./vocabulary-image-matching";
 import { l13VocabularyImageGroups, vocabularyImageGroups, lessonVocabularyImageGroups } from "@/lib/vocabulary-image-content";
 import { LearningBreadcrumbs } from "./learning-breadcrumbs";
 import { GuidedLearningPage } from "./guided-learning";
+import { GrammarDiscoveryPage } from "./grammar-discovery";
+import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
 
 export type StartSession = (
   pool: Item[],
@@ -252,6 +254,8 @@ function App() {
     page = <L13ContextLesson key={path} mode="listening" />;
   else if (["L13", "L14", "L15"].some((lessonId) => path === `/learn/${lessonId}/grammar`))
     page = <A13GrammarEntryPoints key={path} lessonId={parts[1] as "L13" | "L14" | "L15"} />;
+  else if (parts[0] === "learn" && grammarDiscoveryLesson(parts[1]) && parts[2] === "grammar" && parts.length <= 4)
+    page = <GrammarDiscoveryPage key={path} lessonId={parts[1]} topicSlug={parts[3]} />;
   else if (
     parts[0] === "learn" && parts[1] === "L02" && parts[2] === "vocabulary" && parts.length === 4 &&
     (parts[3] === "numbers" || parts[3] === "core")
@@ -571,6 +575,7 @@ function LessonDetail({ id }: { id: string }) {
           const pool = items.filter(
             (i) => i.lessonId === id && i.skill === s.id,
           );
+          const discovery = s.id === "grammar" ? grammarDiscoveryLesson(id) : undefined;
           const pct = pool.length
             ? Math.round(
                 (pool.filter((i) =>
@@ -586,7 +591,7 @@ function LessonDetail({ id }: { id: string }) {
                 <span className={`icon-tile large ${s.color}`}>
                   <Icon size={24} />
                 </span>
-                {pool.length ? (
+                {pool.length || discovery ? (
                   <ArrowUpRight size={20} />
                 ) : (
                   <span className="quiet-pill">กำลังเตรียมเนื้อหา</span>
@@ -595,6 +600,9 @@ function LessonDetail({ id }: { id: string }) {
               <span className="eyebrow">{s.de}</span>
               <h2>{s.th}</h2>
               <p>{s.description}</p>
+              {discovery && !pool.length && (
+                <div className="skill-count">{discovery.topics.length} หัวข้อให้ทดลองเรียน</div>
+              )}
               {pool.length > 0 && (
                 <>
                   <div className="skill-count">
@@ -609,7 +617,7 @@ function LessonDetail({ id }: { id: string }) {
               )}
             </>
           );
-          return pool.length || isTestWorkspaceUser(user) ? (
+          return pool.length || discovery || isTestWorkspaceUser(user) ? (
             <Link
               key={s.id}
               href={`/learn/${id}/${s.id}`}
