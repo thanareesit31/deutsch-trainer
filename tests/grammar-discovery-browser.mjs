@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
 import { chromium } from "playwright-core";
 import discovery from "../src/lib/grammar-discovery.ts";
+import { grammarConjugationTopic } from "../src/lib/grammar-conjugation.ts";
 const { grammarDiscoveryLessons } = discovery;
 
 const webPort = 3037;
@@ -28,6 +29,7 @@ try {
   });
   const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
   page.setDefaultTimeout(30_000);
+  page.setDefaultNavigationTimeout(120_000);
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto(`${base}/learn/L03/grammar`);
@@ -49,15 +51,51 @@ try {
       });
       if (lesson.id === "L03" && topic === lesson.topics[0])
         await page.screenshot({ path: ".tools/grammar-discovery-L03.png", fullPage: true });
+      if (lesson.id === "L03" && topic.slug === "mein-dein") {
+        await page.locator(".possessive-family-photo img").evaluate((image) => image.decode());
+        await page.screenshot({ path: ".tools/grammar-discovery-L03-mein-dein.png", fullPage: true });
+        const scene = page.locator(".possessive-family-scene");
+        assert.equal(await page.locator(".grammar-discovery-examples").count(), 0);
+        assert.deepEqual(await scene.locator(".possessive-family-name").allInnerTexts(), ["Frank", "Aleksandra", "Jan", "Line"]);
+        await scene.locator(".possessive-family-speech").getByRole("button", { name: "ฟังเสียง Das ist meine Schwester." }).waitFor();
+        assert.equal(await scene.locator(".possessive-family-speech strong").innerText(), "meine");
+        await scene.getByText("(die) Schwester เป็นคำนามเพศหญิง จึงใช้ meine", { exact: false }).waitFor();
+        assert.equal(await page.getByRole("heading", { name: "ตารางสรุป mein / dein" }).count(), 0);
+        await scene.getByRole("button", { name: "meine", exact: true }).click();
+        await scene.getByText("เพื่อนพูดกับ Jan ว่า ‘ของเธอ’ จึงเริ่มด้วย dein-").waitFor();
+        await scene.getByRole("button", { name: "deine", exact: true }).click();
+        await scene.getByRole("button", { name: "meine", exact: true }).click();
+        await scene.getByText("Jan พูดว่า ‘ของฉัน’ และ (der) Vater ใช้ mein").waitFor();
+        await scene.getByRole("button", { name: "mein", exact: true }).click();
+        await page.locator(".grammar-discovery-examples").waitFor();
+      }
       assert.equal(await page.getByRole("link", { name: topic.title, exact: true }).count(), 0);
       const choices = page.locator(".grammar-discovery .guided-choices").first();
       await choices
         .getByRole("button", { name: topic.observe.choices.find((choice) => choice !== topic.observe.answer), exact: true }).click();
       await page.getByText(topic.observe.hint, { exact: true }).waitFor();
       await choices.getByRole("button", { name: topic.observe.answer, exact: true }).click();
-      await page.getByText(topic.rule, { exact: true }).waitFor();
+      assert.equal(await page.getByText(topic.rule, { exact: true }).count(), 0);
       await page.locator(".grammar-discovery-apply").getByRole("button", { name: topic.apply.answer, exact: true }).click();
-      await page.getByRole("link", { name: /หัวข้อถัดไป|กลับหัวข้อไวยากรณ์/ }).last().waitFor();
+      if (lesson.id === "L03" && topic.slug === "mein-dein") {
+        assert.equal(await page.getByText(topic.rule, { exact: true }).count(), 0);
+        assert.equal(await page.locator(".possessive-summary").count(), 0);
+        await page.getByRole("link", { name: "ดูตารางสรุป" }).click();
+        await page.getByText(topic.rule, { exact: true }).waitFor();
+        const table = page.locator(".possessive-summary table");
+        await table.waitFor();
+        for (const [index, expected] of [
+          ["(der) Vater", "mein Vater", "dein Vater"],
+          ["(die) Schwester", "meine Schwester", "deine Schwester"],
+          ["(das) Kind", "mein Kind", "dein Kind"],
+          ["(die) Eltern", "meine Eltern", "deine Eltern"],
+        ].entries()) {
+          const row = table.locator("tbody tr").nth(index);
+          assert.equal(await row.locator("th span").innerText(), expected[0]);
+          assert.deepEqual(await row.locator("td").allInnerTexts(), expected.slice(1));
+        }
+      } else await page.getByText(topic.rule, { exact: true }).waitFor();
+      await page.getByRole("link", { name: grammarConjugationTopic(lesson.id, topic.slug) ? "ฝึกผันกริยา" : /หัวข้อถัดไป|กลับหัวข้อไวยากรณ์/ }).last().waitFor();
     }
     console.log(`${lesson.id}: ${lesson.topics.length} interactive topics passed`);
   }

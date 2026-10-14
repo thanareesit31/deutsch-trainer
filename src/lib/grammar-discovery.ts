@@ -5,11 +5,18 @@ export type DiscoveryQuestion = {
   hint: string;
 };
 
+export type GrammarDiscoveryExample = {
+  de: string;
+  th: string;
+  nounHint?: string;
+  nameRoot?: string;
+};
+
 export type GrammarDiscoveryTopic = {
   slug: string;
   title: string;
   thai: string;
-  examples: readonly [{ de: string; th: string }, { de: string; th: string }];
+  examples: readonly [GrammarDiscoveryExample, GrammarDiscoveryExample];
   observe: DiscoveryQuestion;
   rule: string;
   apply: DiscoveryQuestion;
@@ -25,15 +32,15 @@ export const grammarDiscoveryLessons: readonly GrammarDiscoveryLesson[] = [
     id: "L03",
     topics: [
       { slug: "namen-genitiv", title: "Genitiv bei Namen", thai: "ชื่อที่แสดงความเป็นเจ้าของ",
-        examples: [{ de: "Das ist Marias Schwester.", th: "นี่คือพี่สาวหรือน้องสาวของมาเรีย" }, { de: "Das ist Peters Vater.", th: "นี่คือพ่อของเพเทอร์" }],
+        examples: [{ de: "Das ist Marias Schwester.", th: "นี่คือพี่สาวหรือน้องสาวของมาเรีย", nameRoot: "Maria" }, { de: "Das ist Peters Vater.", th: "นี่คือพ่อของเพเทอร์", nameRoot: "Peter" }],
         observe: { prompt: "ชื่อเจ้าของเปลี่ยนอย่างไร?", choices: ["เติม -s หลังชื่อ", "เติม -n หลังชื่อ", "ไม่เปลี่ยนชื่อ"], answer: "เติม -s หลังชื่อ", hint: "เทียบ Maria กับ Marias และ Peter กับ Peters" },
         rule: "เมื่อต้องการบอกว่าเป็นของใคร ให้วางชื่อเจ้าของหน้าคำนามและเติม -s เช่น Marias Schwester",
         apply: { prompt: "พ่อของ Anna คือข้อใด?", choices: ["Annas Vater", "Anna Vater", "Vater Annas"], answer: "Annas Vater", hint: "เริ่มด้วยชื่อเจ้าของแล้วเติม -s" } },
       { slug: "mein-dein", title: "mein und dein", thai: "คำแสดงความเป็นเจ้าของ",
-        examples: [{ de: "Das ist mein Bruder.", th: "นี่คือพี่ชายของฉัน" }, { de: "Ist das deine Schwester?", th: "นั่นคือพี่สาวของเธอหรือเปล่า" }],
-        observe: { prompt: "คำหน้า Schwester ซึ่งเป็น die เปลี่ยนอย่างไร?", choices: ["dein → deine", "dein → deinen", "dein คงเดิม"], answer: "dein → deine", hint: "ดูท้ายคำหน้า Schwester" },
-        rule: "Nominativ: คำนามเพศชายและกลางใช้ mein/dein; เพศหญิงและพหูพจน์ใช้ meine/deine",
-        apply: { prompt: "เติมคำ: Das ist ___ Mutter.", choices: ["meine", "mein", "meinen"], answer: "meine", hint: "Mutter เป็น die" } },
+        examples: [{ de: "Das ist mein Vater.", th: "นี่คือพ่อของฉัน", nounHint: "(der) Vater" }, { de: "Das sind meine Eltern.", th: "นี่คือพ่อแม่ของฉัน", nounHint: "(die) Eltern · พหูพจน์" }],
+        observe: { prompt: "หน้า (der) Vater กับ (die) Eltern ใช้ mein รูปเดียวกันไหม?", choices: ["Vater ใช้ mein; Eltern ใช้ meine", "ทั้งคู่ใช้ mein", "ทั้งคู่ใช้ meine"], answer: "Vater ใช้ mein; Eltern ใช้ meine", hint: "(der) Vater เป็นคำนามเพศชายเอกพจน์ ส่วน (die) Eltern เป็นพหูพจน์" },
+        rule: "รูปประธาน (Nominativ): der และ das ใช้ mein/dein; die เพศหญิงและพหูพจน์ใช้ meine/deine",
+        apply: { prompt: "เติมคำหน้า (die) Mutter: Das ist ___ Mutter.", choices: ["meine", "mein", "meinen"], answer: "meine", hint: "(die) Mutter ใช้รูป meine" } },
       { slug: "sprechen", title: "sprechen", thai: "การผันกริยา sprechen",
         examples: [{ de: "Ich spreche Deutsch.", th: "ฉันพูดภาษาเยอรมัน" }, { de: "Du sprichst Englisch.", th: "เธอพูดภาษาอังกฤษ" }],
         observe: { prompt: "เมื่อประธานเป็น du สระของ sprechen เปลี่ยนอย่างไร?", choices: ["e → i", "e → a", "ไม่เปลี่ยน"], answer: "e → i", hint: "เทียบ spreche กับ sprichst" },

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { lessonVocabularyImageGroups, vocabularyImageActivity, vocabularyImageGroups, l13VocabularyImageGroups } from "@/lib/vocabulary-image-content";
 import { getLevel, skills } from "@/lib/content";
 import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
+import { grammarConjugationTopic } from "@/lib/grammar-conjugation";
 import { useContent } from "./content-provider";
 
 // Derive the learning hierarchy from the route, so direct links and reloads keep it.
@@ -60,6 +61,12 @@ export function LearningBreadcrumbs() {
         ? "/learn/L13/vocabulary/images/urban"
         : `/learn/${lesson.id}/${parts[2]}/${parts[3]}`;
       crumbs.push({ label, href });
+      if (lesson.id === "L03" && parts[2] === "grammar" && parts[3] === "mein-dein" && parts[4] === "summary")
+        crumbs.push({ label: "สรุป", href: path });
+      if (parts[2] === "grammar" && grammarConjugationTopic(lesson.id, parts[3])) {
+        if (parts[4] === "summary") crumbs.push({ label: "ตารางสรุป", href: path });
+        if (parts[4] === "conjugation" && parts[5]) crumbs.push({ label: "ฝึกผันกริยา", href: path });
+      }
     }
   }
   return (

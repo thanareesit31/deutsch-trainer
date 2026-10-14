@@ -24,6 +24,7 @@ export const lessonStateKeys = {
   l14Vocabulary: "deutsch-trainer-guided-learning-L14-vocabulary",
   l14Grammar: "deutsch-trainer-guided-learning-L14-grammar",
   l15Grammar: "deutsch-trainer-guided-learning-L15-grammar",
+  discoveryGrammar: (lessonId: string) => `deutsch-trainer-grammar-discovery-v1-${lessonId}`,
 } as const;
 const legacyLessonKeys = [
   lessonStateKeys.alphabet,
@@ -33,6 +34,7 @@ const legacyLessonKeys = [
 const supportedLessonStateKeys = new Set([
   ...Object.values(lessonStateKeys).flatMap((key) => typeof key === "string" ? [key] : []),
   ...["L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10", "L11", "L12", "L14", "L15"].map(lessonStateKeys.vocabularyImages),
+  ...["L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10", "L11", "L12"].map(lessonStateKeys.discoveryGrammar),
 ]);
 type Snapshot = Record<string, string>;
 const Context = createContext<{

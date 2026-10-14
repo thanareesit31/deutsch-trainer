@@ -46,6 +46,7 @@ export async function createDatabase() {
     "20261014090000_l14_place_matching.sql",
     "20261014100000_l14_visual_vocabulary.sql",
     "20261014110000_l05_visual_refresh.sql",
+    "20261014120000_grammar_discovery_states.sql",
   ])
     await db.exec(
       await readFile(

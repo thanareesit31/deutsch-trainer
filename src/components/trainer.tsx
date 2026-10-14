@@ -55,8 +55,12 @@ import { VocabularyImageMatching } from "./vocabulary-image-matching";
 import { l13VocabularyImageGroups, vocabularyImageGroups, lessonVocabularyImageGroups } from "@/lib/vocabulary-image-content";
 import { LearningBreadcrumbs } from "./learning-breadcrumbs";
 import { GuidedLearningPage } from "./guided-learning";
-import { GrammarDiscoveryPage } from "./grammar-discovery";
+import { GrammarDiscoveryPage, PossessiveSummaryPage } from "./grammar-discovery";
+import { GrammarConjugationPage } from "./grammar-conjugation";
 import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
+import { grammarConjugationTopic } from "@/lib/grammar-conjugation";
+import { completedDiscoveryTopics } from "@/lib/grammar-discovery-progress";
+import { lessonStateKeys, useLessonState } from "./lesson-state-provider";
 
 export type StartSession = (
   pool: Item[],
@@ -254,6 +258,12 @@ function App() {
     page = <L13ContextLesson key={path} mode="listening" />;
   else if (["L13", "L14", "L15"].some((lessonId) => path === `/learn/${lessonId}/grammar`))
     page = <A13GrammarEntryPoints key={path} lessonId={parts[1] as "L13" | "L14" | "L15"} />;
+  else if (path === "/learn/L03/grammar/mein-dein/summary")
+    page = <PossessiveSummaryPage key={path} />;
+  else if (parts[0] === "learn" && parts[2] === "grammar" && grammarConjugationTopic(parts[1], parts[3]) && parts[4] === "summary" && parts.length === 5)
+    page = <GrammarConjugationPage key={path} lessonId={parts[1]} topicSlug={parts[3]} summary />;
+  else if (parts[0] === "learn" && parts[2] === "grammar" && grammarConjugationTopic(parts[1], parts[3])?.verbs.some((verb) => verb.id === parts[5]) && parts[4] === "conjugation" && parts.length === 6)
+    page = <GrammarConjugationPage key={path} lessonId={parts[1]} topicSlug={parts[3]} verbId={parts[5]} />;
   else if (parts[0] === "learn" && grammarDiscoveryLesson(parts[1]) && parts[2] === "grammar" && parts.length <= 4)
     page = <GrammarDiscoveryPage key={path} lessonId={parts[1]} topicSlug={parts[3]} />;
   else if (
@@ -550,6 +560,7 @@ function LessonDetail({ id }: { id: string }) {
   const lesson = lessons.find((l) => l.id === id)!;
   const { user } = useStore();
   const history = useLearning();
+  const lessonState = useLessonState();
   const lessonSkills = skills;
   return (
     <>
@@ -576,6 +587,9 @@ function LessonDetail({ id }: { id: string }) {
             (i) => i.lessonId === id && i.skill === s.id,
           );
           const discovery = s.id === "grammar" ? grammarDiscoveryLesson(id) : undefined;
+          const discoveryCompleted = discovery
+            ? completedDiscoveryTopics(lessonState.read(lessonStateKeys.discoveryGrammar(id)), discovery).length
+            : 0;
           const pct = pool.length
             ? Math.round(
                 (pool.filter((i) =>
@@ -601,7 +615,10 @@ function LessonDetail({ id }: { id: string }) {
               <h2>{s.th}</h2>
               <p>{s.description}</p>
               {discovery && !pool.length && (
-                <div className="skill-count">{discovery.topics.length} หัวข้อให้ทดลองเรียน</div>
+                <>
+                  <div className="skill-count">เรียนแล้ว {discoveryCompleted} / {discovery.topics.length} หัวข้อ</div>
+                  <Meter value={Math.round(discoveryCompleted / discovery.topics.length * 100)} label="เรียนไวยากรณ์" />
+                </>
               )}
               {pool.length > 0 && (
                 <>

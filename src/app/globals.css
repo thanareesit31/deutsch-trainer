@@ -4535,6 +4535,12 @@ select {
   border-color: #92a987;
   transform: translateY(-1px);
 }
+.sentence-conjugation-board .matching-subject { min-height: 66px; }
+.sentence-conjugation-prompt { min-width: 0; line-height: 1.45; }
+.sentence-conjugation-board .matching-drop { flex: 0 0 auto; }
+.sentence-conjugation-done { margin: 0; color: var(--text); }
+.grammar-conjugation-learning .guided-note { margin: 18px 0; padding: 13px 16px; }
+.grammar-conjugation-learning .grammar-discovery-examples { margin-top: 18px; }
 .matching-feedback {
   margin: 20px 0;
   padding: 20px;
@@ -4638,6 +4644,16 @@ select {
   .matching-subject {
     padding: 9px;
   }
+  .sentence-conjugation-board .matching-subject { align-items: flex-start; flex-direction: column; }
+  .sentence-conjugation-board .matching-drop { min-width: 0; }
+  .grammar-conjugation-learning .verb-summary thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .grammar-conjugation-learning .verb-summary tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .grammar-conjugation-learning .verb-summary tbody tr:last-child { border-bottom: 0; }
+  .grammar-conjugation-learning .verb-summary tbody th { grid-column: 1 / -1; }
+  .grammar-conjugation-learning .verb-summary th, .grammar-conjugation-learning .verb-summary td { padding: 5px 10px; border: 0; text-align: left; }
+  .grammar-conjugation-learning .verb-summary.single-verb tbody td { grid-column: 1 / -1; }
+  .grammar-conjugation-learning .verb-summary td::before { display: block; margin-bottom: 2px; color: var(--text); font-size: 12px; font-weight: 600; content: attr(data-label); }
+  .grammar-conjugation-learning .verb-summary td .conjugation-audio-form { justify-content: flex-start; padding-left: 0; }
   .matching-drop {
     min-width: 115px;
   }
@@ -4905,6 +4921,12 @@ select {
 .grammar-discovery-example > span {
   color: var(--text);
 }
+.grammar-discovery-noun-hint {
+  color: var(--ink);
+  font-weight: 600;
+}
+.grammar-discovery-name { font-weight: 700; }
+.grammar-discovery-name-s { color: #b83232; }
 .grammar-discovery-rule {
   display: flex;
   align-items: flex-start;
@@ -4924,6 +4946,128 @@ select {
   gap: 18px;
   margin-top: 24px;
   flex-wrap: wrap;
+}
+.possessive-summary {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+}
+.possessive-summary h2 { margin: 0 0 6px; font-size: 21px; }
+.possessive-summary p { margin: 0 0 16px; color: var(--text); }
+.possessive-summary-scroll { overflow-x: auto; }
+.possessive-summary table { width: 100%; border-collapse: collapse; text-align: left; }
+.possessive-summary th, .possessive-summary td { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.possessive-summary thead th { background: var(--soft); font-weight: 700; }
+.possessive-summary tbody tr:last-child th, .possessive-summary tbody tr:last-child td { border-bottom: 0; }
+.possessive-summary tbody th { font-weight: 600; }
+.possessive-summary tbody th small { display: block; margin-top: 2px; color: var(--text); font-weight: 400; }
+.possessive-summary td { white-space: nowrap; }
+.possessive-family-scene {
+  margin-top: 26px;
+  padding: clamp(16px, 3vw, 26px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--soft);
+}
+.possessive-family-scene > h2 { margin: 8px 0 16px; font-size: clamp(20px, 3vw, 26px); }
+.possessive-family-meaning { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 18px; }
+.possessive-family-meaning p {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--paper);
+}
+.possessive-family-meaning strong { font-size: 18px; color: var(--ink); }
+.possessive-family-meaning span { color: var(--text); }
+.possessive-family-photo {
+  position: relative;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin: 0 auto;
+}
+.possessive-family-photo img { display: block; width: 100%; height: auto; }
+.possessive-family-name {
+  position: absolute;
+  padding: 4px 10px;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 92%);
+  box-shadow: 0 2px 9px rgb(0 0 0 / 20%);
+  color: #243b2b;
+  font-size: clamp(10px, 1.5vw, 14px);
+  font-weight: 700;
+  line-height: 1.25;
+  transform: translateX(-50%);
+}
+.possessive-family-name.father { left: 18%; top: 37%; }
+.possessive-family-name.mother { left: 87%; top: 51%; }
+.possessive-family-name.son { left: 46%; top: 25%; }
+.possessive-family-name.daughter { left: 66%; top: 36%; }
+.possessive-family-speech {
+  position: absolute;
+  left: 4%;
+  bottom: 4%;
+  display: grid;
+  gap: 2px;
+  width: min(62%, 250px);
+  padding: 8px 11px;
+  border: 1px solid #d8e3d5;
+  border-radius: 12px;
+  background: rgb(255 255 255 / 96%);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 15%);
+  color: var(--ink);
+  font-size: clamp(10px, 1.25vw, 13px);
+  line-height: 1.3;
+}
+.possessive-family-speech::before {
+  content: "";
+  position: absolute;
+  left: 71%;
+  top: -10px;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid #d8e3d5;
+  border-left: 1px solid #d8e3d5;
+  background: rgb(255 255 255 / 96%);
+  transform: rotate(45deg);
+}
+.possessive-family-speaker { font-weight: 700; color: var(--ink); }
+.possessive-family-speech .german-listen-text { font-weight: 600; }
+.possessive-family-speech .german-listen-text strong { color: #236e3e; text-decoration: underline; text-underline-offset: 2px; }
+.possessive-family-speech > span[lang="th"] { color: var(--text); }
+.possessive-family-explanation { margin: 16px 0 0; color: var(--text); }
+.possessive-family-explanation strong { color: var(--ink); }
+.possessive-family-scene .guided-instruction { margin: 22px 0 14px; }
+.possessive-family-choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.possessive-family-reveal { display: grid; gap: 12px; margin-top: 16px; }
+.possessive-family-reveal > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--paper);
+}
+.possessive-family-reveal > div > span { color: var(--text); }
+@media (max-width: 600px) {
+  .possessive-summary { padding: 14px; }
+  .possessive-summary thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .possessive-summary tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .possessive-summary tbody tr:last-child { border-bottom: 0; }
+  .possessive-summary tbody th { grid-column: 1 / -1; }
+  .possessive-summary th, .possessive-summary td { padding: 5px 8px; border-bottom: 0; font-size: 14px; }
+  .possessive-summary td { white-space: normal; overflow-wrap: anywhere; }
+  .possessive-summary td::before { display: block; margin-bottom: 4px; color: var(--text); font-size: 12px; font-weight: 600; line-height: 1.4; content: attr(data-label); }
+  .possessive-family-meaning { grid-template-columns: 1fr; }
+  .possessive-family-choices { grid-template-columns: 1fr; }
+  .possessive-family-name { padding: 3px 7px; }
+  .possessive-family-speech { width: 68%; padding: 6px 8px; }
 }
 .guided-instruction {
   font-size: 18px;
