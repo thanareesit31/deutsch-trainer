@@ -14,6 +14,10 @@ try {
     "20261012000000_l03_l12_vocabulary_image_states.sql",
     "20261012050000_a13_l14_l15_states.sql",
     "20261014120000_grammar_discovery_states.sql",
+    "20261017000000_course_learning_state_keys.sql",
+    "20261018000000_l14_phrase_learning_state.sql",
+    "20261019000000_l14_position_quiz_state.sql",
+    "20261019010000_l14_position_quiz_cat_state.sql",
   ])
     await client.query(
       await readFile(

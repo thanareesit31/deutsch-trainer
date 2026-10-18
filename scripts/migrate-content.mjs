@@ -40,6 +40,7 @@ try {
     "20261014090000_l14_place_matching.sql",
     "20261014100000_l14_visual_vocabulary.sql",
     "20261014110000_l05_visual_refresh.sql",
+    "20261019020000_l14_dativ_examples.sql",
   ]) {
     const sql = await readFile(
       new URL("../supabase/migrations/" + file, import.meta.url),
