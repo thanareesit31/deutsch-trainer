@@ -22,15 +22,20 @@ const pageSize = 3;
 const pageCount = questions.length / pageSize;
 type QuizState = { page: number; solved: L14PositionKind[] };
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null;
+}
+
 function readQuizState(raw: string | null): QuizState {
   if (!raw) return { page: 0, solved: [] };
   try {
     const value: unknown = JSON.parse(raw);
-    if (!value || typeof value !== "object") return { page: 0, solved: [] };
-    const solved = "solved" in value && Array.isArray(value.solved)
-      ? questions.filter((question) => value.solved.includes(question.position)).map((question) => question.position)
-      : [];
-    const page = "page" in value && typeof value.page === "number" && Number.isInteger(value.page)
+    if (!isRecord(value)) return { page: 0, solved: [] };
+    const storedSolved: unknown[] = Array.isArray(value.solved) ? value.solved : [];
+    const solved = questions
+      .filter((question) => storedSolved.includes(question.position))
+      .map((question) => question.position);
+    const page = typeof value.page === "number" && Number.isInteger(value.page)
       ? Math.max(0, Math.min(value.page, pageCount - 1))
       : 0;
     return { page, solved };
