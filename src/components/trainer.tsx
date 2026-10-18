@@ -585,6 +585,7 @@ function LessonDetail({ id }: { id: string }) {
       <div className="skills-grid">
         {lessonSkills.map((s) => {
           const Icon = skillIcons[s.id];
+          const hasDedicatedContent = id === "L14" && s.id === "phrases";
           const pool = items.filter(
             (i) => i.lessonId === id && i.skill === s.id,
           );
@@ -607,7 +608,7 @@ function LessonDetail({ id }: { id: string }) {
                 <span className={`icon-tile large ${s.color}`}>
                   <Icon size={24} />
                 </span>
-                {pool.length || discovery ? (
+                {pool.length || discovery || hasDedicatedContent ? (
                   <ArrowUpRight size={20} />
                 ) : (
                   <span className="quiet-pill">กำลังเตรียมเนื้อหา</span>
@@ -636,7 +637,7 @@ function LessonDetail({ id }: { id: string }) {
               )}
             </>
           );
-          return pool.length || discovery || isTestWorkspaceUser(user) ? (
+          return pool.length || discovery || hasDedicatedContent || isTestWorkspaceUser(user) ? (
             <Link
               key={s.id}
               href={`/learn/${id}/${s.id}`}
