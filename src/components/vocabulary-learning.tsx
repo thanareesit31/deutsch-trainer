@@ -185,15 +185,15 @@ export function A13GrammarEntryPoints({ lessonId }: { lessonId: "L13" | "L14" | 
     { group: "es gibt + Akkusativ", route: "es-gibt", title: "Es gibt + Akkusativ", description: "รูปคำนามหลัง es gibt", symbol: "A" },
     { group: "Personalpronomen im Dativ", route: "dativ", title: "Personalpronomen im Dativ", description: "สรรพนามรูป Dativ", symbol: "D" },
     { group: "Verben", route: "verbs", title: "Verben", description: "กริยาที่ใช้พูดถึงเมืองและสถานที่", symbol: "V" },
-    { group: "Adjektive", route: "adjektive", title: "Adjektive", description: "คำคุณศัพท์และคำบอกลักษณะ", symbol: "A" },
   ] : lessonId === "L14" ? [
-    { group: "Lokale Präpositionen", route: "lokale-praepositionen", title: "Lokale Präpositionen", description: "ตำแหน่งและ Wo? + Dativ", symbol: "Wo?" },
+    { group: "Lokale Präpositionen", route: "lokale-praepositionen", title: "ตำแหน่ง", description: "คำบุพบทบอกตำแหน่ง", symbol: "Wo?" },
+    { group: "Wo? + Dativ", route: "wo-dativ", title: "Wo? + Dativ", description: "Dativ และรูปย่อ im / am", symbol: "D" },
   ] : [
     { group: "Possessivartikel", route: "possessivartikel", title: "Possessivartikel: ihr / sein", description: "คำแสดงความเป็นเจ้าของใน Nominativ และ Akkusativ", symbol: "ihr" },
   ];
   return <main className="vocabulary-learning">
     {cards.map((card) => {
-      const count = items.filter((item) => item.lessonId === lessonId && item.skill === "grammar" && item.group === card.group).length;
+      const count = lessonId === "L14" ? 2 : items.filter((item) => item.lessonId === lessonId && item.skill === "grammar" && item.group === card.group).length;
       return <Link key={card.group} className="alphabet-entry-card" href={`/learn/${lessonId}/grammar/${card.route}`}>
         <span className="alphabet-entry-symbols" aria-hidden="true">{card.symbol}</span>
         <span className="alphabet-entry-copy"><span className="eyebrow">GRAMMATIK</span><span className="alphabet-entry-title"><strong>{card.title}</strong></span><small>{card.description} · {count} คำ</small></span>

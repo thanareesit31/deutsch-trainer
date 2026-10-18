@@ -326,6 +326,14 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
   return {
     url: `http://127.0.0.1:${server.address().port}`,
     accounts,
+    async snapshot() {
+      const rows = {};
+      for (const table of tables) {
+        if (table.startsWith("content_") || table === "knowledge_state") continue;
+        rows[table] = (await db.query(`select * from public.${identifier(table)}`)).rows;
+      }
+      return { accounts, rows };
+    },
     async close() {
       server.closeAllConnections();
       await new Promise((resolve) => server.close(resolve));

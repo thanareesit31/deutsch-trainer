@@ -2,6 +2,7 @@
 
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { Volume2 } from "lucide-react";
+import Image from "next/image";
 import type { Item } from "@/lib/content";
 import {
   activityPairs,
@@ -9,6 +10,8 @@ import {
   type LearningActivity,
   type LearningOption,
   type LearningPair,
+  type L14PositionKind,
+  type L14RouteKind,
 } from "@/lib/guided-learning";
 import { speakGermanText, useGermanVoice } from "./german-audio";
 import { useVocabularyAudio } from "./vocabulary-audio";
@@ -45,7 +48,7 @@ export function LearningValue({
   );
 }
 
-export function RouteDiagram({ route }: { route: NonNullable<LearningPair["leftVisual"]>["route"] }) {
+export function RouteDiagram({ route }: { route: L14RouteKind }) {
   const markerId = `route-${useId().replaceAll(":", "")}`;
   if (route === "distance") return <svg className="guided-route-diagram" viewBox="0 0 150 120" role="img" aria-label="เส้นทางจากจุดเริ่มถึงหลักระยะ 50 เมตร">
     <path d="M18 78H132" stroke="#d8dfd6" strokeWidth="24" strokeLinecap="round" />
@@ -86,6 +89,23 @@ export function RouteDiagram({ route }: { route: NonNullable<LearningPair["leftV
     <path d={paths[route]} fill="none" stroke="#258db3" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" markerEnd={`url(#${markerId})`} />
     <circle cx={x} cy={y} r="4" fill="#258db3" />
   </svg>;
+}
+
+export function PositionPicture({ position }: { position: L14PositionKind }) {
+  return <Image
+    className="guided-position-photo"
+    src={`/images/lektion-14-vocabulary/positions-illustrated/${position}.jpg`}
+    alt="ภาพประกอบลูกบอลสีแดงกับตู้ไม้สำหรับจับคู่ตำแหน่ง"
+    width={1536}
+    height={1024}
+    sizes="(max-width: 700px) 45vw, 210px"
+  />;
+}
+
+function PairVisual({ visual }: { visual: NonNullable<LearningPair["leftVisual"]> }) {
+  return visual.kind === "l14-route"
+    ? <RouteDiagram route={visual.route} />
+    : <PositionPicture position={visual.position} />;
 }
 
 export function AudioChoice({
@@ -377,29 +397,30 @@ export function PairMatching({
         }
       }}
     >
-      {side === "left" && pair.leftVisual?.kind === "l14-route"
-        ? <RouteDiagram route={pair.leftVisual.route} />
+      {side === "left" && pair.leftVisual
+        ? <PairVisual visual={pair.leftVisual} />
         : <LearningValue option={pair[side]} items={items} />}
       {hasSpeech && (activity.type === "conjugation" || side === "right") && <Volume2 size={16} aria-hidden="true" />}
     </button>
   );
-  if (pairs.length > 0 && pairs.every((pair) => pair.leftVisual?.kind === "l14-route")) {
+  if (pairs.length > 0 && pairs.every((pair) => pair.leftVisual?.kind === "l14-route" || pair.leftVisual?.kind === "l14-position")) {
+    const positionPictures = pairs[0].leftVisual?.kind === "l14-position";
     return <>
-      <div className="matching-options-sticky guided-route-options" aria-label="เลือกคำบอกทาง">
+      <div className="matching-options-sticky guided-route-options" aria-label={positionPictures ? "เลือกคำบุพบท" : "เลือกคำบอกทาง"}>
         {remainingRight.map((pair) => token(pair, "right"))}
       </div>
-      <div className="guided-route-picture-grid" aria-label="จับคู่รูปกับคำบอกทาง">
+      <div className="guided-route-picture-grid" aria-label={positionPictures ? "จับคู่ภาพตำแหน่งกับคำบุพบท" : "จับคู่รูปกับคำบอกทาง"}>
         {pairs.map((pair) => {
           const matched = matchedIds.includes(pair.id);
           return <article key={pair.id} className={`guided-route-picture-card${matched ? " matched" : ""}`}>
             {matched && pair.leftVisual
-              ? <RouteDiagram route={pair.leftVisual.route} />
+              ? <PairVisual visual={pair.leftVisual} />
               : token(pair, "left")}
             {matched ? <>
               <button type="button" className="german-listen-text" onClick={() => readPair(pair)}>
                 <LearningValue option={pair.right} items={items} /><Volume2 size={16} aria-hidden="true" />
               </button>
-              <small>{items.find((item) => item.id === pair.contentIds[0])?.meaning}</small>
+              <small>{positionPictures ? optionValue(pair.left, items) : items.find((item) => item.id === pair.contentIds[0])?.meaning}</small>
             </> : <button type="button" className="guided-route-slot" disabled={busy || !!wrong.length || selection?.side !== "right"} onClick={() => void choose("left", pair.id)}>
               {selection?.side === "right" ? "จับคู่คำนี้กับภาพ" : "เลือกคำศัพท์ด้านบนก่อน"}
             </button>}
@@ -417,7 +438,7 @@ export function PairMatching({
           .filter((p) => matchedIds.includes(p.id))
           .map((p) => (
             <div key={p.id} className="guided-locked-pair">
-              {p.leftVisual?.kind === "l14-route" ? <RouteDiagram route={p.leftVisual.route} /> : <LearningValue option={p.left} items={items} />}
+              {p.leftVisual ? <PairVisual visual={p.leftVisual} /> : <LearningValue option={p.left} items={items} />}
               <LearningValue option={p.right} items={items} />
               {hasSpeech && <button type="button" className="german-listen-text"
                 aria-label={`ฟังเสียง ${optionValue(p.left, items)} ${optionValue(p.right, items)}`}

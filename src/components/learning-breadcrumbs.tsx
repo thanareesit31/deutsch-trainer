@@ -41,6 +41,7 @@ export function LearningBreadcrumbs() {
       const a13Label = ({
         "L14:vocabulary:directions": "Wege und Richtungen",
         "L14:grammar:lokale-praepositionen": "Lokale Präpositionen",
+        "L14:grammar:wo-dativ": "Wo? + Dativ",
         "L15:grammar:possessivartikel": "Possessivartikel",
       } as Record<string, string>)[`${lesson.id}:${parts[2]}:${parts[3]}`];
       const familyLabel = lesson.id === "L03" && parts[2] === "vocabulary" && parts[3] === "familie-plural" ? "Familienplural" : undefined;

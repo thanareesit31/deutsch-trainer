@@ -1,6 +1,6 @@
 import { spawn } from "node:child_process";
 import { randomUUID } from "node:crypto";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { createServer } from "node:net";
 import { networkInterfaces } from "node:os";
@@ -49,9 +49,16 @@ await writeFile(
   ) + "\n",
 );
 const originalNextEnv = await readFile("next-env.d.ts", "utf8");
-const recovery = process.env.TEST_WORKSPACE_RECOVERY === "1"
-  ? JSON.parse(await readFile(".tools/test-workspace-recovery.json", "utf8"))
-  : undefined;
+const recoveryPath = ".tools/test-workspace-recovery.json";
+const reset = process.env.TEST_WORKSPACE_RESET === "1";
+let recovery;
+if (!reset) {
+  try {
+    recovery = JSON.parse(await readFile(recoveryPath, "utf8"));
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+}
 const api = await startTestApi({ port: apiPort, webPort, webHosts: lanHosts, restore: recovery });
 const child = spawn(
   process.execPath,
@@ -83,7 +90,7 @@ const child = spawn(
   },
 );
 console.log(
-  `\nพื้นที่ทดสอบ: http://localhost:${webPort}\nบัญชี: tester@deutsch.test หรือ tester2@deutsch.test\nรหัสผ่าน: TestOnly123!\n${recovery ? "คืนประวัติทดสอบเดิมแล้ว พร้อม catalog ปัจจุบัน; กรุณาล็อกอินใหม่" : "ข้อมูลเริ่มว่างทุกครั้งที่เปิดคำสั่งนี้; refresh หน้าเว็บยังเรียนต่อได้"}\nเริ่มใหม่: Ctrl+C แล้ว npm run dev:test\n`,
+  `\nพื้นที่ทดสอบ: http://localhost:${webPort}\nบัญชี: tester@deutsch.test หรือ tester2@deutsch.test\nรหัสผ่าน: TestOnly123!\n${recovery ? "คืนประวัติทดสอบเดิมแล้ว พร้อม catalog ปัจจุบัน; กรุณาล็อกอินใหม่" : "พื้นที่ทดสอบใหม่; การเปิดครั้งต่อไปจะเก็บประวัติไว้"}\nเริ่มใหม่แบบล้างข้อมูล: Ctrl+C แล้ว npm run dev:test:reset\n`,
 );
 for (const host of lanHosts) console.log(`เปิดจากโทรศัพท์ใน Wi-Fi เดียวกัน: http://${host}:${webPort}`);
 let closing = false;
@@ -97,15 +104,25 @@ async function cleanup(code = 0) {
     await stopped;
     clearTimeout(timeout);
   }
-  await api.close();
+  try {
+    const snapshotPath = `${recoveryPath}.tmp`;
+    await writeFile(snapshotPath, JSON.stringify(await api.snapshot()));
+    await rename(snapshotPath, recoveryPath);
+  } catch (error) {
+    console.error("บันทึกประวัติพื้นที่ทดสอบไม่สำเร็จ:", error);
+    process.exitCode = 1;
+  } finally {
+    await api.close();
+  }
   // Next generates this root declaration even with a custom tsconfig/distDir.
   const generated = await readFile("next-env.d.ts", "utf8");
   if (generated.includes("./.tools/test-workspace-next/"))
     await writeFile("next-env.d.ts", originalNextEnv);
-  process.exitCode = code;
+  process.exitCode = Math.max(process.exitCode ?? 0, code);
 }
 process.on("SIGINT", () => void cleanup());
 process.on("SIGTERM", () => void cleanup());
+process.on("SIGHUP", () => void cleanup());
 child.once("exit", (code) => void cleanup(code ?? 0));
 child.once("error", (error) => {
   console.error(error.message);

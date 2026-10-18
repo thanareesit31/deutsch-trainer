@@ -17,6 +17,8 @@ import { useContent } from "./content-provider";
 import { useLearning } from "./learning-store";
 import { useLessonState } from "./lesson-state-provider";
 import { AudioChoice, NumberChoice, PairMatching, RouteDiagram } from "./guided-activities";
+import { L14PositionQuiz } from "./l14-position-quiz";
+import { L14DativTable } from "./l14-dativ-table";
 import { NumberMatching } from "./number-matching";
 import { NumberObservations } from "./number-observations";
 import { NumberSummaryBoard } from "./number-summary-board";
@@ -157,8 +159,9 @@ function GuidedFlow({
   );
   const activities = grammarTrack ? grammarTrackActivities(flow, items, grammarTrack) : track ? vocabularyTrackActivities(flow, items, track) : flow.activities;
   const hasPatternSummary = (lessonId === "L14" && skill === "vocabulary") ||
-    ["es-gibt", "dativ", "lokale-praepositionen", "possessivartikel"].includes(grammarTrack ?? "");
-  const hasEndContent = track === "numbers" || grammarTrack === "verbs" || grammarTrack === "pronouns" || hasPatternSummary;
+    ["es-gibt", "dativ", "possessivartikel"].includes(grammarTrack ?? "");
+  const hasPositionQuiz = grammarTrack === "lokale-praepositionen";
+  const hasEndContent = track === "numbers" || grammarTrack === "verbs" || grammarTrack === "pronouns" || hasPatternSummary || hasPositionQuiz;
   const [position, setPosition] = useState(() => {
     const first = activities.findIndex((a) => !state.learnedActivityIds.includes(a.id));
     return first < 0 ? hasEndContent ? activities.length + (track === "numbers" && state.numberEndPage === "board" ? 1 : 0) : Math.max(0, activities.length - 1) : first;
@@ -179,6 +182,7 @@ function GuidedFlow({
   const title = track === "numbers" ? "Zahlen" : track === "core" ? "WORTSCHATZ" : track === "familienstand" ? "Familienstand"
     : grammarTrack === "es-gibt" ? "Es gibt + Akkusativ"
     : grammarTrack === "dativ" ? "Personalpronomen im Dativ"
+    : grammarTrack === "wo-dativ" ? "Wo? + Dativ"
     : flow.title;
   const sectionTitle = activity?.section.split(" · ")[0] ?? (track === "numbers" ? showNumberBoard ? "Zahlen" : "Beobachtungen" : "Übersicht");
   const sectionDescription = activity
@@ -198,18 +202,19 @@ function GuidedFlow({
       const key = track === "numbers" || grammarTrack === "pronouns" ? entry.id : entry.section.split(" · ")[0];
       const existing = categories.find((category) => category.key === key);
       if (existing) existing.positions.push(index);
-      else categories.push({ key, label: track === "numbers" ? entry.section.replace("Zahlen · ", "")
-        : entry.type === "pronoun_matching" ? entry.section.split(" · ")[1] : pronoun ?? key, thai: entry.type === "pronoun_matching" ? (pronounGroups.find(group => entry.section.endsWith(group.label))?.thai ?? "") : track === "numbers" ? "ตัวเลข" : grammarTrack ? (items.find((item) => item.id === (entry.verbId ?? entry.contentIds[0]))?.meaning ?? "") : ({ Berufe: "อาชีพ", Arbeitsstatus: "สถานะการทำงาน", Traumberuf: "อาชีพในฝัน" }[key] ?? ""), positions: [index] });
+      else categories.push({ key, label: hasPositionQuiz ? "Bilder zuordnen" : track === "numbers" ? entry.section.replace("Zahlen · ", "")
+        : entry.type === "pronoun_matching" ? entry.section.split(" · ")[1] : pronoun ?? key, thai: hasPositionQuiz ? "จับคู่ภาพกับคำ" : entry.type === "pronoun_matching" ? (pronounGroups.find(group => entry.section.endsWith(group.label))?.thai ?? "") : track === "numbers" ? "ตัวเลข" : grammarTrack ? (items.find((item) => item.id === (entry.verbId ?? entry.contentIds[0]))?.meaning ?? "") : ({ Berufe: "อาชีพ", Arbeitsstatus: "สถานะการทำงาน", Traumberuf: "อาชีพในฝัน" }[key] ?? ""), positions: [index] });
     });
     if (track === "numbers") categories.push(
       { key: "observations", label: "Beobachtungen", thai: "จุดสังเกต", positions: [activities.length] },
       { key: "summary", label: "Übersicht", thai: "ตารางสรุป", positions: [activities.length + 1] },
     );
     if (grammarTrack === "verbs" || grammarTrack === "pronouns" || hasPatternSummary) categories.push({ key: "summary", label: "Übersicht", thai: "ตารางสรุป", positions: [activities.length] });
+    if (hasPositionQuiz) categories.push({ key: "position-quiz", label: "Sätze ergänzen", thai: "เติมคำจากภาพ", positions: [activities.length] });
   }
   const completed =
     !!activity && state.learnedActivityIds.includes(activity.id);
-  const canAdvance = completed || allowIncompleteNavigation;
+  const canAdvance = completed || (allowIncompleteNavigation && !hasPositionQuiz);
   const pairs = activity ? activityPairs(activity, items) : [];
   const matchedIds = activity ? (state.matches[activity.id] ?? []) : [];
   function persist(next: typeof state) {
@@ -289,7 +294,7 @@ function GuidedFlow({
             const first = category.positions[0];
             const active = category.positions.includes(position);
             const previouslyLearned = category.positions.every((index) => index < activities.length && state.learnedActivityIds.includes(activities[index].id));
-            const available = allowIncompleteNavigation || previouslyLearned || activities.slice(0, Math.min(first, activities.length))
+            const available = (category.key !== "position-quiz" && allowIncompleteNavigation) || previouslyLearned || activities.slice(0, Math.min(first, activities.length))
               .every((entry) => state.learnedActivityIds.includes(entry.id))
               && (first <= activities.length || position >= activities.length || !!state.numberEndPage);
             return <button key={category.key} type="button" disabled={!available || busy}
@@ -344,8 +349,8 @@ function GuidedFlow({
           {activity.id === "L02-number-matching-13-19" && <TeenNumberExample />}
           {activity.id === "L02-number-matching-20-90" && <TeenNumberExample tens />}
           {activity.id === "L02-number-matching-21-100" && <TeenNumberExample compound />}
-          {!isProfession && activity.type !== "pronoun_matching" && <p className="guided-instruction">{activity.instruction}</p>}
-          {activity.note && <p className="guided-note">{activity.note}</p>}
+          {!isProfession && activity.type !== "pronoun_matching" && activity.id !== "L14-position-dativ" && <p className="guided-instruction">{activity.instruction}</p>}
+          {activity.note && activity.id !== "L14-position-dativ" && <p className="guided-note">{activity.note}</p>}
           {!!study.length && (
             <details className="guided-reference">
               <summary>ดูเนื้อหาประกอบ</summary>
@@ -378,7 +383,7 @@ function GuidedFlow({
               </div>
             </details>
           )}
-          {isProfession ? <ProfessionMatching activity={activity} items={items} matchedIds={matchedIds} busy={busy} wrongCounts={state.professionAnswers ?? {}} onMatch={saveCorrect} onWrong={(id) => persist(recordProfessionAnswer(state, id, false))} showFormNote={activity.id === professionActivities[0]?.id} /> : activity.type === "number_matching" ? (
+          {activity.id === "L14-position-dativ" ? <L14DativTable activity={activity} items={items} matchedIds={matchedIds} busy={busy} onMatch={saveCorrect} /> : isProfession ? <ProfessionMatching activity={activity} items={items} matchedIds={matchedIds} busy={busy} wrongCounts={state.professionAnswers ?? {}} onMatch={saveCorrect} onWrong={(id) => persist(recordProfessionAnswer(state, id, false))} showFormNote={activity.id === professionActivities[0]?.id} /> : activity.type === "number_matching" ? (
             <NumberMatching activity={activity} items={items} matchedIds={matchedIds} busy={busy} onMatch={saveCorrect} />
           ) : activity.type === "pronoun_matching" ? (
             <PronounMatching activity={activity} items={items} matchedIds={matchedIds} busy={busy} onMatch={saveCorrect} />
@@ -449,8 +454,8 @@ function GuidedFlow({
         </section>
       ) : (
         <section className="guided-card">
-          {grammarTrack === "pronouns" ? <PronounSummary items={items} /> : grammarTrack === "verbs" ? <ConjugationSummary activities={activities} items={items} /> : hasPatternSummary ? <PatternSummary title={title} activities={activities} items={items} /> : track === "numbers" ? showNumberBoard ? <NumberSummaryBoard items={summaryItems} /> : <NumberObservations items={items} /> : null}
-          <div className="guided-navigation">
+          {hasPositionQuiz ? <L14PositionQuiz /> : grammarTrack === "pronouns" ? <PronounSummary items={items} /> : grammarTrack === "verbs" ? <ConjugationSummary activities={activities} items={items} /> : hasPatternSummary ? <PatternSummary title={title} activities={activities} items={items} /> : track === "numbers" ? showNumberBoard ? <NumberSummaryBoard items={summaryItems} /> : <NumberObservations items={items} /> : null}
+          {!hasPositionQuiz && <div className="guided-navigation">
             <button
               type="button"
               className="button secondary"
@@ -490,7 +495,7 @@ function GuidedFlow({
                 กลับบทเรียน
               </Link>
             )}
-          </div>
+          </div>}
         </section>
       )}
     </main>

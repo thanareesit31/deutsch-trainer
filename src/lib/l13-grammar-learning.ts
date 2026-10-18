@@ -8,7 +8,6 @@ const verbNotes: Record<string, string> = {
   "L13-V024": "helfen ใช้ Dativ กับผู้ที่ได้รับความช่วยเหลือ · du / er / sie / es เปลี่ยน e เป็น i",
   "L13-V025": "danken ใช้ Dativ กับผู้ที่เราขอบคุณ",
   "L13-V026": "finden มี e ช่วยก่อน -st / -t · ใช้พูดถึงความคิดเห็นเกี่ยวกับสถานที่",
-  "L13-V029": "es gibt ใช้บอกว่ามีสิ่งใดอยู่ · es เป็นประธานคงที่ และสิ่งที่มีใช้ Akkusativ",
 };
 
 export function prepareL13VerbItem(item: Item): Item {
@@ -22,7 +21,7 @@ export function buildL13VerbFlow(items: Item[]): LearningFlow {
   return {
     stateKey: "deutsch-trainer-guided-learning-L13-grammar",
     title: "Verben",
-    activities: items.filter(item => item.lessonId === "L13" && item.group === "Verben" && item.verbContent).map(item => ({
+    activities: items.filter(item => item.lessonId === "L13" && item.group === "Verben" && item.verbContent && item.id !== "L13-V029").map(item => ({
       id: `L13-conjugation-${item.id}`,
       type: "conjugation",
       section: item.answer,

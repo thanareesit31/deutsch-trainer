@@ -18,6 +18,7 @@ export interface ContentRef {
   field: ContentField;
 }
 export type L14RouteKind = "straight" | "right" | "left" | "turn-right" | "turn-left" | "cross" | "distance";
+export type L14PositionKind = "in" | "auf" | "ueber" | "unter" | "an" | "vor" | "hinter" | "neben" | "zwischen";
 export interface LearningOption {
   id: string;
   ref?: ContentRef;
@@ -30,7 +31,7 @@ export interface LearningPair {
   contentIds: string[];
   legacyActivityIds?: string[];
   legacyMatches?: { activityId: string; pairId: string }[];
-  leftVisual?: { kind: "l14-route"; route: L14RouteKind };
+  leftVisual?: { kind: "l14-route"; route: L14RouteKind } | { kind: "l14-position"; position: L14PositionKind };
 }
 export interface LearningActivity {
   id: string;

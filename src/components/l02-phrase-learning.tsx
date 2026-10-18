@@ -94,7 +94,6 @@ export function L02PhraseLearning() {
     <section className="guided-card">
       {category === 0 ? <>
         <h2>Beruflicher Status <small>— สถานะการทำงาน</small></h2>
-        <p className="phrase-source">ที่มา: ชีทหน้า PDF 23 และสไลด์อาจารย์ Lektion 2</p>
         <table className="phrase-vocabulary-table"><thead><tr><th>คำศัพท์</th><th>ความหมาย</th></tr></thead><tbody>{l02StatusWords.map((id) => {
           const entry = l02StatusExamples.find((example) => example.id === id)!;
           return <tr key={id} data-learning-item={id}><td>{audio(entry.word)}</td><td>{entry.meaning}</td></tr>;

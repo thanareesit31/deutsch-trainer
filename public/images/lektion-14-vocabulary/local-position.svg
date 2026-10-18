@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Orte nebeneinander und gegenüber</title>
+  <desc id="desc">ผังเมืองอย่างง่าย มีคาเฟ่กับธนาคารอยู่ข้างกัน และไปรษณีย์อยู่ฝั่งตรงข้ามถนน</desc>
+  <rect width="720" height="360" rx="24" fill="#edf3e9"/>
+  <rect x="0" y="145" width="720" height="74" fill="#d4d9d0"/>
+  <path d="M0 181h720" stroke="#fff" stroke-width="4" stroke-dasharray="18 16"/>
+  <g stroke="#b8c5b4" stroke-width="3">
+    <rect x="72" y="42" width="220" height="88" rx="12" fill="#fffaf0"/>
+    <rect x="304" y="42" width="220" height="88" rx="12" fill="#f9e3d8"/>
+    <rect x="72" y="232" width="220" height="88" rx="12" fill="#e5eef6"/>
+  </g>
+  <g fill="#30483a" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">
+    <text x="182" y="96">das Café</text>
+    <text x="414" y="96">die Bank</text>
+    <text x="182" y="286">die Post</text>
+  </g>
+  <g fill="#8da38a">
+    <circle cx="115" cy="64" r="8"/><circle cx="347" cy="64" r="8"/><circle cx="115" cy="254" r="8"/>
+  </g>
+</svg>

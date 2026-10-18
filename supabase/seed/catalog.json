@@ -7975,9 +7975,9 @@
       "lessonId": "L14",
       "skill": "grammar",
       "group": "Wo? + Dativ",
-      "title": "vor dem Baum",
-      "answer": "vor dem Baum",
-      "meaning": "อยู่หน้าต้นไม้ · der → dem",
+      "title": "dem Spielplatz",
+      "answer": "dem Spielplatz",
+      "meaning": "vor dem Spielplatz · der → dem",
       "sourceScope": "core_book",
       "sources": [
         {
@@ -7997,9 +7997,9 @@
       "lessonId": "L14",
       "skill": "grammar",
       "group": "Wo? + Dativ",
-      "title": "neben einem Kaufhaus",
-      "answer": "neben einem Kaufhaus",
-      "meaning": "อยู่ข้างห้างแห่งหนึ่ง · ein → einem",
+      "title": "einem Kino",
+      "answer": "einem Kino",
+      "meaning": "neben einem Kino · ein → einem",
       "sourceScope": "core_book",
       "sources": [
         {
@@ -8019,9 +8019,9 @@
       "lessonId": "L14",
       "skill": "grammar",
       "group": "Wo? + Dativ",
-      "title": "an der Ampel",
-      "answer": "an der Ampel",
-      "meaning": "อยู่ที่สัญญาณไฟ · die → der",
+      "title": "der Post",
+      "answer": "der Post",
+      "meaning": "an der Post · die → der",
       "sourceScope": "core_book",
       "sources": [
         {
@@ -8041,9 +8041,9 @@
       "lessonId": "L14",
       "skill": "grammar",
       "group": "Wo? + Dativ",
-      "title": "zwischen den Bäumen",
-      "answer": "zwischen den Bäumen",
-      "meaning": "อยู่ระหว่างต้นไม้ · พหูพจน์ die → den และเติม -n",
+      "title": "den Häusern",
+      "answer": "den Häusern",
+      "meaning": "zwischen den Häusern · พหูพจน์ die → den และเติม -n",
       "sourceScope": "core_book",
       "sources": [
         {

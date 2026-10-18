@@ -47,6 +47,10 @@ export async function createDatabase() {
     "20261014100000_l14_visual_vocabulary.sql",
     "20261014110000_l05_visual_refresh.sql",
     "20261014120000_grammar_discovery_states.sql",
+    "20261017000000_course_learning_state_keys.sql",
+    "20261018000000_l14_phrase_learning_state.sql",
+    "20261019000000_l14_position_quiz_state.sql",
+    "20261019010000_l14_position_quiz_cat_state.sql",
   ])
     await db.exec(
       await readFile(

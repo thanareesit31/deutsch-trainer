@@ -1,0 +1,25 @@
+{
+  "id": "l14-city-pictures-crossword-01",
+  "lessonId": "L14",
+  "title": "Bild-Kreuzworträtsel: Orte in der Stadt",
+  "gridWidth": 15,
+  "gridHeight": 8,
+  "coordinateSystem": "zero-based-row-col",
+  "kind": "original_interactive_layout_based_on_user_sample",
+  "sourceRefs": [
+    {"sourceId":"user-crossword", "relation":"exercise_mechanic"},
+    {"sourceId":"momente-kursbuch-a12", "printedPage":14, "relation":"source_topic"},
+    {"sourceId":"momente-kursbuch-a12", "printedPage":15, "relation":"source_topic"}
+  ],
+  "entries": [
+    {"number":1,"answer":"POLIZEI","direction":"down","row":1,"col":8,"clue":{"imageAssetId":"city/polizei.svg","altText":"ภาพสถานีตำรวจ หรือรถตำรวจที่ระบุว่า Polizei","hintTh":"สถานีตำรวจ"},"vocabularyId":"l14-w-polizei","sourceRefs":["user-crossword","momente-a12-p14"]},
+    {"number":2,"answer":"POST","direction":"across","row":1,"col":8,"clue":{"imageAssetId":"city/post.svg","altText":"ภาพที่ทำการไปรษณีย์","hintTh":"ไปรษณีย์"},"vocabularyId":"l14-w-post","sourceRefs":["user-crossword","momente-a12-p14"]},
+    {"number":3,"answer":"AMPEL","direction":"across","row":3,"col":4,"clue":{"imageAssetId":"city/ampel.svg","altText":"ภาพไฟจราจร","hintTh":"ไฟจราจร"},"vocabularyId":"l14-w-ampel","sourceRefs":["user-crossword","momente-a12-p15"]},
+    {"number":4,"answer":"ZENTRUM","direction":"across","row":5,"col":8,"clue":{"imageAssetId":"city/zentrum.svg","altText":"ภาพใจกลางเมือง","hintTh":"ใจกลางเมือง"},"vocabularyId":"l14-w-zentrum","sourceRefs":["user-crossword","momente-a12-p15"]},
+    {"number":5,"answer":"BANK","direction":"down","row":3,"col":10,"clue":{"imageAssetId":"city/bank.svg","altText":"ภาพธนาคาร","hintTh":"ธนาคาร"},"vocabularyId":"l14-w-bank","sourceRefs":["user-crossword","momente-a12-p14"]}
+  ],
+  "allowedHintModes": ["first_letter","reveal_letter","meaning","article"],
+  "seed": "l14-crossword-original-01",
+  "assetsStatus": "needs_original_illustrations_not_book_images",
+  "note": "This is a fully coordinate-specified original exercise layout; do not reproduce the photographed source puzzle as a raster UI."
+}

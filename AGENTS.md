@@ -23,3 +23,10 @@ directory, or files belonging to other projects.
 - If existing behavior conflicts with `docs/PRODUCT_BASELINE.md`, the baseline has higher priority.
 - After changing a requirement or user-facing behavior, update `docs/CHANGELOG_RE.md` with the date, what changed, why, and impact.
 - Do not change a core requirement without documenting its impact.
+
+## Content source attribution protocol
+
+- Keep source references, page numbers, exercise labels, audit notes, and provenance in project-side metadata (for example `sources`, source catalogs, inventories, and audit documents).
+- Never render source attribution or internal provenance in learner-facing pages, cards, prompts, feedback, or navigation. This includes book/page/exercise labels such as `Kommunikation · Lektion 14 · Aufgabe 6a`.
+- When adding or updating sourced learning content, record and review the source in the project metadata, then separately review the learner-facing copy to ensure it contains only teaching content and useful learner guidance. Show attribution only when the user explicitly asks for it.
+- Apply this protocol on every content change that adds or records a source reference; update the source metadata and changelog as required, without copying the attribution into the UI.

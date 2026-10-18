@@ -57,6 +57,7 @@ import { LearningBreadcrumbs } from "./learning-breadcrumbs";
 import { GuidedLearningPage } from "./guided-learning";
 import { GrammarDiscoveryPage, PossessiveSummaryPage } from "./grammar-discovery";
 import { GrammarConjugationPage } from "./grammar-conjugation";
+import { L14PhraseLearning } from "./l14-phrase-learning";
 import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
 import { grammarConjugationTopic } from "@/lib/grammar-conjugation";
 import { completedDiscoveryTopics } from "@/lib/grammar-discovery-progress";
@@ -238,6 +239,7 @@ function App() {
   else if (path === "/practice") page = <PracticeEntry start={start} />;
   else if (path === "/review") page = <ReviewPage start={start} />;
   else if (path === "/learn/L02/phrases") page = <L02PhraseLearning key={path} />;
+  else if (path === "/learn/L14/phrases") page = <L14PhraseLearning key={path} />;
   else if (path === "/learn/L02/phrases/sentences") page = <GuidedLearningPage key={path} lessonId="L02" skill="grammar" grammarTrack="sentences" />;
   else if (path === "/learn/L02/grammar/sentences") page = <L02SentencesRedirect />;
   else if (path === "/learn/L02/vocabulary")
@@ -276,10 +278,10 @@ function App() {
     page = <GuidedLearningPage key={path} lessonId="L13" skill="grammar" grammarTrack={parts[3] as "es-gibt" | "dativ"} />;
   else if (path === "/learn/L14/grammar/lokale-praepositionen")
     page = <GuidedLearningPage key={path} lessonId="L14" skill="grammar" grammarTrack="lokale-praepositionen" />;
+  else if (path === "/learn/L14/grammar/wo-dativ")
+    page = <GuidedLearningPage key={path} lessonId="L14" skill="grammar" grammarTrack="wo-dativ" />;
   else if (path === "/learn/L15/grammar/possessivartikel")
     page = <GuidedLearningPage key={path} lessonId="L15" skill="grammar" grammarTrack="possessivartikel" />;
-  else if (path === "/learn/L13/grammar/adjektive")
-    page = <LearnActivity key={path} lessonId="L13" skill="grammar" group="Adjektive" start={start} />;
   else if (
     parts[0] === "learn" && parts[1] === "L13" && parts[2] === "vocabulary" &&
     parts.length === 4 && ["extra"].includes(parts[3])

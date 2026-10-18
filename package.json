@@ -18,6 +18,7 @@
     "db:migrate-content": "node --env-file=.env.local scripts/migrate-content.mjs",
     "dev:restart": "bash scripts/restart-local.sh",
     "dev:test": "bash scripts/start-test-workspace.sh",
+    "dev:test:reset": "TEST_WORKSPACE_RESET=1 bash scripts/start-test-workspace.sh",
     "test:workspace": "node --test tests/test-workspace.test.mjs",
     "test:workspace-browser": "node tests/test-workspace-browser.mjs",
     "test:l02": "node --import tsx --test tests/l02-learning.test.ts",

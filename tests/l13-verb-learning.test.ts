@@ -6,7 +6,7 @@ import { grammarTrackActivities } from "../src/lib/grammar-learning";
 import { activityPairs, emptyGuidedState, readGuidedState, validateFlow } from "../src/lib/guided-learning";
 import { buildL13VerbFlow, prepareL13VerbItem } from "../src/lib/l13-grammar-learning";
 
-test("L13 verbs use ten matching boards with separate account state and retain existing item IDs", async () => {
+test("L13 verbs use nine conjugation boards with separate account state and retain existing item IDs", async () => {
   const { createDatabase, userId } = await import("./learning-database.mjs");
   const db = await createDatabase();
   try {
@@ -17,9 +17,9 @@ test("L13 verbs use ten matching boards with separate account state and retain e
     const boards = grammarTrackActivities(flow, items, "verbs");
     assert.deepEqual(boards.map(board => board.contentIds), [
       ["L13-V022"], ["L13-V023"], ["L13-V024"], ["L13-V025"], ["L13-V026"],
-      ["L13-V027"], ["L13-V028"], ["L13-V029"], ["L13-V030"], ["L13-V031"],
+      ["L13-V027"], ["L13-V028"], ["L13-V030"], ["L13-V031"],
     ]);
-    assert.deepEqual(boards.map(board => activityPairs(board, items).length), [6, 6, 6, 6, 6, 6, 6, 1, 6, 6]);
+    assert.deepEqual(boards.map(board => activityPairs(board, items).length), [6, 6, 6, 6, 6, 6, 6, 6, 6]);
     assert.deepEqual(items.filter(item => item.lessonId !== "L13"), source.filter(item => item.lessonId !== "L13"));
     assert.deepEqual(items.map(item => item.id), source.map(item => item.id));
     await db.query("insert into public.learner_lesson_states(user_id,lesson_key,state) values ($1,$2,$3::jsonb)", [userId, flow.stateKey, JSON.stringify(emptyGuidedState())]);
@@ -45,15 +45,16 @@ test("L13 verbs use ten matching boards with separate account state and retain e
   }
 });
 
-test("L13 irregular forms highlight the changed vowel and es gibt remains impersonal", () => {
+test("L13 irregular forms highlight the changed vowel and es gibt stays outside verb conjugation", () => {
   const makeItem = (id: string, answer: string): Item => ({ id, answer, lessonId: "L13", skill: "grammar", group: "Verben", title: answer, meaning: "", type: "verb" });
   const gefallen = prepareL13VerbItem(makeItem("L13-V022", "gefallen")).verbContent;
   const helfen = prepareL13VerbItem(makeItem("L13-V024", "helfen")).verbContent;
+  const items = ["L13-V022", "L13-V023", "L13-V024", "L13-V025", "L13-V026", "L13-V027", "L13-V028", "L13-V029", "L13-V030", "L13-V031"].map((id) => makeItem(id, id === "L13-V029" ? "es gibt" : "verb"));
   const expression = prepareL13VerbItem({ ...makeItem("L13-V029", "es gibt"), type: "expression" }).verbContent;
+  assert.equal(buildL13VerbFlow(items).activities.some(activity => activity.contentIds.includes("L13-V029")), false);
   assert.deepEqual(gefallen?.conjugations.map(row => row.form), ["gefalle", "gefällst", "gefällt", "gefallen", "gefallt", "gefallen"]);
   assert.deepEqual(helfen?.conjugations.map(row => row.form), ["helfe", "hilfst", "hilft", "helfen", "helft", "helfen"]);
   assert.deepEqual(gefallen?.conjugations[1].segments?.filter(segment => segment.changed).map(segment => segment.text), ["ä", "st"]);
   assert.deepEqual(helfen?.conjugations[2].segments?.filter(segment => segment.changed).map(segment => segment.text), ["i", "t"]);
   assert.deepEqual(expression?.conjugations, [{ subject: "es", form: "gibt", ending: "t" }]);
-  assert.equal(expression?.examples[0].de, "Es gibt einen Park in der Stadt.");
 });

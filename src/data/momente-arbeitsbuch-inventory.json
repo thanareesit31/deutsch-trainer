@@ -1,0 +1,1271 @@
+[
+  {
+    "id": "AB12-13-1",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 6,
+    "pdfPage": 5,
+    "originalActivityId": "L13/1",
+    "title": "ข้อมูลเมืองจากคลังคำ",
+    "instruction": "เติมข้อความหลายช่องจากคลังคำ",
+    "input": "คำในคลังและข้อความมีช่องว่าง",
+    "learnerAction": "พิมพ์คำลงทุกช่อง",
+    "responseMode": "พิมพ์คำลงทุกช่อง",
+    "knowledgeTopics": [
+      "city-places"
+    ],
+    "primarySkill": "vocabulary",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 2,
+    "grading": "ตรวจทุกช่องและจำนวนครั้งที่ใช้คำ",
+    "hint": "บอกชนิดคำหรือบริบทของช่องแรกที่ผิด",
+    "errorExplanation": "อธิบายความหมายและรูปคำที่บริบทต้องใช้",
+    "webAdaptation": "ใช้ context_bank เดิม เพิ่มชุดตามหัวข้อเมื่อมีประโยชน์",
+    "mechanic": "context_bank",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-1"
+  },
+  {
+    "id": "AB12-13-2",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 6,
+    "pdfPage": 5,
+    "originalActivityId": "L13/2",
+    "title": "คำที่ไม่เข้ากลุ่ม",
+    "instruction": "หาคำที่ไม่เข้ากลุ่ม",
+    "input": "กลุ่มคำศัพท์",
+    "learnerAction": "เลือกคำที่ไม่เข้ากลุ่ม",
+    "responseMode": "เลือกคำที่ไม่เข้ากลุ่ม",
+    "knowledgeTopics": [
+      "city-places"
+    ],
+    "primarySkill": "vocabulary",
+    "secondarySkills": [],
+    "difficulty": 1,
+    "grading": "เทียบกลุ่มความหมายที่ระบุ",
+    "hint": "ชี้คุณสมบัติร่วมของคำอื่น",
+    "errorExplanation": "อธิบายความหมายร่วมและเหตุผลที่ต่าง",
+    "webAdaptation": "ใช้ multiple_choice เดิม ไม่สร้าง plugin ซ้ำ",
+    "mechanic": "odd_one_out",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-2"
+  },
+  {
+    "id": "AB12-13-3a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 6,
+    "pdfPage": 5,
+    "originalActivityId": "L13/3a",
+    "title": "เมืองในภาพ",
+    "instruction": "ระบุคำให้ตรงส่วนของภาพ",
+    "input": "ภาพเมืองพร้อมหมายเลขและคำศัพท์",
+    "learnerAction": "จับคู่คำกับหมายเลข",
+    "responseMode": "จับคู่คำกับหมายเลข",
+    "knowledgeTopics": [
+      "city-places"
+    ],
+    "primarySkill": "vocabulary",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 1,
+    "grading": "ตรวจคู่ภาพ–คำ",
+    "hint": "อธิบายลักษณะสถานที่",
+    "errorExplanation": "ชี้จุดสังเกตของสถานที่",
+    "webAdaptation": "ใช้ image matching เดิมและภาพของโครงการ",
+    "mechanic": "picture_mapping",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-3a"
+  },
+  {
+    "id": "AB12-13-3b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 6,
+    "pdfPage": 5,
+    "originalActivityId": "L13/3b",
+    "title": "คำไขว้สถานที่",
+    "instruction": "แก้คำไขว้จากข้อความใบ้",
+    "input": "คำใบ้ข้อความและตารางช่องร่วม",
+    "learnerAction": "กรอกตัวอักษร",
+    "responseMode": "กรอกตัวอักษร",
+    "knowledgeTopics": [
+      "city-places"
+    ],
+    "primarySkill": "vocabulary",
+    "secondarySkills": [
+      "spelling"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจการสะกดและช่องที่ตัดกัน",
+    "hint": "ให้คำใบ้ความหมายหรือตัวอักษรพร้อมลดเครดิต",
+    "errorExplanation": "อธิบายความหมายคำและการสะกด",
+    "webAdaptation": "คง Picture Crossword เดิม; ต้นทางนี้เป็น text clue ไม่ใช่ภาพ",
+    "mechanic": "crossword",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-3b"
+  },
+  {
+    "id": "AB12-13-3c",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 7,
+    "pdfPage": 6,
+    "originalActivityId": "L13/3c",
+    "title": "ชื่อสถานที่ในภาษาอื่น",
+    "instruction": "ถามตอบหรือโต้ตอบกับคู่เรียน",
+    "input": "คำหรือประโยคตัวอย่างและบทบาทคู่เรียน",
+    "learnerAction": "พูด เขียน หรือบันทึกเสียงตอบ",
+    "responseMode": "พูด เขียน หรือบันทึกเสียงตอบ",
+    "knowledgeTopics": [
+      "city-places"
+    ],
+    "primarySkill": "speaking",
+    "secondarySkills": [
+      "vocabulary"
+    ],
+    "difficulty": 3,
+    "grading": "ใช้ rubric ตามความหมาย ไม่ exact string สำหรับคำตอบเปิด",
+    "hint": "ให้กรอบประโยคก่อนตอบ",
+    "errorExplanation": "ให้ checklist ความครบถ้วน ไม่ตัดสินความสามารถพูดจากข้อความ",
+    "webAdaptation": "ใช้ dialogue/text_response/recorded_speech เดิม",
+    "mechanic": "partner_reply",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-3c"
+  },
+  {
+    "id": "AB12-13-4a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 7,
+    "pdfPage": 6,
+    "originalActivityId": "L13/4a",
+    "title": "มีอะไรในแผนที่",
+    "instruction": "เลือกข้อมูลตามแผนที่",
+    "input": "แผนที่และประโยคตัวเลือก",
+    "learnerAction": "เลือกคำตอบตามสถานที่บนผัง",
+    "responseMode": "เลือกคำตอบตามสถานที่บนผัง",
+    "knowledgeTopics": [
+      "es-gibt-akkusativ"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "vocabulary"
+    ],
+    "difficulty": 1,
+    "grading": "เทียบข้อมูลในแผนที่",
+    "hint": "ชี้สัญลักษณ์ที่เกี่ยวข้อง",
+    "errorExplanation": "ชี้หลักฐานบนแผนที่และรูป Akkusativ",
+    "webAdaptation": "ใช้ multiple_choice กับแผนภาพโครงการ",
+    "mechanic": "multiple_choice",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-4a"
+  },
+  {
+    "id": "AB12-13-4b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 7,
+    "pdfPage": 6,
+    "originalActivityId": "L13/4b",
+    "title": "ตาราง es gibt",
+    "instruction": "เติมตารางจากตัวอย่าง",
+    "input": "ประโยคตัวอย่างและตารางรูปคำ",
+    "learnerAction": "พิมพ์หรือจับคู่ช่องตาราง",
+    "responseMode": "พิมพ์หรือจับคู่ช่องตาราง",
+    "knowledgeTopics": [
+      "es-gibt-akkusativ"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 2,
+    "grading": "ตรวจรูปคำตามประธาน/เพศ/จำนวน",
+    "hint": "ให้นำตัวอย่างที่มีอยู่มาเปรียบเทียบ",
+    "errorExplanation": "อธิบายกฎเฉพาะช่องที่ผิด",
+    "webAdaptation": "ตารางสรุป/จับคู่มีแล้ว ไม่สร้างตารางที่เหมือนเดิมซ้ำ",
+    "mechanic": "rule_table",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-4b"
+  },
+  {
+    "id": "AB12-13-4c",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 7,
+    "pdfPage": 6,
+    "originalActivityId": "L13/4c",
+    "title": "ข้อความสถานที่และจำนวน",
+    "instruction": "เติมข้อความหลายช่องจากคลังคำ",
+    "input": "คำในคลังและข้อความมีช่องว่าง",
+    "learnerAction": "พิมพ์คำลงทุกช่อง",
+    "responseMode": "พิมพ์คำลงทุกช่อง",
+    "knowledgeTopics": [
+      "es-gibt-akkusativ"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจทุกช่องและจำนวนครั้งที่ใช้คำ",
+    "hint": "บอกชนิดคำหรือบริบทของช่องแรกที่ผิด",
+    "errorExplanation": "อธิบายความหมายและรูปคำที่บริบทต้องใช้",
+    "webAdaptation": "ใช้ context_bank เดิม เพิ่มชุดตามหัวข้อเมื่อมีประโยชน์",
+    "mechanic": "context_bank",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-4c"
+  },
+  {
+    "id": "AB12-13-5a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 7,
+    "pdfPage": 6,
+    "originalActivityId": "L13/5a",
+    "title": "ฟังเปรียบเทียบสถานที่",
+    "instruction": "ฟังและระบุข้อมูลในตาราง",
+    "input": "ตารางคน/สถานที่กับตัวเลือก และเสียงที่อ้างถึง",
+    "learnerAction": "ทำเครื่องหมายข้อมูลที่ได้ยิน",
+    "responseMode": "ทำเครื่องหมายข้อมูลที่ได้ยิน",
+    "knowledgeTopics": [
+      "city-places"
+    ],
+    "primarySkill": "listening",
+    "secondarySkills": [
+      "vocabulary"
+    ],
+    "difficulty": 2,
+    "grading": "ตรวจกับบทเสียงที่มีสิทธิ์และตรวจแล้วเท่านั้น",
+    "hint": "เล่นช่วงเสียงซ้ำ",
+    "errorExplanation": "อธิบายพร้อมข้อความหลักฐานหลังตอบ",
+    "webAdaptation": "ยังไม่สร้างจากเสียงที่ไม่มี; ของเดิมเป็น TTS ระบุชัด",
+    "mechanic": "audio_matrix",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-5a"
+  },
+  {
+    "id": "AB12-13-5b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 7,
+    "pdfPage": 6,
+    "originalActivityId": "L13/5b",
+    "title": "อีเมลเลือกจุดหมาย",
+    "instruction": "เขียนข้อความให้ผู้รับตามสถานการณ์",
+    "input": "สถานการณ์ ตัวช่วย และตัวอย่างสั้น",
+    "learnerAction": "เขียนอิสระ",
+    "responseMode": "เขียนอิสระ",
+    "knowledgeTopics": [
+      "es-gibt-akkusativ"
+    ],
+    "primarySkill": "writing",
+    "secondarySkills": [
+      "phrases"
+    ],
+    "difficulty": 4,
+    "grading": "rubric ความครบถ้วน ไม่ให้ mastery จาก exact match",
+    "hint": "ให้หัวข้อย่อยหรือกรอบเริ่มต้น",
+    "errorExplanation": "แสดง checklist และจุดที่ควรเพิ่ม ไม่อ้างตรวจภาษาได้ทั้งหมด",
+    "webAdaptation": "ใช้ text_response และ drafts เดิม",
+    "mechanic": "open_writing",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-5b"
+  },
+  {
+    "id": "AB12-13-6",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 8,
+    "pdfPage": 7,
+    "originalActivityId": "L13/6",
+    "title": "รูปผันกริยา Dativ",
+    "instruction": "เติมรูปคำในประโยค",
+    "input": "ภาพ/บทสนทนาและคำตั้งต้น",
+    "learnerAction": "พิมพ์รูปกริยาหรือสรรพนาม",
+    "responseMode": "พิมพ์รูปกริยาหรือสรรพนาม",
+    "knowledgeTopics": [
+      "dative-verbs"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจรูปผันและบุรุษตามบริบท",
+    "hint": "บอกประธานหรือหน้าที่ Dativ",
+    "errorExplanation": "อธิบายประธานและส่วนลงท้าย/รูปสรรพนาม",
+    "webAdaptation": "ใช้ cloze เดิม เพิ่ม controlled production ตามบริบท AB",
+    "mechanic": "form_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-6"
+  },
+  {
+    "id": "AB12-13-7a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 8,
+    "pdfPage": 7,
+    "originalActivityId": "L13/7a",
+    "title": "กริยากับสรรพนามในบล็อก",
+    "instruction": "ทำเครื่องหมายกริยาพร้อมสรรพนามในข้อความ",
+    "input": "ข้อความต่อเนื่อง ไม่ใช่รายการคำแยก",
+    "learnerAction": "เลือกคำในข้อความและระบุบทบาท",
+    "responseMode": "เลือกคำในข้อความและระบุบทบาท",
+    "knowledgeTopics": [
+      "dative-verbs",
+      "dative-pronouns"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 1,
+    "grading": "ตรวจ token index และประเภท verb/dative ทุกคำ",
+    "hint": "ชี้หนึ่งประโยคที่ควรสังเกต",
+    "errorExplanation": "อธิบายว่าใคร/อะไรเป็นประธานและใครอยู่ใน Dativ",
+    "webAdaptation": "เพิ่ม text_marking ที่ระบายคำในข้อความจริง ไม่เปิดตัวเลือกคำตอบแยก",
+    "mechanic": "annotate_text",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-7a"
+  },
+  {
+    "id": "AB12-13-7b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 8,
+    "pdfPage": 7,
+    "originalActivityId": "L13/7b",
+    "title": "ตาราง Dativ จากข้อความ",
+    "instruction": "เติมตารางจากตัวอย่าง",
+    "input": "ประโยคตัวอย่างและตารางรูปคำ",
+    "learnerAction": "พิมพ์หรือจับคู่ช่องตาราง",
+    "responseMode": "พิมพ์หรือจับคู่ช่องตาราง",
+    "knowledgeTopics": [
+      "dative-pronouns"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 2,
+    "grading": "ตรวจรูปคำตามประธาน/เพศ/จำนวน",
+    "hint": "ให้นำตัวอย่างที่มีอยู่มาเปรียบเทียบ",
+    "errorExplanation": "อธิบายกฎเฉพาะช่องที่ผิด",
+    "webAdaptation": "ตารางสรุป/จับคู่มีแล้ว ไม่สร้างตารางที่เหมือนเดิมซ้ำ",
+    "mechanic": "rule_table",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-7b"
+  },
+  {
+    "id": "AB12-13-8a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 8,
+    "pdfPage": 7,
+    "originalActivityId": "L13/8a",
+    "title": "เติมสรรพนามในบทสนทนา",
+    "instruction": "เติมรูปคำในประโยค",
+    "input": "ภาพ/บทสนทนาและคำตั้งต้น",
+    "learnerAction": "พิมพ์รูปกริยาหรือสรรพนาม",
+    "responseMode": "พิมพ์รูปกริยาหรือสรรพนาม",
+    "knowledgeTopics": [
+      "dative-pronouns"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจรูปผันและบุรุษตามบริบท",
+    "hint": "บอกประธานหรือหน้าที่ Dativ",
+    "errorExplanation": "อธิบายประธานและส่วนลงท้าย/รูปสรรพนาม",
+    "webAdaptation": "ใช้ cloze เดิม เพิ่ม controlled production ตามบริบท AB",
+    "mechanic": "form_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-8a"
+  },
+  {
+    "id": "AB12-13-8b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 9,
+    "pdfPage": 8,
+    "originalActivityId": "L13/8b",
+    "title": "สร้างบทถามตอบ",
+    "instruction": "ถามตอบหรือโต้ตอบกับคู่เรียน",
+    "input": "คำหรือประโยคตัวอย่างและบทบาทคู่เรียน",
+    "learnerAction": "พูด เขียน หรือบันทึกเสียงตอบ",
+    "responseMode": "พูด เขียน หรือบันทึกเสียงตอบ",
+    "knowledgeTopics": [
+      "dative-pronouns"
+    ],
+    "primarySkill": "writing",
+    "secondarySkills": [
+      "speaking",
+      "grammar"
+    ],
+    "difficulty": 4,
+    "grading": "ใช้ rubric ตามความหมาย ไม่ exact string สำหรับคำตอบเปิด",
+    "hint": "ให้กรอบประโยคก่อนตอบ",
+    "errorExplanation": "ให้ checklist ความครบถ้วน ไม่ตัดสินความสามารถพูดจากข้อความ",
+    "webAdaptation": "ใช้ dialogue/text_response/recorded_speech เดิม",
+    "mechanic": "partner_reply",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-8b"
+  },
+  {
+    "id": "AB12-13-9a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 9,
+    "pdfPage": 8,
+    "originalActivityId": "L13/9a",
+    "title": "ฟังเสียงยาว e/i",
+    "instruction": "ฟังแยกเสียงสระยาว",
+    "input": "ตัวเลือกเสียงกับลำดับข้อ",
+    "learnerAction": "เลือกเสียงที่ได้ยิน",
+    "responseMode": "เลือกเสียงที่ได้ยิน",
+    "knowledgeTopics": [
+      "long-e-i"
+    ],
+    "primarySkill": "listening",
+    "secondarySkills": [
+      "pronunciation"
+    ],
+    "difficulty": 2,
+    "grading": "ต้องมีเสียงที่ตรวจแล้ว ห้ามอนุมานจากตัวสะกด",
+    "hint": "เล่นเสียงเดิมช้าลงหรือซ้ำ",
+    "errorExplanation": "อธิบายเสียงหลังฟัง ไม่อ้าง scoring เสียงพูดจากตัวอักษร",
+    "webAdaptation": "บันทึก inventory; ไม่ใช้เสียงอ่านเดาเป็นต้นฉบับ",
+    "mechanic": "sound_choice",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-9a"
+  },
+  {
+    "id": "AB12-13-9b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 9,
+    "pdfPage": 8,
+    "originalActivityId": "L13/9b",
+    "title": "ทำเครื่องหมายเสียงยาว",
+    "instruction": "ฟังและทำเครื่องหมายเสียงในคำ",
+    "input": "คำ/กลอนสั้นและเสียง",
+    "learnerAction": "ขีดเส้นใต้ส่วนเสียง",
+    "responseMode": "ขีดเส้นใต้ส่วนเสียง",
+    "knowledgeTopics": [
+      "long-e-i"
+    ],
+    "primarySkill": "listening",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 2,
+    "grading": "เทียบเสียงจริงและช่วงคำ",
+    "hint": "เล่นช่วงเสียงซ้ำ",
+    "errorExplanation": "ชี้เสียงยาวและรูปเขียนหลังตอบ",
+    "webAdaptation": "ยังไม่มีเสียงต้นฉบับ ไม่เพิ่มข้อสอบปลอม",
+    "mechanic": "sound_mark",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-9b"
+  },
+  {
+    "id": "AB12-13-9c",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 9,
+    "pdfPage": 8,
+    "originalActivityId": "L13/9c",
+    "title": "พูดตามเสียงยาว",
+    "instruction": "ฟังแล้วพูดตาม",
+    "input": "คำหรือประโยคและสื่อเสียง",
+    "learnerAction": "ออกเสียงตาม",
+    "responseMode": "ออกเสียงตาม",
+    "knowledgeTopics": [
+      "long-e-i"
+    ],
+    "primarySkill": "speaking",
+    "secondarySkills": [
+      "listening"
+    ],
+    "difficulty": 3,
+    "grading": "ประเมินตนเอง/ผู้สอน; ไม่อ้าง ASR ระดับเสียงโดยไม่มีหลักฐาน",
+    "hint": "ฟังซ้ำและแสดงตำแหน่งเสียง",
+    "errorExplanation": "แสดงแนวออกเสียงและ checklist",
+    "webAdaptation": "recorded_speech เดิม; ขาดเสียงต้นฉบับสำหรับการเลียนเสียง",
+    "mechanic": "repeat_speech",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-9c"
+  },
+  {
+    "id": "AB12-13-10a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 9,
+    "pdfPage": 8,
+    "originalActivityId": "L13/10a",
+    "title": "แท็กที่สัมพันธ์กับภาพ",
+    "instruction": "เลือกคำหรือแท็กให้ภาพ",
+    "input": "ภาพและรายการคำ",
+    "learnerAction": "จับคู่/เลือกหลายคำ",
+    "responseMode": "จับคู่/เลือกหลายคำ",
+    "knowledgeTopics": [
+      "favorite-place"
+    ],
+    "primarySkill": "vocabulary",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 1,
+    "grading": "ตรวจความหมายที่ภาพรองรับ",
+    "hint": "ชี้องค์ประกอบภาพ",
+    "errorExplanation": "อธิบายคำที่สัมพันธ์กับภาพ",
+    "webAdaptation": "matching/multi_select มีแล้ว",
+    "mechanic": "image_tags",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-10a"
+  },
+  {
+    "id": "AB12-13-10b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 9,
+    "pdfPage": 8,
+    "originalActivityId": "L13/10b",
+    "title": "ความเห็นเชิงบวก",
+    "instruction": "ระบุข้อความเชิงบวก",
+    "input": "ความคิดเห็นสั้นและเสียงประกอบ",
+    "learnerAction": "เลือกความคิดเห็นเชิงบวก",
+    "responseMode": "เลือกความคิดเห็นเชิงบวก",
+    "knowledgeTopics": [
+      "opinion"
+    ],
+    "primarySkill": "reading",
+    "secondarySkills": [
+      "listening",
+      "phrases"
+    ],
+    "difficulty": 2,
+    "grading": "ตรวจจากความหมายข้อความ; listening ต้องมีเสียงแยก",
+    "hint": "ชี้คำแสดงความเห็น",
+    "errorExplanation": "อธิบายบวก/ลบ/ข้อเท็จจริง",
+    "webAdaptation": "multi_select/categorization มีแล้ว",
+    "mechanic": "sentiment",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-10b"
+  },
+  {
+    "id": "AB12-13-11",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 9,
+    "pdfPage": 8,
+    "originalActivityId": "L13/11",
+    "title": "เขียนความเห็นภาพ",
+    "instruction": "เขียนข้อความให้ผู้รับตามสถานการณ์",
+    "input": "สถานการณ์ ตัวช่วย และตัวอย่างสั้น",
+    "learnerAction": "เขียนอิสระ",
+    "responseMode": "เขียนอิสระ",
+    "knowledgeTopics": [
+      "opinion"
+    ],
+    "primarySkill": "writing",
+    "secondarySkills": [
+      "phrases"
+    ],
+    "difficulty": 4,
+    "grading": "rubric ความครบถ้วน ไม่ให้ mastery จาก exact match",
+    "hint": "ให้หัวข้อย่อยหรือกรอบเริ่มต้น",
+    "errorExplanation": "แสดง checklist และจุดที่ควรเพิ่ม ไม่อ้างตรวจภาษาได้ทั้งหมด",
+    "webAdaptation": "ใช้ text_response และ drafts เดิม",
+    "mechanic": "open_writing",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-11"
+  },
+  {
+    "id": "AB12-14-1",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 10,
+    "pdfPage": 9,
+    "originalActivityId": "L14/1",
+    "title": "วาดความหมายทิศทาง",
+    "instruction": "วาดภาพแทนความหมายทิศทาง",
+    "input": "วลีทิศทางและช่องว่างสำหรับภาพ",
+    "learnerAction": "วาดเอง",
+    "responseMode": "วาดเอง",
+    "knowledgeTopics": [
+      "directions"
+    ],
+    "primarySkill": "vocabulary",
+    "secondarySkills": [
+      "visual"
+    ],
+    "difficulty": 2,
+    "grading": "rubric/ผู้สอน ไม่ exact grade ภาพวาด",
+    "hint": "ให้เส้นถนนตั้งต้น",
+    "errorExplanation": "เทียบองค์ประกอบทิศทาง ไม่สรุปว่ารูปไม่สวยคือผิดภาษา",
+    "webAdaptation": "แผนที่โต้ตอบเดิมครอบคลุมการสื่อทิศทาง; ไม่เพิ่ม canvas โดยไม่จำเป็น",
+    "mechanic": "drawing",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-1"
+  },
+  {
+    "id": "AB12-14-2a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 10,
+    "pdfPage": 9,
+    "originalActivityId": "L14/2a",
+    "title": "เติมคำและตามเส้นทาง",
+    "instruction": "เติมคำบอกทางและวาดเส้นทาง",
+    "input": "แผนที่กับข้อความเส้นทางและคลังคำ",
+    "learnerAction": "เติมคำและติดตามจุดบนผัง",
+    "responseMode": "เติมคำและติดตามจุดบนผัง",
+    "knowledgeTopics": [
+      "directions"
+    ],
+    "primarySkill": "phrases",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจทั้งช่องคำและเส้นทางตามผัง",
+    "hint": "ชี้ตำแหน่งเริ่มต้นและคำบอกเลี้ยว",
+    "errorExplanation": "แสดงจุดแรกที่เส้นทางต่าง",
+    "webAdaptation": "context_bank/map_route มีแล้ว; ตรวจคู่เนื้อหาก่อนเพิ่ม",
+    "mechanic": "route_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-2a"
+  },
+  {
+    "id": "AB12-14-2b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 10,
+    "pdfPage": 9,
+    "originalActivityId": "L14/2b",
+    "title": "ฟังตรวจเส้นทาง",
+    "instruction": "ฟังเพื่อตรวจคำตอบก่อนหน้า",
+    "input": "กิจกรรมที่ทำแล้วกับสื่อเสียง",
+    "learnerAction": "ฟังตรวจและแก้คำตอบ",
+    "responseMode": "ฟังตรวจและแก้คำตอบ",
+    "knowledgeTopics": [
+      "directions"
+    ],
+    "primarySkill": "listening",
+    "secondarySkills": [
+      "phrases"
+    ],
+    "difficulty": 2,
+    "grading": "ใช้เสียงจริงเป็น evidence เมื่อมี",
+    "hint": "ฟังซ้ำ",
+    "errorExplanation": "เทียบข้อความหลังฟัง",
+    "webAdaptation": "ไม่มีไฟล์เสียงแนบ PDF; ไม่สร้าง transcript โดยเดา",
+    "mechanic": "audio_check",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-2b"
+  },
+  {
+    "id": "AB12-14-3",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 10,
+    "pdfPage": 9,
+    "originalActivityId": "L14/3",
+    "title": "ข้อความเสียงบอกทาง",
+    "instruction": "ถามตอบหรือโต้ตอบกับคู่เรียน",
+    "input": "คำหรือประโยคตัวอย่างและบทบาทคู่เรียน",
+    "learnerAction": "พูด เขียน หรือบันทึกเสียงตอบ",
+    "responseMode": "พูด เขียน หรือบันทึกเสียงตอบ",
+    "knowledgeTopics": [
+      "directions"
+    ],
+    "primarySkill": "speaking",
+    "secondarySkills": [
+      "phrases"
+    ],
+    "difficulty": 4,
+    "grading": "ใช้ rubric ตามความหมาย ไม่ exact string สำหรับคำตอบเปิด",
+    "hint": "ให้กรอบประโยคก่อนตอบ",
+    "errorExplanation": "ให้ checklist ความครบถ้วน ไม่ตัดสินความสามารถพูดจากข้อความ",
+    "webAdaptation": "ใช้ dialogue/text_response/recorded_speech เดิม",
+    "mechanic": "partner_reply",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-3"
+  },
+  {
+    "id": "AB12-14-4a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 11,
+    "pdfPage": 10,
+    "originalActivityId": "L14/4a",
+    "title": "ตำแหน่งแมวจากภาพหน้า10",
+    "instruction": "บอกตำแหน่งจากภาพด้วยคำบุพบทและ Dativ",
+    "input": "ภาพ/บทสนทนาและช่องคำ",
+    "learnerAction": "พิมพ์วลีหรือรูป Artikel",
+    "responseMode": "พิมพ์วลีหรือรูป Artikel",
+    "knowledgeTopics": [
+      "local-prepositions"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 2,
+    "grading": "ตรวจ preposition และรูป Dativ แยกจากความหมายคำศัพท์",
+    "hint": "ให้เพศคำนาม/จุดอ้างอิง",
+    "errorExplanation": "อธิบาย Wo? + Dativ และความสัมพันธ์ในภาพ",
+    "webAdaptation": "เพิ่ม contextual cloze ใช้แผนภาพใหม่ของโครงการ",
+    "mechanic": "spatial_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-4a",
+    "additionalEvidencePages": [
+      {
+        "printedPage": 10,
+        "pdfPage": 9,
+        "purpose": "ภาพแมวและรายการคำบุพบท"
+      }
+    ]
+  },
+  {
+    "id": "AB12-14-4b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 11,
+    "pdfPage": 10,
+    "originalActivityId": "L14/4b",
+    "title": "ตาราง Artikel หลัง Wo",
+    "instruction": "เติมตารางจากตัวอย่าง",
+    "input": "ประโยคตัวอย่างและตารางรูปคำ",
+    "learnerAction": "พิมพ์หรือจับคู่ช่องตาราง",
+    "responseMode": "พิมพ์หรือจับคู่ช่องตาราง",
+    "knowledgeTopics": [
+      "local-prepositions"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 2,
+    "grading": "ตรวจรูปคำตามประธาน/เพศ/จำนวน",
+    "hint": "ให้นำตัวอย่างที่มีอยู่มาเปรียบเทียบ",
+    "errorExplanation": "อธิบายกฎเฉพาะช่องที่ผิด",
+    "webAdaptation": "ตารางสรุป/จับคู่มีแล้ว ไม่สร้างตารางที่เหมือนเดิมซ้ำ",
+    "mechanic": "rule_table",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-4b"
+  },
+  {
+    "id": "AB12-14-5",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 11,
+    "pdfPage": 10,
+    "originalActivityId": "L14/5",
+    "title": "เติม Artikel ในบทสนทนา",
+    "instruction": "เติมรูปคำในประโยค",
+    "input": "ภาพ/บทสนทนาและคำตั้งต้น",
+    "learnerAction": "พิมพ์รูปกริยาหรือสรรพนาม",
+    "responseMode": "พิมพ์รูปกริยาหรือสรรพนาม",
+    "knowledgeTopics": [
+      "local-prepositions"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจรูปผันและบุรุษตามบริบท",
+    "hint": "บอกประธานหรือหน้าที่ Dativ",
+    "errorExplanation": "อธิบายประธานและส่วนลงท้าย/รูปสรรพนาม",
+    "webAdaptation": "ใช้ cloze เดิม เพิ่ม controlled production ตามบริบท AB",
+    "mechanic": "form_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-5"
+  },
+  {
+    "id": "AB12-14-6",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 11,
+    "pdfPage": 10,
+    "originalActivityId": "L14/6",
+    "title": "ตำแหน่งในภาพเมือง",
+    "instruction": "บอกตำแหน่งจากภาพด้วยคำบุพบทและ Dativ",
+    "input": "ภาพ/บทสนทนาและช่องคำ",
+    "learnerAction": "พิมพ์วลีหรือรูป Artikel",
+    "responseMode": "พิมพ์วลีหรือรูป Artikel",
+    "knowledgeTopics": [
+      "local-prepositions"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจ preposition และรูป Dativ แยกจากความหมายคำศัพท์",
+    "hint": "ให้เพศคำนาม/จุดอ้างอิง",
+    "errorExplanation": "อธิบาย Wo? + Dativ และความสัมพันธ์ในภาพ",
+    "webAdaptation": "เพิ่ม contextual cloze ใช้แผนภาพใหม่ของโครงการ",
+    "mechanic": "spatial_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-6"
+  },
+  {
+    "id": "AB12-14-7",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 11,
+    "pdfPage": 10,
+    "originalActivityId": "L14/7",
+    "title": "จัดสิ่งของและบรรยายภาพ",
+    "instruction": "จัดสิ่งของ ถ่ายภาพ แล้วให้คู่เรียนบอกตำแหน่ง",
+    "input": "ภาพที่ผู้เรียนสร้างเอง",
+    "learnerAction": "บรรยายภาพ",
+    "responseMode": "บรรยายภาพ",
+    "knowledgeTopics": [
+      "local-prepositions"
+    ],
+    "primarySkill": "speaking",
+    "secondarySkills": [
+      "grammar"
+    ],
+    "difficulty": 4,
+    "grading": "rubric และคู่เรียน ไม่ตรวจภาพอัตโนมัติที่ยังไม่มีโมเดล",
+    "hint": "ให้กรอบ Wo? และคำนามที่รู้แล้ว",
+    "errorExplanation": "ให้ตรวจจุดอ้างอิงและ Dativ",
+    "webAdaptation": "ใช้ text_response/recorded_speech เดิม ไม่อัปโหลดภาพโดยปริยาย",
+    "mechanic": "photo_partner",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-7"
+  },
+  {
+    "id": "AB12-14-8",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 12,
+    "pdfPage": 11,
+    "originalActivityId": "L14/8",
+    "title": "ปริศนาอักษรเชื่อมคำตอบ",
+    "instruction": "แก้คำใบ้แล้วนำอักษรที่กำหนดมาสร้างคำตอบ",
+    "input": "คำใบ้ ช่องคำ และหมายเลขอักษรที่เชื่อมคำตอบสุดท้าย",
+    "learnerAction": "พิมพ์คำและคำรหัส",
+    "responseMode": "พิมพ์คำและคำรหัส",
+    "knowledgeTopics": [
+      "city-places"
+    ],
+    "primarySkill": "vocabulary",
+    "secondarySkills": [
+      "spelling"
+    ],
+    "difficulty": 4,
+    "grading": "ตรวจการสะกดทุกคำ การดึงอักษร และคำรหัสสุดท้าย",
+    "hint": "ช่วยความหมายหนึ่งคำพร้อมนับ hintsUsed",
+    "errorExplanation": "ชี้ข้อที่ผิดและเหตุผลคำศัพท์; อักษรที่ย้ายมาจากช่องจริง",
+    "webAdaptation": "เพิ่ม codeword_riddle จริง; ต่างจาก crossword และ word search",
+    "mechanic": "codeword",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-8"
+  },
+  {
+    "id": "AB12-14-9",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 12,
+    "pdfPage": 11,
+    "originalActivityId": "L14/9",
+    "title": "ตอบตำแหน่งจากภาพ",
+    "instruction": "บอกตำแหน่งจากภาพด้วยคำบุพบทและ Dativ",
+    "input": "ภาพ/บทสนทนาและช่องคำ",
+    "learnerAction": "พิมพ์วลีหรือรูป Artikel",
+    "responseMode": "พิมพ์วลีหรือรูป Artikel",
+    "knowledgeTopics": [
+      "local-prepositions"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "phrases"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจ preposition และรูป Dativ แยกจากความหมายคำศัพท์",
+    "hint": "ให้เพศคำนาม/จุดอ้างอิง",
+    "errorExplanation": "อธิบาย Wo? + Dativ และความสัมพันธ์ในภาพ",
+    "webAdaptation": "เพิ่ม contextual cloze ใช้แผนภาพใหม่ของโครงการ",
+    "mechanic": "spatial_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-9"
+  },
+  {
+    "id": "AB12-14-10",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 12,
+    "pdfPage": 11,
+    "originalActivityId": "L14/10",
+    "title": "ฟังเรียงคำศัพท์",
+    "instruction": "ฟังแล้วเรียงคำศัพท์",
+    "input": "รายการคำและสื่อเสียง",
+    "learnerAction": "เรียงตามที่ได้ยิน",
+    "responseMode": "เรียงตามที่ได้ยิน",
+    "knowledgeTopics": [
+      "city-places"
+    ],
+    "primarySkill": "listening",
+    "secondarySkills": [
+      "vocabulary"
+    ],
+    "difficulty": 2,
+    "grading": "ต้องใช้เสียงที่ตรวจแล้ว",
+    "hint": "เล่นซ้ำ",
+    "errorExplanation": "ชี้ลำดับที่คลาดและหลักฐานเสียง",
+    "webAdaptation": "audio_route/dialogue_builder มีแล้ว; ไม่เพิ่มจากเสียงที่ไม่มี",
+    "mechanic": "audio_order",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-10"
+  },
+  {
+    "id": "AB12-14-11a",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 12,
+    "pdfPage": 11,
+    "originalActivityId": "L14/11a",
+    "title": "พูดตามสระประสม",
+    "instruction": "ฟังแล้วพูดตาม",
+    "input": "คำหรือประโยคและสื่อเสียง",
+    "learnerAction": "ออกเสียงตาม",
+    "responseMode": "ออกเสียงตาม",
+    "knowledgeTopics": [
+      "diphthongs"
+    ],
+    "primarySkill": "speaking",
+    "secondarySkills": [
+      "listening"
+    ],
+    "difficulty": 2,
+    "grading": "ประเมินตนเอง/ผู้สอน; ไม่อ้าง ASR ระดับเสียงโดยไม่มีหลักฐาน",
+    "hint": "ฟังซ้ำและแสดงตำแหน่งเสียง",
+    "errorExplanation": "แสดงแนวออกเสียงและ checklist",
+    "webAdaptation": "recorded_speech เดิม; ขาดเสียงต้นฉบับสำหรับการเลียนเสียง",
+    "mechanic": "repeat_speech",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-11a"
+  },
+  {
+    "id": "AB12-14-11b",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 13,
+    "pdfPage": 12,
+    "originalActivityId": "L14/11b",
+    "title": "เติมตัวสะกดสระประสม",
+    "instruction": "เติมตัวสะกดสระประสมแล้วฟังตรวจ",
+    "input": "บทสนทนาที่เว้นส่วน ei/eu/au",
+    "learnerAction": "เติมตัวอักษรและพูดตาม",
+    "responseMode": "เติมตัวอักษรและพูดตาม",
+    "knowledgeTopics": [
+      "diphthongs"
+    ],
+    "primarySkill": "vocabulary",
+    "secondarySkills": [
+      "listening"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจตัวสะกด; การฟัง/พูดต้องมีหลักฐานแยก",
+    "hint": "ให้บริบทคำและกลุ่มเสียง",
+    "errorExplanation": "อธิบายรูปเขียนและเสียงไม่สรุปความสามารถพูดจากการพิมพ์",
+    "webAdaptation": "letter_slots/cloze มีแล้ว ไม่สร้างประเภทซ้ำ",
+    "mechanic": "grapheme_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-11b"
+  },
+  {
+    "id": "AB12-14-11c",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 13,
+    "pdfPage": 12,
+    "originalActivityId": "L14/11c",
+    "title": "พูดตามบทสนทนา",
+    "instruction": "ฟังแล้วพูดตาม",
+    "input": "คำหรือประโยคและสื่อเสียง",
+    "learnerAction": "ออกเสียงตาม",
+    "responseMode": "ออกเสียงตาม",
+    "knowledgeTopics": [
+      "diphthongs"
+    ],
+    "primarySkill": "speaking",
+    "secondarySkills": [
+      "listening"
+    ],
+    "difficulty": 3,
+    "grading": "ประเมินตนเอง/ผู้สอน; ไม่อ้าง ASR ระดับเสียงโดยไม่มีหลักฐาน",
+    "hint": "ฟังซ้ำและแสดงตำแหน่งเสียง",
+    "errorExplanation": "แสดงแนวออกเสียงและ checklist",
+    "webAdaptation": "recorded_speech เดิม; ขาดเสียงต้นฉบับสำหรับการเลียนเสียง",
+    "mechanic": "repeat_speech",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-11c"
+  },
+  {
+    "id": "AB12-14-12",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 13,
+    "pdfPage": 12,
+    "originalActivityId": "L14/12",
+    "title": "นับถนนเพื่อบอกทาง",
+    "instruction": "เติมลำดับถนนจากผัง",
+    "input": "ผังหลายถนนและประโยค",
+    "learnerAction": "พิมพ์ลำดับถนน",
+    "responseMode": "พิมพ์ลำดับถนน",
+    "knowledgeTopics": [
+      "directions"
+    ],
+    "primarySkill": "phrases",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจจุดเลี้ยวและ ordinal",
+    "hint": "ชี้ตำแหน่งเริ่มและนับถนน",
+    "errorExplanation": "อธิบาย erste/zweite/dritte ที่จุดเลี้ยว",
+    "webAdaptation": "cloze/map_route มีแล้ว",
+    "mechanic": "ordinal_route",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-12"
+  },
+  {
+    "id": "AB12-14-13",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 13,
+    "pdfPage": 12,
+    "originalActivityId": "L14/13",
+    "title": "คลังสำนวนในบทสนทนา",
+    "instruction": "เติมข้อความหลายช่องจากคลังคำ",
+    "input": "คำในคลังและข้อความมีช่องว่าง",
+    "learnerAction": "พิมพ์คำลงทุกช่อง",
+    "responseMode": "พิมพ์คำลงทุกช่อง",
+    "knowledgeTopics": [
+      "directions"
+    ],
+    "primarySkill": "phrases",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจทุกช่องและจำนวนครั้งที่ใช้คำ",
+    "hint": "บอกชนิดคำหรือบริบทของช่องแรกที่ผิด",
+    "errorExplanation": "อธิบายความหมายและรูปคำที่บริบทต้องใช้",
+    "webAdaptation": "ใช้ context_bank เดิม เพิ่มชุดตามหัวข้อเมื่อมีประโยชน์",
+    "mechanic": "context_bank",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-13"
+  },
+  {
+    "id": "AB12-14-14",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 13,
+    "pdfPage": 12,
+    "originalActivityId": "L14/14",
+    "title": "บอกทางจากผังให้ผู้ถาม",
+    "instruction": "ถามตอบหรือโต้ตอบกับคู่เรียน",
+    "input": "คำหรือประโยคตัวอย่างและบทบาทคู่เรียน",
+    "learnerAction": "พูด เขียน หรือบันทึกเสียงตอบ",
+    "responseMode": "พูด เขียน หรือบันทึกเสียงตอบ",
+    "knowledgeTopics": [
+      "directions"
+    ],
+    "primarySkill": "speaking",
+    "secondarySkills": [
+      "phrases"
+    ],
+    "difficulty": 4,
+    "grading": "ใช้ rubric ตามความหมาย ไม่ exact string สำหรับคำตอบเปิด",
+    "hint": "ให้กรอบประโยคก่อนตอบ",
+    "errorExplanation": "ให้ checklist ความครบถ้วน ไม่ตัดสินความสามารถพูดจากข้อความ",
+    "webAdaptation": "ใช้ dialogue/text_response/recorded_speech เดิม",
+    "mechanic": "partner_reply",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-14"
+  },
+  {
+    "id": "AB12-13-6-extra-one",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 86,
+    "pdfPage": 85,
+    "originalActivityId": "Noch mehr! L13/6 ★",
+    "title": "บทสนทนากริยาและสรรพนาม",
+    "instruction": "เติมรูปคำในประโยค",
+    "input": "ภาพ/บทสนทนาและคำตั้งต้น",
+    "learnerAction": "พิมพ์รูปกริยาหรือสรรพนาม",
+    "responseMode": "พิมพ์รูปกริยาหรือสรรพนาม",
+    "knowledgeTopics": [
+      "dative-verbs",
+      "dative-pronouns"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจรูปผันและบุรุษตามบริบท",
+    "hint": "บอกประธานหรือหน้าที่ Dativ",
+    "errorExplanation": "อธิบายประธานและส่วนลงท้าย/รูปสรรพนาม",
+    "webAdaptation": "ใช้ cloze เดิม เพิ่ม controlled production ตามบริบท AB",
+    "mechanic": "form_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-6-extra-one"
+  },
+  {
+    "id": "AB12-13-6-extra-two",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 86,
+    "pdfPage": 85,
+    "originalActivityId": "Noch mehr! L13/6 ★★",
+    "title": "จับคู่คำกล่าวและคำตอบ",
+    "instruction": "จับคู่ประโยคที่สัมพันธ์กัน",
+    "input": "คำถาม/คำกล่าวกับคำตอบ",
+    "learnerAction": "จับคู่",
+    "responseMode": "จับคู่",
+    "knowledgeTopics": [
+      "dative-verbs"
+    ],
+    "primarySkill": "phrases",
+    "secondarySkills": [
+      "grammar"
+    ],
+    "difficulty": 2,
+    "grading": "ตรวจคู่และเจตนาการพูด",
+    "hint": "บอกเจตนาคำถาม",
+    "errorExplanation": "อธิบายความหมายและรูป Dativ",
+    "webAdaptation": "ใช้ matching เดิม",
+    "mechanic": "matching",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-6-extra-two"
+  },
+  {
+    "id": "AB12-13-8-extra-one",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 86,
+    "pdfPage": 85,
+    "originalActivityId": "Noch mehr! L13/8 ★",
+    "title": "เลือกสรรพนามในจดหมาย",
+    "instruction": "เลือกสรรพนามให้สัมพันธ์กับผู้รับในจดหมาย",
+    "input": "จดหมายพร้อมตัวเลือกสรรพนาม",
+    "learnerAction": "เลือกสรรพนามตามผู้รับและบริบทจดหมาย",
+    "responseMode": "เลือกตัวเลือกในข้อความ",
+    "knowledgeTopics": [
+      "dative-pronouns"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "reading"
+    ],
+    "difficulty": 2,
+    "grading": "ตรวจสรรพนามตามผู้รับและบริบทจดหมาย",
+    "hint": "ดูว่ากล่าวถึงใครและกริยาใช้ Dativ กับใคร",
+    "errorExplanation": "อธิบายรูปสรรพนาม Dativ ที่สัมพันธ์กับผู้รับในจดหมาย",
+    "webAdaptation": "multiple_choice/cloze มีแล้ว; ไม่เพิ่มจดหมายรูปเดิมซ้ำ",
+    "mechanic": "multiple_choice",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-8-extra-one"
+  },
+  {
+    "id": "AB12-13-8-extra-two",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L13",
+    "printedPage": 87,
+    "pdfPage": 86,
+    "originalActivityId": "Noch mehr! L13/8 ★★",
+    "title": "เปลี่ยนประโยคเป็นกริยา Dativ",
+    "instruction": "เขียนประโยคใหม่ให้ความหมายเดิม",
+    "input": "สถานการณ์/ประโยคต้นทางและกริยากำหนด",
+    "learnerAction": "สร้างประโยค",
+    "responseMode": "สร้างประโยค",
+    "knowledgeTopics": [
+      "dative-verbs"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "writing"
+    ],
+    "difficulty": 4,
+    "grading": "accepted variants สำหรับ controlled response; rubric สำหรับเปิด",
+    "hint": "บอกกริยาที่ต้องใช้และผู้รับ",
+    "errorExplanation": "อธิบายความหมายและบทบาทผู้รับ",
+    "webAdaptation": "cloze/text_response มีแล้ว",
+    "mechanic": "reformulation",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-13-8-extra-two"
+  },
+  {
+    "id": "AB12-14-9-extra-one",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 87,
+    "pdfPage": 86,
+    "originalActivityId": "Noch mehr! L14/9 ★",
+    "title": "สร้างประโยคตำแหน่งจากภาพ",
+    "instruction": "บอกตำแหน่งจากภาพด้วยคำบุพบทและ Dativ",
+    "input": "ภาพ/บทสนทนาและช่องคำ",
+    "learnerAction": "พิมพ์วลีหรือรูป Artikel",
+    "responseMode": "พิมพ์วลีหรือรูป Artikel",
+    "knowledgeTopics": [
+      "local-prepositions"
+    ],
+    "primarySkill": "grammar",
+    "secondarySkills": [
+      "writing"
+    ],
+    "difficulty": 3,
+    "grading": "ตรวจ preposition และรูป Dativ แยกจากความหมายคำศัพท์",
+    "hint": "ให้เพศคำนาม/จุดอ้างอิง",
+    "errorExplanation": "อธิบาย Wo? + Dativ และความสัมพันธ์ในภาพ",
+    "webAdaptation": "เพิ่ม contextual cloze ใช้แผนภาพใหม่ของโครงการ",
+    "mechanic": "spatial_cloze",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-9-extra-one"
+  },
+  {
+    "id": "AB12-14-9-extra-two",
+    "sourceId": "MOMENTE_A1_2_AB",
+    "lessonId": "L14",
+    "printedPage": 87,
+    "pdfPage": 86,
+    "originalActivityId": "Noch mehr! L14/9 ★★",
+    "title": "เขียนตอบบรรยายถนน",
+    "instruction": "เขียนข้อความให้ผู้รับตามสถานการณ์",
+    "input": "สถานการณ์ ตัวช่วย และตัวอย่างสั้น",
+    "learnerAction": "เขียนอิสระ",
+    "responseMode": "เขียนอิสระ",
+    "knowledgeTopics": [
+      "local-prepositions"
+    ],
+    "primarySkill": "writing",
+    "secondarySkills": [
+      "grammar"
+    ],
+    "difficulty": 4,
+    "grading": "rubric ความครบถ้วน ไม่ให้ mastery จาก exact match",
+    "hint": "ให้หัวข้อย่อยหรือกรอบเริ่มต้น",
+    "errorExplanation": "แสดง checklist และจุดที่ควรเพิ่ม ไม่อ้างตรวจภาษาได้ทั้งหมด",
+    "webAdaptation": "ใช้ text_response และ drafts เดิม",
+    "mechanic": "open_writing",
+    "verificationStatus": "verified",
+    "evidenceId": "AB12-14-9-extra-two"
+  }
+]
