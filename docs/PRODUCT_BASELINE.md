@@ -8,6 +8,10 @@
 
 ช่วยให้ผู้เรียนภาษาเยอรมันเรียนเนื้อหาใหม่ ฝึกสิ่งที่เรียนแล้ว และเห็นความก้าวหน้าจากหลักฐานการเรียนจริง โดย Learn กับ Practice เป็นคนละทางเข้าและไม่บังคับให้เรียนเนื้อหาซ้ำก่อนฝึก
 
+หัวใจของระบบคือวิเคราะห์หลักฐานของผู้เรียนแต่ละคน แยกตามเป้าหมายและทักษะย่อย แล้วเลือกสิ่งที่ควรฝึก ระดับความยาก และความช่วยเหลือให้ตรงจุด. ทุกครั้งที่สร้างหรือแก้เนื้อหาบทเรียนและแบบฝึกหัดในทุกบทและทุกทักษะ ต้องออกแบบการติดตามและการเลือกฝึกตาม `docs/ADAPTIVE_LEARNING_STANDARD.md` ตั้งแต่ต้น. การจำความหมายได้ไม่ยืนยันว่าสะกดหรือใช้คำได้; การเรียนแล้วไม่ใช่ความชำนาญ; และการเรียงรูปแบบง่ายไปยากยังไม่เท่ากับระบบปรับระดับเฉพาะบุคคล.
+
+ข้อกำหนดนี้มีผลตั้งแต่ 24 ตุลาคม 2026 และเป็นหลักการกลางสำหรับงานต่อไป. สกิล `.agents/skills/design-adaptive-learning/SKILL.md` ใช้โดยอัตโนมัติตาม AGENTS.md. ต้องรายงานแยกว่าส่วนใดออกแบบแล้ว เก็บหลักฐานจริงแล้ว ใช้หลักฐานเลือกโจทย์แล้ว และเปิดใช้ในบัญชีใด. การบันทึกข้อกำหนดนี้ยังไม่ได้ย้ายข้อมูลหรือเปิด adaptive progression ให้คลังเดิมทั้งหมด.
+
 ## แหล่งอ้างอิงเนื้อหาและการออกแบบการเรียน
 
 **โปรโตคอลแหล่งอ้างอิง:** บันทึกแหล่งที่มา เลขหน้า ชื่อข้อ และ provenance ไว้ใน metadata/catalog/audit ภายในโปรเจกต์เท่านั้น ห้ามแสดงข้อมูลอ้างอิงภายในแก่ผู้เรียนในหน้า การ์ด คำถาม feedback หรือ navigation; ก่อนส่งงานเนื้อหาทุกครั้งให้ตรวจข้อความที่ผู้เรียนเห็นแยกจาก metadata และแสดงที่มาได้เมื่อผู้ใช้สั่งโดยตรงเท่านั้น
@@ -15,15 +19,24 @@
 ไฟล์อ้างอิงหลักอยู่ในโฟลเดอร์ `/Users/tanareesitthichoksathit/Desktop/เรียนเยอรมัน/` และอยู่นอก repository:
 
 - `หนังสือเรียน Moment A1 Lektion 1-12.pdf` เป็นแหล่งหลักสำหรับเนื้อหาที่เรียนในบทและแนวคิดการออกแบบกิจกรรมเรียน
-- `หนังสือเรียน A1.3/หนังสือเรียน บท13-15.pdf` เป็นแหล่งหลักสำหรับเนื้อหา Wortschatz และ Grammatik ของ L13–L15 โดยอ้างเลขหน้า PDF ใน `sources` ของรายการเนื้อหา; ไฟล์อยู่ใต้โฟลเดอร์อ้างอิงหลักข้างต้น
+- `หนังสือเรียน A1.3/หนังสือเรียน Moment A1 Lektion 13-24.pdf` เป็นแหล่งหลักสำหรับเนื้อหา Wortschatz และ Grammatik ของ L13–L18 โดยอ้างเลขหน้า PDF ใน `sources` ของรายการเนื้อหาที่เปิดใช้; ไฟล์อยู่ใต้โฟลเดอร์อ้างอิงหลักข้างต้น
+- `Das Training /Grannatik A1 Das Training.pdf` เป็นแหล่งเสริมสำหรับรูปแบบและหัวข้อฝึกไวยากรณ์ของ A1.3 ต้องคัดโจทย์ตามขอบเขตแต่ละ Lektion; ชื่อไฟล์สะกดตามไฟล์ต้นฉบับ
+- `Das Training /Schreiben A1 Das Training .pdf` เป็นแหล่งเสริมสำหรับรูปแบบฝึกเขียนและสถานการณ์ใกล้เคียง A1.3 ไม่ถือว่าทุกบทตรงกับไวยากรณ์ของ Lektion
 - `ชีท Lektion 1-12.pdf` ใช้เป็นแหล่งแบบฝึกหัดและทบทวนเนื้อหาที่เรียนแล้ว ไม่ใช้แทนเนื้อหาสอนในหนังสือ
 - `สไลดิ์ของอาจารย์ Lektion 1-4.pdf` ใช้ประกอบคำอธิบายและเนื้อหาที่อาจารย์สอนในชั้นเรียน
 
 เมื่อแหล่งข้อมูลไม่ตรงกัน ให้ใช้หนังสือเรียนเป็นหลักสำหรับเนื้อหาและรูปแบบการเรียน ใช้ชีทเพื่ออ้างอิงกิจกรรมฝึก และใช้สไลด์เพื่ออธิบายบริบทในชั้นเรียน โดยบันทึกความแตกต่างที่มีผลต่อเนื้อหาไว้ก่อนนำไปใช้ ไฟล์ PDF ไม่ได้อยู่ใน repository; ต้องตรวจว่าไฟล์เข้าถึงได้ในสภาพแวดล้อมก่อนอ้างอิง
 
-สำหรับ L13–L15 ให้ใช้หนังสือเรียน A1.3 เล่มนี้เป็นแหล่งเนื้อหาหลัก; ใช้รูปแบบกิจกรรมและพฤติกรรมของเว็บตามมาตรฐานร่วมด้านล่าง ภาพประกอบในเว็บเป็นภาพของระบบ ไม่คัดลอกหน้าหนังสือมาแสดงเป็นการ์ด
+สำหรับ L13–L18 ให้ใช้หนังสือเรียน A1.3 เล่มนี้เป็นแหล่งกำหนดขอบเขตเนื้อหาหลัก; ใช้รูปแบบกิจกรรมและพฤติกรรมของเว็บตามมาตรฐานร่วมด้านล่าง ภาพประกอบในเว็บเป็นภาพของระบบ ไม่คัดลอกหน้าหนังสือมาแสดงเป็นการ์ด รายละเอียดการตรวจแหล่งเสริมและข้อจำกัดของ mapping อยู่ใน `docs/A13_EXERCISE_SOURCE_MAPPING.md`
 
 ## มาตรฐานร่วมสำหรับการเพิ่มบทเรียนและทักษะ
+
+- **หน้าเข้าแบบฝึกหัดระหว่างออกแบบใหม่:** เอา PracticeSetup เดิมที่ให้เลือกชุดคำศัพท์ วิธีฝึก และจำนวนข้อออกจากเส้นทางใช้งาน; URL `/practice/:lesson/:skill` เดิมแสดงหน้าเข้าแบบฝึกหัดแทน. หน้า `/practice` ใช้หัวหน้า แถบเลือกระดับ A1.1–A1.3 และการ์ด Lektion แบบหน้าบทเรียน โดยเปิด A1.3 เป็นค่าเริ่มต้นและแสดงบทครบทั้ง 18 บท แม้ยังไม่มีโจทย์; URL `/practice?level=A1.2` เปิดแท็บ A1.2 โดยตรง. กดการ์ดแต่ละบทไปหน้า `/practice/:lesson` ซึ่งมีหกหมวดเดียวกับหน้าบทเรียน; breadcrumb ด้านบนให้กดชื่อระดับกลับไปรายการบทในระดับนั้น และในหน้าย่อยให้กดชื่อ Lektion กลับไปหน้าหมวด. หมวดที่ไม่มีชุดฝึกแสดงสถานะเตรียมและยังไม่เปิดให้กด. บัญชีทดลองเปิด Grammatik L13 ไป `/practice/L13/grammar` เพื่อเลือกหัวข้อสามหัวข้อ โดยทั้งสามหัวข้อกดเข้าฝึกได้ และมีรอบพื้นฐานใหม่ 15 ข้อเรียงตามหัวข้อ. การพูดยังไม่อยู่ในหกหมวดหลักของหน้า Learn/Practice นี้ แม้โครง A1.3 อีกส่วนหนึ่งของระบบมีหมวดการพูดแยกต่างหาก. ผลการฝึกและรอบเดิมยังเก็บไว้ใน Learning History; การถอดหน้าเลือกชุดไม่ลบข้อมูลเดิม. การฝึกใหม่ตามบทและทักษะต้องออกแบบและเปิดใช้อีกครั้งก่อนถือว่า MVP Practice ครบ
+- **ชุดทดลอง Dativ L13:** ในพื้นที่ `dev:test` บัญชี `tester@deutsch.test` และ `tester2@deutsch.test` เห็นทางเข้าชุดทดลองบนหน้าแบบฝึกหัด และเปิด `/practice/L13/grammar/dativ-pilot` ได้โดยตรง. ใช้โจทย์ที่เขียนใหม่ 15 ข้อจากคลังนำร่อง โดยเปิดแล้วเริ่มฝึก 5 ข้อคละรูปแบบทันที หรือทำรอบที่ค้างต่อ; ตัวเลือก 5/10/ทั้งหมดและชนิดการฝึกอยู่ใน “ปรับชุดฝึก” เมื่อกลับไปเลือกชุด. Feedback หลังตอบไม่แสดงข้อความเกี่ยวกับการนับผลเมื่อใช้คำใบ้ แต่ยังบันทึกการใช้คำใบ้และแยกผลในหน้าสรุป. ผลและรอบที่ค้างเก็บในเบราว์เซอร์แยกตามบัญชี ไม่เข้า Learning History หรือ Progress หลัก โดยหน้าโจทย์ไม่แสดงแบนเนอร์แจ้งสถานะต้นแบบ. บัญชีทั่วไปและ production ไม่เปิดชุดนี้. ข้อมูลแหล่งอ้างอิงอยู่ใน metadata ภายใน
+- **ชุดทดลอง Es gibt และ Verben L13:** บัญชีทดลองเดียวกันเปิดการ์ด Es gibt + Akkusativ และ Verben ได้ หัวข้อละ 15 ข้อใหม่จากการตรวจแหล่งรายข้อ; เปิดการ์ดแล้วเริ่ม 5 ข้อโดยตรงหรือทำรอบที่ค้างต่อ. รอบพื้นฐาน `/practice/L13/grammar/basic` สุ่มหัวข้อละ 5 ข้อในลำดับ Es gibt → Dativ → Verben โดยในแต่ละหัวข้อเริ่มจากเลือกคำ แล้วเติมคำ แล้วเรียงคำ; หน้าสรุปแสดงผลแยกหัวข้อและทักษะ. ปุ่ม `ทำแบบฝึกหัด` จากหน้าเรียน L13 เปิดรอบพื้นฐานนี้โดยตรง. ผลทดลองทั้งสี่ชุดยังเก็บในเบราว์เซอร์แยกบัญชี ไม่เข้า Progress หลัก; บัญชีทั่วไปและ production ยังไม่เปิดชุดนี้. หน้าแหล่งอ้างอิงและบันทึกตรวจอยู่ภายในโปรเจกต์ ไม่แสดงให้ผู้เรียน
+- **ชุดทดลองไวยากรณ์ L14–L18:** บัญชีทดลองเปิด L14 สองหัวข้อ (Lokale Präpositionen, Wo? + Dativ), L15 หนึ่งหัวข้อ (Possessivartikel ihr/sein), L16 หนึ่งหัวข้อ (in/vor/nach), L17 สามหัวข้อ (werden, mit/ohne, wollen + Infinitiv) และ L18 สองหัวข้อ (Imperativ Sie, sollen + Infinitiv) ได้จากหน้า Practice ของบทนั้น แต่ละหัวข้อมีโจทย์ใหม่ 5 ข้อและเริ่มฝึกทันที; บทที่มีหลายหัวข้อมีรอบพื้นฐานสุ่มเลือกตอบ เติมคำ และเรียงคำจากแต่ละหัวข้อตามลำดับ. ข้อมูลหน้าหนังสือกับกิจกรรมต้นทางอยู่ในทะเบียนภายในเท่านั้น. ชุดนี้ยังรอการทบทวนคำตอบโดยผู้สอนอิสระ เก็บผลเฉพาะเบราว์เซอร์ของบัญชีทดลองและไม่เข้า Progress หลัก; จึงไม่ถือว่าหมวดอื่นหรือบทอื่นพร้อมใช้
+- **ทางต่อจากการเรียนไวยากรณ์ L13 ไปฝึก:** หน้า Grammatik แสดงสถานะเรียนของสามหัวข้อจาก `learnedActivityIds` เดิม เมื่อเรียนครบทั้งสาม หน้าสรุป Verben และหน้าเลือกหัวข้อแสดงสถานะจบการเรียน; บัญชีทดลองมีปุ่ม `ทำแบบฝึกหัด` ที่เปิดข้อแรกหรือทำรอบที่ค้างต่อทันที กับทาง `กลับหน้าบทเรียน` ส่วนบัญชีทั่วไปเห็นเพียงสถานะเตรียมโจทย์และทางกลับบทเรียน. แม้ยังเรียนไม่ครบ หน้าสรุป Verben ของบัญชีทดลองก็มีปุ่ม `ทำแบบฝึกหัด` โดยบัญชีทั่วไปมีปุ่มกลับหัวข้อไวยากรณ์. หน้า `/practice/L13/grammar` ใช้เลือกฝึกแยกหัวข้อเมื่อผู้เรียนเข้าจากเมนู Practice; ปุ่มหลังเรียนไม่ผ่านหน้านี้. หน้าแบบฝึก Grammatik แสดงเฉพาะการ์ดเลือกหัวข้อ; ทางรอบพื้นฐานเปิดจากหลังเรียนหรือการ์ดแนะนำส่วนกลาง. ปุ่มหลังเรียนเริ่มรอบพื้นฐานที่ข้อแรกของ Es gibt ทันที ทำหัวข้อละห้าข้อเรียงตามลำดับพร้อมจุดพักทุกหัวข้อ แล้วสรุปผลแยกจากสถานะเรียน โดยการฝึกเฉพาะหัวข้อยังเปิดให้เข้าจากเมนู Practice ได้โดยไม่บังคับว่าเรียนครบก่อน
+- โจทย์ Dativ นำร่องให้ผู้เรียนรู้ว่าช่องว่างกล่าวถึงใครจากประโยคโจทย์เอง เช่น `Ich finde den Markt schön. Der Markt gefällt ___.` ไม่มีบรรทัดบริบทหรือวงเล็บบอกบุคคลแยกออกมา. รอบที่บันทึกไว้ยังใช้เฉลยและตัวเลือกเดิม โดยแสดงข้อความโจทย์เวอร์ชันล่าสุดเมื่อเปิดต่อ
 
 - **Breadcrumb ระดับหลักสูตร:** ทุกหน้าในเส้นทางบทเรียนแสดงระดับหลักสูตรของบทนั้น (`A1.1`, `A1.2` หรือ `A1.3`) เป็น breadcrumb แรกที่กดกลับไปหน้ารวมบทเรียนของระดับนั้นได้; ตามด้วย Lektion และทักษะ/กิจกรรมปัจจุบัน โดยคำนวณระดับจากหมายเลขบทผ่าน `getLevel` เพื่อให้เมนูด้านข้างหรือการกลับหน้ารวมยังคงบริบทของระดับ
 
@@ -53,6 +66,8 @@
 
 รูปแบบที่สังเกตซ้ำจากบท 1 และบท 2 และให้ใช้ร่วมกัน:
 
+- **การแสดงคำนามพร้อม Artikel:** ทุกหน้าบทเรียนและแบบฝึกที่แสดงคำนามพร้อม Artikel ใช้จุดสีเดิมนำหน้า โดย `der` สีฟ้า `die` สีชมพู `das` สีเขียว และพหูพจน์ `die` สีเหลืองตาม metadata ของคำ. ใช้ `ArticleDot`/`ArticleLegend` จาก `profession-matching.tsx` และ `articleColors` ชุดกลาง ไม่สร้างสีเฉพาะบท. แสดง legend ค้างไว้ด้านบนขณะเลื่อนในกิจกรรมคำนาม โดยจัดไม่ให้ทับเนื้อหาหรือแถบความคืบหน้าเมื่อ legend ขึ้นหลายบรรทัดบนมือถือ. คงข้อความ Artikel ให้เห็น ไม่ใช้สีเพียงอย่างเดียว. หากโจทย์กำลังถามเพศของคำ ต้องไม่ระบายสีคำเป้าหมายเพื่อบอกคำตอบก่อนตรวจ; การแสดง Artikel/สีที่ให้ไว้ไม่นับเป็นหลักฐานการนึกเพศเอง.
+
 - **รูปแบบเรียนคำศัพท์ด้วยภาพ:** การ์ดหมวด L01–L15 แสดงชื่อหมวดภาษาเยอรมัน คำอธิบายไทย และภาพตัวแทนจากหมวด; เปิดกิจกรรมจับคู่บน `VocabularyImageMatching` โดยใช้คลังตัวเลือกคำด้านบนและติดขอบขณะเลื่อน มีจุดสีแสดง Artikel/เพศเมื่อเป็นคำนาม; ภาพเรียงเป็นการ์ดเป้าหมายพร้อมช่องรับคำ ใต้ภาพแสดงคำและเครื่องหมายถูกเมื่อจับคู่ถูก คำตอบผิดไม่เปิดเฉลย คำนามใช้ Artikel เป็นส่วนหนึ่งของคำ และเสียงอ่านกดฟังได้ตามมาตรฐานเสียงด้านล่าง
 
 - **คำศัพท์จับคู่ภาพ L01–L15:** ใช้หมวดและชื่อเยอรมันจากข้อมูลบท/นิยามกิจกรรม โดยการ์ดทางเข้าและ breadcrumb แสดงชื่อหมวดเดียวกัน; กระดานและพฤติกรรมจับคู่ใช้ `VocabularyImageMatching`; คำศัพท์อยู่ในแถบ sticky ด้านบน ภาพเป้าหมายใช้สัดส่วน 3:2 และทิศทางภาพอ้างอิงชุดอาชีพ L02; กรอบภาพแสดงภาพครบด้วย `object-fit: contain` จัดกึ่งกลางและเว้นขอบตามกฎของแต่ละบท ไม่ขยายภาพเพื่อตัดขอบให้เต็มกรอบ อนุญาตพื้นที่ว่างตามสัดส่วนภาพต้นฉบับ; คำนามแสดง Artikel/สีเพศ ส่วนกลุ่มคำกริยาไม่แสดง Article Legend; คู่ที่ถูกค้างไว้ คำตอบผิดไม่เฉลย และความคืบหน้าบันทึก item IDs แยกตามบทใน `learner_lesson_states`
@@ -60,6 +75,11 @@
 - **ข้อกำหนดเฉพาะ Lektion 13:** แสดงชุด Verben ใต้ทักษะ Grammatik ตามข้อกำหนด Verben L13; ไม่แสดงการ์ด Adjektive เพราะคำกลุ่มนี้เป็นคำศัพท์ที่เรียนใน A1.1/A1.2 และไม่ได้เป็นไวยากรณ์ใหม่ของ Lektion 13; หมวดจับคู่ภาพ Orte in der Stadt มีคำหลัก 21 คำและศัพท์เสริมสถานที่ 4 คำ (`Fluss`, `Brücke`, `Galerie`, `Fußballplatz`); ภาพทั้ง 25 ไฟล์ใน `public/images/lektion-13-city/` ใช้ขนาด 1536×1024 (3:2) และแสดงแบบ `object-fit: contain` เพื่อให้เห็นภาพครบโดยไม่ล้นกรอบ; เก็บศัพท์เสริมอีก 24 รายการเป็น draft สำหรับใช้ใน Lesen/Hören หรือทักษะอื่นในอนาคต ไม่แสดงในกิจกรรม Wortschatz ปัจจุบัน
 
 - **Redemittel Lektion 14:** หน้า `Wegbeschreibungen` มีสองแท็บ แท็บแรกแสดงประโยคคละกันในคลังที่ติดด้านบนขณะเลื่อนและแถบความคืบหน้าแบบบทอื่น ให้ผู้เรียนแตะประโยคแล้ววางในกลุ่ม ถามทาง บอกทาง ไม่รู้ทาง หรือขอบคุณ ตรวจได้เมื่อจัดครบและแก้กลุ่มที่ผิดได้; การตรวจผิดครั้งแรกแสดง `ลองอีกครั้ง` ครั้งที่สองให้จุดสังเกตเฉพาะหน้าที่ ครั้งที่สามปลดล็อกคำแปลไทยด้านหลังการ์ด การ์ดที่ตอบถูกพลิกดูคำแปลได้ และทุกการ์ดกดฟังตัวอย่างเสียงได้; แท็บที่สองใช้ภาพแผนที่เมืองเป็นภาพหลัก ทางเข้าอยู่กลางขอบล่าง มีคนตัวเล็กยืนบนถนนตรงทางเข้าและไม่มีอาคารตรงนั้น แผนที่แสดงสถานที่หลายแห่ง ได้แก่ ไปรษณีย์ ธนาคาร คาเฟ่ สถานีรถไฟ ร้านขายยา ห้องสมุด โรงหนัง และสวนสาธารณะ ป้ายชื่อภาษาเยอรมันพร้อมจุดสีเพศคำนามมีขนาดเล็กอยู่ใกล้หลังคาหรือจุดสังเกตของสถานที่ ไม่บังอาคารหรือถนน เลือกสถานที่เป้าหมายตามข้อและเน้นภาพบริเวณนั้นให้เด่นกว่าส่วนอื่น วาดเส้นทางบนถนนที่เชื่อมต่อจากจุดเริ่มไปยังสถานที่ ให้ผู้เรียนเลือกประโยคถามทางและบอกจุดเลี้ยวให้ตรงกับเส้นทาง ให้ผู้เรียนเลือกคำพูดของ A และ B ทั้ง 8 ตาต่อข้อ โดยแสดงตัวเลือกที่เกี่ยวกับตาปัจจุบันเพียง 3 ประโยคต่อครั้ง พร้อม feedback เสียงอ่าน และปุ่มไปข้อถัดไปหลังจบ; มีคำอธิบายจุดสีและแถบความคืบหน้าตัวเลขที่ติดด้านบน ข้อความผู้พูดในรายการใช้เพียง A/B ไม่แสดงป้าย `คุณเป็น A/B` หัวข้อ `บทสนทนา` หรือข้อความ `ประโยคของคุณ` เนื้อหาที่มาของสำนวนและบทฝึกเก็บไว้ใน metadata ภายในโปรเจกต์ ไม่แสดงเลขหน้า/ข้อแก่ผู้เรียน
+- **รอบฝึกประโยคและสำนวน Lektion 14:** บัญชีที่เปิดใช้มีชุดหลังเรียน 17 ข้อ ครอบคลุมสำนวนเรียนจริง 17 รายการ แบ่งถามทาง 5, บอกทาง 6, ไม่รู้ทาง 3 และขอบคุณ 3 ข้อ; ปุ่มหลังเรียนเปิดข้อแรกโดยตรงและฝึกต่อเนื่องครบทุกหัวข้อ. หน้าเข้า Redemittel ให้ทำรอบที่ค้างต่อก่อน; เมื่อมีประวัติแล้วเปิดรอบแนะนำไม่เกิน 10 สำนวน โดยให้ข้อยังไม่เคยทำ ข้อเคยผิด และข้อที่เว้นฝึกมาก่อน พร้อมเหตุผลจากผลจริง. รอบคละ 15 ข้อเดิมยังคงไว้สำหรับรอบที่เริ่มค้างอยู่ โดยเลือกถามทาง 4 บอกทาง 5 ไม่รู้ทาง 3 และขอบคุณ 3 ข้อ. การ์ด 4 หัวข้ออยู่ใต้ `ฝึกเฉพาะหัวข้อ` สำหรับเลือกเอง จำนวนข้อของหัวข้อเดี่ยวไม่ถูกปัดให้เท่ากัน; ตั้งแต่ข้อ 2 ปุ่มย้อนกลับใต้โจทย์พาไปข้อก่อนหน้าโดยคงคำตอบและร่างคำตอบเดิม ส่วนการเลือกหัวข้อใช้ breadcrumb ด้านบน; เมื่อจบรอบหัวข้อเดี่ยว หน้าจบระบุชื่อหัวข้อและปุ่มหัวข้อถัดไปชี้ตามลำดับ ถามทาง → บอกทาง → บอกว่าไม่รู้ทาง → ขอบคุณ โดยไม่แสดงปุ่มนี้หลังหัวข้อสุดท้ายหรือหลังรอบรวมทุกหัวข้อ; คำตอบและจุดค้างบันทึกใน lesson state ของบัญชี พร้อมร่างในเบราว์เซอร์เมื่อส่งไม่สำเร็จ โดยยังแยกจาก Progress หลัก. เปิดให้บัญชีผู้เรียนเมื่อ `NEXT_PUBLIC_L14_PHRASES_PRACTICE=true`; คัดเฉพาะสำนวนที่เรียนแล้ว และจับคู่เมื่อเรียนครบทั้งสองสำนวนของคู่นั้น. รายละเอียดและข้อจำกัดใน `docs/exercise-mapping/L14_PHRASES_PRACTICE.md`.
+- **ฝึกเพิ่มจากประโยคที่เรียนใน Redemittel L14:** รอบหลังเรียนคง 17 ข้อที่วัด 17 สำนวนคนละหนึ่งครั้ง; ปุ่ม `ฝึกเพิ่ม` หลังจบรอบนี้เปิดรอบแนะนำไม่เกิน 10 ข้อ. รอบแนะนำมีโจทย์ถามตอบเพิ่มเติมสำหรับ `Kann ich zu Fuß zum Café gehen?` เมื่อเคยทำโจทย์เรียงประโยคต้นฉบับแล้ว โดยระบุว่าคาเฟ่อยู่ใกล้ก่อนให้เลือกคำตอบ. ในหนึ่งรอบเลือกได้เพียงรูปแบบเดียวต่อสำนวนเป้าหมาย และการ์ดหัวข้อเดี่ยวคงโจทย์เดิม.
+- **จับคู่คำถาม–คำตอบ Redemittel L14:** รอบหลังเรียน รอบแนะนำ และรอบหัวข้อบอกทางใช้หนึ่งหน้าจับคู่สองคู่แทนข้อเลือกตอบเดิมของ `Da sehen Sie eine Apotheke.` และ `Das ist gar nicht weit.` โดยนับและบันทึกผลแยกคู่เพื่อให้ครบ 17 สำนวนเป้าหมายในรอบหลังเรียน และไม่เกิน 10 สำนวนในรอบแนะนำ. ให้คำตอบที่จับคู่แล้วอยู่บรรทัดเดียวกับคำถาม กดคืนคำตอบเพื่อแก้คู่ก่อนตรวจ และเฉลยพร้อมคำแปลไทยทั้งคำถามและคำตอบรายคู่. รอบที่เริ่มค้างไว้ใช้รายการข้อเดิมจนจบ.
+- **ภาพสถานการณ์ในรอบฝึก Redemittel L14:** ข้อเลือกตอบแสดงภาพประกอบสถานการณ์ขนาดย่อทางซ้าย คำถามภาษาเยอรมันและตัวเลือกสามข้อเรียงลงมาทางขวา; บนจอแคบให้วางภาพเหนือคำถาม. ผู้เรียนคลิกคำแต่ละคำในคำถามเพื่อดูความหมายไทยได้ คำแปลโจทย์ทั้งประโยคแสดงหลังตรวจคำตอบ. ข้อเรียงคำคงรูปแบบเดิม ภาพไม่มีคำตอบหรือข้อมูลอ้างอิงกำกับ.
+- **โจทย์เรียงคำ Redemittel L14:** แสดงคำสั่ง `เรียงประโยคให้ถูกต้อง` ในบรรทัดบนด้วยขนาดข้อความประกอบ และแสดงความหมายไทยของประโยคเป็นหัวข้อใหญ่; ช่องวางคำว่างจนผู้เรียนเริ่มเลือกคำ ไม่แสดงคำสั่งซ้ำในช่อง. ก่อนตรวจ ผู้เรียนกดคำที่วางแล้วเพื่อคืนคำนั้นไปยังตำแหน่งเดิมในตัวเลือกได้โดยไม่ล้างคำอื่น และร่างที่เรียงผิดลำดับยังอยู่เมื่อกลับมาทำต่อ. หลังตรวจ อธิบายเฉพาะกฎตำแหน่งคำที่ช่วยตอบข้อนี้และข้อมูลที่จำเป็นต่อการเรียงคำ; ข้อ `Kann ich zu Fuß zum Café gehen?` ใช้หัวข้อเฉลย `ประโยคคำถามแบบตอบใช่หรือไม่ใช่ (Ja/Nein-Frage) ที่มี Modalverb` และบอกว่าโดยปกติวิธีเดินทางมาก่อนจุดหมายในประโยคนี้ โดยไม่สอนการสลับเพื่อเน้นความหมายหรืออ้างว่าเป็นกฎบังคับของทุกประโยค. Breadcrumb ของหน้าฝึกหัวข้อย่อยแสดงชื่อการ์ดต่อจาก `Redemittel` แบบบท 13.
 - เหนือแผนที่ Redemittel L14 แสดงเพียงคำแนะนำให้ดูเส้นทางและเลือกประโยค ไม่แสดงบรรทัด `สถานที่เป้าหมาย · ...` หรือหัวข้อ `ถามทางในเมือง`; จุดหมายยังดูได้จากป้ายที่เน้นบนแผนที่
 - **ปรับกิจกรรมบทสนทนา Redemittel L14 (18 ตุลาคม 2026):** ในแท็บแผนที่ ให้ผู้เรียนเลือกประโยคทั้ง A และ B ตามลำดับบทสนทนา โดยมีตัวเลือกที่เกี่ยวกับตาปัจจุบัน 3 ประโยคต่อครั้ง บอกใบ้ตามชื่อสถานที่ ทิศทาง หรือหน้าที่ของคำพูดเมื่อเลือกผิด ข้อบอกเส้นทางมี 8 ตา ส่วนข้อที่ B ไม่รู้ทางมี 4 ตา; หลังครบให้เรียงบัตรทั้งหมดของข้อนั้นใหม่จากชุดที่สลับลำดับ ตรวจแล้วแก้บัตรที่ผิดได้ จากนั้นสุ่มสถานที่รอบต่อไป กติกานี้ใช้แทนการสุ่มบทบาท A/B และการเลือก 4 ตาต่อรอบในข้อก่อนหน้า; เก็บสถานะสองช่วงใน lesson state และคงความคืบหน้าการจัดกลุ่มเดิมเมื่ออ่านสถานะรุ่นก่อน
 - **คำแปลบทสนทนา Redemittel L14 (18 ตุลาคม 2026):** การ์ดบทสนทนาที่ผู้เรียนเลือกถูกในรอบแรกพลิกทั้งใบเพื่อดูคำแปลไทยได้ เมื่อเรียงบัตรครบและตรวจถูกทั้งหมด การ์ดในรอบเรียงจึงพลิกดูคำแปลได้ด้วย; การ์ดที่ยังไม่ตอบหรือเรียงผิดไม่เปิดคำแปล บันทึกด้านที่พลิกใน lesson state และเริ่มด้านภาษาเยอรมันใหม่เมื่อเปลี่ยนรอบหรือสุ่มสถานที่ใหม่
@@ -141,6 +161,7 @@
 - ถ้ามีตารางสรุปหรือหน้าสรุปที่มีเนื้อหาให้เรียน/ทบทวนจริง ให้คงเนื้อหานั้นไว้ เช่น Übersicht การผันกริยาและตารางตัวเลข
 - ถ้าไม่มีหน้าสรุปเนื้อหา เมื่อกิจกรรมสุดท้ายเสร็จให้คงกระดานพร้อมคำตอบที่ถูกไว้ และเปลี่ยนปุ่มไปต่อเป็นลิงก์ไปส่วนถัดไปหรือกลับบทเรียนโดยตรง
 - กลับเข้าทางที่เรียนครบแล้วให้เปิดหน้าสรุปเนื้อหาหรือกิจกรรมสุดท้ายที่ตอบครบ ผู้เรียนกลับไปหมวดก่อนหน้าได้ตามเดิม ไม่ล้าง Progress, learned IDs, คู่ที่ถูก หรือประวัติเมื่อเรียนจบ/ออกจากหน้า
+- ปุ่มนำทางท้ายกิจกรรมอยู่แถวเดียวกัน โดยวาง “ย้อนกลับ” ก่อนปุ่มไปต่อและเรียกปุ่มไปต่อตามสิ่งที่จะเปิด เช่น “ประโยคถัดไป”, “ไปข้อถัดไป” หรือ “ทำแบบฝึกหัด”
 
 ## ตัวนับความคืบหน้าในเมนูบทเรียน
 
@@ -232,7 +253,7 @@
 
 ### System-Directed Review
 
-Review เป็นเส้นทางแยกจาก Practice และระบบใช้ Learning History/AttemptEvidence/KnowledgeState เป็นหลักฐานหาเนื้อหาที่ควรกลับไปฝึก กติกาคิวที่สรุปไว้คือ item ที่คำตอบล่าสุดผิด หรือคำตอบล่าสุดถูกแต่ confidence เป็น “ต้องคิด” หรือ “เดา” ควรอยู่ในคิว; คำตอบล่าสุดถูกและ confidence “ง่าย” ให้ออกจากคิว ขอบเขตนี้ไม่ได้กำหนด scheduled interval หรือ final mastery algorithm
+Review uses first-answer correctness, assistance and repeated independent evidence. Wrong answers and assistance are review signals; historical thought/guess ratings remain useful. Missing confidence is unknown, not easy. No final mastery algorithm or scheduled interval is implied.
 
 ## Learning data และ source of truth
 
@@ -242,7 +263,7 @@ Review เป็นเส้นทางแยกจาก Practice และร
 - localStorage ใช้เฉพาะสำรองรายการบันทึกที่รอส่งโดยแยกตามบัญชี; หากโหลด Supabase ไม่สำเร็จต้องไม่เริ่มจากสถานะว่างแล้วเขียนทับข้อมูลเดิม หากบันทึกไม่สำเร็จแจ้งให้ลองอีกครั้งและคงรายการรอส่งไว้
 
 - **ItemExposure** — legacy learning evidence ที่ระบบเดิมใช้ตัดสิน Seen/Learned; ไม่ใช่ source ของ `learningCompleted` ใน Vocabulary Learning prototype
-- **LearningAttempt** — หลักฐานคำตอบที่ส่งใน Practice รวม input, correctness, completion status, confidence และเวลา; คำตอบถูกเป็น Pending จนกว่าจะเลือก confidence ส่วนคำตอบผิด Completed ได้ทันที
+- **LearningAttempt**: first submitted input, correctness, historical confidence if present and submission time. A checked answer is completed immediately, whether correct or incorrect.
 - **AttemptEvidence** — ผลวิเคราะห์ของ Attempt แยกตาม dimension รวมทุกมิติที่พบว่าผิด
 - **KnowledgeState** — สถานะสรุปที่ derive จาก Learning History ไม่ใช่ source evidence ที่แก้แยกจาก history
 - **PracticeSession** — รอบฝึกและสถานะการทำต่อ/จบ
@@ -262,11 +283,11 @@ Learning History เป็น source evidence; KnowledgeState เป็น deriv
 - Sentence Structure
 - Application
 
-เมื่อผู้เรียนตอบผิด ระบบให้ immediate corrective feedback พร้อมคำตอบ/เนื้อหาที่ถูกและเก็บ error dimensions ทั้งหมดที่เกี่ยวข้อง เมื่อผู้เรียนตอบถูก ระบบถาม confidence:
+Practice does not ask for confidence or show easy/thought/guess or not-sure buttons. Checked answers complete immediately: answer, read feedback, continue. New confidence remains unknown, never easy or mastery. Preserve historical ratings and first answers for compatibility. Resume old pending answers at feedback without answering again. Use first-answer correctness, assistance and independent evidence across formats/days to choose practice.
 
-- ง่าย
-- ต้องคิด
-- เดา
+
+
+
 
 Response Time ถูกตัดออกจาก MVP และไม่ใช่ learning evidence; ไม่มี time limit และระบบไม่จับเวลา/สร้าง pause-resume timer
 
@@ -278,8 +299,8 @@ Response Time ถูกตัดออกจาก MVP และไม่ใช�
 
 - PracticeSession และ SessionItem ต้อง persist เพื่อให้เปลี่ยนหน้า/เปิดใหม่แล้วทำต่อได้
 - Incomplete Practice Session ต้อง resume ได้ พร้อมตำแหน่งปัจจุบันและคำถามที่สร้างไว้
-- Attempt ที่ส่งแล้วต้องคงอยู่; คำตอบถูกที่ยังไม่เลือก confidence เป็น Pending และต้อง resume กลับมาที่ขั้นเลือก confidence ของข้อเดิมโดยไม่ถามซ้ำ
-- Pending correct attempt ไม่ถูกนำไปใช้ใน Review, Progress หรือ KnowledgeState; เมื่อเลือก `easy`, `thought` หรือ `guess` จึงเป็น Completed และใช้เป็น evidence ได้; incorrect attempt เป็น Completed ทันที
+- Preserve submitted attempts and first answers. Resume old pending correct answers at feedback and allow continuing without a rating.
+- All checked attempts can contribute evidence immediately. Missing confidence remains unknown and does not imply mastery.
 - Response time ไม่ถูกใช้ใน Review, Progress, KnowledgeState หรือเป็น learning evidence; field เก่าคงไว้ได้เพื่อ compatibility
 - Session Summary ใช้ first-attempt score เท่านั้น; การลองใหม่เป็น attempt ใน session ใหม่ ไม่เปลี่ยนคะแนนครั้งแรก
 
@@ -466,3 +487,115 @@ MVP ครอบคลุม Learn → persist Seen/Learned → Practice เฉ�
 
 - หน้าเนื้อหาบท 2 แสดงกล่องทักษะทุกหมวดที่มีรายการจริงใน catalog; ปัจจุบันมี Wortschatz, Grammatik และ Redemittel ไม่แสดงกล่องหมวดว่าง
 - เมนู Redemittel บท 2 แสดงกล่อง Fragen und Sätze / คำถามและโครงสร้างประโยค ลิงก์ไปยังกิจกรรมประโยคที่มีอยู่ โดยแยกจากเมนู Grammatik; จัด Was? อยู่ในทักษะ phrases ไม่ใช่ grammar
+
+
+## หน้าโจทย์ไวยากรณ์ทดลอง วันที่ 21 ตุลาคม 2026
+
+หน้าโจทย์แสดงเฉพาะจำนวน `0 / 5 ข้อ` ทางซ้ายของแถบความคืบหน้า โดยไม่มีคำว่า `ทำแล้ว`. ปุ่ม `ย้อนกลับ` อยู่ใต้กรอบโจทย์และกลับไปหน้าเลือกหัวข้อของบท โดยเก็บรอบที่ค้างไว้. ตัดหัว Deutsch Trainer และแบนเนอร์ต้นแบบออกจากหน้าฝึก. คำสั่งใช้ข้อความ prompt ในป้ายขนาดเดิมด้านบนเพียงแห่งเดียว แทนหัวข้อคำสั่งตัวใหญ่และป้าย subskill ซ้ำ. หลังตรวจแสดงประโยคเฉลยครบพร้อมคำแปลไทย. คำในประโยคแสดงความหมายไทยเมื่อชี้เมาส์หรือโฟกัส/แตะคำ รองรับคีย์บอร์ดด้วย. ผลชุดทดลองยังเก็บเฉพาะเบราว์เซอร์แยกบัญชีตามเดิม.
+
+
+วันที่ 22 ตุลาคม 2026: คำแปลเมื่อชี้หรือแตะใน Practice จับคำนำหน้านามกับคำนามที่มีความหมายร่วมกันเป็นกลุ่ม เช่น `Der Mann` แสดง `ผู้ชายคนนั้น` ใน tooltip เดียว โดยคงประโยคเยอรมันเดิม. ใช้พจนานุกรมวลีที่กำหนดไว้ก่อนแปลรายคำ.
+
+
+วันที่ 22 ตุลาคม 2026: หน้าโจทย์ไวยากรณ์ทดลองไม่แสดงปุ่มดูคำใบ้หรือกล่องคำใบ้. ปุ่มย้อนกลับอยู่ในแถวการกระทำภายในกรอบโจทย์ร่วมกับตรวจคำตอบ และหลังตรวจอยู่ร่วมกับปุ่มข้อต่อไปเมื่อพร้อมใช้งาน. บันทึกการใช้คำใบ้ในรอบเก่ายังคงเดิม.
+
+
+วันที่ 22 ตุลาคม 2026: เฉลย Practice อธิบายกฎและเหตุผลที่ใช้คำตอบกับประโยคนั้น. หมายเหตุสำหรับผู้ออกแบบเกี่ยวกับการวัดผล ความเที่ยงของโจทย์ หรือข้อจำกัดในการยืนยันความชำนาญ เก็บใน metadata ภายในและไม่รวมในเฉลยที่ผู้เรียนเห็น.
+
+
+วันที่ 22 ตุลาคม 2026: เฉลยแต่ละข้อเชื่อมกฎกับคำหรือบริบทในโจทย์นั้นโดยตรง ไม่ใช้ย่อหน้ารวมกฎเดียวกันแทนเหตุผลของทุกข้อในหัวข้อ. หลังตอบผิดแสดงคำตอบ ประโยคแปล และคำอธิบายครั้งเดียว โดยตัดข้อความแจ้งว่าคำตอบไม่ตรงซึ่งซ้ำกับสถานะผิด. หน้าทำข้อและสรุปรอบเก่าใช้คำอธิบายที่ปรับล่าสุด โดยคงคำตอบและผลที่บันทึกไว้.
+
+
+## มาตรฐานฝึกต่อเนื่องและแนะนำเฉพาะบุคคล วันที่ 22 ตุลาคม 2026
+
+ใช้ `docs/PRACTICE_FLOW_STANDARD.md` รหัส `GUIDED_AND_PERSONALIZED_PRACTICE` เป็นแนวทางร่วมทุกบททุกทักษะ. ต้นแบบปัจจุบันเริ่มที่ไวยากรณ์ L13: หลังเรียน 3 หัวข้อ × 5 ข้อ, จุดพักและทำต่อข้ามการออกหน้า, แนะนำฝึก 10 ข้อจากผลแยกทักษะย่อยบนหน้าแรกและหน้า Practice, เลือกหัวข้อเองได้เสมอ, จบหัวข้อเดี่ยวมีทางฝึกหัวข้อถัดไปและฝึกเพิ่ม. ลบกล่องรอบพื้นฐานในหน้ารายการหัวข้อ. รอบเก่าคงข้อมูลและจำนวนเดิม. ระบบแนะนำนี้ยังอยู่ในขอบเขตบัญชีทดลองและข้อมูลเบราว์เซอร์ ไม่มีการเปิดใช้ผลกับ Progress หลักหรือทุกหมวดโดยอัตโนมัติ.
+
+
+### Account practice storage, 22 October 2026
+
+This supersedes browser-only storage for tester L13 grammar. Load account history before opening exercises. Import existing account-scoped local sessions without changing IDs, question counts or first answers. Save drafts, submitted answers, confidence, checkpoints and completion in learner_practice_sessions, with local backup and visible retry on failure. The database merges each session atomically, preserves submitted answers and completed rounds, and accepts optional uncertainty on the same original answer. New devices must use the same account and server. A save must reach the server before another device can read it.
+
+History recovery, 22 October 2026: when local history fails validation, retain the exact original in an account-scoped recovery key before replacing the working snapshot. Recover individually valid sessions and merge valid account history. Inform the learner that some local history was backed up; do not claim invalid sessions were imported. If the backup cannot be written, stop without overwriting that snapshot. Retry a history request once after refreshing authentication on HTTP 401; return to sign-in only when credentials are rejected, preserving practice storage. Initial network or server-history failures still block new rounds and offer retry.
+
+Keep these sessions separate from Learning History and KnowledgeState. This change does not publish practice to real users, apply a hosted migration, or enable other lessons. Failed initial loads block starting a new round and offer retry or sign-in. Failed uploads keep local history and retry on reconnect/focus or explicit retry. Concurrent open devices reload to see combined history; this is not live collaborative editing.
+
+
+### L13 vocabulary practice, 22 October 2026
+
+Article presentation audit, 24 October 2026: the six L13 vocabulary basic/daily/topic routes use the same sticky ArticleLegend as the advanced route. The generated vocabulary renderer receives the shared article palette and target noun metadata. Show noun dots in meaning prompts and noun feedback, including yellow plural die for Leute/Kinder. All standalone der/die/das answer choices may show their respective colors, but the noun whose article is being tested must not show its correct color before checking. Spelling prompts must not expose the target German word or its answer through this decoration. Existing question IDs, accepted answers and server-validation definitions remain intact.
+
+Tester L13 vocabulary now uses the shared guided/personalized practice engine and account persistence. The inventory covers all 49 existing vocabulary items, organized as three image-learning groups of 25 nouns and a fourth group of 24 remaining items. The question bank contains 49 meaning, 39 singular Artikel and 49 spelling questions. This supersedes the earlier statement that prototype practice does not consume the new vocabulary learning state, for L13 vocabulary only.
+
+Eligibility requires actual account image-learning completion per item or ItemExposure. Do not include unseen vocabulary or grant eligibility for tester status. After all image groups are learned, the learning screen offers direct practice. Guided rounds include eligible groups only, at most five questions each. Three image groups normally produce 15 questions; previously learned additional vocabulary may add a fourth group. Manual topics use up to five, daily vocabulary practice up to ten. Do not mix grammar evidence into vocabulary ranking. Resume newest incomplete round across skills before recommending a new one.
+
+Keep provenance internal and label new tasks honestly as repository-derived web exercises, not publisher exercises. No new mastery or automatic Learning History import. New vocabulary bank keys require migration 20261022010000_vocabulary_practice_banks.sql. Hosted production remains unchanged.
+
+
+### L13 vocabulary release readiness, 22 October 2026
+
+This supersedes the tester-only scope for L13 vocabulary. Learner accounts may use the feature when NEXT_PUBLIC_L13_VOCABULARY_PRACTICE=true at build time; grammar prototypes remain tester-only. The flag is enabled in this repository local configuration. The real account database now has all three practice migrations, including a private versioned catalog for 137 questions and a vocabulary-session validation trigger. Existing learning history was preserved.
+
+### L13 vocabulary context challenge, 24 October 2026
+
+No confidence controls, 25 October 2026: Practice does not ask for confidence or show easy/thought/guess or not-sure buttons. Checked answers complete immediately: answer, read feedback, continue. New confidence remains unknown, never easy or mastery. Preserve historical ratings and first answers for compatibility. Resume old pending answers at feedback without answering again. Use first-answer correctness, assistance and independent evidence across formats/days to choose practice. The advanced selector remains activity-history based, not central target/subskill adaptation.
+
+Picture-Artikel addition, 24 October 2026: add 25 tasks for the taught singular picture nouns, bringing this bank to 88 activities and 109 response slots across eight formats. Show the picture and bare noun, ask `Welcher Artikel passt?`, and offer der/die/das. The bare noun disambiguates synonyms such as Geschäft/Laden; the target's gender color and full noun appear only after checking. Record each new first answer with target ID, `vocabulary_article`, task version, difficulty and `image-and-noun-no-article` assistance. The dedicated `/practice/L13/vocabulary/picture-article` route keeps `articleRound` separately from the mixed round in the existing account state, with at most 15 activities per round. It also joins future mixed rounds. Main Progress and central adaptive progression remain separate. See `docs/exercise-mapping/L13_PICTURE_ARTICLE_PRACTICE.md` for evidence bindings and remaining integration.
+
+Picture-choice presentation: show one German question, `Was sehen Sie auf dem Bild?`, above the image/choices. Do not repeat its Thai equivalent before answering. Display the catalog's complete noun with its Artikel in every choice and in feedback; this supplies the Artikel and does not assess independent article knowledge. On desktop place the picture left and vertically stacked options right; on narrow screens stack the picture above the options. Keep the current activity/response IDs and grading by item ID.
+
+Crossword addition on 24 October 2026: the bank now has 63 activities and 84 response slots across seven formats. One six-row word puzzle adds actual letter-cell entry and an aligned highlighted column spelling a solution word. It follows the verified AB p6 / PDF p5 L13/3b mechanic. Save row drafts, support editing and pasting letters, check all six rows together, and retain individual first answers. Only learned row targets and the solution word may be used. Earlier counts of 62 activities describe the preceding 50-activity expansion.
+
+Expansion on 24 October 2026 supersedes the fixed 12-activity round below. The advanced bank now has 62 visible activities with 78 response slots, including exactly 50 added activities: 10 picture choices, 10 odd-one-out groups, 10 place descriptions, 10 word-part assembly tasks, 5 semantic category choices, and 5 complete story clozes. Source mechanics are mapped per activity to verified Momente AB p6 / KB p12 and Wortschatz A1 – das Training p36 evidence in `docs/exercise-mapping/l13-vocabulary-challenge-sources.json`; prompts and feedback are newly authored. New rounds select up to 15 eligible activities, put unseen activities first, then previous errors and older tasks, mix formats, and present selected tasks by increasing difficulty. All required vocabulary, including distractors, must have learning evidence. "ฝึกเพิ่ม" starts the next selection from stored history. Version-1 active rounds retain their original queue and first responses when migrated to version 2 under the same lesson-state key. Story drafts, choice drafts and word-part order are saved. These advanced results remain outside the main recommendation and Progress systems.
+
+The four story response slots now appear together in one continuous `Ein Tag in der Stadt` passage. A small existing city picture sits beside the clickable word bank. Learners select a gap, insert a word, and can return an unchecked word to the bank before checking all four gaps together. Save drafts and preserve existing first responses under their original question IDs. A fully eligible round has 12 visible activities and 15 independently recorded response slots; story slots count as one visible activity. Feedback includes the Thai translation of the complete story. Completion uses the shared short message and actions without a score table.
+
+Learners may open an optional context challenge of up to 15 items from the L13 vocabulary entry. It uses four original task formats: connected-sentence cloze, odd-one-out, picture identification with existing project images, and place riddles. Each task appears only when all vocabulary words in its choices have actual learning evidence. First answers, progress, and completion are stored separately in the account lesson state under `deutsch-trainer-vocabulary-challenge-v1-L13`; this does not affect the existing 137-question bank, daily recommendation, main Progress, or mastery. Migration `20261024020000_l13_vocabulary_challenge_state.sql` is required before deployed use. No other lesson or skill has this challenge.
+
+### L14 vocabulary practice, 24 October 2026
+
+L14 Wortschatz has a guided practice route after learning and an optional manual route with three topics: Institutionen, Plätze und Wege, and Wegbeschreibung. Eligibility comes from the account's completed image matches, completed direction pairs, or recorded ItemExposure; tester status alone does not grant unlearned words. Guided practice selects at most five learned targets per topic, in learning order, with no topic chooser between questions. A returning learner resumes an unfinished round or receives up to ten learned targets for daily review, prioritizing unseen, incorrect, and older attempts. Each target appears at most once per round. Tasks cover image or route recognition, singular Artikel for nouns, and spelling with a supplied Artikel beside the noun-only input. `das Zentrum` and `die Stadtmitte` cannot be distractors for each other because their meanings and images overlap.
+
+The practice menu opens L14 vocabulary when `NEXT_PUBLIC_L14_VOCABULARY_PRACTICE=true`; this repository enables it locally. Results and drafts are account-backed in `learner_lesson_states` under `deutsch-trainer-vocabulary-practice-v1-L14`, with pending browser backup and migration `20261024010000_l14_vocabulary_practice_state.sql`. These results remain separate from main Progress. L13 Wortschatz now shows a direct practice action as soon as at least one word is learned; its existing bank, server validation, and eligibility remain in place. See `docs/exercise-mapping/L14_VOCABULARY_PRACTICE.md` for coverage and limitations.
+
+Server validation requires actual learned item evidence, validates question identity/answers, grades submitted responses, rejects malformed drafts and unfinished completion, and preserves first submissions. Account history loads in pages rather than relying on the API row limit. Results remain separate from KnowledgeState and mastery according to the agreed design. See docs/L13_VOCABULARY_RELEASE.md for scope, tests and rollout/rollback. Production build is available locally on port3000; this work does not publish an online deployment.
+
+
+### L13 phrases practice, 22 October 2026
+
+Phrase coverage correction, 22 October 2026: the learning-page practice button appears after every phrase in the current group has an actual exposure, rather than after its first sentence. Manual practice remains available for already exposed phrases. New phrase rounds select at most one question per learned phrase; a dialogue consumes both of its required phrases. Apply this to topic, guided, daily and review rounds. Prefer unseen question variants across later rounds, while keeping distinct phrase coverage ahead of exercise-format variety. Shorten rounds when fewer distinct phrases are eligible; never fill a round by repeating the same phrase in another format. Saved rounds and submitted answers remain unchanged.
+
+L13 Redemittel now uses the same guided and personalized practice flow. Keep the29 existing phrase IDs and four original groups. Learning entry shows four group cards; the existing visible-card ItemExposure action remains the only new exposure source. On completing all29 phrases, practice opens the first question of the 20-question topic-based round directly. Topic rounds use at most5 questions, daily rounds at most10, and incomplete rounds retain priority across enabled skills.
+
+The90 original web questions are retained for saved sessions:29 situation choices,29 phrase-completion items,29 supplied-word ordering items and3 question/answer dialogues. New rounds use the20 topic-sequence tasks documented below. Every required learning item must be exposed, including both phrases in dialogue tasks. Do not infer phrase proficiency from vocabulary or grammar performance. Phrase ordering asks for the learned structure, not unrestricted free writing.
+
+Use NEXT_PUBLIC_L13_PHRASES_PRACTICE=true at build time to enable learner accounts; local configuration is enabled. Grammar prototypes remain tester-only. Added private phrase definitions and expanded the shared server validation through20261022030000_phrase_practice.sql. Normalize punctuation/whitespace equally on accepted answers and submissions while preserving case and accents. Results remain separate from KnowledgeState and mastery. Existing phrase exposures, sessions and other lesson behavior are preserved. No online deployment is implied by local production preparation.
+
+
+### Local test-account controls, 22 October 2026
+
+Only the local test workspace and its two predefined tester accounts expose “เรียนแล้วทั้งหมด” and “รีเซตการทดลอง”. The local API authenticates and checks the account independently of the UI. These controls have no production endpoint or hosted migration. Mark-all inserts exposures for all published catalog items, without granting mastery, fabricated scores or completion of custom interactive lesson activities. It preserves existing exposures and practice history.
+
+When a tester uses mark-all inside a lesson, return to that lesson rather than opening Practice. A lesson with multiple screens opens its final content screen, where the tester chooses the exercise link explicitly. This is a navigation preview only; unfinished interactive activities remain unfinished in saved lesson state. Reset still returns to Practice.
+
+Reset requires an inline confirmation and clears only the current test account's learning exposures, attempts/evidence, practice sessions, legacy progress, daily counts and custom lesson states. Preserve account settings, content and other accounts. Clear current-account browser practice backups and pending lesson writes. Rotate test authentication on reset to reject stale saves from other tabs; those tabs must sign in again. Reload the current tab with its new session. These explicit test controls are an exception to the requirement that learner exposures only come from viewed learning cards. Normal accounts retain the existing learning rules.
+
+
+### ฝึก Redemittel L13 ตามหัวข้อจากง่ายไปยาก (22 ตุลาคม 2026)
+
+ใช้สี่หัวข้อการเรียนเดิม หัวข้อละ 5 ข้อ รวม 20 ข้อหลังเรียนครบ 29 สำนวน. ภายในแต่ละหัวข้อเรียงเลือกคำตอบจากบทสนทนา 2 ข้อ → จับคู่คำถาม–คำตอบ 2 คู่ → เรียงคำเป็นประโยคตอบ 1 ข้อ. สองคู่แสดงในกิจกรรมเดียวและนับ/บันทึกแยกเป็นสองข้อ. มีจุดพักระหว่างหัวข้อ. ใช้คำตอบเป้าหมายคนละสำนวนในรอบเดียว รวม 20 สำนวน; รอบนี้ไม่ใช่การประเมินครบทั้ง 29 สำนวนหรือการรับรอง mastery.
+
+โจทย์ที่ขึ้นกับข้อเท็จจริง เช่น มีหรือไม่มีสถานที่ ต้องระบุข้อมูลให้ครบ. เรียงคำต้องมีบริบทและคำเริ่มต้น. รอบพื้นฐานใหม่นี้ไม่ใช้โจทย์เติมคำจากความจำหรือเรียงบทสนทนาที่เพิ่งฝึกซ้ำ. บัตรคำแต่งคำถามเองและงานเขียนอยู่ในขอบเขตฝึกขั้นสูงแยกจากรอบพื้นฐาน.
+
+ฝึกเองใช้หัวข้อละไม่เกิน 5 ข้อและลำดับเดียวกัน. ชุดรายวันไม่เกิน 10 ข้อ เก็บกิจกรรมจับคู่ไว้ครบสองคู่ ไม่แยกเหลือคู่เดียว. กรองด้วย exposure ของแต่ละเป้าหมายก่อนเลือก. เมื่อเรียนคู่ไม่ครบให้เลื่อนกิจกรรมทั้งคู่ไว้ก่อนและลดจำนวนรอบตามข้อมูลที่พร้อม.
+
+รอบเก่ายังเปิดทำต่อได้ด้วยคำตอบและจำนวนเดิม. ผู้เรียนเลือกเริ่มรอบรูปแบบใหม่ได้โดยเก็บรอบเดิมเป็น archived พร้อมผลเดิม และไม่นำรอบ archived มาเสนอให้ทำต่อ. ผลเดิมยังใช้เป็นประวัติประกอบคำแนะนำได้. รุ่นใหม่ใช้ additive migration 20261022050000_phrase_topic_sequence.sql ในพื้นที่ทดสอบ; ไม่มีการอัปเดตฐานข้อมูลโฮสต์หรือเผยแพร่เว็บจากการเปลี่ยนนี้.
+
+### Practice flow update, 22 October 2026
+
+This update replaces the earlier per-topic checkpoint and learner-visible result-summary behavior for shared practice previews. Starting practice from a lesson opens the first question and continues through every card without an intermediate results or continue screen. Show total-round progress and the current topic above the task; do not repeat the topic name as a tag inside the question card. At completion, show only a short completion heading and three actions: next topic, more practice, finish. Hide score tables and item-by-item results from this completion screen. Keep all submitted answers and per-item results in the saved session for later analysis and recommendations. Manual topic practice follows the same compact completion screen. Existing saved answers remain available and resumable.
+
+## Noun and Artikel as one learning unit, 2026-10-25
+
+Teach and display German nouns together with their Artikel and the shared gender dot across all lessons and practice formats, including meaning and spelling. In spelling, show the supplied Artikel beside the answer area while assessing the noun spelling separately; do not reveal the noun itself. If Artikel is the unanswered target, hide its correct text and color until feedback, then show the complete noun with Artikel. Contextual sentences retain grammatically correct inflection and contractions; do not mechanically prepend a nominative Artikel inside a sentence. Supplied gender is assistance, not evidence of independent Artikel recall. Missing confidence never implies mastery.
+
+Noun presentation audit, 25 October 2026: standalone noun labels share `NounText`/`NounPrefix` and the existing ArticleDot palette. Learning values, image matching and synonym labels, generic vocabulary practice/feedback, L13 basic spelling and advanced tasks, L14 vocabulary, and learner history labels preserve noun+Artikel. Spelling/build/crossword tasks supply the Artikel while grading the existing noun response. Story word-bank labels show dictionary Artikel, but inserted words retain the original grammatical context. Independent Artikel targets remain uncolored until checked. Existing IDs, answers and subskill bindings are preserved. See `docs/exercise-mapping/NOUN_PRESENTATION_AUDIT.md` for verification scope.

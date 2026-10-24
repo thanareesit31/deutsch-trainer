@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "status": "review_prototype_not_published",
+  "reviewScope": "Author review; independent educator review pending",
+  "id": "l16-grammar-review-v1",
+  "lessonId": "L16",
+  "title": "ไวยากรณ์ Lektion 16",
+  "description": "ฝึกไวยากรณ์ตามหัวข้อของบท",
+  "summaryNote": "ผลรอบนี้เป็นชุดทดลอง และยังไม่รวมในความก้าวหน้าหลัก",
+  "storageKey": "deutsch-trainer:review-prototype:l16-grammar:v1",
+  "defaultCount": 3,
+  "skillLabels": {
+    "temporale-praepositionen-choice": "in / vor / nach · เลือกคำ",
+    "temporale-praepositionen-cloze": "in / vor / nach · พิมพ์คำ",
+    "temporale-praepositionen-order": "in / vor / nach · เรียงคำ"
+  },
+  "sections": [
+    {
+      "topicId": "L16-temporale-praepositionen",
+      "title": "in / vor / nach",
+      "count": 3
+    }
+  ],
+  "questions": [
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001",
+      "version": 2,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Es ist jetzt neun Uhr. Ich komme ___ einer Stunde, also um zehn.",
+      "options": [
+        "in",
+        "vor",
+        "nach"
+      ],
+      "acceptedAnswers": [
+        "in"
+      ],
+      "subskill": "temporale-praepositionen-choice",
+      "difficulty": 1,
+      "hint": "in นับจากตอนนี้ไปอนาคต; vor ย้อนอดีต; nach คือหลังเหตุการณ์",
+      "explanation": "จากเก้าโมงไปสิบโมงยังเหลืออีกหนึ่งชั่วโมง จึงใช้ in einer Stunde เพื่อบอกเวลาในอนาคต",
+      "knownErrors": {
+        "vor": "time_relation",
+        "nach": "time_relation"
+      }
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002",
+      "version": 2,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Heute ist Dienstag. Der Termin war gestern, also ___ einem Tag.",
+      "options": [
+        "vor",
+        "in",
+        "nach"
+      ],
+      "acceptedAnswers": [
+        "vor"
+      ],
+      "subskill": "temporale-praepositionen-choice",
+      "difficulty": 1,
+      "hint": "in นับจากตอนนี้ไปอนาคต; vor ย้อนอดีต; nach คือหลังเหตุการณ์",
+      "explanation": "นัดหมายเป็นเมื่อวาน หรือหนึ่งวันก่อนวันนี้ จึงใช้ vor einem Tag",
+      "knownErrors": {
+        "in": "time_relation",
+        "nach": "time_relation"
+      }
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003",
+      "version": 2,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Der Unterricht endet um zwölf Uhr. Wir essen ___ dem Unterricht.",
+      "acceptedAnswers": [
+        "nach"
+      ],
+      "subskill": "temporale-praepositionen-cloze",
+      "difficulty": 2,
+      "hint": "in นับจากตอนนี้ไปอนาคต; vor ย้อนอดีต; nach คือหลังเหตุการณ์",
+      "explanation": "ชั้นเรียนจบก่อนแล้วจึงกินอาหาร ใช้ nach dem Unterricht หมายถึง “หลังเลิกเรียน”",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004",
+      "version": 2,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Es ist jetzt Montag. Der Termin ist am Mittwoch, also ___ zwei Tagen.",
+      "acceptedAnswers": [
+        "in"
+      ],
+      "subskill": "temporale-praepositionen-cloze",
+      "difficulty": 2,
+      "hint": "in นับจากตอนนี้ไปอนาคต; vor ย้อนอดีต; nach คือหลังเหตุการณ์",
+      "explanation": "จากวันจันทร์ไปวันพุธยังเหลืออีกสองวัน จึงใช้ in zwei Tagen",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005",
+      "version": 2,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-005",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Wir treffen uns nach dem Kurs.",
+      "tokens": [
+        "Wir",
+        "treffen",
+        "uns",
+        "nach",
+        "dem",
+        "Kurs"
+      ],
+      "acceptedAnswers": [
+        "Wir treffen uns nach dem Kurs."
+      ],
+      "subskill": "temporale-praepositionen-order",
+      "difficulty": 3,
+      "hint": "in นับจากตอนนี้ไปอนาคต; vor ย้อนอดีต; nach คือหลังเหตุการณ์",
+      "explanation": "วาง treffen หลัง Wir แล้วตามด้วย uns ส่วน nach dem Kurs หมายถึง “หลังเลิกเรียน”",
+      "knownErrors": {}
+    }
+  ]
+}

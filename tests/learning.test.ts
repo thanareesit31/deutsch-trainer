@@ -63,8 +63,8 @@ test("accepted writing alternatives are evidence of a correct answer", () => {
     true,
   );
 });
-test("a correct attempt is pending until confidence and wrong attempts complete immediately", () => {
-  assert.equal(isCompletedAttempt({ correct: true, confidence: null }), false);
+test("checked answers complete without confidence", () => {
+  assert.equal(isCompletedAttempt({ correct: true, confidence: null }), true);
   assert.equal(isCompletedAttempt({ correct: true, confidence: "easy" }), true);
   assert.equal(
     isCompletedAttempt({ correct: true, confidence: "thought" }),
@@ -80,10 +80,10 @@ test("a correct attempt is pending until confidence and wrong attempts complete 
       { correct: true, confidence: null },
       { correct: false, confidence: null },
     ]).length,
-    1,
+    2,
   );
 });
-test("review candidates use the latest completed answer, ignoring pending correct attempts", () => {
+test("review candidates retain wrong or explicit uncertainty, not unknown confidence", () => {
   const selected = items.filter((item) =>
     ["V001", "V002", "V003", "V004", "V005", "V006"].includes(item.id),
   );
@@ -168,6 +168,6 @@ test("review candidates use the latest completed answer, ignoring pending correc
   ];
   assert.deepEqual(
     reviewCandidates(selected, sessionItems, attempts).map((item) => item.id),
-    ["V001", "V002", "V006"],
+    ["V001", "V002"],
   );
 });

@@ -8,6 +8,7 @@ import { useContent } from "./content-provider";
 import { useLearning } from "./learning-store";
 import { CategoryTabLabel, LearningCategoryTabs } from "./learning-breadcrumbs";
 import { useVocabularyAudio } from "./vocabulary-audio";
+import { clearLastLessonPageRequest, isLastLessonPageRequested } from "@/lib/test-workspace-last-page";
 
 const categories = [
   { de: "Beruflicher Status", th: "สถานะการทำงาน" },
@@ -31,6 +32,11 @@ export function L02PhraseLearning() {
   const seen = new Set(history.exposures.map((entry) => entry.item_id));
   const seenKey = pool.filter((item) => seen.has(item.id)).map((item) => item.id).join("|");
   const others = pool.filter((item) => item.id !== "L02-traumberuf" && item.id !== "L02-question-was" && !l02StatusExamples.some((entry) => entry.id === item.id));
+  useEffect(() => {
+    if (!isLastLessonPageRequested()) return;
+    setCategory(others.length ? categories.length - 1 : categories.length - 2);
+    clearLastLessonPageRequest();
+  }, [others.length]);
   useEffect(() => { mounted.current = true; return () => { mounted.current = false; }; }, []);
 
   useLayoutEffect(() => {

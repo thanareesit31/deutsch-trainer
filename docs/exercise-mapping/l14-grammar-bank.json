@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "status": "review_prototype_not_published",
+  "reviewScope": "Author review; independent educator review pending",
+  "id": "l14-grammar-review-v1",
+  "lessonId": "L14",
+  "title": "ไวยากรณ์ Lektion 14",
+  "description": "ฝึกไวยากรณ์ตามหัวข้อของบท",
+  "summaryNote": "ผลรอบนี้เป็นชุดทดลอง และยังไม่รวมในความก้าวหน้าหลัก",
+  "storageKey": "deutsch-trainer:review-prototype:l14-grammar:v1",
+  "defaultCount": 6,
+  "skillLabels": {
+    "lokale-praepositionen-choice": "Lokale Präpositionen · เลือกคำ",
+    "lokale-praepositionen-cloze": "Lokale Präpositionen · พิมพ์คำ",
+    "lokale-praepositionen-order": "Lokale Präpositionen · เรียงคำ",
+    "wo-dativ-choice": "Wo? + Dativ · เลือกคำ",
+    "wo-dativ-cloze": "Wo? + Dativ · พิมพ์คำ",
+    "wo-dativ-order": "Wo? + Dativ · เรียงคำ"
+  },
+  "sections": [
+    {
+      "topicId": "L14-lokale-praepositionen",
+      "title": "Lokale Präpositionen",
+      "count": 3
+    },
+    {
+      "topicId": "L14-wo-dativ",
+      "title": "Wo? + Dativ",
+      "count": 3
+    }
+  ],
+  "questions": [
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-001",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café steht direkt rechts vom Kino. Es ist ___ dem Kino.",
+      "options": [
+        "neben",
+        "unter",
+        "hinter"
+      ],
+      "acceptedAnswers": [
+        "neben"
+      ],
+      "subskill": "lokale-praepositionen-choice",
+      "difficulty": 1,
+      "hint": "อ่านตำแหน่งที่บอกไว้ในประโยคก่อนเลือกคำ",
+      "explanation": "ร้านกาแฟอยู่ทางขวาติดกับโรงภาพยนตร์ จึงใช้ neben ซึ่งแปลว่า “ข้าง”",
+      "knownErrors": {
+        "unter": "position_word",
+        "hinter": "position_word"
+      }
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-002",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Der Hund ist nicht vor dem Haus. Er ist auf der Rückseite, also ___ dem Haus.",
+      "options": [
+        "hinter",
+        "vor",
+        "zwischen"
+      ],
+      "acceptedAnswers": [
+        "hinter"
+      ],
+      "subskill": "lokale-praepositionen-choice",
+      "difficulty": 1,
+      "hint": "อ่านตำแหน่งที่บอกไว้ในประโยคก่อนเลือกคำ",
+      "explanation": "สุนัขอยู่ด้านหลังบ้าน จึงใช้ hinter ซึ่งแปลว่า “ข้างหลัง”",
+      "knownErrors": {
+        "vor": "position_word",
+        "zwischen": "position_word"
+      }
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-003",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Die Brücke ist über dem Fluss. Der Fluss ist ___ der Brücke.",
+      "acceptedAnswers": [
+        "unter"
+      ],
+      "subskill": "lokale-praepositionen-cloze",
+      "difficulty": 2,
+      "hint": "อ่านตำแหน่งที่บอกไว้ในประโยคก่อนเลือกคำ",
+      "explanation": "สะพานอยู่เหนือแม่น้ำ เมื่อบอกตำแหน่งของแม่น้ำจึงใช้ unter ซึ่งแปลว่า “ใต้”",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-004",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Die Post steht in der Mitte: links die Bank, rechts die Schule. Die Post ist ___ der Bank und der Schule.",
+      "acceptedAnswers": [
+        "zwischen"
+      ],
+      "subskill": "lokale-praepositionen-cloze",
+      "difficulty": 2,
+      "hint": "อ่านตำแหน่งที่บอกไว้ในประโยคก่อนเลือกคำ",
+      "explanation": "ไปรษณีย์มีธนาคารอยู่ทางซ้ายและโรงเรียนอยู่ทางขวา จึงใช้ zwischen ซึ่งแปลว่า “ระหว่าง”",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-005",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-005",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Die Bank ist neben dem Bahnhof.",
+      "tokens": [
+        "Die",
+        "Bank",
+        "ist",
+        "neben",
+        "dem",
+        "Bahnhof"
+      ],
+      "acceptedAnswers": [
+        "Die Bank ist neben dem Bahnhof."
+      ],
+      "subskill": "lokale-praepositionen-order",
+      "difficulty": 3,
+      "hint": "อ่านตำแหน่งที่บอกไว้ในประโยคก่อนเลือกคำ",
+      "explanation": "วาง ist หลัง Die Bank แล้วตามด้วย neben dem Bahnhof เพื่อบอกว่าธนาคารอยู่ข้างสถานีรถไฟ",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L14-WO-DATIV-001",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Die Bank ist neben ___ Kino.",
+      "options": [
+        "dem",
+        "das",
+        "den"
+      ],
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-choice",
+      "difficulty": 1,
+      "hint": "คำถาม Wo? บอกตำแหน่งคงที่ จึงใช้ Dativ หลังคำบุพบทกลุ่มนี้",
+      "explanation": "ประโยคนี้บอกว่าธนาคารอยู่ที่ไหน จึงใช้ Dativ หลัง neben โดยเปลี่ยน das Kino เป็น dem Kino",
+      "knownErrors": {
+        "das": "case",
+        "den": "case"
+      }
+    },
+    {
+      "id": "A13-L14-WO-DATIV-002",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Der Bus hält vor ___ Schule.",
+      "options": [
+        "der",
+        "die",
+        "den"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "subskill": "wo-dativ-choice",
+      "difficulty": 1,
+      "hint": "คำถาม Wo? บอกตำแหน่งคงที่ จึงใช้ Dativ หลังคำบุพบทกลุ่มนี้",
+      "explanation": "ประโยคนี้บอกจุดที่รถประจำทางจอด จึงใช้ Dativ หลัง vor โดยเปลี่ยน die Schule เป็น der Schule",
+      "knownErrors": {
+        "die": "case",
+        "den": "case"
+      }
+    },
+    {
+      "id": "A13-L14-WO-DATIV-003",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist zwischen ___ Park und der Post.",
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-cloze",
+      "difficulty": 2,
+      "hint": "คำถาม Wo? บอกตำแหน่งคงที่ จึงใช้ Dativ หลังคำบุพบทกลุ่มนี้",
+      "explanation": "ประโยคนี้บอกตำแหน่งร้านกาแฟ จึงใช้ Dativ หลัง zwischen โดยเปลี่ยน der Park เป็น dem Park",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L14-WO-DATIV-004",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Die Frau wartet an ___ Ampel.",
+      "acceptedAnswers": [
+        "der"
+      ],
+      "subskill": "wo-dativ-cloze",
+      "difficulty": 2,
+      "hint": "คำถาม Wo? บอกตำแหน่งคงที่ จึงใช้ Dativ หลังคำบุพบทกลุ่มนี้",
+      "explanation": "ประโยคนี้บอกว่าผู้หญิงรออยู่ที่ไหน จึงใช้ Dativ หลัง an โดยเปลี่ยน die Ampel เป็น der Ampel",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L14-WO-DATIV-005",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-005",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Das Auto steht vor dem Kaufhaus.",
+      "tokens": [
+        "Das",
+        "Auto",
+        "steht",
+        "vor",
+        "dem",
+        "Kaufhaus"
+      ],
+      "acceptedAnswers": [
+        "Das Auto steht vor dem Kaufhaus."
+      ],
+      "subskill": "wo-dativ-order",
+      "difficulty": 3,
+      "hint": "คำถาม Wo? บอกตำแหน่งคงที่ จึงใช้ Dativ หลังคำบุพบทกลุ่มนี้",
+      "explanation": "วาง steht หลัง Das Auto แล้วตามด้วย vor dem Kaufhaus ส่วน dem เป็นรูป Dativ ของ das Kaufhaus",
+      "knownErrors": {}
+    }
+  ]
+}

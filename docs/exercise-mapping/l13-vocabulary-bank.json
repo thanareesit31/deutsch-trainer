@@ -1,0 +1,4347 @@
+{
+  "wordCount": 49,
+  "questionCount": 137,
+  "groups": [
+    {
+      "slug": "urban",
+      "title": "สถานที่ในเมือง",
+      "ids": [
+        "L13-V001",
+        "L13-V002",
+        "L13-V003",
+        "L13-V004",
+        "L13-V005",
+        "L13-V006",
+        "L13-V007",
+        "L13-V047",
+        "L13-V048",
+        "L13-V049",
+        "L13-V055"
+      ]
+    },
+    {
+      "slug": "culture",
+      "title": "ร้านค้าและวัฒนธรรม",
+      "ids": [
+        "L13-V008",
+        "L13-V009",
+        "L13-V010",
+        "L13-V018",
+        "L13-V019",
+        "L13-V020",
+        "L13-V021"
+      ]
+    },
+    {
+      "slug": "leisure",
+      "title": "สันทนาการและธรรมชาติ",
+      "ids": [
+        "L13-V011",
+        "L13-V012",
+        "L13-V013",
+        "L13-V014",
+        "L13-V015",
+        "L13-V016",
+        "L13-V017"
+      ]
+    },
+    {
+      "slug": "extra",
+      "title": "คำศัพท์เพิ่มเติม",
+      "ids": [
+        "L13-V042",
+        "L13-V043",
+        "L13-V044",
+        "L13-V045",
+        "L13-V046",
+        "L13-V050",
+        "L13-V051",
+        "L13-V052",
+        "L13-V053",
+        "L13-V054",
+        "L13-V056",
+        "L13-V057",
+        "L13-V058",
+        "L13-V059",
+        "L13-V060",
+        "L13-V061",
+        "L13-V062",
+        "L13-V063",
+        "L13-V064",
+        "L13-V065",
+        "L13-V066",
+        "L13-V067",
+        "L13-V068",
+        "L13-V069"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "feedbackAnswer": "die Stadt",
+      "version": 1,
+      "itemId": "L13-V001",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V001-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Stadt — ___",
+      "options": [
+        "เมือง",
+        "ย่านเมืองเก่า",
+        "สวนสาธารณะ",
+        "โบสถ์"
+      ],
+      "acceptedAnswers": [
+        "เมือง"
+      ],
+      "explanation": "",
+      "translation": "เมือง"
+    },
+    {
+      "feedbackAnswer": "die Stadt",
+      "version": 1,
+      "itemId": "L13-V001",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V001-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Stadt",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Stadt เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "เมือง"
+    },
+    {
+      "feedbackAnswer": "die Stadt",
+      "version": 1,
+      "itemId": "L13-V001",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V001-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "เมือง — ___",
+      "acceptedAnswers": [
+        "Stadt"
+      ],
+      "explanation": "Stadt เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "เมือง"
+    },
+    {
+      "feedbackAnswer": "die Altstadt",
+      "version": 1,
+      "itemId": "L13-V002",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V002-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Altstadt — ___",
+      "options": [
+        "ย่านเมืองเก่า",
+        "สวนสาธารณะ",
+        "โบสถ์",
+        "ปราสาท"
+      ],
+      "acceptedAnswers": [
+        "ย่านเมืองเก่า"
+      ],
+      "explanation": "",
+      "translation": "ย่านเมืองเก่า"
+    },
+    {
+      "feedbackAnswer": "die Altstadt",
+      "version": 1,
+      "itemId": "L13-V002",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V002-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Altstadt",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Altstadt เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "ย่านเมืองเก่า"
+    },
+    {
+      "feedbackAnswer": "die Altstadt",
+      "version": 1,
+      "itemId": "L13-V002",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V002-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ย่านเมืองเก่า — ___",
+      "acceptedAnswers": [
+        "Altstadt"
+      ],
+      "explanation": "Altstadt เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ย่านเมืองเก่า"
+    },
+    {
+      "feedbackAnswer": "der Park",
+      "version": 1,
+      "itemId": "L13-V003",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V003-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Park — ___",
+      "options": [
+        "สวนสาธารณะ",
+        "โบสถ์",
+        "ปราสาท",
+        "น้ำพุ"
+      ],
+      "acceptedAnswers": [
+        "สวนสาธารณะ"
+      ],
+      "explanation": "",
+      "translation": "สวนสาธารณะ"
+    },
+    {
+      "feedbackAnswer": "der Park",
+      "version": 1,
+      "itemId": "L13-V003",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V003-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Park",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Park เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "สวนสาธารณะ"
+    },
+    {
+      "feedbackAnswer": "der Park",
+      "version": 1,
+      "itemId": "L13-V003",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V003-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "สวนสาธารณะ — ___",
+      "acceptedAnswers": [
+        "Park"
+      ],
+      "explanation": "Park เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "สวนสาธารณะ"
+    },
+    {
+      "feedbackAnswer": "die Kirche",
+      "version": 1,
+      "itemId": "L13-V004",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V004-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Kirche — ___",
+      "options": [
+        "โบสถ์",
+        "ปราสาท",
+        "น้ำพุ",
+        "ศาลาว่าการเมือง"
+      ],
+      "acceptedAnswers": [
+        "โบสถ์"
+      ],
+      "explanation": "",
+      "translation": "โบสถ์"
+    },
+    {
+      "feedbackAnswer": "die Kirche",
+      "version": 1,
+      "itemId": "L13-V004",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V004-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Kirche",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Kirche เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "โบสถ์"
+    },
+    {
+      "feedbackAnswer": "die Kirche",
+      "version": 1,
+      "itemId": "L13-V004",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V004-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "โบสถ์ — ___",
+      "acceptedAnswers": [
+        "Kirche"
+      ],
+      "explanation": "Kirche เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "โบสถ์"
+    },
+    {
+      "feedbackAnswer": "das Schloss",
+      "version": 1,
+      "itemId": "L13-V005",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V005-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Schloss — ___",
+      "options": [
+        "ปราสาท",
+        "น้ำพุ",
+        "ศาลาว่าการเมือง",
+        "ร้านค้า"
+      ],
+      "acceptedAnswers": [
+        "ปราสาท"
+      ],
+      "explanation": "",
+      "translation": "ปราสาท"
+    },
+    {
+      "feedbackAnswer": "das Schloss",
+      "version": 1,
+      "itemId": "L13-V005",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V005-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Schloss",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Schloss เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "ปราสาท"
+    },
+    {
+      "feedbackAnswer": "das Schloss",
+      "version": 1,
+      "itemId": "L13-V005",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V005-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ปราสาท — ___",
+      "acceptedAnswers": [
+        "Schloss"
+      ],
+      "explanation": "Schloss เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ปราสาท"
+    },
+    {
+      "feedbackAnswer": "der Brunnen",
+      "version": 1,
+      "itemId": "L13-V006",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V006-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Brunnen — ___",
+      "options": [
+        "น้ำพุ",
+        "ศาลาว่าการเมือง",
+        "ร้านค้า",
+        "ตลาด"
+      ],
+      "acceptedAnswers": [
+        "น้ำพุ"
+      ],
+      "explanation": "",
+      "translation": "น้ำพุ"
+    },
+    {
+      "feedbackAnswer": "der Brunnen",
+      "version": 1,
+      "itemId": "L13-V006",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V006-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Brunnen",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Brunnen เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "น้ำพุ"
+    },
+    {
+      "feedbackAnswer": "der Brunnen",
+      "version": 1,
+      "itemId": "L13-V006",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V006-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "น้ำพุ — ___",
+      "acceptedAnswers": [
+        "Brunnen"
+      ],
+      "explanation": "Brunnen เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "น้ำพุ"
+    },
+    {
+      "feedbackAnswer": "das Rathaus",
+      "version": 1,
+      "itemId": "L13-V007",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V007-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Rathaus — ___",
+      "options": [
+        "ศาลาว่าการเมือง",
+        "ร้านค้า",
+        "ตลาด",
+        "สวนสัตว์"
+      ],
+      "acceptedAnswers": [
+        "ศาลาว่าการเมือง"
+      ],
+      "explanation": "",
+      "translation": "ศาลาว่าการเมือง"
+    },
+    {
+      "feedbackAnswer": "das Rathaus",
+      "version": 1,
+      "itemId": "L13-V007",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V007-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Rathaus",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Rathaus เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "ศาลาว่าการเมือง"
+    },
+    {
+      "feedbackAnswer": "das Rathaus",
+      "version": 1,
+      "itemId": "L13-V007",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V007-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ศาลาว่าการเมือง — ___",
+      "acceptedAnswers": [
+        "Rathaus"
+      ],
+      "explanation": "Rathaus เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ศาลาว่าการเมือง"
+    },
+    {
+      "feedbackAnswer": "der Fluss",
+      "version": 1,
+      "itemId": "L13-V047",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V047-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Fluss — ___",
+      "options": [
+        "แม่น้ำ",
+        "แกลเลอรี",
+        "ศิลปะ",
+        "วัฒนธรรม"
+      ],
+      "acceptedAnswers": [
+        "แม่น้ำ"
+      ],
+      "explanation": "",
+      "translation": "แม่น้ำ"
+    },
+    {
+      "feedbackAnswer": "der Fluss",
+      "version": 1,
+      "itemId": "L13-V047",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V047-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Fluss",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Fluss เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "แม่น้ำ"
+    },
+    {
+      "feedbackAnswer": "der Fluss",
+      "version": 1,
+      "itemId": "L13-V047",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V047-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "แม่น้ำ — ___",
+      "acceptedAnswers": [
+        "Fluss"
+      ],
+      "explanation": "Fluss เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "แม่น้ำ"
+    },
+    {
+      "feedbackAnswer": "die Brücke",
+      "version": 1,
+      "itemId": "L13-V048",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V048-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Brücke — ___",
+      "options": [
+        "สะพาน",
+        "ศิลปะ",
+        "วัฒนธรรม",
+        "เทศกาล"
+      ],
+      "acceptedAnswers": [
+        "สะพาน"
+      ],
+      "explanation": "",
+      "translation": "สะพาน"
+    },
+    {
+      "feedbackAnswer": "die Brücke",
+      "version": 1,
+      "itemId": "L13-V048",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V048-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Brücke",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Brücke เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "สะพาน"
+    },
+    {
+      "feedbackAnswer": "die Brücke",
+      "version": 1,
+      "itemId": "L13-V048",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V048-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "สะพาน — ___",
+      "acceptedAnswers": [
+        "Brücke"
+      ],
+      "explanation": "Brücke เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่ ระวังตัว ü ในคำนี้",
+      "translation": "สะพาน"
+    },
+    {
+      "feedbackAnswer": "die Galerie",
+      "version": 1,
+      "itemId": "L13-V049",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V049-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Galerie — ___",
+      "options": [
+        "แกลเลอรี",
+        "วัฒนธรรม",
+        "เทศกาล",
+        "ดนตรี"
+      ],
+      "acceptedAnswers": [
+        "แกลเลอรี"
+      ],
+      "explanation": "",
+      "translation": "แกลเลอรี"
+    },
+    {
+      "feedbackAnswer": "die Galerie",
+      "version": 1,
+      "itemId": "L13-V049",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V049-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Galerie",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Galerie เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "แกลเลอรี"
+    },
+    {
+      "feedbackAnswer": "die Galerie",
+      "version": 1,
+      "itemId": "L13-V049",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V049-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "แกลเลอรี — ___",
+      "acceptedAnswers": [
+        "Galerie"
+      ],
+      "explanation": "Galerie เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "แกลเลอรี"
+    },
+    {
+      "feedbackAnswer": "der Fußballplatz",
+      "version": 1,
+      "itemId": "L13-V055",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V055-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Fußballplatz — ___",
+      "options": [
+        "สนามฟุตบอล",
+        "นักท่องเที่ยว",
+        "บล็อกเกอร์",
+        "ความคิดเห็น"
+      ],
+      "acceptedAnswers": [
+        "สนามฟุตบอล"
+      ],
+      "explanation": "",
+      "translation": "สนามฟุตบอล"
+    },
+    {
+      "feedbackAnswer": "der Fußballplatz",
+      "version": 1,
+      "itemId": "L13-V055",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V055-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Fußballplatz",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Fußballplatz เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "สนามฟุตบอล"
+    },
+    {
+      "feedbackAnswer": "der Fußballplatz",
+      "version": 1,
+      "itemId": "L13-V055",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V055-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "สนามฟุตบอล — ___",
+      "acceptedAnswers": [
+        "Fußballplatz"
+      ],
+      "explanation": "Fußballplatz เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่ ระวังตัว ß ในคำนี้",
+      "translation": "สนามฟุตบอล"
+    },
+    {
+      "feedbackAnswer": "das Geschäft",
+      "version": 1,
+      "itemId": "L13-V008",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V008-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Geschäft — ___",
+      "options": [
+        "ร้านค้า",
+        "ตลาด",
+        "สวนสัตว์",
+        "สวนสัตว์หรือสวนสัตว์เปิด"
+      ],
+      "acceptedAnswers": [
+        "ร้านค้า"
+      ],
+      "explanation": "",
+      "translation": "ร้านค้า"
+    },
+    {
+      "feedbackAnswer": "das Geschäft",
+      "version": 1,
+      "itemId": "L13-V008",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V008-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Geschäft",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Geschäft เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "ร้านค้า"
+    },
+    {
+      "feedbackAnswer": "das Geschäft",
+      "version": 1,
+      "itemId": "L13-V008",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V008-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ร้านค้า — ___",
+      "acceptedAnswers": [
+        "Geschäft",
+        "Laden"
+      ],
+      "explanation": "ใช้ได้ทั้ง Geschäft และ Laden ในบริบทนี้ ระวังตัว ä ในคำนี้",
+      "translation": "ร้านค้า"
+    },
+    {
+      "feedbackAnswer": "der Laden",
+      "version": 1,
+      "itemId": "L13-V009",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V009-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Laden — ___",
+      "options": [
+        "ร้านค้า",
+        "สวนสัตว์",
+        "สวนสัตว์หรือสวนสัตว์เปิด",
+        "สนามเด็กเล่น"
+      ],
+      "acceptedAnswers": [
+        "ร้านค้า"
+      ],
+      "explanation": "",
+      "translation": "ร้านค้า"
+    },
+    {
+      "feedbackAnswer": "der Laden",
+      "version": 1,
+      "itemId": "L13-V009",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V009-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Laden",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Laden เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "ร้านค้า"
+    },
+    {
+      "feedbackAnswer": "der Laden",
+      "version": 1,
+      "itemId": "L13-V009",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V009-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ร้านค้า — ___",
+      "acceptedAnswers": [
+        "Laden",
+        "Geschäft"
+      ],
+      "explanation": "ใช้ได้ทั้ง Laden และ Geschäft ในบริบทนี้",
+      "translation": "ร้านค้า"
+    },
+    {
+      "feedbackAnswer": "der Markt",
+      "version": 1,
+      "itemId": "L13-V010",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V010-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Markt — ___",
+      "options": [
+        "ตลาด",
+        "สวนสัตว์หรือสวนสัตว์เปิด",
+        "สนามเด็กเล่น",
+        "ท่าเรือ"
+      ],
+      "acceptedAnswers": [
+        "ตลาด"
+      ],
+      "explanation": "",
+      "translation": "ตลาด"
+    },
+    {
+      "feedbackAnswer": "der Markt",
+      "version": 1,
+      "itemId": "L13-V010",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V010-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Markt",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Markt เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "ตลาด"
+    },
+    {
+      "feedbackAnswer": "der Markt",
+      "version": 1,
+      "itemId": "L13-V010",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V010-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ตลาด — ___",
+      "acceptedAnswers": [
+        "Markt"
+      ],
+      "explanation": "Markt เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ตลาด"
+    },
+    {
+      "feedbackAnswer": "das Café",
+      "version": 1,
+      "itemId": "L13-V018",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V018-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Café — ___",
+      "options": [
+        "คาเฟ่",
+        "โรงภาพยนตร์",
+        "ที่พักหรืออพาร์ตเมนต์",
+        "น่าเสียดาย"
+      ],
+      "acceptedAnswers": [
+        "คาเฟ่"
+      ],
+      "explanation": "",
+      "translation": "คาเฟ่"
+    },
+    {
+      "feedbackAnswer": "das Café",
+      "version": 1,
+      "itemId": "L13-V018",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V018-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Café",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Café เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "คาเฟ่"
+    },
+    {
+      "feedbackAnswer": "das Café",
+      "version": 1,
+      "itemId": "L13-V018",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V018-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "คาเฟ่ — ___",
+      "acceptedAnswers": [
+        "Café"
+      ],
+      "explanation": "Café เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่ ระวังตัว é ในคำนี้",
+      "translation": "คาเฟ่"
+    },
+    {
+      "feedbackAnswer": "das Museum",
+      "version": 1,
+      "itemId": "L13-V019",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V019-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Museum — ___",
+      "options": [
+        "พิพิธภัณฑ์",
+        "ที่พักหรืออพาร์ตเมนต์",
+        "น่าเสียดาย",
+        "ในบริเวณใกล้เคียง"
+      ],
+      "acceptedAnswers": [
+        "พิพิธภัณฑ์"
+      ],
+      "explanation": "",
+      "translation": "พิพิธภัณฑ์"
+    },
+    {
+      "feedbackAnswer": "das Museum",
+      "version": 1,
+      "itemId": "L13-V019",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V019-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Museum",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Museum เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "พิพิธภัณฑ์"
+    },
+    {
+      "feedbackAnswer": "das Museum",
+      "version": 1,
+      "itemId": "L13-V019",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V019-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "พิพิธภัณฑ์ — ___",
+      "acceptedAnswers": [
+        "Museum"
+      ],
+      "explanation": "Museum เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "พิพิธภัณฑ์"
+    },
+    {
+      "feedbackAnswer": "das Kino",
+      "version": 1,
+      "itemId": "L13-V020",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V020-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Kino — ___",
+      "options": [
+        "โรงภาพยนตร์",
+        "น่าเสียดาย",
+        "ในบริเวณใกล้เคียง",
+        "สถานที่โปรด"
+      ],
+      "acceptedAnswers": [
+        "โรงภาพยนตร์"
+      ],
+      "explanation": "",
+      "translation": "โรงภาพยนตร์"
+    },
+    {
+      "feedbackAnswer": "das Kino",
+      "version": 1,
+      "itemId": "L13-V020",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V020-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Kino",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Kino เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "โรงภาพยนตร์"
+    },
+    {
+      "feedbackAnswer": "das Kino",
+      "version": 1,
+      "itemId": "L13-V020",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V020-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "โรงภาพยนตร์ — ___",
+      "acceptedAnswers": [
+        "Kino"
+      ],
+      "explanation": "Kino เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "โรงภาพยนตร์"
+    },
+    {
+      "feedbackAnswer": "die Wohnung",
+      "version": 1,
+      "itemId": "L13-V021",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V021-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Wohnung — ___",
+      "options": [
+        "ที่พักหรืออพาร์ตเมนต์",
+        "ในบริเวณใกล้เคียง",
+        "สถานที่โปรด",
+        "ย่านโปรด"
+      ],
+      "acceptedAnswers": [
+        "ที่พักหรืออพาร์ตเมนต์"
+      ],
+      "explanation": "",
+      "translation": "ที่พักหรืออพาร์ตเมนต์"
+    },
+    {
+      "feedbackAnswer": "die Wohnung",
+      "version": 1,
+      "itemId": "L13-V021",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V021-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Wohnung",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Wohnung เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "ที่พักหรืออพาร์ตเมนต์"
+    },
+    {
+      "feedbackAnswer": "die Wohnung",
+      "version": 1,
+      "itemId": "L13-V021",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V021-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ที่พักหรืออพาร์ตเมนต์ — ___",
+      "acceptedAnswers": [
+        "Wohnung"
+      ],
+      "explanation": "Wohnung เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ที่พักหรืออพาร์ตเมนต์"
+    },
+    {
+      "feedbackAnswer": "der Zoo",
+      "version": 1,
+      "itemId": "L13-V011",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V011-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Zoo — ___",
+      "options": [
+        "สวนสัตว์",
+        "ท่าเรือ",
+        "ทะเลสาบ",
+        "กำแพง"
+      ],
+      "acceptedAnswers": [
+        "สวนสัตว์"
+      ],
+      "explanation": "",
+      "translation": "สวนสัตว์"
+    },
+    {
+      "feedbackAnswer": "der Zoo",
+      "version": 1,
+      "itemId": "L13-V011",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V011-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Zoo",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Zoo เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "สวนสัตว์"
+    },
+    {
+      "feedbackAnswer": "der Zoo",
+      "version": 1,
+      "itemId": "L13-V011",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V011-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "สวนสัตว์ — ___",
+      "acceptedAnswers": [
+        "Zoo",
+        "Tierpark"
+      ],
+      "explanation": "ใช้ได้ทั้ง Zoo และ Tierpark ในบริบทนี้",
+      "translation": "สวนสัตว์"
+    },
+    {
+      "feedbackAnswer": "der Tierpark",
+      "version": 1,
+      "itemId": "L13-V012",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V012-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Tierpark — ___",
+      "options": [
+        "สวนสัตว์หรือสวนสัตว์เปิด",
+        "ทะเลสาบ",
+        "กำแพง",
+        "ถนน"
+      ],
+      "acceptedAnswers": [
+        "สวนสัตว์หรือสวนสัตว์เปิด"
+      ],
+      "explanation": "",
+      "translation": "สวนสัตว์หรือสวนสัตว์เปิด"
+    },
+    {
+      "feedbackAnswer": "der Tierpark",
+      "version": 1,
+      "itemId": "L13-V012",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V012-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Tierpark",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Tierpark เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "สวนสัตว์หรือสวนสัตว์เปิด"
+    },
+    {
+      "feedbackAnswer": "der Tierpark",
+      "version": 1,
+      "itemId": "L13-V012",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V012-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "สวนสัตว์หรือสวนสัตว์เปิด — ___",
+      "acceptedAnswers": [
+        "Tierpark",
+        "Zoo"
+      ],
+      "explanation": "ใช้ได้ทั้ง Tierpark และ Zoo ในบริบทนี้",
+      "translation": "สวนสัตว์หรือสวนสัตว์เปิด"
+    },
+    {
+      "feedbackAnswer": "der Spielplatz",
+      "version": 1,
+      "itemId": "L13-V013",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V013-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Spielplatz — ___",
+      "options": [
+        "สนามเด็กเล่น",
+        "ทะเลสาบ",
+        "กำแพง",
+        "ถนน"
+      ],
+      "acceptedAnswers": [
+        "สนามเด็กเล่น"
+      ],
+      "explanation": "",
+      "translation": "สนามเด็กเล่น"
+    },
+    {
+      "feedbackAnswer": "der Spielplatz",
+      "version": 1,
+      "itemId": "L13-V013",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V013-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Spielplatz",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Spielplatz เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "สนามเด็กเล่น"
+    },
+    {
+      "feedbackAnswer": "der Spielplatz",
+      "version": 1,
+      "itemId": "L13-V013",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V013-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "สนามเด็กเล่น — ___",
+      "acceptedAnswers": [
+        "Spielplatz"
+      ],
+      "explanation": "Spielplatz เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "สนามเด็กเล่น"
+    },
+    {
+      "feedbackAnswer": "der Hafen",
+      "version": 1,
+      "itemId": "L13-V014",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V014-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Hafen — ___",
+      "options": [
+        "ท่าเรือ",
+        "กำแพง",
+        "ถนน",
+        "คาเฟ่"
+      ],
+      "acceptedAnswers": [
+        "ท่าเรือ"
+      ],
+      "explanation": "",
+      "translation": "ท่าเรือ"
+    },
+    {
+      "feedbackAnswer": "der Hafen",
+      "version": 1,
+      "itemId": "L13-V014",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V014-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Hafen",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Hafen เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "ท่าเรือ"
+    },
+    {
+      "feedbackAnswer": "der Hafen",
+      "version": 1,
+      "itemId": "L13-V014",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V014-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ท่าเรือ — ___",
+      "acceptedAnswers": [
+        "Hafen"
+      ],
+      "explanation": "Hafen เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ท่าเรือ"
+    },
+    {
+      "feedbackAnswer": "der See",
+      "version": 1,
+      "itemId": "L13-V015",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V015-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der See — ___",
+      "options": [
+        "ทะเลสาบ",
+        "ถนน",
+        "คาเฟ่",
+        "พิพิธภัณฑ์"
+      ],
+      "acceptedAnswers": [
+        "ทะเลสาบ"
+      ],
+      "explanation": "",
+      "translation": "ทะเลสาบ"
+    },
+    {
+      "feedbackAnswer": "der See",
+      "version": 1,
+      "itemId": "L13-V015",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V015-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ See",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "See เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "ทะเลสาบ"
+    },
+    {
+      "feedbackAnswer": "der See",
+      "version": 1,
+      "itemId": "L13-V015",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V015-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ทะเลสาบ — ___",
+      "acceptedAnswers": [
+        "See"
+      ],
+      "explanation": "See เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ทะเลสาบ"
+    },
+    {
+      "feedbackAnswer": "die Mauer",
+      "version": 1,
+      "itemId": "L13-V016",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V016-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Mauer — ___",
+      "options": [
+        "กำแพง",
+        "คาเฟ่",
+        "พิพิธภัณฑ์",
+        "โรงภาพยนตร์"
+      ],
+      "acceptedAnswers": [
+        "กำแพง"
+      ],
+      "explanation": "",
+      "translation": "กำแพง"
+    },
+    {
+      "feedbackAnswer": "die Mauer",
+      "version": 1,
+      "itemId": "L13-V016",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V016-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Mauer",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Mauer เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "กำแพง"
+    },
+    {
+      "feedbackAnswer": "die Mauer",
+      "version": 1,
+      "itemId": "L13-V016",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V016-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "กำแพง — ___",
+      "acceptedAnswers": [
+        "Mauer"
+      ],
+      "explanation": "Mauer เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "กำแพง"
+    },
+    {
+      "feedbackAnswer": "die Straße",
+      "version": 1,
+      "itemId": "L13-V017",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V017-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Straße — ___",
+      "options": [
+        "ถนน",
+        "พิพิธภัณฑ์",
+        "โรงภาพยนตร์",
+        "ที่พักหรืออพาร์ตเมนต์"
+      ],
+      "acceptedAnswers": [
+        "ถนน"
+      ],
+      "explanation": "",
+      "translation": "ถนน"
+    },
+    {
+      "feedbackAnswer": "die Straße",
+      "version": 1,
+      "itemId": "L13-V017",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V017-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Straße",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Straße เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "ถนน"
+    },
+    {
+      "feedbackAnswer": "die Straße",
+      "version": 1,
+      "itemId": "L13-V017",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V017-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ถนน — ___",
+      "acceptedAnswers": [
+        "Straße"
+      ],
+      "explanation": "Straße เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่ ระวังตัว ß ในคำนี้",
+      "translation": "ถนน"
+    },
+    {
+      "feedbackAnswer": "leider",
+      "version": 1,
+      "itemId": "L13-V042",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V042-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "leider — ___",
+      "options": [
+        "น่าเสียดาย",
+        "สถานที่โปรด",
+        "ย่านโปรด",
+        "ธรรมชาติ"
+      ],
+      "acceptedAnswers": [
+        "น่าเสียดาย"
+      ],
+      "explanation": "",
+      "translation": "น่าเสียดาย"
+    },
+    {
+      "feedbackAnswer": "leider",
+      "version": 1,
+      "itemId": "L13-V042",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V042-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำภาษาเยอรมัน",
+      "sentence": "น่าเสียดาย — ___",
+      "acceptedAnswers": [
+        "leider"
+      ],
+      "explanation": "เขียน leider เป็นคำเดียว ขึ้นต้นด้วยตัวพิมพ์เล็ก",
+      "translation": "น่าเสียดาย"
+    },
+    {
+      "feedbackAnswer": "in der Nähe",
+      "version": 1,
+      "itemId": "L13-V043",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V043-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "in der Nähe — ___",
+      "options": [
+        "ในบริเวณใกล้เคียง",
+        "ย่านโปรด",
+        "ธรรมชาติ",
+        "แม่น้ำ"
+      ],
+      "acceptedAnswers": [
+        "ในบริเวณใกล้เคียง"
+      ],
+      "explanation": "",
+      "translation": "ในบริเวณใกล้เคียง"
+    },
+    {
+      "feedbackAnswer": "in der Nähe",
+      "version": 1,
+      "itemId": "L13-V043",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V043-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำภาษาเยอรมัน",
+      "sentence": "ในบริเวณใกล้เคียง — ___",
+      "acceptedAnswers": [
+        "in der Nähe"
+      ],
+      "explanation": "เขียนแยกเป็นสามคำ โดย Nähe ใช้ ä และขึ้นต้นด้วย N ตัวใหญ่ ระวังตัว ä ในคำนี้",
+      "translation": "ในบริเวณใกล้เคียง"
+    },
+    {
+      "feedbackAnswer": "der Lieblingsort",
+      "version": 1,
+      "itemId": "L13-V044",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V044-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Lieblingsort — ___",
+      "options": [
+        "สถานที่โปรด",
+        "ธรรมชาติ",
+        "แม่น้ำ",
+        "สะพาน"
+      ],
+      "acceptedAnswers": [
+        "สถานที่โปรด"
+      ],
+      "explanation": "",
+      "translation": "สถานที่โปรด"
+    },
+    {
+      "feedbackAnswer": "der Lieblingsort",
+      "version": 1,
+      "itemId": "L13-V044",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V044-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Lieblingsort",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Lieblingsort เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "สถานที่โปรด"
+    },
+    {
+      "feedbackAnswer": "der Lieblingsort",
+      "version": 1,
+      "itemId": "L13-V044",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V044-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "สถานที่โปรด — ___",
+      "acceptedAnswers": [
+        "Lieblingsort"
+      ],
+      "explanation": "Lieblingsort เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "สถานที่โปรด"
+    },
+    {
+      "feedbackAnswer": "das Lieblingsviertel",
+      "version": 1,
+      "itemId": "L13-V045",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V045-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Lieblingsviertel — ___",
+      "options": [
+        "ย่านโปรด",
+        "แม่น้ำ",
+        "สะพาน",
+        "แกลเลอรี"
+      ],
+      "acceptedAnswers": [
+        "ย่านโปรด"
+      ],
+      "explanation": "",
+      "translation": "ย่านโปรด"
+    },
+    {
+      "feedbackAnswer": "das Lieblingsviertel",
+      "version": 1,
+      "itemId": "L13-V045",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V045-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Lieblingsviertel",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Lieblingsviertel เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "ย่านโปรด"
+    },
+    {
+      "feedbackAnswer": "das Lieblingsviertel",
+      "version": 1,
+      "itemId": "L13-V045",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V045-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ย่านโปรด — ___",
+      "acceptedAnswers": [
+        "Lieblingsviertel"
+      ],
+      "explanation": "Lieblingsviertel เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ย่านโปรด"
+    },
+    {
+      "feedbackAnswer": "die Natur",
+      "version": 1,
+      "itemId": "L13-V046",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V046-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Natur — ___",
+      "options": [
+        "ธรรมชาติ",
+        "สะพาน",
+        "แกลเลอรี",
+        "ศิลปะ"
+      ],
+      "acceptedAnswers": [
+        "ธรรมชาติ"
+      ],
+      "explanation": "",
+      "translation": "ธรรมชาติ"
+    },
+    {
+      "feedbackAnswer": "die Natur",
+      "version": 1,
+      "itemId": "L13-V046",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V046-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Natur",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Natur เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "ธรรมชาติ"
+    },
+    {
+      "feedbackAnswer": "die Natur",
+      "version": 1,
+      "itemId": "L13-V046",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V046-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ธรรมชาติ — ___",
+      "acceptedAnswers": [
+        "Natur"
+      ],
+      "explanation": "Natur เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ธรรมชาติ"
+    },
+    {
+      "feedbackAnswer": "die Kunst",
+      "version": 1,
+      "itemId": "L13-V050",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V050-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Kunst — ___",
+      "options": [
+        "ศิลปะ",
+        "เทศกาล",
+        "ดนตรี",
+        "การปิกนิก"
+      ],
+      "acceptedAnswers": [
+        "ศิลปะ"
+      ],
+      "explanation": "",
+      "translation": "ศิลปะ"
+    },
+    {
+      "feedbackAnswer": "die Kunst",
+      "version": 1,
+      "itemId": "L13-V050",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V050-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Kunst",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Kunst เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "ศิลปะ"
+    },
+    {
+      "feedbackAnswer": "die Kunst",
+      "version": 1,
+      "itemId": "L13-V050",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V050-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ศิลปะ — ___",
+      "acceptedAnswers": [
+        "Kunst"
+      ],
+      "explanation": "Kunst เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ศิลปะ"
+    },
+    {
+      "feedbackAnswer": "die Kultur",
+      "version": 1,
+      "itemId": "L13-V051",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V051-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Kultur — ___",
+      "options": [
+        "วัฒนธรรม",
+        "ดนตรี",
+        "การปิกนิก",
+        "สนามฟุตบอล"
+      ],
+      "acceptedAnswers": [
+        "วัฒนธรรม"
+      ],
+      "explanation": "",
+      "translation": "วัฒนธรรม"
+    },
+    {
+      "feedbackAnswer": "die Kultur",
+      "version": 1,
+      "itemId": "L13-V051",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V051-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Kultur",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Kultur เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "วัฒนธรรม"
+    },
+    {
+      "feedbackAnswer": "die Kultur",
+      "version": 1,
+      "itemId": "L13-V051",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V051-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "วัฒนธรรม — ___",
+      "acceptedAnswers": [
+        "Kultur"
+      ],
+      "explanation": "Kultur เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "วัฒนธรรม"
+    },
+    {
+      "feedbackAnswer": "das Festival",
+      "version": 1,
+      "itemId": "L13-V052",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V052-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Festival — ___",
+      "options": [
+        "เทศกาล",
+        "การปิกนิก",
+        "สนามฟุตบอล",
+        "เทศกาลบนถนน"
+      ],
+      "acceptedAnswers": [
+        "เทศกาล"
+      ],
+      "explanation": "",
+      "translation": "เทศกาล"
+    },
+    {
+      "feedbackAnswer": "das Festival",
+      "version": 1,
+      "itemId": "L13-V052",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V052-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Festival",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Festival เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "เทศกาล"
+    },
+    {
+      "feedbackAnswer": "das Festival",
+      "version": 1,
+      "itemId": "L13-V052",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V052-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "เทศกาล — ___",
+      "acceptedAnswers": [
+        "Festival"
+      ],
+      "explanation": "Festival เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "เทศกาล"
+    },
+    {
+      "feedbackAnswer": "die Musik",
+      "version": 1,
+      "itemId": "L13-V053",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V053-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Musik — ___",
+      "options": [
+        "ดนตรี",
+        "สนามฟุตบอล",
+        "เทศกาลบนถนน",
+        "นักท่องเที่ยว"
+      ],
+      "acceptedAnswers": [
+        "ดนตรี"
+      ],
+      "explanation": "",
+      "translation": "ดนตรี"
+    },
+    {
+      "feedbackAnswer": "die Musik",
+      "version": 1,
+      "itemId": "L13-V053",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V053-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Musik",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Musik เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "ดนตรี"
+    },
+    {
+      "feedbackAnswer": "die Musik",
+      "version": 1,
+      "itemId": "L13-V053",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V053-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ดนตรี — ___",
+      "acceptedAnswers": [
+        "Musik"
+      ],
+      "explanation": "Musik เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ดนตรี"
+    },
+    {
+      "feedbackAnswer": "das Picknick",
+      "version": 1,
+      "itemId": "L13-V054",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V054-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Picknick — ___",
+      "options": [
+        "การปิกนิก",
+        "เทศกาลบนถนน",
+        "นักท่องเที่ยว",
+        "บล็อกเกอร์"
+      ],
+      "acceptedAnswers": [
+        "การปิกนิก"
+      ],
+      "explanation": "",
+      "translation": "การปิกนิก"
+    },
+    {
+      "feedbackAnswer": "das Picknick",
+      "version": 1,
+      "itemId": "L13-V054",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V054-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Picknick",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Picknick เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "การปิกนิก"
+    },
+    {
+      "feedbackAnswer": "das Picknick",
+      "version": 1,
+      "itemId": "L13-V054",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V054-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "การปิกนิก — ___",
+      "acceptedAnswers": [
+        "Picknick"
+      ],
+      "explanation": "Picknick เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "การปิกนิก"
+    },
+    {
+      "feedbackAnswer": "das Straßenfest",
+      "version": 1,
+      "itemId": "L13-V056",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V056-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Straßenfest — ___",
+      "options": [
+        "เทศกาลบนถนน",
+        "บล็อกเกอร์",
+        "ความคิดเห็น",
+        "คำแนะนำ"
+      ],
+      "acceptedAnswers": [
+        "เทศกาลบนถนน"
+      ],
+      "explanation": "",
+      "translation": "เทศกาลบนถนน"
+    },
+    {
+      "feedbackAnswer": "das Straßenfest",
+      "version": 1,
+      "itemId": "L13-V056",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V056-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Straßenfest",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Straßenfest เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "เทศกาลบนถนน"
+    },
+    {
+      "feedbackAnswer": "das Straßenfest",
+      "version": 1,
+      "itemId": "L13-V056",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V056-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "เทศกาลบนถนน — ___",
+      "acceptedAnswers": [
+        "Straßenfest"
+      ],
+      "explanation": "Straßenfest เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่ ระวังตัว ß ในคำนี้",
+      "translation": "เทศกาลบนถนน"
+    },
+    {
+      "feedbackAnswer": "Tourist / Touristin",
+      "version": 1,
+      "itemId": "L13-V057",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V057-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "Tourist / Touristin — ___",
+      "options": [
+        "นักท่องเที่ยว",
+        "ความคิดเห็น",
+        "คำแนะนำ",
+        "ความคิด"
+      ],
+      "acceptedAnswers": [
+        "นักท่องเที่ยว"
+      ],
+      "explanation": "",
+      "translation": "นักท่องเที่ยว"
+    },
+    {
+      "feedbackAnswer": "Tourist / Touristin",
+      "version": 1,
+      "itemId": "L13-V057",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V057-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "นักท่องเที่ยว — ___",
+      "acceptedAnswers": [
+        "Tourist",
+        "Touristin"
+      ],
+      "explanation": "Tourist หรือ Touristin เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "นักท่องเที่ยว"
+    },
+    {
+      "feedbackAnswer": "Blogger / Bloggerin",
+      "version": 1,
+      "itemId": "L13-V058",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V058-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "Blogger / Bloggerin — ___",
+      "options": [
+        "บล็อกเกอร์",
+        "คำแนะนำ",
+        "ความคิด",
+        "ห้อง"
+      ],
+      "acceptedAnswers": [
+        "บล็อกเกอร์"
+      ],
+      "explanation": "",
+      "translation": "บล็อกเกอร์"
+    },
+    {
+      "feedbackAnswer": "Blogger / Bloggerin",
+      "version": 1,
+      "itemId": "L13-V058",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V058-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "บล็อกเกอร์ — ___",
+      "acceptedAnswers": [
+        "Blogger",
+        "Bloggerin"
+      ],
+      "explanation": "Blogger หรือ Bloggerin เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "บล็อกเกอร์"
+    },
+    {
+      "feedbackAnswer": "der Kommentar",
+      "version": 1,
+      "itemId": "L13-V059",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V059-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Kommentar — ___",
+      "options": [
+        "ความคิดเห็น",
+        "ความคิด",
+        "ห้อง",
+        "มนุษย์ / คน"
+      ],
+      "acceptedAnswers": [
+        "ความคิดเห็น"
+      ],
+      "explanation": "",
+      "translation": "ความคิดเห็น"
+    },
+    {
+      "feedbackAnswer": "der Kommentar",
+      "version": 1,
+      "itemId": "L13-V059",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V059-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Kommentar",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Kommentar เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "ความคิดเห็น"
+    },
+    {
+      "feedbackAnswer": "der Kommentar",
+      "version": 1,
+      "itemId": "L13-V059",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V059-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ความคิดเห็น — ___",
+      "acceptedAnswers": [
+        "Kommentar"
+      ],
+      "explanation": "Kommentar เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ความคิดเห็น"
+    },
+    {
+      "feedbackAnswer": "der Tipp",
+      "version": 1,
+      "itemId": "L13-V060",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V060-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Tipp — ___",
+      "options": [
+        "คำแนะนำ",
+        "ห้อง",
+        "มนุษย์ / คน",
+        "ผู้คน"
+      ],
+      "acceptedAnswers": [
+        "คำแนะนำ"
+      ],
+      "explanation": "",
+      "translation": "คำแนะนำ"
+    },
+    {
+      "feedbackAnswer": "der Tipp",
+      "version": 1,
+      "itemId": "L13-V060",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V060-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Tipp",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Tipp เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "คำแนะนำ"
+    },
+    {
+      "feedbackAnswer": "der Tipp",
+      "version": 1,
+      "itemId": "L13-V060",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V060-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "คำแนะนำ — ___",
+      "acceptedAnswers": [
+        "Tipp"
+      ],
+      "explanation": "Tipp เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "คำแนะนำ"
+    },
+    {
+      "feedbackAnswer": "die Idee",
+      "version": 1,
+      "itemId": "L13-V061",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V061-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Idee — ___",
+      "options": [
+        "ความคิด",
+        "มนุษย์ / คน",
+        "ผู้คน",
+        "เด็ก ๆ"
+      ],
+      "acceptedAnswers": [
+        "ความคิด"
+      ],
+      "explanation": "",
+      "translation": "ความคิด"
+    },
+    {
+      "feedbackAnswer": "die Idee",
+      "version": 1,
+      "itemId": "L13-V061",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V061-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Idee",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "die"
+      ],
+      "explanation": "Idee เป็นคำนามเพศหญิง จึงใช้ die",
+      "translation": "ความคิด"
+    },
+    {
+      "feedbackAnswer": "die Idee",
+      "version": 1,
+      "itemId": "L13-V061",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V061-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ความคิด — ___",
+      "acceptedAnswers": [
+        "Idee"
+      ],
+      "explanation": "Idee เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ความคิด"
+    },
+    {
+      "feedbackAnswer": "das Zimmer",
+      "version": 1,
+      "itemId": "L13-V062",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V062-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "das Zimmer — ___",
+      "options": [
+        "ห้อง",
+        "ผู้คน",
+        "เด็ก ๆ",
+        "เดินเล่น"
+      ],
+      "acceptedAnswers": [
+        "ห้อง"
+      ],
+      "explanation": "",
+      "translation": "ห้อง"
+    },
+    {
+      "feedbackAnswer": "das Zimmer",
+      "version": 1,
+      "itemId": "L13-V062",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V062-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Zimmer",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "das"
+      ],
+      "explanation": "Zimmer เป็นคำนามเพศกลาง จึงใช้ das",
+      "translation": "ห้อง"
+    },
+    {
+      "feedbackAnswer": "das Zimmer",
+      "version": 1,
+      "itemId": "L13-V062",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V062-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ห้อง — ___",
+      "acceptedAnswers": [
+        "Zimmer"
+      ],
+      "explanation": "Zimmer เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "ห้อง"
+    },
+    {
+      "feedbackAnswer": "der Mensch",
+      "version": 1,
+      "itemId": "L13-V063",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V063-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "der Mensch — ___",
+      "options": [
+        "มนุษย์ / คน",
+        "เด็ก ๆ",
+        "เดินเล่น",
+        "ตกปลา"
+      ],
+      "acceptedAnswers": [
+        "มนุษย์ / คน"
+      ],
+      "explanation": "",
+      "translation": "มนุษย์ / คน"
+    },
+    {
+      "feedbackAnswer": "der Mensch",
+      "version": 1,
+      "itemId": "L13-V063",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V063-article",
+      "kind": "choice",
+      "subskill": "vocabulary_article",
+      "prompt": "เลือก Artikel ของคำนาม",
+      "sentence": "___ Mensch",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "Mensch เป็นคำนามเพศชาย จึงใช้ der",
+      "translation": "มนุษย์ / คน"
+    },
+    {
+      "feedbackAnswer": "der Mensch",
+      "version": 1,
+      "itemId": "L13-V063",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V063-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "มนุษย์ / คน — ___",
+      "acceptedAnswers": [
+        "Mensch"
+      ],
+      "explanation": "Mensch เป็นคำนาม จึงขึ้นต้นด้วยตัวพิมพ์ใหญ่",
+      "translation": "มนุษย์ / คน"
+    },
+    {
+      "feedbackAnswer": "die Leute",
+      "version": 1,
+      "itemId": "L13-V064",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V064-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Leute — ___",
+      "options": [
+        "ผู้คน",
+        "เดินเล่น",
+        "ตกปลา",
+        "เช่าเรือ"
+      ],
+      "acceptedAnswers": [
+        "ผู้คน"
+      ],
+      "explanation": "",
+      "translation": "ผู้คน"
+    },
+    {
+      "feedbackAnswer": "die Leute",
+      "version": 1,
+      "itemId": "L13-V064",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V064-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "ผู้คน — ___",
+      "acceptedAnswers": [
+        "Leute"
+      ],
+      "explanation": "Leute เป็นรูปพหูพจน์ ใช้ L ตัวใหญ่",
+      "translation": "ผู้คน"
+    },
+    {
+      "feedbackAnswer": "die Kinder",
+      "version": 1,
+      "itemId": "L13-V065",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V065-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "die Kinder — ___",
+      "options": [
+        "เด็ก ๆ",
+        "ตกปลา",
+        "เช่าเรือ",
+        "พบเพื่อน"
+      ],
+      "acceptedAnswers": [
+        "เด็ก ๆ"
+      ],
+      "explanation": "",
+      "translation": "เด็ก ๆ"
+    },
+    {
+      "feedbackAnswer": "die Kinder",
+      "version": 1,
+      "itemId": "L13-V065",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V065-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา",
+      "sentence": "เด็ก ๆ — ___",
+      "acceptedAnswers": [
+        "Kinder"
+      ],
+      "explanation": "Kinder เป็นรูปพหูพจน์ ใช้ K ตัวใหญ่",
+      "translation": "เด็ก ๆ"
+    },
+    {
+      "feedbackAnswer": "spazieren gehen",
+      "version": 1,
+      "itemId": "L13-V066",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V066-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "spazieren gehen — ___",
+      "options": [
+        "เดินเล่น",
+        "เช่าเรือ",
+        "พบเพื่อน",
+        "เมือง"
+      ],
+      "acceptedAnswers": [
+        "เดินเล่น"
+      ],
+      "explanation": "",
+      "translation": "เดินเล่น"
+    },
+    {
+      "feedbackAnswer": "spazieren gehen",
+      "version": 1,
+      "itemId": "L13-V066",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V066-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำภาษาเยอรมัน",
+      "sentence": "เดินเล่น — ___",
+      "acceptedAnswers": [
+        "spazieren gehen"
+      ],
+      "explanation": "เขียน spazieren gehen แยกเป็นสองคำ และขึ้นต้นด้วยตัวพิมพ์เล็ก",
+      "translation": "เดินเล่น"
+    },
+    {
+      "feedbackAnswer": "angeln",
+      "version": 1,
+      "itemId": "L13-V067",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V067-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "angeln — ___",
+      "options": [
+        "ตกปลา",
+        "พบเพื่อน",
+        "เมือง",
+        "ย่านเมืองเก่า"
+      ],
+      "acceptedAnswers": [
+        "ตกปลา"
+      ],
+      "explanation": "",
+      "translation": "ตกปลา"
+    },
+    {
+      "feedbackAnswer": "angeln",
+      "version": 1,
+      "itemId": "L13-V067",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V067-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำภาษาเยอรมัน",
+      "sentence": "ตกปลา — ___",
+      "acceptedAnswers": [
+        "angeln"
+      ],
+      "explanation": "angeln เป็นคำกริยาในรูป Infinitiv จึงขึ้นต้นด้วยตัวพิมพ์เล็ก",
+      "translation": "ตกปลา"
+    },
+    {
+      "feedbackAnswer": "ein Boot mieten",
+      "version": 1,
+      "itemId": "L13-V068",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V068-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "ein Boot mieten — ___",
+      "options": [
+        "เช่าเรือ",
+        "เมือง",
+        "ย่านเมืองเก่า",
+        "สวนสาธารณะ"
+      ],
+      "acceptedAnswers": [
+        "เช่าเรือ"
+      ],
+      "explanation": "",
+      "translation": "เช่าเรือ"
+    },
+    {
+      "feedbackAnswer": "ein Boot mieten",
+      "version": 1,
+      "itemId": "L13-V068",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V068-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำภาษาเยอรมัน",
+      "sentence": "เช่าเรือ — ___",
+      "acceptedAnswers": [
+        "ein Boot mieten"
+      ],
+      "explanation": "เขียนแยกเป็นสามคำ โดย Boot เป็นคำนามจึงใช้ B ตัวใหญ่",
+      "translation": "เช่าเรือ"
+    },
+    {
+      "feedbackAnswer": "sich mit Freunden treffen",
+      "version": 1,
+      "itemId": "L13-V069",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V069-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_meaning",
+      "optionsLang": "th",
+      "prompt": "เลือกความหมายของคำนี้",
+      "sentence": "sich mit Freunden treffen — ___",
+      "options": [
+        "พบเพื่อน",
+        "ย่านเมืองเก่า",
+        "สวนสาธารณะ",
+        "โบสถ์"
+      ],
+      "acceptedAnswers": [
+        "พบเพื่อน"
+      ],
+      "explanation": "",
+      "translation": "พบเพื่อน"
+    },
+    {
+      "feedbackAnswer": "sich mit Freunden treffen",
+      "version": 1,
+      "itemId": "L13-V069",
+      "topicId": "L13-vocab-extra",
+      "topicName": "คำศัพท์เพิ่มเติม",
+      "difficulty": 2,
+      "knownErrors": {},
+      "id": "L13-V069-spelling",
+      "kind": "cloze",
+      "subskill": "vocabulary_spelling",
+      "sentenceLang": "th",
+      "prompt": "พิมพ์คำภาษาเยอรมัน",
+      "sentence": "พบเพื่อน — ___",
+      "acceptedAnswers": [
+        "sich mit Freunden treffen"
+      ],
+      "explanation": "เขียนแยกเป็นสี่คำ โดย Freunden เป็นคำนามจึงใช้ F ตัวใหญ่",
+      "translation": "พบเพื่อน"
+    }
+  ],
+  "provenance": [
+    {
+      "itemId": "L13-V001",
+      "originalTitle": "die Stadt",
+      "word": "Stadt",
+      "meaning": "เมือง",
+      "collection": "core",
+      "group": "urban",
+      "questionIds": [
+        "L13-V001-meaning",
+        "L13-V001-article",
+        "L13-V001-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V002",
+      "originalTitle": "die Altstadt",
+      "word": "Altstadt",
+      "meaning": "ย่านเมืองเก่า",
+      "collection": "core",
+      "group": "urban",
+      "questionIds": [
+        "L13-V002-meaning",
+        "L13-V002-article",
+        "L13-V002-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V003",
+      "originalTitle": "der Park",
+      "word": "Park",
+      "meaning": "สวนสาธารณะ",
+      "collection": "core",
+      "group": "urban",
+      "questionIds": [
+        "L13-V003-meaning",
+        "L13-V003-article",
+        "L13-V003-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V004",
+      "originalTitle": "die Kirche",
+      "word": "Kirche",
+      "meaning": "โบสถ์",
+      "collection": "core",
+      "group": "urban",
+      "questionIds": [
+        "L13-V004-meaning",
+        "L13-V004-article",
+        "L13-V004-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V005",
+      "originalTitle": "das Schloss",
+      "word": "Schloss",
+      "meaning": "ปราสาท",
+      "collection": "core",
+      "group": "urban",
+      "questionIds": [
+        "L13-V005-meaning",
+        "L13-V005-article",
+        "L13-V005-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V006",
+      "originalTitle": "der Brunnen",
+      "word": "Brunnen",
+      "meaning": "น้ำพุ",
+      "collection": "core",
+      "group": "urban",
+      "questionIds": [
+        "L13-V006-meaning",
+        "L13-V006-article",
+        "L13-V006-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V007",
+      "originalTitle": "das Rathaus",
+      "word": "Rathaus",
+      "meaning": "ศาลาว่าการเมือง",
+      "collection": "core",
+      "group": "urban",
+      "questionIds": [
+        "L13-V007-meaning",
+        "L13-V007-article",
+        "L13-V007-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V047",
+      "originalTitle": "der Fluss",
+      "word": "Fluss",
+      "meaning": "แม่น้ำ",
+      "collection": "extra",
+      "group": "urban",
+      "questionIds": [
+        "L13-V047-meaning",
+        "L13-V047-article",
+        "L13-V047-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V048",
+      "originalTitle": "die Brücke",
+      "word": "Brücke",
+      "meaning": "สะพาน",
+      "collection": "extra",
+      "group": "urban",
+      "questionIds": [
+        "L13-V048-meaning",
+        "L13-V048-article",
+        "L13-V048-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V049",
+      "originalTitle": "die Galerie",
+      "word": "Galerie",
+      "meaning": "แกลเลอรี",
+      "collection": "extra",
+      "group": "urban",
+      "questionIds": [
+        "L13-V049-meaning",
+        "L13-V049-article",
+        "L13-V049-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V055",
+      "originalTitle": "der Fußballplatz",
+      "word": "Fußballplatz",
+      "meaning": "สนามฟุตบอล",
+      "collection": "extra",
+      "group": "urban",
+      "questionIds": [
+        "L13-V055-meaning",
+        "L13-V055-article",
+        "L13-V055-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V008",
+      "originalTitle": "das Geschäft",
+      "word": "Geschäft",
+      "meaning": "ร้านค้า",
+      "collection": "core",
+      "group": "culture",
+      "questionIds": [
+        "L13-V008-meaning",
+        "L13-V008-article",
+        "L13-V008-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V009",
+      "originalTitle": "der Laden",
+      "word": "Laden",
+      "meaning": "ร้านค้า",
+      "collection": "core",
+      "group": "culture",
+      "questionIds": [
+        "L13-V009-meaning",
+        "L13-V009-article",
+        "L13-V009-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V010",
+      "originalTitle": "der Markt",
+      "word": "Markt",
+      "meaning": "ตลาด",
+      "collection": "core",
+      "group": "culture",
+      "questionIds": [
+        "L13-V010-meaning",
+        "L13-V010-article",
+        "L13-V010-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V018",
+      "originalTitle": "das Café",
+      "word": "Café",
+      "meaning": "คาเฟ่",
+      "collection": "core",
+      "group": "culture",
+      "questionIds": [
+        "L13-V018-meaning",
+        "L13-V018-article",
+        "L13-V018-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V019",
+      "originalTitle": "das Museum",
+      "word": "Museum",
+      "meaning": "พิพิธภัณฑ์",
+      "collection": "core",
+      "group": "culture",
+      "questionIds": [
+        "L13-V019-meaning",
+        "L13-V019-article",
+        "L13-V019-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V020",
+      "originalTitle": "das Kino",
+      "word": "Kino",
+      "meaning": "โรงภาพยนตร์",
+      "collection": "core",
+      "group": "culture",
+      "questionIds": [
+        "L13-V020-meaning",
+        "L13-V020-article",
+        "L13-V020-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V021",
+      "originalTitle": "die Wohnung",
+      "word": "Wohnung",
+      "meaning": "ที่พักหรืออพาร์ตเมนต์",
+      "collection": "core",
+      "group": "culture",
+      "questionIds": [
+        "L13-V021-meaning",
+        "L13-V021-article",
+        "L13-V021-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V011",
+      "originalTitle": "der Zoo",
+      "word": "Zoo",
+      "meaning": "สวนสัตว์",
+      "collection": "core",
+      "group": "leisure",
+      "questionIds": [
+        "L13-V011-meaning",
+        "L13-V011-article",
+        "L13-V011-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V012",
+      "originalTitle": "der Tierpark",
+      "word": "Tierpark",
+      "meaning": "สวนสัตว์หรือสวนสัตว์เปิด",
+      "collection": "core",
+      "group": "leisure",
+      "questionIds": [
+        "L13-V012-meaning",
+        "L13-V012-article",
+        "L13-V012-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V013",
+      "originalTitle": "der Spielplatz",
+      "word": "Spielplatz",
+      "meaning": "สนามเด็กเล่น",
+      "collection": "core",
+      "group": "leisure",
+      "questionIds": [
+        "L13-V013-meaning",
+        "L13-V013-article",
+        "L13-V013-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V014",
+      "originalTitle": "der Hafen",
+      "word": "Hafen",
+      "meaning": "ท่าเรือ",
+      "collection": "core",
+      "group": "leisure",
+      "questionIds": [
+        "L13-V014-meaning",
+        "L13-V014-article",
+        "L13-V014-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V015",
+      "originalTitle": "der See",
+      "word": "See",
+      "meaning": "ทะเลสาบ",
+      "collection": "core",
+      "group": "leisure",
+      "questionIds": [
+        "L13-V015-meaning",
+        "L13-V015-article",
+        "L13-V015-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V016",
+      "originalTitle": "die Mauer",
+      "word": "Mauer",
+      "meaning": "กำแพง",
+      "collection": "core",
+      "group": "leisure",
+      "questionIds": [
+        "L13-V016-meaning",
+        "L13-V016-article",
+        "L13-V016-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V017",
+      "originalTitle": "die Straße",
+      "word": "Straße",
+      "meaning": "ถนน",
+      "collection": "core",
+      "group": "leisure",
+      "questionIds": [
+        "L13-V017-meaning",
+        "L13-V017-article",
+        "L13-V017-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V042",
+      "originalTitle": "leider",
+      "word": "leider",
+      "meaning": "น่าเสียดาย",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V042-meaning",
+        "L13-V042-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V043",
+      "originalTitle": "in der Nähe",
+      "word": "in der Nähe",
+      "meaning": "ในบริเวณใกล้เคียง",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V043-meaning",
+        "L13-V043-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V044",
+      "originalTitle": "der Lieblingsort",
+      "word": "Lieblingsort",
+      "meaning": "สถานที่โปรด",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V044-meaning",
+        "L13-V044-article",
+        "L13-V044-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V045",
+      "originalTitle": "das Lieblingsviertel",
+      "word": "Lieblingsviertel",
+      "meaning": "ย่านโปรด",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V045-meaning",
+        "L13-V045-article",
+        "L13-V045-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V046",
+      "originalTitle": "die Natur",
+      "word": "Natur",
+      "meaning": "ธรรมชาติ",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V046-meaning",
+        "L13-V046-article",
+        "L13-V046-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V050",
+      "originalTitle": "die Kunst",
+      "word": "Kunst",
+      "meaning": "ศิลปะ",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V050-meaning",
+        "L13-V050-article",
+        "L13-V050-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V051",
+      "originalTitle": "die Kultur",
+      "word": "Kultur",
+      "meaning": "วัฒนธรรม",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V051-meaning",
+        "L13-V051-article",
+        "L13-V051-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V052",
+      "originalTitle": "das Festival",
+      "word": "Festival",
+      "meaning": "เทศกาล",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V052-meaning",
+        "L13-V052-article",
+        "L13-V052-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V053",
+      "originalTitle": "die Musik",
+      "word": "Musik",
+      "meaning": "ดนตรี",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V053-meaning",
+        "L13-V053-article",
+        "L13-V053-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V054",
+      "originalTitle": "das Picknick",
+      "word": "Picknick",
+      "meaning": "การปิกนิก",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V054-meaning",
+        "L13-V054-article",
+        "L13-V054-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V056",
+      "originalTitle": "das Straßenfest",
+      "word": "Straßenfest",
+      "meaning": "เทศกาลบนถนน",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V056-meaning",
+        "L13-V056-article",
+        "L13-V056-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V057",
+      "originalTitle": "der Tourist Tourist / die Touristin Touristin",
+      "word": "Tourist / Touristin",
+      "meaning": "นักท่องเที่ยว",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V057-meaning",
+        "L13-V057-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V058",
+      "originalTitle": "der Blogger Blogger / die Bloggerin Bloggerin",
+      "word": "Blogger / Bloggerin",
+      "meaning": "บล็อกเกอร์",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V058-meaning",
+        "L13-V058-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V059",
+      "originalTitle": "der Kommentar",
+      "word": "Kommentar",
+      "meaning": "ความคิดเห็น",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V059-meaning",
+        "L13-V059-article",
+        "L13-V059-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V060",
+      "originalTitle": "der Tipp",
+      "word": "Tipp",
+      "meaning": "คำแนะนำ",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V060-meaning",
+        "L13-V060-article",
+        "L13-V060-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V061",
+      "originalTitle": "die Idee",
+      "word": "Idee",
+      "meaning": "ความคิด",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V061-meaning",
+        "L13-V061-article",
+        "L13-V061-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V062",
+      "originalTitle": "das Zimmer",
+      "word": "Zimmer",
+      "meaning": "ห้อง",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V062-meaning",
+        "L13-V062-article",
+        "L13-V062-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V063",
+      "originalTitle": "der Mensch",
+      "word": "Mensch",
+      "meaning": "มนุษย์ / คน",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V063-meaning",
+        "L13-V063-article",
+        "L13-V063-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V064",
+      "originalTitle": "die Leute (Pl.)",
+      "word": "Leute",
+      "meaning": "ผู้คน",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V064-meaning",
+        "L13-V064-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V065",
+      "originalTitle": "die Kinder (Pl.)",
+      "word": "Kinder",
+      "meaning": "เด็ก ๆ",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V065-meaning",
+        "L13-V065-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V066",
+      "originalTitle": "spazieren gehen",
+      "word": "spazieren gehen",
+      "meaning": "เดินเล่น",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V066-meaning",
+        "L13-V066-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V067",
+      "originalTitle": "angeln",
+      "word": "angeln",
+      "meaning": "ตกปลา",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V067-meaning",
+        "L13-V067-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V068",
+      "originalTitle": "ein Boot mieten",
+      "word": "ein Boot mieten",
+      "meaning": "เช่าเรือ",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V068-meaning",
+        "L13-V068-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    },
+    {
+      "itemId": "L13-V069",
+      "originalTitle": "sich mit Freunden treffen",
+      "word": "sich mit Freunden treffen",
+      "meaning": "พบเพื่อน",
+      "collection": "extra",
+      "group": "extra",
+      "questionIds": [
+        "L13-V069-meaning",
+        "L13-V069-spelling"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFiles": [
+        "supabase/seed/catalog.json",
+        "src/lib/vocabulary-image-content.ts"
+      ],
+      "method": "repository_inspection",
+      "inspectedAt": "2026-10-22",
+      "publisherPage": null,
+      "note": "New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise."
+    }
+  ]
+}

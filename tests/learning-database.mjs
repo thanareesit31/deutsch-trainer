@@ -51,6 +51,16 @@ export async function createDatabase() {
     "20261018000000_l14_phrase_learning_state.sql",
     "20261019000000_l14_position_quiz_state.sql",
     "20261019010000_l14_position_quiz_cat_state.sql",
+    "20261022000000_practice_account_sessions.sql",
+    "20261022010000_vocabulary_practice_banks.sql",
+    "20261022020000_vocabulary_session_validation.sql",
+    "20261022030000_phrase_practice.sql",
+    "20261022040000_phrase_pathway.sql",
+    "20261022050000_phrase_topic_sequence.sql",
+    "20261024000000_l14_phrase_practice_state.sql",
+    "20261024010000_l14_vocabulary_practice_state.sql",
+    "20261024020000_l13_vocabulary_challenge_state.sql",
+    "20261025000000_optional_practice_confidence.sql",
   ])
     await db.exec(
       await readFile(
@@ -62,7 +72,7 @@ export async function createDatabase() {
   await db.exec(
     await readFile(
       new URL(
-        "../supabase/migrations/20261003000000_completed_attempts_no_response_time.sql",
+        "../supabase/migrations/20261025000000_optional_practice_confidence.sql",
         import.meta.url
       ),
       "utf8"
@@ -141,16 +151,16 @@ if (process.argv[1]?.endsWith("learning-database.mjs")) {
   const pendingRow = (await db.query("select * from learning_attempts"))
     .rows[0];
   assert.equal(pendingRow.correct, true);
-  assert.equal(pendingRow.confidence, null, "correct answer starts pending");
+  assert.equal(pendingRow.confidence, null, "missing confidence remains unknown");
   assert.equal(pendingRow.response_ms, 0, "legacy field uses neutral default");
   let knowledge = (await db.query("select * from knowledge_state")).rows[0];
   assert.equal(
     knowledge.attempts,
-    0,
-    "pending attempt is absent from knowledge"
+    1,
+    "checked answer counts without confidence"
   );
-  assert.equal(knowledge.correct, 0, "pending correct does not count");
-  await assert.rejects(action(db, "advance", { sessionId, position: 0 }));
+  assert.equal(knowledge.correct, 1, "checked correct counts immediately");
+  await action(db, "advance", { sessionId, position: 0 });
   await action(db, "confidence", {
     sessionId,
     position: 0,
@@ -178,8 +188,8 @@ if (process.argv[1]?.endsWith("learning-database.mjs")) {
     await action(db, "submit", { ...attempt, sessionId: nextSession });
     assert.equal(
       (await db.query("select * from knowledge_state")).rows[0].attempts,
-      1 + (confidence === "thought" ? 0 : 1),
-      "correct attempt is excluded until confidence is chosen"
+      2 + (confidence === "thought" ? 0 : 1),
+      "checked answer counts before optional confidence"
     );
     await action(db, "confidence", {
       sessionId: nextSession,

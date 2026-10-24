@@ -526,8 +526,7 @@ export function L13L14CoursePage({
             <Link className="button primary" href={`${categoryHref(lessonId,"ueben",category.id)}/${set.id}`}>{count ? "ฝึกต่อ" : "เริ่มฝึก"}</Link>
           </article></Fragment>;
         })}</div>
-        {category.id !== "speaking" && <Link className="button secondary" href={`/practice/${lessonId}/${category.id}`}>เปิดแบบฝึกหัดเดิมในหมวดนี้</Link>}
-        <Link className="a13-course-back" href="/practice">กลับไปเลือกหมวดแบบฝึกหัด</Link>
+        <Link className="a13-course-back" href="/practice">กลับหน้าแบบฝึกหัด</Link>
       </section>
     );
   }

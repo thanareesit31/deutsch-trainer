@@ -39,7 +39,7 @@ export interface LearningAttempt {
 export function isCompletedAttempt(
   attempt: Pick<LearningAttempt, "correct" | "confidence">
 ) {
-  return !attempt.correct || attempt.confidence !== null;
+  return typeof attempt.correct === "boolean";
 }
 export function completedAttempts<
   T extends { correct: boolean; confidence: Confidence | null }
@@ -93,7 +93,7 @@ export function reviewCandidates(
   }
   return items.filter((item) => {
     const latest = latestByItem.get(item.id);
-    return latest && (!latest.correct || latest.confidence !== "easy");
+    return latest && (!latest.correct || latest.confidence === "thought" || latest.confidence === "guess");
   });
 }
 export function diagnose(

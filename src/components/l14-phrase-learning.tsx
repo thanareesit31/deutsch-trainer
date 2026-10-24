@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { Volume2 } from "lucide-react";
 import { articleColors } from "@/lib/profession-learning";
 import { useVocabularyAudio } from "./vocabulary-audio";
 import { lessonStateKeys, useLessonState } from "./lesson-state-provider";
+import { clearLastLessonPageRequest, isLastLessonPageRequested } from "@/lib/test-workspace-last-page";
 
 const groups = [
   { id: "ask", german: "Nach dem Weg fragen", thai: "ถามทาง" },
@@ -108,6 +110,7 @@ type PhraseProgress = {
   orderedTurns: number[];
   orderChecked: boolean;
   dialogueFlipped: number[];
+  completedScenarios: boolean;
 };
 
 const phraseById = new Map(phrases.map((phrase) => [phrase.id, phrase]));
@@ -115,7 +118,7 @@ const isRecord = (value: unknown): value is Record<string, unknown> =>
   value !== null && typeof value === "object" && !Array.isArray(value);
 
 function emptyPhraseProgress(): PhraseProgress {
-  return { version: 14, tab: "sort", placed: {}, selected: null, results: {}, misses: {}, solved: {}, flipped: {}, message: "", scenarioIndex: 0, placeIds: [], dialogueStep: 0, scenarioStarted: false, choice: "", thanksChoice: "", mode: "guided", orderedTurns: [], orderChecked: false, dialogueFlipped: [] };
+  return { version: 14, tab: "sort", placed: {}, selected: null, results: {}, misses: {}, solved: {}, flipped: {}, message: "", scenarioIndex: 0, placeIds: [], dialogueStep: 0, scenarioStarted: false, choice: "", thanksChoice: "", mode: "guided", orderedTurns: [], orderChecked: false, dialogueFlipped: [], completedScenarios: false };
 }
 
 function readPhraseProgress(raw: string | null): PhraseProgress {
@@ -149,6 +152,7 @@ function readPhraseProgress(raw: string | null): PhraseProgress {
         if (phraseById.has(id) && enabled === true) progress[field][id] = true;
     }
     if (typeof value.message === "string") progress.message = value.message.slice(0, 300);
+    progress.completedScenarios = value.completedScenarios === true;
     if (value.version === 2 || value.version === 3 || value.version === 4 || value.version === 5 || value.version === 6 || value.version === 7 || value.version === 8 || value.version === 9 || value.version === 10 || value.version === 11 || value.version === 12 || value.version === 13 || value.version === 14) {
       progress.scenarioStarted = value.scenarioStarted === true;
       if (value.version === 6 || value.version === 7 || value.version === 8 || value.version === 9 || value.version === 10 || value.version === 11 || value.version === 12 || value.version === 13 || value.version === 14) {
@@ -182,7 +186,14 @@ export function L14PhraseLearning() {
   const mapRef = useRef<HTMLDivElement>(null);
   const storage = useLessonState();
   const stateKey = lessonStateKeys.l14Phrases;
-  const [progress, setProgress] = useState(() => readPhraseProgress(storage.read(stateKey)));
+  const [testLastPage] = useState(() => isLastLessonPageRequested());
+  const [progress, setProgress] = useState(() => {
+    const saved = readPhraseProgress(storage.read(stateKey));
+    return testLastPage ? { ...saved, tab: "context" as const, scenarioIndex: scenarios.length - 1, scenarioStarted: true, placeIds: saved.placeIds.length === scenarios.length ? saved.placeIds : drawScenarioPlaces(), dialogueStep: 0, mode: "guided" as const, orderedTurns: [], orderChecked: false, choice: "" } : saved;
+  });
+  useEffect(() => {
+    if (testLastPage) clearLastLessonPageRequest();
+  }, [testLastPage]);
   useEffect(() => {
     if (progress.placeIds.length === scenarios.length) return;
     const next = { ...progress, placeIds: drawScenarioPlaces() };
@@ -274,7 +285,7 @@ export function L14PhraseLearning() {
     persist({ ...progress, tab: "context", placeIds: progress.placeIds.length === scenarios.length ? progress.placeIds : drawScenarioPlaces(), scenarioStarted: true });
   }
   function nextScenario() {
-    persist({ ...progress, scenarioIndex: (scenarioIndex + 1) % scenarios.length, placeIds: scenarioIndex === scenarios.length - 1 ? drawScenarioPlaces() : progress.placeIds, dialogueStep: 0, choice: "", thanksChoice: "", mode: "guided", orderedTurns: [], orderChecked: false, dialogueFlipped: [], scenarioStarted: true });
+    persist({ ...progress, completedScenarios: progress.completedScenarios || (scenarioIndex === scenarios.length - 1 && orderChecked && orderIsCorrect), scenarioIndex: (scenarioIndex + 1) % scenarios.length, placeIds: scenarioIndex === scenarios.length - 1 ? drawScenarioPlaces() : progress.placeIds, dialogueStep: 0, choice: "", thanksChoice: "", mode: "guided", orderedTurns: [], orderChecked: false, dialogueFlipped: [], scenarioStarted: true });
     requestAnimationFrame(() => mapRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
   }
   function select(id: string) {
@@ -446,12 +457,13 @@ export function L14PhraseLearning() {
         {orderChecked && <p className="l14-phrase-feedback" role="status">{orderIsCorrect ? "เรียงบทสนทนาได้ถูกต้อง" : "ลองอีกครั้ง แตะประโยคที่ไม่เข้ากับลำดับเพื่อนำกลับไปเลือกใหม่"}</p>}
       </>}
       {audioError && <p role="alert">{audioError}</p>}
-      <div className="guided-navigation"><button className="button secondary" type="button" onClick={() => persist({ ...progress, tab: "sort" })}>กลับไปจัดกลุ่ม</button>
-        {mode === "guided" && correctChoice && <button className="button primary" type="button" onClick={() => persist({ ...progress, dialogueStep: dialogueStep + 1, choice: "", thanksChoice: dialogueStep === thankYouStep && isThankYouLine(choice) ? choice : progress.thanksChoice })}>ต่อไป</button>}
+      <div className="guided-navigation"><button className="button secondary" type="button" onClick={() => persist({ ...progress, tab: "sort" })}>ย้อนกลับ</button>
+        {mode === "guided" && correctChoice && <button className="button primary" type="button" onClick={() => persist({ ...progress, dialogueStep: dialogueStep + 1, choice: "", thanksChoice: dialogueStep === thankYouStep && isThankYouLine(choice) ? choice : progress.thanksChoice })}>ประโยคถัดไป</button>}
         {mode === "guided" && dialogueStep === turnCount && <button className="button primary" type="button" onClick={() => persist({ ...progress, mode: "reorder", dialogueFlipped: [] })}>ลองเรียงบทสนทนา</button>}
         {mode === "reorder" && orderedTurns.length === turnCount && !orderIsCorrect && <button className="button primary" type="button" onClick={() => persist({ ...progress, orderChecked: true })}>ตรวจคำตอบ</button>}
         {mode === "reorder" && orderIsCorrect && !orderChecked && <button className="button primary" type="button" onClick={() => persist({ ...progress, orderChecked: true })}>ตรวจคำตอบ</button>}
         {mode === "reorder" && orderChecked && orderIsCorrect && <button className="button primary" type="button" onClick={nextScenario}>{scenarioIndex === scenarios.length - 1 ? "เรียนอีกครั้ง" : "ไปข้อถัดไป"}</button>}
+        {((progress.completedScenarios || (scenarioIndex === scenarios.length - 1 && orderChecked && orderIsCorrect)) && allCheckedCorrect || testLastPage) && <Link className="button primary" href="/practice/L14/phrases/basic?flow=lesson">ทำแบบฝึกหัด</Link>}
       </div>
       {mode === "reorder" && orderChecked && orderIsCorrect && scenarioIndex === scenarios.length - 1 && <p className="l14-phrase-feedback" role="status">ครบทั้ง 4 สถานการณ์แล้ว</p>}
     </section>}

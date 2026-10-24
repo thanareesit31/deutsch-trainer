@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "id": "l13-dative-pilot-v1",
+  "status": "review_prototype_not_published",
+  "title": "Personalpronomen im Dativ",
+  "lessonId": "L13",
+  "authorship": "newly_authored",
+  "reviewedAt": "2026-10-20",
+  "reviewScope": "Author grammar/answer review and structural validation; no independent educator review.",
+  "defaultCount": 5,
+  "countOptions": [
+    5,
+    10,
+    "all"
+  ],
+  "questions": [
+    {
+      "id": "A13-L13-DAT-001",
+      "version": 4,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-001",
+      "kind": "choice",
+      "prompt": "เลือกสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Ich finde den Markt schön. Der Markt gefällt ___.",
+      "options": [
+        "mir",
+        "mich",
+        "ich"
+      ],
+      "acceptedAnswers": [
+        "mir"
+      ],
+      "person": "ich",
+      "verb": "gefallen",
+      "subskill": "recognize_dative_pronoun",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "กริยานี้ใช้ Dativ กับบุคคล ดูว่าใครรู้สึกชอบ ใครเป็นเจ้าของ หรือใครได้รับความช่วยเหลือ",
+      "explanation": "คนที่ชอบตลาดคือ ich หรือ “ฉัน” หลัง gefallen ใช้รูป Dativ จึงเปลี่ยน ich เป็น mir",
+      "knownErrors": {
+        "mich": "case",
+        "ich": "case"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-002",
+      "version": 4,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-002",
+      "kind": "choice",
+      "prompt": "เลือกสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Du findest die Fotos schön. Die Fotos gefallen ___.",
+      "options": [
+        "du",
+        "dir",
+        "dich"
+      ],
+      "acceptedAnswers": [
+        "dir"
+      ],
+      "person": "du",
+      "verb": "gefallen",
+      "subskill": "recognize_dative_pronoun",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "กริยานี้ใช้ Dativ กับบุคคล ดูว่าใครรู้สึกชอบ ใครเป็นเจ้าของ หรือใครได้รับความช่วยเหลือ",
+      "explanation": "คนที่ชอบรูปถ่ายคือ du หรือ “คุณ” หลัง gefallen จึงใช้ dir ซึ่งเป็นรูป Dativ ของ du",
+      "knownErrors": {
+        "du": "case",
+        "dich": "case"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-003",
+      "version": 4,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-003",
+      "kind": "choice",
+      "prompt": "เลือกสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Er findet den Park schön. Der Park gefällt ___.",
+      "options": [
+        "ihn",
+        "er",
+        "ihm"
+      ],
+      "acceptedAnswers": [
+        "ihm"
+      ],
+      "person": "er",
+      "verb": "gefallen",
+      "subskill": "recognize_dative_pronoun",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "กริยานี้ใช้ Dativ กับบุคคล ดูว่าใครรู้สึกชอบ ใครเป็นเจ้าของ หรือใครได้รับความช่วยเหลือ",
+      "explanation": "คนที่ชอบสวนคือ er หรือ “เขา” หลัง gefallen จึงใช้ ihm ซึ่งเป็นรูป Dativ ของ er",
+      "knownErrors": {
+        "ihn": "case",
+        "er": "case"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-004",
+      "version": 4,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-004",
+      "kind": "choice",
+      "prompt": "เลือกสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Mia hat ein Fahrrad. Das Fahrrad gehört ___.",
+      "options": [
+        "ihnen",
+        "ihr",
+        "sie"
+      ],
+      "acceptedAnswers": [
+        "ihr"
+      ],
+      "person": "sie singular",
+      "verb": "gehören",
+      "subskill": "recognize_dative_pronoun",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "กริยานี้ใช้ Dativ กับบุคคล ดูว่าใครรู้สึกชอบ ใครเป็นเจ้าของ หรือใครได้รับความช่วยเหลือ",
+      "explanation": "จักรยานเป็นของ Mia จึงใช้สรรพนามแทนเธอ หลัง gehören ต้องใช้รูป Dativ คือ ihr",
+      "knownErrors": {
+        "ihnen": "referent",
+        "sie": "case"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-005",
+      "version": 4,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-005",
+      "kind": "choice",
+      "prompt": "เลือกสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Das Kind braucht Hilfe. Ich helfe ___.",
+      "options": [
+        "es",
+        "ihm",
+        "ihn"
+      ],
+      "acceptedAnswers": [
+        "ihm"
+      ],
+      "person": "es",
+      "verb": "helfen",
+      "subskill": "recognize_dative_pronoun",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "กริยานี้ใช้ Dativ กับบุคคล ดูว่าใครรู้สึกชอบ ใครเป็นเจ้าของ หรือใครได้รับความช่วยเหลือ",
+      "explanation": "das Kind หมายถึงเด็ก ใช้ es แทนได้ หลัง helfen จึงเปลี่ยน es เป็น ihm",
+      "knownErrors": {
+        "es": "case",
+        "ihn": "case"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-006",
+      "version": 4,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-006",
+      "kind": "cloze",
+      "prompt": "เติมสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Ich finde den See schön. Der See gefällt ___.",
+      "acceptedAnswers": [
+        "mir"
+      ],
+      "person": "ich",
+      "verb": "gefallen",
+      "subskill": "produce_dative_form",
+      "difficulty": 2,
+      "builtInSupport": "referent_in_sentence",
+      "hint": "หาว่ากำลังกล่าวถึงใครหรือพูดกับใคร แล้วเปลี่ยนเป็นรูป Dativ",
+      "explanation": "คนที่ชอบทะเลสาบคือ ich หรือ “ฉัน” หลัง gefallen จึงเปลี่ยน ich เป็น mir",
+      "knownErrors": {
+        "ich": "case",
+        "mich": "case"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-007",
+      "version": 4,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-007",
+      "kind": "cloze",
+      "prompt": "เติมสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Du hilfst uns. Wir danken ___ sehr.",
+      "acceptedAnswers": [
+        "dir"
+      ],
+      "person": "du",
+      "verb": "danken",
+      "subskill": "produce_dative_form",
+      "difficulty": 2,
+      "builtInSupport": "referent_in_sentence",
+      "hint": "หาว่ากำลังกล่าวถึงใครหรือพูดกับใคร แล้วเปลี่ยนเป็นรูป Dativ",
+      "explanation": "คนที่เราขอบคุณคือ du หรือ “คุณ” หลัง danken ต้องใช้รูป Dativ คือ dir",
+      "knownErrors": {
+        "du": "case",
+        "dich": "case"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-008",
+      "version": 4,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-008",
+      "kind": "cloze",
+      "prompt": "เติมสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Der Mann braucht Hilfe. Wir helfen ___.",
+      "acceptedAnswers": [
+        "ihm"
+      ],
+      "person": "er",
+      "verb": "helfen",
+      "subskill": "produce_dative_form",
+      "difficulty": 2,
+      "builtInSupport": "referent_in_sentence",
+      "hint": "หาว่ากำลังกล่าวถึงใครหรือพูดกับใคร แล้วเปลี่ยนเป็นรูป Dativ",
+      "explanation": "der Mann หมายถึงผู้ชายคนนั้น ใช้ er แทนได้ หลัง helfen จึงเปลี่ยน er เป็น ihm",
+      "knownErrors": {
+        "er": "case",
+        "ihn": "case"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-009",
+      "version": 4,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-009",
+      "kind": "cloze",
+      "prompt": "เติมสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Die Frau braucht Hilfe. Ich helfe ___.",
+      "acceptedAnswers": [
+        "ihr"
+      ],
+      "person": "sie singular",
+      "verb": "helfen",
+      "subskill": "produce_dative_form",
+      "difficulty": 2,
+      "builtInSupport": "referent_in_sentence",
+      "hint": "หาว่ากำลังกล่าวถึงใครหรือพูดกับใคร แล้วเปลี่ยนเป็นรูป Dativ",
+      "explanation": "die Frau หมายถึงผู้หญิงคนนั้น ใช้ sie แทนได้ หลัง helfen จึงเปลี่ยน sie เป็น ihr",
+      "knownErrors": {
+        "sie": "case",
+        "ihnen": "referent"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-010",
+      "version": 5,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-010",
+      "kind": "cloze",
+      "prompt": "เติมสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Wir finden die Stadt schön. Die Stadt gefällt ___.",
+      "acceptedAnswers": [
+        "uns"
+      ],
+      "person": "wir",
+      "verb": "gefallen",
+      "subskill": "produce_dative_form",
+      "difficulty": 2,
+      "builtInSupport": "referent_in_sentence",
+      "hint": "หาว่ากำลังกล่าวถึงใครหรือพูดกับใคร แล้วเปลี่ยนเป็นรูป Dativ",
+      "explanation": "คนที่ชอบเมืองคือ wir หรือ “พวกเรา” หลัง gefallen ต้องใช้รูป Dativ จึงเปลี่ยน wir เป็น uns",
+      "knownErrors": {
+        "wir": "case",
+        "euch": "referent"
+      },
+      "internalReviewNotes": [
+        "ผู้ที่ชอบเมืองคือ wir รูป Dativ คือ uns; รูป uns เหมือน Akkusativ จึงใช้ข้อนี้เพียงข้อเดียวยืนยันการแยก Case ไม่ได้"
+      ]
+    },
+    {
+      "id": "A13-L13-DAT-011",
+      "version": 5,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-011",
+      "kind": "cloze",
+      "prompt": "เติมสรรพนามที่เหมาะกับประโยค",
+      "sentence": "Ihr braucht Hilfe. Wir helfen ___ gern.",
+      "acceptedAnswers": [
+        "euch"
+      ],
+      "person": "ihr",
+      "verb": "helfen",
+      "subskill": "produce_dative_form",
+      "difficulty": 2,
+      "builtInSupport": "referent_in_sentence",
+      "hint": "หาว่ากำลังกล่าวถึงใครหรือพูดกับใคร แล้วเปลี่ยนเป็นรูป Dativ",
+      "explanation": "Ihr หมายถึง “พวกคุณ” เมื่อเป็นผู้รับความช่วยเหลือหลัง helfen ต้องเปลี่ยนเป็นรูป Dativ คือ euch",
+      "knownErrors": {
+        "ihr": "case_or_referent",
+        "uns": "referent"
+      },
+      "internalReviewNotes": [
+        "ผู้ฟังหลายคนคือ ihr รูป Dativ คือ euch; รูปนี้เหมือน Akkusativ เช่นกัน"
+      ]
+    },
+    {
+      "id": "A13-L13-DAT-012",
+      "version": 2,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-012",
+      "kind": "cloze",
+      "prompt": "อ่านบริบทแล้วเติมสรรพนามหนึ่งคำ",
+      "sentence": "Mia und Ben finden den Park schön. Der Park gefällt ___.",
+      "acceptedAnswers": [
+        "ihnen"
+      ],
+      "person": "sie plural",
+      "verb": "gefallen",
+      "subskill": "produce_dative_from_context",
+      "difficulty": 3,
+      "builtInSupport": "referent_context",
+      "hint": "หาว่ากำลังกล่าวถึงใครหรือพูดกับใคร แล้วเปลี่ยนเป็นรูป Dativ",
+      "explanation": "Mia und Ben หมายถึงมีอาและเบน ใช้ sie ในความหมายว่า “พวกเขา” แทนได้ หลัง gefallen จึงใช้ ihnen โดยเขียน i ตัวเล็ก",
+      "knownErrors": {
+        "sie": "case",
+        "Ihnen": "capitalization",
+        "ihr": "referent"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-013",
+      "version": 2,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-013",
+      "kind": "cloze",
+      "prompt": "พูดกับ Frau Weber แบบสุภาพ เติมสรรพนามหนึ่งคำ",
+      "sentence": "Guten Tag, Frau Weber! Ich danke ___.",
+      "acceptedAnswers": [
+        "Ihnen"
+      ],
+      "person": "Sie formal",
+      "verb": "danken",
+      "subskill": "produce_dative_from_context",
+      "difficulty": 3,
+      "builtInSupport": "referent_context",
+      "hint": "หาว่ากำลังกล่าวถึงใครหรือพูดกับใคร แล้วเปลี่ยนเป็นรูป Dativ",
+      "explanation": "ประโยคนี้พูดขอบคุณคุณเวเบอร์โดยตรงแบบสุภาพ จึงใช้ Ihnen โดยเขียน I ตัวใหญ่",
+      "knownErrors": {
+        "Sie": "case",
+        "ihnen": "capitalization",
+        "dir": "referent"
+      }
+    },
+    {
+      "id": "A13-L13-DAT-014",
+      "version": 2,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-014",
+      "kind": "order",
+      "prompt": "เรียงประโยคโดยขึ้นต้นด้วย Das Museum",
+      "tokens": [
+        "Das",
+        "Museum",
+        "gefällt",
+        "uns"
+      ],
+      "acceptedAnswers": [
+        "Das Museum gefällt uns."
+      ],
+      "person": "wir",
+      "verb": "gefallen",
+      "subskill": "order_supplied_dative_sentence",
+      "difficulty": 2,
+      "builtInSupport": "all_words_supplied",
+      "hint": "วางประธานที่โจทย์กำหนดก่อน ตามด้วยกริยาที่ผันแล้ว จากนั้นวางสรรพนาม Dativ",
+      "explanation": "เริ่มด้วย Das Museum แล้ววางกริยา gefällt เป็นส่วนที่สอง ส่วน uns หมายถึงพวกเราที่ชอบพิพิธภัณฑ์",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L13-DAT-015",
+      "version": 2,
+      "topicId": "L13-dativ-pronomen",
+      "requiredLearnedTopics": [
+        "L13-dativ-pronomen",
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "l13-dat-context-015",
+      "kind": "order",
+      "prompt": "เรียงประโยคโดยขึ้นต้นด้วย Die Fahrräder",
+      "tokens": [
+        "Die",
+        "Fahrräder",
+        "gehören",
+        "euch"
+      ],
+      "acceptedAnswers": [
+        "Die Fahrräder gehören euch."
+      ],
+      "person": "ihr",
+      "verb": "gehören",
+      "subskill": "order_supplied_dative_sentence",
+      "difficulty": 2,
+      "builtInSupport": "all_words_supplied",
+      "hint": "วางประธานที่โจทย์กำหนดก่อน ตามด้วยกริยาที่ผันแล้ว จากนั้นวางสรรพนาม Dativ",
+      "explanation": "เริ่มด้วย Die Fahrräder ซึ่งหมายถึงจักรยานหลายคัน จึงใช้กริยา gehören ส่วน euch บอกว่าจักรยานเป็นของพวกคุณ",
+      "knownErrors": {}
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "status": "source_layout_review_pending_where_ocr_preliminary",
+  "bindings": [
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-001",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-002",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-003",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-004",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-005",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WO-DATIV-001",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WO-DATIV-002",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WO-DATIV-003",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WO-DATIV-004",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WO-DATIV-005",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    }
+  ]
+}

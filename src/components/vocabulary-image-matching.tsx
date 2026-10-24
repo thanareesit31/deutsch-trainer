@@ -31,8 +31,10 @@ import {
 } from "@/lib/vocabulary-image-learning-storage";
 
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
-import { isTestWorkspaceUser, useStore } from "./store";
-import { ArticleDot, ArticleLegend } from "./profession-matching";
+import { isTestWorkspaceUser, isVocabularyPracticeAvailable, useStore } from "./store";
+import { NounText } from "./noun-text";
+import { ArticleLegend } from "./profession-matching";
+import { useL13VocabularyEligibility } from "./use-l13-vocabulary-eligibility";
 import { L12MonthCalendar } from "./l12-month-calendar";
 
 export function CountryFlag({ flag }: { flag: CountryFlagId }) {
@@ -57,15 +59,14 @@ export function CountryFlag({ flag }: { flag: CountryFlagId }) {
   }
 }
 
-function GermanNoun({ value }: { value: string }) {
-  const match = /^(der|die|das)\s+(.+)$/u.exec(value);
-  if (!match) return <span lang="de">{value}</span>;
-  return <span lang="de"><span className={`vocabulary-gender gender-${match[1]}`}>{match[1]}</span> {match[2]}</span>;
+function GermanNoun({ value, items = [] }: { value: string; items?: Item[] }) {
+  return <span lang="de"><NounText text={value} items={items} /></span>;
 }
 
 export function VocabularyImageMatching({ items, groupId, lessonId }: { items: Item[]; groupId: VocabularyImageGroupId; lessonId: string }) {
   const searchParams = useSearchParams();
   const { user } = useStore();
+  const l13Eligibility = useL13VocabularyEligibility();
   const allowIncompleteNavigation = isTestWorkspaceUser(user);
   const lessonState = useLessonState();
   const isL13 = groupId.startsWith("l13-");
@@ -222,7 +223,7 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
             : <span key={category.id} aria-disabled="true" title="เรียนหมวดก่อนหน้าให้ครบก่อน"><CategoryTabLabel german={category.germanTitle} thai={category.title} /></span>;
         })}
       </LearningCategoryTabs>}
-      {(isL13 || ((isCatalogLesson || isCountryGroup) && entries.some((entry) => /^(der|die|das)\s/u.test(entry.german)))) && <ArticleLegend />}
+      {entries.some((entry) => /^(der|die|das)\s/u.test(entry.german)) && <ArticleLegend />}
       {isL12MonthGroup && <nav className="l12-month-season-tabs-sticky" aria-label="เลือกฤดูกาลของเดือน">
         <div className="l12-month-season-tabs" role="tablist" aria-label="ฤดูกาล">
           {l12MonthSummarySeasons.map(({ season }, index) => {
@@ -267,7 +268,7 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
               <button type="button" className="l12-month-summary-season-button" aria-label={`ฟัง ${season.german} — ${season.meaning}`} onClick={() => play(season.german, season.audioRef)}><GermanNoun value={season.german} /><small>{season.meaning}</small><Volume2 size={16} aria-hidden="true" /></button>
             </div>
             <div className="l12-month-summary-months" aria-label={`เดือนใน${season.meaning}`}>
-              {months.map(({ entry, number }) => <button type="button" className="l12-month-summary-month-button" key={entry.id} aria-label={`ฟัง ${entry.german} — ${displayMeaning(entry)}`} onClick={() => play(entry.german, entry.audioRef)}><span>{String(number).padStart(2, "0")}</span><strong>{entry.german}</strong><small>{displayMeaning(entry)}</small><Volume2 size={15} aria-hidden="true" /></button>)}
+              {months.map(({ entry, number }) => <button type="button" className="l12-month-summary-month-button" key={entry.id} aria-label={`ฟัง ${entry.german} — ${displayMeaning(entry)}`} onClick={() => play(entry.german, entry.audioRef)}><span>{String(number).padStart(2, "0")}</span><strong><GermanNoun value={entry.german} items={items} /></strong><small>{displayMeaning(entry)}</small><Volume2 size={15} aria-hidden="true" /></button>)}
             </div>
           </article>)}</div>
         </section>
@@ -278,8 +279,7 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
             {groupWords.length > 0 && <div className="matching-options-sticky profession-options-sticky">
               <div className="profession-options" role="group" aria-label="ตัวเลือกคำศัพท์">
               {groupWords.map((entry) => {
-                const article = /^(der|die|das)\s/u.exec(entry.german)?.[1];
-                return <button key={entry.id} type="button" className={`profession-option${selectedId?.type === "word" && selectedId.id === entry.id ? " selected" : ""}`} aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}>{article && <ArticleDot article={article} />}{entry.german}</button>;
+                return <button key={entry.id} type="button" className={`profession-option${selectedId?.type === "word" && selectedId.id === entry.id ? " selected" : ""}`} aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}><NounText text={entry.german} items={items} /></button>;
               })}
               </div>
             </div>}
@@ -298,9 +298,8 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
                   {matched ? <div className="l13-city-answer">{entry.itemIds.length > 1 ? <div className="vocabulary-synonym-answer">{entry.itemIds.map((id, index) => {
                     const word = items.find((item) => item.id === id);
                     if (!word) return null;
-                    const article = /^(der|die|das)\s/u.exec(word.answer)?.[1];
-                    return <span key={id}>{index > 0 && " / "}<button type="button" className="profession-label profession-audio-word" aria-label={`ฟัง ${word.answer}`} onClick={() => play(word.answer, word.audio)}>{index === 0 && article && <ArticleDot article={article} />}<span lang="de">{index === 0 ? word.answer : word.answer.replace(/^(der|die|das) /u, "")}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button></span>;
-                  })} ✓</div> : <button type="button" className="profession-label profession-audio-word" onClick={() => play(entry.german, entry.audioRef)}>{/^(der|die|das)\s/u.test(entry.german) && <ArticleDot article={entry.german.split(" ")[0]} />}<span lang="de">{entry.german}</span><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /> ✓</button>}<small>{displayMeaning(entry)}</small></div>
+                    return <span key={id}>{index > 0 && " / "}<button type="button" className="profession-label profession-audio-word" aria-label={`ฟัง ${word.answer}`} onClick={() => play(word.answer, word.audio)}><NounText text={word.answer} item={word} /><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button></span>;
+                  })} ✓</div> : <button type="button" className="profession-label profession-audio-word" onClick={() => play(entry.german, entry.audioRef)}><NounText text={entry.german} items={items} /><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /> ✓</button>}<small>{displayMeaning(entry)}</small></div>
                     : <button className="profession-slot l13-city-slot" type="button" aria-label={isL12 ? `จับคู่กับ${l12ImageLabel}` : undefined} disabled={selectedId?.type !== "word"} onClick={() => chooseMatch(entry.id, "image")}>{selectedId?.type === "word" ? "จับคู่คำนี้กับภาพ" : "เลือกคำศัพท์ด้านบนก่อน"}</button>}
                   {wrong && <p className="profession-error" role="status">ยังไม่ตรงกัน ลองเลือกใหม่ได้เลย</p>}
                 </article>;
@@ -310,20 +309,19 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
           {matchedEntries.length > 0 && <section className="vocabulary-image-paired-grid" aria-label="คำศัพท์ที่จับคู่แล้ว">
             {matchedEntries.map((entry) => <article className="vocabulary-image-paired-card" key={entry.itemId}>
               {entry.flag ? <CountryFlag flag={entry.flag} /> : <Image src={`/images/${isL13 ? "lektion-13-city" : "lektion-1-core-vocabulary-images"}/${entry.image}.${isL13 ? "svg" : "jpg"}`} alt={`ภาพสำหรับ ${entry.german}`} width={960} height={960} sizes="(max-width: 700px) 42vw, (max-width: 1100px) 28vw, 220px" />}
-              <div className="vocabulary-image-paired-word"><button type="button" className="vocabulary-word-audio" aria-label={`ฟัง ${entry.german}`} title="กดเพื่อฟังเสียง" onClick={() => play(entry.german, entry.audioRef)}><GermanNoun value={entry.german} /><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button><small>{entry.meaning}</small></div>
+              <div className="vocabulary-image-paired-word"><button type="button" className="vocabulary-word-audio" aria-label={`ฟัง ${entry.german}`} title="กดเพื่อฟังเสียง" onClick={() => play(entry.german, entry.audioRef)}><GermanNoun value={entry.german} items={items} /><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button><small>{entry.meaning}</small></div>
             </article>)}
           </section>}
           {isCountryGroup ? <div className="matching-options-sticky profession-options-sticky">
             <div className="profession-options" role="group" aria-label="ตัวเลือกประเทศ">
               {groupWords.map((entry) => {
-                const article = /^(der|die|das)\s/u.exec(entry.german)?.[1];
                 return <button key={entry.id} type="button" className={`profession-option${selectedId?.type === "word" && selectedId.id === entry.id ? " selected" : ""}`} aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}>
-                  {article && <ArticleDot article={article} />}{entry.german}<Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" />
+                  <NounText text={entry.german} items={items} /><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" />
                 </button>;
               })}
             </div>
           </div> : <section className="vocabulary-image-word-list" aria-label={`${group.title} — คำภาษาเยอรมัน`}>
-            {groupWords.map((entry) => <button className={`vocabulary-image-word ${selectedId?.type === "word" && selectedId.id === entry.id ? "selected" : ""} ${incorrectPair?.wordId === entry.id ? "incorrect" : ""}`} key={entry.id} type="button" aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}><GermanNoun value={entry.german} /><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button>)}
+            {groupWords.map((entry) => <button className={`vocabulary-image-word ${selectedId?.type === "word" && selectedId.id === entry.id ? "selected" : ""} ${incorrectPair?.wordId === entry.id ? "incorrect" : ""}`} key={entry.id} type="button" aria-pressed={selectedId?.type === "word" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "word")}><GermanNoun value={entry.german} items={items} /><Volume2 className="vocabulary-audio-icon" size={16} aria-hidden="true" /></button>)}
           </section>}
           <section className={`vocabulary-image-picture-grid count-${groupPictures.length}`} aria-label={`${group.title} — เลือกรูปภาพ`}>
             {groupPictures.map((entry) => <button className={`vocabulary-image-picture ${selectedId?.type === "image" && selectedId.id === entry.id ? "selected" : ""} ${incorrectPair?.imageId === entry.id ? "incorrect" : ""}`} key={entry.id} type="button" aria-label="เลือกภาพนี้" aria-pressed={selectedId?.type === "image" && selectedId.id === entry.id} onClick={() => chooseMatch(entry.id, "image")}>
@@ -344,7 +342,10 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
           ? <Link className="button primary" href={`${group.route}?summary=1`}>สรุปฤดูและเดือน</Link>
           : nextGroup
           ? <Link className="button primary" href={nextGroup.route}>หน้าถัดไป</Link>
+          : lessonId === "L14"
+          ? <Link className="button primary" href="/learn/L14/vocabulary/directions">เรียนคำบอกทางต่อ</Link>
           : <Link className="button primary" href={isL13 || isCatalogLesson ? `/learn/${lessonId}/vocabulary` : "/learn/L01/vocabulary"}>กลับไปที่คำศัพท์</Link>)}
+        {isL13 && !nextGroup && groups.every(category => entries.filter(entry => entry.groupId === category.id).every(entry => entry.itemIds.every(id => l13Eligibility.ids.includes(id)))) && isVocabularyPracticeAvailable(user) && <Link className="button primary" href="/practice/L13/vocabulary/basic">ทำแบบฝึกหัด</Link>}
       </div>
     </main>
   );

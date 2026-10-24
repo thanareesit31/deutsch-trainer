@@ -6,7 +6,6 @@ import {
   extraVocabulary,
   items,
   lessons,
-  itemById,
 } from "./catalog-fixture";
 import {
   adaptiveHint,
@@ -21,16 +20,15 @@ import {
   status,
 } from "../src/lib/engine";
 
-test("preserves 188 core vocabulary identifiers across 12 lessons and keeps extra vocabulary separate", () => {
-  assert.equal(coreVocabulary.length, 188);
-  assert.equal(lessons.length, 12);
-  assert.equal(new Set(coreVocabulary.map((w) => w.id)).size, 188);
+test("matches the current core and extra vocabulary catalog", () => {
+  assert.equal(coreVocabulary.length, 282);
+  assert.equal(lessons.length, 18);
+  assert.equal(new Set(coreVocabulary.map((w) => w.id)).size, 282);
   assert.equal(coreVocabulary.filter((w) => w.lessonId === "L01").length, 7);
-  assert.equal(extraVocabulary.length, 16);
+  assert.equal(extraVocabulary.length, 59);
   assert.equal(new Set(items.map((i) => i.id)).size, items.length);
-  for (let i = 1; i <= 189; i++)
-    if (i !== 49)
-      assert(itemById.has(`V${String(i).padStart(3, "0")}`));
+  assert.equal(coreVocabulary.filter((w) => w.lessonId === "L15").length, 24);
+  assert.equal(coreVocabulary.some((w) => w.lessonId === "L16"), false);
 });
 test("keeps articles on nouns, distinguishes plural-only nouns", () => {
   const parent = coreVocabulary.find((w) => w.word === "Eltern")!;

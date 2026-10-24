@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-20",
+  "bindings": [
+    {
+      "questionId": "A13-L13-VRB-001",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-B"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-002",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-B"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-003",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-A"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-004",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-C"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-005",
+      "contentBasis": [
+        "KB13-3C"
+      ],
+      "exerciseBasis": [
+        "GT28-CASE"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-006",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-D"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-007",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-D"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-008",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-D"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-009",
+      "contentBasis": [
+        "KB13-3C"
+      ],
+      "exerciseBasis": [
+        "GT28-CASE"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-010",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-A"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-011",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-B"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-012",
+      "contentBasis": [
+        "KB13-3C"
+      ],
+      "exerciseBasis": [
+        "GT28-CASE"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-013",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-C"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-014",
+      "contentBasis": [
+        "KB13-12-GA"
+      ],
+      "exerciseBasis": [
+        "AB13-8B"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    },
+    {
+      "questionId": "A13-L13-VRB-015",
+      "contentBasis": [
+        "KB13-5A"
+      ],
+      "exerciseBasis": [
+        "AB13-6-C"
+      ],
+      "relationship": "newly_authored_from_topic_and_mechanic",
+      "authorship": "newly_authored",
+      "note": "German prompt and Thai feedback are newly authored; source entries support topic or exercise mechanic only."
+    }
+  ]
+}

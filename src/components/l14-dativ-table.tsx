@@ -5,6 +5,7 @@ import Image from "next/image";
 import type { Item } from "@/lib/content";
 import { activityPairs, type LearningActivity } from "@/lib/guided-learning";
 import { l14DativRows } from "@/lib/l14-dativ-learning";
+import { ArticleDot } from "./profession-matching";
 import { GermanListenText } from "./german-listen-text";
 
 export function L14DativTable({ activity, items, matchedIds, busy, onMatch }: {
@@ -22,10 +23,10 @@ export function L14DativTable({ activity, items, matchedIds, busy, onMatch }: {
     <div className="l14-dativ-guide">
       <p><strong lang="de">Wo?</strong> แปลว่า “อยู่ที่ไหน” เมื่อบอกตำแหน่ง คำนำหน้านามจะเปลี่ยนเป็นรูป <strong lang="de">Dativ</strong></p>
       <ul>
-        <li><span className="l14-dativ-guide-label"><span className="l14-dativ-dot masculine" aria-hidden="true" />เพศชาย</span><strong lang="de">der → dem</strong><span lang="de">ein → einem</span></li>
-        <li><span className="l14-dativ-guide-label"><span className="l14-dativ-dot neuter" aria-hidden="true" />เพศกลาง</span><strong lang="de">das → dem</strong><span lang="de">ein → einem</span></li>
-        <li><span className="l14-dativ-guide-label"><span className="l14-dativ-dot feminine" aria-hidden="true" />เพศหญิง</span><strong lang="de">die → der</strong><span lang="de">eine → einer</span></li>
-        <li><span className="l14-dativ-guide-label"><span className="l14-dativ-dot plural" aria-hidden="true" />พหูพจน์</span><strong lang="de">die → den</strong><span>คำนามมักเติม -n</span></li>
+        <li><span className="l14-dativ-guide-label"><ArticleDot article="der" />เพศชาย</span><strong lang="de">der → dem</strong><span lang="de">ein → einem</span></li>
+        <li><span className="l14-dativ-guide-label"><ArticleDot article="das" />เพศกลาง</span><strong lang="de">das → dem</strong><span lang="de">ein → einem</span></li>
+        <li><span className="l14-dativ-guide-label"><ArticleDot article="die" />เพศหญิง</span><strong lang="de">die → der</strong><span lang="de">eine → einer</span></li>
+        <li><span className="l14-dativ-guide-label"><ArticleDot article="plural" />พหูพจน์</span><strong lang="de">die → den</strong><span>คำนามมักเติม -n</span></li>
       </ul>
     </div>
     <div className="l14-dativ-heading" aria-hidden="true"><span>รูปเดิม</span><span lang="de">Wo?</span><span>รูป Dativ</span><span>ภาพประกอบ</span></div>
@@ -35,7 +36,7 @@ export function L14DativTable({ activity, items, matchedIds, busy, onMatch }: {
         if (!pair) return null;
         const solved = matchedIds.includes(pair.id);
         return <div className="l14-dativ-row" key={row.contentId}>
-          <div className="l14-dativ-original" lang="de"><span className={`l14-dativ-dot ${row.article}`} aria-hidden="true" />{row.nominative}</div>
+          <div className="l14-dativ-original" lang="de"><ArticleDot article={{ masculine: "der", neuter: "das", feminine: "die", plural: "plural" }[row.article]} />{row.nominative}</div>
           <div className="l14-dativ-preposition" lang="de"><span className="l14-dativ-mobile-label">Wo?</span>{row.preposition}</div>
           <div className="l14-dativ-answer">
             <span className="l14-dativ-mobile-label">Dativ</span>

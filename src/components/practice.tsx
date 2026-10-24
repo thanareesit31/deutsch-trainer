@@ -1,7 +1,9 @@
 "use client";
-import { useContent } from "./content-provider";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useContent } from "./content-provider";
+import { ArticleDot, ArticleLegend } from "./profession-matching";
+import { NounText, NounPrefix } from "./noun-text";
+import { nounPresentation } from "@/lib/noun-presentation";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
@@ -9,24 +11,17 @@ import {
   X,
   RotateCcw,
   Volume2,
-  Sparkles,
   Trophy,
-  ArrowLeft,
-  Info,
   CheckCircle2,
   AlertCircle,
 } from "lucide-react";
 import {
-  availableModes,
   modeLabels,
   skillName,
-  type Item,
-  type Mode,
-  type Skill,
 } from "@/lib/content";
 import { type Question } from "@/lib/engine";
-import { isTestWorkspaceUser, useStore } from "./store";
-import { Empty, Meter, SectionTitle } from "./ui";
+import { useStore } from "./store";
+import { Meter } from "./ui";
 import type { StartSession } from "./trainer";
 import { useLearning } from "./learning-store";
 import { diagnose, dimensionLabels } from "@/lib/learning";
@@ -40,289 +35,6 @@ export interface SessionPlan {
   position: number;
   completed: boolean;
 }
-export function PracticeSetup({
-  lessonId,
-  skill,
-  start,
-}: {
-  lessonId: string;
-  skill: Skill;
-  start: StartSession;
-}) {
-  const { items, lessons } = useContent();
-  const { data, user } = useStore();
-  const allowUnlearnedPractice = isTestWorkspaceUser(user);
-  const voice = useGermanVoice();
-  const history = useLearning();
-  const lesson = lessons.find((l) => l.id === lessonId)!;
-  const all = items.filter((i) => i.lessonId === lessonId && i.skill === skill);
-  const groups = [...new Set(all.map((i) => i.group))];
-  const [collection, setCollection] = useState("core");
-  const [group, setGroup] = useState(groups[0] || "");
-  const [mode, setMode] = useState<Mode>(
-    skill === "vocabulary"
-      ? data.settings.direction
-      : availableModes(skill, groups[0]).find((candidate) => candidate !== "flash") || "choice",
-  );
-  const [count, setCount] = useState(data.settings.sessionSize);
-  const [notice, setNotice] = useState("");
-  const prioritize = false;
-  const pool = all.filter(
-    (i) =>
-      (skill !== "vocabulary" ||
-        collection === "all" ||
-        i.collection === collection) &&
-      (skill !== "grammar" || i.group === group),
-  );
-  const learnedPool = pool.filter((i) =>
-    history.exposures.some((e) => e.item_id === i.id),
-  );
-  const practicePool = allowUnlearnedPractice ? pool : learnedPool;
-  const available =
-    mode === "article" ? practicePool.filter((i) => i.article) : practicePool;
-  const modes = availableModes(skill, group).filter(
-    (m) => m !== "flash" && (m !== "dialogue" || pool.every((item) => !!item.reply)),
-  );
-  async function begin() {
-    if (!available.length) {
-      setNotice(
-        mode === "article"
-          ? "ชุดนี้ไม่มีคำนามที่มี Artikel เลือกศัพท์เสริม หรือเลือกรูปแบบฝึกอื่นได้เลย"
-          : "ชุดนี้ยังไม่มีเนื้อหาสำหรับฝึก",
-      );
-      return;
-    }
-    if (skill === "listening" && !voice) {
-      setNotice(
-        "ยังไม่พบเสียงภาษาเยอรมันในอุปกรณ์ กรุณาเปิดหรือติดตั้งเสียงภาษาเยอรมัน แล้วโหลดหน้านี้ใหม่",
-      );
-      return;
-    }
-    start(
-      available,
-      mode,
-      count,
-      `${lessonId} · ${skillName(skill)}`,
-      `/practice/${lessonId}/${skill}`,
-      prioritize,
-    );
-  }
-  return (
-    <>
-      <Link href={`/lesson/${lessonId}`} className="back-link">
-        ← กลับไปเลือกทักษะ
-      </Link>
-      <div className="page-heading">
-        <div>
-          <span className="eyebrow">
-            {lesson.level} / {lessonId} / {lesson.title}
-          </span>
-          <h1>ฝึก{skillName(skill)}</h1>
-          <p>เลือกรูปแบบที่ชอบ แล้วเริ่มรอบเล็ก ๆ ของคุณ</p>
-        </div>
-      </div>
-      {all.length === 0 ? (
-        <Empty
-          title="กำลังเตรียมเนื้อหาทักษะนี้"
-          text="กลับไปฝึกคำศัพท์ประจำบทก่อนได้เลย"
-        >
-          <Link
-            className="button primary"
-            href={`/practice/${lessonId}/vocabulary`}
-          >
-            ฝึกคำศัพท์
-          </Link>
-        </Empty>
-      ) : (
-        <div className="setup-layout">
-          <section className="panel setup-panel">
-            {skill === "vocabulary" && (
-              <>
-                <SectionTitle
-                  eyebrow="01 · WORTSCHATZ"
-                  title="เลือกชุดคำศัพท์"
-                />
-                <div className="collection-options">
-                  {[
-                    { id: "core", name: "ศัพท์หลัก", sub: "ชุดเดิมจากบทเรียน" },
-                    {
-                      id: "extra",
-                      name: "ศัพท์เสริม",
-                      sub: "คำเพิ่มเติมในบริบท",
-                    },
-                    { id: "all", name: "ทั้งหมด", sub: "ฝึกสองชุดด้วยกัน" },
-                  ].map((c) => (
-                    <button
-                      className={collection === c.id ? "selected" : ""}
-                      onClick={() => {
-                        setCollection(c.id);
-                        setNotice("");
-                      }}
-                      key={c.id}
-                    >
-                      <strong>{c.name}</strong>
-                      <small>{c.sub}</small>
-                      <span>
-                        {
-                          all.filter(
-                            (i) => c.id === "all" || i.collection === c.id,
-                          ).length
-                        }{" "}
-                        คำ
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              </>
-            )}
-            {skill === "grammar" && (
-              <>
-                <SectionTitle
-                  eyebrow="01 · GRAMMATIK"
-                  title="เลือกหัวข้อไวยากรณ์"
-                />
-                <div className="topic-options">
-                  {groups.map((g) => (
-                    <button
-                      className={group === g ? "selected" : ""}
-                      onClick={() => {
-                        setGroup(g);
-                        setMode(availableModes(skill, g)[0]);
-                      }}
-                      key={g}
-                    >
-                      {g}
-                      <span>{all.filter((i) => i.group === g).length} ข้อ</span>
-                    </button>
-                  ))}
-                </div>
-              </>
-            )}
-            <SectionTitle
-              eyebrow={
-                skill === "vocabulary" || skill === "grammar"
-                  ? "02 · ÜBUNG"
-                  : "01 · ÜBUNG"
-              }
-              title="เลือกวิธีฝึก"
-            />
-            <div className="mode-options">
-              {modes.map((m) => (
-                <button
-                  key={m}
-                  className={mode === m ? "selected" : ""}
-                  onClick={() => {
-                    setMode(m);
-                    setNotice("");
-                  }}
-                >
-                  <span className="radio-dot" />
-                  {modeLabels[m]}
-                </button>
-              ))}
-            </div>
-            {mode === "typing" && skill === "vocabulary" && (
-              <div className="help-text">
-                <Sparkles size={17} />
-                <span>
-                  พิมพ์คำเต็มพร้อม Artikel ระบบจะบันทึกจุดที่ผิดแยกกัน
-                </span>
-              </div>
-            )}
-            {skill === "writing" && (
-              <div className="help-text">
-                <Info size={17} />
-                <span>
-                  เขียนจากคำใบ้และตรวจเทียบประโยคตัวอย่าง
-                  รองรับคำตอบทางเลือกที่ระบุไว้ในบทเรียน
-                </span>
-              </div>
-            )}
-            {skill === "listening" && (
-              <div className={`notice ${voice ? "" : "warning"}`}>
-                <Volume2 size={19} />
-                <span>
-                  {voice
-                    ? `ใช้เสียงสังเคราะห์ภาษาเยอรมันจากอุปกรณ์: ${voice.name}`
-                    : "ยังไม่พบเสียงภาษาเยอรมันในอุปกรณ์ เปิดหรือติดตั้งเสียงภาษาเยอรมันเพื่อเริ่มฝึกฟัง"}
-                </span>
-              </div>
-            )}
-            <SectionTitle eyebrow="DEINE SESSION" title="จำนวนข้อต่อรอบ" />
-            <div className="count-options">
-              {[5, 10, 20, 0].map((n) => (
-                <button
-                  key={n}
-                  onClick={() => setCount(n)}
-                  className={count === n ? "selected" : ""}
-                >
-                  {n || "ทั้งหมด"}
-                  {n > 0 && <small>ข้อ</small>}
-                </button>
-              ))}
-            </div>
-            {notice && (
-              <div role="alert" className="notice warning">
-                {notice}
-              </div>
-            )}
-            {available.length === 0 && (
-              <Empty
-                title="ยังไม่มีรายการที่เคยเรียนสำหรับแบบฝึกนี้"
-                text="เรียนเนื้อหาในชุดที่เลือกก่อน แล้วกลับมาฝึกได้ทันที"
-              >
-                <Link
-                  className="button primary"
-                  href={`/learn/${lessonId}/${skill}`}
-                >
-                  ไปเรียน
-                </Link>
-              </Empty>
-            )}
-            <button
-              disabled={!available.length || history.busy}
-              className="button primary wide"
-              onClick={begin}
-            >
-              เริ่มฝึก{" "}
-              {count ? Math.min(count, available.length) : available.length} ข้อ{" "}
-              <ArrowRight size={18} />
-            </button>
-          </section>
-          <aside className="setup-aside">
-            <span className="large-spark">✳</span>
-            <h3>
-              ค่อย ๆ จำ
-              <br />
-              จนกลายเป็นความมั่นใจ
-            </h3>
-            <p>
-              ฝึกเป็นรอบ มีจุดเริ่มและจุดจบ
-              <br />
-              ไม่สุ่มข้อเดิมซ้ำในรอบเดียวกัน
-            </p>
-            <ul>
-              <li>
-                <Check size={16} />
-                บันทึกทุกคำตอบทันที
-              </li>
-              <li>
-                <Check size={16} />
-                ดูเฉลยก่อนข้อต่อไป
-              </li>
-              <li>
-                <Check size={16} />
-                กลับมาฝึกเฉพาะข้อผิดได้
-              </li>
-            </ul>
-            <span className="aside-caption">Du schaffst das.</span>
-          </aside>
-        </div>
-      )}
-    </>
-  );
-}
-
 export function Session({
   plan,
   start,
@@ -388,7 +100,7 @@ export function Session({
           {results.map((r) => (
             <div key={r.question.item.id}>
               <span>
-                {r.question.item.title}
+                <NounText text={r.question.item.title} item={r.question.item} />
                 <small>{r.question.item.meaning}</small>
               </span>
               <strong
@@ -405,7 +117,7 @@ export function Session({
             {wrong.map((r) => (
               <div key={r.question.item.id}>
                 <span>
-                  {r.question.item.title}
+                  <NounText text={r.question.item.title} item={r.question.item} />
                   <small>{r.question.item.meaning}</small>
                 </span>
                 <strong>{r.question.answer}</strong>
@@ -514,6 +226,7 @@ function QuestionCard({
   isLast: boolean;
 }) {
   const history = useLearning();
+  const { items } = useContent();
   const attempt = history.attempts.find(
     (a) => a.session_id === sessionId && a.ordinal === position,
   );
@@ -551,19 +264,6 @@ function QuestionCard({
       answered.current = false;
     }
   }
-  async function confidence(value: string) {
-    try {
-      await history.act("confidence", {
-        sessionId,
-        position,
-        confidence: value,
-      });
-      setError("");
-    } catch (e) {
-      setError((e as Error).message);
-    }
-  }
-
   function speak() {
     if (!voice || !("speechSynthesis" in window)) {
       setError("อุปกรณ์นี้ยังไม่มีเสียงภาษาเยอรมัน กรุณาเปิดใช้งานเสียงก่อน");
@@ -603,6 +303,7 @@ function QuestionCard({
   }
   return (
     <div className="question-wrap">
+      {q.item.skill === "vocabulary" && <ArticleLegend />}
       <div className="question-meta">
         <span className="quiet-pill">
           {skillName(q.item.skill)} · {modeLabels[q.mode]}
@@ -664,11 +365,11 @@ function QuestionCard({
             >
               {isFlash && q.item.skill !== "vocabulary"
                 ? q.item.meaning
-                : q.prompt}
+                : q.mode === "article" ? q.prompt : <NounText text={q.prompt} items={items} />}
             </h2>
           </>
         )}
-        {q.item.pluralOnly && (
+        {q.item.pluralOnly && (q.mode !== "article" || feedback !== null) && (
           <span className="plural-label">Plural · พหูพจน์ ใช้ die</span>
         )}
         {q.mode === "article" && <p>{q.item.meaning}</p>}
@@ -682,8 +383,8 @@ function QuestionCard({
                     ? q.item.meaning
                     : q.item.answer}
                 </h3>
-                <strong lang="de">{q.item.title}</strong>
-                {q.item.plural && <p>Plural: die {q.item.plural}</p>}
+                <strong lang="de"><NounText text={q.item.title} item={q.item} /></strong>
+                {q.item.plural && <p>Plural: <ArticleDot article="plural" />die {q.item.plural}</p>}
               </div>
             ) : (
               <button
@@ -701,10 +402,7 @@ function QuestionCard({
             onSubmit={(e) => {
               e.preventDefault();
               if (feedback === null) check();
-              else if (
-                !history.busy &&
-                (!attempt?.correct || attempt.confidence)
-              )
+              else if (!history.busy)
                 onNext();
             }}
           >
@@ -718,11 +416,12 @@ function QuestionCard({
                       : "พิมพ์คำเต็ม"}
                   </span>
                   <strong lang="de">
-                    {q.item.article && `${q.item.article} `}
+                    <NounPrefix noun={nounPresentation(q.item)} />
                     {q.hint.text}
                   </strong>
                 </div>
               )}
+              {!q.hint && q.item.skill === "vocabulary" && <NounPrefix noun={nounPresentation(q.item)} />}
               <label htmlFor="answer-input" className="sr-only">
                 คำตอบภาษาเยอรมัน
               </label>
@@ -759,8 +458,7 @@ function QuestionCard({
               type="submit"
               disabled={
                 history.busy ||
-                (!answer.trim() && feedback === null) ||
-                (feedback === true && !attempt?.confidence)
+                (!answer.trim() && feedback === null)
               }
             >
               {feedback === null
@@ -840,7 +538,7 @@ function QuestionCard({
                 <span className="answer-letter">
                   {String.fromCharCode(65 + index)}
                 </span>
-                <span lang={q.mode === "de-th" ? "th" : "de"}>{option}</span>
+                <span lang={q.mode === "de-th" ? "th" : "de"}>{q.mode === "article" ? <span className="noun-text"><ArticleDot article={option} />{option}</span> : <NounText text={option} items={items} />}</span>
                 {feedback !== null && option === q.answer && (
                   <Check size={19} />
                 )}
@@ -872,27 +570,6 @@ function QuestionCard({
           {error}
         </div>
       )}
-      {feedback === true && (
-        <section className="panel" aria-label="ความมั่นใจ">
-          <h3>ตอบข้อนี้รู้สึกอย่างไร?</h3>
-          <div className="count-options">
-            {[
-              { id: "easy", label: "ง่าย" },
-              { id: "thought", label: "ต้องคิด" },
-              { id: "guess", label: "เดา" },
-            ].map((c) => (
-              <button
-                key={c.id}
-                className={attempt?.confidence === c.id ? "selected" : ""}
-                disabled={history.busy || !!attempt?.confidence}
-                onClick={() => void confidence(c.id)}
-              >
-                {c.label}
-              </button>
-            ))}
-          </div>
-        </section>
-      )}
       {feedback === false && (
         <div className="notice">
           จุดที่ควรฝึก:{" "}
@@ -921,12 +598,12 @@ function QuestionCard({
                   : "อีกนิดเดียว ลองจำคำตอบนี้นะ"}
               </strong>
               <p>
-                คำตอบ: <b lang="de">{q.answer}</b>
+                คำตอบ: <b lang="de">{q.mode === "article" ? <NounText text={q.item.answer} item={q.item} /> : <NounText text={q.answer} items={items} />}</b>
               </p>
               {q.item.skill === "grammar" && <p>{q.item.meaning}</p>}
               {q.item.skill === "vocabulary" && q.item.article && (
                 <p lang="de">
-                  {q.item.title}
+                  <NounText text={q.item.title} item={q.item} />
                   {q.item.plural ? ` · Plural: die ${q.item.plural}` : ""}
                 </p>
               )}
@@ -937,7 +614,7 @@ function QuestionCard({
             <button
               className="button primary"
               disabled={
-                history.busy || (feedback === true && !attempt?.confidence)
+                history.busy
               }
               autoFocus
               onClick={onNext}

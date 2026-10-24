@@ -9,15 +9,16 @@ import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
 import { grammarConjugationTopic } from "@/lib/grammar-conjugation";
 import { useContent } from "./content-provider";
 
-// Derive the learning hierarchy from the route, so direct links and reloads keep it.
+// Derive the navigation hierarchy from the route, so direct links and reloads keep it.
 export function LearningBreadcrumbs() {
   const path = usePathname();
   const { lessons, items } = useContent();
   const parts = path.split("/").filter(Boolean);
-  if (!["lesson", "learn"].includes(parts[0]) || !parts[1]) return null;
+  if (!["lesson", "learn", "practice"].includes(parts[0]) || !parts[1]) return null;
   const lesson = lessons.find((entry) => entry.id === parts[1]);
   if (!lesson) return null;
   const level = getLevel(lesson.id);
+  const practice = parts[0] === "practice";
   const imageGroup = parts[2] === "vocabulary"
     ? lesson.id === "L01" ? vocabularyImageGroups.find((group) => group.route === path)
       : lesson.id === "L13" ? l13VocabularyImageGroups.find((group) => group.route === path)
@@ -25,13 +26,49 @@ export function LearningBreadcrumbs() {
           : undefined
     : undefined;
   const crumbs = [
-    { label: level, href: `/learn?level=${level}` },
-    { label: `Lektion ${String(lesson.number).padStart(2, "0")}`, href: `/lesson/${lesson.id}` },
+    { label: level, href: `/${practice ? "practice" : "learn"}?level=${level}` },
+    { label: `Lektion ${String(lesson.number).padStart(2, "0")}`, href: practice ? `/practice/${lesson.id}` : `/lesson/${lesson.id}` },
   ];
+  if (practice && parts[2]) {
+    crumbs.push({ label: skills.find((skill) => skill.id === parts[2])?.de ?? parts[2], href: `/practice/${lesson.id}/${parts[2]}` });
+    const topicLabel = ({
+      rating: "แสดงความคิดเห็นต่อสถานที่",
+      city: "สิ่งที่มีในเมือง",
+      favorite: "สถานที่โปรด",
+      opinions: "ถามและแลกเปลี่ยนความคิดเห็น",
+      ask: "ถามทาง",
+      describe: "บอกทาง",
+      unknown: "บอกว่าไม่รู้ทาง",
+      thanks: "ขอบคุณ",
+      urban: "สถานที่ในเมือง",
+      culture: "ร้านค้าและวัฒนธรรม",
+      leisure: "สันทนาการและธรรมชาติ",
+      extra: "คำศัพท์เพิ่มเติม",
+      daily: "ฝึกต่อวันนี้",
+      "dativ-pilot": "Personalpronomen im Dativ",
+      "es-gibt": "Es gibt + Akkusativ",
+      verbs: "Verben",
+      "lokale-praepositionen": "Lokale Präpositionen",
+      "wo-dativ": "Wo? + Dativ",
+      possessivartikel: "Possessivartikel ihr/sein",
+      "temporale-praepositionen": "in / vor / nach",
+      werden: "werden",
+      wollen: "wollen + Infinitiv",
+      "mit-ohne": "mit / ohne",
+      "imperativ-sie": "Imperativ Sie",
+      sollen: "sollen + Infinitiv",
+      basic: "รอบพื้นฐาน",
+    } as Record<string, string>)[parts[3]];
+    if (topicLabel) crumbs.push({ label: topicLabel, href: path });
+  }
   if (parts[0] === "learn" && parts[2]) {
     crumbs.push({ label: skills.find((skill) => skill.id === parts[2])?.de ?? parts[2], href: `/learn/${lesson.id}/${parts[2]}` });
     if (parts[3]) {
       const l13Label = lesson.id === "L13" ? ({
+        "phrases:rating": "แสดงความคิดเห็นต่อสถานที่",
+        "phrases:city": "สิ่งที่มีในเมือง",
+        "phrases:favorite": "สถานที่โปรด",
+        "phrases:opinions": "ถามและแลกเปลี่ยนความคิดเห็น",
         "vocabulary:extra": "Zusatzwortschatz",
         "grammar:verben": "Verben",
         "grammar:adjektive": "Adjektive",
@@ -39,6 +76,8 @@ export function LearningBreadcrumbs() {
         "grammar:dativ": "Personalpronomen im Dativ",
       } as Record<string, string>)[`${parts[2]}:${parts[3]}`] : undefined;
       const a13Label = ({
+        "L13:vocabulary:challenge": "ฝึกคำศัพท์ขั้นสูง",
+        "L13:vocabulary:picture-article": "ดูภาพเลือก Artikel",
         "L14:vocabulary:directions": "Wege und Richtungen",
         "L14:grammar:lokale-praepositionen": "Lokale Präpositionen",
         "L14:grammar:wo-dativ": "Wo? + Dativ",
@@ -71,7 +110,7 @@ export function LearningBreadcrumbs() {
     }
   }
   return (
-    <nav className="learning-breadcrumbs" aria-label="เส้นทางบทเรียน">
+    <nav className="learning-breadcrumbs" aria-label={practice ? "เส้นทางแบบฝึกหัด" : "เส้นทางบทเรียน"}>
       <ol>{crumbs.map((crumb, index) => (
         <li key={crumb.href}>
           {index > 0 && <span className="breadcrumb-separator" aria-hidden="true">/</span>}

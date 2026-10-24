@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 1,
+  "id": "l13-verbs-pilot-v1",
+  "status": "review_prototype_not_published",
+  "title": "Verben",
+  "lessonId": "L13",
+  "topicId": "L13-verben-mit-dativ",
+  "authorship": "newly_authored",
+  "reviewedAt": "2026-10-20",
+  "reviewScope": "Author grammar and answer review; no independent educator review or publisher answer-key check.",
+  "defaultCount": 5,
+  "countOptions": [
+    5,
+    10,
+    "all"
+  ],
+  "description": "ฝึกผันกริยาที่ใช้ในบทนี้ และวางกริยาในประโยคสั้น",
+  "summaryNote": "ข้อเรียงคำมีคำให้แล้ว จึงไม่เท่ากับการเขียนประโยคเอง",
+  "skillLabels": {
+    "verb_conjugation": "ผันกริยาตามประธาน",
+    "verb_sentence_transform": "เปลี่ยนรูปประโยค",
+    "verb_word_order": "ลำดับคำ"
+  },
+  "storageKey": "deutsch-trainer:review-prototype:l13-verbs:v1",
+  "questions": [
+    {
+      "id": "A13-L13-VRB-001",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "Die Musik ___ mir.",
+      "options": [
+        "gefällt",
+        "gefallen",
+        "gefällst"
+      ],
+      "acceptedAnswers": [
+        "gefällt"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูประธานของกริยาและความหมายของประโยค",
+      "explanation": "Die Musik เป็นสิ่งเดียว จึงใช้รูป gefällt: Die Musik gefällt mir หมายถึง “ฉันชอบดนตรีนี้”",
+      "knownErrors": {
+        "gefallen": "verb_form",
+        "gefällst": "verb_form"
+      },
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-001"
+    },
+    {
+      "id": "A13-L13-VRB-002",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "Die Museen ___ uns.",
+      "options": [
+        "gefallen",
+        "gefällt",
+        "gefallt"
+      ],
+      "acceptedAnswers": [
+        "gefallen"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูประธานของกริยาและความหมายของประโยค",
+      "explanation": "Die Museen หมายถึงพิพิธภัณฑ์หลายแห่ง จึงใช้ gefallen",
+      "knownErrors": {
+        "gefällt": "verb_form",
+        "gefallt": "verb_form"
+      },
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-002"
+    },
+    {
+      "id": "A13-L13-VRB-003",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "Das Fahrrad ___ meinem Bruder.",
+      "options": [
+        "gehört",
+        "gehören",
+        "gehörst"
+      ],
+      "acceptedAnswers": [
+        "gehört"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูประธานของกริยาและความหมายของประโยค",
+      "explanation": "Das Fahrrad หมายถึงจักรยานหนึ่งคัน จึงใช้ gehört เพื่อบอกว่าเป็นของพี่ชายหรือน้องชายของฉัน",
+      "knownErrors": {
+        "gehören": "verb_form",
+        "gehörst": "verb_form"
+      },
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-003"
+    },
+    {
+      "id": "A13-L13-VRB-004",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "Ich ___ dir für deine Hilfe.",
+      "options": [
+        "danke",
+        "dankst",
+        "dankt"
+      ],
+      "acceptedAnswers": [
+        "danke"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูประธานของกริยาและความหมายของประโยค",
+      "explanation": "เมื่อประธานเป็น ich ให้ผัน danken เป็น danke: Ich danke dir หมายถึง “ฉันขอบคุณคุณ”",
+      "knownErrors": {
+        "dankst": "verb_form",
+        "dankt": "verb_form"
+      },
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-004"
+    },
+    {
+      "id": "A13-L13-VRB-005",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "Er ___ das Museum interessant.",
+      "options": [
+        "findet",
+        "finden",
+        "findest"
+      ],
+      "acceptedAnswers": [
+        "findet"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูประธานของกริยาและความหมายของประโยค",
+      "explanation": "เมื่อประธานเป็น er ให้ผัน finden เป็น findet เพื่อบอกว่าเขาคิดว่าพิพิธภัณฑ์น่าสนใจ",
+      "knownErrors": {
+        "finden": "verb_form",
+        "findest": "verb_form"
+      },
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-005"
+    },
+    {
+      "id": "A13-L13-VRB-006",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ helfen",
+      "sentence": "Wir ___ den Kindern.",
+      "acceptedAnswers": [
+        "helfen"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "ผันกริยาตามประธานที่เห็นในประโยค",
+      "explanation": "ประธานคือ wir หรือ “พวกเรา” จึงใช้ helfen ส่วน den Kindern หมายถึงเด็ก ๆ ที่เราช่วย",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-006"
+    },
+    {
+      "id": "A13-L13-VRB-007",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ helfen",
+      "sentence": "Du ___ deiner Schwester.",
+      "acceptedAnswers": [
+        "hilfst"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "ผันกริยาตามประธานที่เห็นในประโยค",
+      "explanation": "เมื่อประธานเป็น du กริยา helfen จะเปลี่ยนสระ e เป็น i จึงใช้ hilfst",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-007"
+    },
+    {
+      "id": "A13-L13-VRB-008",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ helfen",
+      "sentence": "Ihr ___ den Gästen.",
+      "acceptedAnswers": [
+        "helft"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "ผันกริยาตามประธานที่เห็นในประโยค",
+      "explanation": "เมื่อประธานเป็น ihr หรือ “พวกคุณ” ให้ผัน helfen เป็น helft",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-008"
+    },
+    {
+      "id": "A13-L13-VRB-009",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ besuchen",
+      "sentence": "Frau Meier ___ die Stadt.",
+      "acceptedAnswers": [
+        "besucht"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "ผันกริยาตามประธานที่เห็นในประโยค",
+      "explanation": "Frau Meier เป็นคนเดียว เช่นเดียวกับประธาน sie ในความหมายว่า “เธอ” จึงใช้ besucht",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-009"
+    },
+    {
+      "id": "A13-L13-VRB-010",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ gehören",
+      "sentence": "Die Jacke ___ meiner Freundin.",
+      "acceptedAnswers": [
+        "gehört"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "ผันกริยาตามประธานที่เห็นในประโยค",
+      "explanation": "Die Jacke หมายถึงเสื้อหนึ่งตัว จึงใช้ gehört เพื่อบอกว่าเสื้อเป็นของเพื่อนผู้หญิงของฉัน",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-010"
+    },
+    {
+      "id": "A13-L13-VRB-011",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ gefallen",
+      "sentence": "Die Parks ___ den Touristen.",
+      "acceptedAnswers": [
+        "gefallen"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "ผันกริยาตามประธานที่เห็นในประโยค",
+      "explanation": "Die Parks หมายถึงสวนหลายแห่ง จึงใช้ gefallen เพื่อบอกว่านักท่องเที่ยวชอบสวนเหล่านี้",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-011"
+    },
+    {
+      "id": "A13-L13-VRB-012",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ finden",
+      "sentence": "Du ___ den Zoo schön.",
+      "acceptedAnswers": [
+        "findest"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "ผันกริยาตามประธานที่เห็นในประโยค",
+      "explanation": "เมื่อประธานเป็น du ให้ผัน finden เป็น findest",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-012"
+    },
+    {
+      "id": "A13-L13-VRB-013",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ danken",
+      "sentence": "Wir ___ dir.",
+      "acceptedAnswers": [
+        "danken"
+      ],
+      "subskill": "verb_conjugation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "ผันกริยาตามประธานที่เห็นในประโยค",
+      "explanation": "เมื่อประธานเป็น wir ให้ผัน danken เป็น danken ส่วน dir หมายถึงคนที่เราขอบคุณ",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-013"
+    },
+    {
+      "id": "A13-L13-VRB-014",
+      "version": 2,
+      "kind": "order",
+      "prompt": "Wir finden den Brunnen schön. เรียงประโยคใหม่โดยใช้ gefallen",
+      "tokens": [
+        "Der Brunnen",
+        "gefällt",
+        "uns"
+      ],
+      "acceptedAnswers": [
+        "Der Brunnen gefällt uns"
+      ],
+      "subskill": "verb_sentence_transform",
+      "difficulty": 2,
+      "builtInSupport": "supplied_tokens",
+      "hint": "เริ่มจากคำต้นประโยค แล้ววางกริยาที่ผันในตำแหน่งที่สอง; คำถามแบบใช่/ไม่ใช่เริ่มด้วยกริยา",
+      "explanation": "เริ่มด้วย Der Brunnen ซึ่งหมายถึงน้ำพุหนึ่งแห่ง จึงใช้ gefällt ส่วน uns หมายถึงพวกเราที่ชอบน้ำพุ",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-014"
+    },
+    {
+      "id": "A13-L13-VRB-015",
+      "version": 2,
+      "kind": "order",
+      "prompt": "เรียงคำเป็นประโยคขอบคุณ",
+      "tokens": [
+        "Ich",
+        "danke",
+        "dir"
+      ],
+      "acceptedAnswers": [
+        "Ich danke dir"
+      ],
+      "subskill": "verb_word_order",
+      "difficulty": 2,
+      "builtInSupport": "supplied_tokens",
+      "hint": "เริ่มจากคำต้นประโยค แล้ววางกริยาที่ผันในตำแหน่งที่สอง; คำถามแบบใช่/ไม่ใช่เริ่มด้วยกริยา",
+      "explanation": "เริ่มด้วย Ich แล้ววางกริยา danke เป็นส่วนที่สอง ตามด้วย dir: Ich danke dir หมายถึง “ฉันขอบคุณคุณ”",
+      "knownErrors": {},
+      "topicId": "L13-verben-mit-dativ",
+      "requiredLearnedTopics": [
+        "L13-verben-mit-dativ"
+      ],
+      "variantGroup": "a13-l13-vrb-015"
+    }
+  ]
+}

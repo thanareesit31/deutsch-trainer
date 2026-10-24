@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "status": "review_prototype_not_published",
+  "reviewScope": "Author review; independent educator review pending",
+  "id": "l17-grammar-review-v1",
+  "lessonId": "L17",
+  "title": "ไวยากรณ์ Lektion 17",
+  "description": "ฝึกไวยากรณ์ตามหัวข้อของบท",
+  "summaryNote": "ผลรอบนี้เป็นชุดทดลอง และยังไม่รวมในความก้าวหน้าหลัก",
+  "storageKey": "deutsch-trainer:review-prototype:l17-grammar:v1",
+  "defaultCount": 9,
+  "skillLabels": {
+    "werden-choice": "werden · เลือกคำ",
+    "werden-cloze": "werden · พิมพ์คำ",
+    "werden-order": "werden · เรียงคำ",
+    "mit-ohne-choice": "mit / ohne · เลือกคำ",
+    "mit-ohne-cloze": "mit / ohne · พิมพ์คำ",
+    "mit-ohne-order": "mit / ohne · เรียงคำ",
+    "wollen-choice": "wollen + Infinitiv · เลือกคำ",
+    "wollen-cloze": "wollen + Infinitiv · พิมพ์คำ",
+    "wollen-order": "wollen + Infinitiv · เรียงคำ"
+  },
+  "sections": [
+    {
+      "topicId": "L17-werden",
+      "title": "werden",
+      "count": 3
+    },
+    {
+      "topicId": "L17-mit-ohne",
+      "title": "mit / ohne",
+      "count": 3
+    },
+    {
+      "topicId": "L17-wollen",
+      "title": "wollen + Infinitiv",
+      "count": 3
+    }
+  ],
+  "questions": [
+    {
+      "id": "A13-L17-WERDEN-001",
+      "version": 2,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Nina ___ Lehrerin.",
+      "options": [
+        "wird",
+        "werde",
+        "wirst"
+      ],
+      "acceptedAnswers": [
+        "wird"
+      ],
+      "subskill": "werden-choice",
+      "difficulty": 1,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "Nina เป็นคนเดียว ใช้ sie แทนได้ จึงผัน werden เป็น wird",
+      "knownErrors": {
+        "werde": "verb_form",
+        "wirst": "verb_form"
+      }
+    },
+    {
+      "id": "A13-L17-WERDEN-002",
+      "version": 2,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Wir ___ bald Eltern.",
+      "options": [
+        "werden",
+        "wird",
+        "werdet"
+      ],
+      "acceptedAnswers": [
+        "werden"
+      ],
+      "subskill": "werden-choice",
+      "difficulty": 1,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "ประธานคือ wir หรือ “พวกเรา” จึงใช้ werden เพื่อบอกว่ากำลังจะเป็นพ่อแม่",
+      "knownErrors": {
+        "wird": "verb_form",
+        "werdet": "verb_form"
+      }
+    },
+    {
+      "id": "A13-L17-WERDEN-003",
+      "version": 2,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Ich ___ Koch.",
+      "acceptedAnswers": [
+        "werde"
+      ],
+      "subskill": "werden-cloze",
+      "difficulty": 2,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "เมื่อประธานเป็น ich ให้ผัน werden เป็น werde: Ich werde Koch หมายถึง “ฉันจะเป็นพ่อครัว”",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L17-WERDEN-004",
+      "version": 2,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Du ___ Ingenieurin.",
+      "acceptedAnswers": [
+        "wirst"
+      ],
+      "subskill": "werden-cloze",
+      "difficulty": 2,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "เมื่อประธานเป็น du ให้ผัน werden เป็น wirst",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L17-WERDEN-005",
+      "version": 2,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-005",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Er wird Arzt.",
+      "tokens": [
+        "Er",
+        "wird",
+        "Arzt"
+      ],
+      "acceptedAnswers": [
+        "Er wird Arzt."
+      ],
+      "subskill": "werden-order",
+      "difficulty": 3,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "เริ่มด้วย Er แล้ววาง wird ตามด้วยอาชีพ Arzt: Er wird Arzt หมายถึง “เขาจะเป็นแพทย์”",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-001",
+      "version": 2,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Sie fährt mit ___ Bus.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "mit-ohne-choice",
+      "difficulty": 1,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "mit ใช้ Dativ ส่วน Bus เป็นเพศชาย จึงเปลี่ยน der Bus เป็น dem Bus",
+      "knownErrors": {
+        "den": "case",
+        "der": "case"
+      }
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-002",
+      "version": 2,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Er geht ohne ___ Schirm.",
+      "options": [
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "acceptedAnswers": [
+        "einen"
+      ],
+      "subskill": "mit-ohne-choice",
+      "difficulty": 1,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "ohne ใช้ Akkusativ ส่วน Schirm เป็นเพศชาย จึงเปลี่ยน ein Schirm เป็น einen Schirm",
+      "knownErrors": {
+        "einem": "case",
+        "ein": "case"
+      }
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-003",
+      "version": 2,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Ich komme mit ___ Freundin.",
+      "acceptedAnswers": [
+        "einer"
+      ],
+      "subskill": "mit-ohne-cloze",
+      "difficulty": 2,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "mit ใช้ Dativ ส่วน Freundin เป็นเพศหญิง จึงเปลี่ยน eine Freundin เป็น einer Freundin",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-004",
+      "version": 2,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Sie geht ohne ___ Hund.",
+      "acceptedAnswers": [
+        "den"
+      ],
+      "subskill": "mit-ohne-cloze",
+      "difficulty": 2,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "ohne ใช้ Akkusativ ส่วน Hund เป็นเพศชาย จึงเปลี่ยน der Hund เป็น den Hund",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-005",
+      "version": 2,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-005",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Ich fahre mit dem Zug.",
+      "tokens": [
+        "Ich",
+        "fahre",
+        "mit",
+        "dem",
+        "Zug"
+      ],
+      "acceptedAnswers": [
+        "Ich fahre mit dem Zug."
+      ],
+      "subskill": "mit-ohne-order",
+      "difficulty": 3,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "วาง fahre หลัง Ich ส่วน mit dem Zug หมายถึง “ด้วยรถไฟ” โดย dem เป็นรูป Dativ ของ der",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L17-WOLLEN-001",
+      "version": 2,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Ihr ___ heute Deutsch lernen.",
+      "options": [
+        "wollt",
+        "wollen",
+        "will"
+      ],
+      "acceptedAnswers": [
+        "wollt"
+      ],
+      "subskill": "wollen-choice",
+      "difficulty": 1,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ประธานคือ ihr หรือ “พวกคุณ” จึงผัน wollen เป็น wollt และวาง lernen ไว้ท้ายประโยค",
+      "knownErrors": {
+        "wollen": "verb_form",
+        "will": "verb_form"
+      }
+    },
+    {
+      "id": "A13-L17-WOLLEN-002",
+      "version": 2,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Frau Koch ___ morgen reisen.",
+      "options": [
+        "will",
+        "wollen",
+        "wollt"
+      ],
+      "acceptedAnswers": [
+        "will"
+      ],
+      "subskill": "wollen-choice",
+      "difficulty": 1,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "Frau Koch เป็นคนเดียว ใช้ sie ในความหมายว่า “เธอ” แทนได้ จึงใช้ will แล้ววาง reisen ไว้ท้ายประโยค",
+      "knownErrors": {
+        "wollen": "verb_form",
+        "wollt": "verb_form"
+      }
+    },
+    {
+      "id": "A13-L17-WOLLEN-003",
+      "version": 2,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Ich ___ Musiker werden.",
+      "acceptedAnswers": [
+        "will"
+      ],
+      "subskill": "wollen-cloze",
+      "difficulty": 2,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "เมื่อประธานเป็น ich ให้ผัน wollen เป็น will แล้ววาง werden ไว้ท้ายประโยค เพื่อบอกว่าอยากเป็นนักดนตรี",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L17-WOLLEN-004",
+      "version": 2,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Wir ___ eine Firma gründen.",
+      "acceptedAnswers": [
+        "wollen"
+      ],
+      "subskill": "wollen-cloze",
+      "difficulty": 2,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ประธานคือ wir จึงใช้ wollen แล้ววาง gründen ไว้ท้ายประโยค เพื่อบอกว่าอยากก่อตั้งบริษัท",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L17-WOLLEN-005",
+      "version": 2,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-005",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Sie will in Berlin studieren.",
+      "tokens": [
+        "Sie",
+        "will",
+        "in",
+        "Berlin",
+        "studieren"
+      ],
+      "acceptedAnswers": [
+        "Sie will in Berlin studieren."
+      ],
+      "subskill": "wollen-order",
+      "difficulty": 3,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "เริ่มด้วย Sie ตามด้วย will แล้ววาง studieren ไว้ท้ายประโยค ส่วน in Berlin บอกสถานที่ที่อยากเรียน",
+      "knownErrors": {}
+    }
+  ]
+}

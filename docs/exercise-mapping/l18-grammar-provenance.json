@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "status": "source_layout_review_pending_where_ocr_preliminary",
+  "bindings": [
+    {
+      "questionId": "A13-L18-IMPERATIV-SIE-001",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-3c"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-3c"
+      ]
+    },
+    {
+      "questionId": "A13-L18-IMPERATIV-SIE-002",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-3c"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-3c"
+      ]
+    },
+    {
+      "questionId": "A13-L18-IMPERATIV-SIE-003",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-3c"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-3c"
+      ]
+    },
+    {
+      "questionId": "A13-L18-IMPERATIV-SIE-004",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-3c"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-3c"
+      ]
+    },
+    {
+      "questionId": "A13-L18-IMPERATIV-SIE-005",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-3c"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-3c"
+      ]
+    },
+    {
+      "questionId": "A13-L18-SOLLEN-001",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-7"
+      ]
+    },
+    {
+      "questionId": "A13-L18-SOLLEN-002",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-7"
+      ]
+    },
+    {
+      "questionId": "A13-L18-SOLLEN-003",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-7"
+      ]
+    },
+    {
+      "questionId": "A13-L18-SOLLEN-004",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-7"
+      ]
+    },
+    {
+      "questionId": "A13-L18-SOLLEN-005",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L18-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L18-7"
+      ]
+    }
+  ]
+}

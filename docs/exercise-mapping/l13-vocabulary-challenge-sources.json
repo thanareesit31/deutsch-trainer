@@ -1,0 +1,2385 @@
+{
+  "version": 2,
+  "reviewedAt": "2026-10-24",
+  "activities": 88,
+  "newActivities": 76,
+  "responseSlots": 109,
+  "newByFormat": {
+    "story": 5,
+    "odd": 10,
+    "picture": 10,
+    "riddle": 10,
+    "build": 10,
+    "category": 5,
+    "crossword": 1,
+    "pictureArticle": 25
+  },
+  "attributionVisibility": "project_metadata_only",
+  "records": [
+    {
+      "activityId": "story-day",
+      "added": false,
+      "format": "story",
+      "difficulty": 3,
+      "responseIds": [
+        "story-market",
+        "story-museum",
+        "story-playground",
+        "story-cafe"
+      ],
+      "requiredItemIds": [
+        "L13-V010",
+        "L13-V019",
+        "L13-V013",
+        "L13-V018"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-1",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/1",
+        "adaptation": "คลังคำเติมในบทอ่านต่อเนื่อง; แต่งเรื่องและคำตอบใหม่ทั้งหมด"
+      }
+    },
+    {
+      "activityId": "odd-nature",
+      "added": false,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-nature"
+      ],
+      "requiredItemIds": [
+        "L13-V003",
+        "L13-V015",
+        "L13-V047",
+        "L13-V020"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-culture",
+      "added": false,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-culture"
+      ],
+      "requiredItemIds": [
+        "L13-V020",
+        "L13-V019",
+        "L13-V049",
+        "L13-V013"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-shopping",
+      "added": false,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-shopping"
+      ],
+      "requiredItemIds": [
+        "L13-V008",
+        "L13-V009",
+        "L13-V010",
+        "L13-V004"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "picture-rathaus",
+      "added": false,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-rathaus"
+      ],
+      "requiredItemIds": [
+        "L13-V007",
+        "L13-V014",
+        "L13-V006",
+        "L13-V005"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-hafen",
+      "added": false,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-hafen"
+      ],
+      "requiredItemIds": [
+        "L13-V007",
+        "L13-V014",
+        "L13-V006",
+        "L13-V005"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-brunnen",
+      "added": false,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-brunnen"
+      ],
+      "requiredItemIds": [
+        "L13-V007",
+        "L13-V014",
+        "L13-V006",
+        "L13-V005"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-schloss",
+      "added": false,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-schloss"
+      ],
+      "requiredItemIds": [
+        "L13-V007",
+        "L13-V014",
+        "L13-V006",
+        "L13-V005"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "riddle-kino",
+      "added": false,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-kino"
+      ],
+      "requiredItemIds": [
+        "L13-V020",
+        "L13-V013",
+        "L13-V021",
+        "L13-V007"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-playground",
+      "added": false,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-playground"
+      ],
+      "requiredItemIds": [
+        "L13-V020",
+        "L13-V013",
+        "L13-V021",
+        "L13-V007"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-apartment",
+      "added": false,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-apartment"
+      ],
+      "requiredItemIds": [
+        "L13-V020",
+        "L13-V013",
+        "L13-V021",
+        "L13-V007"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-rathaus",
+      "added": false,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-rathaus"
+      ],
+      "requiredItemIds": [
+        "L13-V020",
+        "L13-V013",
+        "L13-V021",
+        "L13-V007"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "picture-kirche",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-kirche"
+      ],
+      "requiredItemIds": [
+        "L13-V004",
+        "L13-V007",
+        "L13-V005",
+        "L13-V019"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-museum",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-museum"
+      ],
+      "requiredItemIds": [
+        "L13-V019",
+        "L13-V020",
+        "L13-V008",
+        "L13-V018"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-spielplatz",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-spielplatz"
+      ],
+      "requiredItemIds": [
+        "L13-V013",
+        "L13-V055",
+        "L13-V003",
+        "L13-V011"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-see",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-see"
+      ],
+      "requiredItemIds": [
+        "L13-V015",
+        "L13-V047",
+        "L13-V014",
+        "L13-V006"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-bruecke",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-bruecke"
+      ],
+      "requiredItemIds": [
+        "L13-V048",
+        "L13-V017",
+        "L13-V016",
+        "L13-V014"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-markt",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-markt"
+      ],
+      "requiredItemIds": [
+        "L13-V010",
+        "L13-V008",
+        "L13-V018",
+        "L13-V019"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-kino",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-kino"
+      ],
+      "requiredItemIds": [
+        "L13-V020",
+        "L13-V019",
+        "L13-V018",
+        "L13-V049"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-wohnung",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-wohnung"
+      ],
+      "requiredItemIds": [
+        "L13-V021",
+        "L13-V005",
+        "L13-V007",
+        "L13-V008"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-fluss",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-fluss"
+      ],
+      "requiredItemIds": [
+        "L13-V047",
+        "L13-V015",
+        "L13-V006",
+        "L13-V014"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "picture-fussballplatz",
+      "added": true,
+      "format": "picture",
+      "difficulty": 1,
+      "responseIds": [
+        "picture-fussballplatz"
+      ],
+      "requiredItemIds": [
+        "L13-V055",
+        "L13-V013",
+        "L13-V003",
+        "L13-V012"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3a",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3a",
+        "adaptation": "จับคู่ภาพกับชื่อสถานที่; ใช้ภาพเดี่ยวของโปรเจกต์แทนแผนที่ในหนังสือ"
+      }
+    },
+    {
+      "activityId": "odd-added-water",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-water"
+      ],
+      "requiredItemIds": [
+        "L13-V015",
+        "L13-V047",
+        "L13-V006",
+        "L13-V048"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-added-outdoor",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-outdoor"
+      ],
+      "requiredItemIds": [
+        "L13-V013",
+        "L13-V055",
+        "L13-V003",
+        "L13-V019"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-added-structures",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-structures"
+      ],
+      "requiredItemIds": [
+        "L13-V048",
+        "L13-V016",
+        "L13-V007",
+        "L13-V015"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-added-buy",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-buy"
+      ],
+      "requiredItemIds": [
+        "L13-V008",
+        "L13-V009",
+        "L13-V010",
+        "L13-V005"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-added-culture",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-culture"
+      ],
+      "requiredItemIds": [
+        "L13-V019",
+        "L13-V049",
+        "L13-V020",
+        "L13-V014"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-added-transport",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-transport"
+      ],
+      "requiredItemIds": [
+        "L13-V017",
+        "L13-V048",
+        "L13-V014",
+        "L13-V021"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-added-animals",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-animals"
+      ],
+      "requiredItemIds": [
+        "L13-V011",
+        "L13-V012",
+        "L13-V003",
+        "L13-V007"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-added-public",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-public"
+      ],
+      "requiredItemIds": [
+        "L13-V019",
+        "L13-V007",
+        "L13-V004",
+        "L13-V021"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-added-places",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-places"
+      ],
+      "requiredItemIds": [
+        "L13-V010",
+        "L13-V003",
+        "L13-V020",
+        "L13-V056"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "odd-added-land",
+      "added": true,
+      "format": "odd",
+      "difficulty": 2,
+      "responseIds": [
+        "odd-added-land"
+      ],
+      "requiredItemIds": [
+        "L13-V013",
+        "L13-V010",
+        "L13-V055",
+        "L13-V047"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-2",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/2",
+        "adaptation": "หาคำต่างกลุ่ม; ระบุเกณฑ์ความหมายให้มีคำตอบเดียว"
+      }
+    },
+    {
+      "activityId": "riddle-added-altstadt",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-altstadt"
+      ],
+      "requiredItemIds": [
+        "L13-V002",
+        "L13-V003",
+        "L13-V014",
+        "L13-V055"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-added-kirche",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-kirche"
+      ],
+      "requiredItemIds": [
+        "L13-V004",
+        "L13-V007",
+        "L13-V019",
+        "L13-V020"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-added-schloss",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-schloss"
+      ],
+      "requiredItemIds": [
+        "L13-V005",
+        "L13-V021",
+        "L13-V008",
+        "L13-V018"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-added-brunnen",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-brunnen"
+      ],
+      "requiredItemIds": [
+        "L13-V006",
+        "L13-V047",
+        "L13-V015",
+        "L13-V014"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-added-bruecke",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-bruecke"
+      ],
+      "requiredItemIds": [
+        "L13-V048",
+        "L13-V016",
+        "L13-V003",
+        "L13-V005"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-added-fluss",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-fluss"
+      ],
+      "requiredItemIds": [
+        "L13-V047",
+        "L13-V015",
+        "L13-V006",
+        "L13-V010"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-added-see",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-see"
+      ],
+      "requiredItemIds": [
+        "L13-V015",
+        "L13-V047",
+        "L13-V017",
+        "L13-V004"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-added-galerie",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-galerie"
+      ],
+      "requiredItemIds": [
+        "L13-V049",
+        "L13-V020",
+        "L13-V010",
+        "L13-V013"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-added-cafe",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-cafe"
+      ],
+      "requiredItemIds": [
+        "L13-V018",
+        "L13-V019",
+        "L13-V020",
+        "L13-V007"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "riddle-added-fussballplatz",
+      "added": true,
+      "format": "riddle",
+      "difficulty": 2,
+      "responseIds": [
+        "riddle-added-fussballplatz"
+      ],
+      "requiredItemIds": [
+        "L13-V055",
+        "L13-V013",
+        "L13-V011",
+        "L13-V006"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "ใช้การอนุมานคำจากคำบรรยายของปริศนาคำไขว้ ปรับเป็นเลือกคำ; ไม่อ้างว่าเป็นกิจกรรมคำไขว้"
+      }
+    },
+    {
+      "activityId": "build-altstadt",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-altstadt"
+      ],
+      "requiredItemIds": [
+        "L13-V002"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "build-spielplatz",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-spielplatz"
+      ],
+      "requiredItemIds": [
+        "L13-V013"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "build-rathaus",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-rathaus"
+      ],
+      "requiredItemIds": [
+        "L13-V007"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "build-tierpark",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-tierpark"
+      ],
+      "requiredItemIds": [
+        "L13-V012"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "build-fussballplatz",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-fussballplatz"
+      ],
+      "requiredItemIds": [
+        "L13-V055"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "build-lieblingsort",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-lieblingsort"
+      ],
+      "requiredItemIds": [
+        "L13-V044"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "build-lieblingsviertel",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-lieblingsviertel"
+      ],
+      "requiredItemIds": [
+        "L13-V045"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "build-strassenfest",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-strassenfest"
+      ],
+      "requiredItemIds": [
+        "L13-V056"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "build-geschaeft",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-geschaeft"
+      ],
+      "requiredItemIds": [
+        "L13-V008"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "build-brunnen",
+      "added": true,
+      "format": "build",
+      "difficulty": 3,
+      "responseIds": [
+        "build-brunnen"
+      ],
+      "requiredItemIds": [
+        "L13-V006"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "KB13-ST-W",
+        "sourceId": "MOMENTE_A1_2_KB",
+        "title": "MOMENTE A1 Kursbuch, Lektionen 13–24",
+        "printedPage": 12,
+        "pdfPage": 12,
+        "activity": "Schnelltest W",
+        "adaptation": "ประกอบส่วนคำเป็นชื่อสถานที่; ใช้ความหมายไทยช่วยระบุเป้าหมาย"
+      }
+    },
+    {
+      "activityId": "category-fluss",
+      "added": true,
+      "format": "category",
+      "difficulty": 1,
+      "responseIds": [
+        "category-fluss"
+      ],
+      "requiredItemIds": [
+        "L13-V047"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "WS-SORT-36",
+        "sourceId": "WORTSCHATZ_A1_TRAINING",
+        "title": "Wortschatz A1 – das Training",
+        "printedPage": 36,
+        "pdfPage": 35,
+        "activity": "B7/3",
+        "adaptation": "จัดคำในหมวดความหมาย; ปรับจากคำอาหารเป็นคำศัพท์เมืองที่เรียนแล้ว"
+      }
+    },
+    {
+      "activityId": "category-galerie",
+      "added": true,
+      "format": "category",
+      "difficulty": 1,
+      "responseIds": [
+        "category-galerie"
+      ],
+      "requiredItemIds": [
+        "L13-V049"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "WS-SORT-36",
+        "sourceId": "WORTSCHATZ_A1_TRAINING",
+        "title": "Wortschatz A1 – das Training",
+        "printedPage": 36,
+        "pdfPage": 35,
+        "activity": "B7/3",
+        "adaptation": "จัดคำในหมวดความหมาย; ปรับจากคำอาหารเป็นคำศัพท์เมืองที่เรียนแล้ว"
+      }
+    },
+    {
+      "activityId": "category-laden",
+      "added": true,
+      "format": "category",
+      "difficulty": 1,
+      "responseIds": [
+        "category-laden"
+      ],
+      "requiredItemIds": [
+        "L13-V009"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "WS-SORT-36",
+        "sourceId": "WORTSCHATZ_A1_TRAINING",
+        "title": "Wortschatz A1 – das Training",
+        "printedPage": 36,
+        "pdfPage": 35,
+        "activity": "B7/3",
+        "adaptation": "จัดคำในหมวดความหมาย; ปรับจากคำอาหารเป็นคำศัพท์เมืองที่เรียนแล้ว"
+      }
+    },
+    {
+      "activityId": "category-fussballplatz",
+      "added": true,
+      "format": "category",
+      "difficulty": 1,
+      "responseIds": [
+        "category-fussballplatz"
+      ],
+      "requiredItemIds": [
+        "L13-V055"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "WS-SORT-36",
+        "sourceId": "WORTSCHATZ_A1_TRAINING",
+        "title": "Wortschatz A1 – das Training",
+        "printedPage": 36,
+        "pdfPage": 35,
+        "activity": "B7/3",
+        "adaptation": "จัดคำในหมวดความหมาย; ปรับจากคำอาหารเป็นคำศัพท์เมืองที่เรียนแล้ว"
+      }
+    },
+    {
+      "activityId": "category-see",
+      "added": true,
+      "format": "category",
+      "difficulty": 1,
+      "responseIds": [
+        "category-see"
+      ],
+      "requiredItemIds": [
+        "L13-V015"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "WS-SORT-36",
+        "sourceId": "WORTSCHATZ_A1_TRAINING",
+        "title": "Wortschatz A1 – das Training",
+        "printedPage": 36,
+        "pdfPage": 35,
+        "activity": "B7/3",
+        "adaptation": "จัดคำในหมวดความหมาย; ปรับจากคำอาหารเป็นคำศัพท์เมืองที่เรียนแล้ว"
+      }
+    },
+    {
+      "activityId": "story-water",
+      "added": true,
+      "format": "story",
+      "difficulty": 3,
+      "responseIds": [
+        "water-river",
+        "water-bridge",
+        "water-lake"
+      ],
+      "requiredItemIds": [
+        "L13-V047",
+        "L13-V048",
+        "L13-V015"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-1",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/1",
+        "adaptation": "คลังคำเติมในบทอ่านต่อเนื่อง; แต่งเรื่องและคำตอบใหม่ทั้งหมด"
+      }
+    },
+    {
+      "activityId": "story-culture",
+      "added": true,
+      "format": "story",
+      "difficulty": 3,
+      "responseIds": [
+        "culture-museum",
+        "culture-gallery",
+        "culture-cinema",
+        "culture-cafe"
+      ],
+      "requiredItemIds": [
+        "L13-V019",
+        "L13-V049",
+        "L13-V020",
+        "L13-V018"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-1",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/1",
+        "adaptation": "คลังคำเติมในบทอ่านต่อเนื่อง; แต่งเรื่องและคำตอบใหม่ทั้งหมด"
+      }
+    },
+    {
+      "activityId": "story-family",
+      "added": true,
+      "format": "story",
+      "difficulty": 3,
+      "responseIds": [
+        "family-park",
+        "family-playground",
+        "family-zoo",
+        "family-football"
+      ],
+      "requiredItemIds": [
+        "L13-V003",
+        "L13-V013",
+        "L13-V011",
+        "L13-V055"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-1",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/1",
+        "adaptation": "คลังคำเติมในบทอ่านต่อเนื่อง; แต่งเรื่องและคำตอบใหม่ทั้งหมด"
+      }
+    },
+    {
+      "activityId": "story-old-town",
+      "added": true,
+      "format": "story",
+      "difficulty": 3,
+      "responseIds": [
+        "old-town",
+        "old-church",
+        "old-castle",
+        "old-fountain"
+      ],
+      "requiredItemIds": [
+        "L13-V002",
+        "L13-V004",
+        "L13-V005",
+        "L13-V006"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-1",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/1",
+        "adaptation": "คลังคำเติมในบทอ่านต่อเนื่อง; แต่งเรื่องและคำตอบใหม่ทั้งหมด"
+      }
+    },
+    {
+      "activityId": "story-shopping",
+      "added": true,
+      "format": "story",
+      "difficulty": 3,
+      "responseIds": [
+        "shopping-market",
+        "shopping-store",
+        "shopping-home"
+      ],
+      "requiredItemIds": [
+        "L13-V010",
+        "L13-V008",
+        "L13-V021"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-1",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/1",
+        "adaptation": "คลังคำเติมในบทอ่านต่อเนื่อง; แต่งเรื่องและคำตอบใหม่ทั้งหมด"
+      }
+    },
+    {
+      "activityId": "crossword-city-places",
+      "added": true,
+      "format": "crossword",
+      "difficulty": 3,
+      "responseIds": [
+        "crossword-city-market",
+        "crossword-city-playground",
+        "crossword-city-fountain",
+        "crossword-city-castle",
+        "crossword-city-townhall",
+        "crossword-city-lake"
+      ],
+      "requiredItemIds": [
+        "L13-V010",
+        "L13-V013",
+        "L13-V006",
+        "L13-V005",
+        "L13-V007",
+        "L13-V015",
+        "L13-V004"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "formatSource": {
+        "evidenceId": "AB12-13-3b",
+        "sourceId": "MOMENTE_A1_2_AB",
+        "title": "MOMENTE A1.2 Arbeitsbuch",
+        "printedPage": 6,
+        "pdfPage": 5,
+        "activity": "L13/3b",
+        "adaptation": "อ่านคำใบ้ เขียนตัวอักษรลงแถวที่เยื้องตำแหน่ง และอ่านคำเฉลยจากแนวตั้ง; คำใบ้และการเลือกคำแต่งใหม่"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V001",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V001"
+      ],
+      "requiredItemIds": [
+        "L13-V001"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V001",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V002",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V002"
+      ],
+      "requiredItemIds": [
+        "L13-V002"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V002",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V003",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V003"
+      ],
+      "requiredItemIds": [
+        "L13-V003"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V003",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V004",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V004"
+      ],
+      "requiredItemIds": [
+        "L13-V004"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V004",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V005",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V005"
+      ],
+      "requiredItemIds": [
+        "L13-V005"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V005",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V006",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V006"
+      ],
+      "requiredItemIds": [
+        "L13-V006"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V006",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V007",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V007"
+      ],
+      "requiredItemIds": [
+        "L13-V007"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V007",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V008",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V008"
+      ],
+      "requiredItemIds": [
+        "L13-V008"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V008",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V009",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V009"
+      ],
+      "requiredItemIds": [
+        "L13-V009"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V009",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V010",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V010"
+      ],
+      "requiredItemIds": [
+        "L13-V010"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V010",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V011",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V011"
+      ],
+      "requiredItemIds": [
+        "L13-V011"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V011",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V012",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V012"
+      ],
+      "requiredItemIds": [
+        "L13-V012"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V012",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V013",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V013"
+      ],
+      "requiredItemIds": [
+        "L13-V013"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V013",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V014",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V014"
+      ],
+      "requiredItemIds": [
+        "L13-V014"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V014",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V015",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V015"
+      ],
+      "requiredItemIds": [
+        "L13-V015"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V015",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V016",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V016"
+      ],
+      "requiredItemIds": [
+        "L13-V016"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V016",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V017",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V017"
+      ],
+      "requiredItemIds": [
+        "L13-V017"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V017",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V018",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V018"
+      ],
+      "requiredItemIds": [
+        "L13-V018"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V018",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V019",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V019"
+      ],
+      "requiredItemIds": [
+        "L13-V019"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V019",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V020",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V020"
+      ],
+      "requiredItemIds": [
+        "L13-V020"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V020",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V021",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V021"
+      ],
+      "requiredItemIds": [
+        "L13-V021"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V021",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V047",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V047"
+      ],
+      "requiredItemIds": [
+        "L13-V047"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V047",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V048",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V048"
+      ],
+      "requiredItemIds": [
+        "L13-V048"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V048",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V049",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V049"
+      ],
+      "requiredItemIds": [
+        "L13-V049"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V049",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    },
+    {
+      "activityId": "picture-article-L13-V055",
+      "added": true,
+      "format": "pictureArticle",
+      "difficulty": 2,
+      "responseIds": [
+        "picture-article-L13-V055"
+      ],
+      "requiredItemIds": [
+        "L13-V055"
+      ],
+      "contentSourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "publisherAnswersClaimed": false,
+      "assessment": {
+        "targetId": "L13-V055",
+        "subskill": "vocabulary_article",
+        "taskVersion": 1,
+        "difficulty": 2,
+        "assistance": "image-and-noun-no-article"
+      },
+      "formatSource": {
+        "evidenceId": "WEB-AUTHORED",
+        "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+        "title": "Deutsch Trainer original web content",
+        "printedPage": null,
+        "pdfPage": null,
+        "activity": null,
+        "adaptation": "รูปแบบที่ผู้ใช้ขอเพิ่ม: ภาพและชื่อคำนามไม่ใส่ Artikel แล้วเลือก der/die/das; ใช้ข้อมูล Artikel และภาพที่เรียนอยู่ในโปรเจกต์"
+      }
+    }
+  ]
+}

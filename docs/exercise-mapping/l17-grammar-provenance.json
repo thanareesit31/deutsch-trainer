@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "status": "source_layout_review_pending_where_ocr_preliminary",
+  "bindings": [
+    {
+      "questionId": "A13-L17-WERDEN-001",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-1"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-1"
+      ]
+    },
+    {
+      "questionId": "A13-L17-WERDEN-002",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-1"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-1"
+      ]
+    },
+    {
+      "questionId": "A13-L17-WERDEN-003",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-1"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-1"
+      ]
+    },
+    {
+      "questionId": "A13-L17-WERDEN-004",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-1"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-1"
+      ]
+    },
+    {
+      "questionId": "A13-L17-WERDEN-005",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-1"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-1"
+      ]
+    },
+    {
+      "questionId": "A13-L17-MIT-OHNE-001",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-5a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-5a"
+      ]
+    },
+    {
+      "questionId": "A13-L17-MIT-OHNE-002",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-5a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-5a"
+      ]
+    },
+    {
+      "questionId": "A13-L17-MIT-OHNE-003",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-5a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-5a"
+      ]
+    },
+    {
+      "questionId": "A13-L17-MIT-OHNE-004",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-5a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-5a"
+      ]
+    },
+    {
+      "questionId": "A13-L17-MIT-OHNE-005",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-5a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-5a"
+      ]
+    },
+    {
+      "questionId": "A13-L17-WOLLEN-001",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-6a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-6a"
+      ]
+    },
+    {
+      "questionId": "A13-L17-WOLLEN-002",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-6a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-6a"
+      ]
+    },
+    {
+      "questionId": "A13-L17-WOLLEN-003",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-6a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-6a"
+      ]
+    },
+    {
+      "questionId": "A13-L17-WOLLEN-004",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-6a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-6a"
+      ]
+    },
+    {
+      "questionId": "A13-L17-WOLLEN-005",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L17-6a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L17-6a"
+      ]
+    }
+  ]
+}

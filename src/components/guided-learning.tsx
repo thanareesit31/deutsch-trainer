@@ -33,9 +33,10 @@ import { ConjugationMatching, ConjugationSummary } from "./conjugation-matching"
 import { PronounMatching, PronounSummary } from "./pronoun-matching";
 import { prepareL02GrammarFlow, pronounGroups } from "@/lib/pronoun-learning";
 import { buildL13GrammarFlow, buildL14GrammarFlow, buildL14VocabularyFlow, buildL15GrammarFlow } from "@/lib/a13-grammar-learning";
-import { isTestWorkspaceUser, useStore } from "./store";
+import { isL14VocabularyPracticeAvailable, isTestWorkspaceUser, useStore } from "./store";
 import type { Item } from "@/lib/content";
 import type { LearningActivity } from "@/lib/guided-learning";
+import { clearLastLessonPageRequest, isLastLessonPageRequested } from "@/lib/test-workspace-last-page";
 
 const sectionDescriptions: Record<string, string> = {
   "Zahlen · Einer + und + Zehner": "ตัวเลข · หลักหน่วย + und + หลักสิบ",
@@ -149,7 +150,8 @@ function GuidedFlow({
   grammarTrack?: GrammarTrack;
 }) {
   const { user } = useStore();
-  const allowIncompleteNavigation = isTestWorkspaceUser(user);
+  const pilotAvailable = isTestWorkspaceUser(user);
+  const allowIncompleteNavigation = pilotAvailable;
   const { items } = useContent(),
     history = useLearning(),
     storage = useLessonState();
@@ -162,7 +164,10 @@ function GuidedFlow({
     ["es-gibt", "dativ", "possessivartikel"].includes(grammarTrack ?? "");
   const hasPositionQuiz = grammarTrack === "lokale-praepositionen";
   const hasEndContent = track === "numbers" || grammarTrack === "verbs" || grammarTrack === "pronouns" || hasPatternSummary || hasPositionQuiz;
+  const [testLastPage] = useState(() => isLastLessonPageRequested());
+  useLayoutEffect(() => { if (testLastPage) clearLastLessonPageRequest(); }, [testLastPage]);
   const [position, setPosition] = useState(() => {
+    if (testLastPage) return hasEndContent ? activities.length + (track === "numbers" ? 1 : 0) : Math.max(0, activities.length - 1);
     const first = activities.findIndex((a) => !state.learnedActivityIds.includes(a.id));
     return first < 0 ? hasEndContent ? activities.length + (track === "numbers" && state.numberEndPage === "board" ? 1 : 0) : Math.max(0, activities.length - 1) : first;
   });
@@ -214,6 +219,8 @@ function GuidedFlow({
   }
   const completed =
     !!activity && state.learnedActivityIds.includes(activity.id);
+  const l13GrammarFinished = lessonId === "L13" && grammarTrack === "verbs" &&
+    flow.activities.every((entry) => state.learnedActivityIds.includes(entry.id));
   const canAdvance = completed || (allowIncompleteNavigation && !hasPositionQuiz);
   const pairs = activity ? activityPairs(activity, items) : [];
   const matchedIds = activity ? (state.matches[activity.id] ?? []) : [];
@@ -314,7 +321,7 @@ function GuidedFlow({
         <h1 lang={activity ? "de" : "th"}>{sectionTitle}</h1>
         <p>{sectionDescription}</p>
       </header>}
-      {isProfession && <ArticleLegend />}
+      {(isProfession || activities.some(activity => activity.contentIds.some(id => items.some(item => item.id === id && item.article)))) && <ArticleLegend />}
       <div className="vocabulary-image-progress" aria-live="polite">
         <span>เรียนแล้ว {progressLearned} / {progressTotal} {progressUnit}</span>
         <div className="vocabulary-image-progress-track" aria-hidden="true">
@@ -455,7 +462,24 @@ function GuidedFlow({
       ) : (
         <section className="guided-card">
           {hasPositionQuiz ? <L14PositionQuiz /> : grammarTrack === "pronouns" ? <PronounSummary items={items} /> : grammarTrack === "verbs" ? <ConjugationSummary activities={activities} items={items} /> : hasPatternSummary ? <PatternSummary title={title} activities={activities} items={items} /> : track === "numbers" ? showNumberBoard ? <NumberSummaryBoard items={summaryItems} /> : <NumberObservations items={items} /> : null}
-          {!hasPositionQuiz && <div className="guided-navigation">
+          {l13GrammarFinished && (
+            <div className="grammar-practice-handoff">
+              <span className="eyebrow">เรียนครบ 3/3 หัวข้อ</span>
+              <h2>{pilotAvailable ? "อยากลองฝึกต่อไหม?" : "เรียนไวยากรณ์ครบแล้ว"}</h2>
+              <p>{pilotAvailable ? "ฝึกต่อเนื่อง Es gibt, Dativ และ Verben ได้ทันที" : "แบบฝึกพื้นฐานเปิดเฉพาะบัญชีทดลองในตอนนี้"}</p>
+              <div>
+                {pilotAvailable && <Link className="button primary" href="/practice/L13/grammar/basic">ทำแบบฝึกหัด</Link>}
+                <Link className="button secondary" href="/lesson/L13">กลับหน้าบทเรียน</Link>
+              </div>
+            </div>
+          )}
+          {testLastPage && lessonId === "L13" && grammarTrack === "verbs" && !l13GrammarFinished && pilotAvailable && (
+            <div className="grammar-practice-handoff">
+              <h2>อยากลองฝึกต่อไหม?</h2>
+              <Link className="button primary" href="/practice/L13/grammar/basic">ทำแบบฝึกหัด</Link>
+            </div>
+          )}
+          {!hasPositionQuiz && !l13GrammarFinished && <div className="guided-navigation">
             <button
               type="button"
               className="button secondary"
@@ -477,6 +501,11 @@ function GuidedFlow({
               <Link className="button primary" href={`/learn/${lessonId}/vocabulary/core`}>
                 เรียนคำศัพท์ต่อ
               </Link>
+            ) : hasPatternSummary && lessonId === "L14" && skill === "vocabulary" ? (
+              <>
+                {isL14VocabularyPracticeAvailable(user) && activities.every(entry => entry.contentIds.every(id => state.learnedContentIds.includes(id) || history.exposures.some(exposure => exposure.item_id === id))) && <Link className="button primary" href="/practice/L14/vocabulary/basic">ทำแบบฝึกหัด</Link>}
+                <Link className="button secondary" href={continuation.href}>{continuation.label}</Link>
+              </>
             ) : hasPatternSummary ? (
               <Link className="button primary" href={continuation.href}>{continuation.label}</Link>
             ) : skill === "vocabulary" ? (
@@ -485,6 +514,10 @@ function GuidedFlow({
                 href={`/learn/${lessonId}/phrases`}
               >
                 เรียนประโยคและสำนวนต่อ
+              </Link>
+            ) : lessonId === "L13" && grammarTrack === "verbs" ? (
+              <Link className="button primary" href={pilotAvailable ? "/practice/L13/grammar/basic" : "/learn/L13/grammar"}>
+                {pilotAvailable ? "ทำแบบฝึกหัด" : "กลับหัวข้อไวยากรณ์"}
               </Link>
             ) : grammarTrack && grammarTrack !== "sentences" ? (
               <Link className="button primary" href={grammarTrack === "pronouns" ? `/learn/${lessonId}/grammar/verbs` : `/learn/${lessonId}/phrases/sentences`}>

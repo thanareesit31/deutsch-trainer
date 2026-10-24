@@ -1,0 +1,621 @@
+{
+  "schemaVersion": 1,
+  "scope": "L13 Es gibt + Akkusativ and Verben pilot; inspected source activities and individual blanks",
+  "inspectedAt": "2026-10-20",
+  "answerBasis": "Visible book pages and grammar analysis; publisher answer keys not inspected.",
+  "sourceAvailability": "Momente Kursbuch, Momente Arbeitsbuch and Grammatik A1 – das Training inspected. Grammatik aktiv PDF was not available in this workspace for this pass.",
+  "entries": [
+    {
+      "id": "KB13-3C",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "printedPage": 11,
+      "pdfPage": 11,
+      "originalActivityId": "3c",
+      "mechanic": "spoken_opinion",
+      "decision": "adjacent_skill",
+      "note": "finden with Akkusativ is review, not the new Dativ verb pattern.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "KB13-4",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "printedPage": 11,
+      "pdfPage": 11,
+      "originalActivityId": "4",
+      "mechanic": "spoken_place_description",
+      "decision": "in_scope",
+      "note": "Rule box explicitly gives es gibt + Akkusativ across masculine, neuter, feminine and plural.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "KB13-5A",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "printedPage": 11,
+      "pdfPage": 11,
+      "originalActivityId": "5a",
+      "mechanic": "referent_arrows_and_pronoun_table",
+      "decision": "in_scope",
+      "note": "gefallen, danken, helfen and gehören appear with Dativ pronouns; conjugation itself is not tested in 5a.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "KB13-6A",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "printedPage": 11,
+      "pdfPage": 11,
+      "originalActivityId": "6a/3",
+      "mechanic": "guided_notes",
+      "decision": "partial",
+      "note": "The prompt asks what exists at a favorite place; open response is not machine gradable without a rubric.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "KB13-6B",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "printedPage": 12,
+      "pdfPage": 12,
+      "originalActivityId": "6b",
+      "mechanic": "guided_writing",
+      "decision": "mechanic_only",
+      "note": "Model uses es gibt and evaluation expressions; newly authored web sentences are shorter and constrained.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "KB13-6C",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "printedPage": 12,
+      "pdfPage": 12,
+      "originalActivityId": "6c",
+      "mechanic": "peer_question",
+      "decision": "mechanic_only",
+      "note": "Question with Gibt es appears as a model; open partner exchange is beyond the pilot.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "KB13-12-GA",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "printedPage": 12,
+      "pdfPage": 12,
+      "originalActivityId": "Schnelltest G/a",
+      "mechanic": "sentence_transformation",
+      "decision": "in_scope",
+      "note": "Transforms finden opinion into gefallen sentence; web tokens are new.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "KB13-12-GB",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "printedPage": 12,
+      "pdfPage": 12,
+      "originalActivityId": "Schnelltest G/b",
+      "mechanic": "sentence_transformation",
+      "decision": "in_scope",
+      "note": "Transforms ownership statement into gehören sentence; web prompts are new.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "KB13-12-GC",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "printedPage": 12,
+      "pdfPage": 12,
+      "originalActivityId": "Schnelltest G/c",
+      "mechanic": "sentence_transformation",
+      "decision": "in_scope",
+      "note": "Transforms a thanks expression into danken sentence; web prompts are new.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-1",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 6,
+      "pdfPage": 5,
+      "originalActivityId": "1",
+      "mechanic": "text_category_cloze",
+      "decision": "partial",
+      "note": "es gibt occurs repeatedly, but exercise tests city vocabulary rather than article case.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4A-1",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4a/1",
+      "mechanic": "map_multiple_choice",
+      "decision": "mechanic_only",
+      "note": "Selects negative plural with Bars; pilot has new context without book map.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4A-2",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4a/2",
+      "mechanic": "map_multiple_choice",
+      "decision": "mechanic_only",
+      "note": "Selects ein/kein with Rathaus; pilot has new context.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4A-3",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4a/3",
+      "mechanic": "map_multiple_choice",
+      "decision": "mechanic_only",
+      "note": "Selects einen/keinen with Park; pilot has new context.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4A-4",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4a/4",
+      "mechanic": "map_multiple_choice",
+      "decision": "mechanic_only",
+      "note": "Selects eine/keine with Kirche; pilot has new context.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4B",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4b",
+      "mechanic": "article_pattern_table",
+      "decision": "in_scope",
+      "note": "Sorts forms by gender, number and positive/negative count.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-1",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/example",
+      "mechanic": "text_cloze",
+      "decision": "worked_example",
+      "note": "viele with plural Cafés is prefilled and not scored as a source question.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-2",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/2",
+      "mechanic": "text_cloze",
+      "decision": "in_scope",
+      "note": "Single article or quantity blank before Kirche; web sentence and answer are newly authored.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-3",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/3",
+      "mechanic": "text_cloze",
+      "decision": "in_scope",
+      "note": "Single article or quantity blank before Markt; web sentence and answer are newly authored.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-4",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/4",
+      "mechanic": "text_cloze",
+      "decision": "in_scope",
+      "note": "Single article or quantity blank before Brunnen; web sentence and answer are newly authored.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-5",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/5",
+      "mechanic": "text_cloze",
+      "decision": "in_scope",
+      "note": "Single article or quantity blank before Rathaus; web sentence and answer are newly authored.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-6",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/6",
+      "mechanic": "text_cloze",
+      "decision": "in_scope",
+      "note": "Single article or quantity blank before Schloss; web sentence and answer are newly authored.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-7",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/7",
+      "mechanic": "text_cloze",
+      "decision": "in_scope",
+      "note": "Single article or quantity blank before Spielplätze; web sentence and answer are newly authored.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-8",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/8",
+      "mechanic": "text_cloze",
+      "decision": "in_scope",
+      "note": "Single article or quantity blank before Tierpark; web sentence and answer are newly authored.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-9",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/9",
+      "mechanic": "text_cloze",
+      "decision": "in_scope",
+      "note": "Single article or quantity blank before See; web sentence and answer are newly authored.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-4C-10",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 7,
+      "pdfPage": 6,
+      "originalActivityId": "4c/10",
+      "mechanic": "text_cloze",
+      "decision": "in_scope",
+      "note": "Single article or quantity blank before Schwimmbad; web sentence and answer are newly authored.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-6-A",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 8,
+      "pdfPage": 7,
+      "originalActivityId": "6/A",
+      "mechanic": "picture_verb_cloze",
+      "decision": "in_scope",
+      "note": "Picture prompt asks for the correct form of gehören; pilot uses a new sentence without reproducing the picture.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-6-B",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 8,
+      "pdfPage": 7,
+      "originalActivityId": "6/B",
+      "mechanic": "picture_verb_cloze",
+      "decision": "in_scope",
+      "note": "Picture prompt asks for the correct form of gefallen; pilot uses a new sentence without reproducing the picture.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-6-C",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 8,
+      "pdfPage": 7,
+      "originalActivityId": "6/C",
+      "mechanic": "picture_verb_cloze",
+      "decision": "in_scope",
+      "note": "Picture prompt asks for the correct form of danken; pilot uses a new sentence without reproducing the picture.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-6-D",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 8,
+      "pdfPage": 7,
+      "originalActivityId": "6/D",
+      "mechanic": "picture_verb_cloze",
+      "decision": "in_scope",
+      "note": "Picture prompt asks for the correct form of helfen; pilot uses a new sentence without reproducing the picture.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-7A",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 8,
+      "pdfPage": 7,
+      "originalActivityId": "7a",
+      "mechanic": "verb_and_pronoun_marking",
+      "decision": "review_only",
+      "note": "Recognition of Dativ verbs in a blog, not conjugation production.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "AB13-8B",
+      "sourceId": "MOMENTE_A1_2_AB",
+      "printedPage": 9,
+      "pdfPage": 8,
+      "originalActivityId": "8b",
+      "mechanic": "sentence_transformation",
+      "decision": "in_scope",
+      "note": "Partner writes a response by changing finden to gefallen; web uses a new city object.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "GT28-CASE",
+      "sourceId": "GRAMMATIK_A1_DAS_TRAINING",
+      "printedPage": 51,
+      "pdfPage": 51,
+      "originalActivityId": "28/rule table",
+      "mechanic": "case_reference",
+      "decision": "prerequisite_only",
+      "note": "Masculine singular Akkusativ -en is a prerequisite, not an es gibt exercise.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "GT28-2",
+      "sourceId": "GRAMMATIK_A1_DAS_TRAINING",
+      "printedPage": 51,
+      "pdfPage": 51,
+      "originalActivityId": "28/2",
+      "mechanic": "accusative_matching",
+      "decision": "mechanic_only",
+      "note": "Matching verb complements does not directly practice es gibt.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "noun gender and plural",
+        "Akkusativ article forms"
+      ],
+      "webUse": "newly_authored"
+    },
+    {
+      "id": "GT32-RULE",
+      "sourceId": "GRAMMATIK_A1_DAS_TRAINING",
+      "printedPage": 57,
+      "pdfPage": 57,
+      "originalActivityId": "32/rule table",
+      "mechanic": "case_reference",
+      "decision": "prerequisite_only",
+      "note": "Lists Dativ verbs and pronouns; does not test verb conjugation in this table.",
+      "inspectedAt": "2026-10-20",
+      "method": "visual_pdf",
+      "lesson": "L13",
+      "prerequisites": [
+        "Präsens conjugation",
+        "Dativ verb meaning"
+      ],
+      "webUse": "newly_authored"
+    }
+  ]
+}

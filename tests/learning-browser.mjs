@@ -187,18 +187,18 @@ try {
     "correct Thai choice is present in the learned item question",
   );
   await page
-    .getByRole("heading", { name: "ตอบข้อนี้รู้สึกอย่างไร?" })
+    .getByRole("button", { name: "ดูผลการฝึก" })
     .waitFor();
   assert.equal(
     (await db.query("select confidence from learning_attempts")).rows[0]
       .confidence,
     null,
-    "correct answer is persisted as pending before confidence",
+    "correct answer persists with unknown confidence",
   );
   assert.equal(
     (await db.query("select attempts from knowledge_state")).rows[0].attempts,
-    0,
-    "pending attempt is excluded from KnowledgeState",
+    1,
+    "checked attempt counts without confidence",
   );
 
   await page.getByRole("link", { name: "ความก้าวหน้า" }).first().click();
@@ -208,7 +208,7 @@ try {
   await page.getByLabel("ค้นหาคำศัพท์หรือหัวข้อ").fill(vocabulary.Word_German);
   const pendingRow = page.locator(".progress-table tbody tr").first();
   await pendingRow.waitFor();
-  assert.match(await pendingRow.locator("td").nth(2).innerText(), /0\s*\/\s*0/);
+  assert.match(await pendingRow.locator("td").nth(2).innerText(), /1\s*\/\s*1/);
   await pendingRow
     .getByRole("button", {
       name: /^ดูรายละเอียด /,
@@ -217,11 +217,11 @@ try {
   const detail = page.locator(".detail-dialog");
   assert.equal(
     await detail.locator(".detail-stats strong").nth(0).innerText(),
-    "0",
+    "1",
   );
   assert.equal(
     await detail.locator(".detail-stats strong").nth(1).innerText(),
-    "0",
+    "1",
   );
   assert.doesNotMatch(await detail.innerText(), /\bms\b|วินาที/);
   await detail.getByRole("button", { name: "ปิดรายละเอียด" }).click();
@@ -237,13 +237,13 @@ try {
   await page.goto(base + "/session?id=" + pendingSession.id);
   await page.locator(".session-heading").getByText("ข้อ 1 / 1").waitFor();
   await page
-    .getByRole("heading", { name: "ตอบข้อนี้รู้สึกอย่างไร?" })
+    .getByRole("button", { name: "ดูผลการฝึก" })
     .waitFor();
 
-  await page.getByRole("button", { name: "ง่าย" }).click();
+  assert(await page.getByRole("button", { name: "ดูผลการฝึก" }).isEnabled());
   await page.reload();
   await page
-    .getByRole("heading", { name: "ตอบข้อนี้รู้สึกอย่างไร?" })
+    .getByRole("button", { name: "ดูผลการฝึก" })
     .waitFor();
   assert.equal(
     (await db.query("select * from learning_attempts")).rows.length,
@@ -252,7 +252,7 @@ try {
   assert.equal(
     (await db.query("select attempts from knowledge_state")).rows[0].attempts,
     1,
-    "selecting confidence completes and exposes the attempt to knowledge",
+    "optional uncertainty does not duplicate the checked attempt",
   );
   const next = page.getByRole("button", { name: "ดูผลการฝึก" });
   if (await next.isEnabled()) await next.click();

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "status": "review_prototype_not_published",
+  "reviewScope": "Author review; independent educator review pending",
+  "id": "l15-grammar-review-v1",
+  "lessonId": "L15",
+  "title": "ไวยากรณ์ Lektion 15",
+  "description": "ฝึกไวยากรณ์ตามหัวข้อของบท",
+  "summaryNote": "ผลรอบนี้เป็นชุดทดลอง และยังไม่รวมในความก้าวหน้าหลัก",
+  "storageKey": "deutsch-trainer:review-prototype:l15-grammar:v1",
+  "defaultCount": 3,
+  "skillLabels": {
+    "possessivartikel-choice": "Possessivartikel ihr/sein · เลือกคำ",
+    "possessivartikel-cloze": "Possessivartikel ihr/sein · พิมพ์คำ",
+    "possessivartikel-order": "Possessivartikel ihr/sein · เรียงคำ"
+  },
+  "sections": [
+    {
+      "topicId": "L15-possessivartikel",
+      "title": "Possessivartikel ihr/sein",
+      "count": 3
+    }
+  ],
+  "questions": [
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-001",
+      "version": 2,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Tom hat einen Balkon. Ich finde ___ Balkon schön.",
+      "options": [
+        "seinen",
+        "sein",
+        "seine"
+      ],
+      "acceptedAnswers": [
+        "seinen"
+      ],
+      "subskill": "possessivartikel-choice",
+      "difficulty": 1,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "ระเบียงเป็นของ Tom จึงใช้ sein ส่วน Balkon เป็นเพศชายและเป็นกรรมของ finden จึงเปลี่ยนเป็น seinen Balkon",
+      "knownErrors": {
+        "sein": "possessive_form",
+        "seine": "possessive_form"
+      }
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-002",
+      "version": 2,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Klara hat ein Zimmer. ___ Zimmer ist groß.",
+      "options": [
+        "Ihr",
+        "Ihre",
+        "Ihren"
+      ],
+      "acceptedAnswers": [
+        "Ihr"
+      ],
+      "subskill": "possessivartikel-choice",
+      "difficulty": 1,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "ห้องเป็นของ Klara จึงใช้ ihr ส่วน Zimmer เป็นเพศกลาง จึงใช้ ihr Zimmer และเขียน Ihr ตัวใหญ่เมื่อเริ่มประโยค",
+      "knownErrors": {
+        "Ihre": "possessive_form",
+        "Ihren": "possessive_form"
+      }
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-003",
+      "version": 2,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Tom hat eine Küche. Ich finde ___ Küche schön.",
+      "acceptedAnswers": [
+        "seine"
+      ],
+      "subskill": "possessivartikel-cloze",
+      "difficulty": 2,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "ห้องครัวเป็นของ Tom จึงใช้ sein ส่วน Küche เป็นเพศหญิง จึงใช้ seine Küche",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-004",
+      "version": 2,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Klara hat eine Lampe. ___ Lampe ist neu.",
+      "acceptedAnswers": [
+        "Ihre"
+      ],
+      "subskill": "possessivartikel-cloze",
+      "difficulty": 2,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "โคมไฟเป็นของ Klara จึงใช้ ihr ส่วน Lampe เป็นเพศหญิง จึงใช้ ihre Lampe และเขียน Ihre ตัวใหญ่เมื่อเริ่มประโยค",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-005",
+      "version": 2,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-005",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Ich finde seinen Balkon schön.",
+      "tokens": [
+        "Ich",
+        "finde",
+        "seinen",
+        "Balkon",
+        "schön"
+      ],
+      "acceptedAnswers": [
+        "Ich finde seinen Balkon schön."
+      ],
+      "subskill": "possessivartikel-order",
+      "difficulty": 3,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "วาง finde หลัง Ich ระเบียงเป็นของเขาและเป็นกรรมเพศชาย จึงใช้ seinen Balkon แล้วปิดท้ายด้วย schön",
+      "knownErrors": {}
+    }
+  ]
+}

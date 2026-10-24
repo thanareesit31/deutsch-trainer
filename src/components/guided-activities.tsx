@@ -15,6 +15,7 @@ import {
 } from "@/lib/guided-learning";
 import { speakGermanText, useGermanVoice } from "./german-audio";
 import { useVocabularyAudio } from "./vocabulary-audio";
+import { NounText } from "./noun-text";
 import { GermanListenText } from "./german-listen-text";
 
 function shuffled<T>(values: T[]): T[] {
@@ -44,7 +45,7 @@ export function LearningValue({
       height={180}
     />
   ) : (
-    <span lang={/[\u0e00-\u0e7f]/u.test(value) ? "th" : "de"}>{value}</span>
+    <span lang={/[\u0e00-\u0e7f]/u.test(value) ? "th" : "de"}><NounText text={value} items={items} /></span>
   );
 }
 

@@ -1,0 +1,1039 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-20",
+  "purpose": "Internal source page locator and 108-slot scope index; not a verified question bank",
+  "numbering": "Printed book page, with PDF page kept separately",
+  "entries": [
+    {
+      "lessonId": "L01",
+      "title": "Ich heiße Miriam.",
+      "level": "A1.1",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        9,
+        12
+      ],
+      "pdfPages": [
+        11,
+        14
+      ],
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "contents_verified",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Begrüßung",
+            "Abschied",
+            "ประเทศ",
+            "กริยา"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [
+            "Verbkonjugation · kommen",
+            "Verbkonjugation · heißen",
+            "Verbkonjugation · lernen",
+            "sein",
+            "Personalpronomen",
+            "Satzbau"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [
+            "ทักทายและแนะนำตัว"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [
+            "เขียนจากคำใบ้"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [
+            "ฟังคำทักทาย"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [
+            "Lina und Sun"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L02",
+      "title": "Was macht ihr beruflich?",
+      "level": "A1.1",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        13,
+        16
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Beruf"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L03",
+      "title": "Das ist meine Schwester.",
+      "level": "A1.1",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        17,
+        20
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Familie"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L04",
+      "title": "Das Bild ist so schön.",
+      "level": "A1.1",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        27,
+        30
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Möbel",
+            "Elektrogeräte",
+            "Bad"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L05",
+      "title": "Ist das ein Tisch?",
+      "level": "A1.1",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        31,
+        34
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Gegenstände",
+            "Materialien",
+            "Farben"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L06",
+      "title": "Wir haben einen Termin.",
+      "level": "A1.1",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        35,
+        38
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Büro & Technik"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L07",
+      "title": "Sie können super tanzen!",
+      "level": "A1.2",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        45,
+        48
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Freizeitaktivitäten"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L08",
+      "title": "Ich habe leider keine Zeit.",
+      "level": "A1.2",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        49,
+        52
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Orte",
+            "Wochentage",
+            "Tageszeiten"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L09",
+      "title": "Ich mag Hamburger.",
+      "level": "A1.2",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        53,
+        56
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Essen und Trinken"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L10",
+      "title": "Wann kommst du denn an?",
+      "level": "A1.2",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        63,
+        66
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Orte",
+            "Verkehrsmittel",
+            "Gepäck",
+            "Fahrpläne und Durchsage"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L11",
+      "title": "Was haben Sie gestern gemacht?",
+      "level": "A1.2",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        67,
+        70
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Alltagsaktivitäten"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L12",
+      "title": "Im Frühling bin ich nach Hamburg gefahren.",
+      "level": "A1.2",
+      "courseBookSourceId": "MOMENTE_A1_1_KB",
+      "printedPages": [
+        71,
+        74
+      ],
+      "pdfPages": null,
+      "locatorEvidence": "A1.1 contents PDF pages 8–9; PDF 12 contains printed 10. Later scan pages are omitted, so other PDF ranges require individual checks.",
+      "scopeStatus": "printed_range_verified_pdf_locator_pending",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Jahreszeiten",
+            "Monate"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L13",
+      "title": "Berlin gefällt mir.",
+      "level": "A1.3",
+      "courseBookSourceId": "MOMENTE_A1_2_KB",
+      "printedPages": [
+        9,
+        12
+      ],
+      "pdfPages": [
+        9,
+        12
+      ],
+      "locatorEvidence": "A1.3 contents PDF page 6; printed and PDF page numbers cross checked at 33 and 36",
+      "scopeStatus": "contents_verified",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Orte in der Stadt",
+            "Adverbien & Wendungen",
+            "Weitere Wörter",
+            "Aktivitäten"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [
+            "Es gibt + Akkusativ",
+            "Personalpronomen im Dativ",
+            "Verben mit Dativ",
+            "Verben",
+            "Adjektive",
+            "es gibt + Akkusativ"
+          ],
+          "contentStatus": "pilot_bank",
+          "exerciseAuditStatus": "pilot_bank_only"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [
+            "Orte bewerten",
+            "Es gibt in der Stadt",
+            "Lieblingsort",
+            "Meinung & Fragen"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L14",
+      "title": "Vor dem Kaufhaus nach rechts.",
+      "level": "A1.3",
+      "courseBookSourceId": "MOMENTE_A1_2_KB",
+      "printedPages": [
+        13,
+        16
+      ],
+      "pdfPages": [
+        13,
+        16
+      ],
+      "locatorEvidence": "A1.3 contents PDF page 6; printed and PDF page numbers cross checked at 33 and 36",
+      "scopeStatus": "contents_verified",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Institutionen",
+            "Plätze und Wege",
+            "Wegbeschreibung"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [
+            "Lokale Präpositionen",
+            "Wo? + Dativ"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "other_learning_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L15",
+      "title": "Ich finde Ihr Zimmer schön.",
+      "level": "A1.3",
+      "courseBookSourceId": "MOMENTE_A1_2_KB",
+      "printedPages": [
+        17,
+        20
+      ],
+      "pdfPages": [
+        17,
+        20
+      ],
+      "locatorEvidence": "A1.3 contents PDF page 6; printed and PDF page numbers cross checked at 33 and 36",
+      "scopeStatus": "contents_verified",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [
+            "Wohnen und Zimmer",
+            "Teile der Wohnung",
+            "Möbel"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [
+            "Possessivartikel ihr/sein im Nominativ und Akkusativ",
+            "Possessivartikel"
+          ],
+          "contentStatus": "catalog_content_needs_question_audit",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L16",
+      "title": "Wir haben hier ein Problem.",
+      "level": "A1.3",
+      "courseBookSourceId": "MOMENTE_A1_2_KB",
+      "printedPages": [
+        27,
+        30
+      ],
+      "pdfPages": [
+        27,
+        30
+      ],
+      "locatorEvidence": "A1.3 contents PDF page 6; printed and PDF page numbers cross checked at 33 and 36",
+      "scopeStatus": "contents_verified",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [
+            "Temporale Präpositionen in/vor/nach"
+          ],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L17",
+      "title": "Ich will … werden.",
+      "level": "A1.3",
+      "courseBookSourceId": "MOMENTE_A1_2_KB",
+      "printedPages": [
+        31,
+        34
+      ],
+      "pdfPages": [
+        31,
+        34
+      ],
+      "locatorEvidence": "A1.3 contents PDF page 6; printed and PDF page numbers cross checked at 33 and 36",
+      "scopeStatus": "contents_verified",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [
+            "werden im Präsens",
+            "wollen + Infinitiv",
+            "mit/ohne"
+          ],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "L18",
+      "title": "Ich soll diese Übung machen.",
+      "level": "A1.3",
+      "courseBookSourceId": "MOMENTE_A1_2_KB",
+      "printedPages": [
+        35,
+        38
+      ],
+      "pdfPages": [
+        35,
+        38
+      ],
+      "locatorEvidence": "A1.3 contents PDF page 6; printed and PDF page numbers cross checked at 33 and 36",
+      "scopeStatus": "contents_verified",
+      "skills": [
+        {
+          "skill": "vocabulary",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "grammar",
+          "knownTopics": [
+            "Imperativ Sie",
+            "Modalverb sollen"
+          ],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "phrases",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "writing",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "listening",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        },
+        {
+          "skill": "reading",
+          "knownTopics": [],
+          "contentStatus": "content_and_question_audit_needed",
+          "exerciseAuditStatus": "pending_activity_review"
+        }
+      ]
+    }
+  ]
+}

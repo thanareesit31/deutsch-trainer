@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "status": "source_layout_review_pending_where_ocr_preliminary",
+  "bindings": [
+    {
+      "questionId": "A13-L15-POSSESSIVARTIKEL-001",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L15-quicktest"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L15-quicktest"
+      ]
+    },
+    {
+      "questionId": "A13-L15-POSSESSIVARTIKEL-002",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L15-quicktest"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L15-quicktest"
+      ]
+    },
+    {
+      "questionId": "A13-L15-POSSESSIVARTIKEL-003",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L15-quicktest"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L15-quicktest"
+      ]
+    },
+    {
+      "questionId": "A13-L15-POSSESSIVARTIKEL-004",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L15-quicktest"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L15-quicktest"
+      ]
+    },
+    {
+      "questionId": "A13-L15-POSSESSIVARTIKEL-005",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L15-quicktest"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L15-quicktest"
+      ]
+    }
+  ]
+}

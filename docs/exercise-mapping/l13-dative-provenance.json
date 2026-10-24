@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "bindings": [
+    {
+      "questionId": "A13-L13-DAT-001",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [],
+      "relationship": "new_choice_interaction",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-002",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [],
+      "relationship": "new_choice_interaction",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-003",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [],
+      "relationship": "new_choice_interaction",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-004",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [],
+      "relationship": "new_choice_interaction",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-005",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [],
+      "relationship": "new_choice_interaction",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-006",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "AB13-8a-2",
+        "AB13-8a-3",
+        "AB13-8a-4",
+        "AB13-8a-5"
+      ],
+      "relationship": "exercise_mechanic",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-007",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "AB13-8a-2",
+        "AB13-8a-3",
+        "AB13-8a-4",
+        "AB13-8a-5"
+      ],
+      "relationship": "exercise_mechanic",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-008",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "AB13-8a-2",
+        "AB13-8a-3",
+        "AB13-8a-4",
+        "AB13-8a-5"
+      ],
+      "relationship": "exercise_mechanic",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-009",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "AB13-8a-2",
+        "AB13-8a-3",
+        "AB13-8a-4",
+        "AB13-8a-5"
+      ],
+      "relationship": "exercise_mechanic",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-010",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "AB13-8a-2",
+        "AB13-8a-3",
+        "AB13-8a-4",
+        "AB13-8a-5"
+      ],
+      "relationship": "exercise_mechanic",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-011",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "AB13-8a-2",
+        "AB13-8a-3",
+        "AB13-8a-4",
+        "AB13-8a-5"
+      ],
+      "relationship": "exercise_mechanic",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-012",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "AB13-8a-2",
+        "AB13-8a-3",
+        "AB13-8a-4",
+        "AB13-8a-5"
+      ],
+      "relationship": "exercise_mechanic",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-013",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "AB13-8a-2",
+        "AB13-8a-3",
+        "AB13-8a-4",
+        "AB13-8a-5"
+      ],
+      "relationship": "exercise_mechanic",
+      "authorship": "newly_authored",
+      "note": "New prompt and Thai explanation; selected source records support topic/mechanic only."
+    },
+    {
+      "questionId": "A13-L13-DAT-014",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "GA23-2-1",
+        "GA23-2-4"
+      ],
+      "relationship": "new_word_tile_interaction_from_sentence_construction",
+      "authorship": "newly_authored",
+      "note": "No source prompt, picture or answer-key passage copied. Order tasks supply the pronoun and do not measure pronoun recall."
+    },
+    {
+      "questionId": "A13-L13-DAT-015",
+      "contentBasis": [
+        "KB13-5a-1",
+        "KB13-5a-2",
+        "KB13-5a-3"
+      ],
+      "exerciseBasis": [
+        "GA23-2-1",
+        "GA23-2-4"
+      ],
+      "relationship": "new_word_tile_interaction_from_sentence_construction",
+      "authorship": "newly_authored",
+      "note": "No source prompt, picture or answer-key passage copied. Order tasks supply the pronoun and do not measure pronoun recall."
+    }
+  ]
+}

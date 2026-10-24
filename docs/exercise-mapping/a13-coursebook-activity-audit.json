@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "MOMENTE_A1_2_KB",
+  "sourceScope": "Momente A1.2 course book, printed and PDF pages 9–20 and 27–38",
+  "purpose": "Internal exercise-mechanic audit; question authoring must use new learner-facing text",
+  "statuses": {
+    "visual_verified": "Instruction and exercise layout checked against a rendered book page",
+    "ocr_preliminary": "Read from the scanned page with OCR; visual check and answer review still required"
+  },
+  "activities": [
+    {"id":"A13-KB-L13-3a","lessonId":"L13","printedPage":10,"pdfPage":10,"originalActivityId":"3a","skills":["reading"],"mechanic":"read_blog_match_topics","objective":"Identify the topic of a section in a city blog","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L13-3b","lessonId":"L13","printedPage":10,"pdfPage":10,"originalActivityId":"3b","skills":["reading","grammar"],"mechanic":"correct_false_statements","objective":"Find evidence in a blog and correct an inaccurate statement","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L13-4","lessonId":"L13","printedPage":11,"pdfPage":11,"originalActivityId":"4","skills":["vocabulary","grammar"],"mechanic":"describe_local_places","objective":"Use names of city places and es gibt with accusative forms","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L13-5a","lessonId":"L13","printedPage":11,"pdfPage":11,"originalActivityId":"5a","skills":["grammar"],"mechanic":"identify_dative_referent","objective":"Connect a dative pronoun to the person in context","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L13-6b","lessonId":"L13","printedPage":12,"pdfPage":12,"originalActivityId":"6b","skills":["writing","phrases"],"mechanic":"write_favorite_place","objective":"Describe a favorite place using given communication frames","inspectionStatus":"visual_verified"},
+
+    {"id":"A13-KB-L14-3a","lessonId":"L14","printedPage":14,"pdfPage":14,"originalActivityId":"3a","skills":["listening"],"mechanic":"listen_trace_route","objective":"Follow spoken directions on a street map","inspectionStatus":"visual_verified","assetDependency":"original audio is unavailable for web reuse; author and record new audio"},
+    {"id":"A13-KB-L14-4a","lessonId":"L14","printedPage":14,"pdfPage":14,"originalActivityId":"4a","skills":["grammar"],"mechanic":"match_position_to_preposition","objective":"Name a static location with a local preposition","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L14-4b","lessonId":"L14","printedPage":15,"pdfPage":15,"originalActivityId":"4b","skills":["grammar"],"mechanic":"extract_article_rule","objective":"Choose a dative article after a location preposition","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L14-5a","lessonId":"L14","printedPage":15,"pdfPage":15,"originalActivityId":"5a","skills":["vocabulary","reading"],"mechanic":"read_map_complete_place_names","objective":"Use a map to identify city institutions","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L14-6","lessonId":"L14","printedPage":16,"pdfPage":16,"originalActivityId":"6a","skills":["phrases"],"mechanic":"classify_direction_phrases","objective":"Classify expressions for asking directions, giving directions, not knowing the way, and thanking","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L14-6b","lessonId":"L14","printedPage":16,"pdfPage":16,"originalActivityId":"6b","skills":["speaking","phrases"],"mechanic":"partner_direction_dialogue","objective":"Ask for and give directions with a partner using the course prompts","inspectionStatus":"visual_verified","assetDependency":"paired role information on printed pages 83 and 101 must be checked before adapting"},
+
+    {"id":"A13-KB-L15-2","lessonId":"L15","printedPage":18,"pdfPage":18,"originalActivityId":"2a","skills":["vocabulary"],"mechanic":"label_home_plan","objective":"Identify rooms and parts of a home","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L15-2b","lessonId":"L15","printedPage":18,"pdfPage":18,"originalActivityId":"2b","skills":["speaking","vocabulary"],"mechanic":"draw_and_describe_home_plan","objective":"Describe rooms on a self-drawn home plan to a partner","inspectionStatus":"visual_verified","assetDependency":"Open partner task needs a speaking review method"},
+    {"id":"A13-KB-L15-4","lessonId":"L15","printedPage":19,"pdfPage":19,"originalActivityId":"4","skills":["listening","grammar"],"mechanic":"listen_complete_possessive","objective":"Connect a speaker, owned object, and possessive article","inspectionStatus":"visual_verified","assetDependency":"original audio is unavailable for web reuse; author and record new audio"},
+    {"id":"A13-KB-L15-6b","lessonId":"L15","printedPage":19,"pdfPage":19,"originalActivityId":"6b","skills":["reading"],"mechanic":"read_chat_answer_details","objective":"Locate price, size, and opinion in a housing chat","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L15-7","lessonId":"L15","printedPage":20,"pdfPage":20,"originalActivityId":"7","skills":["reading","vocabulary"],"mechanic":"match_housing_advert","objective":"Select a housing advert from stated needs and constraints","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L15-quicktest","lessonId":"L15","printedPage":20,"pdfPage":20,"originalActivityId":"Schnelltest 2","skills":["grammar"],"mechanic":"complete_possessive_article","objective":"Use ihr or sein with the gender and case of a noun","inspectionStatus":"visual_verified"},
+
+    {"id":"A13-KB-L16-3","lessonId":"L16","printedPage":28,"pdfPage":28,"originalActivityId":"3","skills":["listening"],"mechanic":"listen_match_speakers","objective":"Identify people and facts in a service problem conversation","inspectionStatus":"visual_verified","assetDependency":"original audio is unavailable for web reuse; author and record new audio"},
+    {"id":"A13-KB-L16-4","lessonId":"L16","printedPage":28,"pdfPage":28,"originalActivityId":"4b","skills":["phrases"],"mechanic":"sort_help_requests","objective":"Distinguish offering help, requesting help, and responding","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L16-7","lessonId":"L16","printedPage":29,"pdfPage":29,"originalActivityId":"7","skills":["reading","grammar"],"mechanic":"read_message_extract_time","objective":"Locate meeting details and interpret in, vor, nach with dative","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L16-9a","lessonId":"L16","printedPage":30,"pdfPage":30,"originalActivityId":"9a","skills":["writing"],"mechanic":"write_appointment_proposal","objective":"Write a short appointment proposal with time and place","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L16-9","lessonId":"L16","printedPage":30,"pdfPage":30,"originalActivityId":"9b","skills":["writing"],"mechanic":"write_reschedule_reply","objective":"Write a reply that declines and proposes another appointment","inspectionStatus":"visual_verified"},
+
+    {"id":"A13-KB-L17-1","lessonId":"L17","printedPage":31,"pdfPage":31,"originalActivityId":"1","skills":["grammar","listening"],"mechanic":"recognize_werden_form_in_career_context","objective":"Recognize werde, wirst, wird when talking about becoming something","inspectionStatus":"visual_verified","assetDependency":"original audio is unavailable for web reuse; author and record new audio"},
+    {"id":"A13-KB-L17-3","lessonId":"L17","printedPage":32,"pdfPage":32,"originalActivityId":"3","skills":["reading"],"mechanic":"read_profiles_match_plans","objective":"Match plans and constraints to people in short profiles","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L17-5a","lessonId":"L17","printedPage":33,"pdfPage":33,"originalActivityId":"5a","skills":["grammar"],"mechanic":"choose_case_after_preposition","objective":"Choose dative after mit and accusative after ohne","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L17-6a","lessonId":"L17","printedPage":33,"pdfPage":33,"originalActivityId":"6a","skills":["grammar"],"mechanic":"complete_wollen_conjugation","objective":"Conjugate wollen and keep the infinitive at the sentence end","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L17-7a","lessonId":"L17","printedPage":34,"pdfPage":34,"originalActivityId":"7a","skills":["writing","phrases"],"mechanic":"write_personal_wishes","objective":"Write short work and personal plans with wollen","inspectionStatus":"visual_verified"},
+
+    {"id":"A13-KB-L18-3a","lessonId":"L18","printedPage":36,"pdfPage":36,"originalActivityId":"3a","skills":["reading"],"mechanic":"match_paragraph_headings","objective":"Recognize the problem, advice, and closing purpose in a health blog","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L18-3b","lessonId":"L18","printedPage":36,"pdfPage":36,"originalActivityId":"3b","skills":["reading"],"mechanic":"read_extract_details","objective":"Find time, cause, and effects stated in a health article","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L18-3c","lessonId":"L18","printedPage":36,"pdfPage":36,"originalActivityId":"3c","skills":["grammar","phrases"],"mechanic":"recognize_formal_imperative","objective":"Use verb first followed by Sie when giving formal advice","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L18-4a","lessonId":"L18","printedPage":36,"pdfPage":36,"originalActivityId":"4a","skills":["writing"],"mechanic":"write_short_advice","objective":"Write an original short formal health tip","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L18-5","lessonId":"L18","printedPage":36,"pdfPage":36,"originalActivityId":"5","skills":["vocabulary"],"mechanic":"body_part_memory","objective":"Recall names of body parts","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L18-7","lessonId":"L18","printedPage":37,"pdfPage":37,"originalActivityId":"7","skills":["grammar"],"mechanic":"transform_advice_with_sollen","objective":"Change a direct instruction into a statement with sollen and final infinitive","inspectionStatus":"visual_verified"},
+    {"id":"A13-KB-L18-8","lessonId":"L18","printedPage":38,"pdfPage":38,"originalActivityId":"8","skills":["phrases","writing"],"mechanic":"respond_to_health_problem","objective":"Choose or write advice for a stated problem","inspectionStatus":"visual_verified"}
+  ]
+}

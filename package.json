@@ -22,7 +22,19 @@
     "test:workspace": "node --test tests/test-workspace.test.mjs",
     "test:workspace-browser": "node tests/test-workspace-browser.mjs",
     "test:l02": "node --import tsx --test tests/l02-learning.test.ts",
-    "test:l02-browser": "node --import tsx tests/l02-learning-browser.mjs"
+    "test:l02-browser": "node --import tsx tests/l02-learning-browser.mjs",
+    "test:practice-account-browser": "node tests/account-practice-browser.mjs",
+    "test:vocabulary-practice-browser": "node tests/l13-vocabulary-practice-browser.mjs",
+    "test:vocabulary-practice-db": "node tests/vocabulary-practice-database.mjs",
+    "db:migrate-practice": "node --env-file=.env.local scripts/migrate-practice-accounts.mjs",
+    "test:vocabulary-learner-rollout": "node tests/vocabulary-learner-rollout-browser.mjs",
+    "test:vocabulary-production-smoke": "node tests/vocabulary-production-smoke.mjs",
+    "test:phrase-practice-db": "node tests/phrase-practice-database.mjs",
+    "test:phrase-practice-browser": "node tests/l13-phrase-practice-browser.mjs",
+    "build:phrase-practice": "node scripts/exercise-mapping/build-l13-phrases.mjs",
+    "audit:l13-vocabulary-challenge": "node --import tsx scripts/exercise-mapping/audit-l13-vocabulary-challenge.mjs",
+    "test:l13-vocabulary-challenge": "node --import tsx --test tests/l13-vocabulary-challenge.test.ts",
+    "test:l13-vocabulary-challenge-browser": "node --import tsx tests/l13-vocabulary-challenge-browser.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.78.0",

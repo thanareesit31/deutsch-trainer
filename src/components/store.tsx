@@ -178,7 +178,17 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         if (authError) throw authError;
         await hydrate(verified.user);
       })
-      .catch((cause: unknown) => {
+      .catch(async (cause: unknown) => {
+        if (cause instanceof Error && "status" in cause && (cause.status === 401 || cause.status === 403)) {
+          await client.auth.signOut({ scope: "local" });
+          if (alive) {
+            userRef.current = null;
+            setUser(null);
+            setError("การเข้าสู่ระบบหมดอายุ กรุณาเข้าสู่ระบบอีกครั้ง ข้อมูลที่บันทึกไว้ยังอยู่");
+            setReady(true);
+          }
+          return;
+        }
         if (alive) {
           const details = cause as {
             message?: string;
@@ -316,4 +326,21 @@ export function isTestWorkspaceUser(user: User | null) {
   return process.env.NODE_ENV !== "production" &&
     Boolean(process.env.NEXT_PUBLIC_TEST_WORKSPACE_ID) &&
     testWorkspaceEmails.has(user?.email?.toLowerCase() ?? "");
+}
+
+// Vocabulary rollout does not enable grammar prototypes for learner accounts.
+export function isVocabularyPracticeAvailable(user: User | null) {
+  return Boolean(user) && (isTestWorkspaceUser(user) || process.env.NEXT_PUBLIC_L13_VOCABULARY_PRACTICE === "true");
+}
+
+export function isPhrasePracticeAvailable(user: User | null) {
+ return Boolean(user) && (isTestWorkspaceUser(user) || process.env.NEXT_PUBLIC_L13_PHRASES_PRACTICE === "true");
+}
+
+export function isL14PhrasePracticeAvailable(user: User | null) {
+  return Boolean(user) && (isTestWorkspaceUser(user) || process.env.NEXT_PUBLIC_L14_PHRASES_PRACTICE === "true");
+}
+
+export function isL14VocabularyPracticeAvailable(user: User | null) {
+  return Boolean(user) && (isTestWorkspaceUser(user) || process.env.NEXT_PUBLIC_L14_VOCABULARY_PRACTICE === "true");
 }

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "status": "source_layout_review_pending_where_ocr_preliminary",
+  "bindings": [
+    {
+      "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L16-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L16-7"
+      ]
+    },
+    {
+      "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L16-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L16-7"
+      ]
+    },
+    {
+      "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L16-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L16-7"
+      ]
+    },
+    {
+      "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L16-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L16-7"
+      ]
+    },
+    {
+      "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L16-7"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L16-7"
+      ]
+    }
+  ]
+}

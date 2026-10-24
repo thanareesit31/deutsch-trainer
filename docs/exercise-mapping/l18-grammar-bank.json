@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "status": "review_prototype_not_published",
+  "reviewScope": "Author review; independent educator review pending",
+  "id": "l18-grammar-review-v1",
+  "lessonId": "L18",
+  "title": "ไวยากรณ์ Lektion 18",
+  "description": "ฝึกไวยากรณ์ตามหัวข้อของบท",
+  "summaryNote": "ผลรอบนี้เป็นชุดทดลอง และยังไม่รวมในความก้าวหน้าหลัก",
+  "storageKey": "deutsch-trainer:review-prototype:l18-grammar:v1",
+  "defaultCount": 6,
+  "skillLabels": {
+    "imperativ-sie-choice": "Imperativ Sie · เลือกคำ",
+    "imperativ-sie-cloze": "Imperativ Sie · พิมพ์คำ",
+    "imperativ-sie-order": "Imperativ Sie · เรียงคำ",
+    "sollen-choice": "sollen + Infinitiv · เลือกคำ",
+    "sollen-cloze": "sollen + Infinitiv · พิมพ์คำ",
+    "sollen-order": "sollen + Infinitiv · เรียงคำ"
+  },
+  "sections": [
+    {
+      "topicId": "L18-imperativ-sie",
+      "title": "Imperativ Sie",
+      "count": 3
+    },
+    {
+      "topicId": "L18-sollen",
+      "title": "sollen + Infinitiv",
+      "count": 3
+    }
+  ],
+  "questions": [
+    {
+      "id": "A13-L18-IMPERATIV-SIE-001",
+      "version": 2,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "___ Sie bitte langsam.",
+      "options": [
+        "Sprechen",
+        "Sprich",
+        "Sprecht"
+      ],
+      "acceptedAnswers": [
+        "Sprechen"
+      ],
+      "subskill": "imperativ-sie-choice",
+      "difficulty": 1,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "คำขอแบบสุภาพวางกริยานำหน้า Sie จึงใช้ Sprechen Sie bitte langsam หมายถึง “กรุณาพูดช้า ๆ”",
+      "knownErrors": {
+        "Sprich": "imperative_form",
+        "Sprecht": "imperative_form"
+      }
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-002",
+      "version": 2,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "___ Sie hier kurz.",
+      "options": [
+        "Warten",
+        "Wartet",
+        "Warte"
+      ],
+      "acceptedAnswers": [
+        "Warten"
+      ],
+      "subskill": "imperativ-sie-choice",
+      "difficulty": 1,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "คำขอแบบสุภาพใช้ Warten Sie เพื่อบอกว่า “กรุณารอ” ส่วน hier kurz หมายถึงให้รอตรงนี้สักครู่",
+      "knownErrors": {
+        "Wartet": "imperative_form",
+        "Warte": "imperative_form"
+      }
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-003",
+      "version": 2,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "___ Sie viel Wasser.",
+      "acceptedAnswers": [
+        "Trinken"
+      ],
+      "subskill": "imperativ-sie-cloze",
+      "difficulty": 2,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "เมื่อต้องการบอกให้ดื่มแบบสุภาพ ใช้ Trinken Sie ส่วน viel Wasser หมายถึง “น้ำมาก ๆ”",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-004",
+      "version": 2,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "___ Sie eine Pause.",
+      "acceptedAnswers": [
+        "Machen"
+      ],
+      "subskill": "imperativ-sie-cloze",
+      "difficulty": 2,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "เมื่อต้องการบอกให้พักแบบสุภาพ ใช้ Machen Sie eine Pause หมายถึง “กรุณาพักสักครู่”",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-005",
+      "version": 2,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-005",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Gehen Sie bitte nach Hause.",
+      "tokens": [
+        "Gehen",
+        "Sie",
+        "bitte",
+        "nach",
+        "Hause"
+      ],
+      "acceptedAnswers": [
+        "Gehen Sie bitte nach Hause."
+      ],
+      "subskill": "imperativ-sie-order",
+      "difficulty": 3,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "คำขอแบบสุภาพเริ่มด้วย Gehen Sie แล้วตามด้วย bitte และ nach Hause หมายถึง “กรุณากลับบ้าน”",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L18-SOLLEN-001",
+      "version": 2,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Du ___ heute zu Hause bleiben.",
+      "options": [
+        "sollst",
+        "soll",
+        "sollen"
+      ],
+      "acceptedAnswers": [
+        "sollst"
+      ],
+      "subskill": "sollen-choice",
+      "difficulty": 1,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "เมื่อประธานเป็น du ให้ผัน sollen เป็น sollst แล้ววาง bleiben ไว้ท้ายประโยค เพื่อบอกคำแนะนำให้อยู่บ้านวันนี้",
+      "knownErrors": {
+        "soll": "verb_form",
+        "sollen": "verb_form"
+      }
+    },
+    {
+      "id": "A13-L18-SOLLEN-002",
+      "version": 2,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Wir ___ mehr schlafen.",
+      "options": [
+        "sollen",
+        "soll",
+        "sollt"
+      ],
+      "acceptedAnswers": [
+        "sollen"
+      ],
+      "subskill": "sollen-choice",
+      "difficulty": 1,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ประธานคือ wir จึงใช้ sollen แล้ววาง schlafen ไว้ท้ายประโยค เพื่อบอกว่าพวกเราได้รับคำแนะนำให้นอนมากขึ้น",
+      "knownErrors": {
+        "soll": "verb_form",
+        "sollt": "verb_form"
+      }
+    },
+    {
+      "id": "A13-L18-SOLLEN-003",
+      "version": 2,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Ich ___ diese Übung machen.",
+      "acceptedAnswers": [
+        "soll"
+      ],
+      "subskill": "sollen-cloze",
+      "difficulty": 2,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "เมื่อประธานเป็น ich ให้ผัน sollen เป็น soll แล้ววาง machen ไว้ท้ายประโยค เพื่อบอกว่าได้รับคำแนะนำให้ทำแบบฝึกหัดนี้",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L18-SOLLEN-004",
+      "version": 2,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Frau Weber ___ mehr trinken.",
+      "acceptedAnswers": [
+        "soll"
+      ],
+      "subskill": "sollen-cloze",
+      "difficulty": 2,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "Frau Weber เป็นคนเดียว ใช้ sie ในความหมายว่า “เธอ” แทนได้ จึงใช้ soll แล้ววาง trinken ไว้ท้ายประโยค",
+      "knownErrors": {}
+    },
+    {
+      "id": "A13-L18-SOLLEN-005",
+      "version": 2,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-005",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Sie sollen heute mehr Wasser trinken.",
+      "tokens": [
+        "Sie",
+        "sollen",
+        "heute",
+        "mehr",
+        "Wasser",
+        "trinken"
+      ],
+      "acceptedAnswers": [
+        "Sie sollen heute mehr Wasser trinken."
+      ],
+      "subskill": "sollen-order",
+      "difficulty": 3,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "เริ่มด้วย Sie ตามด้วย sollen แล้ววาง trinken ไว้ท้ายประโยค เพื่อบอกคำแนะนำให้ดื่มน้ำมากขึ้นวันนี้",
+      "knownErrors": {}
+    }
+  ]
+}

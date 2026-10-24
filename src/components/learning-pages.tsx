@@ -1,4 +1,7 @@
 "use client";
+import { ArticleDot, ArticleLegend } from "./profession-matching";
+import { NounText } from "./noun-text";
+import { PracticeRecommendation } from "./practice-recommendation";
 import { dayKey } from "@/lib/engine";
 import { useContent } from "./content-provider";
 import Link from "next/link";
@@ -6,7 +9,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { LearningCategoryTabs } from "./learning-breadcrumbs";
 import { GermanListenText } from "./german-listen-text";
 import { ConjugationAudioForm, ConjugationBoard } from "./conjugation-matching";
-import { isTestWorkspaceUser, useStore } from "./store";
+import { isTestWorkspaceUser, isVocabularyPracticeAvailable, isPhrasePracticeAvailable, isL14PhrasePracticeAvailable, isL14VocabularyPracticeAvailable, useStore } from "./store";
 import {
   Sun,
   Check,
@@ -34,6 +37,7 @@ import {
   reviewCandidates,
 } from "@/lib/learning";
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
+import { clearLastLessonPageRequest, isLastLessonPageRequested } from "@/lib/test-workspace-last-page";
 import { useLearning } from "./learning-store";
 import { Empty, Meter, SectionTitle, skillIcons } from "./ui";
 import type { StartSession } from "./trainer";
@@ -116,6 +120,7 @@ export function LearningHome() {
           })}
         </span>
       </div>
+      <PracticeRecommendation />
       <section className="hero">
         <div className="hero-copy">
           <span className="hero-tag">
@@ -305,51 +310,167 @@ export function LearningHome() {
   );
 }
 
-export function PracticeEntry({ start }: { start: StartSession }) {
-  const { items, lessons } = useContent();
+export function PracticeEntry({ initialLevel = "A1.3" }: { initialLevel?: string }) {
   const { user } = useStore();
-  const allowUnlearnedPractice = isTestWorkspaceUser(user);
-  const h = useLearning();
-  const [lesson, setLesson] = useState(lessons[0].id);
+  const { lessons } = useContent();
+  const isTester = isTestWorkspaceUser(user);
+  const vocabularyAvailable = isVocabularyPracticeAvailable(user);
+  const l14VocabularyAvailable = isL14VocabularyPracticeAvailable(user);
+  const phrasesAvailable = isPhrasePracticeAvailable(user);
+  const l14PhrasesAvailable = isL14PhrasePracticeAvailable(user);
+  const readyTopicCount = isTester ? 27 : (vocabularyAvailable ? 4 : 0) + (phrasesAvailable ? 4 : 0) + (l14VocabularyAvailable ? 3 : 0) + (l14PhrasesAvailable ? 4 : 0);
+  const [level, setLevel] = useState(["A1.1", "A1.2", "A1.3"].includes(initialLevel) ? initialLevel : "A1.3");
   return (
     <>
       <div className="page-heading">
         <div>
-          <h1>แบบฝึกหัด</h1>
-          <p>{allowUnlearnedPractice ? "พื้นที่ทดสอบ: เลือกบทและทักษะเพื่อเริ่มฝึกจากเนื้อหาในระบบได้ทันที" : "ฝึกเฉพาะเนื้อหาที่เคยเรียน เลือกบทได้โดยไม่ต้องเรียนซ้ำ"}</p>
+          <span className="eyebrow">DEIN ÜBUNGSWEG</span>
+          <h1>แบบฝึกหัดของคุณ</h1>
+          <p>เลือกบทเพื่อดูหมวดและหัวข้อที่ฝึกได้</p>
         </div>
+        <span className="quiet-pill">{lessons.length} บทเรียน{readyTopicCount ? ` · ${readyTopicCount} หัวข้อพร้อมฝึก` : ""}</span>
       </div>
-      <label className="setting-label">
-        บทเรียน
-        <select value={lesson} onChange={(e) => setLesson(e.target.value)}>
-          {lessons.map((l) => (
-            <option key={l.id} value={l.id}>
-              {l.id} · {l.thai}
-            </option>
-          ))}
-        </select>
-      </label>
-      <div className="skills-grid">
-        {skills.map((s) => {
-          const count = items.filter(
-            (i) =>
-              i.lessonId === lesson &&
-              i.skill === s.id &&
-              h.exposures.some((e) => e.item_id === i.id),
-          ).length;
+      <PracticeRecommendation />
+      <h2 className="practice-grammar-list-heading">เลือกฝึกเอง</h2>
+      <div className="segmented level-switch" role="group" aria-label="เลือกระดับแบบฝึกหัด">
+        {["A1.1", "A1.2", "A1.3"].map((value) => (
+          <button
+            type="button"
+            className={level === value ? "selected" : ""}
+            onClick={() => setLevel(value)}
+            aria-pressed={level === value}
+            key={value}
+          >
+            {value}
+            <span>Lektion {value === "A1.1" ? "01–06" : value === "A1.2" ? "07–12" : "13–18"}</span>
+          </button>
+        ))}
+      </div>
+      <div className="lesson-grid" aria-label={`บทเรียนระดับ ${level}`}>
+        {lessons.filter((lesson) => lesson.level === level).map((lesson) => {
+          const ready = (isTester && ["L13", "L14", "L15", "L16", "L17", "L18"].includes(lesson.id)) || ((vocabularyAvailable || phrasesAvailable) && lesson.id === "L13") || (lesson.id==="L14"&&(l14PhrasesAvailable||l14VocabularyAvailable));
+          const topicCount = lesson.id === "L13" ? (isTester ? 11 : (vocabularyAvailable ? 4 : 0)+(phrasesAvailable ? 4 : 0)) : lesson.id === "L14" ? (isTester?9:(l14PhrasesAvailable?4:0)+(l14VocabularyAvailable?3:0)) : lesson.id === "L18" ? 2 : lesson.id === "L15" || lesson.id === "L16" ? 1 : 3;
           return (
-            <Link
-              className="skill-card"
-              href={`/practice/${lesson}/${s.id}`}
-              key={s.id}
-            >
-              <h2>{s.th}</h2>
-              <p>เคยเรียน {count} รายการ</p>
-              <span>เลือกแบบฝึก →</span>
+            <Link className="lesson-card practice-catalog-card" href={`/practice/${lesson.id}`} key={lesson.id}>
+              <div className="lesson-card-top">
+                <span className="lesson-num">{String(lesson.number).padStart(2, "0")}</span>
+                <span className={`practice-catalog-badge${ready ? "" : " pending"}`}>
+                  {ready ? `${topicCount} หัวข้อพร้อมฝึก` : "กำลังเตรียม"}
+                </span>
+              </div>
+              <span className="eyebrow">LEKTION {String(lesson.number).padStart(2, "0")}</span>
+              <h2>{lesson.title}</h2>
+              <p>{lesson.thai}</p>
+              <div className="lesson-tags"><span>6 หมวด</span></div>
+              <div className="lesson-card-bottom practice-catalog-bottom">
+                <span>ดูหมวดแบบฝึก</span>
+                <ArrowRight size={18} />
+              </div>
             </Link>
           );
         })}
       </div>
+    </>
+  );
+}
+
+const l13GrammarPracticeTopics = [
+  { title: "Es gibt + Akkusativ", href: "/practice/L13/grammar/es-gibt" },
+  { title: "Personalpronomen im Dativ", href: "/practice/L13/grammar/dativ-pilot" },
+  { title: "Verben", href: "/practice/L13/grammar/verbs" },
+] as const;
+const additionalGrammarPracticeTopics = {
+  L14: [
+    { title: "Lokale Präpositionen", href: "/practice/L14/grammar/lokale-praepositionen" },
+    { title: "Wo? + Dativ", href: "/practice/L14/grammar/wo-dativ" },
+  ],
+  L15: [
+    { title: "Possessivartikel ihr/sein", href: "/practice/L15/grammar/possessivartikel" },
+  ],
+  L16: [
+    { title: "in / vor / nach", href: "/practice/L16/grammar/temporale-praepositionen" },
+  ],
+  L17: [
+    { title: "werden", href: "/practice/L17/grammar/werden" },
+    { title: "mit / ohne", href: "/practice/L17/grammar/mit-ohne" },
+    { title: "wollen + Infinitiv", href: "/practice/L17/grammar/wollen" },
+  ],
+  L18: [
+    { title: "Imperativ Sie", href: "/practice/L18/grammar/imperativ-sie" },
+    { title: "sollen + Infinitiv", href: "/practice/L18/grammar/sollen" },
+  ],
+} as const;
+
+export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
+  const { user } = useStore();
+  const { lessons } = useContent();
+  const lesson = lessons.find((entry) => entry.id === lessonId);
+  const pilotAvailable = ["L13", "L14", "L15", "L16", "L17", "L18"].includes(lessonId) && isTestWorkspaceUser(user);
+  const grammarTopicCount = lessonId === "L14" || lessonId === "L18" ? 2 : lessonId === "L15" || lessonId === "L16" ? 1 : 3;
+
+  if (!lesson) return null;
+
+  return (
+    <>
+      <div className="lesson-heading practice-lesson-heading">
+        <span className="lesson-heading-num">{String(lesson.number).padStart(2, "0")}</span>
+        <div>
+          <span className="eyebrow">{lesson.level} / LEKTION {String(lesson.number).padStart(2, "0")}</span>
+          <h1>{lesson.title}</h1>
+          <p>{lesson.thai}</p>
+        </div>
+      </div>
+      <SectionTitle title="วันนี้อยากฝึกทักษะไหน?" eyebrow="EIN SCHRITT WEITER" />
+      <div className="skills-grid">
+        {skills.map((skill) => {
+          const Icon = skillIcons[skill.id];
+          const available = (skill.id === "phrases" && ((lessonId === "L13" && isPhrasePracticeAvailable(user)) || (lessonId === "L14" && isL14PhrasePracticeAvailable(user)))) || (pilotAvailable && skill.id === "grammar") || (skill.id === "vocabulary" && ((lessonId === "L13" && isVocabularyPracticeAvailable(user)) || (lessonId === "L14" && isL14VocabularyPracticeAvailable(user))));
+          const content = <>
+            <div className="skill-top">
+              <span className={`icon-tile large ${skill.color}`}><Icon size={24} /></span>
+              {available ? <ArrowUpRight size={20} /> : <span className="quiet-pill">กำลังเตรียมแบบฝึก</span>}
+            </div>
+            <span className="eyebrow">{skill.de}</span>
+            <h2>{skill.th}</h2>
+            <p>{skill.description}</p>
+            {available && <div className="skill-count">{skill.id === "vocabulary" ? lessonId === "L14" ? 3 : 4 : skill.id === "phrases" ? 4 : grammarTopicCount} หัวข้อพร้อมฝึก</div>}
+          </>;
+          return available ? (
+            <Link className="skill-card" href={`/practice/${lessonId}/${skill.id}`} key={skill.id}>{content}</Link>
+          ) : (
+            <div className="skill-card unavailable" key={skill.id}>{content}</div>
+          );
+        })}
+      </div>
+      {pilotAvailable && <p className="practice-catalog-note">ผลชุดทดลองนี้ยังไม่รวมในความก้าวหน้าหลัก</p>}
+    </>
+  );
+}
+
+export function PracticeGrammarTopics({ lessonId = "L13" }: { lessonId?: string }) {
+  const { user } = useStore();
+  if (!isTestWorkspaceUser(user)) return <PracticeEntry />;
+  const topics = lessonId === "L14" ? additionalGrammarPracticeTopics.L14
+    : lessonId === "L15" ? additionalGrammarPracticeTopics.L15
+    : lessonId === "L16" ? additionalGrammarPracticeTopics.L16
+    : lessonId === "L17" ? additionalGrammarPracticeTopics.L17
+    : lessonId === "L18" ? additionalGrammarPracticeTopics.L18
+    : l13GrammarPracticeTopics;
+  const topicCount = topics.length;
+
+  return (
+    <>
+      <h1 className="sr-only">แบบฝึกไวยากรณ์บท {lessonId.slice(1)}</h1>
+      <h2 className="practice-grammar-list-heading">{topicCount > 1 ? "ฝึกเฉพาะหัวข้อ" : "หัวข้อที่ฝึกได้"}</h2>
+      <div className="practice-grammar-topic-list">
+        {topics.map((topic) => (
+          <Link className="practice-grammar-topic" href={topic.href} key={topic.title}>
+            <div><h2>{topic.title}</h2><p>5 ข้อต่อรอบ · คลัง {lessonId === "L13" ? 15 : 5} ข้อ</p></div>
+            <span>เริ่มฝึก <ArrowRight size={18} /></span>
+          </Link>
+        ))}
+      </div>
+      <p className="practice-catalog-note">ผลชุดทดลองนี้ยังไม่รวมในความก้าวหน้าหลัก</p>
     </>
   );
 }
@@ -390,6 +511,7 @@ export function ReviewPage({ start }: { start: StartSession }) {
       </div>
       {reviewItems.length ? (
         <section className="panel review-summary">
+          <ArticleLegend />
           <h2>{reviewItems.length} รายการที่รอทบทวน</h2>
           <p>คิวนี้อ้างอิงจากคำตอบครั้งล่าสุดและระดับความมั่นใจ</p>
           <div className="review-list">
@@ -399,10 +521,10 @@ export function ReviewPage({ start }: { start: StartSession }) {
               const reason = !latest.correct
                 ? "ตอบผิดล่าสุด"
                 : confidence === "guess"
-                  ? "ตอบถูกแต่เดา"
+                  ? "ระบุว่ายังไม่มั่นใจ"
                   : confidence === "thought"
                     ? "ตอบถูกแต่ต้องคิด"
-                    : "รอระบุความมั่นใจ";
+                    : "ยังไม่มีข้อมูลความมั่นใจ";
               return (
                 <div className="review-row" key={item.id}>
                   <span
@@ -414,7 +536,7 @@ export function ReviewPage({ start }: { start: StartSession }) {
                     <RotateCcw size={17} />
                   </span>
                   <div>
-                    <strong>{item.title}</strong>
+                    <strong><NounText text={item.title} item={item} /></strong>
                     <small>
                       {item.lessonId} · {skillName(item.skill)} · {item.meaning}
                     </small>
@@ -457,7 +579,7 @@ export function ReviewPage({ start }: { start: StartSession }) {
   );
 }
 
-function VerbLesson({ allowIncompleteNavigation = false }: { allowIncompleteNavigation?: boolean }) {
+function VerbLesson({ allowIncompleteNavigation = false, previewLastPage = false }: { allowIncompleteNavigation?: boolean; previewLastPage?: boolean }) {
   const { items, lessons } = useContent();
   const history = useLearning();
   const verbs = [
@@ -488,6 +610,12 @@ function VerbLesson({ allowIncompleteNavigation = false }: { allowIncompleteNavi
   const [showSummary, setShowSummary] = useState(false);
   const [showPrinciples, setShowPrinciples] = useState(true);
   const visibleStep = showPrinciples ? "principles" : showSummary ? "summary" : verb;
+  useEffect(() => {
+    if (previewLastPage && restored) {
+      setShowPrinciples(false);
+      setShowSummary(true);
+    }
+  }, [previewLastPage, restored]);
   const previousStep = useRef(visibleStep);
   useLayoutEffect(() => {
     if (previousStep.current !== visibleStep) {
@@ -634,12 +762,10 @@ function VerbLesson({ allowIncompleteNavigation = false }: { allowIncompleteNavi
         setCompletedVerbs(safeCompleted);
         if (state.orderByVerb && typeof state.orderByVerb === "object")
           setOrderByVerb(state.orderByVerb);
-        setShowPrinciples(state.showPrinciples === true);
+        setShowPrinciples(!previewLastPage && state.showPrinciples === true);
         // Older saves without a principles flag resume their saved verb.
         if (typeof state.showSummary === "boolean")
-          setShowSummary(
-            state.showSummary && verbs.every((name) => safeCompleted.includes(name)),
-          );
+          setShowSummary(previewLastPage || (state.showSummary && verbs.every((name) => safeCompleted.includes(name))));
       }
     } catch {
       // Invalid activity drafts are replaced by the validated initial state.
@@ -938,8 +1064,8 @@ function VerbLesson({ allowIncompleteNavigation = false }: { allowIncompleteNavi
               >
                 ย้อนกลับ
               </button>
-              <Link className="button secondary" href="/practice/L01/grammar">
-                ไปฝึกผันกริยา
+              <Link className="button secondary" href="/practice">
+                ไปหน้าแบบฝึกหัด
               </Link>
             </div>
           </>
@@ -1033,12 +1159,16 @@ export function LearnActivity({
   skill,
   collection,
   group,
+  practiceHref,
+  nextGroupHref,
   start,
 }: {
   lessonId: string;
   skill: Skill;
   collection?: "core" | "extra";
   group?: string;
+  practiceHref?: string;
+  nextGroupHref?: string;
   start?: StartSession;
 }) {
   const { user } = useStore();
@@ -1052,15 +1182,18 @@ export function LearnActivity({
       (!collection || i.collection === collection) &&
       (!group || i.group === group),
   );
-  const [position, setPosition] = useState(0);
+  const [testLastPage] = useState(() => isLastLessonPageRequested());
+  const [position, setPosition] = useState(() => testLastPage ? Math.max(0, pool.length - 1) : 0);
+  useEffect(() => { if (isLastLessonPageRequested()) clearLastLessonPageRequest(); }, []);
   const [error, setError] = useState("");
   const [retry, setRetry] = useState(0);
   const exposing = useRef<string | null>(null);
   const item = pool[position];
   if (skill === "grammar" && lessonId === "L01" && start) {
-    return <VerbLesson allowIncompleteNavigation={allowIncompleteNavigation} />;
+    return <VerbLesson allowIncompleteNavigation={allowIncompleteNavigation} previewLastPage={testLastPage} />;
   }
   const seen = !!item && h.exposures.some((e) => e.item_id === item.id);
+  const phraseGroupLearned = lessonId === "L13" && skill === "phrases" && pool.every(entry => h.exposures.some(exposure => exposure.item_id === entry.id));
   // Only the mounted, visible Learn card produces an exposure. Catalog/Practice never do.
   useEffect(() => {
     function expose() {
@@ -1106,19 +1239,22 @@ export function LearnActivity({
           </p>
         </div>
       </div>
+      {item.skill === "vocabulary" && <ArticleLegend />}
       <section className="question-card">
         <span className="eyebrow">{item.group}</span>
         {item.passage && <p lang="de">{item.passage}</p>}
-        <h2 lang="de">{item.answer}</h2>
+        <h2 lang="de"><NounText text={item.answer} item={item} /></h2>
         <p>{item.meaning}</p>
         {item.example && <p lang="de">Beispiel: {item.example}</p>}
         {item.notes && <p>{item.notes}</p>}
         {item.prompt && item.prompt !== item.meaning && <p>{item.prompt}</p>}
-        {item.plural && <p lang="de">Plural: die {item.plural}</p>}
+        {item.plural && <p lang="de">Plural: <ArticleDot article="plural" />die {item.plural}</p>}
         {item.reply && <p lang="de">คู่สนทนา: {item.reply}</p>}
         <p role="status">
           {seen
-            ? "บันทึกว่าเคยเรียนแล้ว · เข้าแบบฝึกได้ทันที"
+            ? lessonId === "L13" && skill === "phrases"
+              ? phraseGroupLearned ? "เรียนครบหัวข้อนี้แล้ว พร้อมทำแบบฝึกหัด" : "บันทึกแล้ว เรียนประโยคต่อไปให้ครบหัวข้อนี้"
+              : "บันทึกว่าเคยเรียนแล้ว · เข้าแบบฝึกได้ทันที"
             : "กำลังบันทึกการเรียน…"}
         </p>
         {error && !seen && (
@@ -1136,6 +1272,7 @@ export function LearnActivity({
           </div>
         )}
         <div className="result-actions">
+          {nextGroupHref && position === pool.length-1 && seen && <Link className="button primary" href={nextGroupHref}>หัวข้อถัดไป</Link>}
           <button
             className="button secondary"
               disabled={position === 0 || h.busy}
@@ -1155,12 +1292,14 @@ export function LearnActivity({
               เรียนรายการถัดไป
             </button>
           )}
+          {(lessonId !== "L13" || skill !== "phrases" || (phraseGroupLearned && isPhrasePracticeAvailable(user))) && (
           <Link
             className="button secondary"
-            href={`/practice/${lessonId}/${skill}`}
+            href={practiceHref ?? (lessonId === "L13" && skill === "vocabulary" ? "/practice/L13/vocabulary/basic" : "/practice")}
           >
-            ไปแบบฝึกหัด
+            {lessonId === "L13" && (skill === "vocabulary" || skill === "phrases") ? "ทำแบบฝึกหัด" : "ไปแบบฝึกหัด"}
           </Link>
+          )}
         </div>
       </section>
     </>
@@ -1324,6 +1463,7 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
           );
         })}
       </div>
+      {visible.some(item => item.skill === "vocabulary" && (item.article || item.pluralOnly)) && <ArticleLegend />}
       <section className="panel progress-panel">
         <SectionTitle title="คลังการเรียนรู้ของคุณ">
           <span className="quiet-pill">{filtered.length} รายการ</span>
@@ -1622,9 +1762,9 @@ function ProgressItemDetail({
         <span className="eyebrow">
           {item.lessonId} · {skillName(item.skill)} · {item.group}
         </span>
-        <h2 id="progress-item-title">{item.title}</h2>
+        <h2 id="progress-item-title"><NounText text={item.title} item={item} /></h2>
         <p>{item.meaning}</p>
-        {item.plural && <p lang="de">Plural: die {item.plural}</p>}
+        {item.plural && <p lang="de">Plural: <ArticleDot article="plural" />die {item.plural}</p>}
         <div className="detail-stats">
           <div>
             <strong>{attempts.right}</strong>
@@ -1665,7 +1805,7 @@ function ProgressItemDetail({
                 {attempt.correct ? "ถูก" : "ผิด"}
                 {attempt.confidence
                   ? ` · ${
-                      { easy: "ง่าย", thought: "ต้องคิด", guess: "เดา" }[
+                      { easy: "ง่าย", thought: "ต้องคิด", guess: "ยังไม่มั่นใจ" }[
                         attempt.confidence
                       ]
                     }`
@@ -1678,7 +1818,7 @@ function ProgressItemDetail({
           className="button primary wide"
           href={
             learned
-              ? `/practice/${item.lessonId}/${item.skill}`
+              ? "/practice"
               : `/learn/${item.lessonId}/${item.skill}`
           }
           onClick={close}

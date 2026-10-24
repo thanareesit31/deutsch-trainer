@@ -100,7 +100,7 @@ export function AlphabetLearningPage() {
           <Link className="button secondary" href="/learn/L01/vocabulary/core-images">
             เรียนคำศัพท์ต่อ
           </Link>
-          <Link className="button primary" href="/practice/L01/vocabulary">
+          <Link className="button primary" href="/practice">
             แบบฝึกหัด
           </Link>
         </div>

@@ -12,6 +12,7 @@ const tables = new Set([
   "learner_settings",
   "learner_days",
   "learner_lesson_states",
+  "learner_practice_sessions",
   "item_exposures",
   "practice_sessions",
   "session_items",
@@ -65,7 +66,7 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
   // This keeps existing evidence intact when a running test catalog needs an update.
   if (restore) {
     await db.transaction(async (tx) => {
-      for (const table of tables) {
+      for (const table of [...tables].filter(table => table !== 'learner_practice_sessions').concat('learner_practice_sessions')) {
         if (table.startsWith("content_") || table === "knowledge_state") continue;
         for (const row of restore.rows[table] ?? []) {
           if (!accounts.some((account) => account.id === row.user_id))
@@ -181,8 +182,33 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
       const table = parts[0];
       if (!session && !["content_lessons", "content_items"].includes(table))
         throw httpError(401, "Test login required");
+      if (url.pathname === '/rest/v1/rpc/test_workspace_control' && req.method === 'POST') {
+        if (!session || !['tester@deutsch.test', 'tester2@deutsch.test'].includes(session.user.email))
+          throw httpError(403, 'Test account required');
+        const body = await bodyOf(req);
+        if (!['learn_all', 'reset'].includes(body.action)) throw httpError(400, 'Unknown test control');
+        const userId = session.user.id;
+        await db.transaction(async tx => {
+          if (body.action === 'learn_all') {
+            await tx.query(`insert into public.item_exposures(user_id,item_id)
+              select $1,i.id from public.content_items i join public.content_lessons l on l.id=i.lesson_id
+              where i.status='published' and l.status='published'
+              on conflict(user_id,item_id) do nothing`, [userId]);
+          } else {
+            for (const name of ['attempt_evidence','learning_attempts','session_items','practice_sessions','learner_practice_sessions','item_exposures','learner_progress','learner_days','learner_lesson_states'])
+              await tx.query(`delete from public.${identifier(name)} where user_id=$1`, [userId]);
+            for (const active of sessions.values()) if (active.user.id === userId) revoke(active);
+          }
+        });
+        if (body.action === 'reset') {
+          // Reject delayed saves from tabs that still hold the pre-reset history.
+          return send(200, { session: issueSession(session.user) });
+        }
+        return send(200, { ok: true });
+      }
       // PGlite serializes transactions. SET LOCAL prevents role/identity leaking across concurrent requests.
       const result = await db.transaction(async (tx) => {
+        if (session && sessions.get(token) !== session) throw httpError(401, 'Test login required');
         await tx.exec(`set local role ${session ? "authenticated" : "anon"}`);
         await tx.query("select set_config('request.jwt.claim.sub',$1,true)", [
           session?.user.id ?? "",
@@ -194,6 +220,8 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
               body.action,
               JSON.stringify(body.payload),
             ]);
+          else if (parts[1] === "sync_practice_session")
+            await tx.query("select public.sync_practice_session($1,$2::jsonb)", [body.p_bank_key, JSON.stringify(body.p_state)]);
           else if (parts[1] === "save_learner_progress")
             await tx.query(
               "select public.save_learner_progress($1,$2::jsonb)",

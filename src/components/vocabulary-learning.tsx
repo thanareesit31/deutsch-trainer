@@ -12,17 +12,23 @@ import { useContent } from "./content-provider";
 import { prepareL02VocabularyFlow } from "@/lib/l02-number-learning";
 
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
+import { isL14VocabularyPracticeAvailable, isTestWorkspaceUser, isVocabularyPracticeAvailable, useStore } from "./store";
 import { CountryFlag } from "./vocabulary-image-matching";
 import { l03FamilyPluralPairs } from "@/lib/vocabulary-image-content";
 import { FamilyPluralLearning } from "./family-plural-learning";
-import { buildL14VocabularyFlow } from "@/lib/a13-grammar-learning";
+import { buildL13GrammarFlow, buildL14VocabularyFlow } from "@/lib/a13-grammar-learning";
 import { L12MonthCalendar } from "./l12-month-calendar";
+import { useL13VocabularyEligibility } from "./use-l13-vocabulary-eligibility";
+import { useLearning } from "./learning-store";
 
 const alphabetItemIds = alphabetData.items.map((item) => item.id);
 
 export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }) {
+  const { user } = useStore();
   const lessonState = useLessonState();
   const { lessons, items } = useContent();
+  const l13Eligibility = useL13VocabularyEligibility();
+  const history = useLearning();
   const catalogFlow = lessons.find((lesson) => lesson.id === lessonId)?.learningFlows?.vocabulary;
   const flow = catalogFlow && lessonId === "L02" ? prepareL02VocabularyFlow(catalogFlow, items) : catalogFlow;
   const catalogImageGroups = useMemo(
@@ -38,6 +44,8 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
   const [alphabetStatus, setAlphabetStatus] = useState<"learned" | null>(null);
   const [learnedImageVocabularyIds, setLearnedImageVocabularyIds] = useState<string[]>([]);
   const [learnedFamilyPluralIds, setLearnedFamilyPluralIds] = useState<string[]>([]);
+  const l14DirectionIds = lessonId === "L14" ? readGuidedState(lessonState.read(lessonStateKeys.l14Vocabulary), buildL14VocabularyFlow(), items).learnedContentIds : [];
+  const l14PracticeReady = lessonId === "L14" && (learnedImageVocabularyIds.length > 0 || l14DirectionIds.length > 0 || history.exposures.some(exposure => exposure.item_id.startsWith("L14-V")));
 
   useEffect(() => {
     const imageLesson = lessonId === "L01" || lessonId === "L02" || lessonId === "L13" || /^L(?:0[3-9]|1[0-2]|1[4-5])$/u.test(lessonId);
@@ -70,6 +78,8 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
 
   return (
     <main className="vocabulary-learning">
+      {lessonId === "L13" && isVocabularyPracticeAvailable(user) && l13Eligibility.ids.length > 0 && <Link className="button primary" href="/practice/L13/vocabulary/basic">ฝึกคำที่เรียนแล้ว</Link>}
+      {lessonId === "L14" && isL14VocabularyPracticeAvailable(user) && l14PracticeReady && <Link className="button primary" href="/practice/L14/vocabulary/basic">ฝึกคำที่เรียนแล้ว</Link>}
 
       {lessonId === "L02" && (
         <>
@@ -181,6 +191,19 @@ export function L03FamilyPluralPage() {
 
 export function A13GrammarEntryPoints({ lessonId }: { lessonId: "L13" | "L14" | "L15" }) {
   const { items } = useContent();
+  const { user } = useStore();
+  const pilotAvailable = isTestWorkspaceUser(user);
+  const lessonState = useLessonState();
+  const l13Flow = useMemo(() => lessonId === "L13" ? buildL13GrammarFlow(items) : null, [lessonId, items]);
+  const l13State = l13Flow ? readGuidedState(lessonState.read(l13Flow.stateKey), l13Flow, items) : null;
+  const l13TopicActivities = l13Flow ? [
+    l13Flow.activities.filter((activity) => activity.id.startsWith("L13-es-gibt-")),
+    l13Flow.activities.filter((activity) => activity.id.startsWith("L13-dativ-")),
+    l13Flow.activities.filter((activity) => !!activity.verbId),
+  ] : [];
+  const learnedTopics = l13TopicActivities.filter((activities) =>
+    activities.length > 0 && activities.every((activity) => l13State?.learnedActivityIds.includes(activity.id)),
+  ).length;
   const cards = lessonId === "L13" ? [
     { group: "es gibt + Akkusativ", route: "es-gibt", title: "Es gibt + Akkusativ", description: "รูปคำนามหลัง es gibt", symbol: "A" },
     { group: "Personalpronomen im Dativ", route: "dativ", title: "Personalpronomen im Dativ", description: "สรรพนามรูป Dativ", symbol: "D" },
@@ -192,13 +215,25 @@ export function A13GrammarEntryPoints({ lessonId }: { lessonId: "L13" | "L14" | 
     { group: "Possessivartikel", route: "possessivartikel", title: "Possessivartikel: ihr / sein", description: "คำแสดงความเป็นเจ้าของใน Nominativ และ Akkusativ", symbol: "ihr" },
   ];
   return <main className="vocabulary-learning">
-    {cards.map((card) => {
+    {cards.map((card, index) => {
       const count = lessonId === "L14" ? 2 : items.filter((item) => item.lessonId === lessonId && item.skill === "grammar" && item.group === card.group).length;
+      const learned = l13TopicActivities[index]?.length > 0 && l13TopicActivities[index].every((activity) => l13State?.learnedActivityIds.includes(activity.id));
       return <Link key={card.group} className="alphabet-entry-card" href={`/learn/${lessonId}/grammar/${card.route}`}>
         <span className="alphabet-entry-symbols" aria-hidden="true">{card.symbol}</span>
-        <span className="alphabet-entry-copy"><span className="eyebrow">GRAMMATIK</span><span className="alphabet-entry-title"><strong>{card.title}</strong></span><small>{card.description} · {count} คำ</small></span>
+        <span className="alphabet-entry-copy"><span className="eyebrow">GRAMMATIK</span><span className="alphabet-entry-title"><strong>{card.title}</strong></span><small>{card.description} · {lessonId === "L13" ? learned ? "เรียนแล้ว" : "ยังเรียนไม่ครบ" : `${count} คำ`}</small></span>
         <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
       </Link>;
     })}
+    {lessonId === "L13" && learnedTopics === 3 && (
+      <section className="grammar-practice-handoff">
+        <span className="eyebrow">เรียนครบ 3/3 หัวข้อ</span>
+        <h2>{pilotAvailable ? "อยากลองฝึกต่อไหม?" : "เรียนไวยากรณ์ครบแล้ว"}</h2>
+        <p>{pilotAvailable ? "ฝึกต่อเนื่อง Es gibt, Dativ และ Verben ได้ทันที" : "แบบฝึกพื้นฐานเปิดเฉพาะบัญชีทดลองในตอนนี้"}</p>
+        <div>
+          {pilotAvailable && <Link className="button primary" href="/practice/L13/grammar/basic">ทำแบบฝึกหัด</Link>}
+          <Link className="button secondary" href="/lesson/L13">กลับหน้าบทเรียน</Link>
+        </div>
+      </section>
+    )}
   </main>;
 }

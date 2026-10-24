@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "id": "l13-es-gibt-pilot-v1",
+  "status": "review_prototype_not_published",
+  "title": "Es gibt + Akkusativ",
+  "lessonId": "L13",
+  "topicId": "L13-es-gibt-akkusativ",
+  "authorship": "newly_authored",
+  "reviewedAt": "2026-10-20",
+  "reviewScope": "Author grammar and answer review; no independent educator review or publisher answer-key check.",
+  "defaultCount": 5,
+  "countOptions": [
+    5,
+    10,
+    "all"
+  ],
+  "description": "ฝึก ein, kein และ viele หลัง es gibt ในประโยคบอกเล่า ปฏิเสธ และคำถาม",
+  "summaryNote": "ข้อเลือกคำและเรียงคำมีตัวช่วย จึงแยกผลจากข้อที่ต้องพิมพ์รูปคำเอง",
+  "skillLabels": {
+    "es_gibt_article": "คำนำหน้านามหลัง es gibt",
+    "es_gibt_plural": "รูปพหูพจน์",
+    "es_gibt_negation": "การปฏิเสธ",
+    "es_gibt_question": "คำถาม",
+    "es_gibt_word_order": "ลำดับคำ"
+  },
+  "storageKey": "deutsch-trainer:review-prototype:l13-es-gibt:v1",
+  "questions": [
+    {
+      "id": "A13-L13-ESG-001",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "In meiner Straße gibt es ___ Park.",
+      "options": [
+        "einen",
+        "ein",
+        "eine"
+      ],
+      "acceptedAnswers": [
+        "einen"
+      ],
+      "subskill": "es_gibt_article",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
+      "explanation": "Park ใช้ der เป็นคำนามเพศชาย หลัง es gibt ต้องใช้ Akkusativ จึงเปลี่ยน ein เป็น einen",
+      "knownErrors": {
+        "ein": "article_or_number_form",
+        "eine": "article_or_number_form"
+      },
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-001"
+    },
+    {
+      "id": "A13-L13-ESG-002",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "In unserem Viertel gibt es ___ Apotheke.",
+      "options": [
+        "eine",
+        "einen",
+        "ein"
+      ],
+      "acceptedAnswers": [
+        "eine"
+      ],
+      "subskill": "es_gibt_article",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
+      "explanation": "Apotheke ใช้ die เป็นคำนามเพศหญิง หลัง es gibt จึงใช้ eine",
+      "knownErrors": {
+        "einen": "article_or_number_form",
+        "ein": "article_or_number_form"
+      },
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-002"
+    },
+    {
+      "id": "A13-L13-ESG-003",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "In diesem Ort gibt es ___ Rathaus.",
+      "options": [
+        "ein",
+        "eine",
+        "einen"
+      ],
+      "acceptedAnswers": [
+        "ein"
+      ],
+      "subskill": "es_gibt_article",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
+      "explanation": "Rathaus ใช้ das เป็นคำนามเพศกลาง หลัง es gibt จึงใช้ ein",
+      "knownErrors": {
+        "eine": "article_or_number_form",
+        "einen": "article_or_number_form"
+      },
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-003"
+    },
+    {
+      "id": "A13-L13-ESG-004",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "Auf dem Platz gibt es ___ Cafés.",
+      "options": [
+        "viele",
+        "viel",
+        "einen"
+      ],
+      "acceptedAnswers": [
+        "viele"
+      ],
+      "subskill": "es_gibt_plural",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
+      "explanation": "Cafés หมายถึงร้านกาแฟหลายแห่ง จึงใช้ viele ซึ่งแปลว่า “หลาย”",
+      "knownErrors": {
+        "viel": "article_or_number_form",
+        "einen": "article_or_number_form"
+      },
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-004"
+    },
+    {
+      "id": "A13-L13-ESG-005",
+      "version": 2,
+      "kind": "choice",
+      "prompt": "เลือกคำที่ทำให้ประโยคถูกต้อง",
+      "sentence": "Hier gibt es ___ Hafen. Wir fahren deshalb zum Hafen im Nachbarort.",
+      "options": [
+        "keinen",
+        "kein",
+        "keine"
+      ],
+      "acceptedAnswers": [
+        "keinen"
+      ],
+      "subskill": "es_gibt_negation",
+      "difficulty": 1,
+      "builtInSupport": "answer_options",
+      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
+      "explanation": "ประโยคต่อมาบอกว่าต้องไปท่าเรือในเมืองข้างเคียง แสดงว่าที่นี่ไม่มีท่าเรือ Hafen เป็นเพศชาย หลัง es gibt จึงใช้ keinen",
+      "knownErrors": {
+        "kein": "article_or_number_form",
+        "keine": "article_or_number_form"
+      },
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-005"
+    },
+    {
+      "id": "A13-L13-ESG-006",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ ein",
+      "sentence": "In unserer Stadt gibt es ___ Zoo.",
+      "acceptedAnswers": [
+        "einen"
+      ],
+      "subskill": "es_gibt_article",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "explanation": "Zoo ใช้ der เป็นคำนามเพศชาย หลัง es gibt จึงใช้ einen",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-006"
+    },
+    {
+      "id": "A13-L13-ESG-007",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ ein",
+      "sentence": "Neben dem Bahnhof gibt es ___ Kino.",
+      "acceptedAnswers": [
+        "ein"
+      ],
+      "subskill": "es_gibt_article",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "explanation": "Kino ใช้ das เป็นคำนามเพศกลาง หลัง es gibt จึงใช้ ein",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-007"
+    },
+    {
+      "id": "A13-L13-ESG-008",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ ein",
+      "sentence": "Am Marktplatz gibt es ___ Kirche.",
+      "acceptedAnswers": [
+        "eine"
+      ],
+      "subskill": "es_gibt_article",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "explanation": "Kirche ใช้ die เป็นคำนามเพศหญิง หลัง es gibt จึงใช้ eine",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-008"
+    },
+    {
+      "id": "A13-L13-ESG-009",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ kein",
+      "sentence": "In diesem Dorf gibt es ___ Museum. Das nächste Museum ist in der Stadt.",
+      "acceptedAnswers": [
+        "kein"
+      ],
+      "subskill": "es_gibt_negation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "explanation": "ประโยคต่อมาบอกว่าพิพิธภัณฑ์ที่ใกล้ที่สุดอยู่ในเมือง แสดงว่าในหมู่บ้านนี้ไม่มีพิพิธภัณฑ์ Museum เป็นเพศกลาง จึงใช้ kein",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-009"
+    },
+    {
+      "id": "A13-L13-ESG-010",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ kein",
+      "sentence": "Hier gibt es ___ See. Zum Schwimmen fahren wir in den Nachbarort.",
+      "acceptedAnswers": [
+        "keinen"
+      ],
+      "subskill": "es_gibt_negation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "explanation": "ประโยคต่อมาบอกว่าต้องไปว่ายน้ำในเมืองข้างเคียง แสดงว่าที่นี่ไม่มีทะเลสาบ See เป็นเพศชาย จึงใช้ keinen หลัง es gibt",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-010"
+    },
+    {
+      "id": "A13-L13-ESG-011",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ kein",
+      "sentence": "In unserem Ort gibt es ___ Spielplätze. Die Kinder fahren in den Nachbarort.",
+      "acceptedAnswers": [
+        "keine"
+      ],
+      "subskill": "es_gibt_negation",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "explanation": "Spielplätze หมายถึงสนามเด็กเล่นหลายแห่ง เมื่อต้องการบอกว่า “ไม่มีสนามเด็กเล่น” จึงใช้ keine",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-011"
+    },
+    {
+      "id": "A13-L13-ESG-012",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ viel",
+      "sentence": "In der Innenstadt gibt es ___ Geschäfte.",
+      "acceptedAnswers": [
+        "viele"
+      ],
+      "subskill": "es_gibt_plural",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "explanation": "Geschäfte หมายถึงร้านค้าหลายแห่ง จึงใช้ viele ซึ่งแปลว่า “หลาย”",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-012"
+    },
+    {
+      "id": "A13-L13-ESG-013",
+      "version": 2,
+      "kind": "cloze",
+      "prompt": "เติมรูปของ ein",
+      "sentence": "Gibt es hier ___ Bushaltestelle?",
+      "acceptedAnswers": [
+        "eine"
+      ],
+      "subskill": "es_gibt_question",
+      "difficulty": 2,
+      "builtInSupport": "grammar_prompt",
+      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "explanation": "Bushaltestelle ใช้ die เป็นคำนามเพศหญิง จึงใช้ eine ในคำถาม Gibt es hier ...?",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-013"
+    },
+    {
+      "id": "A13-L13-ESG-014",
+      "version": 2,
+      "kind": "order",
+      "prompt": "เรียงประโยค โดยเริ่มด้วย In der Altstadt",
+      "tokens": [
+        "In der Altstadt",
+        "gibt",
+        "es",
+        "ein Museum"
+      ],
+      "acceptedAnswers": [
+        "In der Altstadt gibt es ein Museum"
+      ],
+      "subskill": "es_gibt_word_order",
+      "difficulty": 2,
+      "builtInSupport": "supplied_tokens",
+      "hint": "เริ่มจากคำต้นประโยค แล้ววางกริยาที่ผันในตำแหน่งที่สอง; คำถามแบบใช่/ไม่ใช่เริ่มด้วยกริยา",
+      "explanation": "เมื่อเริ่มด้วยสถานที่ In der Altstadt ให้วางกริยา gibt เป็นส่วนที่สอง แล้วตามด้วย es",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-014"
+    },
+    {
+      "id": "A13-L13-ESG-015",
+      "version": 2,
+      "kind": "order",
+      "prompt": "เรียงคำให้เป็นคำถาม",
+      "tokens": [
+        "Gibt",
+        "es",
+        "hier",
+        "einen Park"
+      ],
+      "acceptedAnswers": [
+        "Gibt es hier einen Park"
+      ],
+      "subskill": "es_gibt_question",
+      "difficulty": 2,
+      "builtInSupport": "supplied_tokens",
+      "hint": "เริ่มจากคำต้นประโยค แล้ววางกริยาที่ผันในตำแหน่งที่สอง; คำถามแบบใช่/ไม่ใช่เริ่มด้วยกริยา",
+      "explanation": "คำถามว่ามีหรือไม่มีให้เริ่มด้วย Gibt es ส่วน Park เป็นเพศชาย จึงใช้ einen Park",
+      "knownErrors": {},
+      "topicId": "L13-es-gibt-akkusativ",
+      "requiredLearnedTopics": [
+        "L13-es-gibt-akkusativ"
+      ],
+      "variantGroup": "a13-l13-esg-015"
+    }
+  ]
+}

@@ -2,6 +2,11 @@
 import { useContent } from "./content-provider";
 import { L02PhraseLearning } from "./l02-phrase-learning";
 import { L13ContextLesson } from "./l13-context-reading";
+import { PracticeAccountSync } from "./practice-account-sync";
+import { L13PhrasePages } from "./l13-phrase-pages";
+import { L13VocabularyPractice } from "./l13-vocabulary-practice";
+import { L14VocabularyPractice } from "./l14-vocabulary-practice";
+import { GrammarPilot } from "./dative-pilot";
 import { GrammarLearningEntryPoints, L01GrammarEntryRedirect, L02SentencesRedirect } from "./grammar-learning";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -35,17 +40,19 @@ import {
   type Skill,
 } from "@/lib/content";
 import { makeQuestion, sessionItems, type Question } from "@/lib/engine";
-import { isTestWorkspaceUser, useStore } from "./store";
+import { isTestWorkspaceUser, isVocabularyPracticeAvailable, isPhrasePracticeAvailable, useStore } from "./store";
 import { useLearning } from "./learning-store";
 import {
   LearnActivity,
   PracticeEntry,
+  PracticeGrammarTopics,
+  PracticeLessonEntry,
   ReviewPage,
   HistoryProgress,
   LearningHome,
 } from "./learning-pages";
 import { Badge, Empty, Meter, SectionTitle, skillIcons } from "./ui";
-import { PracticeSetup, Session } from "./practice";
+import { Session } from "./practice";
 import { SettingsPage } from "./progress";
 import { AuthScreen } from "./auth-screen";
 import { TestWorkspaceNotice } from "./test-workspace-notice";
@@ -58,6 +65,7 @@ import { GuidedLearningPage } from "./guided-learning";
 import { GrammarDiscoveryPage, PossessiveSummaryPage } from "./grammar-discovery";
 import { GrammarConjugationPage } from "./grammar-conjugation";
 import { L14PhraseLearning } from "./l14-phrase-learning";
+import { L14PhrasePractice } from "./l14-phrase-practice";
 import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
 import { grammarConjugationTopic } from "@/lib/grammar-conjugation";
 import { completedDiscoveryTopics } from "@/lib/grammar-discovery-progress";
@@ -79,6 +87,22 @@ const nav = [
   { path: "/review", label: "ทบทวน", icon: RotateCcw },
   { path: "/progress", label: "ความก้าวหน้า", icon: ChartNoAxesCombined },
 ];
+const additionalGrammarPilotRoutes = [
+  { path: "/practice/L14/grammar/basic", topic: "l14Grammar" },
+  { path: "/practice/L14/grammar/lokale-praepositionen", topic: "l14LokalePraepositionen" },
+  { path: "/practice/L14/grammar/wo-dativ", topic: "l14WoDativ" },
+  { path: "/practice/L15/grammar/basic", topic: "l15Grammar" },
+  { path: "/practice/L15/grammar/possessivartikel", topic: "l15Possessivartikel" },
+  { path: "/practice/L16/grammar/basic", topic: "l16Grammar" },
+  { path: "/practice/L16/grammar/temporale-praepositionen", topic: "l16TemporalePraepositionen" },
+  { path: "/practice/L17/grammar/basic", topic: "l17Grammar" },
+  { path: "/practice/L17/grammar/werden", topic: "l17Werden" },
+  { path: "/practice/L17/grammar/wollen", topic: "l17Wollen" },
+  { path: "/practice/L17/grammar/mit-ohne", topic: "l17MitOhne" },
+  { path: "/practice/L18/grammar/basic", topic: "l18Grammar" },
+  { path: "/practice/L18/grammar/imperativ-sie", topic: "l18ImperativSie" },
+  { path: "/practice/L18/grammar/sollen", topic: "l18Sollen" },
+] as const;
 export default function Trainer() {
   return (
     <Suspense fallback={<div className="loading">กำลังเปิดบทเรียน…</div>}>
@@ -96,7 +120,7 @@ function AuthenticatedApp() {
       </div>
     );
   if (!user) return <AuthScreen />;
-  return <App />;
+  return isTestWorkspaceUser(user) || isVocabularyPracticeAvailable(user) || isPhrasePracticeAvailable(user) ? <PracticeAccountSync key={user.id} userId={user.id}><App /></PracticeAccountSync> : <App />;
 }
 function App() {
   const { items, lessons, coreVocabulary } = useContent();
@@ -189,6 +213,7 @@ function App() {
       : path.startsWith(p) || (p === "/learn" && path.startsWith("/lesson"));
   let page: React.ReactNode;
   const parts = path.split("/").filter(Boolean);
+  const additionalGrammarPilot = additionalGrammarPilotRoutes.find(route => route.path === path);
   const catalogVocabularyImageGroups = ["L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10", "L11", "L12", "L14", "L15"]
     .flatMap((lessonId) => lessonVocabularyImageGroups(items, lessonId));
   const l02FamilienstandImageGroups = lessonVocabularyImageGroups(items, "L02", ["Familienstand"]);
@@ -223,20 +248,31 @@ function App() {
     );
   else if (parts[0] === "lesson" && lessons.some((l) => l.id === parts[1]))
     page = <LessonDetail id={parts[1]} />;
+  else if (["/practice/L13/grammar/dativ-pilot", "/practice/L13/grammar/es-gibt", "/practice/L13/grammar/verbs", "/practice/L13/grammar/basic", "/practice/L13/grammar/daily"].includes(path))
+    page = allowUnlearnedPractice && user
+      ? <GrammarPilot userId={user.id} topic={path.endsWith("/daily") ? "daily" : path.endsWith("/dativ-pilot") ? "dative" : path.endsWith("/es-gibt") ? "esGibt" : path.endsWith("/verbs") ? "verbs" : "basic"} />
+      : <div className="page-heading"><h1>ชุดนี้เปิดเฉพาะบัญชีทดลอง</h1><Link href="/practice">กลับไปแบบฝึกหัด</Link></div>;
+  else if (additionalGrammarPilot)
+    page = allowUnlearnedPractice && user
+      ? <GrammarPilot userId={user.id} topic={additionalGrammarPilot.topic} />
+      : <div className="page-heading"><h1>ชุดนี้เปิดเฉพาะบัญชีทดลอง</h1><Link href="/practice">กลับไปแบบฝึกหัด</Link></div>;
+  else if (path === "/practice/L13/phrases" || path.startsWith("/practice/L13/phrases/")) page = <L13PhrasePages key={path} mode="practice" slug={parts[3]} />;
+  else if (path === "/practice/L14/phrases" || path.startsWith("/practice/L14/phrases/")) page = <L14PhrasePractice key={path} slug={parts[3]} />;
+  else if (path === "/learn/L13/phrases" || path.startsWith("/learn/L13/phrases/")) page = <L13PhrasePages key={path} mode="learn" slug={parts[3]} />;
+  else if (path === "/practice/L13/vocabulary" || path.startsWith("/practice/L13/vocabulary/")) page = <L13VocabularyPractice key={path} slug={parts[3]} />;
+  else if (path === "/practice/L14/vocabulary" || path.startsWith("/practice/L14/vocabulary/")) page = <L14VocabularyPractice key={path} slug={parts[3]} />;
+  else if (path === "/practice/L13/grammar") page = <PracticeGrammarTopics />;
+  else if (["L14", "L15", "L16", "L17", "L18"].some(lessonId => path === `/practice/${lessonId}/grammar`)) page = <PracticeGrammarTopics lessonId={parts[1]} />;
+  else if (parts[0] === "practice" && parts.length === 2 && lessons.some((lesson) => lesson.id === parts[1]))
+    page = <PracticeLessonEntry lessonId={parts[1]} />;
   else if (
     parts[0] === "practice" &&
     lessons.some((l) => l.id === parts[1]) &&
     skills.some((s) => s.id === parts[2])
   )
-    page = (
-      <PracticeSetup
-        key={path}
-        lessonId={parts[1]}
-        skill={parts[2] as Skill}
-        start={start}
-      />
-    );
-  else if (path === "/practice") page = <PracticeEntry start={start} />;
+    page = <PracticeEntry />;
+  else if (path === "/practice")
+    page = <PracticeEntry key={searchParams.toString()} initialLevel={searchParams.get("level") || "A1.3"} />;
   else if (path === "/review") page = <ReviewPage start={start} />;
   else if (path === "/learn/L02/phrases") page = <L02PhraseLearning key={path} />;
   else if (path === "/learn/L14/phrases") page = <L14PhraseLearning key={path} />;

@@ -52,3 +52,23 @@ Next.js สร้าง `next-env.d.ts` ที่ root แม้ใช้ cache/
 launcher เปิดเว็บบน `0.0.0.0:3002` และพิมพ์ URL ของ IP คอม เช่น `http://192.168.1.43:3002` ให้ใช้ URL นี้ในโทรศัพท์ โดยคอมกับโทรศัพท์ต้องอยู่ Wi-Fi เดียวกันและคอมต้องเปิดเซิร์ฟเวอร์ไว้ `localhost` บนโทรศัพท์หมายถึงโทรศัพท์เอง ไม่ใช่คอม หาก IP คอมเปลี่ยนให้เปิด launcher ใหม่เพื่ออัปเดต allowed origins
 
 API ฐานข้อมูลยังฟังเฉพาะ loopback ไม่เปิดพอร์ต 54329 สู่เครือข่าย ทุกคำขอจากโทรศัพท์ผ่าน `/__test-db` ของเว็บ และรับเฉพาะ origin localhost กับ IP ที่ launcher ตรวจพบ บัญชี/สถานะทดสอบเดิมใช้งานร่วมกันบนคอมและโทรศัพท์ได้ แต่อุปกรณ์ใหม่ต้องล็อกอินก่อน
+
+
+## Account practice browser check
+
+With the test server running on port 3002, run `npm run test:practice-account-browser` using Node 20.9 or newer. Uses installed Google Chrome on macOS. It creates and completes a 15-question L13 round in the tester account and reads the second tester account to check isolation. Existing history is retained. Covers two isolated browser contexts, pending confidence, stale uploads, failed upload retry, checkpoints, and completed round persistence. This does not test hosted Supabase or real learner accounts.
+
+
+## L13 vocabulary release checks
+
+Use Node20.9 or newer. Commands: npm run test:vocabulary-practice-db, npm run test:vocabulary-practice-browser, npm run test:vocabulary-learner-rollout, npm run test:practice-account-browser. The rollout test expects NEXT_PUBLIC_L13_VOCABULARY_PRACTICE=true when starting the test workspace and substitutes only a local fixture display email to exercise the non-tester UI. It does not create real learner accounts. Browser checks retain existing test history and may create/finish new rounds and expose vocabulary through the actual learning UI. Server grading checks run in an isolated PGlite database. Production smoke on port3000 uses npm run test:vocabulary-production-smoke and stays signed out.
+
+
+## L13 phrase checks
+
+Use npm run test:phrase-practice-db and npm run test:phrase-practice-browser with Node20.9+. Start the test server with NEXT_PUBLIC_L13_PHRASES_PRACTICE=true to exercise the non-tester rollout fixture. The phrase browser check uses actual visible Learn cards for29 items, preserves existing history, and creates/completes a guided20 round plus a daily10 round. The shared learner-rollout fixture now checks both Wortschatz and Redemittel.
+
+
+## ปุ่มควบคุมบัญชีทดลอง
+
+แถบทดสอบด้านบนมี “เรียนแล้วทั้งหมด” เพื่อบันทึกว่าเคยเรียนรายการเนื้อหา published ทุกบทในบัญชีปัจจุบัน ไม่เพิ่มคะแนนหรือข้ามกิจกรรมโต้ตอบเฉพาะบท เมื่อกดจากหน้าเรียนจะอยู่ในทางเรียนเดิมและเปิดหน้าท้ายเพื่อให้กดไปแบบฝึกหัดเอง โดยไม่บันทึกว่าผ่านกิจกรรมโต้ตอบที่ยังไม่ได้ทำ ปุ่ม “รีเซตการทดลอง” ให้ยืนยันก่อนล้างประวัติเรียน ผลฝึก รอบค้าง และสถานะกิจกรรมของบัญชีปัจจุบัน เก็บการตั้งค่าไว้ หลังรีเซตจะกลับหน้า Practice แท็บอื่นของบัญชีเดียวกันต้องเข้าสู่ระบบใหม่หลังรีเซต ไม่มีปุ่มหรือ endpoint นี้ในระบบผู้ใช้ทั่วไป

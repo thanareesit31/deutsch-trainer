@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {chromium} from 'playwright-core';
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const c=await browser.newContext();const p=await c.newPage();const errors=[];p.setDefaultTimeout(45000);p.on('pageerror',e=>errors.push(e.message));
+try{
+ // The local API still authenticates the tester ID; replace only the display email
+ // to exercise the non-tester UI path without creating a real learner account.
+ await p.route('**/__test-db/auth/v1/**',async route=>{const response=await route.fetch();if(!response.headers()['content-type']?.includes('json'))return route.fulfill({response});const data=await response.json();if(data.user)data.user.email='learner-preview@deutsch.test';if(data.email)data.email='learner-preview@deutsch.test';await route.fulfill({response,json:data});});
+ await p.goto('http://localhost:3002/practice');await p.getByLabel('อีเมล',{exact:true}).fill('tester2@deutsch.test');await p.getByLabel('รหัสผ่าน',{exact:true}).fill('TestOnly123!');await p.getByRole('button',{name:'เข้าสู่ระบบ',exact:true}).click();await p.locator('.profile').filter({hasText:'learner-preview@deutsch.test'}).waitFor();await p.locator('.practice-recommendation').waitFor();
+ await p.goto('http://localhost:3002/practice/L13');await p.getByRole('link',{name:/Wortschatz/}).waitFor();assert.equal(await p.getByRole('link',{name:/Grammatik/}).count(),0);
+ await p.getByRole('link',{name:/Wortschatz/}).click();await p.locator('.practice-grammar-topic').first().waitFor();assert.equal(await p.locator('.practice-grammar-topic').count(),4);
+ await p.goto('http://localhost:3002/learn/L13/vocabulary');await p.getByRole('link',{name:'ทำแบบฝึกหัด',exact:true}).waitFor();await p.getByRole('link',{name:'ทำแบบฝึกหัด',exact:true}).click();await p.locator('iframe').waitFor();const f=p.frames().find(f=>f.name().startsWith('vocab-basic-account-'));await f.locator('[data-question-id]').waitFor();assert((await f.evaluate(()=>current().items)).every(i=>i.question.topicId.startsWith('L13-vocab-')));
+ await p.goto('http://localhost:3002/practice/L13');await p.getByRole('link',{name:/Redemittel/}).waitFor();assert.equal(await p.getByRole('link',{name:/Grammatik/}).count(),0);
+ await p.goto('http://localhost:3002/learn/L13/phrases');await p.getByRole('link',{name:'ทำแบบฝึกหัด',exact:true}).waitFor();await p.getByRole('link',{name:'ทำแบบฝึกหัด',exact:true}).click();await p.locator('iframe').waitFor();const phrases=p.frames().find(f=>f.name().startsWith('phrases-basic-account-'));await phrases.locator('[data-question-id]').waitFor();assert((await phrases.evaluate(()=>current().items)).every(i=>i.question.topicId.startsWith('L13-phrases-')));
+ assert.deepEqual(errors,[]);console.log('PASS non-tester rollout path: vocabulary enabled, grammar prototypes hidden, completion CTA and account-backed practice available');
+}finally{await browser.close();}
