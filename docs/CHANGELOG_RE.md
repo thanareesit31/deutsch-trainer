@@ -10,13 +10,13 @@
 
 - **เปลี่ยนอะไร:** ย้ายรอบฝึกใหม่ของบท 14 จาก lesson state ไปยัง `learner_practice_sessions` และ `PracticeAccountSync` แบบเดียวกับบท 13; เพิ่ม bank keys, question definitions และ server validation สำหรับผลเรียนวลีบท 14. อ่านสถานะรอบเดิมเพื่อนำเข้ารูปแบบ session กลางเมื่อผู้เรียนเปิดฝึกครั้งแรก.
 - **เหตุผล:** การเก็บและซิงก์คนละระบบทำให้การกลับมาทำต่อ การกู้คืน และการตรวจคำตอบมีพฤติกรรมต่างกันโดยไม่จำเป็น.
-- **ผลกระทบ:** คำตอบและรอบเดิมยังใช้สร้างประวัติฝึกต่อได้; คำตอบใหม่ตรวจฝั่งเซิร์ฟเวอร์และใช้แหล่งหลักฐานการเรียนบท 14. ติดตั้ง migration `20261026000000_l14_phrase_sessions.sql` บนฐาน Supabase production แล้ว; โค้ดเว็บยังรอปล่อย.
+- **ผลกระทบ:** คำตอบและรอบเดิมยังใช้สร้างประวัติฝึกต่อได้; คำตอบใหม่ตรวจฝั่งเซิร์ฟเวอร์และใช้แหล่งหลักฐานการเรียนบท 14. ติดตั้ง migration `20261026000000_l14_phrase_sessions.sql` บนฐาน Supabase production แล้ว และปล่อยโค้ดใน deployment `9e5b7da` สำเร็จ. URL deployment ถูก Vercel Authentication ป้องกัน จึงยังตรวจหน้าโดยไม่ใช้ session ผู้เรียนไม่ได้.
 
 ## 2026-10-26 · Enable L13/L14 Redemittel for learner accounts in production builds
 
 - **What changed:** Production builds now enable the L13 and L14 phrase-practice banks for signed-in accounts by default. An explicit `NEXT_PUBLIC_L13_PHRASES_PRACTICE=false` or `NEXT_PUBLIC_L14_PHRASES_PRACTICE=false` disables the matching bank. Development still uses the existing `true` flags, and tester accounts keep their existing access.
 - **Why:** The local `.env.local` flags do not carry over to the Vercel production build, leaving ordinary accounts without access after a deployment.
-- **Impact:** The next production deployment will expose both banks to signed-in learners, subject to the existing learned-content eligibility checks. Apply all pending migrations, including `20261026000000_l14_phrase_sessions.sql`, before enabling the L14 bank. No deployment was started.
+- **Impact:** Production deployment `9e5b7da` exposes both banks to signed-in learners, subject to the existing learned-content eligibility checks. Migration `20261026000000_l14_phrase_sessions.sql` was applied before deployment. Vercel reports the production deployment as successful; Vercel Authentication prevents an anonymous HTTP smoke check.
 
 ## 2026-10-25 · Distinguish unopened practice from work to resume
 
