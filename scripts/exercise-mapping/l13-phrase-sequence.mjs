@@ -57,12 +57,7 @@ export function buildPhraseSequence(items, groups) {
         matchContext: matchContexts[groupIndex], matchLeftLabel: groupIndex === 3 ? 'คำตอบ' : 'คำถาม',
         matchRightLabel: groupIndex === 3 ? 'คำถาม' : 'คำตอบ',
         options: specs.slice(2, 4).map(([id]) => byId.get(id).answer),
-        explanation: [
-          ['คำถามถามว่าชอบเมืองนี้หรือไม่ คำตอบบอกว่าคิดว่าเมืองนี้ยอดเยี่ยม', 'คำถามถามว่าเมืองใหญ่เกินไปหรือไม่ คำตอบบอกว่าเมืองใหญ่เกินไป'],
-          ['คำถามถามว่าที่นี่มีอะไรบ้าง คำตอบบอกว่ามีคาเฟ่ด้วย', 'คำถามถามว่ามีท่าเรือหรือไม่ ข้อมูลที่ให้บอกว่าไม่มี จึงตอบว่า Leider gibt es keinen Hafen.'],
-          ['คำถามถามว่าเดินเล่นที่นั่นได้ไหม คำตอบบอกว่าสามารถเดินเล่นได้', 'คำถามถามว่าตกปลาที่นั่นได้ด้วยหรือไม่ คำตอบบอกว่าสามารถตกปลาได้ด้วย'],
-          ['คำตอบพูดถึงสิ่งที่ชอบเป็นพิเศษ จึงเข้าคู่กับ Was gefällt Ihnen besonders?', 'คำตอบบอกว่าสิ่งที่ขาดคือสนามฟุตบอล จึงเข้าคู่กับ Was fehlt Ihnen?'],
-        ][groupIndex][index - 2],
+        explanation: '',
       };
       return { ...base, kind: 'order', subskill: 'phrase_order',
         prompt: 'เรียงคำเป็นประโยคตอบ โดยเริ่มด้วย ' + extra,

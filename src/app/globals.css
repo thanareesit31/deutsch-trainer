@@ -6016,3 +6016,59 @@ select {
 .noun-spelling-answer input{min-width:0;flex:1}
 .noun-practice-sticky{position:sticky;top:0;z-index:12;background:var(--paper,#f8faf6)}
 .noun-practice-sticky .article-legend{position:static;margin:0;border:0;background:transparent}
+
+/* Keep L13's embedded phrase runner and L14's React runner on one visual grid. */
+.l14-practice-page{max-width:1180px;padding:28px 32px 72px}
+.l14-practice-page>.vocabulary-image-progress{margin-bottom:18px;padding:8px 0;background:var(--bg)}
+.l14-practice-page .guided-card{margin-top:0;padding:clamp(20px,3vw,36px);border-radius:22px}
+.l14-practice-page .guided-card h1{max-width:900px;margin:8px 0 22px;font-size:clamp(25px,2.6vw,32px);font-weight:650;line-height:1.4}
+.l14-practice-page .guided-card .l14-order-title{margin:8px 0 22px;font-size:clamp(21px,2.3vw,29px);line-height:1.5}
+.l14-practice-page .l14-order-instruction{font-size:13px;font-weight:600;letter-spacing:.08em;color:#8a9a8b}
+.l14-practice-page .l14-phrase-choices .button{min-height:58px}
+.l14-practice-page .practice-feedback{margin:24px 0 8px;padding:22px 26px;border-radius:18px}
+.l14-practice-page .l14-question-navigation{justify-content:space-between}
+.l14-practice-page .l14-question-navigation>.button:only-child{margin-left:auto}
+@media(max-width:700px){.l14-practice-page{padding:20px 16px 52px}.l14-practice-page .guided-card{padding:20px}.l14-practice-page .practice-feedback{padding:18px}.l14-practice-page .l14-question-navigation{justify-content:flex-end}}
+
+/* Redemittel L13–L14: shared entry and result layout */
+.l14-practice-entry{gap:24px;max-width:900px}
+.l14-practice-entry-main{padding:27px 30px;background:#fff;border:1px solid #dde7dc;border-radius:16px}
+.l14-practice-entry-main .button{margin-top:18px}
+.phrase-practice-insights .eyebrow{margin:0 0 14px;color:#708075;font-size:12px;font-weight:700}
+.phrase-practice-insights p:not(.eyebrow){margin:0 0 8px;color:var(--ink);line-height:1.65}
+.phrase-practice-insights p:last-child{margin-bottom:0}
+.l14-practice-entry-topics{padding:0;border:1px solid #dde7dc;border-radius:13px;background:#fff}
+.l14-practice-entry-topics summary{width:100%;padding:17px 25px;color:var(--ink)}
+.l14-practice-entry-topics .practice-grammar-topic-list{padding:0 20px 20px}
+.practice-landing-extra{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 20px;border:1px solid #dde7dc;border-radius:12px;background:#fff}
+.practice-landing-extra h2{margin:0 0 5px;font-size:18px}
+.practice-landing-extra p{margin:0;color:var(--muted);line-height:1.55}
+.practice-landing-extra>a{display:inline-flex;align-items:center;gap:8px;flex:none;color:var(--green);font-weight:600;text-decoration:none}
+.practice-landing-extra>a:hover{text-decoration:underline}
+@media(max-width:700px){.practice-landing-extra{align-items:flex-start;flex-direction:column;gap:10px;padding:16px}}
+.phrase-practice-completion{max-width:900px}
+.phrase-practice-completion .phrase-practice-insights .eyebrow{color:var(--ink);font-size:22px}
+.phrase-practice-completion .guided-navigation{margin-top:28px}
+.phrase-resume-backdrop{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:20px;background:#263b302e;backdrop-filter:blur(3px)}
+.phrase-resume-dialog{width:min(100%,410px);padding:24px;background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:0 12px 24px #0002}
+.phrase-resume-heading{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.phrase-resume-heading h2{margin:0;font-size:18px;line-height:1.4}
+.phrase-resume-icon{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:50%;background:#f3f4f6;color:#6b7280}
+.phrase-resume-progress-label{display:flex;justify-content:space-between;gap:12px;margin-bottom:8px;font-size:14px}
+.phrase-resume-progress{height:8px;overflow:hidden;border-radius:99px;background:#f3f4f6}
+.phrase-resume-progress span{display:block;height:100%;border-radius:inherit;background:#10b981}
+.phrase-resume-actions{display:flex;justify-content:center;gap:12px;margin-top:24px}
+.phrase-resume-actions .button{min-height:44px}
+@media(max-width:700px){.l14-practice-entry-main{padding:22px}.l14-practice-entry-topics summary{padding:16px 20px}}
+.l14-match-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(35px,13%) minmax(0,1fr);gap:0;align-items:start}
+.l14-match-column{display:grid;gap:14px}
+.l14-match-column .l14-match-question,.l14-match-column .l14-match-answer{justify-content:center;min-height:58px;padding:10px 12px;text-align:center;font-size:16px}
+.l14-match-column [aria-pressed="true"],.l14-match-column [aria-pressed="true"]:hover,.l14-match-column [data-matched="true"],.l14-match-column [data-matched="true"]:hover{border:2px solid #64736a;background:#fff}
+.l14-match-lines{width:100%;height:130px;overflow:visible}
+.l14-match-lines line{stroke:#64736a;stroke-width:2}
+.l14-match-checked{display:grid;gap:12px}
+.l14-match-checked-row{display:grid;grid-template-columns:minmax(0,1fr) 54px minmax(0,1fr);align-items:center;gap:8px}
+.l14-match-checked-row>span:first-child,.l14-match-checked-row>span:last-child{padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:#eaf2e8;text-align:center;font-weight:600}
+.l14-match-checked-row.incorrect>span:first-child,.l14-match-checked-row.incorrect>span:last-child{background:#fff2ed;border-color:#c9877f}
+.l14-match-checked-row>span:nth-child(2){color:var(--green);font-size:26px;text-align:center}
+@media(max-width:700px){.l14-match-columns{grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr)}.l14-match-column .l14-match-question,.l14-match-column .l14-match-answer{min-height:76px;font-size:14px}.l14-match-lines{display:none}.l14-match-checked-row{grid-template-columns:minmax(0,1fr) 26px minmax(0,1fr);font-size:14px}}

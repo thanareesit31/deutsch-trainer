@@ -159,7 +159,7 @@
         "Ich finde die Stadt toll.",
         "Die Stadt ist zu groß."
       ],
-      "explanation": "คำถามถามว่าชอบเมืองนี้หรือไม่ คำตอบบอกว่าคิดว่าเมืองนี้ยอดเยี่ยม",
+      "explanation": "",
       "coverageItemIds": [
         "L13-R004"
       ]
@@ -194,7 +194,7 @@
         "Ich finde die Stadt toll.",
         "Die Stadt ist zu groß."
       ],
-      "explanation": "คำถามถามว่าเมืองใหญ่เกินไปหรือไม่ คำตอบบอกว่าเมืองใหญ่เกินไป",
+      "explanation": "",
       "coverageItemIds": [
         "L13-R007"
       ]
@@ -326,7 +326,7 @@
         "Es gibt auch ein Café.",
         "Leider gibt es keinen Hafen."
       ],
-      "explanation": "คำถามถามว่าที่นี่มีอะไรบ้าง คำตอบบอกว่ามีคาเฟ่ด้วย",
+      "explanation": "",
       "coverageItemIds": [
         "L13-R013"
       ]
@@ -361,7 +361,7 @@
         "Es gibt auch ein Café.",
         "Leider gibt es keinen Hafen."
       ],
-      "explanation": "คำถามถามว่ามีท่าเรือหรือไม่ ข้อมูลที่ให้บอกว่าไม่มี จึงตอบว่า Leider gibt es keinen Hafen.",
+      "explanation": "",
       "coverageItemIds": [
         "L13-R015"
       ]
@@ -493,7 +493,7 @@
         "Dort kann man spazieren gehen.",
         "Dort kann man auch angeln."
       ],
-      "explanation": "คำถามถามว่าเดินเล่นที่นั่นได้ไหม คำตอบบอกว่าสามารถเดินเล่นได้",
+      "explanation": "",
       "coverageItemIds": [
         "L13-R020"
       ]
@@ -528,7 +528,7 @@
         "Dort kann man spazieren gehen.",
         "Dort kann man auch angeln."
       ],
-      "explanation": "คำถามถามว่าตกปลาที่นั่นได้ด้วยหรือไม่ คำตอบบอกว่าสามารถตกปลาได้ด้วย",
+      "explanation": "",
       "coverageItemIds": [
         "L13-R021"
       ]
@@ -660,7 +660,7 @@
         "Was gefällt Ihnen besonders?",
         "Was fehlt Ihnen?"
       ],
-      "explanation": "คำตอบพูดถึงสิ่งที่ชอบเป็นพิเศษ จึงเข้าคู่กับ Was gefällt Ihnen besonders?",
+      "explanation": "",
       "coverageItemIds": [
         "L13-R028"
       ]
@@ -695,7 +695,7 @@
         "Was gefällt Ihnen besonders?",
         "Was fehlt Ihnen?"
       ],
-      "explanation": "คำตอบบอกว่าสิ่งที่ขาดคือสนามฟุตบอล จึงเข้าคู่กับ Was fehlt Ihnen?",
+      "explanation": "",
       "coverageItemIds": [
         "L13-R029"
       ]

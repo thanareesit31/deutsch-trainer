@@ -18,6 +18,7 @@ import { useContent } from "./content-provider";
 import { useLearning } from "./learning-store";
 import { lessonStateKeys, useLessonState } from "./lesson-state-provider";
 import { isL14VocabularyPracticeAvailable, useStore } from "./store";
+import { PracticeLanding } from "./practice-landing";
 
 type Topic = "institutions" | "places" | "directions";
 type Kind = "meaning" | "article" | "spelling";
@@ -238,14 +239,16 @@ export function L14VocabularyPractice({ slug }: { slug?: string }) {
   if (!bank) {
     const recommendation = recommendL14VocabularyPractice(JSON.stringify(sessions), items, learned);
     const suggestedBank = recommendation.href.split("/").at(-1);
-    return <main className="l14-vocab-practice">
-      <section className="l14-vocab-practice-card"><p className="eyebrow">WORTSCHATZ · LEKTION 14</p><h1>{recommendation.title}</h1><p>{recommendation.description}</p>
-        <Link className="button primary" href={recommendation.href} onClick={suggestedBank === "basic" || suggestedBank === "daily" ? () => begin(suggestedBank) : undefined}>{recommendation.action} <ArrowRight size={18} /></Link></section>
-      <h2>ฝึกเฉพาะหัวข้อ</h2><div className="l14-vocab-topics">{topicOrder.map(topic => {
+    return <PracticeLanding eyebrow="WORTSCHATZ · LEKTION 14" title={recommendation.title} description={recommendation.description}
+      href={recommendation.href} action={recommendation.action} ariaLabel="ชุดฝึกคำศัพท์บท 14">
+      {topicOrder.map(topic => {
         const count = selectQuestions(topic, sessions, learned, questions).length;
-        return <article key={topic} className="l14-vocab-practice-card"><h3>{topicInfo[topic].title}</h3><p>{count ? `${count} ข้อจากคำที่เรียนแล้ว` : "เรียนคำในหัวข้อนี้ก่อน"}</p>
-          <Link className="button secondary" href={count ? `/practice/L14/vocabulary/${topic}` : topicInfo[topic].learnHref} onClick={count ? () => begin(topic) : undefined}>{count ? "ฝึกหัวข้อนี้" : "ไปเรียน"}</Link></article>;
-      })}</div></main>;
+        const content = <><div><h2>{topicInfo[topic].title}</h2><p>{count ? `${count} ข้อจากคำที่เรียนแล้ว` : "เรียนคำในหัวข้อนี้ก่อน"}</p></div>{count > 0 && <span>ฝึกหัวข้อนี้ <ArrowRight size={18} /></span>}</>;
+        return count > 0
+          ? <Link key={topic} className="practice-grammar-topic" href={`/practice/L14/vocabulary/${topic}`} onClick={() => begin(topic)}>{content}</Link>
+          : <div key={topic} className="practice-grammar-topic unavailable">{content}<Link href={topicInfo[topic].learnHref}>ไปเรียน</Link></div>;
+      })}
+    </PracticeLanding>;
   }
   if (!run) return <main className="l14-vocab-practice" aria-busy="true">กำลังเตรียมข้อฝึก…</main>;
   if (!eligible || !run.questionIds.length) return <main className="l14-vocab-practice"><p>เรียนคำศัพท์ในชุดนี้ก่อนเริ่มฝึก</p><Link className="button primary" href="/learn/L14/vocabulary">ไปเรียนคำศัพท์</Link></main>;

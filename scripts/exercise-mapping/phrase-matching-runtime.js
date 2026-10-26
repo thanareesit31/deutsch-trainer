@@ -1,4 +1,4 @@
-let matchFocusId = null;
+let matchFocus = null;
 
 function phraseQuestionTranslation(question) {
   const translations = {
@@ -55,7 +55,7 @@ function matchingQuestion() {
   const block = session.items.slice(session.position, session.position + 2);
   if (block.length !== 2 || block.some(item => item.question.matchGroupId !== first.question.matchGroupId)) return false;
   const ids = block.map(item => item.question.id);
-  if (!ids.includes(matchFocusId)) matchFocusId = block.find(item => !item.response)?.question.id || ids[0];
+  if (matchFocus?.groupId !== first.question.matchGroupId) matchFocus = null;
   const submitted = block.every(item => item.attempt);
   const done = session.items.filter(item => item.attempt).length;
   if (session.workflow === 'guided') {
@@ -66,36 +66,59 @@ function matchingQuestion() {
   progress.append(node('span', `${done} / ${session.items.length} ข้อ`), node('progress', undefined, { value: done, max: session.items.length, 'aria-label': 'ความคืบหน้าชุดฝึก' }));
   app.append(progress);
   const card = node('section', undefined, { class: 'card', 'data-question-id': first.question.id, 'data-match-group': first.question.matchGroupId });
-  card.append(node('h1', 'จับคู่คำถามกับคำตอบ', { id: 'q-title', tabindex: '-1', class: 'tag question-instruction' }), node('p', first.question.matchContext));
-  card.append(node('p', 'เลือกคำถาม แล้วเลือกคำตอบด้านล่าง คำตอบที่เลือกจะแสดงข้างคำถาม จับครบ 2 คู่จึงตรวจคำตอบ', { class: 'muted' }));
-  const grid = node('div', undefined, { class: 'match-pairs' });
-  block.forEach((item, index) => {
-    const row = node('div', undefined, { class: 'match-pair-row' });
-    const prompt = button(`${index + 1}. ${item.question.sentence}`, () => { matchFocusId = item.question.id; render(); }, { lang: 'de', 'data-match-prompt': item.question.id, 'aria-pressed': matchFocusId === item.question.id });
-    prompt.disabled = submitted;
-    const answerCell = node('div', undefined, { class: 'match-pair-answer', 'data-match-pair': item.question.id });
-    answerCell.append(node('span', first.question.matchRightLabel, { class: 'muted' }));
-    answerCell.append(node('span', item.response || 'ยังไม่ได้เลือกคำตอบ', { lang: item.response ? 'de' : 'th', class: item.response ? 'matched-answer' : 'unmatched-answer' }));
-    row.append(prompt, answerCell);
-    grid.append(row);
-  });
-  card.append(grid, node('h2', 'ตัวเลือกคำตอบ', { class: 'match-options-title' }));
-  const options = node('div', undefined, { class: 'match-options' });
-  first.question.options.forEach(answer => {
-    const assigned = block.findIndex(item => item.response === answer);
-    const option = button(`${assigned >= 0 ? (assigned + 1) + ' · ' : ''}${answer}`, () => {
-      const target = matchFocusId;
+  card.append(node('h1', 'จับคู่คำถามกับคำตอบ', { id: 'q-title', tabindex: '-1', class: 'tag question-instruction' }));
+  if (first.question.matchContext) card.append(node('p', first.question.matchContext));
+  if (submitted) {
+    const rows = node('div', undefined, { class: 'phrase-match-checked' });
+    block.forEach(item => {
+      const row = node('div', undefined, { class: 'phrase-match-checked-row ' + (item.attempt.correct ? 'correct' : 'incorrect') });
+      row.append(node('span', item.question.sentence, { lang: 'de' }), node('span', '→', { 'aria-hidden': 'true' }), node('span', item.response, { lang: 'de' }));
+      rows.append(row);
+    });
+    card.append(rows);
+  } else {
+    card.append(node('p', 'เลือกกล่องจากฝั่งใดก่อนก็ได้ แล้วเลือกกล่องอีกฝั่งเพื่อจับคู่', { class: 'muted' }));
+    const connect = (questionId, answer) => {
       if (commit(state => {
         const rows = current(state).items.filter(item => ids.includes(item.question.id));
-        for (const item of rows) if (item.response === answer && item.question.id !== target) item.response = '';
-        rows.find(item => item.question.id === target).response = answer;
-        matchFocusId = rows.find(item => !item.response)?.question.id || target;
-      })) focusTitle();
-    }, { lang: 'de', 'data-match-answer': answer, 'aria-pressed': assigned >= 0 });
-    option.disabled = submitted;
-    options.append(option);
-  });
-  card.append(options);
+        for (const item of rows) if (item.response === answer) item.response = '';
+        rows.find(item => item.question.id === questionId).response = answer;
+      }, false)) { matchFocus = null; render(); focusTitle(); }
+    };
+    const remove = questionId => {
+      if (commit(state => { current(state).items.find(item => item.question.id === questionId).response = ''; }, false)) { matchFocus = null; render(); }
+    };
+    const grid = node('div', undefined, { class: 'phrase-match-columns' });
+    const questions = node('div', undefined, { class: 'phrase-match-column', 'aria-label': 'คำถาม' });
+    block.forEach(item => questions.append(button(item.question.sentence, () => {
+      if (matchFocus?.side === 'answer') { connect(item.question.id, matchFocus.value); return; }
+      if (matchFocus?.value === item.question.id) { if (item.response) remove(item.question.id); else { matchFocus = null; render(); } return; }
+      matchFocus = { side: 'question', value: item.question.id, groupId: first.question.matchGroupId }; render();
+    }, { lang: 'de', 'data-match-prompt': item.question.id, 'data-matched': Boolean(item.response), 'aria-pressed': matchFocus?.side === 'question' && matchFocus.value === item.question.id })));
+    const lines = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    lines.setAttribute('class', 'phrase-match-lines');
+    lines.setAttribute('viewBox', '0 0 100 130');
+    lines.setAttribute('preserveAspectRatio', 'none');
+    lines.setAttribute('aria-hidden', 'true');
+    block.forEach((item, index) => {
+      const target = first.question.options.indexOf(item.response);
+      if (target < 0) return;
+      const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      for (const [key, value] of Object.entries({ x1: 0, y1: index * 72 + 29, x2: 100, y2: target * 72 + 29 })) line.setAttribute(key, String(value));
+      lines.append(line);
+    });
+    const options = node('div', undefined, { class: 'phrase-match-column', 'aria-label': 'คำตอบ' });
+    first.question.options.forEach(answer => {
+      const assigned = block.find(item => item.response === answer);
+      options.append(button(answer, () => {
+        if (matchFocus?.side === 'question') { connect(matchFocus.value, answer); return; }
+        if (matchFocus?.value === answer) { if (assigned) remove(assigned.question.id); else { matchFocus = null; render(); } return; }
+        matchFocus = { side: 'answer', value: answer, groupId: first.question.matchGroupId }; render();
+      }, { lang: 'de', 'data-match-answer': answer, 'data-matched': Boolean(assigned), 'aria-pressed': matchFocus?.side === 'answer' && matchFocus.value === answer }));
+    });
+    grid.append(questions, lines, options);
+    card.append(grid);
+  }
   const actions = node('div', undefined, { class: 'row actions' });
   actions.append(backButton(first.question));
   if (!submitted) {
@@ -114,7 +137,8 @@ function matchingQuestion() {
       feedback.append(node('h2', `คู่ ${index + 1} · ${item.attempt.correct ? 'ถูกต้อง' : 'ยังไม่ถูก'}`), node('p', item.question.sentence, { lang: 'de' }));
       const questionTranslation = phraseQuestionTranslation(item.question);
       if (questionTranslation) feedback.append(node('p', 'คำแปลคำถาม: ' + questionTranslation, { class: 'thai-translation', lang: 'th' }));
-      feedback.append(node('p', 'คำตอบ: ' + item.question.feedbackAnswer, { lang: 'de' }), node('p', item.question.translation, { class: 'thai-translation', lang: 'th' }), node('p', item.question.explanation));
+      feedback.append(node('p', 'คำตอบ: ' + item.question.feedbackAnswer, { lang: 'de' }), node('p', item.question.translation, { class: 'thai-translation', lang: 'th' }));
+      if (item.question.explanation) feedback.append(node('p', item.question.explanation));
     });
     card.append(feedback);
     actions.append(button(session.position + 2 >= session.items.length ? 'จบชุดฝึก' : 'ข้อต่อไป', () => {

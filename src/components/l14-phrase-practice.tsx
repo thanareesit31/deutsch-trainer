@@ -7,6 +7,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { lessonStateKeys, useLessonState } from "./lesson-state-provider";
 import { isL14PhrasePracticeAvailable, isTestWorkspaceUser, useStore } from "./store";
 import { phraseQuestionWordMeanings, phraseVisualPrompts, type PhraseVisualPrompt } from "@/lib/l14-phrase-visual-prompts";
+import { l14PhrasePracticeTopics, practiceStorageKey } from "@/lib/practice-planner";
+import { PhrasePracticeInsights, ResumePracticeDialog } from "./phrase-practice-ui";
 
 function GermanVisualQuestion({ visual }: { visual: PhraseVisualPrompt }) {
   const [active, setActive] = useState<{ index: number; word: string } | null>(null);
@@ -22,7 +24,7 @@ function GermanVisualQuestion({ visual }: { visual: PhraseVisualPrompt }) {
 type Topic = "ask" | "describe" | "unknown" | "thanks";
 type ChoiceTask = { id: string; targetId?: string; topic: Topic; kind: "context" | "dialogue"; prompt: string; options: string[]; answer: string; translation: string; explanation: string };
 type OrderTask = { id: string; topic: Topic; kind: "order"; tokens: string[]; answer: string; translation: string; ruleTitle: string; rules: string[]; noteTitle: string; exampleNote: string };
-type MatchPair = { id: string; targetId: string; question: string; questionThai: string; answer: string; translation: string; explanation: string };
+type MatchPair = { id: string; targetId: string; question: string; questionThai: string; answer: string; translation: string };
 type MatchTask = { id: string; topic: Topic; kind: "match"; pairs: [MatchPair, MatchPair] };
 type Task = ChoiceTask | OrderTask | MatchTask;
 const topicInfo: Record<Topic, { title: string; count: number }> = {
@@ -50,8 +52,8 @@ const authoredTasks: Task[] = [
 ];
 const describeMatch: MatchTask = {
   id:"describe-place-distance-match",topic:"describe",kind:"match",pairs:[
-    { id:"match-describe-see",targetId:"describe-see",question:"Wo ist die Apotheke?",questionThai:"ร้านขายยาอยู่ที่ไหน",answer:"Da sehen Sie eine Apotheke.",translation:"ตรงนั้นคุณจะเห็นร้านขายยา",explanation:"คำถามถามตำแหน่ง จึงตอบโดยชี้ให้เห็นร้านขายยา" },
-    { id:"match-describe-distance",targetId:"describe-distance",question:"Ist es weit bis zur Apotheke?",questionThai:"ไปร้านขายยาไกลไหม",answer:"Das ist gar nicht weit.",translation:"ไม่ไกลเลย",explanation:"คำถามถามระยะทาง จึงตอบว่าไม่ไกล" },
+    { id:"match-describe-see",targetId:"describe-see",question:"Wo ist die Apotheke?",questionThai:"ร้านขายยาอยู่ที่ไหน",answer:"Da sehen Sie eine Apotheke.",translation:"ตรงนั้นคุณจะเห็นร้านขายยา" },
+    { id:"match-describe-distance",targetId:"describe-distance",question:"Ist es weit bis zur Apotheke?",questionThai:"ไปร้านขายยาไกลไหม",answer:"Das ist gar nicht weit.",translation:"ไม่ไกลเลย" },
   ],
 };
 const guidedTasks: Task[] = [
@@ -65,7 +67,7 @@ const reviewTasks: ChoiceTask[] = [
 const tasks: Task[] = [...authoredTasks,describeMatch,...reviewTasks];
 const mixedCounts: Record<Topic, number> = { ask: 4, describe: 5, unknown: 3, thanks: 3 };
 type Attempt = { questionId: string; topic: Topic; kind: Task["kind"]; correct: boolean; answer: string; submittedAt: string };
-type Progress = { version: 1; runId: string; taskIds: string[]; position: number; attempts: Attempt[]; draft: { questionId: string; selected: string } | null; completed: boolean; updatedAt: string };
+type Progress = { version: 1; runId: string; createdAt: string; taskIds: string[]; position: number; attempts: Attempt[]; draft: { questionId: string; selected: string } | null; completed: boolean; updatedAt: string };
 type ArchivedRun = { runId: string; bank: string; attempts: Attempt[]; completedAt: string };
 type PracticeSessions = { version: 1; banks: Record<string, Progress>; runs: ArchivedRun[] };
 const key = lessonStateKeys.l14PhrasePractice;
@@ -142,7 +144,7 @@ function dailyTaskIds(sessions: PracticeSessions, learned: Set<string>, now=Date
   }
   return [...selected.filter(task=>task.kind!=="order"),...selected.filter(task=>task.kind==="order")].map(task=>task.id);
 }
-const empty = (bank: string, sessions: PracticeSessions, learned: Set<string>): Progress => ({ version:1,runId:crypto.randomUUID(),taskIds:bank==="mixed"?mixedTaskIds(sessions.runs).filter(id=>{const task=tasks.find(item=>item.id===id);return task&&taskEligible(task,learned);}):bank==="daily"?dailyTaskIds(sessions,learned):guidedTasks.filter(task=>(!isTopic(bank)||task.topic===bank)&&taskEligible(task,learned)).map(task=>task.id),position:0,attempts:[],draft:null,completed:false,updatedAt:new Date().toISOString() });
+const empty = (bank: string, sessions: PracticeSessions, learned: Set<string>): Progress => { const now=new Date().toISOString();return { version:1,runId:crypto.randomUUID(),createdAt:now,taskIds:bank==="mixed"?mixedTaskIds(sessions.runs).filter(id=>{const task=tasks.find(item=>item.id===id);return task&&taskEligible(task,learned);}):bank==="daily"?dailyTaskIds(sessions,learned):guidedTasks.filter(task=>(!isTopic(bank)||task.topic===bank)&&taskEligible(task,learned)).map(task=>task.id),position:0,attempts:[],draft:null,completed:false,updatedAt:now }; };
 function isRecord(value: unknown): value is Record<string, unknown> { return typeof value === "object" && value !== null && !Array.isArray(value); }
 function isTopic(value: unknown): value is Topic { return typeof value === "string" && Object.hasOwn(topicInfo,value); }
 function parseMatchSelection(task: MatchTask, selected: string): Record<string,string> | null {
@@ -190,7 +192,8 @@ function parseProgress(value: unknown): Progress | null {
   const position = typeof value.position === "number" && Number.isInteger(value.position) ? Math.max(0,Math.min(value.position,taskIds.length)) : 0;
   const validAttempts=attempts.filter((attempt):attempt is Attempt=>attempt!==null);
   const updatedAt=typeof value.updatedAt==="string"&&Number.isFinite(Date.parse(value.updatedAt))?value.updatedAt:validAttempts.at(-1)?.submittedAt??new Date(0).toISOString();
-  return {version:1,runId,taskIds,position,attempts:validAttempts,draft,completed:value.completed===true,updatedAt};
+  const createdAt=typeof value.createdAt==="string"&&Number.isFinite(Date.parse(value.createdAt))?value.createdAt:updatedAt;
+  return {version:1,runId,createdAt,taskIds,position,attempts:validAttempts,draft,completed:value.completed===true,updatedAt};
 }
 function parseArchivedRun(value: unknown): ArchivedRun | null {
   if (!isRecord(value) || typeof value.runId!=="string" || typeof value.bank!=="string" || typeof value.completedAt!=="string" || !Number.isFinite(Date.parse(value.completedAt)) || !Array.isArray(value.attempts)) return null;
@@ -211,6 +214,138 @@ function readSessions(raw: string | null): PracticeSessions {
     const runs=Array.isArray(value.runs)?value.runs.map(parseArchivedRun).filter((run):run is ArchivedRun=>run!==null):[];
     return {version:1,banks,runs};
   } catch { return {version:1,banks:{},runs:[]}; }
+}
+function l14TaskQuestion(task: Task, pair?: MatchPair) {
+  const itemId=pair?.targetId??(task.kind==="order"?task.id:task.kind==="match"?task.pairs[0].targetId:task.targetId??task.id);
+  const topicId=`L14-phrases-${task.topic}`;
+  if (pair&&task.kind==="match") return {id:pair.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"phrase_match",kind:"choice",acceptedAnswers:[pair.answer],options:task.pairs.map(entry=>entry.answer),interaction:"match",matchGroupId:task.id};
+  if (task.kind==="order") return {id:task.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"phrase_order",kind:"order",acceptedAnswers:[task.answer],tokens:task.tokens};
+  if (task.kind==="context"||task.kind==="dialogue") return {id:task.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:task.kind==="context"?"phrase_context":"phrase_dialogue",kind:"choice",acceptedAnswers:[task.answer],options:task.options};
+  throw new Error("Expected an individual L14 practice question");
+}
+type SharedTaskItem = { task: Task; pair?: MatchPair; question: ReturnType<typeof l14TaskQuestion> };
+function sharedItems(task: Task): SharedTaskItem[] {
+  if (task.kind === "match") return task.pairs.map(pair => ({ task, pair, question: l14TaskQuestion(task, pair) }));
+  return [{ task, question: l14TaskQuestion(task) }];
+}
+function sharedSession(bank: string, progress: Progress) {
+  const queue=progress.taskIds.map(id=>tasks.find(task=>task.id===id)).filter((task):task is Task=>Boolean(task));
+  const flattened=queue.flatMap(task=>sharedItems(task));
+  const attemptsById=new Map(progress.attempts.map(attempt=>[attempt.questionId,attempt]));
+  const draft=progress.draft;
+  let draftMatch: Record<string,string>={};
+  if (draft&&tasks.find(task=>task.id===draft.questionId)?.kind==="match") draftMatch=parseMatchSelection(describeMatch,draft.selected)??{};
+  const items=flattened.map(({task,pair,question})=>{
+    const questionId=pair?.id??task.id;
+    const attempt=attemptsById.get(questionId);
+    let response=attempt?.answer??"";
+    if (!attempt&&draft) {
+      if (task.kind==="match"&&draft.questionId===task.id) response=draftMatch[questionId]??"";
+      else if (draft.questionId===task.id) response=draft.selected;
+    }
+    const tokenOrder=task.kind==="order"&&response?response.split(" "):[];
+    return {question,response,selected:[],tokenOrder,hintUsed:false,translationUsed:false,attempt:attempt?{response:attempt.answer,correct:attempt.correct,status:"completed",submittedAt:attempt.submittedAt,confidence:null}:null};
+  });
+  const position=queue.slice(0,progress.position).reduce((count,task)=>count+taskCount(task),0);
+  const itemPosition=Math.min(position,Math.max(0,items.length-1));
+  const href=l14PhrasePracticeTopics.find(entry=>entry.storage===`phrase-l14-${bank}`)?.href??`/practice/L14/phrases/${bank}`;
+  return {id:progress.runId,href,createdAt:progress.createdAt,updatedAt:progress.updatedAt,completed:progress.completed,archived:false,position:itemPosition,items};
+}
+function progressFromRun(run: ArchivedRun): Progress {
+  const taskIds:string[]=[];
+  for (const attempt of run.attempts) {
+    const pairTask=tasks.find(task=>task.kind==="match"&&task.pairs.some(pair=>pair.id===attempt.questionId));
+    const taskId=pairTask?.id??attempt.questionId;
+    if (!taskIds.includes(taskId)) taskIds.push(taskId);
+  }
+  const lastTask=tasks.find(task=>task.id===taskIds.at(-1));
+  const position=taskIds.slice(0,-1).reduce((count,id)=>{const task=tasks.find(entry=>entry.id===id);return count+(task?taskCount(task):1);},0);
+  return {version:1,runId:run.runId,createdAt:run.completedAt,taskIds,position:lastTask?position:0,attempts:run.attempts,draft:null,completed:true,updatedAt:run.completedAt};
+}
+function taskIdsFromShared(items: unknown[]) {
+  const ids:string[]=[];
+  for (let index=0;index<items.length;index++) {
+    const item=items[index];
+    if (!isRecord(item)||!isRecord(item.question)||typeof item.question.id!=="string") return null;
+    const questionId=item.question.id;
+    const matchTask=tasks.find(task=>task.kind==="match"&&task.pairs.some(pair=>pair.id===questionId));
+    if (matchTask?.kind === "match") {
+      if (ids.at(-1)!==matchTask.id) ids.push(matchTask.id);
+      const nextItem=items[index+1];
+      const nextQuestion=isRecord(nextItem)&&isRecord(nextItem.question)?nextItem.question:null;
+      if (nextQuestion&&typeof nextQuestion.id==="string"&&matchTask.pairs.some(pair=>pair.id===nextQuestion.id)) index++;
+      continue;
+    }
+    if (!tasks.some(task=>task.id===questionId&&task.kind!=="match")) return null;
+    ids.push(questionId);
+  }
+  return ids;
+}
+function progressFromShared(value: unknown): Progress | null {
+  if (!isRecord(value)||typeof value.id!=="string"||typeof value.createdAt!=="string"||!Array.isArray(value.items)||value.items.length===0) return null;
+  const sharedItemsArray: unknown[] = value.items;
+  const taskIds=taskIdsFromShared(sharedItemsArray);
+  if (!taskIds?.length) return null;
+  const attempts:Attempt[]=[];
+  const sourceTasks: { task: Task; pair?: MatchPair }[] = tasks.flatMap((task): { task: Task; pair?: MatchPair }[] =>
+    task.kind === "match" ? task.pairs.map(pair => ({ task, pair })) : [{ task }]);
+  for (const item of sharedItemsArray) {
+    if (!isRecord(item)||!isRecord(item.question)||typeof item.question.id!=="string"||!isRecord(item.attempt)) continue;
+    const questionId=item.question.id;
+    const source=sourceTasks.find(entry=>entry.pair?.id===questionId||entry.task.id===questionId);
+    if (!source||typeof item.attempt.correct!=="boolean"||typeof item.attempt.response!=="string"||typeof item.attempt.submittedAt!=="string") return null;
+    attempts.push({questionId,topic:source.task.topic,kind:source.pair?"match":source.task.kind,correct:item.attempt.correct,answer:item.attempt.response,submittedAt:item.attempt.submittedAt});
+  }
+  const rawPosition=typeof value.position==="number"&&Number.isInteger(value.position)?Math.max(0,value.position):0;
+  let position=0,flatPosition=0;
+  while (position<taskIds.length-1&&flatPosition<rawPosition) { const task=tasks.find(entry=>entry.id===taskIds[position]);flatPosition+=task?taskCount(task):1;position++; }
+  const active=tasks.find(task=>task.id===taskIds[position]);
+  let draft:{questionId:string;selected:string}|null=null;
+  if (active) {
+    const activeQuestions=sharedItems(active);
+    const matchingDrafts=activeQuestions.flatMap(({pair,task},offset)=>{
+      const sharedItem=sharedItemsArray[flatPosition+offset];
+      const id=pair?.id??task.id;
+      return isRecord(sharedItem)&&typeof sharedItem.response==="string"&&sharedItem.response ? [{id,response:sharedItem.response}] : [];
+    });
+    if (active.kind==="match"&&matchingDrafts.length) draft={questionId:active.id,selected:JSON.stringify(Object.fromEntries(matchingDrafts.map(entry=>[entry.id,entry.response])))};
+    else if (matchingDrafts[0]) draft={questionId:active.id,selected:matchingDrafts[0].response};
+  }
+  const updatedAt=typeof value.updatedAt==="string"?value.updatedAt:value.createdAt;
+  return {version:1,runId:value.id,createdAt:value.createdAt,taskIds,position,attempts,draft,completed:value.completed===true,updatedAt};
+}
+function mergeSharedSessions(initial: PracticeSessions, userId: string): PracticeSessions {
+  if (typeof window==="undefined") return initial;
+  const banks={...initial.banks};
+  const runs=[...initial.runs];
+  for (const entry of l14PhrasePracticeTopics) {
+    const bank=entry.storage.replace("phrase-l14-","");
+    try {
+      const raw=window.localStorage.getItem(practiceStorageKey(entry.storage,entry.frame,userId));
+      if (!raw) continue;
+      const value:unknown=JSON.parse(raw);
+      if (!isRecord(value)||!Array.isArray(value.sessions)) continue;
+      for (const session of value.sessions) {
+        const progress=progressFromShared(session);
+        if (!progress) continue;
+        const existing=banks[bank];
+        if (!existing||existing.runId!==progress.runId||existing.updatedAt<progress.updatedAt) banks[bank]=progress;
+        if (progress.completed&&!runs.some(run=>run.runId===progress.runId)) runs.push({runId:progress.runId,bank,attempts:progress.attempts,completedAt:progress.updatedAt});
+      }
+    } catch { /* Keep legacy local history when a shared snapshot is unreadable. */ }
+  }
+  return {...initial,banks,runs};
+}
+function writeSharedSessions(sessions: PracticeSessions, userId: string) {
+  if(typeof window==="undefined")return;
+  for(const entry of l14PhrasePracticeTopics){
+    const bank=entry.storage.replace("phrase-l14-","");
+    const sessionsForBank=[...sessions.runs.filter(run=>run.bank===bank).map(run=>progressFromRun(run)),...(sessions.banks[bank]?[sessions.banks[bank]]:[])].filter(progress=>progress.taskIds.length>0);
+    const unique=new Map(sessionsForBank.map(progress=>[progress.runId,progress]));
+    const value={version:1,sessions:[...unique.values()].map(progress=>sharedSession(bank,progress)),activeId:sessions.banks[bank]?.runId??null};
+    window.localStorage.setItem(practiceStorageKey(entry.storage,entry.frame,userId),JSON.stringify(value));
+  }
+  window.dispatchEvent(new Event("practice-progress-updated"));
 }
 export function recommendL14PhrasePractice(practiceRaw: string | null, learningRaw: string | null, tester: boolean) {
   const sessions=readSessions(practiceRaw);
@@ -239,9 +374,9 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
   const learned=learnedTargets(storage.read(lessonStateKeys.l14Phrases),isTestWorkspaceUser(user));
   const bankKey = slug ?? "overview";
   const [sessions,setSessions] = useState<PracticeSessions>(()=>{
-    const saved=readSessions(storage.read(key));
-    return slug && !saved.banks[bankKey] ? {...saved,banks:{...saved.banks,[bankKey]:empty(bankKey,saved,learned)}} : saved;
+    return readSessions(storage.read(key));
   });
+  const [sharedReady,setSharedReady]=useState(false);
   const progress = sessions.banks[bankKey] ?? empty(bankKey,sessions,learned);
   const setProgress = (update: (current: Progress) => Progress) => setSessions(previous=>{
     const current=previous.banks[bankKey]??empty(bankKey,previous,learned);
@@ -250,9 +385,11 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
     return {...previous,banks:{...previous.banks,[bankKey]:next},runs};
   });
   const [selected,setSelected] = useState("");
-  const [activeMatchId,setActiveMatchId] = useState("");
+  const [matchFocus,setMatchFocus] = useState<{ side: "question" | "answer"; value: string } | null>(null);
   const [finished,setFinished] = useState(false);
-  useEffect(()=>{ storage.write(key,JSON.stringify(sessions));window.dispatchEvent(new Event("practice-progress-updated")); },[sessions,storage]);
+  const [showResume,setShowResume] = useState(true);
+  useEffect(()=>{if(!user)return;setSessions(previous=>mergeSharedSessions(previous,user.id));setSharedReady(true);},[user?.id]);
+  useEffect(()=>{if(sharedReady&&user)writeSharedSessions(sessions,user.id);},[sessions,sharedReady,user?.id]);
   const topic = slug && slug in topicInfo ? slug as Topic : undefined;
   const guided = slug === "basic";
   const mixed = slug === "mixed";
@@ -277,7 +414,7 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
     }
     setSelected(currentAttempt?.questionId===current.id?currentAttempt.answer:progress.draft?.questionId===current.id?progress.draft.selected:"");
   },[current,currentAttempt,progress.attempts,progress.draft]);
-  useEffect(()=>{setActiveMatchId(current?.kind==="match"?current.pairs[0].id:"");},[current?.id]);
+  useEffect(()=>{setMatchFocus(null);},[current?.id]);
   const selectedTokens=current?.kind==="order"&&selected?selected.split(" "):[];
   const matchSelection=current?.kind==="match"?parseMatchSelection(current,selected)??{}:{};
   const canSubmit = current?.kind==="match" ? current.pairs.every(pair=>Boolean(matchSelection[pair.id])) : Boolean(selected);
@@ -308,38 +445,43 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
     const current=sessions.banks[bank];
     if (current && !current.completed) return;
     const next={...sessions,banks:{...sessions.banks,[bank]:empty(bank,sessions,learned)}};
-    storage.write(key,JSON.stringify(next));
+    if(user)writeSharedSessions(next,user.id);
     setSessions(next);
   }
   if (!isL14PhrasePracticeAvailable(user)) return <main className="page-heading"><h1>กำลังเตรียมแบบฝึกหัดประโยคและสำนวนบท 14</h1><Link href="/learn/L14/phrases">กลับไปบทเรียน</Link></main>;
+  if (!sharedReady) return <main className="page-heading" aria-busy="true"><p>กำลังโหลดประวัติแบบฝึกหัด…</p></main>;
   if (slug&&!eligibleQueue) return <main className="l14-practice-page"><p>เรียนประโยคในชุดนี้ก่อนเริ่มฝึก</p><Link href="/learn/L14/phrases">ไปเรียนประโยคและสำนวน</Link></main>;
   if (!slug) {
     const recommendation=recommendL14PhrasePractice(JSON.stringify(sessions),storage.read(lessonStateKeys.l14Phrases),isTestWorkspaceUser(user));
     const primaryBank=recommendation.href.split("/").at(-1);
+    const evidence=attemptHistory(sessions).slice(-20).reverse().map(attempt=>({correct:attempt.correct,topic:topicInfo[attempt.topic].title}));
+    const pending=recommendation.kind==="resume"?sessions.banks[primaryBank??""]:undefined;
+    const pendingQueue=pending?.taskIds.map(id=>tasks.find(task=>task.id===id)).filter((task):task is Task=>Boolean(task))??[];
+    const pendingTotal=pendingQueue.reduce((sum,task)=>sum+taskCount(task),0);
+    const pendingDone=pending?.attempts.length??0;
     return <main className="l14-practice-entry">
-      <section className="l14-practice-entry-main"><p className="eyebrow">REDEMITTEL · LEKTION 14</p><h1>{recommendation.title}</h1><p>{recommendation.description}</p><Link className="button primary" href={recommendation.href} onClick={recommendation.kind==="resume"||recommendation.kind==="learn"||!primaryBank?undefined:()=>beginBank(primaryBank==="basic"?"basic":"daily")}>{recommendation.action} <ArrowRight size={18}/></Link></section>
+      <section className="l14-practice-entry-main"><PhrasePracticeInsights evidence={evidence} recommendation={recommendation.description}/><Link className="button primary" href={recommendation.href} onClick={recommendation.kind==="resume"&&pendingDone>0?event=>{event.preventDefault();setShowResume(true);}:recommendation.kind==="learn"||!primaryBank||recommendation.kind==="resume"?undefined:()=>beginBank(primaryBank==="basic"?"basic":"daily")}>{recommendation.kind==="resume"&&pendingDone===0?"เริ่มฝึก":recommendation.action} <ArrowRight size={18}/></Link></section>
       <details className="l14-practice-entry-topics"><summary>ฝึกเฉพาะหัวข้อ</summary><div className="practice-grammar-topic-list">{topicOrder.map(id=>{
         const count=guidedTasks.filter(task=>task.topic===id&&taskEligible(task,learned)).reduce((sum,task)=>sum+taskCount(task),0);
         return count?<Link className="practice-grammar-topic" href={`/practice/L14/phrases/${id}`} onClick={()=>beginBank(id)} key={id}><div><h2>{topicInfo[id].title}</h2><p>{count} ประโยคที่เรียนแล้ว · {count} ข้อ</p></div><span>ทำแบบฝึกหัด <ArrowRight size={18}/></span></Link>:<div className="practice-grammar-topic unavailable" key={id}><div><h2>{topicInfo[id].title}</h2><p>เรียนประโยคในหัวข้อนี้ก่อนเริ่มฝึก</p></div><Link href="/learn/L14/phrases">ไปเรียน</Link></div>;
       })}</div></details>
+      {recommendation.kind==="resume"&&pending&&pendingDone>0&&showResume&&<ResumePracticeDialog href={recommendation.href} done={pendingDone} total={pendingTotal} onClose={()=>setShowResume(false)}/>}
     </main>;
   }
-  if (finished || progress.completed) return <main className="l14-practice-page"><div className="guided-card"><p className="eyebrow">LEKTION 14 · REDEMITTEL</p><h1>{guided?"ฝึกครบทุกหัวข้อแล้ว":daily?"จบรอบฝึกวันนี้แล้ว":mixed?"ฝึกครบ 15 ข้อแล้ว":topic?`ฝึกหัวข้อ${topicInfo[topic].title}ครบแล้ว`:"จบรอบฝึกแล้ว"}</h1><div className="guided-navigation">{nextTopic&&<Link className="button primary" href={`/practice/L14/phrases/${nextTopic}`} onClick={()=>beginBank(nextTopic)}>ฝึกหัวข้อถัดไป</Link>}{guided||mixed?<Link className="button secondary" href="/practice/L14/phrases/daily" onClick={()=>beginBank("daily")}>ฝึกเพิ่ม</Link>:<button className="button secondary" type="button" onClick={reset}>ฝึกเพิ่ม</button>}<Link className="button secondary" href="/practice/L14/phrases">จบ</Link></div></div></main>;
+  if (finished || progress.completed) return <main className="l14-practice-page"><div className="guided-card phrase-practice-completion"><PhrasePracticeInsights completed evidence={progress.attempts.map(attempt=>({correct:attempt.correct,topic:topicInfo[attempt.topic].title}))} recommendation="ฝึกเพิ่มด้วยโจทย์จากประโยคที่เรียนแล้ว"/><div className="guided-navigation">{nextTopic&&<Link className="button primary" href={`/practice/L14/phrases/${nextTopic}`} onClick={()=>beginBank(nextTopic)}>ฝึกหัวข้อถัดไป</Link>}{guided||mixed?<Link className="button secondary" href="/practice/L14/phrases/daily" onClick={()=>beginBank("daily")}>ฝึกเพิ่ม</Link>:<button className="button secondary" type="button" onClick={reset}>ฝึกเพิ่ม</button>}<Link className="button secondary" href="/practice/L14/phrases">จบ</Link></div></div></main>;
   if (!current) return <main className="l14-practice-page"><p>ยังไม่มีข้อฝึกจากสำนวนที่เรียนแล้วในหัวข้อนี้</p><Link href="/learn/L14/phrases">ไปเรียนประโยคและสำนวน</Link></main>;
   const answerCorrect = current.kind==="match"?matchAttempts.every(attempt=>attempt?.correct===true):currentAttempt?.correct === true;
   const progressLabel = `${completedCount+1}${current.kind==="match"?`–${completedCount+taskCount(current)}`:""} / ${totalCount} ข้อ`;
   const visual = current.kind === "context" || current.kind === "dialogue" ? phraseVisualPrompts[current.id] : null;
-  function assignMatch(answer: string) {
+  function connectMatch(questionId: string, answer: string) {
     if (current?.kind!=="match" || checked) return;
-    const target=activeMatchId || current.pairs.find(pair=>!matchSelection[pair.id])?.id;
-    if (!target) return;
     const next={...matchSelection};
     for (const pair of current.pairs) if (next[pair.id]===answer) delete next[pair.id];
-    next[target]=answer;
+    next[questionId]=answer;
     const encoded=JSON.stringify(next);
     setSelected(encoded);
     setProgress(p=>({...p,draft:{questionId:current.id,selected:encoded}}));
-    setActiveMatchId(current.pairs.find(pair=>pair.id!==target&&!next[pair.id])?.id??target);
+    setMatchFocus(null);
   }
   function removeMatch(pairId: string) {
     if (current?.kind!=="match" || checked) return;
@@ -348,7 +490,21 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
     const encoded=JSON.stringify(next);
     setSelected(encoded);
     setProgress(p=>({...p,draft:{questionId:current.id,selected:encoded}}));
-    setActiveMatchId(pairId);
+    setMatchFocus(null);
+  }
+  function selectMatchQuestion(questionId: string) {
+    if (matchFocus?.side==="answer") { connectMatch(questionId,matchFocus.value); return; }
+    if (matchFocus?.value===questionId) { if (matchSelection[questionId]) removeMatch(questionId); else setMatchFocus(null); return; }
+    setMatchFocus({side:"question",value:questionId});
+  }
+  function selectMatchAnswer(answer: string) {
+    if (matchFocus?.side==="question") { connectMatch(matchFocus.value,answer); return; }
+    if (matchFocus?.value===answer) {
+      const assigned=current?.kind==="match"?current.pairs.find(pair=>matchSelection[pair.id]===answer):undefined;
+      if (assigned) removeMatch(assigned.id); else setMatchFocus(null);
+      return;
+    }
+    setMatchFocus({side:"answer",value:answer});
   }
   return <main className="l14-practice-page">
     <div className="vocabulary-image-progress"><span>{progressLabel}</span><div className="vocabulary-image-progress-track" role="progressbar" aria-valuemin={0} aria-valuemax={totalCount} aria-valuenow={completedCount+taskCount(current)}><span style={{width:`${(completedCount+taskCount(current))/totalCount*100}%`}}/></div></div>
@@ -361,16 +517,14 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
         {selectedTokens.length>0&&!checked&&<button className="button secondary" type="button" onClick={()=>{setSelected("");setProgress(p=>({...p,draft:null}));}}>ล้างคำที่เรียง</button>}
       </> : current.kind==="match" ? <div className="l14-match">
         <h1>จับคู่คำถามกับคำตอบ</h1>
-        <p className="l14-match-help">เลือกคำถาม แล้วเลือกคำตอบที่ตรงกัน</p>
-        <div className="l14-match-rows">{current.pairs.map((pair,index)=>{
-          const attempt=matchAttempts[index];
-          return <div className={`l14-match-row ${activeMatchId===pair.id&&!checked?"active":""} ${attempt?attempt.correct?"correct":"incorrect":""}`} key={pair.id}>
-            <button className="l14-match-question" type="button" aria-pressed={activeMatchId===pair.id&&!checked} disabled={checked} onClick={()=>setActiveMatchId(pair.id)}><span className="l14-match-number">{index+1}</span><span lang="de">{pair.question}</span></button>
-            <span className="l14-match-join" aria-hidden="true">→</span>
-            {matchSelection[pair.id]?<button className="l14-match-answer" type="button" disabled={checked} aria-label={`${pair.question} คู่กับ ${matchSelection[pair.id]}${checked?"": " กดเพื่อนำคำตอบกลับ"}`} onClick={()=>removeMatch(pair.id)} lang="de">{matchSelection[pair.id]}{!checked&&<span aria-hidden="true"> ×</span>}</button>:<span className="l14-match-empty">เลือกคำตอบด้านล่าง</span>}
-          </div>;
-        })}</div>
-        {!checked&&<div className="l14-match-bank" aria-label="ตัวเลือกคำตอบ">{[...current.pairs].reverse().filter(pair=>!Object.values(matchSelection).includes(pair.answer)).map(pair=><button className="button secondary" type="button" key={pair.id} onClick={()=>assignMatch(pair.answer)} lang="de">{pair.answer}</button>)}</div>}
+        {checked?<div className="l14-match-checked">{current.pairs.map((pair,index)=><div className={`l14-match-checked-row ${matchAttempts[index]?.correct?"correct":"incorrect"}`} key={pair.id}><span lang="de">{pair.question}</span><span aria-hidden="true">→</span><span lang="de">{matchSelection[pair.id]}</span></div>)}</div>:<>
+          <p className="l14-match-help">เลือกกล่องจากฝั่งใดก่อนก็ได้ แล้วเลือกกล่องอีกฝั่งเพื่อจับคู่</p>
+          <div className="l14-match-columns">
+            <div className="l14-match-column" aria-label="คำถาม">{current.pairs.map(pair=><button className="l14-match-question" type="button" key={pair.id} aria-pressed={matchFocus?.side==="question"&&matchFocus.value===pair.id} data-matched={Boolean(matchSelection[pair.id])} onClick={()=>selectMatchQuestion(pair.id)} lang="de">{pair.question}</button>)}</div>
+            <svg className="l14-match-lines" viewBox={`0 0 100 ${current.pairs.length*72-14}`} preserveAspectRatio="none" aria-hidden="true">{current.pairs.map((pair,index)=>{const answerIndex=[...current.pairs].reverse().findIndex(option=>option.answer===matchSelection[pair.id]);return answerIndex<0?null:<line key={pair.id} x1="0" y1={index*72+29} x2="100" y2={answerIndex*72+29}/>;})}</svg>
+            <div className="l14-match-column" aria-label="คำตอบ">{[...current.pairs].reverse().map(pair=>{const assigned=current.pairs.find(question=>matchSelection[question.id]===pair.answer);return <button className="l14-match-answer" type="button" key={pair.id} aria-pressed={matchFocus?.side==="answer"&&matchFocus.value===pair.answer} data-matched={Boolean(assigned)} onClick={()=>selectMatchAnswer(pair.answer)} lang="de">{pair.answer}</button>;})}</div>
+          </div>
+        </>}
       </div> : visual && <div className="l14-practice-scene">
         <figure className="l14-practice-scene-image"><Image src={visual.image} width={640} height={480} sizes="(max-width: 700px) 100vw, 300px" alt={visual.imageAlt} /></figure>
         <div className="l14-practice-scene-choices">
@@ -380,14 +534,14 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
       </div>}
       {checked && current.kind==="match" ? <aside className={`practice-feedback ${answerCorrect?"correct":"incorrect"}`}>
         <h2>{answerCorrect?"ถูกต้องทั้งสองคู่":"ดูคำตอบแต่ละคู่"}</h2>
-        {current.pairs.map((pair,index)=><div className="l14-match-feedback-pair" key={pair.id}><h3>คู่ {index+1} · {matchAttempts[index]?.correct?"ถูกต้อง":"ยังไม่ถูก"}</h3><p lang="de">{pair.question} → {pair.answer}</p><p>คำถาม: {pair.questionThai} · คำตอบ: {pair.translation}</p><p>{pair.explanation}</p></div>)}
+        {current.pairs.map((pair,index)=><div className="l14-match-feedback-pair" key={pair.id}><h3>คู่ {index+1} · {matchAttempts[index]?.correct?"ถูกต้อง":"ยังไม่ถูก"}</h3><p lang="de">{pair.question} → {pair.answer}</p><p>คำถาม: {pair.questionThai} · คำตอบ: {pair.translation}</p></div>)}
       </aside> : checked && current.kind!=="match" && <aside className={`practice-feedback ${answerCorrect?"correct":"incorrect"}`}>
         <h2>{answerCorrect?"ถูกต้อง":"ลองดูคำตอบ"}</h2>
         {visual && <p>คำแปลโจทย์: {visual.questionThai}</p>}
         <p lang="de">{current.answer}</p><p>{current.translation}</p>
         {current.kind === "order" ? <div className="l14-order-explanation"><h3>{current.ruleTitle}</h3><ul>{current.rules.map(rule=><li key={rule}>{rule}</li>)}</ul><p><strong>{current.noteTitle}:</strong> {current.exampleNote}</p></div> : <p>{current.explanation}</p>}
       </aside>}
-      <div className="guided-navigation">{progress.position>0&&<button className="button secondary" type="button" onClick={previous}><ArrowLeft size={17}/> ย้อนกลับ</button>}{!checked?<button className="button primary" type="button" disabled={!canSubmit} onClick={submit}>ตรวจคำตอบ</button>:<button className="button primary" type="button" onClick={next}>{progress.position===queue.length-1?"จบรอบ":"ข้อต่อไป"} <ArrowRight size={17}/></button>}</div>
+      <div className="guided-navigation l14-question-navigation">{progress.position>0&&<button className="button secondary" type="button" onClick={previous}><ArrowLeft size={17}/> ย้อนกลับ</button>}{!checked?<button className="button primary" type="button" disabled={!canSubmit} onClick={submit}>ตรวจคำตอบ</button>:<button className="button primary" type="button" onClick={next}>{progress.position===queue.length-1?"จบรอบ":"ข้อต่อไป"} <ArrowRight size={17}/></button>}</div>
     </section>
   </main>;
 }

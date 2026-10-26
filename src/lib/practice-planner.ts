@@ -17,6 +17,15 @@ export const l13PhraseTopics = [
   { id:'L13-phrases-favorite', title:'สถานที่โปรด', href:'/practice/L13/phrases/favorite', storage:'phrases-favorite', frame:'phrases-favorite' },
   { id:'L13-phrases-opinions', title:'ถามและแลกเปลี่ยนความคิดเห็น', href:'/practice/L13/phrases/opinions', storage:'phrases-opinions', frame:'phrases-opinions' },
 ];
+export const l14PhrasePracticeTopics = [
+  { href: '/practice/L14/phrases/ask', storage: 'phrase-l14-ask', frame: 'phrase-l14-ask' },
+  { href: '/practice/L14/phrases/describe', storage: 'phrase-l14-describe', frame: 'phrase-l14-describe' },
+  { href: '/practice/L14/phrases/unknown', storage: 'phrase-l14-unknown', frame: 'phrase-l14-unknown' },
+  { href: '/practice/L14/phrases/thanks', storage: 'phrase-l14-thanks', frame: 'phrase-l14-thanks' },
+  { href: '/practice/L14/phrases/basic', storage: 'phrase-l14-basic', frame: 'phrase-l14-basic' },
+  { href: '/practice/L14/phrases/daily', storage: 'phrase-l14-daily', frame: 'phrase-l14-daily' },
+  { href: '/practice/L14/phrases/mixed', storage: 'phrase-l14-mixed', frame: 'phrase-l14-mixed' },
+];
 export type L13PracticeSkill = 'grammar' | 'vocabulary' | 'phrases';
 export function l13PracticeSkill(href: string): L13PracticeSkill {
   return href.includes('/phrases/') ? 'phrases' : href.includes('/vocabulary/') ? 'vocabulary' : 'grammar';
@@ -28,6 +37,7 @@ export const l13PracticeStores = [
   { href: '/practice/L13/grammar/daily', storage: 'daily', frame: 'daily' },
   ...l13VocabularyTopics,
   ...l13PhraseTopics,
+  ...l14PhrasePracticeTopics,
   { href:"/practice/L13/phrases/basic",storage:"phrases-basic",frame:"phrases-basic" },
   { href:"/practice/L13/phrases/daily",storage:"phrases-daily",frame:"phrases-daily" },
   { href: '/practice/L13/vocabulary/basic', storage: 'vocab-basic', frame: 'vocab-basic' },
@@ -37,7 +47,7 @@ export const l13PracticeStores = [
 type PracticeQuestion = { id: string; topicId: string; subskill: string; kind: 'choice' | 'cloze' | 'order' | 'write'; phraseItemIds: string[] };
 type PracticeResult = { correct: boolean | null; submittedAt: number; assisted: boolean | null; confidence: string | null };
 export type PracticeHistory = {
-  id: string; href: string; createdAt: number; completed: boolean; archived: boolean; position: number;
+  id: string; href: string; createdAt: number; completed: boolean; archived: boolean; position: number; hasDraft: boolean;
   items: { question: PracticeQuestion; result: PracticeResult | null }[];
 };
 
@@ -48,7 +58,7 @@ function isPlannerRecord(value: unknown): value is Record<string, unknown> {
 function parsePlannerQuestion(value: unknown): PracticeQuestion | null {
   if (!isPlannerRecord(value) || typeof value.id !== 'string' || typeof value.topicId !== 'string' || typeof value.subskill !== 'string') return null;
   if (value.kind !== 'choice' && value.kind !== 'cloze' && value.kind !== 'order' && value.kind !== 'write') return null;
-  const phraseItemIds = value.topicId.startsWith('L13-phrases-')
+  const phraseItemIds = value.topicId.startsWith('L13-phrases-') || value.topicId.startsWith('L14-phrases-')
     ? Array.isArray(value.coverageItemIds) && value.coverageItemIds.length > 0 && value.coverageItemIds.every((id: unknown) => typeof id === 'string')
       ? value.coverageItemIds
       : Array.isArray(value.requiredItemIds) && value.requiredItemIds.every((id: unknown) => typeof id === 'string')
@@ -76,8 +86,18 @@ export function parsePracticeHistory(raw: string | null, href: string): Practice
       }
       return { question: parsedQuestion, result };
     });
-    return { id: session.id, href, createdAt: Date.parse(session.createdAt), completed: session.completed, archived: session.archived === true, position: session.position, items };
+    const hasDraft = session.items.some(item => isPlannerRecord(item) && (
+      typeof item.response === 'string' && item.response.length > 0 ||
+      Array.isArray(item.selected) && item.selected.length > 0 ||
+      Array.isArray(item.rubricChecks) && item.rubricChecks.length > 0 ||
+      item.hintUsed === true || item.translationUsed === true
+    ));
+    return { id: session.id, href, createdAt: Date.parse(session.createdAt), completed: session.completed, archived: session.archived === true, position: session.position, hasDraft, items };
   });
+}
+
+export function resumablePracticeSession(history: readonly PracticeHistory[]) {
+  return [...history].filter(session => !session.completed && !session.archived && (session.position > 0 || session.hasDraft || session.items.some(item => item.result))).sort((a, b) => b.createdAt - a.createdAt)[0];
 }
 
 export function practiceStorageKey(storage: string, frame: string, userId: string) {
@@ -136,7 +156,7 @@ export function planDailyPractice(rawQuestions: readonly unknown[], history: rea
 }
 
 export function recommendPractice(rawQuestions: readonly unknown[], history: readonly PracticeHistory[], now: number = Date.now()) {
-  const pending = [...history].filter(session => !session.completed && !session.archived).sort((a,b)=>b.createdAt-a.createdAt)[0];
+  const pending = resumablePracticeSession(history);
   if(pending) return {kind:'resume',title:'ทำต่อจากครั้งก่อน',description:practiceSkillName[l13PracticeSkill(pending.href)]+'บท 13 · ข้อ '+(pending.position+1)+' จาก '+pending.items.length,href:pending.href+'?resume='+encodeURIComponent(pending.id),action:'ฝึกต่อ'};
   const latest = history.flatMap(session=>session.items.filter(item=>item.result).map(item=>({skill:l13PracticeSkill(session.href),time:item.result?.submittedAt??0}))).sort((a,b)=>b.time-a.time)[0];
   const skill = latest?.skill ?? (rawQuestions.some(q=>isPlannerRecord(q)&&typeof q.topicId==='string'&&q.topicId.startsWith('L13-phrases-')) ? 'phrases' : rawQuestions.some(q=>isPlannerRecord(q)&&typeof q.topicId==='string'&&q.topicId.startsWith('L13-vocab-')) ? 'vocabulary' : 'grammar');

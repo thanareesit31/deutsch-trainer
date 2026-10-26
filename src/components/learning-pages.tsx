@@ -2,6 +2,7 @@
 import { ArticleDot, ArticleLegend } from "./profession-matching";
 import { NounText } from "./noun-text";
 import { PracticeRecommendation } from "./practice-recommendation";
+import { PracticeLanding } from "./practice-landing";
 import { dayKey } from "@/lib/engine";
 import { useContent } from "./content-provider";
 import Link from "next/link";
@@ -457,6 +458,25 @@ export function PracticeGrammarTopics({ lessonId = "L13" }: { lessonId?: string 
     : lessonId === "L18" ? additionalGrammarPracticeTopics.L18
     : l13GrammarPracticeTopics;
   const topicCount = topics.length;
+
+  if (lessonId === "L13" || lessonId === "L14") {
+    return <PracticeLanding
+      eyebrow={`GRAMMATIK · LEKTION ${lessonId.slice(1)}`}
+      title={`ฝึกไวยากรณ์บท ${lessonId.slice(1)}`}
+      description={`เริ่มฝึกจากชุดรวมของบท ${lessonId.slice(1)} หรือเปิดรายการด้านล่างเพื่อเลือกหัวข้อที่ต้องการฝึก`}
+      href={`/practice/${lessonId}/grammar/basic`}
+      action="เริ่มฝึก"
+      ariaLabel={`ทางเข้าชุดฝึกไวยากรณ์บท ${lessonId.slice(1)}`}
+    >
+      {topics.map((topic) => (
+        <Link className="practice-grammar-topic" href={topic.href} key={topic.title}>
+          <div><h2>{topic.title}</h2><p>5 ข้อต่อรอบ · คลัง {lessonId === "L13" ? 15 : 5} ข้อ</p></div>
+          <span>เริ่มฝึก <ArrowRight size={18} /></span>
+        </Link>
+      ))}
+      <p className="practice-catalog-note">ผลชุดทดลองนี้ยังไม่รวมในความก้าวหน้าหลัก</p>
+    </PracticeLanding>;
+  }
 
   return (
     <>

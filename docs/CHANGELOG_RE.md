@@ -1,5 +1,60 @@
 # Requirement & Experience Changelog
 
+## 2026-10-26 · รวมรูปแบบหน้าแรกแบบฝึกคำศัพท์และไวยากรณ์บท 13–14
+
+- **เปลี่ยนอะไร:** ใช้โครงหน้าแรกแบบเดียวกับ Redemittel ได้แก่ ชุดฝึกหลักด้านบนและรายการหัวข้อที่พับเก็บได้ สำหรับคำศัพท์บท 13–14 และไวยากรณ์บท 13–14; ย้ายทางเข้าชุดคำศัพท์ขั้นสูงและ Artikel บท 13 ไปไว้ในรายการหัวข้อ.
+- **เหตุผล:** หน้าแรกของแต่ละบทและทักษะใช้รูปแบบไม่เหมือนกัน ทำให้ผู้เรียนต้องเรียนรู้วิธีเริ่มฝึกใหม่ทุกครั้ง.
+- **ผลกระทบ:** คงเส้นทางโจทย์และการตรวจสิทธิ์เดิม; ไวยากรณ์ยังอยู่ภายใต้ขอบเขตบัญชีทดลองเดิม และรายการหัวข้อยังเข้าถึงได้จากแถบพับ. ยังไม่ยืนยันการ deploy.
+
+## 2026-10-26 · ใช้ระบบสถานะ Practice ร่วมกันสำหรับ Redemittel บท 13 และ 14
+
+- **เปลี่ยนอะไร:** ย้ายรอบฝึกใหม่ของบท 14 จาก lesson state ไปยัง `learner_practice_sessions` และ `PracticeAccountSync` แบบเดียวกับบท 13; เพิ่ม bank keys, question definitions และ server validation สำหรับผลเรียนวลีบท 14. อ่านสถานะรอบเดิมเพื่อนำเข้ารูปแบบ session กลางเมื่อผู้เรียนเปิดฝึกครั้งแรก.
+- **เหตุผล:** การเก็บและซิงก์คนละระบบทำให้การกลับมาทำต่อ การกู้คืน และการตรวจคำตอบมีพฤติกรรมต่างกันโดยไม่จำเป็น.
+- **ผลกระทบ:** คำตอบและรอบเดิมยังใช้สร้างประวัติฝึกต่อได้; คำตอบใหม่ตรวจฝั่งเซิร์ฟเวอร์และใช้แหล่งหลักฐานการเรียนบท 14. ติดตั้ง migration `20261026000000_l14_phrase_sessions.sql` บนฐาน Supabase production แล้ว; โค้ดเว็บยังรอปล่อย.
+
+## 2026-10-26 · Enable L13/L14 Redemittel for learner accounts in production builds
+
+- **What changed:** Production builds now enable the L13 and L14 phrase-practice banks for signed-in accounts by default. An explicit `NEXT_PUBLIC_L13_PHRASES_PRACTICE=false` or `NEXT_PUBLIC_L14_PHRASES_PRACTICE=false` disables the matching bank. Development still uses the existing `true` flags, and tester accounts keep their existing access.
+- **Why:** The local `.env.local` flags do not carry over to the Vercel production build, leaving ordinary accounts without access after a deployment.
+- **Impact:** The next production deployment will expose both banks to signed-in learners, subject to the existing learned-content eligibility checks. Apply all pending migrations, including `20261026000000_l14_phrase_sessions.sql`, before enabling the L14 bank. No deployment was started.
+
+## 2026-10-25 · Distinguish unopened practice from work to resume
+
+- **What changed:** L13 practice recommendations skip sessions that were merely opened with no answer, draft, or checked item. When several sessions exist, they choose the latest session with actual work. L13 and L14 resume dialogs count checked answers directly; a first-question draft opens without a 0/N interruption.
+- **Why:** A newly opened 0/5 set was labeled “unfinished” and hid a genuine 8/20 pending set in the test account.
+- **Impact:** The learner sees the meaningful unfinished round and its real progress. Empty sessions and drafts remain saved; grading, IDs, and attempt evidence are unchanged.
+
+## 2026-10-25 · Remove repeated explanations from phrase matching feedback
+
+- **What changed:** Matching feedback in L13 and L14 now shows each pair's result, German question and answer, and Thai translations without an extra sentence that merely restates those translations.
+- **Why:** Repeating the same meaning made the feedback longer without helping learners understand the pair.
+- **Impact:** Feedback is shorter; question IDs, answers, grading, attempts, and adaptive evidence are unchanged. Explanations that add a distinct rule or reason remain available in other task types.
+
+## 2026-10-25 · Match phrases from either column
+
+- **What changed:** L13 and L14 phrase matching now accepts a question or an answer as the first selection and connects the pair when the opposite column is selected. The selected box gets a neutral border; paired boxes and their line remain visible. Selecting a paired box twice removes that pair.
+- **Why:** Requiring the question first made the two-column interaction unnecessarily restrictive.
+- **Impact:** Learners can work in either direction and revise pairs before checking. Question IDs, grading, saved drafts, and per-pair evidence remain the same.
+
+## 2026-10-25 · Require an explicit question selection for each matching pair
+
+- **What changed:** L13 and L14 phrase matching no longer highlight or target the next question automatically after a pair is made. Learners select each question before choosing its answer; completed pairs keep their neutral border.
+- **Why:** The automatic highlight made an untouched question look selected.
+- **Impact:** Matching remains editable and grading is unchanged. The next pair now requires one explicit question tap.
+
+## 2026-10-25 · Keep all selected matching pairs visibly selected
+
+- **What changed:** L13 and L14 phrase matching now keep a neutral dark border on every paired question as well as its answer while the learner selects another pair.
+- **Why:** The previous border followed only the focused question, so an earlier pair appeared incomplete despite its connecting line.
+- **Impact:** Selection is easier to read before checking; correctness colors still appear only after checking. Matching answers, scoring, and saved attempts are unchanged.
+
+## 2026-10-25 · Align L13/L14 phrase-practice UI
+
+- **What changed:** Use the same recommended-practice entry card and collapsible manual topic section for L13 and L14. Align the embedded L13 runner with L14 on page width, progress bar, question card, prompt/choice sizing, feedback surface, matching rows, and action placement. Match L14 question navigation to the shared left-back/right-action layout.
+- **Why:** Learners moving between the two phrase banks encountered different entry and exercise layouts because L13 runs from generated HTML and L14 uses React.
+- **Impact:** L13 entry now recommends resuming an unfinished phrase round or starting a suitable round from learned content, while topic selection remains optional. Task IDs, grading, answer records, adaptive evidence, and account persistence are unchanged. Shared interaction layout is documented in `docs/PRACTICE_FLOW_STANDARD.md`.
+- **Verification:** Regenerated all six L13 phrase practice pages from the existing bank. TypeScript and `git diff --check` pass. No exercise logic or scoring tests were changed or run for this visual update.
+
 ## 2026-10-25 · Apply noun-plus-Artikel presentation across active renderers
 
 - Add shared NounText/NounPrefix using catalog metadata and existing ArticleDot colors, including plural yellow. Fix shared learning values, image labels and synonyms, generic vocabulary practice/feedback, L13 spelling, story word banks, category prompts, compound building and crosswords, L14 meaning/spelling/Artikel, and noun history labels. Keep legends visible in noun flows.
@@ -2351,3 +2406,15 @@
 - เปลี่ยนอะไร: เพิ่มหลักการร่วมใน `docs/PRACTICE_FLOW_STANDARD.md` สำหรับการเลือกเป้าหมายจากเนื้อหาที่เรียน การสร้างโจทย์ที่มีบริบทพอ ลำดับกิจกรรมจากเข้าใจไปสู่สร้างประโยค การจับคู่และเฉลยสองภาษา รวมถึงการไม่แสดงคำสั่งซ้ำ. ปรับเอกสาร L13 ให้บอกลำดับฝึกต่อเนื่องและหน้าจบปัจจุบัน.
 - เหตุผล: ใช้ข้อสรุปจากการปรับ Redemittel L13 เป็นเกณฑ์ทำหมวดประโยคและสำนวนถัดไปและบทอื่น โดยไม่บังคับให้ทุกหัวข้อมีชุดโจทย์เหมือนกัน.
 - ผลกระทบ: เป็นแนวทางออกแบบและตรวจทานสำหรับงานต่อไป ไม่เปลี่ยนโจทย์หรือพฤติกรรม runtime ในการแก้ครั้งนี้. รายละเอียดจำนวนข้อและเนื้อหาให้กำหนดตามข้อมูลจริงของแต่ละบท.
+
+# 25 ตุลาคม 2026 — ปรับแบบฝึกประโยคและสำนวน L13–L14 ตาม Figma
+
+- ปรับหน้าเข้าฝึกให้เป็นการ์ดผลฝึกที่ใช้คำตอบที่บันทึกจริง พร้อมทางเข้าฝึกหลักและส่วนเลือกหัวข้อแบบพับได้. เมื่อมีรอบค้าง แสดงหน้าต่างความคืบหน้าและปุ่มทำต่อ; การยกเลิกไม่ลบความคืบหน้า.
+- ปรับการจับคู่ของทั้งสองบทเป็นคำถามและคำตอบสองคอลัมน์ แสดงเส้นเชื่อมระหว่างที่เลือก และจัดคู่ไว้แถวเดียวกันหลังตรวจ. คงการบันทึกผลแยกรายคู่และคำแปลเฉลยเดิม.
+- ปรับหน้าจบรอบให้สรุปเรื่องที่ควรทบทวนจากผลจริงและมีปุ่มฝึกต่อ/จบ โดยไม่แสดงคะแนนหรือตารางผลตาม Product Baseline. ผลต่อผู้เรียนคือเห็นทางไปต่อชัดขึ้น; ระบบเก็บคำตอบและการเลือกโจทย์เดิม.
+
+## 2026-10-25 — สถานะการจับคู่ก่อนตรวจคำตอบ
+
+- เปลี่ยนสีคู่ที่เลือกและเส้นเชื่อมใน Redemittel L13–L14 เป็นสีกลางก่อนตรวจ; สีเขียว/แดงแสดงเฉพาะหลังตรวจคำตอบ.
+- เหตุผล: สีเขียวก่อนตรวจทำให้ผู้เรียนเข้าใจว่าระบบยืนยันคำตอบแล้ว.
+- ผลกระทบ: เปลี่ยนเฉพาะการแสดงผล ไม่เปลี่ยนคำตอบที่เลือก วิธีตรวจ หรือข้อมูลที่บันทึก.
