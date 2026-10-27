@@ -1,0 +1,331 @@
+{
+  "A13-L13-ESG-001": {
+    "hint": "Park เป็นคำนามเพศชายเอกพจน์ หลัง es gibt ต้องเลือกรูป Akkusativ",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "der",
+          "gender": "masculine",
+          "noun": "Park",
+          "answer": "einen",
+          "current": true,
+          "parts": [
+            {
+              "text": "Park"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-002": {
+    "hint": "Apotheke เป็นคำนามเพศหญิงเอกพจน์ หลัง es gibt ใช้รูป Akkusativ",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "die",
+          "gender": "feminine",
+          "noun": "Apotheke",
+          "answer": "eine",
+          "current": true,
+          "parts": [
+            {
+              "text": "Apotheke"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-003": {
+    "hint": "Rathaus เป็นคำนามเพศกลางเอกพจน์ หลัง es gibt ใช้รูป Akkusativ",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "das",
+          "gender": "neuter",
+          "noun": "Rathaus",
+          "answer": "ein",
+          "current": true,
+          "parts": [
+            {
+              "text": "Rathaus"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-004": {
+    "hint": "Café คือหนึ่งแห่ง ส่วน Cafés คือหลายแห่ง ดูจำนวนก่อนเลือกรูปของ viel",
+    "feedbackComparison": {
+      "title": "เทียบรูปเอกพจน์กับพหูพจน์",
+      "forms": [
+        {
+          "label": "เอกพจน์ · หนึ่งแห่ง",
+          "article": "das",
+          "gender": "neuter",
+          "noun": "Café",
+          "answer": "ein",
+          "parts": [
+            {
+              "text": "Café"
+            }
+          ]
+        },
+        {
+          "label": "พหูพจน์ · หลายแห่ง",
+          "article": "die",
+          "gender": "plural",
+          "noun": "Cafés",
+          "answer": "viele",
+          "current": true,
+          "parts": [
+            {
+              "text": "Café"
+            },
+            {
+              "text": "s",
+              "changed": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-005": {
+    "hint": "Hafen เป็นคำนามเพศชายเอกพจน์ ประโยคบอกว่าไม่มี จึงต้องใช้รูปปฏิเสธหลัง es gibt",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "der",
+          "gender": "masculine",
+          "noun": "Hafen",
+          "answer": "keinen",
+          "current": true,
+          "parts": [
+            {
+              "text": "Hafen"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-006": {
+    "hint": "Zoo เป็นคำนามเพศชายเอกพจน์ หลัง es gibt ใช้ Akkusativ",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "der",
+          "gender": "masculine",
+          "noun": "Zoo",
+          "answer": "einen",
+          "current": true,
+          "parts": [
+            {
+              "text": "Zoo"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-007": {
+    "hint": "Kino เป็นคำนามเพศกลางเอกพจน์ หลัง es gibt ใช้ Akkusativ",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "das",
+          "gender": "neuter",
+          "noun": "Kino",
+          "answer": "ein",
+          "current": true,
+          "parts": [
+            {
+              "text": "Kino"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-008": {
+    "hint": "Kirche เป็นคำนามเพศหญิงเอกพจน์ หลัง es gibt ใช้ Akkusativ",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "die",
+          "gender": "feminine",
+          "noun": "Kirche",
+          "answer": "eine",
+          "current": true,
+          "parts": [
+            {
+              "text": "Kirche"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-009": {
+    "hint": "Museum เป็นคำนามเพศกลางเอกพจน์ ประโยคบอกว่าไม่มี จึงต้องใช้รูปปฏิเสธหลัง es gibt",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "das",
+          "gender": "neuter",
+          "noun": "Museum",
+          "answer": "kein",
+          "current": true,
+          "parts": [
+            {
+              "text": "Museum"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-010": {
+    "hint": "See ในความหมายว่าทะเลสาบเป็นคำนามเพศชายเอกพจน์ ประโยคบอกว่าไม่มี",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "der",
+          "gender": "masculine",
+          "noun": "See",
+          "answer": "keinen",
+          "current": true,
+          "parts": [
+            {
+              "text": "See"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-011": {
+    "hint": "Spielplatz คือหนึ่งแห่ง ส่วน Spielplätze คือหลายแห่ง ดูรูปคำนามก่อนเลือก kein",
+    "feedbackComparison": {
+      "title": "เทียบรูปเอกพจน์กับพหูพจน์",
+      "forms": [
+        {
+          "label": "เอกพจน์ · หนึ่งแห่ง",
+          "article": "der",
+          "gender": "masculine",
+          "noun": "Spielplatz",
+          "answer": "keinen",
+          "parts": [
+            {
+              "text": "Spielplatz"
+            }
+          ]
+        },
+        {
+          "label": "พหูพจน์ · หลายแห่ง",
+          "article": "die",
+          "gender": "plural",
+          "noun": "Spielplätze",
+          "answer": "keine",
+          "current": true,
+          "parts": [
+            {
+              "text": "Spielpl"
+            },
+            {
+              "text": "ä",
+              "changed": true
+            },
+            {
+              "text": "tz"
+            },
+            {
+              "text": "e",
+              "changed": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-012": {
+    "hint": "Geschäft คือหนึ่งแห่ง ส่วน Geschäfte คือหลายแห่ง ดูจำนวนก่อนเลือกรูปของ viel",
+    "feedbackComparison": {
+      "title": "เทียบรูปเอกพจน์กับพหูพจน์",
+      "forms": [
+        {
+          "label": "เอกพจน์ · หนึ่งแห่ง",
+          "article": "das",
+          "gender": "neuter",
+          "noun": "Geschäft",
+          "answer": "ein",
+          "parts": [
+            {
+              "text": "Geschäft"
+            }
+          ]
+        },
+        {
+          "label": "พหูพจน์ · หลายแห่ง",
+          "article": "die",
+          "gender": "plural",
+          "noun": "Geschäfte",
+          "answer": "viele",
+          "current": true,
+          "parts": [
+            {
+              "text": "Geschäft"
+            },
+            {
+              "text": "e",
+              "changed": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "A13-L13-ESG-013": {
+    "hint": "Bushaltestelle เป็นคำนามเพศหญิงเอกพจน์ คำถาม Gibt es ...? ก็ใช้ Akkusativ",
+    "feedbackComparison": {
+      "title": "ดูเพศและจำนวนของคำนาม",
+      "context": "ในคำถาม Gibt es",
+      "forms": [
+        {
+          "label": "คำนามในโจทย์",
+          "article": "die",
+          "gender": "feminine",
+          "noun": "Bushaltestelle",
+          "answer": "eine",
+          "current": true,
+          "parts": [
+            {
+              "text": "Bushaltestelle"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

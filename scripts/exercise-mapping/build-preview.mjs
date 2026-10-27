@@ -50,7 +50,7 @@ for (const [slug, bank] of [['dative', { ...dative, ...dativeDefaults }], ['es-g
     unclassifiedMessage: bank.unclassifiedMessage ?? 'คำตอบนี้ยังไม่ตรงกับรูปที่ต้องใช้ ดูคำอธิบายแล้วลองฝึกอีกข้อ',
     sections: bank.sections, workflow: bank.workflow,
     nextTopic: slug === 'es-gibt' ? { title: dative.title, href: '/practice/L13/grammar/dativ-pilot' } : slug === 'dative' ? { title: verbs.title, href: '/practice/L13/grammar/verbs' } : undefined,
-    questions: bank.questions.map(({ id, version, topicId, topicName, kind, prompt, sentence, options, tokens, acceptedAnswers, subskill, difficulty, hint, explanation, knownErrors }) => ({ id, version, topicId, topicName, kind, prompt, sentence, options, tokens, acceptedAnswers, subskill, difficulty, hint, explanation, knownErrors })),
+    questions: bank.questions.map(({ id, version, topicId, topicName, kind, prompt, sentence, options, tokens, acceptedAnswers, subskill, difficulty, hint, explanation, feedbackComparison, knownErrors }) => ({ id, version, topicId, topicName, kind, prompt, sentence, options, tokens, acceptedAnswers, subskill, difficulty, hint, explanation, ...(feedbackComparison ? { feedbackComparison } : {}), knownErrors })),
   };
   const html = template.replace('__PLANNER__', () => planner).replace('__BANK__', () => JSON.stringify(publicBank).replaceAll('<', '\\u003c'));
   await writeFile(new URL(`docs/exercise-mapping/l13-${slug}-preview.html`, root), html);

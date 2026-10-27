@@ -2,6 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const root = new URL('../../docs/exercise-mapping/', import.meta.url);
 const feedback = JSON.parse(await readFile(new URL('practice-feedback.json', root), 'utf8'));
+const formFeedback = JSON.parse(await readFile(new URL('l13-grammar-form-feedback.json', root), 'utf8'));
 const reviewedAt = '2026-10-20';
 
 function choice(id, sentence, options, answer, subskill, explanation, evidence) {
@@ -80,7 +81,7 @@ for (const spec of specs) {
     defaultCount: 5, countOptions: [5, 10, 'all'], description: spec.description,
     summaryNote: spec.summaryNote, skillLabels: spec.skillLabels,
     storageKey: `deutsch-trainer:review-prototype:l13-${spec.slug}:v1`,
-    questions: spec.questions.map(({ evidence, ...question }) => ({ ...question, explanation: feedback.explanations[question.id], topicId: spec.topicId, requiredLearnedTopics: [spec.topicId], variantGroup: question.id.toLowerCase() })),
+    questions: spec.questions.map(({ evidence, ...question }) => ({ ...question, explanation: feedback.explanations[question.id], ...formFeedback[question.id], topicId: spec.topicId, requiredLearnedTopics: [spec.topicId], variantGroup: question.id.toLowerCase() })),
   };
   const provenance = { schemaVersion: 1, reviewedAt, bindings: spec.questions.map((question) => ({
     questionId: question.id, contentBasis: question.evidence.filter((id) => id.startsWith('KB13-')),

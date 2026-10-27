@@ -42,11 +42,29 @@
       "subskill": "es_gibt_article",
       "difficulty": 1,
       "builtInSupport": "answer_options",
-      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
+      "hint": "Park เป็นคำนามเพศชายเอกพจน์ หลัง es gibt ต้องเลือกรูป Akkusativ",
       "explanation": "Park ใช้ der เป็นคำนามเพศชาย หลัง es gibt ต้องใช้ Akkusativ จึงเปลี่ยน ein เป็น einen",
       "knownErrors": {
         "ein": "article_or_number_form",
         "eine": "article_or_number_form"
+      },
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "der",
+            "gender": "masculine",
+            "noun": "Park",
+            "answer": "einen",
+            "current": true,
+            "parts": [
+              {
+                "text": "Park"
+              }
+            ]
+          }
+        ]
       },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
@@ -71,11 +89,29 @@
       "subskill": "es_gibt_article",
       "difficulty": 1,
       "builtInSupport": "answer_options",
-      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
+      "hint": "Apotheke เป็นคำนามเพศหญิงเอกพจน์ หลัง es gibt ใช้รูป Akkusativ",
       "explanation": "Apotheke ใช้ die เป็นคำนามเพศหญิง หลัง es gibt จึงใช้ eine",
       "knownErrors": {
         "einen": "article_or_number_form",
         "ein": "article_or_number_form"
+      },
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "die",
+            "gender": "feminine",
+            "noun": "Apotheke",
+            "answer": "eine",
+            "current": true,
+            "parts": [
+              {
+                "text": "Apotheke"
+              }
+            ]
+          }
+        ]
       },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
@@ -100,11 +136,29 @@
       "subskill": "es_gibt_article",
       "difficulty": 1,
       "builtInSupport": "answer_options",
-      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
+      "hint": "Rathaus เป็นคำนามเพศกลางเอกพจน์ หลัง es gibt ใช้รูป Akkusativ",
       "explanation": "Rathaus ใช้ das เป็นคำนามเพศกลาง หลัง es gibt จึงใช้ ein",
       "knownErrors": {
         "eine": "article_or_number_form",
         "einen": "article_or_number_form"
+      },
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "das",
+            "gender": "neuter",
+            "noun": "Rathaus",
+            "answer": "ein",
+            "current": true,
+            "parts": [
+              {
+                "text": "Rathaus"
+              }
+            ]
+          }
+        ]
       },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
@@ -129,11 +183,45 @@
       "subskill": "es_gibt_plural",
       "difficulty": 1,
       "builtInSupport": "answer_options",
-      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
-      "explanation": "Cafés หมายถึงร้านกาแฟหลายแห่ง จึงใช้ viele ซึ่งแปลว่า “หลาย”",
+      "hint": "Café คือหนึ่งแห่ง ส่วน Cafés คือหลายแห่ง ดูจำนวนก่อนเลือกรูปของ viel",
+      "explanation": "Café เติม s เป็น Cafés เมื่อเป็นพหูพจน์ ในข้อนี้จึงใช้ viele",
       "knownErrors": {
         "viel": "article_or_number_form",
         "einen": "article_or_number_form"
+      },
+      "feedbackComparison": {
+        "title": "เทียบรูปเอกพจน์กับพหูพจน์",
+        "forms": [
+          {
+            "label": "เอกพจน์ · หนึ่งแห่ง",
+            "article": "das",
+            "gender": "neuter",
+            "noun": "Café",
+            "answer": "ein",
+            "parts": [
+              {
+                "text": "Café"
+              }
+            ]
+          },
+          {
+            "label": "พหูพจน์ · หลายแห่ง",
+            "article": "die",
+            "gender": "plural",
+            "noun": "Cafés",
+            "answer": "viele",
+            "current": true,
+            "parts": [
+              {
+                "text": "Café"
+              },
+              {
+                "text": "s",
+                "changed": true
+              }
+            ]
+          }
+        ]
       },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
@@ -158,11 +246,29 @@
       "subskill": "es_gibt_negation",
       "difficulty": 1,
       "builtInSupport": "answer_options",
-      "hint": "ดูจำนวนและเพศของคำนาม แล้วเลือกรูปคำหลัง es gibt",
-      "explanation": "ประโยคต่อมาบอกว่าต้องไปท่าเรือในเมืองข้างเคียง แสดงว่าที่นี่ไม่มีท่าเรือ Hafen เป็นเพศชาย หลัง es gibt จึงใช้ keinen",
+      "hint": "Hafen เป็นคำนามเพศชายเอกพจน์ ประโยคบอกว่าไม่มี จึงต้องใช้รูปปฏิเสธหลัง es gibt",
+      "explanation": "Hafen ใช้ der และเป็นเอกพจน์ หลัง es gibt ใช้ Akkusativ: keinen Hafen",
       "knownErrors": {
         "kein": "article_or_number_form",
         "keine": "article_or_number_form"
+      },
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "der",
+            "gender": "masculine",
+            "noun": "Hafen",
+            "answer": "keinen",
+            "current": true,
+            "parts": [
+              {
+                "text": "Hafen"
+              }
+            ]
+          }
+        ]
       },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
@@ -182,9 +288,27 @@
       "subskill": "es_gibt_article",
       "difficulty": 2,
       "builtInSupport": "grammar_prompt",
-      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "hint": "Zoo เป็นคำนามเพศชายเอกพจน์ หลัง es gibt ใช้ Akkusativ",
       "explanation": "Zoo ใช้ der เป็นคำนามเพศชาย หลัง es gibt จึงใช้ einen",
       "knownErrors": {},
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "der",
+            "gender": "masculine",
+            "noun": "Zoo",
+            "answer": "einen",
+            "current": true,
+            "parts": [
+              {
+                "text": "Zoo"
+              }
+            ]
+          }
+        ]
+      },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
         "L13-es-gibt-akkusativ"
@@ -203,9 +327,27 @@
       "subskill": "es_gibt_article",
       "difficulty": 2,
       "builtInSupport": "grammar_prompt",
-      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "hint": "Kino เป็นคำนามเพศกลางเอกพจน์ หลัง es gibt ใช้ Akkusativ",
       "explanation": "Kino ใช้ das เป็นคำนามเพศกลาง หลัง es gibt จึงใช้ ein",
       "knownErrors": {},
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "das",
+            "gender": "neuter",
+            "noun": "Kino",
+            "answer": "ein",
+            "current": true,
+            "parts": [
+              {
+                "text": "Kino"
+              }
+            ]
+          }
+        ]
+      },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
         "L13-es-gibt-akkusativ"
@@ -224,9 +366,27 @@
       "subskill": "es_gibt_article",
       "difficulty": 2,
       "builtInSupport": "grammar_prompt",
-      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "hint": "Kirche เป็นคำนามเพศหญิงเอกพจน์ หลัง es gibt ใช้ Akkusativ",
       "explanation": "Kirche ใช้ die เป็นคำนามเพศหญิง หลัง es gibt จึงใช้ eine",
       "knownErrors": {},
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "die",
+            "gender": "feminine",
+            "noun": "Kirche",
+            "answer": "eine",
+            "current": true,
+            "parts": [
+              {
+                "text": "Kirche"
+              }
+            ]
+          }
+        ]
+      },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
         "L13-es-gibt-akkusativ"
@@ -245,9 +405,27 @@
       "subskill": "es_gibt_negation",
       "difficulty": 2,
       "builtInSupport": "grammar_prompt",
-      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
-      "explanation": "ประโยคต่อมาบอกว่าพิพิธภัณฑ์ที่ใกล้ที่สุดอยู่ในเมือง แสดงว่าในหมู่บ้านนี้ไม่มีพิพิธภัณฑ์ Museum เป็นเพศกลาง จึงใช้ kein",
+      "hint": "Museum เป็นคำนามเพศกลางเอกพจน์ ประโยคบอกว่าไม่มี จึงต้องใช้รูปปฏิเสธหลัง es gibt",
+      "explanation": "Museum ใช้ das และเป็นเอกพจน์ หลัง es gibt ใช้ Akkusativ: kein Museum",
       "knownErrors": {},
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "das",
+            "gender": "neuter",
+            "noun": "Museum",
+            "answer": "kein",
+            "current": true,
+            "parts": [
+              {
+                "text": "Museum"
+              }
+            ]
+          }
+        ]
+      },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
         "L13-es-gibt-akkusativ"
@@ -266,9 +444,27 @@
       "subskill": "es_gibt_negation",
       "difficulty": 2,
       "builtInSupport": "grammar_prompt",
-      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
-      "explanation": "ประโยคต่อมาบอกว่าต้องไปว่ายน้ำในเมืองข้างเคียง แสดงว่าที่นี่ไม่มีทะเลสาบ See เป็นเพศชาย จึงใช้ keinen หลัง es gibt",
+      "hint": "See ในความหมายว่าทะเลสาบเป็นคำนามเพศชายเอกพจน์ ประโยคบอกว่าไม่มี",
+      "explanation": "See ในความหมายว่าทะเลสาบใช้ der และเป็นเอกพจน์ หลัง es gibt ใช้ Akkusativ: keinen See",
       "knownErrors": {},
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "der",
+            "gender": "masculine",
+            "noun": "See",
+            "answer": "keinen",
+            "current": true,
+            "parts": [
+              {
+                "text": "See"
+              }
+            ]
+          }
+        ]
+      },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
         "L13-es-gibt-akkusativ"
@@ -287,9 +483,50 @@
       "subskill": "es_gibt_negation",
       "difficulty": 2,
       "builtInSupport": "grammar_prompt",
-      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
-      "explanation": "Spielplätze หมายถึงสนามเด็กเล่นหลายแห่ง เมื่อต้องการบอกว่า “ไม่มีสนามเด็กเล่น” จึงใช้ keine",
+      "hint": "Spielplatz คือหนึ่งแห่ง ส่วน Spielplätze คือหลายแห่ง ดูรูปคำนามก่อนเลือก kein",
+      "explanation": "Spielplatz เปลี่ยน a เป็น ä และเติม e เมื่อเป็นพหูพจน์ จึงได้ Spielplätze; ข้อนี้ใช้ keine",
       "knownErrors": {},
+      "feedbackComparison": {
+        "title": "เทียบรูปเอกพจน์กับพหูพจน์",
+        "forms": [
+          {
+            "label": "เอกพจน์ · หนึ่งแห่ง",
+            "article": "der",
+            "gender": "masculine",
+            "noun": "Spielplatz",
+            "answer": "keinen",
+            "parts": [
+              {
+                "text": "Spielplatz"
+              }
+            ]
+          },
+          {
+            "label": "พหูพจน์ · หลายแห่ง",
+            "article": "die",
+            "gender": "plural",
+            "noun": "Spielplätze",
+            "answer": "keine",
+            "current": true,
+            "parts": [
+              {
+                "text": "Spielpl"
+              },
+              {
+                "text": "ä",
+                "changed": true
+              },
+              {
+                "text": "tz"
+              },
+              {
+                "text": "e",
+                "changed": true
+              }
+            ]
+          }
+        ]
+      },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
         "L13-es-gibt-akkusativ"
@@ -308,9 +545,43 @@
       "subskill": "es_gibt_plural",
       "difficulty": 2,
       "builtInSupport": "grammar_prompt",
-      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
-      "explanation": "Geschäfte หมายถึงร้านค้าหลายแห่ง จึงใช้ viele ซึ่งแปลว่า “หลาย”",
+      "hint": "Geschäft คือหนึ่งแห่ง ส่วน Geschäfte คือหลายแห่ง ดูจำนวนก่อนเลือกรูปของ viel",
+      "explanation": "Geschäft เติม e เป็น Geschäfte เมื่อเป็นพหูพจน์ ในข้อนี้จึงใช้ viele",
       "knownErrors": {},
+      "feedbackComparison": {
+        "title": "เทียบรูปเอกพจน์กับพหูพจน์",
+        "forms": [
+          {
+            "label": "เอกพจน์ · หนึ่งแห่ง",
+            "article": "das",
+            "gender": "neuter",
+            "noun": "Geschäft",
+            "answer": "ein",
+            "parts": [
+              {
+                "text": "Geschäft"
+              }
+            ]
+          },
+          {
+            "label": "พหูพจน์ · หลายแห่ง",
+            "article": "die",
+            "gender": "plural",
+            "noun": "Geschäfte",
+            "answer": "viele",
+            "current": true,
+            "parts": [
+              {
+                "text": "Geschäft"
+              },
+              {
+                "text": "e",
+                "changed": true
+              }
+            ]
+          }
+        ]
+      },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
         "L13-es-gibt-akkusativ"
@@ -329,9 +600,28 @@
       "subskill": "es_gibt_question",
       "difficulty": 2,
       "builtInSupport": "grammar_prompt",
-      "hint": "หลัง es gibt ใช้ Akkusativ; เพศชายเอกพจน์เปลี่ยนเป็น -en",
+      "hint": "Bushaltestelle เป็นคำนามเพศหญิงเอกพจน์ คำถาม Gibt es ...? ก็ใช้ Akkusativ",
       "explanation": "Bushaltestelle ใช้ die เป็นคำนามเพศหญิง จึงใช้ eine ในคำถาม Gibt es hier ...?",
       "knownErrors": {},
+      "feedbackComparison": {
+        "title": "ดูเพศและจำนวนของคำนาม",
+        "context": "ในคำถาม Gibt es",
+        "forms": [
+          {
+            "label": "คำนามในโจทย์",
+            "article": "die",
+            "gender": "feminine",
+            "noun": "Bushaltestelle",
+            "answer": "eine",
+            "current": true,
+            "parts": [
+              {
+                "text": "Bushaltestelle"
+              }
+            ]
+          }
+        ]
+      },
       "topicId": "L13-es-gibt-akkusativ",
       "requiredLearnedTopics": [
         "L13-es-gibt-akkusativ"
