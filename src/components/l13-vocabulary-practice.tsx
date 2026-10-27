@@ -8,7 +8,7 @@ import { L13VocabularyChallenge } from './l13-vocabulary-challenge';
 import { ArticleLegend } from './profession-matching';
 import { useL13VocabularyEligibility } from './use-l13-vocabulary-eligibility';
 import { isTestWorkspaceUser, isVocabularyPracticeAvailable, useStore } from './store';
-import { PracticeLanding } from './practice-landing';
+import { L13PracticeLanding } from './practice-landing';
 
 const topics = {
   urban: 'vocabUrban', culture: 'vocabCulture', leisure: 'vocabLeisure', extra: 'vocabExtra', basic: 'vocabBasic', daily: 'vocabDaily',
@@ -25,7 +25,9 @@ export function L13VocabularyPractice({ slug }: { slug?: string }) {
   if (slug === 'picture-article') return <L13VocabularyChallenge format="pictureArticle" />;
   if (topic) return <div className="l13-vocab-basic-practice"><ArticleLegend /><GrammarPilot userId={user.id} topic={topic} learnedItemIds={eligibility.ids} /></div>;
   const learned = new Set(eligibility.ids);
-  return <PracticeLanding
+  return <L13PracticeLanding
+    skill="vocabulary"
+    learnedItemIds={eligibility.ids}
     eyebrow="WORTSCHATZ · LEKTION 13"
     title={learned.size ? "ฝึกคำศัพท์ที่เรียนแล้ว" : "เริ่มเรียนคำศัพท์บท 13"}
     description={learned.size ? "ฝึกต่อเนื่องจากคำที่เรียนแล้ว แล้วกลับมาทบทวนได้อีก" : "จับคู่คำกับภาพก่อน แล้วกลับมาฝึกจากคำที่เรียนแล้ว"}
@@ -51,5 +53,5 @@ export function L13VocabularyPractice({ slug }: { slug?: string }) {
       })}
     </>
     <p className="practice-catalog-note">บันทึกผลเพื่อแนะนำการฝึกครั้งถัดไป แยกจากความก้าวหน้าหลัก</p>
-  </PracticeLanding>;
+  </L13PracticeLanding>;
 }

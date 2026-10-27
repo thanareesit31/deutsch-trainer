@@ -39,7 +39,7 @@ try {
   await page.getByLabel("อีเมล", { exact: true }).fill("tester2@deutsch.test");
   await page.getByLabel("รหัสผ่าน", { exact: true }).fill("TestOnly123!");
   await page.getByRole("button", { name: "เข้าสู่ระบบ", exact: true }).click();
-  await page.locator(".practice-recommendation").first().waitFor();
+  await page.getByRole("heading", { name: "แบบฝึกหัดของคุณ" }).waitFor();
   const rows = await api("learner_lesson_states");
   original = rows.find(row => row.lesson_key === key)?.state;
   userId = rows[0]?.user_id;

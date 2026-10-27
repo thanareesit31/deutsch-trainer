@@ -2,7 +2,7 @@
 import { ArticleDot, ArticleLegend } from "./profession-matching";
 import { NounText } from "./noun-text";
 import { PracticeRecommendation } from "./practice-recommendation";
-import { PracticeLanding } from "./practice-landing";
+import { L13PracticeLanding, L14GrammarPracticeLanding } from "./practice-landing";
 import { dayKey } from "@/lib/engine";
 import { useContent } from "./content-provider";
 import Link from "next/link";
@@ -331,8 +331,6 @@ export function PracticeEntry({ initialLevel = "A1.3" }: { initialLevel?: string
         </div>
         <span className="quiet-pill">{lessons.length} บทเรียน{readyTopicCount ? ` · ${readyTopicCount} หัวข้อพร้อมฝึก` : ""}</span>
       </div>
-      <PracticeRecommendation />
-      <h2 className="practice-grammar-list-heading">เลือกฝึกเอง</h2>
       <div className="segmented level-switch" role="group" aria-label="เลือกระดับแบบฝึกหัด">
         {["A1.1", "A1.2", "A1.3"].map((value) => (
           <button
@@ -460,7 +458,9 @@ export function PracticeGrammarTopics({ lessonId = "L13" }: { lessonId?: string 
   const topicCount = topics.length;
 
   if (lessonId === "L13" || lessonId === "L14") {
-    return <PracticeLanding
+    const Landing = lessonId === "L13" ? L13PracticeLanding : L14GrammarPracticeLanding;
+    return <Landing
+      skill="grammar"
       eyebrow={`GRAMMATIK · LEKTION ${lessonId.slice(1)}`}
       title={`ฝึกไวยากรณ์บท ${lessonId.slice(1)}`}
       description={`เริ่มฝึกจากชุดรวมของบท ${lessonId.slice(1)} หรือเปิดรายการด้านล่างเพื่อเลือกหัวข้อที่ต้องการฝึก`}
@@ -475,7 +475,7 @@ export function PracticeGrammarTopics({ lessonId = "L13" }: { lessonId?: string 
         </Link>
       ))}
       <p className="practice-catalog-note">ผลชุดทดลองนี้ยังไม่รวมในความก้าวหน้าหลัก</p>
-    </PracticeLanding>;
+    </Landing>;
   }
 
   return (

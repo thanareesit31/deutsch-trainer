@@ -12,6 +12,7 @@ import { useContent } from "./content-provider";
 import { NounText, NounPrefix } from "./noun-text";
 import { findNoun, nounPresentation } from "@/lib/noun-presentation";
 import { ArticleDot, ArticleLegend } from "./profession-matching";
+import { VocabularyFeedbackAudio } from "./vocabulary-feedback-audio";
 
 type Story = Extract<VocabularyChallengeActivity, { kind: "story" }>;
 type Build = Extract<VocabularyChallengeActivity, { kind: "build" }>;
@@ -48,7 +49,7 @@ function StoryExercise({ activity, responses, drafts, onDraft, onSubmit }: {
     })}</p>
     {checked ? <div className={`l14-vocab-feedback${activity.gaps.every(gap => responses[gap.id]?.correct) ? " correct" : " incorrect"}`} role="status">
       <strong>{activity.gaps.every(gap => responses[gap.id]?.correct) ? "ถูกต้องทุกช่อง" : "มาดูคำตอบแต่ละช่อง"}</strong>
-      <ol>{activity.gaps.map(gap => <li key={gap.id}><strong>{responses[gap.id]?.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong> · <NounText text={activity.wordBank.find(option => option.id === gap.answer)?.label ?? ""} item={items.find(item => item.id === gap.answer)} /> · {gap.explanation}</li>)}</ol><p>{activity.translation}</p>
+      <ol>{activity.gaps.map(gap => <li key={gap.id}><strong>{responses[gap.id]?.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong> · <NounText text={activity.wordBank.find(option => option.id === gap.answer)?.label ?? ""} item={items.find(item => item.id === gap.answer)} /> <VocabularyFeedbackAudio text={activity.wordBank.find(option => option.id === gap.answer)?.label ?? ""} item={items.find(item => item.id === gap.answer)} /> · {gap.explanation}</li>)}</ol><p>{activity.translation}</p>
     </div> : <div className="l14-vocab-actions"><button type="button" className="button primary" disabled={!filled} onClick={() => onSubmit(Object.fromEntries(activity.gaps.map(gap => [gap.id, drafts[gap.id] ?? responses[gap.id]?.answer ?? ""])))}>ตรวจคำตอบทั้งเรื่อง</button></div>}
   </>;
 }
@@ -65,7 +66,7 @@ function BuildExercise({ activity, draft, response, onDraft, onSubmit }: {
     <p className="eyebrow">ประกอบส่วนคำเป็นคำศัพท์</p><h1>{activity.prompt}</h1><p>กดส่วนคำตามลำดับ กดส่วนที่วางแล้วเพื่อนำกลับ</p>
     <div className="l13-vocab-build-answer" aria-label="คำศัพท์ที่ประกอบ"><NounPrefix noun={nounPresentation(targetItem)} />{response ? <strong lang="de">{response.answer}</strong> : order.length ? order.map((index, position) => <button type="button" className="button secondary" key={index} lang="de" onClick={() => onDraft(activity.id, JSON.stringify(order.filter((_, at) => at !== position)))}>{activity.parts[index]}</button>) : <span>วางส่วนคำที่นี่</span>}</div>
     <div className="l13-vocab-story-wordbank" aria-label="ส่วนคำศัพท์">{activity.parts.map((part, index) => <button type="button" className="button secondary" key={index} lang="de" disabled={Boolean(response) || order.includes(index)} onClick={() => onDraft(activity.id, JSON.stringify([...order, index]))}>{part}</button>)}</div>
-    {response ? <div className={`l14-vocab-feedback${response.correct ? " correct" : " incorrect"}`} role="status"><strong>{response.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong><p>คำตอบ: <span lang="de"><NounText text={activity.answer} item={targetItem} /></span></p><p>{activity.explanation}</p></div>
+    {response ? <div className={`l14-vocab-feedback${response.correct ? " correct" : " incorrect"}`} role="status"><strong>{response.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong><p>คำตอบ: <span lang="de"><NounText text={activity.answer} item={targetItem} /></span> <VocabularyFeedbackAudio text={activity.answer} item={targetItem} /></p><p>{activity.explanation}</p></div>
       : <div className="l14-vocab-actions"><button type="button" className="button primary" disabled={order.length !== activity.parts.length} onClick={() => onSubmit({ [activity.id]: answer })}>ตรวจคำตอบ</button></div>}
   </>;
 }
@@ -110,8 +111,8 @@ function CrosswordExercise({ activity, responses, drafts, onDraft, onSubmit }: {
     </div>
     <p className="l13-crossword-keyword">คำแนวตั้ง: <span lang="de"><NounPrefix noun={findNoun(activity.solution, items)} /> {activity.rows.map(row => rowValue(row.id)[row.keyIndex]?.trim() || "_").join(" ")}</span></p>
     {checked ? <div className={`l14-vocab-feedback${activity.rows.every(row => responses[row.id]?.correct) ? " correct" : " incorrect"}`} role="status"><strong>{activity.rows.every(row => responses[row.id]?.correct) ? "ถูกต้องทุกคำ" : "มาดูคำตอบแต่ละคำ"}</strong>
-      <ol>{activity.rows.map(row => <li key={row.id}><strong lang="de"><NounText text={row.answer} items={items} /></strong> · {responses[row.id]?.correct ? "ถูกต้อง" : "ยังไม่ถูก"}<p>{row.translation}</p></li>)}</ol>
-      <p>คำแนวตั้ง: <strong lang="de"><NounText text={activity.solution} items={items} /></strong> · {activity.solutionMeaning}</p>
+      <ol>{activity.rows.map(row => <li key={row.id}><strong lang="de"><NounText text={row.answer} items={items} /></strong> <VocabularyFeedbackAudio text={findNoun(row.answer, items)?.label ?? row.answer} /> · {responses[row.id]?.correct ? "ถูกต้อง" : "ยังไม่ถูก"}<p>{row.translation}</p></li>)}</ol>
+      <p>คำแนวตั้ง: <strong lang="de"><NounText text={activity.solution} items={items} /></strong> <VocabularyFeedbackAudio text={findNoun(activity.solution, items)?.label ?? activity.solution} /> · {activity.solutionMeaning}</p>
     </div> : <div className="l14-vocab-actions"><button type="button" className="button primary" disabled={!complete} onClick={() => onSubmit(Object.fromEntries(activity.rows.map(row => [row.id, rowValue(row.id)])))}>ตรวจคำตอบทั้งตาราง</button></div>}
   </>;
 }
@@ -125,7 +126,7 @@ function PictureArticleExercise({ activity, response, picked, onPick }: { activi
       </div>
       <div className="l13-vocab-challenge-options">{activity.options.map(option => <button type="button" key={option.id} lang="de" aria-pressed={picked === option.id} disabled={Boolean(response)} onClick={() => onPick(option.id)}><span className="l13-vocab-noun-label"><ArticleDot article={option.id} />{option.label}</span></button>)}</div>
     </div>
-    {response && <div className={`l14-vocab-feedback${response.correct ? " correct" : " incorrect"}`} role="status"><strong>{response.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong><p>คำแปลโจทย์: {activity.translation}</p><p>คำตอบ: <span className="l13-vocab-noun-label" lang="de"><ArticleDot article={activity.answer} />{activity.answer} {activity.noun}</span></p><p>{activity.explanation}</p></div>}
+    {response && <div className={`l14-vocab-feedback${response.correct ? " correct" : " incorrect"}`} role="status"><strong>{response.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong><p>คำแปลโจทย์: {activity.translation}</p><p>คำตอบ: <span className="l13-vocab-noun-label" lang="de"><ArticleDot article={activity.answer} />{activity.answer} {activity.noun}</span> <VocabularyFeedbackAudio text={`${activity.answer} ${activity.noun}`} /></p><p>{activity.explanation}</p></div>}
   </>;
 }
 
@@ -199,7 +200,7 @@ export function L13VocabularyChallenge({ format }: { format?: "pictureArticle" }
                 <div className="l13-vocab-challenge-options">{activity.options.map(option => <button type="button" key={option.id} lang={activity.kind === "category" ? "th" : "de"} aria-pressed={picked === option.id} disabled={Boolean(response)} onClick={() => onDraft(activity.id, option.id)}>{optionContent(option)}</button>)}</div>
               </div>
             </div>
-            {response && <div className={`l14-vocab-feedback${response.correct ? " correct" : " incorrect"}`} role="status"><strong>{response.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong>{activity.kind === "picture" ? <p>คำแปลโจทย์: คุณเห็นอะไรในภาพ?</p> : activity.translation && <p>คำแปลโจทย์: {activity.translation}</p>}<p>คำตอบ: <span lang={activity.kind === "category" ? "th" : "de"}>{optionContent(activity.options.find(option => option.id === activity.answer))}</span></p><p>{activity.explanation}</p></div>}
+            {response && <div className={`l14-vocab-feedback${response.correct ? " correct" : " incorrect"}`} role="status"><strong>{response.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong>{activity.kind === "picture" ? <p>คำแปลโจทย์: คุณเห็นอะไรในภาพ?</p> : activity.translation && <p>คำแปลโจทย์: {activity.translation}</p>}<p>คำตอบ: <span lang={activity.kind === "category" ? "th" : "de"}>{optionContent(activity.options.find(option => option.id === activity.answer))}</span> <VocabularyFeedbackAudio text={activity.kind === "category" ? activity.prompt : activity.options.find(option => option.id === activity.answer)?.label ?? ""} item={items.find(item => item.id === (activity.kind === "category" ? activity.requiredItemIds[0] : activity.answer))} /></p><p>{activity.explanation}</p></div>}
           </>}
       <div className="l14-vocab-actions">{round.position === 0 ? <Link className="button secondary" href="/practice/L13/vocabulary">← ย้อนกลับ</Link> : <button type="button" className="button secondary" onClick={() => updateRound(current => ({ ...current, position: current.position - 1 }))}>← ย้อนกลับ</button>}
         {!checked && activity.kind !== "story" && activity.kind !== "build" && activity.kind !== "crossword" && <button type="button" className="button primary" disabled={!picked} onClick={() => submit({ [activity.id]: picked })}>ตรวจคำตอบ</button>}

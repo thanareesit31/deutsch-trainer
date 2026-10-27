@@ -5947,6 +5947,11 @@ select {
 .l14-vocab-visual img{width:100%;height:auto;max-height:340px;object-fit:cover}
 .l14-vocab-visual strong{font-size:clamp(30px,4vw,54px)}
 .l14-vocab-visual .guided-route-diagram{width:min(100%,320px);height:auto}
+.l14-vocab-context{min-height:240px;display:flex;flex-direction:column;justify-content:center;gap:16px;padding:24px;border:1px solid #e3eade;background:#f4f7f1;border-radius:20px}
+.l14-vocab-context p{margin:0;font-size:clamp(18px,2vw,24px);line-height:1.5}
+.l14-vocab-context p[lang=de]{color:#263c30;font-weight:600}
+.l14-vocab-context p[lang=th]{font-size:16px;color:#526457}
+.l14-vocab-context .button{align-self:flex-start}
 .l14-vocab-answer>p{margin:0 0 16px}
 .l14-vocab-answer label{display:block;font-weight:600}
 .l14-vocab-answer input{display:block;width:100%;min-height:56px;border:1px solid #acbdb0;border-radius:12px;padding:10px 16px;margin-top:12px;font:inherit}
@@ -5958,7 +5963,7 @@ select {
 .l14-vocab-feedback.incorrect{background:#fff0e9}
 .l14-vocab-feedback p{margin:8px 0 0}
 .l14-vocab-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px;margin-top:30px}
-@media(max-width:760px){.l14-vocab-practice{padding:24px 16px 60px}.l14-vocab-practice-card{padding:24px}.l14-vocab-topics{grid-template-columns:1fr}.l14-vocab-question-layout{grid-template-columns:1fr;gap:20px}.l14-vocab-visual{min-height:180px}.l14-vocab-visual img{max-height:240px}}
+@media(max-width:760px){.l14-vocab-practice{padding:24px 16px 60px}.l14-vocab-practice-card{padding:24px}.l14-vocab-topics{grid-template-columns:1fr}.l14-vocab-question-layout{grid-template-columns:1fr;gap:20px}.l14-vocab-visual,.l14-vocab-context{min-height:180px}.l14-vocab-visual img{max-height:240px}}
 .l13-vocab-challenge{max-width:1160px;margin:0 auto;padding:36px 32px 80px;color:#263c30}
 .l13-vocab-challenge .l14-vocab-practice-card{max-width:1000px;margin-inline:auto}
 .l13-vocab-challenge-sticky{position:sticky;top:0;z-index:12;padding:8px 0 14px;margin-bottom:22px;background:var(--paper,#f8faf6)}
@@ -6016,6 +6021,8 @@ select {
 .noun-spelling-answer input{min-width:0;flex:1}
 .noun-practice-sticky{position:sticky;top:0;z-index:12;background:var(--paper,#f8faf6)}
 .noun-practice-sticky .article-legend{position:static;margin:0;border:0;background:transparent}
+.vocabulary-feedback-audio{display:inline-flex;align-items:center;gap:6px;min-height:40px;margin-left:8px;padding:6px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--green);font:inherit;font-size:14px;vertical-align:middle;cursor:pointer}
+.vocabulary-feedback-audio:focus-visible{outline:2px solid var(--green);outline-offset:3px}
 
 /* Keep L13's embedded phrase runner and L14's React runner on one visual grid. */
 .l14-practice-page{max-width:1180px;padding:28px 32px 72px}

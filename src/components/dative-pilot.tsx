@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useVocabularyAudio } from "./vocabulary-audio";
 import dative from "@/data/l13-dative-preview.json";
 import esGibt from "@/data/l13-es-gibt-preview.json";
 import verbs from "@/data/l13-verbs-preview.json";
@@ -74,6 +75,18 @@ export function GrammarPilot({ userId, topic, learnedItemIds }: { userId: string
   const frame = useRef<HTMLIFrameElement>(null);
   const [height, setHeight] = useState(900);
   const preview = previews[topic];
+  const { play, error: audioError } = useVocabularyAudio();
+
+  useEffect(() => {
+    function listen(event: MessageEvent<unknown>) {
+      if (!topic.startsWith("vocab") || event.source !== frame.current?.contentWindow) return;
+      const data = event.data;
+      if (typeof data !== "object" || data === null || !("type" in data) || data.type !== "vocabulary-feedback-audio") return;
+      if ("text" in data && typeof data.text === "string" && data.text.length > 0 && data.text.length <= 500) play(data.text);
+    }
+    window.addEventListener("message", listen);
+    return () => window.removeEventListener("message", listen);
+  }, [play, topic]);
 
   useEffect(() => {
     function resize(event: MessageEvent<unknown>) {
@@ -102,6 +115,7 @@ export function GrammarPilot({ userId, topic, learnedItemIds }: { userId: string
         onLoad={() => frame.current?.contentWindow?.postMessage({ type: "grammar-preview-direct-start", learnedItemIds, resumeId: new URLSearchParams(window.location.search).get("resume") }, "*")}
         style={{ display: "block", width: "100%", height, border: 0 }}
       />
+      {audioError && <p role="status" className="audio-listen-error">{audioError}</p>}
     </>
   );
 }

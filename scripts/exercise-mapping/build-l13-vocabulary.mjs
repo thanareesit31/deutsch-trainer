@@ -60,6 +60,10 @@ for (const bank of banks) {
  const html=template.replace('__PLANNER__',()=>planner).replace('__BANK__',()=>JSON.stringify(publicBank).replaceAll('<','\\u003c'));
  await writeFile(new URL('src/data/l13-vocab-'+bank.slug+'-preview.json',root),JSON.stringify({html})+'\n');
 }
+if (process.argv.includes('--previews-only')) {
+ console.log('Updated L13 vocabulary previews; catalog and answer definitions unchanged.');
+ process.exit(0);
+}
 await writeFile(new URL('src/data/l13-vocabulary-catalog.json',root),JSON.stringify({groups:groups.map(group=>({...group,topicId:topicId(group)})),questions:questions.map(({id,itemId,topicId,kind,subskill})=>({id,itemId,topicId,kind,subskill}))})+'\n');
 await writeFile(new URL('docs/exercise-mapping/l13-vocabulary-bank.json',root),JSON.stringify({wordCount:words.length,questionCount:questions.length,groups,questions,provenance},null,2)+'\n');
 console.log('Built L13 vocabulary: '+words.length+' words, '+questions.length+' questions, '+groups.length+' topics; sources kept in internal bank.');

@@ -12,7 +12,7 @@ async function device(email) {
   await page.getByLabel('อีเมล', { exact: true }).fill(email);
   await page.getByLabel('รหัสผ่าน', { exact: true }).fill('TestOnly123!');
   await page.getByRole('button', { name: 'เข้าสู่ระบบ', exact: true }).click();
-  await page.locator('.practice-recommendation').waitFor(); return page;
+  await page.getByRole('heading', { name: 'แบบฝึกหัดของคุณ' }).waitFor(); return page;
 }
 async function frame(page, prefix = 'phrases-basic') {
   await page.locator('iframe').waitFor();
@@ -54,7 +54,7 @@ async function answer(iframe, wrongMatch = false) {
 try {
   const page = await device('tester2@deutsch.test');
   await Promise.all([page.waitForNavigation({waitUntil:'load'}),page.getByRole('button', { name: 'เรียนแล้วทั้งหมด', exact: true }).click()]);
-  await page.waitForURL('**/practice'); await page.locator('.practice-recommendation').waitFor();
+  await page.waitForURL('**/practice'); await page.getByRole('heading', { name: 'แบบฝึกหัดของคุณ' }).waitFor();
   await page.goto('http://localhost:3002/practice/L13/phrases/basic'); let iframe = await frame(page);
   const legacy = {...inventory.legacyQuestions.find(q => q.id === 'L13-R001-context'),stageId:'stage-2'};
   await iframe.evaluate(q => start([q], 1), legacy);
@@ -77,9 +77,17 @@ try {
   await answer(iframe); await iframe.locator('#next').click();
   let pair = await iframe.evaluate(() => current().items.slice(2, 4));
   await choosePair(iframe, pair[0], pair[0].question.acceptedAnswers[0]);
-  assert.equal(await iframe.locator('[data-match-pair="' + pair[0].question.id + '"]').innerText().then(text => text.includes(pair[0].question.acceptedAnswers[0])), true);
-  assert.equal(await iframe.locator('.match-pair-row').count(), 2);
-  assert(await iframe.locator('#check').isDisabled());
+  assert.equal(await iframe.locator('[data-match-answer="' + pair[0].question.acceptedAnswers[0] + '"]').getAttribute('data-matched'), 'true');
+  assert.equal(await iframe.locator('[data-match-prompt="' + pair[0].question.id + '"]').getAttribute('data-matched'), 'true');
+  assert.equal(await iframe.locator('[data-match-prompt="' + pair[1].question.id + '"]').getAttribute('aria-pressed'), 'false');
+  assert.equal(await iframe.locator('[data-match-prompt="' + pair[1].question.id + '"]').getAttribute('data-matched'), 'false');
+  await iframe.locator('[data-match-answer="' + pair[1].question.acceptedAnswers[0] + '"]').click();
+  assert.equal(await iframe.locator('[data-match-answer="' + pair[1].question.acceptedAnswers[0] + '"]').getAttribute('aria-pressed'), 'true');
+  await iframe.locator('[data-match-prompt="' + pair[1].question.id + '"]').click();
+  assert.equal(await iframe.locator('[data-match-prompt="' + pair[1].question.id + '"]').getAttribute('data-matched'), 'true');
+  assert.equal(await iframe.locator('[data-match-answer="' + pair[1].question.acceptedAnswers[0] + '"]').getAttribute('aria-pressed'), 'false');
+  assert.equal(await iframe.locator('.phrase-match-column [data-match-prompt]').count(), 2);
+  assert(await iframe.locator('#check').isEnabled());
   await until(async () => (await history(page)).find(row => row.session_id === id)?.state.items[2].response === pair[0].question.acceptedAnswers[0], 'Matching draft not saved');
   const second = await device('tester2@deutsch.test');
   await second.goto('http://localhost:3002/practice/L13/phrases/basic?resume=' + id); iframe = await frame(second);
@@ -93,14 +101,14 @@ try {
   await answer(iframe, true);
   assert.equal(await iframe.getByText('คำแปลคำถาม: คุณคิดว่าเมืองนี้ยอดเยี่ยมไหม', { exact: true }).count(), 1);
   for (const item of await iframe.evaluate(() => current().items.slice(2, 4))) {
-    assert.equal(await iframe.locator('[data-match-pair="' + item.question.id + '"]').innerText().then(text => text.includes(item.response)), true);
+    assert.equal(await iframe.locator('.phrase-match-checked-row').filter({ hasText: item.question.sentence }).innerText().then(text => text.includes(item.response)), true);
   }
   assert.deepEqual(await iframe.evaluate(() => current().items.slice(2, 4).map(item => item.attempt.correct)), [false, false]);
   assert.match(await iframe.locator('.practice-progress').innerText(), /4 \/ 20/);
   await iframe.locator('#next').click();
   await second.setViewportSize({ width: 1280, height: 900 });
   let topicTransitions = 0, previousTopic = '';
-  while (!(await iframe.getByRole('heading', { name: 'ฝึกครบทุกหัวข้อแล้ว', exact: true }).count())) {
+  while (!(await iframe.getByRole('heading', { name: 'ผลลัพธ์ของวันนี้', exact: true }).count())) {
     assert.equal(await iframe.locator('#continue-topic').count(), 0);
     const topic = await iframe.evaluate(() => activeItem().question.topicId);
     if (previousTopic && topic !== previousTopic) topicTransitions++;
@@ -108,7 +116,7 @@ try {
     await answer(iframe); await iframe.locator('#next').click();
   }
   assert.equal(topicTransitions, 3);
-  assert.deepEqual(await iframe.locator('#app > .row button').allTextContents(), ['ฝึกหัวข้อถัดไป', 'ฝึกเพิ่ม', 'จบ']);
+  assert.deepEqual(await iframe.locator('#app .phrase-summary .row button').allTextContents(), ['ฝึกเพิ่ม', 'จบ']);
   assert.equal(await iframe.locator('#app table, #app details, #app #feedback').count(), 0);
   await until(async () => (await history(second)).find(row => row.session_id === id)?.state.completed, 'Round completion not saved');
   const saved = (await history(second)).find(row => row.session_id === id).state;

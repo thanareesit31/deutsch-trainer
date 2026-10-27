@@ -11,7 +11,7 @@ async function api(path,body){return page.evaluate(async({path,body})=>{const k=
 async function store(state){return api('learner_lesson_states?on_conflict=user_id,lesson_key',{user_id:userId,lesson_key:key,state});}
 async function currentState(){return (await api('learner_lesson_states')).find(row=>row.lesson_key===key)?.state;}
 try {
-await page.goto('http://localhost:3002/practice');await page.getByLabel('อีเมล',{exact:true}).fill('tester2@deutsch.test');await page.getByLabel('รหัสผ่าน',{exact:true}).fill('TestOnly123!');await page.getByRole('button',{name:'เข้าสู่ระบบ',exact:true}).click();await page.locator('.practice-recommendation').first().waitFor();
+await page.goto('http://localhost:3002/practice');await page.getByLabel('อีเมล',{exact:true}).fill('tester2@deutsch.test');await page.getByLabel('รหัสผ่าน',{exact:true}).fill('TestOnly123!');await page.getByRole('button',{name:'เข้าสู่ระบบ',exact:true}).click();await page.getByRole('heading',{name:'แบบฝึกหัดของคุณ'}).waitFor();
 
 const rows=await api('learner_lesson_states');userId=rows[0].user_id;original=rows.find(row=>row.lesson_key===key)?.state;
 const activity=bank.find(a=>a.kind==='pictureArticle');const state=readChallengeState(null,[activity]);state.articleRound=state.round;await store(state);

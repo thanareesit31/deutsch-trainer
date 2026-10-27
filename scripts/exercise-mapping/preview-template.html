@@ -111,6 +111,8 @@ function decorateVocabularyNouns(card,q){
  if(q.subskill==='vocabulary_spelling'&&noun){const input=card.querySelector('#response');if(input){const row=node('div',undefined,{class:'noun-spelling-answer'}),prefix=node('span',undefined,{class:'noun-prefix',lang:'de'});prefix.append(dot(noun.color),document.createTextNode(noun.label.split(' ')[0]));input.replaceWith(row);row.append(prefix,input);}}
  if(q.subskill==='vocabulary_article')for(const option of card.querySelectorAll('.choices button'))if(/^(der|die|das)$/u.test(option.textContent))option.prepend(dot(option.textContent));
  if(noun){const answer=card.querySelector('.feedback p[lang="de"]');if(answer){answer.replaceChildren(node('span','คำตอบ: '),dot(noun.color),document.createTextNode(noun.label));}}
+ const feedback=card.querySelector('.feedback');
+ if(BANK.historySkill==='vocabulary'&&feedback){const text=noun?.label||q.feedbackAnswer||q.acceptedAnswers[0];const listen=button('🔊 ฟังเสียง',()=>parent.postMessage({type:'vocabulary-feedback-audio',text},'*'),{'aria-label':'ฟังเสียง '+text,class:'vocabulary-feedback-audio'});Object.assign(listen.style,{fontSize:'14px',padding:'6px 12px',minHeight:'40px',marginTop:'10px'});feedback.append(listen);}
 }
 function focusTitle(){document.getElementById('q-title')?.focus();}
 function render(){app.replaceChildren();if(screen==='home'||!current()){home();return;}if(current().completed){summary();return;}if(current().workflow!=='guided'&&current().breakAt===current().position){sectionBreak();return;}question();}
