@@ -4,6 +4,11 @@
   "bindings": [
     {
       "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-001",
+      "targetId": "L14-G008",
+      "subskill": "lokale-praepositionen-choice",
+      "difficulty": 1,
+      "assistance": "answer-options-and-context",
+      "difficultyRationale": "เลือกคำตอบจากตัวเลือกในบริบท",
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L14-4a"
@@ -14,6 +19,11 @@
     },
     {
       "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-002",
+      "targetId": "L14-G007",
+      "subskill": "lokale-praepositionen-choice",
+      "difficulty": 1,
+      "assistance": "answer-options-and-context",
+      "difficultyRationale": "เลือกคำตอบจากตัวเลือกในบริบท",
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L14-4a"
@@ -24,6 +34,11 @@
     },
     {
       "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-003",
+      "targetId": "L14-G004",
+      "subskill": "lokale-praepositionen-cloze",
+      "difficulty": 2,
+      "assistance": "context-clue",
+      "difficultyRationale": "ดึงรูปคำจากบริบทโดยไม่มีตัวเลือก",
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L14-4a"
@@ -34,6 +49,11 @@
     },
     {
       "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-004",
+      "targetId": "L14-G009",
+      "subskill": "lokale-praepositionen-cloze",
+      "difficulty": 2,
+      "assistance": "context-clue",
+      "difficultyRationale": "ดึงรูปคำจากบริบทโดยไม่มีตัวเลือก",
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L14-4a"
@@ -44,26 +64,26 @@
     },
     {
       "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-005",
+      "targetId": "L14-G008",
+      "subskill": "lokale-praepositionen-order",
+      "difficulty": 3,
+      "assistance": "supplied-words",
+      "difficultyRationale": "เรียงคำที่ให้เป็นประโยคสมบูรณ์",
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L14-4a"
       ],
       "exerciseBasis": [
         "A13-KB-L14-4a"
-      ]
-    },
-    {
-      "questionId": "A13-L14-WO-DATIV-001",
-      "authorship": "newly_authored",
-      "contentBasis": [
-        "A13-KB-L14-4b"
-      ],
-      "exerciseBasis": [
-        "A13-KB-L14-4b"
       ]
     },
     {
       "questionId": "A13-L14-WO-DATIV-002",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-choice",
+      "difficulty": 1,
+      "assistance": "answer-options-and-context",
+      "difficultyRationale": "เลือกคำตอบจากตัวเลือกในบริบท",
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L14-4b"
@@ -74,6 +94,11 @@
     },
     {
       "questionId": "A13-L14-WO-DATIV-003",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-cloze",
+      "difficulty": 2,
+      "assistance": "context-clue",
+      "difficultyRationale": "ดึงรูปคำจากบริบทโดยไม่มีตัวเลือก",
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L14-4b"
@@ -84,6 +109,11 @@
     },
     {
       "questionId": "A13-L14-WO-DATIV-004",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-cloze",
+      "difficulty": 2,
+      "assistance": "context-clue",
+      "difficultyRationale": "ดึงรูปคำจากบริบทโดยไม่มีตัวเลือก",
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L14-4b"
@@ -93,7 +123,1377 @@
       ]
     },
     {
-      "questionId": "A13-L14-WO-DATIV-005",
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-006",
+      "targetId": "L14-G001",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-007",
+      "targetId": "L14-G001",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-008",
+      "targetId": "L14-G001",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-009",
+      "targetId": "L14-G001",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-010",
+      "targetId": "L14-G001",
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-011",
+      "targetId": "L14-G002",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-012",
+      "targetId": "L14-G002",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-013",
+      "targetId": "L14-G002",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-014",
+      "targetId": "L14-G002",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-015",
+      "targetId": "L14-G002",
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-016",
+      "targetId": "L14-G003",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-017",
+      "targetId": "L14-G003",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-018",
+      "targetId": "L14-G003",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-019",
+      "targetId": "L14-G003",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-020",
+      "targetId": "L14-G003",
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-021",
+      "targetId": "L14-G004",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-022",
+      "targetId": "L14-G004",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-023",
+      "targetId": "L14-G004",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-024",
+      "targetId": "L14-G004",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-025",
+      "targetId": "L14-G004",
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-026",
+      "targetId": "L14-G005",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-027",
+      "targetId": "L14-G005",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-028",
+      "targetId": "L14-G005",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-029",
+      "targetId": "L14-G005",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-030",
+      "targetId": "L14-G005",
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-031",
+      "targetId": "L14-G006",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-032",
+      "targetId": "L14-G006",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-033",
+      "targetId": "L14-G006",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-034",
+      "targetId": "L14-G006",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-035",
+      "targetId": "L14-G006",
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-036",
+      "targetId": "L14-G007",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-037",
+      "targetId": "L14-G007",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-038",
+      "targetId": "L14-G007",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-039",
+      "targetId": "L14-G007",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-040",
+      "targetId": "L14-G007",
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-041",
+      "targetId": "L14-G008",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-042",
+      "targetId": "L14-G008",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-043",
+      "targetId": "L14-G008",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-044",
+      "targetId": "L14-G008",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-045",
+      "targetId": "L14-G008",
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-046",
+      "targetId": "L14-G009",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-047",
+      "targetId": "L14-G009",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-048",
+      "targetId": "L14-G009",
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-049",
+      "targetId": "L14-G009",
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-LOKALE-PRAEPOSITIONEN-050",
+      "targetId": "L14-G009",
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4a"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4a"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-051",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-052",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-053",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-054",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-055",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine-sentence-order",
+      "difficulty": 3,
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-056",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-057",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-058",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-059",
+      "targetId": "L14-G011",
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-060",
+      "targetId": "L14-G011",
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-061",
+      "targetId": "L14-G011",
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-062",
+      "targetId": "L14-G011",
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-063",
+      "targetId": "L14-G011",
+      "subskill": "wo-dativ-indefinite-masculine-sentence-order",
+      "difficulty": 3,
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-064",
+      "targetId": "L14-G011",
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-065",
+      "targetId": "L14-G011",
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-066",
+      "targetId": "L14-G011",
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-067",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-068",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-069",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-070",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-071",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-feminine-sentence-order",
+      "difficulty": 3,
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-072",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-073",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-074",
+      "targetId": "L14-G012",
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-075",
+      "targetId": "L14-G013",
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-076",
+      "targetId": "L14-G013",
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-077",
+      "targetId": "L14-G013",
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-078",
+      "targetId": "L14-G013",
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-079",
+      "targetId": "L14-G013",
+      "subskill": "wo-dativ-plural-article-sentence-order",
+      "difficulty": 3,
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-080",
+      "targetId": "L14-G013",
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-081",
+      "targetId": "L14-G013",
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-082",
+      "targetId": "L14-G013",
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-083",
+      "targetId": "L14-G014",
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-084",
+      "targetId": "L14-G014",
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-085",
+      "targetId": "L14-G014",
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-086",
+      "targetId": "L14-G014",
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-087",
+      "targetId": "L14-G014",
+      "subskill": "wo-dativ-contraction-in-dem-sentence-order",
+      "difficulty": 3,
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-088",
+      "targetId": "L14-G014",
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-089",
+      "targetId": "L14-G014",
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-091",
+      "targetId": "L14-G015",
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-092",
+      "targetId": "L14-G015",
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-093",
+      "targetId": "L14-G015",
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-094",
+      "targetId": "L14-G015",
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-095",
+      "targetId": "L14-G015",
+      "subskill": "wo-dativ-contraction-an-dem-sentence-order",
+      "difficulty": 3,
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-096",
+      "targetId": "L14-G015",
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-99",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือก Dativ Artikel ของคำนามเพศชายจากตัวเลือก",
+      "authorship": "newly_authored",
+      "contentBasis": [
+        "A13-KB-L14-4b"
+      ],
+      "exerciseBasis": [
+        "A13-KB-L14-4b"
+      ]
+    },
+    {
+      "questionId": "A13-L14-WOD-100",
+      "targetId": "L14-G010",
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 2,
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึง Dativ Artikel ของคำนามเพศชายโดยไม่มีตัวเลือก",
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L14-4b"

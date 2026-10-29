@@ -105,6 +105,7 @@ export function L13PracticeLanding({ skill, learnedItemIds, ...props }: Omit<Par
 
 const l14GrammarStores = [
   { storage: "l14-grammar", href: "/practice/L14/grammar/basic", title: "ไวยากรณ์บท 14" },
+  { storage: "l14-grammar-daily", href: "/practice/L14/grammar/daily", title: "ไวยากรณ์บท 14" },
   { storage: "l14-lokale-praepositionen", href: "/practice/L14/grammar/lokale-praepositionen", title: "Lokale Präpositionen" },
   { storage: "l14-wo-dativ", href: "/practice/L14/grammar/wo-dativ", title: "Wo? + Dativ" },
 ] as const;
@@ -143,9 +144,9 @@ export function L14GrammarPracticeLanding(props: Omit<Parameters<typeof Practice
   }, [user]);
   if (state.error) return <p role="alert">อ่านประวัติฝึกไม่ได้ กรุณาโหลดหน้าใหม่</p>;
   return <PracticeLanding {...props}
-    href={state.pendingHref ?? props.href}
-    action={state.pendingHref ? "ฝึกต่อ" : props.action}
-    insights={{ evidence: state.evidence, recommendation: state.pendingHref ? "ทำรอบไวยากรณ์ที่ค้างไว้ต่อ" : props.description }}
+    href={state.pendingHref ?? (state.evidence.length ? "/practice/L14/grammar/daily" : props.href)}
+    action={state.pendingHref ? "ฝึกต่อ" : state.evidence.length ? "ฝึกต่อวันนี้" : props.action}
+    insights={{ evidence: state.evidence, recommendation: state.pendingHref ? "ทำรอบไวยากรณ์ที่ค้างไว้ต่อ" : state.evidence.length ? "เลือกโจทย์จากผลที่เคยฝึก และทบทวนเป้าหมายที่ยังไม่แม่น" : props.description }}
     resume={state.resume ?? undefined}
   />;
 }

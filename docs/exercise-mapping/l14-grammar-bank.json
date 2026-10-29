@@ -1,14 +1,17 @@
 {
   "schemaVersion": 1,
-  "status": "review_prototype_not_published",
+  "status": "learner_practice_active",
   "reviewScope": "Author review; independent educator review pending",
   "id": "l14-grammar-review-v1",
   "lessonId": "L14",
   "title": "ไวยากรณ์ Lektion 14",
   "description": "ฝึกไวยากรณ์ตามหัวข้อของบท",
-  "summaryNote": "ผลรอบนี้เป็นชุดทดลอง และยังไม่รวมในความก้าวหน้าหลัก",
+  "summaryNote": "ผลรอบนี้บันทึกในบัญชี แต่ยังไม่รวมในความก้าวหน้าหลัก",
   "storageKey": "deutsch-trainer:review-prototype:l14-grammar:v1",
-  "defaultCount": 6,
+  "defaultCount": 10,
+  "requireLearned": true,
+  "learnHref": "/learn/L14/grammar",
+  "learnLabel": "ไปเรียนไวยากรณ์",
   "skillLabels": {
     "lokale-praepositionen-choice": "Lokale Präpositionen · เลือกคำ",
     "lokale-praepositionen-cloze": "Lokale Präpositionen · พิมพ์คำ",
@@ -21,12 +24,12 @@
     {
       "topicId": "L14-lokale-praepositionen",
       "title": "Lokale Präpositionen",
-      "count": 3
+      "count": 5
     },
     {
       "topicId": "L14-wo-dativ",
       "title": "Wo? + Dativ",
-      "count": 3
+      "count": 5
     }
   ],
   "questions": [
@@ -53,7 +56,10 @@
       "knownErrors": {
         "unter": "position_word",
         "hinter": "position_word"
-      }
+      },
+      "targetId": "L14-G008",
+      "assistance": "answer-options-and-context",
+      "difficultyRationale": "เลือกคำตอบจากตัวเลือกในบริบท"
     },
     {
       "id": "A13-L14-LOKALE-PRAEPOSITIONEN-002",
@@ -78,7 +84,10 @@
       "knownErrors": {
         "vor": "position_word",
         "zwischen": "position_word"
-      }
+      },
+      "targetId": "L14-G007",
+      "assistance": "answer-options-and-context",
+      "difficultyRationale": "เลือกคำตอบจากตัวเลือกในบริบท"
     },
     {
       "id": "A13-L14-LOKALE-PRAEPOSITIONEN-003",
@@ -95,7 +104,10 @@
       "difficulty": 2,
       "hint": "อ่านตำแหน่งที่บอกไว้ในประโยคก่อนเลือกคำ",
       "explanation": "สะพานอยู่เหนือแม่น้ำ เมื่อบอกตำแหน่งของแม่น้ำจึงใช้ unter ซึ่งแปลว่า “ใต้”",
-      "knownErrors": {}
+      "knownErrors": {},
+      "targetId": "L14-G004",
+      "assistance": "context-clue",
+      "difficultyRationale": "ดึงรูปคำจากบริบทโดยไม่มีตัวเลือก"
     },
     {
       "id": "A13-L14-LOKALE-PRAEPOSITIONEN-004",
@@ -112,7 +124,10 @@
       "difficulty": 2,
       "hint": "อ่านตำแหน่งที่บอกไว้ในประโยคก่อนเลือกคำ",
       "explanation": "ไปรษณีย์มีธนาคารอยู่ทางซ้ายและโรงเรียนอยู่ทางขวา จึงใช้ zwischen ซึ่งแปลว่า “ระหว่าง”",
-      "knownErrors": {}
+      "knownErrors": {},
+      "targetId": "L14-G009",
+      "assistance": "context-clue",
+      "difficultyRationale": "ดึงรูปคำจากบริบทโดยไม่มีตัวเลือก"
     },
     {
       "id": "A13-L14-LOKALE-PRAEPOSITIONEN-005",
@@ -137,32 +152,10 @@
       "difficulty": 3,
       "hint": "อ่านตำแหน่งที่บอกไว้ในประโยคก่อนเลือกคำ",
       "explanation": "วาง ist หลัง Die Bank แล้วตามด้วย neben dem Bahnhof เพื่อบอกว่าธนาคารอยู่ข้างสถานีรถไฟ",
-      "knownErrors": {}
-    },
-    {
-      "id": "A13-L14-WO-DATIV-001",
-      "version": 2,
-      "topicId": "L14-wo-dativ",
-      "variantGroup": "a13-l14-wo-dativ-001",
-      "kind": "choice",
-      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
-      "sentence": "Die Bank ist neben ___ Kino.",
-      "options": [
-        "dem",
-        "das",
-        "den"
-      ],
-      "acceptedAnswers": [
-        "dem"
-      ],
-      "subskill": "wo-dativ-choice",
-      "difficulty": 1,
-      "hint": "คำถาม Wo? บอกตำแหน่งคงที่ จึงใช้ Dativ หลังคำบุพบทกลุ่มนี้",
-      "explanation": "ประโยคนี้บอกว่าธนาคารอยู่ที่ไหน จึงใช้ Dativ หลัง neben โดยเปลี่ยน das Kino เป็น dem Kino",
-      "knownErrors": {
-        "das": "case",
-        "den": "case"
-      }
+      "knownErrors": {},
+      "targetId": "L14-G008",
+      "assistance": "supplied-words",
+      "difficultyRationale": "เรียงคำที่ให้เป็นประโยคสมบูรณ์"
     },
     {
       "id": "A13-L14-WO-DATIV-002",
@@ -187,7 +180,10 @@
       "knownErrors": {
         "die": "case",
         "den": "case"
-      }
+      },
+      "targetId": "L14-G012",
+      "assistance": "answer-options-and-context",
+      "difficultyRationale": "เลือกคำตอบจากตัวเลือกในบริบท"
     },
     {
       "id": "A13-L14-WO-DATIV-003",
@@ -204,7 +200,10 @@
       "difficulty": 2,
       "hint": "คำถาม Wo? บอกตำแหน่งคงที่ จึงใช้ Dativ หลังคำบุพบทกลุ่มนี้",
       "explanation": "ประโยคนี้บอกตำแหน่งร้านกาแฟ จึงใช้ Dativ หลัง zwischen โดยเปลี่ยน der Park เป็น dem Park",
-      "knownErrors": {}
+      "knownErrors": {},
+      "targetId": "L14-G010",
+      "assistance": "context-clue",
+      "difficultyRationale": "ดึงรูปคำจากบริบทโดยไม่มีตัวเลือก"
     },
     {
       "id": "A13-L14-WO-DATIV-004",
@@ -221,7 +220,2326 @@
       "difficulty": 2,
       "hint": "คำถาม Wo? บอกตำแหน่งคงที่ จึงใช้ Dativ หลังคำบุพบทกลุ่มนี้",
       "explanation": "ประโยคนี้บอกว่าผู้หญิงรออยู่ที่ไหน จึงใช้ Dativ หลัง an โดยเปลี่ยน die Ampel เป็น der Ampel",
-      "knownErrors": {}
+      "knownErrors": {},
+      "targetId": "L14-G012",
+      "assistance": "context-clue",
+      "difficultyRationale": "ดึงรูปคำจากบริบทโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-006",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-006",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ด้านใน",
+      "sentence": "Der Ball liegt ___ der Box.",
+      "options": [
+        "in",
+        "auf",
+        "über"
+      ],
+      "acceptedAnswers": [
+        "in"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball ist innerhalb der Box.",
+      "explanation": "Der Ball ist innerhalb der Box. ใช้ in เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "auf": "position_word",
+        "über": "position_word"
+      },
+      "targetId": "L14-G001",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-007",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-007",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ด้านใน",
+      "sentence": "Die Kinder sind ___ dem Haus.",
+      "acceptedAnswers": [
+        "in"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball ist innerhalb der Box.",
+      "explanation": "Der Ball ist innerhalb der Box. ใช้ in เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G001",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-008",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-008",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ด้านใน",
+      "sentence": "Die Karte steckt ___ der Tasche.",
+      "options": [
+        "in",
+        "unter",
+        "an"
+      ],
+      "acceptedAnswers": [
+        "in"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball ist innerhalb der Box.",
+      "explanation": "Der Ball ist innerhalb der Box. ใช้ in เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "unter": "position_word",
+        "an": "position_word"
+      },
+      "targetId": "L14-G001",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-009",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-009",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ด้านใน",
+      "sentence": "Der Mann wartet ___ dem Café.",
+      "acceptedAnswers": [
+        "in"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball ist innerhalb der Box.",
+      "explanation": "Der Ball ist innerhalb der Box. ใช้ in เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G001",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-010",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-010",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Die Bücher stehen in dem Regal.",
+      "tokens": [
+        "Die",
+        "Bücher",
+        "stehen",
+        "in",
+        "dem",
+        "Regal"
+      ],
+      "acceptedAnswers": [
+        "Die Bücher stehen in dem Regal."
+      ],
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "hint": "Der Ball ist innerhalb der Box.",
+      "explanation": "Der Ball ist innerhalb der Box. ใช้ in เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G001",
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-011",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-011",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่บนพื้นผิวด้านบน",
+      "sentence": "Der Ball liegt ___ dem Tisch.",
+      "options": [
+        "auf",
+        "über",
+        "unter"
+      ],
+      "acceptedAnswers": [
+        "auf"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball berührt die obere Fläche.",
+      "explanation": "Der Ball berührt die obere Fläche. ใช้ auf เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "über": "position_word",
+        "unter": "position_word"
+      },
+      "targetId": "L14-G002",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-012",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-012",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่บนพื้นผิวด้านบน",
+      "sentence": "Die Tasse steht ___ dem Regal.",
+      "acceptedAnswers": [
+        "auf"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball berührt die obere Fläche.",
+      "explanation": "Der Ball berührt die obere Fläche. ใช้ auf เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G002",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-013",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-013",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่บนพื้นผิวด้านบน",
+      "sentence": "Das Buch liegt ___ dem Stuhl.",
+      "options": [
+        "auf",
+        "an",
+        "vor"
+      ],
+      "acceptedAnswers": [
+        "auf"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball berührt die obere Fläche.",
+      "explanation": "Der Ball berührt die obere Fläche. ใช้ auf เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "an": "position_word",
+        "vor": "position_word"
+      },
+      "targetId": "L14-G002",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-014",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-014",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่บนพื้นผิวด้านบน",
+      "sentence": "Die Tasche liegt ___ dem Bett.",
+      "acceptedAnswers": [
+        "auf"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball berührt die obere Fläche.",
+      "explanation": "Der Ball berührt die obere Fläche. ใช้ auf เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G002",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-015",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-015",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Die Zeitung liegt auf dem Sofa.",
+      "tokens": [
+        "Die",
+        "Zeitung",
+        "liegt",
+        "auf",
+        "dem",
+        "Sofa"
+      ],
+      "acceptedAnswers": [
+        "Die Zeitung liegt auf dem Sofa."
+      ],
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "hint": "Der Ball berührt die obere Fläche.",
+      "explanation": "Der Ball berührt die obere Fläche. ใช้ auf เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G002",
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-016",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-016",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่เหนือโดยไม่สัมผัส",
+      "sentence": "Die Lampe hängt ___ dem Tisch.",
+      "options": [
+        "über",
+        "unter",
+        "an"
+      ],
+      "acceptedAnswers": [
+        "über"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball hängt höher und berührt den Gegenstand nicht.",
+      "explanation": "Der Ball hängt höher und berührt den Gegenstand nicht. ใช้ über เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "unter": "position_word",
+        "an": "position_word"
+      },
+      "targetId": "L14-G003",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-017",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-017",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่เหนือโดยไม่สัมผัส",
+      "sentence": "Das Bild hängt ___ dem Sofa.",
+      "acceptedAnswers": [
+        "über"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball hängt höher und berührt den Gegenstand nicht.",
+      "explanation": "Der Ball hängt höher und berührt den Gegenstand nicht. ใช้ über เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G003",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-018",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-018",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่เหนือโดยไม่สัมผัส",
+      "sentence": "Die Wolke steht ___ dem Haus.",
+      "options": [
+        "über",
+        "vor",
+        "hinter"
+      ],
+      "acceptedAnswers": [
+        "über"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball hängt höher und berührt den Gegenstand nicht.",
+      "explanation": "Der Ball hängt höher und berührt den Gegenstand nicht. ใช้ über เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "vor": "position_word",
+        "hinter": "position_word"
+      },
+      "targetId": "L14-G003",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-019",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-019",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่เหนือโดยไม่สัมผัส",
+      "sentence": "Der Vogel fliegt ___ dem Park.",
+      "acceptedAnswers": [
+        "über"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball hängt höher und berührt den Gegenstand nicht.",
+      "explanation": "Der Ball hängt höher und berührt den Gegenstand nicht. ใช้ über เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G003",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-020",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-020",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Die Uhr hängt über der Tür.",
+      "tokens": [
+        "Die",
+        "Uhr",
+        "hängt",
+        "über",
+        "der",
+        "Tür"
+      ],
+      "acceptedAnswers": [
+        "Die Uhr hängt über der Tür."
+      ],
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "hint": "Der Ball hängt höher und berührt den Gegenstand nicht.",
+      "explanation": "Der Ball hängt höher und berührt den Gegenstand nicht. ใช้ über เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G003",
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-021",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-021",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ใต้",
+      "sentence": "Der Ball liegt ___ dem Tisch.",
+      "options": [
+        "unter",
+        "an",
+        "vor"
+      ],
+      "acceptedAnswers": [
+        "unter"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball ist tiefer als der Gegenstand.",
+      "explanation": "Der Ball ist tiefer als der Gegenstand. ใช้ unter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "an": "position_word",
+        "vor": "position_word"
+      },
+      "targetId": "L14-G004",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-022",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-022",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ใต้",
+      "sentence": "Die Schuhe stehen ___ dem Bett.",
+      "acceptedAnswers": [
+        "unter"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball ist tiefer als der Gegenstand.",
+      "explanation": "Der Ball ist tiefer als der Gegenstand. ใช้ unter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G004",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-023",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-023",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ใต้",
+      "sentence": "Die Katze sitzt ___ dem Stuhl.",
+      "options": [
+        "unter",
+        "hinter",
+        "neben"
+      ],
+      "acceptedAnswers": [
+        "unter"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball ist tiefer als der Gegenstand.",
+      "explanation": "Der Ball ist tiefer als der Gegenstand. ใช้ unter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "hinter": "position_word",
+        "neben": "position_word"
+      },
+      "targetId": "L14-G004",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-024",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-024",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ใต้",
+      "sentence": "Der Hund liegt ___ dem Baum.",
+      "acceptedAnswers": [
+        "unter"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball ist tiefer als der Gegenstand.",
+      "explanation": "Der Ball ist tiefer als der Gegenstand. ใช้ unter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G004",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-025",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-025",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Die Tasche ist unter der Bank.",
+      "tokens": [
+        "Die",
+        "Tasche",
+        "ist",
+        "unter",
+        "der",
+        "Bank"
+      ],
+      "acceptedAnswers": [
+        "Die Tasche ist unter der Bank."
+      ],
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "hint": "Der Ball ist tiefer als der Gegenstand.",
+      "explanation": "Der Ball ist tiefer als der Gegenstand. ใช้ unter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G004",
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-026",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-026",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ชิดด้านข้างหรือแนบกับ",
+      "sentence": "Das Bild hängt ___ der Wand.",
+      "options": [
+        "an",
+        "vor",
+        "hinter"
+      ],
+      "acceptedAnswers": [
+        "an"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball berührt die Seitenfläche.",
+      "explanation": "Der Ball berührt die Seitenfläche. ใช้ an เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "vor": "position_word",
+        "hinter": "position_word"
+      },
+      "targetId": "L14-G005",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-027",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-027",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ชิดด้านข้างหรือแนบกับ",
+      "sentence": "Der Mann steht ___ der Tür.",
+      "acceptedAnswers": [
+        "an"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball berührt die Seitenfläche.",
+      "explanation": "Der Ball berührt die Seitenfläche. ใช้ an เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G005",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-028",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-028",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ชิดด้านข้างหรือแนบกับ",
+      "sentence": "Das Fahrrad lehnt ___ dem Haus.",
+      "options": [
+        "an",
+        "neben",
+        "zwischen"
+      ],
+      "acceptedAnswers": [
+        "an"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball berührt die Seitenfläche.",
+      "explanation": "Der Ball berührt die Seitenfläche. ใช้ an เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "neben": "position_word",
+        "zwischen": "position_word"
+      },
+      "targetId": "L14-G005",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-029",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-029",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ชิดด้านข้างหรือแนบกับ",
+      "sentence": "Die Lampe steht ___ dem Fenster.",
+      "acceptedAnswers": [
+        "an"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball berührt die Seitenfläche.",
+      "explanation": "Der Ball berührt die Seitenfläche. ใช้ an เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G005",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-030",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-030",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Der Zettel hängt an der Pinnwand.",
+      "tokens": [
+        "Der",
+        "Zettel",
+        "hängt",
+        "an",
+        "der",
+        "Pinnwand"
+      ],
+      "acceptedAnswers": [
+        "Der Zettel hängt an der Pinnwand."
+      ],
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "hint": "Der Ball berührt die Seitenfläche.",
+      "explanation": "Der Ball berührt die Seitenfläche. ใช้ an เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G005",
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-031",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-031",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ด้านหน้า",
+      "sentence": "Das Auto steht ___ dem Haus.",
+      "options": [
+        "vor",
+        "hinter",
+        "neben"
+      ],
+      "acceptedAnswers": [
+        "vor"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball ist auf der Vorderseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Vorderseite des Gegenstands. ใช้ vor เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "hinter": "position_word",
+        "neben": "position_word"
+      },
+      "targetId": "L14-G006",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-032",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-032",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ด้านหน้า",
+      "sentence": "Die Frau wartet ___ der Schule.",
+      "acceptedAnswers": [
+        "vor"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball ist auf der Vorderseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Vorderseite des Gegenstands. ใช้ vor เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G006",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-033",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-033",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ด้านหน้า",
+      "sentence": "Der Bus hält ___ dem Bahnhof.",
+      "options": [
+        "vor",
+        "in",
+        "auf"
+      ],
+      "acceptedAnswers": [
+        "vor"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball ist auf der Vorderseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Vorderseite des Gegenstands. ใช้ vor เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "in": "position_word",
+        "auf": "position_word"
+      },
+      "targetId": "L14-G006",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-034",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-034",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ด้านหน้า",
+      "sentence": "Der Hund sitzt ___ der Tür.",
+      "acceptedAnswers": [
+        "vor"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball ist auf der Vorderseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Vorderseite des Gegenstands. ใช้ vor เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G006",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-035",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-035",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Die Bank steht vor dem Kino.",
+      "tokens": [
+        "Die",
+        "Bank",
+        "steht",
+        "vor",
+        "dem",
+        "Kino"
+      ],
+      "acceptedAnswers": [
+        "Die Bank steht vor dem Kino."
+      ],
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "hint": "Der Ball ist auf der Vorderseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Vorderseite des Gegenstands. ใช้ vor เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G006",
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-036",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-036",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ด้านหลัง",
+      "sentence": "Der Garten liegt ___ dem Haus.",
+      "options": [
+        "hinter",
+        "neben",
+        "zwischen"
+      ],
+      "acceptedAnswers": [
+        "hinter"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball ist auf der Rückseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Rückseite des Gegenstands. ใช้ hinter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "neben": "position_word",
+        "zwischen": "position_word"
+      },
+      "targetId": "L14-G007",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-037",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-037",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ด้านหลัง",
+      "sentence": "Das Fahrrad steht ___ der Garage.",
+      "acceptedAnswers": [
+        "hinter"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball ist auf der Rückseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Rückseite des Gegenstands. ใช้ hinter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G007",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-038",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-038",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ด้านหลัง",
+      "sentence": "Der Spielplatz ist ___ der Schule.",
+      "options": [
+        "hinter",
+        "in",
+        "auf"
+      ],
+      "acceptedAnswers": [
+        "hinter"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball ist auf der Rückseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Rückseite des Gegenstands. ใช้ hinter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "in": "position_word",
+        "auf": "position_word"
+      },
+      "targetId": "L14-G007",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-039",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-039",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ด้านหลัง",
+      "sentence": "Der Bus wartet ___ dem Bahnhof.",
+      "acceptedAnswers": [
+        "hinter"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball ist auf der Rückseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Rückseite des Gegenstands. ใช้ hinter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G007",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-040",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-040",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Die Katze versteckt sich hinter dem Sofa.",
+      "tokens": [
+        "Die",
+        "Katze",
+        "versteckt",
+        "sich",
+        "hinter",
+        "dem",
+        "Sofa"
+      ],
+      "acceptedAnswers": [
+        "Die Katze versteckt sich hinter dem Sofa."
+      ],
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "hint": "Der Ball ist auf der Rückseite des Gegenstands.",
+      "explanation": "Der Ball ist auf der Rückseite des Gegenstands. ใช้ hinter เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G007",
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-041",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-041",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ข้าง ๆ โดยมีระยะห่าง",
+      "sentence": "Der Stuhl steht ___ dem Tisch.",
+      "options": [
+        "neben",
+        "in",
+        "auf"
+      ],
+      "acceptedAnswers": [
+        "neben"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball liegt seitlich und mit Abstand zum Gegenstand.",
+      "explanation": "Der Ball liegt seitlich und mit Abstand zum Gegenstand. ใช้ neben เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "in": "position_word",
+        "auf": "position_word"
+      },
+      "targetId": "L14-G008",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-042",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-042",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ข้าง ๆ โดยมีระยะห่าง",
+      "sentence": "Das Café ist ___ der Bank.",
+      "acceptedAnswers": [
+        "neben"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball liegt seitlich und mit Abstand zum Gegenstand.",
+      "explanation": "Der Ball liegt seitlich und mit Abstand zum Gegenstand. ใช้ neben เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G008",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-043",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-043",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ข้าง ๆ โดยมีระยะห่าง",
+      "sentence": "Das Fahrrad steht ___ dem Haus.",
+      "options": [
+        "neben",
+        "auf",
+        "über"
+      ],
+      "acceptedAnswers": [
+        "neben"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball liegt seitlich und mit Abstand zum Gegenstand.",
+      "explanation": "Der Ball liegt seitlich und mit Abstand zum Gegenstand. ใช้ neben เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "auf": "position_word",
+        "über": "position_word"
+      },
+      "targetId": "L14-G008",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-044",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-044",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ข้าง ๆ โดยมีระยะห่าง",
+      "sentence": "Die Apotheke liegt ___ dem Kino.",
+      "acceptedAnswers": [
+        "neben"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball liegt seitlich und mit Abstand zum Gegenstand.",
+      "explanation": "Der Ball liegt seitlich und mit Abstand zum Gegenstand. ใช้ neben เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G008",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-045",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-045",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Der Baum wächst neben dem Spielplatz.",
+      "tokens": [
+        "Der",
+        "Baum",
+        "wächst",
+        "neben",
+        "dem",
+        "Spielplatz"
+      ],
+      "acceptedAnswers": [
+        "Der Baum wächst neben dem Spielplatz."
+      ],
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "hint": "Der Ball liegt seitlich und mit Abstand zum Gegenstand.",
+      "explanation": "Der Ball liegt seitlich und mit Abstand zum Gegenstand. ใช้ neben เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G008",
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-046",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-046",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ระหว่างสองสิ่ง",
+      "sentence": "Der Park liegt ___ dem Haus und dem Café.",
+      "options": [
+        "zwischen",
+        "in",
+        "auf"
+      ],
+      "acceptedAnswers": [
+        "zwischen"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball liegt in der Mitte von zwei Gegenständen.",
+      "explanation": "Der Ball liegt in der Mitte von zwei Gegenständen. ใช้ zwischen เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "in": "position_word",
+        "auf": "position_word"
+      },
+      "targetId": "L14-G009",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-047",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-047",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ระหว่างสองสิ่ง",
+      "sentence": "Die Bank steht ___ der Post und dem Kino.",
+      "acceptedAnswers": [
+        "zwischen"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball liegt in der Mitte von zwei Gegenständen.",
+      "explanation": "Der Ball liegt in der Mitte von zwei Gegenständen. ใช้ zwischen เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G009",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-048",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-048",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์ · ตำแหน่ง: อยู่ระหว่างสองสิ่ง",
+      "sentence": "Das Kind sitzt ___ den Eltern.",
+      "options": [
+        "zwischen",
+        "über",
+        "unter"
+      ],
+      "acceptedAnswers": [
+        "zwischen"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 1,
+      "hint": "Der Ball liegt in der Mitte von zwei Gegenständen.",
+      "explanation": "Der Ball liegt in der Mitte von zwei Gegenständen. ใช้ zwischen เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {
+        "über": "position_word",
+        "unter": "position_word"
+      },
+      "targetId": "L14-G009",
+      "assistance": "three-preposition-options-and-location-cue",
+      "difficultyRationale": "เลือกจากสามคำโดยมีความสัมพันธ์เชิงตำแหน่งบอกไว้"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-049",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-049",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง · ตำแหน่ง: อยู่ระหว่างสองสิ่ง",
+      "sentence": "Die Schule liegt ___ dem Bahnhof und der Apotheke.",
+      "acceptedAnswers": [
+        "zwischen"
+      ],
+      "subskill": "local-preposition-choice",
+      "difficulty": 2,
+      "hint": "Der Ball liegt in der Mitte von zwei Gegenständen.",
+      "explanation": "Der Ball liegt in der Mitte von zwei Gegenständen. ใช้ zwischen เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G009",
+      "assistance": "location-cue",
+      "difficultyRationale": "ดึงคำบุพบทจากความหมายโดยไม่มีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-LOKALE-PRAEPOSITIONEN-050",
+      "version": 2,
+      "topicId": "L14-lokale-praepositionen",
+      "variantGroup": "a13-l14-lokale-praepositionen-050",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Der Brunnen steht zwischen den Bäumen.",
+      "tokens": [
+        "Der",
+        "Brunnen",
+        "steht",
+        "zwischen",
+        "den",
+        "Bäumen"
+      ],
+      "acceptedAnswers": [
+        "Der Brunnen steht zwischen den Bäumen."
+      ],
+      "subskill": "local-preposition-sentence-order",
+      "difficulty": 3,
+      "hint": "Der Ball liegt in der Mitte von zwei Gegenständen.",
+      "explanation": "Der Ball liegt in der Mitte von zwei Gegenständen. ใช้ zwischen เพื่อระบุตำแหน่งคงที่; คำนามหลังคำบุพบทกลุ่มนี้อยู่ใน Dativ.",
+      "knownErrors": {},
+      "targetId": "L14-G009",
+      "assistance": "location-cue-and-supplied-words",
+      "difficultyRationale": "จัดคำที่ให้เป็นประโยคเต็มและคงลำดับคำภาษาเยอรมัน"
+    },
+    {
+      "id": "A13-L14-WOD-051",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-051",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist vor ___ Park.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Park แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Park อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ dem.",
+      "knownErrors": {
+        "den": "case",
+        "der": "case"
+      },
+      "targetId": "L14-G010",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-052",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-052",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist neben ___ Bahnhof.",
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 2,
+      "hint": "ดูเพศของ Bahnhof แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Bahnhof อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ dem.",
+      "knownErrors": {},
+      "targetId": "L14-G010",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-053",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-053",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist hinter ___ Markt.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Markt แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Markt อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ dem.",
+      "knownErrors": {
+        "den": "case",
+        "der": "case"
+      },
+      "targetId": "L14-G010",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-054",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-054",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist vor ___ Spielplatz.",
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 2,
+      "hint": "ดูเพศของ Spielplatz แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Spielplatz อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ dem.",
+      "knownErrors": {},
+      "targetId": "L14-G010",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-055",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-055",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Das Café ist neben dem Fluss.",
+      "tokens": [
+        "Das",
+        "Café",
+        "ist",
+        "neben",
+        "dem",
+        "Fluss"
+      ],
+      "acceptedAnswers": [
+        "Das Café ist neben dem Fluss."
+      ],
+      "subskill": "wo-dativ-definite-masculine-sentence-order",
+      "difficulty": 3,
+      "hint": "ดูเพศของ Fluss แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Fluss อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ dem.",
+      "knownErrors": {},
+      "targetId": "L14-G010",
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-056",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-056",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist hinter ___ Garten.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Garten แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Garten อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ dem.",
+      "knownErrors": {
+        "den": "case",
+        "der": "case"
+      },
+      "targetId": "L14-G010",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-057",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-057",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist vor ___ Brunnen.",
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 2,
+      "hint": "ดูเพศของ Brunnen แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Brunnen อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ dem.",
+      "knownErrors": {},
+      "targetId": "L14-G010",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-058",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-058",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist neben ___ Laden.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Laden แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Laden อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ dem.",
+      "knownErrors": {
+        "den": "case",
+        "der": "case"
+      },
+      "targetId": "L14-G010",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-059",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-059",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist neben ___ Fluss.",
+      "options": [
+        "einem",
+        "einen",
+        "einer"
+      ],
+      "acceptedAnswers": [
+        "einem"
+      ],
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Fluss แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Fluss อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ einem.",
+      "knownErrors": {
+        "einen": "case",
+        "einer": "case"
+      },
+      "targetId": "L14-G011",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-060",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-060",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist hinter ___ Park.",
+      "acceptedAnswers": [
+        "einem"
+      ],
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 2,
+      "hint": "ดูเพศของ Park แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Park อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ einem.",
+      "knownErrors": {},
+      "targetId": "L14-G011",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-061",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-061",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist vor ___ Laden.",
+      "options": [
+        "einem",
+        "einen",
+        "einer"
+      ],
+      "acceptedAnswers": [
+        "einem"
+      ],
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Laden แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Laden อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ einem.",
+      "knownErrors": {
+        "einen": "case",
+        "einer": "case"
+      },
+      "targetId": "L14-G011",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-062",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-062",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist neben ___ Garten.",
+      "acceptedAnswers": [
+        "einem"
+      ],
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 2,
+      "hint": "ดูเพศของ Garten แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Garten อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ einem.",
+      "knownErrors": {},
+      "targetId": "L14-G011",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-063",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-063",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Das Café ist hinter einem Bahnhof.",
+      "tokens": [
+        "Das",
+        "Café",
+        "ist",
+        "hinter",
+        "einem",
+        "Bahnhof"
+      ],
+      "acceptedAnswers": [
+        "Das Café ist hinter einem Bahnhof."
+      ],
+      "subskill": "wo-dativ-indefinite-masculine-sentence-order",
+      "difficulty": 3,
+      "hint": "ดูเพศของ Bahnhof แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Bahnhof อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ einem.",
+      "knownErrors": {},
+      "targetId": "L14-G011",
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-064",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-064",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist vor ___ Markt.",
+      "options": [
+        "einem",
+        "einen",
+        "einer"
+      ],
+      "acceptedAnswers": [
+        "einem"
+      ],
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Markt แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Markt อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ einem.",
+      "knownErrors": {
+        "einen": "case",
+        "einer": "case"
+      },
+      "targetId": "L14-G011",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-065",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-065",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist neben ___ Spielplatz.",
+      "acceptedAnswers": [
+        "einem"
+      ],
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 2,
+      "hint": "ดูเพศของ Spielplatz แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Spielplatz อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ einem.",
+      "knownErrors": {},
+      "targetId": "L14-G011",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-066",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-066",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist hinter ___ Brunnen.",
+      "options": [
+        "einem",
+        "einen",
+        "einer"
+      ],
+      "acceptedAnswers": [
+        "einem"
+      ],
+      "subskill": "wo-dativ-indefinite-masculine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Brunnen แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Brunnen อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ einem.",
+      "knownErrors": {
+        "einen": "case",
+        "einer": "case"
+      },
+      "targetId": "L14-G011",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-067",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-067",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist hinter ___ Post.",
+      "options": [
+        "der",
+        "dem",
+        "den"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Post แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Post อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ der.",
+      "knownErrors": {
+        "dem": "case",
+        "den": "case"
+      },
+      "targetId": "L14-G012",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-068",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-068",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist vor ___ Bank.",
+      "acceptedAnswers": [
+        "der"
+      ],
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 2,
+      "hint": "ดูเพศของ Bank แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Bank อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ der.",
+      "knownErrors": {},
+      "targetId": "L14-G012",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-069",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-069",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist neben ___ Schule.",
+      "options": [
+        "der",
+        "dem",
+        "den"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Schule แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Schule อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ der.",
+      "knownErrors": {
+        "dem": "case",
+        "den": "case"
+      },
+      "targetId": "L14-G012",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-070",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-070",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist hinter ___ Kirche.",
+      "acceptedAnswers": [
+        "der"
+      ],
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 2,
+      "hint": "ดูเพศของ Kirche แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Kirche อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ der.",
+      "knownErrors": {},
+      "targetId": "L14-G012",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-071",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-071",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Das Café ist vor der Apotheke.",
+      "tokens": [
+        "Das",
+        "Café",
+        "ist",
+        "vor",
+        "der",
+        "Apotheke"
+      ],
+      "acceptedAnswers": [
+        "Das Café ist vor der Apotheke."
+      ],
+      "subskill": "wo-dativ-feminine-sentence-order",
+      "difficulty": 3,
+      "hint": "ดูเพศของ Apotheke แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Apotheke อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ der.",
+      "knownErrors": {},
+      "targetId": "L14-G012",
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-072",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-072",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist neben ___ Ampel.",
+      "options": [
+        "der",
+        "dem",
+        "den"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Ampel แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Ampel อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ der.",
+      "knownErrors": {
+        "dem": "case",
+        "den": "case"
+      },
+      "targetId": "L14-G012",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-073",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-073",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Das Café ist hinter ___ Brücke.",
+      "acceptedAnswers": [
+        "der"
+      ],
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 2,
+      "hint": "ดูเพศของ Brücke แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Brücke อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ der.",
+      "knownErrors": {},
+      "targetId": "L14-G012",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-074",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-074",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Das Café ist vor ___ Bibliothek.",
+      "options": [
+        "der",
+        "dem",
+        "den"
+      ],
+      "acceptedAnswers": [
+        "der"
+      ],
+      "subskill": "wo-dativ-feminine",
+      "difficulty": 1,
+      "hint": "ดูเพศของ Bibliothek แล้วใช้รูป Dativ หลังคำบุพบทบอกตำแหน่ง",
+      "explanation": "Bibliothek อยู่ใน Dativ หลังคำบอกตำแหน่ง; รูป Artikel ที่ตรงกับ target นี้คือ der.",
+      "knownErrors": {
+        "dem": "case",
+        "den": "case"
+      },
+      "targetId": "L14-G012",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-075",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-075",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Der Brunnen steht vor ___ Häusern.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "den"
+      ],
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 1,
+      "hint": "Wo? ถามตำแหน่งคงที่ ใช้ Dativ; ในพหูพจน์ใช้ den และคำนามหลายคำเติม -n",
+      "explanation": "Häusern เป็นพหูพจน์ใน Dativ: die Häuser เปลี่ยนเป็น den Häusern. คำนามหลายคำเติม -n ใน Dativ พหูพจน์ด้วย",
+      "knownErrors": {
+        "dem": "case",
+        "der": "case"
+      },
+      "targetId": "L14-G013",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-076",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-076",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Der Brunnen steht neben ___ Bäumen.",
+      "acceptedAnswers": [
+        "den"
+      ],
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 2,
+      "hint": "Wo? ถามตำแหน่งคงที่ ใช้ Dativ; ในพหูพจน์ใช้ den และคำนามหลายคำเติม -n",
+      "explanation": "Häusern เป็นพหูพจน์ใน Dativ: die Häuser เปลี่ยนเป็น den Häusern. คำนามหลายคำเติม -n ใน Dativ พหูพจน์ด้วย",
+      "knownErrors": {},
+      "targetId": "L14-G013",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-077",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-077",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Der Brunnen steht hinter ___ Läden.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "den"
+      ],
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 1,
+      "hint": "Wo? ถามตำแหน่งคงที่ ใช้ Dativ; ในพหูพจน์ใช้ den และคำนามหลายคำเติม -n",
+      "explanation": "Häusern เป็นพหูพจน์ใน Dativ: die Häuser เปลี่ยนเป็น den Häusern. คำนามหลายคำเติม -n ใน Dativ พหูพจน์ด้วย",
+      "knownErrors": {
+        "dem": "case",
+        "der": "case"
+      },
+      "targetId": "L14-G013",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-078",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-078",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Der Brunnen steht vor ___ Museen.",
+      "acceptedAnswers": [
+        "den"
+      ],
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 2,
+      "hint": "Wo? ถามตำแหน่งคงที่ ใช้ Dativ; ในพหูพจน์ใช้ den และคำนามหลายคำเติม -n",
+      "explanation": "Häusern เป็นพหูพจน์ใน Dativ: die Häuser เปลี่ยนเป็น den Häusern. คำนามหลายคำเติม -n ใน Dativ พหูพจน์ด้วย",
+      "knownErrors": {},
+      "targetId": "L14-G013",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-079",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-079",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Der Brunnen steht neben den Kirchen.",
+      "tokens": [
+        "Der",
+        "Brunnen",
+        "steht",
+        "neben",
+        "den",
+        "Kirchen"
+      ],
+      "acceptedAnswers": [
+        "Der Brunnen steht neben den Kirchen."
+      ],
+      "subskill": "wo-dativ-plural-article-sentence-order",
+      "difficulty": 3,
+      "hint": "Wo? ถามตำแหน่งคงที่ ใช้ Dativ; ในพหูพจน์ใช้ den และคำนามหลายคำเติม -n",
+      "explanation": "Häusern เป็นพหูพจน์ใน Dativ: die Häuser เปลี่ยนเป็น den Häusern. คำนามหลายคำเติม -n ใน Dativ พหูพจน์ด้วย",
+      "knownErrors": {},
+      "targetId": "L14-G013",
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-080",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-080",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Der Brunnen steht hinter ___ Straßen.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "den"
+      ],
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 1,
+      "hint": "Wo? ถามตำแหน่งคงที่ ใช้ Dativ; ในพหูพจน์ใช้ den และคำนามหลายคำเติม -n",
+      "explanation": "Häusern เป็นพหูพจน์ใน Dativ: die Häuser เปลี่ยนเป็น den Häusern. คำนามหลายคำเติม -n ใน Dativ พหูพจน์ด้วย",
+      "knownErrors": {
+        "dem": "case",
+        "der": "case"
+      },
+      "targetId": "L14-G013",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-081",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-081",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Der Brunnen steht vor ___ Städten.",
+      "acceptedAnswers": [
+        "den"
+      ],
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 2,
+      "hint": "Wo? ถามตำแหน่งคงที่ ใช้ Dativ; ในพหูพจน์ใช้ den และคำนามหลายคำเติม -n",
+      "explanation": "Häusern เป็นพหูพจน์ใน Dativ: die Häuser เปลี่ยนเป็น den Häusern. คำนามหลายคำเติม -n ใน Dativ พหูพจน์ด้วย",
+      "knownErrors": {},
+      "targetId": "L14-G013",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-082",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-082",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Der Brunnen steht neben ___ Brücken.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "den"
+      ],
+      "subskill": "wo-dativ-plural-article",
+      "difficulty": 1,
+      "hint": "Wo? ถามตำแหน่งคงที่ ใช้ Dativ; ในพหูพจน์ใช้ den และคำนามหลายคำเติม -n",
+      "explanation": "Häusern เป็นพหูพจน์ใน Dativ: die Häuser เปลี่ยนเป็น den Häusern. คำนามหลายคำเติม -n ใน Dativ พหูพจน์ด้วย",
+      "knownErrors": {
+        "dem": "case",
+        "der": "case"
+      },
+      "targetId": "L14-G013",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-083",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-083",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Wir warten drinnen ___ Kino.",
+      "options": [
+        "im",
+        "am",
+        "in der"
+      ],
+      "acceptedAnswers": [
+        "im"
+      ],
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 1,
+      "hint": "in dem ย่อเป็น im เมื่อบอกตำแหน่งคงที่กับคำนามเพศชายหรือกลาง",
+      "explanation": "คำนาม Kino เป็นเพศกลาง; in dem จึงย่อเป็น im: im Kino.",
+      "knownErrors": {
+        "am": "case",
+        "in der": "case"
+      },
+      "targetId": "L14-G014",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-084",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-084",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Wir warten drinnen ___ Museum.",
+      "acceptedAnswers": [
+        "im"
+      ],
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 2,
+      "hint": "in dem ย่อเป็น im เมื่อบอกตำแหน่งคงที่กับคำนามเพศชายหรือกลาง",
+      "explanation": "คำนาม Museum เป็นเพศกลาง; in dem จึงย่อเป็น im: im Museum.",
+      "knownErrors": {},
+      "targetId": "L14-G014",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-085",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-085",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Wir warten drinnen ___ Rathaus.",
+      "options": [
+        "im",
+        "am",
+        "in der"
+      ],
+      "acceptedAnswers": [
+        "im"
+      ],
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 1,
+      "hint": "in dem ย่อเป็น im เมื่อบอกตำแหน่งคงที่กับคำนามเพศชายหรือกลาง",
+      "explanation": "คำนาม Rathaus เป็นเพศกลาง; in dem จึงย่อเป็น im: im Rathaus.",
+      "knownErrors": {
+        "am": "case",
+        "in der": "case"
+      },
+      "targetId": "L14-G014",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-086",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-086",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Wir warten drinnen ___ Haus.",
+      "acceptedAnswers": [
+        "im"
+      ],
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 2,
+      "hint": "in dem ย่อเป็น im เมื่อบอกตำแหน่งคงที่กับคำนามเพศชายหรือกลาง",
+      "explanation": "คำนาม Haus เป็นเพศกลาง; in dem จึงย่อเป็น im: im Haus.",
+      "knownErrors": {},
+      "targetId": "L14-G014",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-087",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-087",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Wir warten drinnen im Hotel.",
+      "tokens": [
+        "Wir",
+        "warten",
+        "drinnen",
+        "im",
+        "Hotel"
+      ],
+      "acceptedAnswers": [
+        "Wir warten drinnen im Hotel."
+      ],
+      "subskill": "wo-dativ-contraction-in-dem-sentence-order",
+      "difficulty": 3,
+      "hint": "in dem ย่อเป็น im เมื่อบอกตำแหน่งคงที่กับคำนามเพศชายหรือกลาง",
+      "explanation": "คำนาม Hotel เป็นเพศกลาง; in dem จึงย่อเป็น im: im Hotel.",
+      "knownErrors": {},
+      "targetId": "L14-G014",
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-088",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-088",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Wir warten drinnen ___ Café.",
+      "options": [
+        "im",
+        "am",
+        "in der"
+      ],
+      "acceptedAnswers": [
+        "im"
+      ],
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 1,
+      "hint": "in dem ย่อเป็น im เมื่อบอกตำแหน่งคงที่กับคำนามเพศชายหรือกลาง",
+      "explanation": "คำนาม Café เป็นเพศกลาง; in dem จึงย่อเป็น im: im Café.",
+      "knownErrors": {
+        "am": "case",
+        "in der": "case"
+      },
+      "targetId": "L14-G014",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-089",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-089",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Wir warten drinnen ___ Zentrum.",
+      "acceptedAnswers": [
+        "im"
+      ],
+      "subskill": "wo-dativ-contraction-in-dem",
+      "difficulty": 2,
+      "hint": "in dem ย่อเป็น im เมื่อบอกตำแหน่งคงที่กับคำนามเพศชายหรือกลาง",
+      "explanation": "คำนาม Zentrum เป็นเพศกลาง; in dem จึงย่อเป็น im: im Zentrum.",
+      "knownErrors": {},
+      "targetId": "L14-G014",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-091",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-091",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Die Frau steht draußen direkt ___ Bahnhof.",
+      "options": [
+        "am",
+        "im",
+        "an der"
+      ],
+      "acceptedAnswers": [
+        "am"
+      ],
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 1,
+      "hint": "an dem ย่อเป็น am เมื่อบอกตำแหน่งคงที่กับคำนามเพศชาย",
+      "explanation": "Bahnhof เป็นคำนามเพศชาย; an dem จึงย่อเป็น am: am Bahnhof.",
+      "knownErrors": {
+        "im": "case",
+        "an der": "case"
+      },
+      "targetId": "L14-G015",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-092",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-092",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Die Frau steht draußen direkt ___ Markt.",
+      "acceptedAnswers": [
+        "am"
+      ],
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 2,
+      "hint": "an dem ย่อเป็น am เมื่อบอกตำแหน่งคงที่กับคำนามเพศชาย",
+      "explanation": "Markt เป็นคำนามเพศชาย; an dem จึงย่อเป็น am: am Markt.",
+      "knownErrors": {},
+      "targetId": "L14-G015",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-093",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-093",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Die Frau steht draußen direkt ___ Park.",
+      "options": [
+        "am",
+        "im",
+        "an der"
+      ],
+      "acceptedAnswers": [
+        "am"
+      ],
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 1,
+      "hint": "an dem ย่อเป็น am เมื่อบอกตำแหน่งคงที่กับคำนามเพศชาย",
+      "explanation": "Park เป็นคำนามเพศชาย; an dem จึงย่อเป็น am: am Park.",
+      "knownErrors": {
+        "im": "case",
+        "an der": "case"
+      },
+      "targetId": "L14-G015",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-094",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-094",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Die Frau steht draußen direkt ___ Brunnen.",
+      "acceptedAnswers": [
+        "am"
+      ],
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 2,
+      "hint": "an dem ย่อเป็น am เมื่อบอกตำแหน่งคงที่กับคำนามเพศชาย",
+      "explanation": "Brunnen เป็นคำนามเพศชาย; an dem จึงย่อเป็น am: am Brunnen.",
+      "knownErrors": {},
+      "targetId": "L14-G015",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึงรูป Artikel จากเพศ/จำนวนของคำนามและ Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-095",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-095",
+      "kind": "order",
+      "prompt": "แตะคำเพื่อเรียงประโยคให้ถูกต้อง",
+      "sentence": "Die Frau steht draußen direkt am Fluss.",
+      "tokens": [
+        "Die",
+        "Frau",
+        "steht",
+        "draußen",
+        "direkt",
+        "am",
+        "Fluss"
+      ],
+      "acceptedAnswers": [
+        "Die Frau steht draußen direkt am Fluss."
+      ],
+      "subskill": "wo-dativ-contraction-an-dem-sentence-order",
+      "difficulty": 3,
+      "hint": "an dem ย่อเป็น am เมื่อบอกตำแหน่งคงที่กับคำนามเพศชาย",
+      "explanation": "Fluss เป็นคำนามเพศชาย; an dem จึงย่อเป็น am: am Fluss.",
+      "knownErrors": {},
+      "targetId": "L14-G015",
+      "assistance": "supplied-words-and-noun",
+      "difficultyRationale": "สร้างประโยคตำแหน่งเต็มโดยรักษา Artikel Dativ"
+    },
+    {
+      "id": "A13-L14-WOD-096",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-096",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Die Frau steht draußen direkt ___ Platz.",
+      "options": [
+        "am",
+        "im",
+        "an der"
+      ],
+      "acceptedAnswers": [
+        "am"
+      ],
+      "subskill": "wo-dativ-contraction-an-dem",
+      "difficulty": 1,
+      "hint": "an dem ย่อเป็น am เมื่อบอกตำแหน่งคงที่กับคำนามเพศชาย",
+      "explanation": "Platz เป็นคำนามเพศชาย; an dem จึงย่อเป็น am: am Platz.",
+      "knownErrors": {
+        "im": "case",
+        "an der": "case"
+      },
+      "targetId": "L14-G015",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือกกรณีและรูป Artikel โดยมีตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-99",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-099",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Der Bus hält vor ___ Bahnhof.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 1,
+      "hint": "der Bahnhof และ der Park เป็นคำนามเพศชาย; หลังคำบุพบทบอกตำแหน่งใช้ Dativ",
+      "explanation": "คำนามเพศชายหลังคำบุพบทบอกตำแหน่งใช้ Dativ: der เปลี่ยนเป็น dem.",
+      "knownErrors": {
+        "den": "case",
+        "der": "case"
+      },
+      "targetId": "L14-G010",
+      "assistance": "three-article-options-and-noun",
+      "difficultyRationale": "เลือก Dativ Artikel ของคำนามเพศชายจากตัวเลือก"
+    },
+    {
+      "id": "A13-L14-WOD-100",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-100",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Die Kinder warten neben ___ Park.",
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-definite-masculine",
+      "difficulty": 2,
+      "hint": "der Bahnhof และ der Park เป็นคำนามเพศชาย; หลังคำบุพบทบอกตำแหน่งใช้ Dativ",
+      "explanation": "คำนามเพศชายหลังคำบุพบทบอกตำแหน่งใช้ Dativ: der เปลี่ยนเป็น dem.",
+      "knownErrors": {},
+      "targetId": "L14-G010",
+      "assistance": "noun-and-location-preposition",
+      "difficultyRationale": "ดึง Dativ Artikel ของคำนามเพศชายโดยไม่มีตัวเลือก"
+    }
+  ],
+  "historicalQuestions": [
+    {
+      "id": "A13-L14-WO-DATIV-001",
+      "version": 2,
+      "topicId": "L14-wo-dativ",
+      "variantGroup": "a13-l14-wo-dativ-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Die Bank ist neben ___ Kino.",
+      "options": [
+        "dem",
+        "das",
+        "den"
+      ],
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "wo-dativ-choice",
+      "difficulty": 1,
+      "hint": "คำถาม Wo? บอกตำแหน่งคงที่ จึงใช้ Dativ หลังคำบุพบทกลุ่มนี้",
+      "explanation": "ประโยคนี้บอกว่าธนาคารอยู่ที่ไหน จึงใช้ Dativ หลัง neben โดยเปลี่ยน das Kino เป็น dem Kino",
+      "knownErrors": {
+        "das": "case",
+        "den": "case"
+      }
     },
     {
       "id": "A13-L14-WO-DATIV-005",

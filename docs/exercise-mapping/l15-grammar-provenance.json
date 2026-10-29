@@ -4,6 +4,8 @@
   "bindings": [
     {
       "questionId": "A13-L15-POSSESSIVARTIKEL-001",
+      "subskill": "possessivartikel-choice",
+      "difficulty": 1,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L15-quicktest"
@@ -14,6 +16,8 @@
     },
     {
       "questionId": "A13-L15-POSSESSIVARTIKEL-002",
+      "subskill": "possessivartikel-choice",
+      "difficulty": 1,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L15-quicktest"
@@ -24,6 +28,8 @@
     },
     {
       "questionId": "A13-L15-POSSESSIVARTIKEL-003",
+      "subskill": "possessivartikel-cloze",
+      "difficulty": 2,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L15-quicktest"
@@ -34,6 +40,8 @@
     },
     {
       "questionId": "A13-L15-POSSESSIVARTIKEL-004",
+      "subskill": "possessivartikel-cloze",
+      "difficulty": 2,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L15-quicktest"
@@ -44,6 +52,8 @@
     },
     {
       "questionId": "A13-L15-POSSESSIVARTIKEL-005",
+      "subskill": "possessivartikel-order",
+      "difficulty": 3,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L15-quicktest"

@@ -40,7 +40,7 @@ import {
   type Skill,
 } from "@/lib/content";
 import { makeQuestion, sessionItems, type Question } from "@/lib/engine";
-import { isTestWorkspaceUser, isVocabularyPracticeAvailable, isPhrasePracticeAvailable, useStore } from "./store";
+import { isTestWorkspaceUser, isL13GrammarPracticeAvailable, isL14GrammarPracticeAvailable, isVocabularyPracticeAvailable, isPhrasePracticeAvailable, useStore } from "./store";
 import { useLearning } from "./learning-store";
 import {
   LearnActivity,
@@ -89,6 +89,7 @@ const nav = [
 ];
 const additionalGrammarPilotRoutes = [
   { path: "/practice/L14/grammar/basic", topic: "l14Grammar" },
+  { path: "/practice/L14/grammar/daily", topic: "l14GrammarDaily" },
   { path: "/practice/L14/grammar/lokale-praepositionen", topic: "l14LokalePraepositionen" },
   { path: "/practice/L14/grammar/wo-dativ", topic: "l14WoDativ" },
   { path: "/practice/L15/grammar/basic", topic: "l15Grammar" },
@@ -120,7 +121,7 @@ function AuthenticatedApp() {
       </div>
     );
   if (!user) return <AuthScreen />;
-  return isTestWorkspaceUser(user) || isVocabularyPracticeAvailable(user) || isPhrasePracticeAvailable(user) ? <PracticeAccountSync key={user.id} userId={user.id}><App /></PracticeAccountSync> : <App />;
+  return isTestWorkspaceUser(user) || isL13GrammarPracticeAvailable(user) || isL14GrammarPracticeAvailable(user) || isVocabularyPracticeAvailable(user) || isPhrasePracticeAvailable(user) ? <PracticeAccountSync key={user.id} userId={user.id}><App /></PracticeAccountSync> : <App />;
 }
 function App() {
   const { items, lessons, coreVocabulary } = useContent();
@@ -249,12 +250,12 @@ function App() {
   else if (parts[0] === "lesson" && lessons.some((l) => l.id === parts[1]))
     page = <LessonDetail id={parts[1]} />;
   else if (["/practice/L13/grammar/dativ-pilot", "/practice/L13/grammar/es-gibt", "/practice/L13/grammar/verbs", "/practice/L13/grammar/basic", "/practice/L13/grammar/daily"].includes(path))
-    page = allowUnlearnedPractice && user
-      ? <GrammarPilot userId={user.id} topic={path.endsWith("/daily") ? "daily" : path.endsWith("/dativ-pilot") ? "dative" : path.endsWith("/es-gibt") ? "esGibt" : path.endsWith("/verbs") ? "verbs" : "basic"} />
+    page = (allowUnlearnedPractice || isL13GrammarPracticeAvailable(user)) && user
+      ? <GrammarPilot userId={user.id} topic={path.endsWith("/daily") ? "daily" : path.endsWith("/dativ-pilot") ? "dative" : path.endsWith("/es-gibt") ? "esGibt" : path.endsWith("/verbs") ? "verbs" : "basic"} learnedItemIds={history.exposures.map(entry => entry.item_id)} />
       : <div className="page-heading"><h1>ชุดนี้เปิดเฉพาะบัญชีทดลอง</h1><Link href="/practice">กลับไปแบบฝึกหัด</Link></div>;
   else if (additionalGrammarPilot)
-    page = allowUnlearnedPractice && user
-      ? <GrammarPilot userId={user.id} topic={additionalGrammarPilot.topic} />
+    page = (allowUnlearnedPractice || (additionalGrammarPilot.path.startsWith("/practice/L14/") && isL14GrammarPracticeAvailable(user))) && user
+      ? <GrammarPilot userId={user.id} topic={additionalGrammarPilot.topic} learnedItemIds={history.exposures.map(entry => entry.item_id)} />
       : <div className="page-heading"><h1>ชุดนี้เปิดเฉพาะบัญชีทดลอง</h1><Link href="/practice">กลับไปแบบฝึกหัด</Link></div>;
   else if (path === "/practice/L13/phrases" || path.startsWith("/practice/L13/phrases/")) page = <L13PhrasePages key={path} mode="practice" slug={parts[3]} />;
   else if (path === "/practice/L14/phrases" || path.startsWith("/practice/L14/phrases/")) page = <L14PhrasePractice key={path} slug={parts[3]} />;

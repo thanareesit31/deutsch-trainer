@@ -1,0 +1,1545 @@
+{
+  "schemaVersion": 1,
+  "scoredQuestionCount": 81,
+  "variants": [
+    {
+      "id": "variant-ask-help-01",
+      "targetId": "ask-help",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณกางแผนที่แล้วต้องการเริ่มขอความช่วยเหลืออย่างสุภาพ",
+      "options": [
+        "Entschuldigung. Können Sie mir helfen?",
+        "Wo ist denn hier eine Bank?",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Entschuldigung. Können Sie mir helfen?",
+      "translation": "ขอโทษครับ/ค่ะ ช่วยฉันหน่อยได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณกางแผนที่แล้วต้องการเริ่มขอความช่วยเหลืออย่างสุภาพ ประโยค Entschuldigung. Können Sie mir helfen? ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-help-02",
+      "targetId": "ask-help",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คนแถวนั้นดูไม่แน่ใจว่าคุณต้องการอะไร คุณอยากถามก่อนว่าเขาช่วยได้ไหม",
+      "options": [
+        "Entschuldigung. Können Sie mir helfen?",
+        "Ist das sehr weit?",
+        "Eine Frage bitte: Ich suche die Post."
+      ],
+      "answer": "Entschuldigung. Können Sie mir helfen?",
+      "translation": "ขอโทษครับ/ค่ะ ช่วยฉันหน่อยได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคนแถวนั้นดูไม่แน่ใจว่าคุณต้องการอะไร คุณอยากถามก่อนว่าเขาช่วยได้ไหม ประโยค Entschuldigung. Können Sie mir helfen? ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-help-03",
+      "targetId": "ask-help",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณต้องการความช่วยเหลือเรื่องเส้นทาง แต่ยังไม่ได้ถามหาสถานที่เฉพาะ",
+      "options": [
+        "Entschuldigung. Können Sie mir helfen?",
+        "Eine Frage bitte: Ich suche die Post.",
+        "Kann ich zu Fuß zum Café gehen?"
+      ],
+      "answer": "Entschuldigung. Können Sie mir helfen?",
+      "translation": "ขอโทษครับ/ค่ะ ช่วยฉันหน่อยได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการความช่วยเหลือเรื่องเส้นทาง แต่ยังไม่ได้ถามหาสถานที่เฉพาะ ประโยค Entschuldigung. Können Sie mir helfen? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-help-04",
+      "targetId": "ask-help",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณเพิ่งหยุดคนเดินถนนและต้องการเปิดบทสนทนาอย่างสุภาพ",
+      "options": [
+        "Entschuldigung. Können Sie mir helfen?",
+        "Kann ich zu Fuß zum Café gehen?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Entschuldigung. Können Sie mir helfen?",
+      "translation": "ขอโทษครับ/ค่ะ ช่วยฉันหน่อยได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณเพิ่งหยุดคนเดินถนนและต้องการเปิดบทสนทนาอย่างสุภาพ ประโยค Entschuldigung. Können Sie mir helfen? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-help-05",
+      "targetId": "ask-help",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณต้องการขอความช่วยเหลือจากพนักงานในสถานี",
+      "options": [
+        "Entschuldigung. Können Sie mir helfen?",
+        "Wo ist denn hier eine Bank?",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Entschuldigung. Können Sie mir helfen?",
+      "translation": "ขอโทษครับ/ค่ะ ช่วยฉันหน่อยได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการขอความช่วยเหลือจากพนักงานในสถานี ประโยค Entschuldigung. Können Sie mir helfen? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-help-06",
+      "targetId": "ask-help",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณเห็นคนในพื้นที่และอยากเริ่มขอความช่วยเหลือก่อนถามรายละเอียด",
+      "options": [
+        "Entschuldigung. Können Sie mir helfen?",
+        "Ist das sehr weit?",
+        "Eine Frage bitte: Ich suche die Post."
+      ],
+      "answer": "Entschuldigung. Können Sie mir helfen?",
+      "translation": "ขอโทษครับ/ค่ะ ช่วยฉันหน่อยได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณเห็นคนในพื้นที่และอยากเริ่มขอความช่วยเหลือก่อนถามรายละเอียด ประโยค Entschuldigung. Können Sie mir helfen? ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-place-01",
+      "targetId": "ask-place",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณกำลังมองหาธนาคารและต้องการถามตำแหน่ง",
+      "options": [
+        "Wo ist denn hier eine Bank?",
+        "Entschuldigung. Können Sie mir helfen?",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Wo ist denn hier eine Bank?",
+      "translation": "แถวนี้มีธนาคารอยู่ที่ไหน",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณกำลังมองหาธนาคารและต้องการถามตำแหน่ง ประโยค Wo ist denn hier eine Bank? ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-place-02",
+      "targetId": "ask-place",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณมีเวลาแวะธนาคารและถามคนในพื้นที่ว่าธนาคารอยู่ตรงไหน",
+      "options": [
+        "Wo ist denn hier eine Bank?",
+        "Ist das sehr weit?",
+        "Eine Frage bitte: Ich suche die Post."
+      ],
+      "answer": "Wo ist denn hier eine Bank?",
+      "translation": "แถวนี้มีธนาคารอยู่ที่ไหน",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณมีเวลาแวะธนาคารและถามคนในพื้นที่ว่าธนาคารอยู่ตรงไหน ประโยค Wo ist denn hier eine Bank? ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-place-03",
+      "targetId": "ask-place",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณเห็นคนท้องถิ่นและต้องการถามหาธนาคารใกล้ ๆ",
+      "options": [
+        "Wo ist denn hier eine Bank?",
+        "Eine Frage bitte: Ich suche die Post.",
+        "Kann ich zu Fuß zum Café gehen?"
+      ],
+      "answer": "Wo ist denn hier eine Bank?",
+      "translation": "แถวนี้มีธนาคารอยู่ที่ไหน",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณเห็นคนท้องถิ่นและต้องการถามหาธนาคารใกล้ ๆ ประโยค Wo ist denn hier eine Bank? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-place-04",
+      "targetId": "ask-place",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณต้องการถามตำแหน่งธนาคาร ไม่ได้บอกเพียงว่ากำลังหา",
+      "options": [
+        "Wo ist denn hier eine Bank?",
+        "Kann ich zu Fuß zum Café gehen?",
+        "Entschuldigung. Können Sie mir helfen?"
+      ],
+      "answer": "Wo ist denn hier eine Bank?",
+      "translation": "แถวนี้มีธนาคารอยู่ที่ไหน",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการถามตำแหน่งธนาคาร ไม่ได้บอกเพียงว่ากำลังหา ประโยค Wo ist denn hier eine Bank? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-place-05",
+      "targetId": "ask-place",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณเดินอยู่ในย่านใหม่และอยากรู้ว่าธนาคารอยู่ที่ไหน",
+      "options": [
+        "Wo ist denn hier eine Bank?",
+        "Entschuldigung. Können Sie mir helfen?",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Wo ist denn hier eine Bank?",
+      "translation": "แถวนี้มีธนาคารอยู่ที่ไหน",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณเดินอยู่ในย่านใหม่และอยากรู้ว่าธนาคารอยู่ที่ไหน ประโยค Wo ist denn hier eine Bank? ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-far-01",
+      "targetId": "ask-far",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "มีคนบอกทางให้แล้ว คุณต้องการถามต่อเรื่องระยะทาง",
+      "options": [
+        "Ist das sehr weit?",
+        "Entschuldigung. Können Sie mir helfen?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Ist das sehr weit?",
+      "translation": "ที่นั่นไกลมากไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่ามีคนบอกทางให้แล้ว คุณต้องการถามต่อเรื่องระยะทาง ประโยค Ist das sehr weit? ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-far-02",
+      "targetId": "ask-far",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณเข้าใจตำแหน่งปลายทางแล้ว แต่ยังไม่แน่ใจว่าเดินไกลหรือไม่",
+      "options": [
+        "Ist das sehr weit?",
+        "Wo ist denn hier eine Bank?",
+        "Eine Frage bitte: Ich suche die Post."
+      ],
+      "answer": "Ist das sehr weit?",
+      "translation": "ที่นั่นไกลมากไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณเข้าใจตำแหน่งปลายทางแล้ว แต่ยังไม่แน่ใจว่าเดินไกลหรือไม่ ประโยค Ist das sehr weit? ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-far-03",
+      "targetId": "ask-far",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "หลังฟังคำบอกทาง คุณอยากถามว่าใช้เวลาเดินทางไกลไหม",
+      "options": [
+        "Ist das sehr weit?",
+        "Eine Frage bitte: Ich suche die Post.",
+        "Kann ich zu Fuß zum Café gehen?"
+      ],
+      "answer": "Ist das sehr weit?",
+      "translation": "ที่นั่นไกลมากไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าหลังฟังคำบอกทาง คุณอยากถามว่าใช้เวลาเดินทางไกลไหม ประโยค Ist das sehr weit? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-far-04",
+      "targetId": "ask-far",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณต้องการตรวจสอบระยะทางของสถานที่ที่เพิ่งพูดถึง",
+      "options": [
+        "Ist das sehr weit?",
+        "Kann ich zu Fuß zum Café gehen?",
+        "Entschuldigung. Können Sie mir helfen?"
+      ],
+      "answer": "Ist das sehr weit?",
+      "translation": "ที่นั่นไกลมากไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการตรวจสอบระยะทางของสถานที่ที่เพิ่งพูดถึง ประโยค Ist das sehr weit? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-far-05",
+      "targetId": "ask-far",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "เพื่อนชี้ปลายทางบนแผนที่ คุณถามว่าที่นั่นไกลหรือเปล่า",
+      "options": [
+        "Ist das sehr weit?",
+        "Entschuldigung. Können Sie mir helfen?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Ist das sehr weit?",
+      "translation": "ที่นั่นไกลมากไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าเพื่อนชี้ปลายทางบนแผนที่ คุณถามว่าที่นั่นไกลหรือเปล่า ประโยค Ist das sehr weit? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-far-06",
+      "targetId": "ask-far",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "ก่อนเริ่มเดิน คุณต้องการยืนยันระยะทางกับคนที่บอกทาง",
+      "options": [
+        "Ist das sehr weit?",
+        "Wo ist denn hier eine Bank?",
+        "Eine Frage bitte: Ich suche die Post."
+      ],
+      "answer": "Ist das sehr weit?",
+      "translation": "ที่นั่นไกลมากไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าก่อนเริ่มเดิน คุณต้องการยืนยันระยะทางกับคนที่บอกทาง ประโยค Ist das sehr weit? ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-search-01",
+      "targetId": "ask-search",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณต้องการบอกคนแถวนั้นว่ากำลังหาไปรษณีย์",
+      "options": [
+        "Eine Frage bitte: Ich suche die Post.",
+        "Entschuldigung. Können Sie mir helfen?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Eine Frage bitte: Ich suche die Post.",
+      "translation": "ขอถามหน่อย ฉันกำลังหาไปรษณีย์",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการบอกคนแถวนั้นว่ากำลังหาไปรษณีย์ ประโยค Eine Frage bitte: Ich suche die Post. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-search-02",
+      "targetId": "ask-search",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณขอถามก่อน แล้วบอกสถานที่ที่กำลังตามหา",
+      "options": [
+        "Eine Frage bitte: Ich suche die Post.",
+        "Wo ist denn hier eine Bank?",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Eine Frage bitte: Ich suche die Post.",
+      "translation": "ขอถามหน่อย ฉันกำลังหาไปรษณีย์",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณขอถามก่อน แล้วบอกสถานที่ที่กำลังตามหา ประโยค Eine Frage bitte: Ich suche die Post. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-search-03",
+      "targetId": "ask-search",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณกำลังมองหาที่ทำการไปรษณีย์และอยากเริ่มบทสนทนา",
+      "options": [
+        "Eine Frage bitte: Ich suche die Post.",
+        "Ist das sehr weit?",
+        "Kann ich zu Fuß zum Café gehen?"
+      ],
+      "answer": "Eine Frage bitte: Ich suche die Post.",
+      "translation": "ขอถามหน่อย ฉันกำลังหาไปรษณีย์",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณกำลังมองหาที่ทำการไปรษณีย์และอยากเริ่มบทสนทนา ประโยค Eine Frage bitte: Ich suche die Post. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-search-04",
+      "targetId": "ask-search",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณต้องการระบุว่ากำลังหาไปรษณีย์ ไม่ได้ถามว่าไกลไหม",
+      "options": [
+        "Eine Frage bitte: Ich suche die Post.",
+        "Kann ich zu Fuß zum Café gehen?",
+        "Entschuldigung. Können Sie mir helfen?"
+      ],
+      "answer": "Eine Frage bitte: Ich suche die Post.",
+      "translation": "ขอถามหน่อย ฉันกำลังหาไปรษณีย์",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการระบุว่ากำลังหาไปรษณีย์ ไม่ได้ถามว่าไกลไหม ประโยค Eine Frage bitte: Ich suche die Post. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-search-05",
+      "targetId": "ask-search",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณหยุดคนเดินถนนเพื่อบอกว่าต้องการหาไปรษณีย์",
+      "options": [
+        "Eine Frage bitte: Ich suche die Post.",
+        "Entschuldigung. Können Sie mir helfen?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Eine Frage bitte: Ich suche die Post.",
+      "translation": "ขอถามหน่อย ฉันกำลังหาไปรษณีย์",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณหยุดคนเดินถนนเพื่อบอกว่าต้องการหาไปรษณีย์ ประโยค Eine Frage bitte: Ich suche die Post. ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-walk-01",
+      "targetId": "ask-walk",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณเห็นคาเฟ่อยู่บนแผนที่และถามว่าเดินไปได้ไหม",
+      "options": [
+        "Kann ich zu Fuß zum Café gehen?",
+        "Entschuldigung. Können Sie mir helfen?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Kann ich zu Fuß zum Café gehen?",
+      "translation": "ฉันเดินไปคาเฟ่ได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณเห็นคาเฟ่อยู่บนแผนที่และถามว่าเดินไปได้ไหม ประโยค Kann ich zu Fuß zum Café gehen? ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-walk-02",
+      "targetId": "ask-walk",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณไม่มีรถและต้องการถามว่าควรเดินไปคาเฟ่ได้หรือไม่",
+      "options": [
+        "Kann ich zu Fuß zum Café gehen?",
+        "Wo ist denn hier eine Bank?",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Kann ich zu Fuß zum Café gehen?",
+      "translation": "ฉันเดินไปคาเฟ่ได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณไม่มีรถและต้องการถามว่าควรเดินไปคาเฟ่ได้หรือไม่ ประโยค Kann ich zu Fuß zum Café gehen? ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-walk-03",
+      "targetId": "ask-walk",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณถามคนในพื้นที่ว่าเส้นทางไปคาเฟ่เหมาะกับการเดินไหม",
+      "options": [
+        "Kann ich zu Fuß zum Café gehen?",
+        "Ist das sehr weit?",
+        "Eine Frage bitte: Ich suche die Post."
+      ],
+      "answer": "Kann ich zu Fuß zum Café gehen?",
+      "translation": "ฉันเดินไปคาเฟ่ได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณถามคนในพื้นที่ว่าเส้นทางไปคาเฟ่เหมาะกับการเดินไหม ประโยค Kann ich zu Fuß zum Café gehen? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-ask-walk-04",
+      "targetId": "ask-walk",
+      "topic": "ask",
+      "kind": "dialogue",
+      "prompt": "คุณอยากถามคำถามที่ตอบได้ว่าใช่หรือไม่ใช่ โดยใช้ Modalverb",
+      "options": [
+        "Kann ich zu Fuß zum Café gehen?",
+        "Eine Frage bitte: Ich suche die Post.",
+        "Entschuldigung. Können Sie mir helfen?"
+      ],
+      "answer": "Kann ich zu Fuß zum Café gehen?",
+      "translation": "ฉันเดินไปคาเฟ่ได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณอยากถามคำถามที่ตอบได้ว่าใช่หรือไม่ใช่ โดยใช้ Modalverb ประโยค Kann ich zu Fuß zum Café gehen? ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-ask-walk-05",
+      "targetId": "ask-walk",
+      "topic": "ask",
+      "kind": "context",
+      "prompt": "คุณกำลังจะออกจากที่นี่และถามว่าสามารถเดินไปคาเฟ่ได้ไหม",
+      "options": [
+        "Kann ich zu Fuß zum Café gehen?",
+        "Entschuldigung. Können Sie mir helfen?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Kann ich zu Fuß zum Café gehen?",
+      "translation": "ฉันเดินไปคาเฟ่ได้ไหม",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณกำลังจะออกจากที่นี่และถามว่าสามารถเดินไปคาเฟ่ได้ไหม ประโยค Kann ich zu Fuß zum Café gehen? ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-straight-01",
+      "targetId": "describe-straight",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณเริ่มบอกทางและขั้นแรกคือเดินตรงไป",
+      "options": [
+        "Sie gehen hier geradeaus.",
+        "Da sehen Sie eine Apotheke.",
+        "Vor der Bank biegen Sie nach rechts ab."
+      ],
+      "answer": "Sie gehen hier geradeaus.",
+      "translation": "เดินตรงไปจากตรงนี้",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณเริ่มบอกทางและขั้นแรกคือเดินตรงไป ประโยค Sie gehen hier geradeaus. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-straight-02",
+      "targetId": "describe-straight",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "คนถามทางยืนอยู่ตรงจุดเริ่มต้น คุณบอกให้เดินตรงจากตรงนี้",
+      "options": [
+        "Sie gehen hier geradeaus.",
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "Das ist gar nicht weit."
+      ],
+      "answer": "Sie gehen hier geradeaus.",
+      "translation": "เดินตรงไปจากตรงนี้",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคนถามทางยืนอยู่ตรงจุดเริ่มต้น คุณบอกให้เดินตรงจากตรงนี้ ประโยค Sie gehen hier geradeaus. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-straight-03",
+      "targetId": "describe-straight",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณกำลังอธิบายเส้นทางโดยไม่มีจุดเลี้ยวในช่วงแรก",
+      "options": [
+        "Sie gehen hier geradeaus.",
+        "Das ist gar nicht weit.",
+        "Sie gehen die fünfte Straße nach links."
+      ],
+      "answer": "Sie gehen hier geradeaus.",
+      "translation": "เดินตรงไปจากตรงนี้",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณกำลังอธิบายเส้นทางโดยไม่มีจุดเลี้ยวในช่วงแรก ประโยค Sie gehen hier geradeaus. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-straight-04",
+      "targetId": "describe-straight",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "คุณต้องการบอกทิศทางช่วงแรกให้ตรงไป",
+      "options": [
+        "Sie gehen hier geradeaus.",
+        "Sie gehen die fünfte Straße nach links.",
+        "… nach rechts."
+      ],
+      "answer": "Sie gehen hier geradeaus.",
+      "translation": "เดินตรงไปจากตรงนี้",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการบอกทิศทางช่วงแรกให้ตรงไป ประโยค Sie gehen hier geradeaus. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-straight-05",
+      "targetId": "describe-straight",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "ผู้เดินทางถามว่าจะเริ่มจากจุดนี้อย่างไร คุณชี้ให้ตรงไป",
+      "options": [
+        "Sie gehen hier geradeaus.",
+        "… nach rechts.",
+        "Da sehen Sie eine Apotheke."
+      ],
+      "answer": "Sie gehen hier geradeaus.",
+      "translation": "เดินตรงไปจากตรงนี้",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าผู้เดินทางถามว่าจะเริ่มจากจุดนี้อย่างไร คุณชี้ให้ตรงไป ประโยค Sie gehen hier geradeaus. ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-see-01",
+      "targetId": "describe-see",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณชี้ไปที่ร้านขายยาเพื่อบอกว่าอีกฝ่ายจะเห็นอะไร",
+      "options": [
+        "Da sehen Sie eine Apotheke.",
+        "Sie gehen hier geradeaus.",
+        "Vor der Bank biegen Sie nach rechts ab."
+      ],
+      "answer": "Da sehen Sie eine Apotheke.",
+      "translation": "ตรงนั้นคุณจะเห็นร้านขายยา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณชี้ไปที่ร้านขายยาเพื่อบอกว่าอีกฝ่ายจะเห็นอะไร ประโยค Da sehen Sie eine Apotheke. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-see-02",
+      "targetId": "describe-see",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "ระหว่างบอกทาง คุณต้องการระบุจุดสังเกตเป็นร้านขายยา",
+      "options": [
+        "Da sehen Sie eine Apotheke.",
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "Das ist gar nicht weit."
+      ],
+      "answer": "Da sehen Sie eine Apotheke.",
+      "translation": "ตรงนั้นคุณจะเห็นร้านขายยา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าระหว่างบอกทาง คุณต้องการระบุจุดสังเกตเป็นร้านขายยา ประโยค Da sehen Sie eine Apotheke. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-see-03",
+      "targetId": "describe-see",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณมองเห็นร้านขายยาอยู่ข้างหน้าและชี้ตำแหน่งให้ผู้เดินทาง",
+      "options": [
+        "Da sehen Sie eine Apotheke.",
+        "Das ist gar nicht weit.",
+        "Sie gehen die fünfte Straße nach links."
+      ],
+      "answer": "Da sehen Sie eine Apotheke.",
+      "translation": "ตรงนั้นคุณจะเห็นร้านขายยา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณมองเห็นร้านขายยาอยู่ข้างหน้าและชี้ตำแหน่งให้ผู้เดินทาง ประโยค Da sehen Sie eine Apotheke. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-see-04",
+      "targetId": "describe-see",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "ผู้ฟังถามว่าจะรู้ได้อย่างไรว่ามาถึงใกล้แล้ว คุณบอกว่าจะเห็นร้านขายยา",
+      "options": [
+        "Da sehen Sie eine Apotheke.",
+        "Sie gehen die fünfte Straße nach links.",
+        "… nach rechts."
+      ],
+      "answer": "Da sehen Sie eine Apotheke.",
+      "translation": "ตรงนั้นคุณจะเห็นร้านขายยา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าผู้ฟังถามว่าจะรู้ได้อย่างไรว่ามาถึงใกล้แล้ว คุณบอกว่าจะเห็นร้านขายยา ประโยค Da sehen Sie eine Apotheke. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-see-05",
+      "targetId": "describe-see",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณต้องการใช้ประโยคชี้ว่าสถานที่ใดอยู่ตรงนั้น",
+      "options": [
+        "Da sehen Sie eine Apotheke.",
+        "… nach rechts.",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Da sehen Sie eine Apotheke.",
+      "translation": "ตรงนั้นคุณจะเห็นร้านขายยา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการใช้ประโยคชี้ว่าสถานที่ใดอยู่ตรงนั้น ประโยค Da sehen Sie eine Apotheke. ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-turn-01",
+      "targetId": "describe-turn",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณบอกจุดสังเกตและทิศทางเลี้ยวขวา",
+      "options": [
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "Sie gehen hier geradeaus.",
+        "Da sehen Sie eine Apotheke."
+      ],
+      "answer": "Vor der Bank biegen Sie nach rechts ab.",
+      "translation": "ก่อนถึงธนาคารให้เลี้ยวขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณบอกจุดสังเกตและทิศทางเลี้ยวขวา ประโยค Vor der Bank biegen Sie nach rechts ab. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-turn-02",
+      "targetId": "describe-turn",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "ผู้เดินทางกำลังจะถึงธนาคาร คุณบอกให้เลี้ยวก่อนถึงธนาคาร",
+      "options": [
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "Da sehen Sie eine Apotheke.",
+        "Das ist gar nicht weit."
+      ],
+      "answer": "Vor der Bank biegen Sie nach rechts ab.",
+      "translation": "ก่อนถึงธนาคารให้เลี้ยวขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าผู้เดินทางกำลังจะถึงธนาคาร คุณบอกให้เลี้ยวก่อนถึงธนาคาร ประโยค Vor der Bank biegen Sie nach rechts ab. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-turn-03",
+      "targetId": "describe-turn",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณอธิบายจุดเลี้ยวโดยเริ่มจากสถานที่ที่ใช้สังเกต",
+      "options": [
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "Das ist gar nicht weit.",
+        "Sie gehen die fünfte Straße nach links."
+      ],
+      "answer": "Vor der Bank biegen Sie nach rechts ab.",
+      "translation": "ก่อนถึงธนาคารให้เลี้ยวขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณอธิบายจุดเลี้ยวโดยเริ่มจากสถานที่ที่ใช้สังเกต ประโยค Vor der Bank biegen Sie nach rechts ab. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-turn-04",
+      "targetId": "describe-turn",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "คุณต้องการบอกให้เลี้ยวขวาก่อนถึงธนาคาร",
+      "options": [
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "Sie gehen die fünfte Straße nach links.",
+        "… nach rechts."
+      ],
+      "answer": "Vor der Bank biegen Sie nach rechts ab.",
+      "translation": "ก่อนถึงธนาคารให้เลี้ยวขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการบอกให้เลี้ยวขวาก่อนถึงธนาคาร ประโยค Vor der Bank biegen Sie nach rechts ab. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-turn-05",
+      "targetId": "describe-turn",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "แผนที่แสดงธนาคารก่อนทางแยก และเส้นทางให้เลี้ยวขวา",
+      "options": [
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "… nach rechts.",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Vor der Bank biegen Sie nach rechts ab.",
+      "translation": "ก่อนถึงธนาคารให้เลี้ยวขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าแผนที่แสดงธนาคารก่อนทางแยก และเส้นทางให้เลี้ยวขวา ประโยค Vor der Bank biegen Sie nach rechts ab. ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-distance-01",
+      "targetId": "describe-distance",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "ผู้เดินทางถามระยะทางและปลายทางอยู่ใกล้",
+      "options": [
+        "Das ist gar nicht weit.",
+        "Sie gehen hier geradeaus.",
+        "Da sehen Sie eine Apotheke."
+      ],
+      "answer": "Das ist gar nicht weit.",
+      "translation": "ที่นั่นไม่ไกลเลย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าผู้เดินทางถามระยะทางและปลายทางอยู่ใกล้ ประโยค Das ist gar nicht weit. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-distance-02",
+      "targetId": "describe-distance",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "คุณยืนยันกับคนถามทางว่าเส้นทางนี้ไม่ไกล",
+      "options": [
+        "Das ist gar nicht weit.",
+        "Da sehen Sie eine Apotheke.",
+        "Vor der Bank biegen Sie nach rechts ab."
+      ],
+      "answer": "Das ist gar nicht weit.",
+      "translation": "ที่นั่นไม่ไกลเลย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณยืนยันกับคนถามทางว่าเส้นทางนี้ไม่ไกล ประโยค Das ist gar nicht weit. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-distance-03",
+      "targetId": "describe-distance",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "เพื่อนกังวลว่าจะต้องเดินนาน คุณตอบว่าระยะทางสั้น",
+      "options": [
+        "Das ist gar nicht weit.",
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "Sie gehen die fünfte Straße nach links."
+      ],
+      "answer": "Das ist gar nicht weit.",
+      "translation": "ที่นั่นไม่ไกลเลย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าเพื่อนกังวลว่าจะต้องเดินนาน คุณตอบว่าระยะทางสั้น ประโยค Das ist gar nicht weit. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-distance-04",
+      "targetId": "describe-distance",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "หลังอธิบายตำแหน่ง คุณเสริมว่าสถานที่นั้นอยู่ไม่ไกล",
+      "options": [
+        "Das ist gar nicht weit.",
+        "Sie gehen die fünfte Straße nach links.",
+        "… nach rechts."
+      ],
+      "answer": "Das ist gar nicht weit.",
+      "translation": "ที่นั่นไม่ไกลเลย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าหลังอธิบายตำแหน่ง คุณเสริมว่าสถานที่นั้นอยู่ไม่ไกล ประโยค Das ist gar nicht weit. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-distance-05",
+      "targetId": "describe-distance",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "มีคนถามว่าไกลหรือไม่ คุณตอบปฏิเสธอย่างชัดเจน",
+      "options": [
+        "Das ist gar nicht weit.",
+        "… nach rechts.",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Das ist gar nicht weit.",
+      "translation": "ที่นั่นไม่ไกลเลย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่ามีคนถามว่าไกลหรือไม่ คุณตอบปฏิเสธอย่างชัดเจน ประโยค Das ist gar nicht weit. ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-street-01",
+      "targetId": "describe-street",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณนับถนนจากจุดเริ่มต้นและให้เลี้ยวเข้าถนนสายที่ห้าทางซ้าย",
+      "options": [
+        "Sie gehen die fünfte Straße nach links.",
+        "Sie gehen hier geradeaus.",
+        "Da sehen Sie eine Apotheke."
+      ],
+      "answer": "Sie gehen die fünfte Straße nach links.",
+      "translation": "เดินเข้าถนนสายที่ห้าทางซ้าย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณนับถนนจากจุดเริ่มต้นและให้เลี้ยวเข้าถนนสายที่ห้าทางซ้าย ประโยค Sie gehen die fünfte Straße nach links. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-street-02",
+      "targetId": "describe-street",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "ผู้เดินทางต้องผ่านสี่ถนนก่อน แล้วจึงเข้าถนนสายที่ห้าทางซ้าย",
+      "options": [
+        "Sie gehen die fünfte Straße nach links.",
+        "Da sehen Sie eine Apotheke.",
+        "Vor der Bank biegen Sie nach rechts ab."
+      ],
+      "answer": "Sie gehen die fünfte Straße nach links.",
+      "translation": "เดินเข้าถนนสายที่ห้าทางซ้าย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าผู้เดินทางต้องผ่านสี่ถนนก่อน แล้วจึงเข้าถนนสายที่ห้าทางซ้าย ประโยค Sie gehen die fünfte Straße nach links. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-street-03",
+      "targetId": "describe-street",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณบอกลำดับถนนและทิศทางเลี้ยวอย่างชัดเจน",
+      "options": [
+        "Sie gehen die fünfte Straße nach links.",
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "Das ist gar nicht weit."
+      ],
+      "answer": "Sie gehen die fünfte Straße nach links.",
+      "translation": "เดินเข้าถนนสายที่ห้าทางซ้าย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณบอกลำดับถนนและทิศทางเลี้ยวอย่างชัดเจน ประโยค Sie gehen die fünfte Straße nach links. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-street-04",
+      "targetId": "describe-street",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "คุณชี้ถนนสายที่ห้าและบอกให้ไปทางซ้าย",
+      "options": [
+        "Sie gehen die fünfte Straße nach links.",
+        "Das ist gar nicht weit.",
+        "… nach rechts."
+      ],
+      "answer": "Sie gehen die fünfte Straße nach links.",
+      "translation": "เดินเข้าถนนสายที่ห้าทางซ้าย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณชี้ถนนสายที่ห้าและบอกให้ไปทางซ้าย ประโยค Sie gehen die fünfte Straße nach links. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-street-05",
+      "targetId": "describe-street",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "เส้นทางไม่ได้เลี้ยวถนนแรก แต่ให้ไปถึงถนนสายที่ห้าก่อน",
+      "options": [
+        "Sie gehen die fünfte Straße nach links.",
+        "… nach rechts.",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Sie gehen die fünfte Straße nach links.",
+      "translation": "เดินเข้าถนนสายที่ห้าทางซ้าย",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าเส้นทางไม่ได้เลี้ยวถนนแรก แต่ให้ไปถึงถนนสายที่ห้าก่อน ประโยค Sie gehen die fünfte Straße nach links. ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-direction-01",
+      "targetId": "describe-direction",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณต้องการบอกสั้น ๆ ว่าให้ไปทางขวา",
+      "options": [
+        "… nach rechts.",
+        "Sie gehen hier geradeaus.",
+        "Da sehen Sie eine Apotheke."
+      ],
+      "answer": "… nach rechts.",
+      "translation": "… ไปทางขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณต้องการบอกสั้น ๆ ว่าให้ไปทางขวา ประโยค … nach rechts. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-direction-02",
+      "targetId": "describe-direction",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "เมื่อถึงทางแยก ผู้เดินทางควรไปด้านขวา",
+      "options": [
+        "… nach rechts.",
+        "Da sehen Sie eine Apotheke.",
+        "Vor der Bank biegen Sie nach rechts ab."
+      ],
+      "answer": "… nach rechts.",
+      "translation": "… ไปทางขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าเมื่อถึงทางแยก ผู้เดินทางควรไปด้านขวา ประโยค … nach rechts. ทำหน้าที่นั้น",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-direction-03",
+      "targetId": "describe-direction",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณกำลังเติมทิศทางท้ายคำสั่งเดินทาง",
+      "options": [
+        "… nach rechts.",
+        "Vor der Bank biegen Sie nach rechts ab.",
+        "Das ist gar nicht weit."
+      ],
+      "answer": "… nach rechts.",
+      "translation": "… ไปทางขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณกำลังเติมทิศทางท้ายคำสั่งเดินทาง ประโยค … nach rechts. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-describe-direction-04",
+      "targetId": "describe-direction",
+      "topic": "describe",
+      "kind": "dialogue",
+      "prompt": "ผู้ฟังถามว่าควรเลือกทางแยกฝั่งไหน คุณตอบว่าทางขวา",
+      "options": [
+        "… nach rechts.",
+        "Das ist gar nicht weit.",
+        "Sie gehen die fünfte Straße nach links."
+      ],
+      "answer": "… nach rechts.",
+      "translation": "… ไปทางขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าผู้ฟังถามว่าควรเลือกทางแยกฝั่งไหน คุณตอบว่าทางขวา ประโยค … nach rechts. ทำหน้าที่นั้น",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-describe-direction-05",
+      "targetId": "describe-direction",
+      "topic": "describe",
+      "kind": "context",
+      "prompt": "คุณชี้ทางแยกและระบุทิศทางด้านขวา",
+      "options": [
+        "… nach rechts.",
+        "Sie gehen die fünfte Straße nach links.",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "… nach rechts.",
+      "translation": "… ไปทางขวา",
+      "explanation": "สถานการณ์ระบุหน้าที่การสื่อสารว่าคุณชี้ทางแยกและระบุทิศทางด้านขวา ประโยค … nach rechts. ทำหน้าที่นั้น",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-unknown-local-01",
+      "targetId": "unknown-local",
+      "topic": "unknown",
+      "kind": "context",
+      "prompt": "มีคนขอทางแต่คุณเพิ่งมาที่นี่และไม่ใช่คนในพื้นที่",
+      "options": [
+        "Tut mir leid. Ich bin nicht von hier.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Tut mir leid. Ich bin nicht von hier.",
+      "translation": "ขอโทษ ฉันไม่ใช่คนแถวนี้",
+      "explanation": "ประโยคนี้สื่อว่าขอโทษ ฉันไม่ใช่คนแถวนี้ เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-unknown-local-02",
+      "targetId": "unknown-local",
+      "topic": "unknown",
+      "kind": "dialogue",
+      "prompt": "คุณอยากอธิบายอย่างสุภาพว่าตนเองไม่คุ้นกับเมืองนี้",
+      "options": [
+        "Tut mir leid. Ich bin nicht von hier.",
+        "Sie gehen hier geradeaus.",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Tut mir leid. Ich bin nicht von hier.",
+      "translation": "ขอโทษ ฉันไม่ใช่คนแถวนี้",
+      "explanation": "ประโยคนี้สื่อว่าขอโทษ ฉันไม่ใช่คนแถวนี้ เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-unknown-local-03",
+      "targetId": "unknown-local",
+      "topic": "unknown",
+      "kind": "context",
+      "prompt": "ผู้เดินทางถามเส้นทาง แต่คุณไม่ได้อาศัยอยู่แถวนี้",
+      "options": [
+        "Tut mir leid. Ich bin nicht von hier.",
+        "Ist das sehr weit?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Tut mir leid. Ich bin nicht von hier.",
+      "translation": "ขอโทษ ฉันไม่ใช่คนแถวนี้",
+      "explanation": "ประโยคนี้สื่อว่าขอโทษ ฉันไม่ใช่คนแถวนี้ เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-unknown-local-04",
+      "targetId": "unknown-local",
+      "topic": "unknown",
+      "kind": "dialogue",
+      "prompt": "คุณต้องการปฏิเสธคำขออย่างสุภาพพร้อมบอกว่าไม่ใช่คนท้องถิ่น",
+      "options": [
+        "Tut mir leid. Ich bin nicht von hier.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Tut mir leid. Ich bin nicht von hier.",
+      "translation": "ขอโทษ ฉันไม่ใช่คนแถวนี้",
+      "explanation": "ประโยคนี้สื่อว่าขอโทษ ฉันไม่ใช่คนแถวนี้ เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-unknown-answer-01",
+      "targetId": "unknown-answer",
+      "topic": "unknown",
+      "kind": "context",
+      "prompt": "มีคนถามทางที่คุณไม่รู้คำตอบ",
+      "options": [
+        "Das weiß ich leider nicht.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Das weiß ich leider nicht.",
+      "translation": "ขอโทษ ฉันไม่ทราบเรื่องนั้น",
+      "explanation": "ประโยคนี้สื่อว่าขอโทษ ฉันไม่ทราบเรื่องนั้น เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-unknown-answer-02",
+      "targetId": "unknown-answer",
+      "topic": "unknown",
+      "kind": "dialogue",
+      "prompt": "คุณทราบว่าตนเองไม่มีข้อมูลที่ถามและอยากตอบอย่างสุภาพ",
+      "options": [
+        "Das weiß ich leider nicht.",
+        "Sie gehen hier geradeaus.",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Das weiß ich leider nicht.",
+      "translation": "ขอโทษ ฉันไม่ทราบเรื่องนั้น",
+      "explanation": "ประโยคนี้สื่อว่าขอโทษ ฉันไม่ทราบเรื่องนั้น เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-unknown-answer-03",
+      "targetId": "unknown-answer",
+      "topic": "unknown",
+      "kind": "context",
+      "prompt": "คนแปลกหน้าถามตำแหน่งสถานที่ แต่คุณไม่ทราบ",
+      "options": [
+        "Das weiß ich leider nicht.",
+        "Ist das sehr weit?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Das weiß ich leider nicht.",
+      "translation": "ขอโทษ ฉันไม่ทราบเรื่องนั้น",
+      "explanation": "ประโยคนี้สื่อว่าขอโทษ ฉันไม่ทราบเรื่องนั้น เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-unknown-answer-04",
+      "targetId": "unknown-answer",
+      "topic": "unknown",
+      "kind": "dialogue",
+      "prompt": "คุณต้องการบอกว่าไม่รู้ข้อมูลนั้น โดยไม่ได้อ้างว่าไม่ใช่คนในพื้นที่",
+      "options": [
+        "Das weiß ich leider nicht.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Das weiß ich leider nicht.",
+      "translation": "ขอโทษ ฉันไม่ทราบเรื่องนั้น",
+      "explanation": "ประโยคนี้สื่อว่าขอโทษ ฉันไม่ทราบเรื่องนั้น เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-unknown-new-01",
+      "targetId": "unknown-new",
+      "topic": "unknown",
+      "kind": "context",
+      "prompt": "คุณเพิ่งมาถึงและไม่คุ้นกับบริเวณนี้",
+      "options": [
+        "Ich bin fremd hier.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Ich bin fremd hier.",
+      "translation": "ฉันไม่คุ้นกับแถวนี้",
+      "explanation": "ประโยคนี้สื่อว่าฉันไม่คุ้นกับแถวนี้ เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-unknown-new-02",
+      "targetId": "unknown-new",
+      "topic": "unknown",
+      "kind": "dialogue",
+      "prompt": "มีคนถามทาง คุณต้องการบอกสั้น ๆ ว่าแถวนี้เป็นที่ใหม่สำหรับคุณ",
+      "options": [
+        "Ich bin fremd hier.",
+        "Sie gehen hier geradeaus.",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Ich bin fremd hier.",
+      "translation": "ฉันไม่คุ้นกับแถวนี้",
+      "explanation": "ประโยคนี้สื่อว่าฉันไม่คุ้นกับแถวนี้ เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-unknown-new-03",
+      "targetId": "unknown-new",
+      "topic": "unknown",
+      "kind": "context",
+      "prompt": "คุณกำลังเดินทางและไม่รู้จักพื้นที่นี้ดี",
+      "options": [
+        "Ich bin fremd hier.",
+        "Ist das sehr weit?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Ich bin fremd hier.",
+      "translation": "ฉันไม่คุ้นกับแถวนี้",
+      "explanation": "ประโยคนี้สื่อว่าฉันไม่คุ้นกับแถวนี้ เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-unknown-new-04",
+      "targetId": "unknown-new",
+      "topic": "unknown",
+      "kind": "dialogue",
+      "prompt": "คุณต้องการอธิบายว่าตนเองเป็นคนมาใหม่ในบริเวณนี้",
+      "options": [
+        "Ich bin fremd hier.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Ich bin fremd hier.",
+      "translation": "ฉันไม่คุ้นกับแถวนี้",
+      "explanation": "ประโยคนี้สื่อว่าฉันไม่คุ้นกับแถวนี้ เลือกให้ตรงกับข้อมูลที่ผู้พูดรู้หรือไม่รู้ในสถานการณ์",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-thanks-heart-01",
+      "targetId": "thanks-heart",
+      "topic": "thanks",
+      "kind": "context",
+      "prompt": "มีคนช่วยคุณจนหาทางต่อได้ คุณกล่าวขอบคุณอย่างจริงใจ",
+      "options": [
+        "Herzlichen Dank.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Herzlichen Dank.",
+      "translation": "ขอบคุณมาก",
+      "explanation": "กล่าว Herzlichen Dank. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-thanks-heart-02",
+      "targetId": "thanks-heart",
+      "topic": "thanks",
+      "kind": "dialogue",
+      "prompt": "อีกฝ่ายสละเวลาพาคุณไปถึงจุดเริ่มทาง คุณตอบขอบคุณอย่างอบอุ่น",
+      "options": [
+        "Herzlichen Dank.",
+        "Sie gehen hier geradeaus.",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Herzlichen Dank.",
+      "translation": "ขอบคุณมาก",
+      "explanation": "กล่าว Herzlichen Dank. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-thanks-heart-03",
+      "targetId": "thanks-heart",
+      "topic": "thanks",
+      "kind": "context",
+      "prompt": "คุณได้รับความช่วยเหลือที่สำคัญและอยากแสดงความซาบซึ้ง",
+      "options": [
+        "Herzlichen Dank.",
+        "Ist das sehr weit?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Herzlichen Dank.",
+      "translation": "ขอบคุณมาก",
+      "explanation": "กล่าว Herzlichen Dank. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-thanks-heart-04",
+      "targetId": "thanks-heart",
+      "topic": "thanks",
+      "kind": "dialogue",
+      "prompt": "หลังได้รับความช่วยเหลืออย่างมาก คุณเลือกคำขอบคุณที่จริงใจ",
+      "options": [
+        "Herzlichen Dank.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Herzlichen Dank.",
+      "translation": "ขอบคุณมาก",
+      "explanation": "กล่าว Herzlichen Dank. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-thanks-kind-01",
+      "targetId": "thanks-kind",
+      "topic": "thanks",
+      "kind": "context",
+      "prompt": "คนแปลกหน้าช่วยบอกทาง คุณชมว่าใจดีและขอบคุณ",
+      "options": [
+        "Sehr nett. Vielen Dank.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Sehr nett. Vielen Dank.",
+      "translation": "ใจดีมาก ขอบคุณมาก",
+      "explanation": "กล่าว Sehr nett. Vielen Dank. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-thanks-kind-02",
+      "targetId": "thanks-kind",
+      "topic": "thanks",
+      "kind": "dialogue",
+      "prompt": "คุณอยากขอบคุณพร้อมบอกว่าอีกฝ่ายมีน้ำใจ",
+      "options": [
+        "Sehr nett. Vielen Dank.",
+        "Sie gehen hier geradeaus.",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Sehr nett. Vielen Dank.",
+      "translation": "ใจดีมาก ขอบคุณมาก",
+      "explanation": "กล่าว Sehr nett. Vielen Dank. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-thanks-kind-03",
+      "targetId": "thanks-kind",
+      "topic": "thanks",
+      "kind": "context",
+      "prompt": "อีกฝ่ายหยุดช่วยคุณทั้งที่กำลังรีบ คุณตอบชมและขอบคุณ",
+      "options": [
+        "Sehr nett. Vielen Dank.",
+        "Ist das sehr weit?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Sehr nett. Vielen Dank.",
+      "translation": "ใจดีมาก ขอบคุณมาก",
+      "explanation": "กล่าว Sehr nett. Vielen Dank. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-thanks-kind-04",
+      "targetId": "thanks-kind",
+      "topic": "thanks",
+      "kind": "dialogue",
+      "prompt": "คุณต้องการตอบรับความช่วยเหลือด้วยคำชมสั้น ๆ และคำขอบคุณ",
+      "options": [
+        "Sehr nett. Vielen Dank.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Sehr nett. Vielen Dank.",
+      "translation": "ใจดีมาก ขอบคุณมาก",
+      "explanation": "กล่าว Sehr nett. Vielen Dank. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-thanks-oh-01",
+      "targetId": "thanks-oh",
+      "topic": "thanks",
+      "kind": "context",
+      "prompt": "อีกฝ่ายเพิ่งอธิบายทางให้เข้าใจ คุณตอบรับและขอบคุณ",
+      "options": [
+        "Oh, danke schön.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Oh, danke schön.",
+      "translation": "อ๋อ ขอบคุณมาก",
+      "explanation": "กล่าว Oh, danke schön. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-thanks-oh-02",
+      "targetId": "thanks-oh",
+      "topic": "thanks",
+      "kind": "dialogue",
+      "prompt": "เมื่อเห็นตำแหน่งบนแผนที่แล้ว คุณพูดขอบคุณอย่างเป็นกันเอง",
+      "options": [
+        "Oh, danke schön.",
+        "Sie gehen hier geradeaus.",
+        "Ist das sehr weit?"
+      ],
+      "answer": "Oh, danke schön.",
+      "translation": "อ๋อ ขอบคุณมาก",
+      "explanation": "กล่าว Oh, danke schön. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 1,
+      "difficultyRationale": "บริบทระบุเจตนาการสื่อสารอย่างชัดเจน",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_dialogue"
+    },
+    {
+      "id": "variant-thanks-oh-03",
+      "targetId": "thanks-oh",
+      "topic": "thanks",
+      "kind": "context",
+      "prompt": "คุณเพิ่งเข้าใจคำอธิบายและอยากตอบรับพร้อมขอบคุณ",
+      "options": [
+        "Oh, danke schön.",
+        "Ist das sehr weit?",
+        "Wo ist denn hier eine Bank?"
+      ],
+      "answer": "Oh, danke schön.",
+      "translation": "อ๋อ ขอบคุณมาก",
+      "explanation": "กล่าว Oh, danke schön. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 2,
+      "difficultyRationale": "ผู้เรียนต้องแยกหน้าที่ของประโยคจากบริบทโดยไม่มีคำแปลตรงตัว",
+      "assistance": "thai-situation-and-three-options",
+      "subskill": "phrase_context"
+    },
+    {
+      "id": "variant-thanks-oh-04",
+      "targetId": "thanks-oh",
+      "topic": "thanks",
+      "kind": "dialogue",
+      "prompt": "อีกฝ่ายช่วยชี้เส้นทางให้ คุณเข้าใจแล้วและกล่าวขอบคุณ",
+      "options": [
+        "Oh, danke schön.",
+        "Wo ist denn hier eine Bank?",
+        "Sie gehen hier geradeaus."
+      ],
+      "answer": "Oh, danke schön.",
+      "translation": "อ๋อ ขอบคุณมาก",
+      "explanation": "กล่าว Oh, danke schön. หลังจากอีกฝ่ายช่วยเหลือหรืออธิบายทางให้",
+      "difficulty": 3,
+      "difficultyRationale": "ผู้เรียนต้องเลือกสำนวนจากบทสนทนาที่มีข้อมูลหลายส่วน",
+      "assistance": "dialogue-context-no-picture",
+      "subskill": "phrase_dialogue"
+    }
+  ]
+}

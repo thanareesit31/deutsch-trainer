@@ -35,6 +35,10 @@ export const l13PracticeStores = [
   ...l13PracticeTopics,
   { href: '/practice/L13/grammar/basic', storage: 'grammar-basic', frame: 'grammar-basic' },
   { href: '/practice/L13/grammar/daily', storage: 'daily', frame: 'daily' },
+  { href: '/practice/L14/grammar/basic', storage: 'l14-grammar', frame: 'l14-grammar' },
+  { href: '/practice/L14/grammar/daily', storage: 'l14-grammar-daily', frame: 'l14-grammar-daily' },
+  { href: '/practice/L14/grammar/lokale-praepositionen', storage: 'l14-lokale-praepositionen', frame: 'l14-lokale-praepositionen' },
+  { href: '/practice/L14/grammar/wo-dativ', storage: 'l14-wo-dativ', frame: 'l14-wo-dativ' },
   ...l13VocabularyTopics,
   ...l13PhraseTopics,
   ...l14PhrasePracticeTopics,
@@ -44,7 +48,7 @@ export const l13PracticeStores = [
   { href: '/practice/L13/vocabulary/daily', storage: 'vocab-daily', frame: 'vocab-daily' },
 ];
 
-type PracticeQuestion = { id: string; topicId: string; subskill: string; kind: 'choice' | 'cloze' | 'order' | 'write'; phraseItemIds: string[] };
+type PracticeQuestion = { id: string; topicId: string; subskill: string; kind: 'choice' | 'cloze' | 'order' | 'write'; phraseItemIds: string[]; targetIds: string[] };
 type PracticeResult = { correct: boolean | null; submittedAt: number; assisted: boolean | null; confidence: string | null };
 export type PracticeHistory = {
   id: string; href: string; createdAt: number; completed: boolean; archived: boolean; position: number; hasDraft: boolean;
@@ -65,7 +69,12 @@ function parsePlannerQuestion(value: unknown): PracticeQuestion | null {
       ? value.requiredItemIds
       : typeof value.itemId === 'string' ? [value.itemId] : [value.id.replace(/-(context|completion|order|dialogue)$/, '')]
     : [];
-  return { id: value.id, topicId: value.topicId, subskill: value.subskill, kind: value.kind, phraseItemIds };
+  const targetIds = Array.isArray(value.targetIds) && value.targetIds.every((id: unknown) => typeof id === 'string')
+    ? value.targetIds
+    : typeof value.targetId === 'string' ? [value.targetId]
+    : typeof value.itemId === 'string' ? [value.itemId]
+    : phraseItemIds;
+  return { id: value.id, topicId: value.topicId, subskill: value.subskill, kind: value.kind, phraseItemIds, targetIds };
 }
 
 export function parsePracticeHistory(raw: string | null, href: string): PracticeHistory[] {
@@ -101,7 +110,8 @@ export function resumablePracticeSession(history: readonly PracticeHistory[]) {
 }
 
 export function practiceStorageKey(storage: string, frame: string, userId: string) {
-  return `deutsch-trainer:review-prototype:l13-${storage}:v1:${frame}-account-${userId}`;
+  const lessonPrefix = storage.startsWith('l14-') ? '' : 'l13-';
+  return `deutsch-trainer:review-prototype:${lessonPrefix}${storage}:v1:${frame}-account-${userId}`;
 }
 
 export function readL13PracticeHistory(userId: string, storage: Pick<Storage, 'getItem'>, skill?: L13PracticeSkill): PracticeHistory[] {
@@ -117,7 +127,7 @@ export function planDailyPractice(rawQuestions: readonly unknown[], history: rea
   }
   const practicedTopics = new Set([...latest.values()].map(item => item.question.topicId));
   const seen = new Set(history.flatMap(session => session.items.map(item => item.question.id)));
-  const sameSkill = (a: PracticeQuestion, b: PracticeQuestion) => a.topicId === b.topicId && a.kind === b.kind && a.subskill === b.subskill;
+  const sameSkill = (a: PracticeQuestion, b: PracticeQuestion) => a.topicId === b.topicId && a.subskill === b.subskill && a.targetIds.some(id => b.targetIds.includes(id));
   const evidence = [...latest.values()];
   const weak = evidence.filter(item => item.result.correct === false || item.result.assisted || item.result.confidence === 'guess');
   const eligible = questions.filter(q => practicedTopics.size === 0 || practicedTopics.has(q.topicId));
@@ -136,15 +146,18 @@ export function planDailyPractice(rawQuestions: readonly unknown[], history: rea
   const topicUses = new Map<string, number>();
   const kindUses = new Map<string, number>();
   const phraseItems = new Set<string>();
+  const selectedTargets = new Set<string>();
   const count = Math.min(10, ranked.length);
   while (selected.length < count) {
     ranked.sort((a, b) => (b.score - (topicUses.get(b.q.topicId) ?? 0) * 12 - (kindUses.get(b.q.kind) ?? 0) * 8) - (a.score - (topicUses.get(a.q.topicId) ?? 0) * 12 - (kindUses.get(a.q.kind) ?? 0) * 8) || a.index - b.index);
-    const next = ranked.shift();
+    const nextIndex = ranked.findIndex(item => !item.q.targetIds.some(id => selectedTargets.has(id)));
+    const [next] = nextIndex < 0 ? [] : ranked.splice(nextIndex, 1);
     if (!next) break;
     selected.push(next.q);
     next.q.phraseItemIds.forEach(id => phraseItems.add(id));
+    next.q.targetIds.forEach(id => selectedTargets.add(id));
     for (let index = ranked.length - 1; index >= 0; index--) {
-      if (ranked[index].q.phraseItemIds.some(id => phraseItems.has(id))) ranked.splice(index, 1);
+      if (ranked[index].q.phraseItemIds.some(id => phraseItems.has(id)) || ranked[index].q.targetIds.some(id => selectedTargets.has(id))) ranked.splice(index, 1);
     }
     topicUses.set(next.q.topicId, (topicUses.get(next.q.topicId) ?? 0) + 1);
     kindUses.set(next.q.kind, (kindUses.get(next.q.kind) ?? 0) + 1);

@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "provenance": [
+    {
+      "id": "variant-ask-help-01",
+      "targetId": "ask-help",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-help-02",
+      "targetId": "ask-help",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-help-03",
+      "targetId": "ask-help",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-help-04",
+      "targetId": "ask-help",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-help-05",
+      "targetId": "ask-help",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-help-06",
+      "targetId": "ask-help",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-place-01",
+      "targetId": "ask-place",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-place-02",
+      "targetId": "ask-place",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-place-03",
+      "targetId": "ask-place",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-place-04",
+      "targetId": "ask-place",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-place-05",
+      "targetId": "ask-place",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-far-01",
+      "targetId": "ask-far",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-far-02",
+      "targetId": "ask-far",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-far-03",
+      "targetId": "ask-far",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-far-04",
+      "targetId": "ask-far",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-far-05",
+      "targetId": "ask-far",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-far-06",
+      "targetId": "ask-far",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-search-01",
+      "targetId": "ask-search",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-search-02",
+      "targetId": "ask-search",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-search-03",
+      "targetId": "ask-search",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-search-04",
+      "targetId": "ask-search",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-search-05",
+      "targetId": "ask-search",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-walk-01",
+      "targetId": "ask-walk",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-walk-02",
+      "targetId": "ask-walk",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-walk-03",
+      "targetId": "ask-walk",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-walk-04",
+      "targetId": "ask-walk",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-ask-walk-05",
+      "targetId": "ask-walk",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-straight-01",
+      "targetId": "describe-straight",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-straight-02",
+      "targetId": "describe-straight",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-straight-03",
+      "targetId": "describe-straight",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-straight-04",
+      "targetId": "describe-straight",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-straight-05",
+      "targetId": "describe-straight",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-see-01",
+      "targetId": "describe-see",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-see-02",
+      "targetId": "describe-see",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-see-03",
+      "targetId": "describe-see",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-see-04",
+      "targetId": "describe-see",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-see-05",
+      "targetId": "describe-see",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-turn-01",
+      "targetId": "describe-turn",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-turn-02",
+      "targetId": "describe-turn",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-turn-03",
+      "targetId": "describe-turn",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-turn-04",
+      "targetId": "describe-turn",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-turn-05",
+      "targetId": "describe-turn",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-distance-01",
+      "targetId": "describe-distance",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-distance-02",
+      "targetId": "describe-distance",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-distance-03",
+      "targetId": "describe-distance",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-distance-04",
+      "targetId": "describe-distance",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-distance-05",
+      "targetId": "describe-distance",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-street-01",
+      "targetId": "describe-street",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-street-02",
+      "targetId": "describe-street",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-street-03",
+      "targetId": "describe-street",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-street-04",
+      "targetId": "describe-street",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-street-05",
+      "targetId": "describe-street",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-direction-01",
+      "targetId": "describe-direction",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-direction-02",
+      "targetId": "describe-direction",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-direction-03",
+      "targetId": "describe-direction",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-direction-04",
+      "targetId": "describe-direction",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-describe-direction-05",
+      "targetId": "describe-direction",
+      "sourceId": "KB14-G6B",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-local-01",
+      "targetId": "unknown-local",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-local-02",
+      "targetId": "unknown-local",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-local-03",
+      "targetId": "unknown-local",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-local-04",
+      "targetId": "unknown-local",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-answer-01",
+      "targetId": "unknown-answer",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-answer-02",
+      "targetId": "unknown-answer",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-answer-03",
+      "targetId": "unknown-answer",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-answer-04",
+      "targetId": "unknown-answer",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-new-01",
+      "targetId": "unknown-new",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-new-02",
+      "targetId": "unknown-new",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-new-03",
+      "targetId": "unknown-new",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-unknown-new-04",
+      "targetId": "unknown-new",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-heart-01",
+      "targetId": "thanks-heart",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-heart-02",
+      "targetId": "thanks-heart",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-heart-03",
+      "targetId": "thanks-heart",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-heart-04",
+      "targetId": "thanks-heart",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-kind-01",
+      "targetId": "thanks-kind",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-kind-02",
+      "targetId": "thanks-kind",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-kind-03",
+      "targetId": "thanks-kind",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-kind-04",
+      "targetId": "thanks-kind",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-oh-01",
+      "targetId": "thanks-oh",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-oh-02",
+      "targetId": "thanks-oh",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-oh-03",
+      "targetId": "thanks-oh",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    },
+    {
+      "id": "variant-thanks-oh-04",
+      "targetId": "thanks-oh",
+      "sourceId": "KB14-G6A",
+      "authorship": "newly_authored"
+    }
+  ]
+}

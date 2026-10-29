@@ -18,6 +18,13 @@ Learning targets are the 17 phrases already taught in `src/components/l14-phrase
 
 ## Task design and flow
 
+### Extended scored bank
+
+- The runnable bank contains 100 independently scored responses: the 16 original authored tasks, two separately scored answers from the matching screen, one existing reply variant, and 81 new context/dialogue variants. The guided first round still covers the same 17 taught targets; these extra items are not inserted into that first pass.
+- The 81 new variants are defined in `src/data/l14-phrase-variants.json`. Each maps to one of the existing 17 phrase targets and to `phrase_context` or `phrase_dialogue`, and records a difficulty rationale and available assistance. Their product-authored situations and source basis are recorded separately in `l14-phrase-variants-provenance.json`; the learner data does not contain these source references.
+- Mixed and daily selection can choose a variant only after prior attempt evidence exists for its target. A round chooses at most one task per target; variants do not repeat the phrase's original task in the same round. The current selector remains history-based practice, not calibrated mastery estimation.
+- Migration `20261028020000_l14_phrase_variants.sql` registers the new response definitions and their target/subskill metadata with the shared server validator. Apply it before making the added response IDs available to production accounts.
+
 - The guided lesson route starts at the first question and continues through all 17 targets in the order above. It does not stop for a result page between topics.
 - The manual entry page resumes an unfinished round first. Otherwise, it offers the guided round before any practice result, or a history-based daily round of at most 10 targets after practice. The same recommendation can appear on the home and practice overview pages. The four topic cards remain inside an optional "ฝึกเฉพาะหัวข้อ" section and show only learned targets; a match pair is eligible when both targets have been learned. The guided route remains available from the lesson handoff and covers all 17 targets once across 16 screens after the learner completes the lesson.
 - Daily selection uses the latest result per target, prioritizes unanswered and incorrect targets and targets last practiced at least three days ago, and reduces recently correct items. It distributes questions across topics and task formats, keeps the two matching pairs together, and selects at most one task variant per target. The `ask-walk-reply` response choice may replace the original ordering task after that target has been practiced. The daily set contains at most 10 scored targets, not necessarily 10 screens.

@@ -10,7 +10,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { LearningCategoryTabs } from "./learning-breadcrumbs";
 import { GermanListenText } from "./german-listen-text";
 import { ConjugationAudioForm, ConjugationBoard } from "./conjugation-matching";
-import { isTestWorkspaceUser, isVocabularyPracticeAvailable, isPhrasePracticeAvailable, isL14PhrasePracticeAvailable, isL14VocabularyPracticeAvailable, useStore } from "./store";
+import { isTestWorkspaceUser, isL13GrammarPracticeAvailable, isL14GrammarPracticeAvailable, isVocabularyPracticeAvailable, isPhrasePracticeAvailable, isL14PhrasePracticeAvailable, isL14VocabularyPracticeAvailable, useStore } from "./store";
 import {
   Sun,
   Check,
@@ -405,6 +405,7 @@ export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
   const { lessons } = useContent();
   const lesson = lessons.find((entry) => entry.id === lessonId);
   const pilotAvailable = ["L13", "L14", "L15", "L16", "L17", "L18"].includes(lessonId) && isTestWorkspaceUser(user);
+  const grammarAvailable = lessonId === "L13" ? isL13GrammarPracticeAvailable(user) : lessonId === "L14" ? isL14GrammarPracticeAvailable(user) : pilotAvailable;
   const grammarTopicCount = lessonId === "L14" || lessonId === "L18" ? 2 : lessonId === "L15" || lessonId === "L16" ? 1 : 3;
 
   if (!lesson) return null;
@@ -423,7 +424,7 @@ export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
       <div className="skills-grid">
         {skills.map((skill) => {
           const Icon = skillIcons[skill.id];
-          const available = (skill.id === "phrases" && ((lessonId === "L13" && isPhrasePracticeAvailable(user)) || (lessonId === "L14" && isL14PhrasePracticeAvailable(user)))) || (pilotAvailable && skill.id === "grammar") || (skill.id === "vocabulary" && ((lessonId === "L13" && isVocabularyPracticeAvailable(user)) || (lessonId === "L14" && isL14VocabularyPracticeAvailable(user))));
+          const available = (skill.id === "phrases" && ((lessonId === "L13" && isPhrasePracticeAvailable(user)) || (lessonId === "L14" && isL14PhrasePracticeAvailable(user)))) || (grammarAvailable && skill.id === "grammar") || (skill.id === "vocabulary" && ((lessonId === "L13" && isVocabularyPracticeAvailable(user)) || (lessonId === "L14" && isL14VocabularyPracticeAvailable(user))));
           const content = <>
             <div className="skill-top">
               <span className={`icon-tile large ${skill.color}`}><Icon size={24} /></span>
@@ -448,7 +449,9 @@ export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
 
 export function PracticeGrammarTopics({ lessonId = "L13" }: { lessonId?: string }) {
   const { user } = useStore();
-  if (!isTestWorkspaceUser(user)) return <PracticeEntry />;
+  if (lessonId !== "L13" && lessonId !== "L14" && !isTestWorkspaceUser(user)) return <PracticeEntry />;
+  if (lessonId === "L13" && !isL13GrammarPracticeAvailable(user)) return <PracticeEntry />;
+  if (lessonId === "L14" && !isL14GrammarPracticeAvailable(user)) return <PracticeEntry />;
   const topics = lessonId === "L14" ? additionalGrammarPracticeTopics.L14
     : lessonId === "L15" ? additionalGrammarPracticeTopics.L15
     : lessonId === "L16" ? additionalGrammarPracticeTopics.L16
@@ -474,7 +477,7 @@ export function PracticeGrammarTopics({ lessonId = "L13" }: { lessonId?: string 
           <span>เริ่มฝึก <ArrowRight size={18} /></span>
         </Link>
       ))}
-      <p className="practice-catalog-note">ผลชุดทดลองนี้ยังไม่รวมในความก้าวหน้าหลัก</p>
+      <p className="practice-catalog-note">ผลการฝึกนี้ยังไม่รวมในความก้าวหน้าหลัก</p>
     </Landing>;
   }
 

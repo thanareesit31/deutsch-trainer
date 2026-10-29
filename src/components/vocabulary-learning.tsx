@@ -12,7 +12,7 @@ import { useContent } from "./content-provider";
 import { prepareL02VocabularyFlow } from "@/lib/l02-number-learning";
 
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
-import { isL14VocabularyPracticeAvailable, isTestWorkspaceUser, isVocabularyPracticeAvailable, useStore } from "./store";
+import { isL14VocabularyPracticeAvailable, isL13GrammarPracticeAvailable, isTestWorkspaceUser, isVocabularyPracticeAvailable, useStore } from "./store";
 import { CountryFlag } from "./vocabulary-image-matching";
 import { l03FamilyPluralPairs } from "@/lib/vocabulary-image-content";
 import { FamilyPluralLearning } from "./family-plural-learning";
@@ -192,7 +192,7 @@ export function L03FamilyPluralPage() {
 export function A13GrammarEntryPoints({ lessonId }: { lessonId: "L13" | "L14" | "L15" }) {
   const { items } = useContent();
   const { user } = useStore();
-  const pilotAvailable = isTestWorkspaceUser(user);
+  const pilotAvailable = isTestWorkspaceUser(user) || (lessonId === "L13" && isL13GrammarPracticeAvailable(user));
   const lessonState = useLessonState();
   const l13Flow = useMemo(() => lessonId === "L13" ? buildL13GrammarFlow(items) : null, [lessonId, items]);
   const l13State = l13Flow ? readGuidedState(lessonState.read(l13Flow.stateKey), l13Flow, items) : null;
@@ -227,8 +227,8 @@ export function A13GrammarEntryPoints({ lessonId }: { lessonId: "L13" | "L14" | 
     {lessonId === "L13" && learnedTopics === 3 && (
       <section className="grammar-practice-handoff">
         <span className="eyebrow">เรียนครบ 3/3 หัวข้อ</span>
-        <h2>{pilotAvailable ? "อยากลองฝึกต่อไหม?" : "เรียนไวยากรณ์ครบแล้ว"}</h2>
-        <p>{pilotAvailable ? "ฝึกต่อเนื่อง Es gibt, Dativ และ Verben ได้ทันที" : "แบบฝึกพื้นฐานเปิดเฉพาะบัญชีทดลองในตอนนี้"}</p>
+        <h2>{pilotAvailable ? "อยากฝึกต่อไหม?" : "เรียนไวยากรณ์ครบแล้ว"}</h2>
+        <p>{pilotAvailable ? "ฝึกต่อเนื่อง Es gibt, Dativ และ Verben ได้ทันที" : "แบบฝึกพื้นฐานกำลังเตรียมเนื้อหา"}</p>
         <div>
           {pilotAvailable && <Link className="button primary" href="/practice/L13/grammar/basic">ทำแบบฝึกหัด</Link>}
           <Link className="button secondary" href="/lesson/L13">กลับหน้าบทเรียน</Link>

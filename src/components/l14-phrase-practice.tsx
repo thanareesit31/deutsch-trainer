@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import phraseVariants from "@/data/l14-phrase-variants.json";
 import { lessonStateKeys, useLessonState } from "./lesson-state-provider";
 import { isL14PhrasePracticeAvailable, isTestWorkspaceUser, useStore } from "./store";
 import { phraseQuestionWordMeanings, phraseVisualPrompts, type PhraseVisualPrompt } from "@/lib/l14-phrase-visual-prompts";
@@ -22,7 +23,7 @@ function GermanVisualQuestion({ visual }: { visual: PhraseVisualPrompt }) {
 }
 
 type Topic = "ask" | "describe" | "unknown" | "thanks";
-type ChoiceTask = { id: string; targetId?: string; topic: Topic; kind: "context" | "dialogue"; prompt: string; options: string[]; answer: string; translation: string; explanation: string };
+type ChoiceTask = { id: string; targetId?: string; topic: Topic; kind: "context" | "dialogue"; prompt: string; options: string[]; answer: string; translation: string; explanation: string; difficulty?: number; difficultyRationale?: string; assistance?: string; subskill?: string };
 type OrderTask = { id: string; topic: Topic; kind: "order"; tokens: string[]; answer: string; translation: string; ruleTitle: string; rules: string[]; noteTitle: string; exampleNote: string };
 type MatchPair = { id: string; targetId: string; question: string; questionThai: string; answer: string; translation: string };
 type MatchTask = { id: string; topic: Topic; kind: "match"; pairs: [MatchPair, MatchPair] };
@@ -64,7 +65,16 @@ const guidedTasks: Task[] = [
 const reviewTasks: ChoiceTask[] = [
   { id:"ask-walk-reply",targetId:"ask-walk",topic:"ask",kind:"dialogue",prompt:"คนถามว่าเดินไปคาเฟ่ได้ไหม และคุณรู้ว่าคาเฟ่อยู่ใกล้ จะตอบอย่างไร",options:["Ja, das ist gar nicht weit.","Das weiß ich leider nicht.","Herzlichen Dank."],answer:"Ja, das ist gar nicht weit.",translation:"ได้ คาเฟ่อยู่ไม่ไกลเลย",explanation:"คำถามถามว่าเดินไปคาเฟ่ได้ไหม เมื่อรู้ว่าคาเฟ่อยู่ใกล้ จึงตอบยืนยันว่าไม่ไกล" },
 ];
-const tasks: Task[] = [...authoredTasks,describeMatch,...reviewTasks];
+const variantTasks: ChoiceTask[] = phraseVariants.variants.map(variant => ({
+  id: variant.id, targetId: variant.targetId, topic: variant.topic as Topic,
+  kind: variant.kind as "context" | "dialogue", prompt: variant.prompt,
+  options: variant.options, answer: variant.answer, translation: variant.translation,
+  explanation: variant.explanation, difficulty: variant.difficulty,
+  difficultyRationale: variant.difficultyRationale, assistance: variant.assistance,
+  subskill: variant.subskill,
+}));
+const tasks: Task[] = [...authoredTasks,describeMatch,...reviewTasks,...variantTasks];
+if (variantTasks.length + authoredTasks.length + describeMatch.pairs.length + reviewTasks.length < 100) throw new Error("L14 phrase bank must contain at least 100 independently scored responses");
 const mixedCounts: Record<Topic, number> = { ask: 4, describe: 5, unknown: 3, thanks: 3 };
 type Attempt = { questionId: string; topic: Topic; kind: Task["kind"]; correct: boolean; answer: string; submittedAt: string };
 type Progress = { version: 1; runId: string; createdAt: string; taskIds: string[]; position: number; attempts: Attempt[]; draft: { questionId: string; selected: string } | null; completed: boolean; updatedAt: string };
@@ -84,7 +94,9 @@ function shuffle<T>(items: T[]): T[] {
 function mixedTaskIds(runs: ArchivedRun[]): string[] {
   const latest = new Map<string, Attempt>();
   for (const run of runs) for (const attempt of run.attempts) {
+    const attemptedTask=tasks.find(task=>task.id===attempt.questionId);
     latest.set(attempt.questionId,attempt);
+    if (attemptedTask) for (const target of targetIds(attemptedTask)) latest.set(target,attempt);
     const matchedTarget=describeMatch.pairs.find(pair=>pair.id===attempt.questionId)?.targetId;
     if (matchedTarget) latest.set(matchedTarget,attempt);
   }
@@ -93,7 +105,7 @@ function mixedTaskIds(runs: ArchivedRun[]): string[] {
     const sourceTasks=authoredTasks.filter(task=>task.topic===topic&&(topic!=="describe"||task.id!=="describe-see"&&task.id!=="describe-distance"));
     const picked=shuffle(sourceTasks.map(source=>{
     const candidates: Task[] = latest.has(source.id)
-      ? [source,...reviewTasks.filter(task=>task.targetId===source.id)]
+      ? [source,...reviewTasks.filter(task=>task.targetId===source.id),...variantTasks.filter(task=>task.targetId===source.id)]
       : [source];
     return shuffle(candidates).sort((left,right)=>priority(right)-priority(left))[0];
     })).sort((left,right)=>priority(right)-priority(left)).slice(0,mixedCounts[topic]-(topic==="describe"?2:0));
@@ -117,10 +129,15 @@ function attemptHistory(sessions: PracticeSessions): Attempt[] {
 function dailyTaskIds(sessions: PracticeSessions, learned: Set<string>, now=Date.now()): string[] {
   const latest=new Map<string,Attempt>();
   for (const attempt of attemptHistory(sessions)) {
-    const target=describeMatch.pairs.find(pair=>pair.id===attempt.questionId)?.targetId??reviewTasks.find(task=>task.id===attempt.questionId)?.targetId??attempt.questionId;
+    const task=tasks.find(entry=>entry.kind==="match"?entry.pairs.some(pair=>pair.id===attempt.questionId):entry.id===attempt.questionId);
+    const target=describeMatch.pairs.find(pair=>pair.id===attempt.questionId)?.targetId??(task?targetIds(task)[0]:attempt.questionId);
     latest.set(target,attempt);
   }
-  const candidates=guidedTasks.filter(task=>taskEligible(task,learned)).map(task=>task.id==="ask-walk"&&latest.has("ask-walk")?reviewTasks[0]:task);
+  const candidates: Task[]=guidedTasks.filter(task=>taskEligible(task,learned)).map(task=>task.id==="ask-walk"&&latest.has("ask-walk")?reviewTasks[0]:task);
+  for (const target of latest.keys()) {
+    const variants=variantTasks.filter(task=>task.targetId===target&&taskEligible(task,learned));
+    if (variants.length) candidates.push(variants[Math.floor(Math.random()*variants.length)]);
+  }
   const score=(task: Task)=>Math.max(...targetIds(task).map(id=>{
     const attempt=latest.get(id);
     if (!attempt) return 35;
@@ -129,15 +146,17 @@ function dailyTaskIds(sessions: PracticeSessions, learned: Set<string>, now=Date
   }));
   const selected: Task[]=[];
   const remaining=[...candidates];
+  const selectedTargets=new Set<string>();
   const topicUses=new Map<Topic,number>();
   const kindUses=new Map<Task["kind"],number>();
   let count=0;
   while (remaining.length && count<10) {
     remaining.sort((a,b)=>(score(b)-(topicUses.get(b.topic)??0)*9-(kindUses.get(b.kind)??0)*5)-(score(a)-(topicUses.get(a.topic)??0)*9-(kindUses.get(a.kind)??0)*5));
-    const next=remaining.find(task=>count+taskCount(task)<=10);
+    const next=remaining.find(task=>count+taskCount(task)<=10&&targetIds(task).every(target=>!selectedTargets.has(target)));
     if (!next) break;
     remaining.splice(remaining.indexOf(next),1);
     selected.push(next);
+    for (const target of targetIds(next)) selectedTargets.add(target);
     count+=taskCount(next);
     topicUses.set(next.topic,(topicUses.get(next.topic)??0)+taskCount(next));
     kindUses.set(next.kind,(kindUses.get(next.kind)??0)+taskCount(next));
@@ -218,9 +237,9 @@ function readSessions(raw: string | null): PracticeSessions {
 function l14TaskQuestion(task: Task, pair?: MatchPair) {
   const itemId=pair?.targetId??(task.kind==="order"?task.id:task.kind==="match"?task.pairs[0].targetId:task.targetId??task.id);
   const topicId=`L14-phrases-${task.topic}`;
-  if (pair&&task.kind==="match") return {id:pair.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"phrase_match",kind:"choice",acceptedAnswers:[pair.answer],options:task.pairs.map(entry=>entry.answer),interaction:"match",matchGroupId:task.id};
-  if (task.kind==="order") return {id:task.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"phrase_order",kind:"order",acceptedAnswers:[task.answer],tokens:task.tokens};
-  if (task.kind==="context"||task.kind==="dialogue") return {id:task.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:task.kind==="context"?"phrase_context":"phrase_dialogue",kind:"choice",acceptedAnswers:[task.answer],options:task.options};
+  if (pair&&task.kind==="match") return {id:pair.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"phrase_match",kind:"choice",acceptedAnswers:[pair.answer],options:task.pairs.map(entry=>entry.answer),interaction:"match",matchGroupId:task.id,difficulty:1,assistance:"paired-question-options"};
+  if (task.kind==="order") return {id:task.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"phrase_order",kind:"order",acceptedAnswers:[task.answer],tokens:task.tokens,difficulty:2,assistance:"supplied-word-tiles"};
+  if (task.kind==="context"||task.kind==="dialogue") return {id:task.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"subskill" in task&&task.subskill?task.subskill:task.kind==="context"?"phrase_context":"phrase_dialogue",kind:"choice",acceptedAnswers:[task.answer],options:task.options,...("difficulty" in task?{difficulty:task.difficulty,difficultyRationale:task.difficultyRationale,assistance:task.assistance}: {})};
   throw new Error("Expected an individual L14 practice question");
 }
 type SharedTaskItem = { task: Task; pair?: MatchPair; question: ReturnType<typeof l14TaskQuestion> };
@@ -525,12 +544,15 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
             <div className="l14-match-column" aria-label="คำตอบ">{[...current.pairs].reverse().map(pair=>{const assigned=current.pairs.find(question=>matchSelection[question.id]===pair.answer);return <button className="l14-match-answer" type="button" key={pair.id} aria-pressed={matchFocus?.side==="answer"&&matchFocus.value===pair.answer} data-matched={Boolean(assigned)} onClick={()=>selectMatchAnswer(pair.answer)} lang="de">{pair.answer}</button>;})}</div>
           </div>
         </>}
-      </div> : visual && <div className="l14-practice-scene">
+      </div> : visual ? <div className="l14-practice-scene">
         <figure className="l14-practice-scene-image"><Image src={visual.image} width={640} height={480} sizes="(max-width: 700px) 100vw, 300px" alt={visual.imageAlt} /></figure>
         <div className="l14-practice-scene-choices">
           <GermanVisualQuestion key={current.id} visual={visual} />
           <div className="l14-phrase-choices">{current.options.map(option=><button className="button secondary" key={option} type="button" aria-pressed={selected===option} disabled={checked} onClick={()=>{setSelected(option);setProgress(p=>({...p,draft:{questionId:current.id,selected:option}}));}}>{option}</button>)}</div>
         </div>
+      </div> : (current.kind==="context"||current.kind==="dialogue") && <div className="l14-phrase-variant">
+        <h1>{current.prompt}</h1>
+        <div className="l14-phrase-choices">{current.options.map(option=><button className="button secondary" key={option} type="button" aria-pressed={selected===option} disabled={checked} onClick={()=>{setSelected(option);setProgress(p=>({...p,draft:{questionId:current.id,selected:option}}));}}>{option}</button>)}</div>
       </div>}
       {checked && current.kind==="match" ? <aside className={`practice-feedback ${answerCorrect?"correct":"incorrect"}`}>
         <h2>{answerCorrect?"ถูกต้องทั้งสองคู่":"ดูคำตอบแต่ละคู่"}</h2>

@@ -333,6 +333,14 @@ export function isVocabularyPracticeAvailable(user: User | null) {
   return Boolean(user) && (isTestWorkspaceUser(user) || isPracticeRolloutEnabled(process.env.NEXT_PUBLIC_L13_VOCABULARY_PRACTICE));
 }
 
+export function isL13GrammarPracticeAvailable(user: User | null) {
+  return Boolean(user) && (isTestWorkspaceUser(user) || process.env.NEXT_PUBLIC_L13_GRAMMAR_PRACTICE !== "false");
+}
+
+export function isL14GrammarPracticeAvailable(user: User | null) {
+  return Boolean(user) && (isTestWorkspaceUser(user) || isPracticeRolloutEnabled(process.env.NEXT_PUBLIC_L14_GRAMMAR_PRACTICE));
+}
+
 function isPracticeRolloutEnabled(flag: string | undefined) {
   return process.env.NODE_ENV === "production" ? flag !== "false" : flag === "true";
 }

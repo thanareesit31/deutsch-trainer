@@ -5,7 +5,9 @@
 
 ข้อกำหนดกลางเพิ่มเติม 24 ตุลาคม 2026: ใช้ `docs/ADAPTIVE_LEARNING_STANDARD.md` และสกิล `.agents/skills/design-adaptive-learning/SKILL.md` ร่วมกันทุกครั้งที่สร้างหรือแก้บทเรียนและแบบฝึกหัด. ทางเข้าหลังเรียนและการจัดรอบในเอกสารนี้ต้องผูกกับเป้าหมาย ทักษะย่อย และหลักฐานของผู้เรียน. การคละรูปแบบหรือเรียงง่ายไปยากอย่างเดียวไม่ใช่ adaptive progression. กฎเดิมที่ใช้ผลล่าสุดต่อ question ID เป็นแนวทางของต้นแบบ; ระบบวิเคราะห์ที่ขยายต่อไปต้องรวมหลักฐานผ่าน target/subskill โดยรักษารุ่นและคำตอบเดิม ไม่สรุปความสามารถทั้งเป้าหมายจาก question ID เดียว.
 
-แนวทางร่วมสำหรับทุกบทและทุกทักษะของโปรเจกต์. การเปิดใช้งานต้องมีคลังโจทย์ที่เหมาะกับบทและข้อมูลการฝึกที่ตรวจได้. ขณะนี้ไวยากรณ์บท 13 เปิดในบัญชีทดลอง. คำศัพท์และประโยคสำนวนบท 13–14 เปิดให้บัญชีผู้เรียนใน production โดยค่าเริ่มต้น; ตั้ง flag ของคลังเป็น `false` เพื่อปิด หรือใช้ `true` ใน development. ผลฝึกบันทึกเข้าบัญชีและมีสำรองในเบราว์เซอร์; ยังไม่ได้เปิดระบบแนะนำทุกหมวดหรือเชื่อม Progress หลัก.
+แนวทางร่วมสำหรับทุกบทและทุกทักษะของโปรเจกต์. การเปิดใช้งานต้องมีคลังโจทย์ที่เหมาะกับบทและข้อมูลการฝึกที่ตรวจได้. ไวยากรณ์บท 13 เปิดให้บัญชีผู้เรียนทั่วไป; ตั้ง `NEXT_PUBLIC_L13_GRAMMAR_PRACTICE=false` เพื่อปิด. คำศัพท์และประโยคสำนวนบท 13–14 เปิดให้บัญชีผู้เรียนใน production โดยค่าเริ่มต้น; ตั้ง flag ของคลังเป็น `false` เพื่อปิด หรือใช้ `true` ใน development. ผลฝึกบันทึกเข้าบัญชีและมีสำรองในเบราว์เซอร์; ยังไม่ได้เปิดระบบแนะนำทุกหมวดหรือเชื่อม Progress หลัก.
+
+As of 29 October 2026, L14 grammar also uses this flow for signed-in learners. Its guided round has two topics with five responses each. A returning learner resumes an unfinished round or receives up to 10 history-selected responses from the 100-response L14 grammar bank. The server validates grammar question definitions and learned-target eligibility for L13 and L14. Results remain separate from main Progress; this does not extend grammar practice to L15–L18.
 
 ## ทางเข้าหลังเรียน
 

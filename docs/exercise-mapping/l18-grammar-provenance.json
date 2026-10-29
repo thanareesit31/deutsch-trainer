@@ -4,6 +4,8 @@
   "bindings": [
     {
       "questionId": "A13-L18-IMPERATIV-SIE-001",
+      "subskill": "imperativ-sie-choice",
+      "difficulty": 1,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-3c"
@@ -14,6 +16,8 @@
     },
     {
       "questionId": "A13-L18-IMPERATIV-SIE-002",
+      "subskill": "imperativ-sie-choice",
+      "difficulty": 1,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-3c"
@@ -24,6 +28,8 @@
     },
     {
       "questionId": "A13-L18-IMPERATIV-SIE-003",
+      "subskill": "imperativ-sie-cloze",
+      "difficulty": 2,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-3c"
@@ -34,6 +40,8 @@
     },
     {
       "questionId": "A13-L18-IMPERATIV-SIE-004",
+      "subskill": "imperativ-sie-cloze",
+      "difficulty": 2,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-3c"
@@ -44,6 +52,8 @@
     },
     {
       "questionId": "A13-L18-IMPERATIV-SIE-005",
+      "subskill": "imperativ-sie-order",
+      "difficulty": 3,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-3c"
@@ -54,6 +64,8 @@
     },
     {
       "questionId": "A13-L18-SOLLEN-001",
+      "subskill": "sollen-choice",
+      "difficulty": 1,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-7"
@@ -64,6 +76,8 @@
     },
     {
       "questionId": "A13-L18-SOLLEN-002",
+      "subskill": "sollen-choice",
+      "difficulty": 1,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-7"
@@ -74,6 +88,8 @@
     },
     {
       "questionId": "A13-L18-SOLLEN-003",
+      "subskill": "sollen-cloze",
+      "difficulty": 2,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-7"
@@ -84,6 +100,8 @@
     },
     {
       "questionId": "A13-L18-SOLLEN-004",
+      "subskill": "sollen-cloze",
+      "difficulty": 2,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-7"
@@ -94,6 +112,8 @@
     },
     {
       "questionId": "A13-L18-SOLLEN-005",
+      "subskill": "sollen-order",
+      "difficulty": 3,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L18-7"

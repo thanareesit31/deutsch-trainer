@@ -61,6 +61,10 @@ export async function createDatabase() {
     "20261024010000_l14_vocabulary_practice_state.sql",
     "20261024020000_l13_vocabulary_challenge_state.sql",
     "20261025000000_optional_practice_confidence.sql",
+    "20261026000000_l14_phrase_sessions.sql",
+    "20261028010000_l13_phrase_variants.sql",
+    "20261028020000_l14_phrase_variants.sql",
+    "20261029000000_grammar_practice_validation.sql",
   ])
     await db.exec(
       await readFile(

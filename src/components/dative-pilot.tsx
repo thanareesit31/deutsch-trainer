@@ -8,6 +8,7 @@ import verbs from "@/data/l13-verbs-preview.json";
 import daily from "@/data/l13-daily-preview.json";
 import basic from "@/data/l13-grammar-basic-preview.json";
 import l14Grammar from "@/data/l14-grammar-preview.json";
+import l14GrammarDaily from "@/data/l14-grammar-daily-preview.json";
 import l14LokalePraepositionen from "@/data/l14-lokale-praepositionen-preview.json";
 import l14WoDativ from "@/data/l14-wo-dativ-preview.json";
 import l15Grammar from "@/data/l15-grammar-preview.json";
@@ -56,6 +57,7 @@ const previews = {
   daily: { html: daily.html, title: "ชุดฝึกแนะนำบท 13", accountPrefix: "daily" },
   basic: { html: basic.html, title: "แบบฝึกไวยากรณ์ Lektion 13", accountPrefix: "grammar-basic" },
   l14Grammar: { html: l14Grammar.html, title: "แบบฝึกไวยากรณ์ Lektion 14", accountPrefix: "l14-grammar" },
+  l14GrammarDaily: { html: l14GrammarDaily.html, title: "ชุดฝึกไวยากรณ์ Lektion 14 วันนี้", accountPrefix: "l14-grammar-daily" },
   l14LokalePraepositionen: { html: l14LokalePraepositionen.html, title: "แบบฝึก Lokale Präpositionen", accountPrefix: "l14-lokale-praepositionen" },
   l14WoDativ: { html: l14WoDativ.html, title: "แบบฝึก Wo? + Dativ", accountPrefix: "l14-wo-dativ" },
   l15Grammar: { html: l15Grammar.html, title: "แบบฝึกไวยากรณ์ Lektion 15", accountPrefix: "l15-grammar" },

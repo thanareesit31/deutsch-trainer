@@ -77,8 +77,9 @@ function normalize(v){return v.normalize('NFC').trim().replace(/\s+/g,' ').repla
 function answerText(item){return item.question.kind==='order'?item.selected.map(i=>item.question.tokens[i]).join(' '):item.response;}
 function grade(item){const q=item.question;if(q.kind==='write')return {correct:null,errorTag:null};const value=normalize(answerText(item));const correct=q.acceptedAnswers.some(x=>normalize(x)===value);return {correct,errorTag:correct?null:(q.kind==='order'?'word_order':q.knownErrors[value]||'unclassified')};}
 function combinedHistory(){
- const account=BANK.questions.every(q=>q.topicId.startsWith('L13-'))?window.name.split('-account-')[1]:undefined;
- return account?readL13PracticeHistory(account,localStorage,BANK.historySkill||'grammar'):parsePracticeHistory(JSON.stringify(state),'/practice/L13/grammar/basic');
+ const lesson=BANK.questions[0]?.topicId?.slice(0,3);
+ const account=lesson==='L13'||lesson==='L14'?window.name.split('-account-')[1]:undefined;
+ return account?readL13PracticeHistory(account,localStorage,BANK.historySkill||'grammar').filter(session=>session.href.startsWith('/practice/'+lesson+'/')):parsePracticeHistory(JSON.stringify(state),'/practice/'+(lesson||'L13')+'/grammar/basic');
 }
 function pickGroup(pool,count){if(BANK.historySkill==='phrases'){
  const seen=new Set(combinedHistory().flatMap(s=>s.items.map(i=>i.question.id)));
@@ -198,10 +199,10 @@ function outcome(items){const graded=items.filter(item=>typeof item.attempt?.cor
   if(BANK.requireLearned){
     if(!Array.isArray(event.data.learnedItemIds))return;
     const learned=new Set(event.data.learnedItemIds.filter(id=>typeof id==='string'));
-    BANK.questions=BANK.questions.filter(q=>(q.requiredItemIds||[q.itemId]).every(id=>learned.has(id)));
+    BANK.questions=BANK.questions.filter(q=>(q.requiredItemIds||[q.itemId||q.targetId]).every(id=>typeof id==='string'&&learned.has(id)));
     if(BANK.sequenceByTopic)BANK.questions=BANK.questions.filter(q=>q.interaction!=='match'||BANK.questions.filter(other=>other.matchGroupId===q.matchGroupId).length===2);
     if(BANK.nextTopics)BANK.nextTopic=BANK.nextTopics.find(topic=>topic.itemIds.some(id=>learned.has(id)));
-    if(state.sessions.some(session=>!session.completed&&session.items.some(item=>(item.question.requiredItemIds||[item.question.itemId]).some(id=>!learned.has(id))))){app.replaceChildren(node('p','ยังยืนยันประวัติเรียนของรอบที่ค้างไม่ได้ กรุณากลับไปตรวจบทเรียนก่อน'));app.append(button(BANK.learnLabel||'ไปเรียนคำศัพท์',()=>navigateTo(BANK.learnHref),{class:'primary'}));return;}
+    if(state.sessions.some(session=>!session.completed&&session.items.some(item=>(item.question.requiredItemIds||[item.question.itemId||item.question.targetId]).some(id=>!learned.has(id))))){app.replaceChildren(node('p','ยังยืนยันประวัติเรียนของรอบที่ค้างไม่ได้ กรุณากลับไปตรวจบทเรียนก่อน'));app.append(button(BANK.learnLabel||'ไปเรียนเนื้อหานี้',()=>navigateTo(BANK.learnHref),{class:'primary'}));return;}
     if(BANK.sections){BANK.sections=BANK.sections.filter(section=>BANK.questions.some(q=>(q.stageId||q.topicId)===section.topicId));BANK.defaultCount=BANK.sections.reduce((n,section)=>n+Math.min(section.count,BANK.questions.filter(q=>(q.stageId||q.topicId)===section.topicId).length),0);}
     if(!BANK.questions.length){app.replaceChildren(node('p',BANK.emptyMessage||'ยังไม่มีคำที่เรียนแล้วในหัวข้อนี้'));app.append(button(BANK.learnLabel||'ไปเรียนคำศัพท์',()=>navigateTo(BANK.learnHref),{class:'primary'}));return;}
   }

@@ -4,6 +4,8 @@
   "bindings": [
     {
       "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001",
+      "subskill": "temporale-praepositionen-choice",
+      "difficulty": 1,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L16-7"
@@ -14,6 +16,8 @@
     },
     {
       "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002",
+      "subskill": "temporale-praepositionen-choice",
+      "difficulty": 1,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L16-7"
@@ -24,6 +28,8 @@
     },
     {
       "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003",
+      "subskill": "temporale-praepositionen-cloze",
+      "difficulty": 2,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L16-7"
@@ -34,6 +40,8 @@
     },
     {
       "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004",
+      "subskill": "temporale-praepositionen-cloze",
+      "difficulty": 2,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L16-7"
@@ -44,6 +52,8 @@
     },
     {
       "questionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005",
+      "subskill": "temporale-praepositionen-order",
+      "difficulty": 3,
       "authorship": "newly_authored",
       "contentBasis": [
         "A13-KB-L16-7"

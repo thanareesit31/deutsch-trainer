@@ -105,16 +105,19 @@ for(const group of groups){
  questions.push({id:group.topicId+'-write',version:2,itemId:required[0],requiredItemIds:required,topicId:group.topicId,topicName:group.title,kind:'write',subskill:'phrase_application',prompt:group.slug==='favorite'?'เขียน 2–3 ประโยคเกี่ยวกับสถานที่โปรดของคุณ':group.slug==='city'?'เขียน 2–3 ประโยคบอกว่ามีอะไรในเมืองที่คุณรู้จัก':group.slug==='opinions'?'เขียน 2–3 ประโยคถามหรือบอกความคิดเห็นเกี่ยวกับเมือง': 'เขียน 2–3 ประโยคบอกความคิดเห็นเกี่ยวกับสถานที่ที่คุณชอบ',writeMinimum:30,rubric:['เขียน 2–3 ประโยคเกี่ยวกับสถานที่หรือหัวข้อที่เลือก','บอกความเห็นหรือข้อมูลให้เข้าใจได้','ใช้สำนวนจากบทเรียนอย่างน้อยหนึ่งประโยค'],acceptedAnswers:[],feedbackAnswer:'',translation:'งานเขียนของคุณ',explanation:'ใช้เกณฑ์ด้านล่างทบทวนงานเขียนด้วยตัวเอง คำตอบนี้ไม่ถูกตัดสินด้วยเฉลยประโยคเดียว',difficulty:3,knownErrors:{}});
  provenance.push({questionId:group.topicId+'-write',sourceIds:required,sourceId:'DEUTSCH_TRAINER_ORIGINAL',repositoryFile:'supabase/seed/catalog.json',method:'repository_inspection',publisherPage:null,inspectedAt:'2026-10-22',note:'New short free-writing task synthesizing learned project phrases; self-reviewed, not publisher content.'});
 }
-const legacyQuestions=questions.splice(0);
+const authoredVariants=questions.splice(0);
+const legacyQuestions=authoredVariants;
 const legacyProvenance=provenance.splice(0);
-questions.push(...buildPhraseSequence(items,groups));
-assert.equal(items.length,29);assert.equal(questions.length,20);assert.equal(new Set(questions.map(q=>q.id)).size,20);
-for(const q of questions){
+const guidedQuestions=buildPhraseSequence(items,groups);
+const scoredVariants=authoredVariants.filter(q=>q.kind!=='write');
+questions.push(...guidedQuestions,...scoredVariants);
+assert.equal(items.length,29);assert.equal(guidedQuestions.length,20);assert.equal(scoredVariants.length,94);assert.equal(questions.length,114);assert.equal(new Set(questions.map(q=>q.id)).size,questions.length);
+for(const q of guidedQuestions){
  const firstLine=q.sentence?.split('\n',1)[0]||'';
  assert(!/^เลือก(?:คำถาม|คำตอบ).*(?:ให้ตรงกับ|ให้เหมาะกับ)/u.test(firstLine),`${q.id}: task instruction is duplicated in the sentence`);
 }
 for(const group of groups){
- const topic=questions.filter(q=>q.topicId===group.topicId);
+ const topic=guidedQuestions.filter(q=>q.topicId===group.topicId);
  assert.equal(topic.length,5);assert.equal(new Set(topic.map(q=>q.itemId)).size,5);
  assert.deepEqual(topic.map(q=>q.subskill),['phrase_context','phrase_context','phrase_match','phrase_match','phrase_order']);
  assert.deepEqual(topic.map(q=>q.difficulty),[1,1,2,2,3]);
@@ -131,16 +134,17 @@ const template=await read('scripts/exercise-mapping/preview-template.html');cons
 const base={title:'ประโยคและสำนวนบท 13',sequenceByTopic:true,topicOrder:groups.map(g=>g.topicId),requireLearned:true,historySkill:'phrases',learnLabel:'ไปเรียนประโยคและสำนวน',emptyMessage:'ยังไม่มีประโยคที่เรียนแล้วในหัวข้อนี้',manualHref:'/practice/L13/phrases',learnHref:'/learn/L13/phrases',dailyHref:'/practice/L13/phrases/daily',skillLabels,skillCycle:['phrase_context','phrase_match','phrase_order'],thaiSupport:{translations:Object.fromEntries([...legacyQuestions,...questions].map(q=>[q.id,q.translation])),glossary:{},phrases:{}}};
 const matchingRuntime=await read('scripts/exercise-mapping/phrase-matching-runtime.js');
 const sections=groups.map(g=>({topicId:g.topicId,title:g.title,count:5}));
-const banks=groups.map(g=>({slug:g.slug,title:g.title,questions:questions.filter(q=>q.topicId===g.topicId),defaultCount:5}));
-banks.push({slug:'basic',title:base.title,questions,defaultCount:20,workflow:'guided',sections},{slug:'daily',title:'ฝึกประโยคและสำนวนต่อวันนี้',questions,defaultCount:10,workflow:'daily'});
+const banks=groups.map(g=>({slug:g.slug,title:g.title,questions:guidedQuestions.filter(q=>q.topicId===g.topicId),defaultCount:5}));
+banks.push({slug:'basic',title:base.title,questions:guidedQuestions,defaultCount:20,workflow:'guided',sections},{slug:'daily',title:'ฝึกประโยคและสำนวนต่อวันนี้',questions,defaultCount:10,workflow:'daily'});
 for(const bank of banks){const nextTopics=bank.workflow?[]:groups.slice(groups.findIndex(g=>g.slug===bank.slug)+1).map(g=>({title:g.title,href:'/practice/L13/phrases/'+g.slug,itemIds:g.ids}));const publicBank={...base,...bank,nextTopics,id:'l13-phrases-'+bank.slug+'-v1',storageKey:'deutsch-trainer:review-prototype:l13-phrases-'+bank.slug+':v1'};const html=template.replace('/*__PHRASE_MATCHING__*/',()=>matchingRuntime).replace('__PLANNER__',()=>planner).replace('__BANK__',()=>JSON.stringify(publicBank).replaceAll('<','\\u003c'));await writeFile(new URL('src/data/l13-phrases-'+bank.slug+'-preview.json',root),JSON.stringify({html})+'\n');}
 await writeFile(new URL('src/data/l13-phrases-catalog.json',root),JSON.stringify({groups,questions:questions.map(({id,itemId,requiredItemIds,coverageItemIds,topicId,kind,subskill})=>({id,itemId,requiredItemIds,coverageItemIds,topicId,kind,subskill}))})+'\n');
 await writeFile(new URL('docs/exercise-mapping/l13-phrases-bank.json',root),JSON.stringify({phraseCount:29,questionCount:questions.length,groups,questions,provenance,legacyQuestions,legacyProvenance},null,2)+'\n');
 const cells=value=>String(value).replaceAll('|','\\|').replaceAll('\n','<br>');
 const rows=questions.map(q=>`| ${q.id} | ${q.itemId} | ${q.requiredItemIds.join(', ')} | ${q.sequence} | ${q.difficulty} | ${q.subskill} | ${cells(q.context||q.sentence)} | ${cells(q.acceptedAnswers.join(' / '))} |`).join('\n');
-await writeFile(new URL('docs/exercise-mapping/L13_PHRASES_TOPIC_SEQUENCE.md',root),`# L13 phrase topic sequence\n\nGenerated from scripts/exercise-mapping/l13-phrase-sequence.mjs. Internal content review, 2026-10-22.\n\nThe 20 tasks target 20 distinct existing phrase items, five per learning topic. Each topic contains two dialogue choices, two matching pairs on one screen, and one contextual word-order task. Difficulty values 1/2/3 indicate recognition, matching and supported production, not calibrated examination levels.\n\nTarget answers come from supabase/seed/catalog.json. Dialogue cues, factual contexts and distractors are original web content. No newly inspected publisher exercise is claimed. The remaining nine taught phrases are not assessed by this initial round. Historical question definitions and submitted answers are retained. Required learned items include supporting source phrases used in dialogue cues; only the target counts for coverage.\n\n| Question ID | Target item | Required learned items | Topic position | Difficulty | Subskill | Cue / context | Accepted answer |\n| --- | --- | --- | ---: | ---: | --- | --- | --- |\n${rows}\n`);
+await writeFile(new URL('docs/exercise-mapping/L13_PHRASES_TOPIC_SEQUENCE.md',root),`# L13 phrase topic sequence\n\nGenerated from scripts/exercise-mapping/l13-phrase-sequence.mjs. Internal content review, 2026-10-28.\n\nThe guided round remains 20 tasks: 20 distinct phrase targets, five per learning topic. Each topic contains two contextual choices, two matching responses on one screen, and one contextual word-order task. Extra variants are available only to the history-based daily selector; one phrase target can occur at most once per round. The full catalog contains ${questions.length} scored variants. Four self-reviewed writing activities remain excluded from scored-round counts. Difficulty values indicate task demand and assistance, not calibrated learner levels.\n\nTarget answers come from supabase/seed/catalog.json. Dialogue cues, factual contexts and distractors are product-authored. Source metadata remains internal. Historical question IDs and submitted answers are retained. Required learned items include supporting phrase targets used in contexts; only the target response receives coverage credit.\n\n| Question ID | Target item | Required learned items | Topic position | Difficulty | Subskill | Cue / context | Accepted answer |\n| --- | --- | --- | ---: | ---: | --- | --- | --- |\n${rows}\n`);
 const definitions=questions.map(({id,version,itemId,requiredItemIds,topicId,subskill,kind,tokens,acceptedAnswers,interaction,matchGroupId,options})=>({id,version,itemId,requiredItemIds,topicId,subskill,kind,tokens,acceptedAnswers,interaction,matchGroupId,options}));
 const guard=await read('scripts/exercise-mapping/vocabulary-session-guard.sql');
-const migration="begin;\ninsert into public.phrase_practice_questions(id,version,definition) select value->>'id',(value->>'version')::integer,value from jsonb_array_elements($phrase_sequence$"+JSON.stringify(definitions)+"$phrase_sequence$::jsonb) on conflict(id,version) do nothing;\n"+guard+'\ncommit;\n';
-await writeFile(new URL('supabase/migrations/20261022050000_phrase_topic_sequence.sql',root),migration);
-console.log(`Built L13 phrases: 29 learning items, ${questions.length} active questions, 4 topics × 5 questions; ${legacyQuestions.length} legacy definitions retained in internal inventory.`);
+const extensionDefinitions=definitions.filter(q=>!guidedQuestions.some(guided=>guided.id===q.id));
+const migration="begin;\ninsert into public.phrase_practice_questions(id,version,definition) select value->>'id',(value->>'version')::integer,value from jsonb_array_elements($phrase_extension$"+JSON.stringify(extensionDefinitions)+"$phrase_extension$::jsonb) on conflict(id,version) do nothing;\n"+guard+'\ncommit;\n';
+await writeFile(new URL('supabase/migrations/20261028010000_l13_phrase_variants.sql',root),migration);
+console.log(`Built L13 phrases: 29 learning items, ${questions.length} scored questions (20 guided + ${scoredVariants.length} history-selected), 4 topics × 5 guided questions; 4 self-reviewed writing activities are excluded from the scored count.`);

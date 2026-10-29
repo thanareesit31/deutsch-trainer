@@ -1,6 +1,6 @@
 {
   "phraseCount": 29,
-  "questionCount": 20,
+  "questionCount": 114,
   "groups": [
     {
       "slug": "rating",
@@ -734,6 +734,2488 @@
       "coverageItemIds": [
         "L13-R026"
       ]
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R001",
+      "requiredItemIds": [
+        "L13-R001"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันชอบเบอร์ลิน",
+      "feedbackAnswer": "Berlin gefällt mir.",
+      "id": "L13-R001-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณอยากบอกว่าชอบเบอร์ลิน โดยยังไม่เน้นว่าชอบมาก — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Berlin gefällt mir.",
+        "Berlin gefällt mir sehr.",
+        "Das ist cool!",
+        "Es gibt keine Altstadt."
+      ],
+      "acceptedAnswers": [
+        "Berlin gefällt mir."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R001",
+      "requiredItemIds": [
+        "L13-R001"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันชอบเบอร์ลิน",
+      "feedbackAnswer": "Berlin gefällt mir.",
+      "id": "L13-R001-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Berlin ___ mir.",
+      "acceptedAnswers": [
+        "gefällt"
+      ],
+      "explanation": "gefallen ใช้บอกสิ่งที่ชอบ ในประโยคนี้ Berlin เป็นเอกพจน์จึงใช้ gefällt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R001",
+      "requiredItemIds": [
+        "L13-R001"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ฉันชอบเบอร์ลิน",
+      "feedbackAnswer": "Berlin gefällt mir.",
+      "id": "L13-R001-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Berlin",
+      "tokens": [
+        "Berlin",
+        "gefällt",
+        "mir."
+      ],
+      "acceptedAnswers": [
+        "Berlin gefällt mir."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Berlin ตามด้วยคำกริยา gefällt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R002",
+      "requiredItemIds": [
+        "L13-R002"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันชอบเบอร์ลินมาก",
+      "feedbackAnswer": "Berlin gefällt mir sehr.",
+      "id": "L13-R002-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณชอบเบอร์ลินมาก และต้องการเน้นระดับความชอบ — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Berlin gefällt mir sehr.",
+        "Das gefällt mir besonders gut.",
+        "Was gibt es hier?",
+        "Was ist Ihr Lieblingsort?"
+      ],
+      "acceptedAnswers": [
+        "Berlin gefällt mir sehr."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R002",
+      "requiredItemIds": [
+        "L13-R002"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันชอบเบอร์ลินมาก",
+      "feedbackAnswer": "Berlin gefällt mir sehr.",
+      "id": "L13-R002-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Berlin gefällt mir ___.",
+      "acceptedAnswers": [
+        "sehr"
+      ],
+      "explanation": "sehr ช่วยเน้นว่าชอบมากกว่าการพูดเพียง Berlin gefällt mir"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R002",
+      "requiredItemIds": [
+        "L13-R002"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ฉันชอบเบอร์ลินมาก",
+      "feedbackAnswer": "Berlin gefällt mir sehr.",
+      "id": "L13-R002-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Berlin",
+      "tokens": [
+        "Berlin",
+        "gefällt",
+        "mir",
+        "sehr."
+      ],
+      "acceptedAnswers": [
+        "Berlin gefällt mir sehr."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Berlin ตามด้วยคำกริยา gefällt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R003",
+      "requiredItemIds": [
+        "L13-R003"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันชอบสิ่งนั้นเป็นพิเศษ",
+      "feedbackAnswer": "Das gefällt mir besonders gut.",
+      "id": "L13-R003-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณกำลังชี้สิ่งหนึ่งและบอกว่าชอบสิ่งนั้นเป็นพิเศษ — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Das gefällt mir besonders gut.",
+        "Ich finde die Stadt toll.",
+        "Hier gibt es einen Park.",
+        "Mein Lieblingsort ist der Park."
+      ],
+      "acceptedAnswers": [
+        "Das gefällt mir besonders gut."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R003",
+      "requiredItemIds": [
+        "L13-R003"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันชอบสิ่งนั้นเป็นพิเศษ",
+      "feedbackAnswer": "Das gefällt mir besonders gut.",
+      "id": "L13-R003-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Das gefällt mir ___ gut.",
+      "acceptedAnswers": [
+        "besonders"
+      ],
+      "explanation": "besonders gut ใช้เน้นว่าชอบสิ่งนั้นเป็นพิเศษ"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R003",
+      "requiredItemIds": [
+        "L13-R003"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ฉันชอบสิ่งนั้นเป็นพิเศษ",
+      "feedbackAnswer": "Das gefällt mir besonders gut.",
+      "id": "L13-R003-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Das",
+      "tokens": [
+        "Das",
+        "gefällt",
+        "mir",
+        "besonders",
+        "gut."
+      ],
+      "acceptedAnswers": [
+        "Das gefällt mir besonders gut."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Das ตามด้วยคำกริยา gefällt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R004",
+      "requiredItemIds": [
+        "L13-R004"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเมืองนี้ยอดเยี่ยม",
+      "feedbackAnswer": "Ich finde die Stadt toll.",
+      "id": "L13-R004-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณอยากชมว่าเมืองนี้ยอดเยี่ยม โดยใช้ ich finde — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Ich finde die Stadt toll.",
+        "Ich finde Berlin interessant.",
+        "Es gibt viele Kirchen.",
+        "Ich liebe die Natur."
+      ],
+      "acceptedAnswers": [
+        "Ich finde die Stadt toll."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R004",
+      "requiredItemIds": [
+        "L13-R004"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเมืองนี้ยอดเยี่ยม",
+      "feedbackAnswer": "Ich finde die Stadt toll.",
+      "id": "L13-R004-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Ich ___ die Stadt toll.",
+      "acceptedAnswers": [
+        "finde"
+      ],
+      "explanation": "เมื่อประธานเป็น ich กริยา finden ใช้รูป finde"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R004",
+      "requiredItemIds": [
+        "L13-R004"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเมืองนี้ยอดเยี่ยม",
+      "feedbackAnswer": "Ich finde die Stadt toll.",
+      "id": "L13-R004-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Ich",
+      "tokens": [
+        "Ich",
+        "finde",
+        "die",
+        "Stadt",
+        "toll."
+      ],
+      "acceptedAnswers": [
+        "Ich finde die Stadt toll."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Ich ตามด้วยคำกริยา finde"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R005",
+      "requiredItemIds": [
+        "L13-R005"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเบอร์ลินน่าสนใจ",
+      "feedbackAnswer": "Ich finde Berlin interessant.",
+      "id": "L13-R005-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณอยากบอกว่าเบอร์ลินน่าสนใจ โดยใช้ ich finde — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Ich finde Berlin interessant.",
+        "Die Stadt ist einfach anders.",
+        "Es gibt auch ein Café.",
+        "Dort kann man spazieren gehen."
+      ],
+      "acceptedAnswers": [
+        "Ich finde Berlin interessant."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R005",
+      "requiredItemIds": [
+        "L13-R005"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเบอร์ลินน่าสนใจ",
+      "feedbackAnswer": "Ich finde Berlin interessant.",
+      "id": "L13-R005-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Ich finde Berlin ___.",
+      "acceptedAnswers": [
+        "interessant"
+      ],
+      "explanation": "interessant หมายถึงน่าสนใจ ใช้บอกความเห็นต่อเบอร์ลิน"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R005",
+      "requiredItemIds": [
+        "L13-R005"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเบอร์ลินน่าสนใจ",
+      "feedbackAnswer": "Ich finde Berlin interessant.",
+      "id": "L13-R005-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Ich",
+      "tokens": [
+        "Ich",
+        "finde",
+        "Berlin",
+        "interessant."
+      ],
+      "acceptedAnswers": [
+        "Ich finde Berlin interessant."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Ich ตามด้วยคำกริยา finde"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R006",
+      "requiredItemIds": [
+        "L13-R006"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "เมืองนี้แตกต่างจริง ๆ",
+      "feedbackAnswer": "Die Stadt ist einfach anders.",
+      "id": "L13-R006-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณอยากบอกว่าเมืองนี้แตกต่างจริง ๆ โดยไม่ได้บอกว่าใหญ่หรือเล็ก — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Die Stadt ist einfach anders.",
+        "Die Stadt ist zu groß.",
+        "In der Nähe gibt es auch einen See.",
+        "Dort kann man auch angeln."
+      ],
+      "acceptedAnswers": [
+        "Die Stadt ist einfach anders."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R006",
+      "requiredItemIds": [
+        "L13-R006"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "เมืองนี้แตกต่างจริง ๆ",
+      "feedbackAnswer": "Die Stadt ist einfach anders.",
+      "id": "L13-R006-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Die Stadt ist einfach ___.",
+      "acceptedAnswers": [
+        "anders"
+      ],
+      "explanation": "anders หมายถึงแตกต่าง ใช้บอกลักษณะของเมืองนี้"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R006",
+      "requiredItemIds": [
+        "L13-R006"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "เมืองนี้แตกต่างจริง ๆ",
+      "feedbackAnswer": "Die Stadt ist einfach anders.",
+      "id": "L13-R006-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Die",
+      "tokens": [
+        "Die",
+        "Stadt",
+        "ist",
+        "einfach",
+        "anders."
+      ],
+      "acceptedAnswers": [
+        "Die Stadt ist einfach anders."
+      ],
+      "explanation": "Die Stadt เป็นประธานหนึ่งชุด ตามด้วย ist แล้วจึงบอกลักษณะของเมือง"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R007",
+      "requiredItemIds": [
+        "L13-R007"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "เมืองนี้ใหญ่เกินไป",
+      "feedbackAnswer": "Die Stadt ist zu groß.",
+      "id": "L13-R007-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณรู้สึกว่าเมืองนี้ใหญ่เกินไป โดยเริ่มพูดถึง die Stadt — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Die Stadt ist zu groß.",
+        "Das ist super!",
+        "Leider gibt es keinen Hafen.",
+        "Dort treffen wir Freunde."
+      ],
+      "acceptedAnswers": [
+        "Die Stadt ist zu groß."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R007",
+      "requiredItemIds": [
+        "L13-R007"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "เมืองนี้ใหญ่เกินไป",
+      "feedbackAnswer": "Die Stadt ist zu groß.",
+      "id": "L13-R007-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Die Stadt ist ___ groß.",
+      "acceptedAnswers": [
+        "zu"
+      ],
+      "explanation": "zu groß หมายถึงใหญ่เกินไป คำว่า zu จึงเปลี่ยนความหมายจากแค่ใหญ่"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R007",
+      "requiredItemIds": [
+        "L13-R007"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "เมืองนี้ใหญ่เกินไป",
+      "feedbackAnswer": "Die Stadt ist zu groß.",
+      "id": "L13-R007-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Die",
+      "tokens": [
+        "Die",
+        "Stadt",
+        "ist",
+        "zu",
+        "groß."
+      ],
+      "acceptedAnswers": [
+        "Die Stadt ist zu groß."
+      ],
+      "explanation": "Die Stadt เป็นประธานหนึ่งชุด ตามด้วย ist แล้วจึงบอกลักษณะของเมือง"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R008",
+      "requiredItemIds": [
+        "L13-R008"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "นั่นยอดเยี่ยมมาก!",
+      "feedbackAnswer": "Das ist super!",
+      "id": "L13-R008-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "เพื่อนบอกข่าวดี คุณตอบรับด้วยคำว่า super — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Das ist super!",
+        "Das ist cool!",
+        "Es gibt keine Altstadt.",
+        "Leider gibt es keinen Fußballplatz."
+      ],
+      "acceptedAnswers": [
+        "Das ist super!"
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R008",
+      "requiredItemIds": [
+        "L13-R008"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "นั่นยอดเยี่ยมมาก!",
+      "feedbackAnswer": "Das ist super!",
+      "id": "L13-R008-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Das ist ___!",
+      "acceptedAnswers": [
+        "super"
+      ],
+      "explanation": "super เป็นคำชมว่าเยี่ยมหรือยอดเยี่ยม"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R008",
+      "requiredItemIds": [
+        "L13-R008"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "นั่นยอดเยี่ยมมาก!",
+      "feedbackAnswer": "Das ist super!",
+      "id": "L13-R008-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Das",
+      "tokens": [
+        "Das",
+        "ist",
+        "super!"
+      ],
+      "acceptedAnswers": [
+        "Das ist super!"
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Das ตามด้วยคำกริยา ist"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R009",
+      "requiredItemIds": [
+        "L13-R009"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "นั่นเจ๋งมาก!",
+      "feedbackAnswer": "Das ist cool!",
+      "id": "L13-R009-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "เพื่อนเล่าเรื่องน่าตื่นเต้น คุณตอบรับด้วยคำว่า cool — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Das ist cool!",
+        "Was gibt es hier?",
+        "Was ist Ihr Lieblingsort?",
+        "Wie finden Sie Berlin?"
+      ],
+      "acceptedAnswers": [
+        "Das ist cool!"
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R009",
+      "requiredItemIds": [
+        "L13-R009"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "นั่นเจ๋งมาก!",
+      "feedbackAnswer": "Das ist cool!",
+      "id": "L13-R009-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Das ist ___!",
+      "acceptedAnswers": [
+        "cool"
+      ],
+      "explanation": "cool เป็นคำแสดงความรู้สึกเชิงบวกว่าเจ๋ง"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R009",
+      "requiredItemIds": [
+        "L13-R009"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "นั่นเจ๋งมาก!",
+      "feedbackAnswer": "Das ist cool!",
+      "id": "L13-R009-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Das",
+      "tokens": [
+        "Das",
+        "ist",
+        "cool!"
+      ],
+      "acceptedAnswers": [
+        "Das ist cool!"
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Das ตามด้วยคำกริยา ist"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R010",
+      "requiredItemIds": [
+        "L13-R010"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ที่นี่มีอะไรบ้าง",
+      "feedbackAnswer": "Was gibt es hier?",
+      "id": "L13-R010-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณต้องการถามว่าที่นี่มีอะไรบ้าง — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Was gibt es hier?",
+        "Hier gibt es einen Park.",
+        "Mein Lieblingsort ist der Park.",
+        "Möchten Sie Berlin besuchen?"
+      ],
+      "acceptedAnswers": [
+        "Was gibt es hier?"
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R010",
+      "requiredItemIds": [
+        "L13-R010"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ที่นี่มีอะไรบ้าง",
+      "feedbackAnswer": "Was gibt es hier?",
+      "id": "L13-R010-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Was ___ es hier?",
+      "acceptedAnswers": [
+        "gibt"
+      ],
+      "explanation": "คำถาม Was gibt es hier? ใช้โครงสร้าง es gibt เพื่อถามว่าสถานที่นี้มีอะไร"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R010",
+      "requiredItemIds": [
+        "L13-R010"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ที่นี่มีอะไรบ้าง",
+      "feedbackAnswer": "Was gibt es hier?",
+      "id": "L13-R010-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Was",
+      "tokens": [
+        "Was",
+        "gibt",
+        "es",
+        "hier?"
+      ],
+      "acceptedAnswers": [
+        "Was gibt es hier?"
+      ],
+      "explanation": "คำถามนี้เริ่มด้วย Was ตามด้วยคำกริยา gibt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R011",
+      "requiredItemIds": [
+        "L13-R011"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ที่นี่มีสวนสาธารณะ",
+      "feedbackAnswer": "Hier gibt es einen Park.",
+      "id": "L13-R011-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณต้องการบอกว่าที่นี่มีสวนสาธารณะ — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Hier gibt es einen Park.",
+        "Es gibt viele Kirchen.",
+        "Ich liebe die Natur.",
+        "Ich glaube, Berlin ist sehr interessant."
+      ],
+      "acceptedAnswers": [
+        "Hier gibt es einen Park."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R011",
+      "requiredItemIds": [
+        "L13-R011"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ที่นี่มีสวนสาธารณะ",
+      "feedbackAnswer": "Hier gibt es einen Park.",
+      "id": "L13-R011-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Hier gibt es ___ Park.",
+      "acceptedAnswers": [
+        "einen"
+      ],
+      "explanation": "Park เป็นคำนามเพศชาย หลัง es gibt จึงใช้ einen Park"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R011",
+      "requiredItemIds": [
+        "L13-R011"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ที่นี่มีสวนสาธารณะ",
+      "feedbackAnswer": "Hier gibt es einen Park.",
+      "id": "L13-R011-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Hier",
+      "tokens": [
+        "Hier",
+        "gibt",
+        "es",
+        "einen",
+        "Park."
+      ],
+      "acceptedAnswers": [
+        "Hier gibt es einen Park."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Hier ตามด้วยคำกริยา gibt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R012",
+      "requiredItemIds": [
+        "L13-R012"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "มีโบสถ์หลายแห่ง",
+      "feedbackAnswer": "Es gibt viele Kirchen.",
+      "id": "L13-R012-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณต้องการบอกว่ามีโบสถ์หลายแห่ง — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Es gibt viele Kirchen.",
+        "Es gibt auch ein Café.",
+        "Dort kann man spazieren gehen.",
+        "Ich finde die Stadt zu groß."
+      ],
+      "acceptedAnswers": [
+        "Es gibt viele Kirchen."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R012",
+      "requiredItemIds": [
+        "L13-R012"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "มีโบสถ์หลายแห่ง",
+      "feedbackAnswer": "Es gibt viele Kirchen.",
+      "id": "L13-R012-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Es gibt ___ Kirchen.",
+      "acceptedAnswers": [
+        "viele"
+      ],
+      "explanation": "Kirchen เป็นพหูพจน์ ใช้ viele เพื่อบอกว่ามีหลายแห่ง"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R012",
+      "requiredItemIds": [
+        "L13-R012"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "มีโบสถ์หลายแห่ง",
+      "feedbackAnswer": "Es gibt viele Kirchen.",
+      "id": "L13-R012-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Es",
+      "tokens": [
+        "Es",
+        "gibt",
+        "viele",
+        "Kirchen."
+      ],
+      "acceptedAnswers": [
+        "Es gibt viele Kirchen."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Es ตามด้วยคำกริยา gibt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R013",
+      "requiredItemIds": [
+        "L13-R013"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "มีคาเฟ่ด้วย",
+      "feedbackAnswer": "Es gibt auch ein Café.",
+      "id": "L13-R013-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณกำลังเพิ่มข้อมูลว่ามีคาเฟ่ด้วย — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Es gibt auch ein Café.",
+        "In der Nähe gibt es auch einen See.",
+        "Dort kann man auch angeln.",
+        "Was gefällt Ihnen besonders?"
+      ],
+      "acceptedAnswers": [
+        "Es gibt auch ein Café."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R013",
+      "requiredItemIds": [
+        "L13-R013"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "มีคาเฟ่ด้วย",
+      "feedbackAnswer": "Es gibt auch ein Café.",
+      "id": "L13-R013-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Es gibt ___ ein Café.",
+      "acceptedAnswers": [
+        "auch"
+      ],
+      "explanation": "auch หมายถึงด้วย ใช้เพิ่มข้อมูลว่ามีคาเฟ่เช่นกัน"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R013",
+      "requiredItemIds": [
+        "L13-R013"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "มีคาเฟ่ด้วย",
+      "feedbackAnswer": "Es gibt auch ein Café.",
+      "id": "L13-R013-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Es",
+      "tokens": [
+        "Es",
+        "gibt",
+        "auch",
+        "ein",
+        "Café."
+      ],
+      "acceptedAnswers": [
+        "Es gibt auch ein Café."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Es ตามด้วยคำกริยา gibt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R014",
+      "requiredItemIds": [
+        "L13-R014"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "บริเวณใกล้เคียงมีทะเลสาบด้วย",
+      "feedbackAnswer": "In der Nähe gibt es auch einen See.",
+      "id": "L13-R014-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณต้องการบอกว่าบริเวณใกล้เคียงมีทะเลสาบด้วย — ___",
+      "sentenceLang": "th",
+      "options": [
+        "In der Nähe gibt es auch einen See.",
+        "Leider gibt es keinen Hafen.",
+        "Dort treffen wir Freunde.",
+        "Was fehlt Ihnen?"
+      ],
+      "acceptedAnswers": [
+        "In der Nähe gibt es auch einen See."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R014",
+      "requiredItemIds": [
+        "L13-R014"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "บริเวณใกล้เคียงมีทะเลสาบด้วย",
+      "feedbackAnswer": "In der Nähe gibt es auch einen See.",
+      "id": "L13-R014-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "In der ___ gibt es auch einen See.",
+      "acceptedAnswers": [
+        "Nähe"
+      ],
+      "explanation": "in der Nähe หมายถึงในบริเวณใกล้เคียง โดย Nähe ขึ้นต้นด้วย N ตัวใหญ่และใช้ ä"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R014",
+      "requiredItemIds": [
+        "L13-R014"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "บริเวณใกล้เคียงมีทะเลสาบด้วย",
+      "feedbackAnswer": "In der Nähe gibt es auch einen See.",
+      "id": "L13-R014-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย In",
+      "tokens": [
+        "In",
+        "der",
+        "Nähe",
+        "gibt",
+        "es",
+        "auch",
+        "einen",
+        "See."
+      ],
+      "acceptedAnswers": [
+        "In der Nähe gibt es auch einen See."
+      ],
+      "explanation": "In der Nähe เป็นส่วนบอกสถานที่หนึ่งชุด ตามด้วย gibt es แล้วจึงบอกสิ่งที่มี"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R015",
+      "requiredItemIds": [
+        "L13-R015"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "น่าเสียดายที่ไม่มีท่าเรือ",
+      "feedbackAnswer": "Leider gibt es keinen Hafen.",
+      "id": "L13-R015-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณเสียดายที่ไม่มีท่าเรือ — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Leider gibt es keinen Hafen.",
+        "Es gibt keine Altstadt.",
+        "Leider gibt es keinen Fußballplatz.",
+        "Berlin gefällt mir."
+      ],
+      "acceptedAnswers": [
+        "Leider gibt es keinen Hafen."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R015",
+      "requiredItemIds": [
+        "L13-R015"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "น่าเสียดายที่ไม่มีท่าเรือ",
+      "feedbackAnswer": "Leider gibt es keinen Hafen.",
+      "id": "L13-R015-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Leider gibt es ___ Hafen.",
+      "acceptedAnswers": [
+        "keinen"
+      ],
+      "explanation": "Hafen เป็นคำนามเพศชาย หลัง es gibt ใช้ keinen Hafen เพื่อบอกว่าไม่มีท่าเรือ"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R015",
+      "requiredItemIds": [
+        "L13-R015"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "น่าเสียดายที่ไม่มีท่าเรือ",
+      "feedbackAnswer": "Leider gibt es keinen Hafen.",
+      "id": "L13-R015-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Leider",
+      "tokens": [
+        "Leider",
+        "gibt",
+        "es",
+        "keinen",
+        "Hafen."
+      ],
+      "acceptedAnswers": [
+        "Leider gibt es keinen Hafen."
+      ],
+      "explanation": "Leider อยู่ต้นประโยค ตามด้วย gibt es แล้วจึงบอกสิ่งที่ไม่มี"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R016",
+      "requiredItemIds": [
+        "L13-R016"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ไม่มีย่านเมืองเก่า",
+      "feedbackAnswer": "Es gibt keine Altstadt.",
+      "id": "L13-R016-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณต้องการบอกว่าไม่มีย่านเมืองเก่า โดยไม่เพิ่มความรู้สึกเสียดาย — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Es gibt keine Altstadt.",
+        "Was ist Ihr Lieblingsort?",
+        "Wie finden Sie Berlin?",
+        "Berlin gefällt mir sehr."
+      ],
+      "acceptedAnswers": [
+        "Es gibt keine Altstadt."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R016",
+      "requiredItemIds": [
+        "L13-R016"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ไม่มีย่านเมืองเก่า",
+      "feedbackAnswer": "Es gibt keine Altstadt.",
+      "id": "L13-R016-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Es gibt ___ Altstadt.",
+      "acceptedAnswers": [
+        "keine"
+      ],
+      "explanation": "Altstadt เป็นคำนามเพศหญิง รูปปฏิเสธในประโยคนี้จึงเป็น keine Altstadt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R016",
+      "requiredItemIds": [
+        "L13-R016"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ไม่มีย่านเมืองเก่า",
+      "feedbackAnswer": "Es gibt keine Altstadt.",
+      "id": "L13-R016-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Es",
+      "tokens": [
+        "Es",
+        "gibt",
+        "keine",
+        "Altstadt."
+      ],
+      "acceptedAnswers": [
+        "Es gibt keine Altstadt."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Es ตามด้วยคำกริยา gibt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R017",
+      "requiredItemIds": [
+        "L13-R017"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "สถานที่โปรดของคุณคือที่ไหน",
+      "feedbackAnswer": "Was ist Ihr Lieblingsort?",
+      "id": "L13-R017-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณถามคู่สนทนาอย่างสุภาพว่าสถานที่โปรดคือที่ไหน — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Was ist Ihr Lieblingsort?",
+        "Mein Lieblingsort ist der Park.",
+        "Möchten Sie Berlin besuchen?",
+        "Das gefällt mir besonders gut."
+      ],
+      "acceptedAnswers": [
+        "Was ist Ihr Lieblingsort?"
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R017",
+      "requiredItemIds": [
+        "L13-R017"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "สถานที่โปรดของคุณคือที่ไหน",
+      "feedbackAnswer": "Was ist Ihr Lieblingsort?",
+      "id": "L13-R017-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Was ist ___ Lieblingsort?",
+      "acceptedAnswers": [
+        "Ihr"
+      ],
+      "explanation": "Ihr ในคำถามนี้หมายถึงของคุณ ใช้ถามคู่สนทนาอย่างสุภาพ"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R017",
+      "requiredItemIds": [
+        "L13-R017"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "สถานที่โปรดของคุณคือที่ไหน",
+      "feedbackAnswer": "Was ist Ihr Lieblingsort?",
+      "id": "L13-R017-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Was",
+      "tokens": [
+        "Was",
+        "ist",
+        "Ihr",
+        "Lieblingsort?"
+      ],
+      "acceptedAnswers": [
+        "Was ist Ihr Lieblingsort?"
+      ],
+      "explanation": "คำถามนี้เริ่มด้วย Was ตามด้วยคำกริยา ist"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R018",
+      "requiredItemIds": [
+        "L13-R018"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "สถานที่โปรดของฉันคือสวนสาธารณะ",
+      "feedbackAnswer": "Mein Lieblingsort ist der Park.",
+      "id": "L13-R018-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณบอกว่าสถานที่โปรดของคุณคือสวนสาธารณะ — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Mein Lieblingsort ist der Park.",
+        "Ich liebe die Natur.",
+        "Ich glaube, Berlin ist sehr interessant.",
+        "Ich finde die Stadt toll."
+      ],
+      "acceptedAnswers": [
+        "Mein Lieblingsort ist der Park."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R018",
+      "requiredItemIds": [
+        "L13-R018"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "สถานที่โปรดของฉันคือสวนสาธารณะ",
+      "feedbackAnswer": "Mein Lieblingsort ist der Park.",
+      "id": "L13-R018-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "___ Lieblingsort ist der Park.",
+      "acceptedAnswers": [
+        "Mein"
+      ],
+      "explanation": "Mein Lieblingsort หมายถึงสถานที่โปรดของฉัน โดย Lieblingsort ใช้ der จึงเป็น mein เมื่อขึ้นต้นประโยคจึงเขียน Mein"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R018",
+      "requiredItemIds": [
+        "L13-R018"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "สถานที่โปรดของฉันคือสวนสาธารณะ",
+      "feedbackAnswer": "Mein Lieblingsort ist der Park.",
+      "id": "L13-R018-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Mein",
+      "tokens": [
+        "Mein",
+        "Lieblingsort",
+        "ist",
+        "der",
+        "Park."
+      ],
+      "acceptedAnswers": [
+        "Mein Lieblingsort ist der Park."
+      ],
+      "explanation": "Mein Lieblingsort เป็นประธานหนึ่งชุด ตามด้วย ist แล้วจึงบอกสถานที่"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R019",
+      "requiredItemIds": [
+        "L13-R019"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันรักธรรมชาติ",
+      "feedbackAnswer": "Ich liebe die Natur.",
+      "id": "L13-R019-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณบอกว่ารักธรรมชาติ — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Ich liebe die Natur.",
+        "Dort kann man spazieren gehen.",
+        "Ich finde die Stadt zu groß.",
+        "Ich finde Berlin interessant."
+      ],
+      "acceptedAnswers": [
+        "Ich liebe die Natur."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R019",
+      "requiredItemIds": [
+        "L13-R019"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันรักธรรมชาติ",
+      "feedbackAnswer": "Ich liebe die Natur.",
+      "id": "L13-R019-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Ich ___ die Natur.",
+      "acceptedAnswers": [
+        "liebe"
+      ],
+      "explanation": "เมื่อประธานเป็น ich กริยา lieben ใช้รูป liebe"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R019",
+      "requiredItemIds": [
+        "L13-R019"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ฉันรักธรรมชาติ",
+      "feedbackAnswer": "Ich liebe die Natur.",
+      "id": "L13-R019-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Ich",
+      "tokens": [
+        "Ich",
+        "liebe",
+        "die",
+        "Natur."
+      ],
+      "acceptedAnswers": [
+        "Ich liebe die Natur."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Ich ตามด้วยคำกริยา liebe"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R020",
+      "requiredItemIds": [
+        "L13-R020"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ที่นั่นสามารถเดินเล่นได้",
+      "feedbackAnswer": "Dort kann man spazieren gehen.",
+      "id": "L13-R020-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณบอกว่าสามารถเดินเล่นที่นั่นได้ — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Dort kann man spazieren gehen.",
+        "Dort kann man auch angeln.",
+        "Was gefällt Ihnen besonders?",
+        "Die Stadt ist einfach anders."
+      ],
+      "acceptedAnswers": [
+        "Dort kann man spazieren gehen."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R020",
+      "requiredItemIds": [
+        "L13-R020"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ที่นั่นสามารถเดินเล่นได้",
+      "feedbackAnswer": "Dort kann man spazieren gehen.",
+      "id": "L13-R020-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Dort kann man ___ gehen.",
+      "acceptedAnswers": [
+        "spazieren"
+      ],
+      "explanation": "spazieren gehen เป็นวลีหมายถึงเดินเล่น ต้องมีทั้งสองคำ"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R020",
+      "requiredItemIds": [
+        "L13-R020"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ที่นั่นสามารถเดินเล่นได้",
+      "feedbackAnswer": "Dort kann man spazieren gehen.",
+      "id": "L13-R020-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Dort",
+      "tokens": [
+        "Dort",
+        "kann",
+        "man",
+        "spazieren",
+        "gehen."
+      ],
+      "acceptedAnswers": [
+        "Dort kann man spazieren gehen."
+      ],
+      "explanation": "Dort อยู่ต้นประโยค ตามด้วย kann และวางกริยาหลักไว้ท้ายประโยค"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R021",
+      "requiredItemIds": [
+        "L13-R021"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ที่นั่นสามารถตกปลาได้ด้วย",
+      "feedbackAnswer": "Dort kann man auch angeln.",
+      "id": "L13-R021-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณเพิ่มข้อมูลว่าสามารถตกปลาที่นั่นได้ด้วย — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Dort kann man auch angeln.",
+        "Dort treffen wir Freunde.",
+        "Was fehlt Ihnen?",
+        "Die Stadt ist zu groß."
+      ],
+      "acceptedAnswers": [
+        "Dort kann man auch angeln."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R021",
+      "requiredItemIds": [
+        "L13-R021"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ที่นั่นสามารถตกปลาได้ด้วย",
+      "feedbackAnswer": "Dort kann man auch angeln.",
+      "id": "L13-R021-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Dort kann man auch ___.",
+      "acceptedAnswers": [
+        "angeln"
+      ],
+      "explanation": "angeln หมายถึงตกปลา ในประโยคที่มี kann กริยาหลักอยู่ท้ายในรูป Infinitiv"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R021",
+      "requiredItemIds": [
+        "L13-R021"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ที่นั่นสามารถตกปลาได้ด้วย",
+      "feedbackAnswer": "Dort kann man auch angeln.",
+      "id": "L13-R021-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Dort",
+      "tokens": [
+        "Dort",
+        "kann",
+        "man",
+        "auch",
+        "angeln."
+      ],
+      "acceptedAnswers": [
+        "Dort kann man auch angeln."
+      ],
+      "explanation": "Dort อยู่ต้นประโยค ตามด้วย kann และวางกริยาหลักไว้ท้ายประโยค"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R022",
+      "requiredItemIds": [
+        "L13-R022"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "พวกเราพบเพื่อนที่นั่น",
+      "feedbackAnswer": "Dort treffen wir Freunde.",
+      "id": "L13-R022-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณบอกว่าพวกเราพบเพื่อนที่นั่น — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Dort treffen wir Freunde.",
+        "Leider gibt es keinen Fußballplatz.",
+        "Berlin gefällt mir.",
+        "Das ist super!"
+      ],
+      "acceptedAnswers": [
+        "Dort treffen wir Freunde."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R022",
+      "requiredItemIds": [
+        "L13-R022"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "พวกเราพบเพื่อนที่นั่น",
+      "feedbackAnswer": "Dort treffen wir Freunde.",
+      "id": "L13-R022-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Dort ___ wir Freunde.",
+      "acceptedAnswers": [
+        "treffen"
+      ],
+      "explanation": "เมื่อประธานเป็น wir กริยา treffen ใช้รูป treffen"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R022",
+      "requiredItemIds": [
+        "L13-R022"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "พวกเราพบเพื่อนที่นั่น",
+      "feedbackAnswer": "Dort treffen wir Freunde.",
+      "id": "L13-R022-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Dort",
+      "tokens": [
+        "Dort",
+        "treffen",
+        "wir",
+        "Freunde."
+      ],
+      "acceptedAnswers": [
+        "Dort treffen wir Freunde."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Dort ตามด้วยคำกริยา treffen"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R023",
+      "requiredItemIds": [
+        "L13-R023"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "น่าเสียดายที่ไม่มีสนามฟุตบอล",
+      "feedbackAnswer": "Leider gibt es keinen Fußballplatz.",
+      "id": "L13-R023-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณเสียดายที่ไม่มีสนามฟุตบอล — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Leider gibt es keinen Fußballplatz.",
+        "Wie finden Sie Berlin?",
+        "Berlin gefällt mir sehr.",
+        "Das ist cool!"
+      ],
+      "acceptedAnswers": [
+        "Leider gibt es keinen Fußballplatz."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R023",
+      "requiredItemIds": [
+        "L13-R023"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "น่าเสียดายที่ไม่มีสนามฟุตบอล",
+      "feedbackAnswer": "Leider gibt es keinen Fußballplatz.",
+      "id": "L13-R023-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Leider gibt es ___ Fußballplatz.",
+      "acceptedAnswers": [
+        "keinen"
+      ],
+      "explanation": "Fußballplatz เป็นคำนามเพศชาย หลัง es gibt ใช้ keinen Fußballplatz เพื่อบอกว่าไม่มี"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R023",
+      "requiredItemIds": [
+        "L13-R023"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "น่าเสียดายที่ไม่มีสนามฟุตบอล",
+      "feedbackAnswer": "Leider gibt es keinen Fußballplatz.",
+      "id": "L13-R023-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Leider",
+      "tokens": [
+        "Leider",
+        "gibt",
+        "es",
+        "keinen",
+        "Fußballplatz."
+      ],
+      "acceptedAnswers": [
+        "Leider gibt es keinen Fußballplatz."
+      ],
+      "explanation": "Leider อยู่ต้นประโยค ตามด้วย gibt es แล้วจึงบอกสิ่งที่ไม่มี"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R024",
+      "requiredItemIds": [
+        "L13-R024"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "คุณคิดอย่างไรกับเบอร์ลิน",
+      "feedbackAnswer": "Wie finden Sie Berlin?",
+      "id": "L13-R024-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณถามความเห็นของคู่สนทนาอย่างสุภาพเกี่ยวกับเบอร์ลิน — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Wie finden Sie Berlin?",
+        "Möchten Sie Berlin besuchen?",
+        "Das gefällt mir besonders gut.",
+        "Was gibt es hier?"
+      ],
+      "acceptedAnswers": [
+        "Wie finden Sie Berlin?"
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R024",
+      "requiredItemIds": [
+        "L13-R024"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "คุณคิดอย่างไรกับเบอร์ลิน",
+      "feedbackAnswer": "Wie finden Sie Berlin?",
+      "id": "L13-R024-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Wie ___ Sie Berlin?",
+      "acceptedAnswers": [
+        "finden"
+      ],
+      "explanation": "Sie รูปสุภาพใช้ finden ในคำถาม Wie finden Sie Berlin?"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R024",
+      "requiredItemIds": [
+        "L13-R024"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "คุณคิดอย่างไรกับเบอร์ลิน",
+      "feedbackAnswer": "Wie finden Sie Berlin?",
+      "id": "L13-R024-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Wie",
+      "tokens": [
+        "Wie",
+        "finden",
+        "Sie",
+        "Berlin?"
+      ],
+      "acceptedAnswers": [
+        "Wie finden Sie Berlin?"
+      ],
+      "explanation": "คำถามนี้เริ่มด้วย Wie ตามด้วยคำกริยา finden"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R025",
+      "requiredItemIds": [
+        "L13-R025"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "คุณอยากไปเที่ยวเบอร์ลินไหม",
+      "feedbackAnswer": "Möchten Sie Berlin besuchen?",
+      "id": "L13-R025-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณถามอย่างสุภาพว่าอยากไปเที่ยวเบอร์ลินไหม — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Möchten Sie Berlin besuchen?",
+        "Ich glaube, Berlin ist sehr interessant.",
+        "Ich finde die Stadt toll.",
+        "Hier gibt es einen Park."
+      ],
+      "acceptedAnswers": [
+        "Möchten Sie Berlin besuchen?"
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R025",
+      "requiredItemIds": [
+        "L13-R025"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "คุณอยากไปเที่ยวเบอร์ลินไหม",
+      "feedbackAnswer": "Möchten Sie Berlin besuchen?",
+      "id": "L13-R025-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Möchten Sie Berlin ___?",
+      "acceptedAnswers": [
+        "besuchen"
+      ],
+      "explanation": "möchten ใช้คู่กับกริยา besuchen ในรูป Infinitiv ที่ท้ายประโยค"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R025",
+      "requiredItemIds": [
+        "L13-R025"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "คุณอยากไปเที่ยวเบอร์ลินไหม",
+      "feedbackAnswer": "Möchten Sie Berlin besuchen?",
+      "id": "L13-R025-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Möchten",
+      "tokens": [
+        "Möchten",
+        "Sie",
+        "Berlin",
+        "besuchen?"
+      ],
+      "acceptedAnswers": [
+        "Möchten Sie Berlin besuchen?"
+      ],
+      "explanation": "คำถามนี้เริ่มด้วย Möchten ตามด้วย Sie และวาง besuchen ไว้ท้ายประโยค"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R026",
+      "requiredItemIds": [
+        "L13-R026"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเบอร์ลินน่าสนใจมาก",
+      "feedbackAnswer": "Ich glaube, Berlin ist sehr interessant.",
+      "id": "L13-R026-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณคิดว่าเบอร์ลินน่าสนใจมาก และต้องการเริ่มด้วย ich glaube — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Ich glaube, Berlin ist sehr interessant.",
+        "Ich finde die Stadt zu groß.",
+        "Ich finde Berlin interessant.",
+        "Es gibt viele Kirchen."
+      ],
+      "acceptedAnswers": [
+        "Ich glaube, Berlin ist sehr interessant."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R026",
+      "requiredItemIds": [
+        "L13-R026"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเบอร์ลินน่าสนใจมาก",
+      "feedbackAnswer": "Ich glaube, Berlin ist sehr interessant.",
+      "id": "L13-R026-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Ich ___, Berlin ist sehr interessant.",
+      "acceptedAnswers": [
+        "glaube"
+      ],
+      "explanation": "Ich glaube ใช้เริ่มบอกความคิดหรือความเห็นของผู้พูด"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R026",
+      "requiredItemIds": [
+        "L13-R026"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเบอร์ลินน่าสนใจมาก",
+      "feedbackAnswer": "Ich glaube, Berlin ist sehr interessant.",
+      "id": "L13-R026-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Ich",
+      "tokens": [
+        "Ich",
+        "glaube,",
+        "Berlin",
+        "ist",
+        "sehr",
+        "interessant."
+      ],
+      "acceptedAnswers": [
+        "Ich glaube, Berlin ist sehr interessant."
+      ],
+      "explanation": "หลัง Ich glaube, เป็นข้อความบอกความเห็น โดย Berlin ist เป็นลำดับประธานตามด้วยกริยา"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R027",
+      "requiredItemIds": [
+        "L13-R027"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเมืองนี้ใหญ่เกินไป",
+      "feedbackAnswer": "Ich finde die Stadt zu groß.",
+      "id": "L13-R027-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณอยากบอกความเห็นว่าเมืองนี้ใหญ่เกินไป โดยใช้ ich finde — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Ich finde die Stadt zu groß.",
+        "Was gefällt Ihnen besonders?",
+        "Die Stadt ist einfach anders.",
+        "Es gibt auch ein Café."
+      ],
+      "acceptedAnswers": [
+        "Ich finde die Stadt zu groß."
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R027",
+      "requiredItemIds": [
+        "L13-R027"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเมืองนี้ใหญ่เกินไป",
+      "feedbackAnswer": "Ich finde die Stadt zu groß.",
+      "id": "L13-R027-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Ich finde die Stadt zu ___.",
+      "acceptedAnswers": [
+        "groß"
+      ],
+      "explanation": "groß หมายถึงใหญ่ เมื่อมี zu อยู่ข้างหน้าจึงหมายถึงใหญ่เกินไป และคำนี้ใช้ ß"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R027",
+      "requiredItemIds": [
+        "L13-R027"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "ฉันคิดว่าเมืองนี้ใหญ่เกินไป",
+      "feedbackAnswer": "Ich finde die Stadt zu groß.",
+      "id": "L13-R027-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Ich",
+      "tokens": [
+        "Ich",
+        "finde",
+        "die",
+        "Stadt",
+        "zu",
+        "groß."
+      ],
+      "acceptedAnswers": [
+        "Ich finde die Stadt zu groß."
+      ],
+      "explanation": "ประโยคนี้เริ่มด้วย Ich ตามด้วยคำกริยา finde"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R028",
+      "requiredItemIds": [
+        "L13-R028"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "คุณชอบอะไรเป็นพิเศษ",
+      "feedbackAnswer": "Was gefällt Ihnen besonders?",
+      "id": "L13-R028-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณถามคู่สนทนาอย่างสุภาพว่าชอบอะไรเป็นพิเศษ — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Was gefällt Ihnen besonders?",
+        "Was fehlt Ihnen?",
+        "Die Stadt ist zu groß.",
+        "In der Nähe gibt es auch einen See."
+      ],
+      "acceptedAnswers": [
+        "Was gefällt Ihnen besonders?"
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R028",
+      "requiredItemIds": [
+        "L13-R028"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "คุณชอบอะไรเป็นพิเศษ",
+      "feedbackAnswer": "Was gefällt Ihnen besonders?",
+      "id": "L13-R028-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Was gefällt ___ besonders?",
+      "acceptedAnswers": [
+        "Ihnen"
+      ],
+      "explanation": "gefallen ใช้ Dativ รูปสุภาพของ Sie จึงเป็น Ihnen"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R028",
+      "requiredItemIds": [
+        "L13-R028"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "คุณชอบอะไรเป็นพิเศษ",
+      "feedbackAnswer": "Was gefällt Ihnen besonders?",
+      "id": "L13-R028-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Was",
+      "tokens": [
+        "Was",
+        "gefällt",
+        "Ihnen",
+        "besonders?"
+      ],
+      "acceptedAnswers": [
+        "Was gefällt Ihnen besonders?"
+      ],
+      "explanation": "คำถามนี้เริ่มด้วย Was ตามด้วยคำกริยา gefällt"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R029",
+      "requiredItemIds": [
+        "L13-R029"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "คุณรู้สึกว่าขาดอะไร",
+      "feedbackAnswer": "Was fehlt Ihnen?",
+      "id": "L13-R029-context",
+      "kind": "choice",
+      "subskill": "phrase_context",
+      "prompt": "เลือกประโยคให้เหมาะกับสถานการณ์",
+      "sentence": "คุณถามอย่างสุภาพว่าคู่สนทนารู้สึกว่าขาดอะไร — ___",
+      "sentenceLang": "th",
+      "options": [
+        "Was fehlt Ihnen?",
+        "Berlin gefällt mir.",
+        "Das ist super!",
+        "Leider gibt es keinen Hafen."
+      ],
+      "acceptedAnswers": [
+        "Was fehlt Ihnen?"
+      ],
+      "explanation": ""
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R029",
+      "requiredItemIds": [
+        "L13-R029"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 1,
+      "knownErrors": {},
+      "translation": "คุณรู้สึกว่าขาดอะไร",
+      "feedbackAnswer": "Was fehlt Ihnen?",
+      "id": "L13-R029-completion",
+      "kind": "cloze",
+      "subskill": "phrase_completion",
+      "prompt": "เติมคำให้ได้ประโยคที่เรียน",
+      "sentence": "Was ___ Ihnen?",
+      "acceptedAnswers": [
+        "fehlt"
+      ],
+      "explanation": "fehlen ใช้ถามถึงสิ่งที่ขาด คำถามนี้จึงใช้ Was fehlt Ihnen?"
+    },
+    {
+      "version": 1,
+      "itemId": "L13-R029",
+      "requiredItemIds": [
+        "L13-R029"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "difficulty": 2,
+      "knownErrors": {},
+      "translation": "คุณรู้สึกว่าขาดอะไร",
+      "feedbackAnswer": "Was fehlt Ihnen?",
+      "id": "L13-R029-order",
+      "kind": "order",
+      "subskill": "phrase_order",
+      "prompt": "เรียงประโยคที่เรียน โดยเริ่มด้วย Was",
+      "tokens": [
+        "Was",
+        "fehlt",
+        "Ihnen?"
+      ],
+      "acceptedAnswers": [
+        "Was fehlt Ihnen?"
+      ],
+      "explanation": "คำถามนี้เริ่มด้วย Was ตามด้วยคำกริยา fehlt"
+    },
+    {
+      "id": "L13-R010-dialogue",
+      "version": 1,
+      "itemId": "L13-R010",
+      "requiredItemIds": [
+        "L13-R010",
+        "L13-R011"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "kind": "order",
+      "subskill": "phrase_dialogue",
+      "prompt": "เรียงบทสนทนาให้คำถามมาก่อนคำตอบ",
+      "tokens": [
+        "Was gibt es hier?",
+        "Hier gibt es einen Park."
+      ],
+      "orderUnit": "ประโยค",
+      "acceptedAnswers": [
+        "Was gibt es hier? Hier gibt es einen Park."
+      ],
+      "feedbackAnswer": "Was gibt es hier? Hier gibt es einen Park.",
+      "translation": "ที่นี่มีอะไรบ้าง / ที่นี่มีสวนสาธารณะ",
+      "explanation": "เริ่มจากคำถาม แล้วตามด้วยคำตอบที่ให้ข้อมูลตรงกับคำถาม",
+      "difficulty": 2,
+      "knownErrors": {}
+    },
+    {
+      "id": "L13-R017-dialogue",
+      "version": 1,
+      "itemId": "L13-R017",
+      "requiredItemIds": [
+        "L13-R017",
+        "L13-R018"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "kind": "order",
+      "subskill": "phrase_dialogue",
+      "prompt": "เรียงบทสนทนาให้คำถามมาก่อนคำตอบ",
+      "tokens": [
+        "Was ist Ihr Lieblingsort?",
+        "Mein Lieblingsort ist der Park."
+      ],
+      "orderUnit": "ประโยค",
+      "acceptedAnswers": [
+        "Was ist Ihr Lieblingsort? Mein Lieblingsort ist der Park."
+      ],
+      "feedbackAnswer": "Was ist Ihr Lieblingsort? Mein Lieblingsort ist der Park.",
+      "translation": "สถานที่โปรดของคุณคือที่ไหน / สถานที่โปรดของฉันคือสวนสาธารณะ",
+      "explanation": "เริ่มจากคำถาม แล้วตามด้วยคำตอบที่ให้ข้อมูลตรงกับคำถาม",
+      "difficulty": 2,
+      "knownErrors": {}
+    },
+    {
+      "id": "L13-R024-dialogue",
+      "version": 1,
+      "itemId": "L13-R024",
+      "requiredItemIds": [
+        "L13-R024",
+        "L13-R026"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "kind": "order",
+      "subskill": "phrase_dialogue",
+      "prompt": "เรียงบทสนทนาให้คำถามมาก่อนคำตอบ",
+      "tokens": [
+        "Wie finden Sie Berlin?",
+        "Ich glaube, Berlin ist sehr interessant."
+      ],
+      "orderUnit": "ประโยค",
+      "acceptedAnswers": [
+        "Wie finden Sie Berlin? Ich glaube, Berlin ist sehr interessant."
+      ],
+      "feedbackAnswer": "Wie finden Sie Berlin? Ich glaube, Berlin ist sehr interessant.",
+      "translation": "คุณคิดอย่างไรกับเบอร์ลิน / ฉันคิดว่าเบอร์ลินน่าสนใจมาก",
+      "explanation": "เริ่มจากคำถาม แล้วตามด้วยคำตอบที่ให้ข้อมูลตรงกับคำถาม",
+      "difficulty": 2,
+      "knownErrors": {}
+    },
+    {
+      "id": "L13-R004-comprehension",
+      "version": 1,
+      "itemId": "L13-R004",
+      "requiredItemIds": [
+        "L13-R004",
+        "L13-R005",
+        "L13-R006"
+      ],
+      "topicId": "L13-phrases-rating",
+      "topicName": "แสดงความคิดเห็นต่อสถานที่",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "prompt": "อ่านข้อความ แล้วเลือกความหมายของประโยคแรก",
+      "sentence": "Ich finde die Stadt toll. Ich finde Berlin interessant. Die Stadt ist einfach anders.",
+      "sentenceLang": "de",
+      "options": [
+        "ฉันคิดว่าเมืองนี้ยอดเยี่ยม",
+        "ฉันคิดว่าเบอร์ลินน่าสนใจ",
+        "เมืองนี้แตกต่างจริง ๆ"
+      ],
+      "optionsLang": "th",
+      "acceptedAnswers": [
+        "ฉันคิดว่าเมืองนี้ยอดเยี่ยม"
+      ],
+      "feedbackAnswer": "Ich finde die Stadt toll. Ich finde Berlin interessant. Die Stadt ist einfach anders.",
+      "translation": "ฉันคิดว่าเมืองนี้ยอดเยี่ยม · ฉันคิดว่าเบอร์ลินน่าสนใจ · เมืองนี้แตกต่างจริง ๆ",
+      "explanation": "พิจารณาประโยคแรก แล้วเทียบกับความหมายภาษาไทยที่เลือก",
+      "difficulty": 2,
+      "knownErrors": {}
+    },
+    {
+      "id": "L13-R013-comprehension",
+      "version": 1,
+      "itemId": "L13-R013",
+      "requiredItemIds": [
+        "L13-R013",
+        "L13-R014",
+        "L13-R015"
+      ],
+      "topicId": "L13-phrases-city",
+      "topicName": "สิ่งที่มีในเมือง",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "prompt": "อ่านข้อความ แล้วเลือกความหมายของประโยคแรก",
+      "sentence": "Es gibt auch ein Café. In der Nähe gibt es auch einen See. Leider gibt es keinen Hafen.",
+      "sentenceLang": "de",
+      "options": [
+        "มีคาเฟ่ด้วย",
+        "บริเวณใกล้เคียงมีทะเลสาบด้วย",
+        "น่าเสียดายที่ไม่มีท่าเรือ"
+      ],
+      "optionsLang": "th",
+      "acceptedAnswers": [
+        "มีคาเฟ่ด้วย"
+      ],
+      "feedbackAnswer": "Es gibt auch ein Café. In der Nähe gibt es auch einen See. Leider gibt es keinen Hafen.",
+      "translation": "มีคาเฟ่ด้วย · บริเวณใกล้เคียงมีทะเลสาบด้วย · น่าเสียดายที่ไม่มีท่าเรือ",
+      "explanation": "พิจารณาประโยคแรก แล้วเทียบกับความหมายภาษาไทยที่เลือก",
+      "difficulty": 2,
+      "knownErrors": {}
+    },
+    {
+      "id": "L13-R020-comprehension",
+      "version": 1,
+      "itemId": "L13-R020",
+      "requiredItemIds": [
+        "L13-R020",
+        "L13-R021",
+        "L13-R022"
+      ],
+      "topicId": "L13-phrases-favorite",
+      "topicName": "สถานที่โปรด",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "prompt": "อ่านข้อความ แล้วเลือกความหมายของประโยคแรก",
+      "sentence": "Dort kann man spazieren gehen. Dort kann man auch angeln. Dort treffen wir Freunde.",
+      "sentenceLang": "de",
+      "options": [
+        "ที่นั่นสามารถเดินเล่นได้",
+        "ที่นั่นสามารถตกปลาได้ด้วย",
+        "พวกเราพบเพื่อนที่นั่น"
+      ],
+      "optionsLang": "th",
+      "acceptedAnswers": [
+        "ที่นั่นสามารถเดินเล่นได้"
+      ],
+      "feedbackAnswer": "Dort kann man spazieren gehen. Dort kann man auch angeln. Dort treffen wir Freunde.",
+      "translation": "ที่นั่นสามารถเดินเล่นได้ · ที่นั่นสามารถตกปลาได้ด้วย · พวกเราพบเพื่อนที่นั่น",
+      "explanation": "พิจารณาประโยคแรก แล้วเทียบกับความหมายภาษาไทยที่เลือก",
+      "difficulty": 2,
+      "knownErrors": {}
+    },
+    {
+      "id": "L13-R027-comprehension",
+      "version": 1,
+      "itemId": "L13-R027",
+      "requiredItemIds": [
+        "L13-R027",
+        "L13-R028",
+        "L13-R029"
+      ],
+      "topicId": "L13-phrases-opinions",
+      "topicName": "ถามและแลกเปลี่ยนความคิดเห็น",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "prompt": "อ่านข้อความ แล้วเลือกความหมายของประโยคแรก",
+      "sentence": "Ich finde die Stadt zu groß. Was gefällt Ihnen besonders? Was fehlt Ihnen?",
+      "sentenceLang": "de",
+      "options": [
+        "ฉันคิดว่าเมืองนี้ใหญ่เกินไป",
+        "คุณชอบอะไรเป็นพิเศษ",
+        "คุณรู้สึกว่าขาดอะไร"
+      ],
+      "optionsLang": "th",
+      "acceptedAnswers": [
+        "ฉันคิดว่าเมืองนี้ใหญ่เกินไป"
+      ],
+      "feedbackAnswer": "Ich finde die Stadt zu groß. Was gefällt Ihnen besonders? Was fehlt Ihnen?",
+      "translation": "ฉันคิดว่าเมืองนี้ใหญ่เกินไป · คุณชอบอะไรเป็นพิเศษ · คุณรู้สึกว่าขาดอะไร",
+      "explanation": "พิจารณาประโยคแรก แล้วเทียบกับความหมายภาษาไทยที่เลือก",
+      "difficulty": 2,
+      "knownErrors": {}
     }
   ],
   "provenance": [
@@ -992,6 +3474,1239 @@
       "sourceItemIds": [
         "L13-R026",
         "L13-R024"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R001-context",
+      "sourceItemIds": [
+        "L13-R001"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R001-completion",
+      "sourceItemIds": [
+        "L13-R001"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R001-order",
+      "sourceItemIds": [
+        "L13-R001"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R002-context",
+      "sourceItemIds": [
+        "L13-R002"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R002-completion",
+      "sourceItemIds": [
+        "L13-R002"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R002-order",
+      "sourceItemIds": [
+        "L13-R002"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R003-context",
+      "sourceItemIds": [
+        "L13-R003"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R003-completion",
+      "sourceItemIds": [
+        "L13-R003"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R003-order",
+      "sourceItemIds": [
+        "L13-R003"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R004-context",
+      "sourceItemIds": [
+        "L13-R004"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R004-completion",
+      "sourceItemIds": [
+        "L13-R004"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R004-order",
+      "sourceItemIds": [
+        "L13-R004"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R005-context",
+      "sourceItemIds": [
+        "L13-R005"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R005-completion",
+      "sourceItemIds": [
+        "L13-R005"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R005-order",
+      "sourceItemIds": [
+        "L13-R005"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R006-context",
+      "sourceItemIds": [
+        "L13-R006"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R006-completion",
+      "sourceItemIds": [
+        "L13-R006"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R006-order",
+      "sourceItemIds": [
+        "L13-R006"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R007-context",
+      "sourceItemIds": [
+        "L13-R007"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R007-completion",
+      "sourceItemIds": [
+        "L13-R007"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R007-order",
+      "sourceItemIds": [
+        "L13-R007"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R008-context",
+      "sourceItemIds": [
+        "L13-R008"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R008-completion",
+      "sourceItemIds": [
+        "L13-R008"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R008-order",
+      "sourceItemIds": [
+        "L13-R008"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R009-context",
+      "sourceItemIds": [
+        "L13-R009"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R009-completion",
+      "sourceItemIds": [
+        "L13-R009"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R009-order",
+      "sourceItemIds": [
+        "L13-R009"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R010-context",
+      "sourceItemIds": [
+        "L13-R010"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R010-completion",
+      "sourceItemIds": [
+        "L13-R010"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R010-order",
+      "sourceItemIds": [
+        "L13-R010"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R011-context",
+      "sourceItemIds": [
+        "L13-R011"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R011-completion",
+      "sourceItemIds": [
+        "L13-R011"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R011-order",
+      "sourceItemIds": [
+        "L13-R011"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R012-context",
+      "sourceItemIds": [
+        "L13-R012"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R012-completion",
+      "sourceItemIds": [
+        "L13-R012"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R012-order",
+      "sourceItemIds": [
+        "L13-R012"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R013-context",
+      "sourceItemIds": [
+        "L13-R013"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R013-completion",
+      "sourceItemIds": [
+        "L13-R013"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R013-order",
+      "sourceItemIds": [
+        "L13-R013"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R014-context",
+      "sourceItemIds": [
+        "L13-R014"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R014-completion",
+      "sourceItemIds": [
+        "L13-R014"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R014-order",
+      "sourceItemIds": [
+        "L13-R014"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R015-context",
+      "sourceItemIds": [
+        "L13-R015"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R015-completion",
+      "sourceItemIds": [
+        "L13-R015"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R015-order",
+      "sourceItemIds": [
+        "L13-R015"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R016-context",
+      "sourceItemIds": [
+        "L13-R016"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R016-completion",
+      "sourceItemIds": [
+        "L13-R016"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R016-order",
+      "sourceItemIds": [
+        "L13-R016"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R017-context",
+      "sourceItemIds": [
+        "L13-R017"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R017-completion",
+      "sourceItemIds": [
+        "L13-R017"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R017-order",
+      "sourceItemIds": [
+        "L13-R017"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R018-context",
+      "sourceItemIds": [
+        "L13-R018"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R018-completion",
+      "sourceItemIds": [
+        "L13-R018"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R018-order",
+      "sourceItemIds": [
+        "L13-R018"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R019-context",
+      "sourceItemIds": [
+        "L13-R019"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R019-completion",
+      "sourceItemIds": [
+        "L13-R019"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R019-order",
+      "sourceItemIds": [
+        "L13-R019"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R020-context",
+      "sourceItemIds": [
+        "L13-R020"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R020-completion",
+      "sourceItemIds": [
+        "L13-R020"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R020-order",
+      "sourceItemIds": [
+        "L13-R020"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R021-context",
+      "sourceItemIds": [
+        "L13-R021"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R021-completion",
+      "sourceItemIds": [
+        "L13-R021"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R021-order",
+      "sourceItemIds": [
+        "L13-R021"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R022-context",
+      "sourceItemIds": [
+        "L13-R022"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R022-completion",
+      "sourceItemIds": [
+        "L13-R022"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R022-order",
+      "sourceItemIds": [
+        "L13-R022"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R023-context",
+      "sourceItemIds": [
+        "L13-R023"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R023-completion",
+      "sourceItemIds": [
+        "L13-R023"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R023-order",
+      "sourceItemIds": [
+        "L13-R023"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R024-context",
+      "sourceItemIds": [
+        "L13-R024"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R024-completion",
+      "sourceItemIds": [
+        "L13-R024"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R024-order",
+      "sourceItemIds": [
+        "L13-R024"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R025-context",
+      "sourceItemIds": [
+        "L13-R025"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R025-completion",
+      "sourceItemIds": [
+        "L13-R025"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R025-order",
+      "sourceItemIds": [
+        "L13-R025"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R026-context",
+      "sourceItemIds": [
+        "L13-R026"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R026-completion",
+      "sourceItemIds": [
+        "L13-R026"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R026-order",
+      "sourceItemIds": [
+        "L13-R026"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R027-context",
+      "sourceItemIds": [
+        "L13-R027"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R027-completion",
+      "sourceItemIds": [
+        "L13-R027"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R027-order",
+      "sourceItemIds": [
+        "L13-R027"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R028-context",
+      "sourceItemIds": [
+        "L13-R028"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R028-completion",
+      "sourceItemIds": [
+        "L13-R028"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R028-order",
+      "sourceItemIds": [
+        "L13-R028"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R029-context",
+      "sourceItemIds": [
+        "L13-R029"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R029-completion",
+      "sourceItemIds": [
+        "L13-R029"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R029-order",
+      "sourceItemIds": [
+        "L13-R029"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R010-dialogue",
+      "sourceItemIds": [
+        "L13-R010",
+        "L13-R011"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R017-dialogue",
+      "sourceItemIds": [
+        "L13-R017",
+        "L13-R018"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R024-dialogue",
+      "sourceItemIds": [
+        "L13-R024",
+        "L13-R026"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R004-comprehension",
+      "sourceItemIds": [
+        "L13-R004",
+        "L13-R005",
+        "L13-R006"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R013-comprehension",
+      "sourceItemIds": [
+        "L13-R013",
+        "L13-R014",
+        "L13-R015"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R020-comprehension",
+      "sourceItemIds": [
+        "L13-R020",
+        "L13-R021",
+        "L13-R022"
+      ],
+      "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
+      "repositoryFile": "supabase/seed/catalog.json",
+      "designFile": "scripts/exercise-mapping/l13-phrase-sequence.mjs",
+      "method": "repository_inspection",
+      "publisherPage": null,
+      "inspectedAt": "2026-10-22",
+      "note": "Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises."
+    },
+    {
+      "questionId": "L13-R027-comprehension",
+      "sourceItemIds": [
+        "L13-R027",
+        "L13-R028",
+        "L13-R029"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFile": "supabase/seed/catalog.json",
