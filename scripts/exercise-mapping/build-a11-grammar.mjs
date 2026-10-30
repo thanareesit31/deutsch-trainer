@@ -63,6 +63,6 @@ for (const lessonId of ['L01', 'L02', ...grammarDiscoveryLessons.map(lesson => l
   }
   inventory.push({ lessonId, topicCount: topics.length, questionDefinitions: questions.length, topics, sourceStatus: discovery ? 'existing-grammar-discovery-content' : lessonId === 'L02' ? 'existing-published-l02-migration' : 'existing-published-catalog', learnedEvidence: discovery ? 'completedTopics in lesson state' : 'item_exposures' });
 }
-await writeFile(new URL('docs/exercise-mapping/a11-grammar-bank.json', root), JSON.stringify({ generatedAt: '2026-10-30', status: 'generated-needs-review-before-rollout', lessons: inventory, definitions }, null, 2) + '\n');
+await writeFile(new URL('docs/exercise-mapping/a11-grammar-bank.json', root), JSON.stringify({ generatedAt: '2026-10-30', status: 'released-content-based-coverage-independent-transfer-review-open', lessons: inventory, definitions }, null, 2) + '\n');
 await writeFile(new URL('src/data/a11-grammar-previews.ts', root), 'export const a11GrammarPreviews = {\n' + imports.map(({ path, lessonId, slug }) => `  '${lessonId}-${slug}': () => import('./${path}'),`).join('\n') + '\n} as const;\n');
 console.log(`Built ${inventory.length} grammar lesson banks with ${definitions.length} answer definitions.`);

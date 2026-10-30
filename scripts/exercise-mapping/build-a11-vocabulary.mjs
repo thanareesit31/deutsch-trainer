@@ -54,7 +54,7 @@ for (let number = 1; number <= 12; number++) {
   }
   inventory.push({ lessonId, taughtVocabulary: words.length, questionDefinitions: questions.length, groups: groups.map(group => ({ title: group.title, topicId: group.topicId, itemIds: group.ids })), sourceStatus: 'existing-published-catalog', selection: 'guided first exposure, then target/subskill history', evidence: 'item_exposures or lesson image state → scored account session' });
 }
-await writeFile(new URL('docs/exercise-mapping/a11-vocabulary-bank.json', root), JSON.stringify({ generatedAt: '2026-10-30', status: 'generated-needs-review-before-rollout', lessons: inventory, definitions }, null, 2) + '\n');
+await writeFile(new URL('docs/exercise-mapping/a11-vocabulary-bank.json', root), JSON.stringify({ generatedAt: '2026-10-30', status: 'released-content-based-coverage', lessons: inventory, definitions }, null, 2) + '\n');
 const previewImports = inventory.flatMap(({ lessonId }) => ['basic', 'daily'].map(slug => {
   const key = `${lessonId.toLowerCase()}${slug[0].toUpperCase()}${slug.slice(1)}`;
   return { key, path: `a11-vocab-${lessonId.toLowerCase()}-${slug}-preview.json`, lessonId, slug };

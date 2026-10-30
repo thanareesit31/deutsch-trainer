@@ -51,7 +51,7 @@ for (let number = 1; number <= 12; number++) {
   }
   inventory.push({ lessonId, targetCount: lessonTargets.length, questionDefinitions: questions.length, targets: lessonTargets, topicId, learnedEvidence: 'item_exposures', sourceStatus: lessonId === 'L01' ? 'existing-catalog' : lessonId === 'L02' ? 'existing-l02-migration' : 'product-authored-curriculum-aligned' });
 }
-await writeFile(new URL('docs/exercise-mapping/a11-phrase-bank.json', root), JSON.stringify({ generatedAt: '2026-10-30', status: 'generated-needs-review-before-rollout', lessons: inventory, definitions }, null, 2) + '\n');
+await writeFile(new URL('docs/exercise-mapping/a11-phrase-bank.json', root), JSON.stringify({ generatedAt: '2026-10-30', status: 'released-product-authored-source-review-open', lessons: inventory, definitions }, null, 2) + '\n');
 await writeFile(new URL('src/data/a11-phrase-previews.ts', root), 'export const a11PhrasePreviews = {\n' + imports.map(({ path, lessonId, slug }) => `  '${lessonId}-${slug}': () => import('./${path}'),`).join('\n') + '\n} as const;\n');
 await writeFile(new URL('src/data/a11-phrase-targets.json', root), JSON.stringify(targets) + '\n');
 console.log(`Built ${inventory.length} phrase lesson banks with ${targets.length} targets and ${definitions.length} answer definitions.`);
