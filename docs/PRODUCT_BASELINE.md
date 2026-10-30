@@ -538,6 +538,8 @@ Tester L13 vocabulary now uses the shared guided/personalized practice engine an
 
 Eligibility requires actual account image-learning completion per item or ItemExposure. Do not include unseen vocabulary or grant eligibility for tester status. After all image groups are learned, the learning screen offers direct practice. Guided rounds include eligible groups only, at most five questions each. Three image groups normally produce 15 questions; previously learned additional vocabulary may add a fourth group. Manual topics use up to five, daily vocabulary practice up to ten. Do not mix grammar evidence into vocabulary ranking. Resume newest incomplete round across skills before recommending a new one.
 
+Vocabulary feedback audio must begin directly from the learner's tap in the embedded practice frame so mobile browsers retain the user activation. Prefer a German voice when available, set the utterance language to German, and show playback errors next to the audio control.
+
 Keep provenance internal and label new tasks honestly as repository-derived web exercises, not publisher exercises. No new mastery or automatic Learning History import. New vocabulary bank keys require migration 20261022010000_vocabulary_practice_banks.sql. Hosted production remains unchanged.
 
 

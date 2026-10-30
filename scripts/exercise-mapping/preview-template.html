@@ -105,6 +105,17 @@ function pick(pool,count,origin){
 function start(pool,count,origin='practice'){let selected;try{selected=pick(pool,count,origin);}catch{storageError('อ่านประวัติฝึกไม่ได้ กรุณาโหลดหน้าใหม่แล้วลองอีกครั้ง');return;}if(!selected.length)return;const session={id:crypto.randomUUID(),origin,workflow:origin==='review'?'topic':BANK.workflow??'topic',createdAt:new Date().toISOString(),position:0,completed:false,items:selected.map(q=>{const question=structuredClone(q);if(question.options)question.options=shuffle(question.options);return {question,response:'',selected:[],rubricChecks:[],tokenOrder:question.tokens?shuffle(question.tokens.map((_,i)=>i)):[],hintUsed:false,translationUsed:false,attempt:null};})};if(commit(s=>{s.sessions.push(session);s.activeId=session.id;},false)){screen='session';render();focusTitle();}}
 function node(tag,text,attrs={}){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;for(const[k,v]of Object.entries(attrs))e.setAttribute(k,String(v));return e;}
 function button(text,fn,attrs={}){const {disabled,...attributes}=attrs;const b=node('button',text,{type:'button',...attributes});b.disabled=disabled===true;b.addEventListener('click',fn);return b;}
+function playVocabularyFeedbackAudio(text,status){
+ const synth=window.speechSynthesis;
+ if(!synth||typeof SpeechSynthesisUtterance==='undefined'){status.textContent='อุปกรณ์นี้ไม่รองรับเสียงสังเคราะห์';return;}
+ const utterance=new SpeechSynthesisUtterance(text);
+ utterance.lang='de-DE';utterance.rate=.8;
+ const voice=synth.getVoices().find(candidate=>candidate.lang.toLowerCase().startsWith('de'));
+ if(voice)utterance.voice=voice;
+ status.textContent=voice?'':'ยังไม่พบ German voice ในอุปกรณ์ กำลังลองใช้เสียงเริ่มต้น';
+ utterance.onerror=()=>{status.textContent='เล่นเสียงไม่สำเร็จ ตรวจ German voice ในอุปกรณ์แล้วลองอีกครั้ง';};
+ synth.cancel();synth.speak(utterance);
+}
 function decorateVocabularyNouns(card,q){
  if(!BANK.nounPresentation||!BANK.articleColors)return;
  const dot=color=>{const d=node('span',undefined,{class:'article-dot','aria-hidden':'true'});Object.assign(d.style,{display:'inline-block',width:'11px',height:'11px',borderRadius:'50%',marginRight:'8px',verticalAlign:'middle',backgroundColor:BANK.articleColors[color]});return d;};
@@ -114,7 +125,7 @@ function decorateVocabularyNouns(card,q){
  if(q.subskill==='vocabulary_article')for(const option of card.querySelectorAll('.choices button'))if(/^(der|die|das)$/u.test(option.textContent))option.prepend(dot(option.textContent));
  if(noun){const answer=card.querySelector('.feedback p[lang="de"]');if(answer){answer.replaceChildren(node('span','คำตอบ: '),dot(noun.color),document.createTextNode(noun.label));}}
  const feedback=card.querySelector('.feedback');
- if(BANK.historySkill==='vocabulary'&&feedback){const text=noun?.label||q.feedbackAnswer||q.acceptedAnswers[0];const listen=button('🔊 ฟังเสียง',()=>parent.postMessage({type:'vocabulary-feedback-audio',text},'*'),{'aria-label':'ฟังเสียง '+text,class:'vocabulary-feedback-audio'});Object.assign(listen.style,{fontSize:'14px',padding:'6px 12px',minHeight:'40px',marginTop:'10px'});feedback.append(listen);}
+ if(BANK.historySkill==='vocabulary'&&feedback){const text=noun?.label||q.feedbackAnswer||q.acceptedAnswers[0];const status=node('span','',{role:'status',class:'audio-listen-error'});Object.assign(status.style,{display:'block',fontSize:'13px',marginTop:'6px'});const listen=button('🔊 ฟังเสียง',()=>playVocabularyFeedbackAudio(text,status),{'aria-label':'ฟังเสียง '+text,class:'vocabulary-feedback-audio'});Object.assign(listen.style,{fontSize:'14px',padding:'6px 12px',minHeight:'40px',marginTop:'10px'});feedback.append(listen,status);}
 }
 function focusTitle(){document.getElementById('q-title')?.focus();}
 function render(){app.replaceChildren();if(screen==='home'||!current()){home();return;}if(current().completed){summary();return;}if(current().workflow!=='guided'&&current().breakAt===current().position){sectionBreak();return;}question();}
