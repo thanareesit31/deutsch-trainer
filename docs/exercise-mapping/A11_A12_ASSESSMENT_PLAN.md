@@ -2,6 +2,8 @@
 
 Reviewed 2026-10-30. Scope: L01–L12 vocabulary, grammar and phrases. The generated inventories `a11-vocabulary-bank.json`, `a11-grammar-bank.json` and `a11-phrase-bank.json` contain every target ID, response ID, lesson, topic, subskill and canonical answer. This plan does not treat a question count as proof of mastery or of source review.
 
+The 2026-10-30 Learn completion handoff is a navigation change. It preserves the exposure, target/subskill, grading and selector bindings below. Each final content screen links to that lesson and skill's `basic` practice bank; the existing eligibility gate still decides which learned targets can be asked.
+
 ## Scope and source status
 
 | Skill | Target and scored response coverage | Learning source | Question source |

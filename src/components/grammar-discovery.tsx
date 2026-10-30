@@ -10,6 +10,7 @@ import { completeDiscoveryTopic, completedDiscoveryTopics } from "@/lib/grammar-
 import { GermanListenText } from "./german-listen-text";
 import { lessonStateKeys, useLessonState } from "./lesson-state-provider";
 import { useVocabularyAudio } from "./vocabulary-audio";
+import { LearnPracticeLink } from "./learn-practice-link";
 
 function GrammarExampleAudio({ example, nameRoot }: { example: GrammarDiscoveryExample; nameRoot: string }) {
   const { play, error } = useVocabularyAudio();
@@ -161,6 +162,7 @@ export function PossessiveSummaryPage() {
         <Link className="button primary" href={next ? `/learn/L03/grammar/${next.slug}` : "/learn/L03/grammar"}>
           {next ? "หัวข้อถัดไป" : "กลับหัวข้อไวยากรณ์"} <ArrowRight size={17} />
         </Link>
+        {!next && <LearnPracticeLink lessonId="L03" skill="grammar" />}
       </div>
     </section>
   </main>;
@@ -195,6 +197,7 @@ export function GrammarDiscoveryPage({ lessonId, topicSlug }: { lessonId: string
       <span className="alphabet-entry-copy"><span className="eyebrow">{completed.includes(entry.slug) ? "เรียนแล้ว" : "GRAMMATIK"}</span><span className="alphabet-entry-title"><strong>{entry.title}</strong></span><small>{entry.thai}</small></span>
       <span className="alphabet-entry-arrow" aria-hidden="true">→</span>
     </Link>)}
+    {completed.length === lesson.topics.length && <div className="grammar-discovery-next"><LearnPracticeLink lessonId={lessonId} skill="grammar" /></div>}
   </main>;
   const index = lesson.topics.indexOf(topic);
   const next = lesson.topics[index + 1];
@@ -228,6 +231,7 @@ export function GrammarDiscoveryPage({ lessonId, topicSlug }: { lessonId: string
         <Link className="button primary" href={isPossessive ? "/learn/L03/grammar/mein-dein/summary" : conjugation ? `/learn/${lessonId}/grammar/${topic.slug}/conjugation/${conjugation.verbs[0].id}` : next ? `/learn/${lessonId}/grammar/${next.slug}` : `/learn/${lessonId}/grammar`}>
           {isPossessive ? "ดูตารางสรุป" : conjugation ? "ฝึกผันกริยา" : next ? "หัวข้อถัดไป" : "กลับหัวข้อไวยากรณ์"} <ArrowRight size={17} />
         </Link>
+        {!isPossessive && !conjugation && !next && <LearnPracticeLink lessonId={lessonId} skill="grammar" />}
       </div>}
     </section>
   </main>;

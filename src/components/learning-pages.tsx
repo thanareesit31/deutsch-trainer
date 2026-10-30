@@ -2,6 +2,7 @@
 import { ArticleDot, ArticleLegend } from "./profession-matching";
 import { NounText } from "./noun-text";
 import { PracticeRecommendation } from "./practice-recommendation";
+import { LearnPracticeLink } from "./learn-practice-link";
 import { L13PracticeLanding, L14GrammarPracticeLanding } from "./practice-landing";
 import { dayKey } from "@/lib/engine";
 import { useContent } from "./content-provider";
@@ -1095,9 +1096,7 @@ function VerbLesson({ allowIncompleteNavigation = false, previewLastPage = false
               >
                 ย้อนกลับ
               </button>
-              <Link className="button secondary" href="/practice">
-                ไปหน้าแบบฝึกหัด
-              </Link>
+              <LearnPracticeLink lessonId="L01" skill="grammar" />
             </div>
           </>
         ) : (
@@ -1323,7 +1322,9 @@ export function LearnActivity({
               เรียนรายการถัดไป
             </button>
           )}
-          {(lessonId !== "L13" || skill !== "phrases" || (phraseGroupLearned && isPhrasePracticeAvailable(user))) && (
+          {position === pool.length - 1 && seen && /^L(?:0[1-9]|1[0-2])$/.test(lessonId) && (skill === "vocabulary" || skill === "grammar" || skill === "phrases")
+            ? <LearnPracticeLink lessonId={lessonId} skill={skill} />
+            : (lessonId !== "L13" || skill !== "phrases" || (phraseGroupLearned && isPhrasePracticeAvailable(user))) && (
           <Link
             className="button secondary"
             href={practiceHref ?? (lessonId === "L13" && skill === "vocabulary" ? "/practice/L13/vocabulary/basic" : "/practice")}

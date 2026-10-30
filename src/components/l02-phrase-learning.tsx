@@ -9,6 +9,7 @@ import { useLearning } from "./learning-store";
 import { CategoryTabLabel, LearningCategoryTabs } from "./learning-breadcrumbs";
 import { useVocabularyAudio } from "./vocabulary-audio";
 import { clearLastLessonPageRequest, isLastLessonPageRequested } from "@/lib/test-workspace-last-page";
+import { LearnPracticeLink } from "./learn-practice-link";
 
 const categories = [
   { de: "Beruflicher Status", th: "สถานะการทำงาน" },
@@ -111,7 +112,7 @@ export function L02PhraseLearning() {
         <div className="phrase-example-list"><div>{audio("Schreiben Sie Ihren Beruf und Traumberuf.")}<p>เขียนอาชีพและอาชีพในฝันของคุณ</p></div></div>
       </div> : <div className="phrase-example-list">{others.map((item) => <div key={item.id} data-learning-item={item.id}>{audio(item.answer)}<p>{item.meaning}</p>{item.example && item.example !== item.answer && <p lang="de">{item.example}</p>}</div>)}</div>}
       {(error || audioError) && <p role="alert">{error || audioError}{error && <button type="button" className="button secondary" onClick={() => { setError(""); setRetry((value) => value + 1); }}>ลองบันทึกใหม่</button>}</p>}
-      <div className="guided-navigation"><button className="button secondary" type="button" disabled={category === 0} onClick={() => setCategory((value) => value - 1)}>ย้อนกลับ</button>{category < (others.length ? 2 : 1) ? <button className="button primary" type="button" onClick={() => setCategory((value) => value + 1)}>หน้าถัดไป</button> : <Link className="button primary" href="/learn/L02/phrases/sentences">เรียนคำถามและโครงสร้างประโยคต่อ</Link>}</div>
+      <div className="guided-navigation"><button className="button secondary" type="button" disabled={category === 0} onClick={() => setCategory((value) => value - 1)}>ย้อนกลับ</button>{category < (others.length ? 2 : 1) ? <button className="button primary" type="button" onClick={() => setCategory((value) => value + 1)}>หน้าถัดไป</button> : <><Link className="button secondary" href="/learn/L02/phrases/sentences">เรียนคำถามและโครงสร้างประโยคต่อ</Link>{pool.some(item => seen.has(item.id)) && <LearnPracticeLink lessonId="L02" skill="phrases" />}</>}</div>
     </section>
   </main>;
 }

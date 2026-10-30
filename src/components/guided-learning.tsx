@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { LearnPracticeLink } from "./learn-practice-link";
 import { CategoryTabLabel, LearningCategoryTabs } from "./learning-breadcrumbs";
 import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
@@ -297,6 +298,7 @@ function GuidedFlow({
       : grammarTrack === "sentences"
         ? { href: `/learn/${lessonId}/phrases`, label: "กลับประโยคและสำนวน" }
       : { href: `/lesson/${lessonId}`, label: "กลับบทเรียน" };
+  const l02PracticeSkill = grammarTrack === "sentences" ? "phrases" : skill;
   return (
     <main className={`guided-learning${isProfession ? " profession-learning" : ""}`}>
       {skill === "vocabulary" && (activity || track === "numbers") && <h1 className="sr-only">{isProfession ? "Berufe" : sectionTitle}</h1>}
@@ -462,6 +464,7 @@ function GuidedFlow({
             >
               {isProfession || grammarTrack ? "หน้าถัดไป" : "ไปต่อ"}
             </button>}
+            {lessonId === "L02" && canAdvance && position === activities.length - 1 && !hasEndContent && <LearnPracticeLink lessonId="L02" skill={l02PracticeSkill} />}
           </div>
         </section>
       ) : (
@@ -533,6 +536,7 @@ function GuidedFlow({
                 กลับบทเรียน
               </Link>
             )}
+            {lessonId === "L02" && (track !== "numbers" || showNumberBoard) && <LearnPracticeLink lessonId="L02" skill={l02PracticeSkill} />}
           </div>}
         </section>
       )}

@@ -10,6 +10,7 @@ import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
 import { isTestWorkspaceUser, useStore } from "./store";
 import { useVocabularyAudio } from "./vocabulary-audio";
 import { ArticleDot } from "./profession-matching";
+import { LearnPracticeLink } from "./learn-practice-link";
 
 const route = "/learn/L03/vocabulary/familie-plural";
 type Side = "singular" | "plural";
@@ -170,6 +171,7 @@ export function FamilyPluralLearning({ items }: { items: { id: string; article?:
       <Link className="button secondary" href={summary ? pageHref(pages.length - 1) : pageIndex > 0 ? pageHref(pageIndex - 1) : "/learn/L03/vocabulary"}>{summary || pageIndex > 0 ? "ย้อนกลับ" : "ย้อนกลับไปคำศัพท์"}</Link>
       {!summary && unlocked && (allowIncompleteNavigation || remaining.length === 0) && <Link className="button primary" href={pageIndex < pages.length - 1 ? pageHref(pageIndex + 1) : `${route}?page=summary`}>{pageIndex < pages.length - 1 ? "หน้าถัดไป" : "ดูตารางสรุป"}</Link>}
       {summary && <Link className="button secondary" href="/learn/L03/vocabulary">กลับไปคำศัพท์</Link>}
+      {summary && (completedCount === pairs.length || allowIncompleteNavigation) && <LearnPracticeLink lessonId="L03" skill="vocabulary" />}
     </div>
   </main>;
 }

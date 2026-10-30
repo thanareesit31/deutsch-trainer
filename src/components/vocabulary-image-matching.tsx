@@ -32,6 +32,7 @@ import {
 
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
 import { isTestWorkspaceUser, isVocabularyPracticeAvailable, useStore } from "./store";
+import { LearnPracticeLink } from "./learn-practice-link";
 import { NounText } from "./noun-text";
 import { ArticleLegend } from "./profession-matching";
 import { useL13VocabularyEligibility } from "./use-l13-vocabulary-eligibility";
@@ -346,6 +347,7 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
           ? <Link className="button primary" href="/learn/L14/vocabulary/directions">เรียนคำบอกทางต่อ</Link>
           : <Link className="button primary" href={isL13 || isCatalogLesson ? `/learn/${lessonId}/vocabulary` : "/learn/L01/vocabulary"}>กลับไปที่คำศัพท์</Link>)}
         {isL13 && !nextGroup && groups.every(category => entries.filter(entry => entry.groupId === category.id).every(entry => entry.itemIds.every(id => l13Eligibility.ids.includes(id)))) && isVocabularyPracticeAvailable(user) && <Link className="button primary" href="/practice/L13/vocabulary/basic">ทำแบบฝึกหัด</Link>}
+        {!isL13 && !nextGroup && (isL12MonthSummary ? l12MonthSummaryAvailable || allowIncompleteNavigation : canContinue && pageIndex === pages.length - 1 && !isL12MonthGroup) && <LearnPracticeLink lessonId={lessonId} skill="vocabulary" />}
       </div>
     </main>
   );

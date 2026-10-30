@@ -10,6 +10,7 @@ import { lessonStateKeys, useLessonState } from "./lesson-state-provider";
 import { ConjugationAudioForm } from "./conjugation-matching";
 import { GermanListenText } from "./german-listen-text";
 import { useVocabularyAudio } from "./vocabulary-audio";
+import { LearnPracticeLink } from "./learn-practice-link";
 
 function formWithHighlights(verb: GrammarConjugationVerb, form: string, index: number) {
   if (verb.id === "sein") {
@@ -172,6 +173,7 @@ export function GrammarConjugationPage({ lessonId, topicSlug, verbId, summary = 
           <Link className="button primary" href={next ? `/learn/${lessonId}/grammar/${next.slug}` : `/learn/${lessonId}/grammar`}>
             {next ? "หัวข้อถัดไป" : "กลับหัวข้อไวยากรณ์"} <ArrowRight size={17} />
           </Link>
+          {!next && <LearnPracticeLink lessonId={lessonId} skill="grammar" />}
         </div>
       </section>
     </main>;
