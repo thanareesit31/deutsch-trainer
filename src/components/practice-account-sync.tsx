@@ -5,6 +5,7 @@ import { supabase } from '@/lib/supabase';
 import { l13PracticeStores, parsePracticeHistory, practiceStorageKey } from '@/lib/practice-planner';
 
 type Snapshot = { version: 1; sessions: Record<string, unknown>[]; activeId: string | null };
+type SyncFailure = { href: string; code: string; message: string };
 function record(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
@@ -43,6 +44,7 @@ function mergeSession(local: Record<string, unknown>, remote: Record<string, unk
 export function PracticeAccountSync({ userId, children }: { userId: string; children: ReactNode }) {
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
   const [saveError, setSaveError] = useState(false);
+  const [saveErrorDetails, setSaveErrorDetails] = useState<SyncFailure[]>([]);
   const [retry, setRetry] = useState(0);
   const retryUpload = useRef<(() => void) | null>(null);
   const [recoveredHistory, setRecoveredHistory] = useState(false);
@@ -63,7 +65,7 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
       try {
         while (requested && alive) {
           requested = false;
-          let failed = false;
+          const failures: SyncFailure[] = [];
           let expired = false;
           for (const { entry, snapshot } of snapshots()) {
             for (const session of snapshot.sessions) {
@@ -73,7 +75,7 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
               if (acknowledged.get(id) === serialized) continue;
               const { error } = await client.rpc('sync_practice_session', { p_bank_key: entry.storage, p_state: session });
               if (error) {
-                failed = true;
+                failures.push({ href: entry.href, code: error.code || 'unknown', message: error.message });
                 console.error('practice_session_sync_failed', { bankKey: entry.storage, code: error.code, message: error.message });
                 if (error.code === 'PGRST301' || error.code === 'PGRST303') {
                   await client.auth.signOut({ scope: 'local' });
@@ -86,11 +88,18 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
             }
             if (expired) break;
           }
-          if (alive) setSaveError(failed);
+          if (alive) {
+            setSaveErrorDetails(failures);
+            setSaveError(failures.length > 0);
+          }
         }
       } catch (error) {
-        console.error('practice_session_sync_failed', { code: error instanceof Error ? error.name : 'unknown', message: error instanceof Error ? error.message : 'Unknown sync error' });
-        if (alive) setSaveError(true);
+        const failure = { href: 'unknown', code: error instanceof Error ? error.name : 'unknown', message: error instanceof Error ? error.message : 'Unknown sync error' };
+        console.error('practice_session_sync_failed', failure);
+        if (alive) {
+          setSaveErrorDetails([failure]);
+          setSaveError(true);
+        }
       } finally { running = false; }
     }
     retryUpload.current = () => { void upload(); };
@@ -191,5 +200,5 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
   }, [userId, retry]);
   if (status === 'loading') return <div className="loading">กำลังโหลดประวัติแบบฝึกหัดของคุณ…</div>;
   if (status === 'error') return <div className="loading" role="alert"><p>{loadMessage}</p><button onClick={() => { setStatus('loading'); setRetry(r => r + 1); }}>ลองใหม่</button><button onClick={() => { void supabase?.auth.signOut({ scope: 'local' }); }}>เข้าสู่ระบบใหม่</button></div>;
-  return <>{recoveredHistory && <div role="status" className="notice">มีประวัติบางส่วนในเครื่องที่อ่านไม่ได้ ระบบเก็บสำเนาเดิมไว้แล้ว และโหลดประวัติที่ใช้ได้ให้คุณฝึกต่อ</div>}{saveError && <div role="status" className="notice"><span>เก็บคำตอบในเครื่องแล้ว แต่ยังบันทึกเข้าบัญชีไม่ได้ </span><button onClick={() => retryUpload.current?.()}>ลองบันทึกอีกครั้ง</button></div>}{children}</>;
+  return <>{recoveredHistory && <div role="status" className="notice">มีประวัติบางส่วนในเครื่องที่อ่านไม่ได้ ระบบเก็บสำเนาเดิมไว้แล้ว และโหลดประวัติที่ใช้ได้ให้คุณฝึกต่อ</div>}{saveError && <div role="status" className="notice"><span>เก็บคำตอบในเครื่องแล้ว แต่ยังบันทึกเข้าบัญชีไม่ได้ </span><button onClick={() => retryUpload.current?.()}>ลองบันทึกอีกครั้ง</button>{saveErrorDetails.length > 0 && <details><summary>รายละเอียดข้อผิดพลาด</summary><ul>{saveErrorDetails.slice(0, 3).map((failure, index) => <li key={`${failure.href}:${index}`}><code>{failure.href}</code> · <code>{failure.code}</code>: {failure.message}</li>)}</ul></details>}</div>}{children}</>;
 }
