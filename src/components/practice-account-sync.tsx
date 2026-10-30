@@ -24,6 +24,12 @@ function stableSnapshot(value: unknown): unknown {
 function timestamp(session: Record<string, unknown>) {
   return typeof session.updatedAt === 'string' ? session.updatedAt : typeof session.createdAt === 'string' ? session.createdAt : '';
 }
+function repairSessionCursor(session: Record<string, unknown>) {
+  if (!Array.isArray(session.items) || typeof session.position !== 'number') return session;
+  const firstIncomplete = session.items.findIndex(item => !record(item) || !record(item.attempt) || item.attempt.status !== 'completed');
+  if (firstIncomplete < 0 || firstIncomplete >= session.position) return session;
+  return { ...session, position: firstIncomplete, completed: false, updatedAt: new Date().toISOString() };
+}
 function mergeSession(local: Record<string, unknown>, remote: Record<string, unknown>) {
   if (!Array.isArray(local.items) || !Array.isArray(remote.items) || local.items.length !== remote.items.length) throw new Error('Invalid session');
   const latest = timestamp(local) > timestamp(remote) ? local : remote;
@@ -57,7 +63,16 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
     let requested = false;
     let timer: ReturnType<typeof setTimeout> | undefined;
     const acknowledged = new Map<string, string>();
-    const snapshots = () => l13PracticeStores.map(entry => ({ entry, key: practiceStorageKey(entry.storage, entry.frame, userId), snapshot: parseSnapshot(localStorage.getItem(practiceStorageKey(entry.storage, entry.frame, userId)), entry.href) }));
+    const snapshots = () => l13PracticeStores.map(entry => {
+      const key = practiceStorageKey(entry.storage, entry.frame, userId);
+      const snapshot = parseSnapshot(localStorage.getItem(key), entry.href);
+      const sessions = snapshot.sessions.map(repairSessionCursor);
+      if (sessions.some((session, index) => session !== snapshot.sessions[index])) {
+        snapshot.sessions = sessions;
+        localStorage.setItem(key, JSON.stringify(snapshot));
+      }
+      return { entry, key, snapshot };
+    });
     async function upload() {
       requested = true;
       if (running) return;
