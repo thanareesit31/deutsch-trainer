@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { supabase } from '@/lib/supabase';
 import { l13PracticeStores, parsePracticeHistory, practiceStorageKey } from '@/lib/practice-planner';
 
@@ -44,6 +44,7 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
   const [saveError, setSaveError] = useState(false);
   const [retry, setRetry] = useState(0);
+  const retryUpload = useRef<(() => void) | null>(null);
   const [recoveredHistory, setRecoveredHistory] = useState(false);
   const [loadMessage, setLoadMessage] = useState('โหลดประวัติแบบฝึกหัดไม่ได้ กรุณาลองใหม่ ข้อมูลในเครื่องยังอยู่');
   useEffect(() => {
@@ -62,24 +63,37 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
       try {
         while (requested && alive) {
           requested = false;
-          for (const { entry, snapshot } of snapshots()) for (const session of snapshot.sessions) {
-            if (!alive) return;
-            const id = `${entry.storage}:${session.id}`;
-            const serialized = JSON.stringify(stableSnapshot(session));
-            if (acknowledged.get(id) === serialized) continue;
-            const { error } = await client.rpc('sync_practice_session', { p_bank_key: entry.storage, p_state: session });
-            if (error) {
-              if (error.code === 'PGRST301' || error.code === 'PGRST303') await client.auth.signOut({ scope: 'local' });
-              throw error;
+          let failed = false;
+          let expired = false;
+          for (const { entry, snapshot } of snapshots()) {
+            for (const session of snapshot.sessions) {
+              if (!alive) return;
+              const id = `${entry.storage}:${session.id}`;
+              const serialized = JSON.stringify(stableSnapshot(session));
+              if (acknowledged.get(id) === serialized) continue;
+              const { error } = await client.rpc('sync_practice_session', { p_bank_key: entry.storage, p_state: session });
+              if (error) {
+                failed = true;
+                console.error('practice_session_sync_failed', { bankKey: entry.storage, code: error.code, message: error.message });
+                if (error.code === 'PGRST301' || error.code === 'PGRST303') {
+                  await client.auth.signOut({ scope: 'local' });
+                  expired = true;
+                  break;
+                }
+                continue;
+              }
+              acknowledged.set(id, serialized);
             }
-            acknowledged.set(id, serialized);
+            if (expired) break;
           }
+          if (alive) setSaveError(failed);
         }
-        if (alive) setSaveError(false);
-      } catch {
+      } catch (error) {
+        console.error('practice_session_sync_failed', { code: error instanceof Error ? error.name : 'unknown', message: error instanceof Error ? error.message : 'Unknown sync error' });
         if (alive) setSaveError(true);
       } finally { running = false; }
     }
+    retryUpload.current = () => { void upload(); };
     const schedule = () => {
       clearTimeout(timer);
       timer = setTimeout(() => { void upload(); }, 400);
@@ -166,6 +180,7 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
     void load();
     return () => {
       alive = false;
+      retryUpload.current = null;
       window.removeEventListener('test-workspace-changing', pauseForTestControl);
       clearTimeout(timer);
       window.removeEventListener('practice-progress-updated', schedule);
@@ -176,5 +191,5 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
   }, [userId, retry]);
   if (status === 'loading') return <div className="loading">กำลังโหลดประวัติแบบฝึกหัดของคุณ…</div>;
   if (status === 'error') return <div className="loading" role="alert"><p>{loadMessage}</p><button onClick={() => { setStatus('loading'); setRetry(r => r + 1); }}>ลองใหม่</button><button onClick={() => { void supabase?.auth.signOut({ scope: 'local' }); }}>เข้าสู่ระบบใหม่</button></div>;
-  return <>{recoveredHistory && <div role="status" className="notice">มีประวัติบางส่วนในเครื่องที่อ่านไม่ได้ ระบบเก็บสำเนาเดิมไว้แล้ว และโหลดประวัติที่ใช้ได้ให้คุณฝึกต่อ</div>}{saveError && <div role="status" className="notice"><span>เก็บคำตอบในเครื่องแล้ว แต่ยังบันทึกเข้าบัญชีไม่ได้ </span><button onClick={() => { setStatus('loading'); setRetry(r => r + 1); }}>ลองบันทึกอีกครั้ง</button></div>}{children}</>;
+  return <>{recoveredHistory && <div role="status" className="notice">มีประวัติบางส่วนในเครื่องที่อ่านไม่ได้ ระบบเก็บสำเนาเดิมไว้แล้ว และโหลดประวัติที่ใช้ได้ให้คุณฝึกต่อ</div>}{saveError && <div role="status" className="notice"><span>เก็บคำตอบในเครื่องแล้ว แต่ยังบันทึกเข้าบัญชีไม่ได้ </span><button onClick={() => retryUpload.current?.()}>ลองบันทึกอีกครั้ง</button></div>}{children}</>;
 }
