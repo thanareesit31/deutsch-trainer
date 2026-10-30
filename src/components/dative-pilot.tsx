@@ -73,22 +73,28 @@ const previews = {
   l18Sollen: { html: l18Sollen.html, title: "แบบฝึก sollen", accountPrefix: "l18-sollen" },
 } as const;
 
-export function GrammarPilot({ userId, topic, learnedItemIds }: { userId: string; topic: keyof typeof previews; learnedItemIds?: string[] }) {
+type PreviewProps = { userId: string; learnedItemIds?: string[] } & (
+  { topic: keyof typeof previews; preview?: never; vocabularyAudio?: never } |
+  { topic?: never; preview: { html: string; title: string; accountPrefix: string }; vocabularyAudio?: boolean }
+);
+
+export function GrammarPilot({ userId, topic, preview: suppliedPreview, learnedItemIds, vocabularyAudio }: PreviewProps) {
   const frame = useRef<HTMLIFrameElement>(null);
   const [height, setHeight] = useState(900);
-  const preview = previews[topic];
+  const preview = topic ? previews[topic] : suppliedPreview;
+  const playVocabularyAudio = topic ? topic.startsWith("vocab") : vocabularyAudio === true;
   const { play, error: audioError } = useVocabularyAudio();
 
   useEffect(() => {
     function listen(event: MessageEvent<unknown>) {
-      if (!topic.startsWith("vocab") || event.source !== frame.current?.contentWindow) return;
+      if (!playVocabularyAudio || event.source !== frame.current?.contentWindow) return;
       const data = event.data;
       if (typeof data !== "object" || data === null || !("type" in data) || data.type !== "vocabulary-feedback-audio") return;
       if ("text" in data && typeof data.text === "string" && data.text.length > 0 && data.text.length <= 500) play(data.text);
     }
     window.addEventListener("message", listen);
     return () => window.removeEventListener("message", listen);
-  }, [play, topic]);
+  }, [play, playVocabularyAudio]);
 
   useEffect(() => {
     function resize(event: MessageEvent<unknown>) {
@@ -109,7 +115,7 @@ export function GrammarPilot({ userId, topic, learnedItemIds }: { userId: string
   return (
     <>
       <iframe
-        key={`${topic}-${userId}`}
+        key={`${preview.accountPrefix}-${userId}`}
         ref={frame}
         title={preview.title}
         name={`${preview.accountPrefix}-account-${userId}`}

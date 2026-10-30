@@ -1,0 +1,2872 @@
+{
+  "generatedAt": "2026-10-30",
+  "status": "generated-needs-review-before-rollout",
+  "lessons": [
+    {
+      "lessonId": "L01",
+      "topicCount": 6,
+      "questionDefinitions": 68,
+      "topics": [
+        {
+          "slug": "catalog-1",
+          "title": "Verbkonjugation · kommen",
+          "targetId": null
+        },
+        {
+          "slug": "catalog-2",
+          "title": "Verbkonjugation · heißen",
+          "targetId": null
+        },
+        {
+          "slug": "catalog-3",
+          "title": "Verbkonjugation · lernen",
+          "targetId": null
+        },
+        {
+          "slug": "catalog-4",
+          "title": "sein",
+          "targetId": null
+        },
+        {
+          "slug": "catalog-5",
+          "title": "Personalpronomen",
+          "targetId": null
+        },
+        {
+          "slug": "catalog-6",
+          "title": "Satzbau",
+          "targetId": null
+        }
+      ],
+      "sourceStatus": "existing-published-catalog",
+      "learnedEvidence": "item_exposures"
+    },
+    {
+      "lessonId": "L02",
+      "topicCount": 3,
+      "questionDefinitions": 34,
+      "topics": [
+        {
+          "slug": "catalog-1",
+          "title": "Personalpronomen",
+          "targetId": null
+        },
+        {
+          "slug": "catalog-2",
+          "title": "Verben",
+          "targetId": null
+        },
+        {
+          "slug": "catalog-3",
+          "title": "W-Frage",
+          "targetId": null
+        }
+      ],
+      "sourceStatus": "existing-published-l02-migration",
+      "learnedEvidence": "item_exposures"
+    },
+    {
+      "lessonId": "L03",
+      "topicCount": 3,
+      "questionDefinitions": 6,
+      "topics": [
+        {
+          "slug": "namen-genitiv",
+          "title": "Genitiv bei Namen",
+          "targetId": "L03-GD-namen-genitiv"
+        },
+        {
+          "slug": "mein-dein",
+          "title": "mein und dein",
+          "targetId": "L03-GD-mein-dein"
+        },
+        {
+          "slug": "sprechen",
+          "title": "sprechen",
+          "targetId": "L03-GD-sprechen"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    },
+    {
+      "lessonId": "L04",
+      "topicCount": 2,
+      "questionDefinitions": 4,
+      "topics": [
+        {
+          "slug": "bestimmter-artikel",
+          "title": "der, die, das",
+          "targetId": "L04-GD-bestimmter-artikel"
+        },
+        {
+          "slug": "er-sie-es",
+          "title": "er, sie, es",
+          "targetId": "L04-GD-er-sie-es"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    },
+    {
+      "lessonId": "L05",
+      "topicCount": 3,
+      "questionDefinitions": 6,
+      "topics": [
+        {
+          "slug": "ein-eine",
+          "title": "ein und eine",
+          "targetId": "L05-GD-ein-eine"
+        },
+        {
+          "slug": "kein-keine",
+          "title": "kein und keine",
+          "targetId": "L05-GD-kein-keine"
+        },
+        {
+          "slug": "sehen",
+          "title": "sehen",
+          "targetId": "L05-GD-sehen"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    },
+    {
+      "lessonId": "L06",
+      "topicCount": 3,
+      "questionDefinitions": 6,
+      "topics": [
+        {
+          "slug": "plural",
+          "title": "Singular und Plural",
+          "targetId": "L06-GD-plural"
+        },
+        {
+          "slug": "akkusativ-artikel",
+          "title": "Artikel im Akkusativ",
+          "targetId": "L06-GD-akkusativ-artikel"
+        },
+        {
+          "slug": "einen",
+          "title": "einen und keinen",
+          "targetId": "L06-GD-einen"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    },
+    {
+      "lessonId": "L07",
+      "topicCount": 2,
+      "questionDefinitions": 4,
+      "topics": [
+        {
+          "slug": "koennen",
+          "title": "können",
+          "targetId": "L07-GD-koennen"
+        },
+        {
+          "slug": "satzklammer",
+          "title": "Satzklammer",
+          "targetId": "L07-GD-satzklammer"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    },
+    {
+      "lessonId": "L08",
+      "topicCount": 3,
+      "questionDefinitions": 6,
+      "topics": [
+        {
+          "slug": "zeitangaben",
+          "title": "am und um",
+          "targetId": "L08-GD-zeitangaben"
+        },
+        {
+          "slug": "verbposition",
+          "title": "Verbposition",
+          "targetId": "L08-GD-verbposition"
+        },
+        {
+          "slug": "wissen",
+          "title": "wissen",
+          "targetId": "L08-GD-wissen"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    },
+    {
+      "lessonId": "L09",
+      "topicCount": 3,
+      "questionDefinitions": 6,
+      "topics": [
+        {
+          "slug": "moegen",
+          "title": "mögen",
+          "targetId": "L09-GD-moegen"
+        },
+        {
+          "slug": "essen-kein",
+          "title": "essen und kein",
+          "targetId": "L09-GD-essen-kein"
+        },
+        {
+          "slug": "moechte",
+          "title": "möchte",
+          "targetId": "L09-GD-moechte"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    },
+    {
+      "lessonId": "L10",
+      "topicCount": 2,
+      "questionDefinitions": 4,
+      "topics": [
+        {
+          "slug": "trennbare-verben",
+          "title": "Trennbare Verben",
+          "targetId": "L10-GD-trennbare-verben"
+        },
+        {
+          "slug": "ankommen-frage",
+          "title": "Wann kommst du an?",
+          "targetId": "L10-GD-ankommen-frage"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    },
+    {
+      "lessonId": "L11",
+      "topicCount": 3,
+      "questionDefinitions": 6,
+      "topics": [
+        {
+          "slug": "perfekt-haben",
+          "title": "Perfekt mit haben",
+          "targetId": "L11-GD-perfekt-haben"
+        },
+        {
+          "slug": "partizip",
+          "title": "Partizip II",
+          "targetId": "L11-GD-partizip"
+        },
+        {
+          "slug": "von-bis-ab",
+          "title": "von ... bis und ab",
+          "targetId": "L11-GD-von-bis-ab"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    },
+    {
+      "lessonId": "L12",
+      "topicCount": 3,
+      "questionDefinitions": 6,
+      "topics": [
+        {
+          "slug": "perfekt-sein",
+          "title": "Perfekt mit sein",
+          "targetId": "L12-GD-perfekt-sein"
+        },
+        {
+          "slug": "war-hatte",
+          "title": "war und hatte",
+          "targetId": "L12-GD-war-hatte"
+        },
+        {
+          "slug": "im-seit",
+          "title": "im und seit",
+          "targetId": "L12-GD-im-seit"
+        }
+      ],
+      "sourceStatus": "existing-grammar-discovery-content",
+      "learnedEvidence": "completedTopics in lesson state"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "grammar-L01-kommen-0-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-0",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "komme"
+      ],
+      "options": [
+        "komme",
+        "kommst",
+        "kommt",
+        "kommen"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-0-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-0",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "komme"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-1-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-1",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "kommst"
+      ],
+      "options": [
+        "komme",
+        "kommst",
+        "kommt",
+        "kommen"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-1-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-1",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "kommst"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-2-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-2",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "kommt"
+      ],
+      "options": [
+        "komme",
+        "kommst",
+        "kommt",
+        "kommen"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-2-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-2",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "kommt"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-3-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-3",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "kommen"
+      ],
+      "options": [
+        "komme",
+        "kommst",
+        "kommt",
+        "kommen"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-3-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-3",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "kommen"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-4-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-4",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "kommt"
+      ],
+      "options": [
+        "komme",
+        "kommst",
+        "kommt",
+        "kommen"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-4-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-4",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "kommt"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-5-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-5",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "kommen"
+      ],
+      "options": [
+        "komme",
+        "kommst",
+        "kommt",
+        "kommen"
+      ]
+    },
+    {
+      "id": "grammar-L01-kommen-5-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-kommen-5",
+      "topicId": "L01-grammar-catalog-1",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "kommen"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-0-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-0",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "heiße"
+      ],
+      "options": [
+        "heiße",
+        "heißt",
+        "heißen"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-0-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-0",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "heiße"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-1-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-1",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "heißt"
+      ],
+      "options": [
+        "heiße",
+        "heißt",
+        "heißen"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-1-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-1",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "heißt"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-2-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-2",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "heißt"
+      ],
+      "options": [
+        "heiße",
+        "heißt",
+        "heißen"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-2-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-2",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "heißt"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-3-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-3",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "heißen"
+      ],
+      "options": [
+        "heiße",
+        "heißt",
+        "heißen"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-3-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-3",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "heißen"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-4-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-4",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "heißt"
+      ],
+      "options": [
+        "heiße",
+        "heißt",
+        "heißen"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-4-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-4",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "heißt"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-5-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-5",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "heißen"
+      ],
+      "options": [
+        "heiße",
+        "heißt",
+        "heißen"
+      ]
+    },
+    {
+      "id": "grammar-L01-heißen-5-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-heißen-5",
+      "topicId": "L01-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "heißen"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-0-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-0",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "lerne"
+      ],
+      "options": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-0-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-0",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "lerne"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-1-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-1",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "lernst"
+      ],
+      "options": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-1-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-1",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "lernst"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-2-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-2",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "lernt"
+      ],
+      "options": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-2-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-2",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "lernt"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-3-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-3",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "lernen"
+      ],
+      "options": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-3-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-3",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "lernen"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-4-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-4",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "lernt"
+      ],
+      "options": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-4-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-4",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "lernt"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-5-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-5",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "lernen"
+      ],
+      "options": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen"
+      ]
+    },
+    {
+      "id": "grammar-L01-lernen-5-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-lernen-5",
+      "topicId": "L01-grammar-catalog-3",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "lernen"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-0-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-0",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "bin"
+      ],
+      "options": [
+        "bin",
+        "bist",
+        "ist",
+        "sind",
+        "seid"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-0-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-0",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "bin"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-1-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-1",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "bist"
+      ],
+      "options": [
+        "bin",
+        "bist",
+        "ist",
+        "sind",
+        "seid"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-1-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-1",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "bist"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-2-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-2",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "ist"
+      ],
+      "options": [
+        "bin",
+        "bist",
+        "ist",
+        "sind",
+        "seid"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-2-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-2",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "ist"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-3-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-3",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "sind"
+      ],
+      "options": [
+        "bin",
+        "bist",
+        "ist",
+        "sind",
+        "seid"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-3-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-3",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "sind"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-4-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-4",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "seid"
+      ],
+      "options": [
+        "bin",
+        "bist",
+        "ist",
+        "sind",
+        "seid"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-4-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-4",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "seid"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-5-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-5",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "sind"
+      ],
+      "options": [
+        "bin",
+        "bist",
+        "ist",
+        "sind",
+        "seid"
+      ]
+    },
+    {
+      "id": "grammar-L01-sein-5-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-sein-5",
+      "topicId": "L01-grammar-catalog-4",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "sind"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-0-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-0",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "ich"
+      ],
+      "options": [
+        "ich",
+        "du",
+        "wir",
+        "er",
+        "Sie"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-0-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-0",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "ich"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-1-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-1",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "du"
+      ],
+      "options": [
+        "du",
+        "ich",
+        "wir",
+        "er",
+        "Sie"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-1-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-1",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "du"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-2-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-2",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "er"
+      ],
+      "options": [
+        "er",
+        "ich",
+        "du",
+        "wir",
+        "Sie"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-2-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-2",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "er"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-3-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-3",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "sie"
+      ],
+      "options": [
+        "sie",
+        "ich",
+        "du",
+        "wir",
+        "er",
+        "Sie"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-3-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-3",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "sie"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-4-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-4",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "wir"
+      ],
+      "options": [
+        "wir",
+        "ich",
+        "du",
+        "er",
+        "Sie"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-4-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-4",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "wir"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-5-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-5",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "ihr"
+      ],
+      "options": [
+        "ihr",
+        "ich",
+        "du",
+        "wir",
+        "er",
+        "Sie"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-5-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-5",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "ihr"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-6-a11-choice",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-6",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "Sie"
+      ],
+      "options": [
+        "Sie",
+        "ich",
+        "du",
+        "wir",
+        "er"
+      ]
+    },
+    {
+      "id": "grammar-L01-pronoun-6-a11-cloze",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-pronoun-6",
+      "topicId": "L01-grammar-catalog-5",
+      "kind": "cloze",
+      "subskill": "grammar_form_production",
+      "acceptedAnswers": [
+        "Sie"
+      ]
+    },
+    {
+      "id": "grammar-L01-order-0-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-order-0",
+      "topicId": "L01-grammar-catalog-6",
+      "kind": "order",
+      "subskill": "grammar_sentence_order",
+      "acceptedAnswers": [
+        "Ich komme aus Thailand."
+      ],
+      "tokens": [
+        "Ich",
+        "komme",
+        "aus",
+        "Thailand."
+      ]
+    },
+    {
+      "id": "grammar-L01-order-1-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-order-1",
+      "topicId": "L01-grammar-catalog-6",
+      "kind": "order",
+      "subskill": "grammar_sentence_order",
+      "acceptedAnswers": [
+        "Woher kommst du?"
+      ],
+      "tokens": [
+        "Woher",
+        "kommst",
+        "du?"
+      ]
+    },
+    {
+      "id": "grammar-L01-order-2-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-order-2",
+      "topicId": "L01-grammar-catalog-6",
+      "kind": "order",
+      "subskill": "grammar_sentence_order",
+      "acceptedAnswers": [
+        "Ich heiße Sun."
+      ],
+      "tokens": [
+        "Ich",
+        "heiße",
+        "Sun."
+      ]
+    },
+    {
+      "id": "grammar-L01-order-3-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-order-3",
+      "topicId": "L01-grammar-catalog-6",
+      "kind": "order",
+      "subskill": "grammar_sentence_order",
+      "acceptedAnswers": [
+        "Wie heißen Sie?"
+      ],
+      "tokens": [
+        "Wie",
+        "heißen",
+        "Sie?"
+      ]
+    },
+    {
+      "id": "grammar-L01-order-4-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-order-4",
+      "topicId": "L01-grammar-catalog-6",
+      "kind": "order",
+      "subskill": "grammar_sentence_order",
+      "acceptedAnswers": [
+        "Wir lernen Deutsch."
+      ],
+      "tokens": [
+        "Wir",
+        "lernen",
+        "Deutsch."
+      ]
+    },
+    {
+      "id": "grammar-L01-order-5-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "grammar-L01-order-5",
+      "topicId": "L01-grammar-catalog-6",
+      "kind": "order",
+      "subskill": "grammar_sentence_order",
+      "acceptedAnswers": [
+        "Bist du Anna?"
+      ],
+      "tokens": [
+        "Bist",
+        "du",
+        "Anna?"
+      ]
+    },
+    {
+      "id": "L02-pronoun-ich-a11-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pronoun-ich",
+      "topicId": "L02-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_pronoun_context",
+      "acceptedAnswers": [
+        "ich"
+      ],
+      "options": [
+        "ich",
+        "du",
+        "er",
+        "sie",
+        "wir",
+        "ihr",
+        "Sie"
+      ]
+    },
+    {
+      "id": "L02-pronoun-du-a11-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pronoun-du",
+      "topicId": "L02-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_pronoun_context",
+      "acceptedAnswers": [
+        "du"
+      ],
+      "options": [
+        "ich",
+        "du",
+        "er",
+        "sie",
+        "wir",
+        "ihr",
+        "Sie"
+      ]
+    },
+    {
+      "id": "L02-pronoun-er-a11-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pronoun-er",
+      "topicId": "L02-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_pronoun_context",
+      "acceptedAnswers": [
+        "er"
+      ],
+      "options": [
+        "ich",
+        "du",
+        "er",
+        "sie",
+        "wir",
+        "ihr",
+        "Sie"
+      ]
+    },
+    {
+      "id": "L02-pronoun-sie-sg-a11-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pronoun-sie-sg",
+      "topicId": "L02-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_pronoun_context",
+      "acceptedAnswers": [
+        "sie"
+      ],
+      "options": [
+        "ich",
+        "du",
+        "er",
+        "sie",
+        "wir",
+        "ihr",
+        "Sie"
+      ]
+    },
+    {
+      "id": "L02-pronoun-wir-a11-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pronoun-wir",
+      "topicId": "L02-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_pronoun_context",
+      "acceptedAnswers": [
+        "wir"
+      ],
+      "options": [
+        "ich",
+        "du",
+        "er",
+        "sie",
+        "wir",
+        "ihr",
+        "Sie"
+      ]
+    },
+    {
+      "id": "L02-pronoun-ihr-a11-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pronoun-ihr",
+      "topicId": "L02-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_pronoun_context",
+      "acceptedAnswers": [
+        "ihr"
+      ],
+      "options": [
+        "ich",
+        "du",
+        "er",
+        "sie",
+        "wir",
+        "ihr",
+        "Sie"
+      ]
+    },
+    {
+      "id": "L02-pronoun-sie-pl-a11-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pronoun-sie-pl",
+      "topicId": "L02-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_pronoun_context",
+      "acceptedAnswers": [
+        "sie"
+      ],
+      "options": [
+        "ich",
+        "du",
+        "er",
+        "sie",
+        "wir",
+        "ihr",
+        "Sie"
+      ]
+    },
+    {
+      "id": "L02-pronoun-Sie-a11-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pronoun-Sie",
+      "topicId": "L02-grammar-catalog-1",
+      "kind": "choice",
+      "subskill": "grammar_pronoun_context",
+      "acceptedAnswers": [
+        "Sie"
+      ],
+      "options": [
+        "ich",
+        "du",
+        "er",
+        "sie",
+        "wir",
+        "ihr",
+        "Sie"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-0-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "arbeite"
+      ],
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-0-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "arbeite"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-1-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "arbeitest"
+      ],
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-1-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "arbeitest"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-2-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "arbeitet"
+      ],
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-2-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "arbeitet"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-3-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "arbeiten"
+      ],
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-3-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "arbeiten"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-4-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "arbeitet"
+      ],
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-4-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "arbeitet"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-5-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "arbeiten"
+      ],
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten"
+      ]
+    },
+    {
+      "id": "L02-verb-arbeiten-a11-5-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-arbeiten",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "arbeiten"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-0-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "mache"
+      ],
+      "options": [
+        "mache",
+        "machst",
+        "macht",
+        "machen"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-0-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "mache"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-1-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "machst"
+      ],
+      "options": [
+        "mache",
+        "machst",
+        "macht",
+        "machen"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-1-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "machst"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-2-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "macht"
+      ],
+      "options": [
+        "mache",
+        "machst",
+        "macht",
+        "machen"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-2-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "macht"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-3-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "machen"
+      ],
+      "options": [
+        "mache",
+        "machst",
+        "macht",
+        "machen"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-3-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "machen"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-4-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "macht"
+      ],
+      "options": [
+        "mache",
+        "machst",
+        "macht",
+        "machen"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-4-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "macht"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-5-choice",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "choice",
+      "subskill": "grammar_conjugation_recognition",
+      "acceptedAnswers": [
+        "machen"
+      ],
+      "options": [
+        "mache",
+        "machst",
+        "macht",
+        "machen"
+      ]
+    },
+    {
+      "id": "L02-verb-machen-a11-5-cloze",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-verb-machen",
+      "topicId": "L02-grammar-catalog-2",
+      "kind": "cloze",
+      "subskill": "grammar_conjugation_production",
+      "acceptedAnswers": [
+        "machen"
+      ]
+    },
+    {
+      "id": "L02-question-was-a11-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-question-was",
+      "topicId": "L02-grammar-catalog-3",
+      "kind": "choice",
+      "subskill": "grammar_question_meaning",
+      "acceptedAnswers": [
+        "อะไร"
+      ],
+      "options": [
+        "อะไร",
+        "ที่ไหน",
+        "อย่างไร"
+      ]
+    },
+    {
+      "id": "L02-question-was-a11-context",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-question-was",
+      "topicId": "L02-grammar-catalog-3",
+      "kind": "choice",
+      "subskill": "grammar_question_context",
+      "acceptedAnswers": [
+        "Was"
+      ],
+      "options": [
+        "Was",
+        "Wo",
+        "Wie"
+      ]
+    },
+    {
+      "id": "L03-GD-namen-genitiv-observe",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-GD-namen-genitiv",
+      "requiredTopicSlug": "namen-genitiv",
+      "topicId": "L03-grammar-namen-genitiv",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "เติม -s หลังชื่อ"
+      ],
+      "options": [
+        "เติม -s หลังชื่อ",
+        "เติม -n หลังชื่อ",
+        "ไม่เปลี่ยนชื่อ"
+      ]
+    },
+    {
+      "id": "L03-GD-namen-genitiv-apply",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-GD-namen-genitiv",
+      "requiredTopicSlug": "namen-genitiv",
+      "topicId": "L03-grammar-namen-genitiv",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "Annas Vater"
+      ],
+      "options": [
+        "Annas Vater",
+        "Anna Vater",
+        "Vater Annas"
+      ]
+    },
+    {
+      "id": "L03-GD-mein-dein-observe",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-GD-mein-dein",
+      "requiredTopicSlug": "mein-dein",
+      "topicId": "L03-grammar-mein-dein",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "Vater ใช้ mein; Eltern ใช้ meine"
+      ],
+      "options": [
+        "Vater ใช้ mein; Eltern ใช้ meine",
+        "ทั้งคู่ใช้ mein",
+        "ทั้งคู่ใช้ meine"
+      ]
+    },
+    {
+      "id": "L03-GD-mein-dein-apply",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-GD-mein-dein",
+      "requiredTopicSlug": "mein-dein",
+      "topicId": "L03-grammar-mein-dein",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "meine"
+      ],
+      "options": [
+        "meine",
+        "mein",
+        "meinen"
+      ]
+    },
+    {
+      "id": "L03-GD-sprechen-observe",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-GD-sprechen",
+      "requiredTopicSlug": "sprechen",
+      "topicId": "L03-grammar-sprechen",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "e → i"
+      ],
+      "options": [
+        "e → i",
+        "e → a",
+        "ไม่เปลี่ยน"
+      ]
+    },
+    {
+      "id": "L03-GD-sprechen-apply",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-GD-sprechen",
+      "requiredTopicSlug": "sprechen",
+      "topicId": "L03-grammar-sprechen",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "spricht"
+      ],
+      "options": [
+        "spricht",
+        "sprechst",
+        "spreche"
+      ]
+    },
+    {
+      "id": "L04-GD-bestimmter-artikel-observe",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-GD-bestimmter-artikel",
+      "requiredTopicSlug": "bestimmter-artikel",
+      "topicId": "L04-grammar-bestimmter-artikel",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "เพศของคำนาม"
+      ],
+      "options": [
+        "เพศของคำนาม",
+        "ความยาวประโยค",
+        "คำคุณศัพท์ schön"
+      ]
+    },
+    {
+      "id": "L04-GD-bestimmter-artikel-apply",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-GD-bestimmter-artikel",
+      "requiredTopicSlug": "bestimmter-artikel",
+      "topicId": "L04-grammar-bestimmter-artikel",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "Das"
+      ],
+      "options": [
+        "Das",
+        "Der",
+        "Die"
+      ]
+    },
+    {
+      "id": "L04-GD-er-sie-es-observe",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-GD-er-sie-es",
+      "requiredTopicSlug": "er-sie-es",
+      "topicId": "L04-grammar-er-sie-es",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "Artikel ของคำนาม"
+      ],
+      "options": [
+        "Artikel ของคำนาม",
+        "ขนาดสิ่งของ",
+        "ตำแหน่งในห้อง"
+      ]
+    },
+    {
+      "id": "L04-GD-er-sie-es-apply",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-GD-er-sie-es",
+      "requiredTopicSlug": "er-sie-es",
+      "topicId": "L04-grammar-er-sie-es",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "Es"
+      ],
+      "options": [
+        "Es",
+        "Er",
+        "Sie"
+      ]
+    },
+    {
+      "id": "L05-GD-ein-eine-observe",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-GD-ein-eine",
+      "requiredTopicSlug": "ein-eine",
+      "topicId": "L05-grammar-ein-eine",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "eine"
+      ],
+      "options": [
+        "eine",
+        "ein",
+        "einen"
+      ]
+    },
+    {
+      "id": "L05-GD-ein-eine-apply",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-GD-ein-eine",
+      "requiredTopicSlug": "ein-eine",
+      "topicId": "L05-grammar-ein-eine",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "ein"
+      ],
+      "options": [
+        "ein",
+        "eine",
+        "einen"
+      ]
+    },
+    {
+      "id": "L05-GD-kein-keine-observe",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-GD-kein-keine",
+      "requiredTopicSlug": "kein-keine",
+      "topicId": "L05-grammar-kein-keine",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "keine"
+      ],
+      "options": [
+        "keine",
+        "kein",
+        "nicht ein"
+      ]
+    },
+    {
+      "id": "L05-GD-kein-keine-apply",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-GD-kein-keine",
+      "requiredTopicSlug": "kein-keine",
+      "topicId": "L05-grammar-kein-keine",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "kein"
+      ],
+      "options": [
+        "kein",
+        "keine",
+        "keinen"
+      ]
+    },
+    {
+      "id": "L05-GD-sehen-observe",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-GD-sehen",
+      "requiredTopicSlug": "sehen",
+      "topicId": "L05-grammar-sehen",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "e → ie"
+      ],
+      "options": [
+        "e → ie",
+        "e → i",
+        "ไม่เปลี่ยน"
+      ]
+    },
+    {
+      "id": "L05-GD-sehen-apply",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-GD-sehen",
+      "requiredTopicSlug": "sehen",
+      "topicId": "L05-grammar-sehen",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "sieht"
+      ],
+      "options": [
+        "sieht",
+        "siehst",
+        "sehe"
+      ]
+    },
+    {
+      "id": "L06-GD-plural-observe",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-GD-plural",
+      "requiredTopicSlug": "plural",
+      "topicId": "L06-grammar-plural",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "ต่างกัน: -en และสระเปลี่ยน + -e"
+      ],
+      "options": [
+        "ต่างกัน: -en และสระเปลี่ยน + -e",
+        "เหมือนกัน: เติม -en",
+        "ทั้งสองไม่เปลี่ยน"
+      ]
+    },
+    {
+      "id": "L06-GD-plural-apply",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-GD-plural",
+      "requiredTopicSlug": "plural",
+      "topicId": "L06-grammar-plural",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "die Mäuse"
+      ],
+      "options": [
+        "die Mäuse",
+        "die Mausen",
+        "der Mäuse"
+      ]
+    },
+    {
+      "id": "L06-GD-akkusativ-artikel-observe",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-GD-akkusativ-artikel",
+      "requiredTopicSlug": "akkusativ-artikel",
+      "topicId": "L06-grammar-akkusativ-artikel",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "der → den"
+      ],
+      "options": [
+        "der → den",
+        "die → den",
+        "das → den"
+      ]
+    },
+    {
+      "id": "L06-GD-akkusativ-artikel-apply",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-GD-akkusativ-artikel",
+      "requiredTopicSlug": "akkusativ-artikel",
+      "topicId": "L06-grammar-akkusativ-artikel",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "den"
+      ],
+      "options": [
+        "den",
+        "der",
+        "die"
+      ]
+    },
+    {
+      "id": "L06-GD-einen-observe",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-GD-einen",
+      "requiredTopicSlug": "einen",
+      "topicId": "L06-grammar-einen",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "เติม -en"
+      ],
+      "options": [
+        "เติม -en",
+        "เติม -e",
+        "ไม่เปลี่ยน"
+      ]
+    },
+    {
+      "id": "L06-GD-einen-apply",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-GD-einen",
+      "requiredTopicSlug": "einen",
+      "topicId": "L06-grammar-einen",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "einen"
+      ],
+      "options": [
+        "einen",
+        "ein",
+        "eine"
+      ]
+    },
+    {
+      "id": "L07-GD-koennen-observe",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-GD-koennen",
+      "requiredTopicSlug": "koennen",
+      "topicId": "L07-grammar-koennen",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "kann"
+      ],
+      "options": [
+        "kann",
+        "könne",
+        "können"
+      ]
+    },
+    {
+      "id": "L07-GD-koennen-apply",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-GD-koennen",
+      "requiredTopicSlug": "koennen",
+      "topicId": "L07-grammar-koennen",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "kannst"
+      ],
+      "options": [
+        "kannst",
+        "kann",
+        "können"
+      ]
+    },
+    {
+      "id": "L07-GD-satzklammer-observe",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-GD-satzklammer",
+      "requiredTopicSlug": "satzklammer",
+      "topicId": "L07-grammar-satzklammer",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "ท้ายประโยค"
+      ],
+      "options": [
+        "ท้ายประโยค",
+        "หน้าประธาน",
+        "หลังประธานทันที"
+      ]
+    },
+    {
+      "id": "L07-GD-satzklammer-apply",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-GD-satzklammer",
+      "requiredTopicSlug": "satzklammer",
+      "topicId": "L07-grammar-satzklammer",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "Ich kann gut singen."
+      ],
+      "options": [
+        "Ich kann gut singen.",
+        "Ich singen kann gut.",
+        "Ich kann singen gut."
+      ]
+    },
+    {
+      "id": "L08-GD-zeitangaben-observe",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-GD-zeitangaben",
+      "requiredTopicSlug": "zeitangaben",
+      "topicId": "L08-grammar-zeitangaben",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "um"
+      ],
+      "options": [
+        "um",
+        "am",
+        "im"
+      ]
+    },
+    {
+      "id": "L08-GD-zeitangaben-apply",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-GD-zeitangaben",
+      "requiredTopicSlug": "zeitangaben",
+      "topicId": "L08-grammar-zeitangaben",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "Am"
+      ],
+      "options": [
+        "Am",
+        "Um",
+        "Im"
+      ]
+    },
+    {
+      "id": "L08-GD-verbposition-observe",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-GD-verbposition",
+      "requiredTopicSlug": "verbposition",
+      "topicId": "L08-grammar-verbposition",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "ตำแหน่งที่สอง"
+      ],
+      "options": [
+        "ตำแหน่งที่สอง",
+        "ท้ายประโยค",
+        "ตำแหน่งที่สาม"
+      ]
+    },
+    {
+      "id": "L08-GD-verbposition-apply",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-GD-verbposition",
+      "requiredTopicSlug": "verbposition",
+      "topicId": "L08-grammar-verbposition",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "Am Dienstag habe ich Zeit."
+      ],
+      "options": [
+        "Am Dienstag habe ich Zeit.",
+        "Am Dienstag ich habe Zeit.",
+        "Am Dienstag Zeit ich habe."
+      ]
+    },
+    {
+      "id": "L08-GD-wissen-observe",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-GD-wissen",
+      "requiredTopicSlug": "wissen",
+      "topicId": "L08-grammar-wissen",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "weißt"
+      ],
+      "options": [
+        "weißt",
+        "weiß",
+        "wissen"
+      ]
+    },
+    {
+      "id": "L08-GD-wissen-apply",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-GD-wissen",
+      "requiredTopicSlug": "wissen",
+      "topicId": "L08-grammar-wissen",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "weiß"
+      ],
+      "options": [
+        "weiß",
+        "weißt",
+        "wissen"
+      ]
+    },
+    {
+      "id": "L09-GD-moegen-observe",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-GD-moegen",
+      "requiredTopicSlug": "moegen",
+      "topicId": "L09-grammar-moegen",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "mag"
+      ],
+      "options": [
+        "mag",
+        "möge",
+        "mögen"
+      ]
+    },
+    {
+      "id": "L09-GD-moegen-apply",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-GD-moegen",
+      "requiredTopicSlug": "moegen",
+      "topicId": "L09-grammar-moegen",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "magst"
+      ],
+      "options": [
+        "magst",
+        "mag",
+        "mögen"
+      ]
+    },
+    {
+      "id": "L09-GD-essen-kein-observe",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-GD-essen-kein",
+      "requiredTopicSlug": "essen-kein",
+      "topicId": "L09-grammar-essen-kein",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "keinen"
+      ],
+      "options": [
+        "keinen",
+        "kein",
+        "keine"
+      ]
+    },
+    {
+      "id": "L09-GD-essen-kein-apply",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-GD-essen-kein",
+      "requiredTopicSlug": "essen-kein",
+      "topicId": "L09-grammar-essen-kein",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "isst"
+      ],
+      "options": [
+        "isst",
+        "esst",
+        "esse"
+      ]
+    },
+    {
+      "id": "L09-GD-moechte-observe",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-GD-moechte",
+      "requiredTopicSlug": "moechte",
+      "topicId": "L09-grammar-moechte",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "möchtest"
+      ],
+      "options": [
+        "möchtest",
+        "möchte",
+        "möchten"
+      ]
+    },
+    {
+      "id": "L09-GD-moechte-apply",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-GD-moechte",
+      "requiredTopicSlug": "moechte",
+      "topicId": "L09-grammar-moechte",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "möchte"
+      ],
+      "options": [
+        "möchte",
+        "möchtest",
+        "möchten"
+      ]
+    },
+    {
+      "id": "L10-GD-trennbare-verben-observe",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-GD-trennbare-verben",
+      "requiredTopicSlug": "trennbare-verben",
+      "topicId": "L10-grammar-trennbare-verben",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "ท้ายประโยค"
+      ],
+      "options": [
+        "ท้ายประโยค",
+        "หน้าประธาน",
+        "หน้ากริยาผัน"
+      ]
+    },
+    {
+      "id": "L10-GD-trennbare-verben-apply",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-GD-trennbare-verben",
+      "requiredTopicSlug": "trennbare-verben",
+      "topicId": "L10-grammar-trennbare-verben",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "ab"
+      ],
+      "options": [
+        "ab",
+        "an",
+        "ein"
+      ]
+    },
+    {
+      "id": "L10-GD-ankommen-frage-observe",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-GD-ankommen-frage",
+      "requiredTopicSlug": "ankommen-frage",
+      "topicId": "L10-grammar-ankommen-frage",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "ท้ายคำถาม"
+      ],
+      "options": [
+        "ท้ายคำถาม",
+        "หลัง Wann",
+        "หน้าประธาน"
+      ]
+    },
+    {
+      "id": "L10-GD-ankommen-frage-apply",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-GD-ankommen-frage",
+      "requiredTopicSlug": "ankommen-frage",
+      "topicId": "L10-grammar-ankommen-frage",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "Wann fährst du ab?"
+      ],
+      "options": [
+        "Wann fährst du ab?",
+        "Wann du fährst ab?",
+        "Wann abfährst du?"
+      ]
+    },
+    {
+      "id": "L11-GD-perfekt-haben-observe",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-GD-perfekt-haben",
+      "requiredTopicSlug": "perfekt-haben",
+      "topicId": "L11-grammar-perfekt-haben",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "Partizip II"
+      ],
+      "options": [
+        "Partizip II",
+        "haben ที่ผันแล้ว",
+        "ประธาน"
+      ]
+    },
+    {
+      "id": "L11-GD-perfekt-haben-apply",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-GD-perfekt-haben",
+      "requiredTopicSlug": "perfekt-haben",
+      "topicId": "L11-grammar-perfekt-haben",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "gehört"
+      ],
+      "options": [
+        "gehört",
+        "hören",
+        "höre"
+      ]
+    },
+    {
+      "id": "L11-GD-partizip-observe",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-GD-partizip",
+      "requiredTopicSlug": "partizip",
+      "topicId": "L11-grammar-partizip",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "-t"
+      ],
+      "options": [
+        "-t",
+        "-en เสมอ",
+        "-st"
+      ]
+    },
+    {
+      "id": "L11-GD-partizip-apply",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-GD-partizip",
+      "requiredTopicSlug": "partizip",
+      "topicId": "L11-grammar-partizip",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "gemacht"
+      ],
+      "options": [
+        "gemacht",
+        "machen",
+        "machst"
+      ]
+    },
+    {
+      "id": "L11-GD-von-bis-ab-observe",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-GD-von-bis-ab",
+      "requiredTopicSlug": "von-bis-ab",
+      "topicId": "L11-grammar-von-bis-ab",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "von ... bis"
+      ],
+      "options": [
+        "von ... bis",
+        "ab ... bis",
+        "um ... am"
+      ]
+    },
+    {
+      "id": "L11-GD-von-bis-ab-apply",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-GD-von-bis-ab",
+      "requiredTopicSlug": "von-bis-ab",
+      "topicId": "L11-grammar-von-bis-ab",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "von ... bis"
+      ],
+      "options": [
+        "von ... bis",
+        "ab ... um",
+        "am ... bis"
+      ]
+    },
+    {
+      "id": "L12-GD-perfekt-sein-observe",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-GD-perfekt-sein",
+      "requiredTopicSlug": "perfekt-sein",
+      "topicId": "L12-grammar-perfekt-sein",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "sein"
+      ],
+      "options": [
+        "sein",
+        "haben",
+        "können"
+      ]
+    },
+    {
+      "id": "L12-GD-perfekt-sein-apply",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-GD-perfekt-sein",
+      "requiredTopicSlug": "perfekt-sein",
+      "topicId": "L12-grammar-perfekt-sein",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "sind"
+      ],
+      "options": [
+        "sind",
+        "haben",
+        "seid"
+      ]
+    },
+    {
+      "id": "L12-GD-war-hatte-observe",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-GD-war-hatte",
+      "requiredTopicSlug": "war-hatte",
+      "topicId": "L12-grammar-war-hatte",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "sein"
+      ],
+      "options": [
+        "sein",
+        "haben",
+        "fahren"
+      ]
+    },
+    {
+      "id": "L12-GD-war-hatte-apply",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-GD-war-hatte",
+      "requiredTopicSlug": "war-hatte",
+      "topicId": "L12-grammar-war-hatte",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "hatte"
+      ],
+      "options": [
+        "hatte",
+        "war",
+        "habe"
+      ]
+    },
+    {
+      "id": "L12-GD-im-seit-observe",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-GD-im-seit",
+      "requiredTopicSlug": "im-seit",
+      "topicId": "L12-grammar-im-seit",
+      "kind": "choice",
+      "subskill": "grammar_form_recognition",
+      "acceptedAnswers": [
+        "seit"
+      ],
+      "options": [
+        "seit",
+        "im",
+        "um"
+      ]
+    },
+    {
+      "id": "L12-GD-im-seit-apply",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-GD-im-seit",
+      "requiredTopicSlug": "im-seit",
+      "topicId": "L12-grammar-im-seit",
+      "kind": "choice",
+      "subskill": "grammar_context_choice",
+      "acceptedAnswers": [
+        "Im"
+      ],
+      "options": [
+        "Im",
+        "Seit",
+        "Um"
+      ]
+    }
+  ]
+}

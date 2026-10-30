@@ -5,6 +5,11 @@ import { L13ContextLesson } from "./l13-context-reading";
 import { PracticeAccountSync } from "./practice-account-sync";
 import { L13PhrasePages } from "./l13-phrase-pages";
 import { L13VocabularyPractice } from "./l13-vocabulary-practice";
+import { A11VocabularyPractice } from "./a11-vocabulary-practice";
+import { A11GrammarPractice } from "./a11-grammar-practice";
+import { A11PhrasePractice } from "./a11-phrase-practice";
+import { A11PhraseLearning } from "./a11-phrase-learning";
+import a11PhraseTargets from "@/data/a11-phrase-targets.json";
 import { L14VocabularyPractice } from "./l14-vocabulary-practice";
 import { GrammarPilot } from "./dative-pilot";
 import { GrammarLearningEntryPoints, L01GrammarEntryRedirect, L02SentencesRedirect } from "./grammar-learning";
@@ -40,7 +45,7 @@ import {
   type Skill,
 } from "@/lib/content";
 import { makeQuestion, sessionItems, type Question } from "@/lib/engine";
-import { isTestWorkspaceUser, isL13GrammarPracticeAvailable, isL14GrammarPracticeAvailable, isVocabularyPracticeAvailable, isPhrasePracticeAvailable, useStore } from "./store";
+import { isTestWorkspaceUser, isL13GrammarPracticeAvailable, isL14GrammarPracticeAvailable, isVocabularyPracticeAvailable, isA11VocabularyPracticeAvailable, isA11GrammarPracticeAvailable, isA11PhrasePracticeAvailable, isPhrasePracticeAvailable, useStore } from "./store";
 import { useLearning } from "./learning-store";
 import {
   LearnActivity,
@@ -121,7 +126,7 @@ function AuthenticatedApp() {
       </div>
     );
   if (!user) return <AuthScreen />;
-  return isTestWorkspaceUser(user) || isL13GrammarPracticeAvailable(user) || isL14GrammarPracticeAvailable(user) || isVocabularyPracticeAvailable(user) || isPhrasePracticeAvailable(user) ? <PracticeAccountSync key={user.id} userId={user.id}><App /></PracticeAccountSync> : <App />;
+  return isTestWorkspaceUser(user) || isL13GrammarPracticeAvailable(user) || isL14GrammarPracticeAvailable(user) || isVocabularyPracticeAvailable(user) || isA11VocabularyPracticeAvailable(user) || isA11GrammarPracticeAvailable(user) || isA11PhrasePracticeAvailable(user) || isPhrasePracticeAvailable(user) ? <PracticeAccountSync key={user.id} userId={user.id}><App /></PracticeAccountSync> : <App />;
 }
 function App() {
   const { items, lessons, coreVocabulary } = useContent();
@@ -261,6 +266,12 @@ function App() {
   else if (path === "/practice/L14/phrases" || path.startsWith("/practice/L14/phrases/")) page = <L14PhrasePractice key={path} slug={parts[3]} />;
   else if (path === "/learn/L13/phrases" || path.startsWith("/learn/L13/phrases/")) page = <L13PhrasePages key={path} mode="learn" slug={parts[3]} />;
   else if (path === "/practice/L13/vocabulary" || path.startsWith("/practice/L13/vocabulary/")) page = <L13VocabularyPractice key={path} slug={parts[3]} />;
+  else if (parts[0] === "practice" && /^L(?:0[1-9]|1[0-2])$/.test(parts[1] ?? "") && parts[2] === "vocabulary" && parts.length <= 4)
+    page = isA11VocabularyPracticeAvailable(user) ? <A11VocabularyPractice key={path} lessonId={parts[1]} slug={parts[3]} /> : <PracticeEntry />;
+  else if (parts[0] === "practice" && /^L(?:0[1-9]|1[0-2])$/.test(parts[1] ?? "") && parts[2] === "grammar" && parts.length <= 4)
+    page = isA11GrammarPracticeAvailable(user) ? <A11GrammarPractice key={path} lessonId={parts[1]} slug={parts[3]} /> : <PracticeEntry />;
+  else if (parts[0] === "practice" && /^L(?:0[1-9]|1[0-2])$/.test(parts[1] ?? "") && parts[2] === "phrases" && parts.length <= 4)
+    page = isA11PhrasePracticeAvailable(user) ? <A11PhrasePractice key={path} lessonId={parts[1]} slug={parts[3]} /> : <PracticeEntry />;
   else if (path === "/practice/L14/vocabulary" || path.startsWith("/practice/L14/vocabulary/")) page = <L14VocabularyPractice key={path} slug={parts[3]} />;
   else if (path === "/practice/L13/grammar") page = <PracticeGrammarTopics />;
   else if (["L14", "L15", "L16", "L17", "L18"].some(lessonId => path === `/practice/${lessonId}/grammar`)) page = <PracticeGrammarTopics lessonId={parts[1]} />;
@@ -276,6 +287,8 @@ function App() {
     page = <PracticeEntry key={searchParams.toString()} initialLevel={searchParams.get("level") || "A1.3"} />;
   else if (path === "/review") page = <ReviewPage start={start} />;
   else if (path === "/learn/L02/phrases") page = <L02PhraseLearning key={path} />;
+  else if (parts[0] === "learn" && /^L(?:0[3-9]|1[0-2])$/.test(parts[1] ?? "") && parts[2] === "phrases" && parts.length === 3)
+    page = isA11PhrasePracticeAvailable(user) ? <A11PhraseLearning key={path} lessonId={parts[1]} /> : <LessonDetail id={parts[1]} />;
   else if (path === "/learn/L14/phrases") page = <L14PhraseLearning key={path} />;
   else if (path === "/learn/L02/phrases/sentences") page = <GuidedLearningPage key={path} lessonId="L02" skill="grammar" grammarTrack="sentences" />;
   else if (path === "/learn/L02/grammar/sentences") page = <L02SentencesRedirect />;
@@ -622,7 +635,7 @@ function LessonDetail({ id }: { id: string }) {
       <div className="skills-grid">
         {lessonSkills.map((s) => {
           const Icon = skillIcons[s.id];
-          const hasDedicatedContent = id === "L14" && s.id === "phrases";
+          const hasDedicatedContent = s.id === "phrases" && (id === "L14" || (isA11PhrasePracticeAvailable(user) && /^L(?:0[3-9]|1[0-2])$/.test(id)));
           const pool = items.filter(
             (i) => i.lessonId === id && i.skill === s.id,
           );
@@ -671,6 +684,9 @@ function LessonDetail({ id }: { id: string }) {
                   <Meter value={pct} label={`เคยเรียน ${s.th}`} />
                   <small>เคยเรียน {pct}%</small>
                 </>
+              )}
+              {hasDedicatedContent && /^L(?:0[3-9]|1[0-2])$/.test(id) && s.id === "phrases" && (
+                <div className="skill-count">{a11PhraseTargets.filter(target => target.lessonId === id).length} ประโยค</div>
               )}
             </>
           );

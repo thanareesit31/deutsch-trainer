@@ -1,0 +1,7201 @@
+{
+  "generatedAt": "2026-10-30",
+  "status": "generated-needs-review-before-rollout",
+  "lessons": [
+    {
+      "lessonId": "L01",
+      "targetCount": 9,
+      "questionDefinitions": 24,
+      "targets": [
+        {
+          "id": "phrases-L01-0",
+          "lessonId": "L01",
+          "de": "Wie heißt du?",
+          "th": "คุณชื่ออะไร",
+          "sourceStatus": "existing-published-catalog"
+        },
+        {
+          "id": "phrases-L01-1",
+          "lessonId": "L01",
+          "de": "Wie heißen Sie?",
+          "th": "คุณชื่ออะไร (สุภาพ)",
+          "sourceStatus": "existing-published-catalog"
+        },
+        {
+          "id": "phrases-L01-2",
+          "lessonId": "L01",
+          "de": "Woher kommst du?",
+          "th": "คุณมาจากที่ไหน",
+          "sourceStatus": "existing-published-catalog"
+        },
+        {
+          "id": "phrases-L01-3",
+          "lessonId": "L01",
+          "de": "Wie geht es dir?",
+          "th": "คุณสบายดีไหม",
+          "sourceStatus": "existing-published-catalog"
+        },
+        {
+          "id": "phrases-L01-4",
+          "lessonId": "L01",
+          "de": "Gut, danke.",
+          "th": "สบายดี ขอบคุณ",
+          "sourceStatus": "existing-published-catalog"
+        },
+        {
+          "id": "phrases-L01-5",
+          "lessonId": "L01",
+          "de": "Es geht.",
+          "th": "ก็เรื่อย ๆ",
+          "sourceStatus": "existing-published-catalog"
+        },
+        {
+          "id": "phrases-L01-6",
+          "lessonId": "L01",
+          "de": "Auf Wiedersehen!",
+          "th": "แล้วพบกันใหม่",
+          "sourceStatus": "existing-published-catalog"
+        },
+        {
+          "id": "phrases-L01-7",
+          "lessonId": "L01",
+          "de": "Ich heiße Sun.",
+          "th": "ฉันชื่อซัน",
+          "sourceStatus": "existing-published-catalog"
+        },
+        {
+          "id": "phrases-L01-8",
+          "lessonId": "L01",
+          "de": "Ich komme aus Thailand.",
+          "th": "ฉันมาจากประเทศไทย",
+          "sourceStatus": "existing-published-catalog"
+        }
+      ],
+      "topicId": "L01-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "existing-catalog"
+    },
+    {
+      "lessonId": "L02",
+      "targetCount": 8,
+      "questionDefinitions": 24,
+      "targets": [
+        {
+          "id": "L02-pattern-phone",
+          "lessonId": "L02",
+          "de": "Wie ist deine Handynummer?",
+          "th": "หมายเลขโทรศัพท์มือถือของคุณคืออะไร",
+          "sourceStatus": "existing-published-l02-migration"
+        },
+        {
+          "id": "L02-pattern-profession",
+          "lessonId": "L02",
+          "de": "Was bist du von Beruf?",
+          "th": "คุณมีอาชีพอะไร",
+          "sourceStatus": "existing-published-l02-migration"
+        },
+        {
+          "id": "L02-status-praktikum",
+          "lessonId": "L02",
+          "de": "Ich mache ein Praktikum.",
+          "th": "ฉันกำลังฝึกงาน",
+          "sourceStatus": "existing-published-l02-migration"
+        },
+        {
+          "id": "L02-status-arbeitslos",
+          "lessonId": "L02",
+          "de": "Ich bin arbeitslos.",
+          "th": "ฉันว่างงาน",
+          "sourceStatus": "existing-published-l02-migration"
+        },
+        {
+          "id": "L02-status-nicht-arbeiten",
+          "lessonId": "L02",
+          "de": "Ich arbeite nicht.",
+          "th": "ฉันไม่ได้ทำงาน",
+          "sourceStatus": "existing-published-l02-migration"
+        },
+        {
+          "id": "L02-status-freiberuflich",
+          "lessonId": "L02",
+          "de": "Ich bin freiberuflich.",
+          "th": "ฉันทำงานฟรีแลนซ์",
+          "sourceStatus": "existing-published-l02-migration"
+        },
+        {
+          "id": "L02-status-selbststaendig",
+          "lessonId": "L02",
+          "de": "Ich bin selbstständig.",
+          "th": "ฉันประกอบอาชีพอิสระ",
+          "sourceStatus": "existing-published-l02-migration"
+        },
+        {
+          "id": "L02-status-angestellt",
+          "lessonId": "L02",
+          "de": "Ich bin angestellt.",
+          "th": "ฉันเป็นลูกจ้าง",
+          "sourceStatus": "existing-published-l02-migration"
+        }
+      ],
+      "topicId": "L02-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "existing-l02-migration"
+    },
+    {
+      "lessonId": "L03",
+      "targetCount": 10,
+      "questionDefinitions": 30,
+      "targets": [
+        {
+          "id": "L03-P001",
+          "lessonId": "L03",
+          "de": "Das ist meine Mutter.",
+          "th": "นี่คือแม่ของฉัน",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L03-P002",
+          "lessonId": "L03",
+          "de": "Das ist mein Bruder.",
+          "th": "นี่คือพี่ชายหรือน้องชายของฉัน",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L03-P003",
+          "lessonId": "L03",
+          "de": "Wie heißt deine Schwester?",
+          "th": "พี่สาวหรือน้องสาวของเธอชื่ออะไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L03-P004",
+          "lessonId": "L03",
+          "de": "Meine Schwester heißt Lena.",
+          "th": "พี่สาวหรือน้องสาวของฉันชื่อเลนา",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L03-P005",
+          "lessonId": "L03",
+          "de": "Sprichst du Deutsch?",
+          "th": "เธอพูดภาษาเยอรมันไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L03-P006",
+          "lessonId": "L03",
+          "de": "Ja, ich spreche Deutsch.",
+          "th": "ใช่ ฉันพูดภาษาเยอรมัน",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L03-P007",
+          "lessonId": "L03",
+          "de": "Welche Sprachen sprichst du?",
+          "th": "เธอพูดภาษาอะไรบ้าง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L03-P008",
+          "lessonId": "L03",
+          "de": "Ich spreche Thai und Deutsch.",
+          "th": "ฉันพูดภาษาไทยและภาษาเยอรมัน",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L03-P009",
+          "lessonId": "L03",
+          "de": "Das ist Marias Vater.",
+          "th": "นี่คือพ่อของมาเรีย",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L03-P010",
+          "lessonId": "L03",
+          "de": "Meine Eltern wohnen in Berlin.",
+          "th": "พ่อแม่ของฉันอยู่ที่เบอร์ลิน",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L03-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    },
+    {
+      "lessonId": "L04",
+      "targetCount": 10,
+      "questionDefinitions": 30,
+      "targets": [
+        {
+          "id": "L04-P001",
+          "lessonId": "L04",
+          "de": "Wie findest du das Sofa?",
+          "th": "เธอคิดว่าโซฟาตัวนี้เป็นอย่างไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L04-P002",
+          "lessonId": "L04",
+          "de": "Ich finde das Sofa schön.",
+          "th": "ฉันคิดว่าโซฟาตัวนี้สวย",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L04-P003",
+          "lessonId": "L04",
+          "de": "Wie viel kostet der Tisch?",
+          "th": "โต๊ะตัวนี้ราคาเท่าไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L04-P004",
+          "lessonId": "L04",
+          "de": "Der Tisch kostet achtzig Euro.",
+          "th": "โต๊ะตัวนี้ราคาแปดสิบยูโร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L04-P005",
+          "lessonId": "L04",
+          "de": "Ist die Lampe neu?",
+          "th": "โคมไฟดวงนี้ใหม่ไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L04-P006",
+          "lessonId": "L04",
+          "de": "Nein, sie ist alt.",
+          "th": "ไม่ มันเก่าแล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L04-P007",
+          "lessonId": "L04",
+          "de": "Das Bild ist sehr schön.",
+          "th": "ภาพนี้สวยมาก",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L04-P008",
+          "lessonId": "L04",
+          "de": "Ist das der Stuhl?",
+          "th": "นั่นคือเก้าอี้ตัวนั้นใช่ไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L04-P009",
+          "lessonId": "L04",
+          "de": "Ja, das ist er.",
+          "th": "ใช่ นั่นคือเก้าอี้ตัวนั้น",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L04-P010",
+          "lessonId": "L04",
+          "de": "Die Möbel sind praktisch.",
+          "th": "เฟอร์นิเจอร์เหล่านี้ใช้สะดวก",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L04-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    },
+    {
+      "lessonId": "L05",
+      "targetCount": 10,
+      "questionDefinitions": 30,
+      "targets": [
+        {
+          "id": "L05-P001",
+          "lessonId": "L05",
+          "de": "Was ist das?",
+          "th": "นั่นคืออะไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L05-P002",
+          "lessonId": "L05",
+          "de": "Das ist ein Glas.",
+          "th": "นั่นคือแก้วหนึ่งใบ",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L05-P003",
+          "lessonId": "L05",
+          "de": "Ist das ein Tisch?",
+          "th": "นั่นคือโต๊ะใช่ไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L05-P004",
+          "lessonId": "L05",
+          "de": "Nein, das ist kein Tisch.",
+          "th": "ไม่ นั่นไม่ใช่โต๊ะ",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L05-P005",
+          "lessonId": "L05",
+          "de": "Ist das eine Tasche?",
+          "th": "นั่นคือกระเป๋าใช่ไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L05-P006",
+          "lessonId": "L05",
+          "de": "Ja, das ist eine Tasche.",
+          "th": "ใช่ นั่นคือกระเป๋า",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L05-P007",
+          "lessonId": "L05",
+          "de": "Nein, das ist keine Tasche.",
+          "th": "ไม่ นั่นไม่ใช่กระเป๋า",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L05-P008",
+          "lessonId": "L05",
+          "de": "Ich brauche einen Stift.",
+          "th": "ฉันต้องการปากกาหนึ่งด้าม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L05-P009",
+          "lessonId": "L05",
+          "de": "Hast du einen Schlüssel?",
+          "th": "เธอมีกุญแจไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L05-P010",
+          "lessonId": "L05",
+          "de": "Ich habe keinen Schlüssel.",
+          "th": "ฉันไม่มีกุญแจ",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L05-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    },
+    {
+      "lessonId": "L06",
+      "targetCount": 10,
+      "questionDefinitions": 30,
+      "targets": [
+        {
+          "id": "L06-P001",
+          "lessonId": "L06",
+          "de": "Wir haben einen Termin.",
+          "th": "พวกเรามีนัด",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L06-P002",
+          "lessonId": "L06",
+          "de": "Ich brauche einen Computer.",
+          "th": "ฉันต้องการคอมพิวเตอร์หนึ่งเครื่อง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L06-P003",
+          "lessonId": "L06",
+          "de": "Hast du einen Drucker?",
+          "th": "เธอมีเครื่องพิมพ์ไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L06-P004",
+          "lessonId": "L06",
+          "de": "Nein, ich habe keinen Drucker.",
+          "th": "ไม่ ฉันไม่มีเครื่องพิมพ์",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L06-P005",
+          "lessonId": "L06",
+          "de": "Wo ist mein Handy?",
+          "th": "โทรศัพท์มือถือของฉันอยู่ไหน",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L06-P006",
+          "lessonId": "L06",
+          "de": "Ich habe zwei Bücher.",
+          "th": "ฉันมีหนังสือสองเล่ม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L06-P007",
+          "lessonId": "L06",
+          "de": "Der Drucker ist kaputt.",
+          "th": "เครื่องพิมพ์เสีย",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L06-P008",
+          "lessonId": "L06",
+          "de": "Brauchst du Papier?",
+          "th": "เธอต้องการกระดาษไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L06-P009",
+          "lessonId": "L06",
+          "de": "Ich schreibe eine E-Mail.",
+          "th": "ฉันเขียนอีเมลหนึ่งฉบับ",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L06-P010",
+          "lessonId": "L06",
+          "de": "Ich suche meine Maus.",
+          "th": "ฉันหาเมาส์ของฉันอยู่",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L06-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    },
+    {
+      "lessonId": "L07",
+      "targetCount": 10,
+      "questionDefinitions": 30,
+      "targets": [
+        {
+          "id": "L07-P001",
+          "lessonId": "L07",
+          "de": "Kannst du tanzen?",
+          "th": "เธอเต้นได้ไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L07-P002",
+          "lessonId": "L07",
+          "de": "Ja, ich kann tanzen.",
+          "th": "ใช่ ฉันเต้นได้",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L07-P003",
+          "lessonId": "L07",
+          "de": "Ich kann nicht singen.",
+          "th": "ฉันร้องเพลงไม่เป็น",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L07-P004",
+          "lessonId": "L07",
+          "de": "Sie kann gut kochen.",
+          "th": "เธอทำอาหารเก่ง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L07-P005",
+          "lessonId": "L07",
+          "de": "Kannst du schwimmen?",
+          "th": "เธอว่ายน้ำได้ไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L07-P006",
+          "lessonId": "L07",
+          "de": "Wir können zusammen spielen.",
+          "th": "พวกเราเล่นด้วยกันได้",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L07-P007",
+          "lessonId": "L07",
+          "de": "Das kannst du super!",
+          "th": "เธอทำสิ่งนั้นได้ยอดเยี่ยม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L07-P008",
+          "lessonId": "L07",
+          "de": "Du tanzt sehr gut.",
+          "th": "เธอเต้นเก่งมาก",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L07-P009",
+          "lessonId": "L07",
+          "de": "Was machst du gern?",
+          "th": "เธอชอบทำอะไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L07-P010",
+          "lessonId": "L07",
+          "de": "Ich spiele gern Fußball.",
+          "th": "ฉันชอบเล่นฟุตบอล",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L07-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    },
+    {
+      "lessonId": "L08",
+      "targetCount": 10,
+      "questionDefinitions": 28,
+      "targets": [
+        {
+          "id": "L08-P001",
+          "lessonId": "L08",
+          "de": "Hast du am Montag Zeit?",
+          "th": "วันจันทร์เธอว่างไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L08-P002",
+          "lessonId": "L08",
+          "de": "Ich habe leider keine Zeit.",
+          "th": "น่าเสียดาย ฉันไม่ว่าง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L08-P003",
+          "lessonId": "L08",
+          "de": "Gehen wir am Freitag ins Kino?",
+          "th": "วันศุกร์เราไปโรงหนังกันไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L08-P004",
+          "lessonId": "L08",
+          "de": "Ja, gern.",
+          "th": "ได้เลย ยินดี",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L08-P005",
+          "lessonId": "L08",
+          "de": "Wann treffen wir uns?",
+          "th": "เราจะเจอกันเมื่อไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L08-P006",
+          "lessonId": "L08",
+          "de": "Wir treffen uns um acht Uhr.",
+          "th": "เราเจอกันตอนแปดโมง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L08-P007",
+          "lessonId": "L08",
+          "de": "Ich komme am Samstag.",
+          "th": "ฉันจะมาวันเสาร์",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L08-P008",
+          "lessonId": "L08",
+          "de": "Am Sonntag habe ich frei.",
+          "th": "วันอาทิตย์ฉันว่าง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L08-P009",
+          "lessonId": "L08",
+          "de": "Bis morgen!",
+          "th": "เจอกันพรุ่งนี้",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L08-P010",
+          "lessonId": "L08",
+          "de": "Der Film beginnt um sieben Uhr.",
+          "th": "ภาพยนตร์เริ่มตอนหนึ่งทุ่ม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L08-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    },
+    {
+      "lessonId": "L09",
+      "targetCount": 10,
+      "questionDefinitions": 30,
+      "targets": [
+        {
+          "id": "L09-P001",
+          "lessonId": "L09",
+          "de": "Was isst du gern?",
+          "th": "เธอชอบกินอะไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L09-P002",
+          "lessonId": "L09",
+          "de": "Ich esse gern Pizza.",
+          "th": "ฉันชอบกินพิซซ่า",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L09-P003",
+          "lessonId": "L09",
+          "de": "Magst du Kaffee?",
+          "th": "เธอชอบกาแฟไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L09-P004",
+          "lessonId": "L09",
+          "de": "Nein, ich mag keinen Kaffee.",
+          "th": "ไม่ ฉันไม่ชอบกาแฟ",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L09-P005",
+          "lessonId": "L09",
+          "de": "Ich trinke Wasser.",
+          "th": "ฉันดื่มน้ำ",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L09-P006",
+          "lessonId": "L09",
+          "de": "Ich mag Gemüse.",
+          "th": "ฉันชอบผัก",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L09-P007",
+          "lessonId": "L09",
+          "de": "Das Essen schmeckt gut.",
+          "th": "อาหารนี้รสชาติดี",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L09-P008",
+          "lessonId": "L09",
+          "de": "Wir essen heute Brot.",
+          "th": "วันนี้พวกเรากินขนมปัง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L09-P009",
+          "lessonId": "L09",
+          "de": "Hast du Hunger?",
+          "th": "เธอหิวไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L09-P010",
+          "lessonId": "L09",
+          "de": "Ich esse kein Fleisch.",
+          "th": "ฉันไม่กินเนื้อสัตว์",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L09-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    },
+    {
+      "lessonId": "L10",
+      "targetCount": 10,
+      "questionDefinitions": 30,
+      "targets": [
+        {
+          "id": "L10-P001",
+          "lessonId": "L10",
+          "de": "Wann kommst du an?",
+          "th": "เธอจะมาถึงเมื่อไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L10-P002",
+          "lessonId": "L10",
+          "de": "Ich komme um neun Uhr an.",
+          "th": "ฉันจะมาถึงตอนเก้าโมง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L10-P003",
+          "lessonId": "L10",
+          "de": "Ich fahre mit dem Zug.",
+          "th": "ฉันเดินทางด้วยรถไฟ",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L10-P004",
+          "lessonId": "L10",
+          "de": "Wo ist der Bahnhof?",
+          "th": "สถานีรถไฟอยู่ที่ไหน",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L10-P005",
+          "lessonId": "L10",
+          "de": "Der Zug fährt um zehn Uhr ab.",
+          "th": "รถไฟออกตอนสิบโมง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L10-P006",
+          "lessonId": "L10",
+          "de": "Ich habe ein Ticket.",
+          "th": "ฉันมีตั๋วหนึ่งใบ",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L10-P007",
+          "lessonId": "L10",
+          "de": "Ist der Zug pünktlich?",
+          "th": "รถไฟตรงเวลาไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L10-P008",
+          "lessonId": "L10",
+          "de": "Der Bus kommt später.",
+          "th": "รถบัสจะมาทีหลัง",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L10-P009",
+          "lessonId": "L10",
+          "de": "Ich nehme den Zug.",
+          "th": "ฉันจะขึ้นรถไฟ",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L10-P010",
+          "lessonId": "L10",
+          "de": "Wir steigen hier um.",
+          "th": "พวกเราเปลี่ยนรถที่นี่",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L10-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    },
+    {
+      "lessonId": "L11",
+      "targetCount": 10,
+      "questionDefinitions": 30,
+      "targets": [
+        {
+          "id": "L11-P001",
+          "lessonId": "L11",
+          "de": "Was hast du gestern gemacht?",
+          "th": "เมื่อวานเธอทำอะไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L11-P002",
+          "lessonId": "L11",
+          "de": "Ich habe gearbeitet.",
+          "th": "ฉันทำงานแล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L11-P003",
+          "lessonId": "L11",
+          "de": "Ich habe Musik gehört.",
+          "th": "ฉันฟังเพลงแล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L11-P004",
+          "lessonId": "L11",
+          "de": "Hast du gestern gekocht?",
+          "th": "เมื่อวานเธอทำอาหารไหม",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L11-P005",
+          "lessonId": "L11",
+          "de": "Ja, ich habe gekocht.",
+          "th": "ใช่ ฉันทำอาหารแล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L11-P006",
+          "lessonId": "L11",
+          "de": "Ich habe eine E-Mail geschrieben.",
+          "th": "ฉันเขียนอีเมลแล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L11-P007",
+          "lessonId": "L11",
+          "de": "Was hast du am Abend gemacht?",
+          "th": "ตอนเย็นเธอทำอะไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L11-P008",
+          "lessonId": "L11",
+          "de": "Ich habe ferngesehen.",
+          "th": "ฉันดูโทรทัศน์แล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L11-P009",
+          "lessonId": "L11",
+          "de": "Wir haben Fußball gespielt.",
+          "th": "พวกเราเล่นฟุตบอลแล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L11-P010",
+          "lessonId": "L11",
+          "de": "Ich habe viel gelernt.",
+          "th": "ฉันเรียนไปเยอะแล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L11-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    },
+    {
+      "lessonId": "L12",
+      "targetCount": 10,
+      "questionDefinitions": 30,
+      "targets": [
+        {
+          "id": "L12-P001",
+          "lessonId": "L12",
+          "de": "Im Frühling bin ich nach Hamburg gefahren.",
+          "th": "ในฤดูใบไม้ผลิฉันเดินทางไปฮัมบูร์ก",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L12-P002",
+          "lessonId": "L12",
+          "de": "Im Sommer war ich in Berlin.",
+          "th": "ในฤดูร้อนฉันอยู่ที่เบอร์ลิน",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L12-P003",
+          "lessonId": "L12",
+          "de": "Wir sind mit dem Zug gefahren.",
+          "th": "พวกเราเดินทางด้วยรถไฟแล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L12-P004",
+          "lessonId": "L12",
+          "de": "Wann bist du angekommen?",
+          "th": "เธอมาถึงเมื่อไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L12-P005",
+          "lessonId": "L12",
+          "de": "Ich bin am Montag zurückgekommen.",
+          "th": "ฉันกลับมาวันจันทร์",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L12-P006",
+          "lessonId": "L12",
+          "de": "Es war sehr schön.",
+          "th": "มันดีมาก",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L12-P007",
+          "lessonId": "L12",
+          "de": "Wir hatten viel Zeit.",
+          "th": "พวกเรามีเวลามาก",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L12-P008",
+          "lessonId": "L12",
+          "de": "Im Winter bin ich zu Hause geblieben.",
+          "th": "ในฤดูหนาวฉันอยู่บ้าน",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L12-P009",
+          "lessonId": "L12",
+          "de": "Was hast du im Herbst gemacht?",
+          "th": "ในฤดูใบไม้ร่วงเธอทำอะไร",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        },
+        {
+          "id": "L12-P010",
+          "lessonId": "L12",
+          "de": "Ich habe meine Familie besucht.",
+          "th": "ฉันไปเยี่ยมครอบครัวแล้ว",
+          "sourceStatus": "product-authored-curriculum-aligned"
+        }
+      ],
+      "topicId": "L12-phrases-core",
+      "learnedEvidence": "item_exposures",
+      "sourceStatus": "product-authored-curriculum-aligned"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "phrases-L01-0-a11-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-0",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "คุณชื่ออะไร"
+      ],
+      "options": [
+        "คุณชื่ออะไร",
+        "คุณชื่ออะไร (สุภาพ)",
+        "คุณมาจากที่ไหน",
+        "คุณสบายดีไหม"
+      ]
+    },
+    {
+      "id": "phrases-L01-0-a11-situation",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-0",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wie heißt du?"
+      ],
+      "options": [
+        "Wie heißt du?",
+        "Wie heißen Sie?",
+        "Woher kommst du?",
+        "Wie geht es dir?"
+      ]
+    },
+    {
+      "id": "phrases-L01-0-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-0",
+      "topicId": "L01-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wie heißt du?"
+      ],
+      "tokens": [
+        "Wie",
+        "heißt",
+        "du?"
+      ]
+    },
+    {
+      "id": "phrases-L01-1-a11-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-1",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "คุณชื่ออะไร (สุภาพ)"
+      ],
+      "options": [
+        "คุณชื่ออะไร (สุภาพ)",
+        "คุณมาจากที่ไหน",
+        "คุณสบายดีไหม",
+        "สบายดี ขอบคุณ"
+      ]
+    },
+    {
+      "id": "phrases-L01-1-a11-situation",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-1",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wie heißen Sie?"
+      ],
+      "options": [
+        "Wie heißen Sie?",
+        "Woher kommst du?",
+        "Wie geht es dir?",
+        "Gut, danke."
+      ]
+    },
+    {
+      "id": "phrases-L01-1-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-1",
+      "topicId": "L01-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wie heißen Sie?"
+      ],
+      "tokens": [
+        "Wie",
+        "heißen",
+        "Sie?"
+      ]
+    },
+    {
+      "id": "phrases-L01-2-a11-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-2",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "คุณมาจากที่ไหน"
+      ],
+      "options": [
+        "คุณมาจากที่ไหน",
+        "คุณสบายดีไหม",
+        "สบายดี ขอบคุณ",
+        "ก็เรื่อย ๆ"
+      ]
+    },
+    {
+      "id": "phrases-L01-2-a11-situation",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-2",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Woher kommst du?"
+      ],
+      "options": [
+        "Woher kommst du?",
+        "Wie geht es dir?",
+        "Gut, danke.",
+        "Es geht."
+      ]
+    },
+    {
+      "id": "phrases-L01-2-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-2",
+      "topicId": "L01-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Woher kommst du?"
+      ],
+      "tokens": [
+        "Woher",
+        "kommst",
+        "du?"
+      ]
+    },
+    {
+      "id": "phrases-L01-3-a11-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-3",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "คุณสบายดีไหม"
+      ],
+      "options": [
+        "คุณสบายดีไหม",
+        "สบายดี ขอบคุณ",
+        "ก็เรื่อย ๆ",
+        "แล้วพบกันใหม่"
+      ]
+    },
+    {
+      "id": "phrases-L01-3-a11-situation",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-3",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wie geht es dir?"
+      ],
+      "options": [
+        "Wie geht es dir?",
+        "Gut, danke.",
+        "Es geht.",
+        "Auf Wiedersehen!"
+      ]
+    },
+    {
+      "id": "phrases-L01-3-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-3",
+      "topicId": "L01-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wie geht es dir?"
+      ],
+      "tokens": [
+        "Wie",
+        "geht",
+        "es",
+        "dir?"
+      ]
+    },
+    {
+      "id": "phrases-L01-4-a11-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-4",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "สบายดี ขอบคุณ"
+      ],
+      "options": [
+        "สบายดี ขอบคุณ",
+        "ก็เรื่อย ๆ",
+        "แล้วพบกันใหม่",
+        "ฉันชื่อซัน"
+      ]
+    },
+    {
+      "id": "phrases-L01-4-a11-situation",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-4",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Gut, danke."
+      ],
+      "options": [
+        "Gut, danke.",
+        "Es geht.",
+        "Auf Wiedersehen!",
+        "Ich heiße Sun."
+      ]
+    },
+    {
+      "id": "phrases-L01-5-a11-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-5",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ก็เรื่อย ๆ"
+      ],
+      "options": [
+        "ก็เรื่อย ๆ",
+        "แล้วพบกันใหม่",
+        "ฉันชื่อซัน",
+        "ฉันมาจากประเทศไทย"
+      ]
+    },
+    {
+      "id": "phrases-L01-5-a11-situation",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-5",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Es geht."
+      ],
+      "options": [
+        "Es geht.",
+        "Auf Wiedersehen!",
+        "Ich heiße Sun.",
+        "Ich komme aus Thailand."
+      ]
+    },
+    {
+      "id": "phrases-L01-6-a11-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-6",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "แล้วพบกันใหม่"
+      ],
+      "options": [
+        "แล้วพบกันใหม่",
+        "ฉันชื่อซัน",
+        "ฉันมาจากประเทศไทย",
+        "คุณชื่ออะไร"
+      ]
+    },
+    {
+      "id": "phrases-L01-6-a11-situation",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-6",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Auf Wiedersehen!"
+      ],
+      "options": [
+        "Auf Wiedersehen!",
+        "Ich heiße Sun.",
+        "Ich komme aus Thailand.",
+        "Wie heißt du?"
+      ]
+    },
+    {
+      "id": "phrases-L01-7-a11-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-7",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันชื่อซัน"
+      ],
+      "options": [
+        "ฉันชื่อซัน",
+        "ฉันมาจากประเทศไทย",
+        "คุณชื่ออะไร",
+        "คุณชื่ออะไร (สุภาพ)"
+      ]
+    },
+    {
+      "id": "phrases-L01-7-a11-situation",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-7",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich heiße Sun."
+      ],
+      "options": [
+        "Ich heiße Sun.",
+        "Ich komme aus Thailand.",
+        "Wie heißt du?",
+        "Wie heißen Sie?"
+      ]
+    },
+    {
+      "id": "phrases-L01-7-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-7",
+      "topicId": "L01-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich heiße Sun."
+      ],
+      "tokens": [
+        "Ich",
+        "heiße",
+        "Sun."
+      ]
+    },
+    {
+      "id": "phrases-L01-8-a11-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-8",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันมาจากประเทศไทย"
+      ],
+      "options": [
+        "ฉันมาจากประเทศไทย",
+        "คุณชื่ออะไร",
+        "คุณชื่ออะไร (สุภาพ)",
+        "คุณมาจากที่ไหน"
+      ]
+    },
+    {
+      "id": "phrases-L01-8-a11-situation",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-8",
+      "topicId": "L01-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich komme aus Thailand."
+      ],
+      "options": [
+        "Ich komme aus Thailand.",
+        "Wie heißt du?",
+        "Wie heißen Sie?",
+        "Woher kommst du?"
+      ]
+    },
+    {
+      "id": "phrases-L01-8-a11-order",
+      "version": 1,
+      "lessonId": "L01",
+      "targetId": "phrases-L01-8",
+      "topicId": "L01-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich komme aus Thailand."
+      ],
+      "tokens": [
+        "Ich",
+        "komme",
+        "aus",
+        "Thailand."
+      ]
+    },
+    {
+      "id": "L02-pattern-phone-a11-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pattern-phone",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "หมายเลขโทรศัพท์มือถือของคุณคืออะไร"
+      ],
+      "options": [
+        "หมายเลขโทรศัพท์มือถือของคุณคืออะไร",
+        "คุณมีอาชีพอะไร",
+        "ฉันกำลังฝึกงาน",
+        "ฉันว่างงาน"
+      ]
+    },
+    {
+      "id": "L02-pattern-phone-a11-situation",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pattern-phone",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wie ist deine Handynummer?"
+      ],
+      "options": [
+        "Wie ist deine Handynummer?",
+        "Was bist du von Beruf?",
+        "Ich mache ein Praktikum.",
+        "Ich bin arbeitslos."
+      ]
+    },
+    {
+      "id": "L02-pattern-phone-a11-order",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pattern-phone",
+      "topicId": "L02-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wie ist deine Handynummer?"
+      ],
+      "tokens": [
+        "Wie",
+        "ist",
+        "deine",
+        "Handynummer?"
+      ]
+    },
+    {
+      "id": "L02-pattern-profession-a11-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pattern-profession",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "คุณมีอาชีพอะไร"
+      ],
+      "options": [
+        "คุณมีอาชีพอะไร",
+        "ฉันกำลังฝึกงาน",
+        "ฉันว่างงาน",
+        "ฉันไม่ได้ทำงาน"
+      ]
+    },
+    {
+      "id": "L02-pattern-profession-a11-situation",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pattern-profession",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Was bist du von Beruf?"
+      ],
+      "options": [
+        "Was bist du von Beruf?",
+        "Ich mache ein Praktikum.",
+        "Ich bin arbeitslos.",
+        "Ich arbeite nicht."
+      ]
+    },
+    {
+      "id": "L02-pattern-profession-a11-order",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-pattern-profession",
+      "topicId": "L02-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Was bist du von Beruf?"
+      ],
+      "tokens": [
+        "Was",
+        "bist",
+        "du",
+        "von",
+        "Beruf?"
+      ]
+    },
+    {
+      "id": "L02-status-praktikum-a11-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-praktikum",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันกำลังฝึกงาน"
+      ],
+      "options": [
+        "ฉันกำลังฝึกงาน",
+        "ฉันว่างงาน",
+        "ฉันไม่ได้ทำงาน",
+        "ฉันทำงานฟรีแลนซ์"
+      ]
+    },
+    {
+      "id": "L02-status-praktikum-a11-situation",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-praktikum",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich mache ein Praktikum."
+      ],
+      "options": [
+        "Ich mache ein Praktikum.",
+        "Ich bin arbeitslos.",
+        "Ich arbeite nicht.",
+        "Ich bin freiberuflich."
+      ]
+    },
+    {
+      "id": "L02-status-praktikum-a11-order",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-praktikum",
+      "topicId": "L02-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich mache ein Praktikum."
+      ],
+      "tokens": [
+        "Ich",
+        "mache",
+        "ein",
+        "Praktikum."
+      ]
+    },
+    {
+      "id": "L02-status-arbeitslos-a11-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-arbeitslos",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันว่างงาน"
+      ],
+      "options": [
+        "ฉันว่างงาน",
+        "ฉันไม่ได้ทำงาน",
+        "ฉันทำงานฟรีแลนซ์",
+        "ฉันประกอบอาชีพอิสระ"
+      ]
+    },
+    {
+      "id": "L02-status-arbeitslos-a11-situation",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-arbeitslos",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich bin arbeitslos."
+      ],
+      "options": [
+        "Ich bin arbeitslos.",
+        "Ich arbeite nicht.",
+        "Ich bin freiberuflich.",
+        "Ich bin selbstständig."
+      ]
+    },
+    {
+      "id": "L02-status-arbeitslos-a11-order",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-arbeitslos",
+      "topicId": "L02-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich bin arbeitslos."
+      ],
+      "tokens": [
+        "Ich",
+        "bin",
+        "arbeitslos."
+      ]
+    },
+    {
+      "id": "L02-status-nicht-arbeiten-a11-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-nicht-arbeiten",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันไม่ได้ทำงาน"
+      ],
+      "options": [
+        "ฉันไม่ได้ทำงาน",
+        "ฉันทำงานฟรีแลนซ์",
+        "ฉันประกอบอาชีพอิสระ",
+        "ฉันเป็นลูกจ้าง"
+      ]
+    },
+    {
+      "id": "L02-status-nicht-arbeiten-a11-situation",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-nicht-arbeiten",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich arbeite nicht."
+      ],
+      "options": [
+        "Ich arbeite nicht.",
+        "Ich bin freiberuflich.",
+        "Ich bin selbstständig.",
+        "Ich bin angestellt."
+      ]
+    },
+    {
+      "id": "L02-status-nicht-arbeiten-a11-order",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-nicht-arbeiten",
+      "topicId": "L02-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich arbeite nicht."
+      ],
+      "tokens": [
+        "Ich",
+        "arbeite",
+        "nicht."
+      ]
+    },
+    {
+      "id": "L02-status-freiberuflich-a11-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-freiberuflich",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันทำงานฟรีแลนซ์"
+      ],
+      "options": [
+        "ฉันทำงานฟรีแลนซ์",
+        "ฉันประกอบอาชีพอิสระ",
+        "ฉันเป็นลูกจ้าง",
+        "หมายเลขโทรศัพท์มือถือของคุณคืออะไร"
+      ]
+    },
+    {
+      "id": "L02-status-freiberuflich-a11-situation",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-freiberuflich",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich bin freiberuflich."
+      ],
+      "options": [
+        "Ich bin freiberuflich.",
+        "Ich bin selbstständig.",
+        "Ich bin angestellt.",
+        "Wie ist deine Handynummer?"
+      ]
+    },
+    {
+      "id": "L02-status-freiberuflich-a11-order",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-freiberuflich",
+      "topicId": "L02-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich bin freiberuflich."
+      ],
+      "tokens": [
+        "Ich",
+        "bin",
+        "freiberuflich."
+      ]
+    },
+    {
+      "id": "L02-status-selbststaendig-a11-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-selbststaendig",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันประกอบอาชีพอิสระ"
+      ],
+      "options": [
+        "ฉันประกอบอาชีพอิสระ",
+        "ฉันเป็นลูกจ้าง",
+        "หมายเลขโทรศัพท์มือถือของคุณคืออะไร",
+        "คุณมีอาชีพอะไร"
+      ]
+    },
+    {
+      "id": "L02-status-selbststaendig-a11-situation",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-selbststaendig",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich bin selbstständig."
+      ],
+      "options": [
+        "Ich bin selbstständig.",
+        "Ich bin angestellt.",
+        "Wie ist deine Handynummer?",
+        "Was bist du von Beruf?"
+      ]
+    },
+    {
+      "id": "L02-status-selbststaendig-a11-order",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-selbststaendig",
+      "topicId": "L02-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich bin selbstständig."
+      ],
+      "tokens": [
+        "Ich",
+        "bin",
+        "selbstständig."
+      ]
+    },
+    {
+      "id": "L02-status-angestellt-a11-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-angestellt",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันเป็นลูกจ้าง"
+      ],
+      "options": [
+        "ฉันเป็นลูกจ้าง",
+        "หมายเลขโทรศัพท์มือถือของคุณคืออะไร",
+        "คุณมีอาชีพอะไร",
+        "ฉันกำลังฝึกงาน"
+      ]
+    },
+    {
+      "id": "L02-status-angestellt-a11-situation",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-angestellt",
+      "topicId": "L02-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich bin angestellt."
+      ],
+      "options": [
+        "Ich bin angestellt.",
+        "Wie ist deine Handynummer?",
+        "Was bist du von Beruf?",
+        "Ich mache ein Praktikum."
+      ]
+    },
+    {
+      "id": "L02-status-angestellt-a11-order",
+      "version": 1,
+      "lessonId": "L02",
+      "targetId": "L02-status-angestellt",
+      "topicId": "L02-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich bin angestellt."
+      ],
+      "tokens": [
+        "Ich",
+        "bin",
+        "angestellt."
+      ]
+    },
+    {
+      "id": "L03-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P001",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "นี่คือแม่ของฉัน"
+      ],
+      "options": [
+        "นี่คือแม่ของฉัน",
+        "นี่คือพี่ชายหรือน้องชายของฉัน",
+        "พี่สาวหรือน้องสาวของเธอชื่ออะไร",
+        "พี่สาวหรือน้องสาวของฉันชื่อเลนา"
+      ]
+    },
+    {
+      "id": "L03-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P001",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Das ist meine Mutter."
+      ],
+      "options": [
+        "Das ist meine Mutter.",
+        "Das ist mein Bruder.",
+        "Wie heißt deine Schwester?",
+        "Meine Schwester heißt Lena."
+      ]
+    },
+    {
+      "id": "L03-P001-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P001",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Das ist meine Mutter."
+      ],
+      "tokens": [
+        "Das",
+        "ist",
+        "meine",
+        "Mutter."
+      ]
+    },
+    {
+      "id": "L03-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P002",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "นี่คือพี่ชายหรือน้องชายของฉัน"
+      ],
+      "options": [
+        "นี่คือพี่ชายหรือน้องชายของฉัน",
+        "พี่สาวหรือน้องสาวของเธอชื่ออะไร",
+        "พี่สาวหรือน้องสาวของฉันชื่อเลนา",
+        "เธอพูดภาษาเยอรมันไหม"
+      ]
+    },
+    {
+      "id": "L03-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P002",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Das ist mein Bruder."
+      ],
+      "options": [
+        "Das ist mein Bruder.",
+        "Wie heißt deine Schwester?",
+        "Meine Schwester heißt Lena.",
+        "Sprichst du Deutsch?"
+      ]
+    },
+    {
+      "id": "L03-P002-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P002",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Das ist mein Bruder."
+      ],
+      "tokens": [
+        "Das",
+        "ist",
+        "mein",
+        "Bruder."
+      ]
+    },
+    {
+      "id": "L03-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P003",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "พี่สาวหรือน้องสาวของเธอชื่ออะไร"
+      ],
+      "options": [
+        "พี่สาวหรือน้องสาวของเธอชื่ออะไร",
+        "พี่สาวหรือน้องสาวของฉันชื่อเลนา",
+        "เธอพูดภาษาเยอรมันไหม",
+        "ใช่ ฉันพูดภาษาเยอรมัน"
+      ]
+    },
+    {
+      "id": "L03-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P003",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wie heißt deine Schwester?"
+      ],
+      "options": [
+        "Wie heißt deine Schwester?",
+        "Meine Schwester heißt Lena.",
+        "Sprichst du Deutsch?",
+        "Ja, ich spreche Deutsch."
+      ]
+    },
+    {
+      "id": "L03-P003-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P003",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wie heißt deine Schwester?"
+      ],
+      "tokens": [
+        "Wie",
+        "heißt",
+        "deine",
+        "Schwester?"
+      ]
+    },
+    {
+      "id": "L03-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P004",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "พี่สาวหรือน้องสาวของฉันชื่อเลนา"
+      ],
+      "options": [
+        "พี่สาวหรือน้องสาวของฉันชื่อเลนา",
+        "เธอพูดภาษาเยอรมันไหม",
+        "ใช่ ฉันพูดภาษาเยอรมัน",
+        "เธอพูดภาษาอะไรบ้าง"
+      ]
+    },
+    {
+      "id": "L03-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P004",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Meine Schwester heißt Lena."
+      ],
+      "options": [
+        "Meine Schwester heißt Lena.",
+        "Sprichst du Deutsch?",
+        "Ja, ich spreche Deutsch.",
+        "Welche Sprachen sprichst du?"
+      ]
+    },
+    {
+      "id": "L03-P004-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P004",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Meine Schwester heißt Lena."
+      ],
+      "tokens": [
+        "Meine",
+        "Schwester",
+        "heißt",
+        "Lena."
+      ]
+    },
+    {
+      "id": "L03-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P005",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอพูดภาษาเยอรมันไหม"
+      ],
+      "options": [
+        "เธอพูดภาษาเยอรมันไหม",
+        "ใช่ ฉันพูดภาษาเยอรมัน",
+        "เธอพูดภาษาอะไรบ้าง",
+        "ฉันพูดภาษาไทยและภาษาเยอรมัน"
+      ]
+    },
+    {
+      "id": "L03-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P005",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Sprichst du Deutsch?"
+      ],
+      "options": [
+        "Sprichst du Deutsch?",
+        "Ja, ich spreche Deutsch.",
+        "Welche Sprachen sprichst du?",
+        "Ich spreche Thai und Deutsch."
+      ]
+    },
+    {
+      "id": "L03-P005-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P005",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Sprichst du Deutsch?"
+      ],
+      "tokens": [
+        "Sprichst",
+        "du",
+        "Deutsch?"
+      ]
+    },
+    {
+      "id": "L03-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P006",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ใช่ ฉันพูดภาษาเยอรมัน"
+      ],
+      "options": [
+        "ใช่ ฉันพูดภาษาเยอรมัน",
+        "เธอพูดภาษาอะไรบ้าง",
+        "ฉันพูดภาษาไทยและภาษาเยอรมัน",
+        "นี่คือพ่อของมาเรีย"
+      ]
+    },
+    {
+      "id": "L03-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P006",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ja, ich spreche Deutsch."
+      ],
+      "options": [
+        "Ja, ich spreche Deutsch.",
+        "Welche Sprachen sprichst du?",
+        "Ich spreche Thai und Deutsch.",
+        "Das ist Marias Vater."
+      ]
+    },
+    {
+      "id": "L03-P006-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P006",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ja, ich spreche Deutsch."
+      ],
+      "tokens": [
+        "Ja,",
+        "ich",
+        "spreche",
+        "Deutsch."
+      ]
+    },
+    {
+      "id": "L03-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P007",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอพูดภาษาอะไรบ้าง"
+      ],
+      "options": [
+        "เธอพูดภาษาอะไรบ้าง",
+        "ฉันพูดภาษาไทยและภาษาเยอรมัน",
+        "นี่คือพ่อของมาเรีย",
+        "พ่อแม่ของฉันอยู่ที่เบอร์ลิน"
+      ]
+    },
+    {
+      "id": "L03-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P007",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Welche Sprachen sprichst du?"
+      ],
+      "options": [
+        "Welche Sprachen sprichst du?",
+        "Ich spreche Thai und Deutsch.",
+        "Das ist Marias Vater.",
+        "Meine Eltern wohnen in Berlin."
+      ]
+    },
+    {
+      "id": "L03-P007-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P007",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Welche Sprachen sprichst du?"
+      ],
+      "tokens": [
+        "Welche",
+        "Sprachen",
+        "sprichst",
+        "du?"
+      ]
+    },
+    {
+      "id": "L03-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P008",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันพูดภาษาไทยและภาษาเยอรมัน"
+      ],
+      "options": [
+        "ฉันพูดภาษาไทยและภาษาเยอรมัน",
+        "นี่คือพ่อของมาเรีย",
+        "พ่อแม่ของฉันอยู่ที่เบอร์ลิน",
+        "นี่คือแม่ของฉัน"
+      ]
+    },
+    {
+      "id": "L03-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P008",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich spreche Thai und Deutsch."
+      ],
+      "options": [
+        "Ich spreche Thai und Deutsch.",
+        "Das ist Marias Vater.",
+        "Meine Eltern wohnen in Berlin.",
+        "Das ist meine Mutter."
+      ]
+    },
+    {
+      "id": "L03-P008-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P008",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich spreche Thai und Deutsch."
+      ],
+      "tokens": [
+        "Ich",
+        "spreche",
+        "Thai",
+        "und",
+        "Deutsch."
+      ]
+    },
+    {
+      "id": "L03-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P009",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "นี่คือพ่อของมาเรีย"
+      ],
+      "options": [
+        "นี่คือพ่อของมาเรีย",
+        "พ่อแม่ของฉันอยู่ที่เบอร์ลิน",
+        "นี่คือแม่ของฉัน",
+        "นี่คือพี่ชายหรือน้องชายของฉัน"
+      ]
+    },
+    {
+      "id": "L03-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P009",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Das ist Marias Vater."
+      ],
+      "options": [
+        "Das ist Marias Vater.",
+        "Meine Eltern wohnen in Berlin.",
+        "Das ist meine Mutter.",
+        "Das ist mein Bruder."
+      ]
+    },
+    {
+      "id": "L03-P009-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P009",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Das ist Marias Vater."
+      ],
+      "tokens": [
+        "Das",
+        "ist",
+        "Marias",
+        "Vater."
+      ]
+    },
+    {
+      "id": "L03-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P010",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "พ่อแม่ของฉันอยู่ที่เบอร์ลิน"
+      ],
+      "options": [
+        "พ่อแม่ของฉันอยู่ที่เบอร์ลิน",
+        "นี่คือแม่ของฉัน",
+        "นี่คือพี่ชายหรือน้องชายของฉัน",
+        "พี่สาวหรือน้องสาวของเธอชื่ออะไร"
+      ]
+    },
+    {
+      "id": "L03-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P010",
+      "topicId": "L03-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Meine Eltern wohnen in Berlin."
+      ],
+      "options": [
+        "Meine Eltern wohnen in Berlin.",
+        "Das ist meine Mutter.",
+        "Das ist mein Bruder.",
+        "Wie heißt deine Schwester?"
+      ]
+    },
+    {
+      "id": "L03-P010-a11-order",
+      "version": 1,
+      "lessonId": "L03",
+      "targetId": "L03-P010",
+      "topicId": "L03-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Meine Eltern wohnen in Berlin."
+      ],
+      "tokens": [
+        "Meine",
+        "Eltern",
+        "wohnen",
+        "in",
+        "Berlin."
+      ]
+    },
+    {
+      "id": "L04-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P001",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอคิดว่าโซฟาตัวนี้เป็นอย่างไร"
+      ],
+      "options": [
+        "เธอคิดว่าโซฟาตัวนี้เป็นอย่างไร",
+        "ฉันคิดว่าโซฟาตัวนี้สวย",
+        "โต๊ะตัวนี้ราคาเท่าไร",
+        "โต๊ะตัวนี้ราคาแปดสิบยูโร"
+      ]
+    },
+    {
+      "id": "L04-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P001",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wie findest du das Sofa?"
+      ],
+      "options": [
+        "Wie findest du das Sofa?",
+        "Ich finde das Sofa schön.",
+        "Wie viel kostet der Tisch?",
+        "Der Tisch kostet achtzig Euro."
+      ]
+    },
+    {
+      "id": "L04-P001-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P001",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wie findest du das Sofa?"
+      ],
+      "tokens": [
+        "Wie",
+        "findest",
+        "du",
+        "das",
+        "Sofa?"
+      ]
+    },
+    {
+      "id": "L04-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P002",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันคิดว่าโซฟาตัวนี้สวย"
+      ],
+      "options": [
+        "ฉันคิดว่าโซฟาตัวนี้สวย",
+        "โต๊ะตัวนี้ราคาเท่าไร",
+        "โต๊ะตัวนี้ราคาแปดสิบยูโร",
+        "โคมไฟดวงนี้ใหม่ไหม"
+      ]
+    },
+    {
+      "id": "L04-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P002",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich finde das Sofa schön."
+      ],
+      "options": [
+        "Ich finde das Sofa schön.",
+        "Wie viel kostet der Tisch?",
+        "Der Tisch kostet achtzig Euro.",
+        "Ist die Lampe neu?"
+      ]
+    },
+    {
+      "id": "L04-P002-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P002",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich finde das Sofa schön."
+      ],
+      "tokens": [
+        "Ich",
+        "finde",
+        "das",
+        "Sofa",
+        "schön."
+      ]
+    },
+    {
+      "id": "L04-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P003",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "โต๊ะตัวนี้ราคาเท่าไร"
+      ],
+      "options": [
+        "โต๊ะตัวนี้ราคาเท่าไร",
+        "โต๊ะตัวนี้ราคาแปดสิบยูโร",
+        "โคมไฟดวงนี้ใหม่ไหม",
+        "ไม่ มันเก่าแล้ว"
+      ]
+    },
+    {
+      "id": "L04-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P003",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wie viel kostet der Tisch?"
+      ],
+      "options": [
+        "Wie viel kostet der Tisch?",
+        "Der Tisch kostet achtzig Euro.",
+        "Ist die Lampe neu?",
+        "Nein, sie ist alt."
+      ]
+    },
+    {
+      "id": "L04-P003-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P003",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wie viel kostet der Tisch?"
+      ],
+      "tokens": [
+        "Wie",
+        "viel",
+        "kostet",
+        "der",
+        "Tisch?"
+      ]
+    },
+    {
+      "id": "L04-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P004",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "โต๊ะตัวนี้ราคาแปดสิบยูโร"
+      ],
+      "options": [
+        "โต๊ะตัวนี้ราคาแปดสิบยูโร",
+        "โคมไฟดวงนี้ใหม่ไหม",
+        "ไม่ มันเก่าแล้ว",
+        "ภาพนี้สวยมาก"
+      ]
+    },
+    {
+      "id": "L04-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P004",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Der Tisch kostet achtzig Euro."
+      ],
+      "options": [
+        "Der Tisch kostet achtzig Euro.",
+        "Ist die Lampe neu?",
+        "Nein, sie ist alt.",
+        "Das Bild ist sehr schön."
+      ]
+    },
+    {
+      "id": "L04-P004-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P004",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Der Tisch kostet achtzig Euro."
+      ],
+      "tokens": [
+        "Der",
+        "Tisch",
+        "kostet",
+        "achtzig",
+        "Euro."
+      ]
+    },
+    {
+      "id": "L04-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P005",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "โคมไฟดวงนี้ใหม่ไหม"
+      ],
+      "options": [
+        "โคมไฟดวงนี้ใหม่ไหม",
+        "ไม่ มันเก่าแล้ว",
+        "ภาพนี้สวยมาก",
+        "นั่นคือเก้าอี้ตัวนั้นใช่ไหม"
+      ]
+    },
+    {
+      "id": "L04-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P005",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ist die Lampe neu?"
+      ],
+      "options": [
+        "Ist die Lampe neu?",
+        "Nein, sie ist alt.",
+        "Das Bild ist sehr schön.",
+        "Ist das der Stuhl?"
+      ]
+    },
+    {
+      "id": "L04-P005-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P005",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ist die Lampe neu?"
+      ],
+      "tokens": [
+        "Ist",
+        "die",
+        "Lampe",
+        "neu?"
+      ]
+    },
+    {
+      "id": "L04-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P006",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ไม่ มันเก่าแล้ว"
+      ],
+      "options": [
+        "ไม่ มันเก่าแล้ว",
+        "ภาพนี้สวยมาก",
+        "นั่นคือเก้าอี้ตัวนั้นใช่ไหม",
+        "ใช่ นั่นคือเก้าอี้ตัวนั้น"
+      ]
+    },
+    {
+      "id": "L04-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P006",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Nein, sie ist alt."
+      ],
+      "options": [
+        "Nein, sie ist alt.",
+        "Das Bild ist sehr schön.",
+        "Ist das der Stuhl?",
+        "Ja, das ist er."
+      ]
+    },
+    {
+      "id": "L04-P006-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P006",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Nein, sie ist alt."
+      ],
+      "tokens": [
+        "Nein,",
+        "sie",
+        "ist",
+        "alt."
+      ]
+    },
+    {
+      "id": "L04-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P007",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ภาพนี้สวยมาก"
+      ],
+      "options": [
+        "ภาพนี้สวยมาก",
+        "นั่นคือเก้าอี้ตัวนั้นใช่ไหม",
+        "ใช่ นั่นคือเก้าอี้ตัวนั้น",
+        "เฟอร์นิเจอร์เหล่านี้ใช้สะดวก"
+      ]
+    },
+    {
+      "id": "L04-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P007",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Das Bild ist sehr schön."
+      ],
+      "options": [
+        "Das Bild ist sehr schön.",
+        "Ist das der Stuhl?",
+        "Ja, das ist er.",
+        "Die Möbel sind praktisch."
+      ]
+    },
+    {
+      "id": "L04-P007-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P007",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Das Bild ist sehr schön."
+      ],
+      "tokens": [
+        "Das",
+        "Bild",
+        "ist",
+        "sehr",
+        "schön."
+      ]
+    },
+    {
+      "id": "L04-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P008",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "นั่นคือเก้าอี้ตัวนั้นใช่ไหม"
+      ],
+      "options": [
+        "นั่นคือเก้าอี้ตัวนั้นใช่ไหม",
+        "ใช่ นั่นคือเก้าอี้ตัวนั้น",
+        "เฟอร์นิเจอร์เหล่านี้ใช้สะดวก",
+        "เธอคิดว่าโซฟาตัวนี้เป็นอย่างไร"
+      ]
+    },
+    {
+      "id": "L04-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P008",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ist das der Stuhl?"
+      ],
+      "options": [
+        "Ist das der Stuhl?",
+        "Ja, das ist er.",
+        "Die Möbel sind praktisch.",
+        "Wie findest du das Sofa?"
+      ]
+    },
+    {
+      "id": "L04-P008-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P008",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ist das der Stuhl?"
+      ],
+      "tokens": [
+        "Ist",
+        "das",
+        "der",
+        "Stuhl?"
+      ]
+    },
+    {
+      "id": "L04-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P009",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ใช่ นั่นคือเก้าอี้ตัวนั้น"
+      ],
+      "options": [
+        "ใช่ นั่นคือเก้าอี้ตัวนั้น",
+        "เฟอร์นิเจอร์เหล่านี้ใช้สะดวก",
+        "เธอคิดว่าโซฟาตัวนี้เป็นอย่างไร",
+        "ฉันคิดว่าโซฟาตัวนี้สวย"
+      ]
+    },
+    {
+      "id": "L04-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P009",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ja, das ist er."
+      ],
+      "options": [
+        "Ja, das ist er.",
+        "Die Möbel sind praktisch.",
+        "Wie findest du das Sofa?",
+        "Ich finde das Sofa schön."
+      ]
+    },
+    {
+      "id": "L04-P009-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P009",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ja, das ist er."
+      ],
+      "tokens": [
+        "Ja,",
+        "das",
+        "ist",
+        "er."
+      ]
+    },
+    {
+      "id": "L04-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P010",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เฟอร์นิเจอร์เหล่านี้ใช้สะดวก"
+      ],
+      "options": [
+        "เฟอร์นิเจอร์เหล่านี้ใช้สะดวก",
+        "เธอคิดว่าโซฟาตัวนี้เป็นอย่างไร",
+        "ฉันคิดว่าโซฟาตัวนี้สวย",
+        "โต๊ะตัวนี้ราคาเท่าไร"
+      ]
+    },
+    {
+      "id": "L04-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P010",
+      "topicId": "L04-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Die Möbel sind praktisch."
+      ],
+      "options": [
+        "Die Möbel sind praktisch.",
+        "Wie findest du das Sofa?",
+        "Ich finde das Sofa schön.",
+        "Wie viel kostet der Tisch?"
+      ]
+    },
+    {
+      "id": "L04-P010-a11-order",
+      "version": 1,
+      "lessonId": "L04",
+      "targetId": "L04-P010",
+      "topicId": "L04-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Die Möbel sind praktisch."
+      ],
+      "tokens": [
+        "Die",
+        "Möbel",
+        "sind",
+        "praktisch."
+      ]
+    },
+    {
+      "id": "L05-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P001",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "นั่นคืออะไร"
+      ],
+      "options": [
+        "นั่นคืออะไร",
+        "นั่นคือแก้วหนึ่งใบ",
+        "นั่นคือโต๊ะใช่ไหม",
+        "ไม่ นั่นไม่ใช่โต๊ะ"
+      ]
+    },
+    {
+      "id": "L05-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P001",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Was ist das?"
+      ],
+      "options": [
+        "Was ist das?",
+        "Das ist ein Glas.",
+        "Ist das ein Tisch?",
+        "Nein, das ist kein Tisch."
+      ]
+    },
+    {
+      "id": "L05-P001-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P001",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Was ist das?"
+      ],
+      "tokens": [
+        "Was",
+        "ist",
+        "das?"
+      ]
+    },
+    {
+      "id": "L05-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P002",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "นั่นคือแก้วหนึ่งใบ"
+      ],
+      "options": [
+        "นั่นคือแก้วหนึ่งใบ",
+        "นั่นคือโต๊ะใช่ไหม",
+        "ไม่ นั่นไม่ใช่โต๊ะ",
+        "นั่นคือกระเป๋าใช่ไหม"
+      ]
+    },
+    {
+      "id": "L05-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P002",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Das ist ein Glas."
+      ],
+      "options": [
+        "Das ist ein Glas.",
+        "Ist das ein Tisch?",
+        "Nein, das ist kein Tisch.",
+        "Ist das eine Tasche?"
+      ]
+    },
+    {
+      "id": "L05-P002-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P002",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Das ist ein Glas."
+      ],
+      "tokens": [
+        "Das",
+        "ist",
+        "ein",
+        "Glas."
+      ]
+    },
+    {
+      "id": "L05-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P003",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "นั่นคือโต๊ะใช่ไหม"
+      ],
+      "options": [
+        "นั่นคือโต๊ะใช่ไหม",
+        "ไม่ นั่นไม่ใช่โต๊ะ",
+        "นั่นคือกระเป๋าใช่ไหม",
+        "ใช่ นั่นคือกระเป๋า"
+      ]
+    },
+    {
+      "id": "L05-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P003",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ist das ein Tisch?"
+      ],
+      "options": [
+        "Ist das ein Tisch?",
+        "Nein, das ist kein Tisch.",
+        "Ist das eine Tasche?",
+        "Ja, das ist eine Tasche."
+      ]
+    },
+    {
+      "id": "L05-P003-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P003",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ist das ein Tisch?"
+      ],
+      "tokens": [
+        "Ist",
+        "das",
+        "ein",
+        "Tisch?"
+      ]
+    },
+    {
+      "id": "L05-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P004",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ไม่ นั่นไม่ใช่โต๊ะ"
+      ],
+      "options": [
+        "ไม่ นั่นไม่ใช่โต๊ะ",
+        "นั่นคือกระเป๋าใช่ไหม",
+        "ใช่ นั่นคือกระเป๋า",
+        "ไม่ นั่นไม่ใช่กระเป๋า"
+      ]
+    },
+    {
+      "id": "L05-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P004",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Nein, das ist kein Tisch."
+      ],
+      "options": [
+        "Nein, das ist kein Tisch.",
+        "Ist das eine Tasche?",
+        "Ja, das ist eine Tasche.",
+        "Nein, das ist keine Tasche."
+      ]
+    },
+    {
+      "id": "L05-P004-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P004",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Nein, das ist kein Tisch."
+      ],
+      "tokens": [
+        "Nein,",
+        "das",
+        "ist",
+        "kein",
+        "Tisch."
+      ]
+    },
+    {
+      "id": "L05-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P005",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "นั่นคือกระเป๋าใช่ไหม"
+      ],
+      "options": [
+        "นั่นคือกระเป๋าใช่ไหม",
+        "ใช่ นั่นคือกระเป๋า",
+        "ไม่ นั่นไม่ใช่กระเป๋า",
+        "ฉันต้องการปากกาหนึ่งด้าม"
+      ]
+    },
+    {
+      "id": "L05-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P005",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ist das eine Tasche?"
+      ],
+      "options": [
+        "Ist das eine Tasche?",
+        "Ja, das ist eine Tasche.",
+        "Nein, das ist keine Tasche.",
+        "Ich brauche einen Stift."
+      ]
+    },
+    {
+      "id": "L05-P005-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P005",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ist das eine Tasche?"
+      ],
+      "tokens": [
+        "Ist",
+        "das",
+        "eine",
+        "Tasche?"
+      ]
+    },
+    {
+      "id": "L05-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P006",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ใช่ นั่นคือกระเป๋า"
+      ],
+      "options": [
+        "ใช่ นั่นคือกระเป๋า",
+        "ไม่ นั่นไม่ใช่กระเป๋า",
+        "ฉันต้องการปากกาหนึ่งด้าม",
+        "เธอมีกุญแจไหม"
+      ]
+    },
+    {
+      "id": "L05-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P006",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ja, das ist eine Tasche."
+      ],
+      "options": [
+        "Ja, das ist eine Tasche.",
+        "Nein, das ist keine Tasche.",
+        "Ich brauche einen Stift.",
+        "Hast du einen Schlüssel?"
+      ]
+    },
+    {
+      "id": "L05-P006-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P006",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ja, das ist eine Tasche."
+      ],
+      "tokens": [
+        "Ja,",
+        "das",
+        "ist",
+        "eine",
+        "Tasche."
+      ]
+    },
+    {
+      "id": "L05-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P007",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ไม่ นั่นไม่ใช่กระเป๋า"
+      ],
+      "options": [
+        "ไม่ นั่นไม่ใช่กระเป๋า",
+        "ฉันต้องการปากกาหนึ่งด้าม",
+        "เธอมีกุญแจไหม",
+        "ฉันไม่มีกุญแจ"
+      ]
+    },
+    {
+      "id": "L05-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P007",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Nein, das ist keine Tasche."
+      ],
+      "options": [
+        "Nein, das ist keine Tasche.",
+        "Ich brauche einen Stift.",
+        "Hast du einen Schlüssel?",
+        "Ich habe keinen Schlüssel."
+      ]
+    },
+    {
+      "id": "L05-P007-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P007",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Nein, das ist keine Tasche."
+      ],
+      "tokens": [
+        "Nein,",
+        "das",
+        "ist",
+        "keine",
+        "Tasche."
+      ]
+    },
+    {
+      "id": "L05-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P008",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันต้องการปากกาหนึ่งด้าม"
+      ],
+      "options": [
+        "ฉันต้องการปากกาหนึ่งด้าม",
+        "เธอมีกุญแจไหม",
+        "ฉันไม่มีกุญแจ",
+        "นั่นคืออะไร"
+      ]
+    },
+    {
+      "id": "L05-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P008",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich brauche einen Stift."
+      ],
+      "options": [
+        "Ich brauche einen Stift.",
+        "Hast du einen Schlüssel?",
+        "Ich habe keinen Schlüssel.",
+        "Was ist das?"
+      ]
+    },
+    {
+      "id": "L05-P008-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P008",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich brauche einen Stift."
+      ],
+      "tokens": [
+        "Ich",
+        "brauche",
+        "einen",
+        "Stift."
+      ]
+    },
+    {
+      "id": "L05-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P009",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอมีกุญแจไหม"
+      ],
+      "options": [
+        "เธอมีกุญแจไหม",
+        "ฉันไม่มีกุญแจ",
+        "นั่นคืออะไร",
+        "นั่นคือแก้วหนึ่งใบ"
+      ]
+    },
+    {
+      "id": "L05-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P009",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Hast du einen Schlüssel?"
+      ],
+      "options": [
+        "Hast du einen Schlüssel?",
+        "Ich habe keinen Schlüssel.",
+        "Was ist das?",
+        "Das ist ein Glas."
+      ]
+    },
+    {
+      "id": "L05-P009-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P009",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Hast du einen Schlüssel?"
+      ],
+      "tokens": [
+        "Hast",
+        "du",
+        "einen",
+        "Schlüssel?"
+      ]
+    },
+    {
+      "id": "L05-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P010",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันไม่มีกุญแจ"
+      ],
+      "options": [
+        "ฉันไม่มีกุญแจ",
+        "นั่นคืออะไร",
+        "นั่นคือแก้วหนึ่งใบ",
+        "นั่นคือโต๊ะใช่ไหม"
+      ]
+    },
+    {
+      "id": "L05-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P010",
+      "topicId": "L05-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe keinen Schlüssel."
+      ],
+      "options": [
+        "Ich habe keinen Schlüssel.",
+        "Was ist das?",
+        "Das ist ein Glas.",
+        "Ist das ein Tisch?"
+      ]
+    },
+    {
+      "id": "L05-P010-a11-order",
+      "version": 1,
+      "lessonId": "L05",
+      "targetId": "L05-P010",
+      "topicId": "L05-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe keinen Schlüssel."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "keinen",
+        "Schlüssel."
+      ]
+    },
+    {
+      "id": "L06-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P001",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "พวกเรามีนัด"
+      ],
+      "options": [
+        "พวกเรามีนัด",
+        "ฉันต้องการคอมพิวเตอร์หนึ่งเครื่อง",
+        "เธอมีเครื่องพิมพ์ไหม",
+        "ไม่ ฉันไม่มีเครื่องพิมพ์"
+      ]
+    },
+    {
+      "id": "L06-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P001",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wir haben einen Termin."
+      ],
+      "options": [
+        "Wir haben einen Termin.",
+        "Ich brauche einen Computer.",
+        "Hast du einen Drucker?",
+        "Nein, ich habe keinen Drucker."
+      ]
+    },
+    {
+      "id": "L06-P001-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P001",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wir haben einen Termin."
+      ],
+      "tokens": [
+        "Wir",
+        "haben",
+        "einen",
+        "Termin."
+      ]
+    },
+    {
+      "id": "L06-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P002",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันต้องการคอมพิวเตอร์หนึ่งเครื่อง"
+      ],
+      "options": [
+        "ฉันต้องการคอมพิวเตอร์หนึ่งเครื่อง",
+        "เธอมีเครื่องพิมพ์ไหม",
+        "ไม่ ฉันไม่มีเครื่องพิมพ์",
+        "โทรศัพท์มือถือของฉันอยู่ไหน"
+      ]
+    },
+    {
+      "id": "L06-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P002",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich brauche einen Computer."
+      ],
+      "options": [
+        "Ich brauche einen Computer.",
+        "Hast du einen Drucker?",
+        "Nein, ich habe keinen Drucker.",
+        "Wo ist mein Handy?"
+      ]
+    },
+    {
+      "id": "L06-P002-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P002",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich brauche einen Computer."
+      ],
+      "tokens": [
+        "Ich",
+        "brauche",
+        "einen",
+        "Computer."
+      ]
+    },
+    {
+      "id": "L06-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P003",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอมีเครื่องพิมพ์ไหม"
+      ],
+      "options": [
+        "เธอมีเครื่องพิมพ์ไหม",
+        "ไม่ ฉันไม่มีเครื่องพิมพ์",
+        "โทรศัพท์มือถือของฉันอยู่ไหน",
+        "ฉันมีหนังสือสองเล่ม"
+      ]
+    },
+    {
+      "id": "L06-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P003",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Hast du einen Drucker?"
+      ],
+      "options": [
+        "Hast du einen Drucker?",
+        "Nein, ich habe keinen Drucker.",
+        "Wo ist mein Handy?",
+        "Ich habe zwei Bücher."
+      ]
+    },
+    {
+      "id": "L06-P003-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P003",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Hast du einen Drucker?"
+      ],
+      "tokens": [
+        "Hast",
+        "du",
+        "einen",
+        "Drucker?"
+      ]
+    },
+    {
+      "id": "L06-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P004",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ไม่ ฉันไม่มีเครื่องพิมพ์"
+      ],
+      "options": [
+        "ไม่ ฉันไม่มีเครื่องพิมพ์",
+        "โทรศัพท์มือถือของฉันอยู่ไหน",
+        "ฉันมีหนังสือสองเล่ม",
+        "เครื่องพิมพ์เสีย"
+      ]
+    },
+    {
+      "id": "L06-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P004",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Nein, ich habe keinen Drucker."
+      ],
+      "options": [
+        "Nein, ich habe keinen Drucker.",
+        "Wo ist mein Handy?",
+        "Ich habe zwei Bücher.",
+        "Der Drucker ist kaputt."
+      ]
+    },
+    {
+      "id": "L06-P004-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P004",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Nein, ich habe keinen Drucker."
+      ],
+      "tokens": [
+        "Nein,",
+        "ich",
+        "habe",
+        "keinen",
+        "Drucker."
+      ]
+    },
+    {
+      "id": "L06-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P005",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "โทรศัพท์มือถือของฉันอยู่ไหน"
+      ],
+      "options": [
+        "โทรศัพท์มือถือของฉันอยู่ไหน",
+        "ฉันมีหนังสือสองเล่ม",
+        "เครื่องพิมพ์เสีย",
+        "เธอต้องการกระดาษไหม"
+      ]
+    },
+    {
+      "id": "L06-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P005",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wo ist mein Handy?"
+      ],
+      "options": [
+        "Wo ist mein Handy?",
+        "Ich habe zwei Bücher.",
+        "Der Drucker ist kaputt.",
+        "Brauchst du Papier?"
+      ]
+    },
+    {
+      "id": "L06-P005-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P005",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wo ist mein Handy?"
+      ],
+      "tokens": [
+        "Wo",
+        "ist",
+        "mein",
+        "Handy?"
+      ]
+    },
+    {
+      "id": "L06-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P006",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันมีหนังสือสองเล่ม"
+      ],
+      "options": [
+        "ฉันมีหนังสือสองเล่ม",
+        "เครื่องพิมพ์เสีย",
+        "เธอต้องการกระดาษไหม",
+        "ฉันเขียนอีเมลหนึ่งฉบับ"
+      ]
+    },
+    {
+      "id": "L06-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P006",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe zwei Bücher."
+      ],
+      "options": [
+        "Ich habe zwei Bücher.",
+        "Der Drucker ist kaputt.",
+        "Brauchst du Papier?",
+        "Ich schreibe eine E-Mail."
+      ]
+    },
+    {
+      "id": "L06-P006-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P006",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe zwei Bücher."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "zwei",
+        "Bücher."
+      ]
+    },
+    {
+      "id": "L06-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P007",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เครื่องพิมพ์เสีย"
+      ],
+      "options": [
+        "เครื่องพิมพ์เสีย",
+        "เธอต้องการกระดาษไหม",
+        "ฉันเขียนอีเมลหนึ่งฉบับ",
+        "ฉันหาเมาส์ของฉันอยู่"
+      ]
+    },
+    {
+      "id": "L06-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P007",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Der Drucker ist kaputt."
+      ],
+      "options": [
+        "Der Drucker ist kaputt.",
+        "Brauchst du Papier?",
+        "Ich schreibe eine E-Mail.",
+        "Ich suche meine Maus."
+      ]
+    },
+    {
+      "id": "L06-P007-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P007",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Der Drucker ist kaputt."
+      ],
+      "tokens": [
+        "Der",
+        "Drucker",
+        "ist",
+        "kaputt."
+      ]
+    },
+    {
+      "id": "L06-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P008",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอต้องการกระดาษไหม"
+      ],
+      "options": [
+        "เธอต้องการกระดาษไหม",
+        "ฉันเขียนอีเมลหนึ่งฉบับ",
+        "ฉันหาเมาส์ของฉันอยู่",
+        "พวกเรามีนัด"
+      ]
+    },
+    {
+      "id": "L06-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P008",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Brauchst du Papier?"
+      ],
+      "options": [
+        "Brauchst du Papier?",
+        "Ich schreibe eine E-Mail.",
+        "Ich suche meine Maus.",
+        "Wir haben einen Termin."
+      ]
+    },
+    {
+      "id": "L06-P008-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P008",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Brauchst du Papier?"
+      ],
+      "tokens": [
+        "Brauchst",
+        "du",
+        "Papier?"
+      ]
+    },
+    {
+      "id": "L06-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P009",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันเขียนอีเมลหนึ่งฉบับ"
+      ],
+      "options": [
+        "ฉันเขียนอีเมลหนึ่งฉบับ",
+        "ฉันหาเมาส์ของฉันอยู่",
+        "พวกเรามีนัด",
+        "ฉันต้องการคอมพิวเตอร์หนึ่งเครื่อง"
+      ]
+    },
+    {
+      "id": "L06-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P009",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich schreibe eine E-Mail."
+      ],
+      "options": [
+        "Ich schreibe eine E-Mail.",
+        "Ich suche meine Maus.",
+        "Wir haben einen Termin.",
+        "Ich brauche einen Computer."
+      ]
+    },
+    {
+      "id": "L06-P009-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P009",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich schreibe eine E-Mail."
+      ],
+      "tokens": [
+        "Ich",
+        "schreibe",
+        "eine",
+        "E-Mail."
+      ]
+    },
+    {
+      "id": "L06-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P010",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันหาเมาส์ของฉันอยู่"
+      ],
+      "options": [
+        "ฉันหาเมาส์ของฉันอยู่",
+        "พวกเรามีนัด",
+        "ฉันต้องการคอมพิวเตอร์หนึ่งเครื่อง",
+        "เธอมีเครื่องพิมพ์ไหม"
+      ]
+    },
+    {
+      "id": "L06-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P010",
+      "topicId": "L06-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich suche meine Maus."
+      ],
+      "options": [
+        "Ich suche meine Maus.",
+        "Wir haben einen Termin.",
+        "Ich brauche einen Computer.",
+        "Hast du einen Drucker?"
+      ]
+    },
+    {
+      "id": "L06-P010-a11-order",
+      "version": 1,
+      "lessonId": "L06",
+      "targetId": "L06-P010",
+      "topicId": "L06-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich suche meine Maus."
+      ],
+      "tokens": [
+        "Ich",
+        "suche",
+        "meine",
+        "Maus."
+      ]
+    },
+    {
+      "id": "L07-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P001",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอเต้นได้ไหม"
+      ],
+      "options": [
+        "เธอเต้นได้ไหม",
+        "ใช่ ฉันเต้นได้",
+        "ฉันร้องเพลงไม่เป็น",
+        "เธอทำอาหารเก่ง"
+      ]
+    },
+    {
+      "id": "L07-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P001",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Kannst du tanzen?"
+      ],
+      "options": [
+        "Kannst du tanzen?",
+        "Ja, ich kann tanzen.",
+        "Ich kann nicht singen.",
+        "Sie kann gut kochen."
+      ]
+    },
+    {
+      "id": "L07-P001-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P001",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Kannst du tanzen?"
+      ],
+      "tokens": [
+        "Kannst",
+        "du",
+        "tanzen?"
+      ]
+    },
+    {
+      "id": "L07-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P002",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ใช่ ฉันเต้นได้"
+      ],
+      "options": [
+        "ใช่ ฉันเต้นได้",
+        "ฉันร้องเพลงไม่เป็น",
+        "เธอทำอาหารเก่ง",
+        "เธอว่ายน้ำได้ไหม"
+      ]
+    },
+    {
+      "id": "L07-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P002",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ja, ich kann tanzen."
+      ],
+      "options": [
+        "Ja, ich kann tanzen.",
+        "Ich kann nicht singen.",
+        "Sie kann gut kochen.",
+        "Kannst du schwimmen?"
+      ]
+    },
+    {
+      "id": "L07-P002-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P002",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ja, ich kann tanzen."
+      ],
+      "tokens": [
+        "Ja,",
+        "ich",
+        "kann",
+        "tanzen."
+      ]
+    },
+    {
+      "id": "L07-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P003",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันร้องเพลงไม่เป็น"
+      ],
+      "options": [
+        "ฉันร้องเพลงไม่เป็น",
+        "เธอทำอาหารเก่ง",
+        "เธอว่ายน้ำได้ไหม",
+        "พวกเราเล่นด้วยกันได้"
+      ]
+    },
+    {
+      "id": "L07-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P003",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich kann nicht singen."
+      ],
+      "options": [
+        "Ich kann nicht singen.",
+        "Sie kann gut kochen.",
+        "Kannst du schwimmen?",
+        "Wir können zusammen spielen."
+      ]
+    },
+    {
+      "id": "L07-P003-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P003",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich kann nicht singen."
+      ],
+      "tokens": [
+        "Ich",
+        "kann",
+        "nicht",
+        "singen."
+      ]
+    },
+    {
+      "id": "L07-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P004",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอทำอาหารเก่ง"
+      ],
+      "options": [
+        "เธอทำอาหารเก่ง",
+        "เธอว่ายน้ำได้ไหม",
+        "พวกเราเล่นด้วยกันได้",
+        "เธอทำสิ่งนั้นได้ยอดเยี่ยม"
+      ]
+    },
+    {
+      "id": "L07-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P004",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Sie kann gut kochen."
+      ],
+      "options": [
+        "Sie kann gut kochen.",
+        "Kannst du schwimmen?",
+        "Wir können zusammen spielen.",
+        "Das kannst du super!"
+      ]
+    },
+    {
+      "id": "L07-P004-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P004",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Sie kann gut kochen."
+      ],
+      "tokens": [
+        "Sie",
+        "kann",
+        "gut",
+        "kochen."
+      ]
+    },
+    {
+      "id": "L07-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P005",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอว่ายน้ำได้ไหม"
+      ],
+      "options": [
+        "เธอว่ายน้ำได้ไหม",
+        "พวกเราเล่นด้วยกันได้",
+        "เธอทำสิ่งนั้นได้ยอดเยี่ยม",
+        "เธอเต้นเก่งมาก"
+      ]
+    },
+    {
+      "id": "L07-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P005",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Kannst du schwimmen?"
+      ],
+      "options": [
+        "Kannst du schwimmen?",
+        "Wir können zusammen spielen.",
+        "Das kannst du super!",
+        "Du tanzt sehr gut."
+      ]
+    },
+    {
+      "id": "L07-P005-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P005",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Kannst du schwimmen?"
+      ],
+      "tokens": [
+        "Kannst",
+        "du",
+        "schwimmen?"
+      ]
+    },
+    {
+      "id": "L07-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P006",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "พวกเราเล่นด้วยกันได้"
+      ],
+      "options": [
+        "พวกเราเล่นด้วยกันได้",
+        "เธอทำสิ่งนั้นได้ยอดเยี่ยม",
+        "เธอเต้นเก่งมาก",
+        "เธอชอบทำอะไร"
+      ]
+    },
+    {
+      "id": "L07-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P006",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wir können zusammen spielen."
+      ],
+      "options": [
+        "Wir können zusammen spielen.",
+        "Das kannst du super!",
+        "Du tanzt sehr gut.",
+        "Was machst du gern?"
+      ]
+    },
+    {
+      "id": "L07-P006-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P006",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wir können zusammen spielen."
+      ],
+      "tokens": [
+        "Wir",
+        "können",
+        "zusammen",
+        "spielen."
+      ]
+    },
+    {
+      "id": "L07-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P007",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอทำสิ่งนั้นได้ยอดเยี่ยม"
+      ],
+      "options": [
+        "เธอทำสิ่งนั้นได้ยอดเยี่ยม",
+        "เธอเต้นเก่งมาก",
+        "เธอชอบทำอะไร",
+        "ฉันชอบเล่นฟุตบอล"
+      ]
+    },
+    {
+      "id": "L07-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P007",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Das kannst du super!"
+      ],
+      "options": [
+        "Das kannst du super!",
+        "Du tanzt sehr gut.",
+        "Was machst du gern?",
+        "Ich spiele gern Fußball."
+      ]
+    },
+    {
+      "id": "L07-P007-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P007",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Das kannst du super!"
+      ],
+      "tokens": [
+        "Das",
+        "kannst",
+        "du",
+        "super!"
+      ]
+    },
+    {
+      "id": "L07-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P008",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอเต้นเก่งมาก"
+      ],
+      "options": [
+        "เธอเต้นเก่งมาก",
+        "เธอชอบทำอะไร",
+        "ฉันชอบเล่นฟุตบอล",
+        "เธอเต้นได้ไหม"
+      ]
+    },
+    {
+      "id": "L07-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P008",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Du tanzt sehr gut."
+      ],
+      "options": [
+        "Du tanzt sehr gut.",
+        "Was machst du gern?",
+        "Ich spiele gern Fußball.",
+        "Kannst du tanzen?"
+      ]
+    },
+    {
+      "id": "L07-P008-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P008",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Du tanzt sehr gut."
+      ],
+      "tokens": [
+        "Du",
+        "tanzt",
+        "sehr",
+        "gut."
+      ]
+    },
+    {
+      "id": "L07-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P009",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอชอบทำอะไร"
+      ],
+      "options": [
+        "เธอชอบทำอะไร",
+        "ฉันชอบเล่นฟุตบอล",
+        "เธอเต้นได้ไหม",
+        "ใช่ ฉันเต้นได้"
+      ]
+    },
+    {
+      "id": "L07-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P009",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Was machst du gern?"
+      ],
+      "options": [
+        "Was machst du gern?",
+        "Ich spiele gern Fußball.",
+        "Kannst du tanzen?",
+        "Ja, ich kann tanzen."
+      ]
+    },
+    {
+      "id": "L07-P009-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P009",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Was machst du gern?"
+      ],
+      "tokens": [
+        "Was",
+        "machst",
+        "du",
+        "gern?"
+      ]
+    },
+    {
+      "id": "L07-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P010",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันชอบเล่นฟุตบอล"
+      ],
+      "options": [
+        "ฉันชอบเล่นฟุตบอล",
+        "เธอเต้นได้ไหม",
+        "ใช่ ฉันเต้นได้",
+        "ฉันร้องเพลงไม่เป็น"
+      ]
+    },
+    {
+      "id": "L07-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P010",
+      "topicId": "L07-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich spiele gern Fußball."
+      ],
+      "options": [
+        "Ich spiele gern Fußball.",
+        "Kannst du tanzen?",
+        "Ja, ich kann tanzen.",
+        "Ich kann nicht singen."
+      ]
+    },
+    {
+      "id": "L07-P010-a11-order",
+      "version": 1,
+      "lessonId": "L07",
+      "targetId": "L07-P010",
+      "topicId": "L07-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich spiele gern Fußball."
+      ],
+      "tokens": [
+        "Ich",
+        "spiele",
+        "gern",
+        "Fußball."
+      ]
+    },
+    {
+      "id": "L08-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P001",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "วันจันทร์เธอว่างไหม"
+      ],
+      "options": [
+        "วันจันทร์เธอว่างไหม",
+        "น่าเสียดาย ฉันไม่ว่าง",
+        "วันศุกร์เราไปโรงหนังกันไหม",
+        "ได้เลย ยินดี"
+      ]
+    },
+    {
+      "id": "L08-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P001",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Hast du am Montag Zeit?"
+      ],
+      "options": [
+        "Hast du am Montag Zeit?",
+        "Ich habe leider keine Zeit.",
+        "Gehen wir am Freitag ins Kino?",
+        "Ja, gern."
+      ]
+    },
+    {
+      "id": "L08-P001-a11-order",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P001",
+      "topicId": "L08-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Hast du am Montag Zeit?"
+      ],
+      "tokens": [
+        "Hast",
+        "du",
+        "am",
+        "Montag",
+        "Zeit?"
+      ]
+    },
+    {
+      "id": "L08-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P002",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "น่าเสียดาย ฉันไม่ว่าง"
+      ],
+      "options": [
+        "น่าเสียดาย ฉันไม่ว่าง",
+        "วันศุกร์เราไปโรงหนังกันไหม",
+        "ได้เลย ยินดี",
+        "เราจะเจอกันเมื่อไร"
+      ]
+    },
+    {
+      "id": "L08-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P002",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe leider keine Zeit."
+      ],
+      "options": [
+        "Ich habe leider keine Zeit.",
+        "Gehen wir am Freitag ins Kino?",
+        "Ja, gern.",
+        "Wann treffen wir uns?"
+      ]
+    },
+    {
+      "id": "L08-P002-a11-order",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P002",
+      "topicId": "L08-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe leider keine Zeit."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "leider",
+        "keine",
+        "Zeit."
+      ]
+    },
+    {
+      "id": "L08-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P003",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "วันศุกร์เราไปโรงหนังกันไหม"
+      ],
+      "options": [
+        "วันศุกร์เราไปโรงหนังกันไหม",
+        "ได้เลย ยินดี",
+        "เราจะเจอกันเมื่อไร",
+        "เราเจอกันตอนแปดโมง"
+      ]
+    },
+    {
+      "id": "L08-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P003",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Gehen wir am Freitag ins Kino?"
+      ],
+      "options": [
+        "Gehen wir am Freitag ins Kino?",
+        "Ja, gern.",
+        "Wann treffen wir uns?",
+        "Wir treffen uns um acht Uhr."
+      ]
+    },
+    {
+      "id": "L08-P003-a11-order",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P003",
+      "topicId": "L08-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Gehen wir am Freitag ins Kino?"
+      ],
+      "tokens": [
+        "Gehen",
+        "wir",
+        "am",
+        "Freitag",
+        "ins",
+        "Kino?"
+      ]
+    },
+    {
+      "id": "L08-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P004",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ได้เลย ยินดี"
+      ],
+      "options": [
+        "ได้เลย ยินดี",
+        "เราจะเจอกันเมื่อไร",
+        "เราเจอกันตอนแปดโมง",
+        "ฉันจะมาวันเสาร์"
+      ]
+    },
+    {
+      "id": "L08-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P004",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ja, gern."
+      ],
+      "options": [
+        "Ja, gern.",
+        "Wann treffen wir uns?",
+        "Wir treffen uns um acht Uhr.",
+        "Ich komme am Samstag."
+      ]
+    },
+    {
+      "id": "L08-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P005",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เราจะเจอกันเมื่อไร"
+      ],
+      "options": [
+        "เราจะเจอกันเมื่อไร",
+        "เราเจอกันตอนแปดโมง",
+        "ฉันจะมาวันเสาร์",
+        "วันอาทิตย์ฉันว่าง"
+      ]
+    },
+    {
+      "id": "L08-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P005",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wann treffen wir uns?"
+      ],
+      "options": [
+        "Wann treffen wir uns?",
+        "Wir treffen uns um acht Uhr.",
+        "Ich komme am Samstag.",
+        "Am Sonntag habe ich frei."
+      ]
+    },
+    {
+      "id": "L08-P005-a11-order",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P005",
+      "topicId": "L08-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wann treffen wir uns?"
+      ],
+      "tokens": [
+        "Wann",
+        "treffen",
+        "wir",
+        "uns?"
+      ]
+    },
+    {
+      "id": "L08-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P006",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เราเจอกันตอนแปดโมง"
+      ],
+      "options": [
+        "เราเจอกันตอนแปดโมง",
+        "ฉันจะมาวันเสาร์",
+        "วันอาทิตย์ฉันว่าง",
+        "เจอกันพรุ่งนี้"
+      ]
+    },
+    {
+      "id": "L08-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P006",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wir treffen uns um acht Uhr."
+      ],
+      "options": [
+        "Wir treffen uns um acht Uhr.",
+        "Ich komme am Samstag.",
+        "Am Sonntag habe ich frei.",
+        "Bis morgen!"
+      ]
+    },
+    {
+      "id": "L08-P006-a11-order",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P006",
+      "topicId": "L08-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wir treffen uns um acht Uhr."
+      ],
+      "tokens": [
+        "Wir",
+        "treffen",
+        "uns",
+        "um",
+        "acht",
+        "Uhr."
+      ]
+    },
+    {
+      "id": "L08-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P007",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันจะมาวันเสาร์"
+      ],
+      "options": [
+        "ฉันจะมาวันเสาร์",
+        "วันอาทิตย์ฉันว่าง",
+        "เจอกันพรุ่งนี้",
+        "ภาพยนตร์เริ่มตอนหนึ่งทุ่ม"
+      ]
+    },
+    {
+      "id": "L08-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P007",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich komme am Samstag."
+      ],
+      "options": [
+        "Ich komme am Samstag.",
+        "Am Sonntag habe ich frei.",
+        "Bis morgen!",
+        "Der Film beginnt um sieben Uhr."
+      ]
+    },
+    {
+      "id": "L08-P007-a11-order",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P007",
+      "topicId": "L08-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich komme am Samstag."
+      ],
+      "tokens": [
+        "Ich",
+        "komme",
+        "am",
+        "Samstag."
+      ]
+    },
+    {
+      "id": "L08-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P008",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "วันอาทิตย์ฉันว่าง"
+      ],
+      "options": [
+        "วันอาทิตย์ฉันว่าง",
+        "เจอกันพรุ่งนี้",
+        "ภาพยนตร์เริ่มตอนหนึ่งทุ่ม",
+        "วันจันทร์เธอว่างไหม"
+      ]
+    },
+    {
+      "id": "L08-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P008",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Am Sonntag habe ich frei."
+      ],
+      "options": [
+        "Am Sonntag habe ich frei.",
+        "Bis morgen!",
+        "Der Film beginnt um sieben Uhr.",
+        "Hast du am Montag Zeit?"
+      ]
+    },
+    {
+      "id": "L08-P008-a11-order",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P008",
+      "topicId": "L08-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Am Sonntag habe ich frei."
+      ],
+      "tokens": [
+        "Am",
+        "Sonntag",
+        "habe",
+        "ich",
+        "frei."
+      ]
+    },
+    {
+      "id": "L08-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P009",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เจอกันพรุ่งนี้"
+      ],
+      "options": [
+        "เจอกันพรุ่งนี้",
+        "ภาพยนตร์เริ่มตอนหนึ่งทุ่ม",
+        "วันจันทร์เธอว่างไหม",
+        "น่าเสียดาย ฉันไม่ว่าง"
+      ]
+    },
+    {
+      "id": "L08-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P009",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Bis morgen!"
+      ],
+      "options": [
+        "Bis morgen!",
+        "Der Film beginnt um sieben Uhr.",
+        "Hast du am Montag Zeit?",
+        "Ich habe leider keine Zeit."
+      ]
+    },
+    {
+      "id": "L08-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P010",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ภาพยนตร์เริ่มตอนหนึ่งทุ่ม"
+      ],
+      "options": [
+        "ภาพยนตร์เริ่มตอนหนึ่งทุ่ม",
+        "วันจันทร์เธอว่างไหม",
+        "น่าเสียดาย ฉันไม่ว่าง",
+        "วันศุกร์เราไปโรงหนังกันไหม"
+      ]
+    },
+    {
+      "id": "L08-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P010",
+      "topicId": "L08-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Der Film beginnt um sieben Uhr."
+      ],
+      "options": [
+        "Der Film beginnt um sieben Uhr.",
+        "Hast du am Montag Zeit?",
+        "Ich habe leider keine Zeit.",
+        "Gehen wir am Freitag ins Kino?"
+      ]
+    },
+    {
+      "id": "L08-P010-a11-order",
+      "version": 1,
+      "lessonId": "L08",
+      "targetId": "L08-P010",
+      "topicId": "L08-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Der Film beginnt um sieben Uhr."
+      ],
+      "tokens": [
+        "Der",
+        "Film",
+        "beginnt",
+        "um",
+        "sieben",
+        "Uhr."
+      ]
+    },
+    {
+      "id": "L09-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P001",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอชอบกินอะไร"
+      ],
+      "options": [
+        "เธอชอบกินอะไร",
+        "ฉันชอบกินพิซซ่า",
+        "เธอชอบกาแฟไหม",
+        "ไม่ ฉันไม่ชอบกาแฟ"
+      ]
+    },
+    {
+      "id": "L09-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P001",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Was isst du gern?"
+      ],
+      "options": [
+        "Was isst du gern?",
+        "Ich esse gern Pizza.",
+        "Magst du Kaffee?",
+        "Nein, ich mag keinen Kaffee."
+      ]
+    },
+    {
+      "id": "L09-P001-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P001",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Was isst du gern?"
+      ],
+      "tokens": [
+        "Was",
+        "isst",
+        "du",
+        "gern?"
+      ]
+    },
+    {
+      "id": "L09-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P002",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันชอบกินพิซซ่า"
+      ],
+      "options": [
+        "ฉันชอบกินพิซซ่า",
+        "เธอชอบกาแฟไหม",
+        "ไม่ ฉันไม่ชอบกาแฟ",
+        "ฉันดื่มน้ำ"
+      ]
+    },
+    {
+      "id": "L09-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P002",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich esse gern Pizza."
+      ],
+      "options": [
+        "Ich esse gern Pizza.",
+        "Magst du Kaffee?",
+        "Nein, ich mag keinen Kaffee.",
+        "Ich trinke Wasser."
+      ]
+    },
+    {
+      "id": "L09-P002-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P002",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich esse gern Pizza."
+      ],
+      "tokens": [
+        "Ich",
+        "esse",
+        "gern",
+        "Pizza."
+      ]
+    },
+    {
+      "id": "L09-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P003",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอชอบกาแฟไหม"
+      ],
+      "options": [
+        "เธอชอบกาแฟไหม",
+        "ไม่ ฉันไม่ชอบกาแฟ",
+        "ฉันดื่มน้ำ",
+        "ฉันชอบผัก"
+      ]
+    },
+    {
+      "id": "L09-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P003",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Magst du Kaffee?"
+      ],
+      "options": [
+        "Magst du Kaffee?",
+        "Nein, ich mag keinen Kaffee.",
+        "Ich trinke Wasser.",
+        "Ich mag Gemüse."
+      ]
+    },
+    {
+      "id": "L09-P003-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P003",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Magst du Kaffee?"
+      ],
+      "tokens": [
+        "Magst",
+        "du",
+        "Kaffee?"
+      ]
+    },
+    {
+      "id": "L09-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P004",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ไม่ ฉันไม่ชอบกาแฟ"
+      ],
+      "options": [
+        "ไม่ ฉันไม่ชอบกาแฟ",
+        "ฉันดื่มน้ำ",
+        "ฉันชอบผัก",
+        "อาหารนี้รสชาติดี"
+      ]
+    },
+    {
+      "id": "L09-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P004",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Nein, ich mag keinen Kaffee."
+      ],
+      "options": [
+        "Nein, ich mag keinen Kaffee.",
+        "Ich trinke Wasser.",
+        "Ich mag Gemüse.",
+        "Das Essen schmeckt gut."
+      ]
+    },
+    {
+      "id": "L09-P004-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P004",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Nein, ich mag keinen Kaffee."
+      ],
+      "tokens": [
+        "Nein,",
+        "ich",
+        "mag",
+        "keinen",
+        "Kaffee."
+      ]
+    },
+    {
+      "id": "L09-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P005",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันดื่มน้ำ"
+      ],
+      "options": [
+        "ฉันดื่มน้ำ",
+        "ฉันชอบผัก",
+        "อาหารนี้รสชาติดี",
+        "วันนี้พวกเรากินขนมปัง"
+      ]
+    },
+    {
+      "id": "L09-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P005",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich trinke Wasser."
+      ],
+      "options": [
+        "Ich trinke Wasser.",
+        "Ich mag Gemüse.",
+        "Das Essen schmeckt gut.",
+        "Wir essen heute Brot."
+      ]
+    },
+    {
+      "id": "L09-P005-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P005",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich trinke Wasser."
+      ],
+      "tokens": [
+        "Ich",
+        "trinke",
+        "Wasser."
+      ]
+    },
+    {
+      "id": "L09-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P006",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันชอบผัก"
+      ],
+      "options": [
+        "ฉันชอบผัก",
+        "อาหารนี้รสชาติดี",
+        "วันนี้พวกเรากินขนมปัง",
+        "เธอหิวไหม"
+      ]
+    },
+    {
+      "id": "L09-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P006",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich mag Gemüse."
+      ],
+      "options": [
+        "Ich mag Gemüse.",
+        "Das Essen schmeckt gut.",
+        "Wir essen heute Brot.",
+        "Hast du Hunger?"
+      ]
+    },
+    {
+      "id": "L09-P006-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P006",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich mag Gemüse."
+      ],
+      "tokens": [
+        "Ich",
+        "mag",
+        "Gemüse."
+      ]
+    },
+    {
+      "id": "L09-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P007",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "อาหารนี้รสชาติดี"
+      ],
+      "options": [
+        "อาหารนี้รสชาติดี",
+        "วันนี้พวกเรากินขนมปัง",
+        "เธอหิวไหม",
+        "ฉันไม่กินเนื้อสัตว์"
+      ]
+    },
+    {
+      "id": "L09-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P007",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Das Essen schmeckt gut."
+      ],
+      "options": [
+        "Das Essen schmeckt gut.",
+        "Wir essen heute Brot.",
+        "Hast du Hunger?",
+        "Ich esse kein Fleisch."
+      ]
+    },
+    {
+      "id": "L09-P007-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P007",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Das Essen schmeckt gut."
+      ],
+      "tokens": [
+        "Das",
+        "Essen",
+        "schmeckt",
+        "gut."
+      ]
+    },
+    {
+      "id": "L09-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P008",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "วันนี้พวกเรากินขนมปัง"
+      ],
+      "options": [
+        "วันนี้พวกเรากินขนมปัง",
+        "เธอหิวไหม",
+        "ฉันไม่กินเนื้อสัตว์",
+        "เธอชอบกินอะไร"
+      ]
+    },
+    {
+      "id": "L09-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P008",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wir essen heute Brot."
+      ],
+      "options": [
+        "Wir essen heute Brot.",
+        "Hast du Hunger?",
+        "Ich esse kein Fleisch.",
+        "Was isst du gern?"
+      ]
+    },
+    {
+      "id": "L09-P008-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P008",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wir essen heute Brot."
+      ],
+      "tokens": [
+        "Wir",
+        "essen",
+        "heute",
+        "Brot."
+      ]
+    },
+    {
+      "id": "L09-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P009",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอหิวไหม"
+      ],
+      "options": [
+        "เธอหิวไหม",
+        "ฉันไม่กินเนื้อสัตว์",
+        "เธอชอบกินอะไร",
+        "ฉันชอบกินพิซซ่า"
+      ]
+    },
+    {
+      "id": "L09-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P009",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Hast du Hunger?"
+      ],
+      "options": [
+        "Hast du Hunger?",
+        "Ich esse kein Fleisch.",
+        "Was isst du gern?",
+        "Ich esse gern Pizza."
+      ]
+    },
+    {
+      "id": "L09-P009-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P009",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Hast du Hunger?"
+      ],
+      "tokens": [
+        "Hast",
+        "du",
+        "Hunger?"
+      ]
+    },
+    {
+      "id": "L09-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P010",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันไม่กินเนื้อสัตว์"
+      ],
+      "options": [
+        "ฉันไม่กินเนื้อสัตว์",
+        "เธอชอบกินอะไร",
+        "ฉันชอบกินพิซซ่า",
+        "เธอชอบกาแฟไหม"
+      ]
+    },
+    {
+      "id": "L09-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P010",
+      "topicId": "L09-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich esse kein Fleisch."
+      ],
+      "options": [
+        "Ich esse kein Fleisch.",
+        "Was isst du gern?",
+        "Ich esse gern Pizza.",
+        "Magst du Kaffee?"
+      ]
+    },
+    {
+      "id": "L09-P010-a11-order",
+      "version": 1,
+      "lessonId": "L09",
+      "targetId": "L09-P010",
+      "topicId": "L09-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich esse kein Fleisch."
+      ],
+      "tokens": [
+        "Ich",
+        "esse",
+        "kein",
+        "Fleisch."
+      ]
+    },
+    {
+      "id": "L10-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P001",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอจะมาถึงเมื่อไร"
+      ],
+      "options": [
+        "เธอจะมาถึงเมื่อไร",
+        "ฉันจะมาถึงตอนเก้าโมง",
+        "ฉันเดินทางด้วยรถไฟ",
+        "สถานีรถไฟอยู่ที่ไหน"
+      ]
+    },
+    {
+      "id": "L10-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P001",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wann kommst du an?"
+      ],
+      "options": [
+        "Wann kommst du an?",
+        "Ich komme um neun Uhr an.",
+        "Ich fahre mit dem Zug.",
+        "Wo ist der Bahnhof?"
+      ]
+    },
+    {
+      "id": "L10-P001-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P001",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wann kommst du an?"
+      ],
+      "tokens": [
+        "Wann",
+        "kommst",
+        "du",
+        "an?"
+      ]
+    },
+    {
+      "id": "L10-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P002",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันจะมาถึงตอนเก้าโมง"
+      ],
+      "options": [
+        "ฉันจะมาถึงตอนเก้าโมง",
+        "ฉันเดินทางด้วยรถไฟ",
+        "สถานีรถไฟอยู่ที่ไหน",
+        "รถไฟออกตอนสิบโมง"
+      ]
+    },
+    {
+      "id": "L10-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P002",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich komme um neun Uhr an."
+      ],
+      "options": [
+        "Ich komme um neun Uhr an.",
+        "Ich fahre mit dem Zug.",
+        "Wo ist der Bahnhof?",
+        "Der Zug fährt um zehn Uhr ab."
+      ]
+    },
+    {
+      "id": "L10-P002-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P002",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich komme um neun Uhr an."
+      ],
+      "tokens": [
+        "Ich",
+        "komme",
+        "um",
+        "neun",
+        "Uhr",
+        "an."
+      ]
+    },
+    {
+      "id": "L10-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P003",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันเดินทางด้วยรถไฟ"
+      ],
+      "options": [
+        "ฉันเดินทางด้วยรถไฟ",
+        "สถานีรถไฟอยู่ที่ไหน",
+        "รถไฟออกตอนสิบโมง",
+        "ฉันมีตั๋วหนึ่งใบ"
+      ]
+    },
+    {
+      "id": "L10-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P003",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich fahre mit dem Zug."
+      ],
+      "options": [
+        "Ich fahre mit dem Zug.",
+        "Wo ist der Bahnhof?",
+        "Der Zug fährt um zehn Uhr ab.",
+        "Ich habe ein Ticket."
+      ]
+    },
+    {
+      "id": "L10-P003-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P003",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich fahre mit dem Zug."
+      ],
+      "tokens": [
+        "Ich",
+        "fahre",
+        "mit",
+        "dem",
+        "Zug."
+      ]
+    },
+    {
+      "id": "L10-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P004",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "สถานีรถไฟอยู่ที่ไหน"
+      ],
+      "options": [
+        "สถานีรถไฟอยู่ที่ไหน",
+        "รถไฟออกตอนสิบโมง",
+        "ฉันมีตั๋วหนึ่งใบ",
+        "รถไฟตรงเวลาไหม"
+      ]
+    },
+    {
+      "id": "L10-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P004",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wo ist der Bahnhof?"
+      ],
+      "options": [
+        "Wo ist der Bahnhof?",
+        "Der Zug fährt um zehn Uhr ab.",
+        "Ich habe ein Ticket.",
+        "Ist der Zug pünktlich?"
+      ]
+    },
+    {
+      "id": "L10-P004-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P004",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wo ist der Bahnhof?"
+      ],
+      "tokens": [
+        "Wo",
+        "ist",
+        "der",
+        "Bahnhof?"
+      ]
+    },
+    {
+      "id": "L10-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P005",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "รถไฟออกตอนสิบโมง"
+      ],
+      "options": [
+        "รถไฟออกตอนสิบโมง",
+        "ฉันมีตั๋วหนึ่งใบ",
+        "รถไฟตรงเวลาไหม",
+        "รถบัสจะมาทีหลัง"
+      ]
+    },
+    {
+      "id": "L10-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P005",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Der Zug fährt um zehn Uhr ab."
+      ],
+      "options": [
+        "Der Zug fährt um zehn Uhr ab.",
+        "Ich habe ein Ticket.",
+        "Ist der Zug pünktlich?",
+        "Der Bus kommt später."
+      ]
+    },
+    {
+      "id": "L10-P005-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P005",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Der Zug fährt um zehn Uhr ab."
+      ],
+      "tokens": [
+        "Der",
+        "Zug",
+        "fährt",
+        "um",
+        "zehn",
+        "Uhr",
+        "ab."
+      ]
+    },
+    {
+      "id": "L10-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P006",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันมีตั๋วหนึ่งใบ"
+      ],
+      "options": [
+        "ฉันมีตั๋วหนึ่งใบ",
+        "รถไฟตรงเวลาไหม",
+        "รถบัสจะมาทีหลัง",
+        "ฉันจะขึ้นรถไฟ"
+      ]
+    },
+    {
+      "id": "L10-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P006",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe ein Ticket."
+      ],
+      "options": [
+        "Ich habe ein Ticket.",
+        "Ist der Zug pünktlich?",
+        "Der Bus kommt später.",
+        "Ich nehme den Zug."
+      ]
+    },
+    {
+      "id": "L10-P006-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P006",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe ein Ticket."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "ein",
+        "Ticket."
+      ]
+    },
+    {
+      "id": "L10-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P007",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "รถไฟตรงเวลาไหม"
+      ],
+      "options": [
+        "รถไฟตรงเวลาไหม",
+        "รถบัสจะมาทีหลัง",
+        "ฉันจะขึ้นรถไฟ",
+        "พวกเราเปลี่ยนรถที่นี่"
+      ]
+    },
+    {
+      "id": "L10-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P007",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ist der Zug pünktlich?"
+      ],
+      "options": [
+        "Ist der Zug pünktlich?",
+        "Der Bus kommt später.",
+        "Ich nehme den Zug.",
+        "Wir steigen hier um."
+      ]
+    },
+    {
+      "id": "L10-P007-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P007",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ist der Zug pünktlich?"
+      ],
+      "tokens": [
+        "Ist",
+        "der",
+        "Zug",
+        "pünktlich?"
+      ]
+    },
+    {
+      "id": "L10-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P008",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "รถบัสจะมาทีหลัง"
+      ],
+      "options": [
+        "รถบัสจะมาทีหลัง",
+        "ฉันจะขึ้นรถไฟ",
+        "พวกเราเปลี่ยนรถที่นี่",
+        "เธอจะมาถึงเมื่อไร"
+      ]
+    },
+    {
+      "id": "L10-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P008",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Der Bus kommt später."
+      ],
+      "options": [
+        "Der Bus kommt später.",
+        "Ich nehme den Zug.",
+        "Wir steigen hier um.",
+        "Wann kommst du an?"
+      ]
+    },
+    {
+      "id": "L10-P008-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P008",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Der Bus kommt später."
+      ],
+      "tokens": [
+        "Der",
+        "Bus",
+        "kommt",
+        "später."
+      ]
+    },
+    {
+      "id": "L10-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P009",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันจะขึ้นรถไฟ"
+      ],
+      "options": [
+        "ฉันจะขึ้นรถไฟ",
+        "พวกเราเปลี่ยนรถที่นี่",
+        "เธอจะมาถึงเมื่อไร",
+        "ฉันจะมาถึงตอนเก้าโมง"
+      ]
+    },
+    {
+      "id": "L10-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P009",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich nehme den Zug."
+      ],
+      "options": [
+        "Ich nehme den Zug.",
+        "Wir steigen hier um.",
+        "Wann kommst du an?",
+        "Ich komme um neun Uhr an."
+      ]
+    },
+    {
+      "id": "L10-P009-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P009",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich nehme den Zug."
+      ],
+      "tokens": [
+        "Ich",
+        "nehme",
+        "den",
+        "Zug."
+      ]
+    },
+    {
+      "id": "L10-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P010",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "พวกเราเปลี่ยนรถที่นี่"
+      ],
+      "options": [
+        "พวกเราเปลี่ยนรถที่นี่",
+        "เธอจะมาถึงเมื่อไร",
+        "ฉันจะมาถึงตอนเก้าโมง",
+        "ฉันเดินทางด้วยรถไฟ"
+      ]
+    },
+    {
+      "id": "L10-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P010",
+      "topicId": "L10-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wir steigen hier um."
+      ],
+      "options": [
+        "Wir steigen hier um.",
+        "Wann kommst du an?",
+        "Ich komme um neun Uhr an.",
+        "Ich fahre mit dem Zug."
+      ]
+    },
+    {
+      "id": "L10-P010-a11-order",
+      "version": 1,
+      "lessonId": "L10",
+      "targetId": "L10-P010",
+      "topicId": "L10-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wir steigen hier um."
+      ],
+      "tokens": [
+        "Wir",
+        "steigen",
+        "hier",
+        "um."
+      ]
+    },
+    {
+      "id": "L11-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P001",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เมื่อวานเธอทำอะไร"
+      ],
+      "options": [
+        "เมื่อวานเธอทำอะไร",
+        "ฉันทำงานแล้ว",
+        "ฉันฟังเพลงแล้ว",
+        "เมื่อวานเธอทำอาหารไหม"
+      ]
+    },
+    {
+      "id": "L11-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P001",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Was hast du gestern gemacht?"
+      ],
+      "options": [
+        "Was hast du gestern gemacht?",
+        "Ich habe gearbeitet.",
+        "Ich habe Musik gehört.",
+        "Hast du gestern gekocht?"
+      ]
+    },
+    {
+      "id": "L11-P001-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P001",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Was hast du gestern gemacht?"
+      ],
+      "tokens": [
+        "Was",
+        "hast",
+        "du",
+        "gestern",
+        "gemacht?"
+      ]
+    },
+    {
+      "id": "L11-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P002",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันทำงานแล้ว"
+      ],
+      "options": [
+        "ฉันทำงานแล้ว",
+        "ฉันฟังเพลงแล้ว",
+        "เมื่อวานเธอทำอาหารไหม",
+        "ใช่ ฉันทำอาหารแล้ว"
+      ]
+    },
+    {
+      "id": "L11-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P002",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe gearbeitet."
+      ],
+      "options": [
+        "Ich habe gearbeitet.",
+        "Ich habe Musik gehört.",
+        "Hast du gestern gekocht?",
+        "Ja, ich habe gekocht."
+      ]
+    },
+    {
+      "id": "L11-P002-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P002",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe gearbeitet."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "gearbeitet."
+      ]
+    },
+    {
+      "id": "L11-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P003",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันฟังเพลงแล้ว"
+      ],
+      "options": [
+        "ฉันฟังเพลงแล้ว",
+        "เมื่อวานเธอทำอาหารไหม",
+        "ใช่ ฉันทำอาหารแล้ว",
+        "ฉันเขียนอีเมลแล้ว"
+      ]
+    },
+    {
+      "id": "L11-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P003",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe Musik gehört."
+      ],
+      "options": [
+        "Ich habe Musik gehört.",
+        "Hast du gestern gekocht?",
+        "Ja, ich habe gekocht.",
+        "Ich habe eine E-Mail geschrieben."
+      ]
+    },
+    {
+      "id": "L11-P003-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P003",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe Musik gehört."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "Musik",
+        "gehört."
+      ]
+    },
+    {
+      "id": "L11-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P004",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เมื่อวานเธอทำอาหารไหม"
+      ],
+      "options": [
+        "เมื่อวานเธอทำอาหารไหม",
+        "ใช่ ฉันทำอาหารแล้ว",
+        "ฉันเขียนอีเมลแล้ว",
+        "ตอนเย็นเธอทำอะไร"
+      ]
+    },
+    {
+      "id": "L11-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P004",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Hast du gestern gekocht?"
+      ],
+      "options": [
+        "Hast du gestern gekocht?",
+        "Ja, ich habe gekocht.",
+        "Ich habe eine E-Mail geschrieben.",
+        "Was hast du am Abend gemacht?"
+      ]
+    },
+    {
+      "id": "L11-P004-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P004",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Hast du gestern gekocht?"
+      ],
+      "tokens": [
+        "Hast",
+        "du",
+        "gestern",
+        "gekocht?"
+      ]
+    },
+    {
+      "id": "L11-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P005",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ใช่ ฉันทำอาหารแล้ว"
+      ],
+      "options": [
+        "ใช่ ฉันทำอาหารแล้ว",
+        "ฉันเขียนอีเมลแล้ว",
+        "ตอนเย็นเธอทำอะไร",
+        "ฉันดูโทรทัศน์แล้ว"
+      ]
+    },
+    {
+      "id": "L11-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P005",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ja, ich habe gekocht."
+      ],
+      "options": [
+        "Ja, ich habe gekocht.",
+        "Ich habe eine E-Mail geschrieben.",
+        "Was hast du am Abend gemacht?",
+        "Ich habe ferngesehen."
+      ]
+    },
+    {
+      "id": "L11-P005-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P005",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ja, ich habe gekocht."
+      ],
+      "tokens": [
+        "Ja,",
+        "ich",
+        "habe",
+        "gekocht."
+      ]
+    },
+    {
+      "id": "L11-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P006",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันเขียนอีเมลแล้ว"
+      ],
+      "options": [
+        "ฉันเขียนอีเมลแล้ว",
+        "ตอนเย็นเธอทำอะไร",
+        "ฉันดูโทรทัศน์แล้ว",
+        "พวกเราเล่นฟุตบอลแล้ว"
+      ]
+    },
+    {
+      "id": "L11-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P006",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe eine E-Mail geschrieben."
+      ],
+      "options": [
+        "Ich habe eine E-Mail geschrieben.",
+        "Was hast du am Abend gemacht?",
+        "Ich habe ferngesehen.",
+        "Wir haben Fußball gespielt."
+      ]
+    },
+    {
+      "id": "L11-P006-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P006",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe eine E-Mail geschrieben."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "eine",
+        "E-Mail",
+        "geschrieben."
+      ]
+    },
+    {
+      "id": "L11-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P007",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ตอนเย็นเธอทำอะไร"
+      ],
+      "options": [
+        "ตอนเย็นเธอทำอะไร",
+        "ฉันดูโทรทัศน์แล้ว",
+        "พวกเราเล่นฟุตบอลแล้ว",
+        "ฉันเรียนไปเยอะแล้ว"
+      ]
+    },
+    {
+      "id": "L11-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P007",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Was hast du am Abend gemacht?"
+      ],
+      "options": [
+        "Was hast du am Abend gemacht?",
+        "Ich habe ferngesehen.",
+        "Wir haben Fußball gespielt.",
+        "Ich habe viel gelernt."
+      ]
+    },
+    {
+      "id": "L11-P007-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P007",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Was hast du am Abend gemacht?"
+      ],
+      "tokens": [
+        "Was",
+        "hast",
+        "du",
+        "am",
+        "Abend",
+        "gemacht?"
+      ]
+    },
+    {
+      "id": "L11-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P008",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันดูโทรทัศน์แล้ว"
+      ],
+      "options": [
+        "ฉันดูโทรทัศน์แล้ว",
+        "พวกเราเล่นฟุตบอลแล้ว",
+        "ฉันเรียนไปเยอะแล้ว",
+        "เมื่อวานเธอทำอะไร"
+      ]
+    },
+    {
+      "id": "L11-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P008",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe ferngesehen."
+      ],
+      "options": [
+        "Ich habe ferngesehen.",
+        "Wir haben Fußball gespielt.",
+        "Ich habe viel gelernt.",
+        "Was hast du gestern gemacht?"
+      ]
+    },
+    {
+      "id": "L11-P008-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P008",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe ferngesehen."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "ferngesehen."
+      ]
+    },
+    {
+      "id": "L11-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P009",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "พวกเราเล่นฟุตบอลแล้ว"
+      ],
+      "options": [
+        "พวกเราเล่นฟุตบอลแล้ว",
+        "ฉันเรียนไปเยอะแล้ว",
+        "เมื่อวานเธอทำอะไร",
+        "ฉันทำงานแล้ว"
+      ]
+    },
+    {
+      "id": "L11-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P009",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wir haben Fußball gespielt."
+      ],
+      "options": [
+        "Wir haben Fußball gespielt.",
+        "Ich habe viel gelernt.",
+        "Was hast du gestern gemacht?",
+        "Ich habe gearbeitet."
+      ]
+    },
+    {
+      "id": "L11-P009-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P009",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wir haben Fußball gespielt."
+      ],
+      "tokens": [
+        "Wir",
+        "haben",
+        "Fußball",
+        "gespielt."
+      ]
+    },
+    {
+      "id": "L11-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P010",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันเรียนไปเยอะแล้ว"
+      ],
+      "options": [
+        "ฉันเรียนไปเยอะแล้ว",
+        "เมื่อวานเธอทำอะไร",
+        "ฉันทำงานแล้ว",
+        "ฉันฟังเพลงแล้ว"
+      ]
+    },
+    {
+      "id": "L11-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P010",
+      "topicId": "L11-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe viel gelernt."
+      ],
+      "options": [
+        "Ich habe viel gelernt.",
+        "Was hast du gestern gemacht?",
+        "Ich habe gearbeitet.",
+        "Ich habe Musik gehört."
+      ]
+    },
+    {
+      "id": "L11-P010-a11-order",
+      "version": 1,
+      "lessonId": "L11",
+      "targetId": "L11-P010",
+      "topicId": "L11-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe viel gelernt."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "viel",
+        "gelernt."
+      ]
+    },
+    {
+      "id": "L12-P001-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P001",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ในฤดูใบไม้ผลิฉันเดินทางไปฮัมบูร์ก"
+      ],
+      "options": [
+        "ในฤดูใบไม้ผลิฉันเดินทางไปฮัมบูร์ก",
+        "ในฤดูร้อนฉันอยู่ที่เบอร์ลิน",
+        "พวกเราเดินทางด้วยรถไฟแล้ว",
+        "เธอมาถึงเมื่อไร"
+      ]
+    },
+    {
+      "id": "L12-P001-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P001",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Im Frühling bin ich nach Hamburg gefahren."
+      ],
+      "options": [
+        "Im Frühling bin ich nach Hamburg gefahren.",
+        "Im Sommer war ich in Berlin.",
+        "Wir sind mit dem Zug gefahren.",
+        "Wann bist du angekommen?"
+      ]
+    },
+    {
+      "id": "L12-P001-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P001",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Im Frühling bin ich nach Hamburg gefahren."
+      ],
+      "tokens": [
+        "Im",
+        "Frühling",
+        "bin",
+        "ich",
+        "nach",
+        "Hamburg",
+        "gefahren."
+      ]
+    },
+    {
+      "id": "L12-P002-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P002",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ในฤดูร้อนฉันอยู่ที่เบอร์ลิน"
+      ],
+      "options": [
+        "ในฤดูร้อนฉันอยู่ที่เบอร์ลิน",
+        "พวกเราเดินทางด้วยรถไฟแล้ว",
+        "เธอมาถึงเมื่อไร",
+        "ฉันกลับมาวันจันทร์"
+      ]
+    },
+    {
+      "id": "L12-P002-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P002",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Im Sommer war ich in Berlin."
+      ],
+      "options": [
+        "Im Sommer war ich in Berlin.",
+        "Wir sind mit dem Zug gefahren.",
+        "Wann bist du angekommen?",
+        "Ich bin am Montag zurückgekommen."
+      ]
+    },
+    {
+      "id": "L12-P002-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P002",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Im Sommer war ich in Berlin."
+      ],
+      "tokens": [
+        "Im",
+        "Sommer",
+        "war",
+        "ich",
+        "in",
+        "Berlin."
+      ]
+    },
+    {
+      "id": "L12-P003-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P003",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "พวกเราเดินทางด้วยรถไฟแล้ว"
+      ],
+      "options": [
+        "พวกเราเดินทางด้วยรถไฟแล้ว",
+        "เธอมาถึงเมื่อไร",
+        "ฉันกลับมาวันจันทร์",
+        "มันดีมาก"
+      ]
+    },
+    {
+      "id": "L12-P003-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P003",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wir sind mit dem Zug gefahren."
+      ],
+      "options": [
+        "Wir sind mit dem Zug gefahren.",
+        "Wann bist du angekommen?",
+        "Ich bin am Montag zurückgekommen.",
+        "Es war sehr schön."
+      ]
+    },
+    {
+      "id": "L12-P003-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P003",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wir sind mit dem Zug gefahren."
+      ],
+      "tokens": [
+        "Wir",
+        "sind",
+        "mit",
+        "dem",
+        "Zug",
+        "gefahren."
+      ]
+    },
+    {
+      "id": "L12-P004-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P004",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "เธอมาถึงเมื่อไร"
+      ],
+      "options": [
+        "เธอมาถึงเมื่อไร",
+        "ฉันกลับมาวันจันทร์",
+        "มันดีมาก",
+        "พวกเรามีเวลามาก"
+      ]
+    },
+    {
+      "id": "L12-P004-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P004",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wann bist du angekommen?"
+      ],
+      "options": [
+        "Wann bist du angekommen?",
+        "Ich bin am Montag zurückgekommen.",
+        "Es war sehr schön.",
+        "Wir hatten viel Zeit."
+      ]
+    },
+    {
+      "id": "L12-P004-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P004",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wann bist du angekommen?"
+      ],
+      "tokens": [
+        "Wann",
+        "bist",
+        "du",
+        "angekommen?"
+      ]
+    },
+    {
+      "id": "L12-P005-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P005",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันกลับมาวันจันทร์"
+      ],
+      "options": [
+        "ฉันกลับมาวันจันทร์",
+        "มันดีมาก",
+        "พวกเรามีเวลามาก",
+        "ในฤดูหนาวฉันอยู่บ้าน"
+      ]
+    },
+    {
+      "id": "L12-P005-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P005",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich bin am Montag zurückgekommen."
+      ],
+      "options": [
+        "Ich bin am Montag zurückgekommen.",
+        "Es war sehr schön.",
+        "Wir hatten viel Zeit.",
+        "Im Winter bin ich zu Hause geblieben."
+      ]
+    },
+    {
+      "id": "L12-P005-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P005",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich bin am Montag zurückgekommen."
+      ],
+      "tokens": [
+        "Ich",
+        "bin",
+        "am",
+        "Montag",
+        "zurückgekommen."
+      ]
+    },
+    {
+      "id": "L12-P006-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P006",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "มันดีมาก"
+      ],
+      "options": [
+        "มันดีมาก",
+        "พวกเรามีเวลามาก",
+        "ในฤดูหนาวฉันอยู่บ้าน",
+        "ในฤดูใบไม้ร่วงเธอทำอะไร"
+      ]
+    },
+    {
+      "id": "L12-P006-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P006",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Es war sehr schön."
+      ],
+      "options": [
+        "Es war sehr schön.",
+        "Wir hatten viel Zeit.",
+        "Im Winter bin ich zu Hause geblieben.",
+        "Was hast du im Herbst gemacht?"
+      ]
+    },
+    {
+      "id": "L12-P006-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P006",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Es war sehr schön."
+      ],
+      "tokens": [
+        "Es",
+        "war",
+        "sehr",
+        "schön."
+      ]
+    },
+    {
+      "id": "L12-P007-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P007",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "พวกเรามีเวลามาก"
+      ],
+      "options": [
+        "พวกเรามีเวลามาก",
+        "ในฤดูหนาวฉันอยู่บ้าน",
+        "ในฤดูใบไม้ร่วงเธอทำอะไร",
+        "ฉันไปเยี่ยมครอบครัวแล้ว"
+      ]
+    },
+    {
+      "id": "L12-P007-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P007",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Wir hatten viel Zeit."
+      ],
+      "options": [
+        "Wir hatten viel Zeit.",
+        "Im Winter bin ich zu Hause geblieben.",
+        "Was hast du im Herbst gemacht?",
+        "Ich habe meine Familie besucht."
+      ]
+    },
+    {
+      "id": "L12-P007-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P007",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Wir hatten viel Zeit."
+      ],
+      "tokens": [
+        "Wir",
+        "hatten",
+        "viel",
+        "Zeit."
+      ]
+    },
+    {
+      "id": "L12-P008-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P008",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ในฤดูหนาวฉันอยู่บ้าน"
+      ],
+      "options": [
+        "ในฤดูหนาวฉันอยู่บ้าน",
+        "ในฤดูใบไม้ร่วงเธอทำอะไร",
+        "ฉันไปเยี่ยมครอบครัวแล้ว",
+        "ในฤดูใบไม้ผลิฉันเดินทางไปฮัมบูร์ก"
+      ]
+    },
+    {
+      "id": "L12-P008-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P008",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Im Winter bin ich zu Hause geblieben."
+      ],
+      "options": [
+        "Im Winter bin ich zu Hause geblieben.",
+        "Was hast du im Herbst gemacht?",
+        "Ich habe meine Familie besucht.",
+        "Im Frühling bin ich nach Hamburg gefahren."
+      ]
+    },
+    {
+      "id": "L12-P008-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P008",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Im Winter bin ich zu Hause geblieben."
+      ],
+      "tokens": [
+        "Im",
+        "Winter",
+        "bin",
+        "ich",
+        "zu",
+        "Hause",
+        "geblieben."
+      ]
+    },
+    {
+      "id": "L12-P009-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P009",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ในฤดูใบไม้ร่วงเธอทำอะไร"
+      ],
+      "options": [
+        "ในฤดูใบไม้ร่วงเธอทำอะไร",
+        "ฉันไปเยี่ยมครอบครัวแล้ว",
+        "ในฤดูใบไม้ผลิฉันเดินทางไปฮัมบูร์ก",
+        "ในฤดูร้อนฉันอยู่ที่เบอร์ลิน"
+      ]
+    },
+    {
+      "id": "L12-P009-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P009",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Was hast du im Herbst gemacht?"
+      ],
+      "options": [
+        "Was hast du im Herbst gemacht?",
+        "Ich habe meine Familie besucht.",
+        "Im Frühling bin ich nach Hamburg gefahren.",
+        "Im Sommer war ich in Berlin."
+      ]
+    },
+    {
+      "id": "L12-P009-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P009",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Was hast du im Herbst gemacht?"
+      ],
+      "tokens": [
+        "Was",
+        "hast",
+        "du",
+        "im",
+        "Herbst",
+        "gemacht?"
+      ]
+    },
+    {
+      "id": "L12-P010-a11-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P010",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_comprehension",
+      "acceptedAnswers": [
+        "ฉันไปเยี่ยมครอบครัวแล้ว"
+      ],
+      "options": [
+        "ฉันไปเยี่ยมครอบครัวแล้ว",
+        "ในฤดูใบไม้ผลิฉันเดินทางไปฮัมบูร์ก",
+        "ในฤดูร้อนฉันอยู่ที่เบอร์ลิน",
+        "พวกเราเดินทางด้วยรถไฟแล้ว"
+      ]
+    },
+    {
+      "id": "L12-P010-a11-situation",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P010",
+      "topicId": "L12-phrases-core",
+      "kind": "choice",
+      "subskill": "phrase_situation_choice",
+      "acceptedAnswers": [
+        "Ich habe meine Familie besucht."
+      ],
+      "options": [
+        "Ich habe meine Familie besucht.",
+        "Im Frühling bin ich nach Hamburg gefahren.",
+        "Im Sommer war ich in Berlin.",
+        "Wir sind mit dem Zug gefahren."
+      ]
+    },
+    {
+      "id": "L12-P010-a11-order",
+      "version": 1,
+      "lessonId": "L12",
+      "targetId": "L12-P010",
+      "topicId": "L12-phrases-core",
+      "kind": "order",
+      "subskill": "phrase_word_order",
+      "acceptedAnswers": [
+        "Ich habe meine Familie besucht."
+      ],
+      "tokens": [
+        "Ich",
+        "habe",
+        "meine",
+        "Familie",
+        "besucht."
+      ]
+    }
+  ]
+}

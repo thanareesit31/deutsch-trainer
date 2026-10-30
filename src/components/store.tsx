@@ -333,6 +333,18 @@ export function isVocabularyPracticeAvailable(user: User | null) {
   return Boolean(user) && (isTestWorkspaceUser(user) || isPracticeRolloutEnabled(process.env.NEXT_PUBLIC_L13_VOCABULARY_PRACTICE));
 }
 
+export function isA11VocabularyPracticeAvailable(user: User | null) {
+  return Boolean(user) && (isTestWorkspaceUser(user) || process.env.NEXT_PUBLIC_A11_VOCABULARY_PRACTICE === "true");
+}
+
+export function isA11GrammarPracticeAvailable(user: User | null) {
+  return Boolean(user) && (isTestWorkspaceUser(user) || process.env.NEXT_PUBLIC_A11_GRAMMAR_PRACTICE === "true");
+}
+
+export function isA11PhrasePracticeAvailable(user: User | null) {
+  return Boolean(user) && (isTestWorkspaceUser(user) || process.env.NEXT_PUBLIC_A11_PHRASE_PRACTICE === "true");
+}
+
 export function isL13GrammarPracticeAvailable(user: User | null) {
   return Boolean(user) && (isTestWorkspaceUser(user) || process.env.NEXT_PUBLIC_L13_GRAMMAR_PRACTICE !== "false");
 }

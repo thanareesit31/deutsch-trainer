@@ -10,7 +10,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { LearningCategoryTabs } from "./learning-breadcrumbs";
 import { GermanListenText } from "./german-listen-text";
 import { ConjugationAudioForm, ConjugationBoard } from "./conjugation-matching";
-import { isTestWorkspaceUser, isL13GrammarPracticeAvailable, isL14GrammarPracticeAvailable, isVocabularyPracticeAvailable, isPhrasePracticeAvailable, isL14PhrasePracticeAvailable, isL14VocabularyPracticeAvailable, useStore } from "./store";
+import { isTestWorkspaceUser, isL13GrammarPracticeAvailable, isL14GrammarPracticeAvailable, isVocabularyPracticeAvailable, isA11VocabularyPracticeAvailable, isA11GrammarPracticeAvailable, isA11PhrasePracticeAvailable, isPhrasePracticeAvailable, isL14PhrasePracticeAvailable, isL14VocabularyPracticeAvailable, useStore } from "./store";
 import {
   Sun,
   Check,
@@ -319,6 +319,9 @@ export function PracticeEntry({ initialLevel = "A1.3" }: { initialLevel?: string
   const l14VocabularyAvailable = isL14VocabularyPracticeAvailable(user);
   const phrasesAvailable = isPhrasePracticeAvailable(user);
   const l14PhrasesAvailable = isL14PhrasePracticeAvailable(user);
+  const a11VocabularyAvailable = isA11VocabularyPracticeAvailable(user);
+  const a11GrammarAvailable = isA11GrammarPracticeAvailable(user);
+  const a11PhrasesAvailable = isA11PhrasePracticeAvailable(user);
   const readyTopicCount = isTester ? 27 : (vocabularyAvailable ? 4 : 0) + (phrasesAvailable ? 4 : 0) + (l14VocabularyAvailable ? 3 : 0) + (l14PhrasesAvailable ? 4 : 0);
   const [level, setLevel] = useState(["A1.1", "A1.2", "A1.3"].includes(initialLevel) ? initialLevel : "A1.3");
   return (
@@ -347,8 +350,10 @@ export function PracticeEntry({ initialLevel = "A1.3" }: { initialLevel?: string
       </div>
       <div className="lesson-grid" aria-label={`บทเรียนระดับ ${level}`}>
         {lessons.filter((lesson) => lesson.level === level).map((lesson) => {
-          const ready = (isTester && ["L13", "L14", "L15", "L16", "L17", "L18"].includes(lesson.id)) || ((vocabularyAvailable || phrasesAvailable) && lesson.id === "L13") || (lesson.id==="L14"&&(l14PhrasesAvailable||l14VocabularyAvailable));
-          const topicCount = lesson.id === "L13" ? (isTester ? 11 : (vocabularyAvailable ? 4 : 0)+(phrasesAvailable ? 4 : 0)) : lesson.id === "L14" ? (isTester?9:(l14PhrasesAvailable?4:0)+(l14VocabularyAvailable?3:0)) : lesson.id === "L18" ? 2 : lesson.id === "L15" || lesson.id === "L16" ? 1 : 3;
+          const earlyLesson = /^L(?:0[1-9]|1[0-2])$/.test(lesson.id);
+          const earlyGrammar = earlyLesson && a11GrammarAvailable;
+          const ready = (earlyLesson && (a11VocabularyAvailable || earlyGrammar || a11PhrasesAvailable)) || (isTester && ["L13", "L14", "L15", "L16", "L17", "L18"].includes(lesson.id)) || ((vocabularyAvailable || phrasesAvailable) && lesson.id === "L13") || (lesson.id==="L14"&&(l14PhrasesAvailable||l14VocabularyAvailable));
+          const topicCount = earlyLesson ? Number(a11VocabularyAvailable) + Number(earlyGrammar) + Number(a11PhrasesAvailable) : lesson.id === "L13" ? (isTester ? 11 : (vocabularyAvailable ? 4 : 0)+(phrasesAvailable ? 4 : 0)) : lesson.id === "L14" ? (isTester?9:(l14PhrasesAvailable?4:0)+(l14VocabularyAvailable?3:0)) : lesson.id === "L18" ? 2 : lesson.id === "L15" || lesson.id === "L16" ? 1 : 3;
           return (
             <Link className="lesson-card practice-catalog-card" href={`/practice/${lesson.id}`} key={lesson.id}>
               <div className="lesson-card-top">
@@ -405,7 +410,10 @@ export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
   const { lessons } = useContent();
   const lesson = lessons.find((entry) => entry.id === lessonId);
   const pilotAvailable = ["L13", "L14", "L15", "L16", "L17", "L18"].includes(lessonId) && isTestWorkspaceUser(user);
-  const grammarAvailable = lessonId === "L13" ? isL13GrammarPracticeAvailable(user) : lessonId === "L14" ? isL14GrammarPracticeAvailable(user) : pilotAvailable;
+  const a11VocabularyAvailable = /^L(?:0[1-9]|1[0-2])$/.test(lessonId) && isA11VocabularyPracticeAvailable(user);
+  const a11GrammarAvailable = /^L(?:0[1-9]|1[0-2])$/.test(lessonId) && isA11GrammarPracticeAvailable(user);
+  const a11PhrasesAvailable = /^L(?:0[1-9]|1[0-2])$/.test(lessonId) && isA11PhrasePracticeAvailable(user);
+  const grammarAvailable = lessonId === "L13" ? isL13GrammarPracticeAvailable(user) : lessonId === "L14" ? isL14GrammarPracticeAvailable(user) : a11GrammarAvailable || pilotAvailable;
   const grammarTopicCount = lessonId === "L14" || lessonId === "L18" ? 2 : lessonId === "L15" || lessonId === "L16" ? 1 : 3;
 
   if (!lesson) return null;
@@ -424,7 +432,7 @@ export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
       <div className="skills-grid">
         {skills.map((skill) => {
           const Icon = skillIcons[skill.id];
-          const available = (skill.id === "phrases" && ((lessonId === "L13" && isPhrasePracticeAvailable(user)) || (lessonId === "L14" && isL14PhrasePracticeAvailable(user)))) || (grammarAvailable && skill.id === "grammar") || (skill.id === "vocabulary" && ((lessonId === "L13" && isVocabularyPracticeAvailable(user)) || (lessonId === "L14" && isL14VocabularyPracticeAvailable(user))));
+          const available = (skill.id === "phrases" && (a11PhrasesAvailable || (lessonId === "L13" && isPhrasePracticeAvailable(user)) || (lessonId === "L14" && isL14PhrasePracticeAvailable(user)))) || (grammarAvailable && skill.id === "grammar") || (skill.id === "vocabulary" && (a11VocabularyAvailable || (lessonId === "L13" && isVocabularyPracticeAvailable(user)) || (lessonId === "L14" && isL14VocabularyPracticeAvailable(user))));
           const content = <>
             <div className="skill-top">
               <span className={`icon-tile large ${skill.color}`}><Icon size={24} /></span>
@@ -433,7 +441,7 @@ export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
             <span className="eyebrow">{skill.de}</span>
             <h2>{skill.th}</h2>
             <p>{skill.description}</p>
-            {available && <div className="skill-count">{skill.id === "vocabulary" ? lessonId === "L14" ? 3 : 4 : skill.id === "phrases" ? 4 : grammarTopicCount} หัวข้อพร้อมฝึก</div>}
+            {available && <div className="skill-count">{skill.id === "vocabulary" ? a11VocabularyAvailable ? 1 : lessonId === "L14" ? 3 : 4 : skill.id === "phrases" ? a11PhrasesAvailable ? 1 : 4 : a11GrammarAvailable ? 1 : grammarTopicCount} หัวข้อพร้อมฝึก</div>}
           </>;
           return available ? (
             <Link className="skill-card" href={`/practice/${lessonId}/${skill.id}`} key={skill.id}>{content}</Link>

@@ -78,7 +78,7 @@ function answerText(item){return item.question.kind==='order'?item.selected.map(
 function grade(item){const q=item.question;if(q.kind==='write')return {correct:null,errorTag:null};const value=normalize(answerText(item));const correct=q.acceptedAnswers.some(x=>normalize(x)===value);return {correct,errorTag:correct?null:(q.kind==='order'?'word_order':q.knownErrors[value]||'unclassified')};}
 function combinedHistory(){
  const lesson=BANK.questions[0]?.topicId?.slice(0,3);
- const account=lesson==='L13'||lesson==='L14'?window.name.split('-account-')[1]:undefined;
+ const account=/^L\d{2}$/.test(lesson||'')?window.name.split('-account-')[1]:undefined;
  return account?readL13PracticeHistory(account,localStorage,BANK.historySkill||'grammar').filter(session=>session.href.startsWith('/practice/'+lesson+'/')):parsePracticeHistory(JSON.stringify(state),'/practice/'+(lesson||'L13')+'/grammar/basic');
 }
 function pickGroup(pool,count){if(BANK.historySkill==='phrases'){

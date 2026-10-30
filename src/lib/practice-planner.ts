@@ -32,6 +32,21 @@ export function l13PracticeSkill(href: string): L13PracticeSkill {
 }
 const practiceSkillName = { grammar:'ไวยากรณ์', vocabulary:'คำศัพท์', phrases:'ประโยคและสำนวน' };
 export const l13PracticeStores = [
+  ...Array.from({ length: 12 }, (_, index) => `L${String(index + 1).padStart(2, '0')}`).flatMap(lessonId => ['basic', 'daily'].map(slug => ({
+    href: `/practice/${lessonId}/vocabulary/${slug}`,
+    storage: `a11-vocab-${lessonId.toLowerCase()}-${slug}`,
+    frame: `a11-vocab-${lessonId.toLowerCase()}-${slug}`,
+  }))),
+  ...Array.from({ length: 12 }, (_, index) => `L${String(index + 1).padStart(2, '0')}`).flatMap(lessonId => ['basic', 'daily'].map(slug => ({
+    href: `/practice/${lessonId}/grammar/${slug}`,
+    storage: `a11-grammar-${lessonId.toLowerCase()}-${slug}`,
+    frame: `a11-grammar-${lessonId.toLowerCase()}-${slug}`,
+  }))),
+  ...Array.from({ length: 12 }, (_, index) => `L${String(index + 1).padStart(2, '0')}`).flatMap(lessonId => ['basic', 'daily'].map(slug => ({
+    href: `/practice/${lessonId}/phrases/${slug}`,
+    storage: `a11-phrases-${lessonId.toLowerCase()}-${slug}`,
+    frame: `a11-phrases-${lessonId.toLowerCase()}-${slug}`,
+  }))),
   ...l13PracticeTopics,
   { href: '/practice/L13/grammar/basic', storage: 'grammar-basic', frame: 'grammar-basic' },
   { href: '/practice/L13/grammar/daily', storage: 'daily', frame: 'daily' },
@@ -62,7 +77,7 @@ function isPlannerRecord(value: unknown): value is Record<string, unknown> {
 function parsePlannerQuestion(value: unknown): PracticeQuestion | null {
   if (!isPlannerRecord(value) || typeof value.id !== 'string' || typeof value.topicId !== 'string' || typeof value.subskill !== 'string') return null;
   if (value.kind !== 'choice' && value.kind !== 'cloze' && value.kind !== 'order' && value.kind !== 'write') return null;
-  const phraseItemIds = value.topicId.startsWith('L13-phrases-') || value.topicId.startsWith('L14-phrases-')
+  const phraseItemIds = /^L\d{2}-phrases-/.test(value.topicId)
     ? Array.isArray(value.coverageItemIds) && value.coverageItemIds.length > 0 && value.coverageItemIds.every((id: unknown) => typeof id === 'string')
       ? value.coverageItemIds
       : Array.isArray(value.requiredItemIds) && value.requiredItemIds.every((id: unknown) => typeof id === 'string')
@@ -110,7 +125,7 @@ export function resumablePracticeSession(history: readonly PracticeHistory[]) {
 }
 
 export function practiceStorageKey(storage: string, frame: string, userId: string) {
-  const lessonPrefix = storage.startsWith('l14-') ? '' : 'l13-';
+  const lessonPrefix = storage.startsWith('l14-') || storage.startsWith('a11-') ? '' : 'l13-';
   return `deutsch-trainer:review-prototype:${lessonPrefix}${storage}:v1:${frame}-account-${userId}`;
 }
 
@@ -163,7 +178,7 @@ export function planDailyPractice(rawQuestions: readonly unknown[], history: rea
     kindUses.set(next.q.kind, (kindUses.get(next.q.kind) ?? 0) + 1);
   }
   const focus = weak.sort((a, b) => b.result.submittedAt - a.result.submittedAt)[0];
-  const title = focus ? [...l13PracticeTopics, ...l13VocabularyTopics, ...l13PhraseTopics].find(topic => topic.id === focus.question.topicId)?.title ?? 'ไวยากรณ์บท 13' : 'ไวยากรณ์บท 13';
+  const title = focus ? [...l13PracticeTopics, ...l13VocabularyTopics, ...l13PhraseTopics].find(topic => topic.id === focus.question.topicId)?.title ?? 'หัวข้อที่เคยฝึก' : 'หัวข้อที่เคยฝึก';
   const reason = focus ? `${focus.question.subskill === 'phrase_context' ? 'ลองเลือกประโยคตามสถานการณ์' : focus.question.subskill === 'phrase_match' ? 'ลองจับคู่คำถามกับคำตอบ' : focus.question.subskill === 'phrase_dialogue' ? 'ลองเรียงบทสนทนา' : focus.question.subskill === 'vocabulary_article' ? 'ลองฝึกเลือก Artikel' : focus.question.subskill === 'vocabulary_meaning' ? 'ลองฝึกจำความหมาย' : focus.question.kind === 'cloze' ? 'ลองฝึกพิมพ์คำตอบเอง' : focus.question.kind === 'order' ? 'ลองฝึกเรียงประโยค' : 'กลับมาฝึกเลือกคำ'}ในเรื่อง ${title} อีกนิด พร้อมทบทวนสิ่งที่เคยฝึก` : 'ทบทวนสิ่งที่เคยฝึก โดยเลือกข้อที่ยังไม่เคยเจอก่อน';
   return { questionIds: selected.map(q => q.id), reason, evidenceCount: latest.size };
 }
