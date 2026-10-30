@@ -2791,6 +2791,51 @@ select {
   margin-top: 4px;
   padding: 9px 10px;
 }
+.progress-discovery-summary {
+  margin: 22px 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f7f9f4;
+}
+.progress-discovery-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.progress-discovery-heading h2 {
+  margin: 4px 0 0;
+  font-size: 19px;
+}
+.progress-discovery-heading > strong {
+  white-space: nowrap;
+}
+.progress-discovery-summary ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 20px;
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+.progress-discovery-summary li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding: 8px 0;
+}
+.progress-discovery-done {
+  color: var(--green);
+  font-weight: 700;
+}
+.progress-discovery-summary > p {
+  margin: 12px 0 0;
+  color: #829082;
+  font-size: 13px;
+}
 .clear-filter {
   font-size: 9px;
   white-space: nowrap;
@@ -3655,6 +3700,9 @@ select {
   }
   .progress-filters label {
     min-width: 110px;
+  }
+  .progress-discovery-summary ul {
+    grid-template-columns: 1fr;
   }
   .page-heading > .button {
     font-size: 9px;
@@ -6088,3 +6136,4 @@ select {
 .a11-phrase-learning-actions .button:last-child{margin-left:auto}
 .a11-phrase-learning .practice-progress-track{height:7px;border-radius:999px;background:#e8eee5;overflow:hidden}
 .a11-phrase-learning .practice-progress-track span{display:block;height:100%;background:var(--green);border-radius:inherit}
+@media(max-width:720px){:lang(th):is(h1,h2,h3,p,button,a,label,small,strong,span,div){line-height:1.8}}

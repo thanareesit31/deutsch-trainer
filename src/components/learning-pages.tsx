@@ -39,6 +39,8 @@ import {
   reviewCandidates,
 } from "@/lib/learning";
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
+import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
+import { completedDiscoveryTopics } from "@/lib/grammar-discovery-progress";
 import { clearLastLessonPageRequest, isLastLessonPageRequested } from "@/lib/test-workspace-last-page";
 import { useLearning } from "./learning-store";
 import { Empty, Meter, SectionTitle, skillIcons } from "./ui";
@@ -1340,6 +1342,7 @@ export function LearnActivity({
 export function HistoryProgress({ query = "" }: { query?: string }) {
   const { items, lessons } = useContent();
   const history = useLearning();
+  const lessonState = useLessonState();
   const params = useMemo(() => new URLSearchParams(query), [query]);
   const [level, setLevel] = useState("all");
   const [lesson, setLesson] = useState(params.get("lesson") || "all");
@@ -1355,6 +1358,13 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
     () => new Set(history.exposures.map((exposure) => exposure.item_id)),
     [history.exposures],
   );
+  const discovery = lesson === "all" ? undefined : grammarDiscoveryLesson(lesson);
+  const completedDiscovery = discovery
+    ? completedDiscoveryTopics(
+        lessonState.read(lessonStateKeys.discoveryGrammar(lesson)),
+        discovery,
+      )
+    : [];
   const attempts = useMemo(() => {
     const result = new Map<string, { right: number; wrong: number }>();
     const byAttempt = new Map(
@@ -1595,6 +1605,35 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
             ล้างตัวกรอง
           </button>
         </div>
+        {discovery && (
+          <section className="progress-discovery-summary" aria-labelledby="progress-discovery-title">
+            <div className="progress-discovery-heading">
+              <div>
+                <span className="eyebrow">GRAMMATIK · LEKTION {lesson.slice(1)}</span>
+                <h2 id="progress-discovery-title">ความคืบหน้า Grammar Discovery</h2>
+              </div>
+              <strong>{completedDiscovery.length}/{discovery.topics.length} หัวข้อ</strong>
+            </div>
+            <Meter
+              value={Math.round((completedDiscovery.length / discovery.topics.length) * 100)}
+              label={`Grammar Discovery บท ${lesson.slice(1)}`}
+            />
+            <ul>
+              {discovery.topics.map((topic) => (
+                <li key={topic.slug}>
+                  <span>{topic.title}</span>
+                  <span className={completedDiscovery.includes(topic.slug) ? "progress-discovery-done" : ""}>
+                    {completedDiscovery.includes(topic.slug) ? "เรียนแล้ว" : "ยังไม่บันทึกว่าจบ"}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p>
+              สถานะนี้นับจากการจบหัวข้อ Grammar Discovery โดยตรง แยกจากสถานะรายการในคลังด้านล่าง
+              และไม่เพิ่ม Practice attempt หรือ Mastery
+            </p>
+          </section>
+        )}
         {filtered.length === 0 ? (
           <Empty
             title="ยังไม่มีรายการที่ตรงกับตัวกรอง"

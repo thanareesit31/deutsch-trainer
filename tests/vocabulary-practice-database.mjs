@@ -10,13 +10,24 @@ try{
  await db.exec('set role authenticated');await db.query("select set_config('request.jwt.claim.sub',$1,false)",[userId]);
  await assert.rejects(sync(state),/has not been learned/);
  await db.query('insert into public.learner_lesson_states(user_id,lesson_key,state) values($1,$2,$3::jsonb)',[userId,'deutsch-trainer-vocabulary-image-learning-v1-L13',JSON.stringify([q.itemId])]);
- const invalid=structuredClone(state);delete invalid.position;await assert.rejects(sync(invalid),/Invalid vocabulary history/);
+ const invalid=structuredClone(state);delete invalid.position;await assert.rejects(sync(invalid),/Invalid practice session/);
  await sync(state);await sync(state);
  assert.equal((await db.query('select * from public.learner_practice_sessions')).rows.length,1);
  const forged=structuredClone(state);forged.items[0].question.acceptedAnswers=['wrong'];await assert.rejects(sync(forged),/changed vocabulary question/);
  const attempted=structuredClone(state);attempted.items[0].attempt={response:'wrong',correct:true,confidence:'easy',submittedAt:new Date().toISOString(),status:'completed'};await sync(attempted);
  assert.equal((await db.query('select state from public.learner_practice_sessions')).rows[0].state.items[0].attempt.correct,false);
  const stale=structuredClone(state);stale.updatedAt=new Date(Date.now()+1000).toISOString();await sync(stale);assert.equal((await db.query('select state from public.learner_practice_sessions')).rows[0].state.items[0].attempt.response,'wrong');
+ const nextQuestion=bank.questions.find(question=>question.itemId!==q.itemId);
+ await db.query("select public.learning_action('expose',$1::jsonb)",[JSON.stringify({itemId:nextQuestion.itemId})]);
+ const unknownConfidence={id:'vocab-db-unknown-confidence',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),position:1,completed:false,items:[
+  {question:q,response:'',selected:[],tokenOrder:[],attempt:{response:q.acceptedAnswers[0],correct:true,confidence:null,submittedAt:new Date().toISOString(),status:'completed'},translationUsed:false},
+  {question:nextQuestion,response:'',selected:[],tokenOrder:[],attempt:null,translationUsed:false},
+ ]};
+ await sync(unknownConfidence);
+ const savedUnknown=(await db.query('select state from public.learner_practice_sessions where session_id=$1',[unknownConfidence.id])).rows[0].state;
+ assert.equal(savedUnknown.position,1);
+ assert.equal(savedUnknown.items[0].attempt.status,'completed');
+ assert.equal(savedUnknown.items[0].attempt.confidence,null,'missing confidence stays unknown without blocking the next question');
  const pending=structuredClone(state);pending.id='vocab-db-confidence';pending.items[0].attempt={response:'Park',correct:true,confidence:null,submittedAt:new Date().toISOString(),status:'pending'};await sync(pending);
  const completed=structuredClone(pending);completed.updatedAt=new Date(Date.now()+2000).toISOString();completed.completed=true;completed.items[0].attempt.confidence=null;completed.items[0].attempt.status='completed';await sync(completed);
  assert.equal((await db.query('select state from public.learner_practice_sessions where session_id=$1',[completed.id])).rows[0].state.completed,true);

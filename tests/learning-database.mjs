@@ -68,6 +68,7 @@ export async function createDatabase() {
     "20261030000000_a11_vocabulary_practice.sql",
     "20261030010000_a11_grammar_practice.sql",
     "20261030020000_a11_phrase_practice.sql",
+    "20261031000000_repair_incomplete_practice_cursor.sql",
   ])
     await db.exec(
       await readFile(
@@ -80,6 +81,15 @@ export async function createDatabase() {
     await readFile(
       new URL(
         "../supabase/migrations/20261025000000_optional_practice_confidence.sql",
+        import.meta.url
+      ),
+      "utf8"
+    )
+  );
+  await db.exec(
+    await readFile(
+      new URL(
+        "../supabase/migrations/20261031000000_repair_incomplete_practice_cursor.sql",
         import.meta.url
       ),
       "utf8"

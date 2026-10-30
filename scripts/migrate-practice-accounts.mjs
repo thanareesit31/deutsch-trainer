@@ -5,7 +5,7 @@ if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL is required');
 const client = new pg.Client({ connectionString: process.env.DATABASE_URL, connectionTimeoutMillis: 15000 });
 try {
   await client.connect();
-  for (const file of ['20261022000000_practice_account_sessions.sql', '20261022010000_vocabulary_practice_banks.sql', '20261022020000_vocabulary_session_validation.sql', '20261022030000_phrase_practice.sql', '20261022040000_phrase_pathway.sql', '20261022050000_phrase_topic_sequence.sql', '20261025000000_optional_practice_confidence.sql', '20261026000000_l14_phrase_sessions.sql', '20261028010000_l13_phrase_variants.sql', '20261028020000_l14_phrase_variants.sql', '20261029000000_grammar_practice_validation.sql', '20261030000000_a11_vocabulary_practice.sql', '20261030010000_a11_grammar_practice.sql', '20261030020000_a11_phrase_practice.sql']) {
+  for (const file of ['20261022000000_practice_account_sessions.sql', '20261022010000_vocabulary_practice_banks.sql', '20261022020000_vocabulary_session_validation.sql', '20261022030000_phrase_practice.sql', '20261022040000_phrase_pathway.sql', '20261022050000_phrase_topic_sequence.sql', '20261025000000_optional_practice_confidence.sql', '20261026000000_l14_phrase_sessions.sql', '20261028010000_l13_phrase_variants.sql', '20261028020000_l14_phrase_variants.sql', '20261029000000_grammar_practice_validation.sql', '20261030000000_a11_vocabulary_practice.sql', '20261030010000_a11_grammar_practice.sql', '20261030020000_a11_phrase_practice.sql', '20261031000000_repair_incomplete_practice_cursor.sql']) {
     await client.query(await readFile(new URL('../supabase/migrations/'+file, import.meta.url),'utf8'));
   }
   await client.query("notify pgrst, 'reload schema'");

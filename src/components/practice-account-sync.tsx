@@ -6,6 +6,7 @@ import { l13PracticeStores, parsePracticeHistory, practiceStorageKey } from '@/l
 
 type Snapshot = { version: 1; sessions: Record<string, unknown>[]; activeId: string | null };
 type SyncFailure = { href: string; code: string; message: string };
+type SnapshotRecovery = { snapshot: Snapshot; recovered: boolean };
 function record(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
@@ -15,6 +16,23 @@ function parseSnapshot(raw: string | null, href: string): Snapshot {
   const value: unknown = JSON.parse(raw);
   if (!record(value) || !Array.isArray(value.sessions) || !value.sessions.every(record)) throw new Error('Invalid history');
   return { version: 1, sessions: value.sessions, activeId: typeof value.activeId === 'string' ? value.activeId : null };
+}
+function recoverSnapshot(raw: string | null, href: string): SnapshotRecovery {
+  try {
+    return { snapshot: parseSnapshot(raw, href), recovered: false };
+  } catch {
+    const snapshot: Snapshot = { version: 1, sessions: [], activeId: null };
+    let value: unknown;
+    try { value = JSON.parse(raw ?? 'null'); } catch { value = null; }
+    if (record(value) && value.version === 1 && Array.isArray(value.sessions)) {
+      for (const session of value.sessions) {
+        try {
+          snapshot.sessions.push(...parseSnapshot(JSON.stringify({ version: 1, sessions: [session] }), href).sessions);
+        } catch { /* The original bytes remain in the recovery copy. */ }
+      }
+    }
+    return { snapshot, recovered: true };
+  }
 }
 function stableSnapshot(value: unknown): unknown {
   if (Array.isArray(value)) return value.map(stableSnapshot);
@@ -27,7 +45,8 @@ function timestamp(session: Record<string, unknown>) {
 function repairSessionCursor(session: Record<string, unknown>) {
   if (!Array.isArray(session.items) || typeof session.position !== 'number') return session;
   const firstIncomplete = session.items.findIndex(item => !record(item) || !record(item.attempt) || item.attempt.status !== 'completed');
-  if (firstIncomplete < 0 || firstIncomplete >= session.position) return session;
+  if (firstIncomplete < 0) return session;
+  if (firstIncomplete >= session.position && session.completed !== true) return session;
   return { ...session, position: firstIncomplete, completed: false, updatedAt: new Date().toISOString() };
 }
 function mergeSession(local: Record<string, unknown>, remote: Record<string, unknown>) {
@@ -63,16 +82,30 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
     let requested = false;
     let timer: ReturnType<typeof setTimeout> | undefined;
     const acknowledged = new Map<string, string>();
-    const snapshots = () => l13PracticeStores.map(entry => {
-      const key = practiceStorageKey(entry.storage, entry.frame, userId);
-      const snapshot = parseSnapshot(localStorage.getItem(key), entry.href);
-      const sessions = snapshot.sessions.map(repairSessionCursor);
-      if (sessions.some((session, index) => session !== snapshot.sessions[index])) {
-        snapshot.sessions = sessions;
-        localStorage.setItem(key, JSON.stringify(snapshot));
+    const snapshots = () => {
+      const stores: { entry: (typeof l13PracticeStores)[number]; key: string; snapshot: Snapshot }[] = [];
+      const failures: SyncFailure[] = [];
+      for (const entry of l13PracticeStores) {
+        const key = practiceStorageKey(entry.storage, entry.frame, userId);
+        try {
+          const raw = localStorage.getItem(key);
+          const recovery = recoverSnapshot(raw, entry.href);
+          const snapshot = recovery.snapshot;
+          const sessions = snapshot.sessions.map(repairSessionCursor);
+          const repaired = sessions.some((session, index) => session !== snapshot.sessions[index]);
+          if (repaired) snapshot.sessions = sessions;
+          if (recovery.recovered || repaired) {
+            if (recovery.recovered && raw !== null) localStorage.setItem(`${key}:recovery:${new Date().toISOString()}`, raw);
+            localStorage.setItem(key, JSON.stringify(snapshot));
+            if (recovery.recovered) setRecoveredHistory(true);
+          }
+          stores.push({ entry, key, snapshot });
+        } catch (error) {
+          failures.push({ href: entry.href, code: error instanceof Error ? error.name : 'unknown', message: error instanceof Error ? error.message : 'Unable to read local practice history' });
+        }
       }
-      return { entry, key, snapshot };
-    });
+      return { stores, failures };
+    };
     async function upload() {
       requested = true;
       if (running) return;
@@ -80,9 +113,10 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
       try {
         while (requested && alive) {
           requested = false;
-          const failures: SyncFailure[] = [];
+          const snapshotResult = snapshots();
+          const failures = [...snapshotResult.failures];
           let expired = false;
-          for (const { entry, snapshot } of snapshots()) {
+          for (const { entry, snapshot } of snapshotResult.stores) {
             for (const session of snapshot.sessions) {
               if (!alive) return;
               const id = `${entry.storage}:${session.id}`;
@@ -148,31 +182,27 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
           rows.push(...page);
           if (page.length < 200) break;
         }
-        const stores = l13PracticeStores.map(entry => {
+        const stores: { entry: (typeof l13PracticeStores)[number]; key: string; snapshot: Snapshot }[] = [];
+        const localFailures: SyncFailure[] = [];
+        for (const entry of l13PracticeStores) {
           const key = practiceStorageKey(entry.storage, entry.frame, userId);
-          const raw = localStorage.getItem(key);
           try {
-            return { entry, key, snapshot: parseSnapshot(raw, entry.href) };
-          } catch {
-            // Keep the original bytes before recovering valid sessions or writing server history.
-            if (raw !== null) localStorage.setItem(`${key}:recovery:${new Date().toISOString()}`, raw);
-            const snapshot: Snapshot = { version: 1, sessions: [], activeId: null };
-            let value: unknown;
-            try { value = JSON.parse(raw ?? 'null'); } catch { value = null; }
-            if (record(value) && value.version === 1 && Array.isArray(value.sessions)) {
-              for (const session of value.sessions) {
-                try {
-                  snapshot.sessions.push(...parseSnapshot(JSON.stringify({ version: 1, sessions: [session] }), entry.href).sessions);
-                } catch { /* The original session remains in the recovery copy. */ }
-              }
+            const raw = localStorage.getItem(key);
+            const recovery = recoverSnapshot(raw, entry.href);
+            if (recovery.recovered) {
+              // Keep the original bytes before recovering valid sessions or writing server history.
+              if (raw !== null) localStorage.setItem(`${key}:recovery:${new Date().toISOString()}`, raw);
+              if (alive) setRecoveredHistory(true);
             }
-            if (alive) setRecoveredHistory(true);
-            return { entry, key, snapshot };
+            stores.push({ entry, key, snapshot: recovery.snapshot });
+          } catch (error) {
+            localFailures.push({ href: entry.href, code: error instanceof Error ? error.name : 'unknown', message: error instanceof Error ? error.message : 'Unable to load local practice history' });
           }
-        });
+        }
+        const storeByBank = new Map(stores.map(store => [store.entry.storage, store]));
         for (const row of rows) {
           if (!record(row) || typeof row.bank_key !== 'string' || !record(row.state)) throw new Error('Invalid session');
-          const store = stores.find(s => s.entry.storage === row.bank_key);
+          const store = storeByBank.get(row.bank_key);
           if (!store) throw new Error('Unknown bank');
           parsePracticeHistory(JSON.stringify({ version: 1, sessions: [row.state] }), store.entry.href);
           const remoteSession = row.state;
@@ -182,15 +212,21 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
           else store.snapshot.sessions[index] = mergeSession(store.snapshot.sessions[index], row.state);
         }
         for (const store of stores) {
-          const latest = [...store.snapshot.sessions].sort((a, b) => timestamp(b).localeCompare(timestamp(a)))[0];
-          store.snapshot.activeId = latest && typeof latest.id === 'string' ? latest.id : null;
-          localStorage.setItem(store.key, JSON.stringify(store.snapshot));
+          try {
+            const latest = [...store.snapshot.sessions].sort((a, b) => timestamp(b).localeCompare(timestamp(a)))[0];
+            store.snapshot.activeId = latest && typeof latest.id === 'string' ? latest.id : null;
+            localStorage.setItem(store.key, JSON.stringify(store.snapshot));
+          } catch (error) {
+            localFailures.push({ href: store.entry.href, code: error instanceof Error ? error.name : 'unknown', message: error instanceof Error ? error.message : 'Unable to save local practice history' });
+          }
         }
         window.addEventListener('practice-progress-updated', schedule);
         window.addEventListener('storage', schedule);
         window.addEventListener('online', schedule);
         window.addEventListener('focus', schedule);
         setStatus('ready');
+        setSaveErrorDetails(localFailures);
+        setSaveError(localFailures.length > 0);
         await upload();
       } catch (error) {
         if (alive) {
