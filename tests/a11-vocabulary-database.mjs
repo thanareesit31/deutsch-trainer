@@ -14,6 +14,10 @@ try {
   });
   const first = definitions[0];
   await assert.rejects(sync(`a11-vocab-${first.lessonId.toLowerCase()}-basic`, round(first, 'unlearned')), /has not been learned/);
+  const imageLearned = definitions.find(question => question.lessonId === 'L03');
+  await db.query('insert into public.learner_lesson_states(user_id,lesson_key,state) values($1,$2,$3::jsonb)', [userId, 'deutsch-trainer-vocabulary-image-learning-v1-L03', JSON.stringify({ imageVocabularyIds: [imageLearned.itemId] })]);
+  await sync('a11-vocab-l03-basic', round(imageLearned, 'image-learned'));
+  assert.equal((await db.query("select state from public.learner_practice_sessions where session_id='image-learned'")).rows[0].state.items[0].attempt.correct, true);
   for (const itemId of new Set(definitions.map(question => question.itemId)))
     await db.query("select public.learning_action('expose',$1::jsonb)", [JSON.stringify({ itemId })]);
   for (const [index, question] of definitions.entries()) {
