@@ -1,0 +1,1007 @@
+{
+  "version": 1,
+  "source": "Existing Learn image mappings and L02 published content metadata; generated vector flags and numbered calendars",
+  "cues": {
+    "V001": {
+      "kind": "image",
+      "src": "/images/lektion-1-core-vocabulary-images/hallo-informal.jpg"
+    },
+    "V002": {
+      "kind": "image",
+      "src": "/images/lektion-1-core-vocabulary-images/guten-tag-midday.jpg"
+    },
+    "V003": {
+      "kind": "image",
+      "src": "/images/lektion-1-core-vocabulary-images/guten-morgen-sunrise.jpg"
+    },
+    "V004": {
+      "kind": "image",
+      "src": "/images/lektion-1-core-vocabulary-images/guten-abend-sunset.jpg"
+    },
+    "V005": {
+      "kind": "image",
+      "src": "/images/lektion-1-core-vocabulary-images/tschuess-ciao.jpg"
+    },
+    "V006": {
+      "kind": "image",
+      "src": "/images/lektion-1-core-vocabulary-images/auf-wiedersehen.jpg"
+    },
+    "V007": {
+      "kind": "image",
+      "src": "/images/lektion-1-core-vocabulary-images/gute-nacht.jpg"
+    },
+    "V008": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/engineer.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+    },
+    "V009": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/engineer.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+    },
+    "V010": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/journalist.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+    },
+    "V011": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/journalist.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+    },
+    "V012": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/student.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+    },
+    "V013": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/student.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+    },
+    "V014": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/hairdresser.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+    },
+    "V015": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/hairdresser.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+    },
+    "V016": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/doctor.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+    },
+    "V017": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/doctor.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+    },
+    "V018": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/teacher.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+    },
+    "V019": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/teacher.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+    },
+    "V020": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/seller.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+    },
+    "V021": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/seller.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+    },
+    "V022": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/waiter.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+    },
+    "V023": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/waiter.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+    },
+    "V024": {
+      "kind": "image",
+      "src": "/images/lektion-2-profession-pairs/courier.webp",
+      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+    },
+    "V025": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V025-family-v2.png"
+    },
+    "V026": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V025-family-v2.png"
+    },
+    "V027": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V027-family-v2.png"
+    },
+    "V028": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V027-family-v2.png"
+    },
+    "V029": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V029-family-v2.png"
+    },
+    "V030": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V030-family-v2.png"
+    },
+    "V031": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V031-family-v2.png"
+    },
+    "V032": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V032-family-v2.png"
+    },
+    "V033": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V033-family-v2.png"
+    },
+    "V034": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V034-family-v2.png"
+    },
+    "V035": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V035-family-v2.png"
+    },
+    "V036": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V035-family-v2.png"
+    },
+    "V037": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V037-family-v2.png"
+    },
+    "V038": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V037-family-v2.png"
+    },
+    "V039": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V039-family-v2.png"
+    },
+    "V040": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V040-family-v2.png"
+    },
+    "V041": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V041-family-v2.png"
+    },
+    "V042": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V042-family-v2.png"
+    },
+    "V043": {
+      "kind": "image",
+      "src": "/images/lektion-03-vocabulary/V043-family-v2.png"
+    },
+    "V190": {
+      "kind": "context",
+      "context": "คู่คำเรียกผู้ใหญ่: die Frau และคำที่ใช้เรียกผู้ชายหนึ่งคน"
+    },
+    "V191": {
+      "kind": "context",
+      "context": "คู่คำเรียกผู้ใหญ่: der Mann และคำที่ใช้เรียกผู้หญิงหนึ่งคน"
+    },
+    "V192": {
+      "kind": "context",
+      "context": "พี่ชายหรือน้องชายของพ่อหรือแม่ เป็นญาติคนใดของเรา"
+    },
+    "V193": {
+      "kind": "context",
+      "context": "พี่สาวหรือน้องสาวของพ่อหรือแม่ เป็นญาติคนใดของเรา"
+    },
+    "V194": {
+      "kind": "context",
+      "context": "ลูกชายของพี่หรือน้อง เป็นญาติคนใดของเรา"
+    },
+    "V195": {
+      "kind": "context",
+      "context": "ลูกสาวของพี่หรือน้อง เป็นญาติคนใดของเรา"
+    },
+    "V196": {
+      "kind": "context",
+      "context": "ผู้ชายที่เราเรียกว่าเพื่อน หรือใช้เรียกแฟนผู้ชายได้"
+    },
+    "V197": {
+      "kind": "context",
+      "context": "ผู้หญิงที่เราเรียกว่าเพื่อน หรือใช้เรียกแฟนผู้หญิงได้"
+    },
+    "V044": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V044-isolated-v2.jpg"
+    },
+    "V045": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V045-isolated-v2.jpg"
+    },
+    "V046": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V046-isolated-v2.jpg"
+    },
+    "V047": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V047-isolated-v2.jpg"
+    },
+    "V048": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V048-isolated-v2.jpg"
+    },
+    "V050": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V050-isolated-v2.jpg"
+    },
+    "V051": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V051-isolated-v2.jpg"
+    },
+    "V052": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V052-isolated-v2.jpg"
+    },
+    "V053": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V053-isolated-v3.jpg"
+    },
+    "V054": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V054-isolated-v2.jpg"
+    },
+    "V055": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V055-isolated-v2.jpg"
+    },
+    "V182": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V182-framed-v3.webp"
+    },
+    "V183": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V183-framed-v3.webp"
+    },
+    "V184": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V184-framed-v3.webp"
+    },
+    "V185": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V185-framed-v3.webp"
+    },
+    "V186": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V186-framed-v3.webp"
+    },
+    "V187": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V187-framed-v3.webp"
+    },
+    "V188": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V188-framed-v3.webp"
+    },
+    "V189": {
+      "kind": "image",
+      "src": "/images/lektion-04-vocabulary/V189-framed-v3.webp"
+    },
+    "V056": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V056-framed-v3.webp"
+    },
+    "V057": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V057-landscape-v2.jpg"
+    },
+    "V058": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V058-landscape-v2.jpg"
+    },
+    "V059": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V059-landscape-v2.jpg"
+    },
+    "V060": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V060-landscape-v2.jpg"
+    },
+    "V061": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V061-landscape-v2.jpg"
+    },
+    "V062": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V062-landscape-v2.jpg"
+    },
+    "V063": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V063-landscape-v2.jpg"
+    },
+    "V064": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V064-framed-v3.webp"
+    },
+    "V065": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V065-framed-v3.webp"
+    },
+    "V066": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V066-framed-v3.webp"
+    },
+    "V067": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V067-framed-v3.webp"
+    },
+    "V068": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V068-landscape-v2.jpg"
+    },
+    "V069": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V069-framed-v3.webp"
+    },
+    "V070": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V070-landscape-v2.jpg"
+    },
+    "V071": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V071-landscape-v2.jpg"
+    },
+    "V072": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V072-isolated-v2.jpg"
+    },
+    "V217": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V217-holz-v2.jpg"
+    },
+    "V218": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V218-papier-v2.jpg"
+    },
+    "V219": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V219-metall-v2.jpg"
+    },
+    "V220": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V220-plastik-v2.jpg"
+    },
+    "V221": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V221-glas-v2.jpg"
+    },
+    "V222": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V222-weiss-v2.svg"
+    },
+    "V223": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V223-gelb-v2.svg"
+    },
+    "V224": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V224-orange-v2.svg"
+    },
+    "V225": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V225-rot-v2.svg"
+    },
+    "V226": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V226-gruen-v2.svg"
+    },
+    "V227": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V227-blau-v2.svg"
+    },
+    "V228": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V228-braun-v2.svg"
+    },
+    "V229": {
+      "kind": "image",
+      "src": "/images/lektion-05-vocabulary/V229-schwarz-v2.svg"
+    },
+    "V073": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V073-framed-v3.webp"
+    },
+    "V074": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V074-framed-v3.webp"
+    },
+    "V075": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V075-framed-v3.webp"
+    },
+    "V076": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V076-framed-v3.webp"
+    },
+    "V077": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V077-framed-v3.webp"
+    },
+    "V078": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V078-framed-v3.webp"
+    },
+    "V079": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V079-framed-v3.webp"
+    },
+    "V080": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V080-framed-v3.webp"
+    },
+    "V081": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V081-framed-v3.webp"
+    },
+    "V082": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V082-framed-v3.webp"
+    },
+    "V083": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V083-framed-v3.webp"
+    },
+    "V084": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V084-framed-v3.webp"
+    },
+    "V085": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V085-business-card-v1.svg"
+    },
+    "V086": {
+      "kind": "image",
+      "src": "/images/lektion-06-vocabulary/V086-framed-v3.webp"
+    },
+    "V087": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V087-landscape-v2.jpg"
+    },
+    "V088": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V088-landscape-v2.jpg"
+    },
+    "V089": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V089-landscape-v2.jpg"
+    },
+    "V090": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V090-landscape-v2.jpg"
+    },
+    "V091": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V091-landscape-v2.jpg"
+    },
+    "V092": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V092-landscape-v2.jpg"
+    },
+    "V093": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V093-landscape-v2.jpg"
+    },
+    "V094": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V094-landscape-v2.jpg"
+    },
+    "V095": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V095-landscape-v2.jpg"
+    },
+    "V096": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V096-landscape-v2.jpg"
+    },
+    "V097": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V097-landscape-v2.jpg"
+    },
+    "V098": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V098-landscape-v2.jpg"
+    },
+    "V099": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V099-landscape-v2.jpg"
+    },
+    "V100": {
+      "kind": "image",
+      "src": "/images/lektion-07-vocabulary/V100-landscape-v2.jpg"
+    },
+    "V101": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V101-place-v2.jpg"
+    },
+    "V102": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V102-place-v2.jpg"
+    },
+    "V103": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V103-place-v2.jpg"
+    },
+    "V104": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V104-place-v2.jpg"
+    },
+    "V105": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V105-place-v2.jpg"
+    },
+    "V106": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V106-place-v2.jpg"
+    },
+    "V107": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V107-place-v2.jpg"
+    },
+    "V108": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V108-place-v2.jpg"
+    },
+    "V109": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V109-place-v2.jpg"
+    },
+    "V110": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V110-place-v2.jpg"
+    },
+    "V111": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V111-place-v2.jpg"
+    },
+    "V112": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V112-place-v2.jpg"
+    },
+    "V113": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V113-calendar-v2.svg"
+    },
+    "V114": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V114-calendar-v2.svg"
+    },
+    "V115": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V115-calendar-v2.svg"
+    },
+    "V116": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V116-calendar-v2.svg"
+    },
+    "V117": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V117-calendar-v2.svg"
+    },
+    "V118": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V118-calendar-v2.svg"
+    },
+    "V119": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V119-calendar-v2.svg"
+    },
+    "V120": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V120-calendar-v2.svg"
+    },
+    "V121": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V121-daytime-v3.jpg"
+    },
+    "V122": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V122-daytime-v3.jpg"
+    },
+    "V123": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V123-daytime-v3.jpg"
+    },
+    "V124": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V124-daytime-v3.jpg"
+    },
+    "V125": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V125-daytime-v3.jpg"
+    },
+    "V126": {
+      "kind": "image",
+      "src": "/images/lektion-08-vocabulary/V126-daytime-v3.jpg"
+    },
+    "V127": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V127-landscape-v2.jpg"
+    },
+    "V128": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V128-landscape-v2.jpg"
+    },
+    "V129": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V129-landscape-v2.jpg"
+    },
+    "V130": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V130-landscape-v2.jpg"
+    },
+    "V131": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V131-landscape-v2.jpg"
+    },
+    "V132": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V132-landscape-v2.jpg"
+    },
+    "V133": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V133-landscape-v2.jpg"
+    },
+    "V134": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V134-landscape-v2.jpg"
+    },
+    "V135": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V135-landscape-v2.jpg"
+    },
+    "V136": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V136-landscape-v2.jpg"
+    },
+    "V137": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V137-landscape-v2.jpg"
+    },
+    "V138": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V138-landscape-v2.jpg"
+    },
+    "V139": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V139-landscape-v2.jpg"
+    },
+    "V140": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V140-sliced-loaf-v3.jpg"
+    },
+    "V141": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V141-landscape-v2.jpg"
+    },
+    "V142": {
+      "kind": "image",
+      "src": "/images/lektion-09-vocabulary/V142-landscape-v2.jpg"
+    },
+    "V143": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V143-transport-v2.jpg"
+    },
+    "V144": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V144-transport-v2.jpg"
+    },
+    "V145": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V145-transport-v2.jpg"
+    },
+    "V146": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V146-transport-v2.jpg"
+    },
+    "V147": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V147-transport-v2.jpg"
+    },
+    "V148": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V148-transport-v2.jpg"
+    },
+    "V149": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V149-transport-v2.jpg"
+    },
+    "V150": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V150-transport-v2.jpg"
+    },
+    "V152": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V152-transport-v2.jpg"
+    },
+    "V153": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V153-transport-v2.jpg"
+    },
+    "V154": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V154-transport-v2.jpg"
+    },
+    "V155": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V155-transport-v2.jpg"
+    },
+    "V198": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V198-transport-v2.jpg"
+    },
+    "V199": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V199-transport-v2.jpg"
+    },
+    "V200": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V200-transport-v2.jpg"
+    },
+    "V201": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V201-transport-v2.jpg"
+    },
+    "V202": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V202-transport-v2.jpg"
+    },
+    "V203": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V203-transport-v2.jpg"
+    },
+    "V204": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V204-transport-v2.jpg"
+    },
+    "V205": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V205-transport-v2.jpg"
+    },
+    "V206": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V206-transport-v2.jpg"
+    },
+    "V207": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V207-announcement-v3.jpg"
+    },
+    "V208": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V208-flight-takeoff-v4.jpg"
+    },
+    "V209": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V209-service-counter-v3.jpg"
+    },
+    "V210": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V210-timetable-v3.svg"
+    },
+    "V211": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V211-timetable-v3.svg"
+    },
+    "V212": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V212-transport-v2.jpg"
+    },
+    "V213": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V213-transport-v2.jpg"
+    },
+    "V214": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V214-transfer-v3.jpg"
+    },
+    "V215": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V215-transport-v2.jpg"
+    },
+    "V216": {
+      "kind": "image",
+      "src": "/images/lektion-10-vocabulary/V216-transport-v2.jpg"
+    },
+    "V156": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V156-landscape-v2.jpg"
+    },
+    "V157": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V157-landscape-v2.jpg"
+    },
+    "V158": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V158-landscape-v2.jpg"
+    },
+    "V159": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V159-landscape-v2.jpg"
+    },
+    "V160": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V160-landscape-v2.jpg"
+    },
+    "V161": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V161-landscape-v2.jpg"
+    },
+    "V162": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V162-landscape-v2.jpg"
+    },
+    "V163": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V163-landscape-v2.jpg"
+    },
+    "V164": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V164-landscape-v2.jpg"
+    },
+    "V165": {
+      "kind": "image",
+      "src": "/images/lektion-11-vocabulary/V165-landscape-v2.jpg"
+    },
+    "V166": {
+      "kind": "image",
+      "src": "/images/lektion-12-vocabulary/V166.jpg"
+    },
+    "V167": {
+      "kind": "image",
+      "src": "/images/lektion-12-vocabulary/V167.jpg"
+    },
+    "V168": {
+      "kind": "image",
+      "src": "/images/lektion-12-vocabulary/V168.jpg"
+    },
+    "V169": {
+      "kind": "image",
+      "src": "/images/lektion-12-vocabulary/V169.jpg"
+    },
+    "V170": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V170.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V171": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V171.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V172": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V172.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V173": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V173.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V174": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V174.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V175": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V175.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V176": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V176.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V177": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V177.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V178": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V178.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V179": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V179.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V180": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V180.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "V181": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/V181.svg",
+      "context": "เดือนที่แสดงบนปฏิทิน"
+    },
+    "extra-L01-1": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-1.svg"
+    },
+    "extra-L01-2": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-2.svg"
+    },
+    "extra-L01-3": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-3.svg"
+    },
+    "extra-L01-4": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-4.svg"
+    },
+    "extra-L01-5": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-5.svg"
+    },
+    "extra-L01-6": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-6.svg"
+    },
+    "extra-L01-7": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-7.svg"
+    },
+    "extra-L01-8": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-8.svg"
+    },
+    "extra-L01-9": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-9.svg"
+    },
+    "extra-L01-10": {
+      "kind": "image",
+      "src": "/images/a11-spelling-cues/extra-L01-10.svg"
+    },
+    "extra-L01-11": {
+      "kind": "context",
+      "context": "เติมคำกริยา: Woher ___ Sie? — Aus Thailand."
+    },
+    "extra-L01-12": {
+      "kind": "context",
+      "context": "จากประโยค Wie heißt du? ใช้รูปคำกริยาที่ยังไม่ผันของ heißt"
+    },
+    "extra-L01-13": {
+      "kind": "context",
+      "context": "เติมคำกริยา: Ich ___ Deutsch in einem Kurs. ใช้รูปคำกริยาที่ยังไม่ผัน"
+    },
+    "extra-L01-14": {
+      "kind": "context",
+      "context": "เติมคำกริยา: Ich bin Student. คำว่า bin มาจากรูปคำกริยาที่ยังไม่ผันคำใด"
+    },
+    "extra-L01-15": {
+      "kind": "context",
+      "context": "เติมคำกริยา: Welche Sprachen ___ Sie? ใช้รูปคำกริยาที่ยังไม่ผัน"
+    },
+    "extra-L01-16": {
+      "kind": "context",
+      "context": "เติมคำกริยา: Wo ___ Sie? — In Bangkok. ใช้รูปคำกริยาที่ยังไม่ผัน"
+    }
+  }
+}

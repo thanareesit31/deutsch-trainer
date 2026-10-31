@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile, writeFile } from 'node:fs/promises';
 import ts from 'typescript';
+import { buildSpellingCues } from './a11-spelling-cues.mjs';
 
 const root = new URL('../../', import.meta.url);
 const read = path => readFile(new URL(path, root), 'utf8');
@@ -10,6 +11,9 @@ const planner = ts.transpileModule(await read('src/lib/practice-planner.ts'), { 
 const paletteSource = ts.transpileModule(await read('src/lib/profession-learning.ts'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText;
 const { articleColors } = await import('data:text/javascript;base64,' + Buffer.from(paletteSource).toString('base64'));
 const allWords = catalog.items.filter(item => /^L(?:0[1-9]|1[0-2])$/.test(item.lessonId) && item.skill === 'vocabulary');
+const imageModule = ts.transpileModule(await read('src/lib/vocabulary-image-content.ts'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText;
+const imageContent = await import('data:text/javascript;base64,' + Buffer.from(imageModule).toString('base64'));
+const spellingCues = await buildSpellingCues({ root, words: allWords, imageContent });
 const definitions = [];
 const inventory = [];
 
@@ -34,14 +38,14 @@ for (let number = 1; number <= 12; number++) {
       questions.push({ ...base, id: `${word.id}-a11-article`, kind: 'choice', subskill: 'vocabulary_article', difficulty: 2, difficultyRationale: 'ต้องเรียกคืน Artikel โดยไม่มีสีเฉลยล่วงหน้า', assistance: 'article-options', prompt: 'เลือก Artikel ของคำนาม', sentence: `___ ${word.word}`, options: ['der', 'die', 'das'], acceptedAnswers: [word.article], feedbackAnswer: title, explanation: `${title} ใช้ Artikel ${word.article}` });
     }
     const forms = word.word.split(' / ').map(value => value.trim()).filter(Boolean);
-    questions.push({ ...base, id: `${word.id}-a11-spelling`, kind: 'cloze', subskill: 'vocabulary_spelling', difficulty: 2, difficultyRationale: 'พิมพ์รูปคำเองโดยมีความหมายและ Artikel ถ้าเป็นคำนาม', assistance: noun ? 'thai-meaning-and-supplied-article' : 'thai-meaning', prompt: 'พิมพ์คำภาษาเยอรมัน', sentence: noun ? `${word.article || 'die'} ___` : '___', acceptedAnswers: forms, feedbackAnswer: title, explanation: `รูปคำที่เรียนคือ ${title}` });
+    questions.push({ ...base, id: `${word.id}-a11-spelling`, kind: 'cloze', subskill: 'vocabulary_spelling', difficulty: 2, difficultyRationale: 'พิมพ์รูปคำเองจากภาพหรือบริบท โดยดูความหมายไทยเพิ่มได้ และมี Artikel ถ้าเป็นคำนาม', assistance: spellingCues[word.id].kind + '-cue-optional-thai' + (noun ? '-supplied-article' : ''), prompt: 'พิมพ์คำภาษาเยอรมัน', sentence: noun ? `${word.article || 'die'} ___` : '___', acceptedAnswers: forms, feedbackAnswer: title, explanation: `รูปคำที่เรียนคือ ${title}` });
   }
   for (const question of questions) {
     assert(question.acceptedAnswers.length && question.itemId && question.subskill);
     if (question.options) assert.equal(new Set(question.options).size, question.options.length, `Duplicate choices: ${question.id}`);
     definitions.push({ id: question.id, version: question.version, lessonId, itemId: question.itemId, topicId: question.topicId, kind: question.kind, subskill: question.subskill, acceptedAnswers: question.acceptedAnswers, ...(question.options ? { options: question.options } : {}) });
   }
-  const base = { title: `คำศัพท์บท ${number}`, description: 'ฝึกความหมาย Artikel และการสะกดจากคำที่เรียนแล้ว', summaryNote: 'ผลแต่ละทักษะเก็บแยกกัน และยังไม่รวมคะแนนความก้าวหน้าหลัก', historySkill: 'vocabulary', requireLearned: true, guidedOnePerTarget: true, nounPresentation, articleColors, manualHref: `/practice/${lessonId}/vocabulary`, learnHref: `/learn/${lessonId}/vocabulary`, dailyHref: `/practice/${lessonId}/vocabulary/daily`, skillLabels: { vocabulary_meaning: 'จำความหมาย', vocabulary_article: 'เลือก Artikel', vocabulary_spelling: 'สะกดคำ' }, thaiSupport: { translations: Object.fromEntries(questions.map(question => [question.id, question.translation])), glossary: {}, phrases: [] }, unclassifiedMessage: 'ดูคำตอบและคำอธิบายก่อนทำข้อต่อไป' };
+  const base = { spellingCues: Object.fromEntries(words.map(word => [word.id, spellingCues[word.id]])), title: `คำศัพท์บท ${number}`, description: 'ฝึกความหมาย Artikel และการสะกดจากคำที่เรียนแล้ว', summaryNote: 'ผลแต่ละทักษะเก็บแยกกัน และยังไม่รวมคะแนนความก้าวหน้าหลัก', historySkill: 'vocabulary', requireLearned: true, guidedOnePerTarget: true, nounPresentation, articleColors, manualHref: `/practice/${lessonId}/vocabulary`, learnHref: `/learn/${lessonId}/vocabulary`, dailyHref: `/practice/${lessonId}/vocabulary/daily`, skillLabels: { vocabulary_meaning: 'จำความหมาย', vocabulary_article: 'เลือก Artikel', vocabulary_spelling: 'สะกดคำ' }, thaiSupport: { translations: Object.fromEntries(questions.map(question => [question.id, question.translation])), glossary: {}, phrases: [] }, unclassifiedMessage: 'ดูคำตอบและคำอธิบายก่อนทำข้อต่อไป' };
   const banks = [
     { slug: 'basic', workflow: 'guided', defaultCount: words.length, sections: groups.map(group => ({ topicId: group.topicId, title: group.title, count: group.ids.length })), questions },
     { slug: 'daily', workflow: 'daily', defaultCount: 10, questions },
@@ -55,6 +59,7 @@ for (let number = 1; number <= 12; number++) {
   inventory.push({ lessonId, taughtVocabulary: words.length, questionDefinitions: questions.length, groups: groups.map(group => ({ title: group.title, topicId: group.topicId, itemIds: group.ids })), sourceStatus: 'existing-published-catalog', selection: 'guided first exposure, then target/subskill history', evidence: 'item_exposures or lesson image state → scored account session' });
 }
 await writeFile(new URL('docs/exercise-mapping/a11-vocabulary-bank.json', root), JSON.stringify({ generatedAt: '2026-10-30', status: 'released-content-based-coverage', lessons: inventory, definitions }, null, 2) + '\n');
+await writeFile(new URL('docs/exercise-mapping/a11-spelling-cues.json', root), JSON.stringify({ version: 1, source: 'Existing Learn image mappings and L02 published content metadata; generated vector flags and numbered calendars', cues: spellingCues }, null, 2) + '\n');
 const previewImports = inventory.flatMap(({ lessonId }) => ['basic', 'daily'].map(slug => {
   const key = `${lessonId.toLowerCase()}${slug[0].toUpperCase()}${slug.slice(1)}`;
   return { key, path: `a11-vocab-${lessonId.toLowerCase()}-${slug}-preview.json`, lessonId, slug };

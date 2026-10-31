@@ -106,7 +106,8 @@ export function parsePracticeHistory(raw: string | null, href: string): Practice
       if (item.attempt !== null && item.attempt !== undefined) {
         const attempt = item.attempt;
         if (!isPlannerRecord(attempt) || (typeof attempt.correct !== 'boolean' && !(parsedQuestion.kind === 'write' && attempt.correct === null && attempt.selfAssessed === true)) || typeof attempt.submittedAt !== 'string' || !Number.isFinite(Date.parse(attempt.submittedAt))) throw new Error('Invalid practice attempt');
-        result = { correct: attempt.correct, submittedAt: Date.parse(attempt.submittedAt), assisted: item.hintUsed === true || item.translationUsed === true || attempt.translationUsed === true ? true : typeof item.translationUsed === 'boolean' || typeof attempt.translationUsed === 'boolean' ? false : null, confidence: typeof attempt.confidence === 'string' ? attempt.confidence : null };
+        const legacySpellingCue = parsedQuestion.id.endsWith('-a11-spelling') && attempt.spellingCueMode !== 'image' && attempt.spellingCueMode !== 'context';
+        result = { correct: attempt.correct, submittedAt: Date.parse(attempt.submittedAt), assisted: item.hintUsed === true || item.translationUsed === true || attempt.translationUsed === true ? true : legacySpellingCue ? null : typeof item.translationUsed === 'boolean' || typeof attempt.translationUsed === 'boolean' ? false : null, confidence: typeof attempt.confidence === 'string' ? attempt.confidence : null };
       }
       return { question: parsedQuestion, result };
     });

@@ -117,7 +117,19 @@ function playVocabularyFeedbackAudio(text,status){
  synth.cancel();synth.speak(utterance);
 }
 function decorateVocabularyNouns(card,q){
- if(q.subskill==='vocabulary_spelling'&&q.translation&&!q.sentence.includes(q.translation))card.querySelector('.sentence')?.before(node('p','ความหมาย: '+q.translation,{class:'spelling-meaning',lang:'th'}));
+ if(q.subskill==='vocabulary_spelling'&&BANK.spellingCues?.[q.itemId]){
+  const cue=BANK.spellingCues[q.itemId],item=activeItem(),area=node('div',undefined,{class:'spelling-cue'});
+  if(cue.kind==='image'){
+   const image=node('img',undefined,{src:cue.src,alt:'ภาพคำใบ้สำหรับสะกดคำศัพท์',class:'spelling-cue-image'});
+   Object.assign(image.style,{display:'block',width:'100%',maxWidth:'400px',height:'240px',objectFit:'contain',borderRadius:'12px',margin:'12px auto'});
+   image.onerror=()=>{image.style.display='none';area.prepend(node('p','โหลดภาพไม่ได้ ใช้ปุ่มดูความหมายภาษาไทยเพื่อฝึกต่อ',{role:'status'}));};
+   area.append(image);
+  }
+  if(cue.context)area.append(node('p',cue.context,{lang:'th'}));
+  if(item.translationUsed)area.append(node('p','ความหมาย: '+q.translation,{class:'spelling-meaning',lang:'th'}));
+  else if(!item.attempt)area.append(button('ดูความหมายภาษาไทย',()=>commit(n=>{activeItem(n).translationUsed=true;}),{class:'spelling-thai-help'}));
+  card.querySelector('.sentence')?.before(area);
+ }else if(q.subskill==='vocabulary_spelling'&&q.translation&&!q.sentence.includes(q.translation))card.querySelector('.sentence')?.before(node('p','ความหมาย: '+q.translation,{class:'spelling-meaning',lang:'th'}));
  if(!BANK.nounPresentation||!BANK.articleColors)return;
  const dot=color=>{const d=node('span',undefined,{class:'article-dot','aria-hidden':'true'});Object.assign(d.style,{display:'inline-block',width:'11px',height:'11px',borderRadius:'50%',marginRight:'8px',verticalAlign:'middle',backgroundColor:BANK.articleColors[color]});return d;};
  const noun=BANK.nounPresentation[q.itemId];
@@ -194,7 +206,7 @@ if(!item.attempt){const actions=node('div',undefined,{class:'row actions'});cons
 if(item.attempt){const a=item.attempt,feedback=node('div',undefined,{class:'feedback'+(a.correct===false?' wrong':''),role:'status',id:'feedback'});if(q.kind==='write'){feedback.append(node('h2','บันทึกคำตอบแล้ว'),node('p',a.response,{lang:'de'}),node('p','คำตอบที่เขียนเองไม่มีเฉลยตายตัว ระบบจึงไม่ตัดสินว่าถูกหรือผิด'),node('p','เกณฑ์ที่คุณตรวจแล้ว: '+q.rubric.filter((_,index)=>item.rubricChecks.includes(index)).join(' · ')),...(q.explanation?[node('p',q.explanation)]:[]));}else{feedback.append(node('h2',a.correct?'ถูกต้อง':'ยังไม่ถูก'));const questionTranslation=BANK.historySkill==='phrases'?phraseQuestionTranslation(q):null;if(questionTranslation)feedback.append(node('p','คำแปลคำถาม: '+questionTranslation,{class:'thai-translation',lang:'th'}));feedback.append(node('p','คำตอบ: '+(q.feedbackAnswer||(q.sentence?q.sentence.replace('___',q.acceptedAnswers[0]):q.acceptedAnswers[0])),{lang:'de'}),node('p',BANK.thaiSupport?.translations[q.id]||'',{class:'thai-translation',lang:'th'}),...(q.feedbackComparison?[nounFormComparison(q.feedbackComparison,q.explanation)]:q.explanation?[node('p',q.explanation)]:[]));}card.append(feedback);
 card.append(button(s.position===s.items.length-1?'จบชุดฝึก':'ข้อต่อไป',()=>{if(commit(n=>{const session=current(n);activeItem(n).attempt.status='completed';if(session.position===session.items.length-1)session.completed=true;else{session.position++;}})){focusTitle();}},{class:'primary',id:'next'}));}
 if(item.attempt){const navigation=node('div',undefined,{class:'row actions'});navigation.append(backButton(q));const next=card.querySelector('#next');if(next)navigation.append(next);card.append(navigation);}decorateVocabularyNouns(card,q);app.append(card);}
-function submit(){const item=activeItem();if(!item||item.attempt||!ready(item))return;const result=grade(item);commit(n=>{const row=activeItem(n);row.attempt={...result,response:answerText(row),...(row.question.kind==='write'?{selfAssessed:true,selfAssessment:row.question.rubric.filter((_,index)=>row.rubricChecks.includes(index))}:{}),confidence:null,status:'completed',submittedAt:new Date().toISOString(),hintUsed:row.hintUsed,translationUsed:row.translationUsed===true};});}
+function submit(){const item=activeItem();if(!item||item.attempt||!ready(item))return;const result=grade(item);commit(n=>{const row=activeItem(n);row.attempt={...result,response:answerText(row),...(row.question.kind==='write'?{selfAssessed:true,selfAssessment:row.question.rubric.filter((_,index)=>row.rubricChecks.includes(index))}:{}),confidence:null,status:'completed',submittedAt:new Date().toISOString(),...(row.question.subskill==='vocabulary_spelling'&&BANK.spellingCues?.[row.question.itemId]?{spellingCueMode:BANK.spellingCues[row.question.itemId].kind}:{}),hintUsed:row.hintUsed,translationUsed:row.translationUsed===true};});}
 function sectionBreak(){
  const s=current();const previous=s.items[s.position-1].question;
  const sectionKey=q=>q.stageId||q.topicId;const items=s.items.filter(i=>sectionKey(i.question)===sectionKey(previous));
