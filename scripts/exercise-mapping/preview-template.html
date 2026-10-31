@@ -117,6 +117,7 @@ function playVocabularyFeedbackAudio(text,status){
  synth.cancel();synth.speak(utterance);
 }
 function decorateVocabularyNouns(card,q){
+ if(q.subskill==='vocabulary_spelling'&&q.translation&&!q.sentence.includes(q.translation))card.querySelector('.sentence')?.before(node('p','ความหมาย: '+q.translation,{class:'spelling-meaning',lang:'th'}));
  if(!BANK.nounPresentation||!BANK.articleColors)return;
  const dot=color=>{const d=node('span',undefined,{class:'article-dot','aria-hidden':'true'});Object.assign(d.style,{display:'inline-block',width:'11px',height:'11px',borderRadius:'50%',marginRight:'8px',verticalAlign:'middle',backgroundColor:BANK.articleColors[color]});return d;};
  const noun=BANK.nounPresentation[q.itemId];
