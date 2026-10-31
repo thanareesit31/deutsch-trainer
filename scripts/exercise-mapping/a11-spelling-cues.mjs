@@ -70,7 +70,7 @@ export async function buildSpellingCues({ root, words, imageContent }) {
   }
   const context=contexts[word.id];
   assert(src||context,`Missing reviewed spelling cue: ${word.id} ${word.word}`);
-  cues[word.id]=src?{kind:'image',src,...(word.lessonId==='L02'?{context:word.article==='die'?'ใช้คำเรียกอาชีพสำหรับผู้หญิง':'ใช้คำเรียกอาชีพสำหรับผู้ชาย'}:{}),...(imageContent.l12MonthNumberById[word.id]?{context:'เดือนที่แสดงบนปฏิทิน'}:{})}:{kind:'context',context};
+  cues[word.id]=src?{kind:'image',src,...(word.lessonId==='L02'?{portrait:word.article==='die'?'feminine':'masculine'}:{}),...(imageContent.l12MonthNumberById[word.id]?{context:'เดือนที่แสดงบนปฏิทิน'}:{})}:{kind:'context',context};
  }
  return cues;
 }

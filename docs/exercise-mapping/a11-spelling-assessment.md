@@ -7,7 +7,7 @@ Scope: all 243 vocabulary spelling targets in L01–L12, basic/daily banks; 669 
 | Targets | Response and subskill | Difficulty and assistance | Grading |
 | --- | --- | --- | --- |
 | Every `cues` key in `a11-spelling-cues.json` | Existing itemId → `itemId-a11-spelling`, `vocabulary_spelling` | Level 2: produce the taught written form; image or short context, supplied Artikel for nouns, optional Thai meaning | Existing normalized accepted spelling variants; supplied Artikel is not gender-recall evidence |
-| L02 profession targets | Same spelling binding | Shared male/female scene plus requested gender; avoids two competing forms in one picture | Original masculine/feminine answer forms |
+| L02 profession targets | Same spelling binding | Single-person view from the corresponding half of Learn's existing scene; picture left, sole editable blank with supplied Artikel/color right; no Thai help or gender instruction | Original masculine/feminine answer forms |
 | L12 months V170–V181 | Same spelling binding | Numbered calendar instead of season scenery or written month name | Original month spelling |
 | 14 context targets listed in inventory | Same spelling binding | Relationship description or verb context when an image would be ambiguous; infinitive instructions where needed | Existing target-specific forms; no new grammar score |
 
@@ -19,9 +19,12 @@ Learn → item_exposures or lesson image state → existing learned-target eligi
 
 The existing shared daily selector prioritizes incorrect or assisted target/subskill evidence. This change preserves that selection and stable queues. It does not introduce new mastery thresholds, promotion/demotion, or a complete learner ability model. Picture-to-word spelling does not certify separate meaning, Artikel, or contextual production competence. Context-based and image-based results carry different modes in account history; the current selector still aggregates them under spelling and does not estimate separate image/context ability.
 
+L02 override, 2026-11-01: all 17 spelling targets use a single-person picture and no translation control. `portrait` identifies the left masculine region or right feminine region of each existing image. The visible regions cover source x=0–46% or x=54–100%; all nine source scenes were visually inspected for subject placement. No raster asset is edited. New responses carry `spellingCuePresentation: single-person-inline`; old help flags and first answers remain intact even though the old hint is no longer rendered. Thai meaning remains available in feedback after submission. The inline input retains the original response ID, local persistence and server grading.
+
 ## Checks and release
 
 - Generator asserts every target has a reviewed cue, verifies every referenced image file, and excludes SVGs containing the target spelling in visible text.
-- Mobile browser check covers all 486 spelling presentations across 24 banks, with help/reload/first-answer checks per bank.
+- Mobile browser check covers all 486 spelling presentations across 24 banks, with help or L02 picture-only behavior, reload and first-answer checks per bank.
+- L02 targeted browser check covers all 17 targets at 390px and 1280px: sole inline input, matching portrait gender, no hints, Enter grading, no overflow, and historical assistance preservation.
 - Database regression checks first-answer grading and retention of both help=true and help=false plus cue mode.
 - Deployment is recorded separately from local checks; this document does not assert learner-account production verification.

@@ -33,87 +33,87 @@
     "V008": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/engineer.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+      "portrait": "masculine"
     },
     "V009": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/engineer.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+      "portrait": "feminine"
     },
     "V010": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/journalist.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+      "portrait": "masculine"
     },
     "V011": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/journalist.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+      "portrait": "feminine"
     },
     "V012": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/student.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+      "portrait": "masculine"
     },
     "V013": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/student.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+      "portrait": "feminine"
     },
     "V014": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/hairdresser.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+      "portrait": "masculine"
     },
     "V015": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/hairdresser.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+      "portrait": "feminine"
     },
     "V016": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/doctor.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+      "portrait": "masculine"
     },
     "V017": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/doctor.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+      "portrait": "feminine"
     },
     "V018": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/teacher.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+      "portrait": "masculine"
     },
     "V019": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/teacher.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+      "portrait": "feminine"
     },
     "V020": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/seller.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+      "portrait": "masculine"
     },
     "V021": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/seller.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+      "portrait": "feminine"
     },
     "V022": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/waiter.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+      "portrait": "masculine"
     },
     "V023": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/waiter.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้หญิง"
+      "portrait": "feminine"
     },
     "V024": {
       "kind": "image",
       "src": "/images/lektion-2-profession-pairs/courier.webp",
-      "context": "ใช้คำเรียกอาชีพสำหรับผู้ชาย"
+      "portrait": "masculine"
     },
     "V025": {
       "kind": "image",

@@ -23,7 +23,7 @@ try {
     return {cue,hiddenThai:document.querySelector('.spelling-meaning')===null,help:document.querySelector('.spelling-thai-help')?.textContent,image:document.querySelector('.spelling-cue-image')?.getAttribute('src'),context:document.querySelector('.spelling-cue')?.textContent};
    },question.id);
    assert.equal(result.hiddenThai,true,question.id);
-   assert.equal(result.help,'ดูความหมายภาษาไทย');
+   assert.equal(result.help,lesson===2?undefined:'ดูความหมายภาษาไทย');
    if(result.cue.kind==='image'){
     assert.equal(result.image,result.cue.src);
     assert(existsSync('public'+result.image),question.id);
@@ -41,6 +41,29 @@ try {
   assert.equal(await page.evaluate(()=>{const legacy=structuredClone(current());delete legacy.items[0].attempt.spellingCueMode;return parsePracticeHistory(JSON.stringify({version:1,sessions:[legacy]}),'/practice/L01/vocabulary/basic')[0].items[0].result.assisted;}),null);
   await page.evaluate(id=>start(BANK.questions.filter(q=>q.id===id),1),sample.id);
   const saved=await page.evaluate(()=>current().id);
+  if(lesson===2){
+   assert.equal(await page.locator('label[for="response"]').count(),0);
+   assert.equal(await page.locator('.spelling-thai-help').count(),0);
+   const visual=await page.locator('.profession-single-portrait').boundingBox();
+   const answer=await page.locator('#response').boundingBox();
+   assert(visual.x+visual.width<answer.x,'image left, editable blank right');
+   assert.equal(await page.locator('.sentence .noun-prefix .article-dot').count(),1);
+   await page.locator('#response').fill(sample.acceptedAnswers[0].slice(0,3));
+   await page.reload();
+   await page.evaluate(id=>window.postMessage({type:'grammar-preview-direct-start',learnedItemIds:BANK.questions.map(q=>q.itemId),resumeId:id},'*'),saved);
+   await page.locator('#response').waitFor();
+   assert.equal(await page.locator('#response').inputValue(),sample.acceptedAnswers[0].slice(0,3));
+   assert.equal(await page.locator('.spelling-meaning').count(),0);
+   if(slug==='basic')await page.screenshot({path:'.tools/l02-single-person-mobile.png',fullPage:true});
+   await page.locator('#response').fill(sample.acceptedAnswers[0]);
+   await page.locator('#response').press('Enter');
+   assert.equal(await page.evaluate(()=>activeItem().attempt.correct),true);
+   assert.equal(await page.evaluate(()=>activeItem().attempt.translationUsed),false);
+   interacted++;
+   await page.unroute('https://cue.test/practice');
+   continue;
+  }
+
   await page.getByRole('button',{name:'ดูความหมายภาษาไทย',exact:true}).click();
   assert.equal(await page.locator('.spelling-meaning').innerText(),'ความหมาย: '+sample.translation);
   await page.reload();

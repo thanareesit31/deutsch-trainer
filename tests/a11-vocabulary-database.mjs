@@ -26,10 +26,12 @@ try {
     state.items[0].translationUsed = translationUsed;
     state.items[0].attempt.translationUsed = translationUsed;
     state.items[0].attempt.spellingCueMode = 'image';
+    state.items[0].attempt.spellingCuePresentation = 'single-person-inline';
     await sync(`a11-vocab-${spelling.lessonId.toLowerCase()}-basic`, state);
     const saved = (await db.query('select state from public.learner_practice_sessions where session_id=$1', [state.id])).rows[0].state;
     assert.equal(saved.items[0].attempt.translationUsed, translationUsed);
     assert.equal(saved.items[0].attempt.spellingCueMode, 'image');
+    assert.equal(saved.items[0].attempt.spellingCuePresentation, 'single-person-inline');
     assert.equal(saved.items[0].attempt.correct, true);
   }
   for (const [index, question] of definitions.entries()) {
