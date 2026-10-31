@@ -77,6 +77,7 @@ function AccountLessonState({
   const [ready, setReady] = useState(!userId);
   const [error, setError] = useState("");
   const [retry, setRetry] = useState(0);
+  const [saveFailures, setSaveFailures] = useState<string[]>([]);
   const pendingKey = `deutsch-trainer-pending-lessons:${userId}`;
   const cachePending = useCallback(() => {
     try {
@@ -91,28 +92,34 @@ function AccountLessonState({
   const flush = useCallback(async () => {
     if (saving.current || !supabase || !userId || !active.current) return;
     saving.current = true;
+    const attempted = new Map<string, string>();
+    const failures = new Map<string, string>();
     try {
-      while (active.current && Object.keys(pending.current).length) {
-        const [key, value] = Object.entries(pending.current)[0];
-        const { error } = await supabase.from("learner_lesson_states").upsert(
-          {
-            user_id: userId,
-            lesson_key: key,
-            state: JSON.parse(value),
-          },
-          { onConflict: "user_id,lesson_key" },
-        );
-        if (error) throw error;
-        if (!active.current) return;
-        if (pending.current[key] === value) delete pending.current[key];
-        cachePending();
+      while (active.current) {
+        const entry = Object.entries(pending.current).find(([key, value]) => attempted.get(key) !== value);
+        if (!entry) break;
+        const [key, value] = entry;
+        attempted.set(key, value);
+        try {
+          const { error } = await supabase.from("learner_lesson_states").upsert(
+            { user_id: userId, lesson_key: key, state: JSON.parse(value) },
+            { onConflict: "user_id,lesson_key" },
+          );
+          if (error) throw error;
+          if (!active.current) return;
+          if (pending.current[key] === value) delete pending.current[key];
+          failures.delete(key);
+          cachePending();
+        } catch (cause) {
+          const message = typeof cause === "object" && cause !== null && "message" in cause && typeof cause.message === "string" ? cause.message : "ส่งข้อมูลไม่สำเร็จ";
+          const code = typeof cause === "object" && cause !== null && "code" in cause && typeof cause.code === "string" ? cause.code : "unknown";
+          failures.set(key, `${key} · ${code}: ${message}`);
+        }
       }
-      if (active.current) setError("");
-    } catch {
-      if (active.current)
-        setError(
-          "บันทึกบทเรียนไม่สำเร็จ ข้อมูลที่ทำไว้ยังรอส่ง กรุณาลองอีกครั้ง",
-        );
+      if (active.current) {
+        setSaveFailures([...failures.values()]);
+        setError(failures.size ? "บันทึกบทเรียนไม่สำเร็จ ข้อมูลที่ทำไว้ยังรอส่ง กรุณาลองอีกครั้ง" : "");
+      }
     } finally {
       saving.current = false;
     }
@@ -294,6 +301,7 @@ function AccountLessonState({
       {error && (
         <div className="lesson-save-error" role="alert">
           <p>{error}</p>
+          {saveFailures.length > 0 && <details><summary>รายละเอียดข้อผิดพลาด</summary><ul>{saveFailures.map(failure => <li key={failure}>{failure}</li>)}</ul></details>}
           <button
             className="button secondary"
             onClick={() => {

@@ -18,6 +18,7 @@ try {
     "20261018000000_l14_phrase_learning_state.sql",
     "20261019000000_l14_position_quiz_state.sql",
     "20261019010000_l14_position_quiz_cat_state.sql",
+    "20261031010000_restore_lesson_state_keys.sql",
   ])
     await client.query(
       await readFile(

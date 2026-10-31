@@ -4698,11 +4698,9 @@ select {
 }
 
 .lesson-save-error {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 200;
-  width: min(420px, calc(100vw - 48px));
+  position: relative;
+  margin: 12px;
+  width: calc(100% - 24px);
   padding: 16px;
   border: 1px solid var(--line);
   border-radius: 16px;
