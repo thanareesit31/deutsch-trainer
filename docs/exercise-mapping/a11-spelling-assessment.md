@@ -28,3 +28,15 @@ L02 override, 2026-11-01: all 17 spelling targets use a single-person picture an
 - L02 targeted browser check covers all 17 targets at 390px and 1280px: sole inline input, matching portrait gender, no hints, Enter grading, no overflow, and historical assistance preservation.
 - Database regression checks first-answer grading and retention of both help=true and help=false plus cue mode.
 - Deployment is recorded separately from local checks; this document does not assert learner-account production verification.
+
+## Shared inline practice presentation, 2026-11-02
+
+All cloze tasks in the shared L01-L18 preview template now use one editable blank in the sentence. Image spelling tasks use a compact image left and the supplied noun prefix plus editable blank right. Thai hint buttons are removed. Context-only tasks retain their authored context. Group headings are removed in the shared template, the separate matching renderer and L14 practice screens. Question IDs, versions, accepted answers, eligibility and grading are preserved.
+
+New preview attempts record responsePresentation=inline-v1 and wordHelpTokens; word help sets translationUsed before the first response. The shared word dictionary derives from existing catalog meanings and reviewed practice-thai-support metadata. Direct vocabulary meaning, spelling and Artikel targets do not expose translations before grading. Historical help flags and first answers remain intact. The new word-help availability changes assistance and must not be treated as independent success when used.
+
+L13 story and riddle word help records response-specific draft and submitted wordHelpTokens; L14 context word help records wordHelpUsed and adds word-meanings to evidence. These changes collect assistance evidence; they do not establish a new adaptive ability model. Unknown dictionary words remain plain text rather than guessed translations. No production deployment is performed.
+
+The L14 phrase flow now also records shared word help in draft progress and first attempts, including shared practice-session serialization. L13 crossword clues bind word help to the individual row. All previews and the React word-help dictionary can be regenerated together using `npm run build:practice-previews`.
+
+Local verification for this update: 104 generated preview files have no unresolved template placeholders. The cross-lesson browser sweep covered 44 banks, 23 inline response examples with draft reload and Enter grading, and word-help evidence in 16 grammar banks. The spelling browser sweep covered all 486 presentations across 24 basic/daily banks. L02 additionally passed all 17 targets on mobile and desktop. The separate phrase matching check preserves pointer selection and attributes word help to its individual response. Canonical database grading passed all 887 L01-L12 definitions. TypeScript, 11 focused unit tests and the Webpack production build passed. These are local checks, not a production account rollout.

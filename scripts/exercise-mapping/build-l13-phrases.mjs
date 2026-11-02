@@ -1,3 +1,4 @@
+import { readPracticeTemplate } from './practice-word-help.mjs';
 import ts from 'typescript';
 import { buildPhraseSequence } from './l13-phrase-sequence.mjs';
 import assert from 'node:assert/strict';
@@ -130,7 +131,7 @@ for(const group of groups){
 }
 provenance.push(...questions.map(q=>({questionId:q.id,sourceItemIds:q.requiredItemIds,sourceId:'DEUTSCH_TRAINER_ORIGINAL',repositoryFile:'supabase/seed/catalog.json',designFile:'scripts/exercise-mapping/l13-phrase-sequence.mjs',method:'repository_inspection',publisherPage:null,inspectedAt:'2026-10-22',note:'Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises.'})));
 const skillLabels={phrase_context:'เลือกคำตอบ',phrase_match:'จับคู่คำถาม–คำตอบ',phrase_order:'เรียงคำเป็นประโยค'};
-const template=await read('scripts/exercise-mapping/preview-template.html');const planner=ts.transpileModule(await read('src/lib/practice-planner.ts'),{compilerOptions:{target:ts.ScriptTarget.ES2020,module:ts.ModuleKind.ES2020}}).outputText.replace(/^export /gm,'');
+const template=await readPracticeTemplate();const planner=ts.transpileModule(await read('src/lib/practice-planner.ts'),{compilerOptions:{target:ts.ScriptTarget.ES2020,module:ts.ModuleKind.ES2020}}).outputText.replace(/^export /gm,'');
 const base={title:'ประโยคและสำนวนบท 13',sequenceByTopic:true,topicOrder:groups.map(g=>g.topicId),requireLearned:true,historySkill:'phrases',learnLabel:'ไปเรียนประโยคและสำนวน',emptyMessage:'ยังไม่มีประโยคที่เรียนแล้วในหัวข้อนี้',manualHref:'/practice/L13/phrases',learnHref:'/learn/L13/phrases',dailyHref:'/practice/L13/phrases/daily',skillLabels,skillCycle:['phrase_context','phrase_match','phrase_order'],thaiSupport:{translations:Object.fromEntries([...legacyQuestions,...questions].map(q=>[q.id,q.translation])),glossary:{},phrases:{}}};
 const matchingRuntime=await read('scripts/exercise-mapping/phrase-matching-runtime.js');
 const sections=groups.map(g=>({topicId:g.topicId,title:g.title,count:5}));

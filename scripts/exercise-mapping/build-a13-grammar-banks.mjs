@@ -1,3 +1,4 @@
+import { readPracticeTemplate } from './practice-word-help.mjs';
 import ts from 'typescript';
 import { readFile, writeFile } from 'node:fs/promises';
 
@@ -5,7 +6,7 @@ const root = new URL('../../', import.meta.url);
 const thaiSupport = JSON.parse(await readFile(new URL('docs/exercise-mapping/practice-thai-support.json', root), 'utf8'));
 const feedback = JSON.parse(await readFile(new URL('docs/exercise-mapping/practice-feedback.json', root), 'utf8'));
 const planner = ts.transpileModule(await readFile(new URL('src/lib/practice-planner.ts', root), 'utf8'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText.replace(/^export /gm, '');
-const template = await readFile(new URL('scripts/exercise-mapping/preview-template.html', root), 'utf8');
+const template = await readPracticeTemplate();
 const audit = JSON.parse(await readFile(new URL('docs/exercise-mapping/a13-coursebook-activity-audit.json', root), 'utf8'));
 const sourceIds = new Set(audit.activities.map(activity => activity.id));
 

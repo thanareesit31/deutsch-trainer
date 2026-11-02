@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { PracticeGermanText } from "./practice-german-text";
 import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { l13ChallengeResponses, l13VocabularyChallengeActivities, type VocabularyChallengeActivity } from "@/lib/l13-vocabulary-challenge-bank";
@@ -22,7 +23,8 @@ const definitions = new Map(l13ChallengeResponses.map(response => [response.id, 
 const activitiesById = new Map(l13VocabularyChallengeActivities.map(activity => [activity.id, activity]));
 const titles = { odd: "หาคำที่ไม่เข้ากลุ่ม", picture: "เลือกคำให้ตรงกับภาพ", riddle: "ทายสถานที่จากคำบรรยาย", category: "จัดคำศัพท์เข้าหมวด" };
 
-function StoryExercise({ activity, responses, drafts, onDraft, onSubmit }: {
+function StoryExercise({ activity, responses, drafts, onDraft, onSubmit, onWordHelp }: {
+  onWordHelp: (id: string, word: string) => void;
   activity: Story; responses: Record<string, ChallengeResponse>; drafts: Record<string, string>;
   onDraft: (id: string, answer: string) => void; onSubmit: (answers: Record<string, string>) => void;
 }) {
@@ -45,7 +47,7 @@ function StoryExercise({ activity, responses, drafts, onDraft, onSubmit }: {
     </div>
     <p className="l13-vocab-story-text" lang="de" aria-describedby="story-wordbank-help">{activity.gaps.map((gap, index) => {
       const label = activity.wordBank.find(option => option.id === (responses[gap.id]?.answer ?? drafts[gap.id]))?.label;
-      return <Fragment key={gap.id}>{index > 0 ? " " : ""}{gap.before}<button type="button" className="l13-vocab-story-gap" data-correct={responses[gap.id] ? String(responses[gap.id].correct) : undefined} aria-label={`ช่อง ${index + 1}${label ? ` ${label}` : " ว่าง"}`} aria-pressed={!checked && target?.id === gap.id} disabled={Boolean(responses[gap.id])} onClick={() => { onDraft(gap.id, ""); setActiveId(gap.id); }}>{label ?? `(${index + 1}) …`}</button>{gap.after}</Fragment>;
+      return <Fragment key={gap.id}>{index > 0 ? " " : ""}{<PracticeGermanText text={gap.before} onHelp={word => onWordHelp(gap.id, word)} />}<button type="button" className="l13-vocab-story-gap" data-correct={responses[gap.id] ? String(responses[gap.id].correct) : undefined} aria-label={`ช่อง ${index + 1}${label ? ` ${label}` : " ว่าง"}`} aria-pressed={!checked && target?.id === gap.id} disabled={Boolean(responses[gap.id])} onClick={() => { onDraft(gap.id, ""); setActiveId(gap.id); }}>{label ?? `(${index + 1}) …`}</button>{gap.after}</Fragment>;
     })}</p>
     {checked ? <div className={`l14-vocab-feedback${activity.gaps.every(gap => responses[gap.id]?.correct) ? " correct" : " incorrect"}`} role="status">
       <strong>{activity.gaps.every(gap => responses[gap.id]?.correct) ? "ถูกต้องทุกช่อง" : "มาดูคำตอบแต่ละช่อง"}</strong>
@@ -71,7 +73,8 @@ function BuildExercise({ activity, draft, response, onDraft, onSubmit }: {
   </>;
 }
 
-function CrosswordExercise({ activity, responses, drafts, onDraft, onSubmit }: {
+function CrosswordExercise({ activity, responses, drafts, onDraft, onSubmit, onWordHelp }: {
+  onWordHelp: (id: string, word: string) => void;
   activity: Crossword; responses: Record<string, ChallengeResponse>; drafts: Record<string, string>;
   onDraft: (id: string, answer: string) => void; onSubmit: (answers: Record<string, string>) => void;
 }) {
@@ -86,7 +89,7 @@ function CrosswordExercise({ activity, responses, drafts, onDraft, onSubmit }: {
   return <>
     <p className="eyebrow">ปริศนาคำศัพท์</p><h1 lang="de">{activity.title}</h1>
     <p>อ่านคำใบ้แล้วเติมตัวอักษรลงช่องโดยไม่ใส่ Artikel ตัวอักษรในช่องสีเหลืองจะรวมเป็นคำแนวตั้ง</p>
-    <ol className="l13-crossword-clues">{activity.rows.map(row => <li key={row.id} lang="de"><NounPrefix noun={findNoun(row.answer, items)} /> · {row.clue}</li>)}</ol>
+    <ol className="l13-crossword-clues">{activity.rows.map(row => <li key={row.id} lang="de"><NounPrefix noun={findNoun(row.answer, items)} /> · <PracticeGermanText text={row.clue} onHelp={word => onWordHelp(row.id, word)} /></li>)}</ol>
     <div className="l13-crossword-grid" role="group" aria-label="ตารางปริศนาคำศัพท์" style={{ gridTemplateColumns: `20px repeat(${columns}, minmax(0, 1fr))` }}>
       {activity.rows.map((row, rowIndex) => <Fragment key={row.id}><span className="l13-crossword-row-number">{rowIndex + 1}</span>{Array.from({ length: columns }, (_, column) => {
         const index = column - (keyColumn - row.keyIndex);
@@ -156,6 +159,7 @@ export function L13VocabularyChallenge({ format }: { format?: "pictureArticle" }
     if (!current) return current;
     return format === "pictureArticle" && current.articleRound ? { ...current, articleRound: update(current.articleRound) } : { ...current, round: update(current.round) };
   });
+  const onWordHelp = (id: string, word: string) => updateRound(current => current.responses[id] ? current : ({ ...current, wordHelpTokens: { ...current.wordHelpTokens, [id]: [...new Set([...(current.wordHelpTokens?.[id] ?? []), word])] } }));
   const onDraft = (id: string, answer: string) => updateRound(current => ({ ...current, drafts: { ...current.drafts, [id]: answer } }));
   const submit = (answers: Record<string, string>) => updateRound(current => {
     const responses = { ...current.responses };
@@ -165,7 +169,7 @@ export function L13VocabularyChallenge({ format }: { format?: "pictureArticle" }
       const answer = answers[id];
       const definition = definitions.get(id);
       if (!answer || !definition || (definition.choices && !definition.choices.includes(answer))) return current;
-      responses[id] = { answer, correct: answer === definition.answer, submittedAt, confidence: null, ...(definition.assessment ? { assessment: definition.assessment } : {}) };
+      responses[id] = { answer, correct: answer === definition.answer, submittedAt, confidence: null, ...(current.wordHelpTokens?.[id] ? { wordHelpTokens: current.wordHelpTokens[id] } : {}), ...(definition.assessment ? { assessment: definition.assessment } : {}) };
     }
     return { ...current, responses, drafts: Object.fromEntries(Object.entries(current.drafts).filter(([id]) => !responses[id])) };
   });
@@ -189,18 +193,18 @@ export function L13VocabularyChallenge({ format }: { format?: "pictureArticle" }
     <div className="l14-vocab-progress"><span>{round.position + 1} / {round.activityIds.length} กิจกรรม</span><div role="progressbar" aria-valuenow={round.position + 1} aria-valuemin={1} aria-valuemax={round.activityIds.length}><span style={{ width: `${(round.position + 1) / round.activityIds.length * 100}%` }} /></div></div>
     </div>
     <section className="l14-vocab-practice-card" data-activity-id={activity.id} data-activity-kind={activity.kind} data-assessment-subskill={activity.kind === "pictureArticle" ? activity.assessment.subskill : undefined}>
-      {activity.kind === "story" ? <StoryExercise key={`${round.id}-${activity.id}`} activity={activity} responses={round.responses} drafts={round.drafts} onDraft={onDraft} onSubmit={submit} />
+      {activity.kind === "story" ? <StoryExercise key={`${round.id}-${activity.id}`} activity={activity} responses={round.responses} drafts={round.drafts} onDraft={onDraft} onSubmit={submit} onWordHelp={onWordHelp} />
         : activity.kind === "pictureArticle" ? <PictureArticleExercise activity={activity} response={response} picked={picked} onPick={answer => onDraft(activity.id, answer)} />
-        : activity.kind === "crossword" ? <CrosswordExercise key={`${round.id}-${activity.id}`} activity={activity} responses={round.responses} drafts={round.drafts} onDraft={onDraft} onSubmit={submit} />
+        : activity.kind === "crossword" ? <CrosswordExercise key={`${round.id}-${activity.id}`} activity={activity} responses={round.responses} drafts={round.drafts} onDraft={onDraft} onSubmit={submit} onWordHelp={onWordHelp} />
         : activity.kind === "build" ? <BuildExercise activity={activity} draft={round.drafts[activity.id]} response={response} onDraft={onDraft} onSubmit={submit} />
           : <>{activity.kind !== "picture" && <p className="eyebrow">{titles[activity.kind]}</p>}<h1 lang={activity.kind === "picture" ? "de" : "th"}>{activity.kind === "picture" ? "Was sehen Sie auf dem Bild?" : activity.kind === "odd" ? "คำไหนต่างจากพวก?" : activity.kind === "category" ? "คำนี้อยู่ในหมวดไหน?" : "อ่านคำใบ้แล้วเลือกสถานที่"}</h1>
             <div className={activity.kind === "picture" ? "l13-vocab-picture-layout" : undefined}>
               {activity.kind === "picture" && <Image className="l13-vocab-challenge-image" src={activity.image} alt="ภาพสถานที่สำหรับเลือกคำศัพท์" width={440} height={290} sizes="(max-width: 760px) 100vw, 440px" />}
-              <div>{activity.kind !== "picture" && <p className="l13-vocab-challenge-prompt" lang={activity.kind === "riddle" || activity.kind === "category" ? "de" : "th"}><NounText text={activity.prompt} items={items} /></p>}
+              <div>{activity.kind !== "picture" && <p className="l13-vocab-challenge-prompt" lang={activity.kind === "riddle" || activity.kind === "category" ? "de" : "th"}>{activity.kind === "riddle" ? <PracticeGermanText text={activity.prompt} onHelp={word => onWordHelp(activity.id, word)} /> : <NounText text={activity.prompt} items={items} />}</p>}
                 <div className="l13-vocab-challenge-options">{activity.options.map(option => <button type="button" key={option.id} lang={activity.kind === "category" ? "th" : "de"} aria-pressed={picked === option.id} disabled={Boolean(response)} onClick={() => onDraft(activity.id, option.id)}>{optionContent(option)}</button>)}</div>
               </div>
             </div>
-            {response && <div className={`l14-vocab-feedback${response.correct ? " correct" : " incorrect"}`} role="status"><strong>{response.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong>{activity.kind === "picture" ? <p>คำแปลโจทย์: คุณเห็นอะไรในภาพ?</p> : activity.translation && <p>คำแปลโจทย์: {activity.translation}</p>}<p>คำตอบ: <span lang={activity.kind === "category" ? "th" : "de"}>{optionContent(activity.options.find(option => option.id === activity.answer))}</span> <VocabularyFeedbackAudio text={activity.kind === "category" ? activity.prompt : activity.options.find(option => option.id === activity.answer)?.label ?? ""} item={items.find(item => item.id === (activity.kind === "category" ? activity.requiredItemIds[0] : activity.answer))} /></p><p>{activity.explanation}</p></div>}
+            {response && <div className={`l14-vocab-feedback${response.correct ? " correct" : " incorrect"}`} role="status"><strong>{response.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong>{activity.kind !== "picture" && activity.translation && <p>คำแปลโจทย์: {activity.translation}</p>}<p>คำตอบ: <span lang={activity.kind === "category" ? "th" : "de"}>{optionContent(activity.options.find(option => option.id === activity.answer))}</span>{activity.kind === "picture" && <span lang="th"> · {items.find(item => item.id === activity.answer)?.meaning}</span>} <VocabularyFeedbackAudio text={activity.kind === "category" ? activity.prompt : activity.options.find(option => option.id === activity.answer)?.label ?? ""} item={items.find(item => item.id === (activity.kind === "category" ? activity.requiredItemIds[0] : activity.answer))} /></p>{activity.kind !== "picture" && <p>{activity.explanation}</p>}</div>}
           </>}
       <div className="l14-vocab-actions">{round.position === 0 ? <Link className="button secondary" href="/practice/L13/vocabulary">← ย้อนกลับ</Link> : <button type="button" className="button secondary" onClick={() => updateRound(current => ({ ...current, position: current.position - 1 }))}>← ย้อนกลับ</button>}
         {!checked && activity.kind !== "story" && activity.kind !== "build" && activity.kind !== "crossword" && <button type="button" className="button primary" disabled={!picked} onClick={() => submit({ [activity.id]: picked })}>ตรวจคำตอบ</button>}

@@ -1,5 +1,59 @@
 # Requirement & Experience Changelog
 
+## 2026-11-02 - Production release of shared practice presentation
+
+- Release scope: inline response blanks, compact images, combined vocabulary feedback, hidden group headings and recorded sentence word help across the implemented L01-L18 practice flows; dual meaning practice is included in its existing lesson scope.
+- Database: applied the additive 20261101000000_dual_vocabulary_meaning migration to the configured production Supabase project. Verified 218 L01-L12 picture definitions, 25 L13 picture definitions and the cue validation trigger. The learner practice-session count stayed unchanged.
+- Delivery: publish this revision from master through the connected Vercel deployment. Prior entries saying not deployed describe the local implementation stage. This release does not reset historical answers or claim a complete adaptive model for all lessons.
+
+## 2026-11-02 - Inline responses and shared sentence word help
+
+- Changed: removed group headings; shared L01-L18 cloze tasks use one editable sentence blank. Image spelling uses a compact picture left and response right, without Thai hint buttons. L14 spelling uses the same inline appearance and omits extra Thai/first-letter hints when an image or route supplies the prompt. German sentence word help now shares existing project meanings across banks and records assistance. L13 story/riddle and L14 context word help retain response-level assistance.
+- Why: remove duplicate answer controls and let learners answer at the missing word, with consistent access to reviewed sentence meanings.
+- Impact: preserve task IDs, versions, grading, saved drafts, first answers and historical help flags. New preview attempts include responsePresentation and wordHelpTokens. Direct assessed vocabulary is excluded from pre-answer word help. This changes assistance availability, not the taught targets. Existing review selectors treat newly recorded word help as assistance; an assisted L14 context answer returns to its supported variant instead of being counted as independent success. No new mastery thresholds are introduced. No production deployment.
+
+## 2026-11-02 · เก็บงานภาพและเฉลยบท 13 ขั้นสูงกับบท 14
+
+- เปลี่ยนอะไร: จำกัดภาพและแผนภาพในโจทย์เลือกคำจากภาพบท 14 และภาพในชุดฝึกขั้นสูงบท 13 ให้กว้างไม่เกิน 200px สูงไม่เกิน 290px โดยไม่ครอปภาพ. บท 13 ขั้นสูงรวมคำเฉลยกับความหมายไทยบรรทัดเดียวและเอาบรรทัดแปลคำสั่งกับคำอธิบายความหมายซ้ำออก. บท 14 มีคำแปลในบรรทัดเฉลยอยู่แล้ว.
+- เหตุผล: ให้แบบฝึกรูปแบบเดียวกันอ่านและใช้งานสม่ำเสมอทั้งสองบท.
+- ผลกระทบ: ปรับเฉพาะการแสดงภาพและ feedback ของการเลือกคำจากภาพ คง ID คำตอบ ตัวเลือก ทักษะ หลักฐานและการเลือกรอบเดิม. ไม่เปลี่ยนแบบทดสอบ Artikel. ยังไม่ดีพลอย.
+
+## 2026-11-02 · ใช้ขนาดภาพและเฉลยร่วมกันทุกโจทย์เลือกคำจากภาพ
+
+- เปลี่ยนอะไร: ทุกข้อ “เลือกคำเยอรมันที่ตรงกับภาพ” ในบท 1–13 ใช้ภาพกว้างไม่เกิน 200px สูงไม่เกิน 290px พร้อมเฉลยเยอรมันและคำแปลไทยในบรรทัดเดียว โดยลบคำเฉลยที่ซ้ำ. ภาพบุคคลบนมือถือยังจำกัดที่ 170px.
+- เหตุผล: ให้ทุกข้อของรูปแบบเดียวกันแสดงภาพและเฉลยสม่ำเสมอ.
+- ผลกระทบ: เปลี่ยนเฉพาะหน้าตา คง Artikel จุดสี เสียงอ่าน ตัวเลือก การตรวจ คำตอบแรกและหลักฐานเดิม. ยังไม่ดีพลอย.
+
+## 2026-11-02 · ลดภาพบุคคลในโจทย์เลือกคำจากภาพ
+
+- เปลี่ยนอะไร: จำกัดภาพบุคคลในโจทย์เลือกคำจากภาพให้กว้างไม่เกิน 200px เช่นเดียวกับโจทย์สะกดคำ; มือถือยังใช้ขนาดสูงสุด 170px เดิม.
+- เหตุผล: แบบเลือกคำยังแสดงภาพใหญ่และดันปุ่มลงต่ำ หลังจากลดเฉพาะแบบสะกดไปก่อนหน้า.
+- ผลกระทบ: ปรับเฉพาะขนาดภาพ คงตัวเลือก คำตอบ การตรวจ หลักฐานและรอบค้างเดิม. ยังไม่ดีพลอย.
+
+## 2026-11-02 · รวมเฉลยสะกดคำกับคำแปล
+
+- เปลี่ยนอะไร: แสดงคำตอบเยอรมันและคำแปลไทยในบรรทัดเฉลยเดียวกัน และลบประโยค “รูปคำที่เรียนคือ…” ที่ซ้ำกับคำตอบ ในแบบฝึกสะกดคำศัพท์จาก preview.
+- เหตุผล: ลดข้อความซ้ำและให้อ่านคำศัพท์พร้อมความหมายได้ทันที.
+- ผลกระทบ: เปลี่ยนเฉพาะ feedback คง Artikel จุดสี เสียงอ่าน การตรวจคำตอบและประวัติเดิม. ยังไม่ดีพลอย.
+
+## 2026-11-02 · ลดขนาดภาพโจทย์สะกดอาชีพบท 2
+
+- เปลี่ยนอะไร: จำกัดความกว้างภาพบุคคลในโจทย์สะกดไว้ที่ 200px และคงสัดส่วนเดิม ทำให้ภาพสูงไม่เกินประมาณ 290px.
+- เหตุผล: ภาพเดิมสูงจนส่วนตอบและปุ่มอยู่ต่ำเกินไป โดยเฉพาะหน้าจอเดสก์ท็อปที่มีความสูงจำกัด.
+- ผลกระทบ: ปรับเฉพาะการแสดงผลของโจทย์สะกด คงช่องพิมพ์ด้านขวา Artikel การตรวจคำตอบและหลักฐานเดิม. ยังไม่ดีพลอย.
+
+## 2026-11-02 · แยกแบบฝึกความหมายจากคำและภาพ
+
+- เปลี่ยนอะไร: เพิ่มโจทย์ดูภาพแล้วเลือกคำเยอรมัน 218 ข้อในบท 1–12 และ 25 ข้อในบท 13; เพิ่มเลือกความหมายไทยจากคำเยอรมันในบท 14. เก็บทักษะและทิศทางการจำความหมายแยกกัน พร้อมคง Artikel ของคำนามและคำตอบเก่า.
+- เหตุผล: ฝึกการเชื่อมคำกับความหมายได้ทั้งสองทาง โดยไม่รวมผลกับการสะกดหรือจำ Artikel เอง.
+- ผลกระทบ: รอบใหม่เลือกได้ทั้งสองรูปแบบ; รอบค้างและประวัติเดิมยังใช้ได้. เพิ่ม migration สำหรับข้อใหม่และตรวจภาพกับตัวเลือกฝั่งฐานข้อมูล พร้อมแก้ลำดับตัวดำเนินการ SQL ที่ทำให้ส่งคำตอบภาพไม่ได้. วงรอบ guided ยังไม่ใช่การเลื่อนระดับตามความสามารถ; ข้อจำกัดและเส้นทางหลักฐานอยู่ใน `docs/exercise-mapping/dual-vocabulary-meaning-assessment.md`. ยังไม่ดีพลอยหรือรัน migration บน production.
+
+## 2026-11-01 · ซ่อนชื่อหัวข้อในแบบฝึกคำศัพท์บท 2
+
+- **เปลี่ยนอะไร:** เอาบรรทัดชื่อและลำดับหัวข้อ เช่น “หัวข้อ 1 จาก 1 · Beruf” ออกจากบท 2 ทั้งชุดพื้นฐานและรายวัน โดยคงจำนวนข้อและแถบความคืบหน้า.
+- **เหตุผล:** ลดข้อความส่วนหัวตามคำขอผู้ใช้.
+- **ผลกระทบ:** เปลี่ยนเฉพาะการแสดงผล ไม่เปลี่ยนกลุ่มโจทย์ คำตอบ หลักฐานหรือการเลือกรอบ. ยังไม่ดีพลอยตามคำสั่งผู้ใช้.
+
 ## 2026-11-01 · บท 2 ดูบุคคลคนเดียวและพิมพ์ในช่องเติมคำโดยตรง
 
 - **เปลี่ยนอะไร:** โจทย์สะกดอาชีพบท 2 แสดงเฉพาะผู้ชายหรือผู้หญิงตามรูปคำ โดยจัดกรอบภาพ Learn เดิมฝั่งซ้าย/ขวาให้เหลือบุคคลเดียว. เอาคำใบ้ไทย ปุ่มช่วย และข้อความระบุเพศออกก่อนตอบ. จัดภาพไว้ด้านซ้ายและย้ายช่องพิมพ์จริงไปแทนช่องว่างข้าง Artikel พร้อมจุดสีด้านขวา; เอาป้ายและช่องตอบซ้ำด้านล่างออก. รองรับการพิมพ์ Enter ร่างคำตอบ และ feedback เดิม.

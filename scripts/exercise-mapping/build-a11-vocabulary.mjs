@@ -1,12 +1,14 @@
+import { readPracticeTemplate } from './practice-word-help.mjs';
 import assert from 'node:assert/strict';
 import { readFile, writeFile } from 'node:fs/promises';
 import ts from 'typescript';
+import { pictureMeaningQuestions } from './picture-meaning-questions.mjs';
 import { buildSpellingCues } from './a11-spelling-cues.mjs';
 
 const root = new URL('../../', import.meta.url);
 const read = path => readFile(new URL(path, root), 'utf8');
 const catalog = JSON.parse(await read('supabase/seed/catalog.json'));
-const template = await read('scripts/exercise-mapping/preview-template.html');
+const template = await readPracticeTemplate();
 const planner = ts.transpileModule(await read('src/lib/practice-planner.ts'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText.replace(/^export /gm, '');
 const paletteSource = ts.transpileModule(await read('src/lib/profession-learning.ts'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText;
 const { articleColors } = await import('data:text/javascript;base64,' + Buffer.from(paletteSource).toString('base64'));
@@ -40,12 +42,13 @@ for (let number = 1; number <= 12; number++) {
     const forms = word.word.split(' / ').map(value => value.trim()).filter(Boolean);
     questions.push({ ...base, id: `${word.id}-a11-spelling`, kind: 'cloze', subskill: 'vocabulary_spelling', difficulty: 2, difficultyRationale: 'พิมพ์รูปคำเองจากภาพหรือบริบท โดยดูความหมายไทยเพิ่มได้ และมี Artikel ถ้าเป็นคำนาม', assistance: spellingCues[word.id].kind + (lessonId === 'L02' ? '-cue' : '-cue-optional-thai') + (noun ? '-supplied-article' : ''), prompt: 'พิมพ์คำภาษาเยอรมัน', sentence: noun ? `${word.article || 'die'} ___` : '___', acceptedAnswers: forms, feedbackAnswer: title, explanation: `รูปคำที่เรียนคือ ${title}` });
   }
+  questions.push(...pictureMeaningQuestions({ words, questions, cues: spellingCues, suffix: '-a11-picture-meaning', root }));
   for (const question of questions) {
     assert(question.acceptedAnswers.length && question.itemId && question.subskill);
     if (question.options) assert.equal(new Set(question.options).size, question.options.length, `Duplicate choices: ${question.id}`);
-    definitions.push({ id: question.id, version: question.version, lessonId, itemId: question.itemId, topicId: question.topicId, kind: question.kind, subskill: question.subskill, acceptedAnswers: question.acceptedAnswers, ...(question.options ? { options: question.options } : {}) });
+    definitions.push({ id: question.id, version: question.version, lessonId, itemId: question.itemId, topicId: question.topicId, kind: question.kind, ...(question.interaction ? { interaction: question.interaction, imageCue: question.imageCue } : {}), subskill: question.subskill, acceptedAnswers: question.acceptedAnswers, ...(question.options ? { options: question.options } : {}) });
   }
-  const base = { pictureOnlySpelling: lessonId === 'L02', spellingCues: Object.fromEntries(words.map(word => [word.id, spellingCues[word.id]])), title: `คำศัพท์บท ${number}`, description: 'ฝึกความหมาย Artikel และการสะกดจากคำที่เรียนแล้ว', summaryNote: 'ผลแต่ละทักษะเก็บแยกกัน และยังไม่รวมคะแนนความก้าวหน้าหลัก', historySkill: 'vocabulary', requireLearned: true, guidedOnePerTarget: true, nounPresentation, articleColors, manualHref: `/practice/${lessonId}/vocabulary`, learnHref: `/learn/${lessonId}/vocabulary`, dailyHref: `/practice/${lessonId}/vocabulary/daily`, skillLabels: { vocabulary_meaning: 'จำความหมาย', vocabulary_article: 'เลือก Artikel', vocabulary_spelling: 'สะกดคำ' }, thaiSupport: { translations: Object.fromEntries(questions.map(question => [question.id, question.translation])), glossary: {}, phrases: [] }, unclassifiedMessage: 'ดูคำตอบและคำอธิบายก่อนทำข้อต่อไป' };
+  const base = { skillCycle: ['vocabulary_meaning', 'vocabulary_picture_meaning', 'vocabulary_article', 'vocabulary_picture_meaning', 'vocabulary_spelling'], hideTopicHeading: lessonId === 'L02', pictureOnlySpelling: lessonId === 'L02', spellingCues: Object.fromEntries(words.map(word => [word.id, spellingCues[word.id]])), title: `คำศัพท์บท ${number}`, description: 'ฝึกความหมาย Artikel และการสะกดจากคำที่เรียนแล้ว', summaryNote: 'ผลแต่ละทักษะเก็บแยกกัน และยังไม่รวมคะแนนความก้าวหน้าหลัก', historySkill: 'vocabulary', requireLearned: true, guidedOnePerTarget: true, nounPresentation, articleColors, manualHref: `/practice/${lessonId}/vocabulary`, learnHref: `/learn/${lessonId}/vocabulary`, dailyHref: `/practice/${lessonId}/vocabulary/daily`, skillLabels: { vocabulary_picture_meaning: 'ดูภาพแล้วเลือกคำเยอรมัน', vocabulary_meaning: 'เลือกความหมายภาษาไทย', vocabulary_article: 'เลือก Artikel', vocabulary_spelling: 'สะกดคำ' }, thaiSupport: { translations: Object.fromEntries(questions.map(question => [question.id, question.translation])), glossary: {}, phrases: [] }, unclassifiedMessage: 'ดูคำตอบและคำอธิบายก่อนทำข้อต่อไป' };
   const banks = [
     { slug: 'basic', workflow: 'guided', defaultCount: words.length, sections: groups.map(group => ({ topicId: group.topicId, title: group.title, count: group.ids.length })), questions },
     { slug: 'daily', workflow: 'daily', defaultCount: 10, questions },

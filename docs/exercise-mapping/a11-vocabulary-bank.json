@@ -5,7 +5,7 @@
     {
       "lessonId": "L01",
       "taughtVocabulary": 23,
-      "questionDefinitions": 48,
+      "questionDefinitions": 58,
       "groups": [
         {
           "title": "Begrüßung",
@@ -62,7 +62,7 @@
     {
       "lessonId": "L02",
       "taughtVocabulary": 17,
-      "questionDefinitions": 51,
+      "questionDefinitions": 68,
       "groups": [
         {
           "title": "Beruf",
@@ -95,7 +95,7 @@
     {
       "lessonId": "L03",
       "taughtVocabulary": 27,
-      "questionDefinitions": 78,
+      "questionDefinitions": 93,
       "groups": [
         {
           "title": "Familie",
@@ -138,7 +138,7 @@
     {
       "lessonId": "L04",
       "taughtVocabulary": 19,
-      "questionDefinitions": 57,
+      "questionDefinitions": 76,
       "groups": [
         {
           "title": "Möbel",
@@ -185,7 +185,7 @@
     {
       "lessonId": "L05",
       "taughtVocabulary": 30,
-      "questionDefinitions": 82,
+      "questionDefinitions": 112,
       "groups": [
         {
           "title": "Gegenstände",
@@ -243,7 +243,7 @@
     {
       "lessonId": "L06",
       "taughtVocabulary": 14,
-      "questionDefinitions": 42,
+      "questionDefinitions": 56,
       "groups": [
         {
           "title": "Büro & Technik",
@@ -273,7 +273,7 @@
     {
       "lessonId": "L07",
       "taughtVocabulary": 14,
-      "questionDefinitions": 28,
+      "questionDefinitions": 42,
       "groups": [
         {
           "title": "Freizeitaktivitäten",
@@ -303,7 +303,7 @@
     {
       "lessonId": "L08",
       "taughtVocabulary": 26,
-      "questionDefinitions": 78,
+      "questionDefinitions": 104,
       "groups": [
         {
           "title": "Orte",
@@ -357,7 +357,7 @@
     {
       "lessonId": "L09",
       "taughtVocabulary": 16,
-      "questionDefinitions": 48,
+      "questionDefinitions": 64,
       "groups": [
         {
           "title": "Essen und Trinken",
@@ -389,7 +389,7 @@
     {
       "lessonId": "L10",
       "taughtVocabulary": 31,
-      "questionDefinitions": 89,
+      "questionDefinitions": 120,
       "groups": [
         {
           "title": "Orte",
@@ -454,7 +454,7 @@
     {
       "lessonId": "L11",
       "taughtVocabulary": 10,
-      "questionDefinitions": 20,
+      "questionDefinitions": 30,
       "groups": [
         {
           "title": "Alltagsaktivitäten",
@@ -480,7 +480,7 @@
     {
       "lessonId": "L12",
       "taughtVocabulary": 16,
-      "questionDefinitions": 48,
+      "questionDefinitions": 64,
       "groups": [
         {
           "title": "Jahreszeiten",
@@ -1239,6 +1239,226 @@
       "subskill": "vocabulary_spelling",
       "acceptedAnswers": [
         "wohnen"
+      ]
+    },
+    {
+      "id": "extra-L01-1-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-1",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-1.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Thailand"
+      ],
+      "options": [
+        "Thailand",
+        "Deutschland",
+        "Österreich",
+        "die Schweiz"
+      ]
+    },
+    {
+      "id": "extra-L01-2-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-2",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Deutschland"
+      ],
+      "options": [
+        "Deutschland",
+        "Österreich",
+        "die Schweiz",
+        "die Türkei"
+      ]
+    },
+    {
+      "id": "extra-L01-3-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-3",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-3.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Österreich"
+      ],
+      "options": [
+        "Österreich",
+        "die Schweiz",
+        "die Türkei",
+        "Japan"
+      ]
+    },
+    {
+      "id": "extra-L01-4-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-4",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-4.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Schweiz"
+      ],
+      "options": [
+        "die Schweiz",
+        "die Türkei",
+        "Japan",
+        "China"
+      ]
+    },
+    {
+      "id": "extra-L01-5-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-5",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-5.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Türkei"
+      ],
+      "options": [
+        "die Türkei",
+        "Japan",
+        "China",
+        "Frankreich"
+      ]
+    },
+    {
+      "id": "extra-L01-6-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-6",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-6.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Japan"
+      ],
+      "options": [
+        "Japan",
+        "China",
+        "Frankreich",
+        "Spanien"
+      ]
+    },
+    {
+      "id": "extra-L01-7-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-7",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-7.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "China"
+      ],
+      "options": [
+        "China",
+        "Frankreich",
+        "Spanien",
+        "Italien"
+      ]
+    },
+    {
+      "id": "extra-L01-8-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-8",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-8.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Frankreich"
+      ],
+      "options": [
+        "Frankreich",
+        "Spanien",
+        "Italien",
+        "kommen"
+      ]
+    },
+    {
+      "id": "extra-L01-9-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-9",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-9.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Spanien"
+      ],
+      "options": [
+        "Spanien",
+        "Italien",
+        "kommen",
+        "heißen"
+      ]
+    },
+    {
+      "id": "extra-L01-10-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L01",
+      "itemId": "extra-L01-10",
+      "topicId": "L01-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/extra-L01-10.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Italien"
+      ],
+      "options": [
+        "Italien",
+        "kommen",
+        "heißen",
+        "lernen"
       ]
     },
     {
@@ -2038,6 +2258,397 @@
       "subskill": "vocabulary_spelling",
       "acceptedAnswers": [
         "Paketzusteller"
+      ]
+    },
+    {
+      "id": "V008-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V008",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/engineer.webp",
+        "portrait": "masculine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Ingenieur"
+      ],
+      "options": [
+        "der Ingenieur",
+        "die Ingenieurin",
+        "der Journalist",
+        "die Journalistin"
+      ]
+    },
+    {
+      "id": "V009-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V009",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/engineer.webp",
+        "portrait": "feminine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Ingenieurin"
+      ],
+      "options": [
+        "die Ingenieurin",
+        "der Journalist",
+        "die Journalistin",
+        "der Student"
+      ]
+    },
+    {
+      "id": "V010-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V010",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/journalist.webp",
+        "portrait": "masculine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Journalist"
+      ],
+      "options": [
+        "der Journalist",
+        "die Journalistin",
+        "der Student",
+        "die Studentin"
+      ]
+    },
+    {
+      "id": "V011-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V011",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/journalist.webp",
+        "portrait": "feminine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Journalistin"
+      ],
+      "options": [
+        "die Journalistin",
+        "der Student",
+        "die Studentin",
+        "der Friseur"
+      ]
+    },
+    {
+      "id": "V012-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V012",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/student.webp",
+        "portrait": "masculine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Student"
+      ],
+      "options": [
+        "der Student",
+        "die Studentin",
+        "der Friseur",
+        "die Friseurin"
+      ]
+    },
+    {
+      "id": "V013-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V013",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/student.webp",
+        "portrait": "feminine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Studentin"
+      ],
+      "options": [
+        "die Studentin",
+        "der Friseur",
+        "die Friseurin",
+        "der Arzt"
+      ]
+    },
+    {
+      "id": "V014-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V014",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/hairdresser.webp",
+        "portrait": "masculine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Friseur"
+      ],
+      "options": [
+        "der Friseur",
+        "die Friseurin",
+        "der Arzt",
+        "die Ärztin"
+      ]
+    },
+    {
+      "id": "V015-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V015",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/hairdresser.webp",
+        "portrait": "feminine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Friseurin"
+      ],
+      "options": [
+        "die Friseurin",
+        "der Arzt",
+        "die Ärztin",
+        "der Lehrer"
+      ]
+    },
+    {
+      "id": "V016-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V016",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/doctor.webp",
+        "portrait": "masculine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Arzt"
+      ],
+      "options": [
+        "der Arzt",
+        "die Ärztin",
+        "der Lehrer",
+        "die Lehrerin"
+      ]
+    },
+    {
+      "id": "V017-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V017",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/doctor.webp",
+        "portrait": "feminine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Ärztin"
+      ],
+      "options": [
+        "die Ärztin",
+        "der Lehrer",
+        "die Lehrerin",
+        "der Verkäufer"
+      ]
+    },
+    {
+      "id": "V018-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V018",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/teacher.webp",
+        "portrait": "masculine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Lehrer"
+      ],
+      "options": [
+        "der Lehrer",
+        "die Lehrerin",
+        "der Verkäufer",
+        "die Verkäuferin"
+      ]
+    },
+    {
+      "id": "V019-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V019",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/teacher.webp",
+        "portrait": "feminine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Lehrerin"
+      ],
+      "options": [
+        "die Lehrerin",
+        "der Verkäufer",
+        "die Verkäuferin",
+        "der Kellner"
+      ]
+    },
+    {
+      "id": "V020-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V020",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/seller.webp",
+        "portrait": "masculine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Verkäufer"
+      ],
+      "options": [
+        "der Verkäufer",
+        "die Verkäuferin",
+        "der Kellner",
+        "die Kellnerin"
+      ]
+    },
+    {
+      "id": "V021-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V021",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/seller.webp",
+        "portrait": "feminine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Verkäuferin"
+      ],
+      "options": [
+        "die Verkäuferin",
+        "der Kellner",
+        "die Kellnerin",
+        "der Paketzusteller"
+      ]
+    },
+    {
+      "id": "V022-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V022",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/waiter.webp",
+        "portrait": "masculine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Kellner"
+      ],
+      "options": [
+        "der Kellner",
+        "die Kellnerin",
+        "der Paketzusteller",
+        "der Ingenieur"
+      ]
+    },
+    {
+      "id": "V023-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V023",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/waiter.webp",
+        "portrait": "feminine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Kellnerin"
+      ],
+      "options": [
+        "die Kellnerin",
+        "der Paketzusteller",
+        "der Ingenieur",
+        "die Ingenieurin"
+      ]
+    },
+    {
+      "id": "V024-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L02",
+      "itemId": "V024",
+      "topicId": "L02-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-2-profession-pairs/courier.webp",
+        "portrait": "masculine"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Paketzusteller"
+      ],
+      "options": [
+        "der Paketzusteller",
+        "der Ingenieur",
+        "die Ingenieurin",
+        "der Journalist"
       ]
     },
     {
@@ -3259,6 +3870,336 @@
       ]
     },
     {
+      "id": "V025-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V025",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V025-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Vater"
+      ],
+      "options": [
+        "der Vater",
+        "die Mutter",
+        "die Mama",
+        "die Eltern"
+      ]
+    },
+    {
+      "id": "V027-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V027",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V027-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Mutter"
+      ],
+      "options": [
+        "die Mutter",
+        "die Eltern",
+        "der Sohn",
+        "die Tochter"
+      ]
+    },
+    {
+      "id": "V029-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V029",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V029-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Eltern"
+      ],
+      "options": [
+        "die Eltern",
+        "der Sohn",
+        "die Tochter",
+        "der Bruder"
+      ]
+    },
+    {
+      "id": "V030-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V030",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V030-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Sohn"
+      ],
+      "options": [
+        "der Sohn",
+        "die Tochter",
+        "der Bruder",
+        "die Schwester"
+      ]
+    },
+    {
+      "id": "V031-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V031",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V031-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Tochter"
+      ],
+      "options": [
+        "die Tochter",
+        "der Bruder",
+        "die Schwester",
+        "die Geschwister"
+      ]
+    },
+    {
+      "id": "V032-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V032",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V032-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Bruder"
+      ],
+      "options": [
+        "der Bruder",
+        "die Schwester",
+        "die Geschwister",
+        "der Großvater"
+      ]
+    },
+    {
+      "id": "V033-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V033",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V033-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Schwester"
+      ],
+      "options": [
+        "die Schwester",
+        "die Geschwister",
+        "der Großvater",
+        "der Opa"
+      ]
+    },
+    {
+      "id": "V034-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V034",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V034-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Geschwister"
+      ],
+      "options": [
+        "die Geschwister",
+        "der Großvater",
+        "der Opa",
+        "die Großmutter"
+      ]
+    },
+    {
+      "id": "V035-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V035",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V035-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Großvater"
+      ],
+      "options": [
+        "der Großvater",
+        "die Großmutter",
+        "die Oma",
+        "die Großeltern"
+      ]
+    },
+    {
+      "id": "V037-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V037",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V037-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Großmutter"
+      ],
+      "options": [
+        "die Großmutter",
+        "die Großeltern",
+        "der Enkel",
+        "die Enkelin"
+      ]
+    },
+    {
+      "id": "V039-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V039",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V039-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Großeltern"
+      ],
+      "options": [
+        "die Großeltern",
+        "der Enkel",
+        "die Enkelin",
+        "der Ehemann"
+      ]
+    },
+    {
+      "id": "V040-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V040",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V040-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Enkel"
+      ],
+      "options": [
+        "der Enkel",
+        "die Enkelin",
+        "der Ehemann",
+        "die Ehefrau"
+      ]
+    },
+    {
+      "id": "V041-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V041",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V041-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Enkelin"
+      ],
+      "options": [
+        "die Enkelin",
+        "der Ehemann",
+        "die Ehefrau",
+        "der Mann"
+      ]
+    },
+    {
+      "id": "V042-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V042",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V042-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Ehemann"
+      ],
+      "options": [
+        "der Ehemann",
+        "die Ehefrau",
+        "der Mann",
+        "die Frau"
+      ]
+    },
+    {
+      "id": "V043-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L03",
+      "itemId": "V043",
+      "topicId": "L03-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-03-vocabulary/V043-family-v2.png"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Ehefrau"
+      ],
+      "options": [
+        "die Ehefrau",
+        "der Mann",
+        "die Frau",
+        "der Onkel"
+      ]
+    },
+    {
       "id": "V044-a11-meaning",
       "version": 1,
       "lessonId": "L04",
@@ -4149,6 +5090,424 @@
       "subskill": "vocabulary_spelling",
       "acceptedAnswers": [
         "Waschbecken"
+      ]
+    },
+    {
+      "id": "V044-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V044",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V044-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Stuhl"
+      ],
+      "options": [
+        "der Stuhl",
+        "das Bett",
+        "die Lampe",
+        "das Bild"
+      ]
+    },
+    {
+      "id": "V045-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V045",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V045-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Bett"
+      ],
+      "options": [
+        "das Bett",
+        "die Lampe",
+        "das Bild",
+        "der Sessel"
+      ]
+    },
+    {
+      "id": "V046-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V046",
+      "topicId": "L04-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V046-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Lampe"
+      ],
+      "options": [
+        "die Lampe",
+        "das Bild",
+        "der Sessel",
+        "das Sofa"
+      ]
+    },
+    {
+      "id": "V047-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V047",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V047-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Bild"
+      ],
+      "options": [
+        "das Bild",
+        "der Sessel",
+        "das Sofa",
+        "der Tisch"
+      ]
+    },
+    {
+      "id": "V048-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V048",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V048-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Sessel"
+      ],
+      "options": [
+        "der Sessel",
+        "das Sofa",
+        "der Tisch",
+        "der Schrank"
+      ]
+    },
+    {
+      "id": "V050-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V050",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V050-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Sofa"
+      ],
+      "options": [
+        "das Sofa",
+        "der Tisch",
+        "der Schrank",
+        "der Teppich"
+      ]
+    },
+    {
+      "id": "V051-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V051",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V051-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Tisch"
+      ],
+      "options": [
+        "der Tisch",
+        "der Schrank",
+        "der Teppich",
+        "das Regal"
+      ]
+    },
+    {
+      "id": "V052-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V052",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V052-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Schrank"
+      ],
+      "options": [
+        "der Schrank",
+        "der Teppich",
+        "das Regal",
+        "der Spiegel"
+      ]
+    },
+    {
+      "id": "V053-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V053",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V053-isolated-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Teppich"
+      ],
+      "options": [
+        "der Teppich",
+        "das Regal",
+        "der Spiegel",
+        "der Fernseher"
+      ]
+    },
+    {
+      "id": "V054-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V054",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V054-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Regal"
+      ],
+      "options": [
+        "das Regal",
+        "der Spiegel",
+        "der Fernseher",
+        "der Herd"
+      ]
+    },
+    {
+      "id": "V055-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V055",
+      "topicId": "L04-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V055-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Spiegel"
+      ],
+      "options": [
+        "der Spiegel",
+        "der Fernseher",
+        "der Herd",
+        "der Kühlschrank"
+      ]
+    },
+    {
+      "id": "V182-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V182",
+      "topicId": "L04-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V182-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Fernseher"
+      ],
+      "options": [
+        "der Fernseher",
+        "der Herd",
+        "der Kühlschrank",
+        "die Waschmaschine"
+      ]
+    },
+    {
+      "id": "V183-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V183",
+      "topicId": "L04-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V183-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Herd"
+      ],
+      "options": [
+        "der Herd",
+        "der Kühlschrank",
+        "die Waschmaschine",
+        "der Ventilator"
+      ]
+    },
+    {
+      "id": "V184-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V184",
+      "topicId": "L04-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V184-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Kühlschrank"
+      ],
+      "options": [
+        "der Kühlschrank",
+        "die Waschmaschine",
+        "der Ventilator",
+        "die Badewanne"
+      ]
+    },
+    {
+      "id": "V185-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V185",
+      "topicId": "L04-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V185-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Waschmaschine"
+      ],
+      "options": [
+        "die Waschmaschine",
+        "der Ventilator",
+        "die Badewanne",
+        "die Dusche"
+      ]
+    },
+    {
+      "id": "V186-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V186",
+      "topicId": "L04-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V186-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Ventilator"
+      ],
+      "options": [
+        "der Ventilator",
+        "die Badewanne",
+        "die Dusche",
+        "das Waschbecken"
+      ]
+    },
+    {
+      "id": "V187-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V187",
+      "topicId": "L04-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V187-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Badewanne"
+      ],
+      "options": [
+        "die Badewanne",
+        "die Dusche",
+        "das Waschbecken",
+        "der Stuhl"
+      ]
+    },
+    {
+      "id": "V188-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V188",
+      "topicId": "L04-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V188-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Dusche"
+      ],
+      "options": [
+        "die Dusche",
+        "das Waschbecken",
+        "der Stuhl",
+        "das Bett"
+      ]
+    },
+    {
+      "id": "V189-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L04",
+      "itemId": "V189",
+      "topicId": "L04-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-04-vocabulary/V189-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Waschbecken"
+      ],
+      "options": [
+        "das Waschbecken",
+        "der Stuhl",
+        "das Bett",
+        "die Lampe"
       ]
     },
     {
@@ -5426,6 +6785,666 @@
       ]
     },
     {
+      "id": "V056-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V056",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V056-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Bleistift"
+      ],
+      "options": [
+        "der Bleistift",
+        "die Brille",
+        "das Buch",
+        "die Kamera"
+      ]
+    },
+    {
+      "id": "V057-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V057",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V057-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Brille"
+      ],
+      "options": [
+        "die Brille",
+        "das Buch",
+        "die Kamera",
+        "der Fotoapparat"
+      ]
+    },
+    {
+      "id": "V058-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V058",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V058-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Buch"
+      ],
+      "options": [
+        "das Buch",
+        "die Kamera",
+        "der Fotoapparat",
+        "die Flasche"
+      ]
+    },
+    {
+      "id": "V059-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V059",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V059-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Kamera"
+      ],
+      "options": [
+        "die Kamera",
+        "die Flasche",
+        "das Feuerzeug",
+        "das Parfüm"
+      ]
+    },
+    {
+      "id": "V060-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V060",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V060-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Fotoapparat"
+      ],
+      "options": [
+        "der Fotoapparat",
+        "das Feuerzeug",
+        "das Parfüm",
+        "die Kette"
+      ]
+    },
+    {
+      "id": "V061-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V061",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V061-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Flasche"
+      ],
+      "options": [
+        "die Flasche",
+        "das Feuerzeug",
+        "das Parfüm",
+        "die Kette"
+      ]
+    },
+    {
+      "id": "V062-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V062",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V062-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Feuerzeug"
+      ],
+      "options": [
+        "das Feuerzeug",
+        "das Parfüm",
+        "die Kette",
+        "der Kugelschreiber"
+      ]
+    },
+    {
+      "id": "V063-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V063",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V063-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Parfüm"
+      ],
+      "options": [
+        "das Parfüm",
+        "die Kette",
+        "der Kugelschreiber",
+        "der Kuli"
+      ]
+    },
+    {
+      "id": "V064-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V064",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V064-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Kette"
+      ],
+      "options": [
+        "die Kette",
+        "der Kugelschreiber",
+        "der Kuli",
+        "der Schlüssel"
+      ]
+    },
+    {
+      "id": "V065-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V065",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V065-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Kugelschreiber"
+      ],
+      "options": [
+        "der Kugelschreiber",
+        "der Schlüssel",
+        "die Schüssel",
+        "die Tasche"
+      ]
+    },
+    {
+      "id": "V066-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V066",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V066-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Kuli"
+      ],
+      "options": [
+        "der Kuli",
+        "die Schüssel",
+        "die Tasche",
+        "die Tasse"
+      ]
+    },
+    {
+      "id": "V067-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V067",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V067-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Schlüssel"
+      ],
+      "options": [
+        "der Schlüssel",
+        "die Schüssel",
+        "die Tasche",
+        "die Tasse"
+      ]
+    },
+    {
+      "id": "V068-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V068",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V068-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Schüssel"
+      ],
+      "options": [
+        "die Schüssel",
+        "die Tasche",
+        "die Tasse",
+        "die Uhr"
+      ]
+    },
+    {
+      "id": "V069-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V069",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V069-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Tasche"
+      ],
+      "options": [
+        "die Tasche",
+        "die Tasse",
+        "die Uhr",
+        "das Handy"
+      ]
+    },
+    {
+      "id": "V070-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V070",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V070-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Tasse"
+      ],
+      "options": [
+        "die Tasse",
+        "die Uhr",
+        "das Handy",
+        "das Holz"
+      ]
+    },
+    {
+      "id": "V071-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V071",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V071-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Uhr"
+      ],
+      "options": [
+        "die Uhr",
+        "das Handy",
+        "das Holz",
+        "das Papier"
+      ]
+    },
+    {
+      "id": "V072-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V072",
+      "topicId": "L05-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V072-isolated-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Handy"
+      ],
+      "options": [
+        "das Handy",
+        "das Holz",
+        "das Papier",
+        "das Metall"
+      ]
+    },
+    {
+      "id": "V217-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V217",
+      "topicId": "L05-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V217-holz-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Holz"
+      ],
+      "options": [
+        "das Holz",
+        "das Papier",
+        "das Metall",
+        "das Plastik"
+      ]
+    },
+    {
+      "id": "V218-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V218",
+      "topicId": "L05-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V218-papier-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Papier"
+      ],
+      "options": [
+        "das Papier",
+        "das Metall",
+        "das Plastik",
+        "das Glas"
+      ]
+    },
+    {
+      "id": "V219-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V219",
+      "topicId": "L05-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V219-metall-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Metall"
+      ],
+      "options": [
+        "das Metall",
+        "das Plastik",
+        "das Glas",
+        "weiß"
+      ]
+    },
+    {
+      "id": "V220-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V220",
+      "topicId": "L05-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V220-plastik-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Plastik"
+      ],
+      "options": [
+        "das Plastik",
+        "das Glas",
+        "weiß",
+        "gelb"
+      ]
+    },
+    {
+      "id": "V221-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V221",
+      "topicId": "L05-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V221-glas-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Glas"
+      ],
+      "options": [
+        "das Glas",
+        "weiß",
+        "gelb",
+        "orange"
+      ]
+    },
+    {
+      "id": "V222-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V222",
+      "topicId": "L05-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V222-weiss-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "weiß"
+      ],
+      "options": [
+        "weiß",
+        "gelb",
+        "orange",
+        "rot"
+      ]
+    },
+    {
+      "id": "V223-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V223",
+      "topicId": "L05-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V223-gelb-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "gelb"
+      ],
+      "options": [
+        "gelb",
+        "orange",
+        "rot",
+        "grün"
+      ]
+    },
+    {
+      "id": "V224-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V224",
+      "topicId": "L05-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V224-orange-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "orange"
+      ],
+      "options": [
+        "orange",
+        "rot",
+        "grün",
+        "blau"
+      ]
+    },
+    {
+      "id": "V225-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V225",
+      "topicId": "L05-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V225-rot-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "rot"
+      ],
+      "options": [
+        "rot",
+        "grün",
+        "blau",
+        "braun"
+      ]
+    },
+    {
+      "id": "V226-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V226",
+      "topicId": "L05-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V226-gruen-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "grün"
+      ],
+      "options": [
+        "grün",
+        "blau",
+        "braun",
+        "schwarz"
+      ]
+    },
+    {
+      "id": "V227-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V227",
+      "topicId": "L05-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V227-blau-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "blau"
+      ],
+      "options": [
+        "blau",
+        "braun",
+        "schwarz",
+        "der Bleistift"
+      ]
+    },
+    {
+      "id": "V228-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V228",
+      "topicId": "L05-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V228-braun-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "braun"
+      ],
+      "options": [
+        "braun",
+        "schwarz",
+        "der Bleistift",
+        "die Brille"
+      ]
+    },
+    {
+      "id": "V229-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L05",
+      "itemId": "V229",
+      "topicId": "L05-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-05-vocabulary/V229-schwarz-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "schwarz"
+      ],
+      "options": [
+        "schwarz",
+        "der Bleistift",
+        "die Brille",
+        "das Buch"
+      ]
+    },
+    {
       "id": "V073-a11-meaning",
       "version": 1,
       "lessonId": "L06",
@@ -6084,6 +8103,314 @@
       ]
     },
     {
+      "id": "V073-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V073",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V073-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Laptop"
+      ],
+      "options": [
+        "der Laptop",
+        "die E-Mail",
+        "die Maus",
+        "die Nachricht"
+      ]
+    },
+    {
+      "id": "V074-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V074",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V074-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die E-Mail"
+      ],
+      "options": [
+        "die E-Mail",
+        "die Maus",
+        "die Nachricht",
+        "das Passwort"
+      ]
+    },
+    {
+      "id": "V075-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V075",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V075-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Maus"
+      ],
+      "options": [
+        "die Maus",
+        "die Nachricht",
+        "das Passwort",
+        "der Termin"
+      ]
+    },
+    {
+      "id": "V076-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V076",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V076-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Nachricht"
+      ],
+      "options": [
+        "die Nachricht",
+        "das Passwort",
+        "der Termin",
+        "der Drucker"
+      ]
+    },
+    {
+      "id": "V077-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V077",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V077-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Passwort"
+      ],
+      "options": [
+        "das Passwort",
+        "der Termin",
+        "der Drucker",
+        "der Computer"
+      ]
+    },
+    {
+      "id": "V078-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V078",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V078-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Termin"
+      ],
+      "options": [
+        "der Termin",
+        "der Drucker",
+        "der Computer",
+        "der Stift"
+      ]
+    },
+    {
+      "id": "V079-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V079",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V079-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Drucker"
+      ],
+      "options": [
+        "der Drucker",
+        "der Computer",
+        "der Stift",
+        "der Kalender"
+      ]
+    },
+    {
+      "id": "V080-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V080",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V080-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Computer"
+      ],
+      "options": [
+        "der Computer",
+        "der Stift",
+        "der Kalender",
+        "der Bildschirm"
+      ]
+    },
+    {
+      "id": "V081-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V081",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V081-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Stift"
+      ],
+      "options": [
+        "der Stift",
+        "der Kalender",
+        "der Bildschirm",
+        "das Tablet"
+      ]
+    },
+    {
+      "id": "V082-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V082",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V082-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Kalender"
+      ],
+      "options": [
+        "der Kalender",
+        "der Bildschirm",
+        "das Tablet",
+        "die Visitenkarte"
+      ]
+    },
+    {
+      "id": "V083-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V083",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V083-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Bildschirm"
+      ],
+      "options": [
+        "der Bildschirm",
+        "das Tablet",
+        "die Visitenkarte",
+        "die Tastatur"
+      ]
+    },
+    {
+      "id": "V084-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V084",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V084-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Tablet"
+      ],
+      "options": [
+        "das Tablet",
+        "die Visitenkarte",
+        "die Tastatur",
+        "der Laptop"
+      ]
+    },
+    {
+      "id": "V085-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V085",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V085-business-card-v1.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Visitenkarte"
+      ],
+      "options": [
+        "die Visitenkarte",
+        "die Tastatur",
+        "der Laptop",
+        "die E-Mail"
+      ]
+    },
+    {
+      "id": "V086-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L06",
+      "itemId": "V086",
+      "topicId": "L06-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-06-vocabulary/V086-framed-v3.webp"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Tastatur"
+      ],
+      "options": [
+        "die Tastatur",
+        "der Laptop",
+        "die E-Mail",
+        "die Maus"
+      ]
+    },
+    {
       "id": "V087-a11-meaning",
       "version": 1,
       "lessonId": "L07",
@@ -6501,6 +8828,314 @@
       "subskill": "vocabulary_spelling",
       "acceptedAnswers": [
         "reiten"
+      ]
+    },
+    {
+      "id": "V087-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V087",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V087-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "kochen"
+      ],
+      "options": [
+        "kochen",
+        "singen",
+        "schwimmen",
+        "fotografieren"
+      ]
+    },
+    {
+      "id": "V088-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V088",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V088-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "singen"
+      ],
+      "options": [
+        "singen",
+        "schwimmen",
+        "fotografieren",
+        "Schach spielen"
+      ]
+    },
+    {
+      "id": "V089-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V089",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V089-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "schwimmen"
+      ],
+      "options": [
+        "schwimmen",
+        "fotografieren",
+        "Schach spielen",
+        "malen"
+      ]
+    },
+    {
+      "id": "V090-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V090",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V090-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "fotografieren"
+      ],
+      "options": [
+        "fotografieren",
+        "Schach spielen",
+        "malen",
+        "backen"
+      ]
+    },
+    {
+      "id": "V091-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V091",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V091-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Schach spielen"
+      ],
+      "options": [
+        "Schach spielen",
+        "malen",
+        "backen",
+        "Fußball spielen"
+      ]
+    },
+    {
+      "id": "V092-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V092",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V092-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "malen"
+      ],
+      "options": [
+        "malen",
+        "backen",
+        "Fußball spielen",
+        "Rad fahren"
+      ]
+    },
+    {
+      "id": "V093-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V093",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V093-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "backen"
+      ],
+      "options": [
+        "backen",
+        "Fußball spielen",
+        "Rad fahren",
+        "tanzen"
+      ]
+    },
+    {
+      "id": "V094-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V094",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V094-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Fußball spielen"
+      ],
+      "options": [
+        "Fußball spielen",
+        "Rad fahren",
+        "tanzen",
+        "Tennis spielen"
+      ]
+    },
+    {
+      "id": "V095-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V095",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V095-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Rad fahren"
+      ],
+      "options": [
+        "Rad fahren",
+        "tanzen",
+        "Tennis spielen",
+        "Gitarre spielen"
+      ]
+    },
+    {
+      "id": "V096-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V096",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V096-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "tanzen"
+      ],
+      "options": [
+        "tanzen",
+        "Tennis spielen",
+        "Gitarre spielen",
+        "Ski fahren"
+      ]
+    },
+    {
+      "id": "V097-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V097",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V097-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Tennis spielen"
+      ],
+      "options": [
+        "Tennis spielen",
+        "Gitarre spielen",
+        "Ski fahren",
+        "reiten"
+      ]
+    },
+    {
+      "id": "V098-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V098",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V098-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Gitarre spielen"
+      ],
+      "options": [
+        "Gitarre spielen",
+        "Ski fahren",
+        "reiten",
+        "kochen"
+      ]
+    },
+    {
+      "id": "V099-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V099",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V099-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Ski fahren"
+      ],
+      "options": [
+        "Ski fahren",
+        "reiten",
+        "kochen",
+        "singen"
+      ]
+    },
+    {
+      "id": "V100-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L07",
+      "itemId": "V100",
+      "topicId": "L07-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-07-vocabulary/V100-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "reiten"
+      ],
+      "options": [
+        "reiten",
+        "kochen",
+        "singen",
+        "schwimmen"
       ]
     },
     {
@@ -7726,6 +10361,578 @@
       ]
     },
     {
+      "id": "V101-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V101",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V101-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Klub"
+      ],
+      "options": [
+        "der Klub",
+        "die Disco",
+        "die Ausstellung",
+        "die Bar"
+      ]
+    },
+    {
+      "id": "V102-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V102",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V102-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Disco"
+      ],
+      "options": [
+        "die Disco",
+        "die Ausstellung",
+        "die Bar",
+        "das Café"
+      ]
+    },
+    {
+      "id": "V103-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V103",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V103-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Ausstellung"
+      ],
+      "options": [
+        "die Ausstellung",
+        "die Bar",
+        "das Café",
+        "das Schwimmbad"
+      ]
+    },
+    {
+      "id": "V104-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V104",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V104-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Bar"
+      ],
+      "options": [
+        "die Bar",
+        "das Café",
+        "das Schwimmbad",
+        "das Konzert"
+      ]
+    },
+    {
+      "id": "V105-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V105",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V105-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Café"
+      ],
+      "options": [
+        "das Café",
+        "das Schwimmbad",
+        "das Konzert",
+        "das Restaurant"
+      ]
+    },
+    {
+      "id": "V106-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V106",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V106-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Schwimmbad"
+      ],
+      "options": [
+        "das Schwimmbad",
+        "das Konzert",
+        "das Restaurant",
+        "das Fitnessstudio"
+      ]
+    },
+    {
+      "id": "V107-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V107",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V107-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Konzert"
+      ],
+      "options": [
+        "das Konzert",
+        "das Restaurant",
+        "das Fitnessstudio",
+        "das Kino"
+      ]
+    },
+    {
+      "id": "V108-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V108",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V108-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Restaurant"
+      ],
+      "options": [
+        "das Restaurant",
+        "das Fitnessstudio",
+        "das Kino",
+        "das Museum"
+      ]
+    },
+    {
+      "id": "V109-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V109",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V109-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Fitnessstudio"
+      ],
+      "options": [
+        "das Fitnessstudio",
+        "das Kino",
+        "das Museum",
+        "das Theater"
+      ]
+    },
+    {
+      "id": "V110-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V110",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V110-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Kino"
+      ],
+      "options": [
+        "das Kino",
+        "das Museum",
+        "das Theater",
+        "der Montag"
+      ]
+    },
+    {
+      "id": "V111-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V111",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V111-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Museum"
+      ],
+      "options": [
+        "das Museum",
+        "das Theater",
+        "der Montag",
+        "der Dienstag"
+      ]
+    },
+    {
+      "id": "V112-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V112",
+      "topicId": "L08-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V112-place-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Theater"
+      ],
+      "options": [
+        "das Theater",
+        "der Montag",
+        "der Dienstag",
+        "der Mittwoch"
+      ]
+    },
+    {
+      "id": "V113-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V113",
+      "topicId": "L08-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V113-calendar-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Montag"
+      ],
+      "options": [
+        "der Montag",
+        "der Dienstag",
+        "der Mittwoch",
+        "der Donnerstag"
+      ]
+    },
+    {
+      "id": "V114-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V114",
+      "topicId": "L08-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V114-calendar-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Dienstag"
+      ],
+      "options": [
+        "der Dienstag",
+        "der Mittwoch",
+        "der Donnerstag",
+        "der Freitag"
+      ]
+    },
+    {
+      "id": "V115-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V115",
+      "topicId": "L08-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V115-calendar-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Mittwoch"
+      ],
+      "options": [
+        "der Mittwoch",
+        "der Donnerstag",
+        "der Freitag",
+        "der Samstag"
+      ]
+    },
+    {
+      "id": "V116-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V116",
+      "topicId": "L08-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V116-calendar-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Donnerstag"
+      ],
+      "options": [
+        "der Donnerstag",
+        "der Freitag",
+        "der Samstag",
+        "der Sonntag"
+      ]
+    },
+    {
+      "id": "V117-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V117",
+      "topicId": "L08-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V117-calendar-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Freitag"
+      ],
+      "options": [
+        "der Freitag",
+        "der Samstag",
+        "der Sonntag",
+        "das Wochenende"
+      ]
+    },
+    {
+      "id": "V118-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V118",
+      "topicId": "L08-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V118-calendar-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Samstag"
+      ],
+      "options": [
+        "der Samstag",
+        "der Sonntag",
+        "das Wochenende",
+        "der Morgen"
+      ]
+    },
+    {
+      "id": "V119-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V119",
+      "topicId": "L08-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V119-calendar-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Sonntag"
+      ],
+      "options": [
+        "der Sonntag",
+        "das Wochenende",
+        "der Morgen",
+        "der Vormittag"
+      ]
+    },
+    {
+      "id": "V120-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V120",
+      "topicId": "L08-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V120-calendar-v2.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Wochenende"
+      ],
+      "options": [
+        "das Wochenende",
+        "der Morgen",
+        "der Vormittag",
+        "der Mittag"
+      ]
+    },
+    {
+      "id": "V121-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V121",
+      "topicId": "L08-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V121-daytime-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Morgen"
+      ],
+      "options": [
+        "der Morgen",
+        "der Vormittag",
+        "der Mittag",
+        "der Nachmittag"
+      ]
+    },
+    {
+      "id": "V122-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V122",
+      "topicId": "L08-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V122-daytime-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Vormittag"
+      ],
+      "options": [
+        "der Vormittag",
+        "der Mittag",
+        "der Nachmittag",
+        "der Abend"
+      ]
+    },
+    {
+      "id": "V123-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V123",
+      "topicId": "L08-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V123-daytime-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Mittag"
+      ],
+      "options": [
+        "der Mittag",
+        "der Nachmittag",
+        "der Abend",
+        "die Nacht"
+      ]
+    },
+    {
+      "id": "V124-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V124",
+      "topicId": "L08-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V124-daytime-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Nachmittag"
+      ],
+      "options": [
+        "der Nachmittag",
+        "der Abend",
+        "die Nacht",
+        "der Klub"
+      ]
+    },
+    {
+      "id": "V125-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V125",
+      "topicId": "L08-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V125-daytime-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Abend"
+      ],
+      "options": [
+        "der Abend",
+        "die Nacht",
+        "der Klub",
+        "die Disco"
+      ]
+    },
+    {
+      "id": "V126-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L08",
+      "itemId": "V126",
+      "topicId": "L08-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-08-vocabulary/V126-daytime-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Nacht"
+      ],
+      "options": [
+        "die Nacht",
+        "der Klub",
+        "die Disco",
+        "die Ausstellung"
+      ]
+    },
+    {
       "id": "V127-a11-meaning",
       "version": 1,
       "lessonId": "L09",
@@ -8475,6 +11682,358 @@
       "subskill": "vocabulary_spelling",
       "acceptedAnswers": [
         "Brötchen"
+      ]
+    },
+    {
+      "id": "V127-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V127",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V127-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Kuchen"
+      ],
+      "options": [
+        "der Kuchen",
+        "der Apfel",
+        "der Tee",
+        "der Salat"
+      ]
+    },
+    {
+      "id": "V128-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V128",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V128-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Apfel"
+      ],
+      "options": [
+        "der Apfel",
+        "der Tee",
+        "der Salat",
+        "der Käse"
+      ]
+    },
+    {
+      "id": "V129-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V129",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V129-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Tee"
+      ],
+      "options": [
+        "der Tee",
+        "der Salat",
+        "der Käse",
+        "der Kaffee"
+      ]
+    },
+    {
+      "id": "V130-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V130",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V130-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Salat"
+      ],
+      "options": [
+        "der Salat",
+        "der Käse",
+        "der Kaffee",
+        "der Saft"
+      ]
+    },
+    {
+      "id": "V131-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V131",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V131-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Käse"
+      ],
+      "options": [
+        "der Käse",
+        "der Kaffee",
+        "der Saft",
+        "der Fisch"
+      ]
+    },
+    {
+      "id": "V132-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V132",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V132-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Kaffee"
+      ],
+      "options": [
+        "der Kaffee",
+        "der Saft",
+        "der Fisch",
+        "die Schokolade"
+      ]
+    },
+    {
+      "id": "V133-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V133",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V133-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Saft"
+      ],
+      "options": [
+        "der Saft",
+        "der Fisch",
+        "die Schokolade",
+        "die Suppe"
+      ]
+    },
+    {
+      "id": "V134-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V134",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V134-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Fisch"
+      ],
+      "options": [
+        "der Fisch",
+        "die Schokolade",
+        "die Suppe",
+        "die Orange"
+      ]
+    },
+    {
+      "id": "V135-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V135",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V135-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Schokolade"
+      ],
+      "options": [
+        "die Schokolade",
+        "die Suppe",
+        "die Orange",
+        "die Tomate"
+      ]
+    },
+    {
+      "id": "V136-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V136",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V136-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Suppe"
+      ],
+      "options": [
+        "die Suppe",
+        "die Orange",
+        "die Tomate",
+        "die Marmelade"
+      ]
+    },
+    {
+      "id": "V137-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V137",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V137-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Orange"
+      ],
+      "options": [
+        "die Orange",
+        "die Tomate",
+        "die Marmelade",
+        "das Brot"
+      ]
+    },
+    {
+      "id": "V138-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V138",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V138-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Tomate"
+      ],
+      "options": [
+        "die Tomate",
+        "die Marmelade",
+        "das Brot",
+        "das Fleisch"
+      ]
+    },
+    {
+      "id": "V139-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V139",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V139-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Marmelade"
+      ],
+      "options": [
+        "die Marmelade",
+        "das Brot",
+        "das Fleisch",
+        "das Brötchen"
+      ]
+    },
+    {
+      "id": "V140-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V140",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V140-sliced-loaf-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Brot"
+      ],
+      "options": [
+        "das Brot",
+        "das Fleisch",
+        "das Brötchen",
+        "der Kuchen"
+      ]
+    },
+    {
+      "id": "V141-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V141",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V141-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Fleisch"
+      ],
+      "options": [
+        "das Fleisch",
+        "das Brötchen",
+        "der Kuchen",
+        "der Apfel"
+      ]
+    },
+    {
+      "id": "V142-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L09",
+      "itemId": "V142",
+      "topicId": "L09-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-09-vocabulary/V142-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Brötchen"
+      ],
+      "options": [
+        "das Brötchen",
+        "der Kuchen",
+        "der Apfel",
+        "der Tee"
       ]
     },
     {
@@ -9867,6 +13426,688 @@
       ]
     },
     {
+      "id": "V143-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V143",
+      "topicId": "L10-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V143-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Bahnhof"
+      ],
+      "options": [
+        "der Bahnhof",
+        "der Bus",
+        "der Zug",
+        "der Flughafen"
+      ]
+    },
+    {
+      "id": "V144-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V144",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V144-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Bus"
+      ],
+      "options": [
+        "der Bus",
+        "der Zug",
+        "der Flughafen",
+        "der Koffer"
+      ]
+    },
+    {
+      "id": "V145-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V145",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V145-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Zug"
+      ],
+      "options": [
+        "der Zug",
+        "der Flughafen",
+        "der Koffer",
+        "der Rucksack"
+      ]
+    },
+    {
+      "id": "V146-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V146",
+      "topicId": "L10-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V146-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Flughafen"
+      ],
+      "options": [
+        "der Flughafen",
+        "der Koffer",
+        "der Rucksack",
+        "die U-Bahn"
+      ]
+    },
+    {
+      "id": "V147-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V147",
+      "topicId": "L10-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V147-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Koffer"
+      ],
+      "options": [
+        "der Koffer",
+        "der Rucksack",
+        "die U-Bahn",
+        "die Straßenbahn"
+      ]
+    },
+    {
+      "id": "V148-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V148",
+      "topicId": "L10-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V148-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Rucksack"
+      ],
+      "options": [
+        "der Rucksack",
+        "die U-Bahn",
+        "die Straßenbahn",
+        "die Tasche"
+      ]
+    },
+    {
+      "id": "V149-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V149",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V149-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die U-Bahn"
+      ],
+      "options": [
+        "die U-Bahn",
+        "die Straßenbahn",
+        "die Tasche",
+        "das Taxi"
+      ]
+    },
+    {
+      "id": "V150-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V150",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V150-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Straßenbahn"
+      ],
+      "options": [
+        "die Straßenbahn",
+        "die Tasche",
+        "das Taxi",
+        "das Flugzeug"
+      ]
+    },
+    {
+      "id": "V152-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V152",
+      "topicId": "L10-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V152-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Tasche"
+      ],
+      "options": [
+        "die Tasche",
+        "das Taxi",
+        "das Flugzeug",
+        "das Gepäck"
+      ]
+    },
+    {
+      "id": "V153-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V153",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V153-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Taxi"
+      ],
+      "options": [
+        "das Taxi",
+        "das Flugzeug",
+        "das Gepäck",
+        "die S-Bahn"
+      ]
+    },
+    {
+      "id": "V154-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V154",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V154-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Flugzeug"
+      ],
+      "options": [
+        "das Flugzeug",
+        "das Gepäck",
+        "die S-Bahn",
+        "der Skytrain"
+      ]
+    },
+    {
+      "id": "V155-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V155",
+      "topicId": "L10-vocab-3",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V155-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Gepäck"
+      ],
+      "options": [
+        "das Gepäck",
+        "die S-Bahn",
+        "der Skytrain",
+        "das Auto"
+      ]
+    },
+    {
+      "id": "V198-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V198",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V198-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die S-Bahn"
+      ],
+      "options": [
+        "die S-Bahn",
+        "der Skytrain",
+        "das Auto",
+        "das Tuk-Tuk"
+      ]
+    },
+    {
+      "id": "V199-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V199",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V199-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Skytrain"
+      ],
+      "options": [
+        "der Skytrain",
+        "das Auto",
+        "das Tuk-Tuk",
+        "das Motorradtaxi"
+      ]
+    },
+    {
+      "id": "V200-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V200",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V200-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Auto"
+      ],
+      "options": [
+        "das Auto",
+        "das Tuk-Tuk",
+        "das Motorradtaxi",
+        "das Fahrrad"
+      ]
+    },
+    {
+      "id": "V201-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V201",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V201-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Tuk-Tuk"
+      ],
+      "options": [
+        "das Tuk-Tuk",
+        "das Motorradtaxi",
+        "das Fahrrad",
+        "zu Fuß"
+      ]
+    },
+    {
+      "id": "V202-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V202",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V202-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Motorradtaxi"
+      ],
+      "options": [
+        "das Motorradtaxi",
+        "das Fahrrad",
+        "zu Fuß",
+        "das Gleis"
+      ]
+    },
+    {
+      "id": "V203-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V203",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V203-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Fahrrad"
+      ],
+      "options": [
+        "das Fahrrad",
+        "zu Fuß",
+        "das Gleis",
+        "der Bahnsteig"
+      ]
+    },
+    {
+      "id": "V204-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V204",
+      "topicId": "L10-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V204-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "zu Fuß"
+      ],
+      "options": [
+        "zu Fuß",
+        "das Gleis",
+        "der Bahnsteig",
+        "die Durchsage"
+      ]
+    },
+    {
+      "id": "V205-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V205",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V205-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "das Gleis"
+      ],
+      "options": [
+        "das Gleis",
+        "der Bahnsteig",
+        "die Durchsage",
+        "der Abflug"
+      ]
+    },
+    {
+      "id": "V206-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V206",
+      "topicId": "L10-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V206-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Bahnsteig"
+      ],
+      "options": [
+        "der Bahnsteig",
+        "die Durchsage",
+        "der Abflug",
+        "der Schalter"
+      ]
+    },
+    {
+      "id": "V207-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V207",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V207-announcement-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Durchsage"
+      ],
+      "options": [
+        "die Durchsage",
+        "der Abflug",
+        "der Schalter",
+        "die Abfahrt"
+      ]
+    },
+    {
+      "id": "V208-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V208",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V208-flight-takeoff-v4.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Abflug"
+      ],
+      "options": [
+        "der Abflug",
+        "der Schalter",
+        "die Abfahrt",
+        "die Ankunft"
+      ]
+    },
+    {
+      "id": "V209-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V209",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V209-service-counter-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Schalter"
+      ],
+      "options": [
+        "der Schalter",
+        "die Abfahrt",
+        "die Ankunft",
+        "die Flugnummer"
+      ]
+    },
+    {
+      "id": "V210-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V210",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V210-timetable-v3.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Abfahrt"
+      ],
+      "options": [
+        "die Abfahrt",
+        "die Ankunft",
+        "die Flugnummer",
+        "aussteigen"
+      ]
+    },
+    {
+      "id": "V211-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V211",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V211-timetable-v3.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Ankunft"
+      ],
+      "options": [
+        "die Ankunft",
+        "die Flugnummer",
+        "aussteigen",
+        "umsteigen"
+      ]
+    },
+    {
+      "id": "V212-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V212",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V212-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Flugnummer"
+      ],
+      "options": [
+        "die Flugnummer",
+        "aussteigen",
+        "umsteigen",
+        "einsteigen"
+      ]
+    },
+    {
+      "id": "V213-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V213",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V213-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "aussteigen"
+      ],
+      "options": [
+        "aussteigen",
+        "umsteigen",
+        "einsteigen",
+        "die Fahrkarte"
+      ]
+    },
+    {
+      "id": "V214-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V214",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V214-transfer-v3.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "umsteigen"
+      ],
+      "options": [
+        "umsteigen",
+        "einsteigen",
+        "die Fahrkarte",
+        "der Bahnhof"
+      ]
+    },
+    {
+      "id": "V215-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V215",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V215-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "einsteigen"
+      ],
+      "options": [
+        "einsteigen",
+        "die Fahrkarte",
+        "der Bahnhof",
+        "der Bus"
+      ]
+    },
+    {
+      "id": "V216-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L10",
+      "itemId": "V216",
+      "topicId": "L10-vocab-4",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-10-vocabulary/V216-transport-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "die Fahrkarte"
+      ],
+      "options": [
+        "die Fahrkarte",
+        "der Bahnhof",
+        "der Bus",
+        "der Zug"
+      ]
+    },
+    {
       "id": "V156-a11-meaning",
       "version": 1,
       "lessonId": "L11",
@@ -10165,6 +14406,226 @@
       "subskill": "vocabulary_spelling",
       "acceptedAnswers": [
         "einkaufen"
+      ]
+    },
+    {
+      "id": "V156-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V156",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V156-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Zeitung lesen"
+      ],
+      "options": [
+        "Zeitung lesen",
+        "arbeiten",
+        "aufräumen",
+        "Kaffee trinken"
+      ]
+    },
+    {
+      "id": "V157-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V157",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V157-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "arbeiten"
+      ],
+      "options": [
+        "arbeiten",
+        "aufräumen",
+        "Kaffee trinken",
+        "eine Pause machen"
+      ]
+    },
+    {
+      "id": "V158-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V158",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V158-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "aufräumen"
+      ],
+      "options": [
+        "aufräumen",
+        "Kaffee trinken",
+        "eine Pause machen",
+        "Nachrichten schreiben"
+      ]
+    },
+    {
+      "id": "V159-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V159",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V159-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Kaffee trinken"
+      ],
+      "options": [
+        "Kaffee trinken",
+        "eine Pause machen",
+        "Nachrichten schreiben",
+        "schlafen"
+      ]
+    },
+    {
+      "id": "V160-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V160",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V160-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "eine Pause machen"
+      ],
+      "options": [
+        "eine Pause machen",
+        "Nachrichten schreiben",
+        "schlafen",
+        "Hausaufgaben machen"
+      ]
+    },
+    {
+      "id": "V161-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V161",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V161-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Nachrichten schreiben"
+      ],
+      "options": [
+        "Nachrichten schreiben",
+        "schlafen",
+        "Hausaufgaben machen",
+        "eine Serie / einen Film schauen"
+      ]
+    },
+    {
+      "id": "V162-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V162",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V162-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "schlafen"
+      ],
+      "options": [
+        "schlafen",
+        "Hausaufgaben machen",
+        "eine Serie / einen Film schauen",
+        "einkaufen"
+      ]
+    },
+    {
+      "id": "V163-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V163",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V163-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "Hausaufgaben machen"
+      ],
+      "options": [
+        "Hausaufgaben machen",
+        "eine Serie / einen Film schauen",
+        "einkaufen",
+        "Zeitung lesen"
+      ]
+    },
+    {
+      "id": "V164-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V164",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V164-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "eine Serie / einen Film schauen"
+      ],
+      "options": [
+        "eine Serie / einen Film schauen",
+        "einkaufen",
+        "Zeitung lesen",
+        "arbeiten"
+      ]
+    },
+    {
+      "id": "V165-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L11",
+      "itemId": "V165",
+      "topicId": "L11-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-11-vocabulary/V165-landscape-v2.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "einkaufen"
+      ],
+      "options": [
+        "einkaufen",
+        "Zeitung lesen",
+        "arbeiten",
+        "aufräumen"
       ]
     },
     {
@@ -10917,6 +15378,358 @@
       "subskill": "vocabulary_spelling",
       "acceptedAnswers": [
         "Dezember"
+      ]
+    },
+    {
+      "id": "V166-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V166",
+      "topicId": "L12-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-12-vocabulary/V166.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Frühling"
+      ],
+      "options": [
+        "der Frühling",
+        "der Sommer",
+        "der Herbst",
+        "der Winter"
+      ]
+    },
+    {
+      "id": "V167-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V167",
+      "topicId": "L12-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-12-vocabulary/V167.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Sommer"
+      ],
+      "options": [
+        "der Sommer",
+        "der Herbst",
+        "der Winter",
+        "der Januar"
+      ]
+    },
+    {
+      "id": "V168-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V168",
+      "topicId": "L12-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-12-vocabulary/V168.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Herbst"
+      ],
+      "options": [
+        "der Herbst",
+        "der Winter",
+        "der Januar",
+        "der Februar"
+      ]
+    },
+    {
+      "id": "V169-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V169",
+      "topicId": "L12-vocab-1",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/lektion-12-vocabulary/V169.jpg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Winter"
+      ],
+      "options": [
+        "der Winter",
+        "der Januar",
+        "der Februar",
+        "der März"
+      ]
+    },
+    {
+      "id": "V170-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V170",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V170.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Januar"
+      ],
+      "options": [
+        "der Januar",
+        "der Februar",
+        "der März",
+        "der April"
+      ]
+    },
+    {
+      "id": "V171-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V171",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V171.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Februar"
+      ],
+      "options": [
+        "der Februar",
+        "der März",
+        "der April",
+        "der Mai"
+      ]
+    },
+    {
+      "id": "V172-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V172",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V172.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der März"
+      ],
+      "options": [
+        "der März",
+        "der April",
+        "der Mai",
+        "der Juni"
+      ]
+    },
+    {
+      "id": "V173-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V173",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V173.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der April"
+      ],
+      "options": [
+        "der April",
+        "der Mai",
+        "der Juni",
+        "der Juli"
+      ]
+    },
+    {
+      "id": "V174-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V174",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V174.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Mai"
+      ],
+      "options": [
+        "der Mai",
+        "der Juni",
+        "der Juli",
+        "der August"
+      ]
+    },
+    {
+      "id": "V175-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V175",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V175.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Juni"
+      ],
+      "options": [
+        "der Juni",
+        "der Juli",
+        "der August",
+        "der September"
+      ]
+    },
+    {
+      "id": "V176-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V176",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V176.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Juli"
+      ],
+      "options": [
+        "der Juli",
+        "der August",
+        "der September",
+        "der Oktober"
+      ]
+    },
+    {
+      "id": "V177-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V177",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V177.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der August"
+      ],
+      "options": [
+        "der August",
+        "der September",
+        "der Oktober",
+        "der November"
+      ]
+    },
+    {
+      "id": "V178-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V178",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V178.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der September"
+      ],
+      "options": [
+        "der September",
+        "der Oktober",
+        "der November",
+        "der Dezember"
+      ]
+    },
+    {
+      "id": "V179-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V179",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V179.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Oktober"
+      ],
+      "options": [
+        "der Oktober",
+        "der November",
+        "der Dezember",
+        "der Frühling"
+      ]
+    },
+    {
+      "id": "V180-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V180",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V180.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der November"
+      ],
+      "options": [
+        "der November",
+        "der Dezember",
+        "der Frühling",
+        "der Sommer"
+      ]
+    },
+    {
+      "id": "V181-a11-picture-meaning",
+      "version": 1,
+      "lessonId": "L12",
+      "itemId": "V181",
+      "topicId": "L12-vocab-2",
+      "kind": "choice",
+      "interaction": "picture-choice",
+      "imageCue": {
+        "src": "/images/a11-spelling-cues/V181.svg"
+      },
+      "subskill": "vocabulary_picture_meaning",
+      "acceptedAnswers": [
+        "der Dezember"
+      ],
+      "options": [
+        "der Dezember",
+        "der Frühling",
+        "der Sommer",
+        "der Herbst"
       ]
     }
   ]

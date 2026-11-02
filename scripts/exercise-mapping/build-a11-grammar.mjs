@@ -1,3 +1,4 @@
+import { readPracticeTemplate } from './practice-word-help.mjs';
 import assert from 'node:assert/strict';
 import { readFile, writeFile } from 'node:fs/promises';
 import ts from 'typescript';
@@ -9,7 +10,7 @@ const { grammarDiscoveryLessons } = await import('data:text/javascript;base64,' 
 const catalog = JSON.parse(await read('supabase/seed/catalog.json'));
 const l02Source = await read('supabase/migrations/20261007010000_l02_learning_content.sql');
 const l02Items = [...l02Source.matchAll(/values \('([^']+)','L02','[^']+',\d+,'published','([^']+)'::jsonb\)/g)].map(match => JSON.parse(match[2]));
-const template = await read('scripts/exercise-mapping/preview-template.html');
+const template = await readPracticeTemplate();
 const planner = ts.transpileModule(await read('src/lib/practice-planner.ts'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText.replace(/^export /gm, '');
 const inventory = [];
 const definitions = [];

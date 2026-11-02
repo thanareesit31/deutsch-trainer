@@ -1,6 +1,6 @@
 {
   "wordCount": 49,
-  "questionCount": 137,
+  "questionCount": 162,
   "groups": [
     {
       "slug": "urban",
@@ -3272,6 +3272,831 @@
       ],
       "explanation": "เขียนแยกเป็นสี่คำ โดย Freunden เป็นคำนามจึงใช้ F ตัวใหญ่",
       "translation": "พบเพื่อน"
+    },
+    {
+      "feedbackAnswer": "die Stadt",
+      "version": 1,
+      "itemId": "L13-V001",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V001-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "die Stadt",
+        "die Altstadt",
+        "der Park",
+        "die Kirche"
+      ],
+      "acceptedAnswers": [
+        "die Stadt"
+      ],
+      "explanation": "",
+      "translation": "เมือง",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/stadt-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "die Altstadt",
+      "version": 1,
+      "itemId": "L13-V002",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V002-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "die Altstadt",
+        "der Park",
+        "die Kirche",
+        "das Schloss"
+      ],
+      "acceptedAnswers": [
+        "die Altstadt"
+      ],
+      "explanation": "",
+      "translation": "ย่านเมืองเก่า",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/altstadt-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Park",
+      "version": 1,
+      "itemId": "L13-V003",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V003-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Park",
+        "die Kirche",
+        "das Schloss",
+        "der Brunnen"
+      ],
+      "acceptedAnswers": [
+        "der Park"
+      ],
+      "explanation": "",
+      "translation": "สวนสาธารณะ",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/park-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "die Kirche",
+      "version": 1,
+      "itemId": "L13-V004",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V004-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "die Kirche",
+        "das Schloss",
+        "der Brunnen",
+        "das Rathaus"
+      ],
+      "acceptedAnswers": [
+        "die Kirche"
+      ],
+      "explanation": "",
+      "translation": "โบสถ์",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/kirche-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "das Schloss",
+      "version": 1,
+      "itemId": "L13-V005",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V005-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "das Schloss",
+        "der Brunnen",
+        "das Rathaus",
+        "das Geschäft"
+      ],
+      "acceptedAnswers": [
+        "das Schloss"
+      ],
+      "explanation": "",
+      "translation": "ปราสาท",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/schloss-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Brunnen",
+      "version": 1,
+      "itemId": "L13-V006",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V006-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Brunnen",
+        "das Rathaus",
+        "das Geschäft",
+        "der Laden"
+      ],
+      "acceptedAnswers": [
+        "der Brunnen"
+      ],
+      "explanation": "",
+      "translation": "น้ำพุ",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/brunnen-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "das Rathaus",
+      "version": 1,
+      "itemId": "L13-V007",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V007-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "das Rathaus",
+        "das Geschäft",
+        "der Laden",
+        "der Markt"
+      ],
+      "acceptedAnswers": [
+        "das Rathaus"
+      ],
+      "explanation": "",
+      "translation": "ศาลาว่าการเมือง",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/rathaus-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "das Geschäft",
+      "version": 1,
+      "itemId": "L13-V008",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V008-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "das Geschäft",
+        "der Markt",
+        "der Zoo",
+        "der Tierpark"
+      ],
+      "acceptedAnswers": [
+        "das Geschäft"
+      ],
+      "explanation": "",
+      "translation": "ร้านค้า",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/geschaeft-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Laden",
+      "version": 1,
+      "itemId": "L13-V009",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V009-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Laden",
+        "der Zoo",
+        "der Tierpark",
+        "der Spielplatz"
+      ],
+      "acceptedAnswers": [
+        "der Laden"
+      ],
+      "explanation": "",
+      "translation": "ร้านค้า",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/laden-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Markt",
+      "version": 1,
+      "itemId": "L13-V010",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V010-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Markt",
+        "der Zoo",
+        "der Tierpark",
+        "der Spielplatz"
+      ],
+      "acceptedAnswers": [
+        "der Markt"
+      ],
+      "explanation": "",
+      "translation": "ตลาด",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/markt-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Zoo",
+      "version": 1,
+      "itemId": "L13-V011",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V011-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Zoo",
+        "der Spielplatz",
+        "der Hafen",
+        "der See"
+      ],
+      "acceptedAnswers": [
+        "der Zoo"
+      ],
+      "explanation": "",
+      "translation": "สวนสัตว์",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/zoo-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Tierpark",
+      "version": 1,
+      "itemId": "L13-V012",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V012-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Tierpark",
+        "der Hafen",
+        "der See",
+        "die Mauer"
+      ],
+      "acceptedAnswers": [
+        "der Tierpark"
+      ],
+      "explanation": "",
+      "translation": "สวนสัตว์หรือสวนสัตว์เปิด",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/tierpark-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Spielplatz",
+      "version": 1,
+      "itemId": "L13-V013",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V013-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Spielplatz",
+        "der Hafen",
+        "der See",
+        "die Mauer"
+      ],
+      "acceptedAnswers": [
+        "der Spielplatz"
+      ],
+      "explanation": "",
+      "translation": "สนามเด็กเล่น",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/spielplatz-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Hafen",
+      "version": 1,
+      "itemId": "L13-V014",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V014-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Hafen",
+        "der See",
+        "die Mauer",
+        "die Straße"
+      ],
+      "acceptedAnswers": [
+        "der Hafen"
+      ],
+      "explanation": "",
+      "translation": "ท่าเรือ",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/hafen-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der See",
+      "version": 1,
+      "itemId": "L13-V015",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V015-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der See",
+        "die Mauer",
+        "die Straße",
+        "das Café"
+      ],
+      "acceptedAnswers": [
+        "der See"
+      ],
+      "explanation": "",
+      "translation": "ทะเลสาบ",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/see-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "die Mauer",
+      "version": 1,
+      "itemId": "L13-V016",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V016-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "die Mauer",
+        "die Straße",
+        "das Café",
+        "das Museum"
+      ],
+      "acceptedAnswers": [
+        "die Mauer"
+      ],
+      "explanation": "",
+      "translation": "กำแพง",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/mauer-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "die Straße",
+      "version": 1,
+      "itemId": "L13-V017",
+      "topicId": "L13-vocab-leisure",
+      "topicName": "สันทนาการและธรรมชาติ",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V017-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "die Straße",
+        "das Café",
+        "das Museum",
+        "das Kino"
+      ],
+      "acceptedAnswers": [
+        "die Straße"
+      ],
+      "explanation": "",
+      "translation": "ถนน",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/strasse-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "das Café",
+      "version": 1,
+      "itemId": "L13-V018",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V018-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "das Café",
+        "das Museum",
+        "das Kino",
+        "die Wohnung"
+      ],
+      "acceptedAnswers": [
+        "das Café"
+      ],
+      "explanation": "",
+      "translation": "คาเฟ่",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/cafe-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "das Museum",
+      "version": 1,
+      "itemId": "L13-V019",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V019-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "das Museum",
+        "das Kino",
+        "die Wohnung",
+        "leider"
+      ],
+      "acceptedAnswers": [
+        "das Museum"
+      ],
+      "explanation": "",
+      "translation": "พิพิธภัณฑ์",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/museum-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "das Kino",
+      "version": 1,
+      "itemId": "L13-V020",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V020-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "das Kino",
+        "die Wohnung",
+        "leider",
+        "in der Nähe"
+      ],
+      "acceptedAnswers": [
+        "das Kino"
+      ],
+      "explanation": "",
+      "translation": "โรงภาพยนตร์",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/kino-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "die Wohnung",
+      "version": 1,
+      "itemId": "L13-V021",
+      "topicId": "L13-vocab-culture",
+      "topicName": "ร้านค้าและวัฒนธรรม",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V021-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "die Wohnung",
+        "leider",
+        "in der Nähe",
+        "der Lieblingsort"
+      ],
+      "acceptedAnswers": [
+        "die Wohnung"
+      ],
+      "explanation": "",
+      "translation": "ที่พักหรืออพาร์ตเมนต์",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/wohnung-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Fluss",
+      "version": 1,
+      "itemId": "L13-V047",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V047-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Fluss",
+        "die Brücke",
+        "die Galerie",
+        "die Kunst"
+      ],
+      "acceptedAnswers": [
+        "der Fluss"
+      ],
+      "explanation": "",
+      "translation": "แม่น้ำ",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/fluss-v2-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "die Brücke",
+      "version": 1,
+      "itemId": "L13-V048",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V048-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "die Brücke",
+        "die Galerie",
+        "die Kunst",
+        "die Kultur"
+      ],
+      "acceptedAnswers": [
+        "die Brücke"
+      ],
+      "explanation": "",
+      "translation": "สะพาน",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/bruecke-v2-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "die Galerie",
+      "version": 1,
+      "itemId": "L13-V049",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V049-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "die Galerie",
+        "die Kunst",
+        "die Kultur",
+        "das Festival"
+      ],
+      "acceptedAnswers": [
+        "die Galerie"
+      ],
+      "explanation": "",
+      "translation": "แกลเลอรี",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/galerie-v2-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
+    },
+    {
+      "feedbackAnswer": "der Fußballplatz",
+      "version": 1,
+      "itemId": "L13-V055",
+      "topicId": "L13-vocab-urban",
+      "topicName": "สถานที่ในเมือง",
+      "difficulty": 1,
+      "knownErrors": {},
+      "id": "L13-V055-picture-meaning",
+      "kind": "choice",
+      "subskill": "vocabulary_picture_meaning",
+      "optionsLang": "de",
+      "prompt": "เลือกคำเยอรมันที่ตรงกับภาพ",
+      "sentence": "",
+      "options": [
+        "der Fußballplatz",
+        "das Straßenfest",
+        "Tourist / Touristin",
+        "Blogger / Bloggerin"
+      ],
+      "acceptedAnswers": [
+        "der Fußballplatz"
+      ],
+      "explanation": "",
+      "translation": "สนามฟุตบอล",
+      "interaction": "picture-choice",
+      "recognitionMode": "image-to-german",
+      "imageCue": {
+        "src": "/images/lektion-13-city/fussballplatz-v2-places.webp"
+      },
+      "difficultyRationale": "จำแนกคำที่ตรงกับภาพจากคำเยอรมันสี่ตัวเลือก ไม่วัดการสะกดหรือจำ Artikel เอง",
+      "assistance": "picture-and-four-german-choices"
     }
   ],
   "provenance": [
@@ -3285,7 +4110,8 @@
       "questionIds": [
         "L13-V001-meaning",
         "L13-V001-article",
-        "L13-V001-spelling"
+        "L13-V001-spelling",
+        "L13-V001-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3307,7 +4133,8 @@
       "questionIds": [
         "L13-V002-meaning",
         "L13-V002-article",
-        "L13-V002-spelling"
+        "L13-V002-spelling",
+        "L13-V002-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3329,7 +4156,8 @@
       "questionIds": [
         "L13-V003-meaning",
         "L13-V003-article",
-        "L13-V003-spelling"
+        "L13-V003-spelling",
+        "L13-V003-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3351,7 +4179,8 @@
       "questionIds": [
         "L13-V004-meaning",
         "L13-V004-article",
-        "L13-V004-spelling"
+        "L13-V004-spelling",
+        "L13-V004-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3373,7 +4202,8 @@
       "questionIds": [
         "L13-V005-meaning",
         "L13-V005-article",
-        "L13-V005-spelling"
+        "L13-V005-spelling",
+        "L13-V005-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3395,7 +4225,8 @@
       "questionIds": [
         "L13-V006-meaning",
         "L13-V006-article",
-        "L13-V006-spelling"
+        "L13-V006-spelling",
+        "L13-V006-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3417,7 +4248,8 @@
       "questionIds": [
         "L13-V007-meaning",
         "L13-V007-article",
-        "L13-V007-spelling"
+        "L13-V007-spelling",
+        "L13-V007-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3439,7 +4271,8 @@
       "questionIds": [
         "L13-V047-meaning",
         "L13-V047-article",
-        "L13-V047-spelling"
+        "L13-V047-spelling",
+        "L13-V047-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3461,7 +4294,8 @@
       "questionIds": [
         "L13-V048-meaning",
         "L13-V048-article",
-        "L13-V048-spelling"
+        "L13-V048-spelling",
+        "L13-V048-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3483,7 +4317,8 @@
       "questionIds": [
         "L13-V049-meaning",
         "L13-V049-article",
-        "L13-V049-spelling"
+        "L13-V049-spelling",
+        "L13-V049-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3505,7 +4340,8 @@
       "questionIds": [
         "L13-V055-meaning",
         "L13-V055-article",
-        "L13-V055-spelling"
+        "L13-V055-spelling",
+        "L13-V055-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3527,7 +4363,8 @@
       "questionIds": [
         "L13-V008-meaning",
         "L13-V008-article",
-        "L13-V008-spelling"
+        "L13-V008-spelling",
+        "L13-V008-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3549,7 +4386,8 @@
       "questionIds": [
         "L13-V009-meaning",
         "L13-V009-article",
-        "L13-V009-spelling"
+        "L13-V009-spelling",
+        "L13-V009-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3571,7 +4409,8 @@
       "questionIds": [
         "L13-V010-meaning",
         "L13-V010-article",
-        "L13-V010-spelling"
+        "L13-V010-spelling",
+        "L13-V010-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3593,7 +4432,8 @@
       "questionIds": [
         "L13-V018-meaning",
         "L13-V018-article",
-        "L13-V018-spelling"
+        "L13-V018-spelling",
+        "L13-V018-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3615,7 +4455,8 @@
       "questionIds": [
         "L13-V019-meaning",
         "L13-V019-article",
-        "L13-V019-spelling"
+        "L13-V019-spelling",
+        "L13-V019-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3637,7 +4478,8 @@
       "questionIds": [
         "L13-V020-meaning",
         "L13-V020-article",
-        "L13-V020-spelling"
+        "L13-V020-spelling",
+        "L13-V020-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3659,7 +4501,8 @@
       "questionIds": [
         "L13-V021-meaning",
         "L13-V021-article",
-        "L13-V021-spelling"
+        "L13-V021-spelling",
+        "L13-V021-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3681,7 +4524,8 @@
       "questionIds": [
         "L13-V011-meaning",
         "L13-V011-article",
-        "L13-V011-spelling"
+        "L13-V011-spelling",
+        "L13-V011-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3703,7 +4547,8 @@
       "questionIds": [
         "L13-V012-meaning",
         "L13-V012-article",
-        "L13-V012-spelling"
+        "L13-V012-spelling",
+        "L13-V012-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3725,7 +4570,8 @@
       "questionIds": [
         "L13-V013-meaning",
         "L13-V013-article",
-        "L13-V013-spelling"
+        "L13-V013-spelling",
+        "L13-V013-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3747,7 +4593,8 @@
       "questionIds": [
         "L13-V014-meaning",
         "L13-V014-article",
-        "L13-V014-spelling"
+        "L13-V014-spelling",
+        "L13-V014-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3769,7 +4616,8 @@
       "questionIds": [
         "L13-V015-meaning",
         "L13-V015-article",
-        "L13-V015-spelling"
+        "L13-V015-spelling",
+        "L13-V015-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3791,7 +4639,8 @@
       "questionIds": [
         "L13-V016-meaning",
         "L13-V016-article",
-        "L13-V016-spelling"
+        "L13-V016-spelling",
+        "L13-V016-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [
@@ -3813,7 +4662,8 @@
       "questionIds": [
         "L13-V017-meaning",
         "L13-V017-article",
-        "L13-V017-spelling"
+        "L13-V017-spelling",
+        "L13-V017-picture-meaning"
       ],
       "sourceId": "DEUTSCH_TRAINER_ORIGINAL",
       "repositoryFiles": [

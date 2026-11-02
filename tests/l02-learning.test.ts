@@ -1,4 +1,5 @@
 import test from "node:test";
+import { catalogVocabularyImageSource } from "../src/lib/vocabulary-image-content";
 import { prepareL02GrammarFlow, pronounScenes, politePluralScene } from "../src/lib/pronoun-learning";
 import { grammarTrackActivities } from "../src/lib/grammar-learning";
 import assert from "node:assert/strict";
@@ -255,15 +256,15 @@ test("L02 catalog references, provenance, dependencies, assets and state migrati
         item.sourceScope && item.sources?.length,
         `${item.id}: provenance`,
       );
-      if (item.image)
-        assert.ok(
-          (
-            await readFile(
-              new URL("../public" + item.image, import.meta.url),
-              "utf8",
-            )
-          ).includes("<svg"),
-        );
+      if (item.image) {
+        const source = catalogVocabularyImageSource(item.lessonId, item.image);
+        const asset = await readFile(new URL("../public" + source, import.meta.url));
+        if (source.endsWith(".svg")) assert.ok(asset.toString("utf8").includes("<svg"));
+        else {
+          assert.equal(asset.subarray(0, 4).toString(), "RIFF");
+          assert.equal(asset.subarray(8, 12).toString(), "WEBP");
+        }
+      }
     }
     const cook = items.find((i) => i.professionContent?.masculine === "Koch")!;
     assert.equal(cook.sourceScope, "teacher_extension");
@@ -286,7 +287,8 @@ test("L02 catalog references, provenance, dependencies, assets and state migrati
           "select count(*)::int as count from public.content_items where lesson_id='L02'",
         )
       ).rows[0].count,
-      118,
+      items.filter(item => item.lessonId === "L02").length,
+      "replaying old migrations preserves the current L02 catalog",
     );
     await db.exec("set role authenticated");
     for (const skill of ["vocabulary", "grammar"])

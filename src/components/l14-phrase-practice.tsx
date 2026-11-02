@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { PracticeGermanText } from "./practice-german-text";
 import { useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import phraseVariants from "@/data/l14-phrase-variants.json";
@@ -11,15 +12,8 @@ import { phraseQuestionWordMeanings, phraseVisualPrompts, type PhraseVisualPromp
 import { l14PhrasePracticeTopics, practiceStorageKey } from "@/lib/practice-planner";
 import { PhrasePracticeInsights, ResumePracticeDialog } from "./phrase-practice-ui";
 
-function GermanVisualQuestion({ visual }: { visual: PhraseVisualPrompt }) {
-  const [active, setActive] = useState<{ index: number; word: string } | null>(null);
-  const parts = visual.question.match(/\p{L}+|\s+|[^\p{L}\s]+/gu) ?? [];
-  return <>
-    <h1 className="l14-visual-question" lang="de">{parts.map((part, index) => /^\p{L}+$/u.test(part)
-      ? <button key={index} type="button" className="l14-question-word" aria-pressed={active?.index === index} onClick={() => setActive(active?.index === index ? null : { index, word: part })}>{part}</button>
-      : <span key={index}>{part}</span>)}</h1>
-    <p className="l14-question-word-help" role="status">{active ? <><strong lang="de">{active.word}</strong> <span>{visual.wordMeanings?.[active.word.toLocaleLowerCase("de-DE")] ?? phraseQuestionWordMeanings[active.word.toLocaleLowerCase("de-DE")]}</span></> : "คลิกคำในโจทย์เพื่อดูคำแปล"}</p>
-  </>;
+function GermanVisualQuestion({ visual, onHelp }: { visual: PhraseVisualPrompt; onHelp: (word: string) => void }) {
+  return <h1 className="l14-visual-question" lang="de"><PracticeGermanText text={visual.question} meanings={{ ...phraseQuestionWordMeanings, ...visual.wordMeanings }} onHelp={onHelp} /></h1>;
 }
 
 type Topic = "ask" | "describe" | "unknown" | "thanks";
@@ -76,8 +70,8 @@ const variantTasks: ChoiceTask[] = phraseVariants.variants.map(variant => ({
 const tasks: Task[] = [...authoredTasks,describeMatch,...reviewTasks,...variantTasks];
 if (variantTasks.length + authoredTasks.length + describeMatch.pairs.length + reviewTasks.length < 100) throw new Error("L14 phrase bank must contain at least 100 independently scored responses");
 const mixedCounts: Record<Topic, number> = { ask: 4, describe: 5, unknown: 3, thanks: 3 };
-type Attempt = { questionId: string; topic: Topic; kind: Task["kind"]; correct: boolean; answer: string; submittedAt: string };
-type Progress = { version: 1; runId: string; createdAt: string; taskIds: string[]; position: number; attempts: Attempt[]; draft: { questionId: string; selected: string } | null; completed: boolean; updatedAt: string };
+type Attempt = { questionId: string; topic: Topic; kind: Task["kind"]; correct: boolean; answer: string; submittedAt: string; wordHelpTokens?: string[] };
+type Progress = { version: 1; runId: string; createdAt: string; taskIds: string[]; position: number; attempts: Attempt[]; draft: { questionId: string; selected: string } | null; completed: boolean; updatedAt: string; wordHelpTokens?: Record<string, string[]> };
 type ArchivedRun = { runId: string; bank: string; attempts: Attempt[]; completedAt: string };
 type PracticeSessions = { version: 1; banks: Record<string, Progress>; runs: ArchivedRun[] };
 const key = lessonStateKeys.l14PhrasePractice;
@@ -142,7 +136,8 @@ function dailyTaskIds(sessions: PracticeSessions, learned: Set<string>, now=Date
     const attempt=latest.get(id);
     if (!attempt) return 35;
     const elapsed=now-Date.parse(attempt.submittedAt);
-    return (attempt.correct?0:55)+(elapsed>=3*86400000?30:0)+(attempt.correct&&elapsed<86400000?-20:0);
+    const independent=attempt.correct&&!attempt.wordHelpTokens?.length;
+    return (independent?0:55)+(elapsed>=3*86400000?30:0)+(independent&&elapsed<86400000?-20:0);
   }));
   const selected: Task[]=[];
   const remaining=[...candidates];
@@ -178,14 +173,16 @@ function parseMatchSelection(task: MatchTask, selected: string): Record<string,s
 }
 function parseAttempt(value: unknown): Attempt | null {
   if (!isRecord(value) || typeof value.questionId !== "string" || typeof value.correct!=="boolean" || typeof value.answer!=="string" || typeof value.submittedAt!=="string" || !Number.isFinite(Date.parse(value.submittedAt))) return null;
+  const wordHelpTokens=value.wordHelpTokens;
+  if(wordHelpTokens!==undefined&&(!Array.isArray(wordHelpTokens)||!wordHelpTokens.every(word=>typeof word==="string")))return null;
   const matchPair=describeMatch.pairs.find(pair=>pair.id===value.questionId);
   if (matchPair) {
     if (value.topic!==describeMatch.topic || value.kind!=="match" || !describeMatch.pairs.some(pair=>pair.answer===value.answer) || value.correct!==(value.answer===matchPair.answer)) return null;
-    return {questionId:matchPair.id,topic:describeMatch.topic,kind:"match",correct:value.correct,answer:value.answer,submittedAt:value.submittedAt};
+    return {questionId:matchPair.id,topic:describeMatch.topic,kind:"match",correct:value.correct,answer:value.answer,submittedAt:value.submittedAt,...(wordHelpTokens?{wordHelpTokens}:{})};
   }
   const task=tasks.find(entry=>entry.id===value.questionId);
   if (!task || task.kind==="match" || value.topic!==task.topic || value.kind!==task.kind || (task.kind==="order"?task.answer!==value.answer:!task.options.includes(value.answer)) || value.correct!==(value.answer===task.answer)) return null;
-  return {questionId:task.id,topic:task.topic,kind:task.kind,correct:value.correct,answer:value.answer,submittedAt:value.submittedAt};
+  return {questionId:task.id,topic:task.topic,kind:task.kind,correct:value.correct,answer:value.answer,submittedAt:value.submittedAt,...(wordHelpTokens?{wordHelpTokens}:{})};
 }
 function isValidOrderDraft(tokens: string[], selected: string): boolean {
   if (!selected) return false;
@@ -200,6 +197,14 @@ function isValidOrderDraft(tokens: string[], selected: string): boolean {
 function parseProgress(value: unknown): Progress | null {
   if (!isRecord(value) || !Array.isArray(value.taskIds) || !value.taskIds.every(id=>typeof id==="string"&&tasks.some(task=>task.id===id)) || new Set(value.taskIds).size!==value.taskIds.length || !Array.isArray(value.attempts)) return null;
   const taskIds = value.taskIds.filter((id): id is string => typeof id === "string");
+  const wordHelpTokens: Record<string,string[]> = {};
+  if(value.wordHelpTokens!==undefined){
+    if(!isRecord(value.wordHelpTokens))return null;
+    for(const [id,words]of Object.entries(value.wordHelpTokens)){
+      if(!taskIds.some(taskId=>taskId===id||tasks.some(task=>task.id===taskId&&task.kind==="match"&&task.pairs.some(pair=>pair.id===id)))||!Array.isArray(words)||!words.every(word=>typeof word==="string"))return null;
+      wordHelpTokens[id]=words;
+    }
+  }
   const attempts = value.attempts.map(parseAttempt);
   if (attempts.some(attempt=>attempt===null)) return null;
   const rawDraft = isRecord(value.draft) ? value.draft : null;
@@ -212,7 +217,7 @@ function parseProgress(value: unknown): Progress | null {
   const validAttempts=attempts.filter((attempt):attempt is Attempt=>attempt!==null);
   const updatedAt=typeof value.updatedAt==="string"&&Number.isFinite(Date.parse(value.updatedAt))?value.updatedAt:validAttempts.at(-1)?.submittedAt??new Date(0).toISOString();
   const createdAt=typeof value.createdAt==="string"&&Number.isFinite(Date.parse(value.createdAt))?value.createdAt:updatedAt;
-  return {version:1,runId,createdAt,taskIds,position,attempts:validAttempts,draft,completed:value.completed===true,updatedAt};
+  return {version:1,runId,createdAt,taskIds,position,attempts:validAttempts,draft,completed:value.completed===true,updatedAt,...(value.wordHelpTokens?{wordHelpTokens}:{})};
 }
 function parseArchivedRun(value: unknown): ArchivedRun | null {
   if (!isRecord(value) || typeof value.runId!=="string" || typeof value.bank!=="string" || typeof value.completedAt!=="string" || !Number.isFinite(Date.parse(value.completedAt)) || !Array.isArray(value.attempts)) return null;
@@ -263,7 +268,7 @@ function sharedSession(bank: string, progress: Progress) {
       else if (draft.questionId===task.id) response=draft.selected;
     }
     const tokenOrder=task.kind==="order"&&response?response.split(" "):[];
-    return {question,response,selected:[],tokenOrder,hintUsed:false,translationUsed:false,attempt:attempt?{response:attempt.answer,correct:attempt.correct,status:"completed",submittedAt:attempt.submittedAt,confidence:null}:null};
+    return {question,response,selected:[],tokenOrder,hintUsed:false,translationUsed:Boolean((attempt?.wordHelpTokens??progress.wordHelpTokens?.[questionId]??progress.wordHelpTokens?.[task.id])?.length),wordHelpTokens:progress.wordHelpTokens?.[questionId]??progress.wordHelpTokens?.[task.id]??[],attempt:attempt?{wordHelpTokens:attempt.wordHelpTokens??[],translationUsed:Boolean(attempt.wordHelpTokens?.length),response:attempt.answer,correct:attempt.correct,status:"completed",submittedAt:attempt.submittedAt,confidence:null}:null};
   });
   const position=queue.slice(0,progress.position).reduce((count,task)=>count+taskCount(task),0);
   const itemPosition=Math.min(position,Math.max(0,items.length-1));
@@ -306,14 +311,22 @@ function progressFromShared(value: unknown): Progress | null {
   const taskIds=taskIdsFromShared(sharedItemsArray);
   if (!taskIds?.length) return null;
   const attempts:Attempt[]=[];
+  const wordHelpTokens:Record<string,string[]>={};
   const sourceTasks: { task: Task; pair?: MatchPair }[] = tasks.flatMap((task): { task: Task; pair?: MatchPair }[] =>
     task.kind === "match" ? task.pairs.map(pair => ({ task, pair })) : [{ task }]);
   for (const item of sharedItemsArray) {
-    if (!isRecord(item)||!isRecord(item.question)||typeof item.question.id!=="string"||!isRecord(item.attempt)) continue;
+    if (!isRecord(item)||!isRecord(item.question)||typeof item.question.id!=="string") continue;
     const questionId=item.question.id;
     const source=sourceTasks.find(entry=>entry.pair?.id===questionId||entry.task.id===questionId);
-    if (!source||typeof item.attempt.correct!=="boolean"||typeof item.attempt.response!=="string"||typeof item.attempt.submittedAt!=="string") return null;
-    attempts.push({questionId,topic:source.task.topic,kind:source.pair?"match":source.task.kind,correct:item.attempt.correct,answer:item.attempt.response,submittedAt:item.attempt.submittedAt});
+    if(!source)return null;
+    const usedWords=isRecord(item.attempt)?item.attempt.wordHelpTokens:item.wordHelpTokens;
+    if(usedWords!==undefined){
+      if(!Array.isArray(usedWords)||!usedWords.every(word=>typeof word==="string"))return null;
+      wordHelpTokens[questionId]=usedWords;
+    }
+    if(!isRecord(item.attempt))continue;
+    if (typeof item.attempt.correct!=="boolean"||typeof item.attempt.response!=="string"||typeof item.attempt.submittedAt!=="string") return null;
+    attempts.push({questionId,topic:source.task.topic,kind:source.pair?"match":source.task.kind,correct:item.attempt.correct,answer:item.attempt.response,submittedAt:item.attempt.submittedAt,...(usedWords?{wordHelpTokens:wordHelpTokens[questionId]}:{})});
   }
   const rawPosition=typeof value.position==="number"&&Number.isInteger(value.position)?Math.max(0,value.position):0;
   let position=0,flatPosition=0;
@@ -331,7 +344,7 @@ function progressFromShared(value: unknown): Progress | null {
     else if (matchingDrafts[0]) draft={questionId:active.id,selected:matchingDrafts[0].response};
   }
   const updatedAt=typeof value.updatedAt==="string"?value.updatedAt:value.createdAt;
-  return {version:1,runId:value.id,createdAt:value.createdAt,taskIds,position,attempts,draft,completed:value.completed===true,updatedAt};
+  return {version:1,runId:value.id,createdAt:value.createdAt,taskIds,position,attempts,draft,completed:value.completed===true,updatedAt,...(Object.keys(wordHelpTokens).length?{wordHelpTokens}:{})};
 }
 function mergeSharedSessions(initial: PracticeSessions, userId: string): PracticeSessions {
   if (typeof window==="undefined") return initial;
@@ -437,16 +450,20 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
   const selectedTokens=current?.kind==="order"&&selected?selected.split(" "):[];
   const matchSelection=current?.kind==="match"?parseMatchSelection(current,selected)??{}:{};
   const canSubmit = current?.kind==="match" ? current.pairs.every(pair=>Boolean(matchSelection[pair.id])) : Boolean(selected);
+  const recordWordHelp = (word: string, responseId?: string) => {
+    if (!current || checked) return;
+    setProgress(p => ({ ...p, wordHelpTokens: { ...p.wordHelpTokens, [responseId??current.id]: [...new Set([...(p.wordHelpTokens?.[responseId??current.id] ?? []), word])] } }));
+  };
   function submit() {
     if (!current || !canSubmit || checked) return;
     if (current.kind==="match") {
       const submittedAt=new Date().toISOString();
-      const attempts=current.pairs.map(pair=>({questionId:pair.id,topic:current.topic,kind:"match" as const,correct:matchSelection[pair.id]===pair.answer,answer:matchSelection[pair.id],submittedAt}));
+      const attempts=current.pairs.map(pair=>({questionId:pair.id,topic:current.topic,kind:"match" as const,correct:matchSelection[pair.id]===pair.answer,answer:matchSelection[pair.id],submittedAt,wordHelpTokens:progress.wordHelpTokens?.[pair.id]??[]}));
       setProgress(p=>({...p,draft:null,attempts:[...p.attempts,...attempts]}));
       return;
     }
     const correct = selected === current.answer;
-    setProgress(p=>({...p,draft:null,attempts:[...p.attempts,{questionId:current.id,topic:current.topic,kind:current.kind,correct,answer:selected,submittedAt:new Date().toISOString()}]}));
+    setProgress(p=>({...p,draft:null,attempts:[...p.attempts,{questionId:current.id,topic:current.topic,kind:current.kind,correct,answer:selected,submittedAt:new Date().toISOString(),wordHelpTokens:p.wordHelpTokens?.[current.id]??[]}]}));
   }
   function next() {
     if (!current) return;
@@ -528,7 +545,7 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
   return <main className="l14-practice-page">
     <div className="vocabulary-image-progress"><span>{progressLabel}</span><div className="vocabulary-image-progress-track" role="progressbar" aria-valuemin={0} aria-valuemax={totalCount} aria-valuenow={completedCount+taskCount(current)}><span style={{width:`${(completedCount+taskCount(current))/totalCount*100}%`}}/></div></div>
     <section className="guided-card">
-      {current.kind === "order" ? <p className="l14-order-instruction">เรียงประโยคให้ถูกต้อง</p> : <p className="eyebrow">{topicInfo[current.topic].title} · ข้อ {topicPosition}{current.kind==="match"?`–${topicPosition+1}`:""}/{topicTotal}</p>}
+      {current.kind === "order" ? <p className="l14-order-instruction">เรียงประโยคให้ถูกต้อง</p> : null}
       {current.kind === "order" ? <>
         <h1 className="l14-order-title">{current.translation}</h1>
         <div className="l14-practice-built-sentence" aria-label="ประโยคที่เรียง" aria-live="polite">{selectedTokens.map((token,index)=><button className="l14-placed-token" key={`${token}-${index}`} type="button" aria-label={`นำ ${token} กลับไปตัวเลือก`} disabled={checked} onClick={()=>{const next=selectedTokens.filter((_,wordIndex)=>wordIndex!==index).join(" ");setSelected(next);setProgress(p=>({...p,draft:next?{questionId:current.id,selected:next}:null}));}}>{token}</button>)}</div>
@@ -539,7 +556,7 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
         {checked?<div className="l14-match-checked">{current.pairs.map((pair,index)=><div className={`l14-match-checked-row ${matchAttempts[index]?.correct?"correct":"incorrect"}`} key={pair.id}><span lang="de">{pair.question}</span><span aria-hidden="true">→</span><span lang="de">{matchSelection[pair.id]}</span></div>)}</div>:<>
           <p className="l14-match-help">เลือกกล่องจากฝั่งใดก่อนก็ได้ แล้วเลือกกล่องอีกฝั่งเพื่อจับคู่</p>
           <div className="l14-match-columns">
-            <div className="l14-match-column" aria-label="คำถาม">{current.pairs.map(pair=><button className="l14-match-question" type="button" key={pair.id} aria-pressed={matchFocus?.side==="question"&&matchFocus.value===pair.id} data-matched={Boolean(matchSelection[pair.id])} onClick={()=>selectMatchQuestion(pair.id)} lang="de">{pair.question}</button>)}</div>
+            <div className="l14-match-column" aria-label="คำถาม">{current.pairs.map(pair=><button className="l14-match-question" type="button" key={pair.id} aria-pressed={matchFocus?.side==="question"&&matchFocus.value===pair.id} data-matched={Boolean(matchSelection[pair.id])} onClick={()=>selectMatchQuestion(pair.id)} lang="de"><PracticeGermanText text={pair.question} onHelp={word=>recordWordHelp(word,pair.id)} /></button>)}</div>
             <svg className="l14-match-lines" viewBox={`0 0 100 ${current.pairs.length*72-14}`} preserveAspectRatio="none" aria-hidden="true">{current.pairs.map((pair,index)=>{const answerIndex=[...current.pairs].reverse().findIndex(option=>option.answer===matchSelection[pair.id]);return answerIndex<0?null:<line key={pair.id} x1="0" y1={index*72+29} x2="100" y2={answerIndex*72+29}/>;})}</svg>
             <div className="l14-match-column" aria-label="คำตอบ">{[...current.pairs].reverse().map(pair=>{const assigned=current.pairs.find(question=>matchSelection[question.id]===pair.answer);return <button className="l14-match-answer" type="button" key={pair.id} aria-pressed={matchFocus?.side==="answer"&&matchFocus.value===pair.answer} data-matched={Boolean(assigned)} onClick={()=>selectMatchAnswer(pair.answer)} lang="de">{pair.answer}</button>;})}</div>
           </div>
@@ -547,11 +564,11 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
       </div> : visual ? <div className="l14-practice-scene">
         <figure className="l14-practice-scene-image"><Image src={visual.image} width={640} height={480} sizes="(max-width: 700px) 100vw, 300px" alt={visual.imageAlt} /></figure>
         <div className="l14-practice-scene-choices">
-          <GermanVisualQuestion key={current.id} visual={visual} />
+          <GermanVisualQuestion key={current.id} visual={visual} onHelp={recordWordHelp} />
           <div className="l14-phrase-choices">{current.options.map(option=><button className="button secondary" key={option} type="button" aria-pressed={selected===option} disabled={checked} onClick={()=>{setSelected(option);setProgress(p=>({...p,draft:{questionId:current.id,selected:option}}));}}>{option}</button>)}</div>
         </div>
       </div> : (current.kind==="context"||current.kind==="dialogue") && <div className="l14-phrase-variant">
-        <h1>{current.prompt}</h1>
+        <h1><PracticeGermanText text={current.prompt} onHelp={recordWordHelp} /></h1>
         <div className="l14-phrase-choices">{current.options.map(option=><button className="button secondary" key={option} type="button" aria-pressed={selected===option} disabled={checked} onClick={()=>{setSelected(option);setProgress(p=>({...p,draft:{questionId:current.id,selected:option}}));}}>{option}</button>)}</div>
       </div>}
       {checked && current.kind==="match" ? <aside className={`practice-feedback ${answerCorrect?"correct":"incorrect"}`}>

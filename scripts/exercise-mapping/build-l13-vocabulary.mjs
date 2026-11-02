@@ -1,4 +1,6 @@
+import { readPracticeTemplate } from './practice-word-help.mjs';
 import ts from 'typescript';
+import { pictureMeaningQuestions } from './picture-meaning-questions.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const root = new URL('../../', import.meta.url);
@@ -7,14 +9,14 @@ const catalog = JSON.parse(await read('supabase/seed/catalog.json'));
 const paletteSource = ts.transpileModule(await read('src/lib/profession-learning.ts'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText;
 const { articleColors } = await import('data:text/javascript;base64,' + Buffer.from(paletteSource).toString('base64'));
 const source = ts.transpileModule(await read('src/lib/vocabulary-image-content.ts'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText;
-const { l13VocabularyImageGroups } = await import('data:text/javascript;base64,' + Buffer.from(source).toString('base64'));
+const { l13VocabularyImageGroups, l13VocabularyImageEntries } = await import('data:text/javascript;base64,' + Buffer.from(source).toString('base64'));
 const words = catalog.items.filter(item => item.lessonId === 'L13' && item.skill === 'vocabulary');
 const groups = l13VocabularyImageGroups.map(group => ({ slug: group.id.replace('l13-',''), title: group.title, ids: group.wordOrder }));
 const imageIds = new Set(groups.flatMap(group => group.ids));
 groups.push({ slug: 'extra', title: 'คำศัพท์เพิ่มเติม', ids: words.filter(word => !imageIds.has(word.id)).map(word => word.id) });
 const aliases = { 'Geschäft': ['Laden'], 'Laden': ['Geschäft'], 'Zoo': ['Tierpark'], 'Tierpark': ['Zoo'] };
 const topicId = group => 'L13-vocab-' + group.slug;
-const skillLabels = { vocabulary_meaning: 'จำความหมาย', vocabulary_article: 'เลือก Artikel', vocabulary_spelling: 'พิมพ์คำภาษาเยอรมัน' };
+const skillLabels = { vocabulary_picture_meaning: 'ดูภาพแล้วเลือกคำเยอรมัน', vocabulary_meaning: 'เลือกความหมายภาษาไทย', vocabulary_article: 'เลือก Artikel', vocabulary_spelling: 'พิมพ์คำภาษาเยอรมัน' };
 const questions = [];
 const provenance = [];
 for (const group of groups) for (const id of group.ids) {
@@ -45,12 +47,15 @@ for (const group of groups) for (const id of group.ids) {
   questions.push({ ...base, id: id+'-spelling', kind: 'cloze', subskill: 'vocabulary_spelling', sentenceLang: 'th', difficulty: 2, prompt: word.type==='noun' ? 'พิมพ์คำศัพท์ต่อจาก Artikel ที่ให้มา' : 'พิมพ์คำภาษาเยอรมัน', sentence: word.meaning+' — ___', acceptedAnswers, explanation: spellingExplanation, translation: word.meaning });
   provenance.push({ itemId: id, originalTitle: word.title, word: word.word, meaning: word.meaning, collection: word.collection, group: group.slug, questionIds: questions.filter(q => q.itemId === id).map(q => q.id), sourceId: 'DEUTSCH_TRAINER_ORIGINAL', repositoryFiles: ['supabase/seed/catalog.json', 'src/lib/vocabulary-image-content.ts'], method: 'repository_inspection', inspectedAt: '2026-10-22', publisherPage: null, note: 'New web tasks derived from existing project learning vocabulary. No claim of a copied or individually inspected publisher exercise.' });
 }
+const pictureCues = Object.fromEntries(l13VocabularyImageEntries.map(entry => [entry.id, { kind: 'image', src: '/images/lektion-13-city/'+entry.image+'-places.webp' }]));
+questions.push(...pictureMeaningQuestions({ words, questions, cues: pictureCues, suffix: '-picture-meaning', root, aliases }));
+for (const entry of provenance) entry.questionIds = questions.filter(question => question.itemId === entry.itemId).map(question => question.id);
 assert.equal(new Set(questions.map(q=>q.id)).size, questions.length);
 for (const q of questions) { assert(q.acceptedAnswers.length); if(q.options) assert.equal(new Set(q.options).size,q.options.length); }
-const template = await read('scripts/exercise-mapping/preview-template.html');
+const template = await readPracticeTemplate();
 const planner = ts.transpileModule(await read('src/lib/practice-planner.ts'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText.replace(/^export /gm,'');
 const nounPresentation = Object.fromEntries(words.filter(word=>word.type==='noun'&&(word.article||word.pluralOnly)).map(word=>[word.id,{label:word.pluralOnly?'die '+word.word:word.article+' '+word.word,color:word.pluralOnly?'plural':word.article}]));
-const base = { title: 'คำศัพท์บท 13', requireLearned: true, historySkill: 'vocabulary', nounPresentation, articleColors, manualHref: '/practice/L13/vocabulary', learnHref: '/learn/L13/vocabulary', dailyHref: '/practice/L13/vocabulary/daily', skillLabels, thaiSupport: { translations: Object.fromEntries(questions.map(q=>[q.id,q.translation])), glossary: {}, phrases: [] } };
+const base = { skillCycle: ['vocabulary_meaning','vocabulary_picture_meaning','vocabulary_article','vocabulary_picture_meaning','vocabulary_spelling'], title: 'คำศัพท์บท 13', requireLearned: true, historySkill: 'vocabulary', nounPresentation, articleColors, manualHref: '/practice/L13/vocabulary', learnHref: '/learn/L13/vocabulary', dailyHref: '/practice/L13/vocabulary/daily', skillLabels, thaiSupport: { translations: Object.fromEntries(questions.map(q=>[q.id,q.translation])), glossary: {}, phrases: [] } };
 const banks = groups.map(group => ({ slug: group.slug, title: group.title, defaultCount: 5, questions: questions.filter(q=>q.topicId===topicId(group)) }));
 banks.push({ slug:'basic', title:'คำศัพท์บท 13', defaultCount:groups.length*5, workflow:'guided', sections:groups.map(group=>({topicId:topicId(group),title:group.title,count:5})),questions });
 banks.push({ slug:'daily', title:'ฝึกคำศัพท์ต่อวันนี้', defaultCount:10, workflow:'daily',questions });
@@ -67,6 +72,8 @@ if (process.argv.includes('--previews-only')) {
 await writeFile(new URL('src/data/l13-vocabulary-catalog.json',root),JSON.stringify({groups:groups.map(group=>({...group,topicId:topicId(group)})),questions:questions.map(({id,itemId,topicId,kind,subskill})=>({id,itemId,topicId,kind,subskill}))})+'\n');
 await writeFile(new URL('docs/exercise-mapping/l13-vocabulary-bank.json',root),JSON.stringify({wordCount:words.length,questionCount:questions.length,groups,questions,provenance},null,2)+'\n');
 console.log('Built L13 vocabulary: '+words.length+' words, '+questions.length+' questions, '+groups.length+' topics; sources kept in internal bank.');
+
+if (!process.argv.includes('--bootstrap-migration')) process.exit(0);
 
 // Keep server answer validation in the same versioned vocabulary catalog.
 const definitions = questions.map(({id,version,itemId,topicId,subskill,kind,acceptedAnswers})=>({id,version,itemId,topicId,subskill,kind,acceptedAnswers}));

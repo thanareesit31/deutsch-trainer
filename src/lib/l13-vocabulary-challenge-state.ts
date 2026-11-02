@@ -1,8 +1,8 @@
 import { l13ChallengeResponses, l13VocabularyChallengeActivities, type ArticleAssessment, type VocabularyChallengeActivity } from "./l13-vocabulary-challenge-bank";
 
 export type ChallengeConfidence = "easy" | "thought" | "guess";
-export type ChallengeResponse = { answer: string; correct: boolean; submittedAt: string; confidence?: ChallengeConfidence | null; assessment?: ArticleAssessment };
-export type ChallengeRound = { id: string; activityIds: string[]; position: number; responses: Record<string, ChallengeResponse>; drafts: Record<string, string>; completedAt: string | null };
+export type ChallengeResponse = { answer: string; correct: boolean; submittedAt: string; confidence?: ChallengeConfidence | null; assessment?: ArticleAssessment; wordHelpTokens?: string[] };
+export type ChallengeRound = { id: string; activityIds: string[]; position: number; responses: Record<string, ChallengeResponse>; drafts: Record<string, string>; completedAt: string | null; wordHelpTokens?: Record<string, string[]> };
 type ArchivedRound = Omit<ChallengeRound, "position" | "drafts">;
 export type VocabularyChallengeState = { version: 2; round: ChallengeRound; articleRound?: ChallengeRound; history: ArchivedRound[] };
 const byId = new Map(l13VocabularyChallengeActivities.map(activity => [activity.id, activity]));
@@ -30,9 +30,11 @@ function parseResponses(value: unknown, allowed: Set<string>): Record<string, Ch
       const assessment = response.assessment;
       if (!record(assessment) || Object.entries(definition.assessment).some(([key, expected]) => assessment[key] !== expected)) return null;
     }
+    const wordHelpTokens = response.wordHelpTokens;
+    if (wordHelpTokens !== undefined && (!Array.isArray(wordHelpTokens) || !wordHelpTokens.every(word => typeof word === "string"))) return null;
     const confidence = response.confidence;
     if (confidence !== undefined && confidence !== null && confidence !== "easy" && confidence !== "thought" && confidence !== "guess") return null;
-    responses[id] = { answer: response.answer, correct: response.correct, submittedAt: response.submittedAt, ...("confidence" in response ? { confidence } : {}), ...(definition.assessment ? { assessment: definition.assessment } : {}) };
+    responses[id] = { ...(wordHelpTokens ? { wordHelpTokens } : {}), answer: response.answer, correct: response.correct, submittedAt: response.submittedAt, ...("confidence" in response ? { confidence } : {}), ...(definition.assessment ? { assessment: definition.assessment } : {}) };
   }
   return responses;
 }
@@ -52,7 +54,15 @@ function parseRound(value: unknown): ChallengeRound | null {
     if (!responses[id]) drafts[id] = draft;
   }
   if (value.completedAt !== null && [...allowed].some(id => !responses[id])) return null;
-  return { id: value.id, activityIds, position: value.position, completedAt: value.completedAt, responses, drafts };
+  const wordHelpTokens: Record<string, string[]> = {};
+  if (value.wordHelpTokens !== undefined) {
+    if (!record(value.wordHelpTokens)) return null;
+    for (const [id, words] of Object.entries(value.wordHelpTokens)) {
+      if (!allowed.has(id) || !Array.isArray(words) || !words.every(word => typeof word === "string")) return null;
+      wordHelpTokens[id] = words;
+    }
+  }
+  return { id: value.id, activityIds, position: value.position, completedAt: value.completedAt, responses, drafts, ...(value.wordHelpTokens ? { wordHelpTokens } : {}) };
 }
 
 export function makeChallengeRound(eligible: VocabularyChallengeActivity[], history: ArchivedRound[], now = new Date().toISOString()): ChallengeRound {
@@ -62,7 +72,7 @@ export function makeChallengeRound(eligible: VocabularyChallengeActivity[], hist
     if (!activity) continue;
     const responses = activityResponseIds(activity).map(id => round.responses[id]);
     const at = round.completedAt ?? now;
-    const priority = responses.some(response => !response?.correct || response.confidence === "guess" || response.confidence === "thought") ? 1
+    const priority = responses.some(response => !response?.correct || Boolean(response.wordHelpTokens?.length) || response.confidence === "guess" || response.confidence === "thought") ? 1
       : responses.some(response => response.confidence === undefined || response.confidence === null) ? 2 : 3;
     if (!seen.has(id) || (seen.get(id)?.at ?? "") < at) seen.set(id, { priority, at });
   }

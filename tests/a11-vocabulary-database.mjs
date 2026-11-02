@@ -1,11 +1,12 @@
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import { createDatabase, userId } from './learning-database.mjs';
 
 const db = await createDatabase();
 try {
   await db.exec('reset role');
   const definitions = (await db.query('select definition from public.a11_vocabulary_practice_questions order by id')).rows.map(row => row.definition);
-  assert.equal(definitions.length, 669);
+  assert.equal(definitions.length, JSON.parse(readFileSync('docs/exercise-mapping/a11-vocabulary-bank.json','utf8')).definitions.length);
   await db.exec(`set role authenticated; set request.jwt.claim.sub='${userId}'`);
   const sync = (bankKey, state) => db.query('select public.sync_practice_session($1,$2::jsonb)', [bankKey, JSON.stringify(state)]);
   const round = (question, id, response = question.acceptedAnswers[0]) => ({
@@ -33,6 +34,10 @@ try {
     assert.equal(saved.items[0].attempt.spellingCueMode, 'image');
     assert.equal(saved.items[0].attempt.spellingCuePresentation, 'single-person-inline');
     assert.equal(saved.items[0].attempt.correct, true);
+  }
+  const picture = definitions.find(question => question.interaction === 'picture-choice');
+  for (const [field, replacement] of [['imageCue', { src: '/wrong.webp' }], ['options', ['wrong']], ['interaction', 'other']]) {
+    await assert.rejects(sync(`a11-vocab-${picture.lessonId.toLowerCase()}-daily`, round({ ...picture, [field]: replacement }, `forged-picture-${field}`)), /Unknown or changed (picture cue or options|vocabulary question)/);
   }
   for (const [index, question] of definitions.entries()) {
     const state = round(question, `answer-${index}`);

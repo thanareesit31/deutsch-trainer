@@ -23,7 +23,7 @@ try {
     return {cue,hiddenThai:document.querySelector('.spelling-meaning')===null,help:document.querySelector('.spelling-thai-help')?.textContent,image:document.querySelector('.spelling-cue-image')?.getAttribute('src'),context:document.querySelector('.spelling-cue')?.textContent};
    },question.id);
    assert.equal(result.hiddenThai,true,question.id);
-   assert.equal(result.help,lesson===2?undefined:'ดูความหมายภาษาไทย');
+   assert.equal(result.help,undefined);
    if(result.cue.kind==='image'){
     assert.equal(result.image,result.cue.src);
     assert(existsSync('public'+result.image),question.id);
@@ -64,8 +64,8 @@ try {
    continue;
   }
 
-  await page.getByRole('button',{name:'ดูความหมายภาษาไทย',exact:true}).click();
-  assert.equal(await page.locator('.spelling-meaning').innerText(),'ความหมาย: '+sample.translation);
+  await page.evaluate(()=>commit(n=>{activeItem(n).translationUsed=true;}));
+  assert.equal(await page.locator('.spelling-thai-help,.spelling-meaning').count(),0);
   await page.reload();
   await page.evaluate(id=>window.postMessage({type:'grammar-preview-direct-start',learnedItemIds:BANK.questions.map(q=>q.itemId),resumeId:id},'*'),saved);
   await page.locator('#response').waitFor();
@@ -83,5 +83,5 @@ try {
   await page.unroute('https://cue.test/practice');
  }
  assert.deepEqual(errors,[]);
- console.log(`PASS ${audited} spelling cues in 24 banks; ${interacted} mobile help/resume/first-answer flows; assets exist; no script errors`);
+ console.log(`PASS ${audited} spelling cues in 24 banks; ${interacted} mobile inline/resume/first-answer flows; assets exist; no script errors`);
 }finally{await browser.close();}

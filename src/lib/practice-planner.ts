@@ -161,11 +161,12 @@ export function planDailyPractice(rawQuestions: readonly unknown[], history: rea
   const selected: PracticeQuestion[] = [];
   const topicUses = new Map<string, number>();
   const kindUses = new Map<string, number>();
+  const formatKey = (question: PracticeQuestion) => question.subskill === 'vocabulary_meaning' || question.subskill === 'vocabulary_picture_meaning' ? question.subskill : question.kind;
   const phraseItems = new Set<string>();
   const selectedTargets = new Set<string>();
   const count = Math.min(10, ranked.length);
   while (selected.length < count) {
-    ranked.sort((a, b) => (b.score - (topicUses.get(b.q.topicId) ?? 0) * 12 - (kindUses.get(b.q.kind) ?? 0) * 8) - (a.score - (topicUses.get(a.q.topicId) ?? 0) * 12 - (kindUses.get(a.q.kind) ?? 0) * 8) || a.index - b.index);
+    ranked.sort((a, b) => (b.score - (topicUses.get(b.q.topicId) ?? 0) * 12 - (kindUses.get(formatKey(b.q)) ?? 0) * 8) - (a.score - (topicUses.get(a.q.topicId) ?? 0) * 12 - (kindUses.get(formatKey(a.q)) ?? 0) * 8) || a.index - b.index);
     const nextIndex = ranked.findIndex(item => !item.q.targetIds.some(id => selectedTargets.has(id)));
     const [next] = nextIndex < 0 ? [] : ranked.splice(nextIndex, 1);
     if (!next) break;
@@ -176,7 +177,7 @@ export function planDailyPractice(rawQuestions: readonly unknown[], history: rea
       if (ranked[index].q.phraseItemIds.some(id => phraseItems.has(id)) || ranked[index].q.targetIds.some(id => selectedTargets.has(id))) ranked.splice(index, 1);
     }
     topicUses.set(next.q.topicId, (topicUses.get(next.q.topicId) ?? 0) + 1);
-    kindUses.set(next.q.kind, (kindUses.get(next.q.kind) ?? 0) + 1);
+    kindUses.set(formatKey(next.q), (kindUses.get(formatKey(next.q)) ?? 0) + 1);
   }
   const focus = weak.sort((a, b) => b.result.submittedAt - a.result.submittedAt)[0];
   const title = focus ? [...l13PracticeTopics, ...l13VocabularyTopics, ...l13PhraseTopics].find(topic => topic.id === focus.question.topicId)?.title ?? 'หัวข้อที่เคยฝึก' : 'หัวข้อที่เคยฝึก';

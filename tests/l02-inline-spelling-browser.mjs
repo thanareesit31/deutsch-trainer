@@ -13,6 +13,8 @@ try{
   await page.setViewportSize({width,height:844});
   for(const q of questions){
    await page.evaluate(id=>start(BANK.questions.filter(q=>q.id===id),1),q.id);
+   assert.equal(await page.getByText(/หัวข้อ \d+ จาก \d+/).count(),0);
+   assert.equal(await page.locator('progress').count(),1);
    assert.equal(await page.locator('input').count(),1);
    assert.equal(await page.locator('.sentence input#response').count(),1);
    assert.equal(await page.locator('label[for="response"],.spelling-meaning,.spelling-thai-help').count(),0);
@@ -22,6 +24,7 @@ try{
    assert.equal(await page.locator('.noun-prefix .article-dot').count(),1);
    const image=await page.locator('.profession-single-portrait').boundingBox(),input=await page.locator('#response').boundingBox();
    assert(image.x+image.width<input.x);
+   assert(image.height<=291,"portrait stays compact enough for the answer controls");
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
    if(q.itemId==='V011'){
     await page.locator('.spelling-cue-image').evaluate(image=>image.complete?true:new Promise(resolve=>image.onload=resolve));
@@ -31,6 +34,11 @@ try{
    await page.locator('#response').press('Enter');
    const attempt=await page.evaluate(()=>activeItem().attempt);
    assert.equal(attempt.correct,true);
+   const answerLine=await page.locator('.feedback p').first().innerText();
+   assert(answerLine.includes(q.feedbackAnswer));
+   assert(answerLine.includes(q.translation));
+   assert.equal(await page.locator('.feedback .thai-translation').count(),0);
+   assert.equal(await page.getByText(/^รูปคำที่เรียนคือ/).count(),0);
    assert.equal(attempt.response,q.acceptedAnswers[0]);
    assert.equal(attempt.translationUsed,false);
    assert.equal(attempt.spellingCuePresentation,'single-person-inline');

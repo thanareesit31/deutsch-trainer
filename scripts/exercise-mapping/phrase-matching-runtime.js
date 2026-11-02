@@ -58,10 +58,6 @@ function matchingQuestion() {
   if (matchFocus?.groupId !== first.question.matchGroupId) matchFocus = null;
   const submitted = block.every(item => item.attempt);
   const done = session.items.filter(item => item.attempt).length;
-  if (session.workflow === 'guided') {
-    const index = BANK.sections.findIndex(topic => topic.topicId === first.question.topicId);
-    app.append(node('p', `หัวข้อ ${index + 1} จาก ${BANK.sections.length} · ${first.question.topicName}`, { class: 'muted' }));
-  }
   const progress = node('div', undefined, { class: 'practice-progress' });
   progress.append(node('span', `${done} / ${session.items.length} ข้อ`), node('progress', undefined, { value: done, max: session.items.length, 'aria-label': 'ความคืบหน้าชุดฝึก' }));
   app.append(progress);
@@ -95,6 +91,7 @@ function matchingQuestion() {
       if (matchFocus?.value === item.question.id) { if (item.response) remove(item.question.id); else { matchFocus = null; render(); } return; }
       matchFocus = { side: 'question', value: item.question.id, groupId: first.question.matchGroupId }; render();
     }, { lang: 'de', 'data-match-prompt': item.question.id, 'data-matched': Boolean(item.response), 'aria-pressed': matchFocus?.side === 'question' && matchFocus.value === item.question.id })));
+    for (const prompt of questions.querySelectorAll('[data-match-prompt]')) { const item=block.find(item=>item.question.id===prompt.dataset.matchPrompt);prompt.replaceChildren();appendGerman(prompt,item.question.sentence,item.question.id); }
     const lines = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     lines.setAttribute('class', 'phrase-match-lines');
     lines.setAttribute('viewBox', '0 0 100 130');
@@ -126,7 +123,7 @@ function matchingQuestion() {
       for (const item of current(state).items.filter(item => ids.includes(item.question.id))) {
         if(item.attempt) continue;
         const result = grade(item);
-        item.attempt = { ...result, response: item.response, confidence: null, status: 'completed', submittedAt: new Date().toISOString(), hintUsed: false, translationUsed: false };
+        item.attempt = { ...result, response: item.response, confidence: null, status: 'completed', submittedAt: new Date().toISOString(), hintUsed: false, translationUsed: item.translationUsed===true, wordHelpTokens: item.wordHelpTokens||[] };
       }
     }), { class: 'primary', id: 'check' });
     check.disabled = block.some(item => !item.response) || new Set(block.map(item => item.response)).size !== 2;

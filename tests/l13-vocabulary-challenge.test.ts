@@ -105,3 +105,14 @@ test("correct guessed or effortful answers are reviewed before confidently corre
     assert.equal(next.round.activityIds[0], "picture-brunnen");
   }
 });
+
+test("sentence word help survives resume before and after the first response", () => {
+  const activity = l13VocabularyChallengeActivities.find(activity => activity.kind === "riddle");
+  assert(activity && activity.kind === "riddle");
+  const state = readChallengeState(null, [activity]);
+  assert(state);
+  state.round.wordHelpTokens = { [activity.id]: ["Hier"] };
+  assert.deepEqual(readChallengeState(JSON.stringify(state), [activity]), state);
+  state.round.responses[activity.id] = { answer: activity.answer, correct: true, submittedAt: "2026-11-02T00:00:00.000Z", wordHelpTokens: ["Hier"] };
+  assert.deepEqual(readChallengeState(JSON.stringify(state), [activity]), state);
+});

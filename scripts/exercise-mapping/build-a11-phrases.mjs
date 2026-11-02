@@ -1,3 +1,4 @@
+import { readPracticeTemplate } from './practice-word-help.mjs';
 import assert from 'node:assert/strict';
 import { readFile, writeFile } from 'node:fs/promises';
 import ts from 'typescript';
@@ -14,7 +15,7 @@ const l01Targets = catalog.items.filter(item => item.lessonId === 'L01' && item.
 const l02Targets = l02Items.filter(item => ['L02-pattern-phone', 'L02-pattern-profession'].includes(item.id)).map(item => ({ id: item.id, lessonId: 'L02', de: item.title, th: item.meaning, sourceStatus: 'existing-published-l02-migration' }));
 for (const example of l02StatusExamples) l02Targets.push({ id: example.id, lessonId: 'L02', de: example.de, th: example.th, sourceStatus: 'existing-published-l02-migration' });
 const targets = [...l01Targets, ...l02Targets, ...a11AuthoredPhraseTargets];
-const template = await read('scripts/exercise-mapping/preview-template.html');
+const template = await readPracticeTemplate();
 const planner = ts.transpileModule(await read('src/lib/practice-planner.ts'), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2020 } }).outputText.replace(/^export /gm, '');
 const definitions = [];
 const inventory = [];

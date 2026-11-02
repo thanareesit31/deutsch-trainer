@@ -5991,6 +5991,9 @@ select {
 .l14-vocab-question-layout{display:grid;grid-template-columns:minmax(230px,38%) 1fr;gap:36px;align-items:start}
 .l14-vocab-visual{min-height:240px;display:grid;place-items:center;border:1px solid #e3eade;background:#f4f7f1;border-radius:20px;overflow:hidden}
 .l14-vocab-visual img{width:100%;height:auto;max-height:340px;object-fit:cover}
+.l14-vocab-visual[data-question-kind="meaning"]{min-height:0;background:transparent;border:0}
+.l14-vocab-visual[data-question-kind="meaning"] img{width:min(100%,200px);max-height:290px;object-fit:contain}
+.l14-vocab-visual[data-question-kind="meaning"] .guided-route-diagram{width:min(100%,200px);max-height:290px}
 .l14-vocab-visual strong{font-size:clamp(30px,4vw,54px)}
 .l14-vocab-visual .guided-route-diagram{width:min(100%,320px);height:auto}
 .l14-vocab-context{min-height:240px;display:flex;flex-direction:column;justify-content:center;gap:16px;padding:24px;border:1px solid #e3eade;background:#f4f7f1;border-radius:20px}
@@ -6053,11 +6056,11 @@ select {
 .l13-vocab-challenge-options button[aria-pressed=true]{background:#eaf3e9;border:2px solid #386b50}
 .l13-vocab-challenge-options button:disabled{cursor:default;opacity:1}
 .l13-vocab-picture-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);align-items:center;gap:24px;margin-top:26px}
-.l13-vocab-picture-layout .l13-vocab-challenge-image{width:100%;max-height:340px;object-fit:contain;margin:0}
+.l13-vocab-picture-layout .l13-vocab-challenge-image{width:min(100%,200px);max-height:290px;object-fit:contain;margin:0 auto}
 .l13-vocab-picture-layout .l13-vocab-challenge-options{grid-template-columns:1fr}
 .l13-vocab-picture-layout .l13-vocab-challenge-options button{font-size:20px}
 .l13-vocab-article-target{font-size:clamp(25px,2.5vw,34px);text-align:center;margin:16px 0 0;color:#344c3c;font-weight:600}
-@media(max-width:760px){.l13-vocab-picture-layout{grid-template-columns:1fr;gap:20px}.l13-vocab-picture-layout .l13-vocab-challenge-image{max-height:none}}
+@media(max-width:760px){.l13-vocab-picture-layout{grid-template-columns:1fr;gap:20px}.l13-vocab-picture-layout .l13-vocab-challenge-image{max-height:220px}}
 @media(max-width:760px){.l13-vocab-challenge{padding:24px 16px 60px}.l13-vocab-challenge-options{grid-template-columns:1fr}}
 
 /* Shared standalone nouns keep Artikel visible without disclosing Artikel answers. */
@@ -6135,3 +6138,13 @@ select {
 .a11-phrase-learning .practice-progress-track{height:7px;border-radius:999px;background:#e8eee5;overflow:hidden}
 .a11-phrase-learning .practice-progress-track span{display:block;height:100%;background:var(--green);border-radius:inherit}
 @media(max-width:720px){:lang(th):is(h1,h2,h3,p,button,a,label,small,strong,span,div){line-height:1.8}}
+
+.practice-word-meaning{position:relative;cursor:help;border-bottom:1px dotted #a4b2a6}
+.practice-word-meaning:hover::after,.practice-word-meaning:focus::after{content:attr(data-th);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);width:max-content;max-width:220px;padding:6px 10px;border-radius:8px;background:#293f34;color:white;font:14px/1.5 "DM Sans","Noto Sans Thai",sans-serif;z-index:10;box-shadow:0 3px 12px #0002;white-space:normal;pointer-events:none}
+.practice-word-meaning:focus-visible{outline:2px solid #2c5a45;outline-offset:3px}
+.l14-inline-spelling .inline-practice-response{min-width:0;max-width:100%;width:100%;border:0;border-bottom:2px solid #829082;border-radius:0;background:transparent;font:inherit;font-size:24px;padding:4px 2px}
+.l14-inline-spelling .inline-practice-response:focus{outline:2px solid #2c5a45;outline-offset:4px}
+.l14-vocab-question-layout:has(.l14-inline-spelling){grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)}
+.l14-vocab-visual[data-question-kind="spelling"]{min-height:0;background:transparent;border:0}
+.l14-vocab-visual[data-question-kind="spelling"] img{width:min(100%,200px);max-height:290px;object-fit:contain}
+@media(max-width:520px){.l14-vocab-question-layout:has(.l14-inline-spelling){gap:14px}.l14-inline-spelling .inline-practice-response{font-size:20px}}

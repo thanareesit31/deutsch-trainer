@@ -69,6 +69,8 @@ export async function createDatabase() {
     "20261030010000_a11_grammar_practice.sql",
     "20261030020000_a11_phrase_practice.sql",
     "20261031000000_repair_incomplete_practice_cursor.sql",
+    "20261031010000_restore_lesson_state_keys.sql",
+    "20261101000000_dual_vocabulary_meaning.sql",
   ])
     await db.exec(
       await readFile(
