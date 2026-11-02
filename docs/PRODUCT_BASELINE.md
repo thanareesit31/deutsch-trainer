@@ -627,3 +627,7 @@ German sentence words with reviewed project meanings support pointer hover, keyb
 ## L02 vocabulary Learn completion, 2 November 2026
 
 Vocabulary completion percentages across lesson cards, level summaries and Progress use the targets actually reachable through current Learn activities. For L02, include the current number boards, profession activities and Familienstand image-learning route; retired number activities remain available in historical data but do not enlarge the current Learn denominator. Completed image words count alongside account exposures for their current targets and other image-learning routes. Derive the target set from the same flow and image-group selectors as navigation; do not hardcode the percentage or mark unlearned words as exposed. The current L02 target set contains 88 words. These percentages represent Learn completion, not independent vocabulary mastery.
+
+## Mobile speech audio routing, 2 November 2026
+
+For learner-started speech synthesis, request the browser's `playback` audio session only while an utterance is active when the Audio Session API is available, then restore the previous type. Keep speech directly tied to the learner's tap. Browsers without this API retain their existing routing. The playback session may briefly pause other media and must not persist after speech ends or errors.

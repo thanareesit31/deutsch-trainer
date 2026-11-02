@@ -2,6 +2,44 @@
 
 import { useEffect, useState } from "react";
 
+type AudioSession = { type: string };
+let activeSpeechSessions = 0;
+let previousAudioSession: AudioSession | undefined;
+let previousAudioSessionType: string | undefined;
+
+function acquireSpeechAudioSession() {
+  if (typeof navigator === "undefined") return () => {};
+  const session = (navigator as Navigator & { audioSession?: AudioSession }).audioSession;
+  if (!session) return () => {};
+  if (activeSpeechSessions === 0) {
+    previousAudioSession = session;
+    previousAudioSessionType = session.type;
+  }
+  activeSpeechSessions++;
+  try {
+    session.type = "playback";
+  } catch {
+    // Safari versions without writable AudioSession support keep their default route.
+  }
+  let released = false;
+  return () => {
+    if (released) return;
+    released = true;
+    activeSpeechSessions--;
+    if (activeSpeechSessions > 0) return;
+    const restoreSession = previousAudioSession;
+    const restoreType = previousAudioSessionType;
+    previousAudioSession = undefined;
+    previousAudioSessionType = undefined;
+    if (!restoreSession || !restoreType || restoreSession.type === restoreType) return;
+    try {
+      restoreSession.type = restoreType;
+    } catch {
+      // Keep playback functional if Safari rejects restoring the previous session.
+    }
+  };
+}
+
 export function useGermanVoice() {
   const [voice, setVoice] = useState<SpeechSynthesisVoice | null>(null);
   useEffect(() => {
@@ -37,6 +75,7 @@ export function speakGermanText(
     return false;
   }
   const synth = window.speechSynthesis;
+  let releaseAudioSession = () => {};
   try {
     const availableVoices = synth.getVoices();
     const selectedVoice = availableVoices.find(candidate => candidate.lang.toLowerCase().startsWith("de"))
@@ -47,17 +86,31 @@ export function speakGermanText(
       callbacks.onError?.();
       return false;
     }
+    releaseAudioSession = acquireSpeechAudioSession();
     if (synth.speaking || synth.pending || synth.paused) synth.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "de-DE";
     utterance.voice = selectedVoice;
     utterance.rate = rate;
     utterance.onstart = callbacks.onStart ?? null;
-    utterance.onend = callbacks.onEnd ?? null;
-    utterance.onerror = callbacks.onError ?? null;
+    utterance.onend = () => {
+      try {
+        callbacks.onEnd?.();
+      } finally {
+        releaseAudioSession();
+      }
+    };
+    utterance.onerror = () => {
+      try {
+        callbacks.onError?.();
+      } finally {
+        releaseAudioSession();
+      }
+    };
     synth.speak(utterance);
     return true;
   } catch {
+    releaseAudioSession();
     callbacks.onError?.();
     return false;
   }

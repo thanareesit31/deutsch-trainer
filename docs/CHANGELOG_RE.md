@@ -1,5 +1,11 @@
 # Requirement & Experience Changelog
 
+## 2026-11-02 - Route Safari speech through the playback audio session
+
+- Changed: when the browser exposes `navigator.audioSession`, speech playback temporarily requests the `playback` session and restores the previous session after the utterance ends or errors.
+- Why: the learner can hear Safari speech through headphones while other video audio already plays through the iPhone speaker, pointing to Safari's speech audio route rather than the device's overall volume. WebKit documents iOS output routing changes around microphone and audio-session state; see https://bugs.webkit.org/show_bug.cgi?id=218012 and https://bugs.webkit.org/show_bug.cgi?id=231421.
+- Impact: this only applies during a user-started utterance and gracefully falls back where AudioSession is unavailable. The playback session can briefly pause other media. Local change only; a physical iPhone speaker check is still needed.
+
 ## 2026-11-02 - Keep vocabulary completion percentages in sync
 
 - Changed: lesson cards, level summaries, the lesson skill cards and the Progress vocabulary total now count completed image-learning words alongside account exposures. L02 overview percentages use the same 88 current Learn targets as its lesson detail instead of the retired 99-item catalog denominator.
