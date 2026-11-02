@@ -1,5 +1,11 @@
 # Requirement & Experience Changelog
 
+## 2026-11-02 - Correct L02 vocabulary Learn completion
+
+- Changed: the L02 vocabulary card counts targets from the current number boards, profession activities and Familienstand image route. It combines account exposures with saved image-learning completion for those targets.
+- Why: the old denominator included 11 retired number targets and ignored 7 completed image words. The affected account therefore showed 81/99, or 82%, despite completing all 88 current targets.
+- Impact: the same existing account evidence produces 88/88, or 100%, without writing exposures, changing answers or resetting history. This is Learn completion, not a mastery score. Other lesson and skill calculations remain unchanged. Regression coverage also verifies incomplete and empty evidence stay below 100%.
+
 ## 2026-11-02 - Production release of shared practice presentation
 
 - Release scope: inline response blanks, compact images, combined vocabulary feedback, hidden group headings and recorded sentence word help across the implemented L01-L18 practice flows; dual meaning practice is included in its existing lesson scope.

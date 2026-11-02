@@ -1,5 +1,7 @@
 "use client";
 import { useContent } from "./content-provider";
+import { l02VocabularyProgress } from "@/lib/l02-vocabulary-progress";
+import { readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
 import { L02PhraseLearning } from "./l02-phrase-learning";
 import { L13ContextLesson } from "./l13-context-reading";
 import { PracticeAccountSync } from "./practice-account-sync";
@@ -636,14 +638,19 @@ function LessonDetail({ id }: { id: string }) {
         {lessonSkills.map((s) => {
           const Icon = skillIcons[s.id];
           const hasDedicatedContent = s.id === "phrases" && (id === "L14" || (isA11PhrasePracticeAvailable(user) && /^L(?:0[3-9]|1[0-2])$/.test(id)));
-          const pool = items.filter(
+          const l02Progress = id === "L02" && s.id === "vocabulary" ? l02VocabularyProgress({
+            items, flow: lesson.learningFlows?.vocabulary,
+            exposureIds: history.exposures.map(exposure => exposure.item_id),
+            imageLearnedIds: readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.l02Vocabulary)),
+          }) : undefined;
+          const pool = l02Progress?.targets ?? items.filter(
             (i) => i.lessonId === id && i.skill === s.id,
           );
           const discovery = s.id === "grammar" ? grammarDiscoveryLesson(id) : undefined;
           const discoveryCompleted = discovery
             ? completedDiscoveryTopics(lessonState.read(lessonStateKeys.discoveryGrammar(id)), discovery).length
             : 0;
-          const pct = pool.length
+          const pct = l02Progress?.percentage ?? (pool.length
             ? Math.round(
                 (pool.filter((i) =>
                   history.exposures.some((e) => e.item_id === i.id),
@@ -651,7 +658,7 @@ function LessonDetail({ id }: { id: string }) {
                   100) /
                   pool.length,
               )
-            : 0;
+            : 0);
           const content = (
             <>
               <div className="skill-top">
