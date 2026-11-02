@@ -1,4 +1,5 @@
 "use client";
+import { speakGermanText } from "./german-audio";
 import { ArbeitsbuchActivity } from "./l13-l14-arbeitsbuch-activity";
 import { SupplementalActivity } from "./l13-l14-supplemental-activity";
 
@@ -167,15 +168,8 @@ function ExerciseQuestion({ question, onAnswer }: { question: CourseQuestion; on
     onAnswer(value, correct, hintCount, evaluation);
   }
   function speak(text: string) {
-    const voices = typeof window !== "undefined" ? window.speechSynthesis?.getVoices() ?? [] : [];
-    const voice = voices.find((entry) => entry.lang.toLowerCase().startsWith("de"));
-    if (!voice || !window.speechSynthesis) { setFeedback("อุปกรณ์นี้ไม่มีเสียงสังเคราะห์ภาษาเยอรมัน จึงไม่บันทึกคะแนนการฟัง"); return; }
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = voice.lang;
-    utterance.voice = voice;
-    utterance.onend = () => setAudioPlayed(true);
-    window.speechSynthesis.speak(utterance);
+    const failed = () => setFeedback("เล่นเสียงไม่สำเร็จ จึงยังไม่บันทึกว่าฟังแล้ว กรุณาลองอีกครั้ง");
+    if (!speakGermanText(text, null, { onEnd: () => setAudioPlayed(true), onError: failed })) failed();
   }
   const isQuestionCorrect = (candidate: string) => {
     switch (question.kind) {

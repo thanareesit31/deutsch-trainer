@@ -22,7 +22,7 @@ export function TeenNumberExample({ tens = false, compound = false }: { tens?: b
     window.speechSynthesis?.cancel();
     setPart(null);
     setError("");
-    if (!voice || !("speechSynthesis" in window)) {
+    if (!("speechSynthesis" in window)) {
       setError("อุปกรณ์นี้ยังไม่มีเสียงภาษาเยอรมัน กรุณาเปิด German voice แล้วลองอีกครั้ง");
       return;
     }
@@ -33,7 +33,8 @@ export function TeenNumberExample({ tens = false, compound = false }: { tens?: b
       if (generation.current !== current) return;
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = "de-DE";
-      utterance.voice = voice;
+      const selectedVoice = window.speechSynthesis.getVoices().find(candidate => candidate.lang.toLowerCase().startsWith("de")) ?? voice;
+      if (selectedVoice) utterance.voice = selectedVoice;
       utterance.rate = 0.65;
       utterance.onstart = () => { if (generation.current === current) setPart(phase); };
       utterance.onend = () => {

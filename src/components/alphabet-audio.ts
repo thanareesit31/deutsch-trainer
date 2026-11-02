@@ -29,13 +29,6 @@ export function useAlphabetAudio() {
         return true;
       }
 
-      if (!voice) {
-        setError(
-          "ยังไม่มีไฟล์เสียงตัวอักษร และอุปกรณ์นี้ไม่พบเสียงภาษาเยอรมันสำหรับสังเคราะห์เสียง",
-        );
-        return false;
-      }
-
       const started = speakGermanText(
         item.pronunciation,
         voice,
@@ -64,6 +57,5 @@ export function useAlphabetAudio() {
   return {
     play,
     error,
-    voiceAvailable: !!voice,
   };
 }

@@ -30,19 +30,26 @@ export function speakGermanText(
   rate = 0.8,
 ): boolean {
   if (
-    !voice ||
     typeof window === "undefined" ||
-    !("speechSynthesis" in window)
+    !("speechSynthesis" in window) ||
+    typeof SpeechSynthesisUtterance === "undefined"
   ) {
     return false;
   }
-  window.speechSynthesis.cancel();
+  const synth = window.speechSynthesis;
+  const selectedVoice = synth.getVoices().find(candidate => candidate.lang.toLowerCase().startsWith("de")) ?? voice;
+  synth.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "de-DE";
-  utterance.voice = voice;
+  if (selectedVoice) utterance.voice = selectedVoice;
   utterance.rate = rate;
   utterance.onend = callbacks.onEnd ?? null;
   utterance.onerror = callbacks.onError ?? null;
-  window.speechSynthesis.speak(utterance);
-  return true;
+  try {
+    synth.speak(utterance);
+    return true;
+  } catch {
+    callbacks.onError?.();
+    return false;
+  }
 }

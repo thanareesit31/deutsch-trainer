@@ -36,7 +36,7 @@ export function AlphabetLearningPage() {
   const [showBoard, setShowBoard] = useState(false);
   const [revisitingFromBoard, setRevisitingFromBoard] = useState(false);
   const [hydrated, setHydrated] = useState(false);
-  const { play, error, voiceAvailable } = useAlphabetAudio();
+  const { play, error } = useAlphabetAudio();
   const hasMissingAudio = configuration.items.some((item) => !item.audio);
 
   useEffect(() => {
@@ -173,9 +173,6 @@ export function AlphabetLearningPage() {
         <p className="alphabet-audio-notice">
           เสียงสังเคราะห์อาจแตกต่างกันตามเครื่องและเบราว์เซอร์ที่ใช้เรียน
         </p>
-      )}
-      {!voiceAvailable && hasMissingAudio && (
-        <p className="alphabet-audio-error" role="status">ยังไม่พบ German voice ในอุปกรณ์นี้ หากกดฟังแล้วไม่มีเสียง ให้เลือก German voice ในระบบก่อน</p>
       )}
       {learned.has(current.item.id) && <p className="alphabet-learned-indicator">เรียนแล้ว</p>}
       <Activity

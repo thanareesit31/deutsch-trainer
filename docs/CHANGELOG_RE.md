@@ -1,5 +1,11 @@
 # Requirement & Experience Changelog
 
+## 2026-11-02 - Avoid blocking German speech on an unloaded mobile voice list
+
+- Changed: the shared German speech helper refreshes the available voice list when the learner taps. It prefers a German voice and otherwise requests de-DE without an explicit voice. Removed early null-voice rejection from Alphabet, Practice, number examples and the L13-L14 exercise runner. Practice listening buttons remain enabled while the browser voice list loads; its prompt no longer reports a missing voice before playback is attempted.
+- Why: the previous guard returned before calling speechSynthesis.speak when the cached voice was null, even if the browser could select its language default. Practice also disabled the listening button on that same null value. The guard failure is reproduced in a focused regression test.
+- Impact: playback still starts from the tap, does not autoplay on page load, and listening completion still waits for the end event. Unsupported APIs and synchronous playback refusal remain failures. Tests simulate the speech API boundary; they do not prove audible playback on iPhone Safari. Local change only; not deployed.
+
 ## 2026-11-02 - Correct L02 vocabulary Learn completion
 
 - Changed: the L02 vocabulary card counts targets from the current number boards, profession activities and Familienstand image route. It combines account exposures with saved image-learning completion for those targets.

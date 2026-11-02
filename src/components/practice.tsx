@@ -265,8 +265,8 @@ function QuestionCard({
     }
   }
   function speak() {
-    if (!voice || !("speechSynthesis" in window)) {
-      setError("อุปกรณ์นี้ยังไม่มีเสียงภาษาเยอรมัน กรุณาเปิดใช้งานเสียงก่อน");
+    if (!("speechSynthesis" in window)) {
+      setError("อุปกรณ์นี้ไม่รองรับการเล่นเสียงในเบราว์เซอร์นี้");
       return;
     }
     setError("");
@@ -288,7 +288,7 @@ function QuestionCard({
     );
     if (!started) {
       setSpeaking(false);
-      setError("อุปกรณ์นี้ยังไม่มีเสียงภาษาเยอรมัน กรุณาเปิดใช้งานเสียงก่อน");
+      setError("อุปกรณ์นี้ไม่รองรับการเล่นเสียงในเบราว์เซอร์นี้");
     }
   }
   function addChar(char: string) {
@@ -328,16 +328,14 @@ function QuestionCard({
             <button
               className={`listen-button ${speaking ? "speaking" : ""}`}
               onClick={speak}
-              disabled={!voice || speaking}
+              disabled={speaking}
               aria-label="ฟังเสียงภาษาเยอรมัน"
             >
               <Volume2 size={38} />
             </button>
             <h2>คุณได้ยินคำว่าอะไร?</h2>
             <p>
-              {voice
-                ? "กดฟังให้จบก่อนเลือกคำตอบ ฟังซ้ำได้เสมอ"
-                : "ไม่พบเสียงเยอรมัน กรุณาเปิดเสียงในอุปกรณ์ก่อน"}
+              กดฟังให้จบก่อนเลือกคำตอบ ฟังซ้ำได้เสมอ
             </p>
           </>
         ) : (
