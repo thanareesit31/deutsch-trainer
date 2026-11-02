@@ -281,14 +281,14 @@ function QuestionCard({
         },
         onError: () => {
           setSpeaking(false);
-          setError("เล่นเสียงไม่สำเร็จ ลองกดฟังอีกครั้ง");
+          setError("Safari ยังไม่พบเสียงที่พร้อมใช้ ลองรอสักครู่แล้วกดฟังอีกครั้ง");
         },
       },
       0.8,
     );
     if (!started) {
       setSpeaking(false);
-      setError("อุปกรณ์นี้ไม่รองรับการเล่นเสียงในเบราว์เซอร์นี้");
+      setError("Safari ยังไม่พบเสียงที่พร้อมใช้ ลองรอสักครู่แล้วกดฟังอีกครั้ง");
     }
   }
   function addChar(char: string) {

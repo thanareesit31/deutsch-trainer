@@ -26,7 +26,7 @@ export function useGermanVoice() {
 export function speakGermanText(
   text: string,
   voice: SpeechSynthesisVoice | null,
-  callbacks: { onEnd?: () => void; onError?: () => void } = {},
+  callbacks: { onStart?: () => void; onEnd?: () => void; onError?: () => void } = {},
   rate = 0.8,
 ): boolean {
   if (
@@ -37,15 +37,24 @@ export function speakGermanText(
     return false;
   }
   const synth = window.speechSynthesis;
-  const selectedVoice = synth.getVoices().find(candidate => candidate.lang.toLowerCase().startsWith("de")) ?? voice;
-  synth.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "de-DE";
-  if (selectedVoice) utterance.voice = selectedVoice;
-  utterance.rate = rate;
-  utterance.onend = callbacks.onEnd ?? null;
-  utterance.onerror = callbacks.onError ?? null;
   try {
+    const availableVoices = synth.getVoices();
+    const selectedVoice = availableVoices.find(candidate => candidate.lang.toLowerCase().startsWith("de"))
+      ?? voice
+      ?? availableVoices.find(candidate => candidate.default)
+      ?? availableVoices[0];
+    if (!selectedVoice) {
+      callbacks.onError?.();
+      return false;
+    }
+    if (synth.speaking || synth.pending || synth.paused) synth.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "de-DE";
+    utterance.voice = selectedVoice;
+    utterance.rate = rate;
+    utterance.onstart = callbacks.onStart ?? null;
+    utterance.onend = callbacks.onEnd ?? null;
+    utterance.onerror = callbacks.onError ?? null;
     synth.speak(utterance);
     return true;
   } catch {

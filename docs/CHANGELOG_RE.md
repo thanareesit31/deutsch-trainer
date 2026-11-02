@@ -1,10 +1,10 @@
 # Requirement & Experience Changelog
 
-## 2026-11-02 - Avoid blocking German speech on an unloaded mobile voice list
+## 2026-11-02 - Select an explicit voice for Safari speech playback
 
-- Changed: the shared German speech helper refreshes the available voice list when the learner taps. It prefers a German voice and otherwise requests de-DE without an explicit voice. Removed early null-voice rejection from Alphabet, Practice, number examples and the L13-L14 exercise runner. Practice listening buttons remain enabled while the browser voice list loads; its prompt no longer reports a missing voice before playback is attempted.
-- Why: the previous guard returned before calling speechSynthesis.speak when the cached voice was null, even if the browser could select its language default. Practice also disabled the listening button on that same null value. The guard failure is reproduced in a focused regression test.
-- Impact: playback still starts from the tap, does not autoplay on page load, and listening completion still waits for the end event. Unsupported APIs and synchronous playback refusal remain failures. Tests simulate the speech API boundary; they do not prove audible playback on iPhone Safari. Local change only; not deployed.
+- Changed: the shared German speech helper selects an installed German voice, or the system default as a fallback, and always sets it explicitly on the utterance. When Safari has no voices available yet, it reports that state instead of sending an utterance with a null voice. Alphabet, Practice, number examples and L13-L14 exercises use the same selection logic. Practice listening buttons stay enabled while voices load.
+- Why: WebKit has a reported Safari regression where speech can stop when the utterance's voice is null, despite the Web Speech API's default-voice behavior. The earlier change allowed an unset voice, which explains why tapping could still produce no sound. See https://bugs.webkit.org/show_bug.cgi?id=243055.
+- Impact: playback stays tied to a learner tap and listening completion waits for the end event. If no installed voice is exposed, learners get a retry prompt instead of a silent attempt. Regression tests simulate the speech API boundary; they do not prove audible playback on iPhone Safari. Local change only; not deployed.
 
 ## 2026-11-02 - Correct L02 vocabulary Learn completion
 

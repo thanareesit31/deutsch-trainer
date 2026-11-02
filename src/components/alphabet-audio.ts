@@ -14,11 +14,10 @@ export function useAlphabetAudio() {
       setError("");
       audioRef.current?.pause();
       audioRef.current = null;
-      if (typeof window !== "undefined" && "speechSynthesis" in window) {
-        window.speechSynthesis.cancel();
-      }
-
       if (item.audio) {
+        if (typeof window !== "undefined" && "speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+        }
         const audio = new Audio(item.audio);
         audioRef.current = audio;
         audio.onended = () => onEnd?.();

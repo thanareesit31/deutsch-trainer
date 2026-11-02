@@ -18,12 +18,12 @@ export function useVocabularyAudio() {
     const current = ++attempt.current;
     audio.current?.pause();
     audio.current = null;
-    window.speechSynthesis?.cancel();
     setError("");
     const failed = () => {
       if (active.current && current === attempt.current) setError("เล่นเสียงไม่สำเร็จ กดคำศัพท์เพื่อลองฟังอีกครั้ง");
     };
     if (source) {
+      window.speechSynthesis?.cancel();
       const sound = new Audio(source);
       audio.current = sound;
       sound.onerror = failed;

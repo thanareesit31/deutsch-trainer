@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 import { Volume2 } from "lucide-react";
-import { useGermanVoice } from "./german-audio";
+import { speakGermanText, useGermanVoice } from "./german-audio";
 
 export function TeenNumberExample({ tens = false, compound = false }: { tens?: boolean; compound?: boolean }) {
   const example = compound ? { number: "21", root: "ein", ending: "zwanzig" } : tens ? { number: "40", root: "vier", ending: "zig" } : { number: "13", root: "drei", ending: "zehn" };
@@ -19,38 +19,32 @@ export function TeenNumberExample({ tens = false, compound = false }: { tens?: b
 
   function play() {
     const current = ++generation.current;
-    window.speechSynthesis?.cancel();
     setPart(null);
     setError("");
-    if (!("speechSynthesis" in window)) {
-      setError("อุปกรณ์นี้ยังไม่มีเสียงภาษาเยอรมัน กรุณาเปิด German voice แล้วลองอีกครั้ง");
-      return;
-    }
     setPlaying(true);
+    let failed = false;
+    function fail() {
+      if (generation.current !== current || failed) return;
+      failed = true;
+      generation.current++;
+      setPart(null);
+      setPlaying(false);
+      setError("Safari ยังไม่พบเสียงที่พร้อมใช้ ลองรอสักครู่แล้วกดฟังอีกครั้ง");
+    }
     // Read each part separately so arrow timing follows real speech events,
     // rather than guessing syllable timing from a browser-dependent voice.
     function read(text: string, phase: "units" | "connector" | "tens", next?: () => void) {
       if (generation.current !== current) return;
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = "de-DE";
-      const selectedVoice = window.speechSynthesis.getVoices().find(candidate => candidate.lang.toLowerCase().startsWith("de")) ?? voice;
-      if (selectedVoice) utterance.voice = selectedVoice;
-      utterance.rate = 0.65;
-      utterance.onstart = () => { if (generation.current === current) setPart(phase); };
-      utterance.onend = () => {
-        if (generation.current !== current) return;
-        if (next) next();
-        else { setPart(null); setPlaying(false); }
-      };
-      utterance.onerror = (event) => {
-        if (generation.current !== current) return;
-        generation.current++;
-        setPart(null);
-        setPlaying(false);
-        if (event.error !== "canceled" && event.error !== "interrupted")
-          setError("เล่นเสียงไม่สำเร็จ กรุณาลองอีกครั้ง");
-      };
-      window.speechSynthesis.speak(utterance);
+      const started = speakGermanText(text, voice, {
+        onStart: () => { if (generation.current === current) setPart(phase); },
+        onEnd: () => {
+          if (generation.current !== current) return;
+          if (next) next();
+          else { setPart(null); setPlaying(false); }
+        },
+        onError: fail,
+      }, 0.65);
+      if (!started) fail();
     }
     read(example.root, "units", () => compound ? read("und", "connector", () => read(example.ending, "tens")) : read(example.ending, "tens"));
   }
