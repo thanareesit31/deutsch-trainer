@@ -1,3 +1,5 @@
+import type { Item } from "./content";
+
 export function readLearnedImageVocabularyIds(value: string | null): string[] {
   try {
     const parsed: unknown = value ? JSON.parse(value) : [];
@@ -9,6 +11,20 @@ export function readLearnedImageVocabularyIds(value: string | null): string[] {
   } catch {
     return [];
   }
+}
+
+export function learningProgressItemIds(
+  items: readonly Item[],
+  exposureIds: readonly string[],
+  imageStates: readonly (string | null)[],
+): Set<string> {
+  const vocabularyIds = new Set(
+    items.filter((item) => item.skill === "vocabulary").map((item) => item.id),
+  );
+  const imageLearnedIds = imageStates
+    .flatMap(readLearnedImageVocabularyIds)
+    .filter((id) => vocabularyIds.has(id));
+  return new Set([...exposureIds, ...imageLearnedIds]);
 }
 
 export function writeLearnedImageVocabularyIds(value: string | null, ids: string[]): string {

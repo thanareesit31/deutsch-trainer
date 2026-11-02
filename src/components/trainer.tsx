@@ -1,7 +1,7 @@
 "use client";
 import { useContent } from "./content-provider";
 import { l02VocabularyProgress } from "@/lib/l02-vocabulary-progress";
-import { readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
+import { learningProgressItemIds, readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
 import { L02PhraseLearning } from "./l02-phrase-learning";
 import { L13ContextLesson } from "./l13-context-reading";
 import { PracticeAccountSync } from "./practice-account-sync";
@@ -538,6 +538,18 @@ function App() {
 function LessonList({ initialLevel }: { initialLevel: string }) {
   const { items, lessons, coreVocabulary } = useContent();
   const history = useLearning();
+  const lessonState = useLessonState();
+  const imageStates = [
+    lessonState.read(lessonStateKeys.images),
+    lessonState.read(lessonStateKeys.l02Vocabulary),
+    lessonState.read(lessonStateKeys.l13Images),
+    ...lessons.map((lesson) => lessonState.read(lessonStateKeys.vocabularyImages(lesson.id))),
+  ];
+  const learnedIds = learningProgressItemIds(
+    items,
+    history.exposures.map((exposure) => exposure.item_id),
+    imageStates,
+  );
   const [level, setLevel] = useState(initialLevel);
   return (
     <>
@@ -567,11 +579,15 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
         {lessons
           .filter((l) => l.level === level)
           .map((l) => {
-            const pool = coreVocabulary.filter((w) => w.lessonId === l.id);
-            const learned = pool.filter((w) =>
-              history.exposures.some((e) => e.item_id === w.id),
-            ).length;
-            const pct = pool.length ? Math.round((learned / pool.length) * 100) : 0;
+            const l02Progress = l.id === "L02" ? l02VocabularyProgress({
+              items,
+              flow: l.learningFlows?.vocabulary,
+              exposureIds: history.exposures.map((exposure) => exposure.item_id),
+              imageLearnedIds: readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.l02Vocabulary)),
+            }) : undefined;
+            const pool = l02Progress?.targets ?? coreVocabulary.filter((w) => w.lessonId === l.id);
+            const learned = pool.filter((w) => learnedIds.has(w.id)).length;
+            const pct = l02Progress?.percentage ?? (pool.length ? Math.round((learned / pool.length) * 100) : 0);
             const any = learned > 0;
             return (
               <Link className="lesson-card" href={`/lesson/${l.id}`} key={l.id}>
@@ -615,6 +631,17 @@ function LessonDetail({ id }: { id: string }) {
   const { user } = useStore();
   const history = useLearning();
   const lessonState = useLessonState();
+  const imageStates = [
+    lessonState.read(lessonStateKeys.images),
+    lessonState.read(lessonStateKeys.l02Vocabulary),
+    lessonState.read(lessonStateKeys.l13Images),
+    ...lessons.map((entry) => lessonState.read(lessonStateKeys.vocabularyImages(entry.id))),
+  ];
+  const learnedIds = learningProgressItemIds(
+    items,
+    history.exposures.map((exposure) => exposure.item_id),
+    imageStates,
+  );
   const lessonSkills = skills;
   return (
     <>
@@ -652,9 +679,7 @@ function LessonDetail({ id }: { id: string }) {
             : 0;
           const pct = l02Progress?.percentage ?? (pool.length
             ? Math.round(
-                (pool.filter((i) =>
-                  history.exposures.some((e) => e.item_id === i.id),
-                ).length *
+                (pool.filter((i) => learnedIds.has(i.id)).length *
                   100) /
                   pool.length,
               )

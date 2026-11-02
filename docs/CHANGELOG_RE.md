@@ -1,5 +1,11 @@
 # Requirement & Experience Changelog
 
+## 2026-11-02 - Keep vocabulary completion percentages in sync
+
+- Changed: lesson cards, level summaries, the lesson skill cards and the Progress vocabulary total now count completed image-learning words alongside account exposures. L02 overview percentages use the same 88 current Learn targets as its lesson detail instead of the retired 99-item catalog denominator.
+- Why: image matching stores completion in lesson state, while several overview percentages read only `item_exposures`; those views therefore stayed unchanged after completing image words. The earlier L02 correction covered its lesson detail only.
+- Impact: this updates displayed Learn completion and per-item learned status without fabricating exposures, attempts, scores or mastery. Existing IDs and saved learning state remain unchanged. Production deployment not yet done.
+
 ## 2026-11-02 - Select an explicit voice for Safari speech playback
 
 - Changed: the shared German speech helper selects an installed German voice, or the system default as a fallback, and always sets it explicitly on the utterance. When Safari has no voices available yet, it reports that state instead of sending an utterance with a null voice. Alphabet, Practice, number examples and L13-L14 exercises use the same selection logic. Practice listening buttons stay enabled while voices load.

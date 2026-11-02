@@ -43,13 +43,33 @@ import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
 import { completedDiscoveryTopics } from "@/lib/grammar-discovery-progress";
 import { clearLastLessonPageRequest, isLastLessonPageRequested } from "@/lib/test-workspace-last-page";
 import { useLearning } from "./learning-store";
+import { l02VocabularyProgress } from "@/lib/l02-vocabulary-progress";
+import { learningProgressItemIds, readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
 import { Empty, Meter, SectionTitle, skillIcons } from "./ui";
 import type { StartSession } from "./trainer";
 export function LearningHome() {
   const h = useLearning();
   const { items, lessons, coreVocabulary } = useContent();
+  const lessonState = useLessonState();
   const completed = completedAttempts(h.attempts);
-  const seen = new Set(h.exposures.map((e) => e.item_id));
+  const imageStates = [
+    lessonState.read(lessonStateKeys.images),
+    lessonState.read(lessonStateKeys.l02Vocabulary),
+    lessonState.read(lessonStateKeys.l13Images),
+    ...lessons.map((lesson) => lessonState.read(lessonStateKeys.vocabularyImages(lesson.id))),
+  ];
+  const seen = learningProgressItemIds(
+    items,
+    h.exposures.map((exposure) => exposure.item_id),
+    imageStates,
+  );
+  const l02 = lessons.find((entry) => entry.id === "L02");
+  const l02Progress = l02VocabularyProgress({
+    items,
+    flow: l02?.learningFlows?.vocabulary,
+    exposureIds: h.exposures.map((exposure) => exposure.item_id),
+    imageLearnedIds: readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.l02Vocabulary)),
+  });
   const practiced = h.knowledge.filter((k) => Number(k.attempts) > 0);
   const review = reviewCandidates(items, h.sessionItems, h.attempts);
   const latestExposure = [...h.exposures].sort((a, b) =>
@@ -215,9 +235,12 @@ export function LearningHome() {
           </SectionTitle>
           <div className="level-cards">
             {["A1.1", "A1.2", "A1.3"].map((level, i) => {
-              const pool = coreVocabulary.filter(
-                (w) => getLevel(w.lessonId) === level,
-              );
+              const pool = [
+                ...coreVocabulary.filter(
+                  (word) => getLevel(word.lessonId) === level && word.lessonId !== "L02",
+                ),
+                ...(level === "A1.1" ? l02Progress.targets : []),
+              ];
               const learned = pool.filter((w) => seen.has(w.id)).length;
               const pct = pool.length
                 ? Math.round((learned / pool.length) * 100)
@@ -1354,10 +1377,24 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState<Item | null>(null);
   const [page, setPage] = useState(0);
-  const learned = useMemo(
-    () => new Set(history.exposures.map((exposure) => exposure.item_id)),
-    [history.exposures],
+  const imageStates = [
+    lessonState.read(lessonStateKeys.images),
+    lessonState.read(lessonStateKeys.l02Vocabulary),
+    lessonState.read(lessonStateKeys.l13Images),
+    ...lessons.map((entry) => lessonState.read(lessonStateKeys.vocabularyImages(entry.id))),
+  ];
+  const learned = learningProgressItemIds(
+    items,
+    history.exposures.map((exposure) => exposure.item_id),
+    imageStates,
   );
+  const l02 = lessons.find((entry) => entry.id === "L02");
+  const l02Vocabulary = l02VocabularyProgress({
+    items,
+    flow: l02?.learningFlows?.vocabulary,
+    exposureIds: history.exposures.map((exposure) => exposure.item_id),
+    imageLearnedIds: readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.l02Vocabulary)),
+  });
   const discovery = lesson === "all" ? undefined : grammarDiscoveryLesson(lesson);
   const completedDiscovery = discovery
     ? completedDiscoveryTopics(
@@ -1474,7 +1511,12 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
       </div>
       <div className="skill-progress-grid">
         {skills.map((entry) => {
-          const pool = items.filter((item) => item.skill === entry.id);
+          const pool = entry.id === "vocabulary"
+            ? [
+                ...items.filter((item) => item.skill === "vocabulary" && item.lessonId !== "L02"),
+                ...l02Vocabulary.targets,
+              ]
+            : items.filter((item) => item.skill === entry.id);
           const seenCount = pool.filter((item) => learned.has(item.id)).length;
           const percentage = pool.length
             ? Math.round((seenCount / pool.length) * 100)
