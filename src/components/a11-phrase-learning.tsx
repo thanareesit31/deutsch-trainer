@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Volume2 } from "lucide-react";
+import { ArrowRight, Volume2 } from "lucide-react";
 import targets from "@/data/a11-phrase-targets.json";
 import { useLearning } from "./learning-store";
 import { useVocabularyAudio } from "./vocabulary-audio";
@@ -37,7 +37,6 @@ export function A11PhraseLearning({ lessonId }: { lessonId: string }) {
     finally { setBusy(false); }
   }
   return <main className="a11-phrase-learning">
-    <Link href={`/lesson/${lessonId}`} className="back-link"><ArrowLeft size={17} /> กลับไปบทเรียน</Link>
     <div className="page-heading"><div><span className="eyebrow">REDEMITTEL · LEKTION {lessonId.slice(1)}</span><h1>เรียนประโยคที่ใช้ในบทนี้</h1><p>อ่านความหมาย ฟังเสียง แล้วกดเรียนแล้วทีละประโยค</p></div></div>
     <section className="a11-phrase-learning-card" aria-label={`ประโยค ${index + 1} จาก ${phrases.length}`}>
       <p className="eyebrow">เรียนแล้ว {learnedCount} / {phrases.length} ประโยค</p>

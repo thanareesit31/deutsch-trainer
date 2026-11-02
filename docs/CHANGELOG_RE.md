@@ -1,5 +1,11 @@
 # Requirement & Experience Changelog
 
+## 2026-11-02 - Remove duplicate learning back links
+
+- Changed: removed the separate “หัวข้อ Grammatik” back link from grammar topic pages, the parent-topic back links from the mein/dein summary and conjugation activity, and the lesson back link from A1.1/A1.2 phrase learning. The existing clickable breadcrumbs provide these parent routes.
+- Why: both controls navigated to the same page and duplicated navigation.
+- Impact: these learning pages use their clickable breadcrumbs for parent navigation. Previous-step controls, return-to-board links, prerequisite recovery actions and completion actions remain available. Content, stable IDs, answers, grading, saved evidence and adaptive selection are unchanged.
+
 ## 2026-11-02 - Route Safari speech through the playback audio session
 
 - Changed: when the browser exposes `navigator.audioSession`, speech playback temporarily requests the `playback` session and restores the previous session after the utterance ends or errors.

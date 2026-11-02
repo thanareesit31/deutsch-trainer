@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, Check, Volume2 } from "lucide-react";
+import { ArrowRight, Check, Volume2 } from "lucide-react";
 import { grammarDiscoveryLesson, type DiscoveryQuestion, type GrammarDiscoveryExample } from "@/lib/grammar-discovery";
 import { grammarConjugationTopic } from "@/lib/grammar-conjugation";
 import { completeDiscoveryTopic, completedDiscoveryTopics } from "@/lib/grammar-discovery-progress";
@@ -138,7 +138,6 @@ export function PossessiveSummaryPage() {
   const lessonRoute = "/learn/L03/grammar/mein-dein";
   if (!lesson || !topic) return null;
   if (!completed.includes(topic.slug)) return <main className="guided-learning grammar-discovery">
-    <Link className="back-link" href={lessonRoute}><ArrowLeft size={17} /> กลับไปเรียน mein und dein</Link>
     <section className="guided-card">
       <h1>ตารางสรุป mein / dein</h1>
       <p>ทำกิจกรรมในหน้าบทเรียนให้ครบก่อน แล้วจึงเปิดตารางสรุปได้</p>
@@ -147,7 +146,6 @@ export function PossessiveSummaryPage() {
   </main>;
   const next = lesson.topics[lesson.topics.indexOf(topic) + 1];
   return <main className="guided-learning grammar-discovery grammar-discovery-summary-page">
-    <Link className="back-link" href={lessonRoute}><ArrowLeft size={17} /> กลับไปดูตัวอย่าง</Link>
     <div className="vocabulary-image-progress" aria-label="หน้าสรุปของหัวข้อ mein und dein">
       <span>mein und dein · หน้า 2 / 2</span>
       <div className="vocabulary-image-progress-track" aria-hidden="true"><span style={{ width: "100%" }} /></div>
@@ -203,7 +201,6 @@ export function GrammarDiscoveryPage({ lessonId, topicSlug }: { lessonId: string
   const next = lesson.topics[index + 1];
   const conjugation = grammarConjugationTopic(lessonId, topic.slug);
   return <main className="guided-learning grammar-discovery">
-    {!isPossessive && <Link className="back-link" href={`/learn/${lessonId}/grammar`}><ArrowLeft size={17} /> หัวข้อ Grammatik</Link>}
     <div className="vocabulary-image-progress" aria-label={`หัวข้อ ${index + 1} จาก ${lesson.topics.length}`}>
       <span>หัวข้อ {index + 1} / {lesson.topics.length}</span>
       <div className="vocabulary-image-progress-track" aria-hidden="true"><span style={{ width: `${(index + 1) / lesson.topics.length * 100}%` }} /></div>

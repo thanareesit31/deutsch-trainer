@@ -183,7 +183,6 @@ export function GrammarConjugationPage({ lessonId, topicSlug, verbId, summary = 
   const verbIndex = conjugation.verbs.indexOf(verb);
   const nextVerb = conjugation.verbs[verbIndex + 1];
   return <main className="guided-learning grammar-conjugation-learning">
-    <Link className="back-link" href={base}><ArrowLeft size={17} /> กลับไปดูตัวอย่าง</Link>
     <section className="guided-card">
       <span className="eyebrow">ZUORDNEN · จับคู่รูปกริยา</span>
       <h1 lang="de">{verb.infinitive}</h1>
