@@ -30,7 +30,7 @@ Task.practice = {familyId, contextId, stage:0|1|2|3, unlock:null|{subskill,minCo
 3. [x] เพิ่ม metadata/gates และตัวเลือก round ที่ผสมสัดส่วน ตรวจด้วย synthetic histories ที่มีความหมาย
 4. [x] เชื่อม feedback และการพิมพ์แบบจำกัดขอบเขตกับ shared account sessions; เพิ่ม server validation ของ unlock
 5. [x] ตรวจ compatibility และทดลองหน้าจริง/มือถือ/เสียง พร้อม reviewer แยกจากผู้ทำ
-6. [ ] Apply migration ใหม่ก่อน frontend, deploy และตรวจ normal-account hosted routes
+6. [x] Apply migration ใหม่ก่อน frontend, deploy และตรวจ normal-account hosted routes
 
 Learn→card exposure/trial→immutable response+help→shared Practice firsts grouped target/subskill/context/session→stage eligibility+balanced round→saved selection reason. Missing evidence remains unknown. Existing schemas/IDs are not silently replaced.
 
@@ -45,3 +45,7 @@ Decision trail: .audit/practice-improvement.tsv
 - Audio builder ตรวจ224asset references มี185ไฟล์ใหม่และ39ไฟล์เดิมที่ใช้ซ้ำ โดยไม่เขียนทับ canonical registry/เสียงเดิม
 
 แผนนี้ไม่รวมการทดลองผลการเรียนกับผู้ใช้จริง. การทบทวน24ชั่วโมงและเกณฑ์2บริบท/2รอบเป็นนโยบายเริ่มต้นที่ปรับได้จากหลักฐานภายหลัง.
+
+Production build ผ่านหลังแก้ผล review สุดท้าย. Commit ของแอปคือ `70fc3a50dd5e7d2db8a63e21b84a68c16263ea25`. Schema จริงตรวจผ่านก่อนส่ง frontend โดย health ของรุ่นเดิมยังทำงานได้. สถานะ hosted rollout จะบันทึกใน `.audit/practice-improvement-release.json` หลังตรวจ domain จริง.
+
+Rollout verified: Vercel success; public health200 l15-l18-practice-v2;24 ordinary-account routes ready;4 hosted audio hashes match. Receipt: `.audit/practice-improvement-release.json`.

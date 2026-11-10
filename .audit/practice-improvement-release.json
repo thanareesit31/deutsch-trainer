@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-11-10T13:47:40.025457+00:00",
+  "appCommit": "70fc3a50dd5e7d2db8a63e21b84a68c16263ea25",
+  "origin": "https://deutsch-trainer-gamma.vercel.app",
+  "vercelStatus": "success",
+  "health": {
+    "status": "ok",
+    "runtime": "bun",
+    "lessonRelease": "l15-l18-practice-v2"
+  },
+  "ordinaryAccountReadonlyRoutes": 24,
+  "hostedAudioHashes": 4,
+  "publishedTasksPreserved": 372,
+  "extensionTasks": 189,
+  "browserWritingScenarios": 4,
+  "layoutModels": 475,
+  "scope": "L15-L18 shared Practice and bounded production. No fabricated hosted learner answers. No human learning-effect study."
+}

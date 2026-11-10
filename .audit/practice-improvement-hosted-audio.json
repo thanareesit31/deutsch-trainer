@@ -1,0 +1,26 @@
+[
+  {
+    "id": "L15-possessivartikel-XG-S1-C1-v1-feedback-audio",
+    "path": "/audio/a13-release/42edb5b3c0071fe3.mp3",
+    "status": 200,
+    "sha256": "04feaa612c8403e29dc348ec5ec70f8c3c792d9eeecf97d481aeebde2997544e"
+  },
+  {
+    "id": "L16-temporale-praepositionen-XG-S1-C1-v1-feedback-audio",
+    "path": "/audio/a13-release/a970661b1115c5cc.mp3",
+    "status": 200,
+    "sha256": "7021e0104b3d5453a40b5fd0e1be5fa01cb9c5490deeb812166eea95d16d07f8"
+  },
+  {
+    "id": "L17-werden-XG-S1-C1-v1-feedback-audio",
+    "path": "/audio/a13-release/5901958ea235c851.mp3",
+    "status": 200,
+    "sha256": "41398cfb6a75d33acc223cc89b9e8f1cec4826ea4275988a7e0fee6092d0aba3"
+  },
+  {
+    "id": "L18-imperativ-sie-XG-S1-C1-v1-feedback-audio",
+    "path": "/audio/a13-release/d0e5e322a88d2c84.mp3",
+    "status": 200,
+    "sha256": "ae5831107c50b6cdd1f271999e238a8f321cc21f279e47027f1b4c0b172a6c07"
+  }
+]

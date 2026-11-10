@@ -2945,3 +2945,9 @@
 - แยกช่องเติมคำกับช่องเขียนทั้งประโยค เพิ่มเฉลยตามคำตอบผิดจริง และเก็บร่าง คำตอบแรก ตัวช่วย และการทำต่อใน shared account sessions เดิม
 - เหตุผล: เพิ่มโอกาสใช้สิ่งที่เรียนในสถานการณ์ใหม่และลดการพึ่งคลังคำ โดยไม่อ้างว่าการเขียนตามข้อมูลวัดภาษาอิสระหรือยืนยันประสิทธิผลกับผู้เรียนจริง
 - ขอบเขตการปรับระดับนี้คือบท15–18 ไม่ถือว่าทุกบทถูกย้ายระบบแล้ว การออกแบบ/การเก็บหลักฐาน/ตัวเลือกปรับระดับผ่านการตรวจแยกจาก deployment ซึ่งบันทึกใน receipt หลังตรวจระบบจริง
+
+### 2026-11-10 - Verified practice improvement rollout
+
+- App commit70fc3a5 deployed successfully after two additive migrations. Public health200 reports l15-l18-practice-v2.
+- Verified24 Learn/Practice routes with an ordinary signed-in learner and4 hosted audio hashes. No fabricated responses were added to the hosted learner account.
+- Preserved372 published tasks and added189 tasks selected from learner evidence. Rollout receipt: `.audit/practice-improvement-release.json`.
