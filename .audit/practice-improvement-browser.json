@@ -1,0 +1,30 @@
+[
+  {
+    "skill": "phrases",
+    "stage": 2,
+    "scope": "sentence",
+    "draftRestored": true,
+    "feedback": true
+  },
+  {
+    "skill": "phrases",
+    "stage": 3,
+    "scope": "sentence",
+    "draftRestored": true,
+    "feedback": true
+  },
+  {
+    "skill": "grammar",
+    "stage": 2,
+    "scope": "fragment",
+    "draftRestored": true,
+    "feedback": true
+  },
+  {
+    "skill": "grammar",
+    "stage": 3,
+    "scope": "sentence",
+    "draftRestored": true,
+    "feedback": true
+  }
+]

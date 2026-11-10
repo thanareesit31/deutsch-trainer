@@ -362,7 +362,6 @@ export function PracticeEntry({ initialLevel = "A1.3" }: { initialLevel?: string
         </div>
         <span className="quiet-pill">{lessons.length} บทเรียน{readyTopicCount ? ` · ${readyTopicCount} หัวข้อพร้อมฝึก` : ""}</span>
       </div>
-      <PracticeRecommendation />
       <div className="segmented level-switch" role="group" aria-label="เลือกระดับแบบฝึกหัด">
         {["A1.1", "A1.2", "A1.3"].map((value) => (
           <button

@@ -1,0 +1,55 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {pathToFileURL} from 'node:url';
+const {createDatabase,userId}=await import(pathToFileURL(`${process.cwd()}/tests/learning-database.mjs`));
+const db=await createDatabase();
+const migration=await readFile(new URL('../supabase/migrations/20261110000000_release_practice_progression.sql',import.meta.url),'utf8');
+const bank='a13-release-l15-grammar',key='deutsch-trainer-release-course-v1-L15-grammar';
+let tick=0;
+const sync=(state)=>db.query('select public.sync_practice_session($1,$2::jsonb)',[bank,JSON.stringify(state)]);
+const make=(q,id,correct=true,help=false)=>{const time=new Date(Date.UTC(2026,10,10,0,0,++tick)).toISOString();return {id,createdAt:time,updatedAt:time,position:0,completed:true,items:[{question:q,response:'',selected:[],tokenOrder:[],hintUsed:help,translationUsed:false,attempt:{response:correct?'sein':'wrong',correct,status:'completed',submittedAt:time,assisted:help,confidence:null}}]};};
+try{
+ await db.exec('reset role');await db.exec(migration);await db.exec(migration);
+ const core=(await db.query("select * from public.release_course_tasks where lesson_id='L15' and skill='grammar' order by task_id limit 1")).rows[0];
+ const initialReadiness=(await db.query('select public.release_course_readiness() value')).rows[0].value;
+ assert.equal(initialReadiness.contextCatalogReady,true,'compiled baseline and extension metadata are installed');
+ const definitions={};
+ for(const [id,context,stage,unlock] of [['base-one','one',0,null],['base-one-retry','one',0,null],['base-two','two',0,null],['new-context','three',1,{subskill:'test_recognition',requiresAttempt:true,minCorrectContexts:0,minPracticeSessions:0}],['production','four',2,{subskill:'test_recognition',requiresAttempt:true,minCorrectContexts:2,minPracticeSessions:2}]]){
+  const def={id,version:1,targetId:'test-target',topicId:'L15-grammar',subskill:stage===2?'test_production':'test_recognition',kind:'cloze',acceptedAnswers:['sein']};definitions[id]=def;
+  await db.query('insert into public.release_course_tasks(lesson_id,skill,task_id,version,accepted_answers,required_card_ids,definition) values($1,$2,$3,1,$4,$5,$6)',['L15','grammar',id,['sein'],core.required_card_ids,def]);
+  await db.query('insert into public.release_practice_metadata values($1,$2,$3,$4,$5,$6,$7,$8)',['L15','grammar',id,context,'test-family',stage,unlock,stage>0]);
+ }
+ await db.exec(`set role authenticated;set request.jwt.claim.sub='${userId}'`);
+ await assert.rejects(sync(make(definitions.production,'unlearned')),/not been learned|earlier response|independent/);
+ await db.query('insert into public.learner_lesson_states(user_id,lesson_key,state) values($1,$2,$3)',[userId,key,{version:1,learned:core.required_card_ids,cursor:0,active:null,attempts:[]}]);
+ const oldRound=make(core.definition,'old-core-queue');oldRound.items[0].attempt.response=core.accepted_answers[0];await sync(oldRound);
+ assert.deepEqual((await db.query('select state from public.learner_practice_sessions where session_id=$1',['old-core-queue'])).rows[0].state.items[0].question,core.definition,'old canonical questions remain unchanged');
+ await assert.rejects(sync(make(definitions['new-context'],'view-only')),/earlier response/);
+ const oneSession=make(definitions['base-one'],'two-contexts-one-session');oneSession.items.push(make(definitions['base-two'],'unused').items[0]);await sync(oneSession);
+ await assert.rejects(sync(make(definitions.production,'needs-two-sessions')),/independent/);
+ await sync(make(definitions['base-two'],'reset-context-two',false));
+ await sync(make(definitions['base-one'],'first-wrong',false));
+ await sync(make(definitions['new-context'],'after-real-wrong',false));
+ await assert.rejects(sync(make(definitions.production,'not-enough')),/independent/);
+ await sync(make(definitions['base-one'],'later-correct'));
+ await sync(make(definitions['base-one-retry'],'same-context'));
+ await assert.rejects(sync(make(definitions.production,'retry-no-inflation')),/independent/);
+ await sync(make(definitions['base-two'],'helped',true,true));
+ await assert.rejects(sync(make(definitions.production,'help-not-independent')),/independent/);
+ await sync(make(definitions['base-two'],'independent-two'));
+ const unlocked=make(definitions.production,'unlocked');await sync(unlocked);
+ await sync(make(definitions['base-two'],'latest-wrong',false));
+ await assert.rejects(sync(make(definitions.production,'new-queue-blocked')),/independent/);
+ await sync(unlocked);
+ assert.equal((await db.query('select state from public.learner_practice_sessions where session_id=$1',['unlocked'])).rows[0].state.items[0].attempt.correct,true,'saved higher queue remains valid');
+ const fabricated=make(definitions['base-one'],'forged');fabricated.items[0].question.acceptedAnswers=['forged'];await assert.rejects(sync(fabricated),/Unknown or changed/);
+ await db.exec("set request.jwt.claim.sub='22222222-2222-4222-8222-222222222222'");
+ await db.query('insert into public.learner_lesson_states(user_id,lesson_key,state) values($1,$2,$3)',['22222222-2222-4222-8222-222222222222',key,{version:1,learned:core.required_card_ids,cursor:0,active:null,attempts:[]}]);
+ await assert.rejects(sync(make(definitions.production,'isolated')),/earlier response|independent/);
+ assert.equal((await db.query('select * from public.learner_practice_sessions')).rows.length,0);
+ await db.query('update public.learner_lesson_states set state=$1 where user_id=$2 and lesson_key=$3',[{version:1,learned:core.required_card_ids,cursor:0,active:null,attempts:[{id:'learn-wrong',taskId:'base-one',response:'wrong',correct:false,helpUsed:false,submittedAt:'2026-11-10T00:01:00.000Z',selectionReason:'new'}]},'22222222-2222-4222-8222-222222222222',key]);
+ await sync(make(definitions['new-context'],'actual-learn-trial-unlocks',false));
+ const readiness=(await db.query('select public.release_course_readiness() value')).rows[0].value;
+ assert.equal(readiness.tasks,375,'existing372 + three synthetic core tasks');assert.equal(readiness.extensionTasks,initialReadiness.extensionTasks+2);assert.equal(readiness.practiceVersion,2);
+ console.log('Progression real DB: responses, independent contexts/sessions, latest-context recovery, assistance, queue preservation and isolation passed.');
+}finally{await db.close();}

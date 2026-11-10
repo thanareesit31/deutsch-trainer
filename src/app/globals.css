@@ -6407,3 +6407,10 @@ select {
   .release-actions .button { flex: 1; }
   .release-navigation { gap: 4px; font-size: 14px; }
 }
+.release-answer-area textarea { width: 100%; padding: 12px; border: 1px solid #8fa385; border-radius: 10px; font: inherit; line-height: 1.7; resize: vertical; }
+.release-demand { color: #526653; background: #eef4e9; padding: 10px 14px; border-radius: 12px; }
+.release-manual { margin: 20px 0; }
+.release-manual summary { cursor: pointer; padding: 12px 0; color: #3f604c; }
+@media (max-width: 600px) {
+  .release-course > .release-card { margin-inline: -8px; padding-inline: 4px; }
+}

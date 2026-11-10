@@ -1,3 +1,4 @@
+import practiceVersion from "@/data/a13-practice-version.json";
 import { createClient } from "@supabase/supabase-js";
 export const dynamic = "force-dynamic";
 export async function GET() {
@@ -15,7 +16,7 @@ export async function GET() {
     .eq("skill", "vocabulary")
     .eq("data->>collection", "core");
   const release = await db.rpc('release_course_readiness');
-  const ready = !release.error && release.data?.courses === 12 && release.data?.cards === 136 && release.data?.tasks === 372 && release.data?.phraseTasks === 64 && release.data?.practiceSyncReady === true;
+  const ready = !release.error && release.data?.courses === 12 && release.data?.cards === 136 && release.data?.tasks === 372 && release.data?.phraseTasks === 64 && release.data?.practiceSyncReady === true && release.data?.practiceVersion === practiceVersion.schemaVersion && release.data?.extensionTasks === practiceVersion.extensionTasks && release.data?.contextCatalogReady === true;
   return Response.json(
     {
       status: error || !ready ? "unavailable" : "ok",
@@ -24,7 +25,7 @@ export async function GET() {
       runtime: process.versions.bun ? "bun" : "node",
       contentSource: "supabase",
       vocabulary: error ? null : count,
-      lessonRelease: ready ? 'l15-l18-v1' : 'schema-pending',
+      lessonRelease: ready ? 'l15-l18-practice-v2' : 'schema-pending',
     },
     { status: error || !ready ? 503 : 200 },
   );

@@ -679,3 +679,9 @@ L15–L18 now have implemented vocabulary, grammar and phrase Learn/Practice rou
 Deployment must apply all four 20261109 migrations before the frontend. /api/health now also requires the release catalog readiness RPC (12 courses,136 cards,372 tasks,64 phrase questions); a successful older vocabulary count alone cannot mark the new release ready. Implemented/local verification and actual hosted deployment remain distinct; current status is in docs/lesson-preparation/RELEASE_EXECUTION.md.
 
 Production activation, 10 November 2026: the scoped general-account release above is deployed at https://deutsch-trainer-gamma.vercel.app after hosted schema installation. L15–18 all three categories and revised L01–14 phrase Learn are available through normal account routes. Signed-in hosted route smoke and public release health pass. Historical evidence remains preserved; the scoped evidence thresholds and remaining advanced-variant limits are unchanged.
+
+## Practice บท 15–18 รุ่นบริบทและการเขียนตามข้อมูล
+
+เพิ่มโจทย์บริบทใหม่และการเขียนแบบจำกัดคำตอบจากฐานเดิม โดยรักษา ID คำตอบ และประวัติเดิมทั้งหมด. รอบแนะนำผสมข้อใหม่ จุดอ่อน และข้อถึงทบทวน สูงสุด10เป้าหมายไม่ซ้ำ. การเขียนขั้นถัดไปต้องมีคำตอบแรกที่ถูกโดยไม่เปิดตัวช่วยจากอย่างน้อย2บริบทและ2รอบ Practice ในทักษะที่กำหนด. การดูตัวอย่างหรือทำซ้ำบริบทเดิมไม่เพิ่มหลักฐานนี้. เมื่อผิดในขั้นสูง ระบบเลือกการฝึกที่มีโครงช่วยก่อนแล้วให้กลับมาลองได้. คิวที่เริ่มแล้วไม่ถูกล็อกย้อนหลัง.
+
+คำสั่งแยกการเติมส่วนที่เว้นกับการเขียนทั้งประโยคชัดเจน และเฉลยอธิบายจากคำตอบที่ส่งเมื่อแยกข้อผิดได้. หลักฐานการเขียนตามข้อมูลเป็น bounded production ไม่ใช่การผลิตภาษาอิสระหรือการรับรองความชำนาญ. แผนและ bindings อยู่ใน docs/lesson-preparation/PRACTICE_IMPROVEMENT_EXECUTION.md และ practice-extension-bindings.json.

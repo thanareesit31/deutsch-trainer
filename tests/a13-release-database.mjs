@@ -9,7 +9,7 @@ const save = (key, state, owner = userId) => db.query(`insert into public.learne
 const read = async key => (await db.query('select state from public.learner_lesson_states where lesson_key=$1',[key])).rows[0]?.state;
 const empty = () => ({version:1,learned:[],cursor:0,active:null,attempts:[],round:null});
 try {
-  const catalog = (await db.query('select * from public.release_course_tasks order by lesson_id,skill,task_id')).rows;
+  const catalog = (await db.query('select * from public.release_course_tasks t where not exists (select 1 from public.release_practice_metadata m where m.lesson_id=t.lesson_id and m.skill=t.skill and m.task_id=t.task_id and m.is_extension) order by lesson_id,skill,task_id')).rows;
   assert.equal(catalog.length,372,'real generated catalog is installed');
   const courses = new Map();
   for(const task of catalog) courses.set(keyFor(task.lesson_id,task.skill),task);

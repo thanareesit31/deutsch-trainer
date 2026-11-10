@@ -7,15 +7,18 @@ export type ReleaseCard = {
   id: string; title: string; purpose: string; notes: string[]; context: string[][];
   models: ReleaseModel[]; targetIds: string[]; noun: ReleaseNoun | null; wordAudio: string | null;
 };
+type ReleaseUnlock = { subskill: string; minCorrectContexts: number; minPracticeSessions: number; requiresAttempt: boolean };
+type ReleasePractice = { familyId: string; contextId: string } & ({ stage: 0; unlock: null } | { stage: 1; unlock: ReleaseUnlock } | { stage: 2 | 3; unlock: ReleaseUnlock });
 export type ReleaseTask = {
   id: string; version: number; targetId: string; subskill: string; difficulty: number; difficultyRationale: string;
-  requiredCardIds: string[]; kind: 'choice' | 'order' | 'write'; prompt: string; cue: string;
+  requiredCardIds: string[]; prompt: string; cue: string;
   context: string[][]; options: string[]; tokens: string[]; startWith: string; acceptedAnswers: string[];
-  assistance: string[]; feedback: { reason: string; models: ReleaseModel[] };
+  assistance: string[]; feedback: { reason: string; models: ReleaseModel[]; errors?: { response: string; category: string; message: string }[] };
   noun: ReleaseNoun | null; articleTarget: boolean; spelling: boolean;
-};
+  answerScope?: 'fragment' | 'sentence';
+} & ({ kind: 'choice' | 'order' | 'write'; practice?: ReleasePractice & { stage: 0 | 1 } } | { kind: 'write'; practice: ReleasePractice & { stage: 2 | 3 } });
 export type ReleaseCourse = { lessonId: string; skill: ReleaseSkill; title: string; purpose: string; cards: ReleaseCard[]; tasks: ReleaseTask[]; glossary: { text: string; meaning: string; noun: ReleaseNoun | null; audio: string }[] };
-export type ReleaseAttempt = { id: string; taskId: string; response: string; correct: boolean; helpUsed: boolean; submittedAt: string; selectionReason: string };
+export type ReleaseAttempt = { id: string; taskId: string; response: string; correct: boolean; helpUsed: boolean; submittedAt: string; selectionReason: string; sessionId?: string };
 export type ReleaseActive = { taskId: string; draft: string; helpUsed: boolean; startedAt: string; selectionReason: string; origin: 'learn' | 'practice' | null; learningCardId: string | null };
 export type ReleaseState = { version: 1; learned: string[]; cursor: number; active: ReleaseActive | null; attempts: ReleaseAttempt[]; round: { id: string; startedAt: string; limit: number } | null };
 export const releaseStateKey = (course: Pick<ReleaseCourse, 'lessonId' | 'skill'>) => `deutsch-trainer-release-course-v1-${course.lessonId}-${course.skill}`;
@@ -57,28 +60,7 @@ export function parseReleaseState(raw: string | null, course: ReleaseCourse): Re
   return { version: 1, learned, cursor: value.cursor, active, attempts, round };
 }
 
-/** Choose only taught targets. A new subskill remains unknown even when another is correct. */
-export function selectReleaseTask(course: ReleaseCourse, state: ReleaseState, now = Date.now(), cardId?: string) {
-  const eligible = course.tasks.filter(task => task.requiredCardIds.every(id => state.learned.includes(id)) && (!cardId || task.requiredCardIds.includes(cardId)));
-  const scored = eligible.map(task => {
-    const taskAttempts = state.attempts.filter(a => a.taskId === task.id);
-    const latest = taskAttempts.at(-1);
-    const relatedIds = new Set(course.tasks.filter(q => q.targetId === task.targetId && q.subskill === task.subskill).map(q => q.id));
-    const related = state.attempts.filter(a => relatedIds.has(a.taskId));
-    const first = new Map<string, ReleaseAttempt>();
-    related.forEach(a => { if (!first.has(a.taskId)) first.set(a.taskId, a); });
-    const independent = [...first.values()].filter(a => a.correct && !a.helpUsed);
-    const days = new Set(independent.map(a => a.submittedAt.slice(0, 10)));
-    const due = !!latest && now - Date.parse(latest.submittedAt) >= 24 * 60 * 60 * 1000;
-    const reason = !latest ? 'ยังไม่มีหลักฐานของโจทย์นี้' : !latest.correct ? 'ทบทวนจุดที่ตอบผิด พร้อมตัวช่วยให้เลือกใช้' : latest.helpUsed ? 'ลองทักษะเดิมโดยไม่เปิดตัวอย่าง' : due ? 'ทบทวนหลังเว้นระยะ' : 'เก็บหลักฐานเพิ่มเติม ยังไม่สรุปว่าชำนาญ';
-    // Avoid repeated retries crowding out unseen, independently measurable targets.
-    const priority = !latest ? 0 : due && !latest.correct ? 1 : due ? 2 : !latest.correct ? 3 : latest.helpUsed ? 4 : independent.length < 3 || days.size < 2 ? 5 : 6;
-    return { task, reason, priority, repetitions: taskAttempts.length, last: latest ? Date.parse(latest.submittedAt) : 0 };
-  });
-  scored.sort((a, b) => a.priority - b.priority || a.repetitions - b.repetitions || a.last - b.last || a.task.difficulty - b.task.difficulty || a.task.id.localeCompare(b.task.id));
-  const best = scored[0];
-  return best ? { task: best.task, reason: best.reason } : null;
-}
+export { selectReleaseTask, selectReleaseRound, isReleaseTaskUnlocked } from './a13-practice-selection';
 
 export function releaseOrderIndices(draft: string, task: ReleaseTask): number[] {
   if (!draft) return [];

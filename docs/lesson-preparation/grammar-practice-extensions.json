@@ -1,0 +1,3626 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "status": "product-authored",
+    "basis": "existing-seven-published-grammar-topics",
+    "assessment": "bounded-production-only",
+    "topicBindings": [
+      {
+        "familyId": "L15-possessivartikel",
+        "targetId": "L15-possessivartikel",
+        "originalSubskill": "possessive_reference_and_inflection",
+        "originalQuestionIds": [
+          "A13-L15-POSSESSIVARTIKEL-001-PREP3",
+          "A13-L15-POSSESSIVARTIKEL-002-PREP3",
+          "A13-L15-POSSESSIVARTIKEL-003-PREP3",
+          "A13-L15-POSSESSIVARTIKEL-004-PREP3"
+        ]
+      },
+      {
+        "familyId": "L16-temporale-praepositionen",
+        "targetId": "L16-temporale-praepositionen",
+        "originalSubskill": "temporal_relation",
+        "originalQuestionIds": [
+          "A13-L16-TEMPORALE-PRAEPOSITIONEN-001-PREP3",
+          "A13-L16-TEMPORALE-PRAEPOSITIONEN-002-PREP3",
+          "A13-L16-TEMPORALE-PRAEPOSITIONEN-003-PREP3",
+          "A13-L16-TEMPORALE-PRAEPOSITIONEN-004-PREP3"
+        ]
+      },
+      {
+        "familyId": "L17-werden",
+        "targetId": "L17-werden",
+        "originalSubskill": "werden_conjugation",
+        "originalQuestionIds": [
+          "A13-L17-WERDEN-001-PREP3",
+          "A13-L17-WERDEN-002-PREP3",
+          "A13-L17-WERDEN-003-PREP3",
+          "A13-L17-WERDEN-004-PREP3"
+        ]
+      },
+      {
+        "familyId": "L17-wollen",
+        "targetId": "L17-wollen",
+        "originalSubskill": "wollen_conjugation",
+        "originalQuestionIds": [
+          "A13-L17-WOLLEN-001-PREP3",
+          "A13-L17-WOLLEN-002-PREP3",
+          "A13-L17-WOLLEN-003-PREP3",
+          "A13-L17-WOLLEN-004-PREP3"
+        ]
+      },
+      {
+        "familyId": "L17-mit-ohne",
+        "targetId": "L17-mit-ohne",
+        "originalSubskill": "preposition_case_inflection",
+        "originalQuestionIds": [
+          "A13-L17-MIT-OHNE-001-PREP3",
+          "A13-L17-MIT-OHNE-002-PREP3",
+          "A13-L17-MIT-OHNE-003-PREP3",
+          "A13-L17-MIT-OHNE-004-PREP3"
+        ]
+      },
+      {
+        "familyId": "L18-imperativ-sie",
+        "targetId": "L18-imperativ-sie",
+        "originalSubskill": "formal_imperative_form",
+        "originalQuestionIds": [
+          "A13-L18-IMPERATIV-SIE-001-PREP3",
+          "A13-L18-IMPERATIV-SIE-002-PREP3",
+          "A13-L18-IMPERATIV-SIE-003-PREP3",
+          "A13-L18-IMPERATIV-SIE-004-PREP3"
+        ]
+      },
+      {
+        "familyId": "L18-sollen",
+        "targetId": "L18-sollen",
+        "originalSubskill": "sollen_conjugation",
+        "originalQuestionIds": [
+          "A13-L18-SOLLEN-001-PREP3",
+          "A13-L18-SOLLEN-002-PREP3",
+          "A13-L18-SOLLEN-003-PREP3",
+          "A13-L18-SOLLEN-004-PREP3"
+        ]
+      }
+    ]
+  },
+  "courses": [
+    {
+      "lessonId": "L15",
+      "skill": "grammar",
+      "tasks": [
+        {
+          "id": "L15-possessivartikel-XG-S1-C1-v1",
+          "version": 1,
+          "targetId": "L15-possessivartikel",
+          "subskill": "possessive_reference_and_inflection",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด possessive_reference_and_inflection ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L15-possessivartikel"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Jonas hat ein Sofa. Ich finde ___ Sofa bequem.",
+          "context": [
+            [
+              "เจ้าของ",
+              "Jonas (ผู้ชาย) เป็นเจ้าของโซฟา"
+            ],
+            [
+              "คำนามต้นทาง",
+              "das Sofa"
+            ],
+            [
+              "คำศัพท์ประกอบ",
+              "das Sofa = โซฟา; bequem = นั่งสบาย"
+            ]
+          ],
+          "options": [
+            "sein",
+            "seinen",
+            "ihr"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "sein"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เจ้าของคือ Jonas จึงใช้ราก sein; Sofa เป็นเพศกลางและเป็นกรรม จึงคงรูป sein",
+            "models": [
+              {
+                "text": "Ich finde sein Sofa bequem.",
+                "meaning": "ฉันคิดว่าโซฟาของเขานั่งสบาย",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "finde",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "sein Sofa bequem.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L15-possessivartikel-XG-S1-C1-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "seinen",
+                "category": "case_ending",
+                "message": "Sofa เป็นเพศกลาง จึงใช้ sein ใน Akkusativ; seinen ใช้กับคำนามเพศชาย"
+              },
+              {
+                "response": "ihr",
+                "category": "target_form_or_relation",
+                "message": "รูป “ihr” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: เจ้าของคือ Jonas จึงใช้ราก sein; Sofa เป็นเพศกลางและเป็นกรรม จึงคงรูป sein"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L15-possessivartikel",
+            "contextId": "L15-possessivartikel-XG-S1-C1-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "possessive_reference_and_inflection",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L15-possessivartikel-XG-S1-C2-v1",
+          "version": 1,
+          "targetId": "L15-possessivartikel",
+          "subskill": "possessive_reference_and_inflection",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด possessive_reference_and_inflection ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L15-possessivartikel"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Mira hat einen Garten. Ich mag ___ Garten.",
+          "context": [
+            [
+              "เจ้าของ",
+              "Mira (ผู้หญิง) เป็นเจ้าของสวน"
+            ],
+            [
+              "คำนามต้นทาง",
+              "der Garten"
+            ]
+          ],
+          "options": [
+            "ihren",
+            "ihr",
+            "seinen"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "ihren"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เจ้าของคือ Mira จึงใช้ ihr; Garten เป็นกรรมเพศชาย จึงเปลี่ยนเป็น ihren",
+            "models": [
+              {
+                "text": "Ich mag ihren Garten.",
+                "meaning": "ฉันชอบสวนของเธอ",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "mag",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "ihren Garten.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L15-possessivartikel-XG-S1-C2-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "ihr",
+                "category": "case_ending",
+                "message": "Garten เป็นกรรมเพศชายหลัง mag จึงใช้ ihren แทน ihr"
+              },
+              {
+                "response": "seinen",
+                "category": "target_form_or_relation",
+                "message": "รูป “seinen” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: เจ้าของคือ Mira จึงใช้ ihr; Garten เป็นกรรมเพศชาย จึงเปลี่ยนเป็น ihren"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L15-possessivartikel",
+            "contextId": "L15-possessivartikel-XG-S1-C2-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "possessive_reference_and_inflection",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L15-possessivartikel-XG-S2-C3-v1",
+          "version": 1,
+          "targetId": "L15-possessivartikel",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L15-possessivartikel"
+          ],
+          "kind": "write",
+          "prompt": "เขียนกลุ่มคำในช่องว่าง ใช้ Küche และบอกว่าเป็นของ Mira",
+          "cue": "Das ist ___.",
+          "context": [
+            [
+              "เจ้าของ",
+              "Mira (ผู้หญิง)"
+            ],
+            [
+              "สิ่งที่ชี้ให้ดู",
+              "die Küche"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "ihre Küche"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เติมเฉพาะกลุ่มคำนาม: เจ้าของหญิงใช้ ihr และ Küche เพศหญิงทำให้เป็น ihre Küche",
+            "models": [
+              {
+                "text": "Das ist ihre Küche.",
+                "meaning": "นี่คือห้องครัวของเธอ",
+                "sentences": [
+                  [
+                    {
+                      "text": "Das",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "ist",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "ihre Küche.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L15-possessivartikel-XG-S2-C3-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "ihr Küche",
+                "category": "case_ending",
+                "message": "Küche เป็นเพศหญิง จึงต้องใช้ ihre Küche"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L15-possessivartikel",
+            "contextId": "L15-possessivartikel-XG-S2-C3-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "possessive_reference_and_inflection",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L15-possessivartikel-XG-S2-C4-v1",
+          "version": 1,
+          "targetId": "L15-possessivartikel",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L15-possessivartikel"
+          ],
+          "kind": "write",
+          "prompt": "เขียนกลุ่มคำในช่องว่าง ใช้ Balkon และบอกว่าเป็นของ Jonas",
+          "cue": "Ich finde ___ schön.",
+          "context": [
+            [
+              "เจ้าของ",
+              "Jonas (ผู้ชาย)"
+            ],
+            [
+              "คำนามต้นทาง",
+              "der Balkon"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "seinen Balkon"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เขียนเฉพาะกลุ่มกรรม: เจ้าของ Jonas ใช้ sein และ der Balkon ใน Akkusativ เป็น seinen Balkon",
+            "models": [
+              {
+                "text": "Ich finde seinen Balkon schön.",
+                "meaning": "ฉันคิดว่าระเบียงของเขาสวย",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "finde",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "seinen Balkon schön.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L15-possessivartikel-XG-S2-C4-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "sein Balkon",
+                "category": "case_ending",
+                "message": "Balkon เป็นกรรมเพศชายหลัง finde จึงเปลี่ยน sein เป็น seinen"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L15-possessivartikel",
+            "contextId": "L15-possessivartikel-XG-S2-C4-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "possessive_reference_and_inflection",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L15-possessivartikel-XG-S3-C5-v1",
+          "version": 1,
+          "targetId": "L15-possessivartikel",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 4,
+          "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+          "requiredCardIds": [
+            "L15-possessivartikel"
+          ],
+          "kind": "write",
+          "prompt": "เขียนหนึ่งประโยคตามข้อมูล เริ่มด้วย Sein ใช้ Zimmer และ hell แล้วผัน sein ให้ถูกต้อง",
+          "cue": "",
+          "context": [
+            [
+              "เจ้าของ",
+              "Jonas (ผู้ชาย)"
+            ],
+            [
+              "คำนามต้นทาง",
+              "das Zimmer"
+            ],
+            [
+              "ข้อมูลที่ต้องบอก",
+              "ห้องของเขาสว่าง"
+            ],
+            [
+              "รูปคำที่ให้",
+              "das Zimmer · sein · hell"
+            ],
+            [
+              "คำศัพท์ประกอบ",
+              "hell = สว่าง"
+            ],
+            [
+              "คำเริ่มต้น",
+              "Sein"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "Sein",
+          "acceptedAnswers": [
+            "Sein Zimmer ist hell.",
+            "Sein Zimmer ist hell"
+          ],
+          "assistance": [
+            "provided-context",
+            "supplied-lexical-forms",
+            "provided-start",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เริ่มด้วยกลุ่มประธาน Sein Zimmer แล้ววาง ist ตำแหน่ง 2 และ hell บอกลักษณะห้อง",
+            "models": [
+              {
+                "text": "Sein Zimmer ist hell.",
+                "meaning": "ห้องของเขาสว่าง",
+                "sentences": [
+                  [
+                    {
+                      "text": "Sein Zimmer",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "ist",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "hell.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L15-possessivartikel-XG-S3-C5-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Seinen Zimmer ist hell.",
+                "category": "case_ending",
+                "message": "Zimmer เป็นประธานเพศกลาง จึงใช้ Sein Zimmer ไม่ใช่ Seinen Zimmer"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L15-possessivartikel",
+            "contextId": "L15-possessivartikel-XG-S3-C5-v1-context",
+            "stage": 3,
+            "unlock": {
+              "subskill": "grammar_bounded_production",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "lessonId": "L16",
+      "skill": "grammar",
+      "tasks": [
+        {
+          "id": "L16-temporale-praepositionen-XG-S1-C1-v1",
+          "version": 1,
+          "targetId": "L16-temporale-praepositionen",
+          "subskill": "temporal_relation",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด temporal_relation ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L16-temporale-praepositionen"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Der Techniker kommt ___ zwei Stunden.",
+          "context": [
+            [
+              "เวลาตอนนี้",
+              "14:00"
+            ],
+            [
+              "เวลาที่ช่างจะมาถึง",
+              "16:00"
+            ],
+            [
+              "กลุ่มเวลาที่ให้",
+              "zwei Stunden"
+            ]
+          ],
+          "options": [
+            "in",
+            "vor",
+            "um"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "in"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "จาก 14:00 ถึง 16:00 เป็นเวลาอีกสองชั่วโมงในอนาคต จึงใช้ in",
+            "models": [
+              {
+                "text": "Der Techniker kommt in zwei Stunden.",
+                "meaning": "ช่างจะมาในอีกสองชั่วโมง",
+                "sentences": [
+                  [
+                    {
+                      "text": "Der Techniker",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "kommt",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "in zwei Stunden.",
+                      "role": "time",
+                      "label": "กลุ่มบอกเวลา"
+                    }
+                  ]
+                ],
+                "audio": "L16-temporale-praepositionen-XG-S1-C1-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "vor",
+                "category": "temporal_relation",
+                "message": "vor zwei Stunden หมายถึงสองชั่วโมงก่อน แต่ข้อมูลนี้บอกเวลาที่กำลังจะมาถึง"
+              },
+              {
+                "response": "um",
+                "category": "target_form_or_relation",
+                "message": "รูป “um” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: จาก 14:00 ถึง 16:00 เป็นเวลาอีกสองชั่วโมงในอนาคต จึงใช้ in"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L16-temporale-praepositionen",
+            "contextId": "L16-temporale-praepositionen-XG-S1-C1-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "temporal_relation",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L16-temporale-praepositionen-XG-S1-C2-v1",
+          "version": 1,
+          "targetId": "L16-temporale-praepositionen",
+          "subskill": "temporal_relation",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด temporal_relation ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L16-temporale-praepositionen"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Lina telefoniert ___ dem Termin.",
+          "context": [
+            [
+              "เวลานัด",
+              "11:00"
+            ],
+            [
+              "เวลาที่ Lina โทร",
+              "10:30"
+            ],
+            [
+              "เหตุการณ์อ้างอิง",
+              "der Termin"
+            ]
+          ],
+          "options": [
+            "vor",
+            "nach",
+            "in"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "vor"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เวลาที่โทรอยู่ก่อนเหตุการณ์อ้างอิง จึงใช้ vor dem Termin; ไม่ได้หมายถึงอดีตจากเวลาตอนนี้",
+            "models": [
+              {
+                "text": "Lina telefoniert vor dem Termin.",
+                "meaning": "Lina โทรศัพท์ก่อนเวลานัด",
+                "sentences": [
+                  [
+                    {
+                      "text": "Lina",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "telefoniert",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "vor dem Termin.",
+                      "role": "time",
+                      "label": "กลุ่มบอกเวลา"
+                    }
+                  ]
+                ],
+                "audio": "L16-temporale-praepositionen-XG-S1-C2-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "nach",
+                "category": "temporal_relation",
+                "message": "nach dem Termin แปลว่าหลังนัด แต่ 10:30 อยู่ก่อนนัด 11:00"
+              },
+              {
+                "response": "in",
+                "category": "target_form_or_relation",
+                "message": "รูป “in” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: เวลาที่โทรอยู่ก่อนเหตุการณ์อ้างอิง จึงใช้ vor dem Termin; ไม่ได้หมายถึงอดีตจากเวลาตอนนี้"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L16-temporale-praepositionen",
+            "contextId": "L16-temporale-praepositionen-XG-S1-C2-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "temporal_relation",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L16-temporale-praepositionen-XG-S2-C3-v1",
+          "version": 1,
+          "targetId": "L16-temporale-praepositionen",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง; ข้อนี้ให้ in และรูปกลุ่มคำนามมาแล้ว จึงไม่วัดการเลือกบุพบทหรือผันคำนามอย่างอิสระ",
+          "requiredCardIds": [
+            "L16-temporale-praepositionen"
+          ],
+          "kind": "write",
+          "prompt": "เติมเฉพาะกลุ่มเวลา ใช้ in กับ zwei Stunden เพื่อบอกอีกสองชั่วโมงนับจากขณะนี้",
+          "cue": "Ich komme ___.",
+          "context": [
+            [
+              "เวลาตอนนี้",
+              "08:00"
+            ],
+            [
+              "เวลาที่ B จะมาถึง",
+              "10:00"
+            ],
+            [
+              "รูปคำนามที่ให้",
+              "zwei Stunden"
+            ],
+            [
+              "โครงที่ต้องใช้ในข้อนี้",
+              "ใช้ in เพื่อบอกอีกช่วงเวลาหนึ่งนับจากขณะนี้"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "in zwei Stunden"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model",
+            "provided-time-preposition-in"
+          ],
+          "feedback": {
+            "reason": "เขียนกลุ่มเวลาในอนาคตจากตอนนี้: in zwei Stunden; โจทย์ให้รูปคำนามแล้ว จึงไม่ได้วัดการผันคำนามเอง",
+            "models": [
+              {
+                "text": "Ich komme in zwei Stunden.",
+                "meaning": "ฉันจะมาในอีกสองชั่วโมง",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "komme",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "in zwei Stunden.",
+                      "role": "time",
+                      "label": "กลุ่มบอกเวลา"
+                    }
+                  ]
+                ],
+                "audio": "L16-temporale-praepositionen-XG-S2-C3-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "vor zwei Stunden",
+                "category": "temporal_relation",
+                "message": "เวลามาถึงเป็นอนาคตจากตอนนี้ จึงต้องใช้ in ไม่ใช่ vor"
+              },
+              {
+                "response": "nach zwei Stunden",
+                "category": "bounded_lexical_constraint",
+                "message": "ข้อนี้กำหนดให้ใช้ in สำหรับระยะเวลานับจากปัจจุบัน จึงต้องเขียนด้วย in; ไม่ได้หมายความว่า nach + ระยะเวลาใช้ไม่ได้ในทุกบริบท"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L16-temporale-praepositionen",
+            "contextId": "L16-temporale-praepositionen-XG-S2-C3-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "temporal_relation",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L16-temporale-praepositionen-XG-S2-C4-v1",
+          "version": 1,
+          "targetId": "L16-temporale-praepositionen",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L16-temporale-praepositionen"
+          ],
+          "kind": "write",
+          "prompt": "เติมเฉพาะกลุ่มเวลา ใช้ Kurs พร้อมคำบุพบทและ Artikel ที่ถูกต้อง",
+          "cue": "Wir treffen uns ___.",
+          "context": [
+            [
+              "คอร์สเลิก",
+              "17:00"
+            ],
+            [
+              "เวลาเจอกัน",
+              "17:30"
+            ],
+            [
+              "คำนามต้นทาง",
+              "der Kurs"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "nach dem Kurs"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "พบกันหลังคอร์สและ nach ใช้ Dativ: der Kurs เปลี่ยนเป็น dem Kurs",
+            "models": [
+              {
+                "text": "Wir treffen uns nach dem Kurs.",
+                "meaning": "พวกเราเจอกันหลังคอร์สเลิก",
+                "sentences": [
+                  [
+                    {
+                      "text": "Wir",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "treffen",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "uns",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "nach dem Kurs.",
+                      "role": "time",
+                      "label": "กลุ่มบอกเวลา"
+                    }
+                  ]
+                ],
+                "audio": "L16-temporale-praepositionen-XG-S2-C4-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "nach der Kurs",
+                "category": "case_ending",
+                "message": "Kurs เป็นเพศชาย หลัง nach ใช้ Dativ จึงเป็น nach dem Kurs"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L16-temporale-praepositionen",
+            "contextId": "L16-temporale-praepositionen-XG-S2-C4-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "temporal_relation",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L16-temporale-praepositionen-XG-S3-C5-v1",
+          "version": 1,
+          "targetId": "L16-temporale-praepositionen",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 4,
+          "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production; ข้อนี้ให้ in และรูปกลุ่มคำนามมาแล้ว จึงไม่วัดการเลือกบุพบทหรือผันคำนามอย่างอิสระ",
+          "requiredCardIds": [
+            "L16-temporale-praepositionen"
+          ],
+          "kind": "write",
+          "prompt": "เขียนหนึ่งประโยค เริ่มด้วย Wir ใช้ sich treffen และ in เพื่อบอกอีกสองวันนับจากขณะนี้",
+          "cue": "",
+          "context": [
+            [
+              "เวลาตอนนี้",
+              "วันจันทร์"
+            ],
+            [
+              "เวลาเจอกัน",
+              "วันพุธ"
+            ],
+            [
+              "กลุ่มคำนามที่ให้",
+              "zwei Tagen"
+            ],
+            [
+              "กริยารูปตั้งต้น",
+              "sich treffen = เจอกัน"
+            ],
+            [
+              "คำเริ่มต้น",
+              "Wir"
+            ],
+            [
+              "โครงที่ต้องใช้ในข้อนี้",
+              "ใช้ in เพื่อบอกอีกช่วงเวลาหนึ่งนับจากขณะนี้"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "Wir",
+          "acceptedAnswers": [
+            "Wir treffen uns in zwei Tagen.",
+            "Wir treffen uns in zwei Tagen"
+          ],
+          "assistance": [
+            "provided-context",
+            "supplied-lexical-forms",
+            "provided-start",
+            "german-character-keyboard",
+            "optional-topic-model",
+            "provided-time-preposition-in"
+          ],
+          "feedback": {
+            "reason": "นับจากวันจันทร์ไปวันพุธเป็นอีกสองวัน ใช้ in zwei Tagen; Wir เป็นประธานและ treffen อยู่ตำแหน่ง 2",
+            "models": [
+              {
+                "text": "Wir treffen uns in zwei Tagen.",
+                "meaning": "พวกเราจะเจอกันในอีกสองวัน",
+                "sentences": [
+                  [
+                    {
+                      "text": "Wir",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "treffen",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "uns",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "in zwei Tagen.",
+                      "role": "time",
+                      "label": "กลุ่มบอกเวลา"
+                    }
+                  ]
+                ],
+                "audio": "L16-temporale-praepositionen-XG-S3-C5-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Wir treffen uns vor zwei Tagen.",
+                "category": "temporal_relation",
+                "message": "วันพุธยังมาไม่ถึงเมื่อเทียบกับวันจันทร์ จึงใช้ in zwei Tagen ไม่ใช่ vor"
+              },
+              {
+                "response": "Wir treffen uns nach zwei Tagen.",
+                "category": "bounded_lexical_constraint",
+                "message": "ข้อนี้กำหนดให้ใช้ in สำหรับระยะเวลานับจากปัจจุบัน จึงต้องเขียนด้วย in; ไม่ได้หมายความว่า nach + ระยะเวลาใช้ไม่ได้ในทุกบริบท"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L16-temporale-praepositionen",
+            "contextId": "L16-temporale-praepositionen-XG-S3-C5-v1-context",
+            "stage": 3,
+            "unlock": {
+              "subskill": "grammar_bounded_production",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "tasks": [
+        {
+          "id": "L17-werden-XG-S1-C1-v1",
+          "version": 1,
+          "targetId": "L17-werden",
+          "subskill": "werden_conjugation",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด werden_conjugation ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L17-werden"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Leo und Ben ___ Ärzte.",
+          "context": [
+            [
+              "ผู้พูด",
+              "พี่ชายสองคน: Leo und Ben"
+            ],
+            [
+              "คำอาชีพที่ให้",
+              "die Ärzte → Ärzte หลัง werden"
+            ]
+          ],
+          "options": [
+            "werden",
+            "wird",
+            "wirst"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "werden"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "ประธานสองคนเทียบกับ sie พหูพจน์ จึงผัน werden เป็น werden",
+            "models": [
+              {
+                "text": "Leo und Ben werden Ärzte.",
+                "meaning": "Leo กับ Ben จะเป็นแพทย์",
+                "sentences": [
+                  [
+                    {
+                      "text": "Leo und Ben",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "werden",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "Ärzte.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-werden-XG-S1-C1-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "wird",
+                "category": "subject_verb_agreement",
+                "message": "Leo und Ben เป็นหลายคน จึงใช้ werden ไม่ใช่ wird"
+              },
+              {
+                "response": "wirst",
+                "category": "target_form_or_relation",
+                "message": "รูป “wirst” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: ประธานสองคนเทียบกับ sie พหูพจน์ จึงผัน werden เป็น werden"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-werden",
+            "contextId": "L17-werden-XG-S1-C1-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "werden_conjugation",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-werden-XG-S1-C2-v1",
+          "version": 1,
+          "targetId": "L17-werden",
+          "subskill": "werden_conjugation",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด werden_conjugation ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L17-werden"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Ich ___ Pilotin.",
+          "context": [
+            [
+              "ผู้พูด",
+              "ฉัน: Lea"
+            ],
+            [
+              "คำอาชีพที่ให้",
+              "die Pilotin → Pilotin หลัง werden"
+            ]
+          ],
+          "options": [
+            "werde",
+            "wird",
+            "werdet"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "werde"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "Ich ใช้ werde; เมื่อบอกอาชีพหลัง werden แบบนี้ไม่เติม ein/eine",
+            "models": [
+              {
+                "text": "Ich werde Pilotin.",
+                "meaning": "ฉันจะเป็นนักบินหญิง",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "werde",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "Pilotin.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-werden-XG-S1-C2-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "wird",
+                "category": "subject_verb_agreement",
+                "message": "เมื่อประธานเป็น Ich ต้องใช้ werde ไม่ใช่ wird"
+              },
+              {
+                "response": "werdet",
+                "category": "target_form_or_relation",
+                "message": "รูป “werdet” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: Ich ใช้ werde; เมื่อบอกอาชีพหลัง werden แบบนี้ไม่เติม ein/eine"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-werden",
+            "contextId": "L17-werden-XG-S1-C2-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "werden_conjugation",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-werden-XG-S2-C3-v1",
+          "version": 1,
+          "targetId": "L17-werden",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L17-werden"
+          ],
+          "kind": "write",
+          "prompt": "เติมกริยา werden ที่ผันแล้วพร้อมอาชีพ Koch โดยไม่เขียน Du ซ้ำ",
+          "cue": "Du ___.",
+          "context": [
+            [
+              "ผู้ที่กล่าวถึง",
+              "du"
+            ],
+            [
+              "คำอาชีพที่ให้",
+              "der Koch → Koch หลัง werden"
+            ],
+            [
+              "รูปกริยาต้นทาง",
+              "werden"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "wirst Koch"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เขียนภาคแสดงที่กำหนด: du ใช้ wirst ตามด้วย Koch โดยไม่เติม ein",
+            "models": [
+              {
+                "text": "Du wirst Koch.",
+                "meaning": "เธอจะเป็นพ่อครัว",
+                "sentences": [
+                  [
+                    {
+                      "text": "Du",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "wirst",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "Koch.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-werden-XG-S2-C3-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "werde Koch",
+                "category": "subject_verb_agreement",
+                "message": "Du ผัน werden เป็น wirst; werde ใช้กับ ich"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-werden",
+            "contextId": "L17-werden-XG-S2-C3-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "werden_conjugation",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-werden-XG-S2-C4-v1",
+          "version": 1,
+          "targetId": "L17-werden",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L17-werden"
+          ],
+          "kind": "write",
+          "prompt": "เติมกริยา werden ที่ผันแล้วพร้อม Eltern โดยไม่เขียน Wir ซ้ำ",
+          "cue": "Wir ___.",
+          "context": [
+            [
+              "ผู้พูด",
+              "wir"
+            ],
+            [
+              "คำนามที่ให้",
+              "die Eltern → Eltern หลัง werden"
+            ],
+            [
+              "รูปกริยาต้นทาง",
+              "werden"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "werden Eltern"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "ประธาน Wir ต้องใช้ werden แล้วตามด้วยสถานะ Eltern",
+            "models": [
+              {
+                "text": "Wir werden Eltern.",
+                "meaning": "พวกเราจะเป็นพ่อแม่",
+                "sentences": [
+                  [
+                    {
+                      "text": "Wir",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "werden",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "Eltern.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-werden-XG-S2-C4-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "wird Eltern",
+                "category": "subject_verb_agreement",
+                "message": "Wir ใช้ werden ไม่ใช่ wird"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-werden",
+            "contextId": "L17-werden-XG-S2-C4-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "werden_conjugation",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-werden-XG-S3-C5-v1",
+          "version": 1,
+          "targetId": "L17-werden",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 4,
+          "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+          "requiredCardIds": [
+            "L17-werden"
+          ],
+          "kind": "write",
+          "prompt": "เขียนหนึ่งประโยคตามข้อมูล เริ่มด้วย Paul ใช้ werden และ Koch",
+          "cue": "",
+          "context": [
+            [
+              "บุคคล",
+              "Paul"
+            ],
+            [
+              "ข้อมูล",
+              "เขาจะเป็นพ่อครัว"
+            ],
+            [
+              "คำอาชีพที่ให้",
+              "der Koch = พ่อครัว"
+            ],
+            [
+              "กริยาต้นทาง",
+              "werden"
+            ],
+            [
+              "คำเริ่มต้น",
+              "Paul"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "Paul",
+          "acceptedAnswers": [
+            "Paul wird Koch.",
+            "Paul wird Koch"
+          ],
+          "assistance": [
+            "provided-context",
+            "supplied-lexical-forms",
+            "provided-start",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "Paul เป็นบุรุษที่สามเอกพจน์ ใช้ wird ตำแหน่ง 2 ตามด้วย Koch; ไม่ได้วัดการคิดอาชีพเอง",
+            "models": [
+              {
+                "text": "Paul wird Koch.",
+                "meaning": "Paul จะเป็นพ่อครัว",
+                "sentences": [
+                  [
+                    {
+                      "text": "Paul",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "wird",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "Koch.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-werden-XG-S3-C5-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Paul werden Koch.",
+                "category": "subject_verb_agreement",
+                "message": "Paul เป็นคนเดียว จึงผันเป็น wird ไม่ใช่ werden"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-werden",
+            "contextId": "L17-werden-XG-S3-C5-v1-context",
+            "stage": 3,
+            "unlock": {
+              "subskill": "grammar_bounded_production",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-wollen-XG-S1-C1-v1",
+          "version": 1,
+          "targetId": "L17-wollen",
+          "subskill": "wollen_conjugation",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด wollen_conjugation ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L17-wollen"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Du ___ Deutsch lernen.",
+          "context": [
+            [
+              "ผู้ที่เล่าแผน",
+              "du"
+            ],
+            [
+              "แผน",
+              "เรียนภาษาเยอรมัน"
+            ]
+          ],
+          "options": [
+            "willst",
+            "will",
+            "wollt"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "willst"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "ผัน wollen ตาม Du เป็น willst ส่วน lernen เป็น Infinitiv ท้ายประโยค",
+            "models": [
+              {
+                "text": "Du willst Deutsch lernen.",
+                "meaning": "เธอตั้งใจจะเรียนภาษาเยอรมัน",
+                "sentences": [
+                  [
+                    {
+                      "text": "Du",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "willst",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "Deutsch",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "lernen.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L17-wollen-XG-S1-C1-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "will",
+                "category": "subject_verb_agreement",
+                "message": "Du ต้องใช้ willst; will ใช้กับ ich หรือบุคคลที่สามเอกพจน์"
+              },
+              {
+                "response": "wollt",
+                "category": "target_form_or_relation",
+                "message": "รูป “wollt” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: ผัน wollen ตาม Du เป็น willst ส่วน lernen เป็น Infinitiv ท้ายประโยค"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-wollen",
+            "contextId": "L17-wollen-XG-S1-C1-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "wollen_conjugation",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-wollen-XG-S1-C2-v1",
+          "version": 1,
+          "targetId": "L17-wollen",
+          "subskill": "wollen_conjugation",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด wollen_conjugation ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L17-wollen"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Nora und Ali ___ nach Berlin reisen.",
+          "context": [
+            [
+              "ผู้ที่เล่าแผน",
+              "Nora und Ali"
+            ],
+            [
+              "แผน",
+              "เดินทางไป Berlin"
+            ]
+          ],
+          "options": [
+            "wollen",
+            "will",
+            "wollt"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "wollen"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "ประธานหลายคนใช้ wollen; nach Berlin เป็นจุดหมายและ reisen อยู่ท้าย",
+            "models": [
+              {
+                "text": "Nora und Ali wollen nach Berlin reisen.",
+                "meaning": "Nora กับ Ali ตั้งใจจะเดินทางไป Berlin",
+                "sentences": [
+                  [
+                    {
+                      "text": "Nora und Ali",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "wollen",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "nach Berlin",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "reisen.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L17-wollen-XG-S1-C2-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "will",
+                "category": "subject_verb_agreement",
+                "message": "Nora und Ali เป็นสองคน จึงใช้ wollen ไม่ใช่ will"
+              },
+              {
+                "response": "wollt",
+                "category": "target_form_or_relation",
+                "message": "รูป “wollt” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: ประธานหลายคนใช้ wollen; nach Berlin เป็นจุดหมายและ reisen อยู่ท้าย"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-wollen",
+            "contextId": "L17-wollen-XG-S1-C2-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "wollen_conjugation",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-wollen-XG-S2-C3-v1",
+          "version": 1,
+          "targetId": "L17-wollen",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L17-wollen"
+          ],
+          "kind": "write",
+          "prompt": "เติมเฉพาะส่วนหลัง Ich ใช้ wollen ที่ผันแล้วและ Deutsch lernen",
+          "cue": "Ich ___.",
+          "context": [
+            [
+              "ผู้พูด",
+              "ich"
+            ],
+            [
+              "แผนที่กำหนด",
+              "Deutsch lernen"
+            ],
+            [
+              "กริยาที่ต้องใช้",
+              "wollen"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "will Deutsch lernen"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เขียนภาคแสดงจากคำที่ให้: ich ใช้ will และ lernen ต้องอยู่ท้าย",
+            "models": [
+              {
+                "text": "Ich will Deutsch lernen.",
+                "meaning": "ฉันตั้งใจจะเรียนภาษาเยอรมัน",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "will",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "Deutsch",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "lernen.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L17-wollen-XG-S2-C3-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "will lernen Deutsch",
+                "category": "verb_position",
+                "message": "หลัง will วาง Deutsch ก่อน แล้วเก็บ Infinitiv lernen ไว้ท้ายประโยค"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-wollen",
+            "contextId": "L17-wollen-XG-S2-C3-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "wollen_conjugation",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-wollen-XG-S2-C4-v1",
+          "version": 1,
+          "targetId": "L17-wollen",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L17-wollen"
+          ],
+          "kind": "write",
+          "prompt": "เติมเฉพาะส่วนหลัง Wir ใช้ wollen ที่ผันแล้วและ im Ausland leben",
+          "cue": "Wir ___.",
+          "context": [
+            [
+              "ผู้พูด",
+              "wir"
+            ],
+            [
+              "แผนที่กำหนด",
+              "im Ausland leben"
+            ],
+            [
+              "กริยาที่ต้องใช้",
+              "wollen"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "wollen im Ausland leben"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "Wir ใช้ wollen; im Ausland บอกสถานที่ ส่วน leben เป็น Infinitiv อยู่ท้าย",
+            "models": [
+              {
+                "text": "Wir wollen im Ausland leben.",
+                "meaning": "พวกเราตั้งใจจะอยู่ต่างประเทศ",
+                "sentences": [
+                  [
+                    {
+                      "text": "Wir",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "wollen",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "im Ausland",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "leben.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L17-wollen-XG-S2-C4-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "will im Ausland leben",
+                "category": "subject_verb_agreement",
+                "message": "Wir ต้องใช้ wollen ไม่ใช่ will"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-wollen",
+            "contextId": "L17-wollen-XG-S2-C4-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "wollen_conjugation",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-wollen-XG-S3-C5-v1",
+          "version": 1,
+          "targetId": "L17-wollen",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 4,
+          "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+          "requiredCardIds": [
+            "L17-wollen"
+          ],
+          "kind": "write",
+          "prompt": "เขียนหนึ่งประโยคตามข้อมูล เริ่มด้วย Mira ใช้ wollen และเก็บ lernen ไว้ท้าย",
+          "cue": "",
+          "context": [
+            [
+              "บุคคล",
+              "Mira"
+            ],
+            [
+              "แผนในวันพรุ่งนี้",
+              "เรียนภาษาเยอรมัน"
+            ],
+            [
+              "รูปคำที่ให้",
+              "morgen · Deutsch · lernen"
+            ],
+            [
+              "คำศัพท์ประกอบ",
+              "morgen = พรุ่งนี้; lernen = เรียน"
+            ],
+            [
+              "กริยาที่ต้องใช้",
+              "wollen"
+            ],
+            [
+              "คำเริ่มต้น",
+              "Mira"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "Mira",
+          "acceptedAnswers": [
+            "Mira will morgen Deutsch lernen.",
+            "Mira will morgen Deutsch lernen",
+            "Mira will Deutsch morgen lernen.",
+            "Mira will Deutsch morgen lernen"
+          ],
+          "assistance": [
+            "provided-context",
+            "supplied-lexical-forms",
+            "provided-start",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "Mira เป็นคนเดียวใช้ will ตำแหน่ง 2; morgen บอกเวลาและ lernen ปิดท้ายประโยค",
+            "models": [
+              {
+                "text": "Mira will morgen Deutsch lernen.",
+                "meaning": "Mira ตั้งใจจะเรียนภาษาเยอรมันพรุ่งนี้",
+                "sentences": [
+                  [
+                    {
+                      "text": "Mira",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "will",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "morgen",
+                      "role": "time",
+                      "label": "เวลา"
+                    },
+                    {
+                      "text": "Deutsch",
+                      "role": "other",
+                      "label": "สิ่งที่เรียน"
+                    },
+                    {
+                      "text": "lernen.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L17-wollen-XG-S3-C5-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Mira will lernen morgen Deutsch.",
+                "category": "verb_position",
+                "message": "lernen เป็น Infinitiv จึงต้องอยู่ท้าย ไม่วางก่อนข้อมูลเวลาและภาษา"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-wollen",
+            "contextId": "L17-wollen-XG-S3-C5-v1-context",
+            "stage": 3,
+            "unlock": {
+              "subskill": "grammar_bounded_production",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-mit-ohne-XG-S1-C1-v1",
+          "version": 1,
+          "targetId": "L17-mit-ohne",
+          "subskill": "preposition_case_inflection",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด preposition_case_inflection ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L17-mit-ohne"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Eva fährt mit ___ Kind.",
+          "context": [
+            [
+              "สิ่งที่ไปด้วย",
+              "ein Kind"
+            ],
+            [
+              "คำบุพบทที่กำหนด",
+              "mit"
+            ]
+          ],
+          "options": [
+            "einem",
+            "einen",
+            "ein"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "einem"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "โจทย์ให้ mit มาแล้ว วัดการผัน Artikel: ein Kind เปลี่ยนเป็น einem Kind",
+            "models": [
+              {
+                "text": "Eva fährt mit einem Kind.",
+                "meaning": "Eva เดินทางไปกับเด็กหนึ่งคน",
+                "sentences": [
+                  [
+                    {
+                      "text": "Eva",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "fährt",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "mit einem Kind.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-mit-ohne-XG-S1-C1-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "einen",
+                "category": "case_ending",
+                "message": "Kind เป็นเพศกลางและ mit ใช้ Dativ จึงเป็น einem Kind ไม่ใช่ einen"
+              },
+              {
+                "response": "ein",
+                "category": "target_form_or_relation",
+                "message": "รูป “ein” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: โจทย์ให้ mit มาแล้ว วัดการผัน Artikel: ein Kind เปลี่ยนเป็น einem Kind"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-mit-ohne",
+            "contextId": "L17-mit-ohne-XG-S1-C1-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "preposition_case_inflection",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-mit-ohne-XG-S1-C2-v1",
+          "version": 1,
+          "targetId": "L17-mit-ohne",
+          "subskill": "preposition_case_inflection",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด preposition_case_inflection ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L17-mit-ohne"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Omar reist ohne ___ Hund.",
+          "context": [
+            [
+              "สิ่งที่ไม่ได้พาไป",
+              "ein Hund"
+            ],
+            [
+              "คำบุพบทที่กำหนด",
+              "ohne"
+            ]
+          ],
+          "options": [
+            "einen",
+            "einem",
+            "ein"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "einen"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "โจทย์ให้ ohne มาแล้ว วัดการผัน ein Hund ใน Akkusativ เป็น einen Hund",
+            "models": [
+              {
+                "text": "Omar reist ohne einen Hund.",
+                "meaning": "Omar เดินทางโดยไม่พาสุนัขไปหนึ่งตัว",
+                "sentences": [
+                  [
+                    {
+                      "text": "Omar",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "reist",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "ohne einen Hund.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-mit-ohne-XG-S1-C2-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "einem",
+                "category": "case_ending",
+                "message": "ohne ใช้ Akkusativ; ein Hund เพศชายเปลี่ยนเป็น einen Hund ไม่ใช่ einem"
+              },
+              {
+                "response": "ein",
+                "category": "target_form_or_relation",
+                "message": "รูป “ein” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: โจทย์ให้ ohne มาแล้ว วัดการผัน ein Hund ใน Akkusativ เป็น einen Hund"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-mit-ohne",
+            "contextId": "L17-mit-ohne-XG-S1-C2-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "preposition_case_inflection",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-mit-ohne-XG-S2-C3-v1",
+          "version": 1,
+          "targetId": "L17-mit-ohne",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L17-mit-ohne"
+          ],
+          "kind": "write",
+          "prompt": "เติมกลุ่มคำด้วย mit และ eine Freundin โดยเปลี่ยน Case ให้ถูกต้อง",
+          "cue": "Ich komme ___.",
+          "context": [
+            [
+              "คำนามต้นทาง",
+              "eine Freundin"
+            ],
+            [
+              "คำบุพบทที่ต้องใช้",
+              "mit"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "mit einer Freundin"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เขียนกลุ่มคำที่กำหนด: mit + Dativ ทำให้ eine เปลี่ยนเป็น einer; ไม่ได้วัดการเลือกว่ามาด้วยหรือไม่",
+            "models": [
+              {
+                "text": "Ich komme mit einer Freundin.",
+                "meaning": "ฉันมากับเพื่อนผู้หญิงหนึ่งคน",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "komme",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "mit einer Freundin.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-mit-ohne-XG-S2-C3-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "mit eine Freundin",
+                "category": "case_ending",
+                "message": "mit ใช้ Dativ จึงเปลี่ยน eine Freundin เป็น einer Freundin"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-mit-ohne",
+            "contextId": "L17-mit-ohne-XG-S2-C3-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "preposition_case_inflection",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-mit-ohne-XG-S2-C4-v1",
+          "version": 1,
+          "targetId": "L17-mit-ohne",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L17-mit-ohne"
+          ],
+          "kind": "write",
+          "prompt": "เติมกลุ่มคำด้วย ohne และ ein Schirm โดยเปลี่ยน Case ให้ถูกต้อง",
+          "cue": "Ich gehe ___.",
+          "context": [
+            [
+              "คำนามต้นทาง",
+              "ein Schirm"
+            ],
+            [
+              "คำบุพบทที่ต้องใช้",
+              "ohne"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "ohne einen Schirm"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "ใช้ ohne ตามที่กำหนด แล้วผัน ein Schirm เป็น einen Schirm ใน Akkusativ",
+            "models": [
+              {
+                "text": "Ich gehe ohne einen Schirm.",
+                "meaning": "ฉันไปโดยไม่มีร่ม",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "gehe",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "ohne einen Schirm.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-mit-ohne-XG-S2-C4-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "ohne einem Schirm",
+                "category": "case_ending",
+                "message": "ohne ใช้ Akkusativ; ein Schirm เพศชายจึงเป็น einen Schirm"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-mit-ohne",
+            "contextId": "L17-mit-ohne-XG-S2-C4-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "preposition_case_inflection",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L17-mit-ohne-XG-S3-C5-v1",
+          "version": 1,
+          "targetId": "L17-mit-ohne",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 4,
+          "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+          "requiredCardIds": [
+            "L17-mit-ohne"
+          ],
+          "kind": "write",
+          "prompt": "เขียนหนึ่งประโยค เริ่มด้วย Ich ใช้คำที่กำหนดและผัน ein Freund ให้ถูกต้อง",
+          "cue": "",
+          "context": [
+            [
+              "ผู้พูด",
+              "ich"
+            ],
+            [
+              "การเดินทาง",
+              "เดินทางไปกับเพื่อนชายหนึ่งคน"
+            ],
+            [
+              "รูปคำที่ให้",
+              "kommen · mit · ein Freund"
+            ],
+            [
+              "คำนามต้นทาง",
+              "der Freund = เพื่อนผู้ชาย"
+            ],
+            [
+              "คำเริ่มต้น",
+              "Ich"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "Ich",
+          "acceptedAnswers": [
+            "Ich komme mit einem Freund.",
+            "Ich komme mit einem Freund"
+          ],
+          "assistance": [
+            "provided-context",
+            "supplied-lexical-forms",
+            "provided-start",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เริ่ม Ich แล้ววาง komme ตำแหน่ง 2; mit เปลี่ยน ein Freund เป็น einem Freund",
+            "models": [
+              {
+                "text": "Ich komme mit einem Freund.",
+                "meaning": "ฉันมากับเพื่อนผู้ชายหนึ่งคน",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "komme",
+                      "role": "verb",
+                      "label": "กริยาหลัก (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "mit einem Freund.",
+                      "role": "other",
+                      "label": "ข้อมูลที่บอก"
+                    }
+                  ]
+                ],
+                "audio": "L17-mit-ohne-XG-S3-C5-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Ich komme mit einen Freund.",
+                "category": "case_ending",
+                "message": "mit ใช้ Dativ จึงต้องเป็น einem Freund แทน einen Freund"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L17-mit-ohne",
+            "contextId": "L17-mit-ohne-XG-S3-C5-v1-context",
+            "stage": 3,
+            "unlock": {
+              "subskill": "grammar_bounded_production",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "tasks": [
+        {
+          "id": "L18-imperativ-sie-XG-S1-C1-v1",
+          "version": 1,
+          "targetId": "L18-imperativ-sie",
+          "subskill": "formal_imperative_form",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด formal_imperative_form ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L18-imperativ-sie"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "___ Sie bitte die Tür.",
+          "context": [
+            [
+              "ผู้รับคำขอ",
+              "ผู้ใหญ่ที่ใช้ Sie"
+            ],
+            [
+              "สิ่งที่ขอ",
+              "เปิดประตู"
+            ],
+            [
+              "กริยาต้นทาง",
+              "öffnen"
+            ],
+            [
+              "คำศัพท์ประกอบ",
+              "öffnen = เปิด; lesen = อ่าน; das Fenster = หน้าต่าง; der Satz = ประโยค"
+            ]
+          ],
+          "options": [
+            "Öffnen",
+            "Öffnest",
+            "Öffnet"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "Öffnen"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "ใช้รูป Öffnen ขึ้นต้นคำขอ ตามด้วย Sie และ bitte; ไม่ได้ให้คำแนะนำด้านสุขภาพ",
+            "models": [
+              {
+                "text": "Öffnen Sie bitte die Tür.",
+                "meaning": "กรุณาเปิดประตู",
+                "sentences": [
+                  [
+                    {
+                      "text": "Öffnen",
+                      "role": "verb",
+                      "label": "กริยาคำขอสุภาพ",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "Sie",
+                      "role": "subject",
+                      "label": "ประธานแบบสุภาพ"
+                    },
+                    {
+                      "text": "bitte die Tür.",
+                      "role": "other",
+                      "label": "สิ่งที่ขอให้ทำ"
+                    }
+                  ]
+                ],
+                "audio": "L18-imperativ-sie-XG-S1-C1-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Öffnest",
+                "category": "imperative_form",
+                "message": "Öffnest เป็นรูป du; คำขอสุภาพกับ Sie ใช้ Öffnen Sie"
+              },
+              {
+                "response": "Öffnet",
+                "category": "target_form_or_relation",
+                "message": "รูป “Öffnet” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: ใช้รูป Öffnen ขึ้นต้นคำขอ ตามด้วย Sie และ bitte; ไม่ได้ให้คำแนะนำด้านสุขภาพ"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-imperativ-sie",
+            "contextId": "L18-imperativ-sie-XG-S1-C1-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "formal_imperative_form",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L18-imperativ-sie-XG-S1-C2-v1",
+          "version": 1,
+          "targetId": "L18-imperativ-sie",
+          "subskill": "formal_imperative_form",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด formal_imperative_form ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L18-imperativ-sie"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "___ Sie bitte den Satz.",
+          "context": [
+            [
+              "ผู้รับคำขอ",
+              "ผู้ใหญ่ที่ใช้ Sie"
+            ],
+            [
+              "สิ่งที่ขอ",
+              "อ่านประโยค"
+            ],
+            [
+              "กริยาต้นทาง",
+              "lesen"
+            ],
+            [
+              "คำศัพท์ประกอบ",
+              "öffnen = เปิด; lesen = อ่าน; das Fenster = หน้าต่าง; der Satz = ประโยค"
+            ]
+          ],
+          "options": [
+            "Lesen",
+            "Liest",
+            "Lest"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "Lesen"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "คำขอแบบ Sie ใช้ Lesen แล้วตามด้วย Sie ไม่ใช้รูป du liest",
+            "models": [
+              {
+                "text": "Lesen Sie bitte den Satz.",
+                "meaning": "กรุณาอ่านประโยค",
+                "sentences": [
+                  [
+                    {
+                      "text": "Lesen",
+                      "role": "verb",
+                      "label": "กริยาคำขอสุภาพ",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "Sie",
+                      "role": "subject",
+                      "label": "ประธานแบบสุภาพ"
+                    },
+                    {
+                      "text": "bitte den Satz.",
+                      "role": "other",
+                      "label": "สิ่งที่ขอให้ทำ"
+                    }
+                  ]
+                ],
+                "audio": "L18-imperativ-sie-XG-S1-C2-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Liest",
+                "category": "imperative_form",
+                "message": "Liest ไม่ใช่รูปคำขอสุภาพกับ Sie; ต้องใช้ Lesen Sie"
+              },
+              {
+                "response": "Lest",
+                "category": "target_form_or_relation",
+                "message": "รูป “Lest” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: คำขอแบบ Sie ใช้ Lesen แล้วตามด้วย Sie ไม่ใช้รูป du liest"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-imperativ-sie",
+            "contextId": "L18-imperativ-sie-XG-S1-C2-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "formal_imperative_form",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L18-imperativ-sie-XG-S2-C3-v1",
+          "version": 1,
+          "targetId": "L18-imperativ-sie",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L18-imperativ-sie"
+          ],
+          "kind": "write",
+          "prompt": "เติมกลุ่มกริยากับ Sie ให้เป็นคำขอสุภาพจาก warten ไม่เขียน bitte hier ซ้ำ",
+          "cue": "___ bitte hier.",
+          "context": [
+            [
+              "กริยาที่ให้",
+              "warten"
+            ],
+            [
+              "ข้อมูลประกอบ",
+              "bitte hier"
+            ],
+            [
+              "ผู้รับคำขอ",
+              "Sie"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "Warten Sie"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "เขียนกลุ่มคำขอจาก warten โดยวาง Warten ก่อน Sie แล้วจึงตามด้วย bitte hier ในกรอบ",
+            "models": [
+              {
+                "text": "Warten Sie bitte hier.",
+                "meaning": "กรุณารอที่นี่",
+                "sentences": [
+                  [
+                    {
+                      "text": "Warten",
+                      "role": "verb",
+                      "label": "กริยาคำขอสุภาพ",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "Sie",
+                      "role": "subject",
+                      "label": "ประธานแบบสุภาพ"
+                    },
+                    {
+                      "text": "bitte hier.",
+                      "role": "other",
+                      "label": "สิ่งที่ขอให้ทำ"
+                    }
+                  ]
+                ],
+                "audio": "L18-imperativ-sie-XG-S2-C3-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Sie warten",
+                "category": "verb_position",
+                "message": "กลุ่มคำขอต้องวางกริยาก่อน Sie: Warten Sie ไม่ใช่ Sie warten"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-imperativ-sie",
+            "contextId": "L18-imperativ-sie-XG-S2-C3-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "formal_imperative_form",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L18-imperativ-sie-XG-S2-C4-v1",
+          "version": 1,
+          "targetId": "L18-imperativ-sie",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L18-imperativ-sie"
+          ],
+          "kind": "write",
+          "prompt": "เติมกลุ่มกริยากับ Sie ให้เป็นคำขอสุภาพจาก sprechen ไม่เขียน bitte langsam ซ้ำ",
+          "cue": "___ bitte langsam.",
+          "context": [
+            [
+              "กริยาที่ให้",
+              "sprechen"
+            ],
+            [
+              "ข้อมูลประกอบ",
+              "bitte langsam"
+            ],
+            [
+              "ผู้รับคำขอ",
+              "Sie"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "Sprechen Sie"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "ใช้ Sprechen Sie เป็นกลุ่มคำขอสุภาพ; ข้อนี้วัดการประกอบกลุ่มกริยากับ Sie ไม่ใช่การเลือกคำกริยาเอง",
+            "models": [
+              {
+                "text": "Sprechen Sie bitte langsam.",
+                "meaning": "กรุณาพูดช้า ๆ",
+                "sentences": [
+                  [
+                    {
+                      "text": "Sprechen",
+                      "role": "verb",
+                      "label": "กริยาคำขอสุภาพ",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "Sie",
+                      "role": "subject",
+                      "label": "ประธานแบบสุภาพ"
+                    },
+                    {
+                      "text": "bitte langsam.",
+                      "role": "other",
+                      "label": "สิ่งที่ขอให้ทำ"
+                    }
+                  ]
+                ],
+                "audio": "L18-imperativ-sie-XG-S2-C4-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Sie sprechen",
+                "category": "verb_position",
+                "message": "กลุ่มคำขอต้องเป็น Sprechen Sie โดยวางกริยาก่อน Sie"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-imperativ-sie",
+            "contextId": "L18-imperativ-sie-XG-S2-C4-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "formal_imperative_form",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L18-imperativ-sie-XG-S3-C5-v1",
+          "version": 1,
+          "targetId": "L18-imperativ-sie",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 4,
+          "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+          "requiredCardIds": [
+            "L18-imperativ-sie"
+          ],
+          "kind": "write",
+          "prompt": "เขียนคำขอหนึ่งประโยค เริ่มด้วย Bitte ใช้ öffnen ที่ผันแล้ว ตามด้วย Sie และ das Fenster",
+          "cue": "",
+          "context": [
+            [
+              "กริยาที่ให้",
+              "öffnen"
+            ],
+            [
+              "สิ่งที่ขอ",
+              "das Fenster"
+            ],
+            [
+              "คำสุภาพนำหน้า",
+              "Bitte"
+            ],
+            [
+              "ผู้รับคำขอ",
+              "Sie"
+            ],
+            [
+              "คำเริ่มต้น",
+              "Bitte"
+            ],
+            [
+              "คำศัพท์ประกอบ",
+              "öffnen = เปิด; lesen = อ่าน; das Fenster = หน้าต่าง; der Satz = ประโยค"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "Bitte",
+          "acceptedAnswers": [
+            "Bitte öffnen Sie das Fenster.",
+            "Bitte öffnen Sie das Fenster",
+            "Bitte, öffnen Sie das Fenster.",
+            "Bitte, öffnen Sie das Fenster"
+          ],
+          "assistance": [
+            "provided-context",
+            "supplied-lexical-forms",
+            "provided-start",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "Bitte เป็นคำขอสุภาพนำหน้าแกนคำขอ; öffnen อยู่ก่อน Sie แล้วตามด้วย das Fenster ไม่ใช่ Bitte Sie öffnen",
+            "models": [
+              {
+                "text": "Bitte öffnen Sie das Fenster.",
+                "meaning": "กรุณาเปิดหน้าต่าง",
+                "sentences": [
+                  [
+                    {
+                      "text": "Bitte",
+                      "role": "other",
+                      "label": "คำขอสุภาพ"
+                    },
+                    {
+                      "text": "öffnen",
+                      "role": "verb",
+                      "label": "กริยาคำขอสุภาพ",
+                      "position": "ก่อน Sie"
+                    },
+                    {
+                      "text": "Sie",
+                      "role": "subject",
+                      "label": "ประธานแบบสุภาพ"
+                    },
+                    {
+                      "text": "das Fenster.",
+                      "role": "other",
+                      "label": "สิ่งที่ขอให้เปิด"
+                    }
+                  ]
+                ],
+                "audio": "L18-imperativ-sie-XG-S3-C5-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Bitte Sie öffnen das Fenster.",
+                "category": "verb_position",
+                "message": "หลัง Bitte ในคำขอนี้ต้องวางกริยา öffnen ก่อน Sie: Bitte öffnen Sie"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-imperativ-sie",
+            "contextId": "L18-imperativ-sie-XG-S3-C5-v1-context",
+            "stage": 3,
+            "unlock": {
+              "subskill": "grammar_bounded_production",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L18-sollen-XG-S1-C1-v1",
+          "version": 1,
+          "targetId": "L18-sollen",
+          "subskill": "sollen_conjugation",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด sollen_conjugation ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L18-sollen"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Ihr ___ den Text lesen.",
+          "context": [
+            [
+              "ผู้บอก",
+              "ครูบอกกับผู้เรียนหลายคน"
+            ],
+            [
+              "ข้อความที่ต้องรายงาน",
+              "ให้พวกเธออ่านบทความ"
+            ],
+            [
+              "กริยาที่ใช้รายงาน",
+              "sollen"
+            ]
+          ],
+          "options": [
+            "sollt",
+            "sollen",
+            "soll"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "sollt"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "กำลังรายงานคำบอกของครู; Ihr ผัน sollen เป็น sollt และ lesen อยู่ท้าย",
+            "models": [
+              {
+                "text": "Ihr sollt den Text lesen.",
+                "meaning": "พวกเธอต้องอ่านบทความตามที่ครูบอก",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ihr",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "sollt",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "den Text",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "lesen.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L18-sollen-XG-S1-C1-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "sollen",
+                "category": "subject_verb_agreement",
+                "message": "ประธาน Ihr ต้องใช้ sollt ไม่ใช่ sollen"
+              },
+              {
+                "response": "soll",
+                "category": "target_form_or_relation",
+                "message": "รูป “soll” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: กำลังรายงานคำบอกของครู; Ihr ผัน sollen เป็น sollt และ lesen อยู่ท้าย"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-sollen",
+            "contextId": "L18-sollen-XG-S1-C1-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "sollen_conjugation",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L18-sollen-XG-S1-C2-v1",
+          "version": 1,
+          "targetId": "L18-sollen",
+          "subskill": "sollen_conjugation",
+          "difficulty": 2,
+          "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด sollen_conjugation ไม่ใช่การเขียนอิสระ",
+          "requiredCardIds": [
+            "L18-sollen"
+          ],
+          "kind": "choice",
+          "prompt": "เลือกคำเติมประโยคให้ตรงข้อมูลที่กำหนด",
+          "cue": "Nora ___ einen Satz schreiben.",
+          "context": [
+            [
+              "ผู้บอก",
+              "ครูบอกกับ Nora"
+            ],
+            [
+              "ข้อความที่ต้องรายงาน",
+              "ให้เขียนประโยคหนึ่งประโยค"
+            ],
+            [
+              "กริยาที่ใช้รายงาน",
+              "sollen"
+            ]
+          ],
+          "options": [
+            "soll",
+            "sollst",
+            "sollen"
+          ],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "soll"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "answer-options",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "รายงานคำบอกของครูโดยใช้ Nora soll; schreiben เป็น Infinitiv ท้ายประโยค",
+            "models": [
+              {
+                "text": "Nora soll einen Satz schreiben.",
+                "meaning": "Nora ต้องเขียนประโยคหนึ่งประโยคตามที่ครูบอก",
+                "sentences": [
+                  [
+                    {
+                      "text": "Nora",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "soll",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "einen Satz",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "schreiben.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L18-sollen-XG-S1-C2-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "sollst",
+                "category": "subject_verb_agreement",
+                "message": "Nora เป็นบุคคลที่สามเอกพจน์ จึงใช้ soll; sollst ใช้กับ du"
+              },
+              {
+                "response": "sollen",
+                "category": "target_form_or_relation",
+                "message": "รูป “sollen” ไม่ตรงกับข้อมูลและกรอบประโยคนี้: รายงานคำบอกของครูโดยใช้ Nora soll; schreiben เป็น Infinitiv ท้ายประโยค"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-sollen",
+            "contextId": "L18-sollen-XG-S1-C2-v1-context",
+            "stage": 1,
+            "unlock": {
+              "subskill": "sollen_conjugation",
+              "minCorrectContexts": 0,
+              "minPracticeSessions": 0,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L18-sollen-XG-S2-C3-v1",
+          "version": 1,
+          "targetId": "L18-sollen",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L18-sollen"
+          ],
+          "kind": "write",
+          "prompt": "เติมเฉพาะส่วนหลัง Ich ใช้ sollen ที่ผันแล้วและ diese Übung machen",
+          "cue": "Ich ___.",
+          "context": [
+            [
+              "ผู้บอก",
+              "ครูบอกกับฉัน"
+            ],
+            [
+              "ข้อความที่ต้องรายงาน",
+              "ให้ทำแบบฝึกนี้"
+            ],
+            [
+              "คำที่กำหนด",
+              "diese Übung machen"
+            ],
+            [
+              "กริยาที่ใช้รายงาน",
+              "sollen"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "soll diese Übung machen"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "ich ใช้ soll และวาง machen ไว้ท้าย; เขียนตามข้อความครู ไม่ใช่แผนที่คิดขึ้นเอง",
+            "models": [
+              {
+                "text": "Ich soll diese Übung machen.",
+                "meaning": "ฉันต้องทำแบบฝึกนี้ตามที่ครูบอก",
+                "sentences": [
+                  [
+                    {
+                      "text": "Ich",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "soll",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "diese Übung",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "machen.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L18-sollen-XG-S2-C3-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "soll machen diese Übung",
+                "category": "verb_position",
+                "message": "machen เป็น Infinitiv ต้องอยู่ท้าย หลัง diese Übung"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-sollen",
+            "contextId": "L18-sollen-XG-S2-C3-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "sollen_conjugation",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L18-sollen-XG-S2-C4-v1",
+          "version": 1,
+          "targetId": "L18-sollen",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 3,
+          "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+          "requiredCardIds": [
+            "L18-sollen"
+          ],
+          "kind": "write",
+          "prompt": "เติมเฉพาะส่วนหลัง Wir ใช้ sollen ที่ผันแล้วและ die Wörter lernen",
+          "cue": "Wir ___.",
+          "context": [
+            [
+              "ผู้บอก",
+              "ครูบอกกับพวกเรา"
+            ],
+            [
+              "ข้อความที่ต้องรายงาน",
+              "ให้เรียนคำศัพท์"
+            ],
+            [
+              "คำที่กำหนด",
+              "die Wörter lernen"
+            ],
+            [
+              "กริยาที่ใช้รายงาน",
+              "sollen"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "",
+          "acceptedAnswers": [
+            "sollen die Wörter lernen"
+          ],
+          "assistance": [
+            "provided-context",
+            "provided-sentence-frame",
+            "supplied-lexical-forms",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "Wir ใช้ sollen ตำแหน่ง 2 และเก็บ lernen ไว้ท้ายประโยค",
+            "models": [
+              {
+                "text": "Wir sollen die Wörter lernen.",
+                "meaning": "พวกเราต้องเรียนคำศัพท์ตามที่ครูบอก",
+                "sentences": [
+                  [
+                    {
+                      "text": "Wir",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "sollen",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "die Wörter",
+                      "role": "other",
+                      "label": "ข้อมูลประกอบ"
+                    },
+                    {
+                      "text": "lernen.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L18-sollen-XG-S2-C4-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "soll die Wörter lernen",
+                "category": "subject_verb_agreement",
+                "message": "Wir ต้องใช้ sollen ไม่ใช่ soll"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-sollen",
+            "contextId": "L18-sollen-XG-S2-C4-v1-context",
+            "stage": 2,
+            "unlock": {
+              "subskill": "sollen_conjugation",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        },
+        {
+          "id": "L18-sollen-XG-S3-C5-v1",
+          "version": 1,
+          "targetId": "L18-sollen",
+          "subskill": "grammar_bounded_production",
+          "difficulty": 4,
+          "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+          "requiredCardIds": [
+            "L18-sollen"
+          ],
+          "kind": "write",
+          "prompt": "เขียนหนึ่งประโยคตามข้อความครู เริ่มด้วย Paul และใช้ sollen, morgen, kommen",
+          "cue": "",
+          "context": [
+            [
+              "ผู้บอก",
+              "ครูบอกกับ Paul"
+            ],
+            [
+              "ข้อความที่ต้องรายงาน",
+              "ให้มาในวันพรุ่งนี้"
+            ],
+            [
+              "คำที่กำหนด",
+              "morgen · kommen"
+            ],
+            [
+              "กริยาที่ใช้รายงาน",
+              "sollen"
+            ],
+            [
+              "คำเริ่มต้น",
+              "Paul"
+            ]
+          ],
+          "options": [],
+          "tokens": [],
+          "startWith": "Paul",
+          "acceptedAnswers": [
+            "Paul soll morgen kommen.",
+            "Paul soll morgen kommen"
+          ],
+          "assistance": [
+            "provided-context",
+            "supplied-lexical-forms",
+            "provided-start",
+            "german-character-keyboard",
+            "optional-topic-model"
+          ],
+          "feedback": {
+            "reason": "Paul เป็นคนเดียวจึงใช้ soll ตำแหน่ง 2 แล้ววาง kommen ท้ายเพื่อรายงานคำบอกของครู",
+            "models": [
+              {
+                "text": "Paul soll morgen kommen.",
+                "meaning": "Paul ต้องมาพรุ่งนี้ตามที่ครูบอก",
+                "sentences": [
+                  [
+                    {
+                      "text": "Paul",
+                      "role": "subject",
+                      "label": "ประธาน",
+                      "position": "ตำแหน่ง 1"
+                    },
+                    {
+                      "text": "soll",
+                      "role": "auxiliary",
+                      "label": "กริยาช่วย (ผันแล้ว)",
+                      "position": "ตำแหน่ง 2"
+                    },
+                    {
+                      "text": "morgen",
+                      "role": "time",
+                      "label": "เวลา"
+                    },
+                    {
+                      "text": "kommen.",
+                      "role": "verb",
+                      "label": "กริยารูป Infinitiv",
+                      "position": "ท้ายประโยค"
+                    }
+                  ]
+                ],
+                "audio": "L18-sollen-XG-S3-C5-v1-feedback-audio"
+              }
+            ],
+            "errors": [
+              {
+                "response": "Paul will morgen kommen.",
+                "category": "communicative_intent",
+                "message": "will บอกความตั้งใจของ Paul เอง แต่ข้อมูลนี้ให้รายงานสิ่งที่ครูบอก จึงต้องใช้ soll"
+              }
+            ]
+          },
+          "noun": null,
+          "articleTarget": false,
+          "spelling": false,
+          "practice": {
+            "familyId": "L18-sollen",
+            "contextId": "L18-sollen-XG-S3-C5-v1-context",
+            "stage": 3,
+            "unlock": {
+              "subskill": "grammar_bounded_production",
+              "minCorrectContexts": 2,
+              "minPracticeSessions": 2,
+              "requiresAttempt": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

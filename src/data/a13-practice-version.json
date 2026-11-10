@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "coreTasks": 372,
+  "extensionTasks": 189,
+  "stages": {
+    "1": 78,
+    "2": 74,
+    "3": 37
+  }
+}

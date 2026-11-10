@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-10T13:41:54.163210+00:00",
+  "migrationBundleSHA256": "eec97aca595d5ebf9c7df4c5c1cdc507042c62e85f7e53471a51fc4c1fd79f6a",
+  "readiness": {
+    "cards": 136,
+    "tasks": 372,
+    "courses": 12,
+    "phraseTasks": 64,
+    "extensionTasks": 189,
+    "practiceVersion": 2,
+    "practiceSyncReady": true,
+    "contextCatalogReady": true
+  }
+}

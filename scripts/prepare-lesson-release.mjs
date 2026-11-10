@@ -1,7 +1,8 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
-const migrations = [
+const practiceUpgrade = process.argv.includes('--practice-upgrade');
+const migrations = practiceUpgrade ? ['20261110000000_release_practice_progression.sql', '20261110001000_release_practice_extension_catalog.sql'] : [
   '20261109000000_release_course_lesson_states.sql',
   '20261109001000_a13_release_course_catalog.sql',
   '20261109002000_release_shared_practice.sql',

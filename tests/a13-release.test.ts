@@ -11,7 +11,7 @@ if (!task) throw Error('Missing spelling target');
 
 test('12 complete courses preserve stable task IDs, media and taught prerequisites', () => {
   assert.equal(a13ReleaseCourses.length, 12);
-  assert.equal(a13ReleaseCourses.reduce((sum, c) => sum + c.tasks.length, 0), 372);
+  assert.equal(a13ReleaseCourses.reduce((sum, c) => sum + c.tasks.filter(t => !t.practice || t.practice.stage === 0).length, 0), 372);
   for (const c of a13ReleaseCourses) {
     assert.equal(new Set(c.tasks.map(q => q.id)).size, c.tasks.length);
     const cards = new Set(c.cards.map(card => card.id));

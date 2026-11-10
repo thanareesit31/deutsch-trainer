@@ -1,0 +1,6 @@
+ts	phase	decision	why	evidence	result
+2026-11-10T12:44:17.688589+00:00	frame	Improve scoped L15-L18 practice after user accepted evaluation	Add real transfer and bounded production without resetting published evidence	docs/lesson-preparation/PRACTICE_IMPROVEMENT_EXECUTION.md	Baseline372 tasks captured before edits
+2026-11-10T13:41:54.161499+00:00	verify	Keep published372 tasks immutable	Preserve account queues and grading	tests/a13-practice-improvement.test.ts	18 tests pass; baseline hashes unchanged
+2026-11-10T13:41:54.162612+00:00	review	Prefer lower scaffold even after assisted failure	Independent review found same-stage help outranked lower scaffold	src/lib/a13-practice-selection.ts; regression scenario	Fixed and seven improvement tests pass
+2026-11-10T13:41:54.162653+00:00	verify	Exercise actual mobile shared sessions	Check whole sentence vs fragment and persistence through actual RPC	tests/practice-improvement-browser.mjs	4 advanced writing scenarios passed at375
+2026-11-10T13:41:54.162676+00:00	schema	Apply only two additive upgrade migrations before frontend	Keep existing core health compatible during rollout	Supabase Management API; public readiness RPC	200;372core189extension;practiceVersion2;contextCatalogReadytrue

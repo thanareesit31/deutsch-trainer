@@ -75,6 +75,8 @@ export async function createDatabase() {
     "20261109001000_a13_release_course_catalog.sql",
     "20261109002000_release_shared_practice.sql",
     "20261109003000_release_health.sql",
+    "20261110000000_release_practice_progression.sql",
+    "20261110001000_release_practice_extension_catalog.sql",
   ])
     await db.exec(
       await readFile(

@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "defaultLexicalVoice": "de-DE-KatjaNeural",
+  "assets": [
+    {
+      "id": "L15-possessivartikel-XG-S1-C1-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich finde sein Sofa bequem.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-possessivartikel-XG-S1-C2-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich mag ihren Garten.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-possessivartikel-XG-S2-C3-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Das ist ihre Küche.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-possessivartikel-XG-S2-C4-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich finde seinen Balkon schön.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-possessivartikel-XG-S3-C5-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Sein Zimmer ist hell.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-temporale-praepositionen-XG-S1-C1-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Der Techniker kommt in zwei Stunden.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-temporale-praepositionen-XG-S1-C2-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Lina telefoniert vor dem Termin.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-temporale-praepositionen-XG-S2-C3-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich komme in zwei Stunden.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-temporale-praepositionen-XG-S2-C4-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Wir treffen uns nach dem Kurs.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-temporale-praepositionen-XG-S3-C5-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Wir treffen uns in zwei Tagen.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-werden-XG-S1-C1-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Leo und Ben werden Ärzte.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-werden-XG-S1-C2-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich werde Pilotin.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-werden-XG-S2-C3-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Du wirst Koch.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-werden-XG-S2-C4-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Wir werden Eltern.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-werden-XG-S3-C5-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Paul wird Koch.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-wollen-XG-S1-C1-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Du willst Deutsch lernen.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-wollen-XG-S1-C2-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Nora und Ali wollen nach Berlin reisen.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-wollen-XG-S2-C3-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich will Deutsch lernen.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-wollen-XG-S2-C4-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Wir wollen im Ausland leben.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-wollen-XG-S3-C5-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Mira will morgen Deutsch lernen.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-mit-ohne-XG-S1-C1-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Eva fährt mit einem Kind.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-mit-ohne-XG-S1-C2-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Omar reist ohne einen Hund.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-mit-ohne-XG-S2-C3-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich komme mit einer Freundin.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-mit-ohne-XG-S2-C4-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich gehe ohne einen Schirm.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-mit-ohne-XG-S3-C5-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich komme mit einem Freund.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-imperativ-sie-XG-S1-C1-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Öffnen Sie bitte die Tür.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-imperativ-sie-XG-S1-C2-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Lesen Sie bitte den Satz.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-imperativ-sie-XG-S2-C3-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Warten Sie bitte hier.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-imperativ-sie-XG-S2-C4-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Sprechen Sie bitte langsam.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-imperativ-sie-XG-S3-C5-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Bitte öffnen Sie das Fenster.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-sollen-XG-S1-C1-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ihr sollt den Text lesen.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-sollen-XG-S1-C2-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Nora soll einen Satz schreiben.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-sollen-XG-S2-C3-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Ich soll diese Übung machen.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-sollen-XG-S2-C4-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Wir sollen die Wörter lernen.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-sollen-XG-S3-C5-v1-feedback-audio",
+      "kind": "grammar_model_audio",
+      "text": "Paul soll morgen kommen.",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    }
+  ]
+}

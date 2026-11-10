@@ -12,11 +12,11 @@ const attempt=(q,response=q.accepted_answers[0],correct=true)=>({response,correc
 const session=(q,id)=>({id,createdAt:stamp,updatedAt:stamp,position:0,completed:false,selectionReason:'new',items:[item(q)]});
 try{
  assert.equal((await db.query('select public.release_course_readiness() as readiness')).rows[0].readiness.practiceSyncReady,true,'bootstrap must retain the release RPC after legacy idempotence checks');
- const catalog=(await db.query('select * from public.release_course_tasks order by lesson_id,skill,task_id')).rows;
+ const catalog=(await db.query('select * from public.release_course_tasks t where not exists (select 1 from public.release_practice_metadata m where m.lesson_id=t.lesson_id and m.skill=t.skill and m.task_id=t.task_id and m.is_extension) order by lesson_id,skill,task_id')).rows;
  assert.equal(catalog.length,372); assert.ok(catalog.every(q=>q.definition));
  await db.exec("reset role");
  await db.exec(await readFile(new URL("../supabase/migrations/20261109002000_release_shared_practice.sql",import.meta.url),"utf8"));
- assert.equal((await db.query("select count(*)::int as n from public.phrase_practice_questions where definition->>'topicId' ~ '^L1[5-8]-phrases$'")).rows[0].n,64);
+ assert.equal((await db.query("select count(*)::int as n from public.phrase_practice_questions where definition->>'topicId' ~ '^L1[5-8]-phrases$' and not exists(select 1 from public.release_practice_metadata m where m.task_id=phrase_practice_questions.id and m.is_extension)")).rows[0].n,64);
  await db.exec(`set role authenticated; set request.jwt.claim.sub='${userId}'`);
  const courses=new Map(); for(const q of catalog) courses.set(bank(q),q); assert.equal(courses.size,12);
  for(const [index,q] of [...courses.values()].entries()){

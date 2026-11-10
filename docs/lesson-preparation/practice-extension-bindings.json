@@ -1,0 +1,5895 @@
+{
+  "schemaVersion": 1,
+  "responseUnits": [
+    {
+      "lessonId": "L15",
+      "skill": "grammar",
+      "taskId": "L15-possessivartikel-XG-S1-C1-v1",
+      "targetId": "L15-possessivartikel",
+      "subskill": "possessive_reference_and_inflection",
+      "requiredCardIds": [
+        "L15-possessivartikel"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด possessive_reference_and_inflection ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L15-possessivartikel",
+        "contextId": "L15-possessivartikel-XG-S1-C1-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "possessive_reference_and_inflection",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "grammar",
+      "taskId": "L15-possessivartikel-XG-S1-C2-v1",
+      "targetId": "L15-possessivartikel",
+      "subskill": "possessive_reference_and_inflection",
+      "requiredCardIds": [
+        "L15-possessivartikel"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด possessive_reference_and_inflection ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L15-possessivartikel",
+        "contextId": "L15-possessivartikel-XG-S1-C2-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "possessive_reference_and_inflection",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "grammar",
+      "taskId": "L15-possessivartikel-XG-S2-C3-v1",
+      "targetId": "L15-possessivartikel",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L15-possessivartikel"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L15-possessivartikel",
+        "contextId": "L15-possessivartikel-XG-S2-C3-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "possessive_reference_and_inflection",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "grammar",
+      "taskId": "L15-possessivartikel-XG-S2-C4-v1",
+      "targetId": "L15-possessivartikel",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L15-possessivartikel"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L15-possessivartikel",
+        "contextId": "L15-possessivartikel-XG-S2-C4-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "possessive_reference_and_inflection",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "grammar",
+      "taskId": "L15-possessivartikel-XG-S3-C5-v1",
+      "targetId": "L15-possessivartikel",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L15-possessivartikel"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-forms",
+        "provided-start",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L15-possessivartikel",
+        "contextId": "L15-possessivartikel-XG-S3-C5-v1-context",
+        "stage": 3,
+        "unlock": {
+          "subskill": "grammar_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D01-context-transfer-A-v1",
+      "targetId": "L15-R001",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D01"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D01-L15-R001",
+        "contextId": "L15-D01-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D01-context-transfer-B-v1",
+      "targetId": "L15-R002",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L15-D01"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L15-D01-L15-R002",
+        "contextId": "L15-D01-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D01-context-supported-1-B-v1",
+      "targetId": "L15-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D01-L15-R002",
+        "contextId": "L15-D01-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D01-context-supported-2-B-v1",
+      "targetId": "L15-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D01-L15-R002",
+        "contextId": "L15-D01-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D01-context-sentence-B-v1",
+      "targetId": "L15-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D01"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D01-L15-R002",
+        "contextId": "L15-D01-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D02-context-transfer-A-v1",
+      "targetId": "L15-R003",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D02-L15-R003",
+        "contextId": "L15-D02-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D02-context-transfer-B-v1",
+      "targetId": "L15-R004",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D02-L15-R004",
+        "contextId": "L15-D02-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D02-context-supported-1-B-v1",
+      "targetId": "L15-R004",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D02-L15-R004",
+        "contextId": "L15-D02-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D02-context-supported-2-B-v1",
+      "targetId": "L15-R004",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D02-L15-R004",
+        "contextId": "L15-D02-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D02-context-sentence-B-v1",
+      "targetId": "L15-R004",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D02"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D02-L15-R004",
+        "contextId": "L15-D02-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D03-context-transfer-A-v1",
+      "targetId": "L15-R005",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D03-L15-R005",
+        "contextId": "L15-D03-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D03-context-transfer-B-v1",
+      "targetId": "L15-R006",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L15-D03"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L15-D03-L15-R006",
+        "contextId": "L15-D03-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D03-context-supported-1-B-v1",
+      "targetId": "L15-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D03-L15-R006",
+        "contextId": "L15-D03-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D03-context-supported-2-B-v1",
+      "targetId": "L15-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D03-L15-R006",
+        "contextId": "L15-D03-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D03-context-sentence-B-v1",
+      "targetId": "L15-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D03"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D03-L15-R006",
+        "contextId": "L15-D03-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D04-context-transfer-A-v1",
+      "targetId": "L15-R007",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D04-L15-R007",
+        "contextId": "L15-D04-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D04-context-transfer-B-v1",
+      "targetId": "L15-R008",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D04-L15-R008",
+        "contextId": "L15-D04-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D04-context-supported-1-B-v1",
+      "targetId": "L15-R008",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D04-L15-R008",
+        "contextId": "L15-D04-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D04-context-supported-2-B-v1",
+      "targetId": "L15-R008",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D04-L15-R008",
+        "contextId": "L15-D04-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D04-context-sentence-B-v1",
+      "targetId": "L15-R008",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D04"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D04-L15-R008",
+        "contextId": "L15-D04-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D05-context-transfer-A-v1",
+      "targetId": "L15-R009",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D05-L15-R009",
+        "contextId": "L15-D05-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D05-context-transfer-B-v1",
+      "targetId": "L15-R010",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L15-D05"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L15-D05-L15-R010",
+        "contextId": "L15-D05-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D05-context-supported-1-B-v1",
+      "targetId": "L15-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D05-L15-R010",
+        "contextId": "L15-D05-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D05-context-supported-2-B-v1",
+      "targetId": "L15-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D05-L15-R010",
+        "contextId": "L15-D05-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D05-context-sentence-B-v1",
+      "targetId": "L15-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D05"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D05-L15-R010",
+        "contextId": "L15-D05-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D06-context-transfer-A-v1",
+      "targetId": "L15-R011",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D06-L15-R011",
+        "contextId": "L15-D06-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D06-context-transfer-B-v1",
+      "targetId": "L15-R012",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D06-L15-R012",
+        "contextId": "L15-D06-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D06-context-supported-1-B-v1",
+      "targetId": "L15-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D06-L15-R012",
+        "contextId": "L15-D06-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D06-context-supported-2-B-v1",
+      "targetId": "L15-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D06-L15-R012",
+        "contextId": "L15-D06-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D06-context-sentence-B-v1",
+      "targetId": "L15-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D06"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D06-L15-R012",
+        "contextId": "L15-D06-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D07-context-transfer-A-v1",
+      "targetId": "L15-R013",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D07-L15-R013",
+        "contextId": "L15-D07-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D07-context-transfer-B-v1",
+      "targetId": "L15-R014",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L15-D07"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L15-D07-L15-R014",
+        "contextId": "L15-D07-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D07-context-supported-1-B-v1",
+      "targetId": "L15-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D07-L15-R014",
+        "contextId": "L15-D07-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D07-context-supported-2-B-v1",
+      "targetId": "L15-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D07-L15-R014",
+        "contextId": "L15-D07-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D07-context-sentence-B-v1",
+      "targetId": "L15-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D07"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D07-L15-R014",
+        "contextId": "L15-D07-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D08-context-transfer-A-v1",
+      "targetId": "L15-R015",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D08-L15-R015",
+        "contextId": "L15-D08-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D08-context-transfer-B-v1",
+      "targetId": "L15-R016",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L15-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D08-L15-R016",
+        "contextId": "L15-D08-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D08-context-supported-1-B-v1",
+      "targetId": "L15-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D08-L15-R016",
+        "contextId": "L15-D08-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D08-context-supported-2-B-v1",
+      "targetId": "L15-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L15-D08-L15-R016",
+        "contextId": "L15-D08-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L15",
+      "skill": "phrases",
+      "taskId": "L15-D08-context-sentence-B-v1",
+      "targetId": "L15-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L15-D08"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L15-D08-L15-R016",
+        "contextId": "L15-D08-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "grammar",
+      "taskId": "L16-temporale-praepositionen-XG-S1-C1-v1",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "temporal_relation",
+      "requiredCardIds": [
+        "L16-temporale-praepositionen"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด temporal_relation ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L16-temporale-praepositionen",
+        "contextId": "L16-temporale-praepositionen-XG-S1-C1-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "temporal_relation",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "grammar",
+      "taskId": "L16-temporale-praepositionen-XG-S1-C2-v1",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "temporal_relation",
+      "requiredCardIds": [
+        "L16-temporale-praepositionen"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด temporal_relation ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L16-temporale-praepositionen",
+        "contextId": "L16-temporale-praepositionen-XG-S1-C2-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "temporal_relation",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "grammar",
+      "taskId": "L16-temporale-praepositionen-XG-S2-C3-v1",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L16-temporale-praepositionen"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง; ข้อนี้ให้ in และรูปกลุ่มคำนามมาแล้ว จึงไม่วัดการเลือกบุพบทหรือผันคำนามอย่างอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model",
+        "provided-time-preposition-in"
+      ],
+      "practice": {
+        "familyId": "L16-temporale-praepositionen",
+        "contextId": "L16-temporale-praepositionen-XG-S2-C3-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "temporal_relation",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "grammar",
+      "taskId": "L16-temporale-praepositionen-XG-S2-C4-v1",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L16-temporale-praepositionen"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L16-temporale-praepositionen",
+        "contextId": "L16-temporale-praepositionen-XG-S2-C4-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "temporal_relation",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "grammar",
+      "taskId": "L16-temporale-praepositionen-XG-S3-C5-v1",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L16-temporale-praepositionen"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production; ข้อนี้ให้ in และรูปกลุ่มคำนามมาแล้ว จึงไม่วัดการเลือกบุพบทหรือผันคำนามอย่างอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-forms",
+        "provided-start",
+        "german-character-keyboard",
+        "optional-topic-model",
+        "provided-time-preposition-in"
+      ],
+      "practice": {
+        "familyId": "L16-temporale-praepositionen",
+        "contextId": "L16-temporale-praepositionen-XG-S3-C5-v1-context",
+        "stage": 3,
+        "unlock": {
+          "subskill": "grammar_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D01-context-transfer-A-v1",
+      "targetId": "L16-R001",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D01-L16-R001",
+        "contextId": "L16-D01-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D01-context-transfer-B-v1",
+      "targetId": "L16-R002",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L16-D01"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L16-D01-L16-R002",
+        "contextId": "L16-D01-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D01-context-supported-1-B-v1",
+      "targetId": "L16-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D01-L16-R002",
+        "contextId": "L16-D01-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D01-context-supported-2-B-v1",
+      "targetId": "L16-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D01-L16-R002",
+        "contextId": "L16-D01-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D01-context-sentence-B-v1",
+      "targetId": "L16-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D01"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D01-L16-R002",
+        "contextId": "L16-D01-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D02-context-transfer-A-v1",
+      "targetId": "L16-R003",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D02"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D02-L16-R003",
+        "contextId": "L16-D02-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D02-context-transfer-B-v1",
+      "targetId": "L16-R004",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D02-L16-R004",
+        "contextId": "L16-D02-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D03-context-transfer-A-v1",
+      "targetId": "L16-R005",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D03-L16-R005",
+        "contextId": "L16-D03-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D03-context-transfer-B-v1",
+      "targetId": "L16-R006",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L16-D03"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L16-D03-L16-R006",
+        "contextId": "L16-D03-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D03-context-supported-1-B-v1",
+      "targetId": "L16-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D03-L16-R006",
+        "contextId": "L16-D03-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D03-context-supported-2-B-v1",
+      "targetId": "L16-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D03-L16-R006",
+        "contextId": "L16-D03-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D03-context-sentence-B-v1",
+      "targetId": "L16-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D03"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D03-L16-R006",
+        "contextId": "L16-D03-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D04-context-transfer-A-v1",
+      "targetId": "L16-R007",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D04-L16-R007",
+        "contextId": "L16-D04-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D04-context-transfer-B-v1",
+      "targetId": "L16-R008",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D04-L16-R008",
+        "contextId": "L16-D04-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D04-context-supported-1-B-v1",
+      "targetId": "L16-R008",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D04-L16-R008",
+        "contextId": "L16-D04-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D04-context-supported-2-B-v1",
+      "targetId": "L16-R008",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D04-L16-R008",
+        "contextId": "L16-D04-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D04-context-sentence-B-v1",
+      "targetId": "L16-R008",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D04"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D04-L16-R008",
+        "contextId": "L16-D04-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D05-context-transfer-A-v1",
+      "targetId": "L16-R009",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D05-L16-R009",
+        "contextId": "L16-D05-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D05-context-transfer-B-v1",
+      "targetId": "L16-R010",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L16-D05"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L16-D05-L16-R010",
+        "contextId": "L16-D05-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D05-context-supported-1-B-v1",
+      "targetId": "L16-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D05-L16-R010",
+        "contextId": "L16-D05-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D05-context-supported-2-B-v1",
+      "targetId": "L16-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D05-L16-R010",
+        "contextId": "L16-D05-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D05-context-sentence-B-v1",
+      "targetId": "L16-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D05"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D05-L16-R010",
+        "contextId": "L16-D05-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D06-context-transfer-A-v1",
+      "targetId": "L16-R011",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D06"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D06-L16-R011",
+        "contextId": "L16-D06-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D06-context-transfer-B-v1",
+      "targetId": "L16-R012",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D06-L16-R012",
+        "contextId": "L16-D06-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D06-context-supported-1-B-v1",
+      "targetId": "L16-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D06-L16-R012",
+        "contextId": "L16-D06-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D06-context-supported-2-B-v1",
+      "targetId": "L16-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D06-L16-R012",
+        "contextId": "L16-D06-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D06-context-sentence-B-v1",
+      "targetId": "L16-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D06"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D06-L16-R012",
+        "contextId": "L16-D06-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D07-context-transfer-A-v1",
+      "targetId": "L16-R013",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D07-L16-R013",
+        "contextId": "L16-D07-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D07-context-transfer-B-v1",
+      "targetId": "L16-R014",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L16-D07"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L16-D07-L16-R014",
+        "contextId": "L16-D07-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D07-context-supported-1-B-v1",
+      "targetId": "L16-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D07-L16-R014",
+        "contextId": "L16-D07-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D07-context-supported-2-B-v1",
+      "targetId": "L16-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D07-L16-R014",
+        "contextId": "L16-D07-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D07-context-sentence-B-v1",
+      "targetId": "L16-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D07"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D07-L16-R014",
+        "contextId": "L16-D07-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D08-context-transfer-A-v1",
+      "targetId": "L16-R015",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D08-L16-R015",
+        "contextId": "L16-D08-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D08-context-transfer-B-v1",
+      "targetId": "L16-R016",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L16-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D08-L16-R016",
+        "contextId": "L16-D08-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D08-context-supported-1-B-v1",
+      "targetId": "L16-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D08-L16-R016",
+        "contextId": "L16-D08-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D08-context-supported-2-B-v1",
+      "targetId": "L16-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L16-D08-L16-R016",
+        "contextId": "L16-D08-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L16",
+      "skill": "phrases",
+      "taskId": "L16-D08-context-sentence-B-v1",
+      "targetId": "L16-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L16-D08"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L16-D08-L16-R016",
+        "contextId": "L16-D08-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-werden-XG-S1-C1-v1",
+      "targetId": "L17-werden",
+      "subskill": "werden_conjugation",
+      "requiredCardIds": [
+        "L17-werden"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด werden_conjugation ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-werden",
+        "contextId": "L17-werden-XG-S1-C1-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "werden_conjugation",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-werden-XG-S1-C2-v1",
+      "targetId": "L17-werden",
+      "subskill": "werden_conjugation",
+      "requiredCardIds": [
+        "L17-werden"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด werden_conjugation ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-werden",
+        "contextId": "L17-werden-XG-S1-C2-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "werden_conjugation",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-werden-XG-S2-C3-v1",
+      "targetId": "L17-werden",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L17-werden"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-werden",
+        "contextId": "L17-werden-XG-S2-C3-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "werden_conjugation",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-werden-XG-S2-C4-v1",
+      "targetId": "L17-werden",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L17-werden"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-werden",
+        "contextId": "L17-werden-XG-S2-C4-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "werden_conjugation",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-werden-XG-S3-C5-v1",
+      "targetId": "L17-werden",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L17-werden"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-forms",
+        "provided-start",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-werden",
+        "contextId": "L17-werden-XG-S3-C5-v1-context",
+        "stage": 3,
+        "unlock": {
+          "subskill": "grammar_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-wollen-XG-S1-C1-v1",
+      "targetId": "L17-wollen",
+      "subskill": "wollen_conjugation",
+      "requiredCardIds": [
+        "L17-wollen"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด wollen_conjugation ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-wollen",
+        "contextId": "L17-wollen-XG-S1-C1-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "wollen_conjugation",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-wollen-XG-S1-C2-v1",
+      "targetId": "L17-wollen",
+      "subskill": "wollen_conjugation",
+      "requiredCardIds": [
+        "L17-wollen"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด wollen_conjugation ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-wollen",
+        "contextId": "L17-wollen-XG-S1-C2-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "wollen_conjugation",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-wollen-XG-S2-C3-v1",
+      "targetId": "L17-wollen",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L17-wollen"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-wollen",
+        "contextId": "L17-wollen-XG-S2-C3-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "wollen_conjugation",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-wollen-XG-S2-C4-v1",
+      "targetId": "L17-wollen",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L17-wollen"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-wollen",
+        "contextId": "L17-wollen-XG-S2-C4-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "wollen_conjugation",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-wollen-XG-S3-C5-v1",
+      "targetId": "L17-wollen",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L17-wollen"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-forms",
+        "provided-start",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-wollen",
+        "contextId": "L17-wollen-XG-S3-C5-v1-context",
+        "stage": 3,
+        "unlock": {
+          "subskill": "grammar_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-mit-ohne-XG-S1-C1-v1",
+      "targetId": "L17-mit-ohne",
+      "subskill": "preposition_case_inflection",
+      "requiredCardIds": [
+        "L17-mit-ohne"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด preposition_case_inflection ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-mit-ohne",
+        "contextId": "L17-mit-ohne-XG-S1-C1-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "preposition_case_inflection",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-mit-ohne-XG-S1-C2-v1",
+      "targetId": "L17-mit-ohne",
+      "subskill": "preposition_case_inflection",
+      "requiredCardIds": [
+        "L17-mit-ohne"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด preposition_case_inflection ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-mit-ohne",
+        "contextId": "L17-mit-ohne-XG-S1-C2-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "preposition_case_inflection",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-mit-ohne-XG-S2-C3-v1",
+      "targetId": "L17-mit-ohne",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L17-mit-ohne"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-mit-ohne",
+        "contextId": "L17-mit-ohne-XG-S2-C3-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "preposition_case_inflection",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-mit-ohne-XG-S2-C4-v1",
+      "targetId": "L17-mit-ohne",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L17-mit-ohne"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-mit-ohne",
+        "contextId": "L17-mit-ohne-XG-S2-C4-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "preposition_case_inflection",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "grammar",
+      "taskId": "L17-mit-ohne-XG-S3-C5-v1",
+      "targetId": "L17-mit-ohne",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L17-mit-ohne"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-forms",
+        "provided-start",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L17-mit-ohne",
+        "contextId": "L17-mit-ohne-XG-S3-C5-v1-context",
+        "stage": 3,
+        "unlock": {
+          "subskill": "grammar_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D01-context-transfer-A-v1",
+      "targetId": "L17-R001",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D01-L17-R001",
+        "contextId": "L17-D01-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D01-context-transfer-B-v1",
+      "targetId": "L17-R002",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L17-D01"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L17-D01-L17-R002",
+        "contextId": "L17-D01-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D01-context-supported-1-B-v1",
+      "targetId": "L17-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D01-L17-R002",
+        "contextId": "L17-D01-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D01-context-supported-2-B-v1",
+      "targetId": "L17-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D01-L17-R002",
+        "contextId": "L17-D01-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D01-context-sentence-B-v1",
+      "targetId": "L17-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D01"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D01-L17-R002",
+        "contextId": "L17-D01-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D02-context-transfer-A-v1",
+      "targetId": "L17-R003",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D02-L17-R003",
+        "contextId": "L17-D02-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D02-context-transfer-B-v1",
+      "targetId": "L17-R004",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D02-L17-R004",
+        "contextId": "L17-D02-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D02-context-supported-1-B-v1",
+      "targetId": "L17-R004",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D02-L17-R004",
+        "contextId": "L17-D02-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D02-context-supported-2-B-v1",
+      "targetId": "L17-R004",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D02-L17-R004",
+        "contextId": "L17-D02-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D02-context-sentence-B-v1",
+      "targetId": "L17-R004",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D02"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D02-L17-R004",
+        "contextId": "L17-D02-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D03-context-transfer-A-v1",
+      "targetId": "L17-R005",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D03-L17-R005",
+        "contextId": "L17-D03-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D03-context-transfer-B-v1",
+      "targetId": "L17-R006",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L17-D03"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L17-D03-L17-R006",
+        "contextId": "L17-D03-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D03-context-supported-1-B-v1",
+      "targetId": "L17-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D03-L17-R006",
+        "contextId": "L17-D03-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D03-context-supported-2-B-v1",
+      "targetId": "L17-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D03-L17-R006",
+        "contextId": "L17-D03-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D03-context-sentence-B-v1",
+      "targetId": "L17-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D03"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D03-L17-R006",
+        "contextId": "L17-D03-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D04-context-transfer-A-v1",
+      "targetId": "L17-R007",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D04-L17-R007",
+        "contextId": "L17-D04-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D04-context-transfer-B-v1",
+      "targetId": "L17-R008",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D04-L17-R008",
+        "contextId": "L17-D04-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D04-context-supported-1-B-v1",
+      "targetId": "L17-R008",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D04-L17-R008",
+        "contextId": "L17-D04-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D04-context-supported-2-B-v1",
+      "targetId": "L17-R008",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D04-L17-R008",
+        "contextId": "L17-D04-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D04-context-sentence-B-v1",
+      "targetId": "L17-R008",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D04"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D04-L17-R008",
+        "contextId": "L17-D04-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D05-context-transfer-A-v1",
+      "targetId": "L17-R009",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D05-L17-R009",
+        "contextId": "L17-D05-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D05-context-transfer-B-v1",
+      "targetId": "L17-R010",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L17-D05"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L17-D05-L17-R010",
+        "contextId": "L17-D05-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D05-context-supported-1-B-v1",
+      "targetId": "L17-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D05-L17-R010",
+        "contextId": "L17-D05-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D05-context-supported-2-B-v1",
+      "targetId": "L17-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D05-L17-R010",
+        "contextId": "L17-D05-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D05-context-sentence-B-v1",
+      "targetId": "L17-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D05"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D05-L17-R010",
+        "contextId": "L17-D05-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D06-context-transfer-A-v1",
+      "targetId": "L17-R011",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D06-L17-R011",
+        "contextId": "L17-D06-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D06-context-transfer-B-v1",
+      "targetId": "L17-R012",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D06-L17-R012",
+        "contextId": "L17-D06-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D06-context-supported-1-B-v1",
+      "targetId": "L17-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D06-L17-R012",
+        "contextId": "L17-D06-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D06-context-supported-2-B-v1",
+      "targetId": "L17-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D06-L17-R012",
+        "contextId": "L17-D06-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D06-context-sentence-B-v1",
+      "targetId": "L17-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D06"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D06-L17-R012",
+        "contextId": "L17-D06-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D07-context-transfer-A-v1",
+      "targetId": "L17-R013",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D07-L17-R013",
+        "contextId": "L17-D07-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D07-context-transfer-B-v1",
+      "targetId": "L17-R014",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L17-D07"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L17-D07-L17-R014",
+        "contextId": "L17-D07-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D07-context-supported-1-B-v1",
+      "targetId": "L17-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D07-L17-R014",
+        "contextId": "L17-D07-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D07-context-supported-2-B-v1",
+      "targetId": "L17-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D07-L17-R014",
+        "contextId": "L17-D07-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D07-context-sentence-B-v1",
+      "targetId": "L17-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D07"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D07-L17-R014",
+        "contextId": "L17-D07-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D08-context-transfer-A-v1",
+      "targetId": "L17-R015",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D08-L17-R015",
+        "contextId": "L17-D08-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D08-context-transfer-B-v1",
+      "targetId": "L17-R016",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L17-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D08-L17-R016",
+        "contextId": "L17-D08-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D08-context-supported-1-B-v1",
+      "targetId": "L17-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D08-L17-R016",
+        "contextId": "L17-D08-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D08-context-supported-2-B-v1",
+      "targetId": "L17-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L17-D08-L17-R016",
+        "contextId": "L17-D08-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L17",
+      "skill": "phrases",
+      "taskId": "L17-D08-context-sentence-B-v1",
+      "targetId": "L17-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L17-D08"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L17-D08-L17-R016",
+        "contextId": "L17-D08-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-imperativ-sie-XG-S1-C1-v1",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "formal_imperative_form",
+      "requiredCardIds": [
+        "L18-imperativ-sie"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด formal_imperative_form ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-imperativ-sie",
+        "contextId": "L18-imperativ-sie-XG-S1-C1-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "formal_imperative_form",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-imperativ-sie-XG-S1-C2-v1",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "formal_imperative_form",
+      "requiredCardIds": [
+        "L18-imperativ-sie"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด formal_imperative_form ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-imperativ-sie",
+        "contextId": "L18-imperativ-sie-XG-S1-C2-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "formal_imperative_form",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-imperativ-sie-XG-S2-C3-v1",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L18-imperativ-sie"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-imperativ-sie",
+        "contextId": "L18-imperativ-sie-XG-S2-C3-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "formal_imperative_form",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-imperativ-sie-XG-S2-C4-v1",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L18-imperativ-sie"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-imperativ-sie",
+        "contextId": "L18-imperativ-sie-XG-S2-C4-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "formal_imperative_form",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-imperativ-sie-XG-S3-C5-v1",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L18-imperativ-sie"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-forms",
+        "provided-start",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-imperativ-sie",
+        "contextId": "L18-imperativ-sie-XG-S3-C5-v1-context",
+        "stage": 3,
+        "unlock": {
+          "subskill": "grammar_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-sollen-XG-S1-C1-v1",
+      "targetId": "L18-sollen",
+      "subskill": "sollen_conjugation",
+      "requiredCardIds": [
+        "L18-sollen"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด sollen_conjugation ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-sollen",
+        "contextId": "L18-sollen-XG-S1-C1-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "sollen_conjugation",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-sollen-XG-S1-C2-v1",
+      "targetId": "L18-sollen",
+      "subskill": "sollen_conjugation",
+      "requiredCardIds": [
+        "L18-sollen"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหนึ่งรูปในบริบทใหม่ที่ให้ข้อมูลพอตอบ โดยยังเห็นกรอบประโยคและตัวเลือก; วัด sollen_conjugation ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "answer-options",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-sollen",
+        "contextId": "L18-sollen-XG-S1-C2-v1-context",
+        "stage": 1,
+        "unlock": {
+          "subskill": "sollen_conjugation",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-sollen-XG-S2-C3-v1",
+      "targetId": "L18-sollen",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L18-sollen"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-sollen",
+        "contextId": "L18-sollen-XG-S2-C3-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "sollen_conjugation",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-sollen-XG-S2-C4-v1",
+      "targetId": "L18-sollen",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L18-sollen"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนเฉพาะส่วนที่ระบุจากรูปคำและกรอบที่ให้ ต้องเลือกหรือผันรูปภาษาเอง; เป็น bounded production ไม่วัดการคิดเนื้อหาเอง",
+      "assistance": [
+        "provided-context",
+        "provided-sentence-frame",
+        "supplied-lexical-forms",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-sollen",
+        "contextId": "L18-sollen-XG-S2-C4-v1-context",
+        "stage": 2,
+        "unlock": {
+          "subskill": "sollen_conjugation",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "grammar",
+      "taskId": "L18-sollen-XG-S3-C5-v1",
+      "targetId": "L18-sollen",
+      "subskill": "grammar_bounded_production",
+      "requiredCardIds": [
+        "L18-sollen"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "เขียนทั้งประโยคตามข้อมูลและคำเริ่มต้นที่จำกัด ไม่มีคลังคำให้แตะ; วัดการเรียกคืนรูปและลำดับใน bounded production ไม่ใช่ free production",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-forms",
+        "provided-start",
+        "german-character-keyboard",
+        "optional-topic-model"
+      ],
+      "practice": {
+        "familyId": "L18-sollen",
+        "contextId": "L18-sollen-XG-S3-C5-v1-context",
+        "stage": 3,
+        "unlock": {
+          "subskill": "grammar_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D01-context-transfer-A-v1",
+      "targetId": "L18-R001",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D01-L18-R001",
+        "contextId": "L18-D01-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D01-context-transfer-B-v1",
+      "targetId": "L18-R002",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L18-D01"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L18-D01-L18-R002",
+        "contextId": "L18-D01-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D01-context-supported-1-B-v1",
+      "targetId": "L18-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D01-L18-R002",
+        "contextId": "L18-D01-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D01-context-supported-2-B-v1",
+      "targetId": "L18-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D01"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D01-L18-R002",
+        "contextId": "L18-D01-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D01-context-sentence-B-v1",
+      "targetId": "L18-R002",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D01"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D01-L18-R002",
+        "contextId": "L18-D01-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D02-context-transfer-A-v1",
+      "targetId": "L18-R003",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D02"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D02-L18-R003",
+        "contextId": "L18-D02-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D02-context-transfer-B-v1",
+      "targetId": "L18-R004",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D02-L18-R004",
+        "contextId": "L18-D02-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D02-context-supported-1-B-v1",
+      "targetId": "L18-R004",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D02-L18-R004",
+        "contextId": "L18-D02-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D02-context-supported-2-B-v1",
+      "targetId": "L18-R004",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D02"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D02-L18-R004",
+        "contextId": "L18-D02-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D02-context-sentence-B-v1",
+      "targetId": "L18-R004",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D02"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D02-L18-R004",
+        "contextId": "L18-D02-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D03-context-transfer-A-v1",
+      "targetId": "L18-R005",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D03-L18-R005",
+        "contextId": "L18-D03-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D03-context-transfer-B-v1",
+      "targetId": "L18-R006",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L18-D03"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L18-D03-L18-R006",
+        "contextId": "L18-D03-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D03-context-supported-1-B-v1",
+      "targetId": "L18-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D03-L18-R006",
+        "contextId": "L18-D03-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D03-context-supported-2-B-v1",
+      "targetId": "L18-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D03"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D03-L18-R006",
+        "contextId": "L18-D03-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D03-context-sentence-B-v1",
+      "targetId": "L18-R006",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D03"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D03-L18-R006",
+        "contextId": "L18-D03-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D04-context-transfer-A-v1",
+      "targetId": "L18-R007",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D04"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D04-L18-R007",
+        "contextId": "L18-D04-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D04-context-transfer-B-v1",
+      "targetId": "L18-R008",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L18-D04"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L18-D04-L18-R008",
+        "contextId": "L18-D04-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D05-context-transfer-A-v1",
+      "targetId": "L18-R009",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D05-L18-R009",
+        "contextId": "L18-D05-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D05-context-transfer-B-v1",
+      "targetId": "L18-R010",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L18-D05"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L18-D05-L18-R010",
+        "contextId": "L18-D05-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D05-context-supported-1-B-v1",
+      "targetId": "L18-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D05-L18-R010",
+        "contextId": "L18-D05-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D05-context-supported-2-B-v1",
+      "targetId": "L18-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D05"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D05-L18-R010",
+        "contextId": "L18-D05-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D05-context-sentence-B-v1",
+      "targetId": "L18-R010",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D05"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D05-L18-R010",
+        "contextId": "L18-D05-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D06-context-transfer-A-v1",
+      "targetId": "L18-R011",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D06-L18-R011",
+        "contextId": "L18-D06-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D06-context-transfer-B-v1",
+      "targetId": "L18-R012",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D06-L18-R012",
+        "contextId": "L18-D06-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D06-context-supported-1-B-v1",
+      "targetId": "L18-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D06-L18-R012",
+        "contextId": "L18-D06-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D06-context-supported-2-B-v1",
+      "targetId": "L18-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D06"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D06-L18-R012",
+        "contextId": "L18-D06-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D06-context-sentence-B-v1",
+      "targetId": "L18-R012",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D06"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D06-L18-R012",
+        "contextId": "L18-D06-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D07-context-transfer-A-v1",
+      "targetId": "L18-R013",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D07-L18-R013",
+        "contextId": "L18-D07-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D07-context-transfer-B-v1",
+      "targetId": "L18-R014",
+      "subskill": "phrase_dialogue_response",
+      "requiredCardIds": [
+        "L18-D07"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; มีตัวเลือกที่ต่างกันตามข้อเท็จจริงหรือเจตนา จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "reply-options"
+      ],
+      "practice": {
+        "familyId": "L18-D07-L18-R014",
+        "contextId": "L18-D07-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D07-context-supported-1-B-v1",
+      "targetId": "L18-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D07-L18-R014",
+        "contextId": "L18-D07-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D07-context-supported-2-B-v1",
+      "targetId": "L18-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D07"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D07-L18-R014",
+        "contextId": "L18-D07-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D07-context-sentence-B-v1",
+      "targetId": "L18-R014",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D07"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D07-L18-R014",
+        "contextId": "L18-D07-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D08-context-transfer-A-v1",
+      "targetId": "L18-R015",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D08"
+      ],
+      "difficulty": 1,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D08-L18-R015",
+        "contextId": "L18-D08-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D08-context-transfer-B-v1",
+      "targetId": "L18-R016",
+      "subskill": "phrase_word_order",
+      "requiredCardIds": [
+        "L18-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "ใช้หน้าที่เดิมกับข้อมูลใหม่ที่ต้องอ่านให้ตรงสถานการณ์; ให้คำครบเพื่อจัดลำดับ จึงไม่เป็นหลักฐานการผลิตภาษาอิสระ",
+      "assistance": [
+        "provided-context",
+        "supplied-lexical-gloss",
+        "optional-prior-model",
+        "supplied-words",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D08-L18-R016",
+        "contextId": "L18-D08-scenario-01",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0,
+          "requiresAttempt": true
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D08-context-supported-1-B-v1",
+      "targetId": "L18-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D08-L18-R016",
+        "contextId": "L18-D08-scenario-02",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D08-context-supported-2-B-v1",
+      "targetId": "L18-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D08"
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยให้โครงเริ่มต้นและกลุ่มคำที่จำเป็น; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start",
+        "provided-sentence-start-frame"
+      ],
+      "practice": {
+        "familyId": "L18-D08-L18-R016",
+        "contextId": "L18-D08-scenario-03",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_word_order",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    },
+    {
+      "lessonId": "L18",
+      "skill": "phrases",
+      "taskId": "L18-D08-context-sentence-B-v1",
+      "targetId": "L18-R016",
+      "subskill": "phrase_bounded_production",
+      "requiredCardIds": [
+        "L18-D08"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคจากข้อมูลใหม่ โดยไม่มีคลังคำเรียง แต่ระบุคำหลักและคำเริ่มต้นเพื่อจำกัดคำตอบที่ตรวจได้; ตรวจเฉพาะการผลิตแบบจำกัดขอบเขต ไม่ใช่การเขียนอิสระ",
+      "assistance": [
+        "provided-context",
+        "optional-prior-model",
+        "supplied-lexical-groups",
+        "required-lemma",
+        "provided-start"
+      ],
+      "practice": {
+        "familyId": "L18-D08-L18-R016",
+        "contextId": "L18-D08-scenario-04",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2,
+          "requiresAttempt": false
+        }
+      },
+      "provenance": "product-authored"
+    }
+  ]
+}

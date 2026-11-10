@@ -1,0 +1,1417 @@
+{
+  "version": 1,
+  "origin": "product-authored",
+  "status": "authored_not_integrated_or_deployed",
+  "originalTaskCount": 372,
+  "extensionTaskCount": 154,
+  "dialogues": 32,
+  "preservedOriginalIdsAndAnswers": true,
+  "omissions": [
+    {
+      "dialogueId": "L16-D02",
+      "omittedStages": [
+        2,
+        3
+      ],
+      "omittedTasks": 3,
+      "reason": "The taught reply is a short fixed consent formula. Inventing three extra productive variants would either repeat the same linguistic evidence or assess added untaught sentence structure. Only a genuinely new contextual transfer is authored."
+    },
+    {
+      "dialogueId": "L18-D04",
+      "omittedStages": [
+        2,
+        3
+      ],
+      "omittedTasks": 3,
+      "reason": "The taught reply is a short fixed consent formula. Inventing three extra productive variants would either repeat the same linguistic evidence or assess added untaught sentence structure. Only a genuinely new contextual transfer is authored."
+    }
+  ],
+  "assessmentRecords": [
+    {
+      "taskId": "L15-D01-context-transfer-A-v1",
+      "originalCardId": "L15-D01",
+      "originalResponseTarget": "L15-R001",
+      "contextId": "L15-D01-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D01-context-transfer-B-v1",
+      "originalCardId": "L15-D01",
+      "originalResponseTarget": "L15-R002",
+      "contextId": "L15-D01-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D01-context-supported-1-B-v1",
+      "originalCardId": "L15-D01",
+      "originalResponseTarget": "L15-R002",
+      "contextId": "L15-D01-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D01-context-supported-2-B-v1",
+      "originalCardId": "L15-D01",
+      "originalResponseTarget": "L15-R002",
+      "contextId": "L15-D01-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D01-context-sentence-B-v1",
+      "originalCardId": "L15-D01",
+      "originalResponseTarget": "L15-R002",
+      "contextId": "L15-D01-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D02-context-transfer-A-v1",
+      "originalCardId": "L15-D02",
+      "originalResponseTarget": "L15-R003",
+      "contextId": "L15-D02-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D02-context-transfer-B-v1",
+      "originalCardId": "L15-D02",
+      "originalResponseTarget": "L15-R004",
+      "contextId": "L15-D02-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D02-context-supported-1-B-v1",
+      "originalCardId": "L15-D02",
+      "originalResponseTarget": "L15-R004",
+      "contextId": "L15-D02-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D02-context-supported-2-B-v1",
+      "originalCardId": "L15-D02",
+      "originalResponseTarget": "L15-R004",
+      "contextId": "L15-D02-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D02-context-sentence-B-v1",
+      "originalCardId": "L15-D02",
+      "originalResponseTarget": "L15-R004",
+      "contextId": "L15-D02-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D03-context-transfer-A-v1",
+      "originalCardId": "L15-D03",
+      "originalResponseTarget": "L15-R005",
+      "contextId": "L15-D03-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D03-context-transfer-B-v1",
+      "originalCardId": "L15-D03",
+      "originalResponseTarget": "L15-R006",
+      "contextId": "L15-D03-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D03-context-supported-1-B-v1",
+      "originalCardId": "L15-D03",
+      "originalResponseTarget": "L15-R006",
+      "contextId": "L15-D03-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D03-context-supported-2-B-v1",
+      "originalCardId": "L15-D03",
+      "originalResponseTarget": "L15-R006",
+      "contextId": "L15-D03-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D03-context-sentence-B-v1",
+      "originalCardId": "L15-D03",
+      "originalResponseTarget": "L15-R006",
+      "contextId": "L15-D03-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D04-context-transfer-A-v1",
+      "originalCardId": "L15-D04",
+      "originalResponseTarget": "L15-R007",
+      "contextId": "L15-D04-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D04-context-transfer-B-v1",
+      "originalCardId": "L15-D04",
+      "originalResponseTarget": "L15-R008",
+      "contextId": "L15-D04-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D04-context-supported-1-B-v1",
+      "originalCardId": "L15-D04",
+      "originalResponseTarget": "L15-R008",
+      "contextId": "L15-D04-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D04-context-supported-2-B-v1",
+      "originalCardId": "L15-D04",
+      "originalResponseTarget": "L15-R008",
+      "contextId": "L15-D04-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D04-context-sentence-B-v1",
+      "originalCardId": "L15-D04",
+      "originalResponseTarget": "L15-R008",
+      "contextId": "L15-D04-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D05-context-transfer-A-v1",
+      "originalCardId": "L15-D05",
+      "originalResponseTarget": "L15-R009",
+      "contextId": "L15-D05-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D05-context-transfer-B-v1",
+      "originalCardId": "L15-D05",
+      "originalResponseTarget": "L15-R010",
+      "contextId": "L15-D05-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D05-context-supported-1-B-v1",
+      "originalCardId": "L15-D05",
+      "originalResponseTarget": "L15-R010",
+      "contextId": "L15-D05-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D05-context-supported-2-B-v1",
+      "originalCardId": "L15-D05",
+      "originalResponseTarget": "L15-R010",
+      "contextId": "L15-D05-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D05-context-sentence-B-v1",
+      "originalCardId": "L15-D05",
+      "originalResponseTarget": "L15-R010",
+      "contextId": "L15-D05-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D06-context-transfer-A-v1",
+      "originalCardId": "L15-D06",
+      "originalResponseTarget": "L15-R011",
+      "contextId": "L15-D06-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D06-context-transfer-B-v1",
+      "originalCardId": "L15-D06",
+      "originalResponseTarget": "L15-R012",
+      "contextId": "L15-D06-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D06-context-supported-1-B-v1",
+      "originalCardId": "L15-D06",
+      "originalResponseTarget": "L15-R012",
+      "contextId": "L15-D06-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D06-context-supported-2-B-v1",
+      "originalCardId": "L15-D06",
+      "originalResponseTarget": "L15-R012",
+      "contextId": "L15-D06-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D06-context-sentence-B-v1",
+      "originalCardId": "L15-D06",
+      "originalResponseTarget": "L15-R012",
+      "contextId": "L15-D06-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D07-context-transfer-A-v1",
+      "originalCardId": "L15-D07",
+      "originalResponseTarget": "L15-R013",
+      "contextId": "L15-D07-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D07-context-transfer-B-v1",
+      "originalCardId": "L15-D07",
+      "originalResponseTarget": "L15-R014",
+      "contextId": "L15-D07-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D07-context-supported-1-B-v1",
+      "originalCardId": "L15-D07",
+      "originalResponseTarget": "L15-R014",
+      "contextId": "L15-D07-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D07-context-supported-2-B-v1",
+      "originalCardId": "L15-D07",
+      "originalResponseTarget": "L15-R014",
+      "contextId": "L15-D07-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D07-context-sentence-B-v1",
+      "originalCardId": "L15-D07",
+      "originalResponseTarget": "L15-R014",
+      "contextId": "L15-D07-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D08-context-transfer-A-v1",
+      "originalCardId": "L15-D08",
+      "originalResponseTarget": "L15-R015",
+      "contextId": "L15-D08-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D08-context-transfer-B-v1",
+      "originalCardId": "L15-D08",
+      "originalResponseTarget": "L15-R016",
+      "contextId": "L15-D08-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D08-context-supported-1-B-v1",
+      "originalCardId": "L15-D08",
+      "originalResponseTarget": "L15-R016",
+      "contextId": "L15-D08-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D08-context-supported-2-B-v1",
+      "originalCardId": "L15-D08",
+      "originalResponseTarget": "L15-R016",
+      "contextId": "L15-D08-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L15-D08-context-sentence-B-v1",
+      "originalCardId": "L15-D08",
+      "originalResponseTarget": "L15-R016",
+      "contextId": "L15-D08-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D01-context-transfer-A-v1",
+      "originalCardId": "L16-D01",
+      "originalResponseTarget": "L16-R001",
+      "contextId": "L16-D01-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D01-context-transfer-B-v1",
+      "originalCardId": "L16-D01",
+      "originalResponseTarget": "L16-R002",
+      "contextId": "L16-D01-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D01-context-supported-1-B-v1",
+      "originalCardId": "L16-D01",
+      "originalResponseTarget": "L16-R002",
+      "contextId": "L16-D01-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D01-context-supported-2-B-v1",
+      "originalCardId": "L16-D01",
+      "originalResponseTarget": "L16-R002",
+      "contextId": "L16-D01-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D01-context-sentence-B-v1",
+      "originalCardId": "L16-D01",
+      "originalResponseTarget": "L16-R002",
+      "contextId": "L16-D01-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D02-context-transfer-A-v1",
+      "originalCardId": "L16-D02",
+      "originalResponseTarget": "L16-R003",
+      "contextId": "L16-D02-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D02-context-transfer-B-v1",
+      "originalCardId": "L16-D02",
+      "originalResponseTarget": "L16-R004",
+      "contextId": "L16-D02-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D03-context-transfer-A-v1",
+      "originalCardId": "L16-D03",
+      "originalResponseTarget": "L16-R005",
+      "contextId": "L16-D03-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D03-context-transfer-B-v1",
+      "originalCardId": "L16-D03",
+      "originalResponseTarget": "L16-R006",
+      "contextId": "L16-D03-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D03-context-supported-1-B-v1",
+      "originalCardId": "L16-D03",
+      "originalResponseTarget": "L16-R006",
+      "contextId": "L16-D03-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D03-context-supported-2-B-v1",
+      "originalCardId": "L16-D03",
+      "originalResponseTarget": "L16-R006",
+      "contextId": "L16-D03-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D03-context-sentence-B-v1",
+      "originalCardId": "L16-D03",
+      "originalResponseTarget": "L16-R006",
+      "contextId": "L16-D03-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D04-context-transfer-A-v1",
+      "originalCardId": "L16-D04",
+      "originalResponseTarget": "L16-R007",
+      "contextId": "L16-D04-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D04-context-transfer-B-v1",
+      "originalCardId": "L16-D04",
+      "originalResponseTarget": "L16-R008",
+      "contextId": "L16-D04-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D04-context-supported-1-B-v1",
+      "originalCardId": "L16-D04",
+      "originalResponseTarget": "L16-R008",
+      "contextId": "L16-D04-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D04-context-supported-2-B-v1",
+      "originalCardId": "L16-D04",
+      "originalResponseTarget": "L16-R008",
+      "contextId": "L16-D04-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D04-context-sentence-B-v1",
+      "originalCardId": "L16-D04",
+      "originalResponseTarget": "L16-R008",
+      "contextId": "L16-D04-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D05-context-transfer-A-v1",
+      "originalCardId": "L16-D05",
+      "originalResponseTarget": "L16-R009",
+      "contextId": "L16-D05-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D05-context-transfer-B-v1",
+      "originalCardId": "L16-D05",
+      "originalResponseTarget": "L16-R010",
+      "contextId": "L16-D05-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D05-context-supported-1-B-v1",
+      "originalCardId": "L16-D05",
+      "originalResponseTarget": "L16-R010",
+      "contextId": "L16-D05-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D05-context-supported-2-B-v1",
+      "originalCardId": "L16-D05",
+      "originalResponseTarget": "L16-R010",
+      "contextId": "L16-D05-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D05-context-sentence-B-v1",
+      "originalCardId": "L16-D05",
+      "originalResponseTarget": "L16-R010",
+      "contextId": "L16-D05-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D06-context-transfer-A-v1",
+      "originalCardId": "L16-D06",
+      "originalResponseTarget": "L16-R011",
+      "contextId": "L16-D06-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D06-context-transfer-B-v1",
+      "originalCardId": "L16-D06",
+      "originalResponseTarget": "L16-R012",
+      "contextId": "L16-D06-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D06-context-supported-1-B-v1",
+      "originalCardId": "L16-D06",
+      "originalResponseTarget": "L16-R012",
+      "contextId": "L16-D06-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D06-context-supported-2-B-v1",
+      "originalCardId": "L16-D06",
+      "originalResponseTarget": "L16-R012",
+      "contextId": "L16-D06-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D06-context-sentence-B-v1",
+      "originalCardId": "L16-D06",
+      "originalResponseTarget": "L16-R012",
+      "contextId": "L16-D06-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D07-context-transfer-A-v1",
+      "originalCardId": "L16-D07",
+      "originalResponseTarget": "L16-R013",
+      "contextId": "L16-D07-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D07-context-transfer-B-v1",
+      "originalCardId": "L16-D07",
+      "originalResponseTarget": "L16-R014",
+      "contextId": "L16-D07-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D07-context-supported-1-B-v1",
+      "originalCardId": "L16-D07",
+      "originalResponseTarget": "L16-R014",
+      "contextId": "L16-D07-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D07-context-supported-2-B-v1",
+      "originalCardId": "L16-D07",
+      "originalResponseTarget": "L16-R014",
+      "contextId": "L16-D07-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D07-context-sentence-B-v1",
+      "originalCardId": "L16-D07",
+      "originalResponseTarget": "L16-R014",
+      "contextId": "L16-D07-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D08-context-transfer-A-v1",
+      "originalCardId": "L16-D08",
+      "originalResponseTarget": "L16-R015",
+      "contextId": "L16-D08-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D08-context-transfer-B-v1",
+      "originalCardId": "L16-D08",
+      "originalResponseTarget": "L16-R016",
+      "contextId": "L16-D08-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D08-context-supported-1-B-v1",
+      "originalCardId": "L16-D08",
+      "originalResponseTarget": "L16-R016",
+      "contextId": "L16-D08-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D08-context-supported-2-B-v1",
+      "originalCardId": "L16-D08",
+      "originalResponseTarget": "L16-R016",
+      "contextId": "L16-D08-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L16-D08-context-sentence-B-v1",
+      "originalCardId": "L16-D08",
+      "originalResponseTarget": "L16-R016",
+      "contextId": "L16-D08-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D01-context-transfer-A-v1",
+      "originalCardId": "L17-D01",
+      "originalResponseTarget": "L17-R001",
+      "contextId": "L17-D01-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D01-context-transfer-B-v1",
+      "originalCardId": "L17-D01",
+      "originalResponseTarget": "L17-R002",
+      "contextId": "L17-D01-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D01-context-supported-1-B-v1",
+      "originalCardId": "L17-D01",
+      "originalResponseTarget": "L17-R002",
+      "contextId": "L17-D01-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D01-context-supported-2-B-v1",
+      "originalCardId": "L17-D01",
+      "originalResponseTarget": "L17-R002",
+      "contextId": "L17-D01-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D01-context-sentence-B-v1",
+      "originalCardId": "L17-D01",
+      "originalResponseTarget": "L17-R002",
+      "contextId": "L17-D01-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D02-context-transfer-A-v1",
+      "originalCardId": "L17-D02",
+      "originalResponseTarget": "L17-R003",
+      "contextId": "L17-D02-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D02-context-transfer-B-v1",
+      "originalCardId": "L17-D02",
+      "originalResponseTarget": "L17-R004",
+      "contextId": "L17-D02-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D02-context-supported-1-B-v1",
+      "originalCardId": "L17-D02",
+      "originalResponseTarget": "L17-R004",
+      "contextId": "L17-D02-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D02-context-supported-2-B-v1",
+      "originalCardId": "L17-D02",
+      "originalResponseTarget": "L17-R004",
+      "contextId": "L17-D02-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D02-context-sentence-B-v1",
+      "originalCardId": "L17-D02",
+      "originalResponseTarget": "L17-R004",
+      "contextId": "L17-D02-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D03-context-transfer-A-v1",
+      "originalCardId": "L17-D03",
+      "originalResponseTarget": "L17-R005",
+      "contextId": "L17-D03-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D03-context-transfer-B-v1",
+      "originalCardId": "L17-D03",
+      "originalResponseTarget": "L17-R006",
+      "contextId": "L17-D03-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D03-context-supported-1-B-v1",
+      "originalCardId": "L17-D03",
+      "originalResponseTarget": "L17-R006",
+      "contextId": "L17-D03-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D03-context-supported-2-B-v1",
+      "originalCardId": "L17-D03",
+      "originalResponseTarget": "L17-R006",
+      "contextId": "L17-D03-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D03-context-sentence-B-v1",
+      "originalCardId": "L17-D03",
+      "originalResponseTarget": "L17-R006",
+      "contextId": "L17-D03-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D04-context-transfer-A-v1",
+      "originalCardId": "L17-D04",
+      "originalResponseTarget": "L17-R007",
+      "contextId": "L17-D04-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D04-context-transfer-B-v1",
+      "originalCardId": "L17-D04",
+      "originalResponseTarget": "L17-R008",
+      "contextId": "L17-D04-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D04-context-supported-1-B-v1",
+      "originalCardId": "L17-D04",
+      "originalResponseTarget": "L17-R008",
+      "contextId": "L17-D04-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D04-context-supported-2-B-v1",
+      "originalCardId": "L17-D04",
+      "originalResponseTarget": "L17-R008",
+      "contextId": "L17-D04-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D04-context-sentence-B-v1",
+      "originalCardId": "L17-D04",
+      "originalResponseTarget": "L17-R008",
+      "contextId": "L17-D04-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D05-context-transfer-A-v1",
+      "originalCardId": "L17-D05",
+      "originalResponseTarget": "L17-R009",
+      "contextId": "L17-D05-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D05-context-transfer-B-v1",
+      "originalCardId": "L17-D05",
+      "originalResponseTarget": "L17-R010",
+      "contextId": "L17-D05-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D05-context-supported-1-B-v1",
+      "originalCardId": "L17-D05",
+      "originalResponseTarget": "L17-R010",
+      "contextId": "L17-D05-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D05-context-supported-2-B-v1",
+      "originalCardId": "L17-D05",
+      "originalResponseTarget": "L17-R010",
+      "contextId": "L17-D05-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D05-context-sentence-B-v1",
+      "originalCardId": "L17-D05",
+      "originalResponseTarget": "L17-R010",
+      "contextId": "L17-D05-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D06-context-transfer-A-v1",
+      "originalCardId": "L17-D06",
+      "originalResponseTarget": "L17-R011",
+      "contextId": "L17-D06-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D06-context-transfer-B-v1",
+      "originalCardId": "L17-D06",
+      "originalResponseTarget": "L17-R012",
+      "contextId": "L17-D06-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D06-context-supported-1-B-v1",
+      "originalCardId": "L17-D06",
+      "originalResponseTarget": "L17-R012",
+      "contextId": "L17-D06-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D06-context-supported-2-B-v1",
+      "originalCardId": "L17-D06",
+      "originalResponseTarget": "L17-R012",
+      "contextId": "L17-D06-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D06-context-sentence-B-v1",
+      "originalCardId": "L17-D06",
+      "originalResponseTarget": "L17-R012",
+      "contextId": "L17-D06-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D07-context-transfer-A-v1",
+      "originalCardId": "L17-D07",
+      "originalResponseTarget": "L17-R013",
+      "contextId": "L17-D07-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D07-context-transfer-B-v1",
+      "originalCardId": "L17-D07",
+      "originalResponseTarget": "L17-R014",
+      "contextId": "L17-D07-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D07-context-supported-1-B-v1",
+      "originalCardId": "L17-D07",
+      "originalResponseTarget": "L17-R014",
+      "contextId": "L17-D07-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D07-context-supported-2-B-v1",
+      "originalCardId": "L17-D07",
+      "originalResponseTarget": "L17-R014",
+      "contextId": "L17-D07-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D07-context-sentence-B-v1",
+      "originalCardId": "L17-D07",
+      "originalResponseTarget": "L17-R014",
+      "contextId": "L17-D07-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D08-context-transfer-A-v1",
+      "originalCardId": "L17-D08",
+      "originalResponseTarget": "L17-R015",
+      "contextId": "L17-D08-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D08-context-transfer-B-v1",
+      "originalCardId": "L17-D08",
+      "originalResponseTarget": "L17-R016",
+      "contextId": "L17-D08-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D08-context-supported-1-B-v1",
+      "originalCardId": "L17-D08",
+      "originalResponseTarget": "L17-R016",
+      "contextId": "L17-D08-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D08-context-supported-2-B-v1",
+      "originalCardId": "L17-D08",
+      "originalResponseTarget": "L17-R016",
+      "contextId": "L17-D08-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L17-D08-context-sentence-B-v1",
+      "originalCardId": "L17-D08",
+      "originalResponseTarget": "L17-R016",
+      "contextId": "L17-D08-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D01-context-transfer-A-v1",
+      "originalCardId": "L18-D01",
+      "originalResponseTarget": "L18-R001",
+      "contextId": "L18-D01-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D01-context-transfer-B-v1",
+      "originalCardId": "L18-D01",
+      "originalResponseTarget": "L18-R002",
+      "contextId": "L18-D01-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D01-context-supported-1-B-v1",
+      "originalCardId": "L18-D01",
+      "originalResponseTarget": "L18-R002",
+      "contextId": "L18-D01-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D01-context-supported-2-B-v1",
+      "originalCardId": "L18-D01",
+      "originalResponseTarget": "L18-R002",
+      "contextId": "L18-D01-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D01-context-sentence-B-v1",
+      "originalCardId": "L18-D01",
+      "originalResponseTarget": "L18-R002",
+      "contextId": "L18-D01-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D02-context-transfer-A-v1",
+      "originalCardId": "L18-D02",
+      "originalResponseTarget": "L18-R003",
+      "contextId": "L18-D02-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D02-context-transfer-B-v1",
+      "originalCardId": "L18-D02",
+      "originalResponseTarget": "L18-R004",
+      "contextId": "L18-D02-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D02-context-supported-1-B-v1",
+      "originalCardId": "L18-D02",
+      "originalResponseTarget": "L18-R004",
+      "contextId": "L18-D02-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D02-context-supported-2-B-v1",
+      "originalCardId": "L18-D02",
+      "originalResponseTarget": "L18-R004",
+      "contextId": "L18-D02-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D02-context-sentence-B-v1",
+      "originalCardId": "L18-D02",
+      "originalResponseTarget": "L18-R004",
+      "contextId": "L18-D02-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D03-context-transfer-A-v1",
+      "originalCardId": "L18-D03",
+      "originalResponseTarget": "L18-R005",
+      "contextId": "L18-D03-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D03-context-transfer-B-v1",
+      "originalCardId": "L18-D03",
+      "originalResponseTarget": "L18-R006",
+      "contextId": "L18-D03-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D03-context-supported-1-B-v1",
+      "originalCardId": "L18-D03",
+      "originalResponseTarget": "L18-R006",
+      "contextId": "L18-D03-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D03-context-supported-2-B-v1",
+      "originalCardId": "L18-D03",
+      "originalResponseTarget": "L18-R006",
+      "contextId": "L18-D03-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D03-context-sentence-B-v1",
+      "originalCardId": "L18-D03",
+      "originalResponseTarget": "L18-R006",
+      "contextId": "L18-D03-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D04-context-transfer-A-v1",
+      "originalCardId": "L18-D04",
+      "originalResponseTarget": "L18-R007",
+      "contextId": "L18-D04-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D04-context-transfer-B-v1",
+      "originalCardId": "L18-D04",
+      "originalResponseTarget": "L18-R008",
+      "contextId": "L18-D04-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D05-context-transfer-A-v1",
+      "originalCardId": "L18-D05",
+      "originalResponseTarget": "L18-R009",
+      "contextId": "L18-D05-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D05-context-transfer-B-v1",
+      "originalCardId": "L18-D05",
+      "originalResponseTarget": "L18-R010",
+      "contextId": "L18-D05-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D05-context-supported-1-B-v1",
+      "originalCardId": "L18-D05",
+      "originalResponseTarget": "L18-R010",
+      "contextId": "L18-D05-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D05-context-supported-2-B-v1",
+      "originalCardId": "L18-D05",
+      "originalResponseTarget": "L18-R010",
+      "contextId": "L18-D05-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D05-context-sentence-B-v1",
+      "originalCardId": "L18-D05",
+      "originalResponseTarget": "L18-R010",
+      "contextId": "L18-D05-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D06-context-transfer-A-v1",
+      "originalCardId": "L18-D06",
+      "originalResponseTarget": "L18-R011",
+      "contextId": "L18-D06-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D06-context-transfer-B-v1",
+      "originalCardId": "L18-D06",
+      "originalResponseTarget": "L18-R012",
+      "contextId": "L18-D06-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D06-context-supported-1-B-v1",
+      "originalCardId": "L18-D06",
+      "originalResponseTarget": "L18-R012",
+      "contextId": "L18-D06-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D06-context-supported-2-B-v1",
+      "originalCardId": "L18-D06",
+      "originalResponseTarget": "L18-R012",
+      "contextId": "L18-D06-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D06-context-sentence-B-v1",
+      "originalCardId": "L18-D06",
+      "originalResponseTarget": "L18-R012",
+      "contextId": "L18-D06-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D07-context-transfer-A-v1",
+      "originalCardId": "L18-D07",
+      "originalResponseTarget": "L18-R013",
+      "contextId": "L18-D07-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D07-context-transfer-B-v1",
+      "originalCardId": "L18-D07",
+      "originalResponseTarget": "L18-R014",
+      "contextId": "L18-D07-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D07-context-supported-1-B-v1",
+      "originalCardId": "L18-D07",
+      "originalResponseTarget": "L18-R014",
+      "contextId": "L18-D07-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D07-context-supported-2-B-v1",
+      "originalCardId": "L18-D07",
+      "originalResponseTarget": "L18-R014",
+      "contextId": "L18-D07-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D07-context-sentence-B-v1",
+      "originalCardId": "L18-D07",
+      "originalResponseTarget": "L18-R014",
+      "contextId": "L18-D07-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D08-context-transfer-A-v1",
+      "originalCardId": "L18-D08",
+      "originalResponseTarget": "L18-R015",
+      "contextId": "L18-D08-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D08-context-transfer-B-v1",
+      "originalCardId": "L18-D08",
+      "originalResponseTarget": "L18-R016",
+      "contextId": "L18-D08-scenario-01",
+      "stage": 1,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D08-context-supported-1-B-v1",
+      "originalCardId": "L18-D08",
+      "originalResponseTarget": "L18-R016",
+      "contextId": "L18-D08-scenario-02",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D08-context-supported-2-B-v1",
+      "originalCardId": "L18-D08",
+      "originalResponseTarget": "L18-R016",
+      "contextId": "L18-D08-scenario-03",
+      "stage": 2,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    },
+    {
+      "taskId": "L18-D08-context-sentence-B-v1",
+      "originalCardId": "L18-D08",
+      "originalResponseTarget": "L18-R016",
+      "contextId": "L18-D08-scenario-04",
+      "stage": 3,
+      "provenance": "product-authored",
+      "lexicalSupport": "Provided German lemma/chunks are assistance and not independent lexical/Artikel evidence"
+    }
+  ]
+}
