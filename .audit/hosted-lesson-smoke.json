@@ -1,0 +1,239 @@
+{
+  "verifiedAt": "2026-11-10T12:28:16.043888+00:00",
+  "productionUrl": "https://deutsch-trainer-gamma.vercel.app",
+  "mode": "existing signed-in production learner; read-only navigation, no scoring actions",
+  "checks": [
+    {
+      "path": "/learn/L15/vocabulary",
+      "signedIn": true,
+      "ready": true,
+      "heading": "คำศัพท์",
+      "rows": 1,
+      "errors": []
+    },
+    {
+      "path": "/practice/L15/vocabulary",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกคำศัพท์ · บท 15",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L15/grammar",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ไวยากรณ์",
+      "rows": 3,
+      "errors": []
+    },
+    {
+      "path": "/practice/L15/grammar",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกไวยากรณ์ · บท 15",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L15/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ประโยคและสำนวน",
+      "rows": 2,
+      "errors": []
+    },
+    {
+      "path": "/practice/L15/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกประโยคและสำนวน · บท 15",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L16/vocabulary",
+      "signedIn": true,
+      "ready": true,
+      "heading": "คำศัพท์",
+      "rows": 1,
+      "errors": []
+    },
+    {
+      "path": "/practice/L16/vocabulary",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกคำศัพท์ · บท 16",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L16/grammar",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ไวยากรณ์",
+      "rows": 3,
+      "errors": []
+    },
+    {
+      "path": "/practice/L16/grammar",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกไวยากรณ์ · บท 16",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L16/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ประโยคและสำนวน",
+      "rows": 2,
+      "errors": []
+    },
+    {
+      "path": "/practice/L16/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกประโยคและสำนวน · บท 16",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L17/vocabulary",
+      "signedIn": true,
+      "ready": true,
+      "heading": "คำศัพท์",
+      "rows": 1,
+      "errors": []
+    },
+    {
+      "path": "/practice/L17/vocabulary",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกคำศัพท์ · บท 17",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L17/grammar",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ไวยากรณ์",
+      "rows": 2,
+      "errors": []
+    },
+    {
+      "path": "/practice/L17/grammar",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกไวยากรณ์ · บท 17",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L17/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ประโยคและสำนวน",
+      "rows": 2,
+      "errors": []
+    },
+    {
+      "path": "/practice/L17/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกประโยคและสำนวน · บท 17",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L18/vocabulary",
+      "signedIn": true,
+      "ready": true,
+      "heading": "คำศัพท์",
+      "rows": 1,
+      "errors": []
+    },
+    {
+      "path": "/practice/L18/vocabulary",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกคำศัพท์ · บท 18",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L18/grammar",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ไวยากรณ์",
+      "rows": 2,
+      "errors": []
+    },
+    {
+      "path": "/practice/L18/grammar",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกไวยากรณ์ · บท 18",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L18/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ประโยคและสำนวน",
+      "rows": 2,
+      "errors": []
+    },
+    {
+      "path": "/practice/L18/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ฝึกประโยคและสำนวน · บท 18",
+      "rows": 0,
+      "errors": []
+    },
+    {
+      "path": "/learn/L01/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "ทักทายและลา",
+      "rows": 4,
+      "errors": []
+    },
+    {
+      "path": "/learn/L02/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "อาชีพและที่ทำงาน",
+      "rows": 5,
+      "errors": []
+    },
+    {
+      "path": "/learn/L11/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "เล่าอดีตด้วย Perfekt",
+      "rows": 6,
+      "errors": []
+    },
+    {
+      "path": "/learn/L13/phrases/rating",
+      "signedIn": true,
+      "ready": true,
+      "heading": "แสดงความคิดเห็นต่อสถานที่",
+      "rows": 2,
+      "errors": []
+    },
+    {
+      "path": "/learn/L14/phrases",
+      "signedIn": true,
+      "ready": true,
+      "heading": "Wegbeschreibungen",
+      "rows": 0,
+      "errors": []
+    }
+  ]
+}

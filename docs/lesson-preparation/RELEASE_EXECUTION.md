@@ -12,7 +12,7 @@
 - [x] เปิดงาน Learn ประโยค L01–L14 ที่แก้แล้วสำหรับบัญชีทั่วไป และตรวจ handoff/exposure ของแต่ละ renderer
 - [x] ทดสอบเส้นทางบัญชีทั่วไป การบันทึก/กลับมาทำต่อ/สลับบัญชี และคำตอบที่ยังไม่เคยเรียน; ตรวจ 375/390/1360px
 - [x] ตรวจ release bundle ไม่มี test-workspace configuration หรือ draft-only routes ที่บังหน้าใช้งานจริง
-- [ ] Production build และ deployment จริง; apply schema ก่อนเปิด client ที่ใช้ schema นั้น; ตรวจ URL และ health หลังปล่อย
+- [x] Production build และ deployment จริง; apply schema ก่อนเปิด client ที่ใช้ schema นั้น; ตรวจ URL และ health หลังปล่อย
 
 ใช้ registry/session infrastructure ที่มีอยู่เพื่อไม่สร้าง Practice store รายบทอีกชุด แยกงานสื่อออกจาก source/UI เมื่อทำขนาน คำถามที่กำกวมหรือยังไม่มีสื่อไม่เปิดให้ผู้เรียน
 
@@ -57,3 +57,11 @@ Cross-family review reproduced stale-device assistance loss and a pending-round 
 ## Hosted schema applied, 10 November 2026
 
 Applied the reviewed four-migration bundle through the authenticated Supabase dashboard management API after the user enabled browser automation. No database password/token was exported. Independent publishable-key HTTP verification returned200 with courses12,cards136,tasks372,phraseTasks64,practiceSyncReady=true. This supersedes the missing-schema blocker recorded above. The production build includes the shared-RPC readiness guard and passes TypeScript. Frontend deployment verification remains required. Evidence: .audit/lesson-release.json.
+
+## Production release verified, 10 November 2026
+
+Deployed application commit `b9750850c9b077eef32d7763028f7d0b6d403f4e` through the existing Vercel production Git integration. GitHub Vercel status is success. Public production URL: https://deutsch-trainer-gamma.vercel.app . Health returned200/statusok/runtimebun/lessonRelease l15-l18-v1 after hosted schema application.
+
+Used the already-authenticated production learner browser session, with no test-workspace banner: all24 L15–18 Learn/Practice routes loaded signed in without save/auth alerts, plus L01,L02,L11,L13/rating,L14 revised Learn renderers. No answer/check/learning-advance actions were clicked on the real account. Four production audio samples (word, grammar model, speaker turn, paired dialogue) returned200 with hashes matching verified local files. The separate local real-account isolated-two-context stale-help browser check also passed, including actual stalefalse RPC normalized to saved assistance and canonical client refresh.
+
+The temporary legacy-bootstrap override found by that browser check was fixed and now has a readiness assertion before migration reapplication. Current execution checklist is complete. Audit: .audit/lesson-release.json and .audit/hosted-lesson-smoke.json. This verifies the scoped release; it does not assert that every historical lesson uses the new adaptive engine or that one-variant targets can establish mastery.

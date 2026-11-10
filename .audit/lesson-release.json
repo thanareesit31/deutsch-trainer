@@ -13,5 +13,22 @@
     }
   },
   "productionBuild": "passed Node20 next build --webpack with TypeScript",
-  "deployment": "pending"
+  "deployment": {
+    "status": "verified",
+    "codeCommit": "b9750850c9b077eef32d7763028f7d0b6d403f4e",
+    "productionUrl": "https://deutsch-trainer-gamma.vercel.app",
+    "vercelDeployment": "ANJeBCMwVfMBz4Xmfq23Bvxf7T9n",
+    "githubDeploymentId": 7681898650,
+    "verifiedAt": "2026-11-10T12:28:16.043888+00:00",
+    "health": {
+      "status": 200,
+      "appStatus": "ok",
+      "runtime": "bun",
+      "lessonRelease": "l15-l18-v1"
+    },
+    "signedInProductionRoutes": 29,
+    "normalAccountResponsesFabricated": false,
+    "sampleAudioFilesVerified": 4,
+    "staleTwoDeviceBrowser": "passed real RPC, canonical assistance, immutable first answer and reload"
+  }
 }
