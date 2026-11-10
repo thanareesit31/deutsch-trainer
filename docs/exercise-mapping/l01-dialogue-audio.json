@@ -1,0 +1,19 @@
+{
+  "asset": "/audio/l01/spelling-dialogue-v1.m4a",
+  "origin": "Synthetic German dialogue generated with edge-tts; no personal voice cloning",
+  "turns": [
+    {
+      "role": "question",
+      "voice": "de-DE-KatjaNeural",
+      "text": "Wie schreibt man das?",
+      "rate": "+0%"
+    },
+    {
+      "role": "reply",
+      "voice": "de-DE-ConradNeural",
+      "text": "Em. A. El. I.",
+      "rate": "-20%"
+    }
+  ],
+  "gapSeconds": 0.5
+}

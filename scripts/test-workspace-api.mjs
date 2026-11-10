@@ -1,5 +1,6 @@
 // Development-only adapter: real migration SQL/RLS, simulated Supabase Auth/REST.
 // Never reads .env.local, DATABASE_URL or connects to a hosted database.
+import { readFile } from "node:fs/promises";
 import { createServer } from "node:http";
 import { randomUUID } from "node:crypto";
 import { createDatabase } from "../tests/learning-database.mjs";
@@ -48,6 +49,7 @@ async function bodyOf(req) {
 export async function startTestApi({ port = 54329, webPort = 3002, webHosts = [], restore } = {}) {
   const db = await createDatabase();
   await db.exec("reset role");
+  await db.exec(await readFile(new URL("./test-workspace-phrase-discovery.sql", import.meta.url), "utf8"));
   const accounts = restore?.accounts ?? ["tester@deutsch.test", "tester2@deutsch.test"].map(
     (email) => ({
       id: randomUUID(),
@@ -180,7 +182,8 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
         throw httpError(404, "Unknown test endpoint");
       const parts = url.pathname.slice("/rest/v1/".length).split("/");
       const table = parts[0];
-      if (!session && !["content_lessons", "content_items"].includes(table))
+      const publicReadiness = url.pathname === '/rest/v1/rpc/release_course_readiness' && req.method === 'POST';
+      if (!session && !["content_lessons", "content_items"].includes(table) && !publicReadiness)
         throw httpError(401, "Test login required");
       if (url.pathname === '/rest/v1/rpc/test_workspace_control' && req.method === 'POST') {
         if (!session || !['tester@deutsch.test', 'tester2@deutsch.test'].includes(session.user.email))
@@ -215,7 +218,9 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
         ]);
         if (table === "rpc" && req.method === "POST") {
           const body = await bodyOf(req);
-          if (parts[1] === "learning_action")
+          if (parts[1] === 'release_course_readiness')
+            return (await tx.query('select public.release_course_readiness() as data')).rows[0].data;
+          else if (parts[1] === "learning_action")
             await tx.query("select public.learning_action($1,$2::jsonb)", [
               body.action,
               JSON.stringify(body.payload),

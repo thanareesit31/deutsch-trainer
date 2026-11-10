@@ -1,0 +1,3722 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "scope": "Cached renders, existing catalog and prototype questions; no fresh original PDF hash verification",
+  "records": [
+    {
+      "entityId": "L15-V001",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V001",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V002",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V002",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V003",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V003",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V004",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V004",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V005",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V005",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V006",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V006",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V007",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V007",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V008",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V008",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V009",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V009",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V010",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V010",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V011",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V011",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V012",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V012",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V013",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V013",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V014",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V014",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V015",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V015",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V016",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V016",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V017",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V017",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 15,
+          "printedPage": 23
+        }
+      ],
+      "contentSource": null,
+      "lemmaReview": "existing_catalog_requires_source_recheck",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V018",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V018",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V019",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V019",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V020",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V020",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 10,
+          "printedPage": 18
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V021",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V021",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 15,
+          "printedPage": 23
+        }
+      ],
+      "contentSource": null,
+      "lemmaReview": "existing_catalog_requires_source_recheck",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V022",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V022",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 15,
+          "printedPage": 23
+        }
+      ],
+      "contentSource": null,
+      "lemmaReview": "existing_catalog_requires_source_recheck",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V023",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V023",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 11,
+          "printedPage": 19
+        }
+      ],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L15-V024",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": "L15-V024",
+      "legacySourceClaims": [
+        {
+          "document": "หนังสือเรียน บท13-15.pdf",
+          "pdfPage": 15,
+          "printedPage": 23
+        }
+      ],
+      "contentSource": null,
+      "lemmaReview": "existing_catalog_requires_source_recheck",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "A13-L15-POSSESSIVARTIKEL-001-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l15-grammar-bank.json",
+      "legacyQuestionId": "A13-L15-POSSESSIVARTIKEL-001",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l15-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L15-POSSESSIVARTIKEL-002-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l15-grammar-bank.json",
+      "legacyQuestionId": "A13-L15-POSSESSIVARTIKEL-002",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l15-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L15-POSSESSIVARTIKEL-003-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l15-grammar-bank.json",
+      "legacyQuestionId": "A13-L15-POSSESSIVARTIKEL-003",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l15-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L15-POSSESSIVARTIKEL-004-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l15-grammar-bank.json",
+      "legacyQuestionId": "A13-L15-POSSESSIVARTIKEL-004",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l15-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L15-POSSESSIVARTIKEL-005-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l15-grammar-bank.json",
+      "legacyQuestionId": "A13-L15-POSSESSIVARTIKEL-005",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l15-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "L15-R001",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R002",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R003",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 20,
+        "printedPage": 20,
+        "evidenceId": "PREP-KB-20",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R004",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 20,
+        "printedPage": 20,
+        "evidenceId": "PREP-KB-20",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R005",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R006",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R007",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 20,
+        "printedPage": 20,
+        "evidenceId": "PREP-KB-20",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R008",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 20,
+        "printedPage": 20,
+        "evidenceId": "PREP-KB-20",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R009",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R010",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R011",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R012",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R013",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R014",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 18,
+        "printedPage": 18,
+        "evidenceId": "PREP-KB-18",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R015",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-R016",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-V001",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V002",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V003",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V004",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V005",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V006",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V007",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V008",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V009",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V010",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V011",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V012",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V013",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V014",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V015",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V016",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V017",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V018",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V019",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V020",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V021",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 30,
+        "printedPage": 30,
+        "evidenceId": "PREP-KB-30",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V022",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 30,
+        "printedPage": 30,
+        "evidenceId": "PREP-KB-30",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V023",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 30,
+        "printedPage": 30,
+        "evidenceId": "PREP-KB-30",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L16-V024",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l16-grammar-bank.json",
+      "legacyQuestionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l16-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l16-grammar-bank.json",
+      "legacyQuestionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l16-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l16-grammar-bank.json",
+      "legacyQuestionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l16-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l16-grammar-bank.json",
+      "legacyQuestionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l16-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l16-grammar-bank.json",
+      "legacyQuestionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l16-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "L16-R001",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R002",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R003",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R004",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R005",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R006",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R007",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R008",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 28,
+        "printedPage": 28,
+        "evidenceId": "PREP-KB-28",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R009",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 30,
+        "printedPage": 30,
+        "evidenceId": "PREP-KB-30",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R010",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 30,
+        "printedPage": 30,
+        "evidenceId": "PREP-KB-30",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R011",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R012",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R013",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 30,
+        "printedPage": 30,
+        "evidenceId": "PREP-KB-30",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R014",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 30,
+        "printedPage": 30,
+        "evidenceId": "PREP-KB-30",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R015",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 30,
+        "printedPage": 30,
+        "evidenceId": "PREP-KB-30",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L16-R016",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 30,
+        "printedPage": 30,
+        "evidenceId": "PREP-KB-30",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-V001",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V002",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V003",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V004",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V005",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V006",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V007",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V008",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V009",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V010",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V011",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V012",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V013",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V014",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V015",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V016",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "not_applicable",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V017",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 34,
+        "printedPage": 34,
+        "evidenceId": "PREP-KB-34",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V018",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V019",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V020",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 34,
+        "printedPage": 34,
+        "evidenceId": "PREP-KB-34",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V021",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L17-V022",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "A13-L17-WERDEN-001-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WERDEN-001",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-WERDEN-002-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WERDEN-002",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-WERDEN-003-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WERDEN-003",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-WERDEN-004-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WERDEN-004",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-WERDEN-005-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WERDEN-005",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-WOLLEN-001-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WOLLEN-001",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-WOLLEN-002-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WOLLEN-002",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-WOLLEN-003-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WOLLEN-003",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-WOLLEN-004-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WOLLEN-004",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-WOLLEN-005-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-WOLLEN-005",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-MIT-OHNE-001-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-MIT-OHNE-001",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-MIT-OHNE-002-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-MIT-OHNE-002",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-MIT-OHNE-003-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-MIT-OHNE-003",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-MIT-OHNE-004-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-MIT-OHNE-004",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L17-MIT-OHNE-005-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l17-grammar-bank.json",
+      "legacyQuestionId": "A13-L17-MIT-OHNE-005",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l17-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "L17-R001",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R002",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R003",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 34,
+        "printedPage": 34,
+        "evidenceId": "PREP-KB-34",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R004",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 34,
+        "printedPage": 34,
+        "evidenceId": "PREP-KB-34",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R005",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 34,
+        "printedPage": 34,
+        "evidenceId": "PREP-KB-34",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R006",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 34,
+        "printedPage": 34,
+        "evidenceId": "PREP-KB-34",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R007",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R008",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R009",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R010",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R011",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R012",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R013",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R014",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R015",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L17-R016",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 32,
+        "printedPage": 32,
+        "evidenceId": "PREP-KB-32",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-V001",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V002",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V003",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V004",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V005",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V006",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V007",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V008",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V009",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V010",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V011",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V012",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V013",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V014",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V015",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V016",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V017",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V018",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V019",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V020",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 38,
+        "printedPage": 38,
+        "evidenceId": "PREP-KB-38",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V021",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V022",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V023",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V024",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 38,
+        "printedPage": 38,
+        "evidenceId": "PREP-KB-38",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V025",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 38,
+        "printedPage": 38,
+        "evidenceId": "PREP-KB-38",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V026",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 38,
+        "printedPage": 38,
+        "evidenceId": "PREP-KB-38",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "L18-V027",
+      "authorship": "adapted",
+      "exampleAuthorship": "newly_authored",
+      "legacyId": null,
+      "legacySourceClaims": [],
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 38,
+        "printedPage": 38,
+        "evidenceId": "PREP-KB-38",
+        "relationship": "lexical_topic_basis"
+      },
+      "lemmaReview": "cached_render_inspected",
+      "morphologyReview": "author_reviewed_not_independently_dictionary_verified",
+      "note": "ตัวอย่างและคำแปลในชุดเตรียมเขียนใหม่; รูปพหูพจน์ไม่ได้อ้างว่ามีอยู่ใน Bildlexikon"
+    },
+    {
+      "entityId": "A13-L18-IMPERATIV-SIE-001-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-IMPERATIV-SIE-001",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L18-IMPERATIV-SIE-002-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-IMPERATIV-SIE-002",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L18-IMPERATIV-SIE-003-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-IMPERATIV-SIE-003",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L18-IMPERATIV-SIE-004-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-IMPERATIV-SIE-004",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L18-IMPERATIV-SIE-005-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-IMPERATIV-SIE-005",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L18-SOLLEN-001-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-SOLLEN-001",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L18-SOLLEN-002-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-SOLLEN-002",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L18-SOLLEN-003-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-SOLLEN-003",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L18-SOLLEN-004-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-SOLLEN-004",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "A13-L18-SOLLEN-005-PREP3",
+      "origin": "Existing grammar prototype with explicit preparation-only revision",
+      "existingBank": "docs/exercise-mapping/l18-grammar-bank.json",
+      "legacyQuestionId": "A13-L18-SOLLEN-005",
+      "legacyVersion": 2,
+      "provenanceFile": "docs/exercise-mapping/l18-grammar-provenance.json",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "note": "ไม่แก้ไฟล์ต้นแบบ ไม่ย้ายคำตอบเก่ามาเป็นหลักฐานของฉบับใหม่"
+    },
+    {
+      "entityId": "L18-R001",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R002",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R003",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R004",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R005",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 38,
+        "printedPage": 38,
+        "evidenceId": "PREP-KB-38",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R006",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 38,
+        "printedPage": 38,
+        "evidenceId": "PREP-KB-38",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R007",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R008",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R009",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R010",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 36,
+        "printedPage": 36,
+        "evidenceId": "PREP-KB-36",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R011",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 38,
+        "printedPage": 38,
+        "evidenceId": "PREP-KB-38",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R012",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 38,
+        "printedPage": 38,
+        "evidenceId": "PREP-KB-38",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R013",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R014",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R015",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L18-R016",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 37,
+        "printedPage": 37,
+        "evidenceId": "PREP-KB-37",
+        "relationship": "topic_basis"
+      },
+      "authorship": "adapted",
+      "dialogueContextAuthorship": "newly_authored",
+      "note": "ใช้รูปภาษาตามหัวข้อกับบริบทและคู่สนทนาใหม่ ไม่อ้างว่าเป็นบทสนทนาต้นฉบับทั้งชุด"
+    },
+    {
+      "entityId": "L15-HELP-01",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-02",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-03",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-04",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-05",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-06",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-07",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-08",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-09",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-10",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-11",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L15-HELP-12",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "A13-L15-OWNER-PREP-001",
+      "origin": "newly_authored_independent_diagnostic_probe",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "note": "เพิ่มเพื่อแยกหลักฐาน ไม่แทนผลเก่าของโจทย์รวมหลายมิติ"
+    },
+    {
+      "entityId": "A13-L15-ENDING-PREP-001",
+      "origin": "newly_authored_independent_diagnostic_probe",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 19,
+        "printedPage": 19,
+        "evidenceId": "PREP-KB-19",
+        "relationship": "topic_basis"
+      },
+      "note": "เพิ่มเพื่อแยกหลักฐาน ไม่แทนผลเก่าของโจทย์รวมหลายมิติ"
+    },
+    {
+      "entityId": "L16-HELP-01",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L16-HELP-02",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L16-HELP-03",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L16-HELP-04",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L16-HELP-05",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L16-HELP-06",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L16-HELP-07",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L16-HELP-08",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L16-HELP-09",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L16-HELP-10",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "A13-L16-DATIV-PREP-001",
+      "origin": "newly_authored_independent_diagnostic_probe",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 29,
+        "printedPage": 29,
+        "evidenceId": "PREP-KB-29",
+        "relationship": "topic_basis"
+      },
+      "note": "เพิ่มเพื่อแยกหลักฐาน ไม่แทนผลเก่าของโจทย์รวมหลายมิติ"
+    },
+    {
+      "entityId": "L17-HELP-01",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-02",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-03",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-04",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-05",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-06",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-07",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-08",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-09",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-10",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-11",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-12",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-13",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-14",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-15",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-16",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-17",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-18",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L17-HELP-19",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "A13-L17-MIT-OHNE-MEANING-PREP-001",
+      "origin": "newly_authored_independent_diagnostic_probe",
+      "contentSource": {
+        "sourceId": "MOMENTE_A1_2_KB",
+        "pdfPage": 33,
+        "printedPage": 33,
+        "evidenceId": "PREP-KB-33",
+        "relationship": "topic_basis"
+      },
+      "note": "เพิ่มเพื่อแยกหลักฐาน ไม่แทนผลเก่าของโจทย์รวมหลายมิติ"
+    },
+    {
+      "entityId": "L18-HELP-01",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L18-HELP-02",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L18-HELP-03",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L18-HELP-04",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L18-HELP-05",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L18-HELP-06",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L18-HELP-07",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L18-HELP-08",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L18-HELP-09",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "L18-HELP-10",
+      "authorship": "newly_authored_prerequisite_gloss",
+      "note": "คำช่วยทำความเข้าใจบริบท ไม่เป็นเป้าหมายที่คิดคะแนนเพิ่มในชุดนี้"
+    },
+    {
+      "entityId": "PREP-KB-18",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 18,
+      "printedPage": 18,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-18.png",
+      "renderSha256": "925e1554375d2ce5da00789685a99a341be43701e84553f2e0d7ebaa75a707aa",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-19",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 19,
+      "printedPage": 19,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-19.png",
+      "renderSha256": "234f8e456775b2c5c3f73b29d90850a93147e1c7d6cce2128e31ce25c0e64a87",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-20",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 20,
+      "printedPage": 20,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-20.png",
+      "renderSha256": "292add2484111dfa802b5f8e2e67bac332448c61c54a57032637c725a3e0934d",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-28",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 28,
+      "printedPage": 28,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-28.png",
+      "renderSha256": "ea2632109fb8e1e15922f7df4028abe65df5c0163c9c10d3bd2c47241b7a3679",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-29",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 29,
+      "printedPage": 29,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-29.png",
+      "renderSha256": "0c5a657f093849e9d1674dc78b52752de644ed6715b91a88f6cf509d62fab92c",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-30",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 30,
+      "printedPage": 30,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-30.png",
+      "renderSha256": "40e5837d81ae094f8166b519c67624d41072c7265d8b29ccc6651364980ad2b5",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-32",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 32,
+      "printedPage": 32,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-32.png",
+      "renderSha256": "c2c8908addf4e8b64be80a3e5dd744a6ddef9b0e2a9f5711aa642296966683db",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-33",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 33,
+      "printedPage": 33,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-33.png",
+      "renderSha256": "49f86e6eb4e9e5557facdc15b4eb846d6d8f79384b1e36d08312a5301bf0393a",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-34",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 34,
+      "printedPage": 34,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-34.png",
+      "renderSha256": "6ce1c0434f7f7a4e6d879f740f21f78f1f3dfa3a3b23294d79b9176e348a05c3",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-36",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 36,
+      "printedPage": 36,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-36.png",
+      "renderSha256": "37f8341764f031026ad148b07a420069a0e0c313a1d2647ec3fb707299b33050",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-37",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 37,
+      "printedPage": 37,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-37.png",
+      "renderSha256": "70cff6e807bf22c785e6f2951c2862afb8734f15edc025c0511df1711955d942",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    },
+    {
+      "entityId": "PREP-KB-38",
+      "sourceId": "MOMENTE_A1_2_KB",
+      "pdfPage": 38,
+      "printedPage": 38,
+      "inspectionMethod": "cached_render_visually_inspected",
+      "inspectionDate": "2026-11-09",
+      "cachedRender": ".tools/a13-source-pages/หนังสือเรียน Moment A1 Lektion 13-24-38.png",
+      "renderSha256": "1a2122818b1df8ba6e34cd9726055cfd79f9b5590c8f1adbd8dbc5291d94e1df",
+      "pdfFingerprintStatus": "registered_in_source_catalog_not_rechecked_from_original_pdf_this_run"
+    }
+  ],
+  "legacyQuestionFindings": [
+    {
+      "legacyQuestionId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003",
+      "candidateId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003-PREP3",
+      "finding": "ข้อความเดิมไม่บอกว่ากินก่อนหรือหลัง จึงใช้ vor หรือ nach ได้ตามสถานการณ์",
+      "change": {
+        "context": "ตารางระบุ: เรียนจบ 12:00 และเริ่มกินอาหาร 12:30"
+      },
+      "legacyAcceptedAnswers": [
+        "nach"
+      ],
+      "candidateAcceptedAnswers": [
+        "nach"
+      ]
+    },
+    {
+      "legacyQuestionId": "A13-L17-MIT-OHNE-001",
+      "candidateId": "A13-L17-MIT-OHNE-001-PREP3",
+      "finding": "ให้เพศและรูปต้นทางไว้ เพื่อแยกการผัน Case ออกจากการจำ Artikel ของคำนาม",
+      "change": {
+        "cue": "คำนามต้นทาง der Bus; เปลี่ยนรูปเมื่อใช้ mit"
+      },
+      "legacyAcceptedAnswers": [
+        "dem"
+      ],
+      "candidateAcceptedAnswers": [
+        "dem"
+      ]
+    },
+    {
+      "legacyQuestionId": "A13-L17-MIT-OHNE-002",
+      "candidateId": "A13-L17-MIT-OHNE-002-PREP3",
+      "finding": "ระบุรูปต้นทางที่ให้ เพื่อวัดการเปลี่ยน ein เป็น einen ใน Akkusativ",
+      "change": {
+        "cue": "คำนามต้นทาง ein Schirm; เปลี่ยนรูปเมื่อใช้ ohne"
+      },
+      "legacyAcceptedAnswers": [
+        "einen"
+      ],
+      "candidateAcceptedAnswers": [
+        "einen"
+      ]
+    },
+    {
+      "legacyQuestionId": "A13-L17-MIT-OHNE-003",
+      "candidateId": "A13-L17-MIT-OHNE-003-PREP3",
+      "finding": "ต้องระบุคำนำหน้านามต้นทาง เพื่อไม่ปฏิเสธ der/meiner ทั้งที่อาจถูกตามบริบท",
+      "change": {
+        "cue": "เปลี่ยนจาก eine Freundin โดยใช้ mit"
+      },
+      "legacyAcceptedAnswers": [
+        "einer"
+      ],
+      "candidateAcceptedAnswers": [
+        "einer"
+      ]
+    },
+    {
+      "legacyQuestionId": "A13-L17-MIT-OHNE-004",
+      "candidateId": "A13-L17-MIT-OHNE-004-PREP3",
+      "finding": "ต้องระบุว่ากำลังฝึกคำนำหน้านามชี้เฉพาะ ไม่ให้เดา den/einen/meinen",
+      "change": {
+        "cue": "เปลี่ยนจาก der Hund โดยใช้ ohne"
+      },
+      "legacyAcceptedAnswers": [
+        "den"
+      ],
+      "candidateAcceptedAnswers": [
+        "den"
+      ]
+    },
+    {
+      "legacyQuestionId": "A13-L18-IMPERATIV-SIE-003",
+      "candidateId": "A13-L18-IMPERATIV-SIE-003-PREP3",
+      "finding": "ประโยคเดิมไม่ได้ให้กริยาหรือเจตนา จึงยังมีคำตอบอื่นได้",
+      "change": {
+        "cue": "ใช้กริยา trinken ทำเป็นคำขอสุภาพแบบ Sie"
+      },
+      "legacyAcceptedAnswers": [
+        "Trinken"
+      ],
+      "candidateAcceptedAnswers": [
+        "Trinken"
+      ]
+    },
+    {
+      "legacyQuestionId": "A13-L18-IMPERATIV-SIE-004",
+      "candidateId": "A13-L18-IMPERATIV-SIE-004-PREP3",
+      "finding": "ระบุคำกริยาที่ต้องผันแทนการเดาคำศัพท์",
+      "change": {
+        "cue": "ใช้กริยา machen ทำเป็นคำขอสุภาพแบบ Sie"
+      },
+      "legacyAcceptedAnswers": [
+        "Machen"
+      ],
+      "candidateAcceptedAnswers": [
+        "Machen"
+      ]
+    }
+  ],
+  "additionalFindings": [
+    {
+      "id": "L17-werden-category",
+      "finding": "Legacy lesson topics call werden a Konjunktion; this packet correctly treats werden as a verb for becoming",
+      "runtimeCatalogChanged": false
+    },
+    {
+      "id": "L15-furniture-source",
+      "finding": "Four retained furniture lemmas need page-level source recheck; original source claims preserved"
+    },
+    {
+      "id": "morphology-review",
+      "finding": "Plural forms authored as preparation data; independent dictionary verification is pending"
+    },
+    {
+      "id": "order-answer-presentation",
+      "finding": "Prepared order tasks keep complete sentences in feedback and scramble supplied tokens; original order banks are not changed"
+    }
+  ]
+}

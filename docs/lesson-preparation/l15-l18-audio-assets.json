@@ -1,0 +1,4027 @@
+{
+  "schemaVersion": 1,
+  "assets": {
+    "L15-V001-audio": {
+      "path": "/audio/a13-release/6491a9e430fcc8e6.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Haus",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L15-V001-example-audio": {
+      "path": "/audio/a13-release/97dbd56138802e4b.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Haus.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L15-V002-audio": {
+      "path": "/audio/a13-release/7e60e23e57331993.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Wohnung",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L15-V002-example-audio": {
+      "path": "/audio/a13-release/1cc96efb57e2e098.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Wohnung.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L15-V003-audio": {
+      "path": "/audio/a13-release/31c3b8f737d618b2.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Zimmer",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "L15-V003-example-audio": {
+      "path": "/audio/a13-release/2eb817795adda7e2.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Zimmer.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.256,
+      "origin": "existing_output"
+    },
+    "L15-V004-audio": {
+      "path": "/audio/a13-release/6cc96c15ac0cfec7.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Arbeitszimmer",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "existing_output"
+    },
+    "L15-V004-example-audio": {
+      "path": "/audio/a13-release/b9909dbbe1af7f64.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Arbeitszimmer.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.712,
+      "origin": "existing_output"
+    },
+    "L15-V005-audio": {
+      "path": "/audio/a13-release/185f0329ec3331f4.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Wohnzimmer",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L15-V005-example-audio": {
+      "path": "/audio/a13-release/70b779d78466f3b1.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Wohnzimmer.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "existing_output"
+    },
+    "L15-V006-audio": {
+      "path": "/audio/a13-release/a6654cf84032bccd.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Schlafzimmer",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L15-V006-example-audio": {
+      "path": "/audio/a13-release/1fd712714812c670.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Schlafzimmer.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L15-V007-audio": {
+      "path": "/audio/a13-release/5a08303430c20759.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Kinderzimmer",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.256,
+      "origin": "existing_output"
+    },
+    "L15-V007-example-audio": {
+      "path": "/audio/a13-release/416e0254f70ac6f5.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Kinderzimmer.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L15-V008-audio": {
+      "path": "/audio/a13-release/f5cad6932869cf7c.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Bad",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.848,
+      "origin": "existing_output"
+    },
+    "L15-V008-example-audio": {
+      "path": "/audio/a13-release/e41d4e7e08520851.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Bad.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L15-V009-audio": {
+      "path": "/audio/a13-release/7ba97195e314d8c2.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Küche",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L15-V009-example-audio": {
+      "path": "/audio/a13-release/02c39eedc96e5a3c.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Küche.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L15-V010-audio": {
+      "path": "/audio/a13-release/ec87e054d930ff90.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Toilette",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.064,
+      "origin": "existing_output"
+    },
+    "L15-V010-example-audio": {
+      "path": "/audio/a13-release/4a6fd431ab7250f0.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Toilette.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L15-V011-audio": {
+      "path": "/audio/a13-release/7b14ad095ca8a3f1.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Flur",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-V011-example-audio": {
+      "path": "/audio/a13-release/46f3db93ef99e6ac.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Flur.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.256,
+      "origin": "existing_output"
+    },
+    "L15-V012-audio": {
+      "path": "/audio/a13-release/943e88a3090a8a97.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Balkon",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.136,
+      "origin": "existing_output"
+    },
+    "L15-V012-example-audio": {
+      "path": "/audio/a13-release/1e5de7a367ff8df2.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Balkon.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "L15-V013-audio": {
+      "path": "/audio/a13-release/3bbc0d7e1f04ba1b.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Garten",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.088,
+      "origin": "existing_output"
+    },
+    "L15-V013-example-audio": {
+      "path": "/audio/a13-release/26cc196fdf4d6d5e.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Garten.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L15-V014-audio": {
+      "path": "/audio/a13-release/c392d820c2ed8f85.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Treppe",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.992,
+      "origin": "existing_output"
+    },
+    "L15-V014-example-audio": {
+      "path": "/audio/a13-release/a414ca70c043847f.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Treppe.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "L15-V015-audio": {
+      "path": "/audio/a13-release/742f2d2cf4621318.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Fenster",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L15-V015-example-audio": {
+      "path": "/audio/a13-release/82ad093ac6d9c941.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Fenster.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L15-V016-audio": {
+      "path": "/audio/a13-release/cacf5a36b0cd3160.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Tür",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-V016-example-audio": {
+      "path": "/audio/a13-release/afdb37f63b6c7e86.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Tür.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.328,
+      "origin": "existing_output"
+    },
+    "L15-V017-audio": {
+      "path": "/audio/a13-release/2d180ccf49f26bdc.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Bett",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-V017-example-audio": {
+      "path": "/audio/a13-release/f19ab758df841180.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Bett.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "L15-V018-audio": {
+      "path": "/audio/a13-release/9fc8cc807d37a072.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Lampe",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L15-V018-example-audio": {
+      "path": "/audio/a13-release/6c9641c892261eea.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Lampe.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L15-V019-audio": {
+      "path": "/audio/a13-release/6895a70718cf7b43.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Sessel",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-V019-example-audio": {
+      "path": "/audio/a13-release/80a24190b201a015.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Sessel.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.304,
+      "origin": "existing_output"
+    },
+    "L15-V020-audio": {
+      "path": "/audio/a13-release/44f04c3933ef6821.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Sofa",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.968,
+      "origin": "existing_output"
+    },
+    "L15-V020-example-audio": {
+      "path": "/audio/a13-release/76d7728f41076356.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Sofa.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.376,
+      "origin": "existing_output"
+    },
+    "L15-V021-audio": {
+      "path": "/audio/a13-release/eade52e6158a744a.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Tisch",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.848,
+      "origin": "existing_output"
+    },
+    "L15-V021-example-audio": {
+      "path": "/audio/a13-release/805ab2990f867a30.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Tisch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.184,
+      "origin": "existing_output"
+    },
+    "L15-V022-audio": {
+      "path": "/audio/a13-release/fde7073bbdd0d6ec.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Schrank",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L15-V022-example-audio": {
+      "path": "/audio/a13-release/9de8bf8aa52dab99.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Schrank.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "existing_output"
+    },
+    "L15-V023-audio": {
+      "path": "/audio/a13-release/a9ba2467ea496cd7.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Teppich",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.064,
+      "origin": "existing_output"
+    },
+    "L15-V023-example-audio": {
+      "path": "/audio/a13-release/86777782866f5c39.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Teppich.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "existing_output"
+    },
+    "L15-V024-audio": {
+      "path": "/audio/a13-release/bf9b3801fdae4ea7.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Stuhl",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L15-V024-example-audio": {
+      "path": "/audio/a13-release/75d8fc194979d145.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Stuhl.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L15-possessivartikel-model-1-audio": {
+      "path": "/audio/a13-release/58ea62ae25a82e8c.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Das ist sein Balkon.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "existing_output"
+    },
+    "L15-possessivartikel-model-2-audio": {
+      "path": "/audio/a13-release/c4f81c49eb08bda7.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Ich finde seinen Balkon schön.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.952,
+      "origin": "existing_output"
+    },
+    "L15-possessivartikel-model-3-audio": {
+      "path": "/audio/a13-release/d4054f93b8cf52c5.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Ihre Lampe ist neu.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "existing_output"
+    },
+    "L15-D01-voice-A": {
+      "path": "/audio/a13-release/c1be1123db2e71b7.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was ist das?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "L15-D01-voice-B": {
+      "path": "/audio/a13-release/80725fd66c3fc28e.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Das ist das Arbeitszimmer.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.688,
+      "origin": "existing_output"
+    },
+    "L15-D02-voice-A": {
+      "path": "/audio/a13-release/195154e60b1227c8.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hat die Wohnung einen Balkon?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L15-D02-voice-B": {
+      "path": "/audio/a13-release/fc52d21848824d11.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ja, die Wohnung hat einen Balkon.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.48,
+      "origin": "existing_output"
+    },
+    "L15-D03-voice-A": {
+      "path": "/audio/a13-release/b6c9196e71b88913.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie findest du das Zimmer?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L15-D03-voice-B": {
+      "path": "/audio/a13-release/0b784b3960a3ef95.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich finde das Zimmer schön.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.688,
+      "origin": "existing_output"
+    },
+    "L15-D04-voice-A": {
+      "path": "/audio/a13-release/63eb8084d08814fa.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Magst du den Garten?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.376,
+      "origin": "existing_output"
+    },
+    "L15-D04-voice-B": {
+      "path": "/audio/a13-release/00931ae155a729df.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ja, den Garten mag ich besonders.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.456,
+      "origin": "existing_output"
+    },
+    "L15-D05-voice-A": {
+      "path": "/audio/a13-release/c426f93ba4533030.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ist das Toms Sessel?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L15-D05-voice-B": {
+      "path": "/audio/a13-release/b4a1d4b6ce09ae6e.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ja, das ist sein Sessel.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.928,
+      "origin": "existing_output"
+    },
+    "L15-D06-voice-A": {
+      "path": "/audio/a13-release/55ed5223d8855ed9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie findest du Klaras Lampe?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.168,
+      "origin": "existing_output"
+    },
+    "L15-D06-voice-B": {
+      "path": "/audio/a13-release/df262abb71ba798a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich finde ihre Lampe schön.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.784,
+      "origin": "existing_output"
+    },
+    "L15-D07-voice-A": {
+      "path": "/audio/a13-release/6faf370f052cb6c7.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ist das Zimmer noch frei?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L15-D07-voice-B": {
+      "path": "/audio/a13-release/6870d72d053b0667.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ja, das Zimmer ist noch frei.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.216,
+      "origin": "existing_output"
+    },
+    "L15-D08-voice-A": {
+      "path": "/audio/a13-release/3b4a639595e535b5.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was kostet das Zimmer im Monat?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.432,
+      "origin": "existing_output"
+    },
+    "L15-D08-voice-B": {
+      "path": "/audio/a13-release/23fee972c1792c09.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Es kostet 620 Euro im Monat.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.936,
+      "origin": "existing_output"
+    },
+    "L16-V001-audio": {
+      "path": "/audio/a13-release/3b97fafa714d04d1.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Aufzug",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L16-V001-example-audio": {
+      "path": "/audio/a13-release/f5162df466c44af0.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Der Aufzug funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "existing_output"
+    },
+    "L16-V002-audio": {
+      "path": "/audio/a13-release/bd421fbaf20be8fb.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Kühlschrank",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.256,
+      "origin": "existing_output"
+    },
+    "L16-V002-example-audio": {
+      "path": "/audio/a13-release/a8ef82515dcc3361.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Der Kühlschrank ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L16-V003-audio": {
+      "path": "/audio/a13-release/23d50c2780844b3c.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Fernseher",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.088,
+      "origin": "existing_output"
+    },
+    "L16-V003-example-audio": {
+      "path": "/audio/a13-release/806c5d2f00d477b0.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Der Fernseher funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.976,
+      "origin": "existing_output"
+    },
+    "L16-V004-audio": {
+      "path": "/audio/a13-release/5dc550205dc681ab.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Heizung",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.992,
+      "origin": "existing_output"
+    },
+    "L16-V004-example-audio": {
+      "path": "/audio/a13-release/375ee4ddd72ca066.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Die Heizung ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L16-V005-audio": {
+      "path": "/audio/a13-release/3d2ddc84fba027a9.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Licht",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L16-V005-example-audio": {
+      "path": "/audio/a13-release/3effe825f755a33e.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das Licht funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.76,
+      "origin": "existing_output"
+    },
+    "L16-V006-audio": {
+      "path": "/audio/a13-release/e7176bcafcd9ba89.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Telefon",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L16-V006-example-audio": {
+      "path": "/audio/a13-release/3c0e633c8cdc68c9.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das Telefon funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "existing_output"
+    },
+    "L16-V007-audio": {
+      "path": "/audio/a13-release/82c032acf63c4da0.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Dusche",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L16-V007-example-audio": {
+      "path": "/audio/a13-release/9161ab5edaf24fe1.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Die Dusche ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "existing_output"
+    },
+    "L16-V008-audio": {
+      "path": "/audio/a13-release/3e30006eb9fd41d2.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Netz",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L16-V008-example-audio": {
+      "path": "/audio/a13-release/c6bfea795f54f3a5.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe hier kein Netz.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L16-V009-audio": {
+      "path": "/audio/a13-release/7310cef3effca8f4.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Herd",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L16-V009-example-audio": {
+      "path": "/audio/a13-release/e1e7d20710df1811.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Der Herd funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.712,
+      "origin": "existing_output"
+    },
+    "L16-V010-audio": {
+      "path": "/audio/a13-release/4c1e33178f91e0f1.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Klingel",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L16-V010-example-audio": {
+      "path": "/audio/a13-release/c75d964d27c0f30f.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Die Klingel funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L16-V011-audio": {
+      "path": "/audio/a13-release/fc2624de3ae1bf29.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Steckdose",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "existing_output"
+    },
+    "L16-V011-example-audio": {
+      "path": "/audio/a13-release/715a169ed39acb71.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Hier ist eine Steckdose.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "existing_output"
+    },
+    "L16-V012-audio": {
+      "path": "/audio/a13-release/32fed6aaab83a826.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Waschmaschine",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L16-V012-example-audio": {
+      "path": "/audio/a13-release/23af523099bd1272.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Die Waschmaschine ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L16-V013-audio": {
+      "path": "/audio/a13-release/6a4d0b1194d2c802.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Problem",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "L16-V013-example-audio": {
+      "path": "/audio/a13-release/f7fa2ff89d4aa5cd.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Wir haben ein Problem.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L16-V014-audio": {
+      "path": "/audio/a13-release/bb1ca711999b06f5.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Hilfe",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "L16-V014-example-audio": {
+      "path": "/audio/a13-release/47354e51fe428764.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich brauche Ihre Hilfe.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.712,
+      "origin": "existing_output"
+    },
+    "L16-V015-audio": {
+      "path": "/audio/a13-release/bcb25a9a5fb77d0f.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Termin",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.136,
+      "origin": "existing_output"
+    },
+    "L16-V015-example-audio": {
+      "path": "/audio/a13-release/cfbb168c257bc83f.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe am Montag einen Termin.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.096,
+      "origin": "existing_output"
+    },
+    "L16-V016-audio": {
+      "path": "/audio/a13-release/58e5386b3a459003.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Stunde",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L16-V016-example-audio": {
+      "path": "/audio/a13-release/147ea04725acf7c2.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich komme in einer Stunde.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L16-V017-audio": {
+      "path": "/audio/a13-release/7ac0a9b867e81461.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Monat",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L16-V017-example-audio": {
+      "path": "/audio/a13-release/347b2d03bb41b9ef.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Der Kurs beginnt in einem Monat.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.096,
+      "origin": "existing_output"
+    },
+    "L16-V018-audio": {
+      "path": "/audio/a13-release/a03a19b1e274697d.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Jahr",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L16-V018-example-audio": {
+      "path": "/audio/a13-release/9e0cefca07dd4a67.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Der Kurs beginnt in einem Jahr.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.976,
+      "origin": "existing_output"
+    },
+    "L16-V019-audio": {
+      "path": "/audio/a13-release/5ff738c5c8963dab.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "funktionieren",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.304,
+      "origin": "existing_output"
+    },
+    "L16-V019-example-audio": {
+      "path": "/audio/a13-release/3c0e633c8cdc68c9.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das Telefon funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "existing_output"
+    },
+    "L16-V020-audio": {
+      "path": "/audio/a13-release/fc949527f6c98f35.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "reparieren",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "L16-V020-example-audio": {
+      "path": "/audio/a13-release/4e22519396998efc.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich kann das reparieren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "existing_output"
+    },
+    "L16-V021-audio": {
+      "path": "/audio/a13-release/c243b2b5f362121c.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "verschieben",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L16-V021-example-audio": {
+      "path": "/audio/a13-release/a9cbfeae3d0631b9.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Können wir den Termin verschieben?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.0,
+      "origin": "existing_output"
+    },
+    "L16-V022-audio": {
+      "path": "/audio/a13-release/153b0e390042a407.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "absagen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L16-V022-example-audio": {
+      "path": "/audio/a13-release/c409d0c9adb4c9eb.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich sage den Termin ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L16-V023-audio": {
+      "path": "/audio/a13-release/231182dee005a7d6.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "vorschlagen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.064,
+      "origin": "existing_output"
+    },
+    "L16-V023-example-audio": {
+      "path": "/audio/a13-release/cb92b4bc2f96355a.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich möchte einen Termin vorschlagen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.312,
+      "origin": "existing_output"
+    },
+    "L16-V024-audio": {
+      "path": "/audio/a13-release/b954487c8296ff3f.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "kaputt",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L16-V024-example-audio": {
+      "path": "/audio/a13-release/fc853f1f488e3690.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Der Herd ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "existing_output"
+    },
+    "L16-temporale-praepositionen-model-1-audio": {
+      "path": "/audio/a13-release/72c128d7201ba609.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "In einer Stunde komme ich.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L16-temporale-praepositionen-model-2-audio": {
+      "path": "/audio/a13-release/85fd5d4b69bc14e4.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Wir essen nach dem Unterricht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L16-temporale-praepositionen-model-3-audio": {
+      "path": "/audio/a13-release/309af525e62a403d.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Ich komme vor dem Termin.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L16-D01-voice-A": {
+      "path": "/audio/a13-release/400ba5e91305dd96.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was ist das Problem?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L16-D01-voice-B": {
+      "path": "/audio/a13-release/f5162df466c44af0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Aufzug funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "existing_output"
+    },
+    "L16-D02-voice-A": {
+      "path": "/audio/a13-release/95294f88a5c6bdfe.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Brauchen Sie Hilfe?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.304,
+      "origin": "existing_output"
+    },
+    "L16-D02-voice-B": {
+      "path": "/audio/a13-release/671e9742a6a1e24f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ja, ich brauche Ihre Hilfe.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.24,
+      "origin": "existing_output"
+    },
+    "L16-D03-voice-A": {
+      "path": "/audio/a13-release/77a52daa459baec3.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was kann ich für Sie tun?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L16-D03-voice-B": {
+      "path": "/audio/a13-release/73adeb5749beca53.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Können Sie den Herd reparieren?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "existing_output"
+    },
+    "L16-D04-voice-A": {
+      "path": "/audio/a13-release/de3a838316735715.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Können Sie das reparieren?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L16-D04-voice-B": {
+      "path": "/audio/a13-release/0ec7f3cf11ebb252.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ja, das kann ich reparieren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.024,
+      "origin": "existing_output"
+    },
+    "L16-D05-voice-A": {
+      "path": "/audio/a13-release/8e54d4c768ccf525.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann haben Sie Zeit?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "existing_output"
+    },
+    "L16-D05-voice-B": {
+      "path": "/audio/a13-release/45328edc96fe4d98.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Am Dienstag um 16 Uhr habe ich Zeit.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.744,
+      "origin": "existing_output"
+    },
+    "L16-D06-voice-A": {
+      "path": "/audio/a13-release/7e15d757f7354552.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommen Sie?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "existing_output"
+    },
+    "L16-D06-voice-B": {
+      "path": "/audio/a13-release/147ea04725acf7c2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme in einer Stunde.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L16-D07-voice-A": {
+      "path": "/audio/a13-release/635a7a145cad3df0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Haben Sie am Freitag Zeit?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L16-D07-voice-B": {
+      "path": "/audio/a13-release/606ec9a59f2dc6f0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Am Freitag kann ich leider nicht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "existing_output"
+    },
+    "L16-D08-voice-A": {
+      "path": "/audio/a13-release/f64d0fe4cbf51a54.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Können wir den Termin verschieben?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.168,
+      "origin": "existing_output"
+    },
+    "L16-D08-voice-B": {
+      "path": "/audio/a13-release/0298a9f5c6499ad7.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ja, nach der Arbeit am Montag habe ich Zeit.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 4.056,
+      "origin": "existing_output"
+    },
+    "L17-V001-audio": {
+      "path": "/audio/a13-release/c7929e24077141d6.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "einen Blog schreiben",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L17-V001-example-audio": {
+      "path": "/audio/a13-release/3ce2b0099f91e337.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will einen Blog schreiben.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.808,
+      "origin": "existing_output"
+    },
+    "L17-V002-audio": {
+      "path": "/audio/a13-release/f636a3cef29cc191.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "Chef werden",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.256,
+      "origin": "existing_output"
+    },
+    "L17-V002-example-audio": {
+      "path": "/audio/a13-release/6a82a6fb4c09a202.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Chef werden.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L17-V002-variant-1-audio": {
+      "path": "/audio/a13-release/a0469550437f590d.mp3",
+      "status": "ready",
+      "kind": "lexical_variant_audio",
+      "text": "Chefin werden",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.304,
+      "origin": "existing_output"
+    },
+    "L17-V003-audio": {
+      "path": "/audio/a13-release/f31f84077db13d07.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "Schauspieler werden",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L17-V003-example-audio": {
+      "path": "/audio/a13-release/63b507419df385a3.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Schauspieler werden.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.784,
+      "origin": "existing_output"
+    },
+    "L17-V003-variant-1-audio": {
+      "path": "/audio/a13-release/0d3bfed5ecbaff1b.mp3",
+      "status": "ready",
+      "kind": "lexical_variant_audio",
+      "text": "Schauspielerin werden",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L17-V004-audio": {
+      "path": "/audio/a13-release/783aa0758cd45e8e.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "Politiker werden",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L17-V004-example-audio": {
+      "path": "/audio/a13-release/43121c878675a50b.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Politiker werden.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.712,
+      "origin": "existing_output"
+    },
+    "L17-V004-variant-1-audio": {
+      "path": "/audio/a13-release/5bf4e13bf59b27fc.mp3",
+      "status": "ready",
+      "kind": "lexical_variant_audio",
+      "text": "Politikerin werden",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L17-V005-audio": {
+      "path": "/audio/a13-release/743c3f40cac02abb.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "Geld verdienen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "existing_output"
+    },
+    "L17-V005-example-audio": {
+      "path": "/audio/a13-release/5a27d9d695d23da2.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Geld verdienen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L17-V006-audio": {
+      "path": "/audio/a13-release/44a3a7d38398f534.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "heiraten",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L17-V006-example-audio": {
+      "path": "/audio/a13-release/5141a54f0a30c5b0.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Wir wollen heiraten.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L17-V007-audio": {
+      "path": "/audio/a13-release/107058461a707641.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "eine Familie haben",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L17-V007-example-audio": {
+      "path": "/audio/a13-release/e164c2c02dad1684.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will eine Familie haben.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L17-V008-audio": {
+      "path": "/audio/a13-release/0b780409c1b8f8b6.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "auf einen Berg steigen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L17-V008-example-audio": {
+      "path": "/audio/a13-release/af78f587fdd8e09d.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will auf einen Berg steigen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.024,
+      "origin": "existing_output"
+    },
+    "L17-V009-audio": {
+      "path": "/audio/a13-release/2a6b504c8d476011.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "durch Europa reisen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L17-V009-example-audio": {
+      "path": "/audio/a13-release/fe7f1f8b44e7b640.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will durch Europa reisen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "existing_output"
+    },
+    "L17-V010-audio": {
+      "path": "/audio/a13-release/144a7faee1cc34c2.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "um die Welt segeln",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.376,
+      "origin": "existing_output"
+    },
+    "L17-V010-example-audio": {
+      "path": "/audio/a13-release/0cf7f97ca676d1d2.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will um die Welt segeln.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L17-V011-audio": {
+      "path": "/audio/a13-release/71b2e3664b7e75d0.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "im Ausland leben",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "existing_output"
+    },
+    "L17-V011-example-audio": {
+      "path": "/audio/a13-release/d3e06da3501fcbff.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will im Ausland leben.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L17-V012-audio": {
+      "path": "/audio/a13-release/4a0006a1cd4ccd6d.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "Motorrad fahren",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L17-V012-example-audio": {
+      "path": "/audio/a13-release/c34df54978668ed8.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Motorrad fahren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.616,
+      "origin": "existing_output"
+    },
+    "L17-V013-audio": {
+      "path": "/audio/a13-release/efd8541a20d53d8b.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "den Führerschein machen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L17-V013-example-audio": {
+      "path": "/audio/a13-release/fb3eaf2d9d1e1261.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will den Führerschein machen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L17-V014-audio": {
+      "path": "/audio/a13-release/4042aed55d771c14.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "ein Instrument lernen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L17-V014-example-audio": {
+      "path": "/audio/a13-release/93a8f4719d93c517.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will ein Instrument lernen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "existing_output"
+    },
+    "L17-V015-audio": {
+      "path": "/audio/a13-release/cbf6b9d1ae880617.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "viele Fremdsprachen lernen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.024,
+      "origin": "existing_output"
+    },
+    "L17-V015-example-audio": {
+      "path": "/audio/a13-release/cbca48f8c66e09f4.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will viele Fremdsprachen lernen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.312,
+      "origin": "existing_output"
+    },
+    "L17-V016-audio": {
+      "path": "/audio/a13-release/4215ae0aed4a3b76.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "drei Monate freihaben",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L17-V016-example-audio": {
+      "path": "/audio/a13-release/59b4cd1c06aeca32.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will drei Monate freihaben.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.096,
+      "origin": "existing_output"
+    },
+    "L17-V017-audio": {
+      "path": "/audio/a13-release/4cbb7506eecb2fa6.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Wunsch",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L17-V017-example-audio": {
+      "path": "/audio/a13-release/e5d2967a4f848b67.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe einen Wunsch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.304,
+      "origin": "existing_output"
+    },
+    "L17-V018-audio": {
+      "path": "/audio/a13-release/dc5f3222240f27a6.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Plan",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L17-V018-example-audio": {
+      "path": "/audio/a13-release/1fa3238c2ecf101b.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Wir haben einen Plan.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L17-V019-audio": {
+      "path": "/audio/a13-release/0cb1da39110b166e.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Beruf",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "L17-V019-example-audio": {
+      "path": "/audio/a13-release/8c0af3a4751ead34.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Der Beruf ist interessant.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L17-V020-audio": {
+      "path": "/audio/a13-release/103f42b3a116e927.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Ausbildung",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "existing_output"
+    },
+    "L17-V020-example-audio": {
+      "path": "/audio/a13-release/6c7c46454b60fc85.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich will eine Ausbildung machen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.928,
+      "origin": "existing_output"
+    },
+    "L17-V021-audio": {
+      "path": "/audio/a13-release/babf6e534c8ef08b.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Firma",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L17-V021-example-audio": {
+      "path": "/audio/a13-release/6eb3313de9e38442.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Wir wollen eine Firma gründen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.192,
+      "origin": "existing_output"
+    },
+    "L17-V022-audio": {
+      "path": "/audio/a13-release/fe01f112444f516e.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Geld",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L17-V022-example-audio": {
+      "path": "/audio/a13-release/3afdeca16e743b9a.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Wir brauchen Geld.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.328,
+      "origin": "existing_output"
+    },
+    "L17-werden-model-1-audio": {
+      "path": "/audio/a13-release/46f87ef5678bf052.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Nina wird Lehrerin.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L17-werden-model-2-audio": {
+      "path": "/audio/a13-release/118afa91c6b5cc68.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Ich werde Koch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "L17-wollen-model-1-audio": {
+      "path": "/audio/a13-release/5d1c918bad1126fb.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Ich will Lehrerin werden.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L17-wollen-model-2-audio": {
+      "path": "/audio/a13-release/f71ff91bc841ba35.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Später will ich im Ausland leben.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.336,
+      "origin": "existing_output"
+    },
+    "L17-mit-ohne-model-1-audio": {
+      "path": "/audio/a13-release/852eba746fa600f1.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Ich komme mit einem Freund.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L17-mit-ohne-model-2-audio": {
+      "path": "/audio/a13-release/298b293d348fd71f.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Ohne Geld können wir nicht anfangen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.36,
+      "origin": "existing_output"
+    },
+    "L17-D01-voice-A": {
+      "path": "/audio/a13-release/c4b800b3e295a300.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was willst du werden?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "existing_output"
+    },
+    "L17-D01-voice-B": {
+      "path": "/audio/a13-release/120f08d45260401e.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich will Lehrer werden.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L17-D02-voice-A": {
+      "path": "/audio/a13-release/d097a8489d47993c.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann willst du die Ausbildung machen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.192,
+      "origin": "existing_output"
+    },
+    "L17-D02-voice-B": {
+      "path": "/audio/a13-release/b984275657d9e5c8.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich will nächstes Jahr eine Ausbildung machen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.624,
+      "origin": "existing_output"
+    },
+    "L17-D03-voice-A": {
+      "path": "/audio/a13-release/2ce78ce29e71f54b.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was willst du später machen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.808,
+      "origin": "existing_output"
+    },
+    "L17-D03-voice-B": {
+      "path": "/audio/a13-release/d3e06da3501fcbff.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich will im Ausland leben.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L17-D04-voice-A": {
+      "path": "/audio/a13-release/6af1d6d1cbddef2c.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was möchtest du noch machen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "existing_output"
+    },
+    "L17-D04-voice-B": {
+      "path": "/audio/a13-release/c34df54978668ed8.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich will Motorrad fahren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.616,
+      "origin": "existing_output"
+    },
+    "L17-D05-voice-A": {
+      "path": "/audio/a13-release/f7eaab02b6692302.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was willst du unbedingt machen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.024,
+      "origin": "existing_output"
+    },
+    "L17-D05-voice-B": {
+      "path": "/audio/a13-release/8329d56fd1aee8f8.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich will unbedingt Arzt werden.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "existing_output"
+    },
+    "L17-D06-voice-A": {
+      "path": "/audio/a13-release/273f37f2f4a16513.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was willst du auf keinen Fall machen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.168,
+      "origin": "existing_output"
+    },
+    "L17-D06-voice-B": {
+      "path": "/audio/a13-release/e6f7e445389494d8.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich will auf keinen Fall Politiker werden.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.576,
+      "origin": "existing_output"
+    },
+    "L17-D07-voice-A": {
+      "path": "/audio/a13-release/0869393c1255cd97.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Mit wem kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.136,
+      "origin": "existing_output"
+    },
+    "L17-D07-voice-B": {
+      "path": "/audio/a13-release/852eba746fa600f1.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme mit einem Freund.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L17-D08-voice-A": {
+      "path": "/audio/a13-release/7041948c359a0a88.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Könnt ihr ohne Geld anfangen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.168,
+      "origin": "existing_output"
+    },
+    "L17-D08-voice-B": {
+      "path": "/audio/a13-release/a776365b1a48456b.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Nein, ohne Geld können wir nicht anfangen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.936,
+      "origin": "existing_output"
+    },
+    "L18-V001-audio": {
+      "path": "/audio/a13-release/08c7210d60aa649c.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Brust",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L18-V001-example-audio": {
+      "path": "/audio/a13-release/ce1146851bff6c31.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Brust.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.304,
+      "origin": "existing_output"
+    },
+    "L18-V002-audio": {
+      "path": "/audio/a13-release/69b92725600de091.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Rücken",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.968,
+      "origin": "existing_output"
+    },
+    "L18-V002-example-audio": {
+      "path": "/audio/a13-release/78dc2ed314c17797.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Rücken.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "existing_output"
+    },
+    "L18-V003-audio": {
+      "path": "/audio/a13-release/fec9c5c9bcd31d89.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Bauch",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-V003-example-audio": {
+      "path": "/audio/a13-release/32d9a52484c0fdef.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Bauch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.136,
+      "origin": "existing_output"
+    },
+    "L18-V004-audio": {
+      "path": "/audio/a13-release/77e354035d6bcc15.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Arm",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L18-V004-example-audio": {
+      "path": "/audio/a13-release/f6be506a38c99bb0.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Arm.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L18-V005-audio": {
+      "path": "/audio/a13-release/a12c303e244b19fc.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Hand",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L18-V005-example-audio": {
+      "path": "/audio/a13-release/d3850830f81ba599.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Hand.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.256,
+      "origin": "existing_output"
+    },
+    "L18-V006-audio": {
+      "path": "/audio/a13-release/5b5098c28454ebfd.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Finger",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L18-V006-example-audio": {
+      "path": "/audio/a13-release/3219734c5775851a.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Finger.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "existing_output"
+    },
+    "L18-V007-audio": {
+      "path": "/audio/a13-release/4d5b21a7320d92d6.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Bein",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-V007-example-audio": {
+      "path": "/audio/a13-release/c9b7dfe963f4f4d7.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Bein.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "existing_output"
+    },
+    "L18-V008-audio": {
+      "path": "/audio/a13-release/00f20de3d1044fe5.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Knie",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-V008-example-audio": {
+      "path": "/audio/a13-release/063613509358772e.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Knie.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "existing_output"
+    },
+    "L18-V009-audio": {
+      "path": "/audio/a13-release/6edb7f87d44652c2.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Fuß",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-V009-example-audio": {
+      "path": "/audio/a13-release/f073bd3c3ecf6dac.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Fuß.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.184,
+      "origin": "existing_output"
+    },
+    "L18-V010-audio": {
+      "path": "/audio/a13-release/1f28f73f77c65e89.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Auge",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L18-V010-example-audio": {
+      "path": "/audio/a13-release/6fd3472988da0a4d.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Auge.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "existing_output"
+    },
+    "L18-V011-audio": {
+      "path": "/audio/a13-release/0ec528fd22597bdf.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Hals",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-V011-example-audio": {
+      "path": "/audio/a13-release/92e6ccdc1a8350b5.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Hals.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "existing_output"
+    },
+    "L18-V012-audio": {
+      "path": "/audio/a13-release/111aa3dd86678ba9.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Mund",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.968,
+      "origin": "existing_output"
+    },
+    "L18-V012-example-audio": {
+      "path": "/audio/a13-release/70d57fd84e3ce981.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Mund.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "L18-V013-audio": {
+      "path": "/audio/a13-release/7704a37a7419b228.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Kopf",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-V013-example-audio": {
+      "path": "/audio/a13-release/13bfab8ab71c0f7a.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Kopf.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.184,
+      "origin": "existing_output"
+    },
+    "L18-V014-audio": {
+      "path": "/audio/a13-release/06266a47948e5bc8.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Nase",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L18-V014-example-audio": {
+      "path": "/audio/a13-release/fde4ec57bfb1ce30.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Nase.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L18-V015-audio": {
+      "path": "/audio/a13-release/ffd5876091000d6b.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Ohr",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-V015-example-audio": {
+      "path": "/audio/a13-release/8b30b7fb4020cf49.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Ohr.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.184,
+      "origin": "existing_output"
+    },
+    "L18-V016-audio": {
+      "path": "/audio/a13-release/f68ff1bed7830058.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Kopfschmerzen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L18-V016-example-audio": {
+      "path": "/audio/a13-release/bd2a3da1852a1e04.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Kopfschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L18-V017-audio": {
+      "path": "/audio/a13-release/ca37e93895c68f61.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Rückenschmerzen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "existing_output"
+    },
+    "L18-V017-example-audio": {
+      "path": "/audio/a13-release/29bebdeb6a0003bf.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Rückenschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L18-V018-audio": {
+      "path": "/audio/a13-release/65c08ffc4153fe44.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Halsschmerzen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L18-V018-example-audio": {
+      "path": "/audio/a13-release/6790198d2720427f.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Halsschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L18-V019-audio": {
+      "path": "/audio/a13-release/c33e7194fc49e6ad.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Ohrenschmerzen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "L18-V019-example-audio": {
+      "path": "/audio/a13-release/e4dd613a5e723935.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Ohrenschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L18-V020-audio": {
+      "path": "/audio/a13-release/eb507a400865da31.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Bauchschmerzen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L18-V020-example-audio": {
+      "path": "/audio/a13-release/8a29981977b3d71e.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Bauchschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L18-V021-audio": {
+      "path": "/audio/a13-release/8ca36816424f7aa0.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Schnupfen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.136,
+      "origin": "existing_output"
+    },
+    "L18-V021-example-audio": {
+      "path": "/audio/a13-release/d8a832bf7b4ec297.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Schnupfen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.184,
+      "origin": "existing_output"
+    },
+    "L18-V022-audio": {
+      "path": "/audio/a13-release/15a93a36a625f3fc.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Husten",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "L18-V022-example-audio": {
+      "path": "/audio/a13-release/6c586b2ebf8dcc94.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Husten.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L18-V023-audio": {
+      "path": "/audio/a13-release/d68094d7b65098be.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Fieber",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.968,
+      "origin": "existing_output"
+    },
+    "L18-V023-example-audio": {
+      "path": "/audio/a13-release/8d394f1d84b9fe35.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Fieber.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "L18-V024-audio": {
+      "path": "/audio/a13-release/59a613b8dddef117.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Tablette",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L18-V024-example-audio": {
+      "path": "/audio/a13-release/f91aadbc0ed88259.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Hier ist eine Tablette.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.688,
+      "origin": "existing_output"
+    },
+    "L18-V025-audio": {
+      "path": "/audio/a13-release/e0ae6cd208b8daca.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "das Medikament",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L18-V025-example-audio": {
+      "path": "/audio/a13-release/9440867209b65152.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Hier ist ein Medikament.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L18-V026-audio": {
+      "path": "/audio/a13-release/03fe9a8458ad5a38.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "die Salbe",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L18-V026-example-audio": {
+      "path": "/audio/a13-release/08d8a044c3b290ac.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Hier ist eine Salbe.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L18-V027-audio": {
+      "path": "/audio/a13-release/3d4a5d77d49204b1.mp3",
+      "status": "ready",
+      "kind": "german_lemma_audio",
+      "text": "der Hustensaft",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L18-V027-example-audio": {
+      "path": "/audio/a13-release/3687fd4abfa34956.mp3",
+      "status": "ready",
+      "kind": "lexical_example_audio",
+      "text": "Das ist Hustensaft.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L18-imperativ-sie-model-1-audio": {
+      "path": "/audio/a13-release/20cc5281507398e2.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Sprechen Sie bitte langsam.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.808,
+      "origin": "existing_output"
+    },
+    "L18-imperativ-sie-model-2-audio": {
+      "path": "/audio/a13-release/ae519b43fd9ff115.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Stehen Sie bitte auf.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L18-sollen-model-1-audio": {
+      "path": "/audio/a13-release/24bf531419c72c92.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Ich soll diese Übung machen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L18-sollen-model-2-audio": {
+      "path": "/audio/a13-release/c67c78fce8768a5b.mp3",
+      "status": "ready",
+      "kind": "grammar_model_audio",
+      "text": "Soll ich morgen kommen?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L18-D01-voice-A": {
+      "path": "/audio/a13-release/fb5bb5bc881fa006.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was tut Ihnen weh?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "L18-D01-voice-B": {
+      "path": "/audio/a13-release/c856f9b65ca8e4c6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Mein Rücken tut weh.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L18-D02-voice-A": {
+      "path": "/audio/a13-release/9c5ad7cd4ad06809.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Haben Sie Fieber?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "existing_output"
+    },
+    "L18-D02-voice-B": {
+      "path": "/audio/a13-release/bfe414f84ad348ff.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Nein, ich habe Husten.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "existing_output"
+    },
+    "L18-D03-voice-A": {
+      "path": "/audio/a13-release/b102a8ace96790ce.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was soll ich machen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "existing_output"
+    },
+    "L18-D03-voice-B": {
+      "path": "/audio/a13-release/1fc7711a40421765.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Machen Sie bitte eine Pause.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L18-D04-voice-A": {
+      "path": "/audio/a13-release/2e3b3c78550c2dd3.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Können Sie das bitte wiederholen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.144,
+      "origin": "existing_output"
+    },
+    "L18-D04-voice-B": {
+      "path": "/audio/a13-release/c540ce815a942701.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ja, natürlich.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "existing_output"
+    },
+    "L18-D05-voice-A": {
+      "path": "/audio/a13-release/7edc9f573d4a12ec.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Spreche ich zu schnell?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L18-D05-voice-B": {
+      "path": "/audio/a13-release/20cc5281507398e2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Sprechen Sie bitte langsam.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.808,
+      "origin": "existing_output"
+    },
+    "L18-D06-voice-A": {
+      "path": "/audio/a13-release/6cd14ac67dfaf865.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Soll ich morgen kommen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L18-D06-voice-B": {
+      "path": "/audio/a13-release/57db66335db4999f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ja, kommen Sie morgen um zehn Uhr.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.456,
+      "origin": "existing_output"
+    },
+    "L18-D07-voice-A": {
+      "path": "/audio/a13-release/323479eaf81050ea.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hat die Ärztin gesagt?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.096,
+      "origin": "existing_output"
+    },
+    "L18-D07-voice-B": {
+      "path": "/audio/a13-release/24bf531419c72c92.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich soll diese Übung machen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L18-D08-voice-A": {
+      "path": "/audio/a13-release/447191d33b7005ac.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wer sagt das?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.088,
+      "origin": "existing_output"
+    },
+    "L18-D08-voice-B": {
+      "path": "/audio/a13-release/07f78b70fef38c36.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Mein Arzt sagt das.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "existing_output"
+    },
+    "L15-HELP-01-audio": {
+      "path": "/audio/a13-release/f4d60ec90ef5c02c.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Quadratmeter",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "L15-HELP-02-audio": {
+      "path": "/audio/a13-release/59d529e28d14064c.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Miete",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L15-HELP-03-audio": {
+      "path": "/audio/a13-release/4decf1e65b9c669a.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Nebenkosten",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "existing_output"
+    },
+    "L15-HELP-04-audio": {
+      "path": "/audio/a13-release/0da533981532d1d9.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Möbel",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L15-HELP-05-audio": {
+      "path": "/audio/a13-release/dd66afcd4b49683f.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "frei",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-HELP-06-audio": {
+      "path": "/audio/a13-release/59285e74b16c2ce4.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "hell",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-HELP-07-audio": {
+      "path": "/audio/a13-release/22f38e72720459f4.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "dunkel",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-HELP-08-audio": {
+      "path": "/audio/a13-release/f814e251a2c9db13.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "gemütlich",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "L15-HELP-09-audio": {
+      "path": "/audio/a13-release/6ab7d7b529b5585d.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "teuer",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-HELP-10-audio": {
+      "path": "/audio/a13-release/3ef5fc469f113344.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "billig",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-HELP-11-audio": {
+      "path": "/audio/a13-release/5af9e5e7403e3c71.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "groß",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L15-HELP-12-audio": {
+      "path": "/audio/a13-release/73230c48d568e69f.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "klein",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L16-HELP-01-audio": {
+      "path": "/audio/a13-release/762da604b4bbd850.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Zeit",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L16-HELP-02-audio": {
+      "path": "/audio/a13-release/5fe7dd907e9012bd.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Arbeit",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.064,
+      "origin": "existing_output"
+    },
+    "L16-HELP-03-audio": {
+      "path": "/audio/a13-release/958f49464c5d6199.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Unterricht",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "existing_output"
+    },
+    "L16-HELP-04-audio": {
+      "path": "/audio/a13-release/2b15e6a803a0a061.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Kurs",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L16-HELP-05-audio": {
+      "path": "/audio/a13-release/2c9c384ed67ef11c.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Woche",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L16-HELP-06-audio": {
+      "path": "/audio/a13-release/af4004ab0f25f48f.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Tag",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L16-HELP-07-audio": {
+      "path": "/audio/a13-release/b27ed0c210b09a20.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Minute",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.136,
+      "origin": "existing_output"
+    },
+    "L16-HELP-08-audio": {
+      "path": "/audio/a13-release/3922813ecaced0fe.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "das Gespräch",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.136,
+      "origin": "existing_output"
+    },
+    "L16-HELP-09-audio": {
+      "path": "/audio/a13-release/ee3460f7d4f3b6da.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "heute",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L16-HELP-10-audio": {
+      "path": "/audio/a13-release/fff7282c39bf82d9.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "morgen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L17-HELP-01-audio": {
+      "path": "/audio/a13-release/515e7e692ce23925.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Lehrer",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L17-HELP-02-audio": {
+      "path": "/audio/a13-release/404504711b9cb615.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Lehrerin",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "L17-HELP-03-audio": {
+      "path": "/audio/a13-release/ae148b253d98a93a.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Arzt",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.968,
+      "origin": "existing_output"
+    },
+    "L17-HELP-04-audio": {
+      "path": "/audio/a13-release/2b33b4bba346039e.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Ärztin",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.184,
+      "origin": "existing_output"
+    },
+    "L17-HELP-05-audio": {
+      "path": "/audio/a13-release/60c509cedb9eb9c5.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Freund",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.064,
+      "origin": "existing_output"
+    },
+    "L17-HELP-06-audio": {
+      "path": "/audio/a13-release/b04e342d6f7b54af.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Freundin",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "L17-HELP-07-audio": {
+      "path": "/audio/a13-release/c436633e1e681afc.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Bus",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L17-HELP-08-audio": {
+      "path": "/audio/a13-release/6101b790ef18468b.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Zug",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L17-HELP-09-audio": {
+      "path": "/audio/a13-release/0ba1116b8fcb4515.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Hund",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L17-HELP-10-audio": {
+      "path": "/audio/a13-release/4e677c2ce1d5fd1e.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Schirm",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L17-HELP-11-audio": {
+      "path": "/audio/a13-release/26b73af5aeab5ed5.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Eltern",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "L17-HELP-12-audio": {
+      "path": "/audio/a13-release/3382de2a3451f81d.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Koch",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L17-HELP-13-audio": {
+      "path": "/audio/a13-release/8a9ffad95f7ddb24.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Köchin",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.992,
+      "origin": "existing_output"
+    },
+    "L17-HELP-14-audio": {
+      "path": "/audio/a13-release/02550604f356bd84.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Ingenieur",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.184,
+      "origin": "existing_output"
+    },
+    "L17-HELP-15-audio": {
+      "path": "/audio/a13-release/a9302357dcc29b2f.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Ingenieurin",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.304,
+      "origin": "existing_output"
+    },
+    "L17-HELP-16-audio": {
+      "path": "/audio/a13-release/598184a4fc1298d3.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "später",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L17-HELP-17-audio": {
+      "path": "/audio/a13-release/b9c179aec5001735.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "unbedingt",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L17-HELP-18-audio": {
+      "path": "/audio/a13-release/5b271c0ce6b86742.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "vielleicht",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L17-HELP-19-audio": {
+      "path": "/audio/a13-release/a495315cf86e46e2.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "auf keinen Fall",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.184,
+      "origin": "existing_output"
+    },
+    "L18-HELP-01-audio": {
+      "path": "/audio/a13-release/ae148b253d98a93a.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "der Arzt",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.968,
+      "origin": "existing_output"
+    },
+    "L18-HELP-02-audio": {
+      "path": "/audio/a13-release/2b33b4bba346039e.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Ärztin",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.184,
+      "origin": "existing_output"
+    },
+    "L18-HELP-03-audio": {
+      "path": "/audio/a13-release/67598f999430f3f0.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Übung",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "L18-HELP-04-audio": {
+      "path": "/audio/a13-release/9d269e681cb609d6.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Pause",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "L18-HELP-05-audio": {
+      "path": "/audio/a13-release/4dbe0072d791d4f7.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "die Kollegin",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "existing_output"
+    },
+    "L18-HELP-06-audio": {
+      "path": "/audio/a13-release/d522662a504ce974.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "langsam",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-HELP-07-audio": {
+      "path": "/audio/a13-release/1b6b7fb59e189495.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "wiederholen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.064,
+      "origin": "existing_output"
+    },
+    "L18-HELP-08-audio": {
+      "path": "/audio/a13-release/7016e5f271e7fd68.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "wehtun",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-HELP-09-audio": {
+      "path": "/audio/a13-release/11669dcce56f052e.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "sagen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L18-HELP-10-audio": {
+      "path": "/audio/a13-release/3cac74e9eb9e7974.mp3",
+      "status": "ready",
+      "kind": "support_gloss_audio",
+      "text": "aufstehen",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "A13-L15-POSSESSIVARTIKEL-001-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/c4f81c49eb08bda7.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich finde seinen Balkon schön.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.952,
+      "origin": "existing_output"
+    },
+    "A13-L15-POSSESSIVARTIKEL-002-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/ef221f76ae378f39.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ihr Zimmer ist groß.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "existing_output"
+    },
+    "A13-L15-POSSESSIVARTIKEL-003-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/272f53eb58e9a8bd.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich finde seine Küche schön.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.784,
+      "origin": "existing_output"
+    },
+    "A13-L15-POSSESSIVARTIKEL-004-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/d4054f93b8cf52c5.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ihre Lampe ist neu.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "existing_output"
+    },
+    "A13-L15-POSSESSIVARTIKEL-005-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/c4f81c49eb08bda7.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich finde seinen Balkon schön.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.952,
+      "origin": "existing_output"
+    },
+    "A13-L15-OWNER-PREP-001-feedback-audio": {
+      "path": "/audio/a13-release/9fc0234d159d4c7a.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Das ist ihr Zimmer.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "existing_output"
+    },
+    "A13-L15-ENDING-PREP-001-feedback-audio": {
+      "path": "/audio/a13-release/627c8c3de9e7ca58.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich finde seinen Sessel schön.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "A13-L16-TEMPORALE-PRAEPOSITIONEN-001-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/79b7b882e943fc4b.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich komme in einer Stunde, also um zehn.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.96,
+      "origin": "existing_output"
+    },
+    "A13-L16-TEMPORALE-PRAEPOSITIONEN-002-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/afdc2c623ed6cacc.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Der Termin war gestern, also vor einem Tag.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 4.128,
+      "origin": "existing_output"
+    },
+    "A13-L16-TEMPORALE-PRAEPOSITIONEN-003-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/85fd5d4b69bc14e4.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir essen nach dem Unterricht.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "A13-L16-TEMPORALE-PRAEPOSITIONEN-004-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/377423f0dafa5ed3.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Der Termin ist am Mittwoch, also in zwei Tagen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 4.416,
+      "origin": "existing_output"
+    },
+    "A13-L16-TEMPORALE-PRAEPOSITIONEN-005-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/bbbb59fe52f337e4.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir treffen uns nach dem Kurs.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.0,
+      "origin": "existing_output"
+    },
+    "A13-L16-DATIV-PREP-001-feedback-audio": {
+      "path": "/audio/a13-release/68bbdbee6a771f80.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Nach der Arbeit habe ich Zeit.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.952,
+      "origin": "existing_output"
+    },
+    "A13-L17-WERDEN-001-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/46f87ef5678bf052.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Nina wird Lehrerin.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "A13-L17-WERDEN-002-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/2f833eef5a2328b5.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir werden bald Eltern.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.784,
+      "origin": "existing_output"
+    },
+    "A13-L17-WERDEN-003-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/118afa91c6b5cc68.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich werde Koch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "A13-L17-WERDEN-004-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/1489218a66d70f44.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Du wirst Ingenieurin.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "existing_output"
+    },
+    "A13-L17-WERDEN-005-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/6f59aae1d0f10a33.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Er wird Arzt.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "existing_output"
+    },
+    "A13-L17-WOLLEN-001-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/4863d52ae036341e.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ihr wollt heute Deutsch lernen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.952,
+      "origin": "existing_output"
+    },
+    "A13-L17-WOLLEN-002-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/e69da94d888ea7d1.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Frau Koch will morgen reisen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.952,
+      "origin": "existing_output"
+    },
+    "A13-L17-WOLLEN-003-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/7bdfad33d893b2e4.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich will Musiker werden.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "A13-L17-WOLLEN-004-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/6eb3313de9e38442.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir wollen eine Firma gründen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.192,
+      "origin": "existing_output"
+    },
+    "A13-L17-WOLLEN-005-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/93b0368a3ef1a1e8.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Sie will in Berlin studieren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "A13-L17-MIT-OHNE-001-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/c2abb132d71fa86d.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Sie fährt mit dem Bus.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "A13-L17-MIT-OHNE-002-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/e783a3f65801d693.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Er geht ohne einen Schirm.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "A13-L17-MIT-OHNE-003-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/ec7453ab2eaf14a0.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich komme mit einer Freundin.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.784,
+      "origin": "existing_output"
+    },
+    "A13-L17-MIT-OHNE-004-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/ba97c372c6550600.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Sie geht ohne den Hund.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "A13-L17-MIT-OHNE-005-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/a8ad3848066dc84a.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich fahre mit dem Zug.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "A13-L17-MIT-OHNE-MEANING-PREP-001-feedback-audio": {
+      "path": "/audio/a13-release/910373ebd2271c5a.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Nina reist mit Geld.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "A13-L18-IMPERATIV-SIE-001-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/20cc5281507398e2.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Sprechen Sie bitte langsam.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.808,
+      "origin": "existing_output"
+    },
+    "A13-L18-IMPERATIV-SIE-002-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/8bdd8e20c3656191.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Warten Sie hier kurz.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "existing_output"
+    },
+    "A13-L18-IMPERATIV-SIE-003-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/4384ed4ed14aebec.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Trinken Sie viel Wasser.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "A13-L18-IMPERATIV-SIE-004-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/a2725b7ad25a94c7.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Machen Sie eine Pause.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "A13-L18-IMPERATIV-SIE-005-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/bce5642883b9726f.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Gehen Sie bitte nach Hause.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.712,
+      "origin": "existing_output"
+    },
+    "A13-L18-SOLLEN-001-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/3508846dadd271b2.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Du sollst heute zu Hause bleiben.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.24,
+      "origin": "existing_output"
+    },
+    "A13-L18-SOLLEN-002-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/f202e148c85e6a37.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir sollen mehr schlafen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "A13-L18-SOLLEN-003-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/24bf531419c72c92.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich soll diese Übung machen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "A13-L18-SOLLEN-004-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/2fc79078c154397e.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Frau Weber soll mehr trinken.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.12,
+      "origin": "existing_output"
+    },
+    "A13-L18-SOLLEN-005-PREP3-feedback-audio": {
+      "path": "/audio/a13-release/24bf206b9d90d7df.mp3",
+      "status": "ready",
+      "kind": "grammar_feedback_audio",
+      "text": "Sie sollen heute mehr Wasser trinken.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.264,
+      "origin": "existing_output"
+    },
+    "L15-D01-pair-audio": {
+      "path": "/audio/a13-release/d170d43bf086acf8f65dc4c6.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D01-voice-A",
+        "L15-D01-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.228
+    },
+    "L15-D02-pair-audio": {
+      "path": "/audio/a13-release/9ba96619d14087c0a5ed0926.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D02-voice-A",
+        "L15-D02-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.86
+    },
+    "L15-D03-pair-audio": {
+      "path": "/audio/a13-release/b9106bdcc622bb6a3fb316d7.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D03-voice-A",
+        "L15-D03-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.78
+    },
+    "L15-D04-pair-audio": {
+      "path": "/audio/a13-release/637943df6548425ab60826f6.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D04-voice-A",
+        "L15-D04-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.332
+    },
+    "L15-D05-pair-audio": {
+      "path": "/audio/a13-release/2cf4b5321332e890d42ce30c.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D05-voice-A",
+        "L15-D05-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.78
+    },
+    "L15-D06-pair-audio": {
+      "path": "/audio/a13-release/6201f67cf3837f13b2866422.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D06-voice-A",
+        "L15-D06-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.452
+    },
+    "L15-D07-pair-audio": {
+      "path": "/audio/a13-release/2c63af40896aeba67e26ac9c.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D07-voice-A",
+        "L15-D07-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.356
+    },
+    "L15-D08-pair-audio": {
+      "path": "/audio/a13-release/688a9790610d855dbac5f753.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D08-voice-A",
+        "L15-D08-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 7.868
+    },
+    "L16-D01-pair-audio": {
+      "path": "/audio/a13-release/dc2de29af6a05de9b5668e0b.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D01-voice-A",
+        "L16-D01-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.924
+    },
+    "L16-D02-pair-audio": {
+      "path": "/audio/a13-release/6a13ca1e4fed73603d1dd59c.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D02-voice-A",
+        "L16-D02-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.044
+    },
+    "L16-D03-pair-audio": {
+      "path": "/audio/a13-release/1b6b632987327e38a8f655ca.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D03-voice-A",
+        "L16-D03-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.044
+    },
+    "L16-D04-pair-audio": {
+      "path": "/audio/a13-release/9ab3eaad9e6f3d9cf11229b9.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D04-voice-A",
+        "L16-D04-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.38
+    },
+    "L16-D05-pair-audio": {
+      "path": "/audio/a13-release/184e08051d1f3e7d4424a433.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D05-voice-A",
+        "L16-D05-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.716
+    },
+    "L16-D06-pair-audio": {
+      "path": "/audio/a13-release/fbf26df92b8edeb542265eee.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D06-voice-A",
+        "L16-D06-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.444
+    },
+    "L16-D07-pair-audio": {
+      "path": "/audio/a13-release/0c2efec0dc11e79d220b27af.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D07-voice-A",
+        "L16-D07-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.428
+    },
+    "L16-D08-pair-audio": {
+      "path": "/audio/a13-release/f0c3e7c420d0248c6560aad0.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D08-voice-A",
+        "L16-D08-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 7.724
+    },
+    "L17-D01-pair-audio": {
+      "path": "/audio/a13-release/5a670eb2e9ce1dd00c7a725a.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D01-voice-A",
+        "L17-D01-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.492
+    },
+    "L17-D02-pair-audio": {
+      "path": "/audio/a13-release/6730504fd72b56cb9558ab24.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D02-voice-A",
+        "L17-D02-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 7.316
+    },
+    "L17-D03-pair-audio": {
+      "path": "/audio/a13-release/7fd41b178355fb117d8e3ed1.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D03-voice-A",
+        "L17-D03-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.188
+    },
+    "L17-D04-pair-audio": {
+      "path": "/audio/a13-release/20c8f16f7c2bcb605e1b2ee8.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D04-voice-A",
+        "L17-D04-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.948
+    },
+    "L17-D05-pair-audio": {
+      "path": "/audio/a13-release/3f3bb9a75f87474a60738363.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D05-voice-A",
+        "L17-D05-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.572
+    },
+    "L17-D06-pair-audio": {
+      "path": "/audio/a13-release/ce6f3abbf87a4876c0bcbb89.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D06-voice-A",
+        "L17-D06-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 7.244
+    },
+    "L17-D07-pair-audio": {
+      "path": "/audio/a13-release/a00a05d136122b344c8b0bbd.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D07-voice-A",
+        "L17-D07-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.276
+    },
+    "L17-D08-pair-audio": {
+      "path": "/audio/a13-release/65be9c894a40e68ee527c9c0.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D08-voice-A",
+        "L17-D08-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 7.604
+    },
+    "L18-D01-pair-audio": {
+      "path": "/audio/a13-release/8d74acc419b144af13e7954b.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D01-voice-A",
+        "L18-D01-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.324
+    },
+    "L18-D02-pair-audio": {
+      "path": "/audio/a13-release/c6ab04c342aa9e5dddf86bfa.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D02-voice-A",
+        "L18-D02-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.612
+    },
+    "L18-D03-pair-audio": {
+      "path": "/audio/a13-release/89c9793b88c3ac606b08d9f7.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D03-voice-A",
+        "L18-D03-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.66
+    },
+    "L18-D04-pair-audio": {
+      "path": "/audio/a13-release/152f93c255db1148c5532db5.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D04-voice-A",
+        "L18-D04-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.116
+    },
+    "L18-D05-pair-audio": {
+      "path": "/audio/a13-release/11bf4ffa6d7e2853324dcda5.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D05-voice-A",
+        "L18-D05-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.708
+    },
+    "L18-D06-pair-audio": {
+      "path": "/audio/a13-release/eb12a9ba5c883eff06d5fef6.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D06-voice-A",
+        "L18-D06-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.548
+    },
+    "L18-D07-pair-audio": {
+      "path": "/audio/a13-release/9048efe25a686440ba76dc0c.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D07-voice-A",
+        "L18-D07-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 6.332
+    },
+    "L18-D08-pair-audio": {
+      "path": "/audio/a13-release/73cab925418655c541e5de1c.m4a",
+      "status": "ready",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D08-voice-A",
+        "L18-D08-voice-B"
+      ],
+      "pauseMs": 500,
+      "durationSeconds": 5.084
+    }
+  }
+}

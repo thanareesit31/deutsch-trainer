@@ -9,6 +9,11 @@ import { useVocabularyAudio } from "./vocabulary-audio";
 import { lessonStateKeys, useLessonState } from "./lesson-state-provider";
 import { clearLastLessonPageRequest, isLastLessonPageRequested } from "@/lib/test-workspace-last-page";
 
+import {l14PhraseTeaching} from '@/data/l14-phrase-teaching';
+import {AnnotatedTurn,AnnotatedReply} from './phrase-sentence';
+import {DialogueAudio} from './phrase-dialogue-media';
+import {sentencePresentation,dialogueRecording,turnRecording} from '@/lib/phrase-presentation';
+import {l14ObservationKey,readPhraseObservations,keepFirstObservation,type PhraseObservation} from '@/lib/l14-phrase-observations';
 const groups = [
   { id: "ask", german: "Nach dem Weg fragen", thai: "ถามทาง" },
   { id: "describe", german: "Den Weg beschreiben", thai: "บอกทาง" },
@@ -186,6 +191,15 @@ export function L14PhraseLearning() {
   const mapRef = useRef<HTMLDivElement>(null);
   const storage = useLessonState();
   const stateKey = lessonStateKeys.l14Phrases;
+  const enhanced=true;
+  const [observationError,setObservationError]=useState("");
+  const guidanceKey='deutsch-trainer-phrase-guidance-v1-L14';
+  const [modelStep,setModelStep]=useState(()=>{
+    const saved=storage.read(guidanceKey);
+    const index=saved===null?0:Number(saved);
+    return Number.isInteger(index)&&index>=0&&index<=l14PhraseTeaching.length?index:0;
+  });
+  const [showModels,setShowModels]=useState(()=>!storage.read(stateKey)&&!storage.read(guidanceKey)&&!isLastLessonPageRequested());
   const [testLastPage] = useState(() => isLastLessonPageRequested());
   const [progress, setProgress] = useState(() => {
     const saved = readPhraseProgress(storage.read(stateKey));
@@ -273,6 +287,22 @@ export function L14PhraseLearning() {
   const shuffledTurns = (unknownEncounter ? [2, 0, 3, 1] : [4, 1, 6, 3, 0, 7, 2, 5]).map((index) => (index + scenarioIndex) % turnCount);
   const orderIsCorrect = orderedTurns.length === turnCount && orderedTurns.every((turn, index) => turn === index);
 
+  function observe(id:string,evidence:Omit<PhraseObservation,'submittedAt'|'coverage'>){
+    if(!enhanced)return;
+    try{
+      const old=readPhraseObservations(storage.read(l14ObservationKey));
+      const next=keepFirstObservation(old,id,{...evidence,submittedAt:new Date().toISOString(),coverage:'first-observed-after-upgrade'});
+      if(next!==old)storage.write(l14ObservationKey,JSON.stringify(next));
+    }catch{setObservationError('บันทึกคำตอบแรกไม่ได้ ข้อมูลที่บันทึกไว้เดิมยังอยู่ กรุณาโหลดหน้าใหม่');}
+  }
+  function checkOrder(){
+    observe('order:'+scenario.kind+':'+place.id,{targetId:'L14-route-'+scenario.kind,subskill:'dialogue_order',difficulty:3,response:JSON.stringify(orderedTurns),correct:orderIsCorrect,assistance:['prior-guided-dialogue','supplied-turns'],context:JSON.stringify({place:place.id,lines:dialogueLines,flipped:dialogueFlipped})});
+    persist({...progress,orderChecked:true});
+  }
+  function chooseLine(option:string){
+    observe('choice:'+scenario.kind+':'+place.id+':'+dialogueStep,{targetId:'L14-route-'+scenario.kind+'-turn-'+dialogueStep,subskill:'route_dialogue_selection',difficulty:2,response:option,correct:option===answer||(dialogueStep===thankYouStep&&isThankYouLine(option)),assistance:['map','reply-options'],context:JSON.stringify({place:place.id,prompt:choicePrompts[dialogueStep],options:choices,expected:answer,flipped:dialogueFlipped})});
+    persist({...progress,choice:option});
+  }
   function persist(next: PhraseProgress) {
     setProgress(next);
     storage.write(stateKey, JSON.stringify(next));
@@ -319,6 +349,7 @@ export function L14PhraseLearning() {
     const nextResults: Record<string, CheckResult> = {};
     for (const phrase of phrases) {
       const correct = placed[phrase.id] === phrase.group;
+      observe('sort:'+phrase.id,{targetId:phrase.id,subskill:'phrase_function_recognition',difficulty:1,response:placed[phrase.id],correct,assistance:['function-groups',...(flipped[phrase.id]?['translation-flipped']:[])],context:JSON.stringify({text:phrase.text,group:phrase.group,previousMisses:misses[phrase.id]??0})});
       nextResults[phrase.id] = correct ? "correct" : "wrong";
       if (correct) nextSolved[phrase.id] = true;
       else if (!results[phrase.id]) nextMisses[phrase.id] = (nextMisses[phrase.id] ?? 0) + 1;
@@ -371,22 +402,39 @@ export function L14PhraseLearning() {
       <div className="l14-phrase-turn-inner">
         <div className={`l14-phrase-turn l14-phrase-turn-front${mode === "guided" && slot === dialogueStep ? " is-current" : ""}`} data-result={result} aria-hidden={isFlipped}>
           <span>{slot % 2 === 0 ? "A" : "B"}</span>
-          {german ? <div className="l14-phrase-turn-line"><button type="button" className="l14-phrase-audio" tabIndex={isFlipped ? -1 : 0} aria-label={`ฟัง ${german}`} onClick={() => play(german)}><Volume2 size={18} aria-hidden="true" /></button>{removable ? <button type="button" lang="de" tabIndex={isFlipped ? -1 : 0} className="l14-phrase-placed-line" onClick={() => persist({ ...progress, orderedTurns: orderedTurns.filter((_, index) => index !== slot), orderChecked: false, dialogueFlipped: [] })}>{german}</button> : <p lang="de">{german}</p>}</div> : <p className="l14-phrase-empty">…</p>}
+          {german ? <div className="l14-phrase-turn-line"><button type="button" className="l14-phrase-audio" tabIndex={isFlipped ? -1 : 0} aria-label={`ฟัง ${german}`} onClick={() => play(german,enhanced?turnRecording("L14",german,slot%2===0?"A":"B"):undefined)}><Volume2 size={18} aria-hidden="true" /></button>{removable&&!(enhanced&&revealed&&sentencePresentation("L14",german)) ? <button type="button" lang="de" tabIndex={isFlipped ? -1 : 0} className="l14-phrase-placed-line" onClick={() => persist({ ...progress, orderedTurns: orderedTurns.filter((_, index) => index !== slot), orderChecked: false, dialogueFlipped: [] })}>{german}</button> : enhanced&&revealed&&sentencePresentation("L14",german)?<div className="phrase-teaching-models"><AnnotatedReply sentences={sentencePresentation("L14",german)??[]}/><p lang="th">{thai}</p>{removable&&<button type="button" className="button secondary" onClick={()=>persist({...progress,orderedTurns:orderedTurns.filter((_,index)=>index!==slot),orderChecked:false,dialogueFlipped:[]})}>แก้ประโยคนี้</button>}</div>: <p lang="de">{german}</p>}</div> : <p className="l14-phrase-empty">…</p>}
           {canFlip && <button type="button" className="l14-phrase-flip-button" tabIndex={isFlipped ? -1 : 0} onClick={toggleFlip}>พลิกดูคำแปล</button>}
         </div>
         {canFlip && <div className="l14-phrase-turn l14-phrase-turn-back" aria-hidden={!isFlipped}>
           <span>{slot % 2 === 0 ? "A" : "B"}</span>
-          <div className="l14-phrase-turn-line"><button type="button" className="l14-phrase-audio" tabIndex={isFlipped ? 0 : -1} aria-label={`ฟัง ${german}`} onClick={() => play(german)}><Volume2 size={18} aria-hidden="true" /></button><p lang="th">{thai}</p></div>
+          <div className="l14-phrase-turn-line"><button type="button" className="l14-phrase-audio" tabIndex={isFlipped ? 0 : -1} aria-label={`ฟัง ${german}`} onClick={() => play(german,enhanced?turnRecording("L14",german,slot%2===0?"A":"B"):undefined)}><Volume2 size={18} aria-hidden="true" /></button><p lang="th">{thai}</p></div>
           <button type="button" className="l14-phrase-flip-button" tabIndex={isFlipped ? 0 : -1} onClick={toggleFlip}>ดูภาษาเยอรมัน</button>
         </div>}
       </div>
     </div>;
   }
 
-  return <main className="guided-learning l14-phrase-learning">
+  if(enhanced&&showModels){
+    const group=l14PhraseTeaching[Math.min(modelStep,l14PhraseTeaching.length-1)];
+    return <main className="guided-learning phrase-discovery phrase-teaching-models">
+      <h1>{group.title}</h1><p>คุณกำลังคุยกับคนในเมือง เพื่อขอหรือให้ความช่วยเหลือเรื่องเส้นทาง</p>
+      {group.note.map(note=><p key={note}>{note}</p>)}
+      {group.models.map(model=><article className="phrase-model-card" key={model.id}>
+        <DialogueAudio source={dialogueRecording('L14',model.question,model.reply)??''}/>
+        <AnnotatedTurn speaker="A" sentences={sentencePresentation('L14',model.question)??[]} meaning={model.questionMeaning}/>
+        <AnnotatedTurn speaker="B" sentences={sentencePresentation('L14',model.reply)??[]} meaning={model.replyMeaning}/>
+      </article>)}
+      <div className="guided-navigation"><button className="button secondary" disabled={modelStep===0} onClick={()=>{setModelStep(modelStep-1);storage.write(guidanceKey,String(modelStep-1));}}>ย้อนกลับ</button>
+      <button className="button primary" onClick={()=>{const next=modelStep+1;storage.write(guidanceKey,String(next));if(next>=l14PhraseTeaching.length)setShowModels(false);else setModelStep(next);}}>{modelStep>=l14PhraseTeaching.length-1?'ลองจัดกลุ่มประโยค':'ดูหัวข้อถัดไป'}</button>
+      <button className="button secondary" onClick={()=>setShowModels(false)}>กลับไปกิจกรรม</button></div>
+    </main>;
+  }
+  return <main className={`guided-learning l14-phrase-learning${enhanced?" l14-phrase-learning--annotated":""}`}>
     <h1>Wegbeschreibungen</h1>
+    {observationError&&<p role="alert">{observationError}</p>}
     <p>เลือกประโยคให้ตรงกับหน้าที่ แล้วลองถามทางในเมือง</p>
     <nav className="learning-category-tabs" aria-label="ขั้นตอนการเรียน">
+      {enhanced&&<button type="button" onClick={()=>{setModelStep(Math.min(modelStep,l14PhraseTeaching.length-1));setShowModels(true);}}>หลักการและตัวอย่าง</button>}
       <button type="button" aria-current={tab === "sort" ? "page" : undefined} onClick={() => persist({ ...progress, tab: "sort" })}>1. จัดกลุ่มประโยค</button>
       <button type="button" aria-current={tab === "context" ? "page" : undefined} onClick={openContext}>2. ฝึกถามทาง</button>
     </nav>
@@ -444,7 +492,7 @@ export function L14PhraseLearning() {
         <div className="l14-phrase-dialogue">
           {dialogueTurns.map((_, index) => dialogueCard(index, index < dialogueStep || correctChoice ? index : undefined, index < dialogueStep || correctChoice, false))}
         </div>
-        {dialogueStep < turnCount && <><h3>{choicePrompts[dialogueStep]}</h3><div className="l14-phrase-choices">{choices.map((option) => <div className="l14-phrase-card" key={option} data-result={choice === option ? correctChoice ? "correct" : "wrong" : undefined}><div className="l14-phrase-card-main"><button type="button" className="l14-phrase-audio" aria-label={`ฟัง ${option}`} onClick={() => play(option)}><Volume2 size={18} aria-hidden="true" /></button><button type="button" lang="de" className="l14-phrase-chip" aria-pressed={choice === option} disabled={correctChoice} onClick={() => persist({ ...progress, choice: option })}>{option}</button></div></div>)}</div>
+        {dialogueStep < turnCount && <><h3>{choicePrompts[dialogueStep]}</h3><div className="l14-phrase-choices">{choices.map((option) => <div className="l14-phrase-card" key={option} data-result={choice === option ? correctChoice ? "correct" : "wrong" : undefined}><div className="l14-phrase-card-main"><button type="button" className="l14-phrase-audio" aria-label={`ฟัง ${option}`} onClick={() => play(option)}><Volume2 size={18} aria-hidden="true" /></button><button type="button" lang="de" className="l14-phrase-chip" aria-pressed={choice === option} disabled={correctChoice} onClick={() => chooseLine(option)}>{option}</button></div></div>)}</div>
           {choice && <p className="l14-phrase-feedback" role="status">{correctChoice ? "เลือกประโยคได้เหมาะกับสถานการณ์" : unknownEncounter && dialogueStep === 1 ? "B ไม่คุ้นกับเมืองนี้ ลองเลือกประโยคที่บอกว่าไม่รู้ทาง" : choice.includes(otherPlace.question) ? "ดูชื่อสถานที่ที่เส้นทางพาไป แล้วลองอีกครั้ง" : choice === wrongTurn || choice === wrongNumberTurn || choice === wrongSecondTurn ? "ดูว่าต้องเลี้ยวเข้าถนนสายไหนและไปทางซ้ายหรือขวา" : choice === wrongDistanceAnswer ? "ดูระยะทางบนแผนที่ แล้วลองอีกครั้ง" : "ดูว่าตอนนี้ A หรือ B ต้องพูดอะไร แล้วลองอีกครั้ง"}</p>}
         </>}
         {dialogueStep === turnCount && <p className="l14-phrase-feedback">ครบแล้ว ลองเรียงบทสนทนาเองอีกรอบ</p>}
@@ -460,8 +508,8 @@ export function L14PhraseLearning() {
       <div className="guided-navigation"><button className="button secondary" type="button" onClick={() => persist({ ...progress, tab: "sort" })}>ย้อนกลับ</button>
         {mode === "guided" && correctChoice && <button className="button primary" type="button" onClick={() => persist({ ...progress, dialogueStep: dialogueStep + 1, choice: "", thanksChoice: dialogueStep === thankYouStep && isThankYouLine(choice) ? choice : progress.thanksChoice })}>ประโยคถัดไป</button>}
         {mode === "guided" && dialogueStep === turnCount && <button className="button primary" type="button" onClick={() => persist({ ...progress, mode: "reorder", dialogueFlipped: [] })}>ลองเรียงบทสนทนา</button>}
-        {mode === "reorder" && orderedTurns.length === turnCount && !orderIsCorrect && <button className="button primary" type="button" onClick={() => persist({ ...progress, orderChecked: true })}>ตรวจคำตอบ</button>}
-        {mode === "reorder" && orderIsCorrect && !orderChecked && <button className="button primary" type="button" onClick={() => persist({ ...progress, orderChecked: true })}>ตรวจคำตอบ</button>}
+        {mode === "reorder" && orderedTurns.length === turnCount && !orderIsCorrect && <button className="button primary" type="button" onClick={checkOrder}>ตรวจคำตอบ</button>}
+        {mode === "reorder" && orderIsCorrect && !orderChecked && <button className="button primary" type="button" onClick={checkOrder}>ตรวจคำตอบ</button>}
         {mode === "reorder" && orderChecked && orderIsCorrect && <button className="button primary" type="button" onClick={nextScenario}>{scenarioIndex === scenarios.length - 1 ? "เรียนอีกครั้ง" : "ไปข้อถัดไป"}</button>}
         {((progress.completedScenarios || (scenarioIndex === scenarios.length - 1 && orderChecked && orderIsCorrect)) && allCheckedCorrect || testLastPage) && <Link className="button primary" href="/practice/L14/phrases/basic?flow=lesson">ทำแบบฝึกหัด</Link>}
       </div>

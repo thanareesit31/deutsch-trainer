@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "status": "content_preparation_only_not_deployed",
+  "targetAudience": "all_authenticated_learners_after_implementation_and_release_checks",
+  "releaseRequirement": "Completed lessons must not remain tester-only; unfinished packets stay unpublished",
+  "lessons": [
+    {
+      "lessonId": "L15",
+      "vocabulary": 24,
+      "grammarTopics": 1,
+      "grammarModels": 3,
+      "dialogues": 8,
+      "phraseTargets": 16,
+      "practiceCandidates": 95,
+      "sourcePages": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "lessonId": "L16",
+      "vocabulary": 24,
+      "grammarTopics": 1,
+      "grammarModels": 3,
+      "dialogues": 8,
+      "phraseTargets": 16,
+      "practiceCandidates": 88,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "lessonId": "L17",
+      "vocabulary": 22,
+      "grammarTopics": 3,
+      "grammarModels": 6,
+      "dialogues": 8,
+      "phraseTargets": 16,
+      "practiceCandidates": 82,
+      "sourcePages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "lessonId": "L18",
+      "vocabulary": 27,
+      "grammarTopics": 2,
+      "grammarModels": 4,
+      "dialogues": 8,
+      "phraseTargets": 16,
+      "practiceCandidates": 107,
+      "sourcePages": [
+        36,
+        37,
+        38
+      ]
+    }
+  ],
+  "sourceReview": "l15-l18-source-review.json",
+  "assessmentBindings": "l15-l18-assessment-bindings.json",
+  "assets": "l15-l18-asset-manifest.json",
+  "readiness": {
+    "inventory": "prepared",
+    "independentMorphologyReview": "pending",
+    "audio": "scripts_only",
+    "visuals": "reuse_candidates_and_new_briefs",
+    "accountEvidence": "designed_not_wired",
+    "adaptiveSelection": "policy_proposed_not_executed",
+    "ui": "not_implemented_or_verified_in_this_packet"
+  },
+  "existingGrammarBankHashes": {
+    "L15": "d16aa7394360a0c255a5098f8a2d8c0a7172c15eb5fcecb51e1d4d50136e17a1",
+    "L16": "265b1130ffa0a1baa859270a4482327ae3ff20b503ab814d5297b288b92722cf",
+    "L17": "6bf26392e7b9b544d2c75d665d40b2cca2e04c327e285c7620162fc88f2f290c",
+    "L18": "b708643dff40b5d1aed7d2436702a6c0a5abfc6656417f65326b28290a2a3b29"
+  },
+  "totals": {
+    "vocabulary": 97,
+    "grammarTopics": 7,
+    "grammarModels": 16,
+    "dialogues": 32,
+    "phraseTargets": 64,
+    "practiceCandidates": 372
+  }
+}

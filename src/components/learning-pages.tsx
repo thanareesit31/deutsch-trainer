@@ -1,4 +1,5 @@
 "use client";
+import { findReleaseCourse, ReleaseEvidenceSummary } from "./a13-release-course";
 import { ArticleDot, ArticleLegend } from "./profession-matching";
 import { NounText } from "./noun-text";
 import { PracticeRecommendation } from "./practice-recommendation";
@@ -348,7 +349,8 @@ export function PracticeEntry({ initialLevel = "A1.3" }: { initialLevel?: string
   const a11VocabularyAvailable = isA11VocabularyPracticeAvailable(user);
   const a11GrammarAvailable = isA11GrammarPracticeAvailable(user);
   const a11PhrasesAvailable = isA11PhrasePracticeAvailable(user);
-  const readyTopicCount = isTester ? 27 : (vocabularyAvailable ? 4 : 0) + (phrasesAvailable ? 4 : 0) + (l14VocabularyAvailable ? 3 : 0) + (l14PhrasesAvailable ? 4 : 0);
+  const releasedTopicCount = user ? lessons.flatMap(lesson => skills.filter(skill => findReleaseCourse(lesson.id, skill.id))).length : 0;
+  const readyTopicCount = (isTester ? 20 : (vocabularyAvailable ? 4 : 0) + (phrasesAvailable ? 4 : 0) + (l14VocabularyAvailable ? 3 : 0) + (l14PhrasesAvailable ? 4 : 0)) + releasedTopicCount;
   const [level, setLevel] = useState(["A1.1", "A1.2", "A1.3"].includes(initialLevel) ? initialLevel : "A1.3");
   return (
     <>
@@ -360,6 +362,7 @@ export function PracticeEntry({ initialLevel = "A1.3" }: { initialLevel?: string
         </div>
         <span className="quiet-pill">{lessons.length} บทเรียน{readyTopicCount ? ` · ${readyTopicCount} หัวข้อพร้อมฝึก` : ""}</span>
       </div>
+      <PracticeRecommendation />
       <div className="segmented level-switch" role="group" aria-label="เลือกระดับแบบฝึกหัด">
         {["A1.1", "A1.2", "A1.3"].map((value) => (
           <button
@@ -378,8 +381,9 @@ export function PracticeEntry({ initialLevel = "A1.3" }: { initialLevel?: string
         {lessons.filter((lesson) => lesson.level === level).map((lesson) => {
           const earlyLesson = /^L(?:0[1-9]|1[0-2])$/.test(lesson.id);
           const earlyGrammar = earlyLesson && a11GrammarAvailable;
-          const ready = (earlyLesson && (a11VocabularyAvailable || earlyGrammar || a11PhrasesAvailable)) || (isTester && ["L13", "L14", "L15", "L16", "L17", "L18"].includes(lesson.id)) || ((vocabularyAvailable || phrasesAvailable) && lesson.id === "L13") || (lesson.id==="L14"&&(l14PhrasesAvailable||l14VocabularyAvailable));
-          const topicCount = earlyLesson ? Number(a11VocabularyAvailable) + Number(earlyGrammar) + Number(a11PhrasesAvailable) : lesson.id === "L13" ? (isTester ? 11 : (vocabularyAvailable ? 4 : 0)+(phrasesAvailable ? 4 : 0)) : lesson.id === "L14" ? (isTester?9:(l14PhrasesAvailable?4:0)+(l14VocabularyAvailable?3:0)) : lesson.id === "L18" ? 2 : lesson.id === "L15" || lesson.id === "L16" ? 1 : 3;
+          const releasedCount = user ? skills.filter(skill => findReleaseCourse(lesson.id, skill.id)).length : 0;
+          const ready = releasedCount > 0 || (earlyLesson && (a11VocabularyAvailable || earlyGrammar || a11PhrasesAvailable)) || (isTester && ["L13", "L14", "L15", "L16", "L17", "L18"].includes(lesson.id)) || ((vocabularyAvailable || phrasesAvailable) && lesson.id === "L13") || (lesson.id==="L14"&&(l14PhrasesAvailable||l14VocabularyAvailable));
+          const topicCount = releasedCount || (earlyLesson ? Number(a11VocabularyAvailable) + Number(earlyGrammar) + Number(a11PhrasesAvailable) : lesson.id === "L13" ? (isTester ? 11 : (vocabularyAvailable ? 4 : 0)+(phrasesAvailable ? 4 : 0)) : lesson.id === "L14" ? (isTester?9:(l14PhrasesAvailable?4:0)+(l14VocabularyAvailable?3:0)) : lesson.id === "L18" ? 2 : lesson.id === "L15" || lesson.id === "L16" ? 1 : 3);
           return (
             <Link className="lesson-card practice-catalog-card" href={`/practice/${lesson.id}`} key={lesson.id}>
               <div className="lesson-card-top">
@@ -458,7 +462,8 @@ export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
       <div className="skills-grid">
         {skills.map((skill) => {
           const Icon = skillIcons[skill.id];
-          const available = (skill.id === "phrases" && (a11PhrasesAvailable || (lessonId === "L13" && isPhrasePracticeAvailable(user)) || (lessonId === "L14" && isL14PhrasePracticeAvailable(user)))) || (grammarAvailable && skill.id === "grammar") || (skill.id === "vocabulary" && (a11VocabularyAvailable || (lessonId === "L13" && isVocabularyPracticeAvailable(user)) || (lessonId === "L14" && isL14VocabularyPracticeAvailable(user))));
+          const releaseCourse = user ? findReleaseCourse(lessonId, skill.id) : undefined;
+          const available = Boolean(releaseCourse) || (skill.id === "phrases" && (a11PhrasesAvailable || (lessonId === "L13" && isPhrasePracticeAvailable(user)) || (lessonId === "L14" && isL14PhrasePracticeAvailable(user)))) || (grammarAvailable && skill.id === "grammar") || (skill.id === "vocabulary" && (a11VocabularyAvailable || (lessonId === "L13" && isVocabularyPracticeAvailable(user)) || (lessonId === "L14" && isL14VocabularyPracticeAvailable(user))));
           const content = <>
             <div className="skill-top">
               <span className={`icon-tile large ${skill.color}`}><Icon size={24} /></span>
@@ -467,7 +472,7 @@ export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
             <span className="eyebrow">{skill.de}</span>
             <h2>{skill.th}</h2>
             <p>{skill.description}</p>
-            {available && <div className="skill-count">{skill.id === "vocabulary" ? a11VocabularyAvailable ? 1 : lessonId === "L14" ? 3 : 4 : skill.id === "phrases" ? a11PhrasesAvailable ? 1 : 4 : a11GrammarAvailable ? 1 : grammarTopicCount} หัวข้อพร้อมฝึก</div>}
+            {available && <div className="skill-count">{releaseCourse ? `${releaseCourse.cards.length} รายการพร้อมฝึก` : <>{skill.id === "vocabulary" ? a11VocabularyAvailable ? 1 : lessonId === "L14" ? 3 : 4 : skill.id === "phrases" ? a11PhrasesAvailable ? 1 : 4 : a11GrammarAvailable ? 1 : grammarTopicCount} หัวข้อพร้อมฝึก</>}</div>}
           </>;
           return available ? (
             <Link className="skill-card" href={`/practice/${lessonId}/${skill.id}`} key={skill.id}>{content}</Link>
@@ -476,7 +481,7 @@ export function PracticeLessonEntry({ lessonId }: { lessonId: string }) {
           );
         })}
       </div>
-      {pilotAvailable && <p className="practice-catalog-note">ผลชุดทดลองนี้ยังไม่รวมในความก้าวหน้าหลัก</p>}
+      {pilotAvailable && !findReleaseCourse(lessonId, "grammar") && <p className="practice-catalog-note">ผลชุดทดลองนี้ยังไม่รวมในความก้าวหน้าหลัก</p>}
     </>
   );
 }
@@ -1509,6 +1514,7 @@ export function HistoryProgress({ query = "" }: { query?: string }) {
           สำรองข้อมูล
         </Link>
       </div>
+      <ReleaseEvidenceSummary lesson={lesson} skill={skill} />
       <div className="skill-progress-grid">
         {skills.map((entry) => {
           const pool = entry.id === "vocabulary"

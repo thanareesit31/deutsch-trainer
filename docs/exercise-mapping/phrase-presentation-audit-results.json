@@ -1,0 +1,117 @@
+{
+  "scope": "local tester Learn presentation; not deployment or adaptive-selector migration",
+  "lessons": [
+    {
+      "id": "L01",
+      "topics": 9,
+      "models": 17,
+      "checks": 17
+    },
+    {
+      "id": "L02",
+      "topics": 7,
+      "models": 14,
+      "authoredModels": 14,
+      "checks": 18
+    },
+    {
+      "id": "L03",
+      "topics": 3,
+      "models": 8,
+      "authoredModels": 8,
+      "checks": 10
+    },
+    {
+      "id": "L04",
+      "topics": 3,
+      "models": 7,
+      "authoredModels": 7,
+      "checks": 8
+    },
+    {
+      "id": "L05",
+      "topics": 4,
+      "models": 9,
+      "authoredModels": 9,
+      "checks": 9
+    },
+    {
+      "id": "L06",
+      "topics": 3,
+      "models": 9,
+      "authoredModels": 9,
+      "checks": 10
+    },
+    {
+      "id": "L07",
+      "topics": 4,
+      "models": 12,
+      "authoredModels": 12,
+      "checks": 13
+    },
+    {
+      "id": "L08",
+      "topics": 3,
+      "models": 11,
+      "authoredModels": 11,
+      "checks": 12
+    },
+    {
+      "id": "L09",
+      "topics": 4,
+      "models": 8,
+      "authoredModels": 8,
+      "checks": 10
+    },
+    {
+      "id": "L10",
+      "topics": 4,
+      "models": 9,
+      "authoredModels": 9,
+      "checks": 10
+    },
+    {
+      "id": "L11",
+      "topics": 3,
+      "models": 9,
+      "authoredModels": 8,
+      "checks": 10
+    },
+    {
+      "id": "L12",
+      "topics": 3,
+      "models": 9,
+      "authoredModels": 9,
+      "checks": 11
+    },
+    {
+      "id": "L13",
+      "topics": 29,
+      "models": 29,
+      "authoredModels": 29,
+      "checks": 29
+    },
+    {
+      "id": "L14",
+      "groups": 4,
+      "models": 17,
+      "status": "retained-controller-with-teaching-supplement"
+    },
+    {
+      "id": "L15",
+      "status": "no-published-phrase-content"
+    },
+    {
+      "id": "L16",
+      "status": "no-published-phrase-content"
+    },
+    {
+      "id": "L17",
+      "status": "no-published-phrase-content"
+    },
+    {
+      "id": "L18",
+      "status": "no-published-phrase-content"
+    }
+  ]
+}

@@ -86,7 +86,8 @@ export function LearningBreadcrumbs() {
       const familyLabel = lesson.id === "L03" && parts[2] === "vocabulary" && parts[3] === "familie-plural" ? "Familienplural" : undefined;
       const discoveryLabel = parts[2] === "grammar" ? grammarDiscoveryLesson(lesson.id)?.topics.find((topic) => topic.slug === parts[3])?.title : undefined;
       const l12ImageLabel = lesson.id === "L12" && parts[2] === "vocabulary" && parts[3] === "images" ? imageGroup?.germanTitle ?? "Bilder Wortschatz" : undefined;
-      const label = l13Label ?? a13Label ?? familyLabel ?? discoveryLabel ?? l12ImageLabel ?? (parts[3] === "alphabet" ? "Das Alphabet"
+      const previewLabel = lesson.id === "L01" && parts[2] === "phrases" && parts[3] === "discovery" ? "เรียนผ่านบทสนทนา" : undefined;
+      const label = previewLabel ?? l13Label ?? a13Label ?? familyLabel ?? discoveryLabel ?? l12ImageLabel ?? (parts[3] === "alphabet" ? "Das Alphabet"
         : parts[3] === "numbers" ? "Die Zahlen"
         : imageGroup ? imageGroup.germanTitle
         : parts[2] === "vocabulary" && ["images", "core-images", "core"].includes(parts[3]) ? vocabularyImageActivity.germanTitle

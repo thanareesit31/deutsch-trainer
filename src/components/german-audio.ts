@@ -66,6 +66,7 @@ export function speakGermanText(
   voice: SpeechSynthesisVoice | null,
   callbacks: { onStart?: () => void; onEnd?: () => void; onError?: () => void } = {},
   rate = 0.8,
+  pitch = 1,
 ): boolean {
   if (
     typeof window === "undefined" ||
@@ -78,8 +79,8 @@ export function speakGermanText(
   let releaseAudioSession = () => {};
   try {
     const availableVoices = synth.getVoices();
-    const selectedVoice = availableVoices.find(candidate => candidate.lang.toLowerCase().startsWith("de"))
-      ?? voice
+    const selectedVoice = voice
+      ?? availableVoices.find(candidate => candidate.lang.toLowerCase().startsWith("de"))
       ?? availableVoices.find(candidate => candidate.default)
       ?? availableVoices[0];
     if (!selectedVoice) {
@@ -92,6 +93,7 @@ export function speakGermanText(
     utterance.lang = "de-DE";
     utterance.voice = selectedVoice;
     utterance.rate = rate;
+    utterance.pitch = pitch;
     utterance.onstart = callbacks.onStart ?? null;
     utterance.onend = () => {
       try {

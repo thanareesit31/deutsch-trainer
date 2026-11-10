@@ -1,8 +1,14 @@
 "use client";
 import { useContent } from "./content-provider";
+import { A13ReleaseCourse, findReleaseCourse } from './a13-release-course';
+import { A13ReleasePractice } from './a13-release-practice';
+import { parseReleaseState, releaseStateKey } from '@/lib/a13-release';
 import { l02VocabularyProgress } from "@/lib/l02-vocabulary-progress";
 import { learningProgressItemIds, readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
-import { L02PhraseLearning } from "./l02-phrase-learning";
+import { L01PhraseDiscovery } from "./l01-phrase-discovery";
+import { PhraseDialogueLearning } from "./phrase-dialogue-learning";
+import { a11PhraseDialogues } from "@/data/a11-phrase-dialogues";
+import { L02PhraseDiscovery } from "./l02-phrase-discovery";
 import { L13ContextLesson } from "./l13-context-reading";
 import { PracticeAccountSync } from "./practice-account-sync";
 import { L13PhrasePages } from "./l13-phrase-pages";
@@ -10,7 +16,6 @@ import { L13VocabularyPractice } from "./l13-vocabulary-practice";
 import { A11VocabularyPractice } from "./a11-vocabulary-practice";
 import { A11GrammarPractice } from "./a11-grammar-practice";
 import { A11PhrasePractice } from "./a11-phrase-practice";
-import { A11PhraseLearning } from "./a11-phrase-learning";
 import a11PhraseTargets from "@/data/a11-phrase-targets.json";
 import { L14VocabularyPractice } from "./l14-vocabulary-practice";
 import { GrammarPilot } from "./dative-pilot";
@@ -260,6 +265,12 @@ function App() {
     page = (allowUnlearnedPractice || isL13GrammarPracticeAvailable(user)) && user
       ? <GrammarPilot userId={user.id} topic={path.endsWith("/daily") ? "daily" : path.endsWith("/dativ-pilot") ? "dative" : path.endsWith("/es-gibt") ? "esGibt" : path.endsWith("/verbs") ? "verbs" : "basic"} learnedItemIds={history.exposures.map(entry => entry.item_id)} />
       : <div className="page-heading"><h1>ชุดนี้เปิดเฉพาะบัญชีทดลอง</h1><Link href="/practice">กลับไปแบบฝึกหัด</Link></div>;
+  else if ((parts[0] === 'learn' || parts[0] === 'practice') && /^L1[5-8]$/.test(parts[1] ?? '') && findReleaseCourse(parts[1], parts[2] ?? '')) {
+    const course = findReleaseCourse(parts[1], parts[2]);
+    page = course && user ? parts[0] === 'practice'
+      ? <A13ReleasePractice key={`${user.id}:${course.lessonId}:${course.skill}`} course={course} userId={user.id} guidedCardId={searchParams.get('guided') ?? undefined} resumeId={searchParams.get('resume') ?? undefined} />
+      : <A13ReleaseCourse key={`${user.id}:${course.lessonId}:${course.skill}:learn`} course={course} mode="learn" /> : null;
+  }
   else if (additionalGrammarPilot)
     page = (allowUnlearnedPractice || (additionalGrammarPilot.path.startsWith("/practice/L14/") && isL14GrammarPracticeAvailable(user))) && user
       ? <GrammarPilot userId={user.id} topic={additionalGrammarPilot.topic} learnedItemIds={history.exposures.map(entry => entry.item_id)} />
@@ -288,11 +299,12 @@ function App() {
   else if (path === "/practice")
     page = <PracticeEntry key={searchParams.toString()} initialLevel={searchParams.get("level") || "A1.3"} />;
   else if (path === "/review") page = <ReviewPage start={start} />;
-  else if (path === "/learn/L02/phrases") page = <L02PhraseLearning key={path} />;
+  else if (path === "/learn/L01/phrases") page = <L01PhraseDiscovery key={`${user?.id}:all`} />;
+  else if (path === "/learn/L01/phrases/discovery") page = <L01PhraseDiscovery key={`${user?.id}:${searchParams.get("part")}`} scope={searchParams.get("part") === "supplement" ? "supplement" : "all"} />;
+  else if (path === "/learn/L02/phrases" || path === "/learn/L02/phrases/sentences") page = <L02PhraseDiscovery key={user?.id} />;
   else if (parts[0] === "learn" && /^L(?:0[3-9]|1[0-2])$/.test(parts[1] ?? "") && parts[2] === "phrases" && parts.length === 3)
-    page = isA11PhrasePracticeAvailable(user) ? <A11PhraseLearning key={path} lessonId={parts[1]} /> : <LessonDetail id={parts[1]} />;
+    page = a11PhraseDialogues[parts[1]] ? <PhraseDialogueLearning key={`${user?.id}:${parts[1]}`} lessonId={parts[1]} topics={a11PhraseDialogues[parts[1]]} /> : <LessonDetail id={parts[1]} />;
   else if (path === "/learn/L14/phrases") page = <L14PhraseLearning key={path} />;
-  else if (path === "/learn/L02/phrases/sentences") page = <GuidedLearningPage key={path} lessonId="L02" skill="grammar" grammarTrack="sentences" />;
   else if (path === "/learn/L02/grammar/sentences") page = <L02SentencesRedirect />;
   else if (path === "/learn/L02/vocabulary")
     page = <VocabularyLearningEntryPoints key={path} lessonId="L02" />;
@@ -585,8 +597,10 @@ function LessonList({ initialLevel }: { initialLevel: string }) {
               exposureIds: history.exposures.map((exposure) => exposure.item_id),
               imageLearnedIds: readLearnedImageVocabularyIds(lessonState.read(lessonStateKeys.l02Vocabulary)),
             }) : undefined;
-            const pool = l02Progress?.targets ?? coreVocabulary.filter((w) => w.lessonId === l.id);
-            const learned = pool.filter((w) => learnedIds.has(w.id)).length;
+            const releaseCourse = findReleaseCourse(l.id, 'vocabulary');
+            const releaseState = releaseCourse ? parseReleaseState(lessonState.read(releaseStateKey(releaseCourse)), releaseCourse) : null;
+            const pool = releaseCourse?.cards ?? l02Progress?.targets ?? coreVocabulary.filter((w) => w.lessonId === l.id);
+            const learned = releaseState ? releaseState.learned.length : pool.filter((w) => learnedIds.has(w.id)).length;
             const pct = l02Progress?.percentage ?? (pool.length ? Math.round((learned / pool.length) * 100) : 0);
             const any = learned > 0;
             return (
@@ -664,7 +678,9 @@ function LessonDetail({ id }: { id: string }) {
       <div className="skills-grid">
         {lessonSkills.map((s) => {
           const Icon = skillIcons[s.id];
-          const hasDedicatedContent = s.id === "phrases" && (id === "L14" || (isA11PhrasePracticeAvailable(user) && /^L(?:0[3-9]|1[0-2])$/.test(id)));
+          const releaseCourse = findReleaseCourse(id, s.id);
+          const releaseState = releaseCourse ? parseReleaseState(lessonState.read(releaseStateKey(releaseCourse)), releaseCourse) : null;
+          const hasDedicatedContent = !!releaseCourse || s.id === "phrases" && (id === "L14" || (isA11PhrasePracticeAvailable(user) && /^L(?:0[3-9]|1[0-2])$/.test(id)));
           const l02Progress = id === "L02" && s.id === "vocabulary" ? l02VocabularyProgress({
             items, flow: lesson.learningFlows?.vocabulary,
             exposureIds: history.exposures.map(exposure => exposure.item_id),
@@ -705,7 +721,8 @@ function LessonDetail({ id }: { id: string }) {
                   <Meter value={Math.round(discoveryCompleted / discovery.topics.length * 100)} label="เรียนไวยากรณ์" />
                 </>
               )}
-              {pool.length > 0 && (
+              {releaseCourse && releaseState && <div className="skill-count">เรียนแล้ว {releaseState.learned.length} / {releaseCourse.cards.length} ประเด็น · ตอบแล้ว {releaseState.attempts.length} ครั้ง</div>}
+              {!releaseCourse && pool.length > 0 && (
                 <>
                   <div className="skill-count">
                     {pool.length} รายการ

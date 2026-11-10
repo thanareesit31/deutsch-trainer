@@ -1,0 +1,17 @@
+{
+  "schemaAppliedAt": "2026-11-10T12:19:06.251346+00:00",
+  "projectRef": "wmfdleejmtdcyqoonnqg",
+  "migrationBundleSha256": "5551e5add999805595d0b8faac2de5235bc82723f2da8ecb9741f840b50ed2e4",
+  "hostedAnonymousReadiness": {
+    "status": 200,
+    "data": {
+      "courses": 12,
+      "cards": 136,
+      "tasks": 372,
+      "phraseTasks": 64,
+      "practiceSyncReady": true
+    }
+  },
+  "productionBuild": "passed Node20 next build --webpack with TypeScript",
+  "deployment": "pending"
+}

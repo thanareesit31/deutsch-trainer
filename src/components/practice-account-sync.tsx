@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { supabase } from '@/lib/supabase';
 import { l13PracticeStores, parsePracticeHistory, practiceStorageKey } from '@/lib/practice-planner';
+import { mergeReleasePracticeAssistance } from '@/lib/release-assistance-merge';
 
 type Snapshot = { version: 1; sessions: Record<string, unknown>[]; activeId: string | null };
 type SyncFailure = { href: string; code: string; message: string };
@@ -49,7 +50,7 @@ function repairSessionCursor(session: Record<string, unknown>) {
   if (firstIncomplete >= session.position && session.completed !== true) return session;
   return { ...session, position: firstIncomplete, completed: false, updatedAt: new Date().toISOString() };
 }
-function mergeSession(local: Record<string, unknown>, remote: Record<string, unknown>) {
+function mergeSession(local: Record<string, unknown>, remote: Record<string, unknown>, preserveReleaseHelp = false) {
   if (!Array.isArray(local.items) || !Array.isArray(remote.items) || local.items.length !== remote.items.length) throw new Error('Invalid session');
   const latest = timestamp(local) > timestamp(remote) ? local : remote;
   const latestItems = latest.items;
@@ -61,7 +62,8 @@ function mergeSession(local: Record<string, unknown>, remote: Record<string, unk
     const remoteAttempt = remoteItem.attempt;
     const localAttempt = localItem.attempt;
     if (record(remoteAttempt) && record(localAttempt) && (remoteAttempt.status === 'pending' || remoteAttempt.confidence == null && localAttempt.confidence === 'guess') && localAttempt.status === 'completed' && remoteAttempt.submittedAt === localAttempt.submittedAt && remoteAttempt.response === localAttempt.response) return localItem;
-    return remoteAttempt ? remoteItem : localAttempt ? localItem : item;
+    const chosen = remoteAttempt ? remoteItem : localAttempt ? localItem : item;
+    return preserveReleaseHelp ? mergeReleasePracticeAssistance(chosen, localItem, remoteItem) : chosen;
   });
   return { ...latest, items, completed: local.completed === true || remote.completed === true, position: Math.max(Number(local.position), Number(remote.position)) };
 }
@@ -116,7 +118,7 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
           const snapshotResult = snapshots();
           const failures = [...snapshotResult.failures];
           let expired = false;
-          for (const { entry, snapshot } of snapshotResult.stores) {
+          for (const { entry, key, snapshot } of snapshotResult.stores) {
             for (const session of snapshot.sessions) {
               if (!alive) return;
               const id = `${entry.storage}:${session.id}`;
@@ -133,7 +135,20 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
                 }
                 continue;
               }
-              acknowledged.set(id, serialized);
+              if (entry.storage.startsWith('a13-release-')) {
+                const latest = await client.from('learner_practice_sessions').select('state').eq('user_id', userId).eq('bank_key', entry.storage).eq('session_id', session.id);
+                if (latest.error) throw latest.error;
+                if (!alive) return;
+                const saved: unknown = latest.data?.[0]?.state;
+                if (!record(saved)) throw new Error('Saved practice session missing');
+                const current = recoverSnapshot(localStorage.getItem(key), entry.href).snapshot;
+                const index = current.sessions.findIndex(s => s.id === session.id);
+                const merged = index >= 0 ? mergeSession(current.sessions[index], saved, true) : saved;
+                if (index >= 0) current.sessions[index] = merged; else current.sessions.push(merged);
+                localStorage.setItem(key, JSON.stringify(current));
+                acknowledged.set(id, JSON.stringify(stableSnapshot(saved)));
+                window.dispatchEvent(new Event('release-practice-history-refreshed'));
+              } else acknowledged.set(id, serialized);
             }
             if (expired) break;
           }
@@ -209,7 +224,7 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
           acknowledged.set(store.entry.storage+':'+remoteSession.id, JSON.stringify(stableSnapshot(remoteSession)));
           const index = store.snapshot.sessions.findIndex(s => s.id === remoteSession.id);
           if (index < 0) store.snapshot.sessions.push(row.state);
-          else store.snapshot.sessions[index] = mergeSession(store.snapshot.sessions[index], row.state);
+          else store.snapshot.sessions[index] = mergeSession(store.snapshot.sessions[index], row.state, store.entry.storage.startsWith('a13-release-'));
         }
         for (const store of stores) {
           try {

@@ -1,0 +1,6324 @@
+{
+  "id": "L18",
+  "title": "ร่างกาย อาการ และการเข้าใจคำแนะนำ",
+  "purpose": "บอกอาการ ขอให้ช่วยอธิบาย และบอกต่อคำแนะนำที่ได้รับ",
+  "prerequisites": [
+    "L01–L02: ich/Sie",
+    "L13: mir/Ihnen ใน Dativ",
+    "L11: Perfekt ในคำถามกล่าวอ้าง",
+    "L17: Modalverb + Infinitiv"
+  ],
+  "sequence": [
+    "รู้จักส่วนต่าง ๆ ของร่างกาย",
+    "บอกอาการด้วย tut/tun weh และ Ich habe",
+    "ขอให้คู่สนทนาพูดช้าหรือพูดซ้ำ",
+    "เข้าใจ Imperativ Sie และกริยาแยกส่วน",
+    "บอกต่อข้อความด้วย sollen โดยให้ผู้บอกและเนื้อหาชัดเจน"
+  ],
+  "vocabulary": [
+    {
+      "kind": "noun",
+      "headword": "die Brust",
+      "word": "Brust",
+      "article": "die",
+      "plural": "die Brüste",
+      "number": "singular",
+      "meaning": "หน้าอก",
+      "group": "ลำตัว",
+      "example": "Das ist eine Brust.",
+      "id": "L18-V001",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือหน้าอก",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Brust.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Rücken",
+      "word": "Rücken",
+      "article": "der",
+      "plural": "die Rücken",
+      "number": "singular",
+      "meaning": "หลัง",
+      "group": "ลำตัว",
+      "example": "Das ist ein Rücken.",
+      "id": "L18-V002",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือหลัง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Rücken.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Bauch",
+      "word": "Bauch",
+      "article": "der",
+      "plural": "die Bäuche",
+      "number": "singular",
+      "meaning": "ท้อง",
+      "group": "ลำตัว",
+      "example": "Das ist ein Bauch.",
+      "id": "L18-V003",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือท้อง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Bauch.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Arm",
+      "word": "Arm",
+      "article": "der",
+      "plural": "die Arme",
+      "number": "singular",
+      "meaning": "แขน",
+      "group": "แขนและมือ",
+      "example": "Das ist ein Arm.",
+      "id": "L18-V004",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือแขน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Arm.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Hand",
+      "word": "Hand",
+      "article": "die",
+      "plural": "die Hände",
+      "number": "singular",
+      "meaning": "มือ",
+      "group": "แขนและมือ",
+      "example": "Das ist eine Hand.",
+      "id": "L18-V005",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือมือ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Hand.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Finger",
+      "word": "Finger",
+      "article": "der",
+      "plural": "die Finger",
+      "number": "singular",
+      "meaning": "นิ้วมือ",
+      "group": "แขนและมือ",
+      "example": "Das ist ein Finger.",
+      "id": "L18-V006",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือนิ้วมือ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Finger.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Bein",
+      "word": "Bein",
+      "article": "das",
+      "plural": "die Beine",
+      "number": "singular",
+      "meaning": "ขา",
+      "group": "ขาและเท้า",
+      "example": "Das ist ein Bein.",
+      "id": "L18-V007",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือขา",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Bein.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Knie",
+      "word": "Knie",
+      "article": "das",
+      "plural": "die Knie",
+      "number": "singular",
+      "meaning": "เข่า",
+      "group": "ขาและเท้า",
+      "example": "Das ist ein Knie.",
+      "id": "L18-V008",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือเข่า",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Knie.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Fuß",
+      "word": "Fuß",
+      "article": "der",
+      "plural": "die Füße",
+      "number": "singular",
+      "meaning": "เท้า",
+      "group": "ขาและเท้า",
+      "example": "Das ist ein Fuß.",
+      "id": "L18-V009",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือเท้า",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Fuß.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Auge",
+      "word": "Auge",
+      "article": "das",
+      "plural": "die Augen",
+      "number": "singular",
+      "meaning": "ตา",
+      "group": "ศีรษะและใบหน้า",
+      "example": "Das ist ein Auge.",
+      "id": "L18-V010",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือตา",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Auge.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Hals",
+      "word": "Hals",
+      "article": "der",
+      "plural": "die Hälse",
+      "number": "singular",
+      "meaning": "คอ",
+      "group": "ศีรษะและใบหน้า",
+      "example": "Das ist ein Hals.",
+      "id": "L18-V011",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือคอ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Hals.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Mund",
+      "word": "Mund",
+      "article": "der",
+      "plural": "die Münder",
+      "number": "singular",
+      "meaning": "ปาก",
+      "group": "ศีรษะและใบหน้า",
+      "example": "Das ist ein Mund.",
+      "id": "L18-V012",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือปาก",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Mund.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Kopf",
+      "word": "Kopf",
+      "article": "der",
+      "plural": "die Köpfe",
+      "number": "singular",
+      "meaning": "ศีรษะ",
+      "group": "ศีรษะและใบหน้า",
+      "example": "Das ist ein Kopf.",
+      "id": "L18-V013",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือศีรษะ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Kopf.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Nase",
+      "word": "Nase",
+      "article": "die",
+      "plural": "die Nasen",
+      "number": "singular",
+      "meaning": "จมูก",
+      "group": "ศีรษะและใบหน้า",
+      "example": "Das ist eine Nase.",
+      "id": "L18-V014",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือจมูก",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Nase.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Ohr",
+      "word": "Ohr",
+      "article": "das",
+      "plural": "die Ohren",
+      "number": "singular",
+      "meaning": "หู",
+      "group": "ศีรษะและใบหน้า",
+      "example": "Das ist ein Ohr.",
+      "id": "L18-V015",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือหู",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Ohr.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Kopfschmerzen",
+      "word": "Kopfschmerzen",
+      "article": "die",
+      "plural": "die Kopfschmerzen",
+      "number": "plural",
+      "meaning": "อาการปวดศีรษะ",
+      "group": "อาการปวด",
+      "example": "Ich habe Kopfschmerzen.",
+      "id": "L18-V016",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีอาการปวดศีรษะ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Kopfschmerzen.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Rückenschmerzen",
+      "word": "Rückenschmerzen",
+      "article": "die",
+      "plural": "die Rückenschmerzen",
+      "number": "plural",
+      "meaning": "อาการปวดหลัง",
+      "group": "อาการปวด",
+      "example": "Ich habe Rückenschmerzen.",
+      "id": "L18-V017",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีอาการปวดหลัง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Rückenschmerzen.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Halsschmerzen",
+      "word": "Halsschmerzen",
+      "article": "die",
+      "plural": "die Halsschmerzen",
+      "number": "plural",
+      "meaning": "อาการเจ็บคอ",
+      "group": "อาการปวด",
+      "example": "Ich habe Halsschmerzen.",
+      "id": "L18-V018",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีอาการเจ็บคอ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Halsschmerzen.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Ohrenschmerzen",
+      "word": "Ohrenschmerzen",
+      "article": "die",
+      "plural": "die Ohrenschmerzen",
+      "number": "plural",
+      "meaning": "อาการปวดหู",
+      "group": "อาการปวด",
+      "example": "Ich habe Ohrenschmerzen.",
+      "id": "L18-V019",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีอาการปวดหู",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Ohrenschmerzen.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Bauchschmerzen",
+      "word": "Bauchschmerzen",
+      "article": "die",
+      "plural": "die Bauchschmerzen",
+      "number": "plural",
+      "meaning": "อาการปวดท้อง",
+      "group": "อาการปวด",
+      "example": "Ich habe Bauchschmerzen.",
+      "id": "L18-V020",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีอาการปวดท้อง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Bauchschmerzen.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Schnupfen",
+      "word": "Schnupfen",
+      "article": "der",
+      "plural": null,
+      "number": "singular",
+      "meaning": "อาการน้ำมูกไหลหรือคัดจมูก",
+      "group": "อาการอื่น",
+      "example": "Ich habe Schnupfen.",
+      "id": "L18-V021",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีอาการน้ำมูกไหลหรือคัดจมูก",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Schnupfen.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Husten",
+      "word": "Husten",
+      "article": "der",
+      "plural": null,
+      "number": "singular",
+      "meaning": "อาการไอ",
+      "group": "อาการอื่น",
+      "example": "Ich habe Husten.",
+      "id": "L18-V022",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีอาการไอ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Husten.",
+            "role": "other",
+            "label": "อาการที่มี (กรรม)"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Fieber",
+      "word": "Fieber",
+      "article": "das",
+      "plural": null,
+      "number": "singular",
+      "meaning": "ไข้",
+      "group": "อาการอื่น",
+      "example": "Ich habe Fieber.",
+      "id": "L18-V023",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีไข้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Fieber.",
+            "role": "other",
+            "label": "อาการที่ถาม (กรรม)"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Tablette",
+      "word": "Tablette",
+      "article": "die",
+      "plural": "die Tabletten",
+      "number": "singular",
+      "meaning": "ยาเม็ด",
+      "group": "สิ่งของในสถานการณ์",
+      "example": "Hier ist eine Tablette.",
+      "id": "L18-V024",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "นี่คือยาเม็ด",
+      "exampleSentences": [
+        [
+          {
+            "text": "Hier",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Tablette.",
+            "role": "subject",
+            "label": "ประธาน"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Medikament",
+      "word": "Medikament",
+      "article": "das",
+      "plural": "die Medikamente",
+      "number": "singular",
+      "meaning": "ยา",
+      "group": "สิ่งของในสถานการณ์",
+      "example": "Hier ist ein Medikament.",
+      "id": "L18-V025",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "นี่คือยา",
+      "exampleSentences": [
+        [
+          {
+            "text": "Hier",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Medikament.",
+            "role": "subject",
+            "label": "ประธาน"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Salbe",
+      "word": "Salbe",
+      "article": "die",
+      "plural": "die Salben",
+      "number": "singular",
+      "meaning": "ยาทาหรือขี้ผึ้ง",
+      "group": "สิ่งของในสถานการณ์",
+      "example": "Hier ist eine Salbe.",
+      "id": "L18-V026",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "นี่คือยาทาหรือขี้ผึ้ง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Hier",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Salbe.",
+            "role": "subject",
+            "label": "ประธาน"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Hustensaft",
+      "word": "Hustensaft",
+      "article": "der",
+      "plural": "die Hustensäfte",
+      "number": "singular",
+      "meaning": "ยาแก้ไอชนิดน้ำ",
+      "group": "สิ่งของในสถานการณ์",
+      "example": "Das ist Hustensaft.",
+      "id": "L18-V027",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "นี่คือยาแก้ไอชนิดน้ำ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Hustensaft.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "L18-imperativ-sie",
+      "title": "เข้าใจและใช้คำขอสุภาพแบบ Sie",
+      "purpose": "บอกหรือขอให้คู่สนทนาทำบางอย่างอย่างสุภาพ",
+      "notes": [
+        "วางกริยาขึ้นต้น แล้วตามด้วย Sie; bitte ช่วยให้เป็นคำขอสุภาพ",
+        "กริยาแยกส่วน เช่น aufstehen: Stehen Sie bitte auf. ส่วน auf อยู่ท้าย",
+        "Sie ในคำขอนี้เป็นรูปสุภาพและเขียนตัว S ใหญ่",
+        "อ่านว่าคู่สนทนาต้องการให้ทำอะไร แล้วใช้รูปกริยาสำหรับ Sie"
+      ],
+      "table": [
+        [
+          "Infinitiv",
+          "คำขอสุภาพ"
+        ],
+        [
+          "sprechen",
+          "Sprechen Sie bitte langsam."
+        ],
+        [
+          "warten",
+          "Warten Sie bitte kurz."
+        ],
+        [
+          "aufstehen",
+          "Stehen Sie bitte auf."
+        ]
+      ],
+      "models": [
+        {
+          "text": "Sprechen Sie bitte langsam.",
+          "sentences": [
+            [
+              {
+                "text": "Sprechen",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "Sie",
+                "role": "subject",
+                "label": "ประธาน"
+              },
+              {
+                "text": "bitte",
+                "role": "other",
+                "label": "คำแสดงความสุภาพ"
+              },
+              {
+                "text": "langsam.",
+                "role": "other",
+                "label": "ลักษณะการพูด"
+              }
+            ]
+          ],
+          "meaning": "กรุณาพูดช้า ๆ"
+        },
+        {
+          "text": "Stehen Sie bitte auf.",
+          "sentences": [
+            [
+              {
+                "text": "Stehen",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "Sie",
+                "role": "subject",
+                "label": "ประธาน"
+              },
+              {
+                "text": "bitte",
+                "role": "other",
+                "label": "คำแสดงความสุภาพ"
+              },
+              {
+                "text": "auf.",
+                "role": "verb",
+                "label": "ส่วนแยกของกริยา",
+                "position": "ท้ายประโยค"
+              }
+            ]
+          ],
+          "meaning": "กรุณาลุกขึ้น"
+        }
+      ],
+      "questionIds": [
+        "A13-L18-IMPERATIV-SIE-001-PREP3",
+        "A13-L18-IMPERATIV-SIE-002-PREP3",
+        "A13-L18-IMPERATIV-SIE-003-PREP3",
+        "A13-L18-IMPERATIV-SIE-004-PREP3",
+        "A13-L18-IMPERATIV-SIE-005-PREP3"
+      ]
+    },
+    {
+      "id": "L18-sollen",
+      "title": "บอกต่อสิ่งที่ผู้อื่นบอกให้ทำด้วย sollen",
+      "purpose": "รายงานคำบอกหรือคำแนะนำจากผู้พูดในสถานการณ์",
+      "notes": [
+        "ให้รู้ว่าใครเป็นผู้บอกและบอกอะไร ก่อนให้ตอบว่า ich soll …",
+        "ประโยคบอกเล่า: soll / sollen อยู่ตำแหน่ง 2; Infinitiv อยู่ท้าย",
+        "เปรียบเทียบ Sie machen … กับ Machen Sie … และ Ich soll … โดยไม่รวมเป็นกฎตำแหน่งเดียว",
+        "ตอบตามคำบอกของผู้พูดในสถานการณ์ที่ให้"
+      ],
+      "table": [
+        [
+          "ประธาน",
+          "รูป sollen"
+        ],
+        [
+          "ich",
+          "soll"
+        ],
+        [
+          "du",
+          "sollst"
+        ],
+        [
+          "er / sie / es",
+          "soll"
+        ],
+        [
+          "wir",
+          "sollen"
+        ],
+        [
+          "ihr",
+          "sollt"
+        ],
+        [
+          "sie / Sie",
+          "sollen"
+        ]
+      ],
+      "models": [
+        {
+          "text": "Ich soll diese Übung machen.",
+          "sentences": [
+            [
+              {
+                "text": "Ich",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "soll",
+                "role": "auxiliary",
+                "label": "กริยาช่วย (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "diese Übung",
+                "role": "other",
+                "label": "กรรม (Akkusativ)"
+              },
+              {
+                "text": "machen.",
+                "role": "verb",
+                "label": "กริยาหลัก · Infinitiv",
+                "position": "ท้ายประโยค"
+              }
+            ]
+          ],
+          "meaning": "ฉันได้รับคำบอกให้ทำแบบฝึกนี้"
+        },
+        {
+          "text": "Soll ich morgen kommen?",
+          "sentences": [
+            [
+              {
+                "text": "Soll",
+                "role": "auxiliary",
+                "label": "กริยาช่วย (ผันแล้ว)",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "ich",
+                "role": "subject",
+                "label": "ประธาน"
+              },
+              {
+                "text": "morgen",
+                "role": "time",
+                "label": "เวลา / ลำดับ"
+              },
+              {
+                "text": "kommen?",
+                "role": "verb",
+                "label": "กริยาหลัก · Infinitiv",
+                "position": "ท้ายประโยค"
+              }
+            ]
+          ],
+          "meaning": "ฉันต้องมาพรุ่งนี้ตามที่บอกใช่ไหม"
+        }
+      ],
+      "questionIds": [
+        "A13-L18-SOLLEN-001-PREP3",
+        "A13-L18-SOLLEN-002-PREP3",
+        "A13-L18-SOLLEN-003-PREP3",
+        "A13-L18-SOLLEN-004-PREP3",
+        "A13-L18-SOLLEN-005-PREP3"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "บอกอาการ",
+      "purpose": "บอกอาการปวดส่วนใด",
+      "context": [
+        [
+          "อาการของ B",
+          "ปวดหลัง"
+        ]
+      ],
+      "question": "Was tut Ihnen weh?",
+      "questionMeaning": "คุณเจ็บตรงไหน",
+      "reply": "Mein Rücken tut weh.",
+      "replyMeaning": "ฉันปวดหลัง",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "tut",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Ihnen",
+            "role": "other",
+            "label": "ผู้ที่มีอาการ (Dativ)"
+          },
+          {
+            "text": "weh?",
+            "role": "verb",
+            "label": "ส่วนแยกของกริยา",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Mein Rücken",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "tut",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "weh.",
+            "role": "verb",
+            "label": "ส่วนแยกของกริยา",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L18-D01",
+      "questionTargetId": "L18-R001",
+      "replyTargetId": "L18-R002",
+      "requiredItemIds": [
+        "L18-R001",
+        "L18-R002"
+      ],
+      "trialIds": [
+        "L18-D01-A-try-v1",
+        "L18-D01-B-try-v1"
+      ]
+    },
+    {
+      "group": "บอกอาการ",
+      "purpose": "แยกอาการที่มีและไม่มี",
+      "context": [
+        [
+          "อาการของ B",
+          "ไอ แต่ไม่มีไข้"
+        ]
+      ],
+      "question": "Haben Sie Fieber?",
+      "questionMeaning": "คุณมีไข้ไหม",
+      "reply": "Nein, ich habe Husten.",
+      "replyMeaning": "ไม่มี ฉันมีอาการไอ",
+      "questionSentences": [
+        [
+          {
+            "text": "Haben",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "Fieber?",
+            "role": "other",
+            "label": "อาการที่ถาม (กรรม)"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Nein,",
+            "role": "other",
+            "label": "ปฏิเสธ"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Husten.",
+            "role": "other",
+            "label": "อาการที่มี (กรรม)"
+          }
+        ]
+      ],
+      "id": "L18-D02",
+      "questionTargetId": "L18-R003",
+      "replyTargetId": "L18-R004",
+      "requiredItemIds": [
+        "L18-R003",
+        "L18-R004"
+      ],
+      "trialIds": [
+        "L18-D02-A-try-v1",
+        "L18-D02-B-try-v1"
+      ]
+    },
+    {
+      "group": "ขอให้ช่วยอธิบาย",
+      "purpose": "ถามว่าต้องทำอะไรตามข้อความ",
+      "context": [
+        [
+          "ข้อความของผู้ให้คำแนะนำ",
+          "บอกให้พักสักครู่"
+        ]
+      ],
+      "question": "Was soll ich machen?",
+      "questionMeaning": "ฉันควรทำอะไรตามที่บอก",
+      "reply": "Machen Sie bitte eine Pause.",
+      "replyMeaning": "กรุณาพักสักครู่",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "soll",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "machen?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Machen",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "bitte",
+            "role": "other",
+            "label": "คำแสดงความสุภาพ"
+          },
+          {
+            "text": "eine Pause.",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          }
+        ]
+      ],
+      "id": "L18-D03",
+      "questionTargetId": "L18-R005",
+      "replyTargetId": "L18-R006",
+      "requiredItemIds": [
+        "L18-R005",
+        "L18-R006"
+      ],
+      "trialIds": [
+        "L18-D03-A-try-v1",
+        "L18-D03-B-try-v1"
+      ]
+    },
+    {
+      "group": "ขอให้ช่วยอธิบาย",
+      "purpose": "ขอให้คู่สนทนาพูดซ้ำ",
+      "context": [
+        [
+          "เหตุการณ์",
+          "B ยินดีพูดซ้ำ"
+        ]
+      ],
+      "question": "Können Sie das bitte wiederholen?",
+      "questionMeaning": "กรุณาพูดซ้ำได้ไหม",
+      "reply": "Ja, natürlich.",
+      "replyMeaning": "ได้ แน่นอน",
+      "questionSentences": [
+        [
+          {
+            "text": "Können",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "das",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "bitte",
+            "role": "other",
+            "label": "คำแสดงความสุภาพ"
+          },
+          {
+            "text": "wiederholen?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ja, natürlich.",
+            "role": "other",
+            "label": "ตอบรับอย่างยินดี"
+          }
+        ]
+      ],
+      "id": "L18-D04",
+      "questionTargetId": "L18-R007",
+      "replyTargetId": "L18-R008",
+      "requiredItemIds": [
+        "L18-R007",
+        "L18-R008"
+      ],
+      "trialIds": [
+        "L18-D04-A-try-v1",
+        "L18-D04-B-try-v1"
+      ]
+    },
+    {
+      "group": "เข้าใจคำขอสุภาพ",
+      "purpose": "ขอให้พูดช้าลง",
+      "context": [
+        [
+          "สิ่งที่ B ขอ",
+          "ให้ A พูดช้าลง"
+        ]
+      ],
+      "question": "Spreche ich zu schnell?",
+      "questionMeaning": "ฉันพูดเร็วเกินไปไหม",
+      "reply": "Sprechen Sie bitte langsam.",
+      "replyMeaning": "กรุณาพูดช้า ๆ",
+      "questionSentences": [
+        [
+          {
+            "text": "Spreche",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "zu schnell?",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Sprechen",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "bitte",
+            "role": "other",
+            "label": "คำแสดงความสุภาพ"
+          },
+          {
+            "text": "langsam.",
+            "role": "other",
+            "label": "ลักษณะการพูด"
+          }
+        ]
+      ],
+      "id": "L18-D05",
+      "questionTargetId": "L18-R009",
+      "replyTargetId": "L18-R010",
+      "requiredItemIds": [
+        "L18-R009",
+        "L18-R010"
+      ],
+      "trialIds": [
+        "L18-D05-A-try-v1",
+        "L18-D05-B-try-v1"
+      ]
+    },
+    {
+      "group": "เข้าใจคำขอสุภาพ",
+      "purpose": "ยืนยันเวลาที่ให้มาตามบทสนทนา",
+      "context": [
+        [
+          "ข้อความนัดหมาย",
+          "ให้มาพรุ่งนี้ 10:00"
+        ]
+      ],
+      "question": "Soll ich morgen kommen?",
+      "questionMeaning": "ฉันต้องมาพรุ่งนี้ตามที่บอกใช่ไหม",
+      "reply": "Ja, kommen Sie morgen um zehn Uhr.",
+      "replyMeaning": "ใช่ กรุณามาพรุ่งนี้สิบโมง",
+      "questionSentences": [
+        [
+          {
+            "text": "Soll",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "morgen",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          },
+          {
+            "text": "kommen?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ja,",
+            "role": "other",
+            "label": "ตอบรับ"
+          },
+          {
+            "text": "kommen",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "morgen um zehn Uhr.",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          }
+        ]
+      ],
+      "id": "L18-D06",
+      "questionTargetId": "L18-R011",
+      "replyTargetId": "L18-R012",
+      "requiredItemIds": [
+        "L18-R011",
+        "L18-R012"
+      ],
+      "trialIds": [
+        "L18-D06-A-try-v1",
+        "L18-D06-B-try-v1"
+      ]
+    },
+    {
+      "group": "บอกต่อคำแนะนำ",
+      "purpose": "รายงานสิ่งที่แพทย์ในเรื่องบอก",
+      "context": [
+        [
+          "คำบอกของแพทย์ในบทสนทนา",
+          "ให้ทำแบบฝึกนี้"
+        ]
+      ],
+      "question": "Was hat die Ärztin gesagt?",
+      "questionMeaning": "แพทย์หญิงบอกว่าอย่างไร",
+      "reply": "Ich soll diese Übung machen.",
+      "replyMeaning": "เธอบอกให้ฉันทำแบบฝึกนี้",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "hat",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "die Ärztin",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "gesagt?",
+            "role": "participle",
+            "label": "กริยาหลัก · Partizip II",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "soll",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "diese Übung",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          },
+          {
+            "text": "machen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L18-D07",
+      "questionTargetId": "L18-R013",
+      "replyTargetId": "L18-R014",
+      "requiredItemIds": [
+        "L18-R013",
+        "L18-R014"
+      ],
+      "trialIds": [
+        "L18-D07-A-try-v1",
+        "L18-D07-B-try-v1"
+      ]
+    },
+    {
+      "group": "บอกต่อคำแนะนำ",
+      "purpose": "บอกว่าคำแนะนำมาจากใคร",
+      "context": [
+        [
+          "ผู้บอกให้ทำ",
+          "แพทย์ชายของ B"
+        ]
+      ],
+      "question": "Wer sagt das?",
+      "questionMeaning": "ใครเป็นคนบอกอย่างนั้น",
+      "reply": "Mein Arzt sagt das.",
+      "replyMeaning": "แพทย์ของฉันเป็นคนบอก",
+      "questionSentences": [
+        [
+          {
+            "text": "Wer",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "sagt",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "das?",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Mein Arzt",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "sagt",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "das.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "id": "L18-D08",
+      "questionTargetId": "L18-R015",
+      "replyTargetId": "L18-R016",
+      "requiredItemIds": [
+        "L18-R015",
+        "L18-R016"
+      ],
+      "trialIds": [
+        "L18-D08-A-try-v1",
+        "L18-D08-B-try-v1"
+      ]
+    }
+  ],
+  "practiceCandidates": [
+    {
+      "id": "L18-V001-meaning-v1",
+      "targetId": "L18-V001",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V001"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Brust",
+        "options": [
+          "หลัง",
+          "หน้าอก",
+          "ท้อง"
+        ]
+      },
+      "grading": {
+        "answer": "หน้าอก"
+      },
+      "contextId": "L18-V001-definition"
+    },
+    {
+      "id": "L18-V001-article-v1",
+      "targetId": "L18-V001",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V001"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Brust",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V001-lemma"
+    },
+    {
+      "id": "L18-V001-spelling-v1",
+      "targetId": "L18-V001",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V001"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "หน้าอก",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Brust",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V001-recall"
+    },
+    {
+      "id": "L18-V002-meaning-v1",
+      "targetId": "L18-V002",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V002"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Rücken",
+        "options": [
+          "หน้าอก",
+          "หลัง",
+          "ท้อง"
+        ]
+      },
+      "grading": {
+        "answer": "หลัง"
+      },
+      "contextId": "L18-V002-definition"
+    },
+    {
+      "id": "L18-V002-article-v1",
+      "targetId": "L18-V002",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V002"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Rücken",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V002-lemma"
+    },
+    {
+      "id": "L18-V002-spelling-v1",
+      "targetId": "L18-V002",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V002"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "หลัง",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Rücken",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V002-recall"
+    },
+    {
+      "id": "L18-V003-meaning-v1",
+      "targetId": "L18-V003",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V003"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Bauch",
+        "options": [
+          "หน้าอก",
+          "ท้อง",
+          "หลัง"
+        ]
+      },
+      "grading": {
+        "answer": "ท้อง"
+      },
+      "contextId": "L18-V003-definition"
+    },
+    {
+      "id": "L18-V003-article-v1",
+      "targetId": "L18-V003",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V003"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Bauch",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V003-lemma"
+    },
+    {
+      "id": "L18-V003-spelling-v1",
+      "targetId": "L18-V003",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V003"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ท้อง",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Bauch",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V003-recall"
+    },
+    {
+      "id": "L18-V004-meaning-v1",
+      "targetId": "L18-V004",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V004"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Arm",
+        "options": [
+          "มือ",
+          "แขน",
+          "นิ้วมือ"
+        ]
+      },
+      "grading": {
+        "answer": "แขน"
+      },
+      "contextId": "L18-V004-definition"
+    },
+    {
+      "id": "L18-V004-article-v1",
+      "targetId": "L18-V004",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V004"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Arm",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V004-lemma"
+    },
+    {
+      "id": "L18-V004-spelling-v1",
+      "targetId": "L18-V004",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V004"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "แขน",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Arm",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V004-recall"
+    },
+    {
+      "id": "L18-V005-meaning-v1",
+      "targetId": "L18-V005",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V005"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Hand",
+        "options": [
+          "แขน",
+          "มือ",
+          "นิ้วมือ"
+        ]
+      },
+      "grading": {
+        "answer": "มือ"
+      },
+      "contextId": "L18-V005-definition"
+    },
+    {
+      "id": "L18-V005-article-v1",
+      "targetId": "L18-V005",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V005"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Hand",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V005-lemma"
+    },
+    {
+      "id": "L18-V005-spelling-v1",
+      "targetId": "L18-V005",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V005"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "มือ",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Hand",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V005-recall"
+    },
+    {
+      "id": "L18-V006-meaning-v1",
+      "targetId": "L18-V006",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V006"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Finger",
+        "options": [
+          "แขน",
+          "นิ้วมือ",
+          "มือ"
+        ]
+      },
+      "grading": {
+        "answer": "นิ้วมือ"
+      },
+      "contextId": "L18-V006-definition"
+    },
+    {
+      "id": "L18-V006-article-v1",
+      "targetId": "L18-V006",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V006"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Finger",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V006-lemma"
+    },
+    {
+      "id": "L18-V006-spelling-v1",
+      "targetId": "L18-V006",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V006"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "นิ้วมือ",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Finger",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V006-recall"
+    },
+    {
+      "id": "L18-V007-meaning-v1",
+      "targetId": "L18-V007",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V007"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Bein",
+        "options": [
+          "เข่า",
+          "ขา",
+          "เท้า"
+        ]
+      },
+      "grading": {
+        "answer": "ขา"
+      },
+      "contextId": "L18-V007-definition"
+    },
+    {
+      "id": "L18-V007-article-v1",
+      "targetId": "L18-V007",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V007"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Bein",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L18-V007-lemma"
+    },
+    {
+      "id": "L18-V007-spelling-v1",
+      "targetId": "L18-V007",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V007"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ขา",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Bein",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V007-recall"
+    },
+    {
+      "id": "L18-V008-meaning-v1",
+      "targetId": "L18-V008",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V008"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Knie",
+        "options": [
+          "ขา",
+          "เข่า",
+          "เท้า"
+        ]
+      },
+      "grading": {
+        "answer": "เข่า"
+      },
+      "contextId": "L18-V008-definition"
+    },
+    {
+      "id": "L18-V008-article-v1",
+      "targetId": "L18-V008",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V008"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Knie",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L18-V008-lemma"
+    },
+    {
+      "id": "L18-V008-spelling-v1",
+      "targetId": "L18-V008",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V008"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เข่า",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Knie",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V008-recall"
+    },
+    {
+      "id": "L18-V009-meaning-v1",
+      "targetId": "L18-V009",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V009"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Fuß",
+        "options": [
+          "ขา",
+          "เท้า",
+          "เข่า"
+        ]
+      },
+      "grading": {
+        "answer": "เท้า"
+      },
+      "contextId": "L18-V009-definition"
+    },
+    {
+      "id": "L18-V009-article-v1",
+      "targetId": "L18-V009",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V009"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Fuß",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V009-lemma"
+    },
+    {
+      "id": "L18-V009-spelling-v1",
+      "targetId": "L18-V009",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V009"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เท้า",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Fuß",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V009-recall"
+    },
+    {
+      "id": "L18-V010-meaning-v1",
+      "targetId": "L18-V010",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V010"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Auge",
+        "options": [
+          "คอ",
+          "ตา",
+          "ปาก"
+        ]
+      },
+      "grading": {
+        "answer": "ตา"
+      },
+      "contextId": "L18-V010-definition"
+    },
+    {
+      "id": "L18-V010-article-v1",
+      "targetId": "L18-V010",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V010"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Auge",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L18-V010-lemma"
+    },
+    {
+      "id": "L18-V010-spelling-v1",
+      "targetId": "L18-V010",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V010"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ตา",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Auge",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V010-recall"
+    },
+    {
+      "id": "L18-V011-meaning-v1",
+      "targetId": "L18-V011",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V011"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Hals",
+        "options": [
+          "ตา",
+          "คอ",
+          "ปาก"
+        ]
+      },
+      "grading": {
+        "answer": "คอ"
+      },
+      "contextId": "L18-V011-definition"
+    },
+    {
+      "id": "L18-V011-article-v1",
+      "targetId": "L18-V011",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V011"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Hals",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V011-lemma"
+    },
+    {
+      "id": "L18-V011-spelling-v1",
+      "targetId": "L18-V011",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V011"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "คอ",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Hals",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V011-recall"
+    },
+    {
+      "id": "L18-V012-meaning-v1",
+      "targetId": "L18-V012",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V012"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Mund",
+        "options": [
+          "ตา",
+          "ปาก",
+          "คอ"
+        ]
+      },
+      "grading": {
+        "answer": "ปาก"
+      },
+      "contextId": "L18-V012-definition"
+    },
+    {
+      "id": "L18-V012-article-v1",
+      "targetId": "L18-V012",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V012"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Mund",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V012-lemma"
+    },
+    {
+      "id": "L18-V012-spelling-v1",
+      "targetId": "L18-V012",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V012"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ปาก",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Mund",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V012-recall"
+    },
+    {
+      "id": "L18-V013-meaning-v1",
+      "targetId": "L18-V013",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V013"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Kopf",
+        "options": [
+          "ตา",
+          "ศีรษะ",
+          "คอ"
+        ]
+      },
+      "grading": {
+        "answer": "ศีรษะ"
+      },
+      "contextId": "L18-V013-definition"
+    },
+    {
+      "id": "L18-V013-article-v1",
+      "targetId": "L18-V013",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V013"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Kopf",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V013-lemma"
+    },
+    {
+      "id": "L18-V013-spelling-v1",
+      "targetId": "L18-V013",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V013"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ศีรษะ",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Kopf",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V013-recall"
+    },
+    {
+      "id": "L18-V014-meaning-v1",
+      "targetId": "L18-V014",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V014"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Nase",
+        "options": [
+          "ตา",
+          "จมูก",
+          "คอ"
+        ]
+      },
+      "grading": {
+        "answer": "จมูก"
+      },
+      "contextId": "L18-V014-definition"
+    },
+    {
+      "id": "L18-V014-article-v1",
+      "targetId": "L18-V014",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V014"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Nase",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V014-lemma"
+    },
+    {
+      "id": "L18-V014-spelling-v1",
+      "targetId": "L18-V014",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V014"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "จมูก",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Nase",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V014-recall"
+    },
+    {
+      "id": "L18-V015-meaning-v1",
+      "targetId": "L18-V015",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V015"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Ohr",
+        "options": [
+          "ตา",
+          "หู",
+          "คอ"
+        ]
+      },
+      "grading": {
+        "answer": "หู"
+      },
+      "contextId": "L18-V015-definition"
+    },
+    {
+      "id": "L18-V015-article-v1",
+      "targetId": "L18-V015",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V015"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Ohr",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L18-V015-lemma"
+    },
+    {
+      "id": "L18-V015-spelling-v1",
+      "targetId": "L18-V015",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V015"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "หู",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Ohr",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V015-recall"
+    },
+    {
+      "id": "L18-V016-meaning-v1",
+      "targetId": "L18-V016",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V016"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Kopfschmerzen",
+        "options": [
+          "อาการปวดหลัง",
+          "อาการปวดศีรษะ",
+          "อาการเจ็บคอ"
+        ]
+      },
+      "grading": {
+        "answer": "อาการปวดศีรษะ"
+      },
+      "contextId": "L18-V016-definition"
+    },
+    {
+      "id": "L18-V016-article-v1",
+      "targetId": "L18-V016",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V016"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Kopfschmerzen",
+        "number": "plural",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V016-lemma"
+    },
+    {
+      "id": "L18-V016-spelling-v1",
+      "targetId": "L18-V016",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V016"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "อาการปวดศีรษะ",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Kopfschmerzen",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V016-recall"
+    },
+    {
+      "id": "L18-V017-meaning-v1",
+      "targetId": "L18-V017",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V017"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Rückenschmerzen",
+        "options": [
+          "อาการปวดศีรษะ",
+          "อาการปวดหลัง",
+          "อาการเจ็บคอ"
+        ]
+      },
+      "grading": {
+        "answer": "อาการปวดหลัง"
+      },
+      "contextId": "L18-V017-definition"
+    },
+    {
+      "id": "L18-V017-article-v1",
+      "targetId": "L18-V017",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V017"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Rückenschmerzen",
+        "number": "plural",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V017-lemma"
+    },
+    {
+      "id": "L18-V017-spelling-v1",
+      "targetId": "L18-V017",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V017"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "อาการปวดหลัง",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Rückenschmerzen",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V017-recall"
+    },
+    {
+      "id": "L18-V018-meaning-v1",
+      "targetId": "L18-V018",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V018"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Halsschmerzen",
+        "options": [
+          "อาการปวดศีรษะ",
+          "อาการเจ็บคอ",
+          "อาการปวดหลัง"
+        ]
+      },
+      "grading": {
+        "answer": "อาการเจ็บคอ"
+      },
+      "contextId": "L18-V018-definition"
+    },
+    {
+      "id": "L18-V018-article-v1",
+      "targetId": "L18-V018",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V018"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Halsschmerzen",
+        "number": "plural",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V018-lemma"
+    },
+    {
+      "id": "L18-V018-spelling-v1",
+      "targetId": "L18-V018",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V018"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "อาการเจ็บคอ",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Halsschmerzen",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V018-recall"
+    },
+    {
+      "id": "L18-V019-meaning-v1",
+      "targetId": "L18-V019",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V019"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Ohrenschmerzen",
+        "options": [
+          "อาการปวดศีรษะ",
+          "อาการปวดหู",
+          "อาการปวดหลัง"
+        ]
+      },
+      "grading": {
+        "answer": "อาการปวดหู"
+      },
+      "contextId": "L18-V019-definition"
+    },
+    {
+      "id": "L18-V019-article-v1",
+      "targetId": "L18-V019",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V019"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Ohrenschmerzen",
+        "number": "plural",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V019-lemma"
+    },
+    {
+      "id": "L18-V019-spelling-v1",
+      "targetId": "L18-V019",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V019"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "อาการปวดหู",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Ohrenschmerzen",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V019-recall"
+    },
+    {
+      "id": "L18-V020-meaning-v1",
+      "targetId": "L18-V020",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V020"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Bauchschmerzen",
+        "options": [
+          "อาการปวดศีรษะ",
+          "อาการปวดท้อง",
+          "อาการปวดหลัง"
+        ]
+      },
+      "grading": {
+        "answer": "อาการปวดท้อง"
+      },
+      "contextId": "L18-V020-definition"
+    },
+    {
+      "id": "L18-V020-article-v1",
+      "targetId": "L18-V020",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V020"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Bauchschmerzen",
+        "number": "plural",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V020-lemma"
+    },
+    {
+      "id": "L18-V020-spelling-v1",
+      "targetId": "L18-V020",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V020"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "อาการปวดท้อง",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Bauchschmerzen",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V020-recall"
+    },
+    {
+      "id": "L18-V021-meaning-v1",
+      "targetId": "L18-V021",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V021"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Schnupfen",
+        "options": [
+          "อาการไอ",
+          "อาการน้ำมูกไหลหรือคัดจมูก",
+          "ไข้"
+        ]
+      },
+      "grading": {
+        "answer": "อาการน้ำมูกไหลหรือคัดจมูก"
+      },
+      "contextId": "L18-V021-definition"
+    },
+    {
+      "id": "L18-V021-article-v1",
+      "targetId": "L18-V021",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V021"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Schnupfen",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V021-lemma"
+    },
+    {
+      "id": "L18-V021-spelling-v1",
+      "targetId": "L18-V021",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V021"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "อาการน้ำมูกไหลหรือคัดจมูก",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Schnupfen",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V021-recall"
+    },
+    {
+      "id": "L18-V022-meaning-v1",
+      "targetId": "L18-V022",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V022"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Husten",
+        "options": [
+          "อาการน้ำมูกไหลหรือคัดจมูก",
+          "อาการไอ",
+          "ไข้"
+        ]
+      },
+      "grading": {
+        "answer": "อาการไอ"
+      },
+      "contextId": "L18-V022-definition"
+    },
+    {
+      "id": "L18-V022-article-v1",
+      "targetId": "L18-V022",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V022"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Husten",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V022-lemma"
+    },
+    {
+      "id": "L18-V022-spelling-v1",
+      "targetId": "L18-V022",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V022"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "อาการไอ",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Husten",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V022-recall"
+    },
+    {
+      "id": "L18-V023-meaning-v1",
+      "targetId": "L18-V023",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V023"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Fieber",
+        "options": [
+          "อาการน้ำมูกไหลหรือคัดจมูก",
+          "ไข้",
+          "อาการไอ"
+        ]
+      },
+      "grading": {
+        "answer": "ไข้"
+      },
+      "contextId": "L18-V023-definition"
+    },
+    {
+      "id": "L18-V023-article-v1",
+      "targetId": "L18-V023",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V023"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Fieber",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L18-V023-lemma"
+    },
+    {
+      "id": "L18-V023-spelling-v1",
+      "targetId": "L18-V023",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V023"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ไข้",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Fieber",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V023-recall"
+    },
+    {
+      "id": "L18-V024-meaning-v1",
+      "targetId": "L18-V024",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V024"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Tablette",
+        "options": [
+          "หน้าอก",
+          "ยาเม็ด",
+          "หลัง"
+        ]
+      },
+      "grading": {
+        "answer": "ยาเม็ด"
+      },
+      "contextId": "L18-V024-definition"
+    },
+    {
+      "id": "L18-V024-article-v1",
+      "targetId": "L18-V024",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V024"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Tablette",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V024-lemma"
+    },
+    {
+      "id": "L18-V024-spelling-v1",
+      "targetId": "L18-V024",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V024"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ยาเม็ด",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Tablette",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V024-recall"
+    },
+    {
+      "id": "L18-V025-meaning-v1",
+      "targetId": "L18-V025",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V025"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Medikament",
+        "options": [
+          "หน้าอก",
+          "ยา",
+          "หลัง"
+        ]
+      },
+      "grading": {
+        "answer": "ยา"
+      },
+      "contextId": "L18-V025-definition"
+    },
+    {
+      "id": "L18-V025-article-v1",
+      "targetId": "L18-V025",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V025"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Medikament",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L18-V025-lemma"
+    },
+    {
+      "id": "L18-V025-spelling-v1",
+      "targetId": "L18-V025",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V025"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ยา",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Medikament",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V025-recall"
+    },
+    {
+      "id": "L18-V026-meaning-v1",
+      "targetId": "L18-V026",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V026"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Salbe",
+        "options": [
+          "หน้าอก",
+          "ยาทาหรือขี้ผึ้ง",
+          "หลัง"
+        ]
+      },
+      "grading": {
+        "answer": "ยาทาหรือขี้ผึ้ง"
+      },
+      "contextId": "L18-V026-definition"
+    },
+    {
+      "id": "L18-V026-article-v1",
+      "targetId": "L18-V026",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V026"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Salbe",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L18-V026-lemma"
+    },
+    {
+      "id": "L18-V026-spelling-v1",
+      "targetId": "L18-V026",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V026"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ยาทาหรือขี้ผึ้ง",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Salbe",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V026-recall"
+    },
+    {
+      "id": "L18-V027-meaning-v1",
+      "targetId": "L18-V027",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V027"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Hustensaft",
+        "options": [
+          "หน้าอก",
+          "ยาแก้ไอชนิดน้ำ",
+          "หลัง"
+        ]
+      },
+      "grading": {
+        "answer": "ยาแก้ไอชนิดน้ำ"
+      },
+      "contextId": "L18-V027-definition"
+    },
+    {
+      "id": "L18-V027-article-v1",
+      "targetId": "L18-V027",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V027"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Hustensaft",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L18-V027-lemma"
+    },
+    {
+      "id": "L18-V027-spelling-v1",
+      "targetId": "L18-V027",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V027"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ยาแก้ไอชนิดน้ำ",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Hustensaft",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L18-V027-recall"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-001-PREP3",
+      "version": 3,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "___ Sie bitte langsam.",
+      "options": [
+        "Sprechen",
+        "Sprich",
+        "Sprecht"
+      ],
+      "acceptedAnswers": [
+        "Sprechen"
+      ],
+      "subskill": "formal_imperative_form",
+      "difficulty": 1,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "ใช้รูป Sprechen ขึ้นต้นคำขอสุภาพ ตามด้วย Sie และ bitte",
+      "knownErrors": {
+        "Sprich": "imperative_form",
+        "Sprecht": "imperative_form"
+      },
+      "targetId": "L18-imperativ-sie",
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Sprechen Sie bitte langsam.",
+        "sentences": [
+          [
+            {
+              "text": "Sprechen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "bitte",
+              "role": "other",
+              "label": "คำแสดงความสุภาพ"
+            },
+            {
+              "text": "langsam.",
+              "role": "other",
+              "label": "ลักษณะการพูด"
+            }
+          ]
+        ],
+        "meaning": "กรุณาพูดช้า ๆ",
+        "reason": "ใช้รูป Sprechen ขึ้นต้นคำขอสุภาพ ตามด้วย Sie และ bitte"
+      }
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-002-PREP3",
+      "version": 3,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "___ Sie hier kurz.",
+      "options": [
+        "Warten",
+        "Wartet",
+        "Warte"
+      ],
+      "acceptedAnswers": [
+        "Warten"
+      ],
+      "subskill": "formal_imperative_form",
+      "difficulty": 1,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "กริยา Warten ขึ้นต้น ตามด้วย Sie; hier บอกสถานที่และ kurz บอกระยะเวลาสั้น",
+      "knownErrors": {
+        "Wartet": "imperative_form",
+        "Warte": "imperative_form"
+      },
+      "targetId": "L18-imperativ-sie",
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Warten Sie hier kurz.",
+        "sentences": [
+          [
+            {
+              "text": "Warten",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "hier",
+              "role": "other",
+              "label": "สถานที่"
+            },
+            {
+              "text": "kurz.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "meaning": "กรุณารอสักครู่ตรงนี้",
+        "reason": "กริยา Warten ขึ้นต้น ตามด้วย Sie; hier บอกสถานที่และ kurz บอกระยะเวลาสั้น"
+      }
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-003-PREP3",
+      "version": 3,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "___ Sie viel Wasser.",
+      "acceptedAnswers": [
+        "Trinken"
+      ],
+      "subskill": "formal_imperative_form",
+      "difficulty": 1,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "โจทย์ระบุให้ใช้ trinken จึงทำคำขอสุภาพเป็น Trinken Sie",
+      "knownErrors": {},
+      "targetId": "L18-imperativ-sie",
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma-or-base-form"
+      ],
+      "difficultyRationale": "โจทย์ให้ Infinitiv มาแล้วและรูป Sie ใช้รูปเดียวกันที่ต้นประโยค จึงวัดรูปคำขอสุภาพแบบมีตัวช่วย ไม่ใช่การนึกคำศัพท์",
+      "cue": "ใช้กริยา trinken ทำเป็นคำขอสุภาพแบบ Sie",
+      "feedback": {
+        "text": "Trinken Sie viel Wasser.",
+        "sentences": [
+          [
+            {
+              "text": "Trinken",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "viel Wasser.",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "meaning": "กรุณาดื่มน้ำมาก ๆ",
+        "reason": "โจทย์ระบุให้ใช้ trinken จึงทำคำขอสุภาพเป็น Trinken Sie"
+      }
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-004-PREP3",
+      "version": 3,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "___ Sie eine Pause.",
+      "acceptedAnswers": [
+        "Machen"
+      ],
+      "subskill": "formal_imperative_form",
+      "difficulty": 1,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "โจทย์ให้กริยา machen จึงวาง Machen ขึ้นต้นตามด้วย Sie",
+      "knownErrors": {},
+      "targetId": "L18-imperativ-sie",
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma-or-base-form"
+      ],
+      "difficultyRationale": "โจทย์ให้ Infinitiv มาแล้วและรูป Sie ใช้รูปเดียวกันที่ต้นประโยค จึงวัดรูปคำขอสุภาพแบบมีตัวช่วย ไม่ใช่การนึกคำศัพท์",
+      "cue": "ใช้กริยา machen ทำเป็นคำขอสุภาพแบบ Sie",
+      "feedback": {
+        "text": "Machen Sie eine Pause.",
+        "sentences": [
+          [
+            {
+              "text": "Machen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "eine Pause.",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "meaning": "กรุณาพักสักครู่",
+        "reason": "โจทย์ให้กริยา machen จึงวาง Machen ขึ้นต้นตามด้วย Sie"
+      }
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-005-PREP3",
+      "version": 3,
+      "topicId": "L18-imperativ-sie",
+      "variantGroup": "a13-l18-imperativ-sie-005",
+      "kind": "order",
+      "prompt": "เรียงประโยคตามแบบที่เรียน โดยเริ่มด้วย Gehen",
+      "tokens": [
+        "Hause.",
+        "nach",
+        "bitte",
+        "Sie",
+        "Gehen"
+      ],
+      "acceptedAnswers": [
+        "Gehen Sie bitte nach Hause."
+      ],
+      "subskill": "formal_imperative_word_order",
+      "difficulty": 2,
+      "hint": "คำสั่งแบบสุภาพขึ้นต้นด้วยกริยา แล้วตามด้วย Sie",
+      "explanation": "คำขอสุภาพเริ่มด้วย Gehen ตามด้วย Sie; nach Hause บอกทิศทาง ไม่ใช่เวลาหลังเหตุการณ์",
+      "knownErrors": {},
+      "targetId": "L18-imperativ-sie",
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "startWith": "Gehen",
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "feedback": {
+        "text": "Gehen Sie bitte nach Hause.",
+        "sentences": [
+          [
+            {
+              "text": "Gehen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "bitte",
+              "role": "other",
+              "label": "คำแสดงความสุภาพ"
+            },
+            {
+              "text": "nach Hause.",
+              "role": "other",
+              "label": "ทิศทาง"
+            }
+          ]
+        ],
+        "meaning": "กรุณากลับบ้าน",
+        "reason": "คำขอสุภาพเริ่มด้วย Gehen ตามด้วย Sie; nach Hause บอกทิศทาง ไม่ใช่เวลาหลังเหตุการณ์"
+      }
+    },
+    {
+      "id": "A13-L18-SOLLEN-001-PREP3",
+      "version": 3,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Du ___ heute zu Hause bleiben.",
+      "options": [
+        "sollst",
+        "soll",
+        "sollen"
+      ],
+      "acceptedAnswers": [
+        "sollst"
+      ],
+      "subskill": "sollen_conjugation",
+      "difficulty": 1,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "เมื่อใช้ sollen กับ Du ผันเป็น sollst และ bleiben อยู่ท้าย",
+      "knownErrors": {
+        "soll": "verb_form",
+        "sollen": "verb_form"
+      },
+      "targetId": "L18-sollen",
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Du sollst heute zu Hause bleiben.",
+        "sentences": [
+          [
+            {
+              "text": "Du",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "sollst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "heute",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "zu Hause",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "bleiben.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "วันนี้เธอได้รับคำบอกให้อยู่บ้าน",
+        "reason": "เมื่อใช้ sollen กับ Du ผันเป็น sollst และ bleiben อยู่ท้าย"
+      }
+    },
+    {
+      "id": "A13-L18-SOLLEN-002-PREP3",
+      "version": 3,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Wir ___ mehr schlafen.",
+      "options": [
+        "sollen",
+        "soll",
+        "sollt"
+      ],
+      "acceptedAnswers": [
+        "sollen"
+      ],
+      "subskill": "sollen_conjugation",
+      "difficulty": 1,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ประธาน Wir ใช้ sollen และ schlafen เป็น Infinitiv อยู่ท้าย",
+      "knownErrors": {
+        "soll": "verb_form",
+        "sollt": "verb_form"
+      },
+      "targetId": "L18-sollen",
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Wir sollen mehr schlafen.",
+        "sentences": [
+          [
+            {
+              "text": "Wir",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "sollen",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "mehr",
+              "role": "other",
+              "label": "ระดับหรือปริมาณที่เพิ่มขึ้น"
+            },
+            {
+              "text": "schlafen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "พวกเราได้รับคำบอกให้นอนมากขึ้น",
+        "reason": "ประธาน Wir ใช้ sollen และ schlafen เป็น Infinitiv อยู่ท้าย"
+      }
+    },
+    {
+      "id": "A13-L18-SOLLEN-003-PREP3",
+      "version": 3,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Ich ___ diese Übung machen.",
+      "acceptedAnswers": [
+        "soll"
+      ],
+      "subskill": "sollen_conjugation",
+      "difficulty": 2,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ประธาน Ich ใช้ soll และ machen อยู่ท้าย โดย diese Übung คือสิ่งที่บอกให้ทำ",
+      "knownErrors": {},
+      "targetId": "L18-sollen",
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "cue": "ผันกริยา sollen",
+      "feedback": {
+        "text": "Ich soll diese Übung machen.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "soll",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "diese Übung",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "machen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "ฉันได้รับคำบอกให้ทำแบบฝึกนี้",
+        "reason": "ประธาน Ich ใช้ soll และ machen อยู่ท้าย โดย diese Übung คือสิ่งที่บอกให้ทำ"
+      }
+    },
+    {
+      "id": "A13-L18-SOLLEN-004-PREP3",
+      "version": 3,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Frau Weber ___ mehr trinken.",
+      "acceptedAnswers": [
+        "soll"
+      ],
+      "subskill": "sollen_conjugation",
+      "difficulty": 2,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "Frau Weber เป็นคนเดียว จึงใช้ soll และ trinken อยู่ท้าย",
+      "knownErrors": {},
+      "targetId": "L18-sollen",
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "cue": "ผันกริยา sollen",
+      "feedback": {
+        "text": "Frau Weber soll mehr trinken.",
+        "sentences": [
+          [
+            {
+              "text": "Frau Weber",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "soll",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "mehr",
+              "role": "other",
+              "label": "ระดับหรือปริมาณที่เพิ่มขึ้น"
+            },
+            {
+              "text": "trinken.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "คุณ Weber ได้รับคำบอกให้ดื่มมากขึ้น",
+        "reason": "Frau Weber เป็นคนเดียว จึงใช้ soll และ trinken อยู่ท้าย"
+      }
+    },
+    {
+      "id": "A13-L18-SOLLEN-005-PREP3",
+      "version": 3,
+      "topicId": "L18-sollen",
+      "variantGroup": "a13-l18-sollen-005",
+      "kind": "order",
+      "prompt": "เรียงประโยคตามแบบที่เรียน โดยเริ่มด้วย Sie",
+      "tokens": [
+        "trinken.",
+        "Wasser",
+        "mehr",
+        "heute",
+        "sollen",
+        "Sie"
+      ],
+      "acceptedAnswers": [
+        "Sie sollen heute mehr Wasser trinken."
+      ],
+      "subskill": "modal_sentence_word_order",
+      "difficulty": 2,
+      "hint": "ผัน sollen ตามประธาน แล้ววางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ประโยคเริ่มด้วย Sie แบบสุภาพ ใช้ sollen ตำแหน่ง 2 และ trinken อยู่ท้าย",
+      "knownErrors": {},
+      "targetId": "L18-sollen",
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "startWith": "Sie",
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "feedback": {
+        "text": "Sie sollen heute mehr Wasser trinken.",
+        "sentences": [
+          [
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "sollen",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "heute",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "mehr Wasser",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "trinken.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "วันนี้คุณได้รับคำบอกให้ดื่มน้ำมากขึ้น",
+        "reason": "ประโยคเริ่มด้วย Sie แบบสุภาพ ใช้ sollen ตำแหน่ง 2 และ trinken อยู่ท้าย"
+      }
+    },
+    {
+      "id": "L18-D01-A-try-v1",
+      "targetId": "L18-R001",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R001",
+        "L18-R002"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกอาการปวดส่วนใด",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "อาการของ B",
+          "ปวดหลัง"
+        ]
+      ],
+      "prompt": "Mein Rücken tut weh.",
+      "feedback": {
+        "question": "Was tut Ihnen weh?",
+        "reply": "Mein Rücken tut weh.",
+        "questionMeaning": "คุณเจ็บตรงไหน",
+        "replyMeaning": "ฉันปวดหลัง",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "tut",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Ihnen",
+              "role": "other",
+              "label": "ผู้ที่มีอาการ (Dativ)"
+            },
+            {
+              "text": "weh?",
+              "role": "verb",
+              "label": "ส่วนแยกของกริยา",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Mein Rücken",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "tut",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "weh.",
+              "role": "verb",
+              "label": "ส่วนแยกของกริยา",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "Rücken เป็นเอกพจน์ จึงใช้ tut และ weh อยู่ท้ายเป็นส่วนของกริยา wehtun"
+      },
+      "grading": {
+        "answer": "Was tut Ihnen weh?"
+      },
+      "contextId": "L18-D01",
+      "tokens": [
+        "weh?",
+        "Ihnen",
+        "tut",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L18-D01-B-try-v1",
+      "targetId": "L18-R002",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R001",
+        "L18-R002"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกอาการปวดส่วนใด",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "อาการของ B",
+          "ปวดหลัง"
+        ]
+      ],
+      "prompt": "Was tut Ihnen weh?",
+      "feedback": {
+        "question": "Was tut Ihnen weh?",
+        "reply": "Mein Rücken tut weh.",
+        "questionMeaning": "คุณเจ็บตรงไหน",
+        "replyMeaning": "ฉันปวดหลัง",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "tut",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Ihnen",
+              "role": "other",
+              "label": "ผู้ที่มีอาการ (Dativ)"
+            },
+            {
+              "text": "weh?",
+              "role": "verb",
+              "label": "ส่วนแยกของกริยา",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Mein Rücken",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "tut",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "weh.",
+              "role": "verb",
+              "label": "ส่วนแยกของกริยา",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "Rücken เป็นเอกพจน์ จึงใช้ tut และ weh อยู่ท้ายเป็นส่วนของกริยา wehtun"
+      },
+      "grading": {
+        "answer": "Mein Rücken tut weh."
+      },
+      "contextId": "L18-D01",
+      "options": [
+        "Mein Bauch tut weh.",
+        "Mein Rücken tut weh.",
+        "Mein Kopf tut weh."
+      ]
+    },
+    {
+      "id": "L18-D02-A-try-v1",
+      "targetId": "L18-R003",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R003",
+        "L18-R004"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "แยกอาการที่มีและไม่มี",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "อาการของ B",
+          "ไอ แต่ไม่มีไข้"
+        ]
+      ],
+      "prompt": "Nein, ich habe Husten.",
+      "feedback": {
+        "question": "Haben Sie Fieber?",
+        "reply": "Nein, ich habe Husten.",
+        "questionMeaning": "คุณมีไข้ไหม",
+        "replyMeaning": "ไม่มี ฉันมีอาการไอ",
+        "questionSentences": [
+          [
+            {
+              "text": "Haben",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Fieber?",
+              "role": "other",
+              "label": "อาการที่ถาม (กรรม)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Nein,",
+              "role": "other",
+              "label": "ปฏิเสธ"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "habe",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Husten.",
+              "role": "other",
+              "label": "อาการที่มี (กรรม)"
+            }
+          ]
+        ],
+        "reason": "ข้อมูลบอกว่าไม่มีไข้แต่ไอ จึงปฏิเสธ Fieber แล้วบอก Husten"
+      },
+      "grading": {
+        "answer": "Haben Sie Fieber?"
+      },
+      "contextId": "L18-D02",
+      "tokens": [
+        "Fieber?",
+        "Sie",
+        "Haben"
+      ],
+      "startWith": "Haben"
+    },
+    {
+      "id": "L18-D02-B-try-v1",
+      "targetId": "L18-R004",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R003",
+        "L18-R004"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "แยกอาการที่มีและไม่มี",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "อาการของ B",
+          "ไอ แต่ไม่มีไข้"
+        ]
+      ],
+      "prompt": "Haben Sie Fieber?",
+      "feedback": {
+        "question": "Haben Sie Fieber?",
+        "reply": "Nein, ich habe Husten.",
+        "questionMeaning": "คุณมีไข้ไหม",
+        "replyMeaning": "ไม่มี ฉันมีอาการไอ",
+        "questionSentences": [
+          [
+            {
+              "text": "Haben",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Fieber?",
+              "role": "other",
+              "label": "อาการที่ถาม (กรรม)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Nein,",
+              "role": "other",
+              "label": "ปฏิเสธ"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "habe",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Husten.",
+              "role": "other",
+              "label": "อาการที่มี (กรรม)"
+            }
+          ]
+        ],
+        "reason": "ข้อมูลบอกว่าไม่มีไข้แต่ไอ จึงปฏิเสธ Fieber แล้วบอก Husten"
+      },
+      "grading": {
+        "answer": "Nein, ich habe Husten."
+      },
+      "contextId": "L18-D02",
+      "tokens": [
+        "Husten.",
+        "habe",
+        "ich",
+        "Nein,"
+      ],
+      "startWith": "Nein,"
+    },
+    {
+      "id": "L18-D03-A-try-v1",
+      "targetId": "L18-R005",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R005",
+        "L18-R006"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ถามว่าต้องทำอะไรตามข้อความ",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ข้อความของผู้ให้คำแนะนำ",
+          "บอกให้พักสักครู่"
+        ]
+      ],
+      "prompt": "Machen Sie bitte eine Pause.",
+      "feedback": {
+        "question": "Was soll ich machen?",
+        "reply": "Machen Sie bitte eine Pause.",
+        "questionMeaning": "ฉันควรทำอะไรตามที่บอก",
+        "replyMeaning": "กรุณาพักสักครู่",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "soll",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Machen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "bitte",
+              "role": "other",
+              "label": "คำแสดงความสุภาพ"
+            },
+            {
+              "text": "eine Pause.",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "reason": "คำบอกในเรื่องให้พัก จึงใช้ Machen Sie เป็นคำขอสุภาพและ eine Pause เป็นสิ่งที่ให้ทำ"
+      },
+      "grading": {
+        "answer": "Was soll ich machen?"
+      },
+      "contextId": "L18-D03",
+      "tokens": [
+        "machen?",
+        "ich",
+        "soll",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L18-D03-B-try-v1",
+      "targetId": "L18-R006",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R005",
+        "L18-R006"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ถามว่าต้องทำอะไรตามข้อความ",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "ข้อความของผู้ให้คำแนะนำ",
+          "บอกให้พักสักครู่"
+        ]
+      ],
+      "prompt": "Was soll ich machen?",
+      "feedback": {
+        "question": "Was soll ich machen?",
+        "reply": "Machen Sie bitte eine Pause.",
+        "questionMeaning": "ฉันควรทำอะไรตามที่บอก",
+        "replyMeaning": "กรุณาพักสักครู่",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "soll",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Machen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "bitte",
+              "role": "other",
+              "label": "คำแสดงความสุภาพ"
+            },
+            {
+              "text": "eine Pause.",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "reason": "คำบอกในเรื่องให้พัก จึงใช้ Machen Sie เป็นคำขอสุภาพและ eine Pause เป็นสิ่งที่ให้ทำ"
+      },
+      "grading": {
+        "answer": "Machen Sie bitte eine Pause."
+      },
+      "contextId": "L18-D03",
+      "options": [
+        "Kommen Sie bitte morgen.",
+        "Machen Sie bitte eine Pause.",
+        "Sprechen Sie bitte langsam."
+      ]
+    },
+    {
+      "id": "L18-D04-A-try-v1",
+      "targetId": "L18-R007",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R007",
+        "L18-R008"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ขอให้คู่สนทนาพูดซ้ำ",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เหตุการณ์",
+          "B ยินดีพูดซ้ำ"
+        ]
+      ],
+      "prompt": "Ja, natürlich.",
+      "feedback": {
+        "question": "Können Sie das bitte wiederholen?",
+        "reply": "Ja, natürlich.",
+        "questionMeaning": "กรุณาพูดซ้ำได้ไหม",
+        "replyMeaning": "ได้ แน่นอน",
+        "questionSentences": [
+          [
+            {
+              "text": "Können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "das",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "bitte",
+              "role": "other",
+              "label": "คำแสดงความสุภาพ"
+            },
+            {
+              "text": "wiederholen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja, natürlich.",
+              "role": "other",
+              "label": "ตอบรับอย่างยินดี"
+            }
+          ]
+        ],
+        "reason": "wiederholen ใช้ขอให้พูดซ้ำ และ Ja, natürlich ตอบรับตามข้อมูลว่ายินดีทำให้"
+      },
+      "grading": {
+        "answer": "Können Sie das bitte wiederholen?"
+      },
+      "contextId": "L18-D04",
+      "tokens": [
+        "wiederholen?",
+        "bitte",
+        "das",
+        "Sie",
+        "Können"
+      ],
+      "startWith": "Können"
+    },
+    {
+      "id": "L18-D04-B-try-v1",
+      "targetId": "L18-R008",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R007",
+        "L18-R008"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ขอให้คู่สนทนาพูดซ้ำ",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "เหตุการณ์",
+          "B ยินดีพูดซ้ำ"
+        ]
+      ],
+      "prompt": "Können Sie das bitte wiederholen?",
+      "feedback": {
+        "question": "Können Sie das bitte wiederholen?",
+        "reply": "Ja, natürlich.",
+        "questionMeaning": "กรุณาพูดซ้ำได้ไหม",
+        "replyMeaning": "ได้ แน่นอน",
+        "questionSentences": [
+          [
+            {
+              "text": "Können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "das",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "bitte",
+              "role": "other",
+              "label": "คำแสดงความสุภาพ"
+            },
+            {
+              "text": "wiederholen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja, natürlich.",
+              "role": "other",
+              "label": "ตอบรับอย่างยินดี"
+            }
+          ]
+        ],
+        "reason": "wiederholen ใช้ขอให้พูดซ้ำ และ Ja, natürlich ตอบรับตามข้อมูลว่ายินดีทำให้"
+      },
+      "grading": {
+        "answer": "Ja, natürlich."
+      },
+      "contextId": "L18-D04",
+      "options": [
+        "Tut mir leid, das geht nicht.",
+        "Ja, natürlich.",
+        "Nein, leider nicht."
+      ]
+    },
+    {
+      "id": "L18-D05-A-try-v1",
+      "targetId": "L18-R009",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R009",
+        "L18-R010"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ขอให้พูดช้าลง",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "สิ่งที่ B ขอ",
+          "ให้ A พูดช้าลง"
+        ]
+      ],
+      "prompt": "Sprechen Sie bitte langsam.",
+      "feedback": {
+        "question": "Spreche ich zu schnell?",
+        "reply": "Sprechen Sie bitte langsam.",
+        "questionMeaning": "ฉันพูดเร็วเกินไปไหม",
+        "replyMeaning": "กรุณาพูดช้า ๆ",
+        "questionSentences": [
+          [
+            {
+              "text": "Spreche",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "zu schnell?",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Sprechen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "bitte",
+              "role": "other",
+              "label": "คำแสดงความสุภาพ"
+            },
+            {
+              "text": "langsam.",
+              "role": "other",
+              "label": "ลักษณะการพูด"
+            }
+          ]
+        ],
+        "reason": "langsam ขอให้พูดช้าลง ต่างจาก lauter ที่ขอให้ดังขึ้น"
+      },
+      "grading": {
+        "answer": "Spreche ich zu schnell?"
+      },
+      "contextId": "L18-D05",
+      "tokens": [
+        "schnell?",
+        "zu",
+        "ich",
+        "Spreche"
+      ],
+      "startWith": "Spreche"
+    },
+    {
+      "id": "L18-D05-B-try-v1",
+      "targetId": "L18-R010",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R009",
+        "L18-R010"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ขอให้พูดช้าลง",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "สิ่งที่ B ขอ",
+          "ให้ A พูดช้าลง"
+        ]
+      ],
+      "prompt": "Spreche ich zu schnell?",
+      "feedback": {
+        "question": "Spreche ich zu schnell?",
+        "reply": "Sprechen Sie bitte langsam.",
+        "questionMeaning": "ฉันพูดเร็วเกินไปไหม",
+        "replyMeaning": "กรุณาพูดช้า ๆ",
+        "questionSentences": [
+          [
+            {
+              "text": "Spreche",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "zu schnell?",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Sprechen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "bitte",
+              "role": "other",
+              "label": "คำแสดงความสุภาพ"
+            },
+            {
+              "text": "langsam.",
+              "role": "other",
+              "label": "ลักษณะการพูด"
+            }
+          ]
+        ],
+        "reason": "langsam ขอให้พูดช้าลง ต่างจาก lauter ที่ขอให้ดังขึ้น"
+      },
+      "grading": {
+        "answer": "Sprechen Sie bitte langsam."
+      },
+      "contextId": "L18-D05",
+      "options": [
+        "Sprechen Sie bitte lauter.",
+        "Sprechen Sie bitte langsam.",
+        "Sprechen Sie bitte schneller."
+      ]
+    },
+    {
+      "id": "L18-D06-A-try-v1",
+      "targetId": "L18-R011",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R011",
+        "L18-R012"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ยืนยันเวลาที่ให้มาตามบทสนทนา",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ข้อความนัดหมาย",
+          "ให้มาพรุ่งนี้ 10:00"
+        ]
+      ],
+      "prompt": "Ja, kommen Sie morgen um zehn Uhr.",
+      "feedback": {
+        "question": "Soll ich morgen kommen?",
+        "reply": "Ja, kommen Sie morgen um zehn Uhr.",
+        "questionMeaning": "ฉันต้องมาพรุ่งนี้ตามที่บอกใช่ไหม",
+        "replyMeaning": "ใช่ กรุณามาพรุ่งนี้สิบโมง",
+        "questionSentences": [
+          [
+            {
+              "text": "Soll",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "morgen",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "kommen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "kommen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "morgen um zehn Uhr.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "reason": "เวลาในคำตอบต้องเป็นพรุ่งนี้ 10:00 ตามข้อมูลนัดหมายที่ให้"
+      },
+      "grading": {
+        "answer": "Soll ich morgen kommen?"
+      },
+      "contextId": "L18-D06",
+      "tokens": [
+        "kommen?",
+        "morgen",
+        "ich",
+        "Soll"
+      ],
+      "startWith": "Soll"
+    },
+    {
+      "id": "L18-D06-B-try-v1",
+      "targetId": "L18-R012",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R011",
+        "L18-R012"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ยืนยันเวลาที่ให้มาตามบทสนทนา",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ข้อความนัดหมาย",
+          "ให้มาพรุ่งนี้ 10:00"
+        ]
+      ],
+      "prompt": "Soll ich morgen kommen?",
+      "feedback": {
+        "question": "Soll ich morgen kommen?",
+        "reply": "Ja, kommen Sie morgen um zehn Uhr.",
+        "questionMeaning": "ฉันต้องมาพรุ่งนี้ตามที่บอกใช่ไหม",
+        "replyMeaning": "ใช่ กรุณามาพรุ่งนี้สิบโมง",
+        "questionSentences": [
+          [
+            {
+              "text": "Soll",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "morgen",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "kommen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "kommen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "morgen um zehn Uhr.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "reason": "เวลาในคำตอบต้องเป็นพรุ่งนี้ 10:00 ตามข้อมูลนัดหมายที่ให้"
+      },
+      "grading": {
+        "answer": "Ja, kommen Sie morgen um zehn Uhr."
+      },
+      "contextId": "L18-D06",
+      "tokens": [
+        "Uhr.",
+        "zehn",
+        "um",
+        "morgen",
+        "Sie",
+        "kommen",
+        "Ja,"
+      ],
+      "startWith": "Ja,"
+    },
+    {
+      "id": "L18-D07-A-try-v1",
+      "targetId": "L18-R013",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R013",
+        "L18-R014"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "รายงานสิ่งที่แพทย์ในเรื่องบอก",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "คำบอกของแพทย์ในบทสนทนา",
+          "ให้ทำแบบฝึกนี้"
+        ]
+      ],
+      "prompt": "Ich soll diese Übung machen.",
+      "feedback": {
+        "question": "Was hat die Ärztin gesagt?",
+        "reply": "Ich soll diese Übung machen.",
+        "questionMeaning": "แพทย์หญิงบอกว่าอย่างไร",
+        "replyMeaning": "เธอบอกให้ฉันทำแบบฝึกนี้",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "hat",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "die Ärztin",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "gesagt?",
+              "role": "participle",
+              "label": "กริยาหลัก · Partizip II",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "soll",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "diese Übung",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "machen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "soll ใช้บอกต่อสิ่งที่แพทย์ในเรื่องบอกให้ทำ ส่วน machen อยู่ท้าย"
+      },
+      "grading": {
+        "answer": "Was hat die Ärztin gesagt?"
+      },
+      "contextId": "L18-D07",
+      "tokens": [
+        "gesagt?",
+        "Ärztin",
+        "die",
+        "hat",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L18-D07-B-try-v1",
+      "targetId": "L18-R014",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R013",
+        "L18-R014"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "รายงานสิ่งที่แพทย์ในเรื่องบอก",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "คำบอกของแพทย์ในบทสนทนา",
+          "ให้ทำแบบฝึกนี้"
+        ]
+      ],
+      "prompt": "Was hat die Ärztin gesagt?",
+      "feedback": {
+        "question": "Was hat die Ärztin gesagt?",
+        "reply": "Ich soll diese Übung machen.",
+        "questionMeaning": "แพทย์หญิงบอกว่าอย่างไร",
+        "replyMeaning": "เธอบอกให้ฉันทำแบบฝึกนี้",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "hat",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "die Ärztin",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "gesagt?",
+              "role": "participle",
+              "label": "กริยาหลัก · Partizip II",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "soll",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "diese Übung",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "machen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "soll ใช้บอกต่อสิ่งที่แพทย์ในเรื่องบอกให้ทำ ส่วน machen อยู่ท้าย"
+      },
+      "grading": {
+        "answer": "Ich soll diese Übung machen."
+      },
+      "contextId": "L18-D07",
+      "options": [
+        "Ich soll morgen kommen.",
+        "Ich soll diese Übung machen.",
+        "Ich soll eine Pause machen."
+      ]
+    },
+    {
+      "id": "L18-D08-A-try-v1",
+      "targetId": "L18-R015",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R015",
+        "L18-R016"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกว่าคำแนะนำมาจากใคร",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ผู้บอกให้ทำ",
+          "แพทย์ชายของ B"
+        ]
+      ],
+      "prompt": "Mein Arzt sagt das.",
+      "feedback": {
+        "question": "Wer sagt das?",
+        "reply": "Mein Arzt sagt das.",
+        "questionMeaning": "ใครเป็นคนบอกอย่างนั้น",
+        "replyMeaning": "แพทย์ของฉันเป็นคนบอก",
+        "questionSentences": [
+          [
+            {
+              "text": "Wer",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "sagt",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das?",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Mein Arzt",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "sagt",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "Wer ถามว่าใครเป็นผู้บอก จึงตอบด้วย Mein Arzt ซึ่งตรงกับผู้บอกในข้อมูล"
+      },
+      "grading": {
+        "answer": "Wer sagt das?"
+      },
+      "contextId": "L18-D08",
+      "tokens": [
+        "das?",
+        "sagt",
+        "Wer"
+      ],
+      "startWith": "Wer"
+    },
+    {
+      "id": "L18-D08-B-try-v1",
+      "targetId": "L18-R016",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R015",
+        "L18-R016"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกว่าคำแนะนำมาจากใคร",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ผู้บอกให้ทำ",
+          "แพทย์ชายของ B"
+        ]
+      ],
+      "prompt": "Wer sagt das?",
+      "feedback": {
+        "question": "Wer sagt das?",
+        "reply": "Mein Arzt sagt das.",
+        "questionMeaning": "ใครเป็นคนบอกอย่างนั้น",
+        "replyMeaning": "แพทย์ของฉันเป็นคนบอก",
+        "questionSentences": [
+          [
+            {
+              "text": "Wer",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "sagt",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das?",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Mein Arzt",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "sagt",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "Wer ถามว่าใครเป็นผู้บอก จึงตอบด้วย Mein Arzt ซึ่งตรงกับผู้บอกในข้อมูล"
+      },
+      "grading": {
+        "answer": "Mein Arzt sagt das."
+      },
+      "contextId": "L18-D08",
+      "tokens": [
+        "das.",
+        "sagt",
+        "Arzt",
+        "Mein"
+      ],
+      "startWith": "Mein"
+    }
+  ],
+  "phraseTargets": [
+    {
+      "id": "L18-R001",
+      "text": "Was tut Ihnen weh?"
+    },
+    {
+      "id": "L18-R002",
+      "text": "Mein Rücken tut weh."
+    },
+    {
+      "id": "L18-R003",
+      "text": "Haben Sie Fieber?"
+    },
+    {
+      "id": "L18-R004",
+      "text": "Nein, ich habe Husten."
+    },
+    {
+      "id": "L18-R005",
+      "text": "Was soll ich machen?"
+    },
+    {
+      "id": "L18-R006",
+      "text": "Machen Sie bitte eine Pause."
+    },
+    {
+      "id": "L18-R007",
+      "text": "Können Sie das bitte wiederholen?"
+    },
+    {
+      "id": "L18-R008",
+      "text": "Ja, natürlich."
+    },
+    {
+      "id": "L18-R009",
+      "text": "Spreche ich zu schnell?"
+    },
+    {
+      "id": "L18-R010",
+      "text": "Sprechen Sie bitte langsam."
+    },
+    {
+      "id": "L18-R011",
+      "text": "Soll ich morgen kommen?"
+    },
+    {
+      "id": "L18-R012",
+      "text": "Ja, kommen Sie morgen um zehn Uhr."
+    },
+    {
+      "id": "L18-R013",
+      "text": "Was hat die Ärztin gesagt?"
+    },
+    {
+      "id": "L18-R014",
+      "text": "Ich soll diese Übung machen."
+    },
+    {
+      "id": "L18-R015",
+      "text": "Wer sagt das?"
+    },
+    {
+      "id": "L18-R016",
+      "text": "Mein Arzt sagt das."
+    }
+  ],
+  "draftStatus": "prepared_not_wired_or_published",
+  "supportLexicon": [
+    {
+      "id": "L18-HELP-01",
+      "headword": "der Arzt",
+      "meaning": "แพทย์ผู้ชาย",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Arzt",
+      "number": "singular"
+    },
+    {
+      "id": "L18-HELP-02",
+      "headword": "die Ärztin",
+      "meaning": "แพทย์ผู้หญิง",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Ärztin",
+      "number": "singular"
+    },
+    {
+      "id": "L18-HELP-03",
+      "headword": "die Übung",
+      "meaning": "แบบฝึกหรือท่าฝึกตามข้อความ",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Übung",
+      "number": "singular"
+    },
+    {
+      "id": "L18-HELP-04",
+      "headword": "die Pause",
+      "meaning": "เวลาพัก",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Pause",
+      "number": "singular"
+    },
+    {
+      "id": "L18-HELP-05",
+      "headword": "die Kollegin",
+      "meaning": "เพื่อนร่วมงานผู้หญิง",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Kollegin",
+      "number": "singular"
+    },
+    {
+      "id": "L18-HELP-06",
+      "headword": "langsam",
+      "meaning": "ช้า",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "langsam"
+    },
+    {
+      "id": "L18-HELP-07",
+      "headword": "wiederholen",
+      "meaning": "พูดหรือทำซ้ำ",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "wiederholen"
+    },
+    {
+      "id": "L18-HELP-08",
+      "headword": "wehtun",
+      "meaning": "เจ็บหรือปวด",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "wehtun"
+    },
+    {
+      "id": "L18-HELP-09",
+      "headword": "sagen",
+      "meaning": "บอกหรือพูด",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "sagen"
+    },
+    {
+      "id": "L18-HELP-10",
+      "headword": "aufstehen",
+      "meaning": "ลุกขึ้น",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "aufstehen"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "origin": "synthetic fictional German dialogues; no cloned personal voices or copied publisher recordings",
+  "clips": [
+    {
+      "path": "/audio/l02/model-work.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was machst du beruflich?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich arbeite als Friseurin. Ich arbeite bei Haarfit."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was machen Sie beruflich?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich bin Lehrerin."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l02/model-status.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was machst du beruflich?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich mache ein Praktikum."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Und du?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich bin angestellt."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Arbeitest du?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich arbeite im Moment nicht."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l02/model-age.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie alt bist du?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich bin vierundzwanzig Jahre alt."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l02/model-home.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wo wohnst du?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich wohne in München."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wo wohnt ihr?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Wir wohnen in Berlin."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l02/model-couple.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Lebt ihr zusammen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ja, wir leben zusammen."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Seid ihr verheiratet?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, wir sind nicht verheiratet."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Habt ihr Kinder?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, wir haben keine Kinder."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l02/model-dream.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was machst du beruflich?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich arbeite als Verkäufer."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Und was ist dein Traumberuf?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Mein Traumberuf ist Arzt."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l02/model-contact.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie ist deine Handynummer?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Meine Handynummer ist null eins zwei drei vier fünf sechs."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l02/l02-ux-age-audio-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie alt bist du?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich bin einunddreißig Jahre alt."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l02/l02-ux-phone-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie ist deine Handynummer?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Meine Handynummer ist: null. drei. null. eins. zwei. drei. vier. fünf. sechs. sieben."
+        }
+      ]
+    }
+  ]
+}

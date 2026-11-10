@@ -1,0 +1,383 @@
+{
+  "version": 1,
+  "scope": "local-tester-Learn-only",
+  "authoring": "product-authored content mapped to source functions; not publisher answers",
+  "topics": [
+    {
+      "id": "work",
+      "objective": "L02-COMM-01",
+      "legacyIds": [
+        "L02-pattern-profession"
+      ]
+    },
+    {
+      "id": "status",
+      "objective": "L02-COMM-01",
+      "legacyIds": [
+        "L02-status-praktikum",
+        "L02-status-arbeitslos",
+        "L02-status-nicht-arbeiten",
+        "L02-status-freiberuflich",
+        "L02-status-selbststaendig",
+        "L02-status-angestellt"
+      ]
+    },
+    {
+      "id": "age",
+      "objective": "L02-COMM-03",
+      "legacyIds": []
+    },
+    {
+      "id": "home",
+      "objective": "L02-COMM-02",
+      "legacyIds": []
+    },
+    {
+      "id": "couple",
+      "objective": "L02-COMM-04",
+      "legacyIds": []
+    },
+    {
+      "id": "dream",
+      "objective": "L02-COMM-01",
+      "legacyIds": [
+        "L02-traumberuf"
+      ]
+    },
+    {
+      "id": "contact",
+      "objective": "L02-COMM-05",
+      "legacyIds": [
+        "L02-pattern-phone"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "taskId": "L02-UX-PROF-01",
+      "objectiveId": "L02-COMM-01",
+      "sourceFindingIds": [
+        "L02-F04"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-PROF-01-response",
+        "targetId": "L02-UX-PROF-01-target",
+        "subskill": "phrase_dialogue_response",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Wir arbeiten als Friseure.",
+        "meaning": "พวกเราทำงานเป็นช่างทำผม"
+      }
+    },
+    {
+      "taskId": "L02-UX-WORK-01",
+      "objectiveId": "L02-COMM-01",
+      "sourceFindingIds": [
+        "L02-F05"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-WORK-01-response",
+        "targetId": "L02-UX-WORK-01-target",
+        "subskill": "phrase_word_order",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Ich arbeite bei Haarfit.",
+        "meaning": "ฉันทำงานที่ร้านฮาร์ฟิต"
+      }
+    },
+    {
+      "taskId": "L02-UX-PROF-02",
+      "objectiveId": "L02-COMM-01",
+      "sourceFindingIds": [
+        "L02-F05"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-PROF-02-response",
+        "targetId": "L02-UX-PROF-02-target",
+        "subskill": "phrase_dialogue_response",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Ich bin Lehrerin.",
+        "meaning": "ฉันเป็นครู"
+      }
+    },
+    {
+      "taskId": "L02-UX-STATUS-01",
+      "objectiveId": "L02-COMM-01",
+      "sourceFindingIds": [
+        "L02-F05"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-STATUS-01-response",
+        "targetId": "L02-UX-STATUS-01-target",
+        "subskill": "phrase_dialogue_response",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Ich mache ein Praktikum.",
+        "meaning": "ฉันกำลังฝึกงาน"
+      }
+    },
+    {
+      "taskId": "L02-UX-STATUS-02",
+      "objectiveId": "L02-COMM-01",
+      "sourceFindingIds": [
+        "L02-F05"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-STATUS-02-response",
+        "targetId": "L02-UX-STATUS-02-target",
+        "subskill": "phrase_dialogue_response",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Ich bin angestellt.",
+        "meaning": "ฉันเป็นลูกจ้าง"
+      }
+    },
+    {
+      "taskId": "L02-UX-STATUS-03",
+      "objectiveId": "L02-COMM-01",
+      "sourceFindingIds": [
+        "L02-F05"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-STATUS-03-response",
+        "targetId": "L02-UX-STATUS-03-target",
+        "subskill": "phrase_word_order",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Ich arbeite im Moment nicht.",
+        "meaning": "ตอนนี้ฉันไม่ได้ทำงาน"
+      }
+    },
+    {
+      "taskId": "L02-UX-AGE-AUDIO-01",
+      "objectiveId": "L02-COMM-03",
+      "sourceFindingIds": [
+        "L02-F02"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-AGE-AUDIO-01-response",
+        "targetId": "L02-UX-AGE-AUDIO-01-target",
+        "subskill": "age_listening",
+        "difficulty": 3,
+        "rationale": "ฟังข้อมูลที่ไม่มีคำตอบเขียนให้ แล้วใส่ตัวเลข; มีเสียงซ้ำและตัวอย่างก่อนหน้า",
+        "answer": "31",
+        "meaning": "อายุ 31 ปี"
+      }
+    },
+    {
+      "taskId": "L02-UX-AGE-ORDER-01",
+      "objectiveId": "L02-COMM-03",
+      "sourceFindingIds": [
+        "L02-F02"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-AGE-ORDER-01-response",
+        "targetId": "L02-UX-AGE-ORDER-01-target",
+        "subskill": "phrase_word_order",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Ich bin 28 Jahre alt.",
+        "meaning": "ฉันอายุ 28 ปี"
+      }
+    },
+    {
+      "taskId": "L02-UX-HOME-01",
+      "objectiveId": "L02-COMM-02",
+      "sourceFindingIds": [
+        "L02-F01"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-HOME-01-response",
+        "targetId": "L02-UX-HOME-01-target",
+        "subskill": "phrase_word_order",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Ich wohne in Bangkok.",
+        "meaning": "ฉันอาศัยอยู่ที่กรุงเทพฯ"
+      }
+    },
+    {
+      "taskId": "L02-UX-HOME-02",
+      "objectiveId": "L02-COMM-02",
+      "sourceFindingIds": [
+        "L02-F01"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-HOME-02-response",
+        "targetId": "L02-UX-HOME-02-target",
+        "subskill": "phrase_dialogue_response",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Wir wohnen in Berlin.",
+        "meaning": "พวกเราอาศัยอยู่ที่เบอร์ลิน"
+      }
+    },
+    {
+      "taskId": "L02-UX-TOGETHER-01",
+      "objectiveId": "L02-COMM-04",
+      "sourceFindingIds": [
+        "L02-F01"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-TOGETHER-01-response",
+        "targetId": "L02-UX-TOGETHER-01-target",
+        "subskill": "phrase_dialogue_response",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Ja, wir leben zusammen.",
+        "meaning": "ใช่ พวกเราอยู่ด้วยกัน"
+      }
+    },
+    {
+      "taskId": "L02-UX-COUPLE-01",
+      "objectiveId": "L02-COMM-04",
+      "sourceFindingIds": [
+        "L02-F03"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-COUPLE-01-response",
+        "targetId": "L02-UX-COUPLE-01-target",
+        "subskill": "phrase_dialogue_response",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Nein, wir sind nicht verheiratet.",
+        "meaning": "ไม่ พวกเราไม่ได้แต่งงานกัน"
+      }
+    },
+    {
+      "taskId": "L02-UX-CHILDREN-01",
+      "objectiveId": "L02-COMM-04",
+      "sourceFindingIds": [
+        "L02-F01"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-CHILDREN-01-response",
+        "targetId": "L02-UX-CHILDREN-01-target",
+        "subskill": "phrase_word_order",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Wir haben keine Kinder.",
+        "meaning": "พวกเราไม่มีลูก"
+      }
+    },
+    {
+      "taskId": "L02-UX-DREAM-01",
+      "objectiveId": "L02-COMM-01",
+      "sourceFindingIds": [
+        "L02-F07"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-DREAM-01-response",
+        "targetId": "L02-UX-DREAM-01-target",
+        "subskill": "current_vs_dream_meaning",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Mein Traumberuf ist Arzt.",
+        "meaning": "อาชีพในฝันของฉันคือหมอ"
+      }
+    },
+    {
+      "taskId": "L02-UX-DREAM-02",
+      "objectiveId": "L02-COMM-01",
+      "sourceFindingIds": [
+        "L02-F07"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-DREAM-02-response",
+        "targetId": "L02-UX-DREAM-02-target",
+        "subskill": "current_vs_dream_meaning",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Ich arbeite als Verkäufer.",
+        "meaning": "ฉันทำงานเป็นพนักงานขาย"
+      }
+    },
+    {
+      "taskId": "L02-UX-PROFILE-01",
+      "objectiveId": "L02-COMM-01/02/03",
+      "sourceFindingIds": [
+        "L02-F06"
+      ],
+      "authoring": "product-authored fictional profile",
+      "targets": [
+        {
+          "id": "L02-UX-PROFILE-01-age",
+          "targetId": "L02-UX-PROFILE-01-age-target",
+          "subskill": "person_detail_reading",
+          "difficulty": 2,
+          "rationale": "อ่านหาข้อมูลแต่ละฟิลด์จากข้อความ; แยกหลักฐานรายช่อง ไม่ใช่การฟังหรือผลิตภาษา",
+          "answer": "28",
+          "meaning": "อายุ 28 ปี"
+        },
+        {
+          "id": "L02-UX-PROFILE-01-home",
+          "targetId": "L02-UX-PROFILE-01-home-target",
+          "subskill": "person_detail_reading",
+          "difficulty": 2,
+          "rationale": "อ่านหาข้อมูลแต่ละฟิลด์จากข้อความ; แยกหลักฐานรายช่อง ไม่ใช่การฟังหรือผลิตภาษา",
+          "answer": "Berlin",
+          "meaning": "อาศัยอยู่ที่เบอร์ลิน"
+        },
+        {
+          "id": "L02-UX-PROFILE-01-work",
+          "targetId": "L02-UX-PROFILE-01-work-target",
+          "subskill": "person_detail_reading",
+          "difficulty": 2,
+          "rationale": "อ่านหาข้อมูลแต่ละฟิลด์จากข้อความ; แยกหลักฐานรายช่อง ไม่ใช่การฟังหรือผลิตภาษา",
+          "answer": "Haarfit",
+          "meaning": "ทำงานที่ร้านฮาร์ฟิต"
+        }
+      ]
+    },
+    {
+      "taskId": "L02-UX-PHONE-QUESTION-01",
+      "objectiveId": "L02-COMM-05",
+      "sourceFindingIds": [
+        "L02-F02"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-PHONE-QUESTION-01-response",
+        "targetId": "L02-UX-PHONE-QUESTION-01-target",
+        "subskill": "phrase_dialogue_response",
+        "difficulty": 2,
+        "rationale": "ใช้ข้อมูลสถานการณ์และบทบาทที่กำหนด; มีตัวเลือกหรือคำให้ ไม่ใช่ผลิตภาษาอิสระ",
+        "answer": "Wie ist deine Handynummer?",
+        "meaning": "เบอร์มือถือของเธอคืออะไร"
+      }
+    },
+    {
+      "taskId": "L02-UX-PHONE-01",
+      "objectiveId": "L02-COMM-05",
+      "sourceFindingIds": [
+        "L02-F02"
+      ],
+      "authoring": "product-authored scenario and feedback; source supports communicative function/mechanic",
+      "target": {
+        "id": "L02-UX-PHONE-01-response",
+        "targetId": "L02-UX-PHONE-01-target",
+        "subskill": "phone_digit_listening",
+        "difficulty": 3,
+        "rationale": "ฟังข้อมูลที่ไม่มีคำตอบเขียนให้ แล้วใส่ตัวเลข; มีเสียงซ้ำและตัวอย่างก่อนหน้า",
+        "answer": "0301234567",
+        "meaning": "เบอร์ที่ได้ยินคือ 0301234567"
+      }
+    }
+  ]
+}

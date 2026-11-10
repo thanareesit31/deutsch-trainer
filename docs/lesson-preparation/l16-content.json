@@ -1,0 +1,5600 @@
+{
+  "id": "L16",
+  "title": "อุปกรณ์ ปัญหา และการนัดหมาย",
+  "purpose": "แจ้งปัญหา ขอหรือเสนอความช่วยเหลือ และจัดการเวลานัด",
+  "prerequisites": [
+    "L08: วันและเวลา",
+    "L11: ลำดับเวลา/อดีต",
+    "L14: ขอความช่วยเหลือ/Modalverb/Dativ หลังคำบุพบทสถานที่"
+  ],
+  "sequence": [
+    "รู้จักอุปกรณ์ที่พบในอาคาร",
+    "แจ้งว่าเสียหรือใช้งานไม่ได้",
+    "ขอและตอบรับความช่วยเหลือ",
+    "อ่านเส้นเวลา in/vor/nach ตามจุดอ้างอิง",
+    "เสนอ ปฏิเสธ เลื่อน และยืนยันเวลานัดใหม่"
+  ],
+  "vocabulary": [
+    {
+      "kind": "noun",
+      "headword": "der Aufzug",
+      "word": "Aufzug",
+      "article": "der",
+      "plural": "die Aufzüge",
+      "number": "singular",
+      "meaning": "ลิฟต์",
+      "group": "อุปกรณ์",
+      "example": "Der Aufzug funktioniert nicht.",
+      "id": "L16-V001",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "ลิฟต์ใช้งานไม่ได้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Der Aufzug",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "funktioniert",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "nicht.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Kühlschrank",
+      "word": "Kühlschrank",
+      "article": "der",
+      "plural": "die Kühlschränke",
+      "number": "singular",
+      "meaning": "ตู้เย็น",
+      "group": "อุปกรณ์",
+      "example": "Der Kühlschrank ist kaputt.",
+      "id": "L16-V002",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "ตู้เย็นเสีย",
+      "exampleSentences": [
+        [
+          {
+            "text": "Der Kühlschrank",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "kaputt.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Fernseher",
+      "word": "Fernseher",
+      "article": "der",
+      "plural": "die Fernseher",
+      "number": "singular",
+      "meaning": "โทรทัศน์",
+      "group": "อุปกรณ์",
+      "example": "Der Fernseher funktioniert nicht.",
+      "id": "L16-V003",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "โทรทัศน์ใช้งานไม่ได้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Der Fernseher",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "funktioniert",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "nicht.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Heizung",
+      "word": "Heizung",
+      "article": "die",
+      "plural": "die Heizungen",
+      "number": "singular",
+      "meaning": "เครื่องหรือระบบทำความร้อน",
+      "group": "อุปกรณ์",
+      "example": "Die Heizung ist kaputt.",
+      "id": "L16-V004",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "ระบบทำความร้อนเสีย",
+      "exampleSentences": [
+        [
+          {
+            "text": "Die Heizung",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "kaputt.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Licht",
+      "word": "Licht",
+      "article": "das",
+      "plural": "die Lichter",
+      "number": "singular",
+      "meaning": "ไฟหรือแสงสว่าง",
+      "group": "อุปกรณ์",
+      "example": "Das Licht funktioniert nicht.",
+      "id": "L16-V005",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "ไฟไม่ติด",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das Licht",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "funktioniert",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "nicht.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Telefon",
+      "word": "Telefon",
+      "article": "das",
+      "plural": "die Telefone",
+      "number": "singular",
+      "meaning": "โทรศัพท์",
+      "group": "อุปกรณ์",
+      "example": "Das Telefon funktioniert nicht.",
+      "id": "L16-V006",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "โทรศัพท์ใช้งานไม่ได้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das Telefon",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "funktioniert",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "nicht.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Dusche",
+      "word": "Dusche",
+      "article": "die",
+      "plural": "die Duschen",
+      "number": "singular",
+      "meaning": "ฝักบัวหรือที่อาบน้ำฝักบัว",
+      "group": "อุปกรณ์",
+      "example": "Die Dusche ist kaputt.",
+      "id": "L16-V007",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "ฝักบัวเสีย",
+      "exampleSentences": [
+        [
+          {
+            "text": "Die Dusche",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "kaputt.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Netz",
+      "word": "Netz",
+      "article": "das",
+      "plural": "die Netze",
+      "number": "singular",
+      "meaning": "เครือข่ายหรือสัญญาณโทรศัพท์",
+      "group": "อุปกรณ์",
+      "example": "Ich habe hier kein Netz.",
+      "id": "L16-V008",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "ตรงนี้ฉันไม่มีสัญญาณโทรศัพท์",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "hier",
+            "role": "other",
+            "label": "สถานที่"
+          },
+          {
+            "text": "kein Netz.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Herd",
+      "word": "Herd",
+      "article": "der",
+      "plural": "die Herde",
+      "number": "singular",
+      "meaning": "เตาปรุงอาหาร",
+      "group": "อุปกรณ์",
+      "example": "Der Herd funktioniert nicht.",
+      "id": "L16-V009",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "เตาปรุงอาหารใช้งานไม่ได้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Der Herd",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "funktioniert",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "nicht.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Klingel",
+      "word": "Klingel",
+      "article": "die",
+      "plural": "die Klingeln",
+      "number": "singular",
+      "meaning": "กริ่ง",
+      "group": "อุปกรณ์",
+      "example": "Die Klingel funktioniert nicht.",
+      "id": "L16-V010",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "กริ่งใช้งานไม่ได้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Die Klingel",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "funktioniert",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "nicht.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Steckdose",
+      "word": "Steckdose",
+      "article": "die",
+      "plural": "die Steckdosen",
+      "number": "singular",
+      "meaning": "เต้ารับไฟฟ้า",
+      "group": "อุปกรณ์",
+      "example": "Hier ist eine Steckdose.",
+      "id": "L16-V011",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือเต้ารับไฟฟ้า",
+      "exampleSentences": [
+        [
+          {
+            "text": "Hier",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Steckdose.",
+            "role": "subject",
+            "label": "ประธาน"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Waschmaschine",
+      "word": "Waschmaschine",
+      "article": "die",
+      "plural": "die Waschmaschinen",
+      "number": "singular",
+      "meaning": "เครื่องซักผ้า",
+      "group": "อุปกรณ์",
+      "example": "Die Waschmaschine ist kaputt.",
+      "id": "L16-V012",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "เครื่องซักผ้าเสีย",
+      "exampleSentences": [
+        [
+          {
+            "text": "Die Waschmaschine",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "kaputt.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Problem",
+      "word": "Problem",
+      "article": "das",
+      "plural": "die Probleme",
+      "number": "singular",
+      "meaning": "ปัญหา",
+      "group": "การขอความช่วยเหลือ",
+      "example": "Wir haben ein Problem.",
+      "id": "L16-V013",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "พวกเรามีปัญหา",
+      "exampleSentences": [
+        [
+          {
+            "text": "Wir",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "haben",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Problem.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Hilfe",
+      "word": "Hilfe",
+      "article": "die",
+      "plural": "die Hilfen",
+      "number": "singular",
+      "meaning": "ความช่วยเหลือ",
+      "group": "การขอความช่วยเหลือ",
+      "example": "Ich brauche Ihre Hilfe.",
+      "id": "L16-V014",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันต้องการความช่วยเหลือจากคุณ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "brauche",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Ihre Hilfe.",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Termin",
+      "word": "Termin",
+      "article": "der",
+      "plural": "die Termine",
+      "number": "singular",
+      "meaning": "นัดหมาย",
+      "group": "การนัดหมาย",
+      "example": "Ich habe am Montag einen Termin.",
+      "id": "L16-V015",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีนัดวันจันทร์",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "am Montag",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          },
+          {
+            "text": "einen Termin.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Stunde",
+      "word": "Stunde",
+      "article": "die",
+      "plural": "die Stunden",
+      "number": "singular",
+      "meaning": "ชั่วโมง",
+      "group": "การนัดหมาย",
+      "example": "Ich komme in einer Stunde.",
+      "id": "L16-V016",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันจะมาในอีกหนึ่งชั่วโมง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "komme",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "in einer Stunde.",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Monat",
+      "word": "Monat",
+      "article": "der",
+      "plural": "die Monate",
+      "number": "singular",
+      "meaning": "เดือน",
+      "group": "การนัดหมาย",
+      "example": "Der Kurs beginnt in einem Monat.",
+      "id": "L16-V017",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "หลักสูตรเริ่มในอีกหนึ่งเดือน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Der Kurs",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "beginnt",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "in einem Monat.",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Jahr",
+      "word": "Jahr",
+      "article": "das",
+      "plural": "die Jahre",
+      "number": "singular",
+      "meaning": "ปี",
+      "group": "การนัดหมาย",
+      "example": "Der Kurs beginnt in einem Jahr.",
+      "id": "L16-V018",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "หลักสูตรเริ่มในอีกหนึ่งปี",
+      "exampleSentences": [
+        [
+          {
+            "text": "Der Kurs",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "beginnt",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "in einem Jahr.",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "verb",
+      "headword": "funktionieren",
+      "word": "funktionieren",
+      "meaning": "ทำงานได้หรือใช้งานได้",
+      "group": "การขอความช่วยเหลือ",
+      "example": "Das Telefon funktioniert nicht.",
+      "variants": [],
+      "nouns": [],
+      "id": "L16-V019",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "โทรศัพท์ใช้งานไม่ได้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das Telefon",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "funktioniert",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "nicht.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "verb",
+      "headword": "reparieren",
+      "word": "reparieren",
+      "meaning": "ซ่อม",
+      "group": "การขอความช่วยเหลือ",
+      "example": "Ich kann das reparieren.",
+      "variants": [],
+      "nouns": [],
+      "id": "L16-V020",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันซ่อมสิ่งนี้ได้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "kann",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "das",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "reparieren.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "verb",
+      "headword": "verschieben",
+      "word": "verschieben",
+      "meaning": "เลื่อนนัดหรือเปลี่ยนเวลา",
+      "group": "การนัดหมาย",
+      "example": "Können wir den Termin verschieben?",
+      "variants": [],
+      "nouns": [],
+      "id": "L16-V021",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "เราเลื่อนนัดได้ไหม",
+      "exampleSentences": [
+        [
+          {
+            "text": "Können",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "wir",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "den Termin",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          },
+          {
+            "text": "verschieben?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "verb",
+      "headword": "absagen",
+      "word": "absagen",
+      "meaning": "ยกเลิกนัด",
+      "group": "การนัดหมาย",
+      "example": "Ich sage den Termin ab.",
+      "variants": [],
+      "nouns": [],
+      "id": "L16-V022",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันยกเลิกนัด",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "sage",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "den Termin",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          },
+          {
+            "text": "ab.",
+            "role": "verb",
+            "label": "ส่วนแยกของกริยา",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "verb",
+      "headword": "vorschlagen",
+      "word": "vorschlagen",
+      "meaning": "เสนอ",
+      "group": "การนัดหมาย",
+      "example": "Ich möchte einen Termin vorschlagen.",
+      "variants": [],
+      "nouns": [],
+      "id": "L16-V023",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันอยากเสนอเวลานัด",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "möchte",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "einen Termin",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "vorschlagen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "adjective",
+      "headword": "kaputt",
+      "word": "kaputt",
+      "meaning": "เสียหรือชำรุด",
+      "group": "การขอความช่วยเหลือ",
+      "example": "Der Herd ist kaputt.",
+      "variants": [],
+      "nouns": [],
+      "id": "L16-V024",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "เตาปรุงอาหารเสีย",
+      "exampleSentences": [
+        [
+          {
+            "text": "Der Herd",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "kaputt.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "L16-temporale-praepositionen",
+      "title": "นับเวลาและอ้างอิงเหตุการณ์ด้วย in / vor / nach",
+      "purpose": "บอกอีกนานเท่าไร ผ่านมาแล้วเท่าไร หรือก่อน/หลังเหตุการณ์",
+      "notes": [
+        "in + ระยะเวลา: นับจากตอนนี้ไปอนาคต เช่น in einer Stunde",
+        "vor + ระยะเวลา: ย้อนจากตอนนี้ เช่น vor einem Tag",
+        "vor + เหตุการณ์: ก่อนเหตุการณ์นั้น ไม่ได้แปลว่าอดีตเสมอ เช่น vor dem Termin",
+        "nach + เหตุการณ์: หลังเหตุการณ์นั้น เช่น nach der Arbeit",
+        "ทั้งสามคำใช้ Dativ ในความหมายเวลาเหล่านี้; เริ่มจากเลือกจุดอ้างอิงเวลา แล้วดูรูปคำนามในกลุ่มคำ"
+      ],
+      "table": [
+        [
+          "จุดอ้างอิง",
+          "ข้อมูล",
+          "รูปภาษา"
+        ],
+        [
+          "ตอนนี้ 09:00",
+          "มาถึง 10:00",
+          "in einer Stunde"
+        ],
+        [
+          "ตอนนี้วันอังคาร",
+          "เกิดเมื่อวันจันทร์",
+          "vor einem Tag"
+        ],
+        [
+          "นัด 10:00",
+          "โทร 09:30",
+          "vor dem Termin"
+        ],
+        [
+          "เรียนจบ 12:00",
+          "กินข้าว 12:30",
+          "nach dem Unterricht"
+        ]
+      ],
+      "models": [
+        {
+          "text": "In einer Stunde komme ich.",
+          "sentences": [
+            [
+              {
+                "text": "In einer Stunde",
+                "role": "time",
+                "label": "เวลา / ลำดับ",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "komme",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "ich.",
+                "role": "subject",
+                "label": "ประธาน"
+              }
+            ]
+          ],
+          "meaning": "ฉันจะมาในอีกหนึ่งชั่วโมง"
+        },
+        {
+          "text": "Wir essen nach dem Unterricht.",
+          "sentences": [
+            [
+              {
+                "text": "Wir",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "essen",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "nach dem Unterricht.",
+                "role": "time",
+                "label": "เวลา / ลำดับ"
+              }
+            ]
+          ],
+          "meaning": "พวกเรากินอาหารหลังเลิกเรียน"
+        },
+        {
+          "text": "Ich komme vor dem Termin.",
+          "sentences": [
+            [
+              {
+                "text": "Ich",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "komme",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "vor dem Termin.",
+                "role": "time",
+                "label": "เวลา / ลำดับ"
+              }
+            ]
+          ],
+          "meaning": "ฉันจะมาก่อนเวลานัด"
+        }
+      ],
+      "caseSupportTable": [
+        [
+          "รูปต้นทาง",
+          "Dativ ชี้เฉพาะ",
+          "Dativ ไม่ชี้เฉพาะ"
+        ],
+        [
+          "der Termin",
+          "dem Termin",
+          "einem Termin"
+        ],
+        [
+          "das Gespräch",
+          "dem Gespräch",
+          "einem Gespräch"
+        ],
+        [
+          "die Stunde",
+          "der Stunde",
+          "einer Stunde"
+        ],
+        [
+          "die Stunden",
+          "den Stunden",
+          "ไม่มีรูป ein พหูพจน์"
+        ]
+      ],
+      "questionIds": [
+        "A13-L16-TEMPORALE-PRAEPOSITIONEN-001-PREP3",
+        "A13-L16-TEMPORALE-PRAEPOSITIONEN-002-PREP3",
+        "A13-L16-TEMPORALE-PRAEPOSITIONEN-003-PREP3",
+        "A13-L16-TEMPORALE-PRAEPOSITIONEN-004-PREP3",
+        "A13-L16-TEMPORALE-PRAEPOSITIONEN-005-PREP3",
+        "A13-L16-DATIV-PREP-001"
+      ],
+      "diagnosticTargets": [
+        "L16-temporale-dative-form"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "แจ้งปัญหา",
+      "purpose": "บอกว่าอุปกรณ์ใดใช้งานไม่ได้",
+      "context": [
+        [
+          "อุปกรณ์ที่เสีย",
+          "ลิฟต์"
+        ]
+      ],
+      "question": "Was ist das Problem?",
+      "questionMeaning": "มีปัญหาอะไร",
+      "reply": "Der Aufzug funktioniert nicht.",
+      "replyMeaning": "ลิฟต์ใช้งานไม่ได้",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "das Problem?",
+            "role": "subject",
+            "label": "ประธาน"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Der Aufzug",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "funktioniert",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "nicht.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "id": "L16-D01",
+      "questionTargetId": "L16-R001",
+      "replyTargetId": "L16-R002",
+      "requiredItemIds": [
+        "L16-R001",
+        "L16-R002"
+      ],
+      "trialIds": [
+        "L16-D01-A-try-v1",
+        "L16-D01-B-try-v1"
+      ]
+    },
+    {
+      "group": "แจ้งปัญหา",
+      "purpose": "ขอความช่วยเหลือเรื่องการซ่อม",
+      "context": [
+        [
+          "ความต้องการ",
+          "ขอความช่วยเหลือ"
+        ]
+      ],
+      "question": "Brauchen Sie Hilfe?",
+      "questionMeaning": "คุณต้องการความช่วยเหลือไหม",
+      "reply": "Ja, ich brauche Ihre Hilfe.",
+      "replyMeaning": "ต้องการ ฉันต้องการความช่วยเหลือจากคุณ",
+      "questionSentences": [
+        [
+          {
+            "text": "Brauchen",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "Hilfe?",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ja,",
+            "role": "other",
+            "label": "ตอบรับ"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "brauche",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Ihre Hilfe.",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          }
+        ]
+      ],
+      "id": "L16-D02",
+      "questionTargetId": "L16-R003",
+      "replyTargetId": "L16-R004",
+      "requiredItemIds": [
+        "L16-R003",
+        "L16-R004"
+      ],
+      "trialIds": [
+        "L16-D02-A-try-v1",
+        "L16-D02-B-try-v1"
+      ]
+    },
+    {
+      "group": "เสนอความช่วยเหลือ",
+      "purpose": "บอกสิ่งที่ต้องการให้ช่วย",
+      "context": [
+        [
+          "สิ่งที่ขอให้ซ่อม",
+          "เตาปรุงอาหาร"
+        ]
+      ],
+      "question": "Was kann ich für Sie tun?",
+      "questionMeaning": "ฉันช่วยอะไรคุณได้บ้าง",
+      "reply": "Können Sie den Herd reparieren?",
+      "replyMeaning": "คุณช่วยซ่อมเตาปรุงอาหารได้ไหม",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "kann",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "für Sie",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "tun?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Können",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "den Herd",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          },
+          {
+            "text": "reparieren?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L16-D03",
+      "questionTargetId": "L16-R005",
+      "replyTargetId": "L16-R006",
+      "requiredItemIds": [
+        "L16-R005",
+        "L16-R006"
+      ],
+      "trialIds": [
+        "L16-D03-A-try-v1",
+        "L16-D03-B-try-v1"
+      ]
+    },
+    {
+      "group": "เสนอความช่วยเหลือ",
+      "purpose": "ตอบรับคำขออย่างตรงประเด็น",
+      "context": [
+        [
+          "ความสามารถของช่าง",
+          "ซ่อมได้"
+        ]
+      ],
+      "question": "Können Sie das reparieren?",
+      "questionMeaning": "คุณซ่อมสิ่งนี้ได้ไหม",
+      "reply": "Ja, das kann ich reparieren.",
+      "replyMeaning": "ได้ ฉันซ่อมสิ่งนี้ได้",
+      "questionSentences": [
+        [
+          {
+            "text": "Können",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "das",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "reparieren?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ja,",
+            "role": "other",
+            "label": "ตอบรับ"
+          },
+          {
+            "text": "das",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "kann",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "reparieren.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L16-D04",
+      "questionTargetId": "L16-R007",
+      "replyTargetId": "L16-R008",
+      "requiredItemIds": [
+        "L16-R007",
+        "L16-R008"
+      ],
+      "trialIds": [
+        "L16-D04-A-try-v1",
+        "L16-D04-B-try-v1"
+      ]
+    },
+    {
+      "group": "นัดหมาย",
+      "purpose": "บอกวันและเวลาที่ว่าง",
+      "context": [
+        [
+          "เวลาที่ B ว่าง",
+          "วันอังคาร 16:00"
+        ]
+      ],
+      "question": "Wann haben Sie Zeit?",
+      "questionMeaning": "คุณว่างเมื่อไร",
+      "reply": "Am Dienstag um 16 Uhr habe ich Zeit.",
+      "replyMeaning": "ฉันว่างวันอังคารเวลา 16 นาฬิกา",
+      "questionSentences": [
+        [
+          {
+            "text": "Wann",
+            "role": "time",
+            "label": "ถามเวลา",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "haben",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "Zeit?",
+            "role": "other",
+            "label": "เวลาที่มี (กรรม)"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Am Dienstag um 16 Uhr",
+            "role": "time",
+            "label": "เวลา / ลำดับ",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "Zeit.",
+            "role": "other",
+            "label": "เวลาที่มี (กรรม)"
+          }
+        ]
+      ],
+      "id": "L16-D05",
+      "questionTargetId": "L16-R009",
+      "replyTargetId": "L16-R010",
+      "requiredItemIds": [
+        "L16-R009",
+        "L16-R010"
+      ],
+      "trialIds": [
+        "L16-D05-A-try-v1",
+        "L16-D05-B-try-v1"
+      ]
+    },
+    {
+      "group": "นัดหมาย",
+      "purpose": "บอกว่าจะมาอีกนานเท่าไร",
+      "context": [
+        [
+          "ตอนนี้",
+          "09:00"
+        ],
+        [
+          "เวลาที่ B จะมา",
+          "10:00"
+        ]
+      ],
+      "question": "Wann kommen Sie?",
+      "questionMeaning": "คุณจะมาเมื่อไร",
+      "reply": "Ich komme in einer Stunde.",
+      "replyMeaning": "ฉันจะมาในอีกหนึ่งชั่วโมง",
+      "questionSentences": [
+        [
+          {
+            "text": "Wann",
+            "role": "time",
+            "label": "ถามเวลา",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "kommen",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Sie?",
+            "role": "subject",
+            "label": "ประธาน"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "komme",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "in einer Stunde.",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          }
+        ]
+      ],
+      "id": "L16-D06",
+      "questionTargetId": "L16-R011",
+      "replyTargetId": "L16-R012",
+      "requiredItemIds": [
+        "L16-R011",
+        "L16-R012"
+      ],
+      "trialIds": [
+        "L16-D06-A-try-v1",
+        "L16-D06-B-try-v1"
+      ]
+    },
+    {
+      "group": "เปลี่ยนนัด",
+      "purpose": "ปฏิเสธเวลานัดเดิม",
+      "context": [
+        [
+          "เวลาที่ B ไม่ว่าง",
+          "วันศุกร์"
+        ]
+      ],
+      "question": "Haben Sie am Freitag Zeit?",
+      "questionMeaning": "วันศุกร์คุณว่างไหม",
+      "reply": "Am Freitag kann ich leider nicht.",
+      "replyMeaning": "วันศุกร์ฉันไม่สะดวก",
+      "questionSentences": [
+        [
+          {
+            "text": "Haben",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "Sie",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "am Freitag",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          },
+          {
+            "text": "Zeit?",
+            "role": "other",
+            "label": "เวลาที่มี (กรรม)"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Am Freitag",
+            "role": "time",
+            "label": "เวลา / ลำดับ",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "kann",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "leider nicht.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "id": "L16-D07",
+      "questionTargetId": "L16-R013",
+      "replyTargetId": "L16-R014",
+      "teachingNote": "คำตอบนี้เป็นคำตอบย่อที่เข้าใจได้จากคำถามเรื่องเวลานัด จึงไม่เติมกริยาท้ายที่ไม่ได้พูดในประโยค",
+      "requiredItemIds": [
+        "L16-R013",
+        "L16-R014"
+      ],
+      "trialIds": [
+        "L16-D07-A-try-v1",
+        "L16-D07-B-try-v1"
+      ]
+    },
+    {
+      "group": "เปลี่ยนนัด",
+      "purpose": "ตกลงเวลาใหม่",
+      "context": [
+        [
+          "เวลาใหม่ที่ตกลง",
+          "วันจันทร์หลังเลิกงาน"
+        ]
+      ],
+      "question": "Können wir den Termin verschieben?",
+      "questionMeaning": "เราเลื่อนนัดได้ไหม",
+      "reply": "Ja, nach der Arbeit am Montag habe ich Zeit.",
+      "replyMeaning": "ได้ ฉันว่างหลังเลิกงานวันจันทร์",
+      "questionSentences": [
+        [
+          {
+            "text": "Können",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "wir",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "den Termin",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          },
+          {
+            "text": "verschieben?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ja,",
+            "role": "other",
+            "label": "ตอบรับ"
+          },
+          {
+            "text": "nach der Arbeit am Montag",
+            "role": "time",
+            "label": "เวลา / ลำดับ",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "Zeit.",
+            "role": "other",
+            "label": "เวลาที่มี (กรรม)"
+          }
+        ]
+      ],
+      "id": "L16-D08",
+      "questionTargetId": "L16-R015",
+      "replyTargetId": "L16-R016",
+      "requiredItemIds": [
+        "L16-R015",
+        "L16-R016"
+      ],
+      "trialIds": [
+        "L16-D08-A-try-v1",
+        "L16-D08-B-try-v1"
+      ]
+    }
+  ],
+  "practiceCandidates": [
+    {
+      "id": "L16-V001-meaning-v1",
+      "targetId": "L16-V001",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V001"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Aufzug",
+        "options": [
+          "ตู้เย็น",
+          "ลิฟต์",
+          "โทรทัศน์"
+        ]
+      },
+      "grading": {
+        "answer": "ลิฟต์"
+      },
+      "contextId": "L16-V001-definition"
+    },
+    {
+      "id": "L16-V001-article-v1",
+      "targetId": "L16-V001",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V001"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Aufzug",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L16-V001-lemma"
+    },
+    {
+      "id": "L16-V001-spelling-v1",
+      "targetId": "L16-V001",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V001"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ลิฟต์",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Aufzug",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V001-recall"
+    },
+    {
+      "id": "L16-V002-meaning-v1",
+      "targetId": "L16-V002",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V002"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Kühlschrank",
+        "options": [
+          "ลิฟต์",
+          "ตู้เย็น",
+          "โทรทัศน์"
+        ]
+      },
+      "grading": {
+        "answer": "ตู้เย็น"
+      },
+      "contextId": "L16-V002-definition"
+    },
+    {
+      "id": "L16-V002-article-v1",
+      "targetId": "L16-V002",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V002"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Kühlschrank",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L16-V002-lemma"
+    },
+    {
+      "id": "L16-V002-spelling-v1",
+      "targetId": "L16-V002",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V002"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ตู้เย็น",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Kühlschrank",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V002-recall"
+    },
+    {
+      "id": "L16-V003-meaning-v1",
+      "targetId": "L16-V003",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V003"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Fernseher",
+        "options": [
+          "ลิฟต์",
+          "โทรทัศน์",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "โทรทัศน์"
+      },
+      "contextId": "L16-V003-definition"
+    },
+    {
+      "id": "L16-V003-article-v1",
+      "targetId": "L16-V003",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V003"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Fernseher",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L16-V003-lemma"
+    },
+    {
+      "id": "L16-V003-spelling-v1",
+      "targetId": "L16-V003",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V003"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "โทรทัศน์",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Fernseher",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V003-recall"
+    },
+    {
+      "id": "L16-V004-meaning-v1",
+      "targetId": "L16-V004",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V004"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Heizung",
+        "options": [
+          "ลิฟต์",
+          "เครื่องหรือระบบทำความร้อน",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "เครื่องหรือระบบทำความร้อน"
+      },
+      "contextId": "L16-V004-definition"
+    },
+    {
+      "id": "L16-V004-article-v1",
+      "targetId": "L16-V004",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V004"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Heizung",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L16-V004-lemma"
+    },
+    {
+      "id": "L16-V004-spelling-v1",
+      "targetId": "L16-V004",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V004"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เครื่องหรือระบบทำความร้อน",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Heizung",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V004-recall"
+    },
+    {
+      "id": "L16-V005-meaning-v1",
+      "targetId": "L16-V005",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V005"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Licht",
+        "options": [
+          "ลิฟต์",
+          "ไฟหรือแสงสว่าง",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "ไฟหรือแสงสว่าง"
+      },
+      "contextId": "L16-V005-definition"
+    },
+    {
+      "id": "L16-V005-article-v1",
+      "targetId": "L16-V005",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V005"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Licht",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L16-V005-lemma"
+    },
+    {
+      "id": "L16-V005-spelling-v1",
+      "targetId": "L16-V005",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V005"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ไฟหรือแสงสว่าง",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Licht",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V005-recall"
+    },
+    {
+      "id": "L16-V006-meaning-v1",
+      "targetId": "L16-V006",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V006"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Telefon",
+        "options": [
+          "ลิฟต์",
+          "โทรศัพท์",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "โทรศัพท์"
+      },
+      "contextId": "L16-V006-definition"
+    },
+    {
+      "id": "L16-V006-article-v1",
+      "targetId": "L16-V006",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V006"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Telefon",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L16-V006-lemma"
+    },
+    {
+      "id": "L16-V006-spelling-v1",
+      "targetId": "L16-V006",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V006"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "โทรศัพท์",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Telefon",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V006-recall"
+    },
+    {
+      "id": "L16-V007-meaning-v1",
+      "targetId": "L16-V007",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V007"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Dusche",
+        "options": [
+          "ลิฟต์",
+          "ฝักบัวหรือที่อาบน้ำฝักบัว",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "ฝักบัวหรือที่อาบน้ำฝักบัว"
+      },
+      "contextId": "L16-V007-definition"
+    },
+    {
+      "id": "L16-V007-article-v1",
+      "targetId": "L16-V007",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V007"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Dusche",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L16-V007-lemma"
+    },
+    {
+      "id": "L16-V007-spelling-v1",
+      "targetId": "L16-V007",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V007"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ฝักบัวหรือที่อาบน้ำฝักบัว",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Dusche",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V007-recall"
+    },
+    {
+      "id": "L16-V008-meaning-v1",
+      "targetId": "L16-V008",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V008"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Netz",
+        "options": [
+          "ลิฟต์",
+          "เครือข่ายหรือสัญญาณโทรศัพท์",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "เครือข่ายหรือสัญญาณโทรศัพท์"
+      },
+      "contextId": "L16-V008-definition"
+    },
+    {
+      "id": "L16-V008-article-v1",
+      "targetId": "L16-V008",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V008"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Netz",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L16-V008-lemma"
+    },
+    {
+      "id": "L16-V008-spelling-v1",
+      "targetId": "L16-V008",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V008"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เครือข่ายหรือสัญญาณโทรศัพท์",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Netz",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V008-recall"
+    },
+    {
+      "id": "L16-V009-meaning-v1",
+      "targetId": "L16-V009",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V009"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Herd",
+        "options": [
+          "ลิฟต์",
+          "เตาปรุงอาหาร",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "เตาปรุงอาหาร"
+      },
+      "contextId": "L16-V009-definition"
+    },
+    {
+      "id": "L16-V009-article-v1",
+      "targetId": "L16-V009",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V009"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Herd",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L16-V009-lemma"
+    },
+    {
+      "id": "L16-V009-spelling-v1",
+      "targetId": "L16-V009",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V009"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เตาปรุงอาหาร",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Herd",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V009-recall"
+    },
+    {
+      "id": "L16-V010-meaning-v1",
+      "targetId": "L16-V010",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V010"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Klingel",
+        "options": [
+          "ลิฟต์",
+          "กริ่ง",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "กริ่ง"
+      },
+      "contextId": "L16-V010-definition"
+    },
+    {
+      "id": "L16-V010-article-v1",
+      "targetId": "L16-V010",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V010"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Klingel",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L16-V010-lemma"
+    },
+    {
+      "id": "L16-V010-spelling-v1",
+      "targetId": "L16-V010",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V010"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "กริ่ง",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Klingel",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V010-recall"
+    },
+    {
+      "id": "L16-V011-meaning-v1",
+      "targetId": "L16-V011",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V011"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Steckdose",
+        "options": [
+          "ลิฟต์",
+          "เต้ารับไฟฟ้า",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "เต้ารับไฟฟ้า"
+      },
+      "contextId": "L16-V011-definition"
+    },
+    {
+      "id": "L16-V011-article-v1",
+      "targetId": "L16-V011",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V011"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Steckdose",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L16-V011-lemma"
+    },
+    {
+      "id": "L16-V011-spelling-v1",
+      "targetId": "L16-V011",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V011"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เต้ารับไฟฟ้า",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Steckdose",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V011-recall"
+    },
+    {
+      "id": "L16-V012-meaning-v1",
+      "targetId": "L16-V012",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V012"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Waschmaschine",
+        "options": [
+          "ลิฟต์",
+          "เครื่องซักผ้า",
+          "ตู้เย็น"
+        ]
+      },
+      "grading": {
+        "answer": "เครื่องซักผ้า"
+      },
+      "contextId": "L16-V012-definition"
+    },
+    {
+      "id": "L16-V012-article-v1",
+      "targetId": "L16-V012",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V012"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Waschmaschine",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L16-V012-lemma"
+    },
+    {
+      "id": "L16-V012-spelling-v1",
+      "targetId": "L16-V012",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V012"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เครื่องซักผ้า",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Waschmaschine",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V012-recall"
+    },
+    {
+      "id": "L16-V013-meaning-v1",
+      "targetId": "L16-V013",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V013"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Problem",
+        "options": [
+          "ความช่วยเหลือ",
+          "ปัญหา",
+          "ทำงานได้หรือใช้งานได้"
+        ]
+      },
+      "grading": {
+        "answer": "ปัญหา"
+      },
+      "contextId": "L16-V013-definition"
+    },
+    {
+      "id": "L16-V013-article-v1",
+      "targetId": "L16-V013",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V013"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Problem",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L16-V013-lemma"
+    },
+    {
+      "id": "L16-V013-spelling-v1",
+      "targetId": "L16-V013",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V013"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ปัญหา",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Problem",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V013-recall"
+    },
+    {
+      "id": "L16-V014-meaning-v1",
+      "targetId": "L16-V014",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V014"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Hilfe",
+        "options": [
+          "ปัญหา",
+          "ความช่วยเหลือ",
+          "ทำงานได้หรือใช้งานได้"
+        ]
+      },
+      "grading": {
+        "answer": "ความช่วยเหลือ"
+      },
+      "contextId": "L16-V014-definition"
+    },
+    {
+      "id": "L16-V014-article-v1",
+      "targetId": "L16-V014",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V014"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Hilfe",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L16-V014-lemma"
+    },
+    {
+      "id": "L16-V014-spelling-v1",
+      "targetId": "L16-V014",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V014"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ความช่วยเหลือ",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Hilfe",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V014-recall"
+    },
+    {
+      "id": "L16-V015-meaning-v1",
+      "targetId": "L16-V015",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V015"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Termin",
+        "options": [
+          "ชั่วโมง",
+          "นัดหมาย",
+          "เดือน"
+        ]
+      },
+      "grading": {
+        "answer": "นัดหมาย"
+      },
+      "contextId": "L16-V015-definition"
+    },
+    {
+      "id": "L16-V015-article-v1",
+      "targetId": "L16-V015",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V015"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Termin",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L16-V015-lemma"
+    },
+    {
+      "id": "L16-V015-spelling-v1",
+      "targetId": "L16-V015",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V015"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "นัดหมาย",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Termin",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V015-recall"
+    },
+    {
+      "id": "L16-V016-meaning-v1",
+      "targetId": "L16-V016",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V016"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Stunde",
+        "options": [
+          "นัดหมาย",
+          "ชั่วโมง",
+          "เดือน"
+        ]
+      },
+      "grading": {
+        "answer": "ชั่วโมง"
+      },
+      "contextId": "L16-V016-definition"
+    },
+    {
+      "id": "L16-V016-article-v1",
+      "targetId": "L16-V016",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V016"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Stunde",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L16-V016-lemma"
+    },
+    {
+      "id": "L16-V016-spelling-v1",
+      "targetId": "L16-V016",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V016"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ชั่วโมง",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Stunde",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V016-recall"
+    },
+    {
+      "id": "L16-V017-meaning-v1",
+      "targetId": "L16-V017",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V017"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Monat",
+        "options": [
+          "นัดหมาย",
+          "เดือน",
+          "ชั่วโมง"
+        ]
+      },
+      "grading": {
+        "answer": "เดือน"
+      },
+      "contextId": "L16-V017-definition"
+    },
+    {
+      "id": "L16-V017-article-v1",
+      "targetId": "L16-V017",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V017"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Monat",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L16-V017-lemma"
+    },
+    {
+      "id": "L16-V017-spelling-v1",
+      "targetId": "L16-V017",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V017"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เดือน",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Monat",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V017-recall"
+    },
+    {
+      "id": "L16-V018-meaning-v1",
+      "targetId": "L16-V018",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V018"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Jahr",
+        "options": [
+          "นัดหมาย",
+          "ปี",
+          "ชั่วโมง"
+        ]
+      },
+      "grading": {
+        "answer": "ปี"
+      },
+      "contextId": "L16-V018-definition"
+    },
+    {
+      "id": "L16-V018-article-v1",
+      "targetId": "L16-V018",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V018"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Jahr",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L16-V018-lemma"
+    },
+    {
+      "id": "L16-V018-spelling-v1",
+      "targetId": "L16-V018",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V018"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ปี",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Jahr",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V018-recall"
+    },
+    {
+      "id": "L16-V019-meaning-v1",
+      "targetId": "L16-V019",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V019"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "funktionieren",
+        "options": [
+          "ปัญหา",
+          "ทำงานได้หรือใช้งานได้",
+          "ความช่วยเหลือ"
+        ]
+      },
+      "grading": {
+        "answer": "ทำงานได้หรือใช้งานได้"
+      },
+      "contextId": "L16-V019-definition"
+    },
+    {
+      "id": "L16-V019-spelling-v1",
+      "targetId": "L16-V019",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V019"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ทำงานได้หรือใช้งานได้"
+      },
+      "grading": {
+        "answer": "funktionieren",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V019-recall"
+    },
+    {
+      "id": "L16-V020-meaning-v1",
+      "targetId": "L16-V020",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V020"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "reparieren",
+        "options": [
+          "ปัญหา",
+          "ซ่อม",
+          "ความช่วยเหลือ"
+        ]
+      },
+      "grading": {
+        "answer": "ซ่อม"
+      },
+      "contextId": "L16-V020-definition"
+    },
+    {
+      "id": "L16-V020-spelling-v1",
+      "targetId": "L16-V020",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V020"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ซ่อม"
+      },
+      "grading": {
+        "answer": "reparieren",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V020-recall"
+    },
+    {
+      "id": "L16-V021-meaning-v1",
+      "targetId": "L16-V021",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V021"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "verschieben",
+        "options": [
+          "นัดหมาย",
+          "เลื่อนนัดหรือเปลี่ยนเวลา",
+          "ชั่วโมง"
+        ]
+      },
+      "grading": {
+        "answer": "เลื่อนนัดหรือเปลี่ยนเวลา"
+      },
+      "contextId": "L16-V021-definition"
+    },
+    {
+      "id": "L16-V021-spelling-v1",
+      "targetId": "L16-V021",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V021"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เลื่อนนัดหรือเปลี่ยนเวลา"
+      },
+      "grading": {
+        "answer": "verschieben",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V021-recall"
+    },
+    {
+      "id": "L16-V022-meaning-v1",
+      "targetId": "L16-V022",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V022"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "absagen",
+        "options": [
+          "นัดหมาย",
+          "ยกเลิกนัด",
+          "ชั่วโมง"
+        ]
+      },
+      "grading": {
+        "answer": "ยกเลิกนัด"
+      },
+      "contextId": "L16-V022-definition"
+    },
+    {
+      "id": "L16-V022-spelling-v1",
+      "targetId": "L16-V022",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V022"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ยกเลิกนัด"
+      },
+      "grading": {
+        "answer": "absagen",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V022-recall"
+    },
+    {
+      "id": "L16-V023-meaning-v1",
+      "targetId": "L16-V023",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V023"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "vorschlagen",
+        "options": [
+          "นัดหมาย",
+          "เสนอ",
+          "ชั่วโมง"
+        ]
+      },
+      "grading": {
+        "answer": "เสนอ"
+      },
+      "contextId": "L16-V023-definition"
+    },
+    {
+      "id": "L16-V023-spelling-v1",
+      "targetId": "L16-V023",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V023"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เสนอ"
+      },
+      "grading": {
+        "answer": "vorschlagen",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V023-recall"
+    },
+    {
+      "id": "L16-V024-meaning-v1",
+      "targetId": "L16-V024",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V024"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "kaputt",
+        "options": [
+          "ปัญหา",
+          "เสียหรือชำรุด",
+          "ความช่วยเหลือ"
+        ]
+      },
+      "grading": {
+        "answer": "เสียหรือชำรุด"
+      },
+      "contextId": "L16-V024-definition"
+    },
+    {
+      "id": "L16-V024-spelling-v1",
+      "targetId": "L16-V024",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V024"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เสียหรือชำรุด"
+      },
+      "grading": {
+        "answer": "kaputt",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L16-V024-recall"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001-PREP3",
+      "version": 3,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Es ist jetzt neun Uhr. Ich komme ___ einer Stunde, also um zehn.",
+      "options": [
+        "in",
+        "vor",
+        "nach"
+      ],
+      "acceptedAnswers": [
+        "in"
+      ],
+      "subskill": "temporal_relation",
+      "difficulty": 1,
+      "hint": "in + ระยะเวลา: อีก...; vor + ระยะเวลา: ...ที่แล้ว; vor + เหตุการณ์: ก่อน...; nach + เหตุการณ์: หลัง...",
+      "explanation": "จากเก้าโมงไปสิบโมงเป็นอีกหนึ่งชั่วโมงในอนาคต จึงใช้ in einer Stunde",
+      "knownErrors": {
+        "vor": "time_relation",
+        "nach": "time_relation"
+      },
+      "targetId": "L16-temporale-praepositionen",
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Ich komme in einer Stunde, also um zehn.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "komme",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "in einer Stunde,",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "also",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "um zehn.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "meaning": "ฉันจะมาในอีกหนึ่งชั่วโมง คือเวลาสิบโมง",
+        "reason": "จากเก้าโมงไปสิบโมงเป็นอีกหนึ่งชั่วโมงในอนาคต จึงใช้ in einer Stunde"
+      }
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002-PREP3",
+      "version": 3,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Heute ist Dienstag. Der Termin war gestern, also ___ einem Tag.",
+      "options": [
+        "vor",
+        "in",
+        "nach"
+      ],
+      "acceptedAnswers": [
+        "vor"
+      ],
+      "subskill": "temporal_relation",
+      "difficulty": 1,
+      "hint": "in + ระยะเวลา: อีก...; vor + ระยะเวลา: ...ที่แล้ว; vor + เหตุการณ์: ก่อน...; nach + เหตุการณ์: หลัง...",
+      "explanation": "วันนี้วันอังคารและนัดเป็นวันจันทร์ จึงใช้ vor einem Tag บอกเวลาที่ผ่านมาแล้ว",
+      "knownErrors": {
+        "in": "time_relation",
+        "nach": "time_relation"
+      },
+      "targetId": "L16-temporale-praepositionen",
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Der Termin war gestern, also vor einem Tag.",
+        "sentences": [
+          [
+            {
+              "text": "Der Termin",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "war",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "gestern,",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "also",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "vor einem Tag.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "meaning": "นัดนั้นเป็นเมื่อวาน ก็คือหนึ่งวันที่แล้ว",
+        "reason": "วันนี้วันอังคารและนัดเป็นวันจันทร์ จึงใช้ vor einem Tag บอกเวลาที่ผ่านมาแล้ว"
+      }
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003-PREP3",
+      "version": 3,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Der Unterricht endet um zwölf Uhr. Wir essen ___ dem Unterricht.",
+      "acceptedAnswers": [
+        "nach"
+      ],
+      "subskill": "temporal_relation",
+      "difficulty": 2,
+      "hint": "in + ระยะเวลา: อีก...; vor + ระยะเวลา: ...ที่แล้ว; vor + เหตุการณ์: ก่อน...; nach + เหตุการณ์: หลัง...",
+      "explanation": "ตารางบอกว่าเรียนจบ 12:00 และกิน 12:30 จึงใช้ nach ไม่ใช่การเดาจากเวลาเลิกเรียนเพียงอย่างเดียว",
+      "knownErrors": {},
+      "targetId": "L16-temporale-praepositionen",
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "context": "ตารางระบุ: เรียนจบ 12:00 และเริ่มกินอาหาร 12:30",
+      "feedback": {
+        "text": "Wir essen nach dem Unterricht.",
+        "sentences": [
+          [
+            {
+              "text": "Wir",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "essen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "nach dem Unterricht.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "meaning": "พวกเรากินอาหารหลังเลิกเรียน",
+        "reason": "ตารางบอกว่าเรียนจบ 12:00 และกิน 12:30 จึงใช้ nach ไม่ใช่การเดาจากเวลาเลิกเรียนเพียงอย่างเดียว"
+      }
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004-PREP3",
+      "version": 3,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Es ist jetzt Montag. Der Termin ist am Mittwoch, also ___ zwei Tagen.",
+      "acceptedAnswers": [
+        "in"
+      ],
+      "subskill": "temporal_relation",
+      "difficulty": 2,
+      "hint": "in + ระยะเวลา: อีก...; vor + ระยะเวลา: ...ที่แล้ว; vor + เหตุการณ์: ก่อน...; nach + เหตุการณ์: หลัง...",
+      "explanation": "นับจากวันจันทร์ไปวันพุธเป็นสองวันในอนาคต จึงใช้ in zwei Tagen",
+      "knownErrors": {},
+      "targetId": "L16-temporale-praepositionen",
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "assistanceAvailable": [
+        "prior-model"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "feedback": {
+        "text": "Der Termin ist am Mittwoch, also in zwei Tagen.",
+        "sentences": [
+          [
+            {
+              "text": "Der Termin",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "am Mittwoch,",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "also",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "in zwei Tagen.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "meaning": "นัดเป็นวันพุธ ก็คือในอีกสองวัน",
+        "reason": "นับจากวันจันทร์ไปวันพุธเป็นสองวันในอนาคต จึงใช้ in zwei Tagen"
+      }
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005-PREP3",
+      "version": 3,
+      "topicId": "L16-temporale-praepositionen",
+      "variantGroup": "a13-l16-temporale-praepositionen-005",
+      "kind": "order",
+      "prompt": "เรียงประโยคตามแบบที่เรียน โดยเริ่มด้วย Wir",
+      "tokens": [
+        "Kurs.",
+        "dem",
+        "nach",
+        "uns",
+        "treffen",
+        "Wir"
+      ],
+      "acceptedAnswers": [
+        "Wir treffen uns nach dem Kurs."
+      ],
+      "subskill": "declarative_word_order",
+      "difficulty": 2,
+      "hint": "in + ระยะเวลา: อีก...; vor + ระยะเวลา: ...ที่แล้ว; vor + เหตุการณ์: ก่อน...; nach + เหตุการณ์: หลัง...",
+      "explanation": "เริ่มด้วย Wir แล้ววาง treffen ตำแหน่ง 2; nach dem Kurs บอกว่าพบกันหลังเรียน",
+      "knownErrors": {},
+      "targetId": "L16-temporale-praepositionen",
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "startWith": "Wir",
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "feedback": {
+        "text": "Wir treffen uns nach dem Kurs.",
+        "sentences": [
+          [
+            {
+              "text": "Wir",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "treffen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "uns",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "nach dem Kurs.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "meaning": "พวกเราพบกันหลังเลิกเรียน",
+        "reason": "เริ่มด้วย Wir แล้ววาง treffen ตำแหน่ง 2; nach dem Kurs บอกว่าพบกันหลังเรียน"
+      }
+    },
+    {
+      "id": "L16-D01-A-try-v1",
+      "targetId": "L16-R001",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R001",
+        "L16-R002"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกว่าอุปกรณ์ใดใช้งานไม่ได้",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "อุปกรณ์ที่เสีย",
+          "ลิฟต์"
+        ]
+      ],
+      "prompt": "Der Aufzug funktioniert nicht.",
+      "feedback": {
+        "question": "Was ist das Problem?",
+        "reply": "Der Aufzug funktioniert nicht.",
+        "questionMeaning": "มีปัญหาอะไร",
+        "replyMeaning": "ลิฟต์ใช้งานไม่ได้",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das Problem?",
+              "role": "subject",
+              "label": "ประธาน"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Der Aufzug",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "funktioniert",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "nicht.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "Aufzug คือลิฟต์ และ nicht ปฏิเสธการทำงาน จึงตรงกับอุปกรณ์ที่แจ้งเสีย"
+      },
+      "grading": {
+        "answer": "Was ist das Problem?"
+      },
+      "contextId": "L16-D01",
+      "tokens": [
+        "Problem?",
+        "das",
+        "ist",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L16-D01-B-try-v1",
+      "targetId": "L16-R002",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L16-R001",
+        "L16-R002"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกว่าอุปกรณ์ใดใช้งานไม่ได้",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "อุปกรณ์ที่เสีย",
+          "ลิฟต์"
+        ]
+      ],
+      "prompt": "Was ist das Problem?",
+      "feedback": {
+        "question": "Was ist das Problem?",
+        "reply": "Der Aufzug funktioniert nicht.",
+        "questionMeaning": "มีปัญหาอะไร",
+        "replyMeaning": "ลิฟต์ใช้งานไม่ได้",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das Problem?",
+              "role": "subject",
+              "label": "ประธาน"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Der Aufzug",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "funktioniert",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "nicht.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "Aufzug คือลิฟต์ และ nicht ปฏิเสธการทำงาน จึงตรงกับอุปกรณ์ที่แจ้งเสีย"
+      },
+      "grading": {
+        "answer": "Der Aufzug funktioniert nicht."
+      },
+      "contextId": "L16-D01",
+      "options": [
+        "Der Fernseher funktioniert nicht.",
+        "Der Aufzug funktioniert nicht.",
+        "Die Waschmaschine ist kaputt."
+      ]
+    },
+    {
+      "id": "L16-D02-A-try-v1",
+      "targetId": "L16-R003",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R003",
+        "L16-R004"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ขอความช่วยเหลือเรื่องการซ่อม",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความต้องการ",
+          "ขอความช่วยเหลือ"
+        ]
+      ],
+      "prompt": "Ja, ich brauche Ihre Hilfe.",
+      "feedback": {
+        "question": "Brauchen Sie Hilfe?",
+        "reply": "Ja, ich brauche Ihre Hilfe.",
+        "questionMeaning": "คุณต้องการความช่วยเหลือไหม",
+        "replyMeaning": "ต้องการ ฉันต้องการความช่วยเหลือจากคุณ",
+        "questionSentences": [
+          [
+            {
+              "text": "Brauchen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Hilfe?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "brauche",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Ihre Hilfe.",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "reason": "Ihre Hilfe ใช้ขอความช่วยเหลือจากคู่สนทนาแบบสุภาพ"
+      },
+      "grading": {
+        "answer": "Brauchen Sie Hilfe?"
+      },
+      "contextId": "L16-D02",
+      "tokens": [
+        "Hilfe?",
+        "Sie",
+        "Brauchen"
+      ],
+      "startWith": "Brauchen"
+    },
+    {
+      "id": "L16-D02-B-try-v1",
+      "targetId": "L16-R004",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R003",
+        "L16-R004"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ขอความช่วยเหลือเรื่องการซ่อม",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความต้องการ",
+          "ขอความช่วยเหลือ"
+        ]
+      ],
+      "prompt": "Brauchen Sie Hilfe?",
+      "feedback": {
+        "question": "Brauchen Sie Hilfe?",
+        "reply": "Ja, ich brauche Ihre Hilfe.",
+        "questionMeaning": "คุณต้องการความช่วยเหลือไหม",
+        "replyMeaning": "ต้องการ ฉันต้องการความช่วยเหลือจากคุณ",
+        "questionSentences": [
+          [
+            {
+              "text": "Brauchen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Hilfe?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "brauche",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Ihre Hilfe.",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "reason": "Ihre Hilfe ใช้ขอความช่วยเหลือจากคู่สนทนาแบบสุภาพ"
+      },
+      "grading": {
+        "answer": "Ja, ich brauche Ihre Hilfe."
+      },
+      "contextId": "L16-D02",
+      "tokens": [
+        "Hilfe.",
+        "Ihre",
+        "brauche",
+        "ich",
+        "Ja,"
+      ],
+      "startWith": "Ja,"
+    },
+    {
+      "id": "L16-D03-A-try-v1",
+      "targetId": "L16-R005",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R005",
+        "L16-R006"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกสิ่งที่ต้องการให้ช่วย",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "สิ่งที่ขอให้ซ่อม",
+          "เตาปรุงอาหาร"
+        ]
+      ],
+      "prompt": "Können Sie den Herd reparieren?",
+      "feedback": {
+        "question": "Was kann ich für Sie tun?",
+        "reply": "Können Sie den Herd reparieren?",
+        "questionMeaning": "ฉันช่วยอะไรคุณได้บ้าง",
+        "replyMeaning": "คุณช่วยซ่อมเตาปรุงอาหารได้ไหม",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kann",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "für Sie",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "tun?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "den Herd",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "reparieren?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "ข้อมูลระบุเตาปรุงอาหาร จึงใช้ den Herd เป็นสิ่งที่ขอให้ซ่อม"
+      },
+      "grading": {
+        "answer": "Was kann ich für Sie tun?"
+      },
+      "contextId": "L16-D03",
+      "tokens": [
+        "tun?",
+        "Sie",
+        "für",
+        "ich",
+        "kann",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L16-D03-B-try-v1",
+      "targetId": "L16-R006",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L16-R005",
+        "L16-R006"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกสิ่งที่ต้องการให้ช่วย",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "สิ่งที่ขอให้ซ่อม",
+          "เตาปรุงอาหาร"
+        ]
+      ],
+      "prompt": "Was kann ich für Sie tun?",
+      "feedback": {
+        "question": "Was kann ich für Sie tun?",
+        "reply": "Können Sie den Herd reparieren?",
+        "questionMeaning": "ฉันช่วยอะไรคุณได้บ้าง",
+        "replyMeaning": "คุณช่วยซ่อมเตาปรุงอาหารได้ไหม",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kann",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "für Sie",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "tun?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "den Herd",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "reparieren?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "ข้อมูลระบุเตาปรุงอาหาร จึงใช้ den Herd เป็นสิ่งที่ขอให้ซ่อม"
+      },
+      "grading": {
+        "answer": "Können Sie den Herd reparieren?"
+      },
+      "contextId": "L16-D03",
+      "options": [
+        "Können Sie die Dusche reparieren?",
+        "Können Sie den Herd reparieren?",
+        "Können Sie das Telefon reparieren?"
+      ]
+    },
+    {
+      "id": "L16-D04-A-try-v1",
+      "targetId": "L16-R007",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R007",
+        "L16-R008"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ตอบรับคำขออย่างตรงประเด็น",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความสามารถของช่าง",
+          "ซ่อมได้"
+        ]
+      ],
+      "prompt": "Ja, das kann ich reparieren.",
+      "feedback": {
+        "question": "Können Sie das reparieren?",
+        "reply": "Ja, das kann ich reparieren.",
+        "questionMeaning": "คุณซ่อมสิ่งนี้ได้ไหม",
+        "replyMeaning": "ได้ ฉันซ่อมสิ่งนี้ได้",
+        "questionSentences": [
+          [
+            {
+              "text": "Können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "das",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "reparieren?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "das",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kann",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "reparieren.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "kann บอกว่าซ่อมได้ และ reparieren อยู่ท้ายประโยคเป็น Infinitiv"
+      },
+      "grading": {
+        "answer": "Können Sie das reparieren?"
+      },
+      "contextId": "L16-D04",
+      "tokens": [
+        "reparieren?",
+        "das",
+        "Sie",
+        "Können"
+      ],
+      "startWith": "Können"
+    },
+    {
+      "id": "L16-D04-B-try-v1",
+      "targetId": "L16-R008",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R007",
+        "L16-R008"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ตอบรับคำขออย่างตรงประเด็น",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความสามารถของช่าง",
+          "ซ่อมได้"
+        ]
+      ],
+      "prompt": "Können Sie das reparieren?",
+      "feedback": {
+        "question": "Können Sie das reparieren?",
+        "reply": "Ja, das kann ich reparieren.",
+        "questionMeaning": "คุณซ่อมสิ่งนี้ได้ไหม",
+        "replyMeaning": "ได้ ฉันซ่อมสิ่งนี้ได้",
+        "questionSentences": [
+          [
+            {
+              "text": "Können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "das",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "reparieren?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "das",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kann",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "reparieren.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "kann บอกว่าซ่อมได้ และ reparieren อยู่ท้ายประโยคเป็น Infinitiv"
+      },
+      "grading": {
+        "answer": "Ja, das kann ich reparieren."
+      },
+      "contextId": "L16-D04",
+      "tokens": [
+        "reparieren.",
+        "ich",
+        "kann",
+        "das",
+        "Ja,"
+      ],
+      "startWith": "Ja,"
+    },
+    {
+      "id": "L16-D05-A-try-v1",
+      "targetId": "L16-R009",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R009",
+        "L16-R010"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกวันและเวลาที่ว่าง",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เวลาที่ B ว่าง",
+          "วันอังคาร 16:00"
+        ]
+      ],
+      "prompt": "Am Dienstag um 16 Uhr habe ich Zeit.",
+      "feedback": {
+        "question": "Wann haben Sie Zeit?",
+        "reply": "Am Dienstag um 16 Uhr habe ich Zeit.",
+        "questionMeaning": "คุณว่างเมื่อไร",
+        "replyMeaning": "ฉันว่างวันอังคารเวลา 16 นาฬิกา",
+        "questionSentences": [
+          [
+            {
+              "text": "Wann",
+              "role": "time",
+              "label": "ถามเวลา",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "haben",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Zeit?",
+              "role": "other",
+              "label": "เวลาที่มี (กรรม)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Am Dienstag um 16 Uhr",
+              "role": "time",
+              "label": "เวลา / ลำดับ",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "habe",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Zeit.",
+              "role": "other",
+              "label": "เวลาที่มี (กรรม)"
+            }
+          ]
+        ],
+        "reason": "กลุ่มวันและเวลาขึ้นต้นเป็นตำแหน่ง 1 ทั้งกลุ่ม จึงวาง habe ที่ตำแหน่ง 2 แล้วตามด้วย ich"
+      },
+      "grading": {
+        "answer": "Wann haben Sie Zeit?"
+      },
+      "contextId": "L16-D05",
+      "tokens": [
+        "Zeit?",
+        "Sie",
+        "haben",
+        "Wann"
+      ],
+      "startWith": "Wann"
+    },
+    {
+      "id": "L16-D05-B-try-v1",
+      "targetId": "L16-R010",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L16-R009",
+        "L16-R010"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกวันและเวลาที่ว่าง",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "เวลาที่ B ว่าง",
+          "วันอังคาร 16:00"
+        ]
+      ],
+      "prompt": "Wann haben Sie Zeit?",
+      "feedback": {
+        "question": "Wann haben Sie Zeit?",
+        "reply": "Am Dienstag um 16 Uhr habe ich Zeit.",
+        "questionMeaning": "คุณว่างเมื่อไร",
+        "replyMeaning": "ฉันว่างวันอังคารเวลา 16 นาฬิกา",
+        "questionSentences": [
+          [
+            {
+              "text": "Wann",
+              "role": "time",
+              "label": "ถามเวลา",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "haben",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Zeit?",
+              "role": "other",
+              "label": "เวลาที่มี (กรรม)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Am Dienstag um 16 Uhr",
+              "role": "time",
+              "label": "เวลา / ลำดับ",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "habe",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Zeit.",
+              "role": "other",
+              "label": "เวลาที่มี (กรรม)"
+            }
+          ]
+        ],
+        "reason": "กลุ่มวันและเวลาขึ้นต้นเป็นตำแหน่ง 1 ทั้งกลุ่ม จึงวาง habe ที่ตำแหน่ง 2 แล้วตามด้วย ich"
+      },
+      "grading": {
+        "answer": "Am Dienstag um 16 Uhr habe ich Zeit."
+      },
+      "contextId": "L16-D05",
+      "options": [
+        "Am Montag um 16 Uhr habe ich Zeit.",
+        "Am Dienstag um 16 Uhr habe ich Zeit.",
+        "Am Dienstag um 15 Uhr habe ich Zeit."
+      ]
+    },
+    {
+      "id": "L16-D06-A-try-v1",
+      "targetId": "L16-R011",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R011",
+        "L16-R012"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกว่าจะมาอีกนานเท่าไร",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ตอนนี้",
+          "09:00"
+        ],
+        [
+          "เวลาที่ B จะมา",
+          "10:00"
+        ]
+      ],
+      "prompt": "Ich komme in einer Stunde.",
+      "feedback": {
+        "question": "Wann kommen Sie?",
+        "reply": "Ich komme in einer Stunde.",
+        "questionMeaning": "คุณจะมาเมื่อไร",
+        "replyMeaning": "ฉันจะมาในอีกหนึ่งชั่วโมง",
+        "questionSentences": [
+          [
+            {
+              "text": "Wann",
+              "role": "time",
+              "label": "ถามเวลา",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kommen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Sie?",
+              "role": "subject",
+              "label": "ประธาน"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "komme",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "in einer Stunde.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "reason": "จาก 09:00 ไป 10:00 เป็นอีกหนึ่งชั่วโมงในอนาคต จึงใช้ in einer Stunde"
+      },
+      "grading": {
+        "answer": "Wann kommen Sie?"
+      },
+      "contextId": "L16-D06",
+      "tokens": [
+        "Sie?",
+        "kommen",
+        "Wann"
+      ],
+      "startWith": "Wann"
+    },
+    {
+      "id": "L16-D06-B-try-v1",
+      "targetId": "L16-R012",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R011",
+        "L16-R012"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกว่าจะมาอีกนานเท่าไร",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ตอนนี้",
+          "09:00"
+        ],
+        [
+          "เวลาที่ B จะมา",
+          "10:00"
+        ]
+      ],
+      "prompt": "Wann kommen Sie?",
+      "feedback": {
+        "question": "Wann kommen Sie?",
+        "reply": "Ich komme in einer Stunde.",
+        "questionMeaning": "คุณจะมาเมื่อไร",
+        "replyMeaning": "ฉันจะมาในอีกหนึ่งชั่วโมง",
+        "questionSentences": [
+          [
+            {
+              "text": "Wann",
+              "role": "time",
+              "label": "ถามเวลา",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kommen",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Sie?",
+              "role": "subject",
+              "label": "ประธาน"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "komme",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "in einer Stunde.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "reason": "จาก 09:00 ไป 10:00 เป็นอีกหนึ่งชั่วโมงในอนาคต จึงใช้ in einer Stunde"
+      },
+      "grading": {
+        "answer": "Ich komme in einer Stunde."
+      },
+      "contextId": "L16-D06",
+      "tokens": [
+        "Stunde.",
+        "einer",
+        "in",
+        "komme",
+        "Ich"
+      ],
+      "startWith": "Ich"
+    },
+    {
+      "id": "L16-D07-A-try-v1",
+      "targetId": "L16-R013",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R013",
+        "L16-R014"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ปฏิเสธเวลานัดเดิม",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เวลาที่ B ไม่ว่าง",
+          "วันศุกร์"
+        ]
+      ],
+      "prompt": "Am Freitag kann ich leider nicht.",
+      "feedback": {
+        "question": "Haben Sie am Freitag Zeit?",
+        "reply": "Am Freitag kann ich leider nicht.",
+        "questionMeaning": "วันศุกร์คุณว่างไหม",
+        "replyMeaning": "วันศุกร์ฉันไม่สะดวก",
+        "questionSentences": [
+          [
+            {
+              "text": "Haben",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "am Freitag",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "Zeit?",
+              "role": "other",
+              "label": "เวลาที่มี (กรรม)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Am Freitag",
+              "role": "time",
+              "label": "เวลา / ลำดับ",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kann",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "leider nicht.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "kann ich leider nicht ใช้ตอบว่าไม่สะดวกตามบริบทเวลานัด"
+      },
+      "grading": {
+        "answer": "Haben Sie am Freitag Zeit?"
+      },
+      "contextId": "L16-D07",
+      "tokens": [
+        "Zeit?",
+        "Freitag",
+        "am",
+        "Sie",
+        "Haben"
+      ],
+      "startWith": "Haben"
+    },
+    {
+      "id": "L16-D07-B-try-v1",
+      "targetId": "L16-R014",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L16-R013",
+        "L16-R014"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ปฏิเสธเวลานัดเดิม",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "เวลาที่ B ไม่ว่าง",
+          "วันศุกร์"
+        ]
+      ],
+      "prompt": "Haben Sie am Freitag Zeit?",
+      "feedback": {
+        "question": "Haben Sie am Freitag Zeit?",
+        "reply": "Am Freitag kann ich leider nicht.",
+        "questionMeaning": "วันศุกร์คุณว่างไหม",
+        "replyMeaning": "วันศุกร์ฉันไม่สะดวก",
+        "questionSentences": [
+          [
+            {
+              "text": "Haben",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "am Freitag",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "Zeit?",
+              "role": "other",
+              "label": "เวลาที่มี (กรรม)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Am Freitag",
+              "role": "time",
+              "label": "เวลา / ลำดับ",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kann",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "leider nicht.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "kann ich leider nicht ใช้ตอบว่าไม่สะดวกตามบริบทเวลานัด"
+      },
+      "grading": {
+        "answer": "Am Freitag kann ich leider nicht."
+      },
+      "contextId": "L16-D07",
+      "options": [
+        "Am Freitag habe ich Zeit.",
+        "Am Freitag kann ich leider nicht.",
+        "Ja, ich kann am Freitag kommen."
+      ]
+    },
+    {
+      "id": "L16-D08-A-try-v1",
+      "targetId": "L16-R015",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R015",
+        "L16-R016"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ตกลงเวลาใหม่",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เวลาใหม่ที่ตกลง",
+          "วันจันทร์หลังเลิกงาน"
+        ]
+      ],
+      "prompt": "Ja, nach der Arbeit am Montag habe ich Zeit.",
+      "feedback": {
+        "question": "Können wir den Termin verschieben?",
+        "reply": "Ja, nach der Arbeit am Montag habe ich Zeit.",
+        "questionMeaning": "เราเลื่อนนัดได้ไหม",
+        "replyMeaning": "ได้ ฉันว่างหลังเลิกงานวันจันทร์",
+        "questionSentences": [
+          [
+            {
+              "text": "Können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "wir",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "den Termin",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "verschieben?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "nach der Arbeit am Montag",
+              "role": "time",
+              "label": "เวลา / ลำดับ",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "habe",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Zeit.",
+              "role": "other",
+              "label": "เวลาที่มี (กรรม)"
+            }
+          ]
+        ],
+        "reason": "คำตอบต้องเสนอวันจันทร์หลังเลิกงานให้ตรงข้อมูลเวลาใหม่ที่ให้"
+      },
+      "grading": {
+        "answer": "Können wir den Termin verschieben?"
+      },
+      "contextId": "L16-D08",
+      "tokens": [
+        "verschieben?",
+        "Termin",
+        "den",
+        "wir",
+        "Können"
+      ],
+      "startWith": "Können"
+    },
+    {
+      "id": "L16-D08-B-try-v1",
+      "targetId": "L16-R016",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R015",
+        "L16-R016"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ตกลงเวลาใหม่",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เวลาใหม่ที่ตกลง",
+          "วันจันทร์หลังเลิกงาน"
+        ]
+      ],
+      "prompt": "Können wir den Termin verschieben?",
+      "feedback": {
+        "question": "Können wir den Termin verschieben?",
+        "reply": "Ja, nach der Arbeit am Montag habe ich Zeit.",
+        "questionMeaning": "เราเลื่อนนัดได้ไหม",
+        "replyMeaning": "ได้ ฉันว่างหลังเลิกงานวันจันทร์",
+        "questionSentences": [
+          [
+            {
+              "text": "Können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "wir",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "den Termin",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "verschieben?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "nach der Arbeit am Montag",
+              "role": "time",
+              "label": "เวลา / ลำดับ",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "habe",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Zeit.",
+              "role": "other",
+              "label": "เวลาที่มี (กรรม)"
+            }
+          ]
+        ],
+        "reason": "คำตอบต้องเสนอวันจันทร์หลังเลิกงานให้ตรงข้อมูลเวลาใหม่ที่ให้"
+      },
+      "grading": {
+        "answer": "Ja, nach der Arbeit am Montag habe ich Zeit."
+      },
+      "contextId": "L16-D08",
+      "tokens": [
+        "Zeit.",
+        "ich",
+        "habe",
+        "Montag",
+        "am",
+        "Arbeit",
+        "der",
+        "nach",
+        "Ja,"
+      ],
+      "startWith": "Ja,"
+    },
+    {
+      "id": "A13-L16-DATIV-PREP-001",
+      "targetId": "L16-temporale-dative-form",
+      "topicId": "L16-temporale-praepositionen",
+      "subskill": "temporal_dative_inflection",
+      "context": "ต้องการบอกว่ามีเวลาหลังเลิกงาน",
+      "cue": "คำนามต้นทาง die Arbeit; ให้ nach มาแล้ว",
+      "sentence": "Nach ___ Arbeit habe ich Zeit.",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "kind": "choice",
+      "version": 1,
+      "difficulty": 1,
+      "difficultyRationale": "แยกสาเหตุด้วยโจทย์จำแนกหนึ่งประเด็น โดยให้ข้อมูลส่วนอื่นที่ไม่ต้องการวัด",
+      "acceptedAnswers": [
+        "der"
+      ],
+      "explanation": "nach ใช้ Dativ; die Arbeit เปลี่ยนเป็น der Arbeit; ไม่ใช้ข้อนี้สรุปว่าเลือกความสัมพันธ์ของเวลาได้เอง",
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "assistanceAvailable": [
+        "options",
+        "provided-base-or-context"
+      ],
+      "contextId": "A13-L16-DATIV-PREP-001",
+      "feedback": {
+        "text": "Nach der Arbeit habe ich Zeit.",
+        "sentences": [
+          [
+            {
+              "text": "Nach der Arbeit",
+              "role": "time",
+              "label": "เวลา / ลำดับ",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "habe",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Zeit.",
+              "role": "other",
+              "label": "เวลาที่มี (กรรม)"
+            }
+          ]
+        ],
+        "meaning": "ฉันว่างหลังเลิกงาน",
+        "reason": "nach ใช้ Dativ; die Arbeit เปลี่ยนเป็น der Arbeit; ไม่ใช้ข้อนี้สรุปว่าเลือกความสัมพันธ์ของเวลาได้เอง"
+      }
+    }
+  ],
+  "phraseTargets": [
+    {
+      "id": "L16-R001",
+      "text": "Was ist das Problem?"
+    },
+    {
+      "id": "L16-R002",
+      "text": "Der Aufzug funktioniert nicht."
+    },
+    {
+      "id": "L16-R003",
+      "text": "Brauchen Sie Hilfe?"
+    },
+    {
+      "id": "L16-R004",
+      "text": "Ja, ich brauche Ihre Hilfe."
+    },
+    {
+      "id": "L16-R005",
+      "text": "Was kann ich für Sie tun?"
+    },
+    {
+      "id": "L16-R006",
+      "text": "Können Sie den Herd reparieren?"
+    },
+    {
+      "id": "L16-R007",
+      "text": "Können Sie das reparieren?"
+    },
+    {
+      "id": "L16-R008",
+      "text": "Ja, das kann ich reparieren."
+    },
+    {
+      "id": "L16-R009",
+      "text": "Wann haben Sie Zeit?"
+    },
+    {
+      "id": "L16-R010",
+      "text": "Am Dienstag um 16 Uhr habe ich Zeit."
+    },
+    {
+      "id": "L16-R011",
+      "text": "Wann kommen Sie?"
+    },
+    {
+      "id": "L16-R012",
+      "text": "Ich komme in einer Stunde."
+    },
+    {
+      "id": "L16-R013",
+      "text": "Haben Sie am Freitag Zeit?"
+    },
+    {
+      "id": "L16-R014",
+      "text": "Am Freitag kann ich leider nicht."
+    },
+    {
+      "id": "L16-R015",
+      "text": "Können wir den Termin verschieben?"
+    },
+    {
+      "id": "L16-R016",
+      "text": "Ja, nach der Arbeit am Montag habe ich Zeit."
+    }
+  ],
+  "draftStatus": "prepared_not_wired_or_published",
+  "supportLexicon": [
+    {
+      "id": "L16-HELP-01",
+      "headword": "die Zeit",
+      "meaning": "เวลา",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Zeit",
+      "number": "singular"
+    },
+    {
+      "id": "L16-HELP-02",
+      "headword": "die Arbeit",
+      "meaning": "งานหรือการทำงาน",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Arbeit",
+      "number": "singular"
+    },
+    {
+      "id": "L16-HELP-03",
+      "headword": "der Unterricht",
+      "meaning": "การเรียนหรือชั่วโมงเรียน",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Unterricht",
+      "number": "singular"
+    },
+    {
+      "id": "L16-HELP-04",
+      "headword": "der Kurs",
+      "meaning": "หลักสูตรหรือชั้นเรียน",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Kurs",
+      "number": "singular"
+    },
+    {
+      "id": "L16-HELP-05",
+      "headword": "die Woche",
+      "meaning": "สัปดาห์",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Woche",
+      "number": "singular"
+    },
+    {
+      "id": "L16-HELP-06",
+      "headword": "der Tag",
+      "meaning": "วัน",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Tag",
+      "number": "singular"
+    },
+    {
+      "id": "L16-HELP-07",
+      "headword": "die Minute",
+      "meaning": "นาที",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Minute",
+      "number": "singular"
+    },
+    {
+      "id": "L16-HELP-08",
+      "headword": "das Gespräch",
+      "meaning": "การพูดคุย",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "das",
+      "word": "Gespräch",
+      "number": "singular"
+    },
+    {
+      "id": "L16-HELP-09",
+      "headword": "heute",
+      "meaning": "วันนี้",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "heute"
+    },
+    {
+      "id": "L16-HELP-10",
+      "headword": "morgen",
+      "meaning": "พรุ่งนี้",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "morgen"
+    }
+  ]
+}

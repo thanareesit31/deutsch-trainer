@@ -72,3 +72,21 @@ Use npm run test:phrase-practice-db and npm run test:phrase-practice-browser wit
 ## ปุ่มควบคุมบัญชีทดลอง
 
 แถบทดสอบด้านบนมี “เรียนแล้วทั้งหมด” เพื่อบันทึกว่าเคยเรียนรายการเนื้อหา published ทุกบทในบัญชีปัจจุบัน ไม่เพิ่มคะแนนหรือข้ามกิจกรรมโต้ตอบเฉพาะบท เมื่อกดจากหน้าเรียนจะอยู่ในทางเรียนเดิมและเปิดหน้าท้ายเพื่อให้กดไปแบบฝึกหัดเอง โดยไม่บันทึกว่าผ่านกิจกรรมโต้ตอบที่ยังไม่ได้ทำ ปุ่ม “รีเซตการทดลอง” ให้ยืนยันก่อนล้างประวัติเรียน ผลฝึก รอบค้าง และสถานะกิจกรรมของบัญชีปัจจุบัน เก็บการตั้งค่าไว้ หลังรีเซตจะกลับหน้า Practice แท็บอื่นของบัญชีเดียวกันต้องเข้าสู่ระบบใหม่หลังรีเซต ไม่มีปุ่มหรือ endpoint นี้ในระบบผู้ใช้ทั่วไป
+
+## ทดลองเรียนประโยคบท 1 แบบโต้ตอบ
+
+ล็อกอินบัญชี tester แล้วกด “ลองเรียนประโยคบท 1” ในแถบทดสอบ หรือเปิด `http://localhost:3002/learn/L01/phrases/discovery`. มี 5 หัวข้อ พร้อมตัวอย่างสนทนาและกิจกรรมเลือกคำตอบ/เรียงคำรวม 10 ข้อ. คำตอบแรก การใช้ตัวช่วย คำที่เรียงค้าง และตำแหน่งเรียนเก็บแยกตามบัญชีทดสอบ. กดลองอีกรอบหลังจบจะเก็บรอบก่อนหน้าไว้. ยังไม่เปิดบท 2–12 และผลส่วนนี้ไม่เข้า Progress หรือคำแนะนำ Practice. คีย์ Learn ใหม่ติดตั้งเฉพาะฐานทดสอบโดย launcher และอยู่ในไฟล์ recovery เดิม.
+
+ตรวจ flow ด้วย `node tests/l01-phrase-discovery-browser.mjs` บน Node 20.9+ ขณะที่เปิดเซิร์ฟเวอร์ทดสอบอยู่.
+
+### กิจกรรมประโยคที่เพิ่มในบท 1, 5 พฤศจิกายน 2026
+
+กด “ลองกิจกรรมที่เพิ่ม” ในแถบทดสอบ หรือเปิด `http://localhost:3002/learn/L01/phrases/discovery?part=supplement`. มี 4 หัวข้อและ 7 กิจกรรม ได้แก่ ชื่อ/นามสกุล ขอให้สะกดและเรียงตัวอักษร ตอบรับเมื่อรู้จักกัน และลาก่อนเข้านอน. รอบเดิมที่ค้างหรือจบแล้วเก็บไว้ตามเดิม ส่วนชุดเพิ่มเติมเรียนต่อแยกกันได้. หากเริ่มใหม่ทั้งบทจะได้ชุดใหม่ครบ 9 หัวข้อและ 17 ข้อ. ผลเรียงชื่อมีชื่อและตัวอักษรให้ดู จึงยังไม่ใช่หลักฐานว่าสะกดได้เอง.
+
+ตรวจเพิ่มเติมด้วย `node --import tsx --test tests/phrase-discovery.test.ts` และ `node tests/l01-phrase-supplement-browser.mjs` บน Node 20.9+.
+
+Entry correction, 6 November 2026: local testers open the revised lesson through the normal `/learn/L01/phrases` route. The banner has one phrase lesson link; the supplemental set is no longer advertised as a separate lesson. Existing `/discovery` and `?part=supplement` URLs remain available to resume saved work. No account history is reset and production remains outside this local rollout.
+
+L02 phrases, 6 November 2026: open the normal `/learn/L02/phrases` entry as either test account. It now uses the revised seven-topic Learn flow, with account-backed drafts/first responses and bundled dialogue audio. The old sentences URL opens the same lesson for testers. Normal accounts keep the original page. New evidence uses `deutsch-trainer-phrase-discovery-v1-L02`, separate from legacy records.
+
+L03–L12 phrases, 6 November 2026: the normal `/learn/L03/phrases` through `/learn/L12/phrases` entries now open the revised dialogue Learn for local test accounts. Each lesson has a distinct checkpoint key, preserving draft/first answers, word help and completed playback. Ordinary accounts retain the old route behavior. L02 uses the same renderer with its original persisted format. No old account history is deleted or upgraded into mastery.

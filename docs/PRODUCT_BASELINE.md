@@ -6,6 +6,8 @@
 
 ## Product goal
 
+มาตรฐานการสอนประโยค คำอธิบาย และการลองทำที่ผู้ใช้ยืนยันเมื่อ 8 พฤศจิกายน 2026 อยู่ใน `docs/SENTENCE_ANNOTATION_STANDARD.md`. การสร้างหรือแก้หน้าสอนและหน้าลองตอบหมวดประโยค/Redemittel ให้ใช้แนวทางสอนจากประโยคพื้นฐานไปสู่บริบท ตัวอย่างพร้อมเสียง สีและลูกศรชี้คำอธิบายใต้คำโดยตรง งานลองตอบที่ไม่เปิดเฉลยก่อนตรวจ และ feedback ที่อธิบายตามโจทย์จริงตามมาตรฐานนั้น. ใช้เฉดสีที่บันทึกไว้ และให้มือถือเห็นประโยคครบแถวเดียวโดยไม่เลื่อนหรือใช้เลขจับคู่คำอธิบาย. ข้อกำหนดนี้เป็นแนวทางใช้ซ้ำ ไม่ใช่การเปิดรูปแบบใหม่ให้ทุกบทโดยอัตโนมัติ ไม่เปลี่ยนระบบสี Artikel หรือหลักฐานและการเลือกฝึกตามมาตรฐาน adaptive learning
+
 สำหรับโจทย์สะกดอาชีพบท 2 ให้ดูภาพบุคคลคนเดียวตามเพศของรูปคำที่ถาม โดยไม่มีคำใบ้ไทยหรือข้อความบอกเพศ. วางภาพซ้ายและช่องพิมพ์แบบเติมคำขวา พร้อม Artikel และจุดสีที่ให้ไว้ โดยมีช่องตอบจริงช่องเดียวและไม่แสดงช่องตอบซ้ำด้านล่าง. ความหมายไทยแสดงในเฉลยหลังตอบได้. คงคำตอบแรกและประวัติใช้ตัวช่วยเดิมของรอบที่ค้างไว้.
 
 โจทย์สะกดคำศัพท์บท 1–12 ใช้ภาพเป็นคำใบ้หลักเมื่อสื่อความหมายได้ชัด และบริบทสั้นสำหรับคำที่ภาพกำกวม. ซ่อนความหมายไทยก่อนตอบไว้หลังปุ่มช่วย โดยเก็บการใช้ตัวช่วยก่อนคำตอบแรก; คง Artikel ที่ให้ไว้และแยกหลักฐานสะกดออกจากการจำ Artikel. ประวัติเดิมที่ไม่มีโหมดคำใบ้ไม่ถือเป็นหลักฐานจำคำจากภาพโดยอัตโนมัติ.
@@ -631,3 +633,47 @@ Vocabulary completion percentages across lesson cards, level summaries and Progr
 ## Mobile speech audio routing, 2 November 2026
 
 For learner-started speech synthesis, request the browser's `playback` audio session only while an utterance is active when the Audio Session API is available, then restore the previous type. Keep speech directly tied to the learner's tap. Browsers without this API retain their existing routing. The playback session may briefly pause other media and must not persist after speech ends or errors.
+
+## L01 interactive Redemittel tester preview, 4 November 2026
+
+Local tester accounts can open `/learn/L01/phrases/discovery` from the tester banner. Five topics teach greetings/farewells, introductions, wellbeing, origin, and repetition/thanks through model dialogues and ten supported choice/order checks. Preserve the first checked response, prior assistance, partial ordering and position in the existing account-scoped Learn state. Replay keeps prior runs. These checks are supported learning evidence; they do not create regular phrase exposures, Practice eligibility, mastery or Progress scores. The guided topic order is not adaptive selection. Normal accounts and production retain the existing routes. L02–L12 are not activated by this preview. See `docs/exercise-mapping/L01_PHRASE_DISCOVERY_PREVIEW.md` for mappings and limitations.
+
+## L01 supplemental tester activities, 5 November 2026
+
+The local L01 phrase prototype now adds first-name/surname questions, a spelling request, supplied-letter name ordering, reciprocal introductions and a night-time farewell. New full rounds contain nine teaching topics and 17 learning checks; `?part=supplement` opens only the four added topics/seven checks. Existing version-1 pending/completed runs retain their original 15-screen queue and answers, and each scope resumes separately. New first responses record their assistance explicitly; missing historical assistance remains unknown. Reading a visible name and arranging supplied letters is supported letter-order evidence, not independent spelling or listening mastery. This extension remains tester-only and uses the existing Learn checkpoint row, with no regular Practice/Progress/adaptive rollout or hosted migration.
+
+## L01 visual context, 6 November 2026
+
+The tester preview supplies context through existing lesson illustrations, visible name badges, country flags and time badges. Keep brief captions where formality or conversational state cannot be inferred reliably from an image. Preserve the existing target, grading and history bindings. Store the configured visual version on new first responses; it does not establish that an image was viewed or understood. Historical missing values stay unknown.
+
+## L01 spelling audio check, 6 November 2026
+
+For the unanswered supplied-letter task, hide the name and present a learner-started, replayable German letter sequence. Require one completed playback before checking. Reveal the written name only after checking. Retain historical visible-name evidence separately from new supported listening evidence and keep earlier first answers unchanged.
+
+L01 dialogue audio, 6 November 2026: the spelling listening button plays the question and then the spelled reply, distinguishing speaker voices where available and otherwise using different pitch. Playback completion requires the reply to finish. Keep the written name hidden until checking and preserve existing evidence bindings.
+
+L01 fixed dialogue recording, 6 November 2026: use the bundled two-voice clip for the spelling listening check so the roles remain distinct on devices with one installed German voice. This supersedes the device-voice/pitch fallback for this task. Preserve the hidden name, whole-clip completion requirement and existing assessment bindings.
+
+L01 tester lesson replacement, 6 November 2026: the revised dialogue Learn flow replaces the old phrase-card format at the standard `/learn/L01/phrases` entry for local test accounts. It is not a separate additional lesson. Keep historical completion/answers and direct saved-round URLs valid. This does not activate production or other lessons.
+
+## L02 revised phrase Learn, 6 November 2026
+
+Local tester accounts open the revised seven-topic dialogue lesson at `/learn/L02/phrases`; the old sentences link resolves to the same flow for testers. It replaces the old table/list experience. Preserve normal-account routing and all legacy exposures/state. The first-learning queue contains seven model screens and eighteen activities, with twenty separately attributed response units. Save drafts, first answers, help and completed replay counts through account Learn checkpoints. Use bundled two-voice recordings, hide audio answers until checking, and separate reading/choice/ordering/listening evidence. This remains supported Learn evidence, outside new mastery/Progress or adaptive selection. No production release is implied.
+
+## L03–L12 phrase Learn replacement, 6 November 2026
+
+Local tester accounts use revised dialogue Learn at the normal L03–L12 phrase routes, replacing the old cards without a second lesson menu. Use lesson-specific family/property/price/phone/calendar/menu/travel/timeline/festival visuals, A/B models, bundled recordings, and hidden written answers for listening. Preserve legacy IDs, exposures, saved rounds and ordinary-account routes. The current scope has 34 teaching screens, 103 activities and 107 separately scored response units across ten lessons; reading, dialogue response, supplied-word order, listening details, letter spelling and email listening remain distinct. Account-backed Learn checkpoints retain first answers, help, replay counts and per-lesson presentation. This is fixed guided Learn, not active adaptive selection, a new Progress score or a production release. See L03_L12_PHRASE_IMPLEMENTATION.md and the internal source/assessment inventories.
+
+## Release audience, 9 November 2026
+
+งานบทเรียนที่สร้างหรือปรับเสร็จมีผู้ใช้เป้าหมายเป็นบัญชีผู้เรียนทั่วไปด้วย การจำกัด tester ใช้ในช่วงตรวจงาน งานที่พร้อมส่งมอบต้องตรวจเส้นทางของบัญชีทั่วไป การเรียนก่อนฝึก การรับ key/question ของ server การแยกบัญชีและการคืนประวัติครบ โดยรักษาคำตอบเก่า
+
+ชุดเตรียมเนื้อหา L15–L18 ยังไม่เป็นการเปิดฟีเจอร์ เอกสาร `docs/lesson-preparation/GENERAL_ACCOUNT_RELEASE.md` แยกข้อกำหนดการเปิดจริงและ gate ของส่วนเดิมบท 1–14 ที่ยังต้องดำเนินการ ไม่มีการเปลี่ยนสิทธิ์ runtime หรือ deploy จากการเพิ่มข้อมูลเตรียมครั้งนี้
+
+## General-account release implementation, 9 November 2026
+
+This supersedes tester-only presentation restrictions above for the revised L01–L14 phrase Learn flows once the matching hosted migrations are applied and this build is deployed. Preserve all historical controllers/IDs/answers, especially L14's original learning sequence; L01 exposes only actual taught canonical phrases.
+
+L15–L18 now have implemented vocabulary, grammar and phrase Learn/Practice routes. New scoped Learn checkpoints track exposure, trials and resume. Practice uses the existing shared learner_practice_sessions/PracticeAccountSync with canonical definitions, taught eligibility, stable rounds and immutable first responses. Optional assistance cannot be cleared by a stale save. The new release gate defaults enabled for authenticated accounts; NEXT_PUBLIC_A13_RELEASE_LESSONS=false disables it. Home/overview recommendations and the scoped Progress section use actual account evidence and keep subskills separate. No fixed-format sequence or single correct response establishes mastery. Content is bundled with the release; learner evidence and canonical validators are account-backed.
+
+Deployment must apply all four 20261109 migrations before the frontend. /api/health now also requires the release catalog readiness RPC (12 courses,136 cards,372 tasks,64 phrase questions); a successful older vocabulary count alone cannot mark the new release ready. Implemented/local verification and actual hosted deployment remain distinct; current status is in docs/lesson-preparation/RELEASE_EXECUTION.md.

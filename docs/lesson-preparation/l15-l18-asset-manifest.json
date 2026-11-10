@@ -1,0 +1,4080 @@
+{
+  "schemaVersion": 1,
+  "status": "requirements_and_scripts_only",
+  "defaultLexicalVoice": "de-DE-KatjaNeural",
+  "defaultExampleVoice": "de-DE-ConradNeural",
+  "dialoguePauseMs": 500,
+  "assets": [
+    {
+      "id": "L15-V001-visual",
+      "targetId": "L15-V001",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย บ้าน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "haus",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V001-audio",
+      "targetId": "L15-V001",
+      "kind": "german_lemma_audio",
+      "text": "das Haus",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V001-example-audio",
+      "targetId": "L15-V001",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Haus.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V002-visual",
+      "targetId": "L15-V002",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อพาร์ตเมนต์หรือห้องชุด โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "/images/lektion-13-city/wohnung-places.webp",
+      "existingFileVerified": true,
+      "status": "reuse_file_needs_meaning_review"
+    },
+    {
+      "id": "L15-V002-audio",
+      "targetId": "L15-V002",
+      "kind": "german_lemma_audio",
+      "text": "die Wohnung",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V002-example-audio",
+      "targetId": "L15-V002",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Wohnung.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V003-visual",
+      "targetId": "L15-V003",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ห้อง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "zimmer",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V003-audio",
+      "targetId": "L15-V003",
+      "kind": "german_lemma_audio",
+      "text": "das Zimmer",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V003-example-audio",
+      "targetId": "L15-V003",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Zimmer.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V004-visual",
+      "targetId": "L15-V004",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ห้องทำงาน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "arbeitszimmer",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V004-audio",
+      "targetId": "L15-V004",
+      "kind": "german_lemma_audio",
+      "text": "das Arbeitszimmer",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V004-example-audio",
+      "targetId": "L15-V004",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Arbeitszimmer.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V005-visual",
+      "targetId": "L15-V005",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ห้องนั่งเล่น โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "wohnzimmer",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V005-audio",
+      "targetId": "L15-V005",
+      "kind": "german_lemma_audio",
+      "text": "das Wohnzimmer",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V005-example-audio",
+      "targetId": "L15-V005",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Wohnzimmer.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V006-visual",
+      "targetId": "L15-V006",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ห้องนอน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "schlafzimmer",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V006-audio",
+      "targetId": "L15-V006",
+      "kind": "german_lemma_audio",
+      "text": "das Schlafzimmer",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V006-example-audio",
+      "targetId": "L15-V006",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Schlafzimmer.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V007-visual",
+      "targetId": "L15-V007",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ห้องเด็ก โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "kinderzimmer",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V007-audio",
+      "targetId": "L15-V007",
+      "kind": "german_lemma_audio",
+      "text": "das Kinderzimmer",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V007-example-audio",
+      "targetId": "L15-V007",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Kinderzimmer.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V008-visual",
+      "targetId": "L15-V008",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ห้องน้ำสำหรับล้างตัวหรืออาบน้ำ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "bad",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V008-audio",
+      "targetId": "L15-V008",
+      "kind": "german_lemma_audio",
+      "text": "das Bad",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V008-example-audio",
+      "targetId": "L15-V008",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Bad.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V009-visual",
+      "targetId": "L15-V009",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ห้องครัว โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "kueche",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V009-audio",
+      "targetId": "L15-V009",
+      "kind": "german_lemma_audio",
+      "text": "die Küche",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V009-example-audio",
+      "targetId": "L15-V009",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Küche.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V010-visual",
+      "targetId": "L15-V010",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ห้องสุขา โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "toilette",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V010-audio",
+      "targetId": "L15-V010",
+      "kind": "german_lemma_audio",
+      "text": "die Toilette",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V010-example-audio",
+      "targetId": "L15-V010",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Toilette.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V011-visual",
+      "targetId": "L15-V011",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย โถงทางเดิน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "flur",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V011-audio",
+      "targetId": "L15-V011",
+      "kind": "german_lemma_audio",
+      "text": "der Flur",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V011-example-audio",
+      "targetId": "L15-V011",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Flur.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V012-visual",
+      "targetId": "L15-V012",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ระเบียง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "balkon",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V012-audio",
+      "targetId": "L15-V012",
+      "kind": "german_lemma_audio",
+      "text": "der Balkon",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V012-example-audio",
+      "targetId": "L15-V012",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Balkon.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V013-visual",
+      "targetId": "L15-V013",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย สวน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "garten",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V013-audio",
+      "targetId": "L15-V013",
+      "kind": "german_lemma_audio",
+      "text": "der Garten",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V013-example-audio",
+      "targetId": "L15-V013",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Garten.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V014-visual",
+      "targetId": "L15-V014",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย บันได โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "treppe",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V014-audio",
+      "targetId": "L15-V014",
+      "kind": "german_lemma_audio",
+      "text": "die Treppe",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V014-example-audio",
+      "targetId": "L15-V014",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Treppe.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V015-visual",
+      "targetId": "L15-V015",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย หน้าต่าง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "fenster",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V015-audio",
+      "targetId": "L15-V015",
+      "kind": "german_lemma_audio",
+      "text": "das Fenster",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V015-example-audio",
+      "targetId": "L15-V015",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Fenster.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V016-visual",
+      "targetId": "L15-V016",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ประตู โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "tuer",
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L15-V016-audio",
+      "targetId": "L15-V016",
+      "kind": "german_lemma_audio",
+      "text": "die Tür",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V016-example-audio",
+      "targetId": "L15-V016",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Tür.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V017-visual",
+      "targetId": "L15-V017",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เตียง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "/images/lektion-04-vocabulary/V045-isolated-v2.jpg",
+      "existingFileVerified": true,
+      "status": "reuse_file_needs_meaning_review"
+    },
+    {
+      "id": "L15-V017-audio",
+      "targetId": "L15-V017",
+      "kind": "german_lemma_audio",
+      "text": "das Bett",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V017-example-audio",
+      "targetId": "L15-V017",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Bett.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V018-visual",
+      "targetId": "L15-V018",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย โคมไฟ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "/images/lektion-04-vocabulary/V046-isolated-v2.jpg",
+      "existingFileVerified": true,
+      "status": "reuse_file_needs_meaning_review"
+    },
+    {
+      "id": "L15-V018-audio",
+      "targetId": "L15-V018",
+      "kind": "german_lemma_audio",
+      "text": "die Lampe",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V018-example-audio",
+      "targetId": "L15-V018",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Lampe.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V019-visual",
+      "targetId": "L15-V019",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เก้าอี้นวม โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "/images/lektion-04-vocabulary/V048-isolated-v2.jpg",
+      "existingFileVerified": true,
+      "status": "reuse_file_needs_meaning_review"
+    },
+    {
+      "id": "L15-V019-audio",
+      "targetId": "L15-V019",
+      "kind": "german_lemma_audio",
+      "text": "der Sessel",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V019-example-audio",
+      "targetId": "L15-V019",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Sessel.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V020-visual",
+      "targetId": "L15-V020",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย โซฟา โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "/images/lektion-04-vocabulary/V050-isolated-v2.jpg",
+      "existingFileVerified": true,
+      "status": "reuse_file_needs_meaning_review"
+    },
+    {
+      "id": "L15-V020-audio",
+      "targetId": "L15-V020",
+      "kind": "german_lemma_audio",
+      "text": "das Sofa",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V020-example-audio",
+      "targetId": "L15-V020",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Sofa.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V021-visual",
+      "targetId": "L15-V021",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย โต๊ะ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "/images/lektion-04-vocabulary/V051-isolated-v2.jpg",
+      "existingFileVerified": true,
+      "status": "reuse_file_needs_meaning_review"
+    },
+    {
+      "id": "L15-V021-audio",
+      "targetId": "L15-V021",
+      "kind": "german_lemma_audio",
+      "text": "der Tisch",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V021-example-audio",
+      "targetId": "L15-V021",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Tisch.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V022-visual",
+      "targetId": "L15-V022",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ตู้ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "/images/lektion-04-vocabulary/V052-isolated-v2.jpg",
+      "existingFileVerified": true,
+      "status": "reuse_file_needs_meaning_review"
+    },
+    {
+      "id": "L15-V022-audio",
+      "targetId": "L15-V022",
+      "kind": "german_lemma_audio",
+      "text": "der Schrank",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V022-example-audio",
+      "targetId": "L15-V022",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Schrank.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V023-visual",
+      "targetId": "L15-V023",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย พรมปูพื้น โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "/images/lektion-04-vocabulary/V053-isolated-v3.jpg",
+      "existingFileVerified": true,
+      "status": "reuse_file_needs_meaning_review"
+    },
+    {
+      "id": "L15-V023-audio",
+      "targetId": "L15-V023",
+      "kind": "german_lemma_audio",
+      "text": "der Teppich",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V023-example-audio",
+      "targetId": "L15-V023",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Teppich.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V024-visual",
+      "targetId": "L15-V024",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เก้าอี้ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": "/images/lektion-04-vocabulary/V044-isolated-v2.jpg",
+      "existingFileVerified": true,
+      "status": "reuse_file_needs_meaning_review"
+    },
+    {
+      "id": "L15-V024-audio",
+      "targetId": "L15-V024",
+      "kind": "german_lemma_audio",
+      "text": "der Stuhl",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-V024-example-audio",
+      "targetId": "L15-V024",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Stuhl.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-possessivartikel-model-1-audio",
+      "targetId": "L15-possessivartikel",
+      "kind": "grammar_model_audio",
+      "text": "Das ist sein Balkon.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-possessivartikel-model-2-audio",
+      "targetId": "L15-possessivartikel",
+      "kind": "grammar_model_audio",
+      "text": "Ich finde seinen Balkon schön.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-possessivartikel-model-3-audio",
+      "targetId": "L15-possessivartikel",
+      "kind": "grammar_model_audio",
+      "text": "Ihre Lampe ist neu.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D01-voice-A",
+      "targetId": "L15-R001",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was ist das?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D01-voice-B",
+      "targetId": "L15-R002",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Das ist das Arbeitszimmer.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D01-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D01-voice-A",
+        "L15-D01-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D02-voice-A",
+      "targetId": "L15-R003",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Hat die Wohnung einen Balkon?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D02-voice-B",
+      "targetId": "L15-R004",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ja, die Wohnung hat einen Balkon.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D02-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D02-voice-A",
+        "L15-D02-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D03-voice-A",
+      "targetId": "L15-R005",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Wie findest du das Zimmer?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D03-voice-B",
+      "targetId": "L15-R006",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich finde das Zimmer schön.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D03-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D03-voice-A",
+        "L15-D03-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D04-voice-A",
+      "targetId": "L15-R007",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Magst du den Garten?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D04-voice-B",
+      "targetId": "L15-R008",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ja, den Garten mag ich besonders.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D04-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D04-voice-A",
+        "L15-D04-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D05-voice-A",
+      "targetId": "L15-R009",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Ist das Toms Sessel?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D05-voice-B",
+      "targetId": "L15-R010",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ja, das ist sein Sessel.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D05-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D05-voice-A",
+        "L15-D05-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D06-voice-A",
+      "targetId": "L15-R011",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Wie findest du Klaras Lampe?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D06-voice-B",
+      "targetId": "L15-R012",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich finde ihre Lampe schön.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D06-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D06-voice-A",
+        "L15-D06-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D07-voice-A",
+      "targetId": "L15-R013",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Ist das Zimmer noch frei?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D07-voice-B",
+      "targetId": "L15-R014",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ja, das Zimmer ist noch frei.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D07-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D07-voice-A",
+        "L15-D07-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D08-voice-A",
+      "targetId": "L15-R015",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was kostet das Zimmer im Monat?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D08-voice-B",
+      "targetId": "L15-R016",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Es kostet 620 Euro im Monat.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-D08-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L15-D08-voice-A",
+        "L15-D08-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V001-visual",
+      "targetId": "L16-V001",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ลิฟต์ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V001-audio",
+      "targetId": "L16-V001",
+      "kind": "german_lemma_audio",
+      "text": "der Aufzug",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V001-example-audio",
+      "targetId": "L16-V001",
+      "kind": "lexical_example_audio",
+      "text": "Der Aufzug funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V002-visual",
+      "targetId": "L16-V002",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ตู้เย็น โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V002-audio",
+      "targetId": "L16-V002",
+      "kind": "german_lemma_audio",
+      "text": "der Kühlschrank",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V002-example-audio",
+      "targetId": "L16-V002",
+      "kind": "lexical_example_audio",
+      "text": "Der Kühlschrank ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V003-visual",
+      "targetId": "L16-V003",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย โทรทัศน์ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V003-audio",
+      "targetId": "L16-V003",
+      "kind": "german_lemma_audio",
+      "text": "der Fernseher",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V003-example-audio",
+      "targetId": "L16-V003",
+      "kind": "lexical_example_audio",
+      "text": "Der Fernseher funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V004-visual",
+      "targetId": "L16-V004",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เครื่องหรือระบบทำความร้อน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V004-audio",
+      "targetId": "L16-V004",
+      "kind": "german_lemma_audio",
+      "text": "die Heizung",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V004-example-audio",
+      "targetId": "L16-V004",
+      "kind": "lexical_example_audio",
+      "text": "Die Heizung ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V005-visual",
+      "targetId": "L16-V005",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ไฟหรือแสงสว่าง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V005-audio",
+      "targetId": "L16-V005",
+      "kind": "german_lemma_audio",
+      "text": "das Licht",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V005-example-audio",
+      "targetId": "L16-V005",
+      "kind": "lexical_example_audio",
+      "text": "Das Licht funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V006-visual",
+      "targetId": "L16-V006",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย โทรศัพท์ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V006-audio",
+      "targetId": "L16-V006",
+      "kind": "german_lemma_audio",
+      "text": "das Telefon",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V006-example-audio",
+      "targetId": "L16-V006",
+      "kind": "lexical_example_audio",
+      "text": "Das Telefon funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V007-visual",
+      "targetId": "L16-V007",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ฝักบัวหรือที่อาบน้ำฝักบัว โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V007-audio",
+      "targetId": "L16-V007",
+      "kind": "german_lemma_audio",
+      "text": "die Dusche",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V007-example-audio",
+      "targetId": "L16-V007",
+      "kind": "lexical_example_audio",
+      "text": "Die Dusche ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V008-visual",
+      "targetId": "L16-V008",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เครือข่ายหรือสัญญาณโทรศัพท์ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V008-audio",
+      "targetId": "L16-V008",
+      "kind": "german_lemma_audio",
+      "text": "das Netz",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V008-example-audio",
+      "targetId": "L16-V008",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe hier kein Netz.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V009-visual",
+      "targetId": "L16-V009",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เตาปรุงอาหาร โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V009-audio",
+      "targetId": "L16-V009",
+      "kind": "german_lemma_audio",
+      "text": "der Herd",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V009-example-audio",
+      "targetId": "L16-V009",
+      "kind": "lexical_example_audio",
+      "text": "Der Herd funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V010-visual",
+      "targetId": "L16-V010",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย กริ่ง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V010-audio",
+      "targetId": "L16-V010",
+      "kind": "german_lemma_audio",
+      "text": "die Klingel",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V010-example-audio",
+      "targetId": "L16-V010",
+      "kind": "lexical_example_audio",
+      "text": "Die Klingel funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V011-visual",
+      "targetId": "L16-V011",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เต้ารับไฟฟ้า โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V011-audio",
+      "targetId": "L16-V011",
+      "kind": "german_lemma_audio",
+      "text": "die Steckdose",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V011-example-audio",
+      "targetId": "L16-V011",
+      "kind": "lexical_example_audio",
+      "text": "Hier ist eine Steckdose.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V012-visual",
+      "targetId": "L16-V012",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เครื่องซักผ้า โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V012-audio",
+      "targetId": "L16-V012",
+      "kind": "german_lemma_audio",
+      "text": "die Waschmaschine",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V012-example-audio",
+      "targetId": "L16-V012",
+      "kind": "lexical_example_audio",
+      "text": "Die Waschmaschine ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V013-visual",
+      "targetId": "L16-V013",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ปัญหา โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V013-audio",
+      "targetId": "L16-V013",
+      "kind": "german_lemma_audio",
+      "text": "das Problem",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V013-example-audio",
+      "targetId": "L16-V013",
+      "kind": "lexical_example_audio",
+      "text": "Wir haben ein Problem.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V014-visual",
+      "targetId": "L16-V014",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ความช่วยเหลือ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V014-audio",
+      "targetId": "L16-V014",
+      "kind": "german_lemma_audio",
+      "text": "die Hilfe",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V014-example-audio",
+      "targetId": "L16-V014",
+      "kind": "lexical_example_audio",
+      "text": "Ich brauche Ihre Hilfe.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V015-visual",
+      "targetId": "L16-V015",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย นัดหมาย โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V015-audio",
+      "targetId": "L16-V015",
+      "kind": "german_lemma_audio",
+      "text": "der Termin",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V015-example-audio",
+      "targetId": "L16-V015",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe am Montag einen Termin.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V016-visual",
+      "targetId": "L16-V016",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ชั่วโมง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V016-audio",
+      "targetId": "L16-V016",
+      "kind": "german_lemma_audio",
+      "text": "die Stunde",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V016-example-audio",
+      "targetId": "L16-V016",
+      "kind": "lexical_example_audio",
+      "text": "Ich komme in einer Stunde.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V017-visual",
+      "targetId": "L16-V017",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เดือน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V017-audio",
+      "targetId": "L16-V017",
+      "kind": "german_lemma_audio",
+      "text": "der Monat",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V017-example-audio",
+      "targetId": "L16-V017",
+      "kind": "lexical_example_audio",
+      "text": "Der Kurs beginnt in einem Monat.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V018-visual",
+      "targetId": "L16-V018",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ปี โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V018-audio",
+      "targetId": "L16-V018",
+      "kind": "german_lemma_audio",
+      "text": "das Jahr",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V018-example-audio",
+      "targetId": "L16-V018",
+      "kind": "lexical_example_audio",
+      "text": "Der Kurs beginnt in einem Jahr.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V019-visual",
+      "targetId": "L16-V019",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ทำงานได้หรือใช้งานได้ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V019-audio",
+      "targetId": "L16-V019",
+      "kind": "german_lemma_audio",
+      "text": "funktionieren",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V019-example-audio",
+      "targetId": "L16-V019",
+      "kind": "lexical_example_audio",
+      "text": "Das Telefon funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V020-visual",
+      "targetId": "L16-V020",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ซ่อม โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V020-audio",
+      "targetId": "L16-V020",
+      "kind": "german_lemma_audio",
+      "text": "reparieren",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V020-example-audio",
+      "targetId": "L16-V020",
+      "kind": "lexical_example_audio",
+      "text": "Ich kann das reparieren.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V021-visual",
+      "targetId": "L16-V021",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เลื่อนนัดหรือเปลี่ยนเวลา โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V021-audio",
+      "targetId": "L16-V021",
+      "kind": "german_lemma_audio",
+      "text": "verschieben",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V021-example-audio",
+      "targetId": "L16-V021",
+      "kind": "lexical_example_audio",
+      "text": "Können wir den Termin verschieben?",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V022-visual",
+      "targetId": "L16-V022",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ยกเลิกนัด โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V022-audio",
+      "targetId": "L16-V022",
+      "kind": "german_lemma_audio",
+      "text": "absagen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V022-example-audio",
+      "targetId": "L16-V022",
+      "kind": "lexical_example_audio",
+      "text": "Ich sage den Termin ab.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V023-visual",
+      "targetId": "L16-V023",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เสนอ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V023-audio",
+      "targetId": "L16-V023",
+      "kind": "german_lemma_audio",
+      "text": "vorschlagen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V023-example-audio",
+      "targetId": "L16-V023",
+      "kind": "lexical_example_audio",
+      "text": "Ich möchte einen Termin vorschlagen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V024-visual",
+      "targetId": "L16-V024",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เสียหรือชำรุด โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L16-V024-audio",
+      "targetId": "L16-V024",
+      "kind": "german_lemma_audio",
+      "text": "kaputt",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-V024-example-audio",
+      "targetId": "L16-V024",
+      "kind": "lexical_example_audio",
+      "text": "Der Herd ist kaputt.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-temporale-praepositionen-model-1-audio",
+      "targetId": "L16-temporale-praepositionen",
+      "kind": "grammar_model_audio",
+      "text": "In einer Stunde komme ich.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-temporale-praepositionen-model-2-audio",
+      "targetId": "L16-temporale-praepositionen",
+      "kind": "grammar_model_audio",
+      "text": "Wir essen nach dem Unterricht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-temporale-praepositionen-model-3-audio",
+      "targetId": "L16-temporale-praepositionen",
+      "kind": "grammar_model_audio",
+      "text": "Ich komme vor dem Termin.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D01-voice-A",
+      "targetId": "L16-R001",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was ist das Problem?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D01-voice-B",
+      "targetId": "L16-R002",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Der Aufzug funktioniert nicht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D01-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D01-voice-A",
+        "L16-D01-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D02-voice-A",
+      "targetId": "L16-R003",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Brauchen Sie Hilfe?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D02-voice-B",
+      "targetId": "L16-R004",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ja, ich brauche Ihre Hilfe.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D02-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D02-voice-A",
+        "L16-D02-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D03-voice-A",
+      "targetId": "L16-R005",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was kann ich für Sie tun?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D03-voice-B",
+      "targetId": "L16-R006",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Können Sie den Herd reparieren?",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D03-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D03-voice-A",
+        "L16-D03-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D04-voice-A",
+      "targetId": "L16-R007",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Können Sie das reparieren?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D04-voice-B",
+      "targetId": "L16-R008",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ja, das kann ich reparieren.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D04-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D04-voice-A",
+        "L16-D04-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D05-voice-A",
+      "targetId": "L16-R009",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Wann haben Sie Zeit?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D05-voice-B",
+      "targetId": "L16-R010",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Am Dienstag um 16 Uhr habe ich Zeit.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D05-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D05-voice-A",
+        "L16-D05-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D06-voice-A",
+      "targetId": "L16-R011",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Wann kommen Sie?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D06-voice-B",
+      "targetId": "L16-R012",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich komme in einer Stunde.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D06-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D06-voice-A",
+        "L16-D06-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D07-voice-A",
+      "targetId": "L16-R013",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Haben Sie am Freitag Zeit?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D07-voice-B",
+      "targetId": "L16-R014",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Am Freitag kann ich leider nicht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D07-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D07-voice-A",
+        "L16-D07-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D08-voice-A",
+      "targetId": "L16-R015",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Können wir den Termin verschieben?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D08-voice-B",
+      "targetId": "L16-R016",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ja, nach der Arbeit am Montag habe ich Zeit.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-D08-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L16-D08-voice-A",
+        "L16-D08-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V001-visual",
+      "targetId": "L17-V001",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เขียนบล็อก โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V001-audio",
+      "targetId": "L17-V001",
+      "kind": "german_lemma_audio",
+      "text": "einen Blog schreiben",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V001-example-audio",
+      "targetId": "L17-V001",
+      "kind": "lexical_example_audio",
+      "text": "Ich will einen Blog schreiben.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V002-visual",
+      "targetId": "L17-V002",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เป็นหัวหน้าหรือผู้บริหาร โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V002-audio",
+      "targetId": "L17-V002",
+      "kind": "german_lemma_audio",
+      "text": "Chef werden",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V002-example-audio",
+      "targetId": "L17-V002",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Chef werden.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V002-variant-1-audio",
+      "targetId": "L17-V002",
+      "kind": "lexical_variant_audio",
+      "text": "Chefin werden",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V003-visual",
+      "targetId": "L17-V003",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เป็นนักแสดง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V003-audio",
+      "targetId": "L17-V003",
+      "kind": "german_lemma_audio",
+      "text": "Schauspieler werden",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V003-example-audio",
+      "targetId": "L17-V003",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Schauspieler werden.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V003-variant-1-audio",
+      "targetId": "L17-V003",
+      "kind": "lexical_variant_audio",
+      "text": "Schauspielerin werden",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V004-visual",
+      "targetId": "L17-V004",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เป็นนักการเมือง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V004-audio",
+      "targetId": "L17-V004",
+      "kind": "german_lemma_audio",
+      "text": "Politiker werden",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V004-example-audio",
+      "targetId": "L17-V004",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Politiker werden.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V004-variant-1-audio",
+      "targetId": "L17-V004",
+      "kind": "lexical_variant_audio",
+      "text": "Politikerin werden",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V005-visual",
+      "targetId": "L17-V005",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย หาเงินหรือมีรายได้ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V005-audio",
+      "targetId": "L17-V005",
+      "kind": "german_lemma_audio",
+      "text": "Geld verdienen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V005-example-audio",
+      "targetId": "L17-V005",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Geld verdienen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V006-visual",
+      "targetId": "L17-V006",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย แต่งงาน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V006-audio",
+      "targetId": "L17-V006",
+      "kind": "german_lemma_audio",
+      "text": "heiraten",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V006-example-audio",
+      "targetId": "L17-V006",
+      "kind": "lexical_example_audio",
+      "text": "Wir wollen heiraten.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V007-visual",
+      "targetId": "L17-V007",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย มีครอบครัว โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V007-audio",
+      "targetId": "L17-V007",
+      "kind": "german_lemma_audio",
+      "text": "eine Familie haben",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V007-example-audio",
+      "targetId": "L17-V007",
+      "kind": "lexical_example_audio",
+      "text": "Ich will eine Familie haben.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V008-visual",
+      "targetId": "L17-V008",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ขึ้นภูเขา โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V008-audio",
+      "targetId": "L17-V008",
+      "kind": "german_lemma_audio",
+      "text": "auf einen Berg steigen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V008-example-audio",
+      "targetId": "L17-V008",
+      "kind": "lexical_example_audio",
+      "text": "Ich will auf einen Berg steigen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V009-visual",
+      "targetId": "L17-V009",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เดินทางท่องเที่ยวไปตามประเทศในยุโรป โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V009-audio",
+      "targetId": "L17-V009",
+      "kind": "german_lemma_audio",
+      "text": "durch Europa reisen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V009-example-audio",
+      "targetId": "L17-V009",
+      "kind": "lexical_example_audio",
+      "text": "Ich will durch Europa reisen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V010-visual",
+      "targetId": "L17-V010",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย แล่นเรือรอบโลก โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V010-audio",
+      "targetId": "L17-V010",
+      "kind": "german_lemma_audio",
+      "text": "um die Welt segeln",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V010-example-audio",
+      "targetId": "L17-V010",
+      "kind": "lexical_example_audio",
+      "text": "Ich will um die Welt segeln.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V011-visual",
+      "targetId": "L17-V011",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อาศัยอยู่ต่างประเทศ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V011-audio",
+      "targetId": "L17-V011",
+      "kind": "german_lemma_audio",
+      "text": "im Ausland leben",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V011-example-audio",
+      "targetId": "L17-V011",
+      "kind": "lexical_example_audio",
+      "text": "Ich will im Ausland leben.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V012-visual",
+      "targetId": "L17-V012",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ขี่รถจักรยานยนต์ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V012-audio",
+      "targetId": "L17-V012",
+      "kind": "german_lemma_audio",
+      "text": "Motorrad fahren",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V012-example-audio",
+      "targetId": "L17-V012",
+      "kind": "lexical_example_audio",
+      "text": "Ich will Motorrad fahren.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V013-visual",
+      "targetId": "L17-V013",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เรียนและสอบเพื่อให้ได้ใบขับขี่ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V013-audio",
+      "targetId": "L17-V013",
+      "kind": "german_lemma_audio",
+      "text": "den Führerschein machen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V013-example-audio",
+      "targetId": "L17-V013",
+      "kind": "lexical_example_audio",
+      "text": "Ich will den Führerschein machen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V014-visual",
+      "targetId": "L17-V014",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เรียนเล่นเครื่องดนตรี โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V014-audio",
+      "targetId": "L17-V014",
+      "kind": "german_lemma_audio",
+      "text": "ein Instrument lernen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V014-example-audio",
+      "targetId": "L17-V014",
+      "kind": "lexical_example_audio",
+      "text": "Ich will ein Instrument lernen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V015-visual",
+      "targetId": "L17-V015",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เรียนภาษาต่างประเทศหลายภาษา โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V015-audio",
+      "targetId": "L17-V015",
+      "kind": "german_lemma_audio",
+      "text": "viele Fremdsprachen lernen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V015-example-audio",
+      "targetId": "L17-V015",
+      "kind": "lexical_example_audio",
+      "text": "Ich will viele Fremdsprachen lernen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V016-visual",
+      "targetId": "L17-V016",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย หยุดหรือมีเวลาว่างสามเดือน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V016-audio",
+      "targetId": "L17-V016",
+      "kind": "german_lemma_audio",
+      "text": "drei Monate freihaben",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V016-example-audio",
+      "targetId": "L17-V016",
+      "kind": "lexical_example_audio",
+      "text": "Ich will drei Monate freihaben.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V017-visual",
+      "targetId": "L17-V017",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ความปรารถนาหรือสิ่งที่อยากทำ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V017-audio",
+      "targetId": "L17-V017",
+      "kind": "german_lemma_audio",
+      "text": "der Wunsch",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V017-example-audio",
+      "targetId": "L17-V017",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe einen Wunsch.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V018-visual",
+      "targetId": "L17-V018",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย แผน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V018-audio",
+      "targetId": "L17-V018",
+      "kind": "german_lemma_audio",
+      "text": "der Plan",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V018-example-audio",
+      "targetId": "L17-V018",
+      "kind": "lexical_example_audio",
+      "text": "Wir haben einen Plan.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V019-visual",
+      "targetId": "L17-V019",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อาชีพ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V019-audio",
+      "targetId": "L17-V019",
+      "kind": "german_lemma_audio",
+      "text": "der Beruf",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V019-example-audio",
+      "targetId": "L17-V019",
+      "kind": "lexical_example_audio",
+      "text": "Der Beruf ist interessant.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V020-visual",
+      "targetId": "L17-V020",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย การฝึกหรือเรียนวิชาชีพ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V020-audio",
+      "targetId": "L17-V020",
+      "kind": "german_lemma_audio",
+      "text": "die Ausbildung",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V020-example-audio",
+      "targetId": "L17-V020",
+      "kind": "lexical_example_audio",
+      "text": "Ich will eine Ausbildung machen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V021-visual",
+      "targetId": "L17-V021",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย บริษัท โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V021-audio",
+      "targetId": "L17-V021",
+      "kind": "german_lemma_audio",
+      "text": "die Firma",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V021-example-audio",
+      "targetId": "L17-V021",
+      "kind": "lexical_example_audio",
+      "text": "Wir wollen eine Firma gründen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V022-visual",
+      "targetId": "L17-V022",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เงิน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L17-V022-audio",
+      "targetId": "L17-V022",
+      "kind": "german_lemma_audio",
+      "text": "das Geld",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-V022-example-audio",
+      "targetId": "L17-V022",
+      "kind": "lexical_example_audio",
+      "text": "Wir brauchen Geld.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-werden-model-1-audio",
+      "targetId": "L17-werden",
+      "kind": "grammar_model_audio",
+      "text": "Nina wird Lehrerin.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-werden-model-2-audio",
+      "targetId": "L17-werden",
+      "kind": "grammar_model_audio",
+      "text": "Ich werde Koch.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-wollen-model-1-audio",
+      "targetId": "L17-wollen",
+      "kind": "grammar_model_audio",
+      "text": "Ich will Lehrerin werden.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-wollen-model-2-audio",
+      "targetId": "L17-wollen",
+      "kind": "grammar_model_audio",
+      "text": "Später will ich im Ausland leben.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-mit-ohne-model-1-audio",
+      "targetId": "L17-mit-ohne",
+      "kind": "grammar_model_audio",
+      "text": "Ich komme mit einem Freund.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-mit-ohne-model-2-audio",
+      "targetId": "L17-mit-ohne",
+      "kind": "grammar_model_audio",
+      "text": "Ohne Geld können wir nicht anfangen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D01-voice-A",
+      "targetId": "L17-R001",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was willst du werden?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D01-voice-B",
+      "targetId": "L17-R002",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich will Lehrer werden.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D01-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D01-voice-A",
+        "L17-D01-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D02-voice-A",
+      "targetId": "L17-R003",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Wann willst du die Ausbildung machen?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D02-voice-B",
+      "targetId": "L17-R004",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich will nächstes Jahr eine Ausbildung machen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D02-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D02-voice-A",
+        "L17-D02-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D03-voice-A",
+      "targetId": "L17-R005",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was willst du später machen?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D03-voice-B",
+      "targetId": "L17-R006",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich will im Ausland leben.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D03-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D03-voice-A",
+        "L17-D03-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D04-voice-A",
+      "targetId": "L17-R007",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was möchtest du noch machen?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D04-voice-B",
+      "targetId": "L17-R008",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich will Motorrad fahren.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D04-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D04-voice-A",
+        "L17-D04-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D05-voice-A",
+      "targetId": "L17-R009",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was willst du unbedingt machen?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D05-voice-B",
+      "targetId": "L17-R010",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich will unbedingt Arzt werden.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D05-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D05-voice-A",
+        "L17-D05-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D06-voice-A",
+      "targetId": "L17-R011",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was willst du auf keinen Fall machen?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D06-voice-B",
+      "targetId": "L17-R012",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich will auf keinen Fall Politiker werden.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D06-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D06-voice-A",
+        "L17-D06-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D07-voice-A",
+      "targetId": "L17-R013",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Mit wem kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D07-voice-B",
+      "targetId": "L17-R014",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich komme mit einem Freund.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D07-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D07-voice-A",
+        "L17-D07-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D08-voice-A",
+      "targetId": "L17-R015",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Könnt ihr ohne Geld anfangen?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D08-voice-B",
+      "targetId": "L17-R016",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Nein, ohne Geld können wir nicht anfangen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-D08-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L17-D08-voice-A",
+        "L17-D08-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V001-visual",
+      "targetId": "L18-V001",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย หน้าอก โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V001-audio",
+      "targetId": "L18-V001",
+      "kind": "german_lemma_audio",
+      "text": "die Brust",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V001-example-audio",
+      "targetId": "L18-V001",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Brust.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V002-visual",
+      "targetId": "L18-V002",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย หลัง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V002-audio",
+      "targetId": "L18-V002",
+      "kind": "german_lemma_audio",
+      "text": "der Rücken",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V002-example-audio",
+      "targetId": "L18-V002",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Rücken.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V003-visual",
+      "targetId": "L18-V003",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ท้อง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V003-audio",
+      "targetId": "L18-V003",
+      "kind": "german_lemma_audio",
+      "text": "der Bauch",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V003-example-audio",
+      "targetId": "L18-V003",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Bauch.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V004-visual",
+      "targetId": "L18-V004",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย แขน โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V004-audio",
+      "targetId": "L18-V004",
+      "kind": "german_lemma_audio",
+      "text": "der Arm",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V004-example-audio",
+      "targetId": "L18-V004",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Arm.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V005-visual",
+      "targetId": "L18-V005",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย มือ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V005-audio",
+      "targetId": "L18-V005",
+      "kind": "german_lemma_audio",
+      "text": "die Hand",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V005-example-audio",
+      "targetId": "L18-V005",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Hand.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V006-visual",
+      "targetId": "L18-V006",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย นิ้วมือ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V006-audio",
+      "targetId": "L18-V006",
+      "kind": "german_lemma_audio",
+      "text": "der Finger",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V006-example-audio",
+      "targetId": "L18-V006",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Finger.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V007-visual",
+      "targetId": "L18-V007",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ขา โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V007-audio",
+      "targetId": "L18-V007",
+      "kind": "german_lemma_audio",
+      "text": "das Bein",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V007-example-audio",
+      "targetId": "L18-V007",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Bein.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V008-visual",
+      "targetId": "L18-V008",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เข่า โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V008-audio",
+      "targetId": "L18-V008",
+      "kind": "german_lemma_audio",
+      "text": "das Knie",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V008-example-audio",
+      "targetId": "L18-V008",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Knie.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V009-visual",
+      "targetId": "L18-V009",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย เท้า โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V009-audio",
+      "targetId": "L18-V009",
+      "kind": "german_lemma_audio",
+      "text": "der Fuß",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V009-example-audio",
+      "targetId": "L18-V009",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Fuß.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V010-visual",
+      "targetId": "L18-V010",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ตา โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V010-audio",
+      "targetId": "L18-V010",
+      "kind": "german_lemma_audio",
+      "text": "das Auge",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V010-example-audio",
+      "targetId": "L18-V010",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Auge.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V011-visual",
+      "targetId": "L18-V011",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย คอ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V011-audio",
+      "targetId": "L18-V011",
+      "kind": "german_lemma_audio",
+      "text": "der Hals",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V011-example-audio",
+      "targetId": "L18-V011",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Hals.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V012-visual",
+      "targetId": "L18-V012",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ปาก โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V012-audio",
+      "targetId": "L18-V012",
+      "kind": "german_lemma_audio",
+      "text": "der Mund",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V012-example-audio",
+      "targetId": "L18-V012",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Mund.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V013-visual",
+      "targetId": "L18-V013",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ศีรษะ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V013-audio",
+      "targetId": "L18-V013",
+      "kind": "german_lemma_audio",
+      "text": "der Kopf",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V013-example-audio",
+      "targetId": "L18-V013",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Kopf.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V014-visual",
+      "targetId": "L18-V014",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย จมูก โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V014-audio",
+      "targetId": "L18-V014",
+      "kind": "german_lemma_audio",
+      "text": "die Nase",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V014-example-audio",
+      "targetId": "L18-V014",
+      "kind": "lexical_example_audio",
+      "text": "Das ist eine Nase.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V015-visual",
+      "targetId": "L18-V015",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย หู โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V015-audio",
+      "targetId": "L18-V015",
+      "kind": "german_lemma_audio",
+      "text": "das Ohr",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V015-example-audio",
+      "targetId": "L18-V015",
+      "kind": "lexical_example_audio",
+      "text": "Das ist ein Ohr.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V016-visual",
+      "targetId": "L18-V016",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อาการปวดศีรษะ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V016-audio",
+      "targetId": "L18-V016",
+      "kind": "german_lemma_audio",
+      "text": "die Kopfschmerzen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V016-example-audio",
+      "targetId": "L18-V016",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Kopfschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V017-visual",
+      "targetId": "L18-V017",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อาการปวดหลัง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V017-audio",
+      "targetId": "L18-V017",
+      "kind": "german_lemma_audio",
+      "text": "die Rückenschmerzen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V017-example-audio",
+      "targetId": "L18-V017",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Rückenschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V018-visual",
+      "targetId": "L18-V018",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อาการเจ็บคอ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V018-audio",
+      "targetId": "L18-V018",
+      "kind": "german_lemma_audio",
+      "text": "die Halsschmerzen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V018-example-audio",
+      "targetId": "L18-V018",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Halsschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V019-visual",
+      "targetId": "L18-V019",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อาการปวดหู โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V019-audio",
+      "targetId": "L18-V019",
+      "kind": "german_lemma_audio",
+      "text": "die Ohrenschmerzen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V019-example-audio",
+      "targetId": "L18-V019",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Ohrenschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V020-visual",
+      "targetId": "L18-V020",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อาการปวดท้อง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V020-audio",
+      "targetId": "L18-V020",
+      "kind": "german_lemma_audio",
+      "text": "die Bauchschmerzen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V020-example-audio",
+      "targetId": "L18-V020",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Bauchschmerzen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V021-visual",
+      "targetId": "L18-V021",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อาการน้ำมูกไหลหรือคัดจมูก โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V021-audio",
+      "targetId": "L18-V021",
+      "kind": "german_lemma_audio",
+      "text": "der Schnupfen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V021-example-audio",
+      "targetId": "L18-V021",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Schnupfen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V022-visual",
+      "targetId": "L18-V022",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย อาการไอ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V022-audio",
+      "targetId": "L18-V022",
+      "kind": "german_lemma_audio",
+      "text": "der Husten",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V022-example-audio",
+      "targetId": "L18-V022",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Husten.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V023-visual",
+      "targetId": "L18-V023",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ไข้ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V023-audio",
+      "targetId": "L18-V023",
+      "kind": "german_lemma_audio",
+      "text": "das Fieber",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V023-example-audio",
+      "targetId": "L18-V023",
+      "kind": "lexical_example_audio",
+      "text": "Ich habe Fieber.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V024-visual",
+      "targetId": "L18-V024",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ยาเม็ด โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V024-audio",
+      "targetId": "L18-V024",
+      "kind": "german_lemma_audio",
+      "text": "die Tablette",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V024-example-audio",
+      "targetId": "L18-V024",
+      "kind": "lexical_example_audio",
+      "text": "Hier ist eine Tablette.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V025-visual",
+      "targetId": "L18-V025",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ยา โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V025-audio",
+      "targetId": "L18-V025",
+      "kind": "german_lemma_audio",
+      "text": "das Medikament",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V025-example-audio",
+      "targetId": "L18-V025",
+      "kind": "lexical_example_audio",
+      "text": "Hier ist ein Medikament.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V026-visual",
+      "targetId": "L18-V026",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ยาทาหรือขี้ผึ้ง โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V026-audio",
+      "targetId": "L18-V026",
+      "kind": "german_lemma_audio",
+      "text": "die Salbe",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V026-example-audio",
+      "targetId": "L18-V026",
+      "kind": "lexical_example_audio",
+      "text": "Hier ist eine Salbe.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V027-visual",
+      "targetId": "L18-V027",
+      "kind": "image_or_context_card",
+      "brief": "สื่อความหมาย ยาแก้ไอชนิดน้ำ โดยไม่มีคำตอบพิมพ์อยู่ในภาพ",
+      "existingCandidate": null,
+      "existingFileVerified": false,
+      "status": "needs_asset_or_code_native_context"
+    },
+    {
+      "id": "L18-V027-audio",
+      "targetId": "L18-V027",
+      "kind": "german_lemma_audio",
+      "text": "der Hustensaft",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-V027-example-audio",
+      "targetId": "L18-V027",
+      "kind": "lexical_example_audio",
+      "text": "Das ist Hustensaft.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-imperativ-sie-model-1-audio",
+      "targetId": "L18-imperativ-sie",
+      "kind": "grammar_model_audio",
+      "text": "Sprechen Sie bitte langsam.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-imperativ-sie-model-2-audio",
+      "targetId": "L18-imperativ-sie",
+      "kind": "grammar_model_audio",
+      "text": "Stehen Sie bitte auf.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-sollen-model-1-audio",
+      "targetId": "L18-sollen",
+      "kind": "grammar_model_audio",
+      "text": "Ich soll diese Übung machen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-sollen-model-2-audio",
+      "targetId": "L18-sollen",
+      "kind": "grammar_model_audio",
+      "text": "Soll ich morgen kommen?",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D01-voice-A",
+      "targetId": "L18-R001",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was tut Ihnen weh?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D01-voice-B",
+      "targetId": "L18-R002",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Mein Rücken tut weh.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D01-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D01-voice-A",
+        "L18-D01-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D02-voice-A",
+      "targetId": "L18-R003",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Haben Sie Fieber?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D02-voice-B",
+      "targetId": "L18-R004",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Nein, ich habe Husten.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D02-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D02-voice-A",
+        "L18-D02-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D03-voice-A",
+      "targetId": "L18-R005",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was soll ich machen?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D03-voice-B",
+      "targetId": "L18-R006",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Machen Sie bitte eine Pause.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D03-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D03-voice-A",
+        "L18-D03-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D04-voice-A",
+      "targetId": "L18-R007",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Können Sie das bitte wiederholen?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D04-voice-B",
+      "targetId": "L18-R008",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ja, natürlich.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D04-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D04-voice-A",
+        "L18-D04-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D05-voice-A",
+      "targetId": "L18-R009",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Spreche ich zu schnell?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D05-voice-B",
+      "targetId": "L18-R010",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Sprechen Sie bitte langsam.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D05-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D05-voice-A",
+        "L18-D05-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D06-voice-A",
+      "targetId": "L18-R011",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Soll ich morgen kommen?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D06-voice-B",
+      "targetId": "L18-R012",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ja, kommen Sie morgen um zehn Uhr.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D06-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D06-voice-A",
+        "L18-D06-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D07-voice-A",
+      "targetId": "L18-R013",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Was hat die Ärztin gesagt?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D07-voice-B",
+      "targetId": "L18-R014",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Ich soll diese Übung machen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D07-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D07-voice-A",
+        "L18-D07-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D08-voice-A",
+      "targetId": "L18-R015",
+      "kind": "dialogue_turn",
+      "speaker": "A",
+      "text": "Wer sagt das?",
+      "voice": "de-DE-KatjaNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D08-voice-B",
+      "targetId": "L18-R016",
+      "kind": "dialogue_turn",
+      "speaker": "B",
+      "text": "Mein Arzt sagt das.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-D08-pair-audio",
+      "kind": "dialogue_pair",
+      "turnIds": [
+        "L18-D08-voice-A",
+        "L18-D08-voice-B"
+      ],
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-01-audio",
+      "targetId": "L15-HELP-01",
+      "kind": "support_gloss_audio",
+      "text": "der Quadratmeter",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-02-audio",
+      "targetId": "L15-HELP-02",
+      "kind": "support_gloss_audio",
+      "text": "die Miete",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-03-audio",
+      "targetId": "L15-HELP-03",
+      "kind": "support_gloss_audio",
+      "text": "die Nebenkosten",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-04-audio",
+      "targetId": "L15-HELP-04",
+      "kind": "support_gloss_audio",
+      "text": "die Möbel",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-05-audio",
+      "targetId": "L15-HELP-05",
+      "kind": "support_gloss_audio",
+      "text": "frei",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-06-audio",
+      "targetId": "L15-HELP-06",
+      "kind": "support_gloss_audio",
+      "text": "hell",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-07-audio",
+      "targetId": "L15-HELP-07",
+      "kind": "support_gloss_audio",
+      "text": "dunkel",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-08-audio",
+      "targetId": "L15-HELP-08",
+      "kind": "support_gloss_audio",
+      "text": "gemütlich",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-09-audio",
+      "targetId": "L15-HELP-09",
+      "kind": "support_gloss_audio",
+      "text": "teuer",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-10-audio",
+      "targetId": "L15-HELP-10",
+      "kind": "support_gloss_audio",
+      "text": "billig",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-11-audio",
+      "targetId": "L15-HELP-11",
+      "kind": "support_gloss_audio",
+      "text": "groß",
+      "status": "not_generated"
+    },
+    {
+      "id": "L15-HELP-12-audio",
+      "targetId": "L15-HELP-12",
+      "kind": "support_gloss_audio",
+      "text": "klein",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-01-audio",
+      "targetId": "L16-HELP-01",
+      "kind": "support_gloss_audio",
+      "text": "die Zeit",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-02-audio",
+      "targetId": "L16-HELP-02",
+      "kind": "support_gloss_audio",
+      "text": "die Arbeit",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-03-audio",
+      "targetId": "L16-HELP-03",
+      "kind": "support_gloss_audio",
+      "text": "der Unterricht",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-04-audio",
+      "targetId": "L16-HELP-04",
+      "kind": "support_gloss_audio",
+      "text": "der Kurs",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-05-audio",
+      "targetId": "L16-HELP-05",
+      "kind": "support_gloss_audio",
+      "text": "die Woche",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-06-audio",
+      "targetId": "L16-HELP-06",
+      "kind": "support_gloss_audio",
+      "text": "der Tag",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-07-audio",
+      "targetId": "L16-HELP-07",
+      "kind": "support_gloss_audio",
+      "text": "die Minute",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-08-audio",
+      "targetId": "L16-HELP-08",
+      "kind": "support_gloss_audio",
+      "text": "das Gespräch",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-09-audio",
+      "targetId": "L16-HELP-09",
+      "kind": "support_gloss_audio",
+      "text": "heute",
+      "status": "not_generated"
+    },
+    {
+      "id": "L16-HELP-10-audio",
+      "targetId": "L16-HELP-10",
+      "kind": "support_gloss_audio",
+      "text": "morgen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-01-audio",
+      "targetId": "L17-HELP-01",
+      "kind": "support_gloss_audio",
+      "text": "der Lehrer",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-02-audio",
+      "targetId": "L17-HELP-02",
+      "kind": "support_gloss_audio",
+      "text": "die Lehrerin",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-03-audio",
+      "targetId": "L17-HELP-03",
+      "kind": "support_gloss_audio",
+      "text": "der Arzt",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-04-audio",
+      "targetId": "L17-HELP-04",
+      "kind": "support_gloss_audio",
+      "text": "die Ärztin",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-05-audio",
+      "targetId": "L17-HELP-05",
+      "kind": "support_gloss_audio",
+      "text": "der Freund",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-06-audio",
+      "targetId": "L17-HELP-06",
+      "kind": "support_gloss_audio",
+      "text": "die Freundin",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-07-audio",
+      "targetId": "L17-HELP-07",
+      "kind": "support_gloss_audio",
+      "text": "der Bus",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-08-audio",
+      "targetId": "L17-HELP-08",
+      "kind": "support_gloss_audio",
+      "text": "der Zug",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-09-audio",
+      "targetId": "L17-HELP-09",
+      "kind": "support_gloss_audio",
+      "text": "der Hund",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-10-audio",
+      "targetId": "L17-HELP-10",
+      "kind": "support_gloss_audio",
+      "text": "der Schirm",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-11-audio",
+      "targetId": "L17-HELP-11",
+      "kind": "support_gloss_audio",
+      "text": "die Eltern",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-12-audio",
+      "targetId": "L17-HELP-12",
+      "kind": "support_gloss_audio",
+      "text": "der Koch",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-13-audio",
+      "targetId": "L17-HELP-13",
+      "kind": "support_gloss_audio",
+      "text": "die Köchin",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-14-audio",
+      "targetId": "L17-HELP-14",
+      "kind": "support_gloss_audio",
+      "text": "der Ingenieur",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-15-audio",
+      "targetId": "L17-HELP-15",
+      "kind": "support_gloss_audio",
+      "text": "die Ingenieurin",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-16-audio",
+      "targetId": "L17-HELP-16",
+      "kind": "support_gloss_audio",
+      "text": "später",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-17-audio",
+      "targetId": "L17-HELP-17",
+      "kind": "support_gloss_audio",
+      "text": "unbedingt",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-18-audio",
+      "targetId": "L17-HELP-18",
+      "kind": "support_gloss_audio",
+      "text": "vielleicht",
+      "status": "not_generated"
+    },
+    {
+      "id": "L17-HELP-19-audio",
+      "targetId": "L17-HELP-19",
+      "kind": "support_gloss_audio",
+      "text": "auf keinen Fall",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-01-audio",
+      "targetId": "L18-HELP-01",
+      "kind": "support_gloss_audio",
+      "text": "der Arzt",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-02-audio",
+      "targetId": "L18-HELP-02",
+      "kind": "support_gloss_audio",
+      "text": "die Ärztin",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-03-audio",
+      "targetId": "L18-HELP-03",
+      "kind": "support_gloss_audio",
+      "text": "die Übung",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-04-audio",
+      "targetId": "L18-HELP-04",
+      "kind": "support_gloss_audio",
+      "text": "die Pause",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-05-audio",
+      "targetId": "L18-HELP-05",
+      "kind": "support_gloss_audio",
+      "text": "die Kollegin",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-06-audio",
+      "targetId": "L18-HELP-06",
+      "kind": "support_gloss_audio",
+      "text": "langsam",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-07-audio",
+      "targetId": "L18-HELP-07",
+      "kind": "support_gloss_audio",
+      "text": "wiederholen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-08-audio",
+      "targetId": "L18-HELP-08",
+      "kind": "support_gloss_audio",
+      "text": "wehtun",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-09-audio",
+      "targetId": "L18-HELP-09",
+      "kind": "support_gloss_audio",
+      "text": "sagen",
+      "status": "not_generated"
+    },
+    {
+      "id": "L18-HELP-10-audio",
+      "targetId": "L18-HELP-10",
+      "kind": "support_gloss_audio",
+      "text": "aufstehen",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-001-PREP3-feedback-audio",
+      "targetId": "L15-possessivartikel",
+      "taskId": "A13-L15-POSSESSIVARTIKEL-001-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich finde seinen Balkon schön.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-002-PREP3-feedback-audio",
+      "targetId": "L15-possessivartikel",
+      "taskId": "A13-L15-POSSESSIVARTIKEL-002-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ihr Zimmer ist groß.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-003-PREP3-feedback-audio",
+      "targetId": "L15-possessivartikel",
+      "taskId": "A13-L15-POSSESSIVARTIKEL-003-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich finde seine Küche schön.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-004-PREP3-feedback-audio",
+      "targetId": "L15-possessivartikel",
+      "taskId": "A13-L15-POSSESSIVARTIKEL-004-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ihre Lampe ist neu.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-005-PREP3-feedback-audio",
+      "targetId": "L15-possessivartikel",
+      "taskId": "A13-L15-POSSESSIVARTIKEL-005-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich finde seinen Balkon schön.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L15-OWNER-PREP-001-feedback-audio",
+      "targetId": "L15-possessivartikel-owner",
+      "taskId": "A13-L15-OWNER-PREP-001",
+      "kind": "grammar_feedback_audio",
+      "text": "Das ist ihr Zimmer.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L15-ENDING-PREP-001-feedback-audio",
+      "targetId": "L15-possessivartikel-ending",
+      "taskId": "A13-L15-ENDING-PREP-001",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich finde seinen Sessel schön.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001-PREP3-feedback-audio",
+      "targetId": "L16-temporale-praepositionen",
+      "taskId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich komme in einer Stunde, also um zehn.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002-PREP3-feedback-audio",
+      "targetId": "L16-temporale-praepositionen",
+      "taskId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Der Termin war gestern, also vor einem Tag.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003-PREP3-feedback-audio",
+      "targetId": "L16-temporale-praepositionen",
+      "taskId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir essen nach dem Unterricht.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004-PREP3-feedback-audio",
+      "targetId": "L16-temporale-praepositionen",
+      "taskId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Der Termin ist am Mittwoch, also in zwei Tagen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005-PREP3-feedback-audio",
+      "targetId": "L16-temporale-praepositionen",
+      "taskId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir treffen uns nach dem Kurs.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L16-DATIV-PREP-001-feedback-audio",
+      "targetId": "L16-temporale-dative-form",
+      "taskId": "A13-L16-DATIV-PREP-001",
+      "kind": "grammar_feedback_audio",
+      "text": "Nach der Arbeit habe ich Zeit.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WERDEN-001-PREP3-feedback-audio",
+      "targetId": "L17-werden",
+      "taskId": "A13-L17-WERDEN-001-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Nina wird Lehrerin.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WERDEN-002-PREP3-feedback-audio",
+      "targetId": "L17-werden",
+      "taskId": "A13-L17-WERDEN-002-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir werden bald Eltern.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WERDEN-003-PREP3-feedback-audio",
+      "targetId": "L17-werden",
+      "taskId": "A13-L17-WERDEN-003-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich werde Koch.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WERDEN-004-PREP3-feedback-audio",
+      "targetId": "L17-werden",
+      "taskId": "A13-L17-WERDEN-004-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Du wirst Ingenieurin.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WERDEN-005-PREP3-feedback-audio",
+      "targetId": "L17-werden",
+      "taskId": "A13-L17-WERDEN-005-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Er wird Arzt.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WOLLEN-001-PREP3-feedback-audio",
+      "targetId": "L17-wollen",
+      "taskId": "A13-L17-WOLLEN-001-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ihr wollt heute Deutsch lernen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WOLLEN-002-PREP3-feedback-audio",
+      "targetId": "L17-wollen",
+      "taskId": "A13-L17-WOLLEN-002-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Frau Koch will morgen reisen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WOLLEN-003-PREP3-feedback-audio",
+      "targetId": "L17-wollen",
+      "taskId": "A13-L17-WOLLEN-003-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich will Musiker werden.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WOLLEN-004-PREP3-feedback-audio",
+      "targetId": "L17-wollen",
+      "taskId": "A13-L17-WOLLEN-004-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir wollen eine Firma gründen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-WOLLEN-005-PREP3-feedback-audio",
+      "targetId": "L17-wollen",
+      "taskId": "A13-L17-WOLLEN-005-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Sie will in Berlin studieren.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-001-PREP3-feedback-audio",
+      "targetId": "L17-mit-ohne",
+      "taskId": "A13-L17-MIT-OHNE-001-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Sie fährt mit dem Bus.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-002-PREP3-feedback-audio",
+      "targetId": "L17-mit-ohne",
+      "taskId": "A13-L17-MIT-OHNE-002-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Er geht ohne einen Schirm.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-003-PREP3-feedback-audio",
+      "targetId": "L17-mit-ohne",
+      "taskId": "A13-L17-MIT-OHNE-003-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich komme mit einer Freundin.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-004-PREP3-feedback-audio",
+      "targetId": "L17-mit-ohne",
+      "taskId": "A13-L17-MIT-OHNE-004-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Sie geht ohne den Hund.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-005-PREP3-feedback-audio",
+      "targetId": "L17-mit-ohne",
+      "taskId": "A13-L17-MIT-OHNE-005-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich fahre mit dem Zug.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-MEANING-PREP-001-feedback-audio",
+      "targetId": "L17-mit-ohne-meaning",
+      "taskId": "A13-L17-MIT-OHNE-MEANING-PREP-001",
+      "kind": "grammar_feedback_audio",
+      "text": "Nina reist mit Geld.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-001-PREP3-feedback-audio",
+      "targetId": "L18-imperativ-sie",
+      "taskId": "A13-L18-IMPERATIV-SIE-001-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Sprechen Sie bitte langsam.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-002-PREP3-feedback-audio",
+      "targetId": "L18-imperativ-sie",
+      "taskId": "A13-L18-IMPERATIV-SIE-002-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Warten Sie hier kurz.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-003-PREP3-feedback-audio",
+      "targetId": "L18-imperativ-sie",
+      "taskId": "A13-L18-IMPERATIV-SIE-003-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Trinken Sie viel Wasser.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-004-PREP3-feedback-audio",
+      "targetId": "L18-imperativ-sie",
+      "taskId": "A13-L18-IMPERATIV-SIE-004-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Machen Sie eine Pause.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-005-PREP3-feedback-audio",
+      "targetId": "L18-imperativ-sie",
+      "taskId": "A13-L18-IMPERATIV-SIE-005-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Gehen Sie bitte nach Hause.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-SOLLEN-001-PREP3-feedback-audio",
+      "targetId": "L18-sollen",
+      "taskId": "A13-L18-SOLLEN-001-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Du sollst heute zu Hause bleiben.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-SOLLEN-002-PREP3-feedback-audio",
+      "targetId": "L18-sollen",
+      "taskId": "A13-L18-SOLLEN-002-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Wir sollen mehr schlafen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-SOLLEN-003-PREP3-feedback-audio",
+      "targetId": "L18-sollen",
+      "taskId": "A13-L18-SOLLEN-003-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Ich soll diese Übung machen.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-SOLLEN-004-PREP3-feedback-audio",
+      "targetId": "L18-sollen",
+      "taskId": "A13-L18-SOLLEN-004-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Frau Weber soll mehr trinken.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    },
+    {
+      "id": "A13-L18-SOLLEN-005-PREP3-feedback-audio",
+      "targetId": "L18-sollen",
+      "taskId": "A13-L18-SOLLEN-005-PREP3",
+      "kind": "grammar_feedback_audio",
+      "text": "Sie sollen heute mehr Wasser trinken.",
+      "voice": "de-DE-ConradNeural",
+      "status": "not_generated"
+    }
+  ],
+  "visualBoards": [
+    {
+      "lessonId": "L15",
+      "type": "original_code_native_floorplan_and_listing_cards",
+      "requirement": "ทำผังและประกาศที่พักใหม่ ไม่ใช้ภาพหน้าหนังสือเป็นภาพผู้เรียน"
+    },
+    {
+      "lessonId": "L16",
+      "type": "original_clock_timeline_and_appointment_cards",
+      "requirement": "แยกแกนตอนนี้กับแกนก่อน/หลังเหตุการณ์ ให้ข้อมูลพอตอบ"
+    },
+    {
+      "lessonId": "L17",
+      "type": "original_plan_cards",
+      "requirement": "แยกอาชีพ/แผนส่วนตัวและระดับความตั้งใจ; ไม่ใช้ภาพเดียวแทนความหมายคนละแบบ"
+    },
+    {
+      "lessonId": "L18",
+      "type": "original_body_diagram_and_speaker_instruction_cards",
+      "requirement": "ใช้ภาพระบุส่วนร่างกายได้ชัด และให้ข้อความของผู้พูดเป็นข้อมูลสำหรับตอบ"
+    }
+  ]
+}

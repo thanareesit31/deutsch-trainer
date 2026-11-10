@@ -32,6 +32,11 @@ export function l13PracticeSkill(href: string): L13PracticeSkill {
 }
 const practiceSkillName = { grammar:'ไวยากรณ์', vocabulary:'คำศัพท์', phrases:'ประโยคและสำนวน' };
 export const l13PracticeStores = [
+  ...['L15', 'L16', 'L17', 'L18'].flatMap(lessonId => ['vocabulary', 'grammar', 'phrases'].map(skill => ({
+    href: `/practice/${lessonId}/${skill}/basic`,
+    storage: `a13-release-${lessonId.toLowerCase()}-${skill}`,
+    frame: `a13-release-${lessonId.toLowerCase()}-${skill}`,
+  }))),
   ...Array.from({ length: 12 }, (_, index) => `L${String(index + 1).padStart(2, '0')}`).flatMap(lessonId => ['basic', 'daily'].map(slug => ({
     href: `/practice/${lessonId}/vocabulary/${slug}`,
     storage: `a11-vocab-${lessonId.toLowerCase()}-${slug}`,
@@ -126,7 +131,7 @@ export function resumablePracticeSession(history: readonly PracticeHistory[]) {
 }
 
 export function practiceStorageKey(storage: string, frame: string, userId: string) {
-  const lessonPrefix = storage.startsWith('l14-') || storage.startsWith('a11-') ? '' : 'l13-';
+  const lessonPrefix = storage.startsWith('l14-') || storage.startsWith('a11-') || storage.startsWith('a13-release-') ? '' : 'l13-';
   return `deutsch-trainer:review-prototype:${lessonPrefix}${storage}:v1:${frame}-account-${userId}`;
 }
 

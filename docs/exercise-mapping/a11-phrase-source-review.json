@@ -1,0 +1,928 @@
+{
+  "reviewedAt": "2026-11-04",
+  "scope": "L01–L12 phrase-bank communicative-function audit; not a complete transcription, language approval or activity redesign",
+  "source": {
+    "id": "moment-a1-l01-l12-kb",
+    "fileName": "หนังสือเรียน Moment A1 Lektion 1-12.pdf",
+    "sha256": "e7be5c58f91192c48e45f650a22f933fbad65b851d949c39e35d356ea869b576",
+    "pdfPages": 107,
+    "access": "read local original; source images remain ignored in .tools",
+    "limitations": [
+      "PDF order differs from printed pagination: PDF 52–57 contains printed 39–44 after printed 53–56 at PDF 48–51.",
+      "Printed 57–62 are not present in that expected module sequence; this audit uses L07–L09 main activities and TOC, not an unseen summary.",
+      "No listening audio, videos, complete partner-page inventory, workbook, worksheet or teacher-slide review in this pass.",
+      "Mapping below means communicative-function alignment, not exact publisher wording or certification of Thai translations/distractors."
+    ]
+  },
+  "lessons": [
+    {
+      "lessonId": "L01",
+      "sources": [
+        {
+          "pdfPage": 8,
+          "printedPage": 6,
+          "label": "Inhalt: L01",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 11,
+          "printedPage": 9,
+          "label": "1a–c; Lernziele",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 12,
+          "printedPage": 10,
+          "label": "2a–c, 3a–b",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 13,
+          "printedPage": 12,
+          "label": "8a–c; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 27,
+          "printedPage": 26,
+          "label": "Kommunikation L01",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L01-COMM-01",
+          "name": "ทักทายและลา",
+          "targetIds": [
+            "phrases-L01-6"
+          ],
+          "status": "partial",
+          "gap": "มีเฉพาะการลาอย่างสุภาพ; ขาดคำทักทายตามช่วงวันและการลาแบบกันเอง"
+        },
+        {
+          "id": "L01-COMM-02",
+          "name": "ถามชื่อ แนะนำตนเองและผู้อื่น",
+          "targetIds": [
+            "phrases-L01-0",
+            "phrases-L01-1",
+            "phrases-L01-7"
+          ],
+          "status": "partial",
+          "gap": "มีถามชื่อ du/Sie และตอบด้วย ich heiße; ขาด wer bist/sind, mein Name ist และ das ist …"
+        },
+        {
+          "id": "L01-COMM-03",
+          "name": "ถามทุกข์สุขและถามกลับ",
+          "targetIds": [
+            "phrases-L01-3",
+            "phrases-L01-4",
+            "phrases-L01-5"
+          ],
+          "status": "partial",
+          "gap": "ขาดรูปสุภาพ ช่วงคำตอบดีมาก/ไม่ค่อยดี และ Und dir/Ihnen?"
+        },
+        {
+          "id": "L01-COMM-04",
+          "name": "ถามและบอกที่มา",
+          "targetIds": [
+            "phrases-L01-2",
+            "phrases-L01-8"
+          ],
+          "status": "partial",
+          "gap": "มีคู่กันเอง; ขาดคำถามสุภาพและการบอกที่มาของผู้อื่น"
+        },
+        {
+          "id": "L01-COMM-05",
+          "name": "ขอให้พูดซ้ำ สะกดชื่อ และขอบคุณ",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Entschuldigung/Wie bitte? และการโต้ตอบเมื่อฟังชื่อไม่ทัน"
+        }
+      ],
+      "note": "9 ประโยคครอบคลุมแกนบางส่วน แต่ยังไม่ครบหน้าที่สื่อสารของ L01; การมี Alphabet ในหมวดอื่นไม่แทนบทสนทนาขอสะกดชื่อ",
+      "targetFlags": {}
+    },
+    {
+      "lessonId": "L02",
+      "sources": [
+        {
+          "pdfPage": 8,
+          "printedPage": 6,
+          "label": "Inhalt: L02",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 14,
+          "printedPage": 13,
+          "label": "1a–b; Lernziele",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 15,
+          "printedPage": 14,
+          "label": "2a–c, 3",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 16,
+          "printedPage": 15,
+          "label": "4, 5a–c",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 17,
+          "printedPage": 16,
+          "label": "6–8; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 27,
+          "printedPage": 26,
+          "label": "Kommunikation L02",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L02-COMM-01",
+          "name": "ถามและตอบเรื่องอาชีพ/งาน",
+          "targetIds": [
+            "L02-pattern-profession",
+            "L02-status-praktikum",
+            "L02-status-arbeitslos",
+            "L02-status-nicht-arbeiten",
+            "L02-status-freiberuflich",
+            "L02-status-selbststaendig",
+            "L02-status-angestellt"
+          ],
+          "status": "partial",
+          "gap": "มีคำถามและสถานะงาน แต่ขาดคำตอบอาชีพจริง เช่น Ich bin … von Beruf, Ich arbeite als … / bei … และรูปสุภาพ"
+        },
+        {
+          "id": "L02-COMM-02",
+          "name": "บอกที่อยู่อาศัย",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Wo wohnst/lebst du? และ Ich wohne/lebe in …"
+        },
+        {
+          "id": "L02-COMM-03",
+          "name": "ถามอายุและบอกอายุ",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Wie alt bist du? และ Ich bin … Jahre alt"
+        },
+        {
+          "id": "L02-COMM-04",
+          "name": "บอกสถานภาพ ครอบครัว และการอยู่ร่วมกัน",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด verheiratet/geschieden/Single, zusammenleben และมี/ไม่มีลูกในคลังประโยคนี้"
+        },
+        {
+          "id": "L02-COMM-05",
+          "name": "ข้อมูลติดต่อเสริม",
+          "targetIds": [
+            "L02-pattern-phone"
+          ],
+          "status": "supplement",
+          "gap": "เก็บประวัติเดิมไว้; ไม่พบ Handynummer เป็นเป้าหมายหลักในหน้าบทและสรุปที่ตรวจ"
+        }
+      ],
+      "note": "มีเนื้อหาสถานภาพ/อายุอยู่ในหมวดอื่นของระบบ แต่ยังไม่ใช่เป้าหมาย phrase bank นี้; สถานะ published เดิมไม่ยืนยันว่าเป็นข้อความตรงจากหนังสือ",
+      "targetFlags": {
+        "L02-pattern-phone": "ต้องตรวจต้นทางชีท/สไลด์ก่อนเรียกว่าเนื้อหาหลักของหนังสือ",
+        "L02-status-freiberuflich": "ไม่พบรูปนี้ในหน้าหนังสือที่ตรวจ; ทบทวนแหล่งเสริม",
+        "L02-status-selbststaendig": "ไม่พบรูปนี้ในหน้าหนังสือที่ตรวจ; ทบทวนแหล่งเสริม",
+        "L02-status-angestellt": "ไม่พบรูปนี้ในหน้าหนังสือที่ตรวจ; ทบทวนแหล่งเสริม"
+      }
+    },
+    {
+      "lessonId": "L03",
+      "sources": [
+        {
+          "pdfPage": 8,
+          "printedPage": 6,
+          "label": "Inhalt: L03",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 18,
+          "printedPage": 17,
+          "label": "1a–b",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 19,
+          "printedPage": 18,
+          "label": "2–4",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 20,
+          "printedPage": 19,
+          "label": "5–8",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 21,
+          "printedPage": 20,
+          "label": "9; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 27,
+          "printedPage": 26,
+          "label": "Kommunikation L03",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L03-COMM-01",
+          "name": "ระบุและถามความสัมพันธ์ในครอบครัว",
+          "targetIds": [
+            "L03-P001",
+            "L03-P002",
+            "L03-P003",
+            "L03-P004",
+            "L03-P009"
+          ],
+          "status": "partial",
+          "gap": "มีการแนะนำและถามชื่อญาติ; ขาดถามยืนยัน/ปฏิเสธและแก้ความสัมพันธ์ให้ถูก"
+        },
+        {
+          "id": "L03-COMM-02",
+          "name": "คาดเดาและตอบยืนยัน/แก้ความเข้าใจ",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Ich glaube … และคำตอบ ja/nein/doch ที่อ้างภาพหรือข้อมูลจริง"
+        },
+        {
+          "id": "L03-COMM-03",
+          "name": "ถามและบอกภาษาและระดับความสามารถ",
+          "targetIds": [
+            "L03-P005",
+            "L03-P006",
+            "L03-P007",
+            "L03-P008"
+          ],
+          "status": "partial",
+          "gap": "มีรายชื่อภาษาและตอบรับ; ขาด sehr gut/gut/ein bisschen/gar nicht และคำตอบปฏิเสธ"
+        },
+        {
+          "id": "L03-COMM-04",
+          "name": "ข้อมูลบุคคลประกอบ",
+          "targetIds": [
+            "L03-P010"
+          ],
+          "status": "supplement",
+          "gap": "ประโยคพ่อแม่อยู่เมืองใดเป็นการใช้ความรู้เดิม ไม่เติมช่องว่างเรื่องระดับภาษาหรือการแก้ความสัมพันธ์"
+        }
+      ],
+      "note": "ประโยคตัวอย่างที่แต่งสอดคล้องบางหน้าที่ แต่ไม่ควรแทนความหลากหลายของการตอบในบท",
+      "targetFlags": {}
+    },
+    {
+      "lessonId": "L04",
+      "sources": [
+        {
+          "pdfPage": 8,
+          "printedPage": 6,
+          "label": "Inhalt: L04",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 31,
+          "printedPage": 30,
+          "label": "8a–b; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 57,
+          "printedPage": 44,
+          "label": "Kommunikation L04",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L04-COMM-01",
+          "name": "ถามราคาและบอกราคา",
+          "targetIds": [
+            "L04-P003",
+            "L04-P004"
+          ],
+          "status": "partial",
+          "gap": "ขาด Was kostet …? ราคา Euro/Cent และการตอบด้วย er/sie/es ในบริบทร้านค้า"
+        },
+        {
+          "id": "L04-COMM-02",
+          "name": "ให้ความเห็นและประเมินสิ่งของ",
+          "targetIds": [
+            "L04-P001",
+            "L04-P002",
+            "L04-P005",
+            "L04-P006",
+            "L04-P007",
+            "L04-P010"
+          ],
+          "status": "partial",
+          "gap": "มีคำบรรยาย/ความเห็นเดี่ยว; ขาดความเข้ม sehr/wirklich และข้อจำกัด zu groß/klein"
+        },
+        {
+          "id": "L04-COMM-03",
+          "name": "เห็นด้วย ไม่เห็นด้วย และถามความเห็นกลับ",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Das finde ich auch/nicht และ Finden Sie?/Findest du?"
+        },
+        {
+          "id": "L04-COMM-04",
+          "name": "ระบุสิ่งของประกอบ",
+          "targetIds": [
+            "L04-P008",
+            "L04-P009"
+          ],
+          "status": "supplement",
+          "gap": "คู่ถามยืนยันเก้าอี้เป็นบริบทประกอบ ไม่แทนการแลกเปลี่ยนความเห็น"
+        }
+      ],
+      "note": "ต้องออกแบบการโต้ตอบสองฝ่าย ไม่เพิ่มเพียงชื่อเฟอร์นิเจอร์ในประโยคแม่แบบ",
+      "targetFlags": {}
+    },
+    {
+      "lessonId": "L05",
+      "sources": [
+        {
+          "pdfPage": 8,
+          "printedPage": 6,
+          "label": "Inhalt: L05",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 34,
+          "printedPage": 33,
+          "label": "4b–c, 5a–c",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 35,
+          "printedPage": 34,
+          "label": "6a–b; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 57,
+          "printedPage": 44,
+          "label": "Kommunikation L05 และขอบเขตขอบคุณ L06",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L05-COMM-01",
+          "name": "ถามและบอกว่าสิ่งของคืออะไร",
+          "targetIds": [
+            "L05-P001",
+            "L05-P002",
+            "L05-P003",
+            "L05-P004",
+            "L05-P005",
+            "L05-P006",
+            "L05-P007"
+          ],
+          "status": "partial",
+          "gap": "มีหลายประโยคที่แทนคำนามในโครงสร้างเดิม; ขาดถามคำศัพท์ภาษาเยอรมันและถามวิธีสะกด"
+        },
+        {
+          "id": "L05-COMM-02",
+          "name": "บรรยายสีและวัสดุ",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Es ist aus … / Es ist … ในเกมทายสิ่งของ"
+        },
+        {
+          "id": "L05-COMM-03",
+          "name": "ขอให้พูดซ้ำและขอบคุณตอบรับ",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Wie bitte?/Noch einmal, bitte และการตอบรับขอบคุณ; หน้า 33 ฝึกแล้วแม้สรุปติดป้าย L06"
+        },
+        {
+          "id": "L05-COMM-04",
+          "name": "ถามและบอกอีเมล",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาดการอ่านจุด @ และขีดล่างจากข้อมูลติดต่อ"
+        },
+        {
+          "id": "L05-COMM-05",
+          "name": "การมี/ต้องการสิ่งของใน Akkusativ",
+          "targetIds": [
+            "L05-P008",
+            "L05-P009",
+            "L05-P010"
+          ],
+          "status": "supplement",
+          "gap": "เป็นตัวอย่างเหมาะกับ L06 มากกว่าเป้าหมายหลัก L05; รักษา IDs เดิมและทบทวน prerequisite ก่อนใช้"
+        }
+      ],
+      "note": "7 จาก 10 รายการกระจุกที่การระบุสิ่งของ ขณะที่หลายหน้าที่หลักยังไม่มี",
+      "targetFlags": {
+        "L05-P008": "ใช้ einen/keinen ในบทก่อน Akkusativ ของ L06; ต้องทบทวนตำแหน่งและ prerequisite",
+        "L05-P009": "ใช้ einen/keinen ในบทก่อน Akkusativ ของ L06; ต้องทบทวนตำแหน่งและ prerequisite",
+        "L05-P010": "ใช้ einen/keinen ในบทก่อน Akkusativ ของ L06; ต้องทบทวนตำแหน่งและ prerequisite"
+      }
+    },
+    {
+      "lessonId": "L06",
+      "sources": [
+        {
+          "pdfPage": 8,
+          "printedPage": 6,
+          "label": "Inhalt: L06",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 39,
+          "printedPage": 38,
+          "label": "9a–b; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 57,
+          "printedPage": 44,
+          "label": "Kommunikation L06",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L06-COMM-01",
+          "name": "รับสาย แนะนำตัว และขอสาย",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Firma … guten Tag / … hier / Ist Herr/Frau … da?"
+        },
+        {
+          "id": "L06-COMM-02",
+          "name": "ให้รอ แจ้งว่าไม่อยู่ ขอบคุณ และจบสาย",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Einen Moment bitte / leider nicht da / การตอบรับและอำลา"
+        },
+        {
+          "id": "L06-COMM-03",
+          "name": "สื่อสารเรื่องของใช้และงานในสำนักงาน",
+          "targetIds": [
+            "L06-P001",
+            "L06-P002",
+            "L06-P003",
+            "L06-P004",
+            "L06-P005",
+            "L06-P006",
+            "L06-P007",
+            "L06-P008",
+            "L06-P009",
+            "L06-P010"
+          ],
+          "status": "supporting",
+          "gap": "มีประโยคสำนักงาน 10 รายการ แต่ไม่มีโครงสนทนาทางโทรศัพท์ที่เป็นเป้าหมาย Kommunikation"
+        }
+      ],
+      "note": "เป็นช่องว่างเร่งด่วน: หัวข้อคำศัพท์สำนักงานถูกใช้แทนหน้าที่สื่อสารทางโทรศัพท์",
+      "targetFlags": {}
+    },
+    {
+      "lessonId": "L07",
+      "sources": [
+        {
+          "pdfPage": 9,
+          "printedPage": 7,
+          "label": "Inhalt: L07",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 41,
+          "printedPage": 46,
+          "label": "4, 6, 7",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 42,
+          "printedPage": 47,
+          "label": "8, 9; Wie oft?",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 43,
+          "printedPage": 48,
+          "label": "10–11; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L07-COMM-01",
+          "name": "ถามและบอกความสามารถ/ระดับความสามารถ",
+          "targetIds": [
+            "L07-P001",
+            "L07-P002",
+            "L07-P003",
+            "L07-P004",
+            "L07-P005",
+            "L07-P006"
+          ],
+          "status": "partial",
+          "gap": "มีได้/ไม่ได้/เก่ง; ขาด ein bisschen/nicht so gut และคำถาม ihr/Sie"
+        },
+        {
+          "id": "L07-COMM-02",
+          "name": "ชมและตอบรับคำชม",
+          "targetIds": [
+            "L07-P007",
+            "L07-P008"
+          ],
+          "status": "partial",
+          "gap": "มีคำชม แต่ขาด Vielen Dank/Oh danke/Herzlichen Dank เป็นคำตอบในคู่สนทนา"
+        },
+        {
+          "id": "L07-COMM-03",
+          "name": "ถามและบอกงานอดิเรก",
+          "targetIds": [
+            "L07-P009",
+            "L07-P010"
+          ],
+          "status": "partial",
+          "gap": "ขาด Was sind deine Hobbys?/Was machst du in deiner Freizeit? และ Das macht Spaß"
+        },
+        {
+          "id": "L07-COMM-04",
+          "name": "ถามและบอกความถี่",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Wie oft? และ immer/oft/manchmal/nie"
+        }
+      ],
+      "note": "ตรวจจากกิจกรรม 46–48 โดยตรง; สรุป Kommunikation หน้าพิมพ์ 62 ไม่อยู่ในช่วงสแกนที่ควรมี",
+      "targetFlags": {}
+    },
+    {
+      "lessonId": "L08",
+      "sources": [
+        {
+          "pdfPage": 9,
+          "printedPage": 7,
+          "label": "Inhalt: L08",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 45,
+          "printedPage": 50,
+          "label": "2, 4: Chat",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 46,
+          "printedPage": 51,
+          "label": "5, 6a–c",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 47,
+          "printedPage": 52,
+          "label": "7a–b; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L08-COMM-01",
+          "name": "เสนอและนัดทำกิจกรรม",
+          "targetIds": [
+            "L08-P001",
+            "L08-P003",
+            "L08-P005",
+            "L08-P006"
+          ],
+          "status": "partial",
+          "gap": "มีเสนอ/ถามเวลาเจอ แต่ขาดตัวเลือกเวลาและการเจรจาจากตารางว่าง"
+        },
+        {
+          "id": "L08-COMM-02",
+          "name": "ตอบรับ ปฏิเสธ และเสนอเวลาใหม่",
+          "targetIds": [
+            "L08-P002",
+            "L08-P004"
+          ],
+          "status": "partial",
+          "gap": "ขาดขอโทษ เหตุผล ไม่แน่ใจ และการเสนอวัน/เวลาอื่น"
+        },
+        {
+          "id": "L08-COMM-03",
+          "name": "ถามและบอกเวลาปัจจุบัน",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Wie spät ist es?/Wie viel Uhr ist es? และรูป halb/Viertel/vor/nach"
+        },
+        {
+          "id": "L08-COMM-04",
+          "name": "ข้อมูลวันเวลาและการลา",
+          "targetIds": [
+            "L08-P007",
+            "L08-P008",
+            "L08-P009",
+            "L08-P010"
+          ],
+          "status": "supporting",
+          "gap": "มีประโยควันเวลา แต่บอกเวลาเริ่มหนังไม่เท่ากับตอบคำถามเวลาปัจจุบัน"
+        }
+      ],
+      "note": "ต้องมีสถานการณ์ตารางนัดเพื่อให้เลือกคำตอบเดียวได้; ไม่อนุมานความสามารถบอกเวลาจาก um acht Uhr",
+      "targetFlags": {}
+    },
+    {
+      "lessonId": "L09",
+      "sources": [
+        {
+          "pdfPage": 9,
+          "printedPage": 7,
+          "label": "Inhalt: L09",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 49,
+          "printedPage": 54,
+          "label": "3–7",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 50,
+          "printedPage": 55,
+          "label": "8, 9a–b: Im Café",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 51,
+          "printedPage": 56,
+          "label": "10; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L09-COMM-01",
+          "name": "ถามและบอกความชอบอาหาร",
+          "targetIds": [
+            "L09-P001",
+            "L09-P002",
+            "L09-P003",
+            "L09-P004",
+            "L09-P006",
+            "L09-P010"
+          ],
+          "status": "partial",
+          "gap": "มีความชอบ/ไม่กิน แต่ขาดการถามตอบตามมื้ออาหารและ besonders gern"
+        },
+        {
+          "id": "L09-COMM-02",
+          "name": "บอกพฤติกรรมการกินดื่มและความรู้สึก",
+          "targetIds": [
+            "L09-P005",
+            "L09-P007",
+            "L09-P008",
+            "L09-P009"
+          ],
+          "status": "supporting",
+          "gap": "คำบอกเล่าเดี่ยวไม่แทนบทสนทนาสั่งอาหาร"
+        },
+        {
+          "id": "L09-COMM-03",
+          "name": "สั่งอาหาร รับคำสั่ง และตอบข้อเสนอ",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Sie wünschen?/Ich möchte …/… bitte/Möchten Sie …?/Nein danke"
+        },
+        {
+          "id": "L09-COMM-04",
+          "name": "แจ้งว่าของหมดและเลือกอย่างอื่น",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด wir haben kein … mehr / dann nehme ich … และบริบทเมนูคงเหลือ"
+        }
+      ],
+      "note": "เป็นช่องว่างเร่งด่วน: ไม่มีธุรกรรมร้านอาหารทั้งที่เป็นเป้าหมายหลักของบท",
+      "targetFlags": {}
+    },
+    {
+      "lessonId": "L10",
+      "sources": [
+        {
+          "pdfPage": 9,
+          "printedPage": 7,
+          "label": "Inhalt: L10",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 59,
+          "printedPage": 64,
+          "label": "4–5",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 61,
+          "printedPage": 66,
+          "label": "10; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 75,
+          "printedPage": 80,
+          "label": "Kommunikation L10",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L10-COMM-01",
+          "name": "ถามและให้ข้อมูลออกเดินทาง/มาถึง/เปลี่ยนรถ",
+          "targetIds": [
+            "L10-P001",
+            "L10-P002",
+            "L10-P003",
+            "L10-P004",
+            "L10-P005",
+            "L10-P006",
+            "L10-P007",
+            "L10-P008",
+            "L10-P009",
+            "L10-P010"
+          ],
+          "status": "partial",
+          "gap": "มีเวลาและพาหนะ แต่ขาดถามชานชาลา/จุดเปลี่ยนและการขอให้มารับ"
+        },
+        {
+          "id": "L10-COMM-02",
+          "name": "แสดงว่าเข้าใจและถามยืนยัน",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Verstehe/Alles klar/Bist du sicher? และการตอบรับคำขอ"
+        },
+        {
+          "id": "L10-COMM-03",
+          "name": "แสดงความหวังและความดีใจ",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Hoffentlich … / Ich freue mich … ในบริบทเดินทาง"
+        },
+        {
+          "id": "L10-COMM-04",
+          "name": "เข้าใจประกาศและคำเตือน",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาดการจับข้อมูล Bahnsteig/Gleis/Ausgang และคำเตือน; การอ่านไม่ยืนยันการฟัง"
+        }
+      ],
+      "note": "ประโยคพาหนะ 10 รายการยังไม่แทนการโต้ตอบและรับข้อมูลประกาศตามเป้าหมายบท",
+      "targetFlags": {}
+    },
+    {
+      "lessonId": "L11",
+      "sources": [
+        {
+          "pdfPage": 9,
+          "printedPage": 7,
+          "label": "Inhalt: L11",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 64,
+          "printedPage": 69,
+          "label": "5–7",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 65,
+          "printedPage": 70,
+          "label": "8a–c; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 75,
+          "printedPage": 80,
+          "label": "Kommunikation L11",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L11-COMM-01",
+          "name": "ถามและเล่ากิจกรรมที่ผ่านมา",
+          "targetIds": [
+            "L11-P001",
+            "L11-P002",
+            "L11-P003",
+            "L11-P004",
+            "L11-P005",
+            "L11-P006",
+            "L11-P007",
+            "L11-P008",
+            "L11-P009",
+            "L11-P010"
+          ],
+          "status": "partial",
+          "gap": "มีคำถาม/คำตอบ Perfekt เดี่ยว; ขาดการปฏิเสธ คำถามติดตาม และอ้างข้อมูลจากปฏิทิน"
+        },
+        {
+          "id": "L11-COMM-02",
+          "name": "เล่าเหตุการณ์ต่อเนื่องและช่วงเวลา",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด zuerst/dann/danach กับ von … bis/ab และ letzte Woche ในเรื่องที่มีข้อมูลให้"
+        },
+        {
+          "id": "L11-COMM-03",
+          "name": "ถามและตอบเวลาเปิดปิดหรือเริ่มกิจกรรม",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Wann ist … geöffnet/geschlossen? และ Wann beginnt …?"
+        }
+      ],
+      "note": "มีการผันและตัวอย่างกิจกรรม แต่การเล่าเรื่องกับการถามเวลาเปิดยังไม่ครอบคลุม",
+      "targetFlags": {}
+    },
+    {
+      "lessonId": "L12",
+      "sources": [
+        {
+          "pdfPage": 9,
+          "printedPage": 7,
+          "label": "Inhalt: L12",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 67,
+          "printedPage": 72,
+          "label": "3–4",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 68,
+          "printedPage": 73,
+          "label": "5–6",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 69,
+          "printedPage": 74,
+          "label": "7a–c; Schnelltest Kommunikation",
+          "reviewMethod": "visual"
+        },
+        {
+          "pdfPage": 75,
+          "printedPage": 80,
+          "label": "Kommunikation L12",
+          "reviewMethod": "visual"
+        }
+      ],
+      "objectives": [
+        {
+          "id": "L12-COMM-01",
+          "name": "เล่าและถามเรื่องการเดินทางที่ผ่านมา",
+          "targetIds": [
+            "L12-P001",
+            "L12-P002",
+            "L12-P003",
+            "L12-P004",
+            "L12-P005",
+            "L12-P006",
+            "L12-P007",
+            "L12-P008",
+            "L12-P009",
+            "L12-P010"
+          ],
+          "status": "partial",
+          "gap": "มีสถานที่ การเดินทาง และประเมินสั้น; ขาดคู่ถามตอบเรื่องเดินทางกับใคร อากาศ และประสบการณ์"
+        },
+        {
+          "id": "L12-COMM-02",
+          "name": "ถามและบอกวันเกิด",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาด Wann hast du/haben Sie Geburtstag? และการตอบเดือน/ฤดู"
+        },
+        {
+          "id": "L12-COMM-03",
+          "name": "เล่าและถามเรื่องเทศกาล",
+          "targetIds": [],
+          "status": "absent",
+          "gap": "ขาดชื่อเทศกาล จัดเมื่อไร มีมาตั้งแต่เมื่อไร นานเท่าไร และข้อมูลผู้ร่วมงาน"
+        }
+      ],
+      "note": "คลังเน้นประโยคเดินทางและฤดู แต่ไม่มีเป้าหมายงานเทศกาลและวันเกิด",
+      "targetFlags": {}
+    }
+  ],
+  "reviewedTargetsSha256": "061489249c1f37cf37ef24ba7e5b22ad073e43b410999f7d028ae1a4e6c9e723"
+}

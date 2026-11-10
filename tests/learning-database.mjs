@@ -71,6 +71,10 @@ export async function createDatabase() {
     "20261031000000_repair_incomplete_practice_cursor.sql",
     "20261031010000_restore_lesson_state_keys.sql",
     "20261101000000_dual_vocabulary_meaning.sql",
+    "20261109000000_release_course_lesson_states.sql",
+    "20261109001000_a13_release_course_catalog.sql",
+    "20261109002000_release_shared_practice.sql",
+    "20261109003000_release_health.sql",
   ])
     await db.exec(
       await readFile(
@@ -92,6 +96,16 @@ export async function createDatabase() {
     await readFile(
       new URL(
         "../supabase/migrations/20261031000000_repair_incomplete_practice_cursor.sql",
+        import.meta.url
+      ),
+      "utf8"
+    )
+  );
+  // Legacy idempotence checks replace this RPC, so restore its newest overlay last.
+  await db.exec(
+    await readFile(
+      new URL(
+        "../supabase/migrations/20261109002000_release_shared_practice.sql",
         import.meta.url
       ),
       "utf8"

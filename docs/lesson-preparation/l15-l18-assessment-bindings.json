@@ -1,0 +1,6300 @@
+{
+  "schemaVersion": 1,
+  "status": "designed_not_connected_to_account_or_selector",
+  "responseUnits": [
+    {
+      "id": "L15-V001-meaning-v1",
+      "targetId": "L15-V001",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V001"
+      ],
+      "contextId": "L15-V001-definition"
+    },
+    {
+      "id": "L15-V001-article-v1",
+      "targetId": "L15-V001",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V001"
+      ],
+      "contextId": "L15-V001-lemma"
+    },
+    {
+      "id": "L15-V001-spelling-v1",
+      "targetId": "L15-V001",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V001"
+      ],
+      "contextId": "L15-V001-recall"
+    },
+    {
+      "id": "L15-V002-meaning-v1",
+      "targetId": "L15-V002",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V002"
+      ],
+      "contextId": "L15-V002-definition"
+    },
+    {
+      "id": "L15-V002-article-v1",
+      "targetId": "L15-V002",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V002"
+      ],
+      "contextId": "L15-V002-lemma"
+    },
+    {
+      "id": "L15-V002-spelling-v1",
+      "targetId": "L15-V002",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V002"
+      ],
+      "contextId": "L15-V002-recall"
+    },
+    {
+      "id": "L15-V003-meaning-v1",
+      "targetId": "L15-V003",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V003"
+      ],
+      "contextId": "L15-V003-definition"
+    },
+    {
+      "id": "L15-V003-article-v1",
+      "targetId": "L15-V003",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V003"
+      ],
+      "contextId": "L15-V003-lemma"
+    },
+    {
+      "id": "L15-V003-spelling-v1",
+      "targetId": "L15-V003",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V003"
+      ],
+      "contextId": "L15-V003-recall"
+    },
+    {
+      "id": "L15-V004-meaning-v1",
+      "targetId": "L15-V004",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V004"
+      ],
+      "contextId": "L15-V004-definition"
+    },
+    {
+      "id": "L15-V004-article-v1",
+      "targetId": "L15-V004",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V004"
+      ],
+      "contextId": "L15-V004-lemma"
+    },
+    {
+      "id": "L15-V004-spelling-v1",
+      "targetId": "L15-V004",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V004"
+      ],
+      "contextId": "L15-V004-recall"
+    },
+    {
+      "id": "L15-V005-meaning-v1",
+      "targetId": "L15-V005",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V005"
+      ],
+      "contextId": "L15-V005-definition"
+    },
+    {
+      "id": "L15-V005-article-v1",
+      "targetId": "L15-V005",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V005"
+      ],
+      "contextId": "L15-V005-lemma"
+    },
+    {
+      "id": "L15-V005-spelling-v1",
+      "targetId": "L15-V005",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V005"
+      ],
+      "contextId": "L15-V005-recall"
+    },
+    {
+      "id": "L15-V006-meaning-v1",
+      "targetId": "L15-V006",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V006"
+      ],
+      "contextId": "L15-V006-definition"
+    },
+    {
+      "id": "L15-V006-article-v1",
+      "targetId": "L15-V006",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V006"
+      ],
+      "contextId": "L15-V006-lemma"
+    },
+    {
+      "id": "L15-V006-spelling-v1",
+      "targetId": "L15-V006",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V006"
+      ],
+      "contextId": "L15-V006-recall"
+    },
+    {
+      "id": "L15-V007-meaning-v1",
+      "targetId": "L15-V007",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V007"
+      ],
+      "contextId": "L15-V007-definition"
+    },
+    {
+      "id": "L15-V007-article-v1",
+      "targetId": "L15-V007",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V007"
+      ],
+      "contextId": "L15-V007-lemma"
+    },
+    {
+      "id": "L15-V007-spelling-v1",
+      "targetId": "L15-V007",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V007"
+      ],
+      "contextId": "L15-V007-recall"
+    },
+    {
+      "id": "L15-V008-meaning-v1",
+      "targetId": "L15-V008",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V008"
+      ],
+      "contextId": "L15-V008-definition"
+    },
+    {
+      "id": "L15-V008-article-v1",
+      "targetId": "L15-V008",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V008"
+      ],
+      "contextId": "L15-V008-lemma"
+    },
+    {
+      "id": "L15-V008-spelling-v1",
+      "targetId": "L15-V008",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V008"
+      ],
+      "contextId": "L15-V008-recall"
+    },
+    {
+      "id": "L15-V009-meaning-v1",
+      "targetId": "L15-V009",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V009"
+      ],
+      "contextId": "L15-V009-definition"
+    },
+    {
+      "id": "L15-V009-article-v1",
+      "targetId": "L15-V009",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V009"
+      ],
+      "contextId": "L15-V009-lemma"
+    },
+    {
+      "id": "L15-V009-spelling-v1",
+      "targetId": "L15-V009",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V009"
+      ],
+      "contextId": "L15-V009-recall"
+    },
+    {
+      "id": "L15-V010-meaning-v1",
+      "targetId": "L15-V010",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V010"
+      ],
+      "contextId": "L15-V010-definition"
+    },
+    {
+      "id": "L15-V010-article-v1",
+      "targetId": "L15-V010",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V010"
+      ],
+      "contextId": "L15-V010-lemma"
+    },
+    {
+      "id": "L15-V010-spelling-v1",
+      "targetId": "L15-V010",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V010"
+      ],
+      "contextId": "L15-V010-recall"
+    },
+    {
+      "id": "L15-V011-meaning-v1",
+      "targetId": "L15-V011",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V011"
+      ],
+      "contextId": "L15-V011-definition"
+    },
+    {
+      "id": "L15-V011-article-v1",
+      "targetId": "L15-V011",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V011"
+      ],
+      "contextId": "L15-V011-lemma"
+    },
+    {
+      "id": "L15-V011-spelling-v1",
+      "targetId": "L15-V011",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V011"
+      ],
+      "contextId": "L15-V011-recall"
+    },
+    {
+      "id": "L15-V012-meaning-v1",
+      "targetId": "L15-V012",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V012"
+      ],
+      "contextId": "L15-V012-definition"
+    },
+    {
+      "id": "L15-V012-article-v1",
+      "targetId": "L15-V012",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V012"
+      ],
+      "contextId": "L15-V012-lemma"
+    },
+    {
+      "id": "L15-V012-spelling-v1",
+      "targetId": "L15-V012",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V012"
+      ],
+      "contextId": "L15-V012-recall"
+    },
+    {
+      "id": "L15-V013-meaning-v1",
+      "targetId": "L15-V013",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V013"
+      ],
+      "contextId": "L15-V013-definition"
+    },
+    {
+      "id": "L15-V013-article-v1",
+      "targetId": "L15-V013",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V013"
+      ],
+      "contextId": "L15-V013-lemma"
+    },
+    {
+      "id": "L15-V013-spelling-v1",
+      "targetId": "L15-V013",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V013"
+      ],
+      "contextId": "L15-V013-recall"
+    },
+    {
+      "id": "L15-V014-meaning-v1",
+      "targetId": "L15-V014",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V014"
+      ],
+      "contextId": "L15-V014-definition"
+    },
+    {
+      "id": "L15-V014-article-v1",
+      "targetId": "L15-V014",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V014"
+      ],
+      "contextId": "L15-V014-lemma"
+    },
+    {
+      "id": "L15-V014-spelling-v1",
+      "targetId": "L15-V014",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V014"
+      ],
+      "contextId": "L15-V014-recall"
+    },
+    {
+      "id": "L15-V015-meaning-v1",
+      "targetId": "L15-V015",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V015"
+      ],
+      "contextId": "L15-V015-definition"
+    },
+    {
+      "id": "L15-V015-article-v1",
+      "targetId": "L15-V015",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V015"
+      ],
+      "contextId": "L15-V015-lemma"
+    },
+    {
+      "id": "L15-V015-spelling-v1",
+      "targetId": "L15-V015",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V015"
+      ],
+      "contextId": "L15-V015-recall"
+    },
+    {
+      "id": "L15-V016-meaning-v1",
+      "targetId": "L15-V016",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V016"
+      ],
+      "contextId": "L15-V016-definition"
+    },
+    {
+      "id": "L15-V016-article-v1",
+      "targetId": "L15-V016",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V016"
+      ],
+      "contextId": "L15-V016-lemma"
+    },
+    {
+      "id": "L15-V016-spelling-v1",
+      "targetId": "L15-V016",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V016"
+      ],
+      "contextId": "L15-V016-recall"
+    },
+    {
+      "id": "L15-V017-meaning-v1",
+      "targetId": "L15-V017",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V017"
+      ],
+      "contextId": "L15-V017-definition"
+    },
+    {
+      "id": "L15-V017-article-v1",
+      "targetId": "L15-V017",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V017"
+      ],
+      "contextId": "L15-V017-lemma"
+    },
+    {
+      "id": "L15-V017-spelling-v1",
+      "targetId": "L15-V017",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V017"
+      ],
+      "contextId": "L15-V017-recall"
+    },
+    {
+      "id": "L15-V018-meaning-v1",
+      "targetId": "L15-V018",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V018"
+      ],
+      "contextId": "L15-V018-definition"
+    },
+    {
+      "id": "L15-V018-article-v1",
+      "targetId": "L15-V018",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V018"
+      ],
+      "contextId": "L15-V018-lemma"
+    },
+    {
+      "id": "L15-V018-spelling-v1",
+      "targetId": "L15-V018",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V018"
+      ],
+      "contextId": "L15-V018-recall"
+    },
+    {
+      "id": "L15-V019-meaning-v1",
+      "targetId": "L15-V019",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V019"
+      ],
+      "contextId": "L15-V019-definition"
+    },
+    {
+      "id": "L15-V019-article-v1",
+      "targetId": "L15-V019",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V019"
+      ],
+      "contextId": "L15-V019-lemma"
+    },
+    {
+      "id": "L15-V019-spelling-v1",
+      "targetId": "L15-V019",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V019"
+      ],
+      "contextId": "L15-V019-recall"
+    },
+    {
+      "id": "L15-V020-meaning-v1",
+      "targetId": "L15-V020",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V020"
+      ],
+      "contextId": "L15-V020-definition"
+    },
+    {
+      "id": "L15-V020-article-v1",
+      "targetId": "L15-V020",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V020"
+      ],
+      "contextId": "L15-V020-lemma"
+    },
+    {
+      "id": "L15-V020-spelling-v1",
+      "targetId": "L15-V020",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V020"
+      ],
+      "contextId": "L15-V020-recall"
+    },
+    {
+      "id": "L15-V021-meaning-v1",
+      "targetId": "L15-V021",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V021"
+      ],
+      "contextId": "L15-V021-definition"
+    },
+    {
+      "id": "L15-V021-article-v1",
+      "targetId": "L15-V021",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V021"
+      ],
+      "contextId": "L15-V021-lemma"
+    },
+    {
+      "id": "L15-V021-spelling-v1",
+      "targetId": "L15-V021",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V021"
+      ],
+      "contextId": "L15-V021-recall"
+    },
+    {
+      "id": "L15-V022-meaning-v1",
+      "targetId": "L15-V022",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V022"
+      ],
+      "contextId": "L15-V022-definition"
+    },
+    {
+      "id": "L15-V022-article-v1",
+      "targetId": "L15-V022",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V022"
+      ],
+      "contextId": "L15-V022-lemma"
+    },
+    {
+      "id": "L15-V022-spelling-v1",
+      "targetId": "L15-V022",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V022"
+      ],
+      "contextId": "L15-V022-recall"
+    },
+    {
+      "id": "L15-V023-meaning-v1",
+      "targetId": "L15-V023",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V023"
+      ],
+      "contextId": "L15-V023-definition"
+    },
+    {
+      "id": "L15-V023-article-v1",
+      "targetId": "L15-V023",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V023"
+      ],
+      "contextId": "L15-V023-lemma"
+    },
+    {
+      "id": "L15-V023-spelling-v1",
+      "targetId": "L15-V023",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V023"
+      ],
+      "contextId": "L15-V023-recall"
+    },
+    {
+      "id": "L15-V024-meaning-v1",
+      "targetId": "L15-V024",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V024"
+      ],
+      "contextId": "L15-V024-definition"
+    },
+    {
+      "id": "L15-V024-article-v1",
+      "targetId": "L15-V024",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V024"
+      ],
+      "contextId": "L15-V024-lemma"
+    },
+    {
+      "id": "L15-V024-spelling-v1",
+      "targetId": "L15-V024",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V024"
+      ],
+      "contextId": "L15-V024-recall"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-001-PREP3",
+      "targetId": "L15-possessivartikel",
+      "subskill": "possessive_reference_and_inflection",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "contextId": "A13-L15-POSSESSIVARTIKEL-001"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-002-PREP3",
+      "targetId": "L15-possessivartikel",
+      "subskill": "possessive_reference_and_inflection",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "contextId": "A13-L15-POSSESSIVARTIKEL-002"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-003-PREP3",
+      "targetId": "L15-possessivartikel",
+      "subskill": "possessive_reference_and_inflection",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model"
+      ],
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "contextId": "A13-L15-POSSESSIVARTIKEL-003"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-004-PREP3",
+      "targetId": "L15-possessivartikel",
+      "subskill": "possessive_reference_and_inflection",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model"
+      ],
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "contextId": "A13-L15-POSSESSIVARTIKEL-004"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-005-PREP3",
+      "targetId": "L15-possessivartikel",
+      "subskill": "declarative_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "contextId": "A13-L15-POSSESSIVARTIKEL-005"
+    },
+    {
+      "id": "L15-D01-A-try-v1",
+      "targetId": "L15-R001",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R001",
+        "L15-R002"
+      ],
+      "contextId": "L15-D01"
+    },
+    {
+      "id": "L15-D01-B-try-v1",
+      "targetId": "L15-R002",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L15-R001",
+        "L15-R002"
+      ],
+      "contextId": "L15-D01"
+    },
+    {
+      "id": "L15-D02-A-try-v1",
+      "targetId": "L15-R003",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R003",
+        "L15-R004"
+      ],
+      "contextId": "L15-D02"
+    },
+    {
+      "id": "L15-D02-B-try-v1",
+      "targetId": "L15-R004",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R003",
+        "L15-R004"
+      ],
+      "contextId": "L15-D02"
+    },
+    {
+      "id": "L15-D03-A-try-v1",
+      "targetId": "L15-R005",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R005",
+        "L15-R006"
+      ],
+      "contextId": "L15-D03"
+    },
+    {
+      "id": "L15-D03-B-try-v1",
+      "targetId": "L15-R006",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L15-R005",
+        "L15-R006"
+      ],
+      "contextId": "L15-D03"
+    },
+    {
+      "id": "L15-D04-A-try-v1",
+      "targetId": "L15-R007",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R007",
+        "L15-R008"
+      ],
+      "contextId": "L15-D04"
+    },
+    {
+      "id": "L15-D04-B-try-v1",
+      "targetId": "L15-R008",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R007",
+        "L15-R008"
+      ],
+      "contextId": "L15-D04"
+    },
+    {
+      "id": "L15-D05-A-try-v1",
+      "targetId": "L15-R009",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R009",
+        "L15-R010"
+      ],
+      "contextId": "L15-D05"
+    },
+    {
+      "id": "L15-D05-B-try-v1",
+      "targetId": "L15-R010",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L15-R009",
+        "L15-R010"
+      ],
+      "contextId": "L15-D05"
+    },
+    {
+      "id": "L15-D06-A-try-v1",
+      "targetId": "L15-R011",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R011",
+        "L15-R012"
+      ],
+      "contextId": "L15-D06"
+    },
+    {
+      "id": "L15-D06-B-try-v1",
+      "targetId": "L15-R012",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R011",
+        "L15-R012"
+      ],
+      "contextId": "L15-D06"
+    },
+    {
+      "id": "L15-D07-A-try-v1",
+      "targetId": "L15-R013",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R013",
+        "L15-R014"
+      ],
+      "contextId": "L15-D07"
+    },
+    {
+      "id": "L15-D07-B-try-v1",
+      "targetId": "L15-R014",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L15-R013",
+        "L15-R014"
+      ],
+      "contextId": "L15-D07"
+    },
+    {
+      "id": "L15-D08-A-try-v1",
+      "targetId": "L15-R015",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R015",
+        "L15-R016"
+      ],
+      "contextId": "L15-D08"
+    },
+    {
+      "id": "L15-D08-B-try-v1",
+      "targetId": "L15-R016",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R015",
+        "L15-R016"
+      ],
+      "contextId": "L15-D08"
+    },
+    {
+      "id": "L16-V001-meaning-v1",
+      "targetId": "L16-V001",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V001"
+      ],
+      "contextId": "L16-V001-definition"
+    },
+    {
+      "id": "L16-V001-article-v1",
+      "targetId": "L16-V001",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V001"
+      ],
+      "contextId": "L16-V001-lemma"
+    },
+    {
+      "id": "L16-V001-spelling-v1",
+      "targetId": "L16-V001",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V001"
+      ],
+      "contextId": "L16-V001-recall"
+    },
+    {
+      "id": "L16-V002-meaning-v1",
+      "targetId": "L16-V002",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V002"
+      ],
+      "contextId": "L16-V002-definition"
+    },
+    {
+      "id": "L16-V002-article-v1",
+      "targetId": "L16-V002",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V002"
+      ],
+      "contextId": "L16-V002-lemma"
+    },
+    {
+      "id": "L16-V002-spelling-v1",
+      "targetId": "L16-V002",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V002"
+      ],
+      "contextId": "L16-V002-recall"
+    },
+    {
+      "id": "L16-V003-meaning-v1",
+      "targetId": "L16-V003",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V003"
+      ],
+      "contextId": "L16-V003-definition"
+    },
+    {
+      "id": "L16-V003-article-v1",
+      "targetId": "L16-V003",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V003"
+      ],
+      "contextId": "L16-V003-lemma"
+    },
+    {
+      "id": "L16-V003-spelling-v1",
+      "targetId": "L16-V003",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V003"
+      ],
+      "contextId": "L16-V003-recall"
+    },
+    {
+      "id": "L16-V004-meaning-v1",
+      "targetId": "L16-V004",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V004"
+      ],
+      "contextId": "L16-V004-definition"
+    },
+    {
+      "id": "L16-V004-article-v1",
+      "targetId": "L16-V004",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V004"
+      ],
+      "contextId": "L16-V004-lemma"
+    },
+    {
+      "id": "L16-V004-spelling-v1",
+      "targetId": "L16-V004",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V004"
+      ],
+      "contextId": "L16-V004-recall"
+    },
+    {
+      "id": "L16-V005-meaning-v1",
+      "targetId": "L16-V005",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V005"
+      ],
+      "contextId": "L16-V005-definition"
+    },
+    {
+      "id": "L16-V005-article-v1",
+      "targetId": "L16-V005",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V005"
+      ],
+      "contextId": "L16-V005-lemma"
+    },
+    {
+      "id": "L16-V005-spelling-v1",
+      "targetId": "L16-V005",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V005"
+      ],
+      "contextId": "L16-V005-recall"
+    },
+    {
+      "id": "L16-V006-meaning-v1",
+      "targetId": "L16-V006",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V006"
+      ],
+      "contextId": "L16-V006-definition"
+    },
+    {
+      "id": "L16-V006-article-v1",
+      "targetId": "L16-V006",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V006"
+      ],
+      "contextId": "L16-V006-lemma"
+    },
+    {
+      "id": "L16-V006-spelling-v1",
+      "targetId": "L16-V006",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V006"
+      ],
+      "contextId": "L16-V006-recall"
+    },
+    {
+      "id": "L16-V007-meaning-v1",
+      "targetId": "L16-V007",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V007"
+      ],
+      "contextId": "L16-V007-definition"
+    },
+    {
+      "id": "L16-V007-article-v1",
+      "targetId": "L16-V007",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V007"
+      ],
+      "contextId": "L16-V007-lemma"
+    },
+    {
+      "id": "L16-V007-spelling-v1",
+      "targetId": "L16-V007",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V007"
+      ],
+      "contextId": "L16-V007-recall"
+    },
+    {
+      "id": "L16-V008-meaning-v1",
+      "targetId": "L16-V008",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V008"
+      ],
+      "contextId": "L16-V008-definition"
+    },
+    {
+      "id": "L16-V008-article-v1",
+      "targetId": "L16-V008",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V008"
+      ],
+      "contextId": "L16-V008-lemma"
+    },
+    {
+      "id": "L16-V008-spelling-v1",
+      "targetId": "L16-V008",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V008"
+      ],
+      "contextId": "L16-V008-recall"
+    },
+    {
+      "id": "L16-V009-meaning-v1",
+      "targetId": "L16-V009",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V009"
+      ],
+      "contextId": "L16-V009-definition"
+    },
+    {
+      "id": "L16-V009-article-v1",
+      "targetId": "L16-V009",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V009"
+      ],
+      "contextId": "L16-V009-lemma"
+    },
+    {
+      "id": "L16-V009-spelling-v1",
+      "targetId": "L16-V009",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V009"
+      ],
+      "contextId": "L16-V009-recall"
+    },
+    {
+      "id": "L16-V010-meaning-v1",
+      "targetId": "L16-V010",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V010"
+      ],
+      "contextId": "L16-V010-definition"
+    },
+    {
+      "id": "L16-V010-article-v1",
+      "targetId": "L16-V010",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V010"
+      ],
+      "contextId": "L16-V010-lemma"
+    },
+    {
+      "id": "L16-V010-spelling-v1",
+      "targetId": "L16-V010",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V010"
+      ],
+      "contextId": "L16-V010-recall"
+    },
+    {
+      "id": "L16-V011-meaning-v1",
+      "targetId": "L16-V011",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V011"
+      ],
+      "contextId": "L16-V011-definition"
+    },
+    {
+      "id": "L16-V011-article-v1",
+      "targetId": "L16-V011",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V011"
+      ],
+      "contextId": "L16-V011-lemma"
+    },
+    {
+      "id": "L16-V011-spelling-v1",
+      "targetId": "L16-V011",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V011"
+      ],
+      "contextId": "L16-V011-recall"
+    },
+    {
+      "id": "L16-V012-meaning-v1",
+      "targetId": "L16-V012",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V012"
+      ],
+      "contextId": "L16-V012-definition"
+    },
+    {
+      "id": "L16-V012-article-v1",
+      "targetId": "L16-V012",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V012"
+      ],
+      "contextId": "L16-V012-lemma"
+    },
+    {
+      "id": "L16-V012-spelling-v1",
+      "targetId": "L16-V012",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V012"
+      ],
+      "contextId": "L16-V012-recall"
+    },
+    {
+      "id": "L16-V013-meaning-v1",
+      "targetId": "L16-V013",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V013"
+      ],
+      "contextId": "L16-V013-definition"
+    },
+    {
+      "id": "L16-V013-article-v1",
+      "targetId": "L16-V013",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V013"
+      ],
+      "contextId": "L16-V013-lemma"
+    },
+    {
+      "id": "L16-V013-spelling-v1",
+      "targetId": "L16-V013",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V013"
+      ],
+      "contextId": "L16-V013-recall"
+    },
+    {
+      "id": "L16-V014-meaning-v1",
+      "targetId": "L16-V014",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V014"
+      ],
+      "contextId": "L16-V014-definition"
+    },
+    {
+      "id": "L16-V014-article-v1",
+      "targetId": "L16-V014",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V014"
+      ],
+      "contextId": "L16-V014-lemma"
+    },
+    {
+      "id": "L16-V014-spelling-v1",
+      "targetId": "L16-V014",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V014"
+      ],
+      "contextId": "L16-V014-recall"
+    },
+    {
+      "id": "L16-V015-meaning-v1",
+      "targetId": "L16-V015",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V015"
+      ],
+      "contextId": "L16-V015-definition"
+    },
+    {
+      "id": "L16-V015-article-v1",
+      "targetId": "L16-V015",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V015"
+      ],
+      "contextId": "L16-V015-lemma"
+    },
+    {
+      "id": "L16-V015-spelling-v1",
+      "targetId": "L16-V015",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V015"
+      ],
+      "contextId": "L16-V015-recall"
+    },
+    {
+      "id": "L16-V016-meaning-v1",
+      "targetId": "L16-V016",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V016"
+      ],
+      "contextId": "L16-V016-definition"
+    },
+    {
+      "id": "L16-V016-article-v1",
+      "targetId": "L16-V016",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V016"
+      ],
+      "contextId": "L16-V016-lemma"
+    },
+    {
+      "id": "L16-V016-spelling-v1",
+      "targetId": "L16-V016",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V016"
+      ],
+      "contextId": "L16-V016-recall"
+    },
+    {
+      "id": "L16-V017-meaning-v1",
+      "targetId": "L16-V017",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V017"
+      ],
+      "contextId": "L16-V017-definition"
+    },
+    {
+      "id": "L16-V017-article-v1",
+      "targetId": "L16-V017",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V017"
+      ],
+      "contextId": "L16-V017-lemma"
+    },
+    {
+      "id": "L16-V017-spelling-v1",
+      "targetId": "L16-V017",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V017"
+      ],
+      "contextId": "L16-V017-recall"
+    },
+    {
+      "id": "L16-V018-meaning-v1",
+      "targetId": "L16-V018",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V018"
+      ],
+      "contextId": "L16-V018-definition"
+    },
+    {
+      "id": "L16-V018-article-v1",
+      "targetId": "L16-V018",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L16-V018"
+      ],
+      "contextId": "L16-V018-lemma"
+    },
+    {
+      "id": "L16-V018-spelling-v1",
+      "targetId": "L16-V018",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L16-V018"
+      ],
+      "contextId": "L16-V018-recall"
+    },
+    {
+      "id": "L16-V019-meaning-v1",
+      "targetId": "L16-V019",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V019"
+      ],
+      "contextId": "L16-V019-definition"
+    },
+    {
+      "id": "L16-V019-spelling-v1",
+      "targetId": "L16-V019",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V019"
+      ],
+      "contextId": "L16-V019-recall"
+    },
+    {
+      "id": "L16-V020-meaning-v1",
+      "targetId": "L16-V020",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V020"
+      ],
+      "contextId": "L16-V020-definition"
+    },
+    {
+      "id": "L16-V020-spelling-v1",
+      "targetId": "L16-V020",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V020"
+      ],
+      "contextId": "L16-V020-recall"
+    },
+    {
+      "id": "L16-V021-meaning-v1",
+      "targetId": "L16-V021",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V021"
+      ],
+      "contextId": "L16-V021-definition"
+    },
+    {
+      "id": "L16-V021-spelling-v1",
+      "targetId": "L16-V021",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V021"
+      ],
+      "contextId": "L16-V021-recall"
+    },
+    {
+      "id": "L16-V022-meaning-v1",
+      "targetId": "L16-V022",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V022"
+      ],
+      "contextId": "L16-V022-definition"
+    },
+    {
+      "id": "L16-V022-spelling-v1",
+      "targetId": "L16-V022",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V022"
+      ],
+      "contextId": "L16-V022-recall"
+    },
+    {
+      "id": "L16-V023-meaning-v1",
+      "targetId": "L16-V023",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V023"
+      ],
+      "contextId": "L16-V023-definition"
+    },
+    {
+      "id": "L16-V023-spelling-v1",
+      "targetId": "L16-V023",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V023"
+      ],
+      "contextId": "L16-V023-recall"
+    },
+    {
+      "id": "L16-V024-meaning-v1",
+      "targetId": "L16-V024",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L16-V024"
+      ],
+      "contextId": "L16-V024-definition"
+    },
+    {
+      "id": "L16-V024-spelling-v1",
+      "targetId": "L16-V024",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L16-V024"
+      ],
+      "contextId": "L16-V024-recall"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001-PREP3",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "temporal_relation",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "contextId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-001"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002-PREP3",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "temporal_relation",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "contextId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-002"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003-PREP3",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "temporal_relation",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context"
+      ],
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "contextId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-003"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004-PREP3",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "temporal_relation",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model"
+      ],
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "contextId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-004"
+    },
+    {
+      "id": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005-PREP3",
+      "targetId": "L16-temporale-praepositionen",
+      "subskill": "declarative_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "contextId": "A13-L16-TEMPORALE-PRAEPOSITIONEN-005"
+    },
+    {
+      "id": "L16-D01-A-try-v1",
+      "targetId": "L16-R001",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R001",
+        "L16-R002"
+      ],
+      "contextId": "L16-D01"
+    },
+    {
+      "id": "L16-D01-B-try-v1",
+      "targetId": "L16-R002",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L16-R001",
+        "L16-R002"
+      ],
+      "contextId": "L16-D01"
+    },
+    {
+      "id": "L16-D02-A-try-v1",
+      "targetId": "L16-R003",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R003",
+        "L16-R004"
+      ],
+      "contextId": "L16-D02"
+    },
+    {
+      "id": "L16-D02-B-try-v1",
+      "targetId": "L16-R004",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R003",
+        "L16-R004"
+      ],
+      "contextId": "L16-D02"
+    },
+    {
+      "id": "L16-D03-A-try-v1",
+      "targetId": "L16-R005",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R005",
+        "L16-R006"
+      ],
+      "contextId": "L16-D03"
+    },
+    {
+      "id": "L16-D03-B-try-v1",
+      "targetId": "L16-R006",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L16-R005",
+        "L16-R006"
+      ],
+      "contextId": "L16-D03"
+    },
+    {
+      "id": "L16-D04-A-try-v1",
+      "targetId": "L16-R007",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R007",
+        "L16-R008"
+      ],
+      "contextId": "L16-D04"
+    },
+    {
+      "id": "L16-D04-B-try-v1",
+      "targetId": "L16-R008",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R007",
+        "L16-R008"
+      ],
+      "contextId": "L16-D04"
+    },
+    {
+      "id": "L16-D05-A-try-v1",
+      "targetId": "L16-R009",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R009",
+        "L16-R010"
+      ],
+      "contextId": "L16-D05"
+    },
+    {
+      "id": "L16-D05-B-try-v1",
+      "targetId": "L16-R010",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L16-R009",
+        "L16-R010"
+      ],
+      "contextId": "L16-D05"
+    },
+    {
+      "id": "L16-D06-A-try-v1",
+      "targetId": "L16-R011",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R011",
+        "L16-R012"
+      ],
+      "contextId": "L16-D06"
+    },
+    {
+      "id": "L16-D06-B-try-v1",
+      "targetId": "L16-R012",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R011",
+        "L16-R012"
+      ],
+      "contextId": "L16-D06"
+    },
+    {
+      "id": "L16-D07-A-try-v1",
+      "targetId": "L16-R013",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R013",
+        "L16-R014"
+      ],
+      "contextId": "L16-D07"
+    },
+    {
+      "id": "L16-D07-B-try-v1",
+      "targetId": "L16-R014",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L16-R013",
+        "L16-R014"
+      ],
+      "contextId": "L16-D07"
+    },
+    {
+      "id": "L16-D08-A-try-v1",
+      "targetId": "L16-R015",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R015",
+        "L16-R016"
+      ],
+      "contextId": "L16-D08"
+    },
+    {
+      "id": "L16-D08-B-try-v1",
+      "targetId": "L16-R016",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L16-R015",
+        "L16-R016"
+      ],
+      "contextId": "L16-D08"
+    },
+    {
+      "id": "L17-V001-meaning-v1",
+      "targetId": "L17-V001",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V001"
+      ],
+      "contextId": "L17-V001-definition"
+    },
+    {
+      "id": "L17-V001-form-v1",
+      "targetId": "L17-V001",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V001"
+      ],
+      "contextId": "L17-V001-chunk"
+    },
+    {
+      "id": "L17-V002-meaning-v1",
+      "targetId": "L17-V002",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V002"
+      ],
+      "contextId": "L17-V002-definition"
+    },
+    {
+      "id": "L17-V002-form-v1",
+      "targetId": "L17-V002",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V002"
+      ],
+      "contextId": "L17-V002-chunk"
+    },
+    {
+      "id": "L17-V003-meaning-v1",
+      "targetId": "L17-V003",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V003"
+      ],
+      "contextId": "L17-V003-definition"
+    },
+    {
+      "id": "L17-V003-form-v1",
+      "targetId": "L17-V003",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V003"
+      ],
+      "contextId": "L17-V003-chunk"
+    },
+    {
+      "id": "L17-V004-meaning-v1",
+      "targetId": "L17-V004",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V004"
+      ],
+      "contextId": "L17-V004-definition"
+    },
+    {
+      "id": "L17-V004-form-v1",
+      "targetId": "L17-V004",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V004"
+      ],
+      "contextId": "L17-V004-chunk"
+    },
+    {
+      "id": "L17-V005-meaning-v1",
+      "targetId": "L17-V005",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V005"
+      ],
+      "contextId": "L17-V005-definition"
+    },
+    {
+      "id": "L17-V005-form-v1",
+      "targetId": "L17-V005",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V005"
+      ],
+      "contextId": "L17-V005-chunk"
+    },
+    {
+      "id": "L17-V006-meaning-v1",
+      "targetId": "L17-V006",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V006"
+      ],
+      "contextId": "L17-V006-definition"
+    },
+    {
+      "id": "L17-V006-spelling-v1",
+      "targetId": "L17-V006",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L17-V006"
+      ],
+      "contextId": "L17-V006-recall"
+    },
+    {
+      "id": "L17-V007-meaning-v1",
+      "targetId": "L17-V007",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V007"
+      ],
+      "contextId": "L17-V007-definition"
+    },
+    {
+      "id": "L17-V007-form-v1",
+      "targetId": "L17-V007",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V007"
+      ],
+      "contextId": "L17-V007-chunk"
+    },
+    {
+      "id": "L17-V008-meaning-v1",
+      "targetId": "L17-V008",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V008"
+      ],
+      "contextId": "L17-V008-definition"
+    },
+    {
+      "id": "L17-V008-form-v1",
+      "targetId": "L17-V008",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V008"
+      ],
+      "contextId": "L17-V008-chunk"
+    },
+    {
+      "id": "L17-V009-meaning-v1",
+      "targetId": "L17-V009",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V009"
+      ],
+      "contextId": "L17-V009-definition"
+    },
+    {
+      "id": "L17-V009-form-v1",
+      "targetId": "L17-V009",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V009"
+      ],
+      "contextId": "L17-V009-chunk"
+    },
+    {
+      "id": "L17-V010-meaning-v1",
+      "targetId": "L17-V010",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V010"
+      ],
+      "contextId": "L17-V010-definition"
+    },
+    {
+      "id": "L17-V010-form-v1",
+      "targetId": "L17-V010",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V010"
+      ],
+      "contextId": "L17-V010-chunk"
+    },
+    {
+      "id": "L17-V011-meaning-v1",
+      "targetId": "L17-V011",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V011"
+      ],
+      "contextId": "L17-V011-definition"
+    },
+    {
+      "id": "L17-V011-form-v1",
+      "targetId": "L17-V011",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V011"
+      ],
+      "contextId": "L17-V011-chunk"
+    },
+    {
+      "id": "L17-V012-meaning-v1",
+      "targetId": "L17-V012",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V012"
+      ],
+      "contextId": "L17-V012-definition"
+    },
+    {
+      "id": "L17-V012-form-v1",
+      "targetId": "L17-V012",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V012"
+      ],
+      "contextId": "L17-V012-chunk"
+    },
+    {
+      "id": "L17-V013-meaning-v1",
+      "targetId": "L17-V013",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V013"
+      ],
+      "contextId": "L17-V013-definition"
+    },
+    {
+      "id": "L17-V013-form-v1",
+      "targetId": "L17-V013",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V013"
+      ],
+      "contextId": "L17-V013-chunk"
+    },
+    {
+      "id": "L17-V014-meaning-v1",
+      "targetId": "L17-V014",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V014"
+      ],
+      "contextId": "L17-V014-definition"
+    },
+    {
+      "id": "L17-V014-form-v1",
+      "targetId": "L17-V014",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V014"
+      ],
+      "contextId": "L17-V014-chunk"
+    },
+    {
+      "id": "L17-V015-meaning-v1",
+      "targetId": "L17-V015",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V015"
+      ],
+      "contextId": "L17-V015-definition"
+    },
+    {
+      "id": "L17-V015-form-v1",
+      "targetId": "L17-V015",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V015"
+      ],
+      "contextId": "L17-V015-chunk"
+    },
+    {
+      "id": "L17-V016-meaning-v1",
+      "targetId": "L17-V016",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V016"
+      ],
+      "contextId": "L17-V016-definition"
+    },
+    {
+      "id": "L17-V016-form-v1",
+      "targetId": "L17-V016",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V016"
+      ],
+      "contextId": "L17-V016-chunk"
+    },
+    {
+      "id": "L17-V017-meaning-v1",
+      "targetId": "L17-V017",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V017"
+      ],
+      "contextId": "L17-V017-definition"
+    },
+    {
+      "id": "L17-V017-article-v1",
+      "targetId": "L17-V017",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V017"
+      ],
+      "contextId": "L17-V017-lemma"
+    },
+    {
+      "id": "L17-V017-spelling-v1",
+      "targetId": "L17-V017",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V017"
+      ],
+      "contextId": "L17-V017-recall"
+    },
+    {
+      "id": "L17-V018-meaning-v1",
+      "targetId": "L17-V018",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V018"
+      ],
+      "contextId": "L17-V018-definition"
+    },
+    {
+      "id": "L17-V018-article-v1",
+      "targetId": "L17-V018",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V018"
+      ],
+      "contextId": "L17-V018-lemma"
+    },
+    {
+      "id": "L17-V018-spelling-v1",
+      "targetId": "L17-V018",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V018"
+      ],
+      "contextId": "L17-V018-recall"
+    },
+    {
+      "id": "L17-V019-meaning-v1",
+      "targetId": "L17-V019",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V019"
+      ],
+      "contextId": "L17-V019-definition"
+    },
+    {
+      "id": "L17-V019-article-v1",
+      "targetId": "L17-V019",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V019"
+      ],
+      "contextId": "L17-V019-lemma"
+    },
+    {
+      "id": "L17-V019-spelling-v1",
+      "targetId": "L17-V019",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V019"
+      ],
+      "contextId": "L17-V019-recall"
+    },
+    {
+      "id": "L17-V020-meaning-v1",
+      "targetId": "L17-V020",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V020"
+      ],
+      "contextId": "L17-V020-definition"
+    },
+    {
+      "id": "L17-V020-article-v1",
+      "targetId": "L17-V020",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V020"
+      ],
+      "contextId": "L17-V020-lemma"
+    },
+    {
+      "id": "L17-V020-spelling-v1",
+      "targetId": "L17-V020",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V020"
+      ],
+      "contextId": "L17-V020-recall"
+    },
+    {
+      "id": "L17-V021-meaning-v1",
+      "targetId": "L17-V021",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V021"
+      ],
+      "contextId": "L17-V021-definition"
+    },
+    {
+      "id": "L17-V021-article-v1",
+      "targetId": "L17-V021",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V021"
+      ],
+      "contextId": "L17-V021-lemma"
+    },
+    {
+      "id": "L17-V021-spelling-v1",
+      "targetId": "L17-V021",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V021"
+      ],
+      "contextId": "L17-V021-recall"
+    },
+    {
+      "id": "L17-V022-meaning-v1",
+      "targetId": "L17-V022",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V022"
+      ],
+      "contextId": "L17-V022-definition"
+    },
+    {
+      "id": "L17-V022-article-v1",
+      "targetId": "L17-V022",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V022"
+      ],
+      "contextId": "L17-V022-lemma"
+    },
+    {
+      "id": "L17-V022-spelling-v1",
+      "targetId": "L17-V022",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V022"
+      ],
+      "contextId": "L17-V022-recall"
+    },
+    {
+      "id": "A13-L17-WERDEN-001-PREP3",
+      "targetId": "L17-werden",
+      "subskill": "werden_conjugation",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "contextId": "A13-L17-WERDEN-001"
+    },
+    {
+      "id": "A13-L17-WERDEN-002-PREP3",
+      "targetId": "L17-werden",
+      "subskill": "werden_conjugation",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "contextId": "A13-L17-WERDEN-002"
+    },
+    {
+      "id": "A13-L17-WERDEN-003-PREP3",
+      "targetId": "L17-werden",
+      "subskill": "werden_conjugation",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "contextId": "A13-L17-WERDEN-003"
+    },
+    {
+      "id": "A13-L17-WERDEN-004-PREP3",
+      "targetId": "L17-werden",
+      "subskill": "werden_conjugation",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "contextId": "A13-L17-WERDEN-004"
+    },
+    {
+      "id": "A13-L17-WERDEN-005-PREP3",
+      "targetId": "L17-werden",
+      "subskill": "declarative_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "contextId": "A13-L17-WERDEN-005"
+    },
+    {
+      "id": "A13-L17-WOLLEN-001-PREP3",
+      "targetId": "L17-wollen",
+      "subskill": "wollen_conjugation",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "contextId": "A13-L17-WOLLEN-001"
+    },
+    {
+      "id": "A13-L17-WOLLEN-002-PREP3",
+      "targetId": "L17-wollen",
+      "subskill": "wollen_conjugation",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "contextId": "A13-L17-WOLLEN-002"
+    },
+    {
+      "id": "A13-L17-WOLLEN-003-PREP3",
+      "targetId": "L17-wollen",
+      "subskill": "wollen_conjugation",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "contextId": "A13-L17-WOLLEN-003"
+    },
+    {
+      "id": "A13-L17-WOLLEN-004-PREP3",
+      "targetId": "L17-wollen",
+      "subskill": "wollen_conjugation",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "contextId": "A13-L17-WOLLEN-004"
+    },
+    {
+      "id": "A13-L17-WOLLEN-005-PREP3",
+      "targetId": "L17-wollen",
+      "subskill": "modal_sentence_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "contextId": "A13-L17-WOLLEN-005"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-001-PREP3",
+      "targetId": "L17-mit-ohne",
+      "subskill": "preposition_case_inflection",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options",
+        "supplied-lemma-or-base-form"
+      ],
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "contextId": "A13-L17-MIT-OHNE-001"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-002-PREP3",
+      "targetId": "L17-mit-ohne",
+      "subskill": "preposition_case_inflection",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options",
+        "supplied-lemma-or-base-form"
+      ],
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "contextId": "A13-L17-MIT-OHNE-002"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-003-PREP3",
+      "targetId": "L17-mit-ohne",
+      "subskill": "preposition_case_inflection",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma-or-base-form"
+      ],
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "contextId": "A13-L17-MIT-OHNE-003"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-004-PREP3",
+      "targetId": "L17-mit-ohne",
+      "subskill": "preposition_case_inflection",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma-or-base-form"
+      ],
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "contextId": "A13-L17-MIT-OHNE-004"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-005-PREP3",
+      "targetId": "L17-mit-ohne",
+      "subskill": "declarative_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "contextId": "A13-L17-MIT-OHNE-005"
+    },
+    {
+      "id": "L17-D01-A-try-v1",
+      "targetId": "L17-R001",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R001",
+        "L17-R002"
+      ],
+      "contextId": "L17-D01"
+    },
+    {
+      "id": "L17-D01-B-try-v1",
+      "targetId": "L17-R002",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L17-R001",
+        "L17-R002"
+      ],
+      "contextId": "L17-D01"
+    },
+    {
+      "id": "L17-D02-A-try-v1",
+      "targetId": "L17-R003",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R003",
+        "L17-R004"
+      ],
+      "contextId": "L17-D02"
+    },
+    {
+      "id": "L17-D02-B-try-v1",
+      "targetId": "L17-R004",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R003",
+        "L17-R004"
+      ],
+      "contextId": "L17-D02"
+    },
+    {
+      "id": "L17-D03-A-try-v1",
+      "targetId": "L17-R005",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R005",
+        "L17-R006"
+      ],
+      "contextId": "L17-D03"
+    },
+    {
+      "id": "L17-D03-B-try-v1",
+      "targetId": "L17-R006",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L17-R005",
+        "L17-R006"
+      ],
+      "contextId": "L17-D03"
+    },
+    {
+      "id": "L17-D04-A-try-v1",
+      "targetId": "L17-R007",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R007",
+        "L17-R008"
+      ],
+      "contextId": "L17-D04"
+    },
+    {
+      "id": "L17-D04-B-try-v1",
+      "targetId": "L17-R008",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R007",
+        "L17-R008"
+      ],
+      "contextId": "L17-D04"
+    },
+    {
+      "id": "L17-D05-A-try-v1",
+      "targetId": "L17-R009",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R009",
+        "L17-R010"
+      ],
+      "contextId": "L17-D05"
+    },
+    {
+      "id": "L17-D05-B-try-v1",
+      "targetId": "L17-R010",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L17-R009",
+        "L17-R010"
+      ],
+      "contextId": "L17-D05"
+    },
+    {
+      "id": "L17-D06-A-try-v1",
+      "targetId": "L17-R011",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R011",
+        "L17-R012"
+      ],
+      "contextId": "L17-D06"
+    },
+    {
+      "id": "L17-D06-B-try-v1",
+      "targetId": "L17-R012",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R011",
+        "L17-R012"
+      ],
+      "contextId": "L17-D06"
+    },
+    {
+      "id": "L17-D07-A-try-v1",
+      "targetId": "L17-R013",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R013",
+        "L17-R014"
+      ],
+      "contextId": "L17-D07"
+    },
+    {
+      "id": "L17-D07-B-try-v1",
+      "targetId": "L17-R014",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L17-R013",
+        "L17-R014"
+      ],
+      "contextId": "L17-D07"
+    },
+    {
+      "id": "L17-D08-A-try-v1",
+      "targetId": "L17-R015",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R015",
+        "L17-R016"
+      ],
+      "contextId": "L17-D08"
+    },
+    {
+      "id": "L17-D08-B-try-v1",
+      "targetId": "L17-R016",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R015",
+        "L17-R016"
+      ],
+      "contextId": "L17-D08"
+    },
+    {
+      "id": "L18-V001-meaning-v1",
+      "targetId": "L18-V001",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V001"
+      ],
+      "contextId": "L18-V001-definition"
+    },
+    {
+      "id": "L18-V001-article-v1",
+      "targetId": "L18-V001",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V001"
+      ],
+      "contextId": "L18-V001-lemma"
+    },
+    {
+      "id": "L18-V001-spelling-v1",
+      "targetId": "L18-V001",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V001"
+      ],
+      "contextId": "L18-V001-recall"
+    },
+    {
+      "id": "L18-V002-meaning-v1",
+      "targetId": "L18-V002",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V002"
+      ],
+      "contextId": "L18-V002-definition"
+    },
+    {
+      "id": "L18-V002-article-v1",
+      "targetId": "L18-V002",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V002"
+      ],
+      "contextId": "L18-V002-lemma"
+    },
+    {
+      "id": "L18-V002-spelling-v1",
+      "targetId": "L18-V002",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V002"
+      ],
+      "contextId": "L18-V002-recall"
+    },
+    {
+      "id": "L18-V003-meaning-v1",
+      "targetId": "L18-V003",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V003"
+      ],
+      "contextId": "L18-V003-definition"
+    },
+    {
+      "id": "L18-V003-article-v1",
+      "targetId": "L18-V003",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V003"
+      ],
+      "contextId": "L18-V003-lemma"
+    },
+    {
+      "id": "L18-V003-spelling-v1",
+      "targetId": "L18-V003",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V003"
+      ],
+      "contextId": "L18-V003-recall"
+    },
+    {
+      "id": "L18-V004-meaning-v1",
+      "targetId": "L18-V004",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V004"
+      ],
+      "contextId": "L18-V004-definition"
+    },
+    {
+      "id": "L18-V004-article-v1",
+      "targetId": "L18-V004",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V004"
+      ],
+      "contextId": "L18-V004-lemma"
+    },
+    {
+      "id": "L18-V004-spelling-v1",
+      "targetId": "L18-V004",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V004"
+      ],
+      "contextId": "L18-V004-recall"
+    },
+    {
+      "id": "L18-V005-meaning-v1",
+      "targetId": "L18-V005",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V005"
+      ],
+      "contextId": "L18-V005-definition"
+    },
+    {
+      "id": "L18-V005-article-v1",
+      "targetId": "L18-V005",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V005"
+      ],
+      "contextId": "L18-V005-lemma"
+    },
+    {
+      "id": "L18-V005-spelling-v1",
+      "targetId": "L18-V005",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V005"
+      ],
+      "contextId": "L18-V005-recall"
+    },
+    {
+      "id": "L18-V006-meaning-v1",
+      "targetId": "L18-V006",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V006"
+      ],
+      "contextId": "L18-V006-definition"
+    },
+    {
+      "id": "L18-V006-article-v1",
+      "targetId": "L18-V006",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V006"
+      ],
+      "contextId": "L18-V006-lemma"
+    },
+    {
+      "id": "L18-V006-spelling-v1",
+      "targetId": "L18-V006",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V006"
+      ],
+      "contextId": "L18-V006-recall"
+    },
+    {
+      "id": "L18-V007-meaning-v1",
+      "targetId": "L18-V007",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V007"
+      ],
+      "contextId": "L18-V007-definition"
+    },
+    {
+      "id": "L18-V007-article-v1",
+      "targetId": "L18-V007",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V007"
+      ],
+      "contextId": "L18-V007-lemma"
+    },
+    {
+      "id": "L18-V007-spelling-v1",
+      "targetId": "L18-V007",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V007"
+      ],
+      "contextId": "L18-V007-recall"
+    },
+    {
+      "id": "L18-V008-meaning-v1",
+      "targetId": "L18-V008",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V008"
+      ],
+      "contextId": "L18-V008-definition"
+    },
+    {
+      "id": "L18-V008-article-v1",
+      "targetId": "L18-V008",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V008"
+      ],
+      "contextId": "L18-V008-lemma"
+    },
+    {
+      "id": "L18-V008-spelling-v1",
+      "targetId": "L18-V008",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V008"
+      ],
+      "contextId": "L18-V008-recall"
+    },
+    {
+      "id": "L18-V009-meaning-v1",
+      "targetId": "L18-V009",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V009"
+      ],
+      "contextId": "L18-V009-definition"
+    },
+    {
+      "id": "L18-V009-article-v1",
+      "targetId": "L18-V009",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V009"
+      ],
+      "contextId": "L18-V009-lemma"
+    },
+    {
+      "id": "L18-V009-spelling-v1",
+      "targetId": "L18-V009",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V009"
+      ],
+      "contextId": "L18-V009-recall"
+    },
+    {
+      "id": "L18-V010-meaning-v1",
+      "targetId": "L18-V010",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V010"
+      ],
+      "contextId": "L18-V010-definition"
+    },
+    {
+      "id": "L18-V010-article-v1",
+      "targetId": "L18-V010",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V010"
+      ],
+      "contextId": "L18-V010-lemma"
+    },
+    {
+      "id": "L18-V010-spelling-v1",
+      "targetId": "L18-V010",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V010"
+      ],
+      "contextId": "L18-V010-recall"
+    },
+    {
+      "id": "L18-V011-meaning-v1",
+      "targetId": "L18-V011",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V011"
+      ],
+      "contextId": "L18-V011-definition"
+    },
+    {
+      "id": "L18-V011-article-v1",
+      "targetId": "L18-V011",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V011"
+      ],
+      "contextId": "L18-V011-lemma"
+    },
+    {
+      "id": "L18-V011-spelling-v1",
+      "targetId": "L18-V011",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V011"
+      ],
+      "contextId": "L18-V011-recall"
+    },
+    {
+      "id": "L18-V012-meaning-v1",
+      "targetId": "L18-V012",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V012"
+      ],
+      "contextId": "L18-V012-definition"
+    },
+    {
+      "id": "L18-V012-article-v1",
+      "targetId": "L18-V012",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V012"
+      ],
+      "contextId": "L18-V012-lemma"
+    },
+    {
+      "id": "L18-V012-spelling-v1",
+      "targetId": "L18-V012",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V012"
+      ],
+      "contextId": "L18-V012-recall"
+    },
+    {
+      "id": "L18-V013-meaning-v1",
+      "targetId": "L18-V013",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V013"
+      ],
+      "contextId": "L18-V013-definition"
+    },
+    {
+      "id": "L18-V013-article-v1",
+      "targetId": "L18-V013",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V013"
+      ],
+      "contextId": "L18-V013-lemma"
+    },
+    {
+      "id": "L18-V013-spelling-v1",
+      "targetId": "L18-V013",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V013"
+      ],
+      "contextId": "L18-V013-recall"
+    },
+    {
+      "id": "L18-V014-meaning-v1",
+      "targetId": "L18-V014",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V014"
+      ],
+      "contextId": "L18-V014-definition"
+    },
+    {
+      "id": "L18-V014-article-v1",
+      "targetId": "L18-V014",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V014"
+      ],
+      "contextId": "L18-V014-lemma"
+    },
+    {
+      "id": "L18-V014-spelling-v1",
+      "targetId": "L18-V014",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V014"
+      ],
+      "contextId": "L18-V014-recall"
+    },
+    {
+      "id": "L18-V015-meaning-v1",
+      "targetId": "L18-V015",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V015"
+      ],
+      "contextId": "L18-V015-definition"
+    },
+    {
+      "id": "L18-V015-article-v1",
+      "targetId": "L18-V015",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V015"
+      ],
+      "contextId": "L18-V015-lemma"
+    },
+    {
+      "id": "L18-V015-spelling-v1",
+      "targetId": "L18-V015",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V015"
+      ],
+      "contextId": "L18-V015-recall"
+    },
+    {
+      "id": "L18-V016-meaning-v1",
+      "targetId": "L18-V016",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V016"
+      ],
+      "contextId": "L18-V016-definition"
+    },
+    {
+      "id": "L18-V016-article-v1",
+      "targetId": "L18-V016",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V016"
+      ],
+      "contextId": "L18-V016-lemma"
+    },
+    {
+      "id": "L18-V016-spelling-v1",
+      "targetId": "L18-V016",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V016"
+      ],
+      "contextId": "L18-V016-recall"
+    },
+    {
+      "id": "L18-V017-meaning-v1",
+      "targetId": "L18-V017",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V017"
+      ],
+      "contextId": "L18-V017-definition"
+    },
+    {
+      "id": "L18-V017-article-v1",
+      "targetId": "L18-V017",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V017"
+      ],
+      "contextId": "L18-V017-lemma"
+    },
+    {
+      "id": "L18-V017-spelling-v1",
+      "targetId": "L18-V017",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V017"
+      ],
+      "contextId": "L18-V017-recall"
+    },
+    {
+      "id": "L18-V018-meaning-v1",
+      "targetId": "L18-V018",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V018"
+      ],
+      "contextId": "L18-V018-definition"
+    },
+    {
+      "id": "L18-V018-article-v1",
+      "targetId": "L18-V018",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V018"
+      ],
+      "contextId": "L18-V018-lemma"
+    },
+    {
+      "id": "L18-V018-spelling-v1",
+      "targetId": "L18-V018",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V018"
+      ],
+      "contextId": "L18-V018-recall"
+    },
+    {
+      "id": "L18-V019-meaning-v1",
+      "targetId": "L18-V019",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V019"
+      ],
+      "contextId": "L18-V019-definition"
+    },
+    {
+      "id": "L18-V019-article-v1",
+      "targetId": "L18-V019",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V019"
+      ],
+      "contextId": "L18-V019-lemma"
+    },
+    {
+      "id": "L18-V019-spelling-v1",
+      "targetId": "L18-V019",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V019"
+      ],
+      "contextId": "L18-V019-recall"
+    },
+    {
+      "id": "L18-V020-meaning-v1",
+      "targetId": "L18-V020",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V020"
+      ],
+      "contextId": "L18-V020-definition"
+    },
+    {
+      "id": "L18-V020-article-v1",
+      "targetId": "L18-V020",
+      "subskill": "plural_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number",
+        "supplied-plural-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V020"
+      ],
+      "contextId": "L18-V020-lemma"
+    },
+    {
+      "id": "L18-V020-spelling-v1",
+      "targetId": "L18-V020",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V020"
+      ],
+      "contextId": "L18-V020-recall"
+    },
+    {
+      "id": "L18-V021-meaning-v1",
+      "targetId": "L18-V021",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V021"
+      ],
+      "contextId": "L18-V021-definition"
+    },
+    {
+      "id": "L18-V021-article-v1",
+      "targetId": "L18-V021",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V021"
+      ],
+      "contextId": "L18-V021-lemma"
+    },
+    {
+      "id": "L18-V021-spelling-v1",
+      "targetId": "L18-V021",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V021"
+      ],
+      "contextId": "L18-V021-recall"
+    },
+    {
+      "id": "L18-V022-meaning-v1",
+      "targetId": "L18-V022",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V022"
+      ],
+      "contextId": "L18-V022-definition"
+    },
+    {
+      "id": "L18-V022-article-v1",
+      "targetId": "L18-V022",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V022"
+      ],
+      "contextId": "L18-V022-lemma"
+    },
+    {
+      "id": "L18-V022-spelling-v1",
+      "targetId": "L18-V022",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V022"
+      ],
+      "contextId": "L18-V022-recall"
+    },
+    {
+      "id": "L18-V023-meaning-v1",
+      "targetId": "L18-V023",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V023"
+      ],
+      "contextId": "L18-V023-definition"
+    },
+    {
+      "id": "L18-V023-article-v1",
+      "targetId": "L18-V023",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V023"
+      ],
+      "contextId": "L18-V023-lemma"
+    },
+    {
+      "id": "L18-V023-spelling-v1",
+      "targetId": "L18-V023",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V023"
+      ],
+      "contextId": "L18-V023-recall"
+    },
+    {
+      "id": "L18-V024-meaning-v1",
+      "targetId": "L18-V024",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V024"
+      ],
+      "contextId": "L18-V024-definition"
+    },
+    {
+      "id": "L18-V024-article-v1",
+      "targetId": "L18-V024",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V024"
+      ],
+      "contextId": "L18-V024-lemma"
+    },
+    {
+      "id": "L18-V024-spelling-v1",
+      "targetId": "L18-V024",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V024"
+      ],
+      "contextId": "L18-V024-recall"
+    },
+    {
+      "id": "L18-V025-meaning-v1",
+      "targetId": "L18-V025",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V025"
+      ],
+      "contextId": "L18-V025-definition"
+    },
+    {
+      "id": "L18-V025-article-v1",
+      "targetId": "L18-V025",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V025"
+      ],
+      "contextId": "L18-V025-lemma"
+    },
+    {
+      "id": "L18-V025-spelling-v1",
+      "targetId": "L18-V025",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V025"
+      ],
+      "contextId": "L18-V025-recall"
+    },
+    {
+      "id": "L18-V026-meaning-v1",
+      "targetId": "L18-V026",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V026"
+      ],
+      "contextId": "L18-V026-definition"
+    },
+    {
+      "id": "L18-V026-article-v1",
+      "targetId": "L18-V026",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V026"
+      ],
+      "contextId": "L18-V026-lemma"
+    },
+    {
+      "id": "L18-V026-spelling-v1",
+      "targetId": "L18-V026",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V026"
+      ],
+      "contextId": "L18-V026-recall"
+    },
+    {
+      "id": "L18-V027-meaning-v1",
+      "targetId": "L18-V027",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V027"
+      ],
+      "contextId": "L18-V027-definition"
+    },
+    {
+      "id": "L18-V027-article-v1",
+      "targetId": "L18-V027",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L18-V027"
+      ],
+      "contextId": "L18-V027-lemma"
+    },
+    {
+      "id": "L18-V027-spelling-v1",
+      "targetId": "L18-V027",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L18-V027"
+      ],
+      "contextId": "L18-V027-recall"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-001-PREP3",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "formal_imperative_form",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "contextId": "A13-L18-IMPERATIV-SIE-001"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-002-PREP3",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "formal_imperative_form",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "contextId": "A13-L18-IMPERATIV-SIE-002"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-003-PREP3",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "formal_imperative_form",
+      "kind": "cloze",
+      "difficulty": 1,
+      "difficultyRationale": "โจทย์ให้ Infinitiv มาแล้วและรูป Sie ใช้รูปเดียวกันที่ต้นประโยค จึงวัดรูปคำขอสุภาพแบบมีตัวช่วย ไม่ใช่การนึกคำศัพท์",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma-or-base-form"
+      ],
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "contextId": "A13-L18-IMPERATIV-SIE-003"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-004-PREP3",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "formal_imperative_form",
+      "kind": "cloze",
+      "difficulty": 1,
+      "difficultyRationale": "โจทย์ให้ Infinitiv มาแล้วและรูป Sie ใช้รูปเดียวกันที่ต้นประโยค จึงวัดรูปคำขอสุภาพแบบมีตัวช่วย ไม่ใช่การนึกคำศัพท์",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma-or-base-form"
+      ],
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "contextId": "A13-L18-IMPERATIV-SIE-004"
+    },
+    {
+      "id": "A13-L18-IMPERATIV-SIE-005-PREP3",
+      "targetId": "L18-imperativ-sie",
+      "subskill": "formal_imperative_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "requiredConceptTargets": [
+        "L18-imperativ-sie"
+      ],
+      "contextId": "A13-L18-IMPERATIV-SIE-005"
+    },
+    {
+      "id": "A13-L18-SOLLEN-001-PREP3",
+      "targetId": "L18-sollen",
+      "subskill": "sollen_conjugation",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "contextId": "A13-L18-SOLLEN-001"
+    },
+    {
+      "id": "A13-L18-SOLLEN-002-PREP3",
+      "targetId": "L18-sollen",
+      "subskill": "sollen_conjugation",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "contextId": "A13-L18-SOLLEN-002"
+    },
+    {
+      "id": "A13-L18-SOLLEN-003-PREP3",
+      "targetId": "L18-sollen",
+      "subskill": "sollen_conjugation",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "contextId": "A13-L18-SOLLEN-003"
+    },
+    {
+      "id": "A13-L18-SOLLEN-004-PREP3",
+      "targetId": "L18-sollen",
+      "subskill": "sollen_conjugation",
+      "kind": "cloze",
+      "difficulty": 2,
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "contextId": "A13-L18-SOLLEN-004"
+    },
+    {
+      "id": "A13-L18-SOLLEN-005-PREP3",
+      "targetId": "L18-sollen",
+      "subskill": "modal_sentence_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "requiredConceptTargets": [
+        "L18-sollen"
+      ],
+      "contextId": "A13-L18-SOLLEN-005"
+    },
+    {
+      "id": "L18-D01-A-try-v1",
+      "targetId": "L18-R001",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R001",
+        "L18-R002"
+      ],
+      "contextId": "L18-D01"
+    },
+    {
+      "id": "L18-D01-B-try-v1",
+      "targetId": "L18-R002",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R001",
+        "L18-R002"
+      ],
+      "contextId": "L18-D01"
+    },
+    {
+      "id": "L18-D02-A-try-v1",
+      "targetId": "L18-R003",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R003",
+        "L18-R004"
+      ],
+      "contextId": "L18-D02"
+    },
+    {
+      "id": "L18-D02-B-try-v1",
+      "targetId": "L18-R004",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R003",
+        "L18-R004"
+      ],
+      "contextId": "L18-D02"
+    },
+    {
+      "id": "L18-D03-A-try-v1",
+      "targetId": "L18-R005",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R005",
+        "L18-R006"
+      ],
+      "contextId": "L18-D03"
+    },
+    {
+      "id": "L18-D03-B-try-v1",
+      "targetId": "L18-R006",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R005",
+        "L18-R006"
+      ],
+      "contextId": "L18-D03"
+    },
+    {
+      "id": "L18-D04-A-try-v1",
+      "targetId": "L18-R007",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R007",
+        "L18-R008"
+      ],
+      "contextId": "L18-D04"
+    },
+    {
+      "id": "L18-D04-B-try-v1",
+      "targetId": "L18-R008",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R007",
+        "L18-R008"
+      ],
+      "contextId": "L18-D04"
+    },
+    {
+      "id": "L18-D05-A-try-v1",
+      "targetId": "L18-R009",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R009",
+        "L18-R010"
+      ],
+      "contextId": "L18-D05"
+    },
+    {
+      "id": "L18-D05-B-try-v1",
+      "targetId": "L18-R010",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R009",
+        "L18-R010"
+      ],
+      "contextId": "L18-D05"
+    },
+    {
+      "id": "L18-D06-A-try-v1",
+      "targetId": "L18-R011",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R011",
+        "L18-R012"
+      ],
+      "contextId": "L18-D06"
+    },
+    {
+      "id": "L18-D06-B-try-v1",
+      "targetId": "L18-R012",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R011",
+        "L18-R012"
+      ],
+      "contextId": "L18-D06"
+    },
+    {
+      "id": "L18-D07-A-try-v1",
+      "targetId": "L18-R013",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R013",
+        "L18-R014"
+      ],
+      "contextId": "L18-D07"
+    },
+    {
+      "id": "L18-D07-B-try-v1",
+      "targetId": "L18-R014",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L18-R013",
+        "L18-R014"
+      ],
+      "contextId": "L18-D07"
+    },
+    {
+      "id": "L18-D08-A-try-v1",
+      "targetId": "L18-R015",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R015",
+        "L18-R016"
+      ],
+      "contextId": "L18-D08"
+    },
+    {
+      "id": "L18-D08-B-try-v1",
+      "targetId": "L18-R016",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L18-R015",
+        "L18-R016"
+      ],
+      "contextId": "L18-D08"
+    },
+    {
+      "id": "A13-L15-OWNER-PREP-001",
+      "targetId": "L15-possessivartikel-owner",
+      "subskill": "possessor_reference",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "แยกสาเหตุด้วยโจทย์จำแนกหนึ่งประเด็น โดยให้ข้อมูลส่วนอื่นที่ไม่ต้องการวัด",
+      "assistanceAvailable": [
+        "options",
+        "provided-base-or-context"
+      ],
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "contextId": "A13-L15-OWNER-PREP-001"
+    },
+    {
+      "id": "A13-L15-ENDING-PREP-001",
+      "targetId": "L15-possessivartikel-ending",
+      "subskill": "possessive_case_ending",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "แยกสาเหตุด้วยโจทย์จำแนกหนึ่งประเด็น โดยให้ข้อมูลส่วนอื่นที่ไม่ต้องการวัด",
+      "assistanceAvailable": [
+        "options",
+        "provided-base-or-context"
+      ],
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "contextId": "A13-L15-ENDING-PREP-001"
+    },
+    {
+      "id": "A13-L16-DATIV-PREP-001",
+      "targetId": "L16-temporale-dative-form",
+      "subskill": "temporal_dative_inflection",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "แยกสาเหตุด้วยโจทย์จำแนกหนึ่งประเด็น โดยให้ข้อมูลส่วนอื่นที่ไม่ต้องการวัด",
+      "assistanceAvailable": [
+        "options",
+        "provided-base-or-context"
+      ],
+      "requiredConceptTargets": [
+        "L16-temporale-praepositionen"
+      ],
+      "contextId": "A13-L16-DATIV-PREP-001"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-MEANING-PREP-001",
+      "targetId": "L17-mit-ohne-meaning",
+      "subskill": "accompaniment_presence_meaning",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "แยกสาเหตุด้วยโจทย์จำแนกหนึ่งประเด็น โดยให้ข้อมูลส่วนอื่นที่ไม่ต้องการวัด",
+      "assistanceAvailable": [
+        "options",
+        "provided-base-or-context"
+      ],
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "contextId": "A13-L17-MIT-OHNE-MEANING-PREP-001"
+    }
+  ],
+  "policy": {
+    "id": "l15-l18-prep-policy-v1",
+    "status": "proposed_not_executed_or_calibrated",
+    "resumeFirst": true,
+    "independentFirstCorrectBeforeLessSupport": 3,
+    "minDistinctContexts": 2,
+    "minDistinctSessions": 2,
+    "minSpacingHours": 24,
+    "interpretation": "พิจารณาลดตัวช่วยภายใน subskill; ไม่ใช่เกณฑ์รับรองความชำนาญ",
+    "rationale": "ใช้หลายคำตอบแรกและต่างบริบท/รอบ เพื่อลดการพึ่งการจำโจทย์เดิม; ระยะ 24 ชั่วโมงเป็นค่าเสนอสำหรับทดสอบการนึกคืน ไม่ใช่ผลวิจัยรับรองในระบบนี้",
+    "preserveSuccessfulSubskills": true,
+    "missingEvidence": "unknown",
+    "selectionRationaleRequired": true
+  }
+}

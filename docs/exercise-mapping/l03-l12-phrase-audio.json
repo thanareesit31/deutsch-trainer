@@ -1,0 +1,1256 @@
+{
+  "version": 1,
+  "origin": "synthetic fictional German dialogues and sentence comparisons; no personal voice cloning",
+  "clips": [
+    {
+      "path": "/audio/l03/model-l03-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ist das deine Mutter?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, das ist meine Schwester Lena."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Sind das deine Eltern?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ja, das sind meine Eltern."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l03/model-l03-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wer ist das?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich glaube, das ist Jans Mutter."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ist das nicht deine Mutter?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Doch, das ist meine Mutter."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ist das nicht dein Vater?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, das ist mein Onkel."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l03/model-l03-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Welche Sprachen sprichst du?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich spreche sehr gut Thai und ein bisschen Deutsch."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Sprechen Sie Französisch?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, gar nicht."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Sprechen Sie Englisch?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ja, ein bisschen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l03/l03-comm-03-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Welche Sprachen sprichst du?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich spreche sehr gut Thai und ein bisschen Englisch."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l04/model-l04-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was kostet der Stuhl?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Er kostet 19 Euro 99. Das ist ein Sonderangebot."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie viel kostet die Lampe?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Sie kostet 35 Euro."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l04/model-l04-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Der Schrank ist schön, oder?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, er ist zu groß."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie findest du das Bett?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich finde es wirklich schön. Es ist sehr modern."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l04/model-l04-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Das Sofa ist schön."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Das finde ich auch."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Der Schrank ist praktisch."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Das finde ich nicht. Er ist zu klein."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Das Bild ist schön."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Findest du?"
+        }
+      ]
+    },
+    {
+      "path": "/audio/l04/l04-comm-01-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was kostet die Lampe?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Sie kostet zweiundvierzig Euro."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l05/model-l05-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Entschuldigung, wie heißt das auf Deutsch?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Das ist ein Schirm."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie schreibt man Schirm?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "S-C-H-I-R-M."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie heißt das auf Deutsch?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich weiß nicht."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l05/model-l05-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ist es aus Plastik?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, es ist aus Glas."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ist es blau?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, es ist grün."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l05/model-l05-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Das ist ein Schirm."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Noch einmal, bitte."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "S-C-H-I-R-M."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Danke schön."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Danke schön."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Bitte, sehr gern."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l05/model-l05-comm-04.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie ist deine E-Mail-Adresse?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "M-A-L-I Unterstrich 87 at example Punkt com."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l05/l05-comm-01-spelling-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie schreibt man das?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Es. Tse. Ha. I. Er. Em."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l05/l05-comm-04-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie ist deine E-Mail-Adresse?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "En. O. Er. A. Unterstrich. Vier. Zwei. At. example. Punkt. com."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l06/model-l06-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Guten Tag."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Firma Nord, guten Tag. Hier ist Anna Weber."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Firma Nord, Anna Weber, guten Tag."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Guten Tag, Paul Klein hier. Ist Frau Meier da?"
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Guten Tag, Paul Klein hier."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Guten Tag, Herr Klein. Was kann ich für Sie tun?"
+        }
+      ]
+    },
+    {
+      "path": "/audio/l06/model-l06-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ist Frau Meier da?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Einen Moment bitte."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ist Frau Meier da?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Frau Meier ist leider nicht da."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Frau Meier ist leider nicht da."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Vielen Dank. Auf Wiederhören."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Vielen Dank. Auf Wiederhören."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Sehr gern. Auf Wiederhören, Herr Klein."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l06/model-l06-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was brauchst du?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich brauche einen Stift."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Hast du einen Stift?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, ich habe keinen Stift."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l06/l06-comm-02-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ist Frau Meier da?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Frau Meier ist leider nicht da."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l07/model-l07-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Kannst du schwimmen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ja, ein bisschen."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Kannst du gut kochen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, ich kann nicht so gut kochen."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Könnt ihr Tennis spielen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ja, wir können Tennis spielen."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Können Sie reiten?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ja, ich kann reiten."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l07/model-l07-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Du kannst wirklich toll tanzen!"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Oh, danke!"
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Sie können sehr gut malen!"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Herzlichen Dank!"
+        }
+      ]
+    },
+    {
+      "path": "/audio/l07/model-l07-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was sind deine Hobbys?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Meine Hobbys sind Schwimmen und Radfahren."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was machst du in deiner Freizeit?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich spiele gern Fußball. Das macht Spaß."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l07/model-l07-comm-04.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie oft liest du?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich lese oft."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie oft fährst du Ski?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich fahre nie Ski."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie oft spielst du Tennis?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich spiele manchmal Tennis."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie oft hörst du in deiner Freizeit Musik?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich höre in meiner Freizeit immer Musik."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l07/l07-comm-01-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Kannst du schwimmen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ja, ich kann sehr gut schwimmen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l08/model-l08-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was machen wir heute Abend?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Gehen wir ins Kino?"
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann treffen wir uns?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Um vier Uhr."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l08/model-l08-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Gehen wir heute Abend ins Kino?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ja, gern. Gute Idee!"
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Hast du heute Abend Zeit?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Tut mir leid, heute Abend habe ich keine Zeit. Vielleicht morgen?"
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Kannst du am Samstag?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Das weiß ich noch nicht."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Treffen wir uns um sieben Uhr?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Tut mir leid, ich kann leider nicht. Ich arbeite am Abend."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l08/model-l08-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie spät ist es?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Es ist halb vier."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie viel Uhr ist es?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Es ist Viertel nach drei."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie spät ist es?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Es ist Viertel vor vier."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie spät ist es?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Es ist fünf nach halb vier."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie spät ist es?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Es ist fünf vor halb vier."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l08/l08-comm-01-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann treffen wir uns?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Um halb sechs am Nachmittag."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l09/model-l09-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was isst du gern zum Frühstück?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Zum Frühstück esse ich gern Brot mit Marmelade."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was magst du besonders gern?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich mag besonders gern Schokolade."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l09/model-l09-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Guten Tag! Sie wünschen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Eine Tasse Kaffee und einen Kuchen, bitte."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Möchten Sie einen Kuchen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, danke."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was möchten Sie?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich möchte einen Salat, bitte."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l09/model-l09-comm-04.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Tut mir leid, wir haben keinen Schokoladenkuchen mehr."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Schade, dann nehme ich einen Apfelkuchen."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ein Eis, bitte."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Tut mir leid, wir haben kein Eis mehr."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l09/model-l09-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Guten Appetit!"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Danke, gleichfalls!"
+        }
+      ]
+    },
+    {
+      "path": "/audio/l09/l09-comm-03-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was möchten Sie?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Eine Tasse Kaffee und einen Kuchen, bitte."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l10/model-l10-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wo fährt der Zug nach Stuttgart ab?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Von Gleis vier."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wo steigst du um?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Hamburger Hauptbahnhof."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Kannst du mich abholen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Natürlich. Ich hole dich ab."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l10/model-l10-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Mein Flug startet um fünf Uhr."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "So früh? Bist du sicher?"
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Mein Handy hat keinen Akku mehr."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Verstehe. Alles klar."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l10/model-l10-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann kommst du an?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Um neun Uhr. Hoffentlich haben wir keine Verspätung."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ich freue mich auf dich!"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich freue mich auch auf dich!"
+        }
+      ]
+    },
+    {
+      "path": "/audio/l10/model-l10-comm-04.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wo fährt der Intercity 642 ab?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Von Bahnsteig fünf."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Welcher Ausgang?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Ausgang B48."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l10/l10-comm-04-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Achtung, eine Durchsage. Der Zug nach Berlin fährt von Gleis sechs ab."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/model-l11-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich habe gekocht."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich habe gelesen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/perfekt-statement.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ich arbeite."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ich habe gearbeitet."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/perfekt-w-question.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wo lernst du Deutsch?"
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wo hast du Deutsch gelernt?"
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/perfekt-yes-no-question.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Macht ihr die Hausaufgaben?"
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Habt ihr die Hausaufgaben gemacht?"
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/model-l11-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du gestern gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Von neun bis siebzehn Uhr habe ich gearbeitet. Danach habe ich gekocht."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du gestern Abend gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ab halb sechs habe ich gelesen."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du am Sonntag gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Morgen habe ich gefrühstückt. Dann habe ich Freunde getroffen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/model-l11-comm-02-card-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du gestern gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Von neun bis siebzehn Uhr habe ich gearbeitet. Danach habe ich gekocht."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/model-l11-comm-02-card-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du gestern Abend gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ab halb sechs habe ich gelesen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/model-l11-comm-02-card-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du am Sonntag gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Morgen habe ich gefrühstückt. Dann habe ich Freunde getroffen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/model-l11-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann ist die Praxis geöffnet?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Von Montag bis Freitag, von neun bis siebzehn Uhr."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann beginnt der Unterricht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Mittwoch um acht Uhr."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann ist die Praxis geschlossen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Samstag und am Sonntag."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/model-l11-comm-03-card-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann ist die Praxis geöffnet?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Von Montag bis Freitag, von neun bis siebzehn Uhr."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/model-l11-comm-03-card-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann beginnt der Unterricht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Mittwoch um acht Uhr."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/model-l11-comm-03-card-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann ist die Praxis geschlossen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Samstag und am Sonntag."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/l11-comm-03-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann beginnt der Unterricht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Mittwoch um sieben Uhr."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/feedback-l11-comm-01-d01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Hast du gestern gekocht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, ich habe Zeitung gelesen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/feedback-l11-comm-01-d02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du letzten Samstag gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich habe Freunde getroffen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/feedback-l11-comm-02-d01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du gestern gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Von neun bis siebzehn Uhr habe ich gearbeitet. Danach habe ich gekocht."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/feedback-l11-comm-02-d02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du gestern Abend gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ab halb sechs habe ich gelesen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/feedback-l11-comm-02-d03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Was hast du am Sonntag gemacht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Morgen habe ich gefrühstückt. Dann habe ich Freunde getroffen."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/feedback-l11-comm-03-d01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann ist die Praxis geöffnet?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Von Montag bis Freitag, von neun bis siebzehn Uhr."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/feedback-l11-comm-03-d02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann beginnt der Unterricht?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Mittwoch um acht Uhr."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l11/feedback-l11-comm-03-d03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann ist die Praxis geschlossen?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Am Samstag und am Sonntag."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l12/model-l12-comm-01.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie war deine Reise?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich war mit meiner Familie unterwegs. Es war schön."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie war die Reise?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich hatte Glück mit dem Wetter. Ich hatte viel Spaß."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Ich glaube, du hattest Glück mit dem Wetter."
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Nein, das Wetter war nicht so schön."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l12/model-l12-comm-02.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann hast du Geburtstag?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich habe im Januar Geburtstag, im Winter."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann haben Sie Geburtstag?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich habe im Mai Geburtstag."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l12/model-l12-comm-03.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann ist das Stadtfest und wie lange dauert es?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Es ist im Mai und dauert drei Tage."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Seit wann gibt es das Stadtfest?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Das Stadtfest gibt es seit 2000."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wie viele Besucher hat das Fest?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Es hat ungefähr tausend Besucher."
+        },
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wo hast du Weihnachten gefeiert?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich habe Weihnachten in Düsseldorf gefeiert."
+        }
+      ]
+    },
+    {
+      "path": "/audio/l12/l12-comm-02-audio-learn-v1.m4a",
+      "turns": [
+        {
+          "voice": "de-DE-KatjaNeural",
+          "text": "Wann hast du Geburtstag?"
+        },
+        {
+          "voice": "de-DE-ConradNeural",
+          "text": "Ich habe im Juni Geburtstag."
+        }
+      ]
+    }
+  ]
+}

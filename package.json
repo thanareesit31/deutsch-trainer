@@ -35,7 +35,10 @@
     "audit:l13-vocabulary-challenge": "node --import tsx scripts/exercise-mapping/audit-l13-vocabulary-challenge.mjs",
     "test:l13-vocabulary-challenge": "node --import tsx --test tests/l13-vocabulary-challenge.test.ts",
     "test:l13-vocabulary-challenge-browser": "node --import tsx tests/l13-vocabulary-challenge-browser.mjs",
-    "build:practice-previews": "node scripts/exercise-mapping/build-practice-previews.mjs"
+    "build:practice-previews": "node scripts/exercise-mapping/build-practice-previews.mjs",
+    "test:a13-release": "node --import tsx --test tests/a13-release.test.ts tests/a13-release-practice.test.ts",
+    "test:a13-release-db": "node tests/a13-release-database.mjs && node tests/a13-release-practice-database.mjs",
+    "db:prepare-a13-release": "node scripts/prepare-lesson-release.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.78.0",

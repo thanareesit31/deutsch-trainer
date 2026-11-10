@@ -1,0 +1,159 @@
+export const l14PhraseTeaching = [
+  {
+    "id": "ask",
+    "title": "ถามทาง",
+    "note": [
+      "เริ่มด้วยการขอความช่วยเหลือ แล้วถามสถานที่ ระยะทาง หรือวิธีเดินทางทีละเรื่อง",
+      "คำถาม Können / Kann ขึ้นต้นด้วยกริยาช่วย ส่วน helfen / gehen อยู่ท้ายประโยค"
+    ],
+    "models": [
+      {
+        "id": "ask-help",
+        "question": "Entschuldigung. Können Sie mir helfen?",
+        "reply": "Ja, gern.",
+        "questionMeaning": "ขอโทษครับ/ค่ะ ช่วยฉันหน่อยได้ไหม",
+        "replyMeaning": "ได้เลย ยินดี"
+      },
+      {
+        "id": "ask-place",
+        "question": "Wo ist denn hier eine Bank?",
+        "reply": "Sie gehen die erste Straße nach rechts. Da sehen Sie die Bank.",
+        "questionMeaning": "แถวนี้มี...อยู่ที่ไหน",
+        "replyMeaning": "เลี้ยวขวาเข้าถนนสายแรก แล้วจะเห็นธนาคาร"
+      },
+      {
+        "id": "ask-far",
+        "question": "Ist das sehr weit?",
+        "reply": "Nein, das ist gar nicht weit.",
+        "questionMeaning": "ไกลมากไหม",
+        "replyMeaning": "ไม่ไกลเลย"
+      },
+      {
+        "id": "ask-search",
+        "question": "Eine Frage bitte: Ich suche die Post.",
+        "reply": "Sie gehen die zweite Straße nach rechts. Da sehen Sie die Post.",
+        "questionMeaning": "ขอถามหน่อย ฉันกำลังหา...",
+        "replyMeaning": "เลี้ยวขวาเข้าถนนสายที่สอง แล้วจะเห็นไปรษณีย์"
+      },
+      {
+        "id": "ask-walk",
+        "question": "Kann ich zu Fuß gehen?",
+        "reply": "Ja, das können Sie.",
+        "questionMeaning": "ฉันเดินไปได้ไหม",
+        "replyMeaning": "ได้ คุณเดินไปได้"
+      }
+    ]
+  },
+  {
+    "id": "describe",
+    "title": "บอกทาง",
+    "note": [
+      "บอกเส้นทางตามลำดับ: ถนนที่ต้องเข้า → ทิศทาง → จุดสังเกต",
+      "ถ้าขึ้นต้นด้วยสถานที่ เช่น Vor der Bank กริยาผันยังอยู่ตำแหน่ง 2; ab อยู่ท้ายประโยค"
+    ],
+    "models": [
+      {
+        "id": "describe-straight",
+        "question": "Wo ist denn hier eine Bank?",
+        "reply": "Sie gehen hier geradeaus.",
+        "questionMeaning": "แถวนี้มีธนาคารอยู่ที่ไหน",
+        "replyMeaning": "เดินหรือขับตรงไปจากตรงนี้"
+      },
+      {
+        "id": "describe-see",
+        "question": "Wo ist denn hier eine Bank?",
+        "reply": "Da sehen Sie eine Bank.",
+        "questionMeaning": "แถวนี้มีธนาคารอยู่ที่ไหน",
+        "replyMeaning": "ตรงนั้นคุณจะเห็น..."
+      },
+      {
+        "id": "describe-turn",
+        "question": "Wo ist denn hier eine Bank?",
+        "reply": "Vor der Bank biegen Sie nach rechts ab.",
+        "questionMeaning": "แถวนี้มีธนาคารอยู่ที่ไหน",
+        "replyMeaning": "เลี้ยวขวาหรือซ้ายก่อนถึง..."
+      },
+      {
+        "id": "describe-distance",
+        "question": "Ist das sehr weit?",
+        "reply": "Das ist gar nicht weit.",
+        "questionMeaning": "ไกลมากไหม",
+        "replyMeaning": "ที่นั่นไกล หรือไม่ไกลเลย"
+      },
+      {
+        "id": "describe-street",
+        "question": "Wo ist denn hier eine Bank?",
+        "reply": "Sie gehen die fünfte Straße nach links.",
+        "questionMeaning": "แถวนี้มีธนาคารอยู่ที่ไหน",
+        "replyMeaning": "เลี้ยวเข้าถนนสายที่หนึ่งถึงห้า ทางขวาหรือซ้าย"
+      },
+      {
+        "id": "describe-direction",
+        "question": "Wo ist denn hier eine Bank?",
+        "reply": "Sie gehen nach rechts.",
+        "questionMeaning": "แถวนี้มีธนาคารอยู่ที่ไหน",
+        "replyMeaning": "ไปทางขวาหรือทางซ้าย"
+      }
+    ]
+  },
+  {
+    "id": "unknown",
+    "title": "เมื่อไม่รู้ทาง",
+    "note": [
+      "บอกอย่างสุภาพว่าไม่ทราบ แล้วอธิบายว่าไม่ใช่คนแถวนี้หรือยังไม่คุ้นทาง"
+    ],
+    "models": [
+      {
+        "id": "unknown-local",
+        "question": "Wo ist denn hier die Post?",
+        "reply": "Tut mir leid. Ich bin nicht von hier.",
+        "questionMeaning": "ไปรษณีย์อยู่ที่ไหน",
+        "replyMeaning": "ขอโทษ ฉันไม่ใช่คนแถวนี้"
+      },
+      {
+        "id": "unknown-answer",
+        "question": "Wo ist denn hier die Post?",
+        "reply": "Das weiß ich leider nicht.",
+        "questionMeaning": "ไปรษณีย์อยู่ที่ไหน",
+        "replyMeaning": "ขอโทษ ฉันไม่รู้เรื่องนั้น"
+      },
+      {
+        "id": "unknown-new",
+        "question": "Wo ist denn hier die Post?",
+        "reply": "Ich bin fremd hier.",
+        "questionMeaning": "ไปรษณีย์อยู่ที่ไหน",
+        "replyMeaning": "ฉันไม่คุ้นกับแถวนี้"
+      }
+    ]
+  },
+  {
+    "id": "thanks",
+    "title": "ขอบคุณ",
+    "note": [
+      "เมื่อได้รับความช่วยเหลือ ให้กล่าวขอบคุณ; อีกฝ่ายตอบ Bitte schön. ได้"
+    ],
+    "models": [
+      {
+        "id": "thanks-heart",
+        "question": "Ja, das können Sie.",
+        "reply": "Herzlichen Dank.",
+        "questionMeaning": "ได้ คุณเดินไปได้",
+        "replyMeaning": "ขอบคุณมาก"
+      },
+      {
+        "id": "thanks-kind",
+        "question": "Ja, das können Sie.",
+        "reply": "Sehr nett. Vielen Dank.",
+        "questionMeaning": "ได้ คุณเดินไปได้",
+        "replyMeaning": "ใจดีมาก ขอบคุณมาก"
+      },
+      {
+        "id": "thanks-oh",
+        "question": "Ja, das können Sie.",
+        "reply": "Oh, danke schön.",
+        "questionMeaning": "ได้ คุณเดินไปได้",
+        "replyMeaning": "อ๋อ ขอบคุณมาก"
+      }
+    ]
+  }
+];

@@ -1,5 +1,242 @@
 # Requirement & Experience Changelog
 
+## 2026-11-08 - บันทึกหลักการสอน อธิบาย และลองใช้ประโยคเป็นมาตรฐานร่วม
+
+- เปลี่ยนอะไร: ขยาย `docs/SENTENCE_ANNOTATION_STANDARD.md` จากตารางสีเป็นแนวทางครบเส้นทางเป้าหมายการสอน หลักการ ตัวอย่าง บริบท/เสียง ลูกศร คำแปล การลองทำ ก่อน/หลังตรวจ การเรียนต่อ หลักฐานและการตรวจงาน. บันทึกรูปแบบมือถือที่ยืนยันแล้ว และปรับ AGENTS.md กับ baseline ให้การสร้างหรือแก้หน้าประโยคครั้งต่อไปอ่านมาตรฐานนี้โดยอัตโนมัติ
+- เหตุผล: ผู้ใช้ยืนยันรูปแบบปัจจุบันและขอให้สรุปหลักการกับบันทึกไว้ใช้ซ้ำ แทนการจำเพียงเฉดสีหรือหน้าตาบัตร
+- ผลกระทบ: งานเอกสารเท่านั้น ไม่แก้ UI เนื้อหาบทเรียน โจทย์ คะแนน ประวัติ ฐานข้อมูล หรือการเผยแพร่. การออกแบบบทอื่นยังต้องมีแผนเป้าหมาย/ทักษะย่อยของบทนั้น และไม่ถือว่าทุกบทเปิดใช้หรือเชื่อม adaptive selection แล้ว
+
+## 2026-11-08 - คืนคำอธิบายมือถือให้อยู่ใต้คำโดยตรง
+
+- เปลี่ยนอะไร: เอาหมายเลขอ้างอิงและรายการคำอธิบายแยกออกจากแผนภาพ. ลูกศรชี้ชื่อหน้าที่กับตำแหน่งใต้คำนั้นโดยตรง; มือถือใช้ชื่อสั้นอย่าง ประธาน, กริยาช่วย และ Partizip II. ปรับความกว้างคอลัมน์ ช่องไฟและ padding ให้ยังเห็นประโยคครบแถวเดียวโดยไม่เลื่อน. ตัวปรับขนาดอ่านค่าคอลัมน์และช่องไฟจาก CSS จริง และเพิ่มการตรวจไม่ให้ใส่ระบบเลขอ้างอิงกลับมา
+- เหตุผล: ผู้ใช้ระบุว่ารูปแบบหมายเลขทำให้งงกว่าเดิม เพราะต้องจับคู่คำกับคำอธิบายที่อยู่คนละส่วน
+- ผลกระทบ: เปลี่ยนการนำเสนอมือถือเท่านั้น คงสี ประโยค คำอธิบายฉบับเต็มสำหรับโปรแกรมอ่านหน้าจอ โจทย์ คำตอบ คะแนน และประวัติเดิม. ระบบซิงก์ยังพักตามคำสั่งผู้ใช้
+- ตรวจสอบ: TypeScript และการตรวจเบราว์เซอร์ที่ 375px, 390px และ 1360px ผ่านทั้งสามหน้าสอนและเฉลยประโยคยาว. ตรวจข้อความตัวอย่างจริง ตำแหน่งคำอธิบายใต้คำ การไม่มีเลขอ้างอิง และประโยคครบแถวเดียวไม่ล้น/ไม่เลื่อน
+
+## 2026-11-08 - แสดงประโยคมือถือครบแถวเดียวโดยไม่ต้องเลื่อน
+
+- เปลี่ยนอะไร: ปรับขนาดคำเยอรมันตามความกว้างและความยาวของแต่ละประโยค เพื่อให้เห็นครบในแถวเดียวบนมือถือ. ใช้ลูกศรกับหมายเลขสีเดิมเชื่อมไปยังช่องคำอธิบายด้านล่าง ซึ่งใช้ขนาดข้อความไทยแยกจากประโยค. ลด padding บางส่วนเพื่อเพิ่มพื้นที่อ่าน และเอาการเลื่อนกับคำแนะนำให้ปัดออก. คำอธิบายยังเชื่อมกับคำสำหรับโปรแกรมอ่านหน้าจอ
+- เหตุผล: ผู้ใช้ต้องการเห็นประโยคครบทั้งประโยคโดยไม่ต้องเลื่อน และไม่ต้องการให้คำตกไปอีกบรรทัด
+- ผลกระทบ: เปลี่ยนเฉพาะรูปแบบมือถือของแผนภาพ Learn/เฉลย L11. คงสี ประโยค คำแปล โจทย์ คำตอบ การให้คะแนนและประวัติเดิม; รูปแบบจอคอมคงเดิม. ไม่เปลี่ยนระบบซิงก์ที่พักไว้
+- ตรวจสอบ: หน้าสอนทั้งสามหัวข้อและเฉลยประโยคยาวผ่านที่ 375px, 390px และ 1360px. ตรวจว่าคำเยอรมันทุกคำอยู่แถวเดียวและอยู่ภายในพื้นที่ประโยค โดยไม่มีการเลื่อนหรือการตัดท้าย. ตัวอักษรเยอรมันเล็กสุดในชุดตรวจ 11.1px ที่ 375px ส่วนคำอธิบายยังใช้ 12px
+
+## 2026-11-08 - คงประโยคแยกสีไว้แถวเดียวบนมือถือ
+
+- เปลี่ยนอะไร: คำเยอรมันในแผนภาพ L11 อยู่แถวเดียวบนมือถือ โดยคำอธิบายยังอยู่ใต้คำและตัดบรรทัดในคอลัมน์ของตัวเอง. ลดพื้นที่ว่างระหว่างคอลัมน์ให้ประโยคสั้นเห็นครบ; ประโยคยาวเลื่อนได้เฉพาะแถว พร้อมคำแนะนำเมื่อแถวนั้นยาวเกินพื้นที่และรองรับโฟกัสคีย์บอร์ด
+- เหตุผล: `gearbeitet.` ถูกดันลงแถวใหม่บน iPhone SE ทำให้มองโครงสร้างประโยคต่อเนื่องกันไม่ได้
+- ผลกระทบ: เปลี่ยนการแสดงแผนภาพบนหน้าสอนและเฉลย L11 เท่านั้น. คงสี ข้อความ โจทย์ คำตอบ คะแนน ตัวช่วยและประวัติเดิม. ไม่เปลี่ยนตัวเลือกหรือคำเรียงก่อนตอบ และไม่ได้แก้ระบบซิงก์ที่ผู้ใช้ให้พักไว้
+- ตรวจสอบ: TypeScript ผ่าน. เบราว์เซอร์ตรวจหน้าสอนทั้งสามหัวข้อและเฉลยประโยคยาวที่ 375px, 390px และ 1360px. คำเยอรมันอยู่แนวเดียวกัน ประโยคสั้นเห็นครบโดยไม่เลื่อน ประโยคยาวเลื่อนได้พร้อมคำแนะนำและโฟกัสคีย์บอร์ด โดยหน้าเว็บไม่ล้นจอ
+
+## 2026-11-08 - ใช้รูปแบบสีและลูกศรให้ครบหน้าสอนและลองตอบ L11
+
+- เปลี่ยนอะไร: บัตร Präsens/Perfekt ทั้งสามรูปประโยคและตัวอย่าง A/B ทุกบัตรของ L11 ใช้กลุ่มคำ สี ลูกศร และคำอธิบายใต้คำตามมาตรฐานเดียวกัน. เพิ่มบทบาทกริยาหลักที่ผันแล้วสีแดง โดยแยกจากกริยาช่วยสีน้ำเงิน และแยกคำตอบสั้นบอกวัน/เวลาออกจากประโยค Perfekt. หน้า “ลองตอบ” จัดคำสั่ง A/B ช่องเรียงคำและคลังคำให้ชัดขึ้น; เฉลยบทสนทนาทั้งแปดข้อแสดงโครงสร้าง A/B พร้อมเสียงเดิม
+- เหตุผล: ก่อนหน้านี้รูปแบบใหม่ครอบคลุมเฉพาะคำตอบในหัวข้อเวลา ทำให้หน้าสอนต้นบท หัวข้อเปิดปิด และเฉลยยังใช้คนละรูปแบบ
+- คำอธิบายเฉลย: ปรับเหตุผลห้าข้อให้เชื่อมข้อมูลในโจทย์กับคำตอบ ตัดสูตรที่ซ้ำกับแผนภาพ และเอาข้อความเรื่องการเก็บหลักฐานออกจาก feedback การอ่าน
+- ผลกระทบ: ก่อนตอบ ตัวเลือกและคำที่ให้ยังไม่แสดงสีบทบาทหรือลูกศรของเฉลย. คงโจทย์ คำตอบ รหัสเป้าหมาย/ทักษะย่อย ระดับความยาก ตัวช่วย เสียง คิว และประวัติเดิมทั้งหมด; ไม่มีคะแนนจากการดูแผนภาพเพิ่ม. เปลี่ยนเฉพาะ Learn L11 ในพื้นที่ทดลอง ไม่ย้ายคลังบทอื่น ไม่เชื่อม active adaptive selection หรือเผยแพร่ production
+- ตรวจสอบ: TypeScript และ unit tests 13 ข้อผ่าน. เบราว์เซอร์จบครบ 10 กิจกรรม/11 หน่วยคำตอบ บันทึกและโหลดต่อได้ พร้อมเสียงตัวอย่าง 9 คลิป เสียงเฉลย 8 คลิป และการฟังจริง. ตรวจหน้าสอนทั้งสามหัวข้อและหน้าก่อนตอบ/เฉลยทุกกิจกรรมบนคอมกับมือถือ; เปรียบเทียบข้อมูลยืนยันว่าฟิลด์ประเมินเดิมและคลังอีกเก้าบทไม่เปลี่ยน
+
+## 2026-11-08 - บันทึกมาตรฐานสีประโยคสำหรับงานครั้งต่อไป
+
+- เปลี่ยนอะไร: บันทึกรหัสสี ความหมาย ตัวอย่างคำ รูปแบบลูกศรและแนว A/B ใน `docs/SENTENCE_ANNOTATION_STANDARD.md`. เพิ่มทางเข้าอ้างอิงใน AGENTS.md และ baseline พร้อมย้ายค่าที่ใช้อยู่เป็น CSS tokens `--sentence-*` เพื่อให้บทอื่นใช้เฉดเดิมได้
+- เหตุผล: ผู้ใช้ยืนยันรูปแบบ L11 และต้องการให้ใช้ความหมายกับเฉดสีชุดเดิมเมื่อสั่งทำรูปแบบนี้ครั้งถัดไป
+- ผลกระทบ: สีและหน้าตาปัจจุบันคงเดิม ไม่ย้ายบทอื่น ไม่เปลี่ยนโจทย์ การให้คะแนน หลักฐานหรือประวัติ และไม่เผยแพร่ production. แยกสีบทบาทประโยคจากสีจุด Artikel และกำหนดให้ป้ายตำแหน่งตรงกับชนิดประโยคจริง
+
+## 2026-11-08 - แยกสีและชี้ตำแหน่งคำในตัวอย่างเวลา L11
+
+- เปลี่ยนอะไร: ตัวอย่างหัวข้อเวลาและลำดับแยกประโยค B เป็นกลุ่มคำ พร้อมลูกศรลงไปยังหน้าที่และตำแหน่งใต้คำนั้น ใช้สีเหลืองเข้มสำหรับเวลา/ลำดับ น้ำเงินสำหรับกริยาช่วย ม่วงสำหรับประธาน และแดงสำหรับ Partizip II. จัด A/B ให้เริ่มแนวเดียวกันและแทนคำอธิบายรวมด้านล่างด้วยคำอธิบายรายส่วน. ประโยคต่อเนื่องแสดงคนละแถว; บนมือถือขึ้นบรรทัดใหม่พร้อมคำอธิบายที่ติดกับกลุ่มคำนั้น
+- เหตุผล: ให้เห็นทันทีว่าวลีเวลาทั้งกลุ่มอยู่ตำแหน่ง 1 กริยาช่วยอยู่ตำแหน่ง 2 และ Partizip II อยู่ท้ายประโยคบอกเล่าที่ใช้ในหัวข้อนี้ โดยไม่ต้องจับคู่คำกับคำอธิบายหลายบรรทัดเอง
+- ผลกระทบ: เพิ่มลูกศร/สีในตัวอย่าง L11-COMM-02 ทั้งสามบัตร และจัดแนว A/B ให้ตรงกันในหน้าตัวอย่างบทสนทนา L11. คงข้อความ/เสียงบทสนทนา โจทย์ คำตอบ รหัส target/subskill คะแนน ตัวช่วย และประวัติเดิม. สีบทบาทประโยคแยกจากจุดสี Artikel ของคำนาม. เปิดเฉพาะพื้นที่ทดลองตามเดิม ไม่เปลี่ยนการเลือกโจทย์หรือเผยแพร่ production
+- ตรวจสอบ: generator ยืนยันว่าคำที่แยกประกอบกลับเป็นประโยคเดิมทุกตัวอักษร; TypeScript และ unit tests 13 ข้อผ่าน. เบราว์เซอร์ตรวจแนวคำทั้งห้าประโยค สีคำกับคำอธิบาย แนว A/B และการไม่ล้นจอบนคอม/มือถือ พร้อมดูภาพจริง โดยไม่บันทึกผลจำลองลงบัญชี
+
+## 2026-11-08 - เก็บการสอนประโยค L11 และตรวจรอบเรียนล่าสุด
+
+- เปลี่ยนอะไร: เพิ่มประโยคตั้งต้น `Ich habe gearbeitet.` ในหัวข้อเวลาและลำดับ อธิบายว่าวลีเวลาทั้งกลุ่มอยู่ตำแหน่งที่ 1 ส่วน `habe` อยู่ตำแหน่งที่ 2 และ `ich` ตามหลัง พร้อมแยกหน้าที่ของ `Danach` / `Dann`. บนมือถือให้ชิ้นส่วนประโยคขึ้นบรรทัดใหม่เพื่อเห็นคำครบ โดยจอคอมยังเรียงแนวเดิม. ปรับ browser check ให้ตรวจบัตร Präsens/Perfekt และเล่นเสียงตัวอย่างแต่ละบัตรกับเสียงเฉลย A/B ของ L11 จริง
+- เหตุผล: ผู้เรียนต้องเข้าใจวิธีนับตำแหน่งเป็นกลุ่มคำก่อนเชื่อมสูตรกับตัวอย่าง ไม่ใช่นับคำเยอรมันทีละคำ
+- ผลกระทบ: เปลี่ยนคำอธิบายและการจัดหน้าสอน คงโจทย์ รหัส target/subskill คำตอบ คะแนน ตัวช่วย คิวและประวัติเดิม. ใช้เฉพาะเส้นทาง Learn บัญชีทดลองตามเดิม ไม่เปิด adaptive selection หรือเผยแพร่ production
+- ตรวจสอบ: TypeScript และ unit tests 13 ข้อผ่าน. รอบเบราว์เซอร์ L11 จบครบ 10 กิจกรรมและ 11 หน่วยคำตอบที่บันทึกจริง พร้อมเสียงตัวอย่าง 9 คลิป เสียงเฉลย A/B 8 คลิป การฟังจริง คำตอบแรก การโหลดต่อ และภาพหน้าสอนทั้งสามหัวข้อบนคอม/มือถือ. บันทึกเหตุการณ์เสียงสะดุดหนึ่งครั้งและผลตรวจซ้ำไว้ในแผนประเมิน
+
+## 2026-11-08 - ทำคำอธิบายเวลาและลำดับใน L11 ให้ตรงกับตัวอย่าง
+
+- **เปลี่ยนอะไร:** เปลี่ยนชื่อหัวข้อให้บอกเป้าหมายชัดขึ้น, ตัดสูตรโครงสร้างคำถาม A ที่ซ้ำกับหัวข้อก่อนออก และอธิบายจุดสังเกตของ B แยกเป็นบรรทัดสั้น ๆ: วลีเวลา/ลำดับอยู่ต้นประโยค, กริยาที่ผันแล้วอยู่ตำแหน่งที่ 2, และ Partizip II อยู่ท้ายประโยค
+- **เหตุผล:** เดิมมีสูตรของ A และ B ปนกัน พร้อมคำอธิบายกว้าง ๆ หลายบรรทัดจนไม่เห็นว่าหัวข้อนี้กำลังสอนอะไร
+- **ผลกระทบ:** เปลี่ยนเฉพาะคำอธิบายบนหน้าสอน L11-COMM-02; โจทย์ คะแนน target และประวัติไม่เปลี่ยน
+
+## 2026-11-08 - แยกเสียงผู้ถามและผู้ตอบในเฉลยบทสนทนา L11
+
+- **เปลี่ยนอะไร:** เอากรอบสีขาวที่ซ้อนในเฉลยออก ลดช่องไฟ ไม่แสดงข้อความคำตอบซ้ำในปุ่มเสียง และให้ลำโพงหลังคำตอบเล่นเสียงบทสนทนาทุกข้อใน L11 ที่ A ใช้เสียงผู้หญิงถาม แล้ว B ใช้เสียงผู้ชายตอบพร้อมเว้นจังหวะ
+- **เหตุผล:** ให้ฟังเหมือนบทสนทนาระหว่างคนสองคนและลดพื้นที่ว่างในเฉลย
+- **ผลกระทบ:** เปลี่ยนเฉพาะหน้าตาและเสียงเฉลยบทสนทนาใน L11; การตรวจคำตอบ คะแนน และประวัติไม่เปลี่ยน
+
+## 2026-11-08 - เรียงเฉลยวลีตามผลตรวจ A, B และเหตุผล
+
+- **เปลี่ยนอะไร:** เรียงเฉลยเป็นผลตรวจถูก/ผิดก่อน ตามด้วย `A: [โจทย์เยอรมัน]` และคำแปลไทย, `B: [คำตอบเยอรมัน]` และคำแปลไทย, แล้วจึงแสดงเหตุผลหนึ่งส่วน. ปรับเหตุผล L11 ให้เชื่อมการตอบ `Nein` กับการเล่าสิ่งที่ทำด้วย Perfekt โดยไม่แสดงคำอธิบายซ้ำ
+- **เหตุผล:** ลดการอ่านเนื้อหาซ้ำและแยกให้ชัดว่าอะไรคือคำถาม คำตอบ และเหตุผล
+- **ผลกระทบ:** เปลี่ยนการจัดวางคำแปล/เหตุผลหน้า feedback; การตรวจคำตอบและประวัติเดิมไม่เปลี่ยน
+
+## 2026-11-08 - จัดแถวคำ Perfekt ให้อยู่แนวเดียวกัน
+
+- **เปลี่ยนอะไร:** วางป้าย Präsens/Perfekt กลับในคอลัมน์ซ้าย ลดความกว้างคอลัมน์เพื่อขยับชิ้นส่วนประโยคเข้าซ้าย; เว้นความสูงป้ายให้ทุกคำเท่ากัน รวม `Deutsch` และคง Partizip II ในแถวเดียว
+- **เหตุผล:** รักษาตำแหน่งป้ายเดิม พร้อมให้อ่านทั้งลำดับคำและแนวคำในประโยคต่อเนื่องกัน
+- **ผลกระทบ:** เปลี่ยนเฉพาะการจัดวางบัตรตัวอย่าง Perfekt บท 11
+
+## 2026-11-08 - ใช้ชื่อรูปประโยคและป้าย Präsens ให้ตรงกับบทเรียน
+
+- **เปลี่ยนอะไร:** เปลี่ยนชื่อบัตรเป็น `W-Frage` และ `Ja-/Nein-Frage`; เปลี่ยนป้าย “ประโยคปัจจุบัน” เป็น `Präsens · ปัจจุบัน` ให้เข้าคู่กับ `Perfekt · อดีต`
+- **เหตุผล:** ใช้คำเรียกตามรูปแบบในชีทและทำให้ป้ายสองฝั่งอ่านเทียบกันได้
+- **ผลกระทบ:** เปลี่ยนเฉพาะข้อความบนบัตรตัวอย่าง Perfekt บท 11
+
+## 2026-11-08 - อธิบายกริยาช่วยที่ผันแล้วในสูตร Perfekt
+
+- **เปลี่ยนอะไร:** ใช้ “กริยาช่วย (ผันตามประธาน)” ในสูตรทั่วไป และ “กริยาช่วย (ผันแล้ว)” บนป้ายตำแหน่ง; ไม่ผูกสูตร Perfekt ไว้กับ `haben` เพียงรูปเดียว
+- **เหตุผล:** Perfekt ใช้กริยาช่วยที่ผันตามประธาน และรูปช่วยอาจต่างกันตามกริยาหลัก
+- **ผลกระทบ:** เปลี่ยนเฉพาะคำอธิบายบท 11 ไม่เปลี่ยนประโยค คำตอบ คะแนน หรือประวัติ
+
+## 2026-11-08 - ออกแบบบัตรสอนโครงสร้าง Perfekt บท 11
+
+- **เปลี่ยนอะไร:** เปลี่ยนหน้าตัวอย่างแรกให้เทียบ Präsens กับ Perfekt ในประโยคบอกเล่า, W-Frage และ Ja-/Nein-Frage พร้อมแยกคำเป็นประธาน, haben ที่ผันแล้ว, ส่วนอื่น และ Partizip II พร้อมป้ายตำแหน่ง. แต่ละบัตรมีเสียงเทียบประโยคของตัวเอง. ย้ายเวลาและลำดับไปเป็นขั้นถัดไป
+- **เหตุผล:** ให้เห็นโครงสร้าง Perfekt ก่อนเรียนคำบอกเวลาและส่วนขยาย
+- **ผลกระทบ:** เปลี่ยนเฉพาะหน้าสอนบท 11; คิวโจทย์ รหัส target/คำตอบ คะแนน ประวัติ และ account routing คงเดิม
+
+## 2026-11-08 - เรียงการสอนบท 11 จากโครงสร้างประโยคไปสู่ส่วนขยาย
+
+- **เปลี่ยนอะไร:** เริ่มหัวข้อ Perfekt ด้วยประโยคสั้น `Ich habe gekocht.` / `Ich habe gelesen.` พร้อมแยกประธาน, haben ที่ผันแล้ว และ Partizip II; จากนั้นจึงสอนการเติมช่วงเวลา/ลำดับ. ย้าย `von … bis …` ไว้เหนือประโยคตัวอย่างที่ใช้ และวางปุ่มเสียงของแต่ละบัตรเหนือภาพทางซ้าย
+- **เหตุผล:** ให้ผู้เรียนเห็นโครงสร้างประโยคอดีตก่อนเติมคำบอกเวลาและลำดับที่ทำให้ประโยคยาวขึ้น
+- **ผลกระทบ:** เปลี่ยนตัวอย่าง คำอธิบาย และตำแหน่งเสียงในบท 11; คิวโจทย์ รหัสคำตอบ คะแนน และประวัติไม่เปลี่ยน
+
+## 2026-11-07 - จัดหน้าสอนบท 11 และแยกเสียงตัวอย่างตามการ์ด
+
+- **เปลี่ยนอะไร:** ย้ายหลักการไว้ก่อนตัวอย่าง แยกคำอธิบายเป็นบรรทัด เพิ่มโครงสร้าง Perfekt และตำแหน่งกริยาเมื่อขึ้นต้นด้วยเวลา เน้นคำเป้าหมายสีแดง และแยกปุ่ม/ไฟล์เสียงให้แต่ละการ์ดตัวอย่างทั้ง 8 ใบ
+- **เหตุผล:** ให้ผู้เรียนเห็นหลักการก่อน แล้วเชื่อมกับประโยคและเสียงของตัวอย่างทีละใบได้ชัดเจน
+- **ผลกระทบ:** เปลี่ยนหน้าสอนและสื่อเสียงบท 11 เท่านั้น ไม่กระทบโจทย์ คำตอบ การให้คะแนน หรือประวัติการเรียน
+
+## 2026-11-06 - Replace tester L03–L12 phrase cards with dialogue learning
+
+- Changed: implemented ten source-reviewed lesson replacements, 34 teaching screens, 103 activities and 107 response units. Added lesson-specific visual boards/clock/object scenes, 53 bundled audio clips, dialogue choice, supplied-word order, reading profiles, and hidden-answer listening for details, spelling, email and prices. Added office requests and meal wishes supported by the supplements.
+- Verification completed 2026-11-07: 17 unit tests, TypeScript, all ten lesson browser flows, actual listening clips, first-answer/resume and mobile checks pass. Normal-account gates, account isolation, preserved L01/L02 state and the full L02 shared-renderer regression pass. Read-only noun fixtures verify supplied Artikel, complete noun feedback and the visible legend.
+- Why: extend the revised L01–L02 learning experience while choosing media and response formats that fit each lesson’s source material.
+- Impact: uses a shared renderer/grader with per-lesson account Learn keys. L02 retains its prior queue, state shape and presentation tag. Old IDs/exposures/history and normal/production routing remain intact. Extended local allowlist with existing RLS; no hosted migration, active adaptive selector or new mastery/Progress scoring.
+
+## 2026-11-06 - Implement the L02 tester phrase replacement
+
+- Changed: replaced the tester L02 phrase tables with seven guided dialogue topics, 18 activities and 20 independent response units. Added real two-voice model/listening recordings, supported word ordering, age/phone digit listening and a three-field reading profile. The old tester sentences entry joins the same flow.
+- Verification: four unit tests, TypeScript and the full seven-model/18-task browser flow pass, including real audio, failure/retry, saved drafts/first responses, profile unit grading, mobile layout, account isolation, the normal-account gate and preserved old lesson state.
+- Why: carry the reviewed source mechanics into the L01-style learning experience rather than maintain a second parallel lesson.
+- Impact: new account-scoped Learn checkpoint stores drafts, model visits, help, replay counts and immutable first-response metadata. Legacy exposures, IDs and other lesson state remain intact. The local adapter allowlist is extended without altering RLS. Normal accounts, hosted database and production routes are unchanged. Fixed guided learning is not active adaptive selection or mastery scoring.
+
+## 2026-11-06 - Review and design the L02 phrase replacement
+
+- Designed: source-reviewed seven-situation lesson plan and four interactive screen examples using the L01 layout. Reviewed the coursebook, worksheet, teacher slides and workbook; recorded PDF references and fingerprints internally.
+- Verification: the four-screen browser review passes choice/order/correction, feedback, image loading and mobile widths. Desktop/mobile screenshots inspected.
+- Why: the existing L02 tables/lists do not match the dialogue-learning experience established in L01.
+- Impact: design artifacts only. The normal L02 route, IDs, exposure, grading, learner history and production behavior are unchanged. The standalone screen preview keeps choices only in page memory. New target/subskill and adaptive-policy proposals are explicitly unimplemented.
+
+## 2026-11-06 - Replace the tester L01 phrase entry with the revised lesson
+
+- Changed: the standard `/learn/L01/phrases` route now opens the revised dialogue lesson for local test accounts. The tester banner uses that route and no longer presents the supplemental set as a separate lesson. Existing discovery/supplement URLs remain usable for saved rounds.
+- Why: the revised activities replace the old learning format rather than constitute a separate lesson.
+- Impact: existing revised-lesson history and legacy completion records remain intact. Non-test accounts and production routing are unchanged; no deployment is implied. Assessment bindings, grading and saved queues are preserved.
+
+## 2026-11-06 - Identify speaker A in L01 question prompts
+
+- Changed: added the A speaker badge before each German opening turn on choice and word-order question screens, matching the model dialogues. The listening task heading remains an instruction rather than a spoken turn.
+- Impact: presentation only; situation captions, grading, target bindings and stored evidence are preserved.
+
+## 2026-11-06 - Label L01 model speakers A and B
+
+- Changed: all 17 model dialogues across nine teaching topics use A for the opening speaker and B for the reply, including the supplemental set. Task situations and feedback retain direct references to the learner where needed.
+- Why: examples should identify dialogue speakers without assigning the learner a role.
+- Impact: presentation labels only; target/subskill mappings, difficulty, assistance, audio, grading, queues and account evidence are unchanged.
+
+## 2026-11-06 - Use a fixed two-voice spelling recording
+
+- Changed: the listening task now plays a bundled German dialogue with Katja asking and Conrad spelling the reply, separated by a short pause. Removed the device-voice/pitch fallback from this task. The generator and voice/text provenance are recorded in project metadata.
+- Verification: TypeScript and the isolated 17-check browser flow pass. The browser plays the actual bundled clip twice to completion, verifies its duration, tests playback failure, and confirms preserved tester history.
+- Why: devices with one German voice made the two roles sound like the same person.
+- Impact: playback works without installed speech voices. Playback errors allow retry; completion remains tied to the whole clip ending. Existing targets, difficulty, assistance, first answers, queue and hidden-name behavior remain unchanged. Local tester only; no adaptive selection or deployment added.
+
+## 2026-11-06 - Shorten the spelling listening screen
+
+- Changed: removed the explanation of the two speakers and the letter-arrangement/correction instructions at the user’s request. Retained the short replay hint.
+- Impact: presentation copy only; audio, grading, target bindings and stored answers are unchanged.
+
+## 2026-11-06 - Play both speakers in the spelling dialogue
+
+- Changed: the listening button plays “Wie schreibt man das?” followed by the reply spelling the name. Select different German voices when available; with one German voice use different pitch for the roles. Count a completed replay only after the reply finishes, and keep the name hidden until checking.
+- Verification: 13 unit checks and the full 17-check isolated browser flow pass. Tests confirm question/reply order, distinct selected voices, replay completion and hidden-name behavior using simulated speech.
+- Why: the exercise should let learners hear the question and reply as one conversation.
+- Impact: same learning target, subskill, assistance, grading, queue and saved first responses. No new scored dialogue-comprehension claim or adaptive selection. Local tester scope remains unchanged.
+
+## 2026-11-06 - Hide the name during the L01 listening check
+
+- Changed: replaced the visible Mali badge on the unanswered letter task with a replayable audio button. German letter names are spoken in order; the learner arranges supplied letters. The name is revealed after checking. The German request remains in the teaching example.
+- Verification: six unit tests and the 17-check browser flow pass, including hidden name, failed playback, replay and distinct listening evidence. Browser speech is simulated; pronunciation quality is outside this automated check.
+- Why: showing the name let learners copy its spelling without listening.
+- Impact: existing task IDs, canonical answer, drafts, queue and first answers are preserved. New attempts carry a distinct listening target/subskill/version and completed-play count, with prior teaching, replay and supplied letters recorded as assistance. Historical visible-name answers remain letter-order evidence; they are not reclassified. This supported listening task does not establish independent spelling or mastery. Playback failure does not unlock checking. Local tester only.
+
+## 2026-11-06 - Show visual context in the L01 tester preview
+
+- Changed: all 17 checks and their models now show existing lesson illustrations, actual name badges, country flags or time badges. Desktop places context beside the dialogue and vertical choices; mobile stacks the context above them. Short captions retain details such as formality that the picture cannot establish.
+- Verification: TypeScript, five unit tests and the isolated browser flow pass for nine models/all 17 checks, loaded illustrations, mobile layout, first-response visual versions and unchanged tester history. Desktop/mobile screenshots reviewed.
+- Why: lengthy written situations and references to an unseen card made the task hard to understand.
+- Impact: target IDs, canonical answers, subskills, difficulty and saved queues remain unchanged. Incidental settings are simplified to match the pictures. New first responses record the configured visual-context version; missing historical values remain unknown. This remains local tester Learn, with no adaptive selection or production rollout.
+
+## 2026-11-05 - Clarify the assumed name in L01 dialogues
+
+- Changed: replaced “บัตรของคุณ” with an explicit statement that the learner is assuming the name Mali Sommer in this situation. Removed the corresponding references to a card in feedback.
+- Why: the screen supplies written facts rather than displaying a card, so the earlier wording referred to an object learners could not see.
+- Impact: copy only. The same name facts, answers, IDs, assistance, stored responses and grading remain in place.
+
+## 2026-11-05 - Add sourced L01 tester activities and preserve old rounds
+
+- Changed: added seven supported Learn checks for first name/surname, requesting spelling, arranging a name's supplied letters, introduction replies and a night-time farewell. The tester banner and completed old rounds link directly to the added-only set. Letter examples and feedback have individual tap-to-listen controls.
+- Why: the source review found explicit classroom communication missing from the original prototype, especially “Wie bitte? Wie schreibt man das?”.
+- Impact: new full rounds have nine topics/17 checks; the added-only set has four topics/seven checks. Old pending/completed 15-screen runs keep their queue, first answers and timestamps. New assistance snapshots are explicit; old missing assistance stays unknown. Local tester Learn only; no regular Practice, Progress, adaptive selector, production deployment or hosted database change.
+- Verification: five unit checks, TypeScript and the browser flow passed for all seven new checks, incorrect-first preservation, letter draft reload/removal, assistance, mobile completion, old-run continuation and the normal-account gate.
+
+## 2026-11-04 - Review L01 worksheet and teacher slides for spelling requests
+
+- Changed: added a supplementary source review with page-level findings and source fingerprints. Verified “Wie bitte? Wie schreibt man das?” in the teacher's L01 name-interview slide, alongside first/family-name questions and introduction response phrases. Recorded worksheet/slide differences and the remaining prototype gaps.
+- Why: the Kursbuch-only review did not capture the teacher's explicit request for the written/spelled form of a name.
+- Impact: internal source metadata and assessment-design addendum only. Existing activities, IDs, answers, account evidence and deployment are unchanged. Request selection, supplied-letter ordering and independent spelling/listening must remain separate evidence units when the extension is implemented.
+
+## 2026-11-04 - Simplify all L01 tester dialogue explanations
+
+- Changed: reviewed the five teaching notes, ten feedback explanations, situation labels and shared instructions. Notes now use separate list items; feedback separates each reason into a paragraph. Replaced grammar shorthand with concrete speaker/name/country examples and changed model speaker labels to “อีกฝ่าย” and “คุณ”.
+- Why: beginning learners need to see which expression fits their role and situation without decoding terms such as subject or reference. Long combined notes also obscured separate ideas.
+- Impact: teaching copy and presentation within the L01 tester prototype only. Task/target IDs, subskills, answers, difficulty/assistance bindings, stored first responses and flow remain unchanged. The generator remains the source of the runtime copy; L02–L12 drafts are outside this pass.
+- Verification: TypeScript passed. Reviewed all five teaching screens and ten feedback screens in the browser at 390px; labels, note/feedback separation and instructions passed. The visual review used isolated state and verified the saved tester history was unchanged.
+
+## 2026-11-04 - Clarify the wellbeing dialogue explanation
+
+- Changed: split the L01 wellbeing note into explicit examples for asking a friend, asking politely, asking back, and choosing a reply that matches the speaker's feelings.
+- Why: the earlier dir/du and Ihnen/Sie shorthand incorrectly suggested that these forms apply only when asking back, and did not explain the contrast shown in the examples.
+- Impact: teaching explanation and layout only; target/subskill mappings, task IDs, accepted answers, historical first responses and navigation are preserved.
+
+## 2026-11-04 - Remove duplicate dialogue feedback text
+
+- Changed: L01 tester Learn feedback shows the answer and Thai meaning once. When the preceding turn differs from the answer, its Thai meaning appears separately without repeating the German prompt.
+- Why: reciprocal greetings repeated the same German and Thai line in the answer and the prompt-meaning footer.
+- Impact: feedback presentation only. Task IDs, answers, first-response evidence, assistance and navigation remain unchanged.
+
+## 2026-11-04 - Open interactive L01 phrase learning for local testers
+
+- Changed: added a tester-only entry and `/learn/L01/phrases/discovery` with five teaching topics, eight dialogue choices and two word-order checks. Examples have German speech, Thai meanings and targeted feedback. Account Learn state keeps first answers, help use, partial ordering, resume position and previous runs.
+- Why: make the reviewed communication draft playable before extending the interaction to other lessons.
+- Impact: local tester accounts only. Ordinary learner content, original targets, accepted Practice answers and Progress remain unchanged. Results are supported Learn evidence rather than independent mastery or adaptive selection. The local adapter extends its lesson-state allowlist; no hosted migration or production deploy was performed.
+- Verification: TypeScript and the local browser flow passed for all ten checks, incorrect-first-answer retention, reload/draft recovery, word help, replay, account/RLS isolation, the non-tester gate and a 390px viewport.
+
+## 2026-11-04 - Draft missing communication content for L01–L12
+
+- Changed: added 114 authored example situations across the 41 core communicative functions marked partial or absent in the phrase audit. Each draft includes context, German and Thai turns, source-function references and a proposed response/evidence binding. Added a report generator and consistency check.
+- Why: new activities need reviewed communication goals and usable conversational context before their question formats are built. Repeating translations of the existing ten examples per lesson does not fill missing functions such as phone calls or ordering food.
+- Impact: this adds internal content and assessment design only. New wording retains product-authored status and awaits independent language, prerequisite, alternative-answer and distractor review. No learner-facing content, historical IDs, accepted answers, account evidence, adaptive selection or deployment changed.
+
+## 2026-11-04 - Audit L01–L12 phrase-bank communication coverage
+
+- Changed: added a source review and report covering all 117 existing phrase targets and 346 response definitions across L01–L12. Recorded visually checked Kursbuch pages, source pagination problems, per-lesson missing communicative functions and target mappings. Added a reproducible report generator with a drift check and linked the findings to the assessment plan.
+- Why: the existing counts came from reused data and ten authored examples per L03–L12 lesson, rather than a checked inventory of the book's communication goals. Translation choices were also labelled as situation choices without a dialogue context.
+- Impact: this is an internal audit for the next content-design pass. Existing source status, learner-facing content, IDs, accepted answers, account evidence and adaptive selection remain in place. No new activities, migrations or production deployment are included. Exact wording, language review, partner pages and supplemental sources remain follow-up work.
+
 ## 2026-11-02 - Remove duplicate learning back links
 
 - Changed: removed the separate “หัวข้อ Grammatik” back link from grammar topic pages, the parent-topic back links from the mein/dein summary and conjugation activity, and the lesson back link from A1.1/A1.2 phrase learning. The existing clickable breadcrumbs provide these parent routes.
@@ -2651,3 +2888,45 @@
 - **เหตุผล:** เบาะแสที่ซ่อนอยู่ใน hint ไม่ช่วยผู้เรียนแยกคำตอบ และตัวอย่างเพศ/โครงสร้างที่ผิดทำให้หลักฐานคำตอบเชื่อถือไม่ได้.
 - **ผลกระทบ:** โจทย์ที่เริ่มไว้ยังใช้ ID และคำตอบเดิม. รอบใหม่ได้รับข้อความโจทย์ที่ชัดขึ้น. L13 grammar เก็บรอบในบัญชีอยู่แล้ว แต่เซิร์ฟเวอร์ยังไม่ตรวจนิยามโจทย์ grammar และสิทธิ์จากหลักฐานการเรียน; L14 grammar ยังเป็นคลังต้นแบบ. Migration วลีใหม่ยังไม่ apply และงานนี้ไม่ได้ deploy.
 - **ตรวจสอบ:** ตัวสร้างคลัง L13/L14 ทำงาน, TypeScript และ `next build --webpack` ผ่าน, ตรวจ L13 grammar 100, L14 grammar 100, L13 Redemittel 114 และวลีเสริม L14 81 ข้อโดยผูก 17 เป้าหมาย. ทดสอบการทำรอบค้าง L13 2 กรณีและการเก็บสถานะ L14 1 กรณี; `git diff --check` ผ่าน. ยังไม่ได้ทดสอบเบราว์เซอร์หรือฐานข้อมูลจริงสำหรับชุดข้อใหม่.
+
+### 2026-11-08 — ตรวจรูปแบบการสอนประโยค L01–L18 และเสริม L13/L14 ในพื้นที่ทดสอบ
+
+- ใช้คำ → ลูกศรลง → หน้าที่/ตำแหน่ง พร้อมชุดสีเดียวกันในตัวอย่างและเฉลยของบทที่มีเนื้อหา เพิ่มเสียง A/B รายตัวอย่าง และรักษาข้อมูลคำถาม/คำตอบเดิมของ L01–L12
+- L13 เพิ่มตัวอย่างและข้อทดลองใช้ตาม 29 เป้าหมายเดิม แยกประวัติ Learn รายหัวข้อ โดยคง Practice เดิม
+- L14 คงการจัดกลุ่ม แผนที่ เลือกบทตอบ เรียงบทสนทนา และพลิกคำแปล เสริมตัวอย่างพูดจริง 17 รายการตามหน้าที่การสื่อสาร และเก็บคำตอบแรกที่สังเกตหลังปรับรุ่นแยกจากข้อมูลเดิม ไม่คาดเดาคำตอบแรกในอดีต
+- เหตุผล: ให้หน้าสอนและเฉลยสอดคล้องกับมาตรฐานที่ตกลง และให้ประโยคอยู่แถวเดียวบนมือถือโดยคำอธิบายยังตรงใต้คำ
+- ผลกระทบ: เฉพาะบัญชีทดสอบใน local preview; ไม่มี deployment หรือ hosted migration และยังไม่เชื่อมหลักฐาน Learn ใหม่กับ adaptive Practice selector
+- L15–L18 ยังไม่มีเนื้อหาหมวดประโยค จึงบันทึกเป็นช่องว่าง ไม่ถือว่าตรวจผ่าน ส่วน practice_session_sync_failed ยังเว้นไว้ตามคำขอ
+
+### 2026-11-09 — ยืนยันรูปแบบประโยคและหลักฐาน L13/L14
+
+- ตรวจข้อความ 349 รายการด้วยคอมโพเนนต์และ CSS จริง ทั้งหน้าสอนและเฉลยบน 375/390/1360px พร้อมตรวจประวัติ/การให้คะแนน 26 รายการ
+- แก้พื้นที่เฉลยบท 14 โดยวางเสียงเหนือประโยคและลดขอบกรอบ แก้ Was ที่เป็นประธานในบท 13 ให้ใช้สีม่วง พร้อมตัวตรวจป้ายหน้าที่กับสี
+- ยืนยันว่าการตรวจแล้วแก้คำตอบจัดกลุ่มในบท 14 ไม่เขียนทับคำตอบแรกที่สังเกตหลังปรับรุ่น ผลทดสอบใช้ข้อมูลจำลองและสกัดการเขียนบัญชีออก
+- ขอบเขตยังเป็นพื้นที่ทดสอบในเครื่อง; L15–L18 ยังไม่มีเนื้อหาประโยค และหลักฐาน Learn ใหม่ยังไม่เชื่อม adaptive selector ไม่มีการเผยแพร่
+
+### 2026-11-09 — เตรียมเนื้อหาบท 15–18 สามหมวด
+
+- เพิ่มชุดเตรียมคำ/วลีศัพท์ 97 รายการ ไวยากรณ์ 7 หัวข้อพร้อมบัตรตัวอย่าง 16 บัตร และบทสนทนา A/B 32 ชุด พร้อมคำแปลและโครงสร้างตามหน้าที่ใต้คำ
+- เตรียม candidate response units 372 หน่วย แยกความหมาย Artikel พหูพจน์ การสะกด รูปวลี ไวยากรณ์ และบทตอบ/เรียงคำ โดยระบุความยาก ตัวช่วย และ target/subskill
+- รักษาคำศัพท์เดิม L15 24 ID และ bank ไวยากรณ์เดิม 35 ข้อ ใช้ PREP3 แยกสำหรับร่างที่เพิ่มข้อมูลให้ตอบได้ชัด และเพิ่มโจทย์วินิจฉัย 4 ข้อ ไม่ย้ายคะแนนเก่ามาเป็นหลักฐานใหม่
+- เก็บแหล่งและการดู cached source 12 หน้าใน metadata แยกจากข้อความผู้เรียน เตรียม scripts/briefs ของสื่อและบันทึกสิ่งที่ยังต้องตรวจด้าน morphology และการยอมรับคำตอบทางเลือก
+- เหตุผล: ให้มีเนื้อหาและสัญญาการวัดผลที่ตรวจได้ก่อนสร้างหน้าเรียน โดยไม่ใช้การมี metadata เป็นข้ออ้างว่า UI หรือ adaptive selector ทำงานแล้ว
+- ผลกระทบ: เพิ่ม artifacts และตัวสร้าง/ตัวตรวจใน repository เท่านั้น ไม่เปลี่ยน catalog/runtime routes ไม่เขียนข้อมูลผู้เรียน และยังไม่ deploy
+- ตามคำขอเพิ่มเติม กำหนดให้ขั้นส่งมอบบทเรียนที่เสร็จต้องรองรับบัญชีทั่วไปด้วย พร้อมรายการตรวจ gate, RLS, migration, eligibility และการคืนประวัติ ไม่เปิดชุดร่างโดยลบ tester gate เพียงอย่างเดียว
+
+### 2026-11-09 — เชื่อมบท 15–18 และเปิดเส้นทางบัญชีทั่วไปก่อนเผยแพร่
+
+- ปลดเงื่อนไข tester ของ Learn ประโยคที่แก้ L01–14 พร้อม canonical exposure/handoff L01 โดยรักษา state/controller/คำตอบเดิม
+- สร้าง Learn/Practice ทั้ง 12 หมวดของ L15–18 พร้อมคำศัพท์ 97 รายการ ไวยากรณ์ 7 หัวข้อ บทสนทนา 32 ชุด กิจกรรม 372 ข้อ และเสียงที่ตรวจ decoding แล้วครบ 399 IDs
+- ใช้ shared account Practice sessions/PracticeAccountSync, canonical phrase registry, eligibility จากการเรียนจริง, stable queues, immutable first answers, drafts และตัวช่วยที่ล้างย้อนหลังไม่ได้ เพิ่มคำแนะนำร่วมหน้าแรก/ภาพรวมและผลแยกทักษะใน Progress
+- ให้ nouns มี Artikel/สีตามมาตรฐาน ซ่อนคำตอบและสีเป้าหมายขณะถาม Artikel ตรวจการสะกดตัวพิมพ์ใหญ่/Unicode และอธิบายด้วยสี/ลูกศรใต้คำเฉพาะหลังตรวจหรือเปิดตัวช่วย
+- เพิ่ม migrations แบบไม่ลบประวัติและ health readiness ที่ต้องเห็น catalog ใหม่ก่อนถือว่าพร้อม ป้องกันหน้าเว็บปล่อยแล้วแต่ server ยังไม่รับผล
+- เหตุผลและผลกระทบ: เปลี่ยนจากชุดเตรียม/เส้นทางทดลองเป็น implementation สำหรับบัญชีทั่วไป ต้อง apply schema ก่อน frontend deployment ไม่ย้ายหลักฐานเก่ามาเป็นความชำนาญ และยังไม่อ้างว่าเปิด production สำเร็จจนมีผลตรวจระบบจริง
+
+### 2026-11-10 — ติดตั้ง schema ของบท 15–18 บนระบบจริง
+
+- Apply migrations ที่ตรวจแล้วครบ4ชุดผ่านบัญชีเจ้าของ Supabase โดยรักษาประวัติเดิม ตรวจ readiness จาก HTTP ด้วย publishable key ได้200และครบ12courses/136cards/372tasks/64phraseTasks รวม sharedRPCรุ่นใหม่
+- แก้กรณีเปิดหลายอุปกรณ์ให้ตัวช่วยรวมได้ทั้งสองลำดับการมาถึงของข้อมูล คำตอบแรกคงเดิม และลิงก์ทำต่อคืนรอบที่ระบุจริง
+- พบและแก้ test bootstrap ที่นำ RPCเก่ามาทับรุ่นใหม่หลังตรวจ idempotence; readiness ตรวจตัวRPCร่วมด้วยเพื่อไม่ให้ผ่านจากจำนวนcatalogเพียงอย่างเดียว
+- Frontend deployment ยังแยกตรวจตาม commit และ health หลังปล่อย ไม่ถือว่าการติดตั้งฐานข้อมูลอย่างเดียวคือ deploy เว็บสำเร็จ

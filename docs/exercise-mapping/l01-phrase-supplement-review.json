@@ -1,0 +1,197 @@
+{
+  "reviewedAt": "2026-11-04",
+  "scope": "Supplement review for the L01 spelling-name gap; not a complete L01–L12 supplement migration",
+  "sources": [
+    {
+      "id": "worksheet-l01-l12",
+      "fileName": "ชีท Lektion 1-12.pdf",
+      "sha256": "179102eebe38587ca39247ec62eb5d7ec05b7c95818d287f3fd10689f88e3707",
+      "reviewedPdfPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pageNumbering": "one-based PDF; no assumed printed-page offset",
+      "method": "visual page review; slide 7 and 9 examined at full size",
+      "role": "supplemental worksheet; L02 divider at PDF 10"
+    },
+    {
+      "id": "teacher-slides-l01-l04",
+      "fileName": "สไลดิ์ของอาจารย์ Lektion 1-4.pdf",
+      "sha256": "77fc3671de9d92ebcafdde61a1e312a9b5b61af7bfea0b18dd2352d395552213",
+      "reviewedPdfPages": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        17,
+        19,
+        24,
+        32
+      ],
+      "pageNumbering": "one-based PDF; no assumed printed-page offset",
+      "method": "visual page review; slide 7 and 9 examined at full size",
+      "role": "classroom explanation supplement; L02 divider at PDF 33"
+    }
+  ],
+  "findings": [
+    {
+      "id": "L01-SUP-01",
+      "objectiveIds": [
+        "L01-COMM-05",
+        "L01-COMM-02"
+      ],
+      "expression": "Wie bitte? Wie schreibt man das?",
+      "meaning": "อะไรนะ สะกดอย่างไร",
+      "sources": [
+        {
+          "sourceId": "teacher-slides-l01-l04",
+          "pdfPage": 9,
+          "label": "Fragen Sie. 7 Personen / Schreiben Sie."
+        },
+        {
+          "sourceId": "teacher-slides-l01-l04",
+          "pdfPage": 7,
+          "label": "Alphabet; handwritten Wie schreibt man das?"
+        }
+      ],
+      "interpretation": "Explicit request for the written/spelled form in a name interview. This is source-supported classroom extension of the book name/alphabet activity, not an exact Kursbuch quote.",
+      "runtimeStatusAtReview": "absent; current Learn checks request repetition and thank after spelling help, but never ask for spelling directly",
+      "previewImplementation": {
+        "date": "2026-11-05",
+        "status": "local-tester-Learn-only",
+        "taskIds": [
+          "L01-SUP-S01-learn-v1",
+          "L01-SUP-S02-learn-v1"
+        ]
+      }
+    },
+    {
+      "id": "L01-SUP-02",
+      "objectiveIds": [
+        "L01-COMM-02"
+      ],
+      "expressions": [
+        "Wie ist dein Vorname?",
+        "Wie ist dein Familienname?",
+        "Mein Vorname ist …",
+        "Mein Familienname ist …"
+      ],
+      "sources": [
+        {
+          "sourceId": "teacher-slides-l01-l04",
+          "pdfPage": 9,
+          "label": "name interview"
+        },
+        {
+          "sourceId": "teacher-slides-l01-l04",
+          "pdfPage": 3,
+          "label": "der Vorname / der Nachname / der Familienname / der Spitzname"
+        },
+        {
+          "sourceId": "teacher-slides-l01-l04",
+          "pdfPage": 4,
+          "label": "Vorname/Spitzname interview"
+        }
+      ],
+      "interpretation": "Keep first name, surname and nickname distinct. Do not score one as the other.",
+      "runtimeStatusAtReview": "not separately taught/scored in current prototype",
+      "previewImplementation": {
+        "date": "2026-11-05",
+        "status": "local-tester-Learn-only",
+        "taskIds": [
+          "L01-SUP-N01-learn-v1",
+          "L01-SUP-N02-learn-v1"
+        ]
+      }
+    },
+    {
+      "id": "L01-SUP-03",
+      "objectiveIds": [
+        "L01-COMM-02"
+      ],
+      "expressions": [
+        "Freut mich!",
+        "Freut mich auch!"
+      ],
+      "meanings": [
+        "ยินดีที่ได้รู้จัก",
+        "ยินดีที่ได้รู้จักเช่นกัน"
+      ],
+      "sources": [
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPage": 8,
+          "label": "du oder Sie?"
+        },
+        {
+          "sourceId": "teacher-slides-l01-l04",
+          "pdfPage": 4,
+          "label": "interview, handwritten Freut mich"
+        },
+        {
+          "sourceId": "teacher-slides-l01-l04",
+          "pdfPage": 32,
+          "label": "introduction dialogue"
+        }
+      ],
+      "interpretation": "Response pair after an introduction; it is not an interchangeable answer to a question asking for a name.",
+      "runtimeStatusAtReview": "absent",
+      "previewImplementation": {
+        "date": "2026-11-05",
+        "status": "local-tester-Learn-only",
+        "taskIds": [
+          "L01-SUP-P01-learn-v1",
+          "L01-SUP-P02-learn-v1"
+        ]
+      }
+    },
+    {
+      "id": "L01-SUP-04",
+      "objectiveIds": [
+        "L01-COMM-01"
+      ],
+      "expression": "Gute Nacht!",
+      "sources": [
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPage": 3,
+          "label": "handwritten greeting/farewell list"
+        },
+        {
+          "sourceId": "teacher-slides-l01-l04",
+          "pdfPage": 17,
+          "label": "Begrüßung / Abschied"
+        },
+        {
+          "sourceId": "teacher-slides-l01-l04",
+          "pdfPage": 19,
+          "label": "time/meeting/leaving examples"
+        }
+      ],
+      "interpretation": "Worksheet handwriting reads Guten Nacht; do not copy that form. Slides show the correct Gute Nacht. Use as a night-time farewell or before sleep; keep Guten Abend for an evening greeting.",
+      "runtimeStatusAtReview": "not taught in current prototype",
+      "previewImplementation": {
+        "date": "2026-11-05",
+        "status": "local-tester-Learn-only",
+        "taskIds": [
+          "L01-SUP-G01-learn-v1"
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Worksheet PDF 2 contains an occupation note under the L01 divider; do not assign every block to L01 by divider alone.",
+    "Worksheet PDF 4 Wie liest man das? and PDF 6 Hörtraining concern pronunciation/listening; they do not establish letter-by-letter spelling ability. No audio checked.",
+    "No explicit Buchstabieren Sie bitte found in reviewed L01 material; use the actually observed Wie schreibt man das? as the sourced request.",
+    "Other slide pages 1–32 were surveyed in contact sheets for context; only the detailed references listed above support the transcribed findings.",
+    "Original learner/source scans remain outside the runtime bundle; generated review images remain ignored in .tools."
+  ]
+}

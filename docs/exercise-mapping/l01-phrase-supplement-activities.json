@@ -1,0 +1,368 @@
+{
+  "authoredAt": "2026-11-04",
+  "version": 2,
+  "status": "local-tester-learn-only",
+  "review": "l01-phrase-supplement-review.json",
+  "topics": [
+    {
+      "id": "L01-SUP-name-fields",
+      "title": "ถามชื่อและนามสกุล",
+      "note": "ถามชื่อ: Wie ist dein Vorname?\nตอบชื่อ: Mein Vorname ist Mali. = ฉันชื่อมะลิ\nถามนามสกุล: Wie ist dein Familienname?\nตอบนามสกุล: Mein Familienname ist Sommer. = ฉันนามสกุลซอมเมอร์",
+      "introducedIn": 2,
+      "tasks": [
+        {
+          "id": "L01-SUP-N01-learn-v1",
+          "targetId": "L01-SUP-N01-target",
+          "objectiveId": "L01-COMM-02",
+          "sourceExampleId": "L01-SUP-N01",
+          "sourceFindingId": "L01-SUP-02",
+          "sourceStatus": "product-authored-scenario-for-reviewed-supplement",
+          "context": "ในสถานการณ์นี้ คุณชื่อ Mali นามสกุล Sommer",
+          "prompt": "Wie ist dein Vorname?",
+          "promptTh": "เธอชื่ออะไร",
+          "answer": "Mein Vorname ist Mali.",
+          "answerTh": "ฉันชื่อมะลิ",
+          "explanation": "คำถามนี้ต้องการชื่อตัว ในสถานการณ์นี้คือ Mali\nSommer เป็นนามสกุล จึงไม่ใช่ข้อมูลที่ถาม",
+          "wordHelp": false,
+          "difficulty": 2,
+          "difficultyRationale": "อ่านบัตรชื่อแล้วเลือกข้อมูลให้ตรงคำถาม",
+          "assistance": [
+            "model-dialogue",
+            "person-card",
+            "german-reply-options"
+          ],
+          "kind": "choice",
+          "subskill": "phrase_dialogue_response",
+          "options": [
+            "Mein Familienname ist Sommer.",
+            "Mein Vorname ist Mali.",
+            "Ich komme aus Thailand."
+          ],
+          "sources": [
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 9,
+              "label": "name interview"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 3,
+              "label": "der Vorname / der Nachname / der Familienname / der Spitzname"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 4,
+              "label": "Vorname/Spitzname interview"
+            }
+          ]
+        },
+        {
+          "id": "L01-SUP-N02-learn-v1",
+          "targetId": "L01-SUP-N02-target",
+          "objectiveId": "L01-COMM-02",
+          "sourceExampleId": "L01-SUP-N02",
+          "sourceFindingId": "L01-SUP-02",
+          "sourceStatus": "product-authored-scenario-for-reviewed-supplement",
+          "context": "ในสถานการณ์นี้ คุณชื่อ Mali นามสกุล Sommer",
+          "prompt": "Wie ist dein Familienname?",
+          "promptTh": "เธอนามสกุลอะไร",
+          "answer": "Mein Familienname ist Sommer.",
+          "answerTh": "ฉันนามสกุลซอมเมอร์",
+          "explanation": "คำถามนี้ต้องการนามสกุล ในสถานการณ์นี้คือ Sommer\nMali เป็นชื่อตัว",
+          "wordHelp": false,
+          "difficulty": 2,
+          "difficultyRationale": "อ่านบัตรชื่อแล้วเลือกข้อมูลให้ตรงคำถาม",
+          "assistance": [
+            "model-dialogue",
+            "person-card",
+            "german-reply-options"
+          ],
+          "kind": "choice",
+          "subskill": "phrase_dialogue_response",
+          "options": [
+            "Mein Vorname ist Mali.",
+            "Freut mich!",
+            "Mein Familienname ist Sommer."
+          ],
+          "sources": [
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 9,
+              "label": "name interview"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 3,
+              "label": "der Vorname / der Nachname / der Familienname / der Spitzname"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 4,
+              "label": "Vorname/Spitzname interview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L01-SUP-name-spelling",
+      "title": "ขอให้สะกดชื่อ",
+      "note": "ขอให้สะกดชื่อ: Wie bitte? Wie schreibt man das? = อะไรนะ สะกดอย่างไร\nเมื่ออีกฝ่ายถาม ให้บอกชื่อทีละตัวอักษร เช่น Mali: M–A–L–I\nกดปุ่มตัวอักษรในตัวอย่างเพื่อฟังทีละตัว",
+      "introducedIn": 2,
+      "tasks": [
+        {
+          "id": "L01-SUP-S01-learn-v1",
+          "targetId": "L01-SUP-S01-target",
+          "objectiveId": "L01-COMM-05",
+          "sourceExampleId": "L01-SUP-S01",
+          "sourceFindingId": "L01-SUP-01",
+          "sourceStatus": "product-authored-scenario-for-reviewed-supplement",
+          "context": "คุณต้องจดชื่ออีกฝ่าย แต่ยังไม่แน่ใจว่าสะกดอย่างไร",
+          "prompt": "Mein Vorname ist Mali.",
+          "promptTh": "ฉันชื่อมะลิ",
+          "answer": "Wie bitte? Wie schreibt man das?",
+          "answerTh": "อะไรนะ สะกดอย่างไร",
+          "explanation": "Wie schreibt man das? ใช้ถามว่าชื่อหรือคำที่เพิ่งได้ยินสะกดอย่างไร\nWie bitte? ใช้ขอให้พูดซ้ำเมื่อฟังไม่ชัด",
+          "wordHelp": false,
+          "difficulty": 1,
+          "difficultyRationale": "เลือกสำนวนตอบให้ตรงหน้าที่ในบทสนทนาที่มีตัวอย่างให้เรียนก่อน",
+          "assistance": [
+            "model-dialogue",
+            "authored-context",
+            "german-reply-options"
+          ],
+          "kind": "choice",
+          "subskill": "phrase_dialogue_response",
+          "options": [
+            "Wie geht es dir?",
+            "Wie bitte? Wie schreibt man das?",
+            "Freut mich!"
+          ],
+          "sources": [
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 9,
+              "label": "Fragen Sie. 7 Personen / Schreiben Sie."
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 7,
+              "label": "Alphabet; handwritten Wie schreibt man das?"
+            }
+          ]
+        },
+        {
+          "id": "L01-SUP-S02-learn-v1",
+          "targetId": "L01-SUP-S02-target",
+          "objectiveId": "L01-COMM-05",
+          "sourceExampleId": "L01-SUP-S02",
+          "sourceFindingId": "L01-SUP-01",
+          "sourceStatus": "product-authored-scenario-for-reviewed-supplement",
+          "context": "ชื่อของคุณคือ Mali · ใช้ตัวอักษรที่ให้สะกดชื่อนี้",
+          "prompt": "Wie schreibt man das?",
+          "promptTh": "สะกดอย่างไร",
+          "answer": "M-A-L-I.",
+          "answerTh": "สะกดชื่อมะลิทีละตัวอักษร",
+          "explanation": "ชื่อ Mali เริ่มด้วย M ตามด้วย A, L และ I\nเมื่อบอกตัวสะกด ให้ออกเสียงทีละตัวอักษร",
+          "wordHelp": false,
+          "difficulty": 2,
+          "difficultyRationale": "เรียงตัวอักษรที่ให้ตามชื่อที่แสดง; เป็นการฝึกแบบมีตัวช่วย ไม่ใช่เรียกคืนตัวสะกดเอง",
+          "assistance": [
+            "model-dialogue",
+            "visible-name",
+            "supplied-letters"
+          ],
+          "kind": "letters",
+          "subskill": "name_letter_order",
+          "tokens": [
+            "L",
+            "I",
+            "M",
+            "A"
+          ],
+          "sources": [
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 9,
+              "label": "Fragen Sie. 7 Personen / Schreiben Sie."
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 7,
+              "label": "Alphabet; handwritten Wie schreibt man das?"
+            }
+          ],
+          "listening": {
+            "version": "name-listening-v1",
+            "targetId": "L01-SUP-S02-listening-target",
+            "subskill": "name_letter_listening",
+            "audioText": "Em. A. El. I.",
+            "difficulty": 3,
+            "difficultyRationale": "Decode German letter names without seeing the written name; supplied letters, replay and prior teaching remain assistance.",
+            "assistance": [
+              "prior-model",
+              "replayable-german-letter-audio",
+              "supplied-letters"
+            ],
+            "audioSource": "/audio/l01/spelling-dialogue-v1.m4a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "L01-SUP-nice-to-meet",
+      "title": "ตอบว่ายินดีที่ได้รู้จัก",
+      "note": "หลังแนะนำตัว ใช้ Freut mich! = ยินดีที่ได้รู้จัก\nถ้าอีกฝ่ายพูดก่อน ตอบ Freut mich auch! = ยินดีที่ได้รู้จักเช่นกัน\nauch ในคำตอบนี้หมายถึง เช่นกัน",
+      "introducedIn": 2,
+      "tasks": [
+        {
+          "id": "L01-SUP-P01-learn-v1",
+          "targetId": "L01-SUP-P01-target",
+          "objectiveId": "L01-COMM-02",
+          "sourceExampleId": "L01-SUP-P01",
+          "sourceFindingId": "L01-SUP-03",
+          "sourceStatus": "product-authored-scenario-for-reviewed-supplement",
+          "context": "ทั้งคู่บอกชื่อแล้ว · คุณได้ยินชัดเจนและอยากบอกว่ายินดีที่รู้จัก",
+          "prompt": "Ich heiße Anna.",
+          "promptTh": "ฉันชื่ออันนา",
+          "answer": "Freut mich!",
+          "answerTh": "ยินดีที่ได้รู้จัก",
+          "explanation": "หลังรู้จักชื่อกันแล้ว ใช้ Freut mich! เพื่อบอกว่ายินดีที่ได้รู้จัก",
+          "wordHelp": false,
+          "difficulty": 1,
+          "difficultyRationale": "เลือกสำนวนตอบให้ตรงหน้าที่ในบทสนทนาที่มีตัวอย่างให้เรียนก่อน",
+          "assistance": [
+            "model-dialogue",
+            "authored-context",
+            "german-reply-options"
+          ],
+          "kind": "choice",
+          "subskill": "phrase_dialogue_response",
+          "options": [
+            "Auf Wiedersehen!",
+            "Wie bitte?",
+            "Freut mich!"
+          ],
+          "sources": [
+            {
+              "sourceId": "worksheet-l01-l12",
+              "pdfPage": 8,
+              "label": "du oder Sie?"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 4,
+              "label": "interview, handwritten Freut mich"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 32,
+              "label": "introduction dialogue"
+            }
+          ]
+        },
+        {
+          "id": "L01-SUP-P02-learn-v1",
+          "targetId": "L01-SUP-P02-target",
+          "objectiveId": "L01-COMM-02",
+          "sourceExampleId": "L01-SUP-P02",
+          "sourceFindingId": "L01-SUP-03",
+          "sourceStatus": "product-authored-scenario-for-reviewed-supplement",
+          "context": "เพื่อนใหม่บอกว่ายินดีที่ได้รู้จัก · คุณรู้สึกเช่นเดียวกัน",
+          "prompt": "Freut mich!",
+          "promptTh": "ยินดีที่ได้รู้จัก",
+          "answer": "Freut mich auch!",
+          "answerTh": "ยินดีที่ได้รู้จักเช่นกัน",
+          "explanation": "เพิ่ม auch เพื่อบอกว่าคุณยินดีที่ได้รู้จักเช่นกัน\nตอนนี้ทั้งคู่แนะนำตัวแล้ว จึงไม่ต้องถามชื่อซ้ำ",
+          "wordHelp": false,
+          "difficulty": 1,
+          "difficultyRationale": "เลือกสำนวนตอบให้ตรงหน้าที่ในบทสนทนาที่มีตัวอย่างให้เรียนก่อน",
+          "assistance": [
+            "model-dialogue",
+            "authored-context",
+            "german-reply-options"
+          ],
+          "kind": "choice",
+          "subskill": "phrase_dialogue_response",
+          "options": [
+            "Ich komme aus Thailand.",
+            "Freut mich auch!",
+            "Wie heißt du?"
+          ],
+          "sources": [
+            {
+              "sourceId": "worksheet-l01-l12",
+              "pdfPage": 8,
+              "label": "du oder Sie?"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 4,
+              "label": "interview, handwritten Freut mich"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 32,
+              "label": "introduction dialogue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L01-SUP-good-night",
+      "title": "ลาก่อนเข้านอน",
+      "note": "ก่อนเข้านอน ใช้ Gute Nacht! = ราตรีสวัสดิ์\nเมื่อพบกันตอนเย็น ใช้ Guten Abend! = สวัสดีตอนเย็น",
+      "introducedIn": 2,
+      "tasks": [
+        {
+          "id": "L01-SUP-G01-learn-v1",
+          "targetId": "L01-SUP-G01-target",
+          "objectiveId": "L01-COMM-01",
+          "sourceExampleId": "L01-SUP-G01",
+          "sourceFindingId": "L01-SUP-04",
+          "sourceStatus": "product-authored-scenario-for-reviewed-supplement",
+          "context": "เวลา 22:30 น. · คุณกับเพื่อนกำลังลากันเพื่อไปนอน",
+          "prompt": "Tschüs!",
+          "promptTh": "ลาก่อน",
+          "answer": "Gute Nacht!",
+          "answerTh": "ราตรีสวัสดิ์",
+          "explanation": "คุณกำลังลาก่อนเข้านอน จึงใช้ Gute Nacht!\nGuten Abend! ใช้ทักทายเมื่อพบกันตอนเย็น",
+          "wordHelp": false,
+          "difficulty": 1,
+          "difficultyRationale": "เลือกสำนวนตอบให้ตรงหน้าที่ในบทสนทนาที่มีตัวอย่างให้เรียนก่อน",
+          "assistance": [
+            "model-dialogue",
+            "authored-context",
+            "german-reply-options"
+          ],
+          "kind": "choice",
+          "subskill": "phrase_dialogue_response",
+          "options": [
+            "Guten Morgen!",
+            "Gute Nacht!",
+            "Guten Abend!"
+          ],
+          "sources": [
+            {
+              "sourceId": "worksheet-l01-l12",
+              "pdfPage": 3,
+              "label": "handwritten greeting/farewell list"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 17,
+              "label": "Begrüßung / Abschied"
+            },
+            {
+              "sourceId": "teacher-slides-l01-l04",
+              "pdfPage": 19,
+              "label": "time/meeting/leaving examples"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "implementedAt": "2026-11-05"
+}

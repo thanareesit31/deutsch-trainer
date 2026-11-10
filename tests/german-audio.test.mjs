@@ -35,3 +35,14 @@ test('a synchronous browser refusal is reported without awarding listening compl
  assert.equal(speakGermanText('Hallo',null,{onError:()=>failed++,onEnd:()=>completed++}),false);
  assert.equal(failed,1);assert.equal(completed,0);
 });
+
+test('dialogue speakers preserve the requested German voice and pitch',()=>{
+ const question={lang:'de-DE',name:'Question'};
+ const reply={lang:'de-DE',name:'Reply'};
+ const spoken=device([question,reply]);
+ speakGermanText('Wie schreibt man das?',question,{},0.8,1.15);
+ speakGermanText('Em. A. El. I.',reply,{},0.65,0.85);
+ assert.deepEqual(spoken.map(u=>[u.text,u.voice.name,u.pitch]),[
+  ['Wie schreibt man das?','Question',1.15],['Em. A. El. I.','Reply',0.85],
+ ]);
+});

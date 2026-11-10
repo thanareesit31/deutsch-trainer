@@ -1,0 +1,303 @@
+{
+  "reviewedAt": "2026-11-06",
+  "scope": "L02 phrases design; local PDFs only; no external QR/Wordwall sites or publisher audio reviewed",
+  "sources": [
+    {
+      "id": "KB",
+      "fileName": "หนังสือเรียน Moment A1 Lektion 1-12.pdf",
+      "sha256": "e7be5c58f91192c48e45f650a22f933fbad65b851d949c39e35d356ea869b576",
+      "reviewedPdfPages": [
+        15,
+        16,
+        17,
+        27
+      ],
+      "numbering": "one-based PDF; printed pages only where explicitly verified",
+      "method": "local text extraction and visual review, including overview contact sheets and enlarged selected pages",
+      "boundaryNote": null
+    },
+    {
+      "id": "WS",
+      "fileName": "ชีท Lektion 1-12.pdf",
+      "sha256": "179102eebe38587ca39247ec62eb5d7ec05b7c95818d287f3fd10689f88e3707",
+      "reviewedPdfPages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "numbering": "one-based PDF; printed pages only where explicitly verified",
+      "method": "local text extraction and visual review, including overview contact sheets and enlarged selected pages",
+      "boundaryNote": "WS28–29 contains family vocabulary outside this phrase design; do not infer lesson membership from dividers alone"
+    },
+    {
+      "id": "SL",
+      "fileName": "สไลดิ์ของอาจารย์ Lektion 1-4.pdf",
+      "sha256": "77fc3671de9d92ebcafdde61a1e312a9b5b61af7bfea0b18dd2352d395552213",
+      "reviewedPdfPages": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "numbering": "one-based PDF; printed pages only where explicitly verified",
+      "method": "local text extraction and visual review, including overview contact sheets and enlarged selected pages",
+      "boundaryNote": null
+    },
+    {
+      "id": "AB",
+      "fileName": "แบบฝึกหัด Momente A1.1  บท1-12.pdf",
+      "sha256": "fa0e7a5724dd3d7d1fcf5ba2c01c0c7bea84a756314c2389be3db917d60cdacf",
+      "reviewedPdfPages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "numbering": "one-based PDF; printed pages only where explicitly verified",
+      "method": "local text extraction and visual review, including overview contact sheets and enlarged selected pages",
+      "boundaryNote": null
+    }
+  ],
+  "findings": [
+    {
+      "id": "L02-F01",
+      "mechanic": "interview-and-role-exchange",
+      "references": [
+        {
+          "sourceId": "KB",
+          "pdfPage": 15,
+          "label": "2a–c"
+        },
+        {
+          "sourceId": "WS",
+          "pdfPage": 16,
+          "label": "Interview"
+        },
+        {
+          "sourceId": "SL",
+          "pdfPage": 49,
+          "label": "International Party"
+        }
+      ]
+    },
+    {
+      "id": "L02-F02",
+      "mechanic": "age-and-phone-interview",
+      "references": [
+        {
+          "sourceId": "KB",
+          "pdfPage": 15,
+          "label": "3"
+        },
+        {
+          "sourceId": "WS",
+          "pdfPage": 12,
+          "label": "Fragen Sie Ihre Partnerin / Ihren Partner"
+        },
+        {
+          "sourceId": "SL",
+          "pdfPage": 35,
+          "label": "Handynummer"
+        },
+        {
+          "sourceId": "SL",
+          "pdfPage": 39,
+          "label": "name age phone interview"
+        }
+      ]
+    },
+    {
+      "id": "L02-F03",
+      "mechanic": "family-status-picture-match",
+      "references": [
+        {
+          "sourceId": "KB",
+          "pdfPage": 16,
+          "label": "4"
+        }
+      ]
+    },
+    {
+      "id": "L02-F04",
+      "mechanic": "profession-interview-and-mime",
+      "references": [
+        {
+          "sourceId": "KB",
+          "pdfPage": 16,
+          "label": "5a–c"
+        }
+      ]
+    },
+    {
+      "id": "L02-F05",
+      "mechanic": "work-response-frames",
+      "references": [
+        {
+          "sourceId": "KB",
+          "pdfPage": 17,
+          "label": "6a–b"
+        },
+        {
+          "sourceId": "KB",
+          "pdfPage": 27,
+          "label": "über den Beruf sprechen"
+        },
+        {
+          "sourceId": "SL",
+          "pdfPage": 65,
+          "label": "Beruf"
+        },
+        {
+          "sourceId": "SL",
+          "pdfPage": 70,
+          "label": "status examples"
+        }
+      ]
+    },
+    {
+      "id": "L02-F06",
+      "mechanic": "profile-read-complete-present",
+      "references": [
+        {
+          "sourceId": "KB",
+          "pdfPage": 17,
+          "label": "7–8"
+        },
+        {
+          "sourceId": "AB",
+          "pdfPage": 12,
+          "label": "profile at end"
+        },
+        {
+          "sourceId": "WS",
+          "pdfPage": 24,
+          "label": "Fragen zur Person"
+        }
+      ]
+    },
+    {
+      "id": "L02-F07",
+      "mechanic": "current-and-dream-work",
+      "references": [
+        {
+          "sourceId": "WS",
+          "pdfPage": 27,
+          "label": "Beruf und Traumberuf"
+        },
+        {
+          "sourceId": "SL",
+          "pdfPage": 72,
+          "label": "writing prompt"
+        },
+        {
+          "sourceId": "SL",
+          "pdfPage": 74,
+          "label": "current/dream question-answer frames"
+        }
+      ]
+    },
+    {
+      "id": "L02-F08",
+      "mechanic": "guided-sentence-and-question-construction",
+      "references": [
+        {
+          "sourceId": "AB",
+          "pdfPage": 9,
+          "label": "dialogue and verb exercises"
+        },
+        {
+          "sourceId": "AB",
+          "pdfPage": 11,
+          "label": "question/response and sentences"
+        },
+        {
+          "sourceId": "AB",
+          "pdfPage": 12,
+          "label": "word order and personal profile"
+        },
+        {
+          "sourceId": "WS",
+          "pdfPage": 15,
+          "label": "verb/sentence prompts"
+        },
+        {
+          "sourceId": "WS",
+          "pdfPage": 21,
+          "label": "question prompts"
+        }
+      ]
+    }
+  ],
+  "prototype": {
+    "path": "public/prototypes/l02-phrases-design.html",
+    "status": "four interactive design examples only; no account writes, no production-route replacement",
+    "authoring": "Scenarios, proper names, distractors and Thai feedback are product-authored, not publisher answer keys. No private handwritten telephone numbers copied.",
+    "findings": [
+      "L02-F04",
+      "L02-F05",
+      "L02-F06",
+      "L02-F01",
+      "L02-F03"
+    ],
+    "media": "existing project hairdresser image; no publisher scans rendered in learner UI",
+    "sourceAudioStatus": "not extracted or verified; no L02 audio supplied by this prototype"
+  }
+}

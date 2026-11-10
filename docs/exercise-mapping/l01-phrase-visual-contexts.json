@@ -1,0 +1,130 @@
+{
+  "version": "l01-context-visuals-v1",
+  "reviewedAt": "2026-11-05",
+  "scope": "Local L01 Learn presentation for all 17 tasks",
+  "assetOrigin": "Reuse existing project-authored L01 core-vocabulary illustrations. Identity labels, flags and time badges are code-native factual UI; no copied book or exam-card images.",
+  "assessmentBoundary": "Same supplied facts, canonical answers and subskills. This records the presentation version, not proof of viewing an image or independent ability.",
+  "visuals": {
+    "L01-COMM-01-D01-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/guten-morgen-sunrise.jpg",
+      "alt": "คนสองคนคุยกันระหว่างอาหารเช้า",
+      "caption": "",
+      "time": "08:00",
+      "cue": "none"
+    },
+    "L01-COMM-01-D04-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/tschuess-ciao.jpg",
+      "alt": "เพื่อนสองคนโบกมือลาและเดินแยกกัน",
+      "caption": "แยกย้ายกลับบ้าน",
+      "time": null,
+      "cue": "none"
+    },
+    "L01-COMM-02-D01-learn-v1": {
+      "kind": "identity",
+      "role": "คุณ",
+      "givenName": "Mali",
+      "familyName": null
+    },
+    "L01-COMM-02-D03-learn-v1": {
+      "kind": "introduction",
+      "selfName": "Anna",
+      "otherName": "Mali"
+    },
+    "L01-COMM-03-D02-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/feeling-gut.jpg",
+      "alt": "ผู้หญิงยิ้มและยกนิ้วโป้ง",
+      "caption": "คุยอย่างสุภาพ · Sie",
+      "time": null,
+      "cue": "none"
+    },
+    "L01-COMM-03-D03-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/feeling-nicht-so-gut.jpg",
+      "alt": "ผู้หญิงทำหน้าหม่นและนั่งเท้าคาง",
+      "caption": "คุยกับเพื่อน",
+      "time": null,
+      "cue": "none"
+    },
+    "L01-COMM-04-D01-learn-v1": {
+      "kind": "origin",
+      "person": "Mali",
+      "role": "คุณ",
+      "country": "TH"
+    },
+    "L01-COMM-04-D02-learn-v1": {
+      "kind": "origin",
+      "person": "Anna",
+      "role": "คนที่คุณพูดถึง",
+      "country": "DE"
+    },
+    "L01-COMM-05-D01-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/name.jpg",
+      "alt": "คนหนึ่งบอกชื่อขณะพบเพื่อนใหม่",
+      "caption": "ฟังชื่อไม่ชัด",
+      "time": null,
+      "cue": "unclear-name"
+    },
+    "L01-COMM-05-D03-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/vorname.jpg",
+      "alt": "คนกำลังจดข้อมูลชื่อในแบบฟอร์ม",
+      "caption": "อีกฝ่ายช่วยสะกดให้แล้ว",
+      "time": null,
+      "cue": "spelled-name"
+    },
+    "L01-SUP-N01-learn-v1": {
+      "kind": "identity",
+      "role": "คุณ",
+      "givenName": "Mali",
+      "familyName": "Sommer"
+    },
+    "L01-SUP-N02-learn-v1": {
+      "kind": "identity",
+      "role": "คุณ",
+      "givenName": "Mali",
+      "familyName": "Sommer"
+    },
+    "L01-SUP-S01-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/vorname.jpg",
+      "alt": "คนกำลังเขียนข้อมูลชื่อในแบบฟอร์ม",
+      "caption": "กำลังจดชื่อ",
+      "time": null,
+      "cue": "write-name"
+    },
+    "L01-SUP-S02-learn-v1": {
+      "kind": "identity",
+      "role": "คุณ",
+      "givenName": "Mali",
+      "familyName": null
+    },
+    "L01-SUP-P01-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/hallo-informal.jpg",
+      "alt": "คนสองคนพบกันและพูดคุยอย่างเป็นมิตร",
+      "caption": "แนะนำตัวแล้ว · ได้ยินชื่อชัดเจน",
+      "time": null,
+      "cue": "none"
+    },
+    "L01-SUP-P02-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/hallo-informal.jpg",
+      "alt": "คนสองคนพบกันและพูดคุยอย่างเป็นมิตร",
+      "caption": "เพิ่งรู้จักกัน",
+      "time": null,
+      "cue": "none"
+    },
+    "L01-SUP-G01-learn-v1": {
+      "kind": "scene",
+      "image": "/images/lektion-1-core-vocabulary-images/gute-nacht.jpg",
+      "alt": "คนหนึ่งโบกมือลาอีกคนที่อยู่บนเตียงตอนกลางคืน",
+      "caption": "ก่อนเข้านอน",
+      "time": "22:30",
+      "cue": "none"
+    }
+  }
+}

@@ -1,0 +1,542 @@
+{
+  "reviewedAt": "2026-11-06",
+  "numbering": "one-based PDF pages; no assumed constant printed-page offset",
+  "sources": [
+    {
+      "id": "book",
+      "fileName": "หนังสือเรียน Moment A1 Lektion 1-12.pdf",
+      "sha256": "e7be5c58f91192c48e45f650a22f933fbad65b851d949c39e35d356ea869b576",
+      "method": "local PDF text extraction plus visual review of source pages/contact sheets; selected source mechanics, not an exhaustive transcription"
+    },
+    {
+      "id": "worksheet-l01-l12",
+      "fileName": "ชีท Lektion 1-12.pdf",
+      "sha256": "179102eebe38587ca39247ec62eb5d7ec05b7c95818d287f3fd10689f88e3707",
+      "method": "local PDF text extraction plus visual review of source pages/contact sheets; selected source mechanics, not an exhaustive transcription"
+    },
+    {
+      "id": "teacher-l01-l04",
+      "fileName": "สไลดิ์ของอาจารย์ Lektion 1-4.pdf",
+      "sha256": "77fc3671de9d92ebcafdde61a1e312a9b5b61af7bfea0b18dd2352d395552213",
+      "method": "local PDF text extraction plus visual review of source pages/contact sheets; selected source mechanics, not an exhaustive transcription"
+    },
+    {
+      "id": "workbook",
+      "fileName": "แบบฝึกหัด Momente A1.1  บท1-12.pdf",
+      "sha256": "fa0e7a5724dd3d7d1fcf5ba2c01c0c7bea84a756314c2389be3db917d60cdacf",
+      "method": "local PDF text extraction plus visual review of source pages/contact sheets; selected source mechanics, not an exhaustive transcription"
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "L03",
+      "mechanics": [
+        "family relationship diagram",
+        "yes/no/doch clarification",
+        "language interview/profile"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            18,
+            19,
+            20,
+            21,
+            27
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            31,
+            32,
+            35,
+            36,
+            37,
+            39,
+            40,
+            41,
+            42
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            15,
+            16
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        },
+        {
+          "sourceId": "teacher-l01-l04",
+          "pdfPages": [
+            79,
+            80,
+            81,
+            83,
+            85,
+            86,
+            87,
+            88,
+            90,
+            91
+          ],
+          "role": "classroom questions, noun/pronoun linking and price dialogues"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    },
+    {
+      "lessonId": "L04",
+      "mechanics": [
+        "price-tag dialogue",
+        "opinions and agreement",
+        "two-person information exchange"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            28,
+            29,
+            30,
+            31,
+            57
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            44,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            27,
+            28
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        },
+        {
+          "sourceId": "teacher-l01-l04",
+          "pdfPages": [
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114
+          ],
+          "role": "classroom questions, noun/pronoun linking and price dialogues"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    },
+    {
+      "lessonId": "L05",
+      "mechanics": [
+        "guess object from properties",
+        "request repetition/spelling",
+        "written and spoken email"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            33,
+            34,
+            35,
+            57
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            53,
+            54,
+            55,
+            56,
+            57,
+            58
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            31,
+            32
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    },
+    {
+      "lessonId": "L06",
+      "mechanics": [
+        "telephone role play",
+        "give/wait/end-call replies",
+        "ask for office supplies"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            37,
+            38,
+            39,
+            57
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            35,
+            36
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    },
+    {
+      "lessonId": "L07",
+      "mechanics": [
+        "ability interview",
+        "respond to compliments",
+        "hobby/frequency survey"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            41,
+            42,
+            43
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            76,
+            77,
+            78,
+            79,
+            80,
+            83,
+            85,
+            88,
+            89
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            47,
+            48
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    },
+    {
+      "lessonId": "L08",
+      "mechanics": [
+        "chat invitation and rescheduling",
+        "analog clock response",
+        "listen for meeting time"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            45,
+            46,
+            47
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            51,
+            52
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    },
+    {
+      "lessonId": "L09",
+      "mechanics": [
+        "meal preferences",
+        "café customer/server role play",
+        "food unavailable and alternatives",
+        "meal wishes"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            49,
+            50,
+            51
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            55,
+            56
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    },
+    {
+      "lessonId": "L10",
+      "mechanics": [
+        "departure/platform/gate board",
+        "read versus listen for travel details",
+        "pickup/confirmation dialogue"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            59,
+            61,
+            75
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            67,
+            68
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    },
+    {
+      "lessonId": "L11",
+      "mechanics": [
+        "Perfekt form comparison: statement, W-question, and yes/no question with auxiliary position and Partizip II at sentence end",
+        "yesterday timeline",
+        "ordered past events",
+        "opening hours and activity start times"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            64,
+            65,
+            75
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            71,
+            72
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    },
+    {
+      "lessonId": "L12",
+      "mechanics": [
+        "past-trip report",
+        "birthday-month interview",
+        "festival information profile"
+      ],
+      "references": [
+        {
+          "sourceId": "book",
+          "pdfPages": [
+            67,
+            68,
+            69,
+            75
+          ],
+          "role": "communicative functions and task mechanics"
+        },
+        {
+          "sourceId": "worksheet-l01-l12",
+          "pdfPages": [
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160
+          ],
+          "role": "supplemental classroom task mechanics"
+        },
+        {
+          "sourceId": "workbook",
+          "pdfPages": [
+            75,
+            76
+          ],
+          "role": "selected exercise mechanics; not copied answer keys"
+        }
+      ],
+      "sourceLimitations": "No external QR/Wordwall activities or publisher recordings were opened; recorded speech is product-authored. Scans/contact sheets support mechanics/function review, not every handwritten line."
+    }
+  ],
+  "boundaryNotes": [
+    "Worksheet places L10 at PDF104–119 before L09 at PDF120–135.",
+    "Workbook has inserted review/training pages: e.g. L04 exercises are PDF25–28, not PDF21–24.",
+    "Teacher PDF supports L03 and L04 only in this expansion; do not claim teacher-slide coverage for L05–L12.",
+    "Images and code-native boards are project assets, never rendered publisher page scans.",
+    "Old expansion examples were design candidates; new active bindings and actual task variants live in the generated inventory."
+  ]
+}

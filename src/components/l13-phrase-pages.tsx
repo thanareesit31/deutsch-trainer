@@ -6,9 +6,10 @@ import catalog from '@/data/l13-phrases-catalog.json';
 import {useLearning} from './learning-store';
 import {useStore,isPhrasePracticeAvailable} from './store';
 import {GrammarPilot} from './dative-pilot';
-import {LearnActivity} from './learning-pages';
 import {readL13PracticeHistory,recommendPractice,resumablePracticeSession} from '@/lib/practice-planner';
 import {PhrasePracticeInsights,ResumePracticeDialog,type PhrasePracticeEvidence} from './phrase-practice-ui';
+import {PhraseDialogueLearning} from './phrase-dialogue-learning';
+import {l13PhraseLearning} from '@/data/l13-phrase-learning';
 const previews={rating:'phraseRating',city:'phraseCity',favorite:'phraseFavorite',opinions:'phraseOpinions',basic:'phraseBasic',daily:'phraseDaily'} satisfies Record<string,Parameters<typeof GrammarPilot>[0]['topic']>;
 type Recommendation=ReturnType<typeof recommendPractice>|{kind:'learn';title:string;description:string;href:string;action:string};
 export function L13PhrasePages({mode,slug}:{mode:'learn'|'practice';slug?:string}){
@@ -29,7 +30,7 @@ export function L13PhrasePages({mode,slug}:{mode:'learn'|'practice';slug?:string
   const pending=resumablePracticeSession(sessions);
   setResumeProgress(pending?{done:pending.items.filter(item=>item.result).length,total:pending.items.length}:null);
  },[mode,slug,history.ready,history.exposures,user]);
- if(mode==='learn'&&group){const index=catalog.groups.indexOf(group);return <LearnActivity lessonId="L13" skill="phrases" group={group.group} practiceHref={allLearned?'/practice/L13/phrases/basic':'/practice/L13/phrases/'+group.slug} nextGroupHref={catalog.groups[index+1]?'/learn/L13/phrases/'+catalog.groups[index+1].slug:undefined} />;}
+ if(mode==='learn'&&group)return <PhraseDialogueLearning key={group.slug} lessonId="L13" topics={l13PhraseLearning.filter(topic=>group.ids.includes(topic.id))} scope={{id:group.slug,title:group.title,completionHref:allLearned?'/practice/L13/phrases/basic':'/practice/L13/phrases/'+group.slug,completionLabel:'ทำแบบฝึกหัด'}}/>;
  if(!history.ready||history.error)return <div role="status"><p>{history.error?'โหลดประวัติการเรียนไม่ได้ กรุณาลองใหม่':'กำลังโหลดประโยคที่คุณเรียนแล้ว…'}</p>{history.error&&<button className="button secondary" onClick={()=>{void history.reload();}}>ลองใหม่</button>}</div>;
  if(mode==='practice'&&!isPhrasePracticeAvailable(user))return <p>กำลังเตรียมแบบฝึกหัด</p>;
  const preview=slug==='rating'||slug==='city'||slug==='favorite'||slug==='opinions'||slug==='basic'||slug==='daily'?previews[slug]:null;

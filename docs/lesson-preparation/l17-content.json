@@ -1,0 +1,6205 @@
+{
+  "id": "L17",
+  "title": "แผน ความต้องการ และความฝัน",
+  "purpose": "บอกว่าอยากเป็นอะไร อยากทำอะไร และมีเงื่อนไขอะไร",
+  "prerequisites": [
+    "L02: อาชีพ",
+    "L07: กริยากับ Infinitiv",
+    "L13–L14: Dativ/คำบุพบทพื้นฐาน",
+    "L16: เวลาในอนาคต"
+  ],
+  "sequence": [
+    "รู้จักวลีแผนอาชีพและแผนส่วนตัว",
+    "werden เป็นกริยาหลักและรูปผัน",
+    "wollen + Infinitiv เพื่อบอกแผน",
+    "แยก unbedingt/vielleicht/auf keinen Fall",
+    "เพิ่มเงื่อนไข mit + Dativ / ohne + Akkusativ"
+  ],
+  "vocabulary": [
+    {
+      "kind": "chunk",
+      "headword": "einen Blog schreiben",
+      "word": "einen Blog schreiben",
+      "meaning": "เขียนบล็อก",
+      "group": "แผนอาชีพ",
+      "example": "Ich will einen Blog schreiben.",
+      "variants": [],
+      "nouns": [
+        "der Blog"
+      ],
+      "id": "L17-V001",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากเขียนบล็อก",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "einen Blog",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "schreiben.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "Chef werden",
+      "word": "Chef werden",
+      "meaning": "เป็นหัวหน้าหรือผู้บริหาร",
+      "group": "แผนอาชีพ",
+      "example": "Ich will Chef werden.",
+      "variants": [
+        "Chefin werden"
+      ],
+      "nouns": [
+        "der Chef",
+        "die Chefin"
+      ],
+      "id": "L17-V002",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากเป็นหัวหน้าหรือผู้บริหาร",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Chef",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "werden.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "Schauspieler werden",
+      "word": "Schauspieler werden",
+      "meaning": "เป็นนักแสดง",
+      "group": "แผนอาชีพ",
+      "example": "Ich will Schauspieler werden.",
+      "variants": [
+        "Schauspielerin werden"
+      ],
+      "nouns": [
+        "der Schauspieler",
+        "die Schauspielerin"
+      ],
+      "id": "L17-V003",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากเป็นนักแสดง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Schauspieler",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "werden.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "Politiker werden",
+      "word": "Politiker werden",
+      "meaning": "เป็นนักการเมือง",
+      "group": "แผนอาชีพ",
+      "example": "Ich will Politiker werden.",
+      "variants": [
+        "Politikerin werden"
+      ],
+      "nouns": [
+        "der Politiker",
+        "die Politikerin"
+      ],
+      "id": "L17-V004",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากเป็นนักการเมือง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Politiker",
+            "role": "other",
+            "label": "อาชีพ (Nominativ)"
+          },
+          {
+            "text": "werden.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "Geld verdienen",
+      "word": "Geld verdienen",
+      "meaning": "หาเงินหรือมีรายได้",
+      "group": "แผนอาชีพ",
+      "example": "Ich will Geld verdienen.",
+      "variants": [],
+      "nouns": [
+        "das Geld"
+      ],
+      "id": "L17-V005",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากหาเงินหรือมีรายได้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Geld",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "verdienen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "verb",
+      "headword": "heiraten",
+      "word": "heiraten",
+      "meaning": "แต่งงาน",
+      "group": "ครอบครัว",
+      "example": "Wir wollen heiraten.",
+      "variants": [],
+      "nouns": [],
+      "id": "L17-V006",
+      "scope": "core_bildlexikon_verb",
+      "exampleMeaning": "พวกเราอยากแต่งงาน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Wir",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "wollen",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "heiraten.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "eine Familie haben",
+      "word": "eine Familie haben",
+      "meaning": "มีครอบครัว",
+      "group": "ครอบครัว",
+      "example": "Ich will eine Familie haben.",
+      "variants": [],
+      "nouns": [
+        "die Familie"
+      ],
+      "id": "L17-V007",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากมีครอบครัว",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Familie",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "haben.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "auf einen Berg steigen",
+      "word": "auf einen Berg steigen",
+      "meaning": "ขึ้นภูเขา",
+      "group": "การเดินทางและประสบการณ์",
+      "example": "Ich will auf einen Berg steigen.",
+      "variants": [],
+      "nouns": [
+        "der Berg"
+      ],
+      "id": "L17-V008",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากขึ้นภูเขา",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "auf einen Berg",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "steigen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "durch Europa reisen",
+      "word": "durch Europa reisen",
+      "meaning": "เดินทางท่องเที่ยวไปตามประเทศในยุโรป",
+      "group": "การเดินทางและประสบการณ์",
+      "example": "Ich will durch Europa reisen.",
+      "variants": [],
+      "nouns": [],
+      "id": "L17-V009",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากเดินทางท่องเที่ยวไปตามประเทศในยุโรป",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "durch Europa",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "reisen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "um die Welt segeln",
+      "word": "um die Welt segeln",
+      "meaning": "แล่นเรือรอบโลก",
+      "group": "การเดินทางและประสบการณ์",
+      "example": "Ich will um die Welt segeln.",
+      "variants": [],
+      "nouns": [
+        "die Welt"
+      ],
+      "id": "L17-V010",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากแล่นเรือรอบโลก",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "um die Welt",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "segeln.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "im Ausland leben",
+      "word": "im Ausland leben",
+      "meaning": "อาศัยอยู่ต่างประเทศ",
+      "group": "การเดินทางและประสบการณ์",
+      "example": "Ich will im Ausland leben.",
+      "variants": [],
+      "nouns": [
+        "das Ausland"
+      ],
+      "id": "L17-V011",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากอาศัยอยู่ต่างประเทศ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "im Ausland",
+            "role": "other",
+            "label": "สถานที่"
+          },
+          {
+            "text": "leben.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "Motorrad fahren",
+      "word": "Motorrad fahren",
+      "meaning": "ขี่รถจักรยานยนต์",
+      "group": "การเดินทางและประสบการณ์",
+      "example": "Ich will Motorrad fahren.",
+      "variants": [],
+      "nouns": [
+        "das Motorrad"
+      ],
+      "id": "L17-V012",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากขี่รถจักรยานยนต์",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Motorrad",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "fahren.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "den Führerschein machen",
+      "word": "den Führerschein machen",
+      "meaning": "เรียนและสอบเพื่อให้ได้ใบขับขี่",
+      "group": "การเดินทางและประสบการณ์",
+      "example": "Ich will den Führerschein machen.",
+      "variants": [],
+      "nouns": [
+        "der Führerschein"
+      ],
+      "id": "L17-V013",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากเรียนและสอบเพื่อให้ได้ใบขับขี่",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "den Führerschein",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "machen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "ein Instrument lernen",
+      "word": "ein Instrument lernen",
+      "meaning": "เรียนเล่นเครื่องดนตรี",
+      "group": "การเรียนรู้และเวลาว่าง",
+      "example": "Ich will ein Instrument lernen.",
+      "variants": [],
+      "nouns": [
+        "das Instrument"
+      ],
+      "id": "L17-V014",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากเรียนเล่นเครื่องดนตรี",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Instrument",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "lernen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "viele Fremdsprachen lernen",
+      "word": "viele Fremdsprachen lernen",
+      "meaning": "เรียนภาษาต่างประเทศหลายภาษา",
+      "group": "การเรียนรู้และเวลาว่าง",
+      "example": "Ich will viele Fremdsprachen lernen.",
+      "variants": [],
+      "nouns": [
+        "die Fremdsprache"
+      ],
+      "id": "L17-V015",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากเรียนภาษาต่างประเทศหลายภาษา",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "viele Fremdsprachen",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "lernen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "chunk",
+      "headword": "drei Monate freihaben",
+      "word": "drei Monate freihaben",
+      "meaning": "หยุดหรือมีเวลาว่างสามเดือน",
+      "group": "การเรียนรู้และเวลาว่าง",
+      "example": "Ich will drei Monate freihaben.",
+      "variants": [],
+      "nouns": [
+        "der Monat"
+      ],
+      "id": "L17-V016",
+      "scope": "core_bildlexikon_chunk",
+      "exampleMeaning": "ฉันอยากหยุดหรือมีเวลาว่างสามเดือน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "drei Monate",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          },
+          {
+            "text": "freihaben.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Wunsch",
+      "word": "Wunsch",
+      "article": "der",
+      "plural": "die Wünsche",
+      "number": "singular",
+      "meaning": "ความปรารถนาหรือสิ่งที่อยากทำ",
+      "group": "คำประกอบแผน",
+      "example": "Ich habe einen Wunsch.",
+      "id": "L17-V017",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันมีความปรารถนาอย่างหนึ่ง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "habe",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "einen Wunsch.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Plan",
+      "word": "Plan",
+      "article": "der",
+      "plural": "die Pläne",
+      "number": "singular",
+      "meaning": "แผน",
+      "group": "คำประกอบแผน",
+      "example": "Wir haben einen Plan.",
+      "id": "L17-V018",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "พวกเรามีแผน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Wir",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "haben",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "einen Plan.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Beruf",
+      "word": "Beruf",
+      "article": "der",
+      "plural": "die Berufe",
+      "number": "singular",
+      "meaning": "อาชีพ",
+      "group": "คำประกอบแผน",
+      "example": "Der Beruf ist interessant.",
+      "id": "L17-V019",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "อาชีพนี้น่าสนใจ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Der Beruf",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "interessant.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Ausbildung",
+      "word": "Ausbildung",
+      "article": "die",
+      "plural": "die Ausbildungen",
+      "number": "singular",
+      "meaning": "การฝึกหรือเรียนวิชาชีพ",
+      "group": "คำประกอบแผน",
+      "example": "Ich will eine Ausbildung machen.",
+      "id": "L17-V020",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "ฉันอยากเรียนวิชาชีพ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Ausbildung",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "machen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Firma",
+      "word": "Firma",
+      "article": "die",
+      "plural": "die Firmen",
+      "number": "singular",
+      "meaning": "บริษัท",
+      "group": "คำประกอบแผน",
+      "example": "Wir wollen eine Firma gründen.",
+      "id": "L17-V021",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "พวกเราอยากก่อตั้งบริษัท",
+      "exampleSentences": [
+        [
+          {
+            "text": "Wir",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "wollen",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Firma",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          },
+          {
+            "text": "gründen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Geld",
+      "word": "Geld",
+      "article": "das",
+      "plural": null,
+      "number": "singular",
+      "meaning": "เงิน",
+      "group": "คำประกอบแผน",
+      "example": "Wir brauchen Geld.",
+      "id": "L17-V022",
+      "scope": "communication_or_lesson_support",
+      "exampleMeaning": "พวกเราต้องการเงิน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Wir",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "brauchen",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Geld.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "L17-werden",
+      "title": "บอกว่าจะเป็นอะไรด้วย werden",
+      "purpose": "ใช้ werden เป็นกริยาหลักเพื่อบอกการเปลี่ยนสถานะหรืออาชีพ",
+      "notes": [
+        "ผัน werden ตามประธาน เช่น ich werde และ sie wird",
+        "บอกอาชีพหลัง werden โดยทั่วไปไม่เติม ein/eine เช่น Sie wird Lehrerin",
+        "แยกรูปที่ผันแล้ว wird ออกจาก Infinitiv werden ที่ใช้หลัง will"
+      ],
+      "table": [
+        [
+          "ประธาน",
+          "รูปกริยา"
+        ],
+        [
+          "ich",
+          "werde"
+        ],
+        [
+          "du",
+          "wirst"
+        ],
+        [
+          "er / sie / es",
+          "wird"
+        ],
+        [
+          "wir",
+          "werden"
+        ],
+        [
+          "ihr",
+          "werdet"
+        ],
+        [
+          "sie / Sie",
+          "werden"
+        ]
+      ],
+      "models": [
+        {
+          "text": "Nina wird Lehrerin.",
+          "sentences": [
+            [
+              {
+                "text": "Nina",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "wird",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "Lehrerin.",
+                "role": "other",
+                "label": "อาชีพ (Nominativ)"
+              }
+            ]
+          ],
+          "meaning": "Nina จะเป็นครู"
+        },
+        {
+          "text": "Ich werde Koch.",
+          "sentences": [
+            [
+              {
+                "text": "Ich",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "werde",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "Koch.",
+                "role": "other",
+                "label": "อาชีพ (Nominativ)"
+              }
+            ]
+          ],
+          "meaning": "ฉันจะเป็นพ่อครัว"
+        }
+      ],
+      "questionIds": [
+        "A13-L17-WERDEN-001-PREP3",
+        "A13-L17-WERDEN-002-PREP3",
+        "A13-L17-WERDEN-003-PREP3",
+        "A13-L17-WERDEN-004-PREP3",
+        "A13-L17-WERDEN-005-PREP3"
+      ]
+    },
+    {
+      "id": "L17-wollen",
+      "title": "เล่าแผนและความต้องการด้วย wollen",
+      "purpose": "บอกสิ่งที่ตนอยากทำ โดยแยกระดับความตั้งใจ",
+      "notes": [
+        "ประโยคบอกเล่า: กริยาช่วยที่ผันแล้วอยู่ตำแหน่ง 2; Infinitiv อยู่ท้ายประโยค",
+        "คำถามใช่/ไม่ใช่เริ่มด้วยกริยาช่วย; คำถาม Was / Wann วางกริยาช่วยตามหลังคำถาม",
+        "unbedingt / vielleicht / auf keinen Fall สื่อระดับความตั้งใจต่างกัน ต้องมีข้อมูลเจตนาก่อนตรวจ",
+        "ใช้ wollen เมื่อเล่าแผนหรือความตั้งใจของตัวเอง"
+      ],
+      "table": [
+        [
+          "ประธาน",
+          "รูป wollen"
+        ],
+        [
+          "ich",
+          "will"
+        ],
+        [
+          "du",
+          "willst"
+        ],
+        [
+          "er / sie / es",
+          "will"
+        ],
+        [
+          "wir",
+          "wollen"
+        ],
+        [
+          "ihr",
+          "wollt"
+        ],
+        [
+          "sie / Sie",
+          "wollen"
+        ]
+      ],
+      "models": [
+        {
+          "text": "Ich will Lehrerin werden.",
+          "sentences": [
+            [
+              {
+                "text": "Ich",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "will",
+                "role": "auxiliary",
+                "label": "กริยาช่วย (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "Lehrerin",
+                "role": "other",
+                "label": "อาชีพ (Nominativ)"
+              },
+              {
+                "text": "werden.",
+                "role": "verb",
+                "label": "กริยาหลัก · Infinitiv",
+                "position": "ท้ายประโยค"
+              }
+            ]
+          ],
+          "meaning": "ฉันอยากเป็นครู"
+        },
+        {
+          "text": "Später will ich im Ausland leben.",
+          "sentences": [
+            [
+              {
+                "text": "Später",
+                "role": "time",
+                "label": "เวลา / ลำดับ",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "will",
+                "role": "auxiliary",
+                "label": "กริยาช่วย (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "ich",
+                "role": "subject",
+                "label": "ประธาน"
+              },
+              {
+                "text": "im Ausland",
+                "role": "other",
+                "label": "สถานที่"
+              },
+              {
+                "text": "leben.",
+                "role": "verb",
+                "label": "กริยาหลัก · Infinitiv",
+                "position": "ท้ายประโยค"
+              }
+            ]
+          ],
+          "meaning": "ต่อไปฉันอยากอาศัยอยู่ต่างประเทศ"
+        }
+      ],
+      "questionIds": [
+        "A13-L17-WOLLEN-001-PREP3",
+        "A13-L17-WOLLEN-002-PREP3",
+        "A13-L17-WOLLEN-003-PREP3",
+        "A13-L17-WOLLEN-004-PREP3",
+        "A13-L17-WOLLEN-005-PREP3"
+      ]
+    },
+    {
+      "id": "L17-mit-ohne",
+      "title": "บอกว่ามีหรือไม่มีสิ่งประกอบด้วย mit / ohne",
+      "purpose": "บอกว่าทำร่วมกับใคร ใช้อะไร หรือขาดสิ่งใด",
+      "notes": [
+        "mit ใช้ Dativ; ohne ใช้ Akkusativ",
+        "ให้ทราบรูป Nominativ ของคำนามก่อนฝึกเปลี่ยน Case เช่น ein Freund → mit einem Freund",
+        "อย่าเติม Artikel ลงในวลีที่ใช้แบบไม่มี Artikel เช่น ohne Geld",
+        "ใช้ mit เมื่อต้องการบอกว่ามีหรือไปด้วยกับสิ่งนั้น และ ohne เมื่อไม่มีหรือไม่ใช้สิ่งนั้น"
+      ],
+      "table": [
+        [
+          "ชนิดคำนาม",
+          "mit + Dativ",
+          "ohne + Akkusativ"
+        ],
+        [
+          "der Freund",
+          "dem / einem Freund",
+          "den / einen Freund"
+        ],
+        [
+          "das Geld",
+          "dem Geld",
+          "das Geld"
+        ],
+        [
+          "die Freundin",
+          "der / einer Freundin",
+          "die / eine Freundin"
+        ],
+        [
+          "die Freunde",
+          "den Freunden",
+          "die Freunde"
+        ]
+      ],
+      "models": [
+        {
+          "text": "Ich komme mit einem Freund.",
+          "sentences": [
+            [
+              {
+                "text": "Ich",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "komme",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "mit einem Freund.",
+                "role": "other",
+                "label": "ผู้ร่วมเดินทาง (Dativ)"
+              }
+            ]
+          ],
+          "meaning": "ฉันมากับเพื่อนผู้ชายคนหนึ่ง"
+        },
+        {
+          "text": "Ohne Geld können wir nicht anfangen.",
+          "sentences": [
+            [
+              {
+                "text": "Ohne Geld",
+                "role": "other",
+                "label": "เงื่อนไข (ohne + Akkusativ)",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "können",
+                "role": "auxiliary",
+                "label": "กริยาช่วย (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "wir",
+                "role": "subject",
+                "label": "ประธาน"
+              },
+              {
+                "text": "nicht",
+                "role": "other",
+                "label": "ส่วนขยาย / ข้อมูล"
+              },
+              {
+                "text": "anfangen.",
+                "role": "verb",
+                "label": "กริยาหลัก · Infinitiv",
+                "position": "ท้ายประโยค"
+              }
+            ]
+          ],
+          "meaning": "เราเริ่มโดยไม่มีเงินไม่ได้"
+        }
+      ],
+      "questionIds": [
+        "A13-L17-MIT-OHNE-001-PREP3",
+        "A13-L17-MIT-OHNE-002-PREP3",
+        "A13-L17-MIT-OHNE-003-PREP3",
+        "A13-L17-MIT-OHNE-004-PREP3",
+        "A13-L17-MIT-OHNE-005-PREP3",
+        "A13-L17-MIT-OHNE-MEANING-PREP-001"
+      ],
+      "diagnosticTargets": [
+        "L17-mit-ohne-meaning"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "แผนอาชีพ",
+      "purpose": "ถามและตอบว่าอยากเป็นอะไร",
+      "context": [
+        [
+          "อาชีพที่ B ต้องการ",
+          "ครูชาย"
+        ]
+      ],
+      "question": "Was willst du werden?",
+      "questionMeaning": "เธออยากเป็นอะไร",
+      "reply": "Ich will Lehrer werden.",
+      "replyMeaning": "ฉันอยากเป็นครู",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "willst",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "du",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "werden?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Lehrer",
+            "role": "other",
+            "label": "อาชีพ (Nominativ)"
+          },
+          {
+            "text": "werden.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L17-D01",
+      "questionTargetId": "L17-R001",
+      "replyTargetId": "L17-R002",
+      "requiredItemIds": [
+        "L17-R001",
+        "L17-R002"
+      ],
+      "trialIds": [
+        "L17-D01-A-try-v1",
+        "L17-D01-B-try-v1"
+      ]
+    },
+    {
+      "group": "แผนอาชีพ",
+      "purpose": "ถามแผนการฝึกวิชาชีพ",
+      "context": [
+        [
+          "แผนของ B",
+          "เริ่มการฝึกวิชาชีพปีหน้า"
+        ]
+      ],
+      "question": "Wann willst du die Ausbildung machen?",
+      "questionMeaning": "เธออยากเริ่มการฝึกวิชาชีพเมื่อไร",
+      "reply": "Ich will nächstes Jahr eine Ausbildung machen.",
+      "replyMeaning": "ฉันอยากเริ่มการฝึกวิชาชีพปีหน้า",
+      "questionSentences": [
+        [
+          {
+            "text": "Wann",
+            "role": "time",
+            "label": "ถามเวลา",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "willst",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "du",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "die Ausbildung",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "machen?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "nächstes Jahr",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          },
+          {
+            "text": "eine Ausbildung",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "machen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L17-D02",
+      "questionTargetId": "L17-R003",
+      "replyTargetId": "L17-R004",
+      "requiredItemIds": [
+        "L17-R003",
+        "L17-R004"
+      ],
+      "trialIds": [
+        "L17-D02-A-try-v1",
+        "L17-D02-B-try-v1"
+      ]
+    },
+    {
+      "group": "แผนส่วนตัว",
+      "purpose": "บอกสิ่งที่อยากทำในอนาคต",
+      "context": [
+        [
+          "แผนของ B",
+          "อาศัยอยู่ต่างประเทศ"
+        ]
+      ],
+      "question": "Was willst du später machen?",
+      "questionMeaning": "ต่อไปเธออยากทำอะไร",
+      "reply": "Ich will im Ausland leben.",
+      "replyMeaning": "ฉันอยากอาศัยอยู่ต่างประเทศ",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "willst",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "du",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "später",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          },
+          {
+            "text": "machen?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "im Ausland",
+            "role": "other",
+            "label": "สถานที่"
+          },
+          {
+            "text": "leben.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L17-D03",
+      "questionTargetId": "L17-R005",
+      "replyTargetId": "L17-R006",
+      "requiredItemIds": [
+        "L17-R005",
+        "L17-R006"
+      ],
+      "trialIds": [
+        "L17-D03-A-try-v1",
+        "L17-D03-B-try-v1"
+      ]
+    },
+    {
+      "group": "แผนส่วนตัว",
+      "purpose": "เล่าความฝันด้านการเดินทาง",
+      "context": [
+        [
+          "ความฝันของ B",
+          "ขี่รถจักรยานยนต์"
+        ]
+      ],
+      "question": "Was möchtest du noch machen?",
+      "questionMeaning": "เธอยังอยากทำอะไรอีก",
+      "reply": "Ich will Motorrad fahren.",
+      "replyMeaning": "ฉันอยากขี่รถจักรยานยนต์",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "möchtest",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "du",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "noch",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "machen?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "Motorrad",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "fahren.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L17-D04",
+      "questionTargetId": "L17-R007",
+      "replyTargetId": "L17-R008",
+      "requiredItemIds": [
+        "L17-R007",
+        "L17-R008"
+      ],
+      "trialIds": [
+        "L17-D04-A-try-v1",
+        "L17-D04-B-try-v1"
+      ]
+    },
+    {
+      "group": "ระดับความต้องการ",
+      "purpose": "บอกสิ่งที่ตั้งใจอยากทำมาก",
+      "context": [
+        [
+          "ความตั้งใจของ B",
+          "อยากเป็นแพทย์ชายอย่างแน่วแน่"
+        ]
+      ],
+      "question": "Was willst du unbedingt machen?",
+      "questionMeaning": "เธออยากทำอะไรมากเป็นพิเศษ",
+      "reply": "Ich will unbedingt Arzt werden.",
+      "replyMeaning": "ฉันตั้งใจอยากเป็นแพทย์มาก",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "willst",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "du",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "unbedingt",
+            "role": "other",
+            "label": "ความตั้งใจอย่างแน่วแน่"
+          },
+          {
+            "text": "machen?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "unbedingt",
+            "role": "other",
+            "label": "ความตั้งใจอย่างแน่วแน่"
+          },
+          {
+            "text": "Arzt",
+            "role": "other",
+            "label": "อาชีพ (Nominativ)"
+          },
+          {
+            "text": "werden.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L17-D05",
+      "questionTargetId": "L17-R009",
+      "replyTargetId": "L17-R010",
+      "requiredItemIds": [
+        "L17-R009",
+        "L17-R010"
+      ],
+      "trialIds": [
+        "L17-D05-A-try-v1",
+        "L17-D05-B-try-v1"
+      ]
+    },
+    {
+      "group": "ระดับความต้องการ",
+      "purpose": "บอกสิ่งที่ไม่อยากทำแน่นอน",
+      "context": [
+        [
+          "สิ่งที่ B ไม่ต้องการ",
+          "เป็นนักการเมือง"
+        ]
+      ],
+      "question": "Was willst du auf keinen Fall machen?",
+      "questionMeaning": "เธอไม่อยากทำอะไรแน่นอน",
+      "reply": "Ich will auf keinen Fall Politiker werden.",
+      "replyMeaning": "ฉันไม่อยากเป็นนักการเมืองแน่นอน",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "willst",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "du",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "auf keinen Fall",
+            "role": "other",
+            "label": "ความไม่ต้องการอย่างแน่นอน"
+          },
+          {
+            "text": "machen?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "will",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "auf keinen Fall",
+            "role": "other",
+            "label": "ความไม่ต้องการอย่างแน่นอน"
+          },
+          {
+            "text": "Politiker",
+            "role": "other",
+            "label": "อาชีพ (Nominativ)"
+          },
+          {
+            "text": "werden.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L17-D06",
+      "questionTargetId": "L17-R011",
+      "replyTargetId": "L17-R012",
+      "requiredItemIds": [
+        "L17-R011",
+        "L17-R012"
+      ],
+      "trialIds": [
+        "L17-D06-A-try-v1",
+        "L17-D06-B-try-v1"
+      ]
+    },
+    {
+      "group": "เงื่อนไขของแผน",
+      "purpose": "บอกว่ามากับใคร",
+      "context": [
+        [
+          "ผู้ที่ B มาด้วย",
+          "เพื่อนผู้ชายหนึ่งคน"
+        ]
+      ],
+      "question": "Mit wem kommst du?",
+      "questionMeaning": "เธอมากับใคร",
+      "reply": "Ich komme mit einem Freund.",
+      "replyMeaning": "ฉันมากับเพื่อนผู้ชายคนหนึ่ง",
+      "questionSentences": [
+        [
+          {
+            "text": "Mit wem",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "kommst",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "du?",
+            "role": "subject",
+            "label": "ประธาน"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "komme",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "mit einem Freund.",
+            "role": "other",
+            "label": "ผู้ร่วมเดินทาง (Dativ)"
+          }
+        ]
+      ],
+      "id": "L17-D07",
+      "questionTargetId": "L17-R013",
+      "replyTargetId": "L17-R014",
+      "requiredItemIds": [
+        "L17-R013",
+        "L17-R014"
+      ],
+      "trialIds": [
+        "L17-D07-A-try-v1",
+        "L17-D07-B-try-v1"
+      ]
+    },
+    {
+      "group": "เงื่อนไขของแผน",
+      "purpose": "บอกสิ่งที่ขาดไม่ได้",
+      "context": [
+        [
+          "เงื่อนไข",
+          "ต้องมีเงินจึงเริ่มได้"
+        ]
+      ],
+      "question": "Könnt ihr ohne Geld anfangen?",
+      "questionMeaning": "พวกเธอเริ่มโดยไม่มีเงินได้ไหม",
+      "reply": "Nein, ohne Geld können wir nicht anfangen.",
+      "replyMeaning": "ไม่ได้ เราเริ่มโดยไม่มีเงินไม่ได้",
+      "questionSentences": [
+        [
+          {
+            "text": "Könnt",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ihr",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "ohne Geld",
+            "role": "other",
+            "label": "เงื่อนไข (ohne + Akkusativ)"
+          },
+          {
+            "text": "anfangen?",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Nein,",
+            "role": "other",
+            "label": "ปฏิเสธ"
+          },
+          {
+            "text": "ohne Geld",
+            "role": "other",
+            "label": "เงื่อนไข (ohne + Akkusativ)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "können",
+            "role": "auxiliary",
+            "label": "กริยาช่วย (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "wir",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "nicht",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "anfangen.",
+            "role": "verb",
+            "label": "กริยาหลัก · Infinitiv",
+            "position": "ท้ายประโยค"
+          }
+        ]
+      ],
+      "id": "L17-D08",
+      "questionTargetId": "L17-R015",
+      "replyTargetId": "L17-R016",
+      "requiredItemIds": [
+        "L17-R015",
+        "L17-R016"
+      ],
+      "trialIds": [
+        "L17-D08-A-try-v1",
+        "L17-D08-B-try-v1"
+      ]
+    }
+  ],
+  "practiceCandidates": [
+    {
+      "id": "L17-V001-meaning-v1",
+      "targetId": "L17-V001",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V001"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "einen Blog schreiben",
+        "options": [
+          "เป็นหัวหน้าหรือผู้บริหาร",
+          "เขียนบล็อก",
+          "เป็นนักแสดง"
+        ]
+      },
+      "grading": {
+        "answer": "เขียนบล็อก"
+      },
+      "contextId": "L17-V001-definition"
+    },
+    {
+      "id": "L17-V001-form-v1",
+      "targetId": "L17-V001",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V001"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "เขียนบล็อก",
+        "tokens": [
+          "schreiben",
+          "Blog",
+          "einen"
+        ]
+      },
+      "grading": {
+        "answer": "einen Blog schreiben",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V001-chunk"
+    },
+    {
+      "id": "L17-V002-meaning-v1",
+      "targetId": "L17-V002",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V002"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "Chef werden",
+        "options": [
+          "เขียนบล็อก",
+          "เป็นหัวหน้าหรือผู้บริหาร",
+          "เป็นนักแสดง"
+        ]
+      },
+      "grading": {
+        "answer": "เป็นหัวหน้าหรือผู้บริหาร"
+      },
+      "contextId": "L17-V002-definition"
+    },
+    {
+      "id": "L17-V002-form-v1",
+      "targetId": "L17-V002",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V002"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "เป็นหัวหน้าหรือผู้บริหาร",
+        "tokens": [
+          "werden",
+          "Chef"
+        ]
+      },
+      "grading": {
+        "answer": "Chef werden",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V002-chunk"
+    },
+    {
+      "id": "L17-V003-meaning-v1",
+      "targetId": "L17-V003",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V003"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "Schauspieler werden",
+        "options": [
+          "เขียนบล็อก",
+          "เป็นนักแสดง",
+          "เป็นหัวหน้าหรือผู้บริหาร"
+        ]
+      },
+      "grading": {
+        "answer": "เป็นนักแสดง"
+      },
+      "contextId": "L17-V003-definition"
+    },
+    {
+      "id": "L17-V003-form-v1",
+      "targetId": "L17-V003",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V003"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "เป็นนักแสดง",
+        "tokens": [
+          "werden",
+          "Schauspieler"
+        ]
+      },
+      "grading": {
+        "answer": "Schauspieler werden",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V003-chunk"
+    },
+    {
+      "id": "L17-V004-meaning-v1",
+      "targetId": "L17-V004",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V004"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "Politiker werden",
+        "options": [
+          "เขียนบล็อก",
+          "เป็นนักการเมือง",
+          "เป็นหัวหน้าหรือผู้บริหาร"
+        ]
+      },
+      "grading": {
+        "answer": "เป็นนักการเมือง"
+      },
+      "contextId": "L17-V004-definition"
+    },
+    {
+      "id": "L17-V004-form-v1",
+      "targetId": "L17-V004",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V004"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "เป็นนักการเมือง",
+        "tokens": [
+          "werden",
+          "Politiker"
+        ]
+      },
+      "grading": {
+        "answer": "Politiker werden",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V004-chunk"
+    },
+    {
+      "id": "L17-V005-meaning-v1",
+      "targetId": "L17-V005",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V005"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "Geld verdienen",
+        "options": [
+          "เขียนบล็อก",
+          "หาเงินหรือมีรายได้",
+          "เป็นหัวหน้าหรือผู้บริหาร"
+        ]
+      },
+      "grading": {
+        "answer": "หาเงินหรือมีรายได้"
+      },
+      "contextId": "L17-V005-definition"
+    },
+    {
+      "id": "L17-V005-form-v1",
+      "targetId": "L17-V005",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V005"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "หาเงินหรือมีรายได้",
+        "tokens": [
+          "verdienen",
+          "Geld"
+        ]
+      },
+      "grading": {
+        "answer": "Geld verdienen",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V005-chunk"
+    },
+    {
+      "id": "L17-V006-meaning-v1",
+      "targetId": "L17-V006",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V006"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "heiraten",
+        "options": [
+          "มีครอบครัว",
+          "แต่งงาน",
+          "เขียนบล็อก"
+        ]
+      },
+      "grading": {
+        "answer": "แต่งงาน"
+      },
+      "contextId": "L17-V006-definition"
+    },
+    {
+      "id": "L17-V006-spelling-v1",
+      "targetId": "L17-V006",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter"
+      ],
+      "requiredLearnedIds": [
+        "L17-V006"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "แต่งงาน"
+      },
+      "grading": {
+        "answer": "heiraten",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L17-V006-recall"
+    },
+    {
+      "id": "L17-V007-meaning-v1",
+      "targetId": "L17-V007",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V007"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "eine Familie haben",
+        "options": [
+          "แต่งงาน",
+          "มีครอบครัว",
+          "เขียนบล็อก"
+        ]
+      },
+      "grading": {
+        "answer": "มีครอบครัว"
+      },
+      "contextId": "L17-V007-definition"
+    },
+    {
+      "id": "L17-V007-form-v1",
+      "targetId": "L17-V007",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V007"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "มีครอบครัว",
+        "tokens": [
+          "haben",
+          "Familie",
+          "eine"
+        ]
+      },
+      "grading": {
+        "answer": "eine Familie haben",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V007-chunk"
+    },
+    {
+      "id": "L17-V008-meaning-v1",
+      "targetId": "L17-V008",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V008"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "auf einen Berg steigen",
+        "options": [
+          "เดินทางท่องเที่ยวไปตามประเทศในยุโรป",
+          "ขึ้นภูเขา",
+          "แล่นเรือรอบโลก"
+        ]
+      },
+      "grading": {
+        "answer": "ขึ้นภูเขา"
+      },
+      "contextId": "L17-V008-definition"
+    },
+    {
+      "id": "L17-V008-form-v1",
+      "targetId": "L17-V008",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V008"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "ขึ้นภูเขา",
+        "tokens": [
+          "steigen",
+          "Berg",
+          "einen",
+          "auf"
+        ]
+      },
+      "grading": {
+        "answer": "auf einen Berg steigen",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V008-chunk"
+    },
+    {
+      "id": "L17-V009-meaning-v1",
+      "targetId": "L17-V009",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V009"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "durch Europa reisen",
+        "options": [
+          "ขึ้นภูเขา",
+          "เดินทางท่องเที่ยวไปตามประเทศในยุโรป",
+          "แล่นเรือรอบโลก"
+        ]
+      },
+      "grading": {
+        "answer": "เดินทางท่องเที่ยวไปตามประเทศในยุโรป"
+      },
+      "contextId": "L17-V009-definition"
+    },
+    {
+      "id": "L17-V009-form-v1",
+      "targetId": "L17-V009",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V009"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "เดินทางท่องเที่ยวไปตามประเทศในยุโรป",
+        "tokens": [
+          "reisen",
+          "Europa",
+          "durch"
+        ]
+      },
+      "grading": {
+        "answer": "durch Europa reisen",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V009-chunk"
+    },
+    {
+      "id": "L17-V010-meaning-v1",
+      "targetId": "L17-V010",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V010"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "um die Welt segeln",
+        "options": [
+          "ขึ้นภูเขา",
+          "แล่นเรือรอบโลก",
+          "เดินทางท่องเที่ยวไปตามประเทศในยุโรป"
+        ]
+      },
+      "grading": {
+        "answer": "แล่นเรือรอบโลก"
+      },
+      "contextId": "L17-V010-definition"
+    },
+    {
+      "id": "L17-V010-form-v1",
+      "targetId": "L17-V010",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V010"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "แล่นเรือรอบโลก",
+        "tokens": [
+          "segeln",
+          "Welt",
+          "die",
+          "um"
+        ]
+      },
+      "grading": {
+        "answer": "um die Welt segeln",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V010-chunk"
+    },
+    {
+      "id": "L17-V011-meaning-v1",
+      "targetId": "L17-V011",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V011"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "im Ausland leben",
+        "options": [
+          "ขึ้นภูเขา",
+          "อาศัยอยู่ต่างประเทศ",
+          "เดินทางท่องเที่ยวไปตามประเทศในยุโรป"
+        ]
+      },
+      "grading": {
+        "answer": "อาศัยอยู่ต่างประเทศ"
+      },
+      "contextId": "L17-V011-definition"
+    },
+    {
+      "id": "L17-V011-form-v1",
+      "targetId": "L17-V011",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V011"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "อาศัยอยู่ต่างประเทศ",
+        "tokens": [
+          "leben",
+          "Ausland",
+          "im"
+        ]
+      },
+      "grading": {
+        "answer": "im Ausland leben",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V011-chunk"
+    },
+    {
+      "id": "L17-V012-meaning-v1",
+      "targetId": "L17-V012",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V012"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "Motorrad fahren",
+        "options": [
+          "ขึ้นภูเขา",
+          "ขี่รถจักรยานยนต์",
+          "เดินทางท่องเที่ยวไปตามประเทศในยุโรป"
+        ]
+      },
+      "grading": {
+        "answer": "ขี่รถจักรยานยนต์"
+      },
+      "contextId": "L17-V012-definition"
+    },
+    {
+      "id": "L17-V012-form-v1",
+      "targetId": "L17-V012",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 1,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V012"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "ขี่รถจักรยานยนต์",
+        "tokens": [
+          "fahren",
+          "Motorrad"
+        ]
+      },
+      "grading": {
+        "answer": "Motorrad fahren",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V012-chunk"
+    },
+    {
+      "id": "L17-V013-meaning-v1",
+      "targetId": "L17-V013",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V013"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "den Führerschein machen",
+        "options": [
+          "ขึ้นภูเขา",
+          "เรียนและสอบเพื่อให้ได้ใบขับขี่",
+          "เดินทางท่องเที่ยวไปตามประเทศในยุโรป"
+        ]
+      },
+      "grading": {
+        "answer": "เรียนและสอบเพื่อให้ได้ใบขับขี่"
+      },
+      "contextId": "L17-V013-definition"
+    },
+    {
+      "id": "L17-V013-form-v1",
+      "targetId": "L17-V013",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V013"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "เรียนและสอบเพื่อให้ได้ใบขับขี่",
+        "tokens": [
+          "machen",
+          "Führerschein",
+          "den"
+        ]
+      },
+      "grading": {
+        "answer": "den Führerschein machen",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V013-chunk"
+    },
+    {
+      "id": "L17-V014-meaning-v1",
+      "targetId": "L17-V014",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V014"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "ein Instrument lernen",
+        "options": [
+          "เรียนภาษาต่างประเทศหลายภาษา",
+          "เรียนเล่นเครื่องดนตรี",
+          "หยุดหรือมีเวลาว่างสามเดือน"
+        ]
+      },
+      "grading": {
+        "answer": "เรียนเล่นเครื่องดนตรี"
+      },
+      "contextId": "L17-V014-definition"
+    },
+    {
+      "id": "L17-V014-form-v1",
+      "targetId": "L17-V014",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V014"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "เรียนเล่นเครื่องดนตรี",
+        "tokens": [
+          "lernen",
+          "Instrument",
+          "ein"
+        ]
+      },
+      "grading": {
+        "answer": "ein Instrument lernen",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V014-chunk"
+    },
+    {
+      "id": "L17-V015-meaning-v1",
+      "targetId": "L17-V015",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V015"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "viele Fremdsprachen lernen",
+        "options": [
+          "เรียนเล่นเครื่องดนตรี",
+          "เรียนภาษาต่างประเทศหลายภาษา",
+          "หยุดหรือมีเวลาว่างสามเดือน"
+        ]
+      },
+      "grading": {
+        "answer": "เรียนภาษาต่างประเทศหลายภาษา"
+      },
+      "contextId": "L17-V015-definition"
+    },
+    {
+      "id": "L17-V015-form-v1",
+      "targetId": "L17-V015",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V015"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "เรียนภาษาต่างประเทศหลายภาษา",
+        "tokens": [
+          "lernen",
+          "Fremdsprachen",
+          "viele"
+        ]
+      },
+      "grading": {
+        "answer": "viele Fremdsprachen lernen",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V015-chunk"
+    },
+    {
+      "id": "L17-V016-meaning-v1",
+      "targetId": "L17-V016",
+      "subskill": "lexical_chunk_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options"
+      ],
+      "requiredLearnedIds": [
+        "L17-V016"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "drei Monate freihaben",
+        "options": [
+          "เรียนเล่นเครื่องดนตรี",
+          "หยุดหรือมีเวลาว่างสามเดือน",
+          "เรียนภาษาต่างประเทศหลายภาษา"
+        ]
+      },
+      "grading": {
+        "answer": "หยุดหรือมีเวลาว่างสามเดือน"
+      },
+      "contextId": "L17-V016-definition"
+    },
+    {
+      "id": "L17-V016-form-v1",
+      "targetId": "L17-V016",
+      "subskill": "lexical_chunk_form",
+      "kind": "chunk_reconstruction",
+      "difficulty": 2,
+      "difficultyRationale": "วลีสองคำมีภาระการจัดลำดับน้อยกว่าวลีหลายคำที่มี Artikel/คำบุพบท; ทั้งสองแบบให้คำไว้ จึงไม่เป็นหลักฐานสะกดเองหรือสร้างประโยคอิสระ",
+      "assistanceAvailable": [
+        "supplied-words"
+      ],
+      "requiredLearnedIds": [
+        "L17-V016"
+      ],
+      "public": {
+        "prompt": "เรียงวลีตามความหมายที่ให้",
+        "meaning": "หยุดหรือมีเวลาว่างสามเดือน",
+        "tokens": [
+          "freihaben",
+          "Monate",
+          "drei"
+        ]
+      },
+      "grading": {
+        "answer": "drei Monate freihaben",
+        "variantPolicy": "ให้ชุดคำและตรวจแยกตามรูปคำที่เลือก; ไม่อนุมานรูปอื่นจากคะแนนรูปหลัก"
+      },
+      "contextId": "L17-V016-chunk"
+    },
+    {
+      "id": "L17-V017-meaning-v1",
+      "targetId": "L17-V017",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V017"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Wunsch",
+        "options": [
+          "แผน",
+          "ความปรารถนาหรือสิ่งที่อยากทำ",
+          "อาชีพ"
+        ]
+      },
+      "grading": {
+        "answer": "ความปรารถนาหรือสิ่งที่อยากทำ"
+      },
+      "contextId": "L17-V017-definition"
+    },
+    {
+      "id": "L17-V017-article-v1",
+      "targetId": "L17-V017",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V017"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Wunsch",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L17-V017-lemma"
+    },
+    {
+      "id": "L17-V017-spelling-v1",
+      "targetId": "L17-V017",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V017"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ความปรารถนาหรือสิ่งที่อยากทำ",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Wunsch",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L17-V017-recall"
+    },
+    {
+      "id": "L17-V018-meaning-v1",
+      "targetId": "L17-V018",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V018"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Plan",
+        "options": [
+          "ความปรารถนาหรือสิ่งที่อยากทำ",
+          "แผน",
+          "อาชีพ"
+        ]
+      },
+      "grading": {
+        "answer": "แผน"
+      },
+      "contextId": "L17-V018-definition"
+    },
+    {
+      "id": "L17-V018-article-v1",
+      "targetId": "L17-V018",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V018"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Plan",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L17-V018-lemma"
+    },
+    {
+      "id": "L17-V018-spelling-v1",
+      "targetId": "L17-V018",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V018"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "แผน",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Plan",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L17-V018-recall"
+    },
+    {
+      "id": "L17-V019-meaning-v1",
+      "targetId": "L17-V019",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V019"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Beruf",
+        "options": [
+          "ความปรารถนาหรือสิ่งที่อยากทำ",
+          "อาชีพ",
+          "แผน"
+        ]
+      },
+      "grading": {
+        "answer": "อาชีพ"
+      },
+      "contextId": "L17-V019-definition"
+    },
+    {
+      "id": "L17-V019-article-v1",
+      "targetId": "L17-V019",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V019"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Beruf",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L17-V019-lemma"
+    },
+    {
+      "id": "L17-V019-spelling-v1",
+      "targetId": "L17-V019",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V019"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "อาชีพ",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Beruf",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L17-V019-recall"
+    },
+    {
+      "id": "L17-V020-meaning-v1",
+      "targetId": "L17-V020",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V020"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Ausbildung",
+        "options": [
+          "ความปรารถนาหรือสิ่งที่อยากทำ",
+          "การฝึกหรือเรียนวิชาชีพ",
+          "แผน"
+        ]
+      },
+      "grading": {
+        "answer": "การฝึกหรือเรียนวิชาชีพ"
+      },
+      "contextId": "L17-V020-definition"
+    },
+    {
+      "id": "L17-V020-article-v1",
+      "targetId": "L17-V020",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V020"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Ausbildung",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L17-V020-lemma"
+    },
+    {
+      "id": "L17-V020-spelling-v1",
+      "targetId": "L17-V020",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V020"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "การฝึกหรือเรียนวิชาชีพ",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Ausbildung",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L17-V020-recall"
+    },
+    {
+      "id": "L17-V021-meaning-v1",
+      "targetId": "L17-V021",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V021"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Firma",
+        "options": [
+          "ความปรารถนาหรือสิ่งที่อยากทำ",
+          "บริษัท",
+          "แผน"
+        ]
+      },
+      "grading": {
+        "answer": "บริษัท"
+      },
+      "contextId": "L17-V021-definition"
+    },
+    {
+      "id": "L17-V021-article-v1",
+      "targetId": "L17-V021",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V021"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Firma",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L17-V021-lemma"
+    },
+    {
+      "id": "L17-V021-spelling-v1",
+      "targetId": "L17-V021",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V021"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "บริษัท",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Firma",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L17-V021-recall"
+    },
+    {
+      "id": "L17-V022-meaning-v1",
+      "targetId": "L17-V022",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V022"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Geld",
+        "options": [
+          "ความปรารถนาหรือสิ่งที่อยากทำ",
+          "เงิน",
+          "แผน"
+        ]
+      },
+      "grading": {
+        "answer": "เงิน"
+      },
+      "contextId": "L17-V022-definition"
+    },
+    {
+      "id": "L17-V022-article-v1",
+      "targetId": "L17-V022",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L17-V022"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Geld",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L17-V022-lemma"
+    },
+    {
+      "id": "L17-V022-spelling-v1",
+      "targetId": "L17-V022",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L17-V022"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เงิน",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Geld",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L17-V022-recall"
+    },
+    {
+      "id": "A13-L17-WERDEN-001-PREP3",
+      "version": 3,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Nina ___ Lehrerin.",
+      "options": [
+        "wird",
+        "werde",
+        "wirst"
+      ],
+      "acceptedAnswers": [
+        "wird"
+      ],
+      "subskill": "werden_conjugation",
+      "difficulty": 1,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "Nina เป็นบุคคลที่สามเอกพจน์ จึงใช้ wird และ Lehrerin บอกอาชีพหลัง werden",
+      "knownErrors": {
+        "werde": "verb_form",
+        "wirst": "verb_form"
+      },
+      "targetId": "L17-werden",
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Nina wird Lehrerin.",
+        "sentences": [
+          [
+            {
+              "text": "Nina",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "wird",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Lehrerin.",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            }
+          ]
+        ],
+        "meaning": "Nina จะเป็นครู",
+        "reason": "Nina เป็นบุคคลที่สามเอกพจน์ จึงใช้ wird และ Lehrerin บอกอาชีพหลัง werden"
+      }
+    },
+    {
+      "id": "A13-L17-WERDEN-002-PREP3",
+      "version": 3,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Wir ___ bald Eltern.",
+      "options": [
+        "werden",
+        "wird",
+        "werdet"
+      ],
+      "acceptedAnswers": [
+        "werden"
+      ],
+      "subskill": "werden_conjugation",
+      "difficulty": 1,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "ประธาน Wir ใช้ werden ส่วน bald บอกว่าในไม่ช้า",
+      "knownErrors": {
+        "wird": "verb_form",
+        "werdet": "verb_form"
+      },
+      "targetId": "L17-werden",
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Wir werden bald Eltern.",
+        "sentences": [
+          [
+            {
+              "text": "Wir",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "werden",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "bald",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "Eltern.",
+              "role": "other",
+              "label": "สถานะที่เปลี่ยนเป็น (Nominativ)"
+            }
+          ]
+        ],
+        "meaning": "พวกเรากำลังจะเป็นพ่อแม่ในไม่ช้า",
+        "reason": "ประธาน Wir ใช้ werden ส่วน bald บอกว่าในไม่ช้า"
+      }
+    },
+    {
+      "id": "A13-L17-WERDEN-003-PREP3",
+      "version": 3,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Ich ___ Koch.",
+      "acceptedAnswers": [
+        "werde"
+      ],
+      "subskill": "werden_conjugation",
+      "difficulty": 2,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "ประธาน Ich ใช้ werde และเมื่อบอกอาชีพแบบนี้ไม่เติม ein หน้า Koch",
+      "knownErrors": {},
+      "targetId": "L17-werden",
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "cue": "ผันกริยา werden",
+      "feedback": {
+        "text": "Ich werde Koch.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "werde",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Koch.",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            }
+          ]
+        ],
+        "meaning": "ฉันจะเป็นพ่อครัว",
+        "reason": "ประธาน Ich ใช้ werde และเมื่อบอกอาชีพแบบนี้ไม่เติม ein หน้า Koch"
+      }
+    },
+    {
+      "id": "A13-L17-WERDEN-004-PREP3",
+      "version": 3,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Du ___ Ingenieurin.",
+      "acceptedAnswers": [
+        "wirst"
+      ],
+      "subskill": "werden_conjugation",
+      "difficulty": 2,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "ประธาน Du ใช้รูป wirst",
+      "knownErrors": {},
+      "targetId": "L17-werden",
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "cue": "ผันกริยา werden",
+      "feedback": {
+        "text": "Du wirst Ingenieurin.",
+        "sentences": [
+          [
+            {
+              "text": "Du",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "wirst",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Ingenieurin.",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            }
+          ]
+        ],
+        "meaning": "เธอจะเป็นวิศวกรหญิง",
+        "reason": "ประธาน Du ใช้รูป wirst"
+      }
+    },
+    {
+      "id": "A13-L17-WERDEN-005-PREP3",
+      "version": 3,
+      "topicId": "L17-werden",
+      "variantGroup": "a13-l17-werden-005",
+      "kind": "order",
+      "prompt": "เรียงประโยคตามแบบที่เรียน โดยเริ่มด้วย Er",
+      "tokens": [
+        "Arzt.",
+        "wird",
+        "Er"
+      ],
+      "acceptedAnswers": [
+        "Er wird Arzt."
+      ],
+      "subskill": "declarative_word_order",
+      "difficulty": 1,
+      "hint": "ดูประธานแล้วเลือกรูป Präsens ของ werden",
+      "explanation": "ประโยคเริ่มด้วย Er จึงวาง wird ตำแหน่ง 2 ตามด้วยอาชีพ Arzt",
+      "knownErrors": {},
+      "targetId": "L17-werden",
+      "requiredConceptTargets": [
+        "L17-werden"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "startWith": "Er",
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "feedback": {
+        "text": "Er wird Arzt.",
+        "sentences": [
+          [
+            {
+              "text": "Er",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "wird",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Arzt.",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            }
+          ]
+        ],
+        "meaning": "เขาจะเป็นแพทย์",
+        "reason": "ประโยคเริ่มด้วย Er จึงวาง wird ตำแหน่ง 2 ตามด้วยอาชีพ Arzt"
+      }
+    },
+    {
+      "id": "A13-L17-WOLLEN-001-PREP3",
+      "version": 3,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Ihr ___ heute Deutsch lernen.",
+      "options": [
+        "wollt",
+        "wollen",
+        "will"
+      ],
+      "acceptedAnswers": [
+        "wollt"
+      ],
+      "subskill": "wollen_conjugation",
+      "difficulty": 1,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ประธาน Ihr ใช้ wollt ส่วน lernen เป็น Infinitiv อยู่ท้ายประโยค",
+      "knownErrors": {
+        "wollen": "verb_form",
+        "will": "verb_form"
+      },
+      "targetId": "L17-wollen",
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Ihr wollt heute Deutsch lernen.",
+        "sentences": [
+          [
+            {
+              "text": "Ihr",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "wollt",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "heute",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "Deutsch",
+              "role": "other",
+              "label": "ภาษาที่เรียน (กรรม)"
+            },
+            {
+              "text": "lernen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "วันนี้พวกเธออยากเรียนภาษาเยอรมัน",
+        "reason": "ประธาน Ihr ใช้ wollt ส่วน lernen เป็น Infinitiv อยู่ท้ายประโยค"
+      }
+    },
+    {
+      "id": "A13-L17-WOLLEN-002-PREP3",
+      "version": 3,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Frau Koch ___ morgen reisen.",
+      "options": [
+        "will",
+        "wollen",
+        "wollt"
+      ],
+      "acceptedAnswers": [
+        "will"
+      ],
+      "subskill": "wollen_conjugation",
+      "difficulty": 1,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "Frau Koch เป็นคนเดียว ใช้รูป will ส่วน reisen อยู่ท้าย",
+      "knownErrors": {
+        "wollen": "verb_form",
+        "wollt": "verb_form"
+      },
+      "targetId": "L17-wollen",
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Frau Koch will morgen reisen.",
+        "sentences": [
+          [
+            {
+              "text": "Frau Koch",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "morgen",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "reisen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "คุณ Koch อยากเดินทางพรุ่งนี้",
+        "reason": "Frau Koch เป็นคนเดียว ใช้รูป will ส่วน reisen อยู่ท้าย"
+      }
+    },
+    {
+      "id": "A13-L17-WOLLEN-003-PREP3",
+      "version": 3,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Ich ___ Musiker werden.",
+      "acceptedAnswers": [
+        "will"
+      ],
+      "subskill": "wollen_conjugation",
+      "difficulty": 2,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ประธาน Ich ใช้ will และ werden อยู่ท้ายหลังอาชีพที่อยากเป็น",
+      "knownErrors": {},
+      "targetId": "L17-wollen",
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "cue": "ผันกริยา wollen",
+      "feedback": {
+        "text": "Ich will Musiker werden.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Musiker",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            },
+            {
+              "text": "werden.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "ฉันอยากเป็นนักดนตรี",
+        "reason": "ประธาน Ich ใช้ will และ werden อยู่ท้ายหลังอาชีพที่อยากเป็น"
+      }
+    },
+    {
+      "id": "A13-L17-WOLLEN-004-PREP3",
+      "version": 3,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Wir ___ eine Firma gründen.",
+      "acceptedAnswers": [
+        "wollen"
+      ],
+      "subskill": "wollen_conjugation",
+      "difficulty": 2,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ประธาน Wir ใช้ wollen ส่วน gründen อยู่ท้ายและ eine Firma เป็นสิ่งที่อยากก่อตั้ง",
+      "knownErrors": {},
+      "targetId": "L17-wollen",
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "cue": "ผันกริยา wollen",
+      "feedback": {
+        "text": "Wir wollen eine Firma gründen.",
+        "sentences": [
+          [
+            {
+              "text": "Wir",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "wollen",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "eine Firma",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "gründen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "พวกเราอยากก่อตั้งบริษัท",
+        "reason": "ประธาน Wir ใช้ wollen ส่วน gründen อยู่ท้ายและ eine Firma เป็นสิ่งที่อยากก่อตั้ง"
+      }
+    },
+    {
+      "id": "A13-L17-WOLLEN-005-PREP3",
+      "version": 3,
+      "topicId": "L17-wollen",
+      "variantGroup": "a13-l17-wollen-005",
+      "kind": "order",
+      "prompt": "เรียงประโยคตามแบบที่เรียน โดยเริ่มด้วย Sie",
+      "tokens": [
+        "studieren.",
+        "Berlin",
+        "in",
+        "will",
+        "Sie"
+      ],
+      "acceptedAnswers": [
+        "Sie will in Berlin studieren."
+      ],
+      "subskill": "modal_sentence_word_order",
+      "difficulty": 2,
+      "hint": "ผัน wollen ตามประธานและวางกริยาหลักรูป Infinitiv ท้ายประโยค",
+      "explanation": "ในประโยคนี้ Sie หมายถึงเธอ จึงใช้ will; in Berlin บอกสถานที่และ studieren อยู่ท้าย",
+      "knownErrors": {},
+      "targetId": "L17-wollen",
+      "requiredConceptTargets": [
+        "L17-wollen"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "startWith": "Sie",
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "feedback": {
+        "text": "Sie will in Berlin studieren.",
+        "sentences": [
+          [
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "in Berlin",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "studieren.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "meaning": "เธออยากเรียนที่เบอร์ลิน",
+        "reason": "ในประโยคนี้ Sie หมายถึงเธอ จึงใช้ will; in Berlin บอกสถานที่และ studieren อยู่ท้าย"
+      }
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-001-PREP3",
+      "version": 3,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Sie fährt mit ___ Bus.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "acceptedAnswers": [
+        "dem"
+      ],
+      "subskill": "preposition_case_inflection",
+      "difficulty": 1,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "mit ใช้ Dativ; รูปต้นทาง der Bus จึงเปลี่ยนเป็น dem Bus",
+      "knownErrors": {
+        "den": "case",
+        "der": "case"
+      },
+      "targetId": "L17-mit-ohne",
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options",
+        "supplied-lemma-or-base-form"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "cue": "คำนามต้นทาง der Bus; เปลี่ยนรูปเมื่อใช้ mit",
+      "feedback": {
+        "text": "Sie fährt mit dem Bus.",
+        "sentences": [
+          [
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "fährt",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "mit dem Bus.",
+              "role": "other",
+              "label": "วิธีเดินทาง (mit + Dativ)"
+            }
+          ]
+        ],
+        "meaning": "เธอเดินทางด้วยรถโดยสารประจำทาง",
+        "reason": "mit ใช้ Dativ; รูปต้นทาง der Bus จึงเปลี่ยนเป็น dem Bus"
+      }
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-002-PREP3",
+      "version": 3,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Er geht ohne ___ Schirm.",
+      "options": [
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "acceptedAnswers": [
+        "einen"
+      ],
+      "subskill": "preposition_case_inflection",
+      "difficulty": 1,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "ohne ใช้ Akkusativ; รูปต้นทาง ein Schirm จึงเปลี่ยนเป็น einen Schirm",
+      "knownErrors": {
+        "einem": "case",
+        "ein": "case"
+      },
+      "targetId": "L17-mit-ohne",
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options",
+        "supplied-lemma-or-base-form"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "cue": "คำนามต้นทาง ein Schirm; เปลี่ยนรูปเมื่อใช้ ohne",
+      "feedback": {
+        "text": "Er geht ohne einen Schirm.",
+        "sentences": [
+          [
+            {
+              "text": "Er",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "geht",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ohne einen Schirm.",
+              "role": "other",
+              "label": "สิ่งที่ไม่มีไปด้วย (ohne + Akkusativ)"
+            }
+          ]
+        ],
+        "meaning": "เขาไปโดยไม่มีร่ม",
+        "reason": "ohne ใช้ Akkusativ; รูปต้นทาง ein Schirm จึงเปลี่ยนเป็น einen Schirm"
+      }
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-003-PREP3",
+      "version": 3,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Ich komme mit ___ Freundin.",
+      "acceptedAnswers": [
+        "einer"
+      ],
+      "subskill": "preposition_case_inflection",
+      "difficulty": 2,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "โจทย์ให้ eine Freundin มาแล้ว; หลัง mit เปลี่ยนเป็น Dativ จึงใช้ einer",
+      "knownErrors": {},
+      "targetId": "L17-mit-ohne",
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma-or-base-form"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "cue": "เปลี่ยนจาก eine Freundin โดยใช้ mit",
+      "feedback": {
+        "text": "Ich komme mit einer Freundin.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "komme",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "mit einer Freundin.",
+              "role": "other",
+              "label": "ผู้ร่วมเดินทาง (mit + Dativ)"
+            }
+          ]
+        ],
+        "meaning": "ฉันมากับเพื่อนผู้หญิงคนหนึ่ง",
+        "reason": "โจทย์ให้ eine Freundin มาแล้ว; หลัง mit เปลี่ยนเป็น Dativ จึงใช้ einer"
+      }
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-004-PREP3",
+      "version": 3,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Sie geht ohne ___ Hund.",
+      "acceptedAnswers": [
+        "den"
+      ],
+      "subskill": "preposition_case_inflection",
+      "difficulty": 2,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "โจทย์ให้ der Hund มาแล้ว; หลัง ohne เปลี่ยนเป็น Akkusativ จึงใช้ den",
+      "knownErrors": {},
+      "targetId": "L17-mit-ohne",
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-lemma-or-base-form"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "cue": "เปลี่ยนจาก der Hund โดยใช้ ohne",
+      "feedback": {
+        "text": "Sie geht ohne den Hund.",
+        "sentences": [
+          [
+            {
+              "text": "Sie",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "geht",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ohne den Hund.",
+              "role": "other",
+              "label": "ผู้ที่ไม่ได้ไปด้วย (ohne + Akkusativ)"
+            }
+          ]
+        ],
+        "meaning": "เธอไปโดยไม่ได้พาสุนัขไปด้วย",
+        "reason": "โจทย์ให้ der Hund มาแล้ว; หลัง ohne เปลี่ยนเป็น Akkusativ จึงใช้ den"
+      }
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-005-PREP3",
+      "version": 3,
+      "topicId": "L17-mit-ohne",
+      "variantGroup": "a13-l17-mit-ohne-005",
+      "kind": "order",
+      "prompt": "เรียงประโยคตามแบบที่เรียน โดยเริ่มด้วย Ich",
+      "tokens": [
+        "Zug.",
+        "dem",
+        "mit",
+        "fahre",
+        "Ich"
+      ],
+      "acceptedAnswers": [
+        "Ich fahre mit dem Zug."
+      ],
+      "subskill": "declarative_word_order",
+      "difficulty": 2,
+      "hint": "mit ใช้ Dativ ส่วน ohne ใช้ Akkusativ",
+      "explanation": "เริ่มด้วย Ich แล้ววาง fahre ตำแหน่ง 2; กลุ่ม mit dem Zug บอกวิธีเดินทาง",
+      "knownErrors": {},
+      "targetId": "L17-mit-ohne",
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "startWith": "Ich",
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "feedback": {
+        "text": "Ich fahre mit dem Zug.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "fahre",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "mit dem Zug.",
+              "role": "other",
+              "label": "วิธีเดินทาง (mit + Dativ)"
+            }
+          ]
+        ],
+        "meaning": "ฉันเดินทางด้วยรถไฟ",
+        "reason": "เริ่มด้วย Ich แล้ววาง fahre ตำแหน่ง 2; กลุ่ม mit dem Zug บอกวิธีเดินทาง"
+      }
+    },
+    {
+      "id": "L17-D01-A-try-v1",
+      "targetId": "L17-R001",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R001",
+        "L17-R002"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ถามและตอบว่าอยากเป็นอะไร",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "อาชีพที่ B ต้องการ",
+          "ครูชาย"
+        ]
+      ],
+      "prompt": "Ich will Lehrer werden.",
+      "feedback": {
+        "question": "Was willst du werden?",
+        "reply": "Ich will Lehrer werden.",
+        "questionMeaning": "เธออยากเป็นอะไร",
+        "replyMeaning": "ฉันอยากเป็นครู",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "werden?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Lehrer",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            },
+            {
+              "text": "werden.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "will ใช้บอกสิ่งที่อยากเป็น และ werden อยู่ท้าย; เมื่อบอกอาชีพ Lehrer ในรูปนี้ไม่เติม ein"
+      },
+      "grading": {
+        "answer": "Was willst du werden?"
+      },
+      "contextId": "L17-D01",
+      "tokens": [
+        "werden?",
+        "du",
+        "willst",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L17-D01-B-try-v1",
+      "targetId": "L17-R002",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L17-R001",
+        "L17-R002"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ถามและตอบว่าอยากเป็นอะไร",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "อาชีพที่ B ต้องการ",
+          "ครูชาย"
+        ]
+      ],
+      "prompt": "Was willst du werden?",
+      "feedback": {
+        "question": "Was willst du werden?",
+        "reply": "Ich will Lehrer werden.",
+        "questionMeaning": "เธออยากเป็นอะไร",
+        "replyMeaning": "ฉันอยากเป็นครู",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "werden?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Lehrer",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            },
+            {
+              "text": "werden.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "will ใช้บอกสิ่งที่อยากเป็น และ werden อยู่ท้าย; เมื่อบอกอาชีพ Lehrer ในรูปนี้ไม่เติม ein"
+      },
+      "grading": {
+        "answer": "Ich will Lehrer werden."
+      },
+      "contextId": "L17-D01",
+      "options": [
+        "Ich will Arzt werden.",
+        "Ich will Lehrer werden.",
+        "Ich will Schauspieler werden."
+      ]
+    },
+    {
+      "id": "L17-D02-A-try-v1",
+      "targetId": "L17-R003",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R003",
+        "L17-R004"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ถามแผนการฝึกวิชาชีพ",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "แผนของ B",
+          "เริ่มการฝึกวิชาชีพปีหน้า"
+        ]
+      ],
+      "prompt": "Ich will nächstes Jahr eine Ausbildung machen.",
+      "feedback": {
+        "question": "Wann willst du die Ausbildung machen?",
+        "reply": "Ich will nächstes Jahr eine Ausbildung machen.",
+        "questionMeaning": "เธออยากเริ่มการฝึกวิชาชีพเมื่อไร",
+        "replyMeaning": "ฉันอยากเริ่มการฝึกวิชาชีพปีหน้า",
+        "questionSentences": [
+          [
+            {
+              "text": "Wann",
+              "role": "time",
+              "label": "ถามเวลา",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "die Ausbildung",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "nächstes Jahr",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "eine Ausbildung",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "machen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "nächstes Jahr ระบุปีหน้า ส่วน machen เป็น Infinitiv อยู่ท้ายหลังกรอบ will"
+      },
+      "grading": {
+        "answer": "Wann willst du die Ausbildung machen?"
+      },
+      "contextId": "L17-D02",
+      "tokens": [
+        "machen?",
+        "Ausbildung",
+        "die",
+        "du",
+        "willst",
+        "Wann"
+      ],
+      "startWith": "Wann"
+    },
+    {
+      "id": "L17-D02-B-try-v1",
+      "targetId": "L17-R004",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R003",
+        "L17-R004"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ถามแผนการฝึกวิชาชีพ",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "แผนของ B",
+          "เริ่มการฝึกวิชาชีพปีหน้า"
+        ]
+      ],
+      "prompt": "Wann willst du die Ausbildung machen?",
+      "feedback": {
+        "question": "Wann willst du die Ausbildung machen?",
+        "reply": "Ich will nächstes Jahr eine Ausbildung machen.",
+        "questionMeaning": "เธออยากเริ่มการฝึกวิชาชีพเมื่อไร",
+        "replyMeaning": "ฉันอยากเริ่มการฝึกวิชาชีพปีหน้า",
+        "questionSentences": [
+          [
+            {
+              "text": "Wann",
+              "role": "time",
+              "label": "ถามเวลา",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "die Ausbildung",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "nächstes Jahr",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "eine Ausbildung",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "machen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "nächstes Jahr ระบุปีหน้า ส่วน machen เป็น Infinitiv อยู่ท้ายหลังกรอบ will"
+      },
+      "grading": {
+        "answer": "Ich will nächstes Jahr eine Ausbildung machen."
+      },
+      "contextId": "L17-D02",
+      "tokens": [
+        "machen.",
+        "Ausbildung",
+        "eine",
+        "Jahr",
+        "nächstes",
+        "will",
+        "Ich"
+      ],
+      "startWith": "Ich"
+    },
+    {
+      "id": "L17-D03-A-try-v1",
+      "targetId": "L17-R005",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R005",
+        "L17-R006"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกสิ่งที่อยากทำในอนาคต",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "แผนของ B",
+          "อาศัยอยู่ต่างประเทศ"
+        ]
+      ],
+      "prompt": "Ich will im Ausland leben.",
+      "feedback": {
+        "question": "Was willst du später machen?",
+        "reply": "Ich will im Ausland leben.",
+        "questionMeaning": "ต่อไปเธออยากทำอะไร",
+        "replyMeaning": "ฉันอยากอาศัยอยู่ต่างประเทศ",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "später",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "im Ausland",
+              "role": "other",
+              "label": "สถานที่"
+            },
+            {
+              "text": "leben.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "im Ausland ระบุสถานที่ที่อยากอยู่ ส่วน leben อยู่ท้ายหลัง will"
+      },
+      "grading": {
+        "answer": "Was willst du später machen?"
+      },
+      "contextId": "L17-D03",
+      "tokens": [
+        "machen?",
+        "später",
+        "du",
+        "willst",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L17-D03-B-try-v1",
+      "targetId": "L17-R006",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L17-R005",
+        "L17-R006"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกสิ่งที่อยากทำในอนาคต",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "แผนของ B",
+          "อาศัยอยู่ต่างประเทศ"
+        ]
+      ],
+      "prompt": "Was willst du später machen?",
+      "feedback": {
+        "question": "Was willst du später machen?",
+        "reply": "Ich will im Ausland leben.",
+        "questionMeaning": "ต่อไปเธออยากทำอะไร",
+        "replyMeaning": "ฉันอยากอาศัยอยู่ต่างประเทศ",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "später",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "im Ausland",
+              "role": "other",
+              "label": "สถานที่"
+            },
+            {
+              "text": "leben.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "im Ausland ระบุสถานที่ที่อยากอยู่ ส่วน leben อยู่ท้ายหลัง will"
+      },
+      "grading": {
+        "answer": "Ich will im Ausland leben."
+      },
+      "contextId": "L17-D03",
+      "options": [
+        "Ich will in meiner Stadt bleiben.",
+        "Ich will im Ausland leben.",
+        "Ich will um die Welt segeln."
+      ]
+    },
+    {
+      "id": "L17-D04-A-try-v1",
+      "targetId": "L17-R007",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R007",
+        "L17-R008"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "เล่าความฝันด้านการเดินทาง",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความฝันของ B",
+          "ขี่รถจักรยานยนต์"
+        ]
+      ],
+      "prompt": "Ich will Motorrad fahren.",
+      "feedback": {
+        "question": "Was möchtest du noch machen?",
+        "reply": "Ich will Motorrad fahren.",
+        "questionMeaning": "เธอยังอยากทำอะไรอีก",
+        "replyMeaning": "ฉันอยากขี่รถจักรยานยนต์",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "möchtest",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "noch",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Motorrad",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "fahren.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "Motorrad fahren เป็นวลีขี่รถจักรยานยนต์ ตรงกับความฝันในข้อมูล"
+      },
+      "grading": {
+        "answer": "Was möchtest du noch machen?"
+      },
+      "contextId": "L17-D04",
+      "tokens": [
+        "machen?",
+        "noch",
+        "du",
+        "möchtest",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L17-D04-B-try-v1",
+      "targetId": "L17-R008",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R007",
+        "L17-R008"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "เล่าความฝันด้านการเดินทาง",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความฝันของ B",
+          "ขี่รถจักรยานยนต์"
+        ]
+      ],
+      "prompt": "Was möchtest du noch machen?",
+      "feedback": {
+        "question": "Was möchtest du noch machen?",
+        "reply": "Ich will Motorrad fahren.",
+        "questionMeaning": "เธอยังอยากทำอะไรอีก",
+        "replyMeaning": "ฉันอยากขี่รถจักรยานยนต์",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "möchtest",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "noch",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "Motorrad",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "fahren.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "Motorrad fahren เป็นวลีขี่รถจักรยานยนต์ ตรงกับความฝันในข้อมูล"
+      },
+      "grading": {
+        "answer": "Ich will Motorrad fahren."
+      },
+      "contextId": "L17-D04",
+      "tokens": [
+        "fahren.",
+        "Motorrad",
+        "will",
+        "Ich"
+      ],
+      "startWith": "Ich"
+    },
+    {
+      "id": "L17-D05-A-try-v1",
+      "targetId": "L17-R009",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R009",
+        "L17-R010"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกสิ่งที่ตั้งใจอยากทำมาก",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความตั้งใจของ B",
+          "อยากเป็นแพทย์ชายอย่างแน่วแน่"
+        ]
+      ],
+      "prompt": "Ich will unbedingt Arzt werden.",
+      "feedback": {
+        "question": "Was willst du unbedingt machen?",
+        "reply": "Ich will unbedingt Arzt werden.",
+        "questionMeaning": "เธออยากทำอะไรมากเป็นพิเศษ",
+        "replyMeaning": "ฉันตั้งใจอยากเป็นแพทย์มาก",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "unbedingt",
+              "role": "other",
+              "label": "ความตั้งใจอย่างแน่วแน่"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "unbedingt",
+              "role": "other",
+              "label": "ความตั้งใจอย่างแน่วแน่"
+            },
+            {
+              "text": "Arzt",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            },
+            {
+              "text": "werden.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "unbedingt แสดงความตั้งใจอย่างแน่วแน่ จึงตรงกับระดับความต้องการที่ให้"
+      },
+      "grading": {
+        "answer": "Was willst du unbedingt machen?"
+      },
+      "contextId": "L17-D05",
+      "tokens": [
+        "machen?",
+        "unbedingt",
+        "du",
+        "willst",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L17-D05-B-try-v1",
+      "targetId": "L17-R010",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L17-R009",
+        "L17-R010"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกสิ่งที่ตั้งใจอยากทำมาก",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "ความตั้งใจของ B",
+          "อยากเป็นแพทย์ชายอย่างแน่วแน่"
+        ]
+      ],
+      "prompt": "Was willst du unbedingt machen?",
+      "feedback": {
+        "question": "Was willst du unbedingt machen?",
+        "reply": "Ich will unbedingt Arzt werden.",
+        "questionMeaning": "เธออยากทำอะไรมากเป็นพิเศษ",
+        "replyMeaning": "ฉันตั้งใจอยากเป็นแพทย์มาก",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "unbedingt",
+              "role": "other",
+              "label": "ความตั้งใจอย่างแน่วแน่"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "unbedingt",
+              "role": "other",
+              "label": "ความตั้งใจอย่างแน่วแน่"
+            },
+            {
+              "text": "Arzt",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            },
+            {
+              "text": "werden.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "unbedingt แสดงความตั้งใจอย่างแน่วแน่ จึงตรงกับระดับความต้องการที่ให้"
+      },
+      "grading": {
+        "answer": "Ich will unbedingt Arzt werden."
+      },
+      "contextId": "L17-D05",
+      "options": [
+        "Ich will auf keinen Fall Arzt werden.",
+        "Ich will unbedingt Arzt werden.",
+        "Ich will vielleicht Politiker werden."
+      ]
+    },
+    {
+      "id": "L17-D06-A-try-v1",
+      "targetId": "L17-R011",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R011",
+        "L17-R012"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกสิ่งที่ไม่อยากทำแน่นอน",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "สิ่งที่ B ไม่ต้องการ",
+          "เป็นนักการเมือง"
+        ]
+      ],
+      "prompt": "Ich will auf keinen Fall Politiker werden.",
+      "feedback": {
+        "question": "Was willst du auf keinen Fall machen?",
+        "reply": "Ich will auf keinen Fall Politiker werden.",
+        "questionMeaning": "เธอไม่อยากทำอะไรแน่นอน",
+        "replyMeaning": "ฉันไม่อยากเป็นนักการเมืองแน่นอน",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "auf keinen Fall",
+              "role": "other",
+              "label": "ความไม่ต้องการอย่างแน่นอน"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "auf keinen Fall",
+              "role": "other",
+              "label": "ความไม่ต้องการอย่างแน่นอน"
+            },
+            {
+              "text": "Politiker",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            },
+            {
+              "text": "werden.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "auf keinen Fall สื่อว่าไม่ต้องการอย่างแน่นอน จึงตรงกับข้อมูลปฏิเสธอาชีพนี้"
+      },
+      "grading": {
+        "answer": "Was willst du auf keinen Fall machen?"
+      },
+      "contextId": "L17-D06",
+      "tokens": [
+        "machen?",
+        "Fall",
+        "keinen",
+        "auf",
+        "du",
+        "willst",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L17-D06-B-try-v1",
+      "targetId": "L17-R012",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R011",
+        "L17-R012"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกสิ่งที่ไม่อยากทำแน่นอน",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "สิ่งที่ B ไม่ต้องการ",
+          "เป็นนักการเมือง"
+        ]
+      ],
+      "prompt": "Was willst du auf keinen Fall machen?",
+      "feedback": {
+        "question": "Was willst du auf keinen Fall machen?",
+        "reply": "Ich will auf keinen Fall Politiker werden.",
+        "questionMeaning": "เธอไม่อยากทำอะไรแน่นอน",
+        "replyMeaning": "ฉันไม่อยากเป็นนักการเมืองแน่นอน",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "willst",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "auf keinen Fall",
+              "role": "other",
+              "label": "ความไม่ต้องการอย่างแน่นอน"
+            },
+            {
+              "text": "machen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "will",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "auf keinen Fall",
+              "role": "other",
+              "label": "ความไม่ต้องการอย่างแน่นอน"
+            },
+            {
+              "text": "Politiker",
+              "role": "other",
+              "label": "อาชีพ (Nominativ)"
+            },
+            {
+              "text": "werden.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "auf keinen Fall สื่อว่าไม่ต้องการอย่างแน่นอน จึงตรงกับข้อมูลปฏิเสธอาชีพนี้"
+      },
+      "grading": {
+        "answer": "Ich will auf keinen Fall Politiker werden."
+      },
+      "contextId": "L17-D06",
+      "tokens": [
+        "werden.",
+        "Politiker",
+        "Fall",
+        "keinen",
+        "auf",
+        "will",
+        "Ich"
+      ],
+      "startWith": "Ich"
+    },
+    {
+      "id": "L17-D07-A-try-v1",
+      "targetId": "L17-R013",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R013",
+        "L17-R014"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกว่ามากับใคร",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ผู้ที่ B มาด้วย",
+          "เพื่อนผู้ชายหนึ่งคน"
+        ]
+      ],
+      "prompt": "Ich komme mit einem Freund.",
+      "feedback": {
+        "question": "Mit wem kommst du?",
+        "reply": "Ich komme mit einem Freund.",
+        "questionMeaning": "เธอมากับใคร",
+        "replyMeaning": "ฉันมากับเพื่อนผู้ชายคนหนึ่ง",
+        "questionSentences": [
+          [
+            {
+              "text": "Mit wem",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kommst",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du?",
+              "role": "subject",
+              "label": "ประธาน"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "komme",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "mit einem Freund.",
+              "role": "other",
+              "label": "ผู้ร่วมเดินทาง (Dativ)"
+            }
+          ]
+        ],
+        "reason": "mit ใช้ Dativ และ ein Freund เปลี่ยนเป็น einem Freund"
+      },
+      "grading": {
+        "answer": "Mit wem kommst du?"
+      },
+      "contextId": "L17-D07",
+      "tokens": [
+        "du?",
+        "kommst",
+        "wem",
+        "Mit"
+      ],
+      "startWith": "Mit"
+    },
+    {
+      "id": "L17-D07-B-try-v1",
+      "targetId": "L17-R014",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L17-R013",
+        "L17-R014"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกว่ามากับใคร",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "ผู้ที่ B มาด้วย",
+          "เพื่อนผู้ชายหนึ่งคน"
+        ]
+      ],
+      "prompt": "Mit wem kommst du?",
+      "feedback": {
+        "question": "Mit wem kommst du?",
+        "reply": "Ich komme mit einem Freund.",
+        "questionMeaning": "เธอมากับใคร",
+        "replyMeaning": "ฉันมากับเพื่อนผู้ชายคนหนึ่ง",
+        "questionSentences": [
+          [
+            {
+              "text": "Mit wem",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kommst",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du?",
+              "role": "subject",
+              "label": "ประธาน"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "komme",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "mit einem Freund.",
+              "role": "other",
+              "label": "ผู้ร่วมเดินทาง (Dativ)"
+            }
+          ]
+        ],
+        "reason": "mit ใช้ Dativ และ ein Freund เปลี่ยนเป็น einem Freund"
+      },
+      "grading": {
+        "answer": "Ich komme mit einem Freund."
+      },
+      "contextId": "L17-D07",
+      "options": [
+        "Ich komme allein.",
+        "Ich komme mit einem Freund.",
+        "Ich komme mit meiner Familie."
+      ]
+    },
+    {
+      "id": "L17-D08-A-try-v1",
+      "targetId": "L17-R015",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R015",
+        "L17-R016"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกสิ่งที่ขาดไม่ได้",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เงื่อนไข",
+          "ต้องมีเงินจึงเริ่มได้"
+        ]
+      ],
+      "prompt": "Nein, ohne Geld können wir nicht anfangen.",
+      "feedback": {
+        "question": "Könnt ihr ohne Geld anfangen?",
+        "reply": "Nein, ohne Geld können wir nicht anfangen.",
+        "questionMeaning": "พวกเธอเริ่มโดยไม่มีเงินได้ไหม",
+        "replyMeaning": "ไม่ได้ เราเริ่มโดยไม่มีเงินไม่ได้",
+        "questionSentences": [
+          [
+            {
+              "text": "Könnt",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ihr",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "ohne Geld",
+              "role": "other",
+              "label": "เงื่อนไข (ohne + Akkusativ)"
+            },
+            {
+              "text": "anfangen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Nein,",
+              "role": "other",
+              "label": "ปฏิเสธ"
+            },
+            {
+              "text": "ohne Geld",
+              "role": "other",
+              "label": "เงื่อนไข (ohne + Akkusativ)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "wir",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "nicht",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "anfangen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "ohne Geld บอกเงื่อนไขไม่มีเงิน เมื่อนำขึ้นต้น können อยู่ตำแหน่ง 2 และ anfangen อยู่ท้าย"
+      },
+      "grading": {
+        "answer": "Könnt ihr ohne Geld anfangen?"
+      },
+      "contextId": "L17-D08",
+      "tokens": [
+        "anfangen?",
+        "Geld",
+        "ohne",
+        "ihr",
+        "Könnt"
+      ],
+      "startWith": "Könnt"
+    },
+    {
+      "id": "L17-D08-B-try-v1",
+      "targetId": "L17-R016",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L17-R015",
+        "L17-R016"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกสิ่งที่ขาดไม่ได้",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เงื่อนไข",
+          "ต้องมีเงินจึงเริ่มได้"
+        ]
+      ],
+      "prompt": "Könnt ihr ohne Geld anfangen?",
+      "feedback": {
+        "question": "Könnt ihr ohne Geld anfangen?",
+        "reply": "Nein, ohne Geld können wir nicht anfangen.",
+        "questionMeaning": "พวกเธอเริ่มโดยไม่มีเงินได้ไหม",
+        "replyMeaning": "ไม่ได้ เราเริ่มโดยไม่มีเงินไม่ได้",
+        "questionSentences": [
+          [
+            {
+              "text": "Könnt",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ihr",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "ohne Geld",
+              "role": "other",
+              "label": "เงื่อนไข (ohne + Akkusativ)"
+            },
+            {
+              "text": "anfangen?",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Nein,",
+              "role": "other",
+              "label": "ปฏิเสธ"
+            },
+            {
+              "text": "ohne Geld",
+              "role": "other",
+              "label": "เงื่อนไข (ohne + Akkusativ)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "können",
+              "role": "auxiliary",
+              "label": "กริยาช่วย (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "wir",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "nicht",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "anfangen.",
+              "role": "verb",
+              "label": "กริยาหลัก · Infinitiv",
+              "position": "ท้ายประโยค"
+            }
+          ]
+        ],
+        "reason": "ohne Geld บอกเงื่อนไขไม่มีเงิน เมื่อนำขึ้นต้น können อยู่ตำแหน่ง 2 และ anfangen อยู่ท้าย"
+      },
+      "grading": {
+        "answer": "Nein, ohne Geld können wir nicht anfangen."
+      },
+      "contextId": "L17-D08",
+      "tokens": [
+        "anfangen.",
+        "nicht",
+        "wir",
+        "können",
+        "Geld",
+        "ohne",
+        "Nein,"
+      ],
+      "startWith": "Nein,"
+    },
+    {
+      "id": "A13-L17-MIT-OHNE-MEANING-PREP-001",
+      "targetId": "L17-mit-ohne-meaning",
+      "topicId": "L17-mit-ohne",
+      "subskill": "accompaniment_presence_meaning",
+      "context": "สถานการณ์สมมติ: Nina นำเงินติดตัวไปเดินทาง",
+      "cue": "เลือกให้ตรงข้อมูล โดย Geld ในวลีนี้ไม่มี Artikel ให้ใช้เป็นเบาะแส Case",
+      "sentence": "Nina reist ___ Geld.",
+      "options": [
+        "mit",
+        "ohne"
+      ],
+      "kind": "choice",
+      "version": 1,
+      "difficulty": 1,
+      "difficultyRationale": "แยกสาเหตุด้วยโจทย์จำแนกหนึ่งประเด็น โดยให้ข้อมูลส่วนอื่นที่ไม่ต้องการวัด",
+      "acceptedAnswers": [
+        "mit"
+      ],
+      "explanation": "ข้อมูลบอกว่ามีเงินติดตัว จึงใช้ mit Geld; ไม่ใช้ข้อนี้วัดการผัน Artikel",
+      "requiredConceptTargets": [
+        "L17-mit-ohne"
+      ],
+      "assistanceAvailable": [
+        "options",
+        "provided-base-or-context"
+      ],
+      "contextId": "A13-L17-MIT-OHNE-MEANING-PREP-001",
+      "feedback": {
+        "text": "Nina reist mit Geld.",
+        "sentences": [
+          [
+            {
+              "text": "Nina",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "reist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "mit Geld.",
+              "role": "other",
+              "label": "สิ่งที่มีไปด้วย (mit + Dativ)"
+            }
+          ]
+        ],
+        "meaning": "Nina เดินทางโดยมีเงินติดตัวไปด้วย",
+        "reason": "ข้อมูลบอกว่ามีเงินติดตัว จึงใช้ mit Geld; ไม่ใช้ข้อนี้วัดการผัน Artikel"
+      }
+    }
+  ],
+  "phraseTargets": [
+    {
+      "id": "L17-R001",
+      "text": "Was willst du werden?"
+    },
+    {
+      "id": "L17-R002",
+      "text": "Ich will Lehrer werden."
+    },
+    {
+      "id": "L17-R003",
+      "text": "Wann willst du die Ausbildung machen?"
+    },
+    {
+      "id": "L17-R004",
+      "text": "Ich will nächstes Jahr eine Ausbildung machen."
+    },
+    {
+      "id": "L17-R005",
+      "text": "Was willst du später machen?"
+    },
+    {
+      "id": "L17-R006",
+      "text": "Ich will im Ausland leben."
+    },
+    {
+      "id": "L17-R007",
+      "text": "Was möchtest du noch machen?"
+    },
+    {
+      "id": "L17-R008",
+      "text": "Ich will Motorrad fahren."
+    },
+    {
+      "id": "L17-R009",
+      "text": "Was willst du unbedingt machen?"
+    },
+    {
+      "id": "L17-R010",
+      "text": "Ich will unbedingt Arzt werden."
+    },
+    {
+      "id": "L17-R011",
+      "text": "Was willst du auf keinen Fall machen?"
+    },
+    {
+      "id": "L17-R012",
+      "text": "Ich will auf keinen Fall Politiker werden."
+    },
+    {
+      "id": "L17-R013",
+      "text": "Mit wem kommst du?"
+    },
+    {
+      "id": "L17-R014",
+      "text": "Ich komme mit einem Freund."
+    },
+    {
+      "id": "L17-R015",
+      "text": "Könnt ihr ohne Geld anfangen?"
+    },
+    {
+      "id": "L17-R016",
+      "text": "Nein, ohne Geld können wir nicht anfangen."
+    }
+  ],
+  "draftStatus": "prepared_not_wired_or_published",
+  "supportLexicon": [
+    {
+      "id": "L17-HELP-01",
+      "headword": "der Lehrer",
+      "meaning": "ครูผู้ชาย",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Lehrer",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-02",
+      "headword": "die Lehrerin",
+      "meaning": "ครูผู้หญิง",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Lehrerin",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-03",
+      "headword": "der Arzt",
+      "meaning": "แพทย์ผู้ชาย",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Arzt",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-04",
+      "headword": "die Ärztin",
+      "meaning": "แพทย์ผู้หญิง",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Ärztin",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-05",
+      "headword": "der Freund",
+      "meaning": "เพื่อนผู้ชาย",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Freund",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-06",
+      "headword": "die Freundin",
+      "meaning": "เพื่อนผู้หญิง",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Freundin",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-07",
+      "headword": "der Bus",
+      "meaning": "รถโดยสารประจำทาง",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Bus",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-08",
+      "headword": "der Zug",
+      "meaning": "รถไฟ",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Zug",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-09",
+      "headword": "der Hund",
+      "meaning": "สุนัข",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Hund",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-10",
+      "headword": "der Schirm",
+      "meaning": "ร่ม",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Schirm",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-11",
+      "headword": "die Eltern",
+      "meaning": "พ่อแม่",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Eltern",
+      "number": "plural"
+    },
+    {
+      "id": "L17-HELP-12",
+      "headword": "der Koch",
+      "meaning": "พ่อครัว",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Koch",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-13",
+      "headword": "die Köchin",
+      "meaning": "แม่ครัว",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Köchin",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-14",
+      "headword": "der Ingenieur",
+      "meaning": "วิศวกรผู้ชาย",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Ingenieur",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-15",
+      "headword": "die Ingenieurin",
+      "meaning": "วิศวกรผู้หญิง",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Ingenieurin",
+      "number": "singular"
+    },
+    {
+      "id": "L17-HELP-16",
+      "headword": "später",
+      "meaning": "ต่อไปหรือภายหลัง",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "später"
+    },
+    {
+      "id": "L17-HELP-17",
+      "headword": "unbedingt",
+      "meaning": "อย่างแน่วแน่หรืออยากมาก",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "unbedingt"
+    },
+    {
+      "id": "L17-HELP-18",
+      "headword": "vielleicht",
+      "meaning": "อาจจะ",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "vielleicht"
+    },
+    {
+      "id": "L17-HELP-19",
+      "headword": "auf keinen Fall",
+      "meaning": "ไม่ต้องการอย่างแน่นอน",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "auf keinen Fall"
+    }
+  ]
+}

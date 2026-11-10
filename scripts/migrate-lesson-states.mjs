@@ -19,6 +19,10 @@ try {
     "20261019000000_l14_position_quiz_state.sql",
     "20261019010000_l14_position_quiz_cat_state.sql",
     "20261031010000_restore_lesson_state_keys.sql",
+    "20261109000000_release_course_lesson_states.sql",
+    "20261109001000_a13_release_course_catalog.sql",
+    "20261109002000_release_shared_practice.sql",
+    "20261109003000_release_health.sql",
   ])
     await client.query(
       await readFile(

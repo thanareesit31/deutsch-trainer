@@ -1,0 +1,226 @@
+{
+  "L15-possessivartikel": [
+    [
+      "Ich finde seinen Balkon schön.",
+      "subject1:Ich|verb2:finde|other:seinen Balkon|other:schön.",
+      "ฉันคิดว่าระเบียงของเขาสวย",
+      "เจ้าของคือ Tom จึงใช้ sein และ Balkon เป็นกรรมเพศชาย จึงเปลี่ยนเป็น seinen"
+    ],
+    [
+      "Ihr Zimmer ist groß.",
+      "subject1:Ihr Zimmer|verb2:ist|other:groß.",
+      "ห้องของเธอใหญ่",
+      "เจ้าของคือ Klara จึงใช้ ihr; Zimmer เป็นประธานเพศกลาง จึงคงรูป ihr"
+    ],
+    [
+      "Ich finde seine Küche schön.",
+      "subject1:Ich|verb2:finde|other:seine Küche|other:schön.",
+      "ฉันคิดว่าห้องครัวของเขาสวย",
+      "เจ้าของคือ Tom จึงใช้ sein และ Küche เป็นเพศหญิง จึงใช้ seine ใน Akkusativ"
+    ],
+    [
+      "Ihre Lampe ist neu.",
+      "subject1:Ihre Lampe|verb2:ist|other:neu.",
+      "โคมไฟของเธอใหม่",
+      "เจ้าของคือ Klara และ Lampe เป็นประธานเพศหญิง จึงใช้ ihre"
+    ],
+    [
+      "Ich finde seinen Balkon schön.",
+      "subject1:Ich|verb2:finde|other:seinen Balkon|other:schön.",
+      "ฉันคิดว่าระเบียงของเขาสวย",
+      "ประโยคนี้เริ่มด้วย Ich จึงวาง finde ที่ตำแหน่ง 2 และกลุ่ม seinen Balkon เป็นกรรม"
+    ]
+  ],
+  "L16-temporale-praepositionen": [
+    [
+      "Ich komme in einer Stunde, also um zehn.",
+      "subject1:Ich|verb2:komme|time:in einer Stunde,|other:also|time:um zehn.",
+      "ฉันจะมาในอีกหนึ่งชั่วโมง คือเวลาสิบโมง",
+      "จากเก้าโมงไปสิบโมงเป็นอีกหนึ่งชั่วโมงในอนาคต จึงใช้ in einer Stunde"
+    ],
+    [
+      "Der Termin war gestern, also vor einem Tag.",
+      "subject1:Der Termin|verb2:war|time:gestern,|other:also|time:vor einem Tag.",
+      "นัดนั้นเป็นเมื่อวาน ก็คือหนึ่งวันที่แล้ว",
+      "วันนี้วันอังคารและนัดเป็นวันจันทร์ จึงใช้ vor einem Tag บอกเวลาที่ผ่านมาแล้ว"
+    ],
+    [
+      "Wir essen nach dem Unterricht.",
+      "subject1:Wir|verb2:essen|time:nach dem Unterricht.",
+      "พวกเรากินอาหารหลังเลิกเรียน",
+      "ตารางบอกว่าเรียนจบ 12:00 และกิน 12:30 จึงใช้ nach ไม่ใช่การเดาจากเวลาเลิกเรียนเพียงอย่างเดียว"
+    ],
+    [
+      "Der Termin ist am Mittwoch, also in zwei Tagen.",
+      "subject1:Der Termin|verb2:ist|time:am Mittwoch,|other:also|time:in zwei Tagen.",
+      "นัดเป็นวันพุธ ก็คือในอีกสองวัน",
+      "นับจากวันจันทร์ไปวันพุธเป็นสองวันในอนาคต จึงใช้ in zwei Tagen"
+    ],
+    [
+      "Wir treffen uns nach dem Kurs.",
+      "subject1:Wir|verb2:treffen|other:uns|time:nach dem Kurs.",
+      "พวกเราพบกันหลังเลิกเรียน",
+      "เริ่มด้วย Wir แล้ววาง treffen ตำแหน่ง 2; nach dem Kurs บอกว่าพบกันหลังเรียน"
+    ]
+  ],
+  "L17-werden": [
+    [
+      "Nina wird Lehrerin.",
+      "subject1:Nina|verb2:wird|other:Lehrerin.",
+      "Nina จะเป็นครู",
+      "Nina เป็นบุคคลที่สามเอกพจน์ จึงใช้ wird และ Lehrerin บอกอาชีพหลัง werden"
+    ],
+    [
+      "Wir werden bald Eltern.",
+      "subject1:Wir|verb2:werden|time:bald|other:Eltern.",
+      "พวกเรากำลังจะเป็นพ่อแม่ในไม่ช้า",
+      "ประธาน Wir ใช้ werden ส่วน bald บอกว่าในไม่ช้า"
+    ],
+    [
+      "Ich werde Koch.",
+      "subject1:Ich|verb2:werde|other:Koch.",
+      "ฉันจะเป็นพ่อครัว",
+      "ประธาน Ich ใช้ werde และเมื่อบอกอาชีพแบบนี้ไม่เติม ein หน้า Koch"
+    ],
+    [
+      "Du wirst Ingenieurin.",
+      "subject1:Du|verb2:wirst|other:Ingenieurin.",
+      "เธอจะเป็นวิศวกรหญิง",
+      "ประธาน Du ใช้รูป wirst"
+    ],
+    [
+      "Er wird Arzt.",
+      "subject1:Er|verb2:wird|other:Arzt.",
+      "เขาจะเป็นแพทย์",
+      "ประโยคเริ่มด้วย Er จึงวาง wird ตำแหน่ง 2 ตามด้วยอาชีพ Arzt"
+    ]
+  ],
+  "L17-mit-ohne": [
+    [
+      "Sie fährt mit dem Bus.",
+      "subject1:Sie|verb2:fährt|other:mit dem Bus.",
+      "เธอเดินทางด้วยรถโดยสารประจำทาง",
+      "mit ใช้ Dativ; รูปต้นทาง der Bus จึงเปลี่ยนเป็น dem Bus"
+    ],
+    [
+      "Er geht ohne einen Schirm.",
+      "subject1:Er|verb2:geht|other:ohne einen Schirm.",
+      "เขาไปโดยไม่มีร่ม",
+      "ohne ใช้ Akkusativ; รูปต้นทาง ein Schirm จึงเปลี่ยนเป็น einen Schirm"
+    ],
+    [
+      "Ich komme mit einer Freundin.",
+      "subject1:Ich|verb2:komme|other:mit einer Freundin.",
+      "ฉันมากับเพื่อนผู้หญิงคนหนึ่ง",
+      "โจทย์ให้ eine Freundin มาแล้ว; หลัง mit เปลี่ยนเป็น Dativ จึงใช้ einer"
+    ],
+    [
+      "Sie geht ohne den Hund.",
+      "subject1:Sie|verb2:geht|other:ohne den Hund.",
+      "เธอไปโดยไม่ได้พาสุนัขไปด้วย",
+      "โจทย์ให้ der Hund มาแล้ว; หลัง ohne เปลี่ยนเป็น Akkusativ จึงใช้ den"
+    ],
+    [
+      "Ich fahre mit dem Zug.",
+      "subject1:Ich|verb2:fahre|other:mit dem Zug.",
+      "ฉันเดินทางด้วยรถไฟ",
+      "เริ่มด้วย Ich แล้ววาง fahre ตำแหน่ง 2; กลุ่ม mit dem Zug บอกวิธีเดินทาง"
+    ]
+  ],
+  "L17-wollen": [
+    [
+      "Ihr wollt heute Deutsch lernen.",
+      "subject1:Ihr|auxiliary2:wollt|time:heute|other:Deutsch|inf:lernen.",
+      "วันนี้พวกเธออยากเรียนภาษาเยอรมัน",
+      "ประธาน Ihr ใช้ wollt ส่วน lernen เป็น Infinitiv อยู่ท้ายประโยค"
+    ],
+    [
+      "Frau Koch will morgen reisen.",
+      "subject1:Frau Koch|auxiliary2:will|time:morgen|inf:reisen.",
+      "คุณ Koch อยากเดินทางพรุ่งนี้",
+      "Frau Koch เป็นคนเดียว ใช้รูป will ส่วน reisen อยู่ท้าย"
+    ],
+    [
+      "Ich will Musiker werden.",
+      "subject1:Ich|auxiliary2:will|other:Musiker|inf:werden.",
+      "ฉันอยากเป็นนักดนตรี",
+      "ประธาน Ich ใช้ will และ werden อยู่ท้ายหลังอาชีพที่อยากเป็น"
+    ],
+    [
+      "Wir wollen eine Firma gründen.",
+      "subject1:Wir|auxiliary2:wollen|other:eine Firma|inf:gründen.",
+      "พวกเราอยากก่อตั้งบริษัท",
+      "ประธาน Wir ใช้ wollen ส่วน gründen อยู่ท้ายและ eine Firma เป็นสิ่งที่อยากก่อตั้ง"
+    ],
+    [
+      "Sie will in Berlin studieren.",
+      "subject1:Sie|auxiliary2:will|other:in Berlin|inf:studieren.",
+      "เธออยากเรียนที่เบอร์ลิน",
+      "ในประโยคนี้ Sie หมายถึงเธอ จึงใช้ will; in Berlin บอกสถานที่และ studieren อยู่ท้าย"
+    ]
+  ],
+  "L18-imperativ-sie": [
+    [
+      "Sprechen Sie bitte langsam.",
+      "verb1:Sprechen|subject:Sie|other:bitte|other:langsam.",
+      "กรุณาพูดช้า ๆ",
+      "ใช้รูป Sprechen ขึ้นต้นคำขอสุภาพ ตามด้วย Sie และ bitte"
+    ],
+    [
+      "Warten Sie hier kurz.",
+      "verb1:Warten|subject:Sie|other:hier|time:kurz.",
+      "กรุณารอสักครู่ตรงนี้",
+      "กริยา Warten ขึ้นต้น ตามด้วย Sie; hier บอกสถานที่และ kurz บอกระยะเวลาสั้น"
+    ],
+    [
+      "Trinken Sie viel Wasser.",
+      "verb1:Trinken|subject:Sie|other:viel Wasser.",
+      "กรุณาดื่มน้ำมาก ๆ",
+      "โจทย์ระบุให้ใช้ trinken จึงทำคำขอสุภาพเป็น Trinken Sie"
+    ],
+    [
+      "Machen Sie eine Pause.",
+      "verb1:Machen|subject:Sie|other:eine Pause.",
+      "กรุณาพักสักครู่",
+      "โจทย์ให้กริยา machen จึงวาง Machen ขึ้นต้นตามด้วย Sie"
+    ],
+    [
+      "Gehen Sie bitte nach Hause.",
+      "verb1:Gehen|subject:Sie|other:bitte|other:nach Hause.",
+      "กรุณากลับบ้าน",
+      "คำขอสุภาพเริ่มด้วย Gehen ตามด้วย Sie; nach Hause บอกทิศทาง ไม่ใช่เวลาหลังเหตุการณ์"
+    ]
+  ],
+  "L18-sollen": [
+    [
+      "Du sollst heute zu Hause bleiben.",
+      "subject1:Du|auxiliary2:sollst|time:heute|other:zu Hause|inf:bleiben.",
+      "วันนี้เธอได้รับคำบอกให้อยู่บ้าน",
+      "เมื่อใช้ sollen กับ Du ผันเป็น sollst และ bleiben อยู่ท้าย"
+    ],
+    [
+      "Wir sollen mehr schlafen.",
+      "subject1:Wir|auxiliary2:sollen|other:mehr|inf:schlafen.",
+      "พวกเราได้รับคำบอกให้นอนมากขึ้น",
+      "ประธาน Wir ใช้ sollen และ schlafen เป็น Infinitiv อยู่ท้าย"
+    ],
+    [
+      "Ich soll diese Übung machen.",
+      "subject1:Ich|auxiliary2:soll|other:diese Übung|inf:machen.",
+      "ฉันได้รับคำบอกให้ทำแบบฝึกนี้",
+      "ประธาน Ich ใช้ soll และ machen อยู่ท้าย โดย diese Übung คือสิ่งที่บอกให้ทำ"
+    ],
+    [
+      "Frau Weber soll mehr trinken.",
+      "subject1:Frau Weber|auxiliary2:soll|other:mehr|inf:trinken.",
+      "คุณ Weber ได้รับคำบอกให้ดื่มมากขึ้น",
+      "Frau Weber เป็นคนเดียว จึงใช้ soll และ trinken อยู่ท้าย"
+    ],
+    [
+      "Sie sollen heute mehr Wasser trinken.",
+      "subject1:Sie|auxiliary2:sollen|time:heute|other:mehr Wasser|inf:trinken.",
+      "วันนี้คุณได้รับคำบอกให้ดื่มน้ำมากขึ้น",
+      "ประโยคเริ่มด้วย Sie แบบสุภาพ ใช้ sollen ตำแหน่ง 2 และ trinken อยู่ท้าย"
+    ]
+  ]
+}

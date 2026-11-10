@@ -14,15 +14,18 @@ export async function GET() {
     .eq("status", "published")
     .eq("skill", "vocabulary")
     .eq("data->>collection", "core");
+  const release = await db.rpc('release_course_readiness');
+  const ready = !release.error && release.data?.courses === 12 && release.data?.cards === 136 && release.data?.tasks === 372 && release.data?.phraseTasks === 64 && release.data?.practiceSyncReady === true;
   return Response.json(
     {
-      status: error ? "unavailable" : "ok",
+      status: error || !ready ? "unavailable" : "ok",
       app: "deutsch-mit-sun",
       version: "5.0.0",
       runtime: process.versions.bun ? "bun" : "node",
       contentSource: "supabase",
       vocabulary: error ? null : count,
+      lessonRelease: ready ? 'l15-l18-v1' : 'schema-pending',
     },
-    { status: error ? 503 : 200 },
+    { status: error || !ready ? 503 : 200 },
   );
 }

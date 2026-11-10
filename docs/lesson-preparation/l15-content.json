@@ -1,0 +1,5762 @@
+{
+  "id": "L15",
+  "title": "บ้าน ห้องพัก และเฟอร์นิเจอร์",
+  "purpose": "แนะนำที่พัก บอกเจ้าของ แสดงความเห็น และถามข้อมูลห้องพัก",
+  "prerequisites": [
+    "L02: sein/อาชีพ/ตัวเลข",
+    "L05: Möbel/Artikel",
+    "L06: Akkusativ",
+    "L13: Ich finde/es gibt"
+  ],
+  "sequence": [
+    "รู้จักห้องและส่วนของบ้าน",
+    "ทบทวนเฟอร์นิเจอร์และคำบรรยาย",
+    "แสดงความเห็นด้วย Ich finde",
+    "เลือกเจ้าของ sein/ihr แล้วแยก Nominativ/Akkusativ",
+    "อ่านข้อมูลห้องพักและสนทนาตามความต้องการ"
+  ],
+  "vocabulary": [
+    {
+      "kind": "noun",
+      "headword": "das Haus",
+      "word": "Haus",
+      "article": "das",
+      "plural": "die Häuser",
+      "number": "singular",
+      "meaning": "บ้าน",
+      "group": "Wohnen und Zimmer",
+      "example": "Das ist ein Haus.",
+      "id": "L15-V001",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือบ้าน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Haus.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Wohnung",
+      "word": "Wohnung",
+      "article": "die",
+      "plural": "die Wohnungen",
+      "number": "singular",
+      "meaning": "อพาร์ตเมนต์หรือห้องชุด",
+      "group": "Wohnen und Zimmer",
+      "example": "Das ist eine Wohnung.",
+      "id": "L15-V002",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คืออพาร์ตเมนต์หรือห้องชุด",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Wohnung.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Zimmer",
+      "word": "Zimmer",
+      "article": "das",
+      "plural": "die Zimmer",
+      "number": "singular",
+      "meaning": "ห้อง",
+      "group": "Wohnen und Zimmer",
+      "example": "Das ist ein Zimmer.",
+      "id": "L15-V003",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือห้อง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Zimmer.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Arbeitszimmer",
+      "word": "Arbeitszimmer",
+      "article": "das",
+      "plural": "die Arbeitszimmer",
+      "number": "singular",
+      "meaning": "ห้องทำงาน",
+      "group": "Wohnen und Zimmer",
+      "example": "Das ist ein Arbeitszimmer.",
+      "id": "L15-V004",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือห้องทำงาน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Arbeitszimmer.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Wohnzimmer",
+      "word": "Wohnzimmer",
+      "article": "das",
+      "plural": "die Wohnzimmer",
+      "number": "singular",
+      "meaning": "ห้องนั่งเล่น",
+      "group": "Wohnen und Zimmer",
+      "example": "Das ist ein Wohnzimmer.",
+      "id": "L15-V005",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือห้องนั่งเล่น",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Wohnzimmer.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Schlafzimmer",
+      "word": "Schlafzimmer",
+      "article": "das",
+      "plural": "die Schlafzimmer",
+      "number": "singular",
+      "meaning": "ห้องนอน",
+      "group": "Wohnen und Zimmer",
+      "example": "Das ist ein Schlafzimmer.",
+      "id": "L15-V006",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือห้องนอน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Schlafzimmer.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Kinderzimmer",
+      "word": "Kinderzimmer",
+      "article": "das",
+      "plural": "die Kinderzimmer",
+      "number": "singular",
+      "meaning": "ห้องเด็ก",
+      "group": "Wohnen und Zimmer",
+      "example": "Das ist ein Kinderzimmer.",
+      "id": "L15-V007",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือห้องเด็ก",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Kinderzimmer.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Bad",
+      "word": "Bad",
+      "article": "das",
+      "plural": "die Bäder",
+      "number": "singular",
+      "meaning": "ห้องน้ำสำหรับล้างตัวหรืออาบน้ำ",
+      "group": "Wohnen und Zimmer",
+      "example": "Das ist ein Bad.",
+      "id": "L15-V008",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือห้องน้ำสำหรับล้างตัวหรืออาบน้ำ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Bad.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Küche",
+      "word": "Küche",
+      "article": "die",
+      "plural": "die Küchen",
+      "number": "singular",
+      "meaning": "ห้องครัว",
+      "group": "Teile der Wohnung",
+      "example": "Das ist eine Küche.",
+      "id": "L15-V009",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือห้องครัว",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Küche.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Toilette",
+      "word": "Toilette",
+      "article": "die",
+      "plural": "die Toiletten",
+      "number": "singular",
+      "meaning": "ห้องสุขา",
+      "group": "Teile der Wohnung",
+      "example": "Das ist eine Toilette.",
+      "id": "L15-V010",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือห้องสุขา",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Toilette.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Flur",
+      "word": "Flur",
+      "article": "der",
+      "plural": "die Flure",
+      "number": "singular",
+      "meaning": "โถงทางเดิน",
+      "group": "Teile der Wohnung",
+      "example": "Das ist ein Flur.",
+      "id": "L15-V011",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือโถงทางเดิน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Flur.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Balkon",
+      "word": "Balkon",
+      "article": "der",
+      "plural": "die Balkone",
+      "number": "singular",
+      "meaning": "ระเบียง",
+      "group": "Teile der Wohnung",
+      "example": "Das ist ein Balkon.",
+      "id": "L15-V012",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือระเบียง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Balkon.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Garten",
+      "word": "Garten",
+      "article": "der",
+      "plural": "die Gärten",
+      "number": "singular",
+      "meaning": "สวน",
+      "group": "Teile der Wohnung",
+      "example": "Das ist ein Garten.",
+      "id": "L15-V013",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือสวน",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Garten.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Treppe",
+      "word": "Treppe",
+      "article": "die",
+      "plural": "die Treppen",
+      "number": "singular",
+      "meaning": "บันได",
+      "group": "Teile der Wohnung",
+      "example": "Das ist eine Treppe.",
+      "id": "L15-V014",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือบันได",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Treppe.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Fenster",
+      "word": "Fenster",
+      "article": "das",
+      "plural": "die Fenster",
+      "number": "singular",
+      "meaning": "หน้าต่าง",
+      "group": "Teile der Wohnung",
+      "example": "Das ist ein Fenster.",
+      "id": "L15-V015",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือหน้าต่าง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Fenster.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Tür",
+      "word": "Tür",
+      "article": "die",
+      "plural": "die Türen",
+      "number": "singular",
+      "meaning": "ประตู",
+      "group": "Teile der Wohnung",
+      "example": "Das ist eine Tür.",
+      "id": "L15-V016",
+      "scope": "core_bildlexikon",
+      "exampleMeaning": "นี่คือประตู",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Tür.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Bett",
+      "word": "Bett",
+      "article": "das",
+      "plural": "die Betten",
+      "number": "singular",
+      "meaning": "เตียง",
+      "group": "Möbel",
+      "example": "Das ist ein Bett.",
+      "id": "L15-V017",
+      "scope": "retained_catalog_furniture",
+      "exampleMeaning": "นี่คือเตียง",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Bett.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "die Lampe",
+      "word": "Lampe",
+      "article": "die",
+      "plural": "die Lampen",
+      "number": "singular",
+      "meaning": "โคมไฟ",
+      "group": "Möbel",
+      "example": "Das ist eine Lampe.",
+      "id": "L15-V018",
+      "scope": "retained_catalog_furniture",
+      "exampleMeaning": "นี่คือโคมไฟ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "eine Lampe.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Sessel",
+      "word": "Sessel",
+      "article": "der",
+      "plural": "die Sessel",
+      "number": "singular",
+      "meaning": "เก้าอี้นวม",
+      "group": "Möbel",
+      "example": "Das ist ein Sessel.",
+      "id": "L15-V019",
+      "scope": "retained_catalog_furniture",
+      "exampleMeaning": "นี่คือเก้าอี้นวม",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Sessel.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "das Sofa",
+      "word": "Sofa",
+      "article": "das",
+      "plural": "die Sofas",
+      "number": "singular",
+      "meaning": "โซฟา",
+      "group": "Möbel",
+      "example": "Das ist ein Sofa.",
+      "id": "L15-V020",
+      "scope": "retained_catalog_furniture",
+      "exampleMeaning": "นี่คือโซฟา",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Sofa.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Tisch",
+      "word": "Tisch",
+      "article": "der",
+      "plural": "die Tische",
+      "number": "singular",
+      "meaning": "โต๊ะ",
+      "group": "Möbel",
+      "example": "Das ist ein Tisch.",
+      "id": "L15-V021",
+      "scope": "retained_catalog_furniture",
+      "exampleMeaning": "นี่คือโต๊ะ",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Tisch.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Schrank",
+      "word": "Schrank",
+      "article": "der",
+      "plural": "die Schränke",
+      "number": "singular",
+      "meaning": "ตู้",
+      "group": "Möbel",
+      "example": "Das ist ein Schrank.",
+      "id": "L15-V022",
+      "scope": "retained_catalog_furniture",
+      "exampleMeaning": "นี่คือตู้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Schrank.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Teppich",
+      "word": "Teppich",
+      "article": "der",
+      "plural": "die Teppiche",
+      "number": "singular",
+      "meaning": "พรมปูพื้น",
+      "group": "Möbel",
+      "example": "Das ist ein Teppich.",
+      "id": "L15-V023",
+      "scope": "retained_catalog_furniture",
+      "exampleMeaning": "นี่คือพรมปูพื้น",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Teppich.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "noun",
+      "headword": "der Stuhl",
+      "word": "Stuhl",
+      "article": "der",
+      "plural": "die Stühle",
+      "number": "singular",
+      "meaning": "เก้าอี้",
+      "group": "Möbel",
+      "example": "Das ist ein Stuhl.",
+      "id": "L15-V024",
+      "scope": "retained_catalog_furniture",
+      "exampleMeaning": "นี่คือเก้าอี้",
+      "exampleSentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ein Stuhl.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "L15-possessivartikel",
+      "title": "บอกว่าเป็นของใครด้วย sein / ihr",
+      "purpose": "ระบุเจ้าของก่อน แล้วเลือกรูปตามคำนามและหน้าที่ในประโยค",
+      "notes": [
+        "Tom → sein; Klara → ihr: เลือกรากตามเจ้าของ ไม่ใช่เพศของสิ่งของ",
+        "Nominativ ชาย/กลางใช้ sein หรือ ihr; หญิง/พหูพจน์ใช้ seine หรือ ihre",
+        "Akkusativ เพศชายเปลี่ยนเป็น seinen / ihren; กลาง หญิง และพหูพจน์คงรูปแบบเดียวกับ Nominativ",
+        "เมื่อกล่าวถึง Klara เป็นเจ้าของ ใช้ ihr ที่หมายถึงของเธอ; ดูข้อมูลเจ้าของในแต่ละตัวอย่าง"
+      ],
+      "table": [
+        [
+          "เจ้าของ",
+          "ชาย Nom.",
+          "ชาย Akk.",
+          "กลาง",
+          "หญิง / พหูพจน์"
+        ],
+        [
+          "Tom",
+          "sein",
+          "seinen",
+          "sein",
+          "seine"
+        ],
+        [
+          "Klara",
+          "ihr",
+          "ihren",
+          "ihr",
+          "ihre"
+        ]
+      ],
+      "models": [
+        {
+          "text": "Das ist sein Balkon.",
+          "sentences": [
+            [
+              {
+                "text": "Das",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "ist",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "sein Balkon.",
+                "role": "other",
+                "label": "ส่วนเติมเต็ม (Nominativ)"
+              }
+            ]
+          ],
+          "meaning": "นี่คือระเบียงของเขา",
+          "context": [
+            [
+              "เจ้าของ",
+              "Tom"
+            ]
+          ]
+        },
+        {
+          "text": "Ich finde seinen Balkon schön.",
+          "sentences": [
+            [
+              {
+                "text": "Ich",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "finde",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "seinen Balkon",
+                "role": "other",
+                "label": "กรรม (Akkusativ)"
+              },
+              {
+                "text": "schön.",
+                "role": "other",
+                "label": "ความเห็น"
+              }
+            ]
+          ],
+          "meaning": "ฉันคิดว่าระเบียงของเขาสวย",
+          "context": [
+            [
+              "เจ้าของ",
+              "Tom"
+            ]
+          ]
+        },
+        {
+          "text": "Ihre Lampe ist neu.",
+          "sentences": [
+            [
+              {
+                "text": "Ihre Lampe",
+                "role": "subject",
+                "label": "ประธาน",
+                "position": "ตำแหน่ง 1"
+              },
+              {
+                "text": "ist",
+                "role": "verb",
+                "label": "กริยาหลัก (ผันแล้ว)",
+                "position": "ตำแหน่ง 2"
+              },
+              {
+                "text": "neu.",
+                "role": "other",
+                "label": "ส่วนขยาย / ข้อมูล"
+              }
+            ]
+          ],
+          "meaning": "โคมไฟของเธอใหม่",
+          "context": [
+            [
+              "เจ้าของ",
+              "Klara"
+            ]
+          ]
+        }
+      ],
+      "questionIds": [
+        "A13-L15-POSSESSIVARTIKEL-001-PREP3",
+        "A13-L15-POSSESSIVARTIKEL-002-PREP3",
+        "A13-L15-POSSESSIVARTIKEL-003-PREP3",
+        "A13-L15-POSSESSIVARTIKEL-004-PREP3",
+        "A13-L15-POSSESSIVARTIKEL-005-PREP3",
+        "A13-L15-OWNER-PREP-001",
+        "A13-L15-ENDING-PREP-001"
+      ],
+      "diagnosticTargets": [
+        "L15-possessivartikel-owner",
+        "L15-possessivartikel-ending"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "แนะนำห้อง",
+      "purpose": "บอกว่าห้องใดคือห้องอะไร",
+      "context": [
+        [
+          "ภาพห้อง",
+          "ห้องทำงาน"
+        ]
+      ],
+      "question": "Was ist das?",
+      "questionMeaning": "นี่คืออะไร",
+      "reply": "Das ist das Arbeitszimmer.",
+      "replyMeaning": "นี่คือห้องทำงาน",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "das?",
+            "role": "subject",
+            "label": "ประธาน"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "das Arbeitszimmer.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "id": "L15-D01",
+      "questionTargetId": "L15-R001",
+      "replyTargetId": "L15-R002",
+      "requiredItemIds": [
+        "L15-R001",
+        "L15-R002"
+      ],
+      "trialIds": [
+        "L15-D01-A-try-v1",
+        "L15-D01-B-try-v1"
+      ]
+    },
+    {
+      "group": "แนะนำห้อง",
+      "purpose": "บอกว่ามีห้องชนิดใด",
+      "context": [
+        [
+          "ข้อมูลที่พัก",
+          "มีระเบียง"
+        ]
+      ],
+      "question": "Hat die Wohnung einen Balkon?",
+      "questionMeaning": "ห้องชุดมีระเบียงไหม",
+      "reply": "Ja, die Wohnung hat einen Balkon.",
+      "replyMeaning": "มี ห้องชุดมีระเบียง",
+      "questionSentences": [
+        [
+          {
+            "text": "Hat",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "die Wohnung",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "einen Balkon?",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ja,",
+            "role": "other",
+            "label": "ตอบรับ"
+          },
+          {
+            "text": "die Wohnung",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "hat",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "einen Balkon.",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          }
+        ]
+      ],
+      "id": "L15-D02",
+      "questionTargetId": "L15-R003",
+      "replyTargetId": "L15-R004",
+      "requiredItemIds": [
+        "L15-R003",
+        "L15-R004"
+      ],
+      "trialIds": [
+        "L15-D02-A-try-v1",
+        "L15-D02-B-try-v1"
+      ]
+    },
+    {
+      "group": "แสดงความคิดเห็น",
+      "purpose": "บอกความเห็นต่อห้อง",
+      "context": [
+        [
+          "ความรู้สึกต่อห้อง",
+          "สวย"
+        ]
+      ],
+      "question": "Wie findest du das Zimmer?",
+      "questionMeaning": "เธอคิดว่าห้องนี้เป็นอย่างไร",
+      "reply": "Ich finde das Zimmer schön.",
+      "replyMeaning": "ฉันคิดว่าห้องนี้สวย",
+      "questionSentences": [
+        [
+          {
+            "text": "Wie",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "findest",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "du",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "das Zimmer?",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "finde",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "das Zimmer",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          },
+          {
+            "text": "schön.",
+            "role": "other",
+            "label": "ความเห็น"
+          }
+        ]
+      ],
+      "id": "L15-D03",
+      "questionTargetId": "L15-R005",
+      "replyTargetId": "L15-R006",
+      "requiredItemIds": [
+        "L15-R005",
+        "L15-R006"
+      ],
+      "trialIds": [
+        "L15-D03-A-try-v1",
+        "L15-D03-B-try-v1"
+      ]
+    },
+    {
+      "group": "แสดงความคิดเห็น",
+      "purpose": "ถามและตอบความรู้สึกต่อสวน",
+      "context": [
+        [
+          "ความรู้สึกต่อสวน",
+          "ชอบเป็นพิเศษ"
+        ]
+      ],
+      "question": "Magst du den Garten?",
+      "questionMeaning": "เธอชอบสวนไหม",
+      "reply": "Ja, den Garten mag ich besonders.",
+      "replyMeaning": "ชอบ ฉันชอบสวนเป็นพิเศษ",
+      "questionSentences": [
+        [
+          {
+            "text": "Magst",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "du",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "den Garten?",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ja,",
+            "role": "other",
+            "label": "ตอบรับ"
+          },
+          {
+            "text": "den Garten",
+            "role": "other",
+            "label": "กรรม (Akkusativ)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "mag",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ich",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "besonders.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "id": "L15-D04",
+      "questionTargetId": "L15-R007",
+      "replyTargetId": "L15-R008",
+      "requiredItemIds": [
+        "L15-R007",
+        "L15-R008"
+      ],
+      "trialIds": [
+        "L15-D04-A-try-v1",
+        "L15-D04-B-try-v1"
+      ]
+    },
+    {
+      "group": "บอกเจ้าของ",
+      "purpose": "ระบุของของบุคคลที่กล่าวถึง",
+      "context": [
+        [
+          "เจ้าของ",
+          "Tom"
+        ],
+        [
+          "สิ่งของ",
+          "เก้าอี้นวม"
+        ]
+      ],
+      "question": "Ist das Toms Sessel?",
+      "questionMeaning": "นี่คือเก้าอี้นวมของ Tom ใช่ไหม",
+      "reply": "Ja, das ist sein Sessel.",
+      "replyMeaning": "ใช่ นี่คือเก้าอี้นวมของเขา",
+      "questionSentences": [
+        [
+          {
+            "text": "Ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "das",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "Toms Sessel?",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ja,",
+            "role": "other",
+            "label": "ตอบรับ"
+          },
+          {
+            "text": "das",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "sein Sessel.",
+            "role": "other",
+            "label": "ส่วนเติมเต็ม (Nominativ)"
+          }
+        ]
+      ],
+      "id": "L15-D05",
+      "questionTargetId": "L15-R009",
+      "replyTargetId": "L15-R010",
+      "requiredItemIds": [
+        "L15-R009",
+        "L15-R010"
+      ],
+      "trialIds": [
+        "L15-D05-A-try-v1",
+        "L15-D05-B-try-v1"
+      ]
+    },
+    {
+      "group": "บอกเจ้าของ",
+      "purpose": "แสดงความเห็นโดยระบุเจ้าของ",
+      "context": [
+        [
+          "เจ้าของ",
+          "Klara"
+        ],
+        [
+          "ความรู้สึกต่อโคมไฟ",
+          "สวย"
+        ]
+      ],
+      "question": "Wie findest du Klaras Lampe?",
+      "questionMeaning": "เธอคิดว่าโคมไฟของ Klara เป็นอย่างไร",
+      "reply": "Ich finde ihre Lampe schön.",
+      "replyMeaning": "ฉันคิดว่าโคมไฟของเธอสวย",
+      "questionSentences": [
+        [
+          {
+            "text": "Wie",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "findest",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "du",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "Klaras Lampe?",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ich",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "finde",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "ihre Lampe",
+            "role": "other",
+            "label": "กรรม (Akkusativ)"
+          },
+          {
+            "text": "schön.",
+            "role": "other",
+            "label": "ความเห็น"
+          }
+        ]
+      ],
+      "id": "L15-D06",
+      "questionTargetId": "L15-R011",
+      "replyTargetId": "L15-R012",
+      "requiredItemIds": [
+        "L15-R011",
+        "L15-R012"
+      ],
+      "trialIds": [
+        "L15-D06-A-try-v1",
+        "L15-D06-B-try-v1"
+      ]
+    },
+    {
+      "group": "หาห้องพัก",
+      "purpose": "ถามว่าห้องว่างหรือไม่",
+      "context": [
+        [
+          "สถานะห้อง",
+          "ว่าง"
+        ]
+      ],
+      "question": "Ist das Zimmer noch frei?",
+      "questionMeaning": "ห้องนี้ยังว่างอยู่ไหม",
+      "reply": "Ja, das Zimmer ist noch frei.",
+      "replyMeaning": "ใช่ ห้องนี้ยังว่างอยู่",
+      "questionSentences": [
+        [
+          {
+            "text": "Ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "das Zimmer",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "noch frei?",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Ja,",
+            "role": "other",
+            "label": "ตอบรับ"
+          },
+          {
+            "text": "das Zimmer",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "ist",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "noch frei.",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          }
+        ]
+      ],
+      "id": "L15-D07",
+      "questionTargetId": "L15-R013",
+      "replyTargetId": "L15-R014",
+      "requiredItemIds": [
+        "L15-R013",
+        "L15-R014"
+      ],
+      "trialIds": [
+        "L15-D07-A-try-v1",
+        "L15-D07-B-try-v1"
+      ]
+    },
+    {
+      "group": "หาห้องพัก",
+      "purpose": "ถามและบอกค่าเช่า",
+      "context": [
+        [
+          "ค่าเช่ารวมต่อเดือน",
+          "620 Euro"
+        ]
+      ],
+      "question": "Was kostet das Zimmer im Monat?",
+      "questionMeaning": "ห้องนี้ค่าเช่าเดือนละเท่าไร",
+      "reply": "Es kostet 620 Euro im Monat.",
+      "replyMeaning": "ค่าเช่าเดือนละ 620 ยูโร",
+      "questionSentences": [
+        [
+          {
+            "text": "Was",
+            "role": "question",
+            "label": "คำถาม",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "kostet",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "das Zimmer",
+            "role": "subject",
+            "label": "ประธาน"
+          },
+          {
+            "text": "im Monat?",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          }
+        ]
+      ],
+      "replySentences": [
+        [
+          {
+            "text": "Es",
+            "role": "subject",
+            "label": "ประธาน",
+            "position": "ตำแหน่ง 1"
+          },
+          {
+            "text": "kostet",
+            "role": "verb",
+            "label": "กริยาหลัก (ผันแล้ว)",
+            "position": "ตำแหน่ง 2"
+          },
+          {
+            "text": "620 Euro",
+            "role": "other",
+            "label": "ส่วนขยาย / ข้อมูล"
+          },
+          {
+            "text": "im Monat.",
+            "role": "time",
+            "label": "เวลา / ลำดับ"
+          }
+        ]
+      ],
+      "id": "L15-D08",
+      "questionTargetId": "L15-R015",
+      "replyTargetId": "L15-R016",
+      "requiredItemIds": [
+        "L15-R015",
+        "L15-R016"
+      ],
+      "trialIds": [
+        "L15-D08-A-try-v1",
+        "L15-D08-B-try-v1"
+      ]
+    }
+  ],
+  "practiceCandidates": [
+    {
+      "id": "L15-V001-meaning-v1",
+      "targetId": "L15-V001",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V001"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Haus",
+        "options": [
+          "อพาร์ตเมนต์หรือห้องชุด",
+          "บ้าน",
+          "ห้อง"
+        ]
+      },
+      "grading": {
+        "answer": "บ้าน"
+      },
+      "contextId": "L15-V001-definition"
+    },
+    {
+      "id": "L15-V001-article-v1",
+      "targetId": "L15-V001",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V001"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Haus",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V001-lemma"
+    },
+    {
+      "id": "L15-V001-spelling-v1",
+      "targetId": "L15-V001",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V001"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "บ้าน",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Haus",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V001-recall"
+    },
+    {
+      "id": "L15-V002-meaning-v1",
+      "targetId": "L15-V002",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V002"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Wohnung",
+        "options": [
+          "บ้าน",
+          "อพาร์ตเมนต์หรือห้องชุด",
+          "ห้อง"
+        ]
+      },
+      "grading": {
+        "answer": "อพาร์ตเมนต์หรือห้องชุด"
+      },
+      "contextId": "L15-V002-definition"
+    },
+    {
+      "id": "L15-V002-article-v1",
+      "targetId": "L15-V002",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V002"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Wohnung",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L15-V002-lemma"
+    },
+    {
+      "id": "L15-V002-spelling-v1",
+      "targetId": "L15-V002",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V002"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "อพาร์ตเมนต์หรือห้องชุด",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Wohnung",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V002-recall"
+    },
+    {
+      "id": "L15-V003-meaning-v1",
+      "targetId": "L15-V003",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V003"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Zimmer",
+        "options": [
+          "บ้าน",
+          "ห้อง",
+          "อพาร์ตเมนต์หรือห้องชุด"
+        ]
+      },
+      "grading": {
+        "answer": "ห้อง"
+      },
+      "contextId": "L15-V003-definition"
+    },
+    {
+      "id": "L15-V003-article-v1",
+      "targetId": "L15-V003",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V003"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Zimmer",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V003-lemma"
+    },
+    {
+      "id": "L15-V003-spelling-v1",
+      "targetId": "L15-V003",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V003"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ห้อง",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Zimmer",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V003-recall"
+    },
+    {
+      "id": "L15-V004-meaning-v1",
+      "targetId": "L15-V004",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V004"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Arbeitszimmer",
+        "options": [
+          "บ้าน",
+          "ห้องทำงาน",
+          "อพาร์ตเมนต์หรือห้องชุด"
+        ]
+      },
+      "grading": {
+        "answer": "ห้องทำงาน"
+      },
+      "contextId": "L15-V004-definition"
+    },
+    {
+      "id": "L15-V004-article-v1",
+      "targetId": "L15-V004",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V004"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Arbeitszimmer",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V004-lemma"
+    },
+    {
+      "id": "L15-V004-spelling-v1",
+      "targetId": "L15-V004",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V004"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ห้องทำงาน",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Arbeitszimmer",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V004-recall"
+    },
+    {
+      "id": "L15-V005-meaning-v1",
+      "targetId": "L15-V005",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V005"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Wohnzimmer",
+        "options": [
+          "บ้าน",
+          "ห้องนั่งเล่น",
+          "อพาร์ตเมนต์หรือห้องชุด"
+        ]
+      },
+      "grading": {
+        "answer": "ห้องนั่งเล่น"
+      },
+      "contextId": "L15-V005-definition"
+    },
+    {
+      "id": "L15-V005-article-v1",
+      "targetId": "L15-V005",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V005"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Wohnzimmer",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V005-lemma"
+    },
+    {
+      "id": "L15-V005-spelling-v1",
+      "targetId": "L15-V005",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V005"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ห้องนั่งเล่น",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Wohnzimmer",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V005-recall"
+    },
+    {
+      "id": "L15-V006-meaning-v1",
+      "targetId": "L15-V006",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V006"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Schlafzimmer",
+        "options": [
+          "บ้าน",
+          "ห้องนอน",
+          "อพาร์ตเมนต์หรือห้องชุด"
+        ]
+      },
+      "grading": {
+        "answer": "ห้องนอน"
+      },
+      "contextId": "L15-V006-definition"
+    },
+    {
+      "id": "L15-V006-article-v1",
+      "targetId": "L15-V006",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V006"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Schlafzimmer",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V006-lemma"
+    },
+    {
+      "id": "L15-V006-spelling-v1",
+      "targetId": "L15-V006",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V006"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ห้องนอน",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Schlafzimmer",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V006-recall"
+    },
+    {
+      "id": "L15-V007-meaning-v1",
+      "targetId": "L15-V007",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V007"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Kinderzimmer",
+        "options": [
+          "บ้าน",
+          "ห้องเด็ก",
+          "อพาร์ตเมนต์หรือห้องชุด"
+        ]
+      },
+      "grading": {
+        "answer": "ห้องเด็ก"
+      },
+      "contextId": "L15-V007-definition"
+    },
+    {
+      "id": "L15-V007-article-v1",
+      "targetId": "L15-V007",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V007"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Kinderzimmer",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V007-lemma"
+    },
+    {
+      "id": "L15-V007-spelling-v1",
+      "targetId": "L15-V007",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V007"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ห้องเด็ก",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Kinderzimmer",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V007-recall"
+    },
+    {
+      "id": "L15-V008-meaning-v1",
+      "targetId": "L15-V008",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V008"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Bad",
+        "options": [
+          "บ้าน",
+          "ห้องน้ำสำหรับล้างตัวหรืออาบน้ำ",
+          "อพาร์ตเมนต์หรือห้องชุด"
+        ]
+      },
+      "grading": {
+        "answer": "ห้องน้ำสำหรับล้างตัวหรืออาบน้ำ"
+      },
+      "contextId": "L15-V008-definition"
+    },
+    {
+      "id": "L15-V008-article-v1",
+      "targetId": "L15-V008",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V008"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Bad",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V008-lemma"
+    },
+    {
+      "id": "L15-V008-spelling-v1",
+      "targetId": "L15-V008",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V008"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ห้องน้ำสำหรับล้างตัวหรืออาบน้ำ",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Bad",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V008-recall"
+    },
+    {
+      "id": "L15-V009-meaning-v1",
+      "targetId": "L15-V009",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V009"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Küche",
+        "options": [
+          "ห้องสุขา",
+          "ห้องครัว",
+          "โถงทางเดิน"
+        ]
+      },
+      "grading": {
+        "answer": "ห้องครัว"
+      },
+      "contextId": "L15-V009-definition"
+    },
+    {
+      "id": "L15-V009-article-v1",
+      "targetId": "L15-V009",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V009"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Küche",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L15-V009-lemma"
+    },
+    {
+      "id": "L15-V009-spelling-v1",
+      "targetId": "L15-V009",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V009"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ห้องครัว",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Küche",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V009-recall"
+    },
+    {
+      "id": "L15-V010-meaning-v1",
+      "targetId": "L15-V010",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V010"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Toilette",
+        "options": [
+          "ห้องครัว",
+          "ห้องสุขา",
+          "โถงทางเดิน"
+        ]
+      },
+      "grading": {
+        "answer": "ห้องสุขา"
+      },
+      "contextId": "L15-V010-definition"
+    },
+    {
+      "id": "L15-V010-article-v1",
+      "targetId": "L15-V010",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V010"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Toilette",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L15-V010-lemma"
+    },
+    {
+      "id": "L15-V010-spelling-v1",
+      "targetId": "L15-V010",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V010"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ห้องสุขา",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Toilette",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V010-recall"
+    },
+    {
+      "id": "L15-V011-meaning-v1",
+      "targetId": "L15-V011",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V011"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Flur",
+        "options": [
+          "ห้องครัว",
+          "โถงทางเดิน",
+          "ห้องสุขา"
+        ]
+      },
+      "grading": {
+        "answer": "โถงทางเดิน"
+      },
+      "contextId": "L15-V011-definition"
+    },
+    {
+      "id": "L15-V011-article-v1",
+      "targetId": "L15-V011",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V011"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Flur",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L15-V011-lemma"
+    },
+    {
+      "id": "L15-V011-spelling-v1",
+      "targetId": "L15-V011",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V011"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "โถงทางเดิน",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Flur",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V011-recall"
+    },
+    {
+      "id": "L15-V012-meaning-v1",
+      "targetId": "L15-V012",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V012"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Balkon",
+        "options": [
+          "ห้องครัว",
+          "ระเบียง",
+          "ห้องสุขา"
+        ]
+      },
+      "grading": {
+        "answer": "ระเบียง"
+      },
+      "contextId": "L15-V012-definition"
+    },
+    {
+      "id": "L15-V012-article-v1",
+      "targetId": "L15-V012",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V012"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Balkon",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L15-V012-lemma"
+    },
+    {
+      "id": "L15-V012-spelling-v1",
+      "targetId": "L15-V012",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V012"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ระเบียง",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Balkon",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V012-recall"
+    },
+    {
+      "id": "L15-V013-meaning-v1",
+      "targetId": "L15-V013",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V013"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Garten",
+        "options": [
+          "ห้องครัว",
+          "สวน",
+          "ห้องสุขา"
+        ]
+      },
+      "grading": {
+        "answer": "สวน"
+      },
+      "contextId": "L15-V013-definition"
+    },
+    {
+      "id": "L15-V013-article-v1",
+      "targetId": "L15-V013",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V013"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Garten",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L15-V013-lemma"
+    },
+    {
+      "id": "L15-V013-spelling-v1",
+      "targetId": "L15-V013",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V013"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "สวน",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Garten",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V013-recall"
+    },
+    {
+      "id": "L15-V014-meaning-v1",
+      "targetId": "L15-V014",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V014"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Treppe",
+        "options": [
+          "ห้องครัว",
+          "บันได",
+          "ห้องสุขา"
+        ]
+      },
+      "grading": {
+        "answer": "บันได"
+      },
+      "contextId": "L15-V014-definition"
+    },
+    {
+      "id": "L15-V014-article-v1",
+      "targetId": "L15-V014",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V014"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Treppe",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L15-V014-lemma"
+    },
+    {
+      "id": "L15-V014-spelling-v1",
+      "targetId": "L15-V014",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V014"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "บันได",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Treppe",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V014-recall"
+    },
+    {
+      "id": "L15-V015-meaning-v1",
+      "targetId": "L15-V015",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V015"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Fenster",
+        "options": [
+          "ห้องครัว",
+          "หน้าต่าง",
+          "ห้องสุขา"
+        ]
+      },
+      "grading": {
+        "answer": "หน้าต่าง"
+      },
+      "contextId": "L15-V015-definition"
+    },
+    {
+      "id": "L15-V015-article-v1",
+      "targetId": "L15-V015",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V015"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Fenster",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V015-lemma"
+    },
+    {
+      "id": "L15-V015-spelling-v1",
+      "targetId": "L15-V015",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V015"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "หน้าต่าง",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Fenster",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V015-recall"
+    },
+    {
+      "id": "L15-V016-meaning-v1",
+      "targetId": "L15-V016",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V016"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Tür",
+        "options": [
+          "ห้องครัว",
+          "ประตู",
+          "ห้องสุขา"
+        ]
+      },
+      "grading": {
+        "answer": "ประตู"
+      },
+      "contextId": "L15-V016-definition"
+    },
+    {
+      "id": "L15-V016-article-v1",
+      "targetId": "L15-V016",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V016"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Tür",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L15-V016-lemma"
+    },
+    {
+      "id": "L15-V016-spelling-v1",
+      "targetId": "L15-V016",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V016"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ประตู",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Tür",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V016-recall"
+    },
+    {
+      "id": "L15-V017-meaning-v1",
+      "targetId": "L15-V017",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V017"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Bett",
+        "options": [
+          "โคมไฟ",
+          "เตียง",
+          "เก้าอี้นวม"
+        ]
+      },
+      "grading": {
+        "answer": "เตียง"
+      },
+      "contextId": "L15-V017-definition"
+    },
+    {
+      "id": "L15-V017-article-v1",
+      "targetId": "L15-V017",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V017"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Bett",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V017-lemma"
+    },
+    {
+      "id": "L15-V017-spelling-v1",
+      "targetId": "L15-V017",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V017"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เตียง",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Bett",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V017-recall"
+    },
+    {
+      "id": "L15-V018-meaning-v1",
+      "targetId": "L15-V018",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V018"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "die Lampe",
+        "options": [
+          "เตียง",
+          "โคมไฟ",
+          "เก้าอี้นวม"
+        ]
+      },
+      "grading": {
+        "answer": "โคมไฟ"
+      },
+      "contextId": "L15-V018-definition"
+    },
+    {
+      "id": "L15-V018-article-v1",
+      "targetId": "L15-V018",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V018"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Lampe",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "die"
+      },
+      "contextId": "L15-V018-lemma"
+    },
+    {
+      "id": "L15-V018-spelling-v1",
+      "targetId": "L15-V018",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V018"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "โคมไฟ",
+        "articlePrefix": "die"
+      },
+      "grading": {
+        "answer": "Lampe",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V018-recall"
+    },
+    {
+      "id": "L15-V019-meaning-v1",
+      "targetId": "L15-V019",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V019"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Sessel",
+        "options": [
+          "เตียง",
+          "เก้าอี้นวม",
+          "โคมไฟ"
+        ]
+      },
+      "grading": {
+        "answer": "เก้าอี้นวม"
+      },
+      "contextId": "L15-V019-definition"
+    },
+    {
+      "id": "L15-V019-article-v1",
+      "targetId": "L15-V019",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V019"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Sessel",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L15-V019-lemma"
+    },
+    {
+      "id": "L15-V019-spelling-v1",
+      "targetId": "L15-V019",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V019"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เก้าอี้นวม",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Sessel",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V019-recall"
+    },
+    {
+      "id": "L15-V020-meaning-v1",
+      "targetId": "L15-V020",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V020"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "das Sofa",
+        "options": [
+          "เตียง",
+          "โซฟา",
+          "โคมไฟ"
+        ]
+      },
+      "grading": {
+        "answer": "โซฟา"
+      },
+      "contextId": "L15-V020-definition"
+    },
+    {
+      "id": "L15-V020-article-v1",
+      "targetId": "L15-V020",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V020"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Sofa",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "das"
+      },
+      "contextId": "L15-V020-lemma"
+    },
+    {
+      "id": "L15-V020-spelling-v1",
+      "targetId": "L15-V020",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V020"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "โซฟา",
+        "articlePrefix": "das"
+      },
+      "grading": {
+        "answer": "Sofa",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V020-recall"
+    },
+    {
+      "id": "L15-V021-meaning-v1",
+      "targetId": "L15-V021",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V021"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Tisch",
+        "options": [
+          "เตียง",
+          "โต๊ะ",
+          "โคมไฟ"
+        ]
+      },
+      "grading": {
+        "answer": "โต๊ะ"
+      },
+      "contextId": "L15-V021-definition"
+    },
+    {
+      "id": "L15-V021-article-v1",
+      "targetId": "L15-V021",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V021"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Tisch",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L15-V021-lemma"
+    },
+    {
+      "id": "L15-V021-spelling-v1",
+      "targetId": "L15-V021",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V021"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "โต๊ะ",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Tisch",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V021-recall"
+    },
+    {
+      "id": "L15-V022-meaning-v1",
+      "targetId": "L15-V022",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V022"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Schrank",
+        "options": [
+          "เตียง",
+          "ตู้",
+          "โคมไฟ"
+        ]
+      },
+      "grading": {
+        "answer": "ตู้"
+      },
+      "contextId": "L15-V022-definition"
+    },
+    {
+      "id": "L15-V022-article-v1",
+      "targetId": "L15-V022",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V022"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Schrank",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L15-V022-lemma"
+    },
+    {
+      "id": "L15-V022-spelling-v1",
+      "targetId": "L15-V022",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V022"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "ตู้",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Schrank",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V022-recall"
+    },
+    {
+      "id": "L15-V023-meaning-v1",
+      "targetId": "L15-V023",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V023"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Teppich",
+        "options": [
+          "เตียง",
+          "พรมปูพื้น",
+          "โคมไฟ"
+        ]
+      },
+      "grading": {
+        "answer": "พรมปูพื้น"
+      },
+      "contextId": "L15-V023-definition"
+    },
+    {
+      "id": "L15-V023-article-v1",
+      "targetId": "L15-V023",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V023"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Teppich",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L15-V023-lemma"
+    },
+    {
+      "id": "L15-V023-spelling-v1",
+      "targetId": "L15-V023",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V023"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "พรมปูพื้น",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Teppich",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V023-recall"
+    },
+    {
+      "id": "L15-V024-meaning-v1",
+      "targetId": "L15-V024",
+      "subskill": "word_meaning",
+      "kind": "meaning_choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกระหว่างความหมายที่ต่างกัน โดยเห็นรูปคำเต็ม; ยังไม่ใช่การนึกคำเอง",
+      "assistanceAvailable": [
+        "supplied-german-form",
+        "meaning-options",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V024"
+      ],
+      "public": {
+        "prompt": "เลือกความหมายที่ตรงกับคำหรือวลี",
+        "german": "der Stuhl",
+        "options": [
+          "เตียง",
+          "เก้าอี้",
+          "โคมไฟ"
+        ]
+      },
+      "grading": {
+        "answer": "เก้าอี้"
+      },
+      "contextId": "L15-V024-definition"
+    },
+    {
+      "id": "L15-V024-article-v1",
+      "targetId": "L15-V024",
+      "subskill": "noun_article",
+      "kind": "article_choice",
+      "difficulty": 1,
+      "difficultyRationale": "จำแนกคำนำหน้านามจากรูปคำ; พหูพจน์วัดคำนำหน้าพหูพจน์ ไม่อนุมานเพศเอกพจน์",
+      "assistanceAvailable": [
+        "article-options",
+        "supplied-number"
+      ],
+      "requiredLearnedIds": [
+        "L15-V024"
+      ],
+      "public": {
+        "prompt": "เลือกคำนำหน้านาม",
+        "word": "Stuhl",
+        "number": "singular",
+        "targetColor": "neutral",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ]
+      },
+      "grading": {
+        "answer": "der"
+      },
+      "contextId": "L15-V024-lemma"
+    },
+    {
+      "id": "L15-V024-spelling-v1",
+      "targetId": "L15-V024",
+      "subskill": "word_spelling",
+      "kind": "spelling",
+      "difficulty": 2,
+      "difficultyRationale": "นึกรูปคำจากความหมายโดยไม่เห็นคำเยอรมันเต็ม; Artikel ที่ให้ไม่เป็นหลักฐานการจำ Artikel",
+      "assistanceAvailable": [
+        "german-character-keyboard",
+        "optional-first-letter",
+        "supplied-artikel"
+      ],
+      "requiredLearnedIds": [
+        "L15-V024"
+      ],
+      "public": {
+        "prompt": "พิมพ์คำภาษาเยอรมัน",
+        "meaning": "เก้าอี้",
+        "articlePrefix": "der"
+      },
+      "grading": {
+        "answer": "Stuhl",
+        "normalization": "Unicode NFC + trim; retain umlaut/ß; report noun capitalization separately"
+      },
+      "contextId": "L15-V024-recall"
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-001-PREP3",
+      "version": 3,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-001",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Tom hat einen Balkon. Ich finde ___ Balkon schön.",
+      "options": [
+        "seinen",
+        "sein",
+        "seine"
+      ],
+      "acceptedAnswers": [
+        "seinen"
+      ],
+      "subskill": "possessive_reference_and_inflection",
+      "difficulty": 1,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "เจ้าของคือ Tom จึงใช้ sein และ Balkon เป็นกรรมเพศชาย จึงเปลี่ยนเป็น seinen",
+      "knownErrors": {
+        "sein": "possessive_form",
+        "seine": "possessive_form"
+      },
+      "targetId": "L15-possessivartikel",
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Ich finde seinen Balkon schön.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "finde",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "seinen Balkon",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "schön.",
+              "role": "other",
+              "label": "ความเห็น"
+            }
+          ]
+        ],
+        "meaning": "ฉันคิดว่าระเบียงของเขาสวย",
+        "reason": "เจ้าของคือ Tom จึงใช้ sein และ Balkon เป็นกรรมเพศชาย จึงเปลี่ยนเป็น seinen"
+      }
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-002-PREP3",
+      "version": 3,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-002",
+      "kind": "choice",
+      "prompt": "เลือกคำให้ประโยคสมบูรณ์",
+      "sentence": "Klara hat ein Zimmer. ___ Zimmer ist groß.",
+      "options": [
+        "Ihr",
+        "Ihre",
+        "Ihren"
+      ],
+      "acceptedAnswers": [
+        "Ihr"
+      ],
+      "subskill": "possessive_reference_and_inflection",
+      "difficulty": 1,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "เจ้าของคือ Klara จึงใช้ ihr; Zimmer เป็นประธานเพศกลาง จึงคงรูป ihr",
+      "knownErrors": {
+        "Ihre": "possessive_form",
+        "Ihren": "possessive_form"
+      },
+      "targetId": "L15-possessivartikel",
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "options"
+      ],
+      "difficultyRationale": "จำแนกรูปหรือความสัมพันธ์จากตัวเลือก โดยบริบทที่ให้จำกัดคำตอบ",
+      "feedback": {
+        "text": "Ihr Zimmer ist groß.",
+        "sentences": [
+          [
+            {
+              "text": "Ihr Zimmer",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "groß.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "meaning": "ห้องของเธอใหญ่",
+        "reason": "เจ้าของคือ Klara จึงใช้ ihr; Zimmer เป็นประธานเพศกลาง จึงคงรูป ihr"
+      }
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-003-PREP3",
+      "version": 3,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-003",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Tom hat eine Küche. Ich finde ___ Küche schön.",
+      "acceptedAnswers": [
+        "seine"
+      ],
+      "subskill": "possessive_reference_and_inflection",
+      "difficulty": 2,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "เจ้าของคือ Tom จึงใช้ sein และ Küche เป็นเพศหญิง จึงใช้ seine ใน Akkusativ",
+      "knownErrors": {},
+      "targetId": "L15-possessivartikel",
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "assistanceAvailable": [
+        "prior-model"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "feedback": {
+        "text": "Ich finde seine Küche schön.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "finde",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "seine Küche",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "schön.",
+              "role": "other",
+              "label": "ความเห็น"
+            }
+          ]
+        ],
+        "meaning": "ฉันคิดว่าห้องครัวของเขาสวย",
+        "reason": "เจ้าของคือ Tom จึงใช้ sein และ Küche เป็นเพศหญิง จึงใช้ seine ใน Akkusativ"
+      }
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-004-PREP3",
+      "version": 3,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-004",
+      "kind": "cloze",
+      "prompt": "พิมพ์คำที่ถูกต้องลงในช่องว่าง",
+      "sentence": "Klara hat eine Lampe. ___ Lampe ist neu.",
+      "acceptedAnswers": [
+        "Ihre"
+      ],
+      "subskill": "possessive_reference_and_inflection",
+      "difficulty": 2,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "เจ้าของคือ Klara และ Lampe เป็นประธานเพศหญิง จึงใช้ ihre",
+      "knownErrors": {},
+      "targetId": "L15-possessivartikel",
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "assistanceAvailable": [
+        "prior-model"
+      ],
+      "difficultyRationale": "เติมรูปที่ต้องใช้เอง โดยมีประธาน/เจ้าของ/รูปต้นทางที่จำเป็น; ไม่ประเมินสิ่งที่ให้เป็นตัวช่วย",
+      "feedback": {
+        "text": "Ihre Lampe ist neu.",
+        "sentences": [
+          [
+            {
+              "text": "Ihre Lampe",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "neu.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "meaning": "โคมไฟของเธอใหม่",
+        "reason": "เจ้าของคือ Klara และ Lampe เป็นประธานเพศหญิง จึงใช้ ihre"
+      }
+    },
+    {
+      "id": "A13-L15-POSSESSIVARTIKEL-005-PREP3",
+      "version": 3,
+      "topicId": "L15-possessivartikel",
+      "variantGroup": "a13-l15-possessivartikel-005",
+      "kind": "order",
+      "prompt": "เรียงประโยคตามแบบที่เรียน โดยเริ่มด้วย Ich",
+      "tokens": [
+        "schön.",
+        "Balkon",
+        "seinen",
+        "finde",
+        "Ich"
+      ],
+      "acceptedAnswers": [
+        "Ich finde seinen Balkon schön."
+      ],
+      "subskill": "declarative_word_order",
+      "difficulty": 2,
+      "hint": "หาเจ้าของก่อน แล้วดูเพศและ Case ของคำนามที่ตามมา",
+      "explanation": "ประโยคนี้เริ่มด้วย Ich จึงวาง finde ที่ตำแหน่ง 2 และกลุ่ม seinen Balkon เป็นกรรม",
+      "knownErrors": {},
+      "targetId": "L15-possessivartikel",
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "assistanceAvailable": [
+        "prior-model",
+        "supplied-words",
+        "provided-start",
+        "reconstruct-taught-model"
+      ],
+      "startWith": "Ich",
+      "difficultyRationale": "จัดลำดับคำที่ให้ตามแบบที่เรียน; ประโยคสั้นสามคำใช้ระดับ 1 ส่วนโครงสร้างยาวขึ้นใช้ระดับ 2; ไม่เทียบกับการผลิตภาษาอิสระ",
+      "feedback": {
+        "text": "Ich finde seinen Balkon schön.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "finde",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "seinen Balkon",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "schön.",
+              "role": "other",
+              "label": "ความเห็น"
+            }
+          ]
+        ],
+        "meaning": "ฉันคิดว่าระเบียงของเขาสวย",
+        "reason": "ประโยคนี้เริ่มด้วย Ich จึงวาง finde ที่ตำแหน่ง 2 และกลุ่ม seinen Balkon เป็นกรรม"
+      }
+    },
+    {
+      "id": "L15-D01-A-try-v1",
+      "targetId": "L15-R001",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 1,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R001",
+        "L15-R002"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกว่าห้องใดคือห้องอะไร",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ภาพห้อง",
+          "ห้องทำงาน"
+        ]
+      ],
+      "prompt": "Das ist das Arbeitszimmer.",
+      "feedback": {
+        "question": "Was ist das?",
+        "reply": "Das ist das Arbeitszimmer.",
+        "questionMeaning": "นี่คืออะไร",
+        "replyMeaning": "นี่คือห้องทำงาน",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das?",
+              "role": "subject",
+              "label": "ประธาน"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Das",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das Arbeitszimmer.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "Arbeitszimmer หมายถึงห้องทำงาน จึงตรงกับห้องที่ระบุในภาพข้อมูล"
+      },
+      "grading": {
+        "answer": "Was ist das?"
+      },
+      "contextId": "L15-D01",
+      "tokens": [
+        "das?",
+        "ist",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L15-D01-B-try-v1",
+      "targetId": "L15-R002",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L15-R001",
+        "L15-R002"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกว่าห้องใดคือห้องอะไร",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "ภาพห้อง",
+          "ห้องทำงาน"
+        ]
+      ],
+      "prompt": "Was ist das?",
+      "feedback": {
+        "question": "Was ist das?",
+        "reply": "Das ist das Arbeitszimmer.",
+        "questionMeaning": "นี่คืออะไร",
+        "replyMeaning": "นี่คือห้องทำงาน",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das?",
+              "role": "subject",
+              "label": "ประธาน"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Das",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das Arbeitszimmer.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "Arbeitszimmer หมายถึงห้องทำงาน จึงตรงกับห้องที่ระบุในภาพข้อมูล"
+      },
+      "grading": {
+        "answer": "Das ist das Arbeitszimmer."
+      },
+      "contextId": "L15-D01",
+      "options": [
+        "Das ist das Bad.",
+        "Das ist das Arbeitszimmer.",
+        "Das ist das Schlafzimmer."
+      ]
+    },
+    {
+      "id": "L15-D02-A-try-v1",
+      "targetId": "L15-R003",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R003",
+        "L15-R004"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกว่ามีห้องชนิดใด",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ข้อมูลที่พัก",
+          "มีระเบียง"
+        ]
+      ],
+      "prompt": "Ja, die Wohnung hat einen Balkon.",
+      "feedback": {
+        "question": "Hat die Wohnung einen Balkon?",
+        "reply": "Ja, die Wohnung hat einen Balkon.",
+        "questionMeaning": "ห้องชุดมีระเบียงไหม",
+        "replyMeaning": "มี ห้องชุดมีระเบียง",
+        "questionSentences": [
+          [
+            {
+              "text": "Hat",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "die Wohnung",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "einen Balkon?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "die Wohnung",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "hat",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "einen Balkon.",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "reason": "ข้อมูลบอกว่ามีระเบียง จึงตอบรับด้วย hat einen Balkon"
+      },
+      "grading": {
+        "answer": "Hat die Wohnung einen Balkon?"
+      },
+      "contextId": "L15-D02",
+      "tokens": [
+        "Balkon?",
+        "einen",
+        "Wohnung",
+        "die",
+        "Hat"
+      ],
+      "startWith": "Hat"
+    },
+    {
+      "id": "L15-D02-B-try-v1",
+      "targetId": "L15-R004",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R003",
+        "L15-R004"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกว่ามีห้องชนิดใด",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ข้อมูลที่พัก",
+          "มีระเบียง"
+        ]
+      ],
+      "prompt": "Hat die Wohnung einen Balkon?",
+      "feedback": {
+        "question": "Hat die Wohnung einen Balkon?",
+        "reply": "Ja, die Wohnung hat einen Balkon.",
+        "questionMeaning": "ห้องชุดมีระเบียงไหม",
+        "replyMeaning": "มี ห้องชุดมีระเบียง",
+        "questionSentences": [
+          [
+            {
+              "text": "Hat",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "die Wohnung",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "einen Balkon?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "die Wohnung",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "hat",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "einen Balkon.",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "reason": "ข้อมูลบอกว่ามีระเบียง จึงตอบรับด้วย hat einen Balkon"
+      },
+      "grading": {
+        "answer": "Ja, die Wohnung hat einen Balkon."
+      },
+      "contextId": "L15-D02",
+      "tokens": [
+        "Balkon.",
+        "einen",
+        "hat",
+        "Wohnung",
+        "die",
+        "Ja,"
+      ],
+      "startWith": "Ja,"
+    },
+    {
+      "id": "L15-D03-A-try-v1",
+      "targetId": "L15-R005",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R005",
+        "L15-R006"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "บอกความเห็นต่อห้อง",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความรู้สึกต่อห้อง",
+          "สวย"
+        ]
+      ],
+      "prompt": "Ich finde das Zimmer schön.",
+      "feedback": {
+        "question": "Wie findest du das Zimmer?",
+        "reply": "Ich finde das Zimmer schön.",
+        "questionMeaning": "เธอคิดว่าห้องนี้เป็นอย่างไร",
+        "replyMeaning": "ฉันคิดว่าห้องนี้สวย",
+        "questionSentences": [
+          [
+            {
+              "text": "Wie",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "findest",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "das Zimmer?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "finde",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das Zimmer",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "schön.",
+              "role": "other",
+              "label": "ความเห็น"
+            }
+          ]
+        ],
+        "reason": "ข้อมูลให้ความเห็นว่าสวย จึงใช้ finde ตามด้วย das Zimmer และ schön"
+      },
+      "grading": {
+        "answer": "Wie findest du das Zimmer?"
+      },
+      "contextId": "L15-D03",
+      "tokens": [
+        "Zimmer?",
+        "das",
+        "du",
+        "findest",
+        "Wie"
+      ],
+      "startWith": "Wie"
+    },
+    {
+      "id": "L15-D03-B-try-v1",
+      "targetId": "L15-R006",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L15-R005",
+        "L15-R006"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "บอกความเห็นต่อห้อง",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "ความรู้สึกต่อห้อง",
+          "สวย"
+        ]
+      ],
+      "prompt": "Wie findest du das Zimmer?",
+      "feedback": {
+        "question": "Wie findest du das Zimmer?",
+        "reply": "Ich finde das Zimmer schön.",
+        "questionMeaning": "เธอคิดว่าห้องนี้เป็นอย่างไร",
+        "replyMeaning": "ฉันคิดว่าห้องนี้สวย",
+        "questionSentences": [
+          [
+            {
+              "text": "Wie",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "findest",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "das Zimmer?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "finde",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das Zimmer",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "schön.",
+              "role": "other",
+              "label": "ความเห็น"
+            }
+          ]
+        ],
+        "reason": "ข้อมูลให้ความเห็นว่าสวย จึงใช้ finde ตามด้วย das Zimmer และ schön"
+      },
+      "grading": {
+        "answer": "Ich finde das Zimmer schön."
+      },
+      "contextId": "L15-D03",
+      "options": [
+        "Ich finde das Zimmer zu klein.",
+        "Ich finde das Zimmer schön.",
+        "Ich finde das Zimmer zu teuer."
+      ]
+    },
+    {
+      "id": "L15-D04-A-try-v1",
+      "targetId": "L15-R007",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R007",
+        "L15-R008"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ถามและตอบความรู้สึกต่อสวน",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความรู้สึกต่อสวน",
+          "ชอบเป็นพิเศษ"
+        ]
+      ],
+      "prompt": "Ja, den Garten mag ich besonders.",
+      "feedback": {
+        "question": "Magst du den Garten?",
+        "reply": "Ja, den Garten mag ich besonders.",
+        "questionMeaning": "เธอชอบสวนไหม",
+        "replyMeaning": "ชอบ ฉันชอบสวนเป็นพิเศษ",
+        "questionSentences": [
+          [
+            {
+              "text": "Magst",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "den Garten?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "den Garten",
+              "role": "other",
+              "label": "กรรม (Akkusativ)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "mag",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "besonders.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "den Garten คือสิ่งที่ชอบ เมื่อนำขึ้นต้น mag ยังอยู่ตำแหน่ง 2"
+      },
+      "grading": {
+        "answer": "Magst du den Garten?"
+      },
+      "contextId": "L15-D04",
+      "tokens": [
+        "Garten?",
+        "den",
+        "du",
+        "Magst"
+      ],
+      "startWith": "Magst"
+    },
+    {
+      "id": "L15-D04-B-try-v1",
+      "targetId": "L15-R008",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R007",
+        "L15-R008"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ถามและตอบความรู้สึกต่อสวน",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ความรู้สึกต่อสวน",
+          "ชอบเป็นพิเศษ"
+        ]
+      ],
+      "prompt": "Magst du den Garten?",
+      "feedback": {
+        "question": "Magst du den Garten?",
+        "reply": "Ja, den Garten mag ich besonders.",
+        "questionMeaning": "เธอชอบสวนไหม",
+        "replyMeaning": "ชอบ ฉันชอบสวนเป็นพิเศษ",
+        "questionSentences": [
+          [
+            {
+              "text": "Magst",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "den Garten?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "den Garten",
+              "role": "other",
+              "label": "กรรม (Akkusativ)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "mag",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ich",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "besonders.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "den Garten คือสิ่งที่ชอบ เมื่อนำขึ้นต้น mag ยังอยู่ตำแหน่ง 2"
+      },
+      "grading": {
+        "answer": "Ja, den Garten mag ich besonders."
+      },
+      "contextId": "L15-D04",
+      "tokens": [
+        "besonders.",
+        "ich",
+        "mag",
+        "Garten",
+        "den",
+        "Ja,"
+      ],
+      "startWith": "Ja,"
+    },
+    {
+      "id": "L15-D05-A-try-v1",
+      "targetId": "L15-R009",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R009",
+        "L15-R010"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ระบุของของบุคคลที่กล่าวถึง",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เจ้าของ",
+          "Tom"
+        ],
+        [
+          "สิ่งของ",
+          "เก้าอี้นวม"
+        ]
+      ],
+      "prompt": "Ja, das ist sein Sessel.",
+      "feedback": {
+        "question": "Ist das Toms Sessel?",
+        "reply": "Ja, das ist sein Sessel.",
+        "questionMeaning": "นี่คือเก้าอี้นวมของ Tom ใช่ไหม",
+        "replyMeaning": "ใช่ นี่คือเก้าอี้นวมของเขา",
+        "questionSentences": [
+          [
+            {
+              "text": "Ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "das",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Toms Sessel?",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "das",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "sein Sessel.",
+              "role": "other",
+              "label": "ส่วนเติมเต็ม (Nominativ)"
+            }
+          ]
+        ],
+        "reason": "เจ้าของคือ Tom จึงใช้ sein; sein Sessel เป็นส่วนเติมเต็มหลัง ist"
+      },
+      "grading": {
+        "answer": "Ist das Toms Sessel?"
+      },
+      "contextId": "L15-D05",
+      "tokens": [
+        "Sessel?",
+        "Toms",
+        "das",
+        "Ist"
+      ],
+      "startWith": "Ist"
+    },
+    {
+      "id": "L15-D05-B-try-v1",
+      "targetId": "L15-R010",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L15-R009",
+        "L15-R010"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ระบุของของบุคคลที่กล่าวถึง",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "เจ้าของ",
+          "Tom"
+        ],
+        [
+          "สิ่งของ",
+          "เก้าอี้นวม"
+        ]
+      ],
+      "prompt": "Ist das Toms Sessel?",
+      "feedback": {
+        "question": "Ist das Toms Sessel?",
+        "reply": "Ja, das ist sein Sessel.",
+        "questionMeaning": "นี่คือเก้าอี้นวมของ Tom ใช่ไหม",
+        "replyMeaning": "ใช่ นี่คือเก้าอี้นวมของเขา",
+        "questionSentences": [
+          [
+            {
+              "text": "Ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "das",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Toms Sessel?",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "das",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "sein Sessel.",
+              "role": "other",
+              "label": "ส่วนเติมเต็ม (Nominativ)"
+            }
+          ]
+        ],
+        "reason": "เจ้าของคือ Tom จึงใช้ sein; sein Sessel เป็นส่วนเติมเต็มหลัง ist"
+      },
+      "grading": {
+        "answer": "Ja, das ist sein Sessel."
+      },
+      "contextId": "L15-D05",
+      "options": [
+        "Nein, das ist Klaras Sessel.",
+        "Ja, das ist sein Sessel.",
+        "Nein, das ist Pauls Sessel."
+      ]
+    },
+    {
+      "id": "L15-D06-A-try-v1",
+      "targetId": "L15-R011",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R011",
+        "L15-R012"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "แสดงความเห็นโดยระบุเจ้าของ",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เจ้าของ",
+          "Klara"
+        ],
+        [
+          "ความรู้สึกต่อโคมไฟ",
+          "สวย"
+        ]
+      ],
+      "prompt": "Ich finde ihre Lampe schön.",
+      "feedback": {
+        "question": "Wie findest du Klaras Lampe?",
+        "reply": "Ich finde ihre Lampe schön.",
+        "questionMeaning": "เธอคิดว่าโคมไฟของ Klara เป็นอย่างไร",
+        "replyMeaning": "ฉันคิดว่าโคมไฟของเธอสวย",
+        "questionSentences": [
+          [
+            {
+              "text": "Wie",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "findest",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Klaras Lampe?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "finde",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ihre Lampe",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "schön.",
+              "role": "other",
+              "label": "ความเห็น"
+            }
+          ]
+        ],
+        "reason": "เจ้าของคือ Klara จึงใช้ ihr และ Lampe เป็นเพศหญิงจึงใช้ ihre Lampe"
+      },
+      "grading": {
+        "answer": "Wie findest du Klaras Lampe?"
+      },
+      "contextId": "L15-D06",
+      "tokens": [
+        "Lampe?",
+        "Klaras",
+        "du",
+        "findest",
+        "Wie"
+      ],
+      "startWith": "Wie"
+    },
+    {
+      "id": "L15-D06-B-try-v1",
+      "targetId": "L15-R012",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R011",
+        "L15-R012"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "แสดงความเห็นโดยระบุเจ้าของ",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "เจ้าของ",
+          "Klara"
+        ],
+        [
+          "ความรู้สึกต่อโคมไฟ",
+          "สวย"
+        ]
+      ],
+      "prompt": "Wie findest du Klaras Lampe?",
+      "feedback": {
+        "question": "Wie findest du Klaras Lampe?",
+        "reply": "Ich finde ihre Lampe schön.",
+        "questionMeaning": "เธอคิดว่าโคมไฟของ Klara เป็นอย่างไร",
+        "replyMeaning": "ฉันคิดว่าโคมไฟของเธอสวย",
+        "questionSentences": [
+          [
+            {
+              "text": "Wie",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "findest",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "du",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "Klaras Lampe?",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "finde",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ihre Lampe",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "schön.",
+              "role": "other",
+              "label": "ความเห็น"
+            }
+          ]
+        ],
+        "reason": "เจ้าของคือ Klara จึงใช้ ihr และ Lampe เป็นเพศหญิงจึงใช้ ihre Lampe"
+      },
+      "grading": {
+        "answer": "Ich finde ihre Lampe schön."
+      },
+      "contextId": "L15-D06",
+      "tokens": [
+        "schön.",
+        "Lampe",
+        "ihre",
+        "finde",
+        "Ich"
+      ],
+      "startWith": "Ich"
+    },
+    {
+      "id": "L15-D07-A-try-v1",
+      "targetId": "L15-R013",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R013",
+        "L15-R014"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ถามว่าห้องว่างหรือไม่",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "สถานะห้อง",
+          "ว่าง"
+        ]
+      ],
+      "prompt": "Ja, das Zimmer ist noch frei.",
+      "feedback": {
+        "question": "Ist das Zimmer noch frei?",
+        "reply": "Ja, das Zimmer ist noch frei.",
+        "questionMeaning": "ห้องนี้ยังว่างอยู่ไหม",
+        "replyMeaning": "ใช่ ห้องนี้ยังว่างอยู่",
+        "questionSentences": [
+          [
+            {
+              "text": "Ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "das Zimmer",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "noch frei?",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "das Zimmer",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "noch frei.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "frei บอกสถานะว่าง จึงตรงกับข้อมูลห้องที่ยังว่าง"
+      },
+      "grading": {
+        "answer": "Ist das Zimmer noch frei?"
+      },
+      "contextId": "L15-D07",
+      "tokens": [
+        "frei?",
+        "noch",
+        "Zimmer",
+        "das",
+        "Ist"
+      ],
+      "startWith": "Ist"
+    },
+    {
+      "id": "L15-D07-B-try-v1",
+      "targetId": "L15-R014",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "difficulty": 1,
+      "difficultyRationale": "เลือกบทตอบให้ตรงข้อมูลในสถานการณ์; ยังไม่ใช่การผลิตประโยคเอง",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "reply-options"
+      ],
+      "requiredItemIds": [
+        "L15-R013",
+        "L15-R014"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ถามว่าห้องว่างหรือไม่",
+      "instruction": "เลือกบทตอบที่สื่อข้อมูลตามบัตรและเจตนาที่กำหนด",
+      "context": [
+        [
+          "สถานะห้อง",
+          "ว่าง"
+        ]
+      ],
+      "prompt": "Ist das Zimmer noch frei?",
+      "feedback": {
+        "question": "Ist das Zimmer noch frei?",
+        "reply": "Ja, das Zimmer ist noch frei.",
+        "questionMeaning": "ห้องนี้ยังว่างอยู่ไหม",
+        "replyMeaning": "ใช่ ห้องนี้ยังว่างอยู่",
+        "questionSentences": [
+          [
+            {
+              "text": "Ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "das Zimmer",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "noch frei?",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Ja,",
+              "role": "other",
+              "label": "ตอบรับ"
+            },
+            {
+              "text": "das Zimmer",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "noch frei.",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            }
+          ]
+        ],
+        "reason": "frei บอกสถานะว่าง จึงตรงกับข้อมูลห้องที่ยังว่าง"
+      },
+      "grading": {
+        "answer": "Ja, das Zimmer ist noch frei."
+      },
+      "contextId": "L15-D07",
+      "options": [
+        "Nein, das Zimmer ist schon weg.",
+        "Ja, das Zimmer ist noch frei.",
+        "Das Zimmer ist nicht frei."
+      ]
+    },
+    {
+      "id": "L15-D08-A-try-v1",
+      "targetId": "L15-R015",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R015",
+        "L15-R016"
+      ],
+      "responseSpeaker": "A",
+      "communicationGoal": "ถามและบอกค่าเช่า",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ค่าเช่ารวมต่อเดือน",
+          "620 Euro"
+        ]
+      ],
+      "prompt": "Es kostet 620 Euro im Monat.",
+      "feedback": {
+        "question": "Was kostet das Zimmer im Monat?",
+        "reply": "Es kostet 620 Euro im Monat.",
+        "questionMeaning": "ห้องนี้ค่าเช่าเดือนละเท่าไร",
+        "replyMeaning": "ค่าเช่าเดือนละ 620 ยูโร",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kostet",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das Zimmer",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "im Monat?",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Es",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kostet",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "620 Euro",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "im Monat.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "reason": "kostet ใช้ถามและบอกราคา ส่วน im Monat ระบุว่าเป็นค่าเช่าต่อเดือน"
+      },
+      "grading": {
+        "answer": "Was kostet das Zimmer im Monat?"
+      },
+      "contextId": "L15-D08",
+      "tokens": [
+        "Monat?",
+        "im",
+        "Zimmer",
+        "das",
+        "kostet",
+        "Was"
+      ],
+      "startWith": "Was"
+    },
+    {
+      "id": "L15-D08-B-try-v1",
+      "targetId": "L15-R016",
+      "subskill": "phrase_word_order",
+      "kind": "order",
+      "difficulty": 2,
+      "difficultyRationale": "ประกอบคำที่ให้ตามแบบที่เพิ่งเรียนและต้นประโยคที่ระบุ; ยังไม่ใช่การผลิตภาษาอิสระ",
+      "assistanceAvailable": [
+        "prior-model",
+        "provided-context",
+        "supplied-words",
+        "provided-start"
+      ],
+      "requiredItemIds": [
+        "L15-R015",
+        "L15-R016"
+      ],
+      "responseSpeaker": "B",
+      "communicationGoal": "ถามและบอกค่าเช่า",
+      "instruction": "เรียงประโยคตามแบบที่เรียนและคำเริ่มต้นที่ให้",
+      "context": [
+        [
+          "ค่าเช่ารวมต่อเดือน",
+          "620 Euro"
+        ]
+      ],
+      "prompt": "Was kostet das Zimmer im Monat?",
+      "feedback": {
+        "question": "Was kostet das Zimmer im Monat?",
+        "reply": "Es kostet 620 Euro im Monat.",
+        "questionMeaning": "ห้องนี้ค่าเช่าเดือนละเท่าไร",
+        "replyMeaning": "ค่าเช่าเดือนละ 620 ยูโร",
+        "questionSentences": [
+          [
+            {
+              "text": "Was",
+              "role": "question",
+              "label": "คำถาม",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kostet",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "das Zimmer",
+              "role": "subject",
+              "label": "ประธาน"
+            },
+            {
+              "text": "im Monat?",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "replySentences": [
+          [
+            {
+              "text": "Es",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "kostet",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "620 Euro",
+              "role": "other",
+              "label": "ส่วนขยาย / ข้อมูล"
+            },
+            {
+              "text": "im Monat.",
+              "role": "time",
+              "label": "เวลา / ลำดับ"
+            }
+          ]
+        ],
+        "reason": "kostet ใช้ถามและบอกราคา ส่วน im Monat ระบุว่าเป็นค่าเช่าต่อเดือน"
+      },
+      "grading": {
+        "answer": "Es kostet 620 Euro im Monat."
+      },
+      "contextId": "L15-D08",
+      "tokens": [
+        "Monat.",
+        "im",
+        "Euro",
+        "620",
+        "kostet",
+        "Es"
+      ],
+      "startWith": "Es"
+    },
+    {
+      "id": "A13-L15-OWNER-PREP-001",
+      "targetId": "L15-possessivartikel-owner",
+      "topicId": "L15-possessivartikel",
+      "subskill": "possessor_reference",
+      "context": "Klara เป็นเจ้าของห้อง",
+      "cue": "เลือกว่าของใคร โดยไม่เปลี่ยนรูปท้ายคำ",
+      "sentence": "Das ist ___ Zimmer.",
+      "options": [
+        "sein",
+        "ihr",
+        "unser"
+      ],
+      "kind": "choice",
+      "version": 1,
+      "difficulty": 1,
+      "difficultyRationale": "แยกสาเหตุด้วยโจทย์จำแนกหนึ่งประเด็น โดยให้ข้อมูลส่วนอื่นที่ไม่ต้องการวัด",
+      "acceptedAnswers": [
+        "ihr"
+      ],
+      "explanation": "เจ้าของคือ Klara จึงเลือก ihr; ข้อนี้ไม่ได้วัดการผัน Akkusativ",
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "assistanceAvailable": [
+        "options",
+        "provided-base-or-context"
+      ],
+      "contextId": "A13-L15-OWNER-PREP-001",
+      "feedback": {
+        "text": "Das ist ihr Zimmer.",
+        "sentences": [
+          [
+            {
+              "text": "Das",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "ist",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "ihr Zimmer.",
+              "role": "other",
+              "label": "ส่วนเติมเต็ม (Nominativ)"
+            }
+          ]
+        ],
+        "meaning": "นี่คือห้องของเธอ",
+        "reason": "เจ้าของคือ Klara จึงเลือก ihr; ข้อนี้ไม่ได้วัดการผัน Akkusativ"
+      }
+    },
+    {
+      "id": "A13-L15-ENDING-PREP-001",
+      "targetId": "L15-possessivartikel-ending",
+      "topicId": "L15-possessivartikel",
+      "subskill": "possessive_case_ending",
+      "context": "Tom เป็นเจ้าของเก้าอี้นวม",
+      "cue": "ให้ราก sein มาแล้ว; คำนามต้นทางคือ der Sessel",
+      "sentence": "Ich finde ___ Sessel schön.",
+      "options": [
+        "sein",
+        "seinen",
+        "seine"
+      ],
+      "kind": "choice",
+      "version": 1,
+      "difficulty": 1,
+      "difficultyRationale": "แยกสาเหตุด้วยโจทย์จำแนกหนึ่งประเด็น โดยให้ข้อมูลส่วนอื่นที่ไม่ต้องการวัด",
+      "acceptedAnswers": [
+        "seinen"
+      ],
+      "explanation": "Sessel เป็นกรรม Akkusativ เพศชาย จึงใช้ seinen; การเลือกรากเจ้าของเป็นตัวช่วยที่ให้มา",
+      "requiredConceptTargets": [
+        "L15-possessivartikel"
+      ],
+      "assistanceAvailable": [
+        "options",
+        "provided-base-or-context"
+      ],
+      "contextId": "A13-L15-ENDING-PREP-001",
+      "feedback": {
+        "text": "Ich finde seinen Sessel schön.",
+        "sentences": [
+          [
+            {
+              "text": "Ich",
+              "role": "subject",
+              "label": "ประธาน",
+              "position": "ตำแหน่ง 1"
+            },
+            {
+              "text": "finde",
+              "role": "verb",
+              "label": "กริยาหลัก (ผันแล้ว)",
+              "position": "ตำแหน่ง 2"
+            },
+            {
+              "text": "seinen Sessel",
+              "role": "other",
+              "label": "กรรม (Akkusativ)"
+            },
+            {
+              "text": "schön.",
+              "role": "other",
+              "label": "ความเห็น"
+            }
+          ]
+        ],
+        "meaning": "ฉันคิดว่าเก้าอี้นวมของเขาสวย",
+        "reason": "Sessel เป็นกรรม Akkusativ เพศชาย จึงใช้ seinen; การเลือกรากเจ้าของเป็นตัวช่วยที่ให้มา"
+      }
+    }
+  ],
+  "phraseTargets": [
+    {
+      "id": "L15-R001",
+      "text": "Was ist das?"
+    },
+    {
+      "id": "L15-R002",
+      "text": "Das ist das Arbeitszimmer."
+    },
+    {
+      "id": "L15-R003",
+      "text": "Hat die Wohnung einen Balkon?"
+    },
+    {
+      "id": "L15-R004",
+      "text": "Ja, die Wohnung hat einen Balkon."
+    },
+    {
+      "id": "L15-R005",
+      "text": "Wie findest du das Zimmer?"
+    },
+    {
+      "id": "L15-R006",
+      "text": "Ich finde das Zimmer schön."
+    },
+    {
+      "id": "L15-R007",
+      "text": "Magst du den Garten?"
+    },
+    {
+      "id": "L15-R008",
+      "text": "Ja, den Garten mag ich besonders."
+    },
+    {
+      "id": "L15-R009",
+      "text": "Ist das Toms Sessel?"
+    },
+    {
+      "id": "L15-R010",
+      "text": "Ja, das ist sein Sessel."
+    },
+    {
+      "id": "L15-R011",
+      "text": "Wie findest du Klaras Lampe?"
+    },
+    {
+      "id": "L15-R012",
+      "text": "Ich finde ihre Lampe schön."
+    },
+    {
+      "id": "L15-R013",
+      "text": "Ist das Zimmer noch frei?"
+    },
+    {
+      "id": "L15-R014",
+      "text": "Ja, das Zimmer ist noch frei."
+    },
+    {
+      "id": "L15-R015",
+      "text": "Was kostet das Zimmer im Monat?"
+    },
+    {
+      "id": "L15-R016",
+      "text": "Es kostet 620 Euro im Monat."
+    }
+  ],
+  "draftStatus": "prepared_not_wired_or_published",
+  "supportLexicon": [
+    {
+      "id": "L15-HELP-01",
+      "headword": "der Quadratmeter",
+      "meaning": "ตารางเมตร",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "der",
+      "word": "Quadratmeter",
+      "number": "singular"
+    },
+    {
+      "id": "L15-HELP-02",
+      "headword": "die Miete",
+      "meaning": "ค่าเช่า",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Miete",
+      "number": "singular"
+    },
+    {
+      "id": "L15-HELP-03",
+      "headword": "die Nebenkosten",
+      "meaning": "ค่าใช้จ่ายประกอบค่าเช่า",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Nebenkosten",
+      "number": "plural"
+    },
+    {
+      "id": "L15-HELP-04",
+      "headword": "die Möbel",
+      "meaning": "เฟอร์นิเจอร์",
+      "assessmentTarget": false,
+      "kind": "noun",
+      "article": "die",
+      "word": "Möbel",
+      "number": "plural"
+    },
+    {
+      "id": "L15-HELP-05",
+      "headword": "frei",
+      "meaning": "ว่าง",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "frei"
+    },
+    {
+      "id": "L15-HELP-06",
+      "headword": "hell",
+      "meaning": "สว่าง",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "hell"
+    },
+    {
+      "id": "L15-HELP-07",
+      "headword": "dunkel",
+      "meaning": "มืด",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "dunkel"
+    },
+    {
+      "id": "L15-HELP-08",
+      "headword": "gemütlich",
+      "meaning": "น่าอยู่หรือให้ความรู้สึกสบาย",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "gemütlich"
+    },
+    {
+      "id": "L15-HELP-09",
+      "headword": "teuer",
+      "meaning": "แพง",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "teuer"
+    },
+    {
+      "id": "L15-HELP-10",
+      "headword": "billig",
+      "meaning": "ราคาถูก",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "billig"
+    },
+    {
+      "id": "L15-HELP-11",
+      "headword": "groß",
+      "meaning": "ใหญ่",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "groß"
+    },
+    {
+      "id": "L15-HELP-12",
+      "headword": "klein",
+      "meaning": "เล็ก",
+      "assessmentTarget": false,
+      "kind": "support_word_or_phrase",
+      "word": "klein"
+    }
+  ]
+}

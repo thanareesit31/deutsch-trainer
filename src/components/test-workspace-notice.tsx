@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { isTestWorkspaceUser, useStore } from './store';
@@ -47,6 +48,7 @@ export function TestWorkspaceNotice() {
       <span>บัญชี {user?.email} · รหัสผ่าน TestOnly123!</span>
       <span>เปิดพื้นที่ทดสอบอีกครั้งจะเรียนต่อได้</span>
       <div className="test-workspace-controls">
+        <Link className="button secondary" href="/learn/L01/phrases">เรียนประโยคบท 1</Link>
         <button className="button secondary" disabled={busy} onClick={() => void control('learn_all')}>เรียนแล้วทั้งหมด</button>
         <button className="button secondary" disabled={busy} onClick={() => setConfirmReset(true)}>รีเซตการทดลอง</button>
       </div>

@@ -10,8 +10,13 @@ import {
 } from "react";
 import { supabase } from "@/lib/supabase";
 import { useStore } from "./store";
+import { a13ReleaseCourses } from '@/data/a13-release';
+import { mergeReleaseStates, parseReleaseState, releaseStateKey } from '@/lib/a13-release';
 
 export const lessonStateKeys = {
+  phraseDiscovery: (lessonId: string) => `deutsch-trainer-phrase-discovery-v1-${lessonId}`,
+  l02PhraseDiscovery: "deutsch-trainer-phrase-discovery-v1-L02",
+  l01PhraseDiscovery: "deutsch-trainer-phrase-discovery-v1-L01",
   alphabet: "deutsch-trainer-alphabet-learning-v1-L01",
   images: "deutsch-trainer-vocabulary-image-learning-v1-L01",
   l13Images: "deutsch-trainer-vocabulary-image-learning-v1-L13",
@@ -38,10 +43,15 @@ const legacyLessonKeys = [
   lessonStateKeys.verbs,
 ];
 const supportedLessonStateKeys = new Set([
+  ...['L15', 'L16', 'L17', 'L18'].flatMap(lesson => ['vocabulary', 'grammar', 'phrases'].map(skill => `deutsch-trainer-release-course-v1-${lesson}-${skill}`)),
+  "deutsch-trainer-phrase-guidance-v1-L14",
+  "deutsch-trainer-phrase-observations-v1-L14",
+  ...["rating", "city", "favorite", "opinions"].map(group => `deutsch-trainer-phrase-discovery-v1-L13-${group}`),
   ...Object.values(lessonStateKeys).flatMap((key) => typeof key === "string" ? [key] : []),
   ...["L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10", "L11", "L12", "L14", "L15"].map(lessonStateKeys.vocabularyImages),
   ...["L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10", "L11", "L12"].map(lessonStateKeys.discoveryGrammar),
   ...["L13", "L14"].map(lessonStateKeys.courseLearning),
+  ...Array.from({ length: 10 }, (_, index) => `L${String(index + 3).padStart(2, "0")}`).map(lessonStateKeys.phraseDiscovery),
 ]);
 type Snapshot = Record<string, string>;
 const Context = createContext<{
@@ -101,13 +111,20 @@ function AccountLessonState({
         const [key, value] = entry;
         attempted.set(key, value);
         try {
+          let nextValue = value;
+          const course = a13ReleaseCourses.find(course => releaseStateKey(course) === key);
+          if (course) {
+            const latest = await supabase.from('learner_lesson_states').select('state').eq('user_id', userId).eq('lesson_key', key);
+            if (latest.error) throw latest.error;
+            if (latest.data?.[0]) nextValue = JSON.stringify(mergeReleaseStates(parseReleaseState(JSON.stringify(latest.data[0].state), course), parseReleaseState(value, course)));
+          }
           const { error } = await supabase.from("learner_lesson_states").upsert(
-            { user_id: userId, lesson_key: key, state: JSON.parse(value) },
+            { user_id: userId, lesson_key: key, state: JSON.parse(nextValue) },
             { onConflict: "user_id,lesson_key" },
           );
           if (error) throw error;
           if (!active.current) return;
-          if (pending.current[key] === value) delete pending.current[key];
+          if (pending.current[key] === value) { values.current[key] = nextValue; delete pending.current[key]; }
           failures.delete(key);
           cachePending();
         } catch (cause) {
