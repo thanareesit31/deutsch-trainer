@@ -1,0 +1,14 @@
+[
+  {
+    "path": "docs/exercise-mapping/a11-phrase-bank.json",
+    "publishedQuestions": 346,
+    "unchanged": true,
+    "sha256": "7e8b395de498a1708e821a5ea95e300d86c8d9c7ae2287c7b37564685f956b6b"
+  },
+  {
+    "path": "docs/exercise-mapping/l13-phrases-bank.json",
+    "publishedQuestions": 114,
+    "unchanged": true,
+    "sha256": "ccff14977bbf66d3d23d5b46b7dd757e1a5eb711742e7c61a97e11978276d913"
+  }
+]

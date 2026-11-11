@@ -77,6 +77,8 @@ export async function createDatabase() {
     "20261109003000_release_health.sql",
     "20261110000000_release_practice_progression.sql",
     "20261110001000_release_practice_extension_catalog.sql",
+    "20261111000000_phrase_practice_progression.sql",
+    "20261111001000_phrase_practice_extension_catalog.sql",
   ])
     await db.exec(
       await readFile(
@@ -113,6 +115,7 @@ export async function createDatabase() {
       "utf8"
     )
   );
+  await db.exec(await readFile(new URL("../supabase/migrations/20261111000000_phrase_practice_progression.sql", import.meta.url), "utf8"));
   await db.exec(
     `set role authenticated; set request.jwt.claim.sub='${userId}';`
   );

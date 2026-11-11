@@ -68,6 +68,10 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
   // This keeps existing evidence intact when a running test catalog needs an update.
   if (restore) {
     await db.transaction(async (tx) => {
+      // These are existing saved queues, not requests to start a new difficulty level.
+      // Keep canonical grading and learned-target validators enabled during recovery.
+      await tx.exec('alter table public.learner_practice_sessions disable trigger validate_release_practice_progression');
+      await tx.exec('alter table public.learner_practice_sessions disable trigger validate_phrase_practice_progression');
       for (const table of [...tables].filter(table => table !== 'learner_practice_sessions').concat('learner_practice_sessions')) {
         if (table.startsWith("content_") || table === "knowledge_state") continue;
         for (const row of restore.rows[table] ?? []) {
@@ -80,6 +84,8 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
           );
         }
       }
+      await tx.exec('alter table public.learner_practice_sessions enable trigger validate_release_practice_progression');
+      await tx.exec('alter table public.learner_practice_sessions enable trigger validate_phrase_practice_progression');
     });
   }
   const sessions = new Map();
@@ -182,7 +188,7 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
         throw httpError(404, "Unknown test endpoint");
       const parts = url.pathname.slice("/rest/v1/".length).split("/");
       const table = parts[0];
-      const publicReadiness = url.pathname === '/rest/v1/rpc/release_course_readiness' && req.method === 'POST';
+      const publicReadiness = ['/rest/v1/rpc/release_course_readiness','/rest/v1/rpc/phrase_practice_upgrade_readiness'].includes(url.pathname) && req.method === 'POST';
       if (!session && !["content_lessons", "content_items"].includes(table) && !publicReadiness)
         throw httpError(401, "Test login required");
       if (url.pathname === '/rest/v1/rpc/test_workspace_control' && req.method === 'POST') {
@@ -220,6 +226,8 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
           const body = await bodyOf(req);
           if (parts[1] === 'release_course_readiness')
             return (await tx.query('select public.release_course_readiness() as data')).rows[0].data;
+          else if (parts[1] === 'phrase_practice_upgrade_readiness')
+            return (await tx.query('select public.phrase_practice_upgrade_readiness() as data')).rows[0].data;
           else if (parts[1] === "learning_action")
             await tx.query("select public.learning_action($1,$2::jsonb)", [
               body.action,

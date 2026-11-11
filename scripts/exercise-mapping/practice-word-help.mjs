@@ -17,7 +17,10 @@ export async function buildPracticeWordHelp(){
 }
 export async function readPracticeTemplate(){
  const template=await readFile(new URL('scripts/exercise-mapping/preview-template.html',root),'utf8');
- return template.replace('__WORD_HELP__',()=>JSON.stringify(sharedHelp));
+ const styles=await readFile(new URL('src/app/globals.css',root),'utf8');
+ const names=['--sentence-time','--sentence-auxiliary','--sentence-subject','--sentence-main-verb','--sentence-other'];
+ const tokens=names.map(name=>{const value=styles.match(new RegExp(name+':\\s*([^;]+);'))?.[1];if(!value)throw Error('Missing sentence token '+name);return name+':'+value+';';}).join('');
+ return template.replace('__SENTENCE_COLORS__',()=>tokens).replace('__WORD_HELP__',()=>JSON.stringify(sharedHelp));
 }
 const sharedHelp=await buildPracticeWordHelp();
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url){

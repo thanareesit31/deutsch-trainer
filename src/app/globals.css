@@ -6414,3 +6414,10 @@ select {
 @media (max-width: 600px) {
   .release-course > .release-card { margin-inline: -8px; padding-inline: 4px; }
 }
+@media (max-width: 600px) {
+  .main-content:has(.l14-practice-extended) { padding-inline: 8px; }
+  .l14-practice-extended > .guided-card { padding-inline: 4px; }
+  .l14-practice-extended .practice-feedback { padding-inline: 4px; }
+  .l14-practice-extended .phrase-annotated-sentence { gap: 4px; }
+  .l14-practice-extended .phrase-annotated-part { min-width: 24px; }
+}

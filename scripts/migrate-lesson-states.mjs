@@ -25,6 +25,8 @@ try {
     "20261109003000_release_health.sql",
     "20261110000000_release_practice_progression.sql",
     "20261110001000_release_practice_extension_catalog.sql",
+    "20261111000000_phrase_practice_progression.sql",
+    "20261111001000_phrase_practice_extension_catalog.sql",
   ])
     await client.query(
       await readFile(

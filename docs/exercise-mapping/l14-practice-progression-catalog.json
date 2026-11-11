@@ -1,0 +1,1883 @@
+{
+  "definitions": [
+    {
+      "id": "ask-walk-practice-v2-c1",
+      "version": 1,
+      "itemId": "ask-walk",
+      "requiredItemIds": [
+        "ask-walk"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "acceptedAnswers": [
+        "Kann ich zu Fuß zur Post gehen?"
+      ],
+      "options": [
+        "Kann ich zu Fuß zur Post gehen?",
+        "Wo ist denn hier eine Post?",
+        "Das weiß ich leider nicht."
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+      "assistance": "german-answer-options"
+    },
+    {
+      "id": "ask-walk-practice-v2-c2",
+      "version": 1,
+      "itemId": "ask-walk",
+      "requiredItemIds": [
+        "ask-walk"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "acceptedAnswers": [
+        "Kann ich zu Fuß zur Apotheke gehen?"
+      ],
+      "options": [
+        "Kann ich zu Fuß zur Apotheke gehen?",
+        "Wo ist denn hier eine Post?",
+        "Das weiß ich leider nicht."
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+      "assistance": "german-answer-options"
+    },
+    {
+      "id": "ask-walk-practice-v2-c3",
+      "version": 1,
+      "itemId": "ask-walk",
+      "requiredItemIds": [
+        "ask-walk"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_bounded_production",
+      "kind": "cloze",
+      "acceptedAnswers": [
+        "Kann ich zu Fuß zum Bahnhof gehen?",
+        "Kann ich zu Fuß zum Bahnhof gehen"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+      "assistance": "sentence-skeleton-and-supplied-data"
+    },
+    {
+      "id": "ask-walk-practice-v2-c4",
+      "version": 1,
+      "itemId": "ask-walk",
+      "requiredItemIds": [
+        "ask-walk"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_bounded_production",
+      "kind": "cloze",
+      "acceptedAnswers": [
+        "Kann ich zu Fuß zur Post gehen?",
+        "Kann ich zu Fuß zur Post gehen"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+      "assistance": "sentence-skeleton-and-supplied-data"
+    },
+    {
+      "id": "ask-walk-practice-v2-c5",
+      "version": 1,
+      "itemId": "ask-walk",
+      "requiredItemIds": [
+        "ask-walk"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_bounded_production",
+      "kind": "cloze",
+      "acceptedAnswers": [
+        "Kann ich zu Fuß zur Apotheke gehen?",
+        "Kann ich zu Fuß zur Apotheke gehen"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "สร้างประโยคจากคำรูปพื้นฐาน ข้อมูล คำเริ่มต้น และเงื่อนไขวางกลุ่มคำ",
+      "assistance": "supplied-lemmas-and-start-constraint"
+    },
+    {
+      "id": "describe-turn-practice-v2-c1",
+      "version": 1,
+      "itemId": "describe-turn",
+      "requiredItemIds": [
+        "describe-turn"
+      ],
+      "topicId": "L14-phrases-describe",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "acceptedAnswers": [
+        "Vor der Post biegen Sie nach links ab."
+      ],
+      "options": [
+        "Vor der Post biegen Sie nach links ab.",
+        "Vor der Post biegen Sie nach rechts ab.",
+        "Das weiß ich leider nicht."
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+      "assistance": "german-answer-options"
+    },
+    {
+      "id": "describe-turn-practice-v2-c2",
+      "version": 1,
+      "itemId": "describe-turn",
+      "requiredItemIds": [
+        "describe-turn"
+      ],
+      "topicId": "L14-phrases-describe",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "acceptedAnswers": [
+        "Vor der Apotheke biegen Sie nach rechts ab."
+      ],
+      "options": [
+        "Vor der Apotheke biegen Sie nach rechts ab.",
+        "Vor der Apotheke biegen Sie nach links ab.",
+        "Das weiß ich leider nicht."
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+      "assistance": "german-answer-options"
+    },
+    {
+      "id": "describe-turn-practice-v2-c3",
+      "version": 1,
+      "itemId": "describe-turn",
+      "requiredItemIds": [
+        "describe-turn"
+      ],
+      "topicId": "L14-phrases-describe",
+      "subskill": "phrase_bounded_production",
+      "kind": "cloze",
+      "acceptedAnswers": [
+        "Vor der Bank biegen Sie nach links ab.",
+        "Vor der Bank biegen Sie nach links ab"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+      "assistance": "sentence-skeleton-and-supplied-data"
+    },
+    {
+      "id": "describe-turn-practice-v2-c4",
+      "version": 1,
+      "itemId": "describe-turn",
+      "requiredItemIds": [
+        "describe-turn"
+      ],
+      "topicId": "L14-phrases-describe",
+      "subskill": "phrase_bounded_production",
+      "kind": "cloze",
+      "acceptedAnswers": [
+        "Vor der Post biegen Sie nach rechts ab.",
+        "Vor der Post biegen Sie nach rechts ab"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+      "assistance": "sentence-skeleton-and-supplied-data"
+    },
+    {
+      "id": "describe-turn-practice-v2-c5",
+      "version": 1,
+      "itemId": "describe-turn",
+      "requiredItemIds": [
+        "describe-turn"
+      ],
+      "topicId": "L14-phrases-describe",
+      "subskill": "phrase_bounded_production",
+      "kind": "cloze",
+      "acceptedAnswers": [
+        "Vor der Apotheke biegen Sie nach links ab.",
+        "Vor der Apotheke biegen Sie nach links ab"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "สร้างประโยคจากคำรูปพื้นฐาน ข้อมูล คำเริ่มต้น และเงื่อนไขวางกลุ่มคำ",
+      "assistance": "supplied-lemmas-and-start-constraint"
+    },
+    {
+      "id": "ask-place-practice-v2-c1",
+      "version": 1,
+      "itemId": "ask-place",
+      "requiredItemIds": [
+        "ask-place"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "acceptedAnswers": [
+        "Wo ist denn hier eine Apotheke?"
+      ],
+      "options": [
+        "Wo ist denn hier eine Apotheke?",
+        "Da sehen Sie eine Apotheke.",
+        "Herzlichen Dank."
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+      "assistance": "german-answer-options"
+    },
+    {
+      "id": "ask-place-practice-v2-c2",
+      "version": 1,
+      "itemId": "ask-place",
+      "requiredItemIds": [
+        "ask-place"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_dialogue_response",
+      "kind": "choice",
+      "acceptedAnswers": [
+        "Wo ist denn hier ein Café?"
+      ],
+      "options": [
+        "Wo ist denn hier ein Café?",
+        "Da sehen Sie eine Apotheke.",
+        "Herzlichen Dank."
+      ],
+      "difficulty": 2,
+      "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+      "assistance": "german-answer-options"
+    },
+    {
+      "id": "ask-place-practice-v2-c3",
+      "version": 1,
+      "itemId": "ask-place",
+      "requiredItemIds": [
+        "ask-place"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_bounded_production",
+      "kind": "cloze",
+      "acceptedAnswers": [
+        "Wo ist denn hier ein Bahnhof?",
+        "Wo ist denn hier ein Bahnhof"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+      "assistance": "sentence-skeleton-and-supplied-data"
+    },
+    {
+      "id": "ask-place-practice-v2-c4",
+      "version": 1,
+      "itemId": "ask-place",
+      "requiredItemIds": [
+        "ask-place"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_bounded_production",
+      "kind": "cloze",
+      "acceptedAnswers": [
+        "Wo ist denn hier eine Bank?",
+        "Wo ist denn hier eine Bank"
+      ],
+      "difficulty": 3,
+      "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+      "assistance": "sentence-skeleton-and-supplied-data"
+    },
+    {
+      "id": "ask-place-practice-v2-c5",
+      "version": 1,
+      "itemId": "ask-place",
+      "requiredItemIds": [
+        "ask-place"
+      ],
+      "topicId": "L14-phrases-ask",
+      "subskill": "phrase_bounded_production",
+      "kind": "cloze",
+      "acceptedAnswers": [
+        "Wo ist denn hier eine Apotheke?",
+        "Wo ist denn hier eine Apotheke"
+      ],
+      "difficulty": 4,
+      "difficultyRationale": "สร้างประโยคจากคำรูปพื้นฐาน ข้อมูล คำเริ่มต้น และเงื่อนไขวางกลุ่มคำ",
+      "assistance": "supplied-lemmas-and-start-constraint"
+    }
+  ],
+  "metadata": [
+    {
+      "taskId": "ask-help",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-help",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "ask-help",
+        "familyId": "ask-help",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "ask-place",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "ask-place",
+        "familyId": "ask-place",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "ask-far",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-far",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "ask-far",
+        "familyId": "ask-far",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "ask-search",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-search",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "ask-search",
+        "familyId": "ask-search",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "ask-walk",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_order",
+      "practice": {
+        "contextId": "ask-walk",
+        "familyId": "ask-walk",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "describe-straight",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-straight",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "describe-straight",
+        "familyId": "describe-straight",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "describe-see",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-see",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "describe-see",
+        "familyId": "describe-see",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "describe-turn",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_order",
+      "practice": {
+        "contextId": "describe-turn",
+        "familyId": "describe-turn",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "describe-distance",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-distance",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "describe-distance",
+        "familyId": "describe-distance",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "describe-street",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-street",
+      "subskill": "phrase_order",
+      "practice": {
+        "contextId": "describe-street",
+        "familyId": "describe-street",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "describe-direction",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-direction",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "describe-direction",
+        "familyId": "describe-direction",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "unknown-local",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-local",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "unknown-local",
+        "familyId": "unknown-local",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "unknown-answer",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-answer",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "unknown-answer",
+        "familyId": "unknown-answer",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "unknown-new",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-new",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "unknown-new",
+        "familyId": "unknown-new",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "thanks-heart",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-heart",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "thanks-heart",
+        "familyId": "thanks-heart",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "thanks-kind",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-kind",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "thanks-kind",
+        "familyId": "thanks-kind",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "thanks-oh",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-oh",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "thanks-oh",
+        "familyId": "thanks-oh",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "match-describe-see",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-see",
+      "subskill": "phrase_match",
+      "practice": {
+        "contextId": "match-describe-see",
+        "familyId": "describe-see",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "match-describe-distance",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-distance",
+      "subskill": "phrase_match",
+      "practice": {
+        "contextId": "match-describe-distance",
+        "familyId": "describe-distance",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "ask-walk-reply",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "ask-walk-reply",
+        "familyId": "ask-walk",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-help-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-help",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-help-01",
+        "familyId": "ask-help",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-help-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-help",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-help-02",
+        "familyId": "ask-help",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-help-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-help",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-help-03",
+        "familyId": "ask-help",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-help-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-help",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-help-04",
+        "familyId": "ask-help",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-help-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-help",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-help-05",
+        "familyId": "ask-help",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-help-06",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-help",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-help-06",
+        "familyId": "ask-help",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-place-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-place-01",
+        "familyId": "ask-place",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-place-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-place-02",
+        "familyId": "ask-place",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-place-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-place-03",
+        "familyId": "ask-place",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-place-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-place-04",
+        "familyId": "ask-place",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-place-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-place-05",
+        "familyId": "ask-place",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-far-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-far",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-far-01",
+        "familyId": "ask-far",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-far-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-far",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-far-02",
+        "familyId": "ask-far",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-far-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-far",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-far-03",
+        "familyId": "ask-far",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-far-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-far",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-far-04",
+        "familyId": "ask-far",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-far-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-far",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-far-05",
+        "familyId": "ask-far",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-far-06",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-far",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-far-06",
+        "familyId": "ask-far",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-search-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-search",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-search-01",
+        "familyId": "ask-search",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-search-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-search",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-search-02",
+        "familyId": "ask-search",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-search-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-search",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-search-03",
+        "familyId": "ask-search",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-search-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-search",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-search-04",
+        "familyId": "ask-search",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-search-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-search",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-search-05",
+        "familyId": "ask-search",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-walk-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-walk-01",
+        "familyId": "ask-walk",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-walk-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-walk-02",
+        "familyId": "ask-walk",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-walk-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-walk-03",
+        "familyId": "ask-walk",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-walk-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-ask-walk-04",
+        "familyId": "ask-walk",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-ask-walk-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-ask-walk-05",
+        "familyId": "ask-walk",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-straight-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-straight",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-straight-01",
+        "familyId": "describe-straight",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-straight-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-straight",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-straight-02",
+        "familyId": "describe-straight",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-straight-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-straight",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-straight-03",
+        "familyId": "describe-straight",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-straight-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-straight",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-straight-04",
+        "familyId": "describe-straight",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-straight-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-straight",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-straight-05",
+        "familyId": "describe-straight",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-see-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-see",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-see-01",
+        "familyId": "describe-see",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-see-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-see",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-see-02",
+        "familyId": "describe-see",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-see-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-see",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-see-03",
+        "familyId": "describe-see",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-see-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-see",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-see-04",
+        "familyId": "describe-see",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-see-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-see",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-see-05",
+        "familyId": "describe-see",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-turn-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-turn-01",
+        "familyId": "describe-turn",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-turn-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-turn-02",
+        "familyId": "describe-turn",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-turn-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-turn-03",
+        "familyId": "describe-turn",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-turn-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-turn-04",
+        "familyId": "describe-turn",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-turn-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-turn-05",
+        "familyId": "describe-turn",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-distance-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-distance",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-distance-01",
+        "familyId": "describe-distance",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-distance-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-distance",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-distance-02",
+        "familyId": "describe-distance",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-distance-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-distance",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-distance-03",
+        "familyId": "describe-distance",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-distance-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-distance",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-distance-04",
+        "familyId": "describe-distance",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-distance-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-distance",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-distance-05",
+        "familyId": "describe-distance",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-street-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-street",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-street-01",
+        "familyId": "describe-street",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-street-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-street",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-street-02",
+        "familyId": "describe-street",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-street-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-street",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-street-03",
+        "familyId": "describe-street",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-street-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-street",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-street-04",
+        "familyId": "describe-street",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-street-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-street",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-street-05",
+        "familyId": "describe-street",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-direction-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-direction",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-direction-01",
+        "familyId": "describe-direction",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-direction-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-direction",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-direction-02",
+        "familyId": "describe-direction",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-direction-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-direction",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-direction-03",
+        "familyId": "describe-direction",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-direction-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-direction",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-describe-direction-04",
+        "familyId": "describe-direction",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-describe-direction-05",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-direction",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-describe-direction-05",
+        "familyId": "describe-direction",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-local-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-local",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-unknown-local-01",
+        "familyId": "unknown-local",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-local-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-local",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-unknown-local-02",
+        "familyId": "unknown-local",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-local-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-local",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-unknown-local-03",
+        "familyId": "unknown-local",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-local-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-local",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-unknown-local-04",
+        "familyId": "unknown-local",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-answer-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-answer",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-unknown-answer-01",
+        "familyId": "unknown-answer",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-answer-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-answer",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-unknown-answer-02",
+        "familyId": "unknown-answer",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-answer-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-answer",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-unknown-answer-03",
+        "familyId": "unknown-answer",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-answer-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-answer",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-unknown-answer-04",
+        "familyId": "unknown-answer",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-new-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-new",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-unknown-new-01",
+        "familyId": "unknown-new",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-new-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-new",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-unknown-new-02",
+        "familyId": "unknown-new",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-new-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-new",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-unknown-new-03",
+        "familyId": "unknown-new",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-unknown-new-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "unknown-new",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-unknown-new-04",
+        "familyId": "unknown-new",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-heart-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-heart",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-thanks-heart-01",
+        "familyId": "thanks-heart",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-heart-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-heart",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-thanks-heart-02",
+        "familyId": "thanks-heart",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-heart-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-heart",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-thanks-heart-03",
+        "familyId": "thanks-heart",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-heart-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-heart",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-thanks-heart-04",
+        "familyId": "thanks-heart",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-kind-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-kind",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-thanks-kind-01",
+        "familyId": "thanks-kind",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-kind-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-kind",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-thanks-kind-02",
+        "familyId": "thanks-kind",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-kind-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-kind",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-thanks-kind-03",
+        "familyId": "thanks-kind",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-kind-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-kind",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-thanks-kind-04",
+        "familyId": "thanks-kind",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-oh-01",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-oh",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-thanks-oh-01",
+        "familyId": "thanks-oh",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-oh-02",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-oh",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-thanks-oh-02",
+        "familyId": "thanks-oh",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-oh-03",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-oh",
+      "subskill": "phrase_context",
+      "practice": {
+        "contextId": "variant-thanks-oh-03",
+        "familyId": "thanks-oh",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "variant-thanks-oh-04",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "thanks-oh",
+      "subskill": "phrase_dialogue",
+      "practice": {
+        "contextId": "variant-thanks-oh-04",
+        "familyId": "thanks-oh",
+        "stage": 0,
+        "unlock": null
+      }
+    },
+    {
+      "taskId": "ask-walk-practice-v2-c1",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_dialogue_response",
+      "practice": {
+        "contextId": "ask-walk-context-v2-1",
+        "familyId": "ask-walk",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_order",
+          "requiresAttempt": true,
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0
+        }
+      }
+    },
+    {
+      "taskId": "ask-walk-practice-v2-c2",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_dialogue_response",
+      "practice": {
+        "contextId": "ask-walk-context-v2-2",
+        "familyId": "ask-walk",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_order",
+          "requiresAttempt": true,
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0
+        }
+      }
+    },
+    {
+      "taskId": "ask-walk-practice-v2-c3",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_bounded_production",
+      "practice": {
+        "contextId": "ask-walk-context-v2-3",
+        "familyId": "ask-walk",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "requiresAttempt": true,
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2
+        }
+      }
+    },
+    {
+      "taskId": "ask-walk-practice-v2-c4",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_bounded_production",
+      "practice": {
+        "contextId": "ask-walk-context-v2-4",
+        "familyId": "ask-walk",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "requiresAttempt": true,
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2
+        }
+      }
+    },
+    {
+      "taskId": "ask-walk-practice-v2-c5",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-walk",
+      "subskill": "phrase_bounded_production",
+      "practice": {
+        "contextId": "ask-walk-context-v2-5",
+        "familyId": "ask-walk",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "requiresAttempt": true,
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2
+        }
+      }
+    },
+    {
+      "taskId": "describe-turn-practice-v2-c1",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_dialogue_response",
+      "practice": {
+        "contextId": "describe-turn-context-v2-1",
+        "familyId": "describe-turn",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_order",
+          "requiresAttempt": true,
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0
+        }
+      }
+    },
+    {
+      "taskId": "describe-turn-practice-v2-c2",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_dialogue_response",
+      "practice": {
+        "contextId": "describe-turn-context-v2-2",
+        "familyId": "describe-turn",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_order",
+          "requiresAttempt": true,
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0
+        }
+      }
+    },
+    {
+      "taskId": "describe-turn-practice-v2-c3",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_bounded_production",
+      "practice": {
+        "contextId": "describe-turn-context-v2-3",
+        "familyId": "describe-turn",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "requiresAttempt": true,
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2
+        }
+      }
+    },
+    {
+      "taskId": "describe-turn-practice-v2-c4",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_bounded_production",
+      "practice": {
+        "contextId": "describe-turn-context-v2-4",
+        "familyId": "describe-turn",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "requiresAttempt": true,
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2
+        }
+      }
+    },
+    {
+      "taskId": "describe-turn-practice-v2-c5",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "describe-turn",
+      "subskill": "phrase_bounded_production",
+      "practice": {
+        "contextId": "describe-turn-context-v2-5",
+        "familyId": "describe-turn",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "requiresAttempt": true,
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2
+        }
+      }
+    },
+    {
+      "taskId": "ask-place-practice-v2-c1",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_dialogue_response",
+      "practice": {
+        "contextId": "ask-place-context-v2-1",
+        "familyId": "ask-place",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_context",
+          "requiresAttempt": true,
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0
+        }
+      }
+    },
+    {
+      "taskId": "ask-place-practice-v2-c2",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_dialogue_response",
+      "practice": {
+        "contextId": "ask-place-context-v2-2",
+        "familyId": "ask-place",
+        "stage": 1,
+        "unlock": {
+          "subskill": "phrase_context",
+          "requiresAttempt": true,
+          "minCorrectContexts": 0,
+          "minPracticeSessions": 0
+        }
+      }
+    },
+    {
+      "taskId": "ask-place-practice-v2-c3",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_bounded_production",
+      "practice": {
+        "contextId": "ask-place-context-v2-3",
+        "familyId": "ask-place",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "requiresAttempt": true,
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2
+        }
+      }
+    },
+    {
+      "taskId": "ask-place-practice-v2-c4",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_bounded_production",
+      "practice": {
+        "contextId": "ask-place-context-v2-4",
+        "familyId": "ask-place",
+        "stage": 2,
+        "unlock": {
+          "subskill": "phrase_dialogue_response",
+          "requiresAttempt": true,
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2
+        }
+      }
+    },
+    {
+      "taskId": "ask-place-practice-v2-c5",
+      "version": 1,
+      "lessonId": "L14",
+      "targetId": "ask-place",
+      "subskill": "phrase_bounded_production",
+      "practice": {
+        "contextId": "ask-place-context-v2-5",
+        "familyId": "ask-place",
+        "stage": 3,
+        "unlock": {
+          "subskill": "phrase_bounded_production",
+          "requiresAttempt": true,
+          "minCorrectContexts": 2,
+          "minPracticeSessions": 2
+        }
+      }
+    }
+  ]
+}

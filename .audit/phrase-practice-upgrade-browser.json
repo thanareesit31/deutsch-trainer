@@ -1,0 +1,106 @@
+[
+  {
+    "lesson": "L02",
+    "stage": 3,
+    "draftRestored": true,
+    "checked": true,
+    "normalizedHelp": false,
+    "geometry": {
+      "font": 13.8,
+      "oneRow": true,
+      "inside": true
+    }
+  },
+  {
+    "lesson": "L11",
+    "stage": 3,
+    "draftRestored": true,
+    "checked": true,
+    "normalizedHelp": true,
+    "geometry": {
+      "font": 13,
+      "oneRow": true,
+      "inside": true
+    }
+  },
+  {
+    "lesson": "L13",
+    "stage": 3,
+    "draftRestored": true,
+    "checked": true,
+    "normalizedHelp": false,
+    "geometry": {
+      "font": 16,
+      "oneRow": true,
+      "inside": true
+    }
+  },
+  {
+    "lesson": "L14",
+    "stage": 3,
+    "draftRestored": true,
+    "checked": true,
+    "normalizedHelp": false,
+    "geometry": {
+      "font": 15.9,
+      "oneRow": true,
+      "inside": true
+    }
+  },
+  {
+    "lesson": "L01",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L02",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L03",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L04",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L05",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L06",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L07",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L08",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L09",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L10",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L11",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L12",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L13",
+    "ordinaryAccountEntry": true
+  },
+  {
+    "lesson": "L14",
+    "ordinaryAccountEntry": true
+  }
+]

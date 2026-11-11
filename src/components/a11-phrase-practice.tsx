@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import practiceExtensions from '../../docs/exercise-mapping/l01-l13-practice-extensions.json';
 import inventory from "../../docs/exercise-mapping/a11-phrase-bank.json";
 import { a11PhrasePreviews } from "@/data/a11-phrase-previews";
 import { useA11Preview } from "./a11-preview";
-import { parsePracticeHistory, practiceStorageKey, resumablePracticeSession, type PracticeHistory } from "@/lib/practice-planner";
+import { planDailyPractice, parsePracticeHistory, practiceStorageKey, resumablePracticeSession, type PracticeHistory } from "@/lib/practice-planner";
 import { GrammarPilot } from "./dative-pilot";
 import { useLearning } from "./learning-store";
 import { PracticeLanding } from "./practice-landing";
@@ -51,9 +52,9 @@ export function A11PhrasePractice({ lessonId, slug }: { lessonId: string; slug?:
   if (historyError) return <p role="alert">อ่านประวัติฝึกไม่ได้ กรุณาโหลดหน้าใหม่</p>;
   const pending = resumablePracticeSession(history);
   const done = pending?.items.filter(item => item.result).length ?? 0;
-  const evidence = history.flatMap(session => session.items.flatMap(item => typeof item.result?.correct === "boolean" ? [{ correct: item.result.correct, topic: item.question.subskill === 'phrase_word_order' ? 'เรียงประโยค' : item.question.subskill === 'phrase_situation_choice' ? 'เลือกใช้ตามสถานการณ์' : 'เข้าใจประโยค', at: item.result.submittedAt }] : [])).sort((a, b) => b.at - a.at).slice(0, 20).map(({ correct, topic }) => ({ correct, topic }));
-  const focus = evidence.find(item => !item.correct);
-  const recommendation = pending ? "ทำรอบที่ค้างไว้ต่อ" : evidence.length ? focus ? `ทบทวน${focus.topic}จากผลครั้งก่อน แล้วคละกับประโยคที่เรียนแล้ว` : "ฝึกประโยคในสถานการณ์และรูปแบบใหม่จากสิ่งที่เรียนแล้ว" : learned.length ? "เริ่มจากประโยคที่เรียนแล้วหนึ่งข้อ ต่อหนึ่งเป้าหมาย" : "เรียนประโยคก่อน แล้วกลับมาฝึกจากสิ่งที่เรียนแล้ว";
+  const evidence = history.flatMap(session => session.items.flatMap(item => typeof item.result?.correct === "boolean" ? [{ correct: item.result.correct, topic: item.question.subskill === 'phrase_word_order' ? 'เรียงประโยค' : item.question.subskill === 'phrase_situation_choice' ? 'จับคู่ความหมาย' : item.question.subskill === 'phrase_bounded_production' ? 'เขียนตามข้อมูล' : item.question.subskill === 'phrase_dialogue_response' ? 'ตอบในบทสนทนา' : 'เข้าใจประโยค', at: item.result.submittedAt }] : [])).sort((a, b) => b.at - a.at).slice(0, 20).map(({ correct, topic }) => ({ correct, topic }));
+  const planned = planDailyPractice([...inventory.definitions.filter(q => q.lessonId === lessonId), ...(practiceExtensions.find(packet => packet.lessonId === lessonId)?.questions ?? [])].filter(q => learned.includes(q.targetId)), history);
+  const recommendation = pending ? "ทำรอบที่ค้างไว้ต่อ" : evidence.length ? planned.reason : learned.length ? "เริ่มจากประโยคที่เรียนแล้วหนึ่งข้อ ต่อหนึ่งเป้าหมาย" : "เรียนประโยคก่อน แล้วกลับมาฝึกจากสิ่งที่เรียนแล้ว";
   const href = pending ? `${pending.href}?resume=${encodeURIComponent(pending.id)}` : learned.length ? `/practice/${lessonId}/phrases/${evidence.length ? 'daily' : 'basic'}` : `/learn/${lessonId}/phrases`;
   return <PracticeLanding eyebrow={`REDEMITTEL · LEKTION ${lessonId.slice(1)}`} title={`ฝึกประโยคบท ${lessonId.slice(1)}`} description={recommendation} href={href} action={pending ? "ฝึกต่อ" : evidence.length ? "ฝึกต่อวันนี้" : learned.length ? "เริ่มฝึก" : "ไปเรียน"} ariaLabel={`ทางเข้าฝึกประโยคบท ${lessonId.slice(1)}`} insights={{ evidence, recommendation }} resume={pending && done > 0 ? { done, total: pending.items.length } : undefined}>
     <p className="practice-catalog-note">ประโยคที่เรียนแล้ว {learned.length} จาก {lesson.targetCount} · คลัง {lesson.questionDefinitions} ข้อ</p>

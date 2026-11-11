@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { supabase } from '@/lib/supabase';
 import { l13PracticeStores, parsePracticeHistory, practiceStorageKey } from '@/lib/practice-planner';
+import { isProgressivePhraseBank, mergePhrasePracticeAssistance } from '@/lib/phrase-practice-assistance';
 import { mergeReleasePracticeAssistance } from '@/lib/release-assistance-merge';
 
 type Snapshot = { version: 1; sessions: Record<string, unknown>[]; activeId: string | null };
@@ -50,7 +51,7 @@ function repairSessionCursor(session: Record<string, unknown>) {
   if (firstIncomplete >= session.position && session.completed !== true) return session;
   return { ...session, position: firstIncomplete, completed: false, updatedAt: new Date().toISOString() };
 }
-function mergeSession(local: Record<string, unknown>, remote: Record<string, unknown>, preserveReleaseHelp = false) {
+function mergeSession(local: Record<string, unknown>, remote: Record<string, unknown>, preserveReleaseHelp: boolean | "phrase" = false) {
   if (!Array.isArray(local.items) || !Array.isArray(remote.items) || local.items.length !== remote.items.length) throw new Error('Invalid session');
   const latest = timestamp(local) > timestamp(remote) ? local : remote;
   const latestItems = latest.items;
@@ -61,9 +62,9 @@ function mergeSession(local: Record<string, unknown>, remote: Record<string, unk
     if (!record(item) || !record(localItem) || !record(remoteItem)) throw new Error('Invalid item');
     const remoteAttempt = remoteItem.attempt;
     const localAttempt = localItem.attempt;
-    if (record(remoteAttempt) && record(localAttempt) && (remoteAttempt.status === 'pending' || remoteAttempt.confidence == null && localAttempt.confidence === 'guess') && localAttempt.status === 'completed' && remoteAttempt.submittedAt === localAttempt.submittedAt && remoteAttempt.response === localAttempt.response) return localItem;
+    if (record(remoteAttempt) && record(localAttempt) && (remoteAttempt.status === 'pending' || remoteAttempt.confidence == null && localAttempt.confidence === 'guess') && localAttempt.status === 'completed' && remoteAttempt.submittedAt === localAttempt.submittedAt && remoteAttempt.response === localAttempt.response) return preserveReleaseHelp === 'phrase' ? mergePhrasePracticeAssistance(localItem, localItem, remoteItem) : localItem;
     const chosen = remoteAttempt ? remoteItem : localAttempt ? localItem : item;
-    return preserveReleaseHelp ? mergeReleasePracticeAssistance(chosen, localItem, remoteItem) : chosen;
+    return preserveReleaseHelp === "phrase" ? mergePhrasePracticeAssistance(chosen, localItem, remoteItem) : preserveReleaseHelp ? mergeReleasePracticeAssistance(chosen, localItem, remoteItem) : chosen;
   });
   return { ...latest, items, completed: local.completed === true || remote.completed === true, position: Math.max(Number(local.position), Number(remote.position)) };
 }
@@ -135,7 +136,7 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
                 }
                 continue;
               }
-              if (entry.storage.startsWith('a13-release-')) {
+              if (entry.storage.startsWith('a13-release-') || isProgressivePhraseBank(entry.storage)) {
                 const latest = await client.from('learner_practice_sessions').select('state').eq('user_id', userId).eq('bank_key', entry.storage).eq('session_id', session.id);
                 if (latest.error) throw latest.error;
                 if (!alive) return;
@@ -143,11 +144,11 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
                 if (!record(saved)) throw new Error('Saved practice session missing');
                 const current = recoverSnapshot(localStorage.getItem(key), entry.href).snapshot;
                 const index = current.sessions.findIndex(s => s.id === session.id);
-                const merged = index >= 0 ? mergeSession(current.sessions[index], saved, true) : saved;
+                const merged = index >= 0 ? mergeSession(current.sessions[index], saved, isProgressivePhraseBank(entry.storage) ? "phrase" : true) : saved;
                 if (index >= 0) current.sessions[index] = merged; else current.sessions.push(merged);
                 localStorage.setItem(key, JSON.stringify(current));
                 acknowledged.set(id, JSON.stringify(stableSnapshot(saved)));
-                window.dispatchEvent(new Event('release-practice-history-refreshed'));
+                window.dispatchEvent(new Event(isProgressivePhraseBank(entry.storage) ? 'phrase-practice-history-refreshed' : 'release-practice-history-refreshed'));
               } else acknowledged.set(id, serialized);
             }
             if (expired) break;
@@ -224,7 +225,7 @@ export function PracticeAccountSync({ userId, children }: { userId: string; chil
           acknowledged.set(store.entry.storage+':'+remoteSession.id, JSON.stringify(stableSnapshot(remoteSession)));
           const index = store.snapshot.sessions.findIndex(s => s.id === remoteSession.id);
           if (index < 0) store.snapshot.sessions.push(row.state);
-          else store.snapshot.sessions[index] = mergeSession(store.snapshot.sessions[index], row.state, store.entry.storage.startsWith('a13-release-'));
+          else store.snapshot.sessions[index] = mergeSession(store.snapshot.sessions[index], row.state, isProgressivePhraseBank(store.entry.storage) ? 'phrase' : store.entry.storage.startsWith('a13-release-'));
         }
         for (const store of stores) {
           try {

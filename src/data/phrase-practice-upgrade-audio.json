@@ -1,0 +1,2755 @@
+{
+  "schemaVersion": 1,
+  "assets": {
+    "phrases-L01-8-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/6b5fbe8ee693984a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme aus Thailand.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "compatible_cache"
+    },
+    "L03-P008-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/cc09e7485f2348a4.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Welche Sprachen sprichst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "compatible_cache"
+    },
+    "L03-P008-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/cc09e7485f2348a4.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Welche Sprachen sprichst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L03-P008-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/cc09e7485f2348a4.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Welche Sprachen sprichst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L03-P008-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/cc09e7485f2348a4.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Welche Sprachen sprichst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L03-P008-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/cc09e7485f2348a4.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Welche Sprachen sprichst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "existing_output"
+    },
+    "L04-P002-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/36fea55ddfbe83b3.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie findest du das Sofa?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L04-P002-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/faca50a88ab7c4aa.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich finde das Sofa schön.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L04-P002-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/36fea55ddfbe83b3.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie findest du das Sofa?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L04-P002-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/36fea55ddfbe83b3.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie findest du das Sofa?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L04-P002-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/faca50a88ab7c4aa.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich finde das Sofa schön.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L04-P002-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/36fea55ddfbe83b3.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie findest du das Sofa?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L04-P002-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/36fea55ddfbe83b3.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie findest du das Sofa?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "existing_output"
+    },
+    "L05-P008-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/3bc8ab7b5a65f1a6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was brauchst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "compatible_cache"
+    },
+    "L05-P008-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/8fbe453afba993b9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich brauche einen Stift.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "compatible_cache"
+    },
+    "L05-P008-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/3bc8ab7b5a65f1a6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was brauchst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L05-P008-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/3bc8ab7b5a65f1a6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was brauchst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L05-P008-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/3bc8ab7b5a65f1a6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was brauchst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L05-P008-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/8fbe453afba993b9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich brauche einen Stift.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "existing_output"
+    },
+    "L05-P008-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/3bc8ab7b5a65f1a6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was brauchst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.92,
+      "origin": "existing_output"
+    },
+    "L08-P006-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/f7020818be545436.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann treffen wir uns?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "compatible_cache"
+    },
+    "L08-P006-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/f7020818be545436.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann treffen wir uns?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "existing_output"
+    },
+    "L08-P006-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/f7020818be545436.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann treffen wir uns?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "existing_output"
+    },
+    "L08-P006-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/f7020818be545436.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann treffen wir uns?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "existing_output"
+    },
+    "L08-P006-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/f7020818be545436.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann treffen wir uns?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "existing_output"
+    },
+    "L10-P002-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/f7aaa736f7cf0c64.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du an?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "compatible_cache"
+    },
+    "L10-P002-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/f7aaa736f7cf0c64.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du an?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L10-P002-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/f7aaa736f7cf0c64.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du an?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L10-P002-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/f7aaa736f7cf0c64.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du an?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L10-P002-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/f7aaa736f7cf0c64.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du an?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L11-P002-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/20b5add4fad006ad.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du gestern gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "compatible_cache"
+    },
+    "L11-P002-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/20b5add4fad006ad.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du gestern gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "existing_output"
+    },
+    "L11-P003-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/e346d6b50fb4e41e.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du gestern Abend gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.24,
+      "origin": "compatible_cache"
+    },
+    "L11-P003-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/165174bc71329e49.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du am Sonntag gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.976,
+      "origin": "compatible_cache"
+    },
+    "L11-P003-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/20b5add4fad006ad.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du gestern gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "existing_output"
+    },
+    "L13-R001-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/57a379ae7cea5b8f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Berlin gefällt mir.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "compatible_cache"
+    },
+    "L13-R011-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/49277b102221ccf2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was gibt es hier?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "compatible_cache"
+    },
+    "L13-R011-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/a74d9c2bd83c8479.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hier gibt es einen Park.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "compatible_cache"
+    },
+    "L13-R011-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/49277b102221ccf2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was gibt es hier?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L13-R011-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/a74d9c2bd83c8479.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hier gibt es einen Park.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L13-R011-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/49277b102221ccf2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was gibt es hier?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L13-R011-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/a74d9c2bd83c8479.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hier gibt es einen Park.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L13-R011-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/49277b102221ccf2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was gibt es hier?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L13-R011-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/49277b102221ccf2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was gibt es hier?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "ask-walk-practice-v2-c1-B": {
+      "path": "/audio/a13-release/a557821c3f7fa8fa.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Kann ich zu Fuß zur Post gehen?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.072,
+      "origin": "compatible_cache"
+    },
+    "ask-walk-practice-v2-c2-B": {
+      "path": "/audio/a13-release/01c02a9802f36d6d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Kann ich zu Fuß zur Apotheke gehen?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.384,
+      "origin": "compatible_cache"
+    },
+    "ask-walk-practice-v2-c3-B": {
+      "path": "/audio/a13-release/097ed7d87e25d8dc.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Kann ich zu Fuß zum Bahnhof gehen?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.24,
+      "origin": "compatible_cache"
+    },
+    "ask-walk-practice-v2-c4-B": {
+      "path": "/audio/a13-release/a557821c3f7fa8fa.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Kann ich zu Fuß zur Post gehen?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.072,
+      "origin": "existing_output"
+    },
+    "ask-walk-practice-v2-c5-B": {
+      "path": "/audio/a13-release/01c02a9802f36d6d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Kann ich zu Fuß zur Apotheke gehen?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.384,
+      "origin": "existing_output"
+    },
+    "ask-place-practice-v2-c1-B": {
+      "path": "/audio/a13-release/60d8255fa4ee3062.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wo ist denn hier eine Apotheke?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.264,
+      "origin": "compatible_cache"
+    },
+    "ask-place-practice-v2-c2-B": {
+      "path": "/audio/a13-release/3ec1b6c7c6401946.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wo ist denn hier ein Café?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "compatible_cache"
+    },
+    "ask-place-practice-v2-c4-B": {
+      "path": "/audio/a13-release/85761d393b9aeb68.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wo ist denn hier eine Bank?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.76,
+      "origin": "compatible_cache"
+    },
+    "ask-place-practice-v2-c5-B": {
+      "path": "/audio/a13-release/60d8255fa4ee3062.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wo ist denn hier eine Apotheke?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.264,
+      "origin": "existing_output"
+    },
+    "phrases-L01-7-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/5ebe0ce61dec6623.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich heiße Tom.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "generated"
+    },
+    "phrases-L01-7-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/659bbc0fd3d102e6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "generated"
+    },
+    "phrases-L01-7-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/659bbc0fd3d102e6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "phrases-L01-7-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/659bbc0fd3d102e6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "phrases-L01-7-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/659bbc0fd3d102e6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "phrases-L01-7-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/659bbc0fd3d102e6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.944,
+      "origin": "existing_output"
+    },
+    "phrases-L01-7-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/4b79482cac0c4bb6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich heiße Mia.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "generated"
+    },
+    "phrases-L01-7-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/1395822ac2f6be05.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich heiße Lea.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.136,
+      "origin": "generated"
+    },
+    "phrases-L01-7-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/395112857dcaad45.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich heiße Eva.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "generated"
+    },
+    "phrases-L01-7-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/68a2e03f610889ff.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich heiße Ben.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "generated"
+    },
+    "phrases-L01-8-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/8e52eb61a4e14ded.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Woher kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "generated"
+    },
+    "phrases-L01-8-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/8e52eb61a4e14ded.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Woher kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "phrases-L01-8-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/8e52eb61a4e14ded.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Woher kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "phrases-L01-8-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/8e52eb61a4e14ded.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Woher kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "phrases-L01-8-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/8e52eb61a4e14ded.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Woher kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.04,
+      "origin": "existing_output"
+    },
+    "phrases-L01-8-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/2927382aab368c3a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme aus Japan.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "generated"
+    },
+    "phrases-L01-8-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/bd63f6e189fbf153.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme aus Deutschland.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "generated"
+    },
+    "L02-pattern-phone-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "generated"
+    },
+    "L02-pattern-phone-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L02-pattern-phone-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L02-pattern-phone-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L02-pattern-phone-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L02-pattern-profession-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L02-pattern-profession-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L02-pattern-profession-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L02-pattern-profession-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L02-pattern-profession-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/c0487d48887e8ed0.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hallo!",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "phrases-L01-8-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/f980c736af7735d1.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme aus Österreich.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.616,
+      "origin": "generated"
+    },
+    "phrases-L01-8-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/e51627568396a750.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme aus China.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "generated"
+    },
+    "L02-pattern-profession-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/89c64a465f0bf049.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was bist du von Beruf?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "generated"
+    },
+    "L02-pattern-profession-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/89c64a465f0bf049.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was bist du von Beruf?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L02-pattern-profession-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/89c64a465f0bf049.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was bist du von Beruf?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L02-pattern-profession-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/89c64a465f0bf049.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was bist du von Beruf?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L02-pattern-profession-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/89c64a465f0bf049.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was bist du von Beruf?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L03-P004-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/63629ede72687f5d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt deine Schwester?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "generated"
+    },
+    "L03-P004-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/63629ede72687f5d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt deine Schwester?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L03-P004-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/63629ede72687f5d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt deine Schwester?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L03-P004-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/63629ede72687f5d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt deine Schwester?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L02-pattern-phone-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/b7b273a4dcaf92c5.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie ist deine Handynummer?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "generated"
+    },
+    "L03-P004-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/63629ede72687f5d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie heißt deine Schwester?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L02-pattern-phone-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/b7b273a4dcaf92c5.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie ist deine Handynummer?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "existing_output"
+    },
+    "L02-pattern-phone-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/b7b273a4dcaf92c5.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie ist deine Handynummer?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "existing_output"
+    },
+    "L02-pattern-phone-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/b7b273a4dcaf92c5.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie ist deine Handynummer?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "existing_output"
+    },
+    "L02-pattern-phone-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/b7b273a4dcaf92c5.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie ist deine Handynummer?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.832,
+      "origin": "existing_output"
+    },
+    "L03-P004-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/03060cc6e69ed817.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Meine Schwester heißt Lea.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "generated"
+    },
+    "L03-P004-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/9df05bd3c9246a04.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Meine Schwester heißt Mia.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.808,
+      "origin": "generated"
+    },
+    "L03-P004-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/762b9b2cb5732726.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Meine Schwester heißt Eva.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "generated"
+    },
+    "L03-P004-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/d8d299e3b61dbef1.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Meine Schwester heißt Anna.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.784,
+      "origin": "generated"
+    },
+    "L03-P004-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/a111eba52d2a842f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Meine Schwester heißt Nina.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "generated"
+    },
+    "L03-P008-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/7c989146488e3e6c.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spreche Thai und Deutsch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.688,
+      "origin": "generated"
+    },
+    "L03-P008-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/34b46947f13efa57.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spreche Englisch und Deutsch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "generated"
+    },
+    "L03-P008-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/faede0825a4c924e.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spreche Thai und Englisch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "generated"
+    },
+    "L03-P008-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/be388a74e936ae51.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spreche Deutsch und Thai.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.76,
+      "origin": "generated"
+    },
+    "L03-P008-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/17612f45170bd104.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spreche Englisch und Thai.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "generated"
+    },
+    "L04-P002-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/b08477495f8c4d74.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich finde das Sofa praktisch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "generated"
+    },
+    "L04-P002-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/b08477495f8c4d74.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich finde das Sofa praktisch.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "existing_output"
+    },
+    "L04-P002-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/f317dd88034dfa67.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich finde das Sofa alt.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "generated"
+    },
+    "L04-P004-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/2dbb01e24b8bbdaf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie viel kostet der Tisch?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "generated"
+    },
+    "L04-P004-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/2dbb01e24b8bbdaf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie viel kostet der Tisch?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L04-P004-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/2dbb01e24b8bbdaf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie viel kostet der Tisch?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L04-P004-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/2dbb01e24b8bbdaf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie viel kostet der Tisch?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L04-P004-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/2dbb01e24b8bbdaf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie viel kostet der Tisch?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.856,
+      "origin": "existing_output"
+    },
+    "L04-P004-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/e234158fbaa4436a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Tisch kostet achtzig Euro.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.024,
+      "origin": "generated"
+    },
+    "L04-P004-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/f1b237018723037a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Tisch kostet neunzig Euro.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "generated"
+    },
+    "L04-P004-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/29d7488d2fe99009.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Tisch kostet fünfzig Euro.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.096,
+      "origin": "generated"
+    },
+    "L04-P004-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/5f834ffe5ce89b07.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Tisch kostet siebzig Euro.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.072,
+      "origin": "generated"
+    },
+    "L04-P004-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/0958ab5a322b740b.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Tisch kostet sechzig Euro.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.096,
+      "origin": "generated"
+    },
+    "L05-P008-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/da53aca146831b62.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich brauche eine Tasche.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "generated"
+    },
+    "L05-P008-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/da53aca146831b62.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich brauche eine Tasche.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.592,
+      "origin": "existing_output"
+    },
+    "L05-P008-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/47c77ad09350acb2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich brauche ein Glas.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "generated"
+    },
+    "L05-P010-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/10a5d6f57b6295cd.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Schlüssel?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "generated"
+    },
+    "L05-P010-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/10a5d6f57b6295cd.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Schlüssel?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L05-P010-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/10a5d6f57b6295cd.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Schlüssel?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L05-P010-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/10a5d6f57b6295cd.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Schlüssel?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L05-P010-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/10a5d6f57b6295cd.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Schlüssel?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L05-P010-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/dad6138148bb903d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Schlüssel.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "generated"
+    },
+    "L05-P010-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/dad6138148bb903d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Schlüssel.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L05-P010-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/dad6138148bb903d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Schlüssel.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L05-P010-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/dad6138148bb903d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Schlüssel.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L05-P010-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/dad6138148bb903d.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Schlüssel.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L06-P004-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/f20db0ca0aae5dec.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Drucker?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "generated"
+    },
+    "L06-P004-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/f20db0ca0aae5dec.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Drucker?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "L06-P004-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/f20db0ca0aae5dec.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Drucker?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "L06-P004-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/f20db0ca0aae5dec.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Drucker?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "L06-P004-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/f20db0ca0aae5dec.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hast du einen Drucker?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "existing_output"
+    },
+    "L06-P004-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/b38fe8ae319cd80f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Drucker.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "generated"
+    },
+    "L06-P004-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/b38fe8ae319cd80f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Drucker.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L06-P004-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/b38fe8ae319cd80f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Drucker.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L06-P004-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/b38fe8ae319cd80f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Drucker.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L06-P004-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/b38fe8ae319cd80f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe keinen Drucker.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L06-P009-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/faa7f8eaf4854603.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "generated"
+    },
+    "L06-P009-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/faa7f8eaf4854603.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L06-P009-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/faa7f8eaf4854603.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L06-P009-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/faa7f8eaf4854603.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L06-P009-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/faa7f8eaf4854603.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.872,
+      "origin": "existing_output"
+    },
+    "L06-P009-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/765e4a9170ba428f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich schreibe eine E-Mail.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "generated"
+    },
+    "L06-P009-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/765e4a9170ba428f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich schreibe eine E-Mail.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L06-P009-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/765e4a9170ba428f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich schreibe eine E-Mail.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L06-P009-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/765e4a9170ba428f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich schreibe eine E-Mail.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L06-P009-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/765e4a9170ba428f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich schreibe eine E-Mail.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.544,
+      "origin": "existing_output"
+    },
+    "L07-P002-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/070515e387bb0416.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was kannst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "generated"
+    },
+    "L07-P002-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/070515e387bb0416.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was kannst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L07-P002-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/070515e387bb0416.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was kannst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L07-P002-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/070515e387bb0416.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was kannst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L07-P002-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/070515e387bb0416.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was kannst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L07-P002-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/f870f6c0a45884b2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich kann tanzen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "generated"
+    },
+    "L07-P002-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/f870f6c0a45884b2.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich kann tanzen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L07-P002-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/d43e271c3bb1f63e.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich kann schwimmen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "generated"
+    },
+    "L07-P002-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/ea1bce6c401300c9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich kann kochen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "generated"
+    },
+    "L07-P002-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/f4966bed4b163d01.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich kann singen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.112,
+      "origin": "generated"
+    },
+    "L07-P010-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/3f8c40cad1e97630.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "generated"
+    },
+    "L07-P010-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/3f8c40cad1e97630.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L07-P010-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/3f8c40cad1e97630.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L07-P010-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/3f8c40cad1e97630.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L07-P010-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/3f8c40cad1e97630.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was machst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.232,
+      "origin": "existing_output"
+    },
+    "L07-P010-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/9f15f39b9c9d524b.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spiele gern Fußball.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "generated"
+    },
+    "L07-P010-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/9f15f39b9c9d524b.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spiele gern Fußball.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L07-P010-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/9f15f39b9c9d524b.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spiele gern Fußball.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "existing_output"
+    },
+    "L07-P010-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/4167a8a306896a5a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spiele gern Tennis.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "generated"
+    },
+    "L07-P010-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/4167a8a306896a5a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich spiele gern Tennis.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L08-P006-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/a902409113d18b5f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wir treffen uns um acht Uhr.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.976,
+      "origin": "generated"
+    },
+    "L08-P006-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/3bfffa2ebbd0276c.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wir treffen uns um neun Uhr.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "generated"
+    },
+    "L08-P006-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/ace4597cd38ed11b.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wir treffen uns um sieben Uhr.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "generated"
+    },
+    "L08-P006-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/b82f5f90e55adb54.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wir treffen uns um zehn Uhr.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "generated"
+    },
+    "L08-P006-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/f48939b7e9d17673.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wir treffen uns um elf Uhr.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.024,
+      "origin": "generated"
+    },
+    "L08-P007-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/993bd106ce97e808.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "generated"
+    },
+    "L08-P007-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/993bd106ce97e808.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L08-P007-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/993bd106ce97e808.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L08-P007-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/993bd106ce97e808.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L08-P007-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/993bd106ce97e808.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann kommst du?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 1.896,
+      "origin": "existing_output"
+    },
+    "L08-P007-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/ee180fe643d86d74.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme am Samstag.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "generated"
+    },
+    "L08-P007-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/3c0765573d082400.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme am Sonntag.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "generated"
+    },
+    "L08-P007-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/c9ffe9e299cbc329.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme am Montag.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "generated"
+    },
+    "L08-P007-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/94ffbab50f94a892.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme am Dienstag.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "generated"
+    },
+    "L08-P007-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/9fd45090adb53d12.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme am Freitag.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "generated"
+    },
+    "L09-P002-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/78071fb1f800bb08.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was isst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "generated"
+    },
+    "L09-P002-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/78071fb1f800bb08.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was isst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L09-P002-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/78071fb1f800bb08.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was isst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L09-P002-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/78071fb1f800bb08.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was isst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L09-P002-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/78071fb1f800bb08.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was isst du gern?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.16,
+      "origin": "existing_output"
+    },
+    "L09-P002-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/95703f185432da17.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich esse gern Pizza.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "generated"
+    },
+    "L09-P002-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/95703f185432da17.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich esse gern Pizza.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.448,
+      "origin": "existing_output"
+    },
+    "L09-P002-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/7886c056515245ec.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich esse gern Brot.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "generated"
+    },
+    "L09-P002-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/7886c056515245ec.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich esse gern Brot.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "existing_output"
+    },
+    "L09-P004-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/f465527d1cca23b9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Magst du Kaffee?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "generated"
+    },
+    "L09-P004-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/f465527d1cca23b9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Magst du Kaffee?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L09-P004-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/f465527d1cca23b9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Magst du Kaffee?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L09-P004-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/f465527d1cca23b9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Magst du Kaffee?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L09-P004-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/f465527d1cca23b9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Magst du Kaffee?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.016,
+      "origin": "existing_output"
+    },
+    "L09-P002-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/6b3500334f55f34a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich esse gern Gemüse.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "generated"
+    },
+    "L09-P004-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/72007dc1b7ca83bf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich mag keinen Kaffee.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "generated"
+    },
+    "L09-P004-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/72007dc1b7ca83bf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich mag keinen Kaffee.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L09-P004-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/72007dc1b7ca83bf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich mag keinen Kaffee.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L09-P004-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/72007dc1b7ca83bf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich mag keinen Kaffee.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L09-P004-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/72007dc1b7ca83bf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich mag keinen Kaffee.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "existing_output"
+    },
+    "L10-P002-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/9cd172818ce913cf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme um neun Uhr an.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "generated"
+    },
+    "L10-P002-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/dd04aff98025f554.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme um acht Uhr an.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.688,
+      "origin": "generated"
+    },
+    "L10-P002-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/ba760d52c752c235.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme um zehn Uhr an.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.784,
+      "origin": "generated"
+    },
+    "L10-P002-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/24924c11ed409dd4.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme um elf Uhr an.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.688,
+      "origin": "generated"
+    },
+    "L10-P005-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/327fdb0ada163732.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann fährt der Zug ab?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "generated"
+    },
+    "L10-P005-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/327fdb0ada163732.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann fährt der Zug ab?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L10-P005-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/327fdb0ada163732.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann fährt der Zug ab?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L10-P005-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/327fdb0ada163732.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann fährt der Zug ab?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L10-P005-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/327fdb0ada163732.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann fährt der Zug ab?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "existing_output"
+    },
+    "L10-P002-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/d67bd5c06f75b9f3.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich komme um sieben Uhr an.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "generated"
+    },
+    "L10-P005-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/3c948ddd69d3148f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Zug fährt um zehn Uhr ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.024,
+      "origin": "generated"
+    },
+    "L10-P005-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/725d2d514be6a75a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Zug fährt um elf Uhr ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.976,
+      "origin": "generated"
+    },
+    "L10-P005-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/5c8a29536f120640.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Zug fährt um acht Uhr ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "generated"
+    },
+    "L10-P005-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/5d144c11b97d1e89.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Zug fährt um neun Uhr ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.952,
+      "origin": "generated"
+    },
+    "L10-P005-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/8d00370bf3dfe4d5.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Der Zug fährt um sieben Uhr ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.0,
+      "origin": "generated"
+    },
+    "L11-P002-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/fb0c525aeed176d7.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Heute Morgen habe ich gearbeitet.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.168,
+      "origin": "generated"
+    },
+    "L11-P002-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/712ec153eb45ce42.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du heute Morgen gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.096,
+      "origin": "generated"
+    },
+    "L11-P002-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/4273a8d66daf2735.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe gearbeitet.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.424,
+      "origin": "generated"
+    },
+    "L11-P002-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/a4efd9807cc02b85.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du am Montag gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.928,
+      "origin": "generated"
+    },
+    "L11-P002-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/fd4e979be1933c60.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe am Montag gearbeitet.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.024,
+      "origin": "generated"
+    },
+    "L11-P002-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/cf199e69b4e3fabd.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Gestern habe ich gearbeitet.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "generated"
+    },
+    "L11-P002-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/46d1c408ff3055a7.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du am Abend gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "generated"
+    },
+    "L11-P003-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/46d1c408ff3055a7.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du am Abend gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "existing_output"
+    },
+    "L11-P003-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/0cb412bace7683ba.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe Musik gehört.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.4,
+      "origin": "generated"
+    },
+    "L11-P002-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/eeefac892e794661.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Am Abend habe ich gearbeitet.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.0,
+      "origin": "generated"
+    },
+    "L11-P003-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/b026155357b22158.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Am Sonntag habe ich Musik gehört.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.192,
+      "origin": "generated"
+    },
+    "L11-P003-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/79a8ec8a3c3c221f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich habe gestern Musik gehört.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "generated"
+    },
+    "L11-P003-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/ccd7d840d386817b.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Am Abend habe ich Musik gehört.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "generated"
+    },
+    "L11-P003-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/b1e3ae862c5488ef.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Heute habe ich Musik gehört.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "generated"
+    },
+    "L11-P003-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/23aec1f74eb4dd98.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Was hast du heute gemacht?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.664,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/8b846083887b2070.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie seid ihr gefahren?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.712,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/2d731fc7bb3a5486.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wir sind mit dem Zug gefahren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.976,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/b6611976d19cdbf6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie bist du gefahren?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/c707069090cd0bad.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich bin mit dem Zug gefahren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.736,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/0ad18987daf82981.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich bin gestern mit dem Zug gefahren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.192,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/cb9818209eefa77a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie bist du gestern gefahren?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.024,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/b181df768f7887c3.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie seid ihr am Montag gefahren?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.288,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/9c6a12046885cee7.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wie bist du heute gefahren?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.904,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/cafa165eb2300cf9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wir sind am Montag mit dem Zug gefahren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.648,
+      "origin": "generated"
+    },
+    "L12-P003-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/05bb9b44ab376b75.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Heute bin ich mit dem Zug gefahren.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.048,
+      "origin": "generated"
+    },
+    "L12-P005-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/99cda331b4a51f98.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann bist du zurückgekommen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "generated"
+    },
+    "L12-P005-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/99cda331b4a51f98.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann bist du zurückgekommen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L12-P005-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/99cda331b4a51f98.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann bist du zurückgekommen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L12-P005-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/99cda331b4a51f98.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann bist du zurückgekommen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L12-P005-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/99cda331b4a51f98.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wann bist du zurückgekommen?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.88,
+      "origin": "existing_output"
+    },
+    "L12-P005-practice-v2-s1-c1-B": {
+      "path": "/audio/a13-release/12188b755e310ebf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich bin am Montag zurückgekommen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.192,
+      "origin": "generated"
+    },
+    "L12-P005-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/4255cd179348eecf.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich bin gestern zurückgekommen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.928,
+      "origin": "generated"
+    },
+    "L12-P005-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/6c75e0ab9cfae40a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Am Samstag bin ich zurückgekommen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.216,
+      "origin": "generated"
+    },
+    "L12-P005-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/31107829c1d3043a.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Ich bin am Freitag zurückgekommen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.288,
+      "origin": "generated"
+    },
+    "L12-P005-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/a518c83776fe9be9.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Am Sonntag bin ich zurückgekommen.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.168,
+      "origin": "generated"
+    },
+    "L13-R001-practice-v2-s1-c1-A": {
+      "path": "/audio/a13-release/47bf0f9d3adfb754.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Gefällt Ihnen Berlin?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.688,
+      "origin": "generated"
+    },
+    "L13-R001-practice-v2-s1-c2-A": {
+      "path": "/audio/a13-release/2006e4f500bf1452.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Gefällt dir Hamburg?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.472,
+      "origin": "generated"
+    },
+    "L13-R001-practice-v2-s2-c3-A": {
+      "path": "/audio/a13-release/d8586f7d2b8d6150.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Gefällt dir Bonn?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.208,
+      "origin": "generated"
+    },
+    "L13-R001-practice-v2-s1-c2-B": {
+      "path": "/audio/a13-release/0ad0ff1810d90f92.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hamburg gefällt mir.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.496,
+      "origin": "generated"
+    },
+    "L13-R001-practice-v2-s2-c3-B": {
+      "path": "/audio/a13-release/2fa54595f07b5962.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Bonn gefällt mir.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.28,
+      "origin": "generated"
+    },
+    "L13-R001-practice-v2-s2-c4-A": {
+      "path": "/audio/a13-release/68a20937dc8a8c1c.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Gefällt dir Köln?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.352,
+      "origin": "generated"
+    },
+    "L13-R001-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/ec8a6c9b62ef1907.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Köln gefällt mir.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.328,
+      "origin": "generated"
+    },
+    "L13-R001-practice-v2-s3-c5-A": {
+      "path": "/audio/a13-release/d9558be960f94f69.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Gefällt dir Leipzig?",
+      "voice": "de-DE-KatjaNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.64,
+      "origin": "generated"
+    },
+    "L13-R011-practice-v2-s2-c4-B": {
+      "path": "/audio/a13-release/b0c6ecbd921da032.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hier gibt es ein Café.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "generated"
+    },
+    "L13-R011-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/f542917045e71a29.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Hier gibt es einen See.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.52,
+      "origin": "generated"
+    },
+    "L13-R001-practice-v2-s3-c5-B": {
+      "path": "/audio/a13-release/72fee5e5dc4b51dc.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Leipzig gefällt mir.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 2.568,
+      "origin": "generated"
+    },
+    "describe-turn-practice-v2-c1-B": {
+      "path": "/audio/a13-release/d41d8a41029bd8b6.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Vor der Post biegen Sie nach links ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.408,
+      "origin": "generated"
+    },
+    "describe-turn-practice-v2-c3-B": {
+      "path": "/audio/a13-release/eca340ae816f6ab1.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Vor der Bank biegen Sie nach links ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.336,
+      "origin": "generated"
+    },
+    "describe-turn-practice-v2-c4-B": {
+      "path": "/audio/a13-release/3b698c8dd6eeb77f.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Vor der Post biegen Sie nach rechts ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.384,
+      "origin": "generated"
+    },
+    "describe-turn-practice-v2-c2-B": {
+      "path": "/audio/a13-release/fed0c658fa8815a5.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Vor der Apotheke biegen Sie nach rechts ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.624,
+      "origin": "generated"
+    },
+    "ask-place-practice-v2-c3-B": {
+      "path": "/audio/a13-release/a267c63e845a90fe.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Wo ist denn hier ein Bahnhof?",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.0,
+      "origin": "generated"
+    },
+    "describe-turn-practice-v2-c5-B": {
+      "path": "/audio/a13-release/049070fb82bff973.mp3",
+      "status": "ready",
+      "kind": "dialogue_turn",
+      "text": "Vor der Apotheke biegen Sie nach links ab.",
+      "voice": "de-DE-ConradNeural",
+      "rate": "-12%",
+      "durationSeconds": 3.672,
+      "origin": "generated"
+    }
+  }
+}

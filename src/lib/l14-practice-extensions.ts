@@ -1,0 +1,1034 @@
+import type { DialogueAnnotatedPart } from '@/lib/phrase-dialogue-learning';
+export type L14ExtensionPractice = {contextId:string; familyId:string; stage:1|2|3; unlock:{subskill:string; requiresAttempt:boolean; minCorrectContexts:number; minPracticeSessions:number}};
+export type L14ExtensionTask = {id:string; targetId:string; topic:'ask'|'describe';  prompt:string; answer:string; acceptedAnswers:string[]; translation:string; explanation:string; difficulty:number; difficultyRationale:string; assistance:string; subskill:string; practice:L14ExtensionPractice; sentences:DialogueAnnotatedPart[][]; glossary:string; feedbackErrors:{response:string;message:string}[]; } & ({kind:'dialogue';options:string[];practice:L14ExtensionPractice & {stage:1}}|{kind:'write';practice:L14ExtensionPractice & {stage:2|3}});
+export const l14PracticeExtensions: L14ExtensionTask[] = [
+  {
+    "id": "ask-walk-practice-v2-c1",
+    "targetId": "ask-walk",
+    "topic": "ask",
+    "kind": "dialogue",
+    "prompt": "คุณยืนหน้าที่พักและต้องการไปไปรษณีย์ ถามเจ้าถิ่น B ว่าเดินไปได้ไหม",
+    "answer": "Kann ich zu Fuß zur Post gehen?",
+    "acceptedAnswers": [
+      "Kann ich zu Fuß zur Post gehen?",
+      "Kann ich zu Fuß zur Post gehen"
+    ],
+    "translation": "ฉันเดินไปไปรษณีย์ได้ไหม",
+    "explanation": "คำถามใช่หรือไม่ใช่ขึ้นต้นด้วย Kann ตามด้วย ich ส่วน gehen อยู่ท้ายประโยค จุดหมายต้องตรงกับข้อมูลที่ให้",
+    "difficulty": 2,
+    "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+    "assistance": "german-answer-options",
+    "subskill": "phrase_dialogue_response",
+    "practice": {
+      "contextId": "ask-walk-context-v2-1",
+      "familyId": "ask-walk",
+      "stage": 1,
+      "unlock": {
+        "subskill": "phrase_order",
+        "requiresAttempt": true,
+        "minCorrectContexts": 0,
+        "minPracticeSessions": 0
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Kann",
+          "role": "auxiliary",
+          "label": "กริยาช่วยที่ผันแล้ว",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ich",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "zu Fuß",
+          "role": "other",
+          "label": "เดินเท้า",
+          "position": ""
+        },
+        {
+          "text": "zur Post",
+          "role": "other",
+          "label": "จุดหมาย",
+          "position": ""
+        },
+        {
+          "text": "gehen?",
+          "role": "verb",
+          "label": "กริยาหลัก · Infinitiv",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": [
+      {
+        "response": "Wo ist denn hier eine Post?",
+        "message": "ประโยคนี้ถามที่ตั้ง แต่โจทย์ให้ถามว่าเดินไปจุดหมายได้ไหม"
+      },
+      {
+        "response": "Das weiß ich leider nicht.",
+        "message": "ประโยคนี้บอกว่าไม่ทราบข้อมูล แต่ผู้พูดต้องการถามเรื่องเดินไปจุดหมาย"
+      }
+    ],
+    "options": [
+      "Kann ich zu Fuß zur Post gehen?",
+      "Wo ist denn hier eine Post?",
+      "Das weiß ich leider nicht."
+    ]
+  },
+  {
+    "id": "ask-walk-practice-v2-c2",
+    "targetId": "ask-walk",
+    "topic": "ask",
+    "kind": "dialogue",
+    "prompt": "คุณอยู่หน้าธนาคาร เจ้าถิ่น B บอกว่าร้านขายยาอยู่ใกล้ คุณต้องการถาม B ว่าเดินไปได้ไหม",
+    "answer": "Kann ich zu Fuß zur Apotheke gehen?",
+    "acceptedAnswers": [
+      "Kann ich zu Fuß zur Apotheke gehen?",
+      "Kann ich zu Fuß zur Apotheke gehen"
+    ],
+    "translation": "ฉันเดินไปร้านขายยาได้ไหม",
+    "explanation": "คำถามใช่หรือไม่ใช่ขึ้นต้นด้วย Kann ตามด้วย ich ส่วน gehen อยู่ท้ายประโยค จุดหมายต้องตรงกับข้อมูลที่ให้",
+    "difficulty": 2,
+    "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+    "assistance": "german-answer-options",
+    "subskill": "phrase_dialogue_response",
+    "practice": {
+      "contextId": "ask-walk-context-v2-2",
+      "familyId": "ask-walk",
+      "stage": 1,
+      "unlock": {
+        "subskill": "phrase_order",
+        "requiresAttempt": true,
+        "minCorrectContexts": 0,
+        "minPracticeSessions": 0
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Kann",
+          "role": "auxiliary",
+          "label": "กริยาช่วยที่ผันแล้ว",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ich",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "zu Fuß",
+          "role": "other",
+          "label": "เดินเท้า",
+          "position": ""
+        },
+        {
+          "text": "zur Apotheke",
+          "role": "other",
+          "label": "จุดหมาย",
+          "position": ""
+        },
+        {
+          "text": "gehen?",
+          "role": "verb",
+          "label": "กริยาหลัก · Infinitiv",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": [
+      {
+        "response": "Wo ist denn hier eine Post?",
+        "message": "ประโยคนี้ถามที่ตั้ง แต่โจทย์ให้ถามว่าเดินไปจุดหมายได้ไหม"
+      },
+      {
+        "response": "Das weiß ich leider nicht.",
+        "message": "ประโยคนี้บอกว่าไม่ทราบข้อมูล แต่ผู้พูดต้องการถามเรื่องเดินไปจุดหมาย"
+      }
+    ],
+    "options": [
+      "Kann ich zu Fuß zur Apotheke gehen?",
+      "Wo ist denn hier eine Post?",
+      "Das weiß ich leider nicht."
+    ]
+  },
+  {
+    "id": "ask-walk-practice-v2-c3",
+    "targetId": "ask-walk",
+    "topic": "ask",
+    "kind": "write",
+    "prompt": "คุณถาม B ว่าเดินไปสถานีรถไฟได้ไหม ใช้โครง Kann ich ___ zum Bahnhof ___?",
+    "answer": "Kann ich zu Fuß zum Bahnhof gehen?",
+    "acceptedAnswers": [
+      "Kann ich zu Fuß zum Bahnhof gehen?",
+      "Kann ich zu Fuß zum Bahnhof gehen"
+    ],
+    "translation": "ฉันเดินไปสถานีรถไฟได้ไหม",
+    "explanation": "คำถามใช่หรือไม่ใช่ขึ้นต้นด้วย Kann ตามด้วย ich ส่วน gehen อยู่ท้ายประโยค จุดหมายต้องตรงกับข้อมูลที่ให้",
+    "difficulty": 3,
+    "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+    "assistance": "sentence-skeleton-and-supplied-data",
+    "subskill": "phrase_bounded_production",
+    "practice": {
+      "contextId": "ask-walk-context-v2-3",
+      "familyId": "ask-walk",
+      "stage": 2,
+      "unlock": {
+        "subskill": "phrase_dialogue_response",
+        "requiresAttempt": true,
+        "minCorrectContexts": 2,
+        "minPracticeSessions": 2
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Kann",
+          "role": "auxiliary",
+          "label": "กริยาช่วยที่ผันแล้ว",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ich",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "zu Fuß",
+          "role": "other",
+          "label": "เดินเท้า",
+          "position": ""
+        },
+        {
+          "text": "zum Bahnhof",
+          "role": "other",
+          "label": "จุดหมาย",
+          "position": ""
+        },
+        {
+          "text": "gehen?",
+          "role": "verb",
+          "label": "กริยาหลัก · Infinitiv",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": []
+  },
+  {
+    "id": "ask-walk-practice-v2-c4",
+    "targetId": "ask-walk",
+    "topic": "ask",
+    "kind": "write",
+    "prompt": "คุณถาม B ว่าเดินไปไปรษณีย์ได้ไหม ใช้โครง Kann ich ___ zur Post ___?",
+    "answer": "Kann ich zu Fuß zur Post gehen?",
+    "acceptedAnswers": [
+      "Kann ich zu Fuß zur Post gehen?",
+      "Kann ich zu Fuß zur Post gehen"
+    ],
+    "translation": "ฉันเดินไปไปรษณีย์ได้ไหม",
+    "explanation": "คำถามใช่หรือไม่ใช่ขึ้นต้นด้วย Kann ตามด้วย ich ส่วน gehen อยู่ท้ายประโยค จุดหมายต้องตรงกับข้อมูลที่ให้",
+    "difficulty": 3,
+    "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+    "assistance": "sentence-skeleton-and-supplied-data",
+    "subskill": "phrase_bounded_production",
+    "practice": {
+      "contextId": "ask-walk-context-v2-4",
+      "familyId": "ask-walk",
+      "stage": 2,
+      "unlock": {
+        "subskill": "phrase_dialogue_response",
+        "requiresAttempt": true,
+        "minCorrectContexts": 2,
+        "minPracticeSessions": 2
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Kann",
+          "role": "auxiliary",
+          "label": "กริยาช่วยที่ผันแล้ว",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ich",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "zu Fuß",
+          "role": "other",
+          "label": "เดินเท้า",
+          "position": ""
+        },
+        {
+          "text": "zur Post",
+          "role": "other",
+          "label": "จุดหมาย",
+          "position": ""
+        },
+        {
+          "text": "gehen?",
+          "role": "verb",
+          "label": "กริยาหลัก · Infinitiv",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": []
+  },
+  {
+    "id": "ask-walk-practice-v2-c5",
+    "targetId": "ask-walk",
+    "topic": "ask",
+    "kind": "write",
+    "prompt": "คุณถาม B ว่าเดินไปร้านขายยาได้ไหม เริ่ม Kann คำช่วย: ich / zu Fuß / zur Apotheke / gehen ใช้คำที่ให้ครบโดยไม่เพิ่มคำอื่น วาง zu Fuß หน้าจุดหมาย",
+    "answer": "Kann ich zu Fuß zur Apotheke gehen?",
+    "acceptedAnswers": [
+      "Kann ich zu Fuß zur Apotheke gehen?",
+      "Kann ich zu Fuß zur Apotheke gehen"
+    ],
+    "translation": "ฉันเดินไปร้านขายยาได้ไหม",
+    "explanation": "คำถามใช่หรือไม่ใช่ขึ้นต้นด้วย Kann ตามด้วย ich ส่วน gehen อยู่ท้ายประโยค จุดหมายต้องตรงกับข้อมูลที่ให้",
+    "difficulty": 4,
+    "difficultyRationale": "สร้างประโยคจากคำรูปพื้นฐาน ข้อมูล คำเริ่มต้น และเงื่อนไขวางกลุ่มคำ",
+    "assistance": "supplied-lemmas-and-start-constraint",
+    "subskill": "phrase_bounded_production",
+    "practice": {
+      "contextId": "ask-walk-context-v2-5",
+      "familyId": "ask-walk",
+      "stage": 3,
+      "unlock": {
+        "subskill": "phrase_bounded_production",
+        "requiresAttempt": true,
+        "minCorrectContexts": 2,
+        "minPracticeSessions": 2
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Kann",
+          "role": "auxiliary",
+          "label": "กริยาช่วยที่ผันแล้ว",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ich",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "zu Fuß",
+          "role": "other",
+          "label": "เดินเท้า",
+          "position": ""
+        },
+        {
+          "text": "zur Apotheke",
+          "role": "other",
+          "label": "จุดหมาย",
+          "position": ""
+        },
+        {
+          "text": "gehen?",
+          "role": "verb",
+          "label": "กริยาหลัก · Infinitiv",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": []
+  },
+  {
+    "id": "describe-turn-practice-v2-c1",
+    "targetId": "describe-turn",
+    "topic": "describe",
+    "kind": "dialogue",
+    "prompt": "A ถามทาง คุณรู้ว่าต้องเลี้ยวซ้ายก่อนไปรษณีย์ บอก A โดยเริ่ม Vor der Post",
+    "answer": "Vor der Post biegen Sie nach links ab.",
+    "acceptedAnswers": [
+      "Vor der Post biegen Sie nach links ab.",
+      "Vor der Post biegen Sie nach links ab"
+    ],
+    "translation": "ก่อนไปรษณีย์ ให้เลี้ยวซ้าย",
+    "explanation": "จุดสังเกตขึ้นต้นประโยค biegen อยู่ตำแหน่ง 2 ตามด้วย Sie และส่วนแยก ab อยู่ท้ายประโยค เลือกทิศทางตามข้อมูล",
+    "difficulty": 2,
+    "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+    "assistance": "german-answer-options",
+    "subskill": "phrase_dialogue_response",
+    "practice": {
+      "contextId": "describe-turn-context-v2-1",
+      "familyId": "describe-turn",
+      "stage": 1,
+      "unlock": {
+        "subskill": "phrase_order",
+        "requiresAttempt": true,
+        "minCorrectContexts": 0,
+        "minPracticeSessions": 0
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Vor der Post",
+          "role": "other",
+          "label": "จุดสังเกต",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "biegen",
+          "role": "verb",
+          "label": "กริยาที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "Sie",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": ""
+        },
+        {
+          "text": "nach links",
+          "role": "other",
+          "label": "ทิศทาง",
+          "position": ""
+        },
+        {
+          "text": "ab.",
+          "role": "verb",
+          "label": "ส่วนแยกของ abbiegen",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": [
+      {
+        "response": "Vor der Post biegen Sie nach rechts ab.",
+        "message": "ทิศทางนี้ตรงข้ามกับเส้นทางที่โจทย์กำหนด"
+      },
+      {
+        "response": "Das weiß ich leider nicht.",
+        "message": "ผู้พูดมีข้อมูลเส้นทาง จึงต้องบอกจุดเลี้ยว แทนการตอบว่าไม่รู้"
+      }
+    ],
+    "options": [
+      "Vor der Post biegen Sie nach links ab.",
+      "Vor der Post biegen Sie nach rechts ab.",
+      "Das weiß ich leider nicht."
+    ]
+  },
+  {
+    "id": "describe-turn-practice-v2-c2",
+    "targetId": "describe-turn",
+    "topic": "describe",
+    "kind": "dialogue",
+    "prompt": "B ถามทาง คุณรู้ว่าต้องเลี้ยวขวาก่อนร้านขายยา บอก B โดยเริ่ม Vor der Apotheke",
+    "answer": "Vor der Apotheke biegen Sie nach rechts ab.",
+    "acceptedAnswers": [
+      "Vor der Apotheke biegen Sie nach rechts ab.",
+      "Vor der Apotheke biegen Sie nach rechts ab"
+    ],
+    "translation": "ก่อนร้านขายยา ให้เลี้ยวขวา",
+    "explanation": "จุดสังเกตขึ้นต้นประโยค biegen อยู่ตำแหน่ง 2 ตามด้วย Sie และส่วนแยก ab อยู่ท้ายประโยค เลือกทิศทางตามข้อมูล",
+    "difficulty": 2,
+    "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+    "assistance": "german-answer-options",
+    "subskill": "phrase_dialogue_response",
+    "practice": {
+      "contextId": "describe-turn-context-v2-2",
+      "familyId": "describe-turn",
+      "stage": 1,
+      "unlock": {
+        "subskill": "phrase_order",
+        "requiresAttempt": true,
+        "minCorrectContexts": 0,
+        "minPracticeSessions": 0
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Vor der Apotheke",
+          "role": "other",
+          "label": "จุดสังเกต",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "biegen",
+          "role": "verb",
+          "label": "กริยาที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "Sie",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": ""
+        },
+        {
+          "text": "nach rechts",
+          "role": "other",
+          "label": "ทิศทาง",
+          "position": ""
+        },
+        {
+          "text": "ab.",
+          "role": "verb",
+          "label": "ส่วนแยกของ abbiegen",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": [
+      {
+        "response": "Vor der Apotheke biegen Sie nach links ab.",
+        "message": "ทิศทางนี้ตรงข้ามกับเส้นทางที่โจทย์กำหนด"
+      },
+      {
+        "response": "Das weiß ich leider nicht.",
+        "message": "ผู้พูดมีข้อมูลเส้นทาง จึงต้องบอกจุดเลี้ยว แทนการตอบว่าไม่รู้"
+      }
+    ],
+    "options": [
+      "Vor der Apotheke biegen Sie nach rechts ab.",
+      "Vor der Apotheke biegen Sie nach links ab.",
+      "Das weiß ich leider nicht."
+    ]
+  },
+  {
+    "id": "describe-turn-practice-v2-c3",
+    "targetId": "describe-turn",
+    "topic": "describe",
+    "kind": "write",
+    "prompt": "A ถามทาง ต้องเลี้ยวซ้ายก่อนธนาคาร ใช้โครง Vor der Bank ___ Sie nach links ___.",
+    "answer": "Vor der Bank biegen Sie nach links ab.",
+    "acceptedAnswers": [
+      "Vor der Bank biegen Sie nach links ab.",
+      "Vor der Bank biegen Sie nach links ab"
+    ],
+    "translation": "ก่อนธนาคาร ให้เลี้ยวซ้าย",
+    "explanation": "จุดสังเกตขึ้นต้นประโยค biegen อยู่ตำแหน่ง 2 ตามด้วย Sie และส่วนแยก ab อยู่ท้ายประโยค เลือกทิศทางตามข้อมูล",
+    "difficulty": 3,
+    "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+    "assistance": "sentence-skeleton-and-supplied-data",
+    "subskill": "phrase_bounded_production",
+    "practice": {
+      "contextId": "describe-turn-context-v2-3",
+      "familyId": "describe-turn",
+      "stage": 2,
+      "unlock": {
+        "subskill": "phrase_dialogue_response",
+        "requiresAttempt": true,
+        "minCorrectContexts": 2,
+        "minPracticeSessions": 2
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Vor der Bank",
+          "role": "other",
+          "label": "จุดสังเกต",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "biegen",
+          "role": "verb",
+          "label": "กริยาที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "Sie",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": ""
+        },
+        {
+          "text": "nach links",
+          "role": "other",
+          "label": "ทิศทาง",
+          "position": ""
+        },
+        {
+          "text": "ab.",
+          "role": "verb",
+          "label": "ส่วนแยกของ abbiegen",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": []
+  },
+  {
+    "id": "describe-turn-practice-v2-c4",
+    "targetId": "describe-turn",
+    "topic": "describe",
+    "kind": "write",
+    "prompt": "B ถามทาง ต้องเลี้ยวขวาก่อนไปรษณีย์ ใช้โครง Vor der Post ___ Sie nach rechts ___.",
+    "answer": "Vor der Post biegen Sie nach rechts ab.",
+    "acceptedAnswers": [
+      "Vor der Post biegen Sie nach rechts ab.",
+      "Vor der Post biegen Sie nach rechts ab"
+    ],
+    "translation": "ก่อนไปรษณีย์ ให้เลี้ยวขวา",
+    "explanation": "จุดสังเกตขึ้นต้นประโยค biegen อยู่ตำแหน่ง 2 ตามด้วย Sie และส่วนแยก ab อยู่ท้ายประโยค เลือกทิศทางตามข้อมูล",
+    "difficulty": 3,
+    "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+    "assistance": "sentence-skeleton-and-supplied-data",
+    "subskill": "phrase_bounded_production",
+    "practice": {
+      "contextId": "describe-turn-context-v2-4",
+      "familyId": "describe-turn",
+      "stage": 2,
+      "unlock": {
+        "subskill": "phrase_dialogue_response",
+        "requiresAttempt": true,
+        "minCorrectContexts": 2,
+        "minPracticeSessions": 2
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Vor der Post",
+          "role": "other",
+          "label": "จุดสังเกต",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "biegen",
+          "role": "verb",
+          "label": "กริยาที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "Sie",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": ""
+        },
+        {
+          "text": "nach rechts",
+          "role": "other",
+          "label": "ทิศทาง",
+          "position": ""
+        },
+        {
+          "text": "ab.",
+          "role": "verb",
+          "label": "ส่วนแยกของ abbiegen",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": []
+  },
+  {
+    "id": "describe-turn-practice-v2-c5",
+    "targetId": "describe-turn",
+    "topic": "describe",
+    "kind": "write",
+    "prompt": "A ถามทาง ต้องเลี้ยวซ้ายก่อนร้านขายยา เริ่ม Vor der Apotheke คำช่วย: abbiegen / Sie / nach links ใช้คำที่ให้ครบโดยไม่เพิ่มคำอื่น",
+    "answer": "Vor der Apotheke biegen Sie nach links ab.",
+    "acceptedAnswers": [
+      "Vor der Apotheke biegen Sie nach links ab.",
+      "Vor der Apotheke biegen Sie nach links ab"
+    ],
+    "translation": "ก่อนร้านขายยา ให้เลี้ยวซ้าย",
+    "explanation": "จุดสังเกตขึ้นต้นประโยค biegen อยู่ตำแหน่ง 2 ตามด้วย Sie และส่วนแยก ab อยู่ท้ายประโยค เลือกทิศทางตามข้อมูล",
+    "difficulty": 4,
+    "difficultyRationale": "สร้างประโยคจากคำรูปพื้นฐาน ข้อมูล คำเริ่มต้น และเงื่อนไขวางกลุ่มคำ",
+    "assistance": "supplied-lemmas-and-start-constraint",
+    "subskill": "phrase_bounded_production",
+    "practice": {
+      "contextId": "describe-turn-context-v2-5",
+      "familyId": "describe-turn",
+      "stage": 3,
+      "unlock": {
+        "subskill": "phrase_bounded_production",
+        "requiresAttempt": true,
+        "minCorrectContexts": 2,
+        "minPracticeSessions": 2
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Vor der Apotheke",
+          "role": "other",
+          "label": "จุดสังเกต",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "biegen",
+          "role": "verb",
+          "label": "กริยาที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "Sie",
+          "role": "subject",
+          "label": "ประธาน",
+          "position": ""
+        },
+        {
+          "text": "nach links",
+          "role": "other",
+          "label": "ทิศทาง",
+          "position": ""
+        },
+        {
+          "text": "ab.",
+          "role": "verb",
+          "label": "ส่วนแยกของ abbiegen",
+          "position": "ท้ายประโยค"
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": []
+  },
+  {
+    "id": "ask-place-practice-v2-c1",
+    "targetId": "ask-place",
+    "topic": "ask",
+    "kind": "dialogue",
+    "prompt": "คุณอยากซื้อยา คุณถาม B ว่าแถวนี้มีร้านขายยาอยู่ที่ไหน โดยใช้ Wo ist denn hier",
+    "answer": "Wo ist denn hier eine Apotheke?",
+    "acceptedAnswers": [
+      "Wo ist denn hier eine Apotheke?",
+      "Wo ist denn hier eine Apotheke"
+    ],
+    "translation": "แถวนี้มีร้านขายยาอยู่ที่ไหน",
+    "explanation": "Wo ถามสถานที่ ist อยู่ตำแหน่ง 2 และสถานที่ที่ถามเป็นประธาน เลือก ein หรือ eine ให้ตรงกับคำนาม",
+    "difficulty": 2,
+    "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+    "assistance": "german-answer-options",
+    "subskill": "phrase_dialogue_response",
+    "practice": {
+      "contextId": "ask-place-context-v2-1",
+      "familyId": "ask-place",
+      "stage": 1,
+      "unlock": {
+        "subskill": "phrase_context",
+        "requiresAttempt": true,
+        "minCorrectContexts": 0,
+        "minPracticeSessions": 0
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Wo",
+          "role": "other",
+          "label": "คำถามสถานที่",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ist",
+          "role": "verb",
+          "label": "กริยาหลักที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "denn hier",
+          "role": "other",
+          "label": "เน้นคำถามและบริเวณนี้",
+          "position": ""
+        },
+        {
+          "text": "eine Apotheke?",
+          "role": "subject",
+          "label": "สถานที่ที่ถามหา",
+          "position": ""
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": [
+      {
+        "response": "Da sehen Sie eine Apotheke.",
+        "message": "ประโยคนี้บอกตำแหน่งให้ผู้อื่น แต่ผู้พูดกำลังถามหาสถานที่"
+      },
+      {
+        "response": "Herzlichen Dank.",
+        "message": "ประโยคนี้กล่าวขอบคุณ ยังไม่ได้ถามหาสถานที่ที่ต้องการ"
+      }
+    ],
+    "options": [
+      "Wo ist denn hier eine Apotheke?",
+      "Da sehen Sie eine Apotheke.",
+      "Herzlichen Dank."
+    ]
+  },
+  {
+    "id": "ask-place-practice-v2-c2",
+    "targetId": "ask-place",
+    "topic": "ask",
+    "kind": "dialogue",
+    "prompt": "คุณอยากดื่มกาแฟ คุณถาม A ว่าแถวนี้มีคาเฟ่อยู่ที่ไหน โดยใช้ Wo ist denn hier",
+    "answer": "Wo ist denn hier ein Café?",
+    "acceptedAnswers": [
+      "Wo ist denn hier ein Café?",
+      "Wo ist denn hier ein Café"
+    ],
+    "translation": "แถวนี้มีคาเฟ่อยู่ที่ไหน",
+    "explanation": "Wo ถามสถานที่ ist อยู่ตำแหน่ง 2 และสถานที่ที่ถามเป็นประธาน เลือก ein หรือ eine ให้ตรงกับคำนาม",
+    "difficulty": 2,
+    "difficultyRationale": "เลือกหน้าที่และข้อมูลให้ตรงกับสถานการณ์ใหม่",
+    "assistance": "german-answer-options",
+    "subskill": "phrase_dialogue_response",
+    "practice": {
+      "contextId": "ask-place-context-v2-2",
+      "familyId": "ask-place",
+      "stage": 1,
+      "unlock": {
+        "subskill": "phrase_context",
+        "requiresAttempt": true,
+        "minCorrectContexts": 0,
+        "minPracticeSessions": 0
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Wo",
+          "role": "other",
+          "label": "คำถามสถานที่",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ist",
+          "role": "verb",
+          "label": "กริยาหลักที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "denn hier",
+          "role": "other",
+          "label": "เน้นคำถามและบริเวณนี้",
+          "position": ""
+        },
+        {
+          "text": "ein Café?",
+          "role": "subject",
+          "label": "สถานที่ที่ถามหา",
+          "position": ""
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": [
+      {
+        "response": "Da sehen Sie eine Apotheke.",
+        "message": "ประโยคนี้บอกตำแหน่งให้ผู้อื่น แต่ผู้พูดกำลังถามหาสถานที่"
+      },
+      {
+        "response": "Herzlichen Dank.",
+        "message": "ประโยคนี้กล่าวขอบคุณ ยังไม่ได้ถามหาสถานที่ที่ต้องการ"
+      }
+    ],
+    "options": [
+      "Wo ist denn hier ein Café?",
+      "Da sehen Sie eine Apotheke.",
+      "Herzlichen Dank."
+    ]
+  },
+  {
+    "id": "ask-place-practice-v2-c3",
+    "targetId": "ask-place",
+    "topic": "ask",
+    "kind": "write",
+    "prompt": "คุณต้องการขึ้นรถไฟ ถาม B ถึงสถานีแถวนี้ ใช้โครง Wo ___ denn hier ein Bahnhof?",
+    "answer": "Wo ist denn hier ein Bahnhof?",
+    "acceptedAnswers": [
+      "Wo ist denn hier ein Bahnhof?",
+      "Wo ist denn hier ein Bahnhof"
+    ],
+    "translation": "แถวนี้มีสถานีรถไฟอยู่ที่ไหน",
+    "explanation": "Wo ถามสถานที่ ist อยู่ตำแหน่ง 2 และสถานที่ที่ถามเป็นประธาน เลือก ein หรือ eine ให้ตรงกับคำนาม",
+    "difficulty": 3,
+    "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+    "assistance": "sentence-skeleton-and-supplied-data",
+    "subskill": "phrase_bounded_production",
+    "practice": {
+      "contextId": "ask-place-context-v2-3",
+      "familyId": "ask-place",
+      "stage": 2,
+      "unlock": {
+        "subskill": "phrase_dialogue_response",
+        "requiresAttempt": true,
+        "minCorrectContexts": 2,
+        "minPracticeSessions": 2
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Wo",
+          "role": "other",
+          "label": "คำถามสถานที่",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ist",
+          "role": "verb",
+          "label": "กริยาหลักที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "denn hier",
+          "role": "other",
+          "label": "เน้นคำถามและบริเวณนี้",
+          "position": ""
+        },
+        {
+          "text": "ein Bahnhof?",
+          "role": "subject",
+          "label": "สถานที่ที่ถามหา",
+          "position": ""
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": []
+  },
+  {
+    "id": "ask-place-practice-v2-c4",
+    "targetId": "ask-place",
+    "topic": "ask",
+    "kind": "write",
+    "prompt": "คุณต้องการถอนเงิน ถาม A ถึงธนาคารแถวนี้ ใช้โครง Wo ___ denn hier eine Bank?",
+    "answer": "Wo ist denn hier eine Bank?",
+    "acceptedAnswers": [
+      "Wo ist denn hier eine Bank?",
+      "Wo ist denn hier eine Bank"
+    ],
+    "translation": "แถวนี้มีธนาคารอยู่ที่ไหน",
+    "explanation": "Wo ถามสถานที่ ist อยู่ตำแหน่ง 2 และสถานที่ที่ถามเป็นประธาน เลือก ein หรือ eine ให้ตรงกับคำนาม",
+    "difficulty": 3,
+    "difficultyRationale": "เขียนคำตอบทั้งประโยคโดยมีโครงและข้อมูลให้",
+    "assistance": "sentence-skeleton-and-supplied-data",
+    "subskill": "phrase_bounded_production",
+    "practice": {
+      "contextId": "ask-place-context-v2-4",
+      "familyId": "ask-place",
+      "stage": 2,
+      "unlock": {
+        "subskill": "phrase_dialogue_response",
+        "requiresAttempt": true,
+        "minCorrectContexts": 2,
+        "minPracticeSessions": 2
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Wo",
+          "role": "other",
+          "label": "คำถามสถานที่",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ist",
+          "role": "verb",
+          "label": "กริยาหลักที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "denn hier",
+          "role": "other",
+          "label": "เน้นคำถามและบริเวณนี้",
+          "position": ""
+        },
+        {
+          "text": "eine Bank?",
+          "role": "subject",
+          "label": "สถานที่ที่ถามหา",
+          "position": ""
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": []
+  },
+  {
+    "id": "ask-place-practice-v2-c5",
+    "targetId": "ask-place",
+    "topic": "ask",
+    "kind": "write",
+    "prompt": "คุณต้องการยา ถาม B ถึงร้านขายยาแถวนี้ เริ่ม Wo คำช่วย: sein / denn hier / eine Apotheke ใช้คำที่ให้ครบโดยไม่เพิ่มคำอื่น วาง denn hier ต่อกันหลังกริยาที่ผันแล้ว",
+    "answer": "Wo ist denn hier eine Apotheke?",
+    "acceptedAnswers": [
+      "Wo ist denn hier eine Apotheke?",
+      "Wo ist denn hier eine Apotheke"
+    ],
+    "translation": "แถวนี้มีร้านขายยาอยู่ที่ไหน",
+    "explanation": "Wo ถามสถานที่ ist อยู่ตำแหน่ง 2 และสถานที่ที่ถามเป็นประธาน เลือก ein หรือ eine ให้ตรงกับคำนาม",
+    "difficulty": 4,
+    "difficultyRationale": "สร้างประโยคจากคำรูปพื้นฐาน ข้อมูล คำเริ่มต้น และเงื่อนไขวางกลุ่มคำ",
+    "assistance": "supplied-lemmas-and-start-constraint",
+    "subskill": "phrase_bounded_production",
+    "practice": {
+      "contextId": "ask-place-context-v2-5",
+      "familyId": "ask-place",
+      "stage": 3,
+      "unlock": {
+        "subskill": "phrase_bounded_production",
+        "requiresAttempt": true,
+        "minCorrectContexts": 2,
+        "minPracticeSessions": 2
+      }
+    },
+    "sentences": [
+      [
+        {
+          "text": "Wo",
+          "role": "other",
+          "label": "คำถามสถานที่",
+          "position": "ตำแหน่ง 1"
+        },
+        {
+          "text": "ist",
+          "role": "verb",
+          "label": "กริยาหลักที่ผันแล้ว",
+          "position": "ตำแหน่ง 2"
+        },
+        {
+          "text": "denn hier",
+          "role": "other",
+          "label": "เน้นคำถามและบริเวณนี้",
+          "position": ""
+        },
+        {
+          "text": "eine Apotheke?",
+          "role": "subject",
+          "label": "สถานที่ที่ถามหา",
+          "position": ""
+        }
+      ]
+    ],
+    "glossary": "die Post = ไปรษณีย์ · die Apotheke = ร้านขายยา · der Bahnhof = สถานีรถไฟ · die Bank = ธนาคาร · das Café = คาเฟ่",
+    "feedbackErrors": []
+  }
+];

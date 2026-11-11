@@ -1,3 +1,4 @@
+import { phrasePracticeExtensions, phraseArticleColors } from './phrase-practice-extensions.mjs';
 import { readPracticeTemplate } from './practice-word-help.mjs';
 import assert from 'node:assert/strict';
 import { readFile, writeFile } from 'node:fs/promises';
@@ -39,10 +40,21 @@ for (let number = 1; number <= 12; number++) {
     if (question.options) assert.equal(new Set(question.options).size, question.options.length, `Duplicate options: ${question.id}`);
     definitions.push({ id: question.id, version: 1, lessonId, targetId: question.targetId, topicId, kind: question.kind, subskill: question.subskill, acceptedAnswers: question.acceptedAnswers, ...(question.options ? { options: question.options } : {}), ...(question.tokens ? { tokens: question.tokens } : {}) });
   }
-  const base = { title: `ประโยคและสำนวนบท ${number}`, description: 'ฝึกเข้าใจ เลือกใช้ และเรียงประโยคจากสิ่งที่เรียนแล้ว', summaryNote: 'ผลความเข้าใจ การเลือกใช้ และลำดับคำเก็บแยกกัน ยังไม่รวมคะแนนความก้าวหน้าหลัก', historySkill: 'phrases', requireLearned: true, manualHref: `/practice/${lessonId}/phrases`, learnHref: `/learn/${lessonId}/phrases`, learnLabel: 'ไปเรียนประโยค', dailyHref: `/practice/${lessonId}/phrases/daily`, skillLabels: { phrase_comprehension: 'เข้าใจประโยค', phrase_situation_choice: 'เลือกประโยคตามสถานการณ์', phrase_word_order: 'เรียงคำเป็นประโยค' }, thaiSupport: { translations: Object.fromEntries(questions.map(question => [question.id, question.translation])), glossary: {}, phrases: [] }, unclassifiedMessage: 'ดูความหมายและรูปประโยคก่อนทำข้อต่อไป', skillCycle: ['phrase_comprehension', 'phrase_situation_choice', 'phrase_word_order'] };
+  const extensions = await phrasePracticeExtensions(lessonId);
+  // Presentation clarifies what the historical situation IDs actually measure.
+  for (const question of questions) {
+    if (question.subskill === 'phrase_situation_choice') {
+      question.prompt = 'เลือกประโยคที่ตรงกับความหมายนี้';
+      question.difficultyRationale = 'จับคู่ความหมายไทยกับประโยคเยอรมันที่สอน โดยมีตัวเลือก';
+      question.feedbackErrors = question.options.filter(option => !question.acceptedAnswers.includes(option)).map(response => ({ response, message: `“${response}” หมายถึง “${lessonTargets.find(target => target.de === response)?.th ?? ''}” แต่โจทย์ต้องการสื่อว่า “${question.translation}”` }));
+    }
+    if (question.subskill === 'phrase_comprehension') question.feedbackErrors = question.options.filter(option => !question.acceptedAnswers.includes(option)).map(response => ({ response, message: `ความหมายที่เลือก “${response}” ไม่ตรงกับประโยคนี้ ซึ่งหมายถึง “${question.translation}”` }));
+  }
+  const dailyQuestions = [...questions, ...extensions];
+  const base = { articleColors: phraseArticleColors, title: `ประโยคและสำนวนบท ${number}`, description: 'ฝึกเข้าใจ เลือกใช้ และเรียงประโยคจากสิ่งที่เรียนแล้ว', summaryNote: 'ผลความเข้าใจ การเลือกใช้ และลำดับคำเก็บแยกกัน ยังไม่รวมคะแนนความก้าวหน้าหลัก', historySkill: 'phrases', requireLearned: true, manualHref: `/practice/${lessonId}/phrases`, learnHref: `/learn/${lessonId}/phrases`, learnLabel: 'ไปเรียนประโยค', dailyHref: `/practice/${lessonId}/phrases/daily`, skillLabels: { phrase_comprehension: 'เข้าใจประโยค', phrase_situation_choice: 'จับคู่ประโยคกับความหมาย', phrase_dialogue_response: 'เลือกตอบในบทสนทนา', phrase_bounded_production: 'เขียนประโยคตามข้อมูล', phrase_word_order: 'เรียงคำเป็นประโยค' }, thaiSupport: { translations: Object.fromEntries(dailyQuestions.map(question => [question.id, question.translation])), glossary: {}, phrases: [] }, unclassifiedMessage: 'ดูความหมายและรูปประโยคก่อนทำข้อต่อไป', skillCycle: ['phrase_comprehension', 'phrase_situation_choice', 'phrase_word_order'] };
   for (const bank of [
     { slug: 'basic', workflow: 'guided', defaultCount: lessonTargets.length, sections: [{ topicId, title: 'ประโยคที่ใช้ในบทนี้', count: lessonTargets.length }], questions: questions.filter(question => question.subskill === 'phrase_comprehension') },
-    { slug: 'daily', workflow: 'daily', defaultCount: 10, questions },
+    { slug: 'daily', workflow: 'daily', defaultCount: 10, questions: dailyQuestions },
   ]) {
     const storage = `a11-phrases-${lessonId.toLowerCase()}-${bank.slug}`;
     const html = template.replace('/*__PHRASE_MATCHING__*/', () => 'function phraseQuestionTranslation(){return "";}').replace('__PLANNER__', () => planner).replace('__BANK__', () => JSON.stringify({ ...base, ...bank, id: `${storage}-v1`, storageKey: `deutsch-trainer:review-prototype:${storage}:v1` }).replaceAll('<', '\\u003c'));

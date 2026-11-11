@@ -68,8 +68,10 @@ export const l13PracticeStores = [
   { href: '/practice/L13/vocabulary/daily', storage: 'vocab-daily', frame: 'vocab-daily' },
 ];
 
-type PracticeQuestion = { id: string; topicId: string; subskill: string; kind: 'choice' | 'cloze' | 'order' | 'write'; phraseItemIds: string[]; targetIds: string[] };
-type PracticeResult = { correct: boolean | null; submittedAt: number; assisted: boolean | null; confidence: string | null };
+export type PracticeProgression = { contextId: string; familyId: string; stage: 0 | 1 | 2 | 3; unlock: null | { subskill: string; minCorrectContexts: number; minPracticeSessions: number; requiresAttempt: boolean } };
+
+type PracticeQuestion = { practice?: PracticeProgression; id: string; topicId: string; subskill: string; kind: 'choice' | 'cloze' | 'order' | 'write'; phraseItemIds: string[]; targetIds: string[] };
+type PracticeResult = { completed?: boolean; correct: boolean | null; submittedAt: number; assisted: boolean | null; confidence: string | null };
 export type PracticeHistory = {
   id: string; href: string; createdAt: number; completed: boolean; archived: boolean; position: number; hasDraft: boolean;
   items: { question: PracticeQuestion; result: PracticeResult | null }[];
@@ -77,6 +79,14 @@ export type PracticeHistory = {
 
 function isPlannerRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function parsePracticeProgression(value: unknown): PracticeProgression | null {
+  if (!isPlannerRecord(value) || typeof value.contextId !== 'string' || typeof value.familyId !== 'string' || (value.stage !== 0 && value.stage !== 1 && value.stage !== 2 && value.stage !== 3)) return null;
+  if (value.stage === 0 && value.unlock === null) return { contextId: value.contextId, familyId: value.familyId, stage: 0, unlock: null };
+  const unlock = value.unlock;
+  if (!isPlannerRecord(unlock) || typeof unlock.subskill !== 'string' || typeof unlock.requiresAttempt !== 'boolean' || typeof unlock.minCorrectContexts !== 'number' || !Number.isInteger(unlock.minCorrectContexts) || unlock.minCorrectContexts < 0 || typeof unlock.minPracticeSessions !== 'number' || !Number.isInteger(unlock.minPracticeSessions) || unlock.minPracticeSessions < 0) return null;
+  return { contextId: value.contextId, familyId: value.familyId, stage: value.stage, unlock: { subskill: unlock.subskill, requiresAttempt: unlock.requiresAttempt, minCorrectContexts: unlock.minCorrectContexts, minPracticeSessions: unlock.minPracticeSessions } };
 }
 
 function parsePlannerQuestion(value: unknown): PracticeQuestion | null {
@@ -94,7 +104,9 @@ function parsePlannerQuestion(value: unknown): PracticeQuestion | null {
     : typeof value.targetId === 'string' ? [value.targetId]
     : typeof value.itemId === 'string' ? [value.itemId]
     : phraseItemIds;
-  return { id: value.id, topicId: value.topicId, subskill: value.subskill, kind: value.kind, phraseItemIds, targetIds };
+  const practice = value.practice === undefined ? undefined : parsePracticeProgression(value.practice);
+  if (practice === null) return null;
+  return { ...(practice ? { practice } : {}), id: value.id, topicId: value.topicId, subskill: value.subskill, kind: value.kind, phraseItemIds, targetIds };
 }
 
 export function parsePracticeHistory(raw: string | null, href: string): PracticeHistory[] {
@@ -112,7 +124,7 @@ export function parsePracticeHistory(raw: string | null, href: string): Practice
         const attempt = item.attempt;
         if (!isPlannerRecord(attempt) || (typeof attempt.correct !== 'boolean' && !(parsedQuestion.kind === 'write' && attempt.correct === null && attempt.selfAssessed === true)) || typeof attempt.submittedAt !== 'string' || !Number.isFinite(Date.parse(attempt.submittedAt))) throw new Error('Invalid practice attempt');
         const legacySpellingCue = parsedQuestion.id.endsWith('-a11-spelling') && attempt.spellingCueMode !== 'image' && attempt.spellingCueMode !== 'context';
-        result = { correct: attempt.correct, submittedAt: Date.parse(attempt.submittedAt), assisted: item.hintUsed === true || item.translationUsed === true || attempt.translationUsed === true ? true : legacySpellingCue ? null : typeof item.translationUsed === 'boolean' || typeof attempt.translationUsed === 'boolean' ? false : null, confidence: typeof attempt.confidence === 'string' ? attempt.confidence : null };
+        result = { completed: attempt.status === 'completed', correct: attempt.correct, submittedAt: Date.parse(attempt.submittedAt), assisted: item.hintUsed === true || item.translationUsed === true || attempt.translationUsed === true || attempt.assisted === true || Array.isArray(item.wordHelpTokens) && item.wordHelpTokens.length > 0 || Array.isArray(attempt.wordHelpTokens) && attempt.wordHelpTokens.length > 0 ? true : legacySpellingCue ? null : parsedQuestion.practice && (item.hintUsed !== false || item.translationUsed !== false || !Array.isArray(item.wordHelpTokens ?? attempt.wordHelpTokens)) ? null : typeof item.translationUsed === 'boolean' || typeof attempt.translationUsed === 'boolean' ? false : null, confidence: typeof attempt.confidence === 'string' ? attempt.confidence : null };
       }
       return { question: parsedQuestion, result };
     });
@@ -139,6 +151,23 @@ export function readL13PracticeHistory(userId: string, storage: Pick<Storage, 'g
   return l13PracticeStores.filter(entry => !skill || entry.href.includes('/'+skill+'/')).flatMap(entry => parsePracticeHistory(storage.getItem(practiceStorageKey(entry.storage, entry.frame, userId)), entry.href));
 }
 
+function practiceEvidence(question: PracticeQuestion, history: readonly PracticeHistory[], subskill: string) {
+  return history.flatMap(session => session.items.flatMap(item => item.result?.completed === true && item.question.subskill === subskill && item.question.targetIds.some(id => question.targetIds.includes(id)) ? [{ question: item.question, result: item.result, sessionId: session.id }] : [])).sort((a, b) => a.result.submittedAt - b.result.submittedAt || a.sessionId.localeCompare(b.sessionId));
+}
+
+export function isPracticeQuestionUnlocked(rawQuestion: unknown, history: readonly PracticeHistory[]) {
+  const question = parsePlannerQuestion(rawQuestion);
+  if (!question) return false;
+  const unlock = question.practice?.unlock;
+  if (!unlock) return true;
+  const evidence = practiceEvidence(question, history, unlock.subskill);
+  if (unlock.requiresAttempt && !evidence.length) return false;
+  const contexts = new Map<string, (typeof evidence)[number]>();
+  for (const item of evidence) contexts.set(item.question.practice?.contextId ?? `core:${item.question.targetIds.join('|')}`, item);
+  const independent = [...contexts.values()].filter(item => item.result.correct === true && item.result.assisted === false && item.result.confidence !== 'guess');
+  return independent.length >= unlock.minCorrectContexts && new Set(independent.map(item => item.sessionId)).size >= unlock.minPracticeSessions;
+}
+
 export function planDailyPractice(rawQuestions: readonly unknown[], history: readonly PracticeHistory[], now: number = Date.now()) {
   const questions = rawQuestions.map(parsePlannerQuestion).filter(q => q !== null);
   const eligibleTopics = new Set(questions.map(q => q.topicId));
@@ -151,7 +180,7 @@ export function planDailyPractice(rawQuestions: readonly unknown[], history: rea
   const sameSkill = (a: PracticeQuestion, b: PracticeQuestion) => a.topicId === b.topicId && a.subskill === b.subskill && a.targetIds.some(id => b.targetIds.includes(id));
   const evidence = [...latest.values()];
   const weak = evidence.filter(item => item.result.correct === false || item.result.assisted || item.result.confidence === 'guess');
-  const eligible = questions.filter(q => practicedTopics.size === 0 || practicedTopics.has(q.topicId));
+  const eligible = questions.filter(q => isPracticeQuestionUnlocked(q, history) && (q.topicId.includes("-phrases-") || practicedTopics.size === 0 || practicedTopics.has(q.topicId)));
   const score = (q: PracticeQuestion) => {
     const previous = latest.get(q.id);
     const needsPractice = weak.some(item => sameSkill(q, item.question));
@@ -162,7 +191,16 @@ export function planDailyPractice(rawQuestions: readonly unknown[], history: rea
     if (previous && previous.result.correct === true && now - previous.result.submittedAt < 86400000) value -= 30;
     return value;
   };
-  const ranked = eligible.map((q, index) => ({ q, index, score: score(q) })).sort((a, b) => b.score - a.score || a.index - b.index);
+  const ranked = eligible.map((q, index) => {
+    const previous = latest.get(q.id);
+    const related = practiceEvidence(q, history, q.subskill);
+    const recent = related.at(-1);
+    const failedStage = recent && (recent.result.correct === false || recent.result.assisted === true) ? recent.question.practice?.stage ?? 0 : -1;
+    const stage = q.practice?.stage ?? 0;
+    const recovery = failedStage > stage ? 2 : recent?.result.assisted === true && failedStage === stage ? 1 : 0;
+    const lane = weak.some(item => sameSkill(q, item.question)) ? 'weak' : !previous ? 'new' : now - previous.result.submittedAt >= 3 * 86400000 ? 'due' : 'review';
+    return { q, index, score: score(q), lane, stage, recovery, ownWrong: previous?.result.correct === false };
+  }).sort((a, b) => b.score - a.score || a.index - b.index);
   const selected: PracticeQuestion[] = [];
   const topicUses = new Map<string, number>();
   const kindUses = new Map<string, number>();
@@ -172,7 +210,15 @@ export function planDailyPractice(rawQuestions: readonly unknown[], history: rea
   const count = Math.min(10, ranked.length);
   while (selected.length < count) {
     ranked.sort((a, b) => (b.score - (topicUses.get(b.q.topicId) ?? 0) * 12 - (kindUses.get(formatKey(b.q)) ?? 0) * 8) - (a.score - (topicUses.get(a.q.topicId) ?? 0) * 12 - (kindUses.get(formatKey(a.q)) ?? 0) * 8) || a.index - b.index);
-    const nextIndex = ranked.findIndex(item => !item.q.targetIds.some(id => selectedTargets.has(id)));
+    const mix = ['weak', 'new', 'due', 'new', 'weak', 'due', 'new', 'weak', 'due', 'new'];
+    const preferred = mix[selected.length];
+    const lanes = [preferred, ...['weak', 'new', 'due', 'review'].filter(lane => lane !== preferred)];
+    let nextIndex = -1;
+    for (const lane of lanes) {
+      const available = ranked.filter(item => item.lane === lane && !item.q.targetIds.some(id => selectedTargets.has(id)));
+      available.sort((a, b) => lane === 'weak' ? b.recovery - a.recovery || (a.recovery && b.recovery ? b.stage - a.stage : 0) || Number(b.ownWrong) - Number(a.ownWrong) || a.stage - b.stage || b.score - a.score : lane === 'new' ? b.stage - a.stage || b.score - a.score : b.score - a.score);
+      if (available[0]) { nextIndex = ranked.indexOf(available[0]); break; }
+    }
     const [next] = nextIndex < 0 ? [] : ranked.splice(nextIndex, 1);
     if (!next) break;
     selected.push(next.q);

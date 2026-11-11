@@ -1,3 +1,4 @@
+import { phrasePracticeExtensions, phraseArticleColors } from './phrase-practice-extensions.mjs';
 import { readPracticeTemplate } from './practice-word-help.mjs';
 import ts from 'typescript';
 import { buildPhraseSequence } from './l13-phrase-sequence.mjs';
@@ -131,14 +132,16 @@ for(const group of groups){
 }
 provenance.push(...questions.map(q=>({questionId:q.id,sourceItemIds:q.requiredItemIds,sourceId:'DEUTSCH_TRAINER_ORIGINAL',repositoryFile:'supabase/seed/catalog.json',designFile:'scripts/exercise-mapping/l13-phrase-sequence.mjs',method:'repository_inspection',publisherPage:null,inspectedAt:'2026-10-22',note:'Existing learned target phrase; new dialogue cue, factual context and distractors authored for this web activity, not copied publisher exercises.'})));
 const skillLabels={phrase_context:'เลือกคำตอบ',phrase_match:'จับคู่คำถาม–คำตอบ',phrase_order:'เรียงคำเป็นประโยค'};
+const practiceExtensions=await phrasePracticeExtensions('L13');
+const dailyQuestions=[...questions,...practiceExtensions];
 const template=await readPracticeTemplate();const planner=ts.transpileModule(await read('src/lib/practice-planner.ts'),{compilerOptions:{target:ts.ScriptTarget.ES2020,module:ts.ModuleKind.ES2020}}).outputText.replace(/^export /gm,'');
-const base={title:'ประโยคและสำนวนบท 13',sequenceByTopic:true,topicOrder:groups.map(g=>g.topicId),requireLearned:true,historySkill:'phrases',learnLabel:'ไปเรียนประโยคและสำนวน',emptyMessage:'ยังไม่มีประโยคที่เรียนแล้วในหัวข้อนี้',manualHref:'/practice/L13/phrases',learnHref:'/learn/L13/phrases',dailyHref:'/practice/L13/phrases/daily',skillLabels,skillCycle:['phrase_context','phrase_match','phrase_order'],thaiSupport:{translations:Object.fromEntries([...legacyQuestions,...questions].map(q=>[q.id,q.translation])),glossary:{},phrases:{}}};
+const base={articleColors:phraseArticleColors,title:'ประโยคและสำนวนบท 13',sequenceByTopic:true,topicOrder:groups.map(g=>g.topicId),requireLearned:true,historySkill:'phrases',learnLabel:'ไปเรียนประโยคและสำนวน',emptyMessage:'ยังไม่มีประโยคที่เรียนแล้วในหัวข้อนี้',manualHref:'/practice/L13/phrases',learnHref:'/learn/L13/phrases',dailyHref:'/practice/L13/phrases/daily',skillLabels,skillCycle:['phrase_context','phrase_match','phrase_order'],thaiSupport:{translations:Object.fromEntries([...legacyQuestions,...dailyQuestions].map(q=>[q.id,q.translation])),glossary:{},phrases:{}}};
 const matchingRuntime=await read('scripts/exercise-mapping/phrase-matching-runtime.js');
 const sections=groups.map(g=>({topicId:g.topicId,title:g.title,count:5}));
 const banks=groups.map(g=>({slug:g.slug,title:g.title,questions:guidedQuestions.filter(q=>q.topicId===g.topicId),defaultCount:5}));
-banks.push({slug:'basic',title:base.title,questions:guidedQuestions,defaultCount:20,workflow:'guided',sections},{slug:'daily',title:'ฝึกประโยคและสำนวนต่อวันนี้',questions,defaultCount:10,workflow:'daily'});
+banks.push({slug:'basic',title:base.title,questions:guidedQuestions,defaultCount:20,workflow:'guided',sections},{slug:'daily',title:'ฝึกประโยคและสำนวนต่อวันนี้',questions:dailyQuestions,defaultCount:10,workflow:'daily'});
 for(const bank of banks){const nextTopics=bank.workflow?[]:groups.slice(groups.findIndex(g=>g.slug===bank.slug)+1).map(g=>({title:g.title,href:'/practice/L13/phrases/'+g.slug,itemIds:g.ids}));const publicBank={...base,...bank,nextTopics,id:'l13-phrases-'+bank.slug+'-v1',storageKey:'deutsch-trainer:review-prototype:l13-phrases-'+bank.slug+':v1'};const html=template.replace('/*__PHRASE_MATCHING__*/',()=>matchingRuntime).replace('__PLANNER__',()=>planner).replace('__BANK__',()=>JSON.stringify(publicBank).replaceAll('<','\\u003c'));await writeFile(new URL('src/data/l13-phrases-'+bank.slug+'-preview.json',root),JSON.stringify({html})+'\n');}
-await writeFile(new URL('src/data/l13-phrases-catalog.json',root),JSON.stringify({groups,questions:questions.map(({id,itemId,requiredItemIds,coverageItemIds,topicId,kind,subskill})=>({id,itemId,requiredItemIds,coverageItemIds,topicId,kind,subskill}))})+'\n');
+await writeFile(new URL('src/data/l13-phrases-catalog.json',root),JSON.stringify({groups,questions:dailyQuestions.map(({id,itemId,targetId,requiredItemIds,coverageItemIds,topicId,kind,subskill,practice})=>({id,itemId,targetId,requiredItemIds,coverageItemIds,topicId,kind,subskill,...(practice?{practice}:{})}))})+'\n');
 await writeFile(new URL('docs/exercise-mapping/l13-phrases-bank.json',root),JSON.stringify({phraseCount:29,questionCount:questions.length,groups,questions,provenance,legacyQuestions,legacyProvenance},null,2)+'\n');
 const cells=value=>String(value).replaceAll('|','\\|').replaceAll('\n','<br>');
 const rows=questions.map(q=>`| ${q.id} | ${q.itemId} | ${q.requiredItemIds.join(', ')} | ${q.sequence} | ${q.difficulty} | ${q.subskill} | ${cells(q.context||q.sentence)} | ${cells(q.acceptedAnswers.join(' / '))} |`).join('\n');

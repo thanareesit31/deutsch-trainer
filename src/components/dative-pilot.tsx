@@ -112,6 +112,12 @@ export function GrammarPilot({ userId, topic, preview: suppliedPreview, learnedI
     return () => window.removeEventListener("message", resize);
   }, []);
 
+  useEffect(() => {
+    const refresh = () => frame.current?.contentWindow?.postMessage({ type: "grammar-preview-history-refreshed" }, "*");
+    window.addEventListener("phrase-practice-history-refreshed", refresh);
+    return () => window.removeEventListener("phrase-practice-history-refreshed", refresh);
+  }, []);
+
   return (
     <>
       <iframe

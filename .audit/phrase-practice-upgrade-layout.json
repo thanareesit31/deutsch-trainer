@@ -1,0 +1,17 @@
+[
+  {
+    "width": 375,
+    "questions": 130,
+    "minimumFont": 10.4
+  },
+  {
+    "width": 390,
+    "questions": 130,
+    "minimumFont": 11.4
+  },
+  {
+    "width": 1360,
+    "questions": 130,
+    "minimumFont": 16
+  }
+]

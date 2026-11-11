@@ -1,0 +1,17 @@
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const template=readFileSync('scripts/exercise-mapping/preview-template.html','utf8');
+const normalize=template.slice(template.indexOf('function normalize('),template.indexOf('function answerText('));
+const response=template.slice(template.indexOf('function responseExplanation('),template.indexOf('function fitPracticeLine('));
+const explain=vm.runInNewContext(normalize+'\n'+response+'\nresponseExplanation');
+const all=JSON.parse(readFileSync('docs/exercise-mapping/l01-l13-practice-extensions.json')).flatMap(p=>p.questions);
+const perfekt=all.find(q=>q.practice.stage===3&&q.acceptedAnswers[0].endsWith('gearbeitet.'));
+assert.match(explain(perfekt,{correct:false,response:perfekt.acceptedAnswers[0].replace('gearbeitet','arbeiten')}),/Partizip II/u);
+const modal=all.find(q=>q.practice.stage===3&&q.acceptedAnswers[0].startsWith('Ich kann '));
+assert.match(explain(modal,{correct:false,response:modal.acceptedAnswers[0].replace('kann','können')}),/ตำแหน่งที่ 2/u);
+const article=all.find(q=>q.practice.stage===3&&q.acceptedAnswers[0]==='Ich mag keinen Kaffee.');
+assert.match(explain(article,{correct:false,response:'Ich mag kein Kaffee.'}),/keinen Kaffee.*Artikel/u);
+assert.match(explain(article,{correct:false,response:'ich mag keinen kaffee.'}),/ตัวพิมพ์ใหญ่/u);
+assert.equal(explain(article,{correct:true,response:article.acceptedAnswers[0]}),article.explanation);
+console.log('Response feedback distinguishes Partizip II, finite form/position, Artikel and capitalization.');

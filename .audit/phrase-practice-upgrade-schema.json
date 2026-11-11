@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-11T14:17:24.515751+00:00",
+  "migrationBundleSHA256": "3648b536df962fad0b03610d35eef2730f6a76a713f86eab9f26020de8009570",
+  "status": 200,
+  "readiness": {
+    "lessons": 14,
+    "metadataTasks": 710,
+    "schemaVersion": 1,
+    "extensionTasks": 145,
+    "contextCatalogReady": true
+  },
+  "existingL15L18Ready": true
+}

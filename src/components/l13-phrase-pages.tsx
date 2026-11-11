@@ -24,7 +24,7 @@ export function L13PhrasePages({mode,slug}:{mode:'learn'|'practice';slug?:string
   if(mode!=='practice'||slug||!history.ready||!user||!isPhrasePracticeAvailable(user))return;
   if(!learned.size){setRecommendation({kind:'learn',title:'เริ่มเรียนประโยคและสำนวนบท 13',description:'เรียนประโยคก่อน แล้วกลับมาฝึกจากสิ่งที่เรียนแล้ว',href:'/learn/L13/phrases',action:'ไปเรียน'});return;}
   const questions=catalog.questions.filter(question=>(question.requiredItemIds??[question.itemId]).every(id=>learned.has(id)));
-  const sessions=readL13PracticeHistory(user.id,localStorage,'phrases');
+  const sessions=readL13PracticeHistory(user.id,localStorage,'phrases').filter(session=>session.href.startsWith('/practice/L13/phrases/'));
   setRecommendation(recommendPractice(questions,sessions));
   setEvidence(sessions.flatMap(session=>session.items.flatMap(item=>item.result?.correct===true||item.result?.correct===false?[{correct:item.result.correct,topic:catalog.groups.find(g=>item.question.topicId.endsWith(g.slug))?.title??'ประโยคและสำนวน',at:item.result.submittedAt}]:[])).sort((a,b)=>b.at-a.at).slice(0,20).map(({correct,topic})=>({correct,topic})));
   const pending=resumablePracticeSession(sessions);

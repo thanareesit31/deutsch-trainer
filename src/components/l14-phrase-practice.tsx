@@ -5,6 +5,12 @@ import Image from "next/image";
 import { PracticeGermanText } from "./practice-german-text";
 import { useEffect, useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { l14PracticeExtensions, type L14ExtensionTask } from "@/lib/l14-practice-extensions";
+import { AnnotatedReply } from "./phrase-sentence";
+import { useVocabularyAudio } from "./vocabulary-audio";
+import { NounText } from "./noun-text";
+import { ArticleLegend } from "./profession-matching";
+import practiceAudio from "@/data/phrase-practice-upgrade-audio.json";
 import phraseVariants from "@/data/l14-phrase-variants.json";
 import { lessonStateKeys, useLessonState } from "./lesson-state-provider";
 import { isL14PhrasePracticeAvailable, isTestWorkspaceUser, useStore } from "./store";
@@ -16,12 +22,30 @@ function GermanVisualQuestion({ visual, onHelp }: { visual: PhraseVisualPrompt; 
   return <h1 className="l14-visual-question" lang="de"><PracticeGermanText text={visual.question} meanings={{ ...phraseQuestionWordMeanings, ...visual.wordMeanings }} onHelp={onHelp} /></h1>;
 }
 
+const practiceAudioPaths=new Map(Object.entries(practiceAudio.assets).map(([id,asset])=>[id,asset.path]));
 type Topic = "ask" | "describe" | "unknown" | "thanks";
 type ChoiceTask = { id: string; targetId?: string; topic: Topic; kind: "context" | "dialogue"; prompt: string; options: string[]; answer: string; translation: string; explanation: string; difficulty?: number; difficultyRationale?: string; assistance?: string; subskill?: string };
 type OrderTask = { id: string; topic: Topic; kind: "order"; tokens: string[]; answer: string; translation: string; ruleTitle: string; rules: string[]; noteTitle: string; exampleNote: string };
 type MatchPair = { id: string; targetId: string; question: string; questionThai: string; answer: string; translation: string };
 type MatchTask = { id: string; topic: Topic; kind: "match"; pairs: [MatchPair, MatchPair] };
-type Task = ChoiceTask | OrderTask | MatchTask;
+type Task = ChoiceTask | OrderTask | MatchTask | L14ExtensionTask;
+function isExtensionTask(task: Task): task is L14ExtensionTask { return "practice" in task; }
+function extensionFeedback(task: L14ExtensionTask, response: string) {
+  const exact=task.feedbackErrors.find(error=>error.response===response);
+  if(exact)return exact.message;
+  if(task.kind!=="write")return "ตัวเลือกที่ส่งยังไม่ตรงกับหน้าที่หรือข้อมูลที่สถานการณ์กำหนด";
+  const value=response.trim().toLocaleLowerCase("de"),answer=task.answer.toLocaleLowerCase("de");
+  const place=["apotheke","bahnhof","post","bank","café"].find(noun=>answer.includes(noun));
+  if(place&&!value.includes(place))return "สถานที่ในคำตอบยังไม่ตรงกับข้อมูลที่โจทย์ให้ ตรวจจุดหมายหรือจุดสังเกตในตัวอย่าง";
+  if(answer.includes("nach links")&&value.includes("nach rechts")||answer.includes("nach rechts")&&value.includes("nach links"))return "ทิศทางในคำตอบตรงข้ามกับเส้นทางที่โจทย์กำหนด";
+  if(task.targetId==="ask-walk"&&!value.startsWith("kann ich "))return "โจทย์นี้เป็นคำถามใช่หรือไม่ใช่ ให้ขึ้นต้น Kann แล้วตามด้วยประธาน ich";
+  if(task.targetId==="ask-walk"&&!/gehen[?.!]*$/u.test(value))return "เมื่อใช้ Kann กริยาหลัก gehen ต้องอยู่รูป Infinitiv ที่ท้ายคำถาม";
+  if(task.targetId==="describe-turn"&&(!value.includes(" biegen sie ")||!/ab[.!]*$/u.test(value)))return "หลังจุดสังเกตใช้ biegen ในตำแหน่ง 2 ตามด้วย Sie ส่วนแยก ab อยู่ท้ายประโยค";
+  if(task.targetId==="ask-place"&&!value.startsWith("wo ist denn hier "))return "ข้อนี้กำหนดให้ถามที่ตั้งด้วย Wo ist denn hier ตามด้วยสถานที่ที่โจทย์ให้";
+  return "คำตอบข้อนี้จำกัดตามข้อมูลและคำเริ่มต้นที่ให้ ลองเทียบส่วนที่ต่างกับตัวอย่าง โดยใช้คำจากโครงที่เรียน";
+}
+function normalizeL14Response(response: string) { return response.normalize("NFC").trim().replace(/\s+/gu," ").replace(/[.!?]+$/u,"").trim(); }
+function correctResponse(task: Exclude<Task, MatchTask>, response: string) { return task.kind === "write" ? task.acceptedAnswers.some(answer => normalizeL14Response(answer) === normalizeL14Response(response)) : response === task.answer; }
 const topicInfo: Record<Topic, { title: string; count: number }> = {
   ask: { title: "ถามทาง", count: 5 }, describe: { title: "บอกทาง", count: 6 }, unknown: { title: "บอกว่าไม่รู้ทาง", count: 3 }, thanks: { title: "ขอบคุณ", count: 3 },
 };
@@ -67,10 +91,10 @@ const variantTasks: ChoiceTask[] = phraseVariants.variants.map(variant => ({
   difficultyRationale: variant.difficultyRationale, assistance: variant.assistance,
   subskill: variant.subskill,
 }));
-const tasks: Task[] = [...authoredTasks,describeMatch,...reviewTasks,...variantTasks];
+const tasks: Task[] = [...authoredTasks,describeMatch,...reviewTasks,...variantTasks,...l14PracticeExtensions];
 if (variantTasks.length + authoredTasks.length + describeMatch.pairs.length + reviewTasks.length < 100) throw new Error("L14 phrase bank must contain at least 100 independently scored responses");
 const mixedCounts: Record<Topic, number> = { ask: 4, describe: 5, unknown: 3, thanks: 3 };
-type Attempt = { questionId: string; topic: Topic; kind: Task["kind"]; correct: boolean; answer: string; submittedAt: string; wordHelpTokens?: string[] };
+type Attempt = { questionId: string; topic: Topic; kind: Task["kind"]; correct: boolean; answer: string; submittedAt: string; wordHelpTokens?: string[]; assisted?: boolean };
 type Progress = { version: 1; runId: string; createdAt: string; taskIds: string[]; position: number; attempts: Attempt[]; draft: { questionId: string; selected: string } | null; completed: boolean; updatedAt: string; wordHelpTokens?: Record<string, string[]> };
 type ArchivedRun = { runId: string; bank: string; attempts: Attempt[]; completedAt: string };
 type PracticeSessions = { version: 1; banks: Record<string, Progress>; runs: ArchivedRun[] };
@@ -94,7 +118,7 @@ function mixedTaskIds(runs: ArchivedRun[]): string[] {
     const matchedTarget=describeMatch.pairs.find(pair=>pair.id===attempt.questionId)?.targetId;
     if (matchedTarget) latest.set(matchedTarget,attempt);
   }
-  const priority = (task: Task) => { const attempt=latest.get(task.id); return !attempt?2:attempt.correct?0:1; };
+  const priority = (task: Task) => { const attempt=latest.get(task.id); return !attempt?2:!attempt.correct||attempt.wordHelpTokens?.length?3:0; };
   const selected = topicOrder.flatMap(topic=>{
     const sourceTasks=authoredTasks.filter(task=>task.topic===topic&&(topic!=="describe"||task.id!=="describe-see"&&task.id!=="describe-distance"));
     const picked=shuffle(sourceTasks.map(source=>{
@@ -120,43 +144,61 @@ function taskEligible(task: Task, learned: Set<string>) { return targetIds(task)
 function attemptHistory(sessions: PracticeSessions): Attempt[] {
   return [...sessions.runs.flatMap(run=>run.attempts),...Object.values(sessions.banks).filter(bank=>!bank.completed).flatMap(bank=>bank.attempts)].sort((a,b)=>a.submittedAt.localeCompare(b.submittedAt));
 }
+function mergeAttemptAssistance(first: Attempt, other: Attempt): Attempt {
+  const words=[...new Set([...(first.wordHelpTokens??[]),...(other.wordHelpTokens??[])])];
+  return {...first,...(first.wordHelpTokens!==undefined||words.length?{wordHelpTokens:words}:{}),...(first.assisted===true||other.assisted===true||words.length?{assisted:true}:{})};
+}
+type Evidence = { attempt: Attempt; runId: string; task: Task; target: string; subskill: string; contextId: string; stage: number };
+function practiceEvidence(sessions: PracticeSessions): Evidence[] {
+  const runs=[...sessions.runs,...Object.values(sessions.banks).map(progress=>({runId:progress.runId,attempts:progress.attempts}))];
+  const firsts=new Map<string,Evidence>();
+  for(const run of runs) for(const attempt of [...run.attempts].sort((a,b)=>a.submittedAt.localeCompare(b.submittedAt))) {
+    const task=tasks.find(task=>task.kind==="match"?task.pairs.some(pair=>pair.id===attempt.questionId):task.id===attempt.questionId);
+    if(!task)continue;
+    const key=`${run.runId}:${attempt.questionId}`;
+    const existing=firsts.get(key);
+    if(existing){existing.attempt=mergeAttemptAssistance(existing.attempt,attempt);continue;}
+    const question=l14TaskQuestion(task,task.kind==="match"?task.pairs.find(pair=>pair.id===attempt.questionId):undefined);
+    firsts.set(key,{attempt,runId:run.runId,task,target:question.itemId,subskill:question.subskill,contextId:isExtensionTask(task)?task.practice.contextId:attempt.questionId,stage:isExtensionTask(task)?task.practice.stage:0});
+  }
+  return [...firsts.values()].sort((a,b)=>a.attempt.submittedAt.localeCompare(b.attempt.submittedAt)||a.runId.localeCompare(b.runId));
+}
+function extensionUnlocked(task: Task,evidence: Evidence[]) {
+  if(!isExtensionTask(task))return true;
+  const unlock=task.practice.unlock;
+  const related=evidence.filter(e=>e.target===task.targetId&&e.subskill===unlock.subskill);
+  if(unlock.requiresAttempt&&!related.length)return false;
+  const latest=new Map<string,Evidence>();related.forEach(e=>latest.set(e.contextId,e));
+  const independent=[...latest.values()].filter(e=>e.attempt.correct&&e.attempt.assisted!==true&&e.attempt.wordHelpTokens!==undefined&&e.attempt.wordHelpTokens.length===0);
+  return independent.length>=unlock.minCorrectContexts&&new Set(independent.map(e=>e.runId)).size>=unlock.minPracticeSessions;
+}
 function dailyTaskIds(sessions: PracticeSessions, learned: Set<string>, now=Date.now()): string[] {
-  const latest=new Map<string,Attempt>();
-  for (const attempt of attemptHistory(sessions)) {
-    const task=tasks.find(entry=>entry.kind==="match"?entry.pairs.some(pair=>pair.id===attempt.questionId):entry.id===attempt.questionId);
-    const target=describeMatch.pairs.find(pair=>pair.id===attempt.questionId)?.targetId??(task?targetIds(task)[0]:attempt.questionId);
-    latest.set(target,attempt);
+  const evidence=practiceEvidence(sessions);
+  const pool=[...guidedTasks,...reviewTasks,...variantTasks,...l14PracticeExtensions].filter(task=>taskEligible(task,learned)&&extensionUnlocked(task,evidence)).map(task=>{
+    const related=evidence.filter(e=>targetIds(task).includes(e.target));
+    const same=related.filter(e=>e.subskill===l14TaskQuestion(task,task.kind==="match"?task.pairs[0]:undefined).subskill);
+    const last=same.at(-1),own=evidence.filter(e=>e.task.id===task.id).at(-1);
+    const stage=isExtensionTask(task)?task.practice.stage:0;
+    const latestContexts=new Map<string,Evidence>();same.forEach(e=>latestContexts.set(e.contextId,e));
+    const weak=[...latestContexts.values()].some(e=>!e.attempt.correct||e.attempt.assisted===true||e.attempt.wordHelpTokens===undefined||e.attempt.wordHelpTokens.length>0);
+    const lane=weak?"weak":!own?"new":now-Date.parse(own.attempt.submittedAt)>=3*86400000?"due":"review";
+    const failedStage=last&&(!last.attempt.correct||last.attempt.assisted===true||last.attempt.wordHelpTokens===undefined||last.attempt.wordHelpTokens.length>0)?last.stage:-1;
+    const recovery=failedStage>stage?2:failedStage===stage&&(last?.attempt.assisted===true||last?.attempt.wordHelpTokens?.length)?1:0;
+    return {task,lane,stage,recovery,ownWrong:own?.attempt.correct===false,last:own?Date.parse(own.attempt.submittedAt):0};
+  });
+  const selected:Task[]=[],targets=new Set<string>();let count=0;
+  const mix=["weak","new","due","new","weak","due","new","weak","due","new"];
+  while(count<10){
+    const remaining=pool.filter(e=>count+taskCount(e.task)<=10&&targetIds(e.task).every(id=>!targets.has(id)));
+    let next:typeof pool[number]|undefined;
+    for(const lane of [mix[count],...["weak","new","due","review"].filter(l=>l!==mix[count])]){
+      next=remaining.filter(e=>e.lane===lane).sort((a,b)=>lane==="weak"?b.recovery-a.recovery||(a.recovery&&b.recovery?b.stage-a.stage:0)||Number(b.ownWrong)-Number(a.ownWrong)||a.stage-b.stage||a.last-b.last:a.lane==="new"?b.stage-a.stage||a.task.id.localeCompare(b.task.id):a.last-b.last)[0];
+      if(next)break;
+    }
+    if(!next)break;
+    selected.push(next.task);targetIds(next.task).forEach(id=>targets.add(id));count+=taskCount(next.task);
   }
-  const candidates: Task[]=guidedTasks.filter(task=>taskEligible(task,learned)).map(task=>task.id==="ask-walk"&&latest.has("ask-walk")?reviewTasks[0]:task);
-  for (const target of latest.keys()) {
-    const variants=variantTasks.filter(task=>task.targetId===target&&taskEligible(task,learned));
-    if (variants.length) candidates.push(variants[Math.floor(Math.random()*variants.length)]);
-  }
-  const score=(task: Task)=>Math.max(...targetIds(task).map(id=>{
-    const attempt=latest.get(id);
-    if (!attempt) return 35;
-    const elapsed=now-Date.parse(attempt.submittedAt);
-    const independent=attempt.correct&&!attempt.wordHelpTokens?.length;
-    return (independent?0:55)+(elapsed>=3*86400000?30:0)+(independent&&elapsed<86400000?-20:0);
-  }));
-  const selected: Task[]=[];
-  const remaining=[...candidates];
-  const selectedTargets=new Set<string>();
-  const topicUses=new Map<Topic,number>();
-  const kindUses=new Map<Task["kind"],number>();
-  let count=0;
-  while (remaining.length && count<10) {
-    remaining.sort((a,b)=>(score(b)-(topicUses.get(b.topic)??0)*9-(kindUses.get(b.kind)??0)*5)-(score(a)-(topicUses.get(a.topic)??0)*9-(kindUses.get(a.kind)??0)*5));
-    const next=remaining.find(task=>count+taskCount(task)<=10&&targetIds(task).every(target=>!selectedTargets.has(target)));
-    if (!next) break;
-    remaining.splice(remaining.indexOf(next),1);
-    selected.push(next);
-    for (const target of targetIds(next)) selectedTargets.add(target);
-    count+=taskCount(next);
-    topicUses.set(next.topic,(topicUses.get(next.topic)??0)+taskCount(next));
-    kindUses.set(next.kind,(kindUses.get(next.kind)??0)+taskCount(next));
-  }
-  return [...selected.filter(task=>task.kind!=="order"),...selected.filter(task=>task.kind==="order")].map(task=>task.id);
+  return selected.map(task=>task.id);
 }
 const empty = (bank: string, sessions: PracticeSessions, learned: Set<string>): Progress => { const now=new Date().toISOString();return { version:1,runId:crypto.randomUUID(),createdAt:now,taskIds:bank==="mixed"?mixedTaskIds(sessions.runs).filter(id=>{const task=tasks.find(item=>item.id===id);return task&&taskEligible(task,learned);}):bank==="daily"?dailyTaskIds(sessions,learned):guidedTasks.filter(task=>(!isTopic(bank)||task.topic===bank)&&taskEligible(task,learned)).map(task=>task.id),position:0,attempts:[],draft:null,completed:false,updatedAt:now }; };
 function isRecord(value: unknown): value is Record<string, unknown> { return typeof value === "object" && value !== null && !Array.isArray(value); }
@@ -173,16 +215,17 @@ function parseMatchSelection(task: MatchTask, selected: string): Record<string,s
 }
 function parseAttempt(value: unknown): Attempt | null {
   if (!isRecord(value) || typeof value.questionId !== "string" || typeof value.correct!=="boolean" || typeof value.answer!=="string" || typeof value.submittedAt!=="string" || !Number.isFinite(Date.parse(value.submittedAt))) return null;
+  if(value.assisted!==undefined&&typeof value.assisted!=="boolean")return null;
   const wordHelpTokens=value.wordHelpTokens;
   if(wordHelpTokens!==undefined&&(!Array.isArray(wordHelpTokens)||!wordHelpTokens.every(word=>typeof word==="string")))return null;
   const matchPair=describeMatch.pairs.find(pair=>pair.id===value.questionId);
   if (matchPair) {
     if (value.topic!==describeMatch.topic || value.kind!=="match" || !describeMatch.pairs.some(pair=>pair.answer===value.answer) || value.correct!==(value.answer===matchPair.answer)) return null;
-    return {questionId:matchPair.id,topic:describeMatch.topic,kind:"match",correct:value.correct,answer:value.answer,submittedAt:value.submittedAt,...(wordHelpTokens?{wordHelpTokens}:{})};
+    return {questionId:matchPair.id,topic:describeMatch.topic,kind:"match",correct:value.correct,answer:value.answer,submittedAt:value.submittedAt,...(wordHelpTokens?{wordHelpTokens}:{}),...(value.assisted===true?{assisted:true}:{})};
   }
   const task=tasks.find(entry=>entry.id===value.questionId);
-  if (!task || task.kind==="match" || value.topic!==task.topic || value.kind!==task.kind || (task.kind==="order"?task.answer!==value.answer:!task.options.includes(value.answer)) || value.correct!==(value.answer===task.answer)) return null;
-  return {questionId:task.id,topic:task.topic,kind:task.kind,correct:value.correct,answer:value.answer,submittedAt:value.submittedAt,...(wordHelpTokens?{wordHelpTokens}:{})};
+  if (!task || task.kind==="match" || value.topic!==task.topic || value.kind!==task.kind || (task.kind==="order"?!isValidOrderDraft(task.tokens,value.answer):task.kind==="write"?false:!task.options.includes(value.answer)) || value.correct!==correctResponse(task,value.answer)) return null;
+  return {questionId:task.id,topic:task.topic,kind:task.kind,correct:value.correct,answer:value.answer,submittedAt:value.submittedAt,...(wordHelpTokens?{wordHelpTokens}:{}),...(value.assisted===true?{assisted:true}:{})};
 }
 function isValidOrderDraft(tokens: string[], selected: string): boolean {
   if (!selected) return false;
@@ -210,7 +253,7 @@ function parseProgress(value: unknown): Progress | null {
   const rawDraft = isRecord(value.draft) ? value.draft : null;
   const draftTask = rawDraft && typeof rawDraft.questionId === "string" ? tasks.find(task=>task.id===rawDraft.questionId) : undefined;
   const draftSelected = rawDraft && typeof rawDraft.selected === "string" ? rawDraft.selected : "";
-  const draftIsValid = draftTask?.kind === "order" ? isValidOrderDraft(draftTask.tokens,draftSelected) : draftTask?.kind === "match" ? parseMatchSelection(draftTask,draftSelected)!==null : draftTask?.kind === "context" || draftTask?.kind === "dialogue" ? draftTask.options.includes(draftSelected) : false;
+  const draftIsValid = draftTask?.kind === "write" ? Boolean(draftSelected.trim()) : draftTask?.kind === "order" ? isValidOrderDraft(draftTask.tokens,draftSelected) : draftTask?.kind === "match" ? parseMatchSelection(draftTask,draftSelected)!==null : draftTask?.kind === "context" || draftTask?.kind === "dialogue" ? draftTask.options.includes(draftSelected) : false;
   const draft = draftTask && draftIsValid ? {questionId:draftTask.id,selected:draftSelected} : null;
   const runId = typeof value.runId === "string" ? value.runId : crypto.randomUUID();
   const position = typeof value.position === "number" && Number.isInteger(value.position) ? Math.max(0,Math.min(value.position,taskIds.length)) : 0;
@@ -242,6 +285,7 @@ function readSessions(raw: string | null): PracticeSessions {
 function l14TaskQuestion(task: Task, pair?: MatchPair) {
   const itemId=pair?.targetId??(task.kind==="order"?task.id:task.kind==="match"?task.pairs[0].targetId:task.targetId??task.id);
   const topicId=`L14-phrases-${task.topic}`;
+  if(isExtensionTask(task)) return {id:task.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:task.subskill,kind:task.kind==="write"?"cloze":"choice",acceptedAnswers:task.kind==="write"?task.acceptedAnswers:[task.answer],...(task.kind==="dialogue"?{options:task.options}:{}),difficulty:task.difficulty,difficultyRationale:task.difficultyRationale,assistance:task.assistance};
   if (pair&&task.kind==="match") return {id:pair.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"phrase_match",kind:"choice",acceptedAnswers:[pair.answer],options:task.pairs.map(entry=>entry.answer),interaction:"match",matchGroupId:task.id,difficulty:1,assistance:"paired-question-options"};
   if (task.kind==="order") return {id:task.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"phrase_order",kind:"order",acceptedAnswers:[task.answer],tokens:task.tokens,difficulty:2,assistance:"supplied-word-tiles"};
   if (task.kind==="context"||task.kind==="dialogue") return {id:task.id,version:1,itemId,requiredItemIds:[itemId],topicId,subskill:"subskill" in task&&task.subskill?task.subskill:task.kind==="context"?"phrase_context":"phrase_dialogue",kind:"choice",acceptedAnswers:[task.answer],options:task.options,...("difficulty" in task?{difficulty:task.difficulty,difficultyRationale:task.difficultyRationale,assistance:task.assistance}: {})};
@@ -268,7 +312,9 @@ function sharedSession(bank: string, progress: Progress) {
       else if (draft.questionId===task.id) response=draft.selected;
     }
     const tokenOrder=task.kind==="order"&&response?response.split(" "):[];
-    return {question,response,selected:[],tokenOrder,hintUsed:false,translationUsed:Boolean((attempt?.wordHelpTokens??progress.wordHelpTokens?.[questionId]??progress.wordHelpTokens?.[task.id])?.length),wordHelpTokens:progress.wordHelpTokens?.[questionId]??progress.wordHelpTokens?.[task.id]??[],attempt:attempt?{wordHelpTokens:attempt.wordHelpTokens??[],translationUsed:Boolean(attempt.wordHelpTokens?.length),response:attempt.answer,correct:attempt.correct,status:"completed",submittedAt:attempt.submittedAt,confidence:null}:null};
+    const usedWords=attempt?attempt.wordHelpTokens:progress.wordHelpTokens?.[questionId]??progress.wordHelpTokens?.[task.id]??[];
+    const known=usedWords!==undefined;
+    return {question,response,selected:[],tokenOrder,hintUsed:attempt?.assisted===true?true:known?false:undefined,translationUsed:attempt?.assisted===true?true:known?Boolean(usedWords.length):undefined,...(known?{wordHelpTokens:usedWords}:{}),attempt:attempt?{...(known?{wordHelpTokens:usedWords,translationUsed:Boolean(usedWords.length)}:{}),...(attempt.assisted===true?{assisted:true}:{}),response:attempt.answer,correct:attempt.correct,status:"completed",submittedAt:attempt.submittedAt,confidence:null}:null};
   });
   const position=queue.slice(0,progress.position).reduce((count,task)=>count+taskCount(task),0);
   const itemPosition=Math.min(position,Math.max(0,items.length-1));
@@ -319,14 +365,17 @@ function progressFromShared(value: unknown): Progress | null {
     const questionId=item.question.id;
     const source=sourceTasks.find(entry=>entry.pair?.id===questionId||entry.task.id===questionId);
     if(!source)return null;
-    const usedWords=isRecord(item.attempt)?item.attempt.wordHelpTokens:item.wordHelpTokens;
-    if(usedWords!==undefined){
-      if(!Array.isArray(usedWords)||!usedWords.every(word=>typeof word==="string"))return null;
-      wordHelpTokens[questionId]=usedWords;
+    const attemptWords=isRecord(item.attempt)?item.attempt.wordHelpTokens:undefined;
+    const wordSources=[item.wordHelpTokens,attemptWords].filter(value=>value!==undefined);
+    const usedWords:string[]=[];
+    for(const words of wordSources){
+      if(!Array.isArray(words)||!words.every(word=>typeof word==="string"))return null;
+      usedWords.push(...words);
     }
+    if(wordSources.length)wordHelpTokens[questionId]=[...new Set(usedWords)];
     if(!isRecord(item.attempt))continue;
     if (typeof item.attempt.correct!=="boolean"||typeof item.attempt.response!=="string"||typeof item.attempt.submittedAt!=="string") return null;
-    attempts.push({questionId,topic:source.task.topic,kind:source.pair?"match":source.task.kind,correct:item.attempt.correct,answer:item.attempt.response,submittedAt:item.attempt.submittedAt,...(usedWords?{wordHelpTokens:wordHelpTokens[questionId]}:{})});
+    attempts.push({questionId,topic:source.task.topic,kind:source.pair?"match":source.task.kind,correct:item.attempt.correct,answer:item.attempt.response,submittedAt:item.attempt.submittedAt,...(wordSources.length?{wordHelpTokens:wordHelpTokens[questionId]}:{}),...((item.hintUsed===true||item.translationUsed===true||item.attempt.assisted===true||item.attempt.translationUsed===true)?{assisted:true}:{})});
   }
   const rawPosition=typeof value.position==="number"&&Number.isInteger(value.position)?Math.max(0,value.position):0;
   let position=0,flatPosition=0;
@@ -346,10 +395,13 @@ function progressFromShared(value: unknown): Progress | null {
   const updatedAt=typeof value.updatedAt==="string"?value.updatedAt:value.createdAt;
   return {version:1,runId:value.id,createdAt:value.createdAt,taskIds,position,attempts,draft,completed:value.completed===true,updatedAt,...(Object.keys(wordHelpTokens).length?{wordHelpTokens}:{})};
 }
-function mergeSharedSessions(initial: PracticeSessions, userId: string): PracticeSessions {
+function mergeProgressEvidence(base: Progress, canonical: Progress): Progress {
+  const attempts=canonical.attempts.map(attempt=>{const old=base.attempts.find(row=>row.questionId===attempt.questionId);return old?mergeAttemptAssistance(attempt,old):attempt;});
+  return {...base,attempts:[...attempts,...base.attempts.filter(attempt=>!attempts.some(row=>row.questionId===attempt.questionId))],completed:base.completed||canonical.completed,position:Math.max(base.position,canonical.position)};
+}
+function mergeSharedSessions(initial: PracticeSessions, userId: string, resumeId?: string): PracticeSessions {
   if (typeof window==="undefined") return initial;
-  const banks={...initial.banks};
-  const runs=[...initial.runs];
+  const banks={...initial.banks},runs=[...initial.runs];
   for (const entry of l14PhrasePracticeTopics) {
     const bank=entry.storage.replace("phrase-l14-","");
     try {
@@ -357,13 +409,18 @@ function mergeSharedSessions(initial: PracticeSessions, userId: string): Practic
       if (!raw) continue;
       const value:unknown=JSON.parse(raw);
       if (!isRecord(value)||!Array.isArray(value.sessions)) continue;
-      for (const session of value.sessions) {
-        const progress=progressFromShared(session);
-        if (!progress) continue;
-        const existing=banks[bank];
-        if (!existing||existing.runId!==progress.runId||existing.updatedAt<progress.updatedAt) banks[bank]=progress;
-        if (progress.completed&&!runs.some(run=>run.runId===progress.runId)) runs.push({runId:progress.runId,bank,attempts:progress.attempts,completedAt:progress.updatedAt});
+      const candidates=value.sessions.map(progressFromShared).filter((progress):progress is Progress=>progress!==null);
+      for(const progress of candidates){
+        const runAt=runs.findIndex(run=>run.runId===progress.runId);
+        if(runAt>=0){const run=runs[runAt];const merged=progress.attempts.map(attempt=>{const old=run.attempts.find(row=>row.questionId===attempt.questionId);return old?mergeAttemptAssistance(attempt,old):attempt;});runs[runAt]={...run,attempts:[...merged,...run.attempts.filter(attempt=>!merged.some(row=>row.questionId===attempt.questionId))]};}
+        else if(progress.completed)runs.push({runId:progress.runId,bank,attempts:progress.attempts,completedAt:progress.updatedAt});
       }
+      const existing=banks[bank];
+      const requested=candidates.find(progress=>progress.runId===resumeId&&!progress.completed);
+      const current=candidates.find(progress=>progress.runId===existing?.runId);
+      const pending=candidates.filter(progress=>!progress.completed).sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));
+      const selected=requested??(current&&!current.completed?current:undefined)??(!current&&existing&&!existing.completed?existing:undefined)??pending[0]??current??candidates.sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt))[0];
+      if(selected)banks[bank]=existing?.runId===selected.runId?mergeProgressEvidence(existing.updatedAt>selected.updatedAt?existing:selected,selected):selected;
     } catch { /* Keep legacy local history when a shared snapshot is unreadable. */ }
   }
   return {...initial,banks,runs};
@@ -373,14 +430,16 @@ function writeSharedSessions(sessions: PracticeSessions, userId: string) {
   for(const entry of l14PhrasePracticeTopics){
     const bank=entry.storage.replace("phrase-l14-","");
     const sessionsForBank=[...sessions.runs.filter(run=>run.bank===bank).map(run=>progressFromRun(run)),...(sessions.banks[bank]?[sessions.banks[bank]]:[])].filter(progress=>progress.taskIds.length>0);
-    const unique=new Map(sessionsForBank.map(progress=>[progress.runId,progress]));
-    const value={version:1,sessions:[...unique.values()].map(progress=>sharedSession(bank,progress)),activeId:sessions.banks[bank]?.runId??null};
+    const unique=new Map<string,unknown>();
+    try{const existing:unknown=JSON.parse(window.localStorage.getItem(practiceStorageKey(entry.storage,entry.frame,userId))??"null");if(isRecord(existing)&&Array.isArray(existing.sessions))for(const session of existing.sessions)if(isRecord(session)&&typeof session.id==="string")unique.set(session.id,session);}catch{/* Preserve the native state if an old snapshot is unreadable. */}
+    for(const progress of sessionsForBank)unique.set(progress.runId,sharedSession(bank,progress));
+    const value={version:1,sessions:[...unique.values()],activeId:sessions.banks[bank]?.runId??null};
     window.localStorage.setItem(practiceStorageKey(entry.storage,entry.frame,userId),JSON.stringify(value));
   }
   window.dispatchEvent(new Event("practice-progress-updated"));
 }
-export function recommendL14PhrasePractice(practiceRaw: string | null, learningRaw: string | null, tester: boolean) {
-  const sessions=readSessions(practiceRaw);
+export function recommendL14PhrasePractice(practiceRaw: string | null, learningRaw: string | null, tester: boolean, userId?: string) {
+  const sessions=userId?mergeSharedSessions(readSessions(practiceRaw),userId):readSessions(practiceRaw);
   const learned=learnedTargets(learningRaw,tester);
   const activityAt=Math.max(0,...attemptHistory(sessions).map(attempt=>Date.parse(attempt.submittedAt)));
   const pending=["basic","daily","mixed",...topicOrder].map(bank=>({bank,state:sessions.banks[bank]})).filter(entry=>entry.state&&!entry.state.completed&&(entry.state.position>0||entry.state.attempts.length>0||entry.state.draft)&&entry.state.taskIds.every(id=>{const task=tasks.find(item=>item.id===id);return task&&taskEligible(task,learned);})).sort((a,b)=>(b.state?.updatedAt??"").localeCompare(a.state?.updatedAt??""))[0];
@@ -390,7 +449,7 @@ export function recommendL14PhrasePractice(practiceRaw: string | null, learningR
     const queue=pending.state.taskIds.map(id=>tasks.find(task=>task.id===id)).filter((task):task is Task=>Boolean(task)&&(!isTopic(pending.bank)||task?.topic===pending.bank));
     const total=queue.reduce((sum,task)=>sum+taskCount(task),0);
     const position=queue.slice(0,pending.state.position).reduce((sum,task)=>sum+taskCount(task),0)+1;
-    return {kind:"resume",title:"ทำต่อจากครั้งก่อน",description:`ประโยคและสำนวนบท 14 · ข้อ ${position} จาก ${total}`,href:`/practice/L14/phrases/${pending.bank}`,action:"ฝึกต่อ",activityAt:recommendationActivityAt};
+    return {kind:"resume",title:"ทำต่อจากครั้งก่อน",description:`ประโยคและสำนวนบท 14 · ข้อ ${position} จาก ${total}`,href:`/practice/L14/phrases/${pending.bank}?resume=${encodeURIComponent(pending.state.runId)}`,action:"ฝึกต่อ",activityAt:recommendationActivityAt};
   }
   if (!learned.size) return {kind:"learn",title:"เริ่มเรียนประโยคและสำนวนบท 14",description:"เรียนสำนวนก่อน แล้วกลับมาฝึกจากสิ่งที่เรียนแล้ว",href:"/learn/L14/phrases",action:"ไปเรียน",activityAt};
   const attempted=attemptHistory(sessions).length>0;
@@ -402,12 +461,14 @@ export function recommendL14PhrasePractice(practiceRaw: string | null, learningR
 }
 export function L14PhrasePractice({ slug }: { slug?: string }) {
   const { user } = useStore();
+  const { play:playExample, error:exampleAudioError } = useVocabularyAudio();
   const storage = useLessonState();
   const learned=learnedTargets(storage.read(lessonStateKeys.l14Phrases),isTestWorkspaceUser(user));
   const bankKey = slug ?? "overview";
   const [sessions,setSessions] = useState<PracticeSessions>(()=>{
     return readSessions(storage.read(key));
   });
+  const resumeId=typeof window==="undefined"?undefined:new URLSearchParams(window.location.search).get("resume")??undefined;
   const [sharedReady,setSharedReady]=useState(false);
   const progress = sessions.banks[bankKey] ?? empty(bankKey,sessions,learned);
   const setProgress = (update: (current: Progress) => Progress) => setSessions(previous=>{
@@ -420,7 +481,7 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
   const [matchFocus,setMatchFocus] = useState<{ side: "question" | "answer"; value: string } | null>(null);
   const [finished,setFinished] = useState(false);
   const [showResume,setShowResume] = useState(true);
-  useEffect(()=>{if(!user)return;setSessions(previous=>mergeSharedSessions(previous,user.id));setSharedReady(true);},[user?.id]);
+  useEffect(()=>{if(!user)return;const refresh=()=>setSessions(previous=>{const next=mergeSharedSessions(previous,user.id,resumeId);return JSON.stringify(next)===JSON.stringify(previous)?previous:next;});refresh();setSharedReady(true);window.addEventListener("phrase-practice-history-refreshed",refresh);return()=>window.removeEventListener("phrase-practice-history-refreshed",refresh);},[user?.id,resumeId]);
   useEffect(()=>{if(sharedReady&&user)writeSharedSessions(sessions,user.id);},[sessions,sharedReady,user?.id]);
   const topic = slug && slug in topicInfo ? slug as Topic : undefined;
   const guided = slug === "basic";
@@ -449,7 +510,7 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
   useEffect(()=>{setMatchFocus(null);},[current?.id]);
   const selectedTokens=current?.kind==="order"&&selected?selected.split(" "):[];
   const matchSelection=current?.kind==="match"?parseMatchSelection(current,selected)??{}:{};
-  const canSubmit = current?.kind==="match" ? current.pairs.every(pair=>Boolean(matchSelection[pair.id])) : Boolean(selected);
+  const canSubmit = current?.kind==="match" ? current.pairs.every(pair=>Boolean(matchSelection[pair.id])) : Boolean(selected.trim());
   const recordWordHelp = (word: string, responseId?: string) => {
     if (!current || checked) return;
     setProgress(p => ({ ...p, wordHelpTokens: { ...p.wordHelpTokens, [responseId??current.id]: [...new Set([...(p.wordHelpTokens?.[responseId??current.id] ?? []), word])] } }));
@@ -462,7 +523,7 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
       setProgress(p=>({...p,draft:null,attempts:[...p.attempts,...attempts]}));
       return;
     }
-    const correct = selected === current.answer;
+    const correct = correctResponse(current,selected);
     setProgress(p=>({...p,draft:null,attempts:[...p.attempts,{questionId:current.id,topic:current.topic,kind:current.kind,correct,answer:selected,submittedAt:new Date().toISOString(),wordHelpTokens:p.wordHelpTokens?.[current.id]??[]}]}));
   }
   function next() {
@@ -542,7 +603,8 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
     }
     setMatchFocus({side:"answer",value:answer});
   }
-  return <main className="l14-practice-page">
+  return <main className={`l14-practice-page${isExtensionTask(current)?" l14-practice-extended":""}`}>
+    {isExtensionTask(current)&&<><ArticleLegend/><div className="l14-writing-glossary">{current.glossary.split(" · ").map(entry=>{const [noun,meaning]=entry.split(" = ");return <p key={noun}><NounText text={noun}/> = {meaning}</p>;})}</div></>}
     <div className="vocabulary-image-progress"><span>{progressLabel}</span><div className="vocabulary-image-progress-track" role="progressbar" aria-valuemin={0} aria-valuemax={totalCount} aria-valuenow={completedCount+taskCount(current)}><span style={{width:`${(completedCount+taskCount(current))/totalCount*100}%`}}/></div></div>
     <section className="guided-card">
       {current.kind === "order" ? <p className="l14-order-instruction">เรียงประโยคให้ถูกต้อง</p> : null}
@@ -551,7 +613,11 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
         <div className="l14-practice-built-sentence" aria-label="ประโยคที่เรียง" aria-live="polite">{selectedTokens.map((token,index)=><button className="l14-placed-token" key={`${token}-${index}`} type="button" aria-label={`นำ ${token} กลับไปตัวเลือก`} disabled={checked} onClick={()=>{const next=selectedTokens.filter((_,wordIndex)=>wordIndex!==index).join(" ");setSelected(next);setProgress(p=>({...p,draft:next?{questionId:current.id,selected:next}:null}));}}>{token}</button>)}</div>
         <div className="l14-phrase-choices">{current.tokens.filter((token,index)=>current.tokens.slice(0,index+1).filter(word=>word===token).length>selectedTokens.filter(word=>word===token).length).map((token,index)=><button className="button secondary" key={`${token}-${index}`} type="button" disabled={checked} onClick={()=>{const next=[...selectedTokens,token].join(" ");setSelected(next);setProgress(p=>({...p,draft:{questionId:current.id,selected:next}}));}}>{token}</button>)}</div>
         {selectedTokens.length>0&&!checked&&<button className="button secondary" type="button" onClick={()=>{setSelected("");setProgress(p=>({...p,draft:null}));}}>ล้างคำที่เรียง</button>}
-      </> : current.kind==="match" ? <div className="l14-match">
+      </> : current.kind==="write" ? <div className="l14-phrase-variant">
+        <h1>{current.prompt}</h1>
+        <p>พิมพ์คำตอบทั้งประโยค รวมคำเริ่มต้นที่ให้ไว้</p>
+        <textarea className="l14-bounded-writing" rows={3} aria-label="คำตอบภาษาเยอรมัน" style={{width:"100%",font:"inherit",padding:12,boxSizing:"border-box"}} value={selected} disabled={checked} spellCheck={false} autoCapitalize="off" autoComplete="off" onChange={event=>{const value=event.target.value;setSelected(value);setProgress(p=>({...p,draft:{questionId:current.id,selected:value}}));}} />
+      </div> : current.kind==="match" ? <div className="l14-match">
         <h1>จับคู่คำถามกับคำตอบ</h1>
         {checked?<div className="l14-match-checked">{current.pairs.map((pair,index)=><div className={`l14-match-checked-row ${matchAttempts[index]?.correct?"correct":"incorrect"}`} key={pair.id}><span lang="de">{pair.question}</span><span aria-hidden="true">→</span><span lang="de">{matchSelection[pair.id]}</span></div>)}</div>:<>
           <p className="l14-match-help">เลือกกล่องจากฝั่งใดก่อนก็ได้ แล้วเลือกกล่องอีกฝั่งเพื่อจับคู่</p>
@@ -577,7 +643,8 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
       </aside> : checked && current.kind!=="match" && <aside className={`practice-feedback ${answerCorrect?"correct":"incorrect"}`}>
         <h2>{answerCorrect?"ถูกต้อง":"ลองดูคำตอบ"}</h2>
         {visual && <p>คำแปลโจทย์: {visual.questionThai}</p>}
-        <p lang="de">{current.answer}</p><p>{current.translation}</p>
+        {isExtensionTask(current)?<><AnnotatedReply sentences={current.sentences}/><button className="button secondary" type="button" aria-label="ฟังประโยคตัวอย่าง" onClick={()=>playExample(current.answer,practiceAudioPaths.get(current.id+"-B"))}>ฟังตัวอย่าง</button>{exampleAudioError&&<p role="status">{exampleAudioError}</p>}</>:<p lang="de">{current.answer}</p>}<p>{current.translation}</p>
+        {isExtensionTask(current)&&!answerCorrect&&<p>{extensionFeedback(current,currentAttempt?.answer??"")}</p>}
         {current.kind === "order" ? <div className="l14-order-explanation"><h3>{current.ruleTitle}</h3><ul>{current.rules.map(rule=><li key={rule}>{rule}</li>)}</ul><p><strong>{current.noteTitle}:</strong> {current.exampleNote}</p></div> : <p>{current.explanation}</p>}
       </aside>}
       <div className="guided-navigation l14-question-navigation">{progress.position>0&&<button className="button secondary" type="button" onClick={previous}><ArrowLeft size={17}/> ย้อนกลับ</button>}{!checked?<button className="button primary" type="button" disabled={!canSubmit} onClick={submit}>ตรวจคำตอบ</button>:<button className="button primary" type="button" onClick={next}>{progress.position===queue.length-1?"จบรอบ":"ข้อต่อไป"} <ArrowRight size={17}/></button>}</div>
