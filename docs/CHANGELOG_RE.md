@@ -2960,3 +2960,10 @@
 - ปรับป้ายข้อเดิมที่เป็นการจับคู่ความหมายให้ตรงสิ่งที่วัด คง historical subskill IDs. เพิ่มเฉลยตามตัวเลือกผิดจริง ช่องเขียนทั้งประโยค และบทสนทนา/ลูกศรหลังตรวจ
 - ผลกระทบ: เพิ่มการใช้สิ่งที่เรียนในบริบทและการเขียนแบบจำกัดขอบเขต ไม่ถือว่าทุกเป้าหมายทุกหมวดถูกย้ายใหม่ หรือมีผลทดลองประสิทธิผลกับผู้เรียนจริง. ต้องติดตั้งสอง additive migrations ก่อน frontend; deployment จะบันทึกแยกหลังตรวจระบบจริง
 - พื้นที่ทดสอบคืนคิวเดิมโดยไม่ใช้เงื่อนไขเริ่มระดับใหม่มาตัดคิวที่บันทึกแล้ว ขณะคืนข้อมูลยังตรวจ canonical grading/สิ่งที่เรียน และเปิด gates กลับก่อนรับคำขอใหม่
+
+### 2026-11-11 - Verified L01-L14 phrase practice release
+
+- App commit e407ae5 deployed successfully after the two additive migrations. Public health200 reports phrasePracticeRelease l01-l14-practice-v1 and the existing l15-l18-practice-v2 remains ready.
+- Verified28 Learn/Practice entry routes with an ordinary authenticated learner and7 representative hosted audio hashes. No fabricated answers were added to the hosted learner account.
+- Release scope is145 new tasks for29 selected taught objectives across14 lessons, with preserved published definitions and historical responses. It is not a claim that every existing target or all vocabulary/grammar banks have been migrated to bounded writing.
+- Receipt: `.audit/phrase-practice-upgrade-release.json`.

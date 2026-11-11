@@ -1,0 +1,154 @@
+[
+  {
+    "path": "/learn/L01/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L01/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L02/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L02/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L03/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L03/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L04/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L04/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L05/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L05/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L06/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L06/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L07/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L07/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L08/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L08/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L09/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L09/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L10/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L10/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L11/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L11/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L12/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/practice/L12/phrases",
+    "ready": true,
+    "signedIn": true
+  },
+  {
+    "path": "/learn/L13/phrases",
+    "signedIn": true,
+    "ready": true,
+    "heading": "แสดงความคิดเห็นต่อสถานที่",
+    "errors": [],
+    "contentError": false
+  },
+  {
+    "path": "/practice/L13/phrases",
+    "signedIn": true,
+    "ready": true,
+    "heading": "",
+    "errors": [],
+    "contentError": false
+  },
+  {
+    "path": "/learn/L14/phrases",
+    "signedIn": true,
+    "ready": true,
+    "heading": "Wegbeschreibungen",
+    "errors": [],
+    "contentError": false
+  },
+  {
+    "path": "/practice/L14/phrases",
+    "signedIn": true,
+    "ready": true,
+    "heading": "",
+    "errors": [],
+    "contentError": false
+  }
+]

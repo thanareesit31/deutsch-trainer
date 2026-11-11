@@ -1,0 +1,44 @@
+[
+  {
+    "id": "phrases-L01-7-practice-v2-s1-c1-A",
+    "path": "/audio/a13-release/659bbc0fd3d102e6.mp3",
+    "status": 200,
+    "sha256": "3d6b8dba0697122855975d441d53ae0c7d74c1fada3ec165bbf0b88c1a621dd0"
+  },
+  {
+    "id": "phrases-L01-8-practice-v2-s1-c1-B",
+    "path": "/audio/a13-release/6b5fbe8ee693984a.mp3",
+    "status": 200,
+    "sha256": "daabc4c8a99a758b69249ad088f2fe4f4e93cd51bd15c8a9f0264fdc9d56512b"
+  },
+  {
+    "id": "L11-P002-practice-v2-s1-c1-A",
+    "path": "/audio/a13-release/20b5add4fad006ad.mp3",
+    "status": 200,
+    "sha256": "0de99e909bae08ec213075932fcfe6e26ec96cd2f39969261bd2c3f3d2610b59"
+  },
+  {
+    "id": "L11-P002-practice-v2-s1-c2-B",
+    "path": "/audio/a13-release/fb0c525aeed176d7.mp3",
+    "status": 200,
+    "sha256": "22f8944a361b4c3cbad19cf51795103446291c445ee5b4c612ee02df4ecf97af"
+  },
+  {
+    "id": "L13-R011-practice-v2-s1-c1-A",
+    "path": "/audio/a13-release/49277b102221ccf2.mp3",
+    "status": 200,
+    "sha256": "ad4739d4a8cd39aa860753bf271bc12f122e8600009da0917a8237f7ad3a5637"
+  },
+  {
+    "id": "L13-R001-practice-v2-s1-c1-B",
+    "path": "/audio/a13-release/57a379ae7cea5b8f.mp3",
+    "status": 200,
+    "sha256": "4f41024a147d2f1d5701c7a0a9a425d1102e86736126e4d98f30542d3270bb2e"
+  },
+  {
+    "id": "ask-walk-practice-v2-c1-B",
+    "path": "/audio/a13-release/a557821c3f7fa8fa.mp3",
+    "status": 200,
+    "sha256": "534f52851241b4fdc143b5a093c48e9f13eb2118a5a9750acf2a321620db41a3"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-11T14:26:15.919309+00:00",
+  "appCommit": "e407ae5307441ef897ea872cc05020a9400dc931",
+  "origin": "https://deutsch-trainer-gamma.vercel.app",
+  "deploymentStatus": "success",
+  "deploymentURL": "https://vercel.com/thanareesit-2416s-projects/deutsch-trainer/89dtoD8Tn1x3BbqB7GrDWE4SDhxH",
+  "health": {
+    "status": "ok",
+    "runtime": "bun",
+    "phrasePracticeRelease": "l01-l14-practice-v1",
+    "lessonRelease": "l15-l18-practice-v2"
+  },
+  "ordinaryAuthenticatedLearnerRoutes": 28,
+  "ordinaryLearnerProfileLabelVerified": true,
+  "hostedAudioHashes": 7,
+  "extensionTasks": 145,
+  "selectedCommunicativeObjectives": 29,
+  "lessons": 14,
+  "allExistingTargetsMigrated": false,
+  "localBrowserWritingFlows": 4,
+  "genericLayoutTasks": 130,
+  "audioReferences": 275,
+  "uniqueAudioFiles": 144,
+  "frozenPublishedDefinitions": {
+    "a11": 346,
+    "l13": 114,
+    "l14": 101
+  },
+  "scope": "Contextual dialogue response and bounded sentence production for selected taught objectives. No fabricated answers in the hosted learner account. No human learning-effect study."
+}

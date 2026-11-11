@@ -11,7 +11,7 @@ Preserve all published question IDs, versions, accepted answers, first answers, 
 - [x] Integrate staged eligibility from independent contexts and actual sessions, balanced new/weak/due selection, and recovery scaffolds.
 - [x] Preserve canonical history, shared account persistence, help, drafts and explicit resume.
 - [x] Verify real database, mobile UI, old queues and ordinary-account access.
-- [ ] Apply additive catalog/gates before frontend, deploy and verify hosted release.
+- [x] Apply additive catalog/gates before frontend, deploy and verify hosted release.
 
 ## Evidence policy
 
@@ -39,7 +39,7 @@ Core context metadata groups existing variants conservatively by target rather t
 - Mobile corpus check covers130 generic new tasks at375/390/1360 with complete sentence rows and no horizontal overflow. At375 the longest annotations still require10.4px text; this is a layout check, not a learner readability study. Native L14 and actual account navigation are checked separately.
 - Local test workspace recovery now treats restored queues as existing sessions, temporarily disabling only progression gates during the trusted transaction. Canonical grading/learned validators stay enabled, and gates are re-enabled before the server accepts requests.
 
-Deployment remains pending until the new additive migrations and the ordinary-account hosted smoke are recorded.
+Deployment verified on the production domain; see `.audit/phrase-practice-upgrade-release.json`.
 
 ## Final local verification
 
@@ -47,4 +47,6 @@ Actual ordinary-learner flag path passed all14 phrase entry routes. Four advance
 
 Real database gates and isolation passed; existing L13 answers/matching and L15–18 shared sessions passed compatibility checks. Specific response feedback was checked for Partizip II, finite form/position, Artikel and capitalization. Cross-model reviewer gpt-6-astra reported no additional blocking issues after the assistance and resume fixes; reviewer scope was source/test inspection, not hosted verification.
 
-Hosted schema is installed and public readiness is200 with14lessons/710metadata/145extensions. Frontend deployment and hosted account checks remain pending.
+Hosted schema is installed and public readiness is200 with14lessons/710metadata/145extensions. Frontend app commit e407ae5 deployed successfully; all28 ordinary-account Learn/Practice routes and7 representative audio hashes passed on the production domain.
+
+Final release: `.audit/phrase-practice-upgrade-release.json`. App build, server catalog, active adaptive selection, account evidence and production rollout are verified for the stated selected-objective scope.
