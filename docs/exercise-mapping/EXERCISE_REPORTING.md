@@ -12,7 +12,7 @@ Report rows are separate from assessment tables. Authenticated learners submit t
 - [x] Add shared form and per-response context, covering iframe/native Practice engines and sentence Learn checks.
 - [x] Add administrator list, filters, detail and status/reason controls.
 - [x] Verify before/after-answer redaction, grading/history preservation, duplicate retry, account isolation, admin permissions, mobile and keyboard form behavior.
-- [ ] Install schema before frontend; deploy and verify ordinary-user report access and admin access.
+- [x] Install schema before frontend; deploy and verify learner controls and admin access. Ordinary report permissions are verified with a separate local account; hosted UI verified in the owner’s authenticated account.
 
 This is a presentation/support feature: existing assessment IDs, bindings, difficulty, grading and progression are preserved. Report counts are not learning evidence. The administrator email is a required setup input, requested while implementation proceeds.
 
@@ -30,4 +30,8 @@ This is a presentation/support feature: existing assessment IDs, bindings, diffi
 
 ## Hosted installation
 
-2026-11-11: installed the additive reporting migration. Public readiness RPC returned HTTP 200 with `ready: true, schemaVersion: 1`. The requested `tester@deutsch.test` account does not exist in hosted Auth, so no arbitrary account was granted rights and no test user was created in production. The owner has been asked for the email used on the real website; administrator assignment and production admin-page verification remain pending that input. Local administrator workflow is verified.
+2026-11-11: installed the additive reporting migration before frontend deployment. Public readiness RPC returned HTTP 200 with `ready: true, schemaVersion: 1`. Assigned report-administrator membership to the existing hosted account explicitly specified by the owner; exact-match SQL returned one membership. No production test account or fake report was created.
+
+Application commit `67befc5` deployed successfully through Vercel. Public `/api/health` returned HTTP 200, status `ok`, reporting `v1`, with both prior lesson/practice releases still ready. Authenticated hosted UI verified `/reports` loads the inbox, `/settings` shows the administrator link, and the L14 Learn report dialog opens with five categories and a details field and cancels without submitting. Full submission, retry, review persistence and separate ordinary-account denial were exercised locally rather than polluting production data.
+
+All 104 generated preview banks were compared as parsed JSON against the parent commit: their complete question-bank metadata was unchanged. Only the shared reporting renderer changed. Release receipt: `.audit/exercise-report-release.json`.

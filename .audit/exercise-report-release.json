@@ -1,0 +1,34 @@
+{
+  "verifiedAt": "2026-11-11",
+  "applicationCommit": "67befc5",
+  "deployment": "Vercel success",
+  "url": "https://deutsch-trainer-gamma.vercel.app",
+  "health": {
+    "status": 200,
+    "exerciseReporting": "v1",
+    "phrasePracticeRelease": "l01-l14-practice-v1",
+    "lessonRelease": "l15-l18-practice-v2"
+  },
+  "schema": {
+    "ready": true,
+    "schemaVersion": 1
+  },
+  "requestedExistingAdminMemberships": 1,
+  "hostedUi": {
+    "adminInbox": true,
+    "settingsAdminLink": true,
+    "reportDialogOpened": true,
+    "categories": 5,
+    "cancelledWithoutSubmitting": true
+  },
+  "productionFakeReportsCreated": 0,
+  "unchangedQuestionBanksCompared": 104,
+  "localVerification": [
+    "report context unit tests",
+    "report RLS/RPC database tests",
+    "375px browser submit/retry/cancel/before-after/admin tests",
+    "TypeScript",
+    "production webpack build"
+  ],
+  "legacyLearnCoverage": "Some legacy Course/Arbeitsbuch/Supplemental activities remain outside the first report-button release."
+}
