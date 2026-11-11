@@ -1,4 +1,5 @@
 "use client";
+import { ExerciseReportButton } from "./exercise-report";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -647,6 +648,7 @@ export function L14PhrasePractice({ slug }: { slug?: string }) {
         {isExtensionTask(current)&&!answerCorrect&&<p>{extensionFeedback(current,currentAttempt?.answer??"")}</p>}
         {current.kind === "order" ? <div className="l14-order-explanation"><h3>{current.ruleTitle}</h3><ul>{current.rules.map(rule=><li key={rule}>{rule}</li>)}</ul><p><strong>{current.noteTitle}:</strong> {current.exampleNote}</p></div> : <p>{current.explanation}</p>}
       </aside>}
+      {current.kind==="match"?current.pairs.map(pair=>{const attempt=progress.attempts.findLast(attempt=>attempt.questionId===pair.id);return <div className="exercise-report-response" key={pair.id}><span lang="de">{pair.question}</span><ExerciseReportButton context={{lessonId:"L14",skill:"phrases",questionId:pair.id,questionVersion:1,bankKey:`phrase-l14-${bankKey}`,sessionId:progress.runId,prompt:pair.question,learnerAnswer:attempt?.answer??matchSelection[pair.id]??"",checked:!!attempt,...(attempt?{correct:attempt.correct,expectedAnswers:[pair.answer],feedback:pair.translation}:{})}}/></div>;}):<ExerciseReportButton context={{lessonId:"L14",skill:"phrases",questionId:current.id,questionVersion:1,bankKey:`phrase-l14-${bankKey}`,sessionId:progress.runId,prompt:current.kind==="order"?current.translation:isExtensionTask(current)?current.prompt+"\n"+current.glossary:current.prompt,learnerAnswer:currentAttempt?.answer??selected,checked,...(currentAttempt?{correct:currentAttempt.correct,expectedAnswers:current.kind==="write"?current.acceptedAnswers:[current.answer],feedback:current.kind==="order"?[current.ruleTitle,...current.rules,current.exampleNote].join("\n"):current.explanation}:{})}}/>}
       <div className="guided-navigation l14-question-navigation">{progress.position>0&&<button className="button secondary" type="button" onClick={previous}><ArrowLeft size={17}/> ย้อนกลับ</button>}{!checked?<button className="button primary" type="button" disabled={!canSubmit} onClick={submit}>ตรวจคำตอบ</button>:<button className="button primary" type="button" onClick={next}>{progress.position===queue.length-1?"จบรอบ":"ข้อต่อไป"} <ArrowRight size={17}/></button>}</div>
     </section>
   </main>;

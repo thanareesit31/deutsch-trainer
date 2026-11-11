@@ -17,20 +17,23 @@ export async function GET() {
     .eq("skill", "vocabulary")
     .eq("data->>collection", "core");
   const release = await db.rpc('release_course_readiness');
+  const reporting = await db.rpc('exercise_reporting_readiness');
+  const reportingReady = !reporting.error && reporting.data?.ready === true && reporting.data?.schemaVersion === 1;
   const phraseUpgrade = await db.rpc('phrase_practice_upgrade_readiness');
   const phraseReady = !phraseUpgrade.error && phraseUpgrade.data?.schemaVersion >= phrasePracticeVersion.schemaVersion && phraseUpgrade.data?.lessons === 14 && phraseUpgrade.data?.extensionTasks >= phrasePracticeVersion.extensionTasks && phraseUpgrade.data?.metadataTasks >= phrasePracticeVersion.metadataTasks && phraseUpgrade.data?.contextCatalogReady === true;
   const ready = !release.error && release.data?.courses === 12 && release.data?.cards === 136 && release.data?.tasks === 372 && release.data?.phraseTasks === 64 && release.data?.practiceSyncReady === true && release.data?.practiceVersion === practiceVersion.schemaVersion && release.data?.extensionTasks === practiceVersion.extensionTasks && release.data?.contextCatalogReady === true;
   return Response.json(
     {
-      status: error || !ready || !phraseReady ? "unavailable" : "ok",
+      status: error || !ready || !phraseReady || !reportingReady ? "unavailable" : "ok",
       app: "deutsch-mit-sun",
       version: "5.0.0",
       runtime: process.versions.bun ? "bun" : "node",
       contentSource: "supabase",
       vocabulary: error ? null : count,
+      exerciseReporting: reportingReady ? 'v1' : 'schema-pending',
       phrasePracticeRelease: phraseReady ? 'l01-l14-practice-v1' : 'schema-pending',
       lessonRelease: ready ? 'l15-l18-practice-v2' : 'schema-pending',
     },
-    { status: error || !ready || !phraseReady ? 503 : 200 },
+    { status: error || !ready || !phraseReady || !reportingReady ? 503 : 200 },
   );
 }

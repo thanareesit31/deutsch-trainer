@@ -79,6 +79,7 @@ export async function createDatabase() {
     "20261110001000_release_practice_extension_catalog.sql",
     "20261111000000_phrase_practice_progression.sql",
     "20261111001000_phrase_practice_extension_catalog.sql",
+    "20261112000000_exercise_issue_reports.sql",
   ])
     await db.exec(
       await readFile(

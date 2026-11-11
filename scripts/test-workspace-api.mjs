@@ -14,6 +14,8 @@ const tables = new Set([
   "learner_days",
   "learner_lesson_states",
   "learner_practice_sessions",
+  "exercise_reports",
+  "exercise_report_admins",
   "item_exposures",
   "practice_sessions",
   "session_items",
@@ -75,7 +77,7 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
       for (const table of [...tables].filter(table => table !== 'learner_practice_sessions').concat('learner_practice_sessions')) {
         if (table.startsWith("content_") || table === "knowledge_state") continue;
         for (const row of restore.rows[table] ?? []) {
-          if (!accounts.some((account) => account.id === row.user_id))
+          if (!accounts.some((account) => account.id === (row.user_id??row.reporter_id)))
             throw new Error("Recovery contains an unknown test account");
           const columns = Object.keys(row);
           await tx.query(
@@ -88,6 +90,9 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
       await tx.exec('alter table public.learner_practice_sessions enable trigger validate_phrase_practice_progression');
     });
   }
+  // Development fixture only: the first named test account can review reports.
+  const reportAdmin=accounts.find(account=>account.email==="tester@deutsch.test");
+  if(reportAdmin)await db.query('insert into public.exercise_report_admins(user_id) values($1) on conflict do nothing',[reportAdmin.id]);
   const sessions = new Map();
   const refreshTokens = new Map();
   const origins = new Set([
@@ -188,7 +193,7 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
         throw httpError(404, "Unknown test endpoint");
       const parts = url.pathname.slice("/rest/v1/".length).split("/");
       const table = parts[0];
-      const publicReadiness = ['/rest/v1/rpc/release_course_readiness','/rest/v1/rpc/phrase_practice_upgrade_readiness'].includes(url.pathname) && req.method === 'POST';
+      const publicReadiness = ['/rest/v1/rpc/release_course_readiness','/rest/v1/rpc/phrase_practice_upgrade_readiness','/rest/v1/rpc/exercise_reporting_readiness'].includes(url.pathname) && req.method === 'POST';
       if (!session && !["content_lessons", "content_items"].includes(table) && !publicReadiness)
         throw httpError(401, "Test login required");
       if (url.pathname === '/rest/v1/rpc/test_workspace_control' && req.method === 'POST') {
@@ -228,6 +233,14 @@ export async function startTestApi({ port = 54329, webPort = 3002, webHosts = []
             return (await tx.query('select public.release_course_readiness() as data')).rows[0].data;
           else if (parts[1] === 'phrase_practice_upgrade_readiness')
             return (await tx.query('select public.phrase_practice_upgrade_readiness() as data')).rows[0].data;
+          else if (parts[1] === 'exercise_reporting_readiness')
+            return (await tx.query('select public.exercise_reporting_readiness() as data')).rows[0].data;
+          else if (parts[1] === 'is_exercise_report_admin')
+            return (await tx.query('select public.is_exercise_report_admin() as data')).rows[0].data;
+          else if (parts[1] === 'submit_exercise_report')
+            return (await tx.query('select public.submit_exercise_report($1,$2,$3,$4,$5::jsonb) as data',[body.p_id,body.p_category,body.p_description,body.p_suggested_answer,JSON.stringify(body.p_context)])).rows[0].data;
+          else if (parts[1] === 'review_exercise_report')
+            await tx.query('select public.review_exercise_report($1,$2,$3)',[body.p_id,body.p_status,body.p_note]);
           else if (parts[1] === "learning_action")
             await tx.query("select public.learning_action($1,$2::jsonb)", [
               body.action,

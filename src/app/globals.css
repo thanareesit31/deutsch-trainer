@@ -6421,3 +6421,16 @@ select {
   .l14-practice-extended .phrase-annotated-sentence { gap: 4px; }
   .l14-practice-extended .phrase-annotated-part { min-width: 24px; }
 }
+.exercise-report-button { display: block; margin-top: 18px; padding: 8px 0; border: 0; background: transparent; color: #526653; text-decoration: underline; text-underline-offset: 3px; font: inherit; font-size: 14px; cursor: pointer; }
+.exercise-report-dialog { width: min(560px, calc(100% - 24px)); max-height: 90dvh; overflow: auto; border: 1px solid #dbe4d8; border-radius: 20px; padding: 24px; color: #25392f; background: #fff; }
+.exercise-report-dialog::backdrop { background: #17251bcc; }
+.exercise-report-dialog label,.exercise-report-admin label { display: grid; gap: 7px; margin: 16px 0; }
+.exercise-report-dialog textarea,.exercise-report-dialog select,.exercise-report-admin textarea,.exercise-report-admin select { width: 100%; padding: 10px; border: 1px solid #829082; border-radius: 10px; font: inherit; background: #fff; color: #25392f; }
+.exercise-report-summary { background: #f2f5ef; padding: 12px; border-radius: 10px; overflow-wrap: anywhere; }
+.exercise-report-actions { display: flex; align-items: center; justify-content: flex-end; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+.exercise-report-list { display: grid; gap: 12px; }
+.exercise-report-list-item { display: grid; gap: 6px; text-align: left; border: 1px solid #dbe4d8; padding: 16px; border-radius: 12px; background: #fff; color: inherit; font: inherit; cursor: pointer; overflow-wrap: anywhere; }
+.exercise-report-detail { border: 1px solid #dbe4d8; padding: 22px; border-radius: 16px; margin-top: 24px; background: #fff; overflow-wrap: anywhere; }
+@media(max-width:600px) { .exercise-report-dialog { padding: 18px; } .exercise-report-dialog textarea,.exercise-report-dialog select { font-size: 16px; } }
+.exercise-report-sort-item { min-width: 0; }
+.exercise-report-sort-item > .exercise-report-button { margin-top: 4px; font-size: 12px; }

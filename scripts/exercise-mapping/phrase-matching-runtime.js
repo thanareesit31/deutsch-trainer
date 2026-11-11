@@ -150,5 +150,5 @@ function matchingQuestion() {
       })) focusTitle();
     }, { class: 'primary', id: 'next' }));
   }
-  card.append(actions); app.append(card); return true;
+  card.append(actions);for(const item of block){const row=node('div');row.append(node('span',item.question.prompt||item.question.sentence||'',{lang:'de'}),exerciseReportControl(item));card.append(row);} app.append(card); return true;
 }

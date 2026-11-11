@@ -1,9 +1,10 @@
 "use client";
+import { ExerciseReportButton } from "./exercise-report";
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowRight, Users, Tag, Palette, Phone, Star, CalendarDays, Utensils, TrainFront, History, Gift } from 'lucide-react';
-import { canCheckDialogue, emptyDialogueResponse, gradeDialogue, dialogueStorageKey, dialogueUnits, newDialogueRun, parseDialogueHistory, type DialogueTopic, type DialogueHistory, type DialogueResponse, type DialogueRun, type DialogueVisual, type DialogueGrammarPattern } from '@/lib/phrase-dialogue-learning';
+import { canCheckDialogue, emptyDialogueResponse, gradeDialogue, dialogueAnswer, dialogueStorageKey, dialogueUnits, newDialogueRun, parseDialogueHistory, type DialogueTopic, type DialogueHistory, type DialogueResponse, type DialogueRun, type DialogueVisual, type DialogueGrammarPattern } from '@/lib/phrase-dialogue-learning';
 import { useLessonState } from './lesson-state-provider';
 import { useContent } from './content-provider';
 import { useLearning } from './learning-store';
@@ -135,6 +136,7 @@ export function PhraseDialogueLearning({ lessonId, topics:sourceTopics, scope }:
         {!(task.feedbackDialogue&&responseSpeaker==='A')&&dialogueUnits(task).map(unit => <div className="l02-unit-feedback" key={unit.id}>{task.feedbackDialogue ? <AnnotatedTurn speaker={responseSpeaker} sentences={task.feedbackDialogue.reply} meaning={unit.meaning} audio={{source: task.feedbackAudio, text: `${task.prompt} ${unit.answer}`}} /> : task.promptMeaning ? <><strong>B: <span lang="de">{unit.answer}</span> <FeedbackDialogueAudio source={task.feedbackAudio} text={`${task.prompt} ${unit.answer}`} /></strong><p>{unit.meaning}</p></> : <><strong>{`${task.kind === 'profile' ? task.fields.find(field => field.unit.id === unit.id)?.label + ': ' : ''}${response.first?.[unit.id].correct ? 'ถูกต้อง' : 'ลองดูคำตอบนี้'}`}</strong>{task.answerSentences ? <AnnotatedReply sentences={task.answerSentences} /> : <p lang="de">{task.kind === 'digits' || task.kind === 'text' || task.kind === 'profile' ? <NounText text={unit.nounLabel ?? unit.answer} /> : <GermanListenText text={unit.answer} />}</p>}<p>{unit.meaning}</p></>}</div>)}
         <div className="phrase-discovery-reason"><strong>เหตุผล</strong><Explanation text={task.explanation} /></div>
       </div>}
+      {dialogueUnits(task).map(unit=>{const first=response.first?.[unit.id];return <ExerciseReportButton key={unit.id} context={{lessonId,skill:"phrases",questionId:unit.id,questionVersion:null,bankKey:dialogueStorageKey(lessonId),sessionId:run.id,prompt:task.kind==='profile'?`${task.prompt} · ${task.fields.find(field=>field.unit.id===unit.id)?.label??''}`:task.prompt,learnerAnswer:first?.response??dialogueAnswer(task,response,unit),checked:!!first,...(first?{correct:first.correct,expectedAnswers:[unit.answer],feedback:task.explanation}:{})}}/>;})}
       <div className="guided-navigation">{back}{checked ? <button className="button primary" onClick={() => void advance()}>{run.step === run.queue.length - 1 ? 'จบการเรียน' : 'ต่อไป'} <ArrowRight size={17} /></button> : <button className="button primary" disabled={!canCheckDialogue(task, response)} onClick={check}>ตรวจคำตอบ</button>}</div>
     </div></section>;
 }

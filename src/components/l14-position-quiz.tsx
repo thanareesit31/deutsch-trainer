@@ -1,5 +1,6 @@
 "use client";
 
+import { ExerciseReportButton } from "./exercise-report";
 import Image from "next/image";
 import { useState } from "react";
 import type { L14PositionKind } from "@/lib/guided-learning";
@@ -106,6 +107,7 @@ export function L14PositionQuiz() {
             <GermanListenText text={`${question.start} ${question.word} ${question.end}`} />
             <span>{question.meaning}</span>
           </div>}
+          <ExerciseReportButton context={{lessonId:"L14",skill:"grammar",questionId:question.position,questionVersion:null,bankKey:lessonStateKeys.l14PositionQuiz,prompt:question.start+" ___ "+question.end,checked:solved,...(solved?{learnerAnswer:question.word,correct:true,expectedAnswers:[question.word],feedback:question.meaning}:{})}} />
         </article>;
       })}
     </div>

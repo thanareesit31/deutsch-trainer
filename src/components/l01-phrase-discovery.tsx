@@ -1,4 +1,5 @@
 "use client";
+import { ExerciseReportButton } from "./exercise-report";
 
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -179,6 +180,7 @@ export function L01PhraseDiscovery({ scope = 'all' }: { scope?: DiscoveryScope }
         {task.kind==='letters'&&<DiscoveryReply task={task}/>}
         <div className="phrase-discovery-reason">{task.explanation.split("\n").map(line => <p key={line}>{line}</p>)}</div>
       </div>}
+      <ExerciseReportButton context={{lessonId:"L01",skill:"phrases",questionId:task.id,questionVersion:null,bankKey:phraseDiscoveryKey,sessionId:run.id,prompt:task.kind==='letters'?'ฟังแล้วเรียงตัวอักษร':task.prompt,learnerAnswer:response.first?.response??discoveryAnswer(task,response.selection),checked,...(response.first?{correct:response.first.correct,expectedAnswers:[task.answer],feedback:task.explanation}:{})}} />
       <div className="guided-navigation">
         <button className="button secondary" onClick={() => update(current => ({ ...current, step: current.step - 1 }))}>ย้อนกลับ</button>
         {checked ? <button className="button primary" onClick={advance}>{run.step === steps.length - 1 ? 'จบการเรียน' : 'ต่อไป'} <ArrowRight size={17} /></button>

@@ -1,4 +1,5 @@
 "use client";
+import { ExerciseReportAdminLink } from "./exercise-report-admin";
 import { useContent } from "./content-provider";
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -98,6 +99,7 @@ export function SettingsPage() {
         <div>
           <span className="eyebrow">DEIN LERNRAUM, DEINE DATEN</span>
           <h1>ตั้งค่าและข้อมูลของฉัน</h1>
+      <ExerciseReportAdminLink />
           <p>ปรับรอบฝึกให้เหมาะกับคุณ และพาประวัติการเรียนไปด้วยทุกที่</p>
         </div>
       </div>

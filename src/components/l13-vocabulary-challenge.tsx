@@ -1,4 +1,5 @@
 "use client";
+import { ExerciseReportButton } from "./exercise-report";
 
 import Image from "next/image";
 import { PracticeGermanText } from "./practice-german-text";
@@ -206,6 +207,16 @@ export function L13VocabularyChallenge({ format }: { format?: "pictureArticle" }
             </div>
             {response && <div className={`l14-vocab-feedback${response.correct ? " correct" : " incorrect"}`} role="status"><strong>{response.correct ? "ถูกต้อง" : "ยังไม่ถูก"}</strong>{activity.kind !== "picture" && activity.translation && <p>คำแปลโจทย์: {activity.translation}</p>}<p>คำตอบ: <span lang={activity.kind === "category" ? "th" : "de"}>{optionContent(activity.options.find(option => option.id === activity.answer))}</span>{activity.kind === "picture" && <span lang="th"> · {items.find(item => item.id === activity.answer)?.meaning}</span>} <VocabularyFeedbackAudio text={activity.kind === "category" ? activity.prompt : activity.options.find(option => option.id === activity.answer)?.label ?? ""} item={items.find(item => item.id === (activity.kind === "category" ? activity.requiredItemIds[0] : activity.answer))} /></p>{activity.kind !== "picture" && <p>{activity.explanation}</p>}</div>}
           </>}
+      {activityResponseIds(activity).map((responseId,index)=>{
+        const definition=definitions.get(responseId);if(!definition)return null;
+        const saved=round.responses[responseId],draft=round.drafts[responseId]??"";
+        const choices=activity.kind==="story"?activity.wordBank:activity.kind==="crossword"||activity.kind==="build"?[]:activity.options;
+        const raw=saved?.answer??(activity.kind==="build"?readPartOrder(draft,activity.parts.length).map(at=>activity.parts[at]).join(""):draft);
+        const answer=choices.find(option=>option.id===raw),expected=choices.find(option=>option.id===definition.answer);
+        const clue=activity.kind==="crossword"?activity.rows.find(row=>row.id===responseId)?.clue??activity.title:activity.kind==="story"?`${activity.title}\n${activity.gaps.map(gap=>gap.before+" ___ "+gap.after).join(" ")}\nช่องที่ ${index+1}`:activity.kind==="build"?activity.prompt+"\n"+activity.parts.join(" / "):activity.prompt;
+        const feedback=activity.kind==="crossword"?activity.rows.find(row=>row.id===responseId)?.translation:activity.kind==="story"?activity.gaps[index]?.explanation:activity.explanation;
+        return <div key={responseId} className="exercise-report-response">{(activity.kind==="story"||activity.kind==="crossword")&&<span>{activity.kind==="story"?"ช่องที่":"คำใบ้ที่"} {index+1}</span>}<ExerciseReportButton context={{lessonId:"L13",skill:"vocabulary",questionId:responseId,questionVersion:definition.assessment?.taskVersion??null,bankKey:lessonStateKeys.l13VocabularyChallenge,sessionId:round.id,prompt:clue,learnerAnswer:answer?optionLabel(answer):raw,checked:!!saved,...(saved?{correct:saved.correct,expectedAnswers:[expected?optionLabel(expected):definition.answer],feedback:feedback??""}:{})}}/></div>;
+      })}
       <div className="l14-vocab-actions">{round.position === 0 ? <Link className="button secondary" href="/practice/L13/vocabulary">← ย้อนกลับ</Link> : <button type="button" className="button secondary" onClick={() => updateRound(current => ({ ...current, position: current.position - 1 }))}>← ย้อนกลับ</button>}
         {!checked && activity.kind !== "story" && activity.kind !== "build" && activity.kind !== "crossword" && <button type="button" className="button primary" disabled={!picked} onClick={() => submit({ [activity.id]: picked })}>ตรวจคำตอบ</button>}
         {checked && <button type="button" className="button primary" onClick={() => updateRound(current => ({ ...current, position: current.position + 1, completedAt: current.position + 1 >= current.activityIds.length ? new Date().toISOString() : null }))}>{round.position + 1 === round.activityIds.length ? "จบรอบ" : "กิจกรรมถัดไป"}</button>}

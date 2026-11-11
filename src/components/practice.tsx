@@ -1,4 +1,5 @@
 "use client";
+import { ExerciseReportButton } from "./exercise-report";
 import Link from "next/link";
 import { useContent } from "./content-provider";
 import { ArticleDot, ArticleLegend } from "./profession-matching";
@@ -623,6 +624,7 @@ function QuestionCard({
           )}
         </div>
       )}
+      <ExerciseReportButton context={{lessonId:q.item.lessonId,skill:q.item.skill,questionId:q.item.id,questionVersion:null,sessionId,prompt:q.prompt,learnerAnswer:answer,checked:feedback!==null,...(feedback!==null?{correct:feedback,expectedAnswers:[q.answer],feedback:q.item.meaning}:{})}} />
     </div>
   );
 }

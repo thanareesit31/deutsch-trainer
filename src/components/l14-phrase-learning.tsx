@@ -1,5 +1,6 @@
 "use client";
 
+import { ExerciseReportButton } from "./exercise-report";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -384,8 +385,9 @@ export function L14PhraseLearning() {
           : wrongCount === 1 ? "ลองอีกครั้ง" : wrongCount === 2 ? secondHints[phrase.group] : "กดพลิกเพื่อดูคำแปลไทย แล้วลองจัดกลุ่มใหม่"}</small>}
       </div>;
     }
-    return <div className="l14-phrase-card l14-phrase-card--sort" key={phrase.id} data-result={result} data-selected={selected === phrase.id ? "true" : undefined} data-flipped={isFlipped ? "true" : undefined}>
-      <div className="l14-phrase-card-inner">{face(false)}{face(true)}</div>
+    return <div className="exercise-report-sort-item" key={phrase.id}><div className="l14-phrase-card l14-phrase-card--sort" data-result={result} data-selected={selected === phrase.id ? "true" : undefined} data-flipped={isFlipped ? "true" : undefined}>
+      <div className="l14-phrase-card-inner">{face(false)}{face(true)}</div></div>
+      <ExerciseReportButton context={{lessonId:"L14",skill:"phrases",questionId:'sort:'+phrase.id,questionVersion:null,bankKey:lessonStateKeys.l14Phrases,prompt:phrase.text,learnerAnswer:placed[phrase.id],checked:!!result,...(result?{correct:result==="correct",expectedAnswers:[phrase.group]}:{})}}/>
     </div>;
   }
 
@@ -504,6 +506,7 @@ export function L14PhraseLearning() {
         <div className="l14-phrase-choices" aria-label="ประโยคที่ยังไม่เรียง">{shuffledTurns.filter((index) => !orderedTurns.includes(index)).map((index) => <div className="l14-phrase-card" key={index}><div className="l14-phrase-card-main"><button type="button" className="l14-phrase-audio" aria-label={`ฟัง ${dialogueLines[index]}`} onClick={() => play(dialogueLines[index])}><Volume2 size={18} aria-hidden="true" /></button><button type="button" lang="de" className="l14-phrase-chip" onClick={() => persist({ ...progress, orderedTurns: [...orderedTurns, index], orderChecked: false, dialogueFlipped: [] })}>{dialogueLines[index]}</button></div></div>)}</div>
         {orderChecked && <p className="l14-phrase-feedback" role="status">{orderIsCorrect ? "เรียงบทสนทนาได้ถูกต้อง" : "ลองอีกครั้ง แตะประโยคที่ไม่เข้ากับลำดับเพื่อนำกลับไปเลือกใหม่"}</p>}
       </>}
+      {(mode !== "guided" || dialogueStep < turnCount) && <ExerciseReportButton context={{lessonId:"L14",skill:"phrases",questionId:mode==="guided"?'choice:'+scenario.kind+':'+place.id+':'+dialogueStep:'order:'+scenario.kind+':'+place.id,questionVersion:null,bankKey:lessonStateKeys.l14Phrases,prompt:mode==="guided"?(choicePrompts[dialogueStep]??"บทสนทนาถามทาง"):"เรียงบทสนทนาถามทาง",learnerAnswer:mode==="guided"?choice:orderedTurns.map(index=>dialogueLines[index]).join(" / "),checked:mode==="guided"?!!choice:orderChecked,...((mode==="guided"?!!choice:orderChecked)?{correct:mode==="guided"?correctChoice:orderIsCorrect,expectedAnswers:mode==="guided"?[dialogueLines[dialogueStep]??""]:dialogueLines}:{})}}/>}
       {audioError && <p role="alert">{audioError}</p>}
       <div className="guided-navigation"><button className="button secondary" type="button" onClick={() => persist({ ...progress, tab: "sort" })}>ย้อนกลับ</button>
         {mode === "guided" && correctChoice && <button className="button primary" type="button" onClick={() => persist({ ...progress, dialogueStep: dialogueStep + 1, choice: "", thanksChoice: dialogueStep === thankYouStep && isThankYouLine(choice) ? choice : progress.thanksChoice })}>ประโยคถัดไป</button>}

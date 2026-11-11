@@ -1,0 +1,13 @@
+{
+  "mobile": true,
+  "draftPreserved": true,
+  "cancelAndEscape": true,
+  "retry": true,
+  "beforeCheckRedacted": true,
+  "afterCheckIncluded": true,
+  "adminReasonAndPersistence": true,
+  "ordinaryAdminDenied": true,
+  "pageErrors": [],
+  "verifiedAt": "2026-11-11",
+  "environment": "local test workspace; tester2 has ordinary report permissions, tester has explicit report-admin fixture"
+}

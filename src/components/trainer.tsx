@@ -65,6 +65,7 @@ import {
 } from "./learning-pages";
 import { Badge, Empty, Meter, SectionTitle, skillIcons } from "./ui";
 import { Session } from "./practice";
+import { ExerciseReportAdmin } from "./exercise-report-admin";
 import { SettingsPage } from "./progress";
 import { AuthScreen } from "./auth-screen";
 import { TestWorkspaceNotice } from "./test-workspace-notice";
@@ -394,6 +395,7 @@ function App() {
       );
   else if (path === "/progress")
     page = <HistoryProgress query={searchParams.toString()} />;
+  else if (path === "/reports") page = <ExerciseReportAdmin />;
   else if (path === "/settings") page = <SettingsPage />;
   else if (path === "/session" && session)
     page = <Session key={session.id} plan={session} start={start} />;

@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { ExerciseReportDialog } from './exercise-report';
+import { parseExerciseReportContext, type ExerciseReportContext } from '@/lib/exercise-report';
 import { useVocabularyAudio } from "./vocabulary-audio";
 import dative from "@/data/l13-dative-preview.json";
 import esGibt from "@/data/l13-es-gibt-preview.json";
@@ -80,6 +82,7 @@ type PreviewProps = { userId: string; learnedItemIds?: string[] } & (
 
 export function GrammarPilot({ userId, topic, preview: suppliedPreview, learnedItemIds, vocabularyAudio }: PreviewProps) {
   const frame = useRef<HTMLIFrameElement>(null);
+  const [reportContext,setReportContext]=useState<ExerciseReportContext|null>(null);
   const [height, setHeight] = useState(900);
   const preview = topic ? previews[topic] : suppliedPreview;
   const playVocabularyAudio = topic ? topic.startsWith("vocab") : vocabularyAudio === true;
@@ -118,8 +121,14 @@ export function GrammarPilot({ userId, topic, preview: suppliedPreview, learnedI
     return () => window.removeEventListener("phrase-practice-history-refreshed", refresh);
   }, []);
 
+  useEffect(()=>{
+    function report(event:MessageEvent<unknown>){if(event.source!==frame.current?.contentWindow)return;const data=event.data;if(!data||typeof data!=="object"||!("type" in data)||data.type!=="exercise-report-open"||!("context" in data))return;const context=parseExerciseReportContext(data.context);if(context)setReportContext(context);}
+    window.addEventListener("message",report);return()=>window.removeEventListener("message",report);
+  },[]);
+
   return (
     <>
+      {reportContext&&<ExerciseReportDialog context={reportContext} onClose={()=>setReportContext(null)}/>}
       <iframe
         key={`${preview.accountPrefix}-${userId}`}
         ref={frame}
