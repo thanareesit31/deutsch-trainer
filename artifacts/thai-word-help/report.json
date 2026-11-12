@@ -1,0 +1,985 @@
+{
+  "banks": 104,
+  "questions": 3879,
+  "viewports": [
+    375,
+    1280
+  ],
+  "failures": [],
+  "results": [
+    {
+      "file": "a11-grammar-l01-basic-preview.json",
+      "questions": 68,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l01-daily-preview.json",
+      "questions": 68,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l02-basic-preview.json",
+      "questions": 34,
+      "kinds": [
+        "choice",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l02-daily-preview.json",
+      "questions": 34,
+      "kinds": [
+        "choice",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l03-basic-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l03-daily-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l04-basic-preview.json",
+      "questions": 4,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l04-daily-preview.json",
+      "questions": 4,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l05-basic-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l05-daily-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l06-basic-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l06-daily-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l07-basic-preview.json",
+      "questions": 4,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l07-daily-preview.json",
+      "questions": 4,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l08-basic-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l08-daily-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l09-basic-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l09-daily-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l10-basic-preview.json",
+      "questions": 4,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l10-daily-preview.json",
+      "questions": 4,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l11-basic-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l11-daily-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l12-basic-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-grammar-l12-daily-preview.json",
+      "questions": 6,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l01-basic-preview.json",
+      "questions": 9,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l01-daily-preview.json",
+      "questions": 34,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l02-basic-preview.json",
+      "questions": 8,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l02-daily-preview.json",
+      "questions": 34,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l03-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l03-daily-preview.json",
+      "questions": 40,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l04-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l04-daily-preview.json",
+      "questions": 40,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l05-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l05-daily-preview.json",
+      "questions": 40,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l06-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l06-daily-preview.json",
+      "questions": 40,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l07-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l07-daily-preview.json",
+      "questions": 40,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l08-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l08-daily-preview.json",
+      "questions": 38,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l09-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l09-daily-preview.json",
+      "questions": 40,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l10-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l10-daily-preview.json",
+      "questions": 40,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l11-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l11-daily-preview.json",
+      "questions": 40,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l12-basic-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-phrases-l12-daily-preview.json",
+      "questions": 40,
+      "kinds": [
+        "choice",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l01-basic-preview.json",
+      "questions": 58,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l01-daily-preview.json",
+      "questions": 58,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l02-basic-preview.json",
+      "questions": 68,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l02-daily-preview.json",
+      "questions": 68,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l03-basic-preview.json",
+      "questions": 93,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l03-daily-preview.json",
+      "questions": 93,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l04-basic-preview.json",
+      "questions": 76,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l04-daily-preview.json",
+      "questions": 76,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l05-basic-preview.json",
+      "questions": 112,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l05-daily-preview.json",
+      "questions": 112,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l06-basic-preview.json",
+      "questions": 56,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l06-daily-preview.json",
+      "questions": 56,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l07-basic-preview.json",
+      "questions": 42,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l07-daily-preview.json",
+      "questions": 42,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l08-basic-preview.json",
+      "questions": 104,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l08-daily-preview.json",
+      "questions": 104,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l09-basic-preview.json",
+      "questions": 64,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l09-daily-preview.json",
+      "questions": 64,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l10-basic-preview.json",
+      "questions": 120,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l10-daily-preview.json",
+      "questions": 120,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l11-basic-preview.json",
+      "questions": 30,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l11-daily-preview.json",
+      "questions": 30,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l12-basic-preview.json",
+      "questions": 64,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "a11-vocab-l12-daily-preview.json",
+      "questions": 64,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-daily-preview.json",
+      "questions": 100,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-dative-preview.json",
+      "questions": 15,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-es-gibt-preview.json",
+      "questions": 15,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-grammar-basic-preview.json",
+      "questions": 45,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-phrases-basic-preview.json",
+      "questions": 20,
+      "kinds": [
+        "choice",
+        "choice/match",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-phrases-city-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "choice/match",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-phrases-daily-preview.json",
+      "questions": 124,
+      "kinds": [
+        "choice",
+        "choice/match",
+        "order",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-phrases-favorite-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "choice/match",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-phrases-opinions-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "choice/match",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-phrases-rating-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "choice/match",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-verbs-preview.json",
+      "questions": 15,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-vocab-basic-preview.json",
+      "questions": 162,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-vocab-culture-preview.json",
+      "questions": 28,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-vocab-daily-preview.json",
+      "questions": 162,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-vocab-extra-preview.json",
+      "questions": 62,
+      "kinds": [
+        "choice",
+        "cloze"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-vocab-leisure-preview.json",
+      "questions": 28,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l13-vocab-urban-preview.json",
+      "questions": 44,
+      "kinds": [
+        "choice",
+        "cloze",
+        "choice/picture-choice"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l14-grammar-daily-preview.json",
+      "questions": 100,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l14-grammar-preview.json",
+      "questions": 100,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l14-lokale-praepositionen-preview.json",
+      "questions": 50,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l14-wo-dativ-preview.json",
+      "questions": 50,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l15-grammar-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l15-possessivartikel-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l16-grammar-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l16-temporale-praepositionen-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l17-grammar-preview.json",
+      "questions": 15,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l17-mit-ohne-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l17-werden-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l17-wollen-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l18-grammar-preview.json",
+      "questions": 10,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l18-imperativ-sie-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    },
+    {
+      "file": "l18-sollen-preview.json",
+      "questions": 5,
+      "kinds": [
+        "choice",
+        "cloze",
+        "order"
+      ],
+      "issues": []
+    }
+  ]
+}

@@ -218,7 +218,7 @@ function appendGerman(container,text,responseId){
 const responseItem=()=>responseId?current()?.items.find(item=>item.question.id===responseId):activeItem();
 const target=responseItem()?.question;
 if(!responseItem()?.attempt&&['vocabulary_meaning','vocabulary_picture_meaning','vocabulary_spelling','vocabulary_article'].includes(target?.subskill)){container.append(document.createTextNode(text));return;}
- const tokens=text.match(/[\p{L}]+|\s+|[^\p{L}\s]+/gu)||[];
+ const tokens=text.match(/[\p{L}\p{M}]+|\s+|[^\p{L}\p{M}\s]+/gu)||[];
  for(let i=0;i<tokens.length;i++){
   let token=tokens[i];
   const phrase=tokens.slice(i,i+3).join('');
