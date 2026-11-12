@@ -1,0 +1,16 @@
+{
+  "url": "https://deutsch-trainer-gamma.vercel.app",
+  "http": 200,
+  "health": {
+    "status": "ok",
+    "app": "deutsch-mit-sun",
+    "version": "5.0.0",
+    "runtime": "bun",
+    "contentSource": "supabase",
+    "vocabulary": 326,
+    "exerciseReporting": "v1",
+    "phrasePracticeRelease": "l01-l14-practice-v1",
+    "lessonRelease": "l15-l18-practice-v2"
+  },
+  "applicationCommit": "11b90a5f7a77e887fbfb5d4981f2e21f1b4f946c"
+}

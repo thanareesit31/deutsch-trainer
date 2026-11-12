@@ -1,0 +1,33 @@
+{
+  "origin": "https://deutsch-trainer-gamma.vercel.app",
+  "checks": {
+    "unlearnedTargetsBlocked": true,
+    "learnThroughUIAndServerPersistence": {
+      "words": 30
+    },
+    "deployedThaiTokenizer": true,
+    "eligibleRegisteredQuestionsSaved": {
+      "items": 30,
+      "firstAnswer": true
+    },
+    "signOut": true,
+    "cleanDeviceResumeAndDraft": true,
+    "safari": {
+      "status": "blocked",
+      "browserVersion": "15.6.1",
+      "reason": "This machine has Safari below the Next.js minimum 16.4; standalone Thai rendering separately passed 104 banks"
+    },
+    "serverRejectsUnlearnedQueue": true,
+    "accountIsolationAndFirstAnswerPreserved": true
+  },
+  "scope": "Dedicated ordinary authenticated accounts on hosted Supabase; no learner history modified",
+  "pageErrors": [],
+  "status": "account-passed-safari-blocked",
+  "browser": "Chrome at 375px",
+  "deployedApplicationCommit": "11b90a5f7a77e887fbfb5d4981f2e21f1b4f946c",
+  "cleanup": {
+    "status": "done",
+    "deleted": 2,
+    "unrelatedAccountsTouched": false
+  }
+}
