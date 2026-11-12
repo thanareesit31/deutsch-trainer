@@ -26,7 +26,7 @@ The Chrome browser test at 375px verified:
 - The second account could read neither the first account's lesson state nor its practice session. Directly submitting the copied queue was rejected by the server because its targets had not been learned. No second-account practice session was created.
 - No browser page errors occurred.
 
-The full Safari account-flow check remains blocked on the available Safari version. The ordinary-account persistence and isolation results above are Chrome results, not Safari results. A physical-iPhone check was requested separately and is pending unless recorded below.
+The full Safari account-flow check remains blocked on the available Safari version. The ordinary-account persistence and isolation results above are Chrome results, not Safari results. The user subsequently confirmed on 12 November 2026 that the original Thai rendering issue no longer occurred on the iPhone used for the report. This confirms the original display issue on the physical device; its Safari version was not provided, and this is not an automated Safari account-persistence test.
 
 Both disposable accounts were deleted afterward, and deletion was independently checked through the admin API. Their verification-only history was removed by the account cascade. Existing learners' accounts and history were untouched. Temporary account credentials were removed from the repository's ignored tools directory; privileged API keys were never written to the repository or test output.
 

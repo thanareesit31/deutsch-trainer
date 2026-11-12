@@ -29,5 +29,13 @@
     "status": "done",
     "deleted": 2,
     "unrelatedAccountsTouched": false
+  },
+  "physicalDeviceVerification": {
+    "date": "2026-11-12",
+    "reportedBy": "user",
+    "device": "original iPhone",
+    "originalThaiDisplayIssue": "resolved",
+    "browserVersion": "not provided",
+    "scope": "Original Thai rendering issue only; full account flow was verified separately in Chrome"
   }
 }
