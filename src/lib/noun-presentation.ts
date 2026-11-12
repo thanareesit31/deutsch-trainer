@@ -14,6 +14,8 @@ export function findNoun(text: string, items: readonly Item[]): NounPresentation
   const key = text.normalize("NFC").toLocaleLowerCase("de");
   const plural = items.find(item => item.plural && (`die ${item.plural}`).normalize("NFC").toLocaleLowerCase("de") === key);
   if (plural) return { article: "die", color: "plural", label: `die ${plural.plural}` };
+  const exactItem = items.find(item => item.skill === "vocabulary" && [item.answer, item.word].some(value => value?.normalize("NFC") === text.normalize("NFC")));
+  if (exactItem) return nounPresentation(exactItem);
   const item = items.find(item => nounPresentation(item) && [item.answer, item.title, item.word].some(value => value?.normalize("NFC").toLocaleLowerCase("de") === key));
   if (item) return nounPresentation(item);
   const barePlural = items.find(item => item.plural?.normalize("NFC").toLocaleLowerCase("de") === key);
