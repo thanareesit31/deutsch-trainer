@@ -8,6 +8,8 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import type { Item } from "@/lib/content";
+import { parseReleaseState, releaseStateKey, type ReleaseCourse } from "@/lib/a13-release";
+import { learnReleaseVocabulary } from "@/lib/release-vocabulary-learning";
 import {
   vocabularyImageActivity,
   vocabularyImageEntries,
@@ -64,7 +66,7 @@ function GermanNoun({ value, items = [] }: { value: string; items?: Item[] }) {
   return <span lang="de"><NounText text={value} items={items} /></span>;
 }
 
-export function VocabularyImageMatching({ items, groupId, lessonId }: { items: Item[]; groupId: VocabularyImageGroupId; lessonId: string }) {
+export function VocabularyImageMatching({ items, groupId, lessonId, releaseCourse }: { items: Item[]; groupId: VocabularyImageGroupId; lessonId: string; releaseCourse?: ReleaseCourse }) {
   const searchParams = useSearchParams();
   const { user } = useStore();
   const l13Eligibility = useL13VocabularyEligibility();
@@ -76,14 +78,15 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
   const isL12MonthGroup = isL12 && groupId === "l12-monate";
   const isL12MonthSummary = isL12MonthGroup && searchParams.get("summary") === "1";
   const isL02Familienstand = lessonId === "L02";
-  const isCatalogLesson = isL02Familienstand || /^L(?:0[3-9]|1[0-2]|1[4-5])$/u.test(lessonId);
+  const isCatalogLesson = !!releaseCourse || isL02Familienstand || /^L(?:0[3-9]|1[0-2]|1[4-5])$/u.test(lessonId);
   const isGroupedImageVocabulary = lessonId === "L01" || isL13 || isCatalogLesson;
   const isCountryGroup = lessonId === "L01" && groupId === "countries";
   const catalogGroups = useMemo(() => lessonVocabularyImageGroups(items, lessonId, isL02Familienstand ? ["Familienstand"] : undefined), [items, lessonId, isL02Familienstand]);
   const catalogDefinitions = useMemo(() => lessonVocabularyImageEntries(items, catalogGroups), [items, catalogGroups]);
   const groups: readonly VocabularyImageGroup[] = isL13 ? l13VocabularyImageGroups : isCatalogLesson ? catalogGroups : vocabularyImageGroups;
   const definitions: VocabularyImageEntryDefinition[] = isL13 ? l13VocabularyImageEntries : isCatalogLesson ? catalogDefinitions : vocabularyImageEntries;
-  const stateKey = isL13 ? lessonStateKeys.l13Images : isL02Familienstand ? lessonStateKeys.l02Vocabulary : isCatalogLesson ? lessonStateKeys.vocabularyImages(lessonId) : lessonStateKeys.images;
+  const stateKey = releaseCourse ? releaseStateKey(releaseCourse) : isL13 ? lessonStateKeys.l13Images : isL02Familienstand ? lessonStateKeys.l02Vocabulary : isCatalogLesson ? lessonStateKeys.vocabularyImages(lessonId) : lessonStateKeys.images;
+  const savedState = lessonState.read(stateKey);
   const groupIndex = groups.findIndex((entry) => entry.id === groupId);
   const group = groups[groupIndex] ?? groups[0];
   const entries = useMemo(() => definitions.map((definition) => {
@@ -108,9 +111,9 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
   const [l12Stage, setL12Stage] = useState<"study" | "match">(isL12 ? "study" : "match");
 
   useEffect(() => {
-    setLearnedIds(readLearnedImageVocabularyIds(lessonState.read(stateKey)));
+    setLearnedIds(releaseCourse ? parseReleaseState(savedState, releaseCourse).learned : readLearnedImageVocabularyIds(savedState));
     setHydrated(true);
-  }, [lessonState.read, stateKey]);
+  }, [savedState, releaseCourse]);
 
   const learned = new Set(learnedIds);
   const byId = new Map(entries.map((entry) => [entry.id, entry] as const));
@@ -204,7 +207,9 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
     play(imageEntry.german, imageEntry.audioRef);
     const nextLearnedIds = [...new Set([...learnedIds, ...imageEntry.itemIds])];
     setLearnedIds(nextLearnedIds);
-    lessonState.write(stateKey, writeLearnedImageVocabularyIds(lessonState.read(stateKey), nextLearnedIds));
+    lessonState.write(stateKey, releaseCourse
+      ? JSON.stringify(learnReleaseVocabulary(lessonState.read(stateKey), releaseCourse, nextLearnedIds))
+      : writeLearnedImageVocabularyIds(lessonState.read(stateKey), nextLearnedIds));
     setIncorrectPair(null);
     setSelectedId(null);
     setFeedback("");
@@ -347,6 +352,7 @@ export function VocabularyImageMatching({ items, groupId, lessonId }: { items: I
           ? <Link className="button primary" href="/learn/L14/vocabulary/directions">เรียนคำบอกทางต่อ</Link>
           : <Link className="button primary" href={isL13 || isCatalogLesson ? `/learn/${lessonId}/vocabulary` : "/learn/L01/vocabulary"}>กลับไปที่คำศัพท์</Link>)}
         {isL13 && !nextGroup && groups.every(category => entries.filter(entry => entry.groupId === category.id).every(entry => entry.itemIds.every(id => l13Eligibility.ids.includes(id)))) && isVocabularyPracticeAvailable(user) && <Link className="button primary" href="/practice/L13/vocabulary/basic">ทำแบบฝึกหัด</Link>}
+        {releaseCourse && currentPageComplete && <Link className="button primary" href={`/practice/${lessonId}/vocabulary/basic?from=learn`}>ฝึกคำที่เรียนแล้ว</Link>}
         {!isL13 && !nextGroup && (isL12MonthSummary ? l12MonthSummaryAvailable || allowIncompleteNavigation : canContinue && pageIndex === pages.length - 1 && !isL12MonthGroup) && <LearnPracticeLink lessonId={lessonId} skill="vocabulary" />}
       </div>
     </main>

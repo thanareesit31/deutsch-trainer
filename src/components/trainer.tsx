@@ -2,6 +2,7 @@
 import { useContent } from "./content-provider";
 import { A13ReleaseCourse, findReleaseCourse } from './a13-release-course';
 import { A13ReleasePractice } from './a13-release-practice';
+import { ReleaseVocabularyLearning } from './release-vocabulary-learning';
 import { parseReleaseState, releaseStateKey } from '@/lib/a13-release';
 import { l02VocabularyProgress } from "@/lib/l02-vocabulary-progress";
 import { learningProgressItemIds, readLearnedImageVocabularyIds } from "@/lib/vocabulary-image-learning-storage";
@@ -269,7 +270,9 @@ function App() {
   else if ((parts[0] === 'learn' || parts[0] === 'practice') && /^L1[5-8]$/.test(parts[1] ?? '') && findReleaseCourse(parts[1], parts[2] ?? '')) {
     const course = findReleaseCourse(parts[1], parts[2]);
     page = course && user ? parts[0] === 'practice'
-      ? <A13ReleasePractice key={`${user.id}:${course.lessonId}:${course.skill}`} course={course} userId={user.id} guidedCardId={searchParams.get('guided') ?? undefined} resumeId={searchParams.get('resume') ?? undefined} />
+      ? <A13ReleasePractice key={`${user.id}:${course.lessonId}:${course.skill}`} course={course} userId={user.id} guidedCardId={searchParams.get('guided') ?? undefined} resumeId={searchParams.get('resume') ?? undefined} afterLearning={course.skill === 'vocabulary' && searchParams.get('from') === 'learn'} />
+      : course.skill === 'vocabulary'
+      ? <ReleaseVocabularyLearning key={`${user.id}:${course.lessonId}:vocabulary`} course={course} path={path} />
       : <A13ReleaseCourse key={`${user.id}:${course.lessonId}:${course.skill}:learn`} course={course} mode="learn" /> : null;
   }
   else if (additionalGrammarPilot)

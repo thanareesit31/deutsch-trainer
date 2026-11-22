@@ -703,3 +703,12 @@ Production activation, 10 November 2026: the scoped general-account release abov
 - เก็บรายงานแยกจากข้อมูลการเรียน บัญชีทั่วไปอ่านได้เฉพาะรายงานของตน ผู้ดูแลที่ได้รับสิทธิ์จากฝั่งเซิร์ฟเวอร์เท่านั้นอ่านทั้งหมดและเปลี่ยนสถานะได้
 - ผู้ดูแลใช้หน้า /reports หรือปุ่มจัดการรายงานปัญหาในตั้งค่า กำหนดสถานะรับแล้ว กำลังตรวจ แก้แล้ว หรือตรวจแล้วคงเดิม โดยสองสถานะสุดท้ายต้องมีเหตุผล การเปลี่ยนสถานะไม่แก้เนื้อหาหรือคะแนนอัตโนมัติ
 - ระยะแรกครอบคลุม Practice ที่ใช้ iframe ร่วม แบบฝึก native ที่ลงทะเบียน และจุดลองตอบประโยคที่เชื่อมแล้ว ไม่ถือว่าทุกกิจกรรมเก่าใน Learn ได้ย้ายเข้าระบบเดียวกัน
+
+## Vocabulary Learn L15–L18, 23 November 2026
+
+Vocabulary follows the grouped word/picture matching Learn approach used in earlier lessons, with audio, supplied noun Artikel/shared dots, at most six pairs per page and guided page progression. The shared teaching-card followed by a try-response sequence is reserved for grammar and phrases; it must not be the entry for new vocabulary learning. Use clear raster pictures of actual objects, people or situations matching earlier vocabulary lessons. Do not substitute generic icons, stick figures or Thai answer labels inside pictures. Keep the subject complete in the shared 3:2 contain frame. Matching records exposure, never independent spelling/Artikel proficiency. Preserve the existing 97 target IDs, released-course checkpoints, historical answers/help, Practice eligibility and canonical validators. Existing pending vocabulary trials remain resumable with their original grading before returning to the vocabulary entry. The after-learning Practice button opens an eligible task directly, retaining priority for pending rounds. See `docs/exercise-mapping/L15_L18_VOCABULARY_LEARN.md`.
+
+
+Vocabulary category entry pages in A1.3 (L13–L18) omit the top "ฝึกคำที่เรียนแล้ว" shortcut, matching L01–L12. Keep Practice navigation and practice buttons after learning activities. This presentation change preserves eligibility, assessment bindings and account evidence. User clarification: 23 November 2026.
+
+L15–L18 vocabulary category entry pages also omit the introductory sentence "เลือกหมวด จับคู่คำกับภาพ และกดฟังเสียงคำศัพท์", matching L01–L14. User clarification: 23 November 2026.

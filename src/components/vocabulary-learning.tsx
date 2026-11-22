@@ -12,23 +12,18 @@ import { useContent } from "./content-provider";
 import { prepareL02VocabularyFlow } from "@/lib/l02-number-learning";
 
 import { useLessonState, lessonStateKeys } from "./lesson-state-provider";
-import { isL14VocabularyPracticeAvailable, isL13GrammarPracticeAvailable, isTestWorkspaceUser, isVocabularyPracticeAvailable, useStore } from "./store";
+import { isL13GrammarPracticeAvailable, isTestWorkspaceUser, useStore } from "./store";
 import { CountryFlag } from "./vocabulary-image-matching";
 import { l03FamilyPluralPairs } from "@/lib/vocabulary-image-content";
 import { FamilyPluralLearning } from "./family-plural-learning";
 import { buildL13GrammarFlow, buildL14VocabularyFlow } from "@/lib/a13-grammar-learning";
 import { L12MonthCalendar } from "./l12-month-calendar";
-import { useL13VocabularyEligibility } from "./use-l13-vocabulary-eligibility";
-import { useLearning } from "./learning-store";
 
 const alphabetItemIds = alphabetData.items.map((item) => item.id);
 
 export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }) {
-  const { user } = useStore();
   const lessonState = useLessonState();
   const { lessons, items } = useContent();
-  const l13Eligibility = useL13VocabularyEligibility();
-  const history = useLearning();
   const catalogFlow = lessons.find((lesson) => lesson.id === lessonId)?.learningFlows?.vocabulary;
   const flow = catalogFlow && lessonId === "L02" ? prepareL02VocabularyFlow(catalogFlow, items) : catalogFlow;
   const catalogImageGroups = useMemo(
@@ -44,8 +39,6 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
   const [alphabetStatus, setAlphabetStatus] = useState<"learned" | null>(null);
   const [learnedImageVocabularyIds, setLearnedImageVocabularyIds] = useState<string[]>([]);
   const [learnedFamilyPluralIds, setLearnedFamilyPluralIds] = useState<string[]>([]);
-  const l14DirectionIds = lessonId === "L14" ? readGuidedState(lessonState.read(lessonStateKeys.l14Vocabulary), buildL14VocabularyFlow(), items).learnedContentIds : [];
-  const l14PracticeReady = lessonId === "L14" && (learnedImageVocabularyIds.length > 0 || l14DirectionIds.length > 0 || history.exposures.some(exposure => exposure.item_id.startsWith("L14-V")));
 
   useEffect(() => {
     const imageLesson = lessonId === "L01" || lessonId === "L02" || lessonId === "L13" || /^L(?:0[3-9]|1[0-2]|1[4-5])$/u.test(lessonId);
@@ -78,8 +71,6 @@ export function VocabularyLearningEntryPoints({ lessonId }: { lessonId: string }
 
   return (
     <main className="vocabulary-learning">
-      {lessonId === "L13" && isVocabularyPracticeAvailable(user) && l13Eligibility.ids.length > 0 && <Link className="button primary" href="/practice/L13/vocabulary/basic">ฝึกคำที่เรียนแล้ว</Link>}
-      {lessonId === "L14" && isL14VocabularyPracticeAvailable(user) && l14PracticeReady && <Link className="button primary" href="/practice/L14/vocabulary/basic">ฝึกคำที่เรียนแล้ว</Link>}
 
       {lessonId === "L02" && (
         <>

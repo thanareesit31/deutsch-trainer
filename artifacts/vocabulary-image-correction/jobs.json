@@ -1,0 +1,676 @@
+[
+  {
+    "id": "L16-V001",
+    "target": "der Aufzug",
+    "meaning": "ลิฟต์",
+    "scene": "A complete modern elevator with both stainless steel doors visibly open, elevator cabin floor and handrail visible, in a clean apartment lobby. Focus on the elevator, no people blocking it.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Aufzug. Scene: A complete modern elevator with both stainless steel doors visibly open, elevator cabin floor and handrail visible, in a clean apartment lobby. Focus on the elevator, no people blocking it.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V001-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V004",
+    "target": "die Heizung",
+    "meaning": "เครื่องหรือระบบทำความร้อน",
+    "scene": "A complete freestanding white ribbed household heating radiator beneath a window in a cozy room. Radiator, valves and heating pipes clearly visible, realistic materials.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Heizung. Scene: A complete freestanding white ribbed household heating radiator beneath a window in a cozy room. Radiator, valves and heating pipes clearly visible, realistic materials.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V004-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V005",
+    "target": "das Licht",
+    "meaning": "ไฟหรือแสงสว่าง",
+    "scene": "A ceiling lamp switched ON, clearly casting warm light into a dim room, visible illuminated bulb and warm light on nearby wall. The subject is the light shining, not a decorative lamp product.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Licht. Scene: A ceiling lamp switched ON, clearly casting warm light into a dim room, visible illuminated bulb and warm light on nearby wall. The subject is the light shining, not a decorative lamp product.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V005-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V006",
+    "target": "das Telefon",
+    "meaning": "โทรศัพท์",
+    "scene": "A complete realistic cordless home telephone handset standing on its charging base on a small wooden side table. Clear phone keypad, no readable words, no branding.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Telefon. Scene: A complete realistic cordless home telephone handset standing on its charging base on a small wooden side table. Clear phone keypad, no readable words, no branding.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V006-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V008",
+    "target": "das Netz",
+    "meaning": "เครือข่ายหรือสัญญาณโทรศัพท์",
+    "scene": "A person holding a smartphone up near an apartment window trying to get mobile network reception, reception bars visible on the screen without any text, nearby cell antenna visible through the window. Clear everyday mobile network context.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Netz. Scene: A person holding a smartphone up near an apartment window trying to get mobile network reception, reception bars visible on the screen without any text, nearby cell antenna visible through the window. Clear everyday mobile network context.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V008-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V010",
+    "target": "die Klingel",
+    "meaning": "กริ่ง",
+    "scene": "Close view of a real wall-mounted apartment doorbell push button beside a closed front door, a fingertip pressing the button. Show wall, button and enough door context. No printed names.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Klingel. Scene: Close view of a real wall-mounted apartment doorbell push button beside a closed front door, a fingertip pressing the button. Show wall, button and enough door context. No printed names.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V010-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V011",
+    "target": "die Steckdose",
+    "meaning": "เต้ารับไฟฟ้า",
+    "scene": "Close view of a real European recessed wall electrical SOCKET, empty and unplugged, two round pin holes and metal earth contacts clearly visible, full white square faceplate. The subject is the socket, not a plug.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Steckdose. Scene: Close view of a real European recessed wall electrical SOCKET, empty and unplugged, two round pin holes and metal earth contacts clearly visible, full white square faceplate. The subject is the socket, not a plug.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V011-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V013",
+    "target": "das Problem",
+    "meaning": "ปัญหา",
+    "scene": "An everyday problem: washing machine leaking water and its owner looking concerned.",
+    "prompt": "Create ONE production vocabulary learning photograph for the German target 'das Problem'. Landscape 3:2. A bright domestic kitchen, a washing machine overflowing with water onto the floor, its owner standing nearby looking concerned and noticing the leak. Focus on the clear everyday problem, show the entire machine and puddle without cropping. Natural realistic editorial photography with soft warm daylight, clean simple composition matching modern German A1 picture vocabulary. No text, no Thai, no German labels, no letters, no arrows, no icons, no watermark, no collage. This is a new image, not an edit of any screenshot.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V013-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V014",
+    "target": "die Hilfe",
+    "meaning": "ความช่วยเหลือ",
+    "scene": "Two adults cooperating to carry a large heavy cardboard moving box up a small apartment stairway, one person clearly assisting the other. The helper supports the heavy end while the recipient looks relieved. Focus on giving help, not posing.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Hilfe. Scene: Two adults cooperating to carry a large heavy cardboard moving box up a small apartment stairway, one person clearly assisting the other. The helper supports the heavy end while the recipient looks relieved. Focus on giving help, not posing.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V014-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V016",
+    "target": "die Stunde",
+    "meaning": "ชั่วโมง",
+    "scene": "A real analog clock and a mechanical kitchen timer on a clean desk. The timer shows a full sixty-minute duration with a colored sector, suggesting one hour. Use numeric minute markings only, no text. Clear physical objects, not a flat icon.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Stunde. Scene: A real analog clock and a mechanical kitchen timer on a clean desk. The timer shows a full sixty-minute duration with a colored sector, suggesting one hour. Use numeric minute markings only, no text. Clear physical objects, not a flat icon.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V016-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V017",
+    "target": "der Monat",
+    "meaning": "เดือน",
+    "scene": "A real desk calendar opened to exactly ONE MONTH, all numbered date boxes visible in one large grid. On a wooden desk with a pencil. No month name, no words. The single-month grid is the clear main subject.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Monat. Scene: A real desk calendar opened to exactly ONE MONTH, all numbered date boxes visible in one large grid. On a wooden desk with a pencil. No month name, no words. The single-month grid is the clear main subject.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V017-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V018",
+    "target": "das Jahr",
+    "meaning": "ปี",
+    "scene": "A real full-YEAR wall calendar showing all TWELVE monthly grids together, each a compact grid of date numbers, a person viewing the whole calendar. All twelve grids clearly visible and distinct. No words or printed month names.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Jahr. Scene: A real full-YEAR wall calendar showing all TWELVE monthly grids together, each a compact grid of date numbers, a person viewing the whole calendar. All twelve grids clearly visible and distinct. No words or printed month names.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V018-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V019",
+    "target": "funktionieren",
+    "meaning": "ทำงานได้หรือใช้งานได้",
+    "scene": "A table fan switched on and clearly RUNNING: the blades show natural rotational motion blur, nearby light curtain and a small loose ribbon flutter in its airflow. The fan is intact, plugged in and working. No symbols or text.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: funktionieren. Scene: A table fan switched on and clearly RUNNING: the blades show natural rotational motion blur, nearby light curtain and a small loose ribbon flutter in its airflow. The fan is intact, plugged in and working. No symbols or text.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V019-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V020",
+    "target": "reparieren",
+    "meaning": "ซ่อม",
+    "scene": "A repair technician at a well-lit workbench REPAIRING an opened household radio with a screwdriver. Real hands, screws and replaced component, device completely in frame. The action of fixing a device must be obvious.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: reparieren. Scene: A repair technician at a well-lit workbench REPAIRING an opened household radio with a screwdriver. Real hands, screws and replaced component, device completely in frame. The action of fixing a device must be obvious.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V020-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V021",
+    "target": "verschieben",
+    "meaning": "เลื่อนนัดหรือเปลี่ยนเวลา",
+    "scene": "Close view of real hands MOVING an appointment sticky note from an earlier dated box to a later dated box on a physical paper calendar. One hand lifts the note, the other points at the new date. Date numbers only, no words or labels.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: verschieben. Scene: Close view of real hands MOVING an appointment sticky note from an earlier dated box to a later dated box on a physical paper calendar. One hand lifts the note, the other points at the new date. Date numbers only, no words or labels.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V021-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V022",
+    "target": "absagen",
+    "meaning": "ยกเลิกนัด",
+    "scene": "Real hands CANCELLING an appointment in a paper appointment diary by drawing a clear diagonal cross through a previously circled date box. A telephone nearby gives appointment context. The cross is a natural pen mark on paper, not an icon overlay. Date numbers only, no words.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: absagen. Scene: Real hands CANCELLING an appointment in a paper appointment diary by drawing a clear diagonal cross through a previously circled date box. A telephone nearby gives appointment context. The cross is a natural pen mark on paper, not an icon overlay. Date numbers only, no words.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V022-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V023",
+    "target": "vorschlagen",
+    "meaning": "เสนอ",
+    "scene": "Two adults discussing their schedules across a small table; one proposes a date by pointing with a pencil to a single date on a real calendar, while the other thoughtfully checks their own diary. Candid everyday appointment proposal, no writing readable.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: vorschlagen. Scene: Two adults discussing their schedules across a small table; one proposes a date by pointing with a pencil to a single date on a real calendar, while the other thoughtfully checks their own diary. Candid everyday appointment proposal, no writing readable.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V023-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L16-V024",
+    "target": "kaputt",
+    "meaning": "เสียหรือชำรุด",
+    "scene": "A BROKEN table fan on a small table: the plastic blade is visibly snapped into two pieces, the loose broken piece lies beside it, no motion, damaged casing visible. Show the whole fan. No repairer, no tools, no electrical sparks, no symbols.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: kaputt. Scene: A BROKEN table fan on a small table: the plastic blade is visibly snapped into two pieces, the loose broken piece lies beside it, no motion, damaged casing visible. Show the whole fan. No repairer, no tools, no electrical sparks, no symbols.",
+    "destination": "public/images/lektion-16-vocabulary/L16-V024-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V001",
+    "target": "einen Blog schreiben",
+    "meaning": "เขียนบล็อก",
+    "scene": "An adult actively WRITING A BLOG on a laptop at home. On the laptop screen a clean article layout with their own photo thumbnails and several blurred paragraph lines, no readable words. Hands typing, relaxed home desk, clearly composing a personal online article.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: einen Blog schreiben. Scene: An adult actively WRITING A BLOG on a laptop at home. On the laptop screen a clean article layout with their own photo thumbnails and several blurred paragraph lines, no readable words. Hands typing, relaxed home desk, clearly composing a personal online article.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V001-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V002",
+    "target": "Chef werden",
+    "meaning": "เป็นหัวหน้าหรือผู้บริหาร",
+    "scene": "A newly promoted manager being warmly congratulated by two colleagues in a modest bright office, receiving keys to a private office while standing beside the main managerial desk. Real everyday leadership/promotion scene, not luxury fantasy, no readable documents.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: Chef werden. Scene: A newly promoted manager being warmly congratulated by two colleagues in a modest bright office, receiving keys to a private office while standing beside the main managerial desk. Real everyday leadership/promotion scene, not luxury fantasy, no readable documents.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V002-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V003",
+    "target": "Schauspieler werden",
+    "meaning": "เป็นนักแสดง",
+    "scene": "An aspiring adult ACTOR rehearsing a role on a film set, facing a movie camera while a director gives guidance; a blank clapperboard and boom microphone make the acting setting unmistakable. No readable words or logos.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: Schauspieler werden. Scene: An aspiring adult ACTOR rehearsing a role on a film set, facing a movie camera while a director gives guidance; a blank clapperboard and boom microphone make the acting setting unmistakable. No readable words or logos.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V003-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V004",
+    "target": "Politiker werden",
+    "meaning": "เป็นนักการเมือง",
+    "scene": "An adult POLITICIAN speaking at a wooden podium during a local council meeting, seated council members attentively listening in the background. Civic meeting setting, no party branding, no flags with logos, no signs or readable text.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: Politiker werden. Scene: An adult POLITICIAN speaking at a wooden podium during a local council meeting, seated council members attentively listening in the background. Civic meeting setting, no party branding, no flags with logos, no signs or readable text.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V004-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V005",
+    "target": "Geld verdienen",
+    "meaning": "หาเงินหรือมีรายได้",
+    "scene": "A craftsperson finishing a small woodworking job, a satisfied customer handing them paper money as PAYMENT for their work. Tools and completed wooden shelf nearby. Emphasize earning money from work, not a gift or an ATM.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: Geld verdienen. Scene: A craftsperson finishing a small woodworking job, a satisfied customer handing them paper money as PAYMENT for their work. Tools and completed wooden shelf nearby. Emphasize earning money from work, not a gift or an ATM.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V005-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V006",
+    "target": "heiraten",
+    "meaning": "แต่งงาน",
+    "scene": "An adult couple getting MARRIED in a modest bright wedding ceremony, exchanging rings with joyful faces, tasteful wedding clothing and a small flower bouquet. Focus on the marriage ceremony, both people fully visible in context.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: heiraten. Scene: An adult couple getting MARRIED in a modest bright wedding ceremony, exchanging rings with joyful faces, tasteful wedding clothing and a small flower bouquet. Focus on the marriage ceremony, both people fully visible in context.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V006-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V007",
+    "target": "eine Familie haben",
+    "meaning": "มีครอบครัว",
+    "scene": "A happy family consisting of two adult parents and two young children playing together in their comfortable living room. Natural candid family interaction, everyone clearly visible, warm everyday home.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: eine Familie haben. Scene: A happy family consisting of two adult parents and two young children playing together in their comfortable living room. Natural candid family interaction, everyone clearly visible, warm everyday home.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V007-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V008",
+    "target": "auf einen Berg steigen",
+    "meaning": "ขึ้นภูเขา",
+    "scene": "Adult hikers actively CLIMBING UP a mountain trail toward a rocky summit, hiking boots, backpacks and steep upward path clearly visible. Wide view shows the climb, not just people standing at the top.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: auf einen Berg steigen. Scene: Adult hikers actively CLIMBING UP a mountain trail toward a rocky summit, hiking boots, backpacks and steep upward path clearly visible. Wide view shows the climb, not just people standing at the top.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V008-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V009",
+    "target": "durch Europa reisen",
+    "meaning": "เดินทางท่องเที่ยวไปตามประเทศในยุโรป",
+    "scene": "Adult tourists TRAVELLING THROUGH EUROPE by train, looking out of a train window at Paris with the Eiffel Tower clearly visible; on their table a travel map with an accurate recognizable outline of Europe and train tickets with no readable wording. Natural travel photograph.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: durch Europa reisen. Scene: Adult tourists TRAVELLING THROUGH EUROPE by train, looking out of a train window at Paris with the Eiffel Tower clearly visible; on their table a travel map with an accurate recognizable outline of Europe and train tickets with no readable wording. Natural travel photograph.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V009-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V010",
+    "target": "um die Welt segeln",
+    "meaning": "แล่นเรือรอบโลก",
+    "scene": "Complete ocean-going sailboat, entire mast, sails and hull visible, small world-chart and globe in cockpit",
+    "prompt": "Create ONE realistic German A1 vocabulary photograph for 'um die Welt segeln' (sail around the world). Landscape 3:2, 1536x1024. WIDE EXTERIOR SHOT from a nearby boat of a complete modest ocean-going sailboat on blue open water: show its ENTIRE hull from bow to stern, ENTIRE mast and ALL sails, with generous sky and ocean margins on all four sides. The entire sailboat occupies at most 65% of image width and 75% of image height. It is underway offshore on a long voyage, softly warm natural daylight. A small real world-chart and nautical globe may be visible on the cockpit table if feasible, but prioritize the complete boat. Do NOT use an onboard close-up, crop the mast, crop the sail tips, crop the hull or add any graphic globe overlay. No text, captions, watermarks, icons or collages.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V010-photo-v3.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen",
+    "previousAttempt": {
+      "destination": "public/images/lektion-17-vocabulary/L17-V010-photo-v2.png",
+      "reason": "Rejected because the mast and hull were cropped"
+    }
+  },
+  {
+    "id": "L17-V011",
+    "target": "im Ausland leben",
+    "meaning": "อาศัยอยู่ต่างประเทศ",
+    "scene": "An adult settling into a new apartment ABROAD, unpacking a moving suitcase and placing belongings on a shelf, a Paris street and Eiffel Tower seen through the window. Clearly living and moving in, not a tourist staying one night.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: im Ausland leben. Scene: An adult settling into a new apartment ABROAD, unpacking a moving suitcase and placing belongings on a shelf, a Paris street and Eiffel Tower seen through the window. Clearly living and moving in, not a tourist staying one night.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V011-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V012",
+    "target": "Motorrad fahren",
+    "meaning": "ขี่รถจักรยานยนต์",
+    "scene": "An adult safely RIDING a motorcycle along a quiet country road, wearing a helmet and suitable riding clothes. Motorcycle completely visible with both wheels in frame, clear road and riding posture.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: Motorrad fahren. Scene: An adult safely RIDING a motorcycle along a quiet country road, wearing a helmet and suitable riding clothes. Motorcycle completely visible with both wheels in frame, clear road and riding posture.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V012-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V013",
+    "target": "den Führerschein machen",
+    "meaning": "เรียนและสอบเพื่อให้ได้ใบขับขี่",
+    "scene": "An adult learner driver having a DRIVING LESSON inside a normal small car, a professional instructor seated beside them observing and giving calm guidance. Dual controls subtly visible, seatbelts fastened, learner hands correctly on wheel. No readable signs or text.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: den Führerschein machen. Scene: An adult learner driver having a DRIVING LESSON inside a normal small car, a professional instructor seated beside them observing and giving calm guidance. Dual controls subtly visible, seatbelts fastened, learner hands correctly on wheel. No readable signs or text.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V013-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V014",
+    "target": "ein Instrument lernen",
+    "meaning": "เรียนเล่นเครื่องดนตรี",
+    "scene": "An adult beginner LEARNING to play an acoustic guitar with a teacher gently showing correct finger placement. Both people and the complete guitar visible, relaxed music lesson in a bright room.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: ein Instrument lernen. Scene: An adult beginner LEARNING to play an acoustic guitar with a teacher gently showing correct finger placement. Both people and the complete guitar visible, relaxed music lesson in a bright room.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V014-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V015",
+    "target": "viele Fremdsprachen lernen",
+    "meaning": "เรียนภาษาต่างประเทศหลายภาษา",
+    "scene": "An adult STUDYING MULTIPLE FOREIGN LANGUAGES at a desk, with three language-learning books, a notebook with several different writing systems and headphones. Tiny book and notebook writing is blurred and unreadable. Concentrated learner, clear study situation, no readable labels.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: viele Fremdsprachen lernen. Scene: An adult STUDYING MULTIPLE FOREIGN LANGUAGES at a desk, with three language-learning books, a notebook with several different writing systems and headphones. Tiny book and notebook writing is blurred and unreadable. Concentrated learner, clear study situation, no readable labels.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V015-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V016",
+    "target": "drei Monate freihaben",
+    "meaning": "หยุดหรือมีเวลาว่างสามเดือน",
+    "scene": "An adult enjoying a long vacation, relaxing beside packed luggage and a physical wall calendar showing THREE successive monthly grids highlighted together as one continuous break. Date numbers only, no words. Warm summer daylight, three months clearly emphasized.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: drei Monate freihaben. Scene: An adult enjoying a long vacation, relaxing beside packed luggage and a physical wall calendar showing THREE successive monthly grids highlighted together as one continuous break. Date numbers only, no words. Warm summer daylight, three months clearly emphasized.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V016-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V017",
+    "target": "der Wunsch",
+    "meaning": "ความปรารถนาหรือสิ่งที่อยากทำ",
+    "scene": "An adult making a quiet personal WISH while closing their eyes just before blowing out birthday candles on a small cake. A travel magazine with a beautiful beach photo lies nearby suggesting a hoped-for trip. Natural scene, no text or thought bubbles.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Wunsch. Scene: An adult making a quiet personal WISH while closing their eyes just before blowing out birthday candles on a small cake. A travel magazine with a beautiful beach photo lies nearby suggesting a hoped-for trip. Natural scene, no text or thought bubbles.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V017-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V018",
+    "target": "der Plan",
+    "meaning": "แผน",
+    "scene": "An adult carefully making a concrete PLAN for a trip at a desk, arranging a physical route map, calendar dates and a short handwritten checklist of tiny unreadable lines, pointing along a clear route. Action-oriented planning, no wishful posing, no readable words.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Plan. Scene: An adult carefully making a concrete PLAN for a trip at a desk, arranging a physical route map, calendar dates and a short handwritten checklist of tiny unreadable lines, pointing along a clear route. Action-oriented planning, no wishful posing, no readable words.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V018-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V019",
+    "target": "der Beruf",
+    "meaning": "อาชีพ",
+    "scene": "A skilled carpenter doing their JOB in a bright woodworking workshop, wearing practical work clothes and using a hand plane on a wooden workpiece. Clear occupation and professional setting, complete relevant tools visible, no text.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Beruf. Scene: A skilled carpenter doing their JOB in a bright woodworking workshop, wearing practical work clothes and using a hand plane on a wooden workpiece. Clear occupation and professional setting, complete relevant tools visible, no text.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V019-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V020",
+    "target": "die Ausbildung",
+    "meaning": "การฝึกหรือเรียนวิชาชีพ",
+    "scene": "A young adult apprentice receiving VOCATIONAL TRAINING from an experienced electrician in a clean training workshop, teacher demonstrating a disconnected practice electrical board while apprentice follows attentively. Safe equipment, no live electrical hazards, no readable text.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Ausbildung. Scene: A young adult apprentice receiving VOCATIONAL TRAINING from an experienced electrician in a clean training workshop, teacher demonstrating a disconnected practice electrical board while apprentice follows attentively. Safe equipment, no live electrical hazards, no readable text.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V020-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V021",
+    "target": "die Firma",
+    "meaning": "บริษัท",
+    "scene": "A small real COMPANY office building exterior with employees entering through the front door, windows reveal desks and colleagues working, modest commercial building rather than a home. No company names, no signage or logos.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Firma. Scene: A small real COMPANY office building exterior with employees entering through the front door, windows reveal desks and colleagues working, modest commercial building rather than a home. No company names, no signage or logos.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V021-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L17-V022",
+    "target": "das Geld",
+    "meaning": "เงิน",
+    "scene": "Close still-life photograph of MONEY: several realistic Euro-style banknotes and mixed euro coins arranged on a wooden tabletop. Currency numerals and the euro sign may be visible, but all letter text and branding blurred. No wallets or hands hiding the money.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Geld. Scene: Close still-life photograph of MONEY: several realistic Euro-style banknotes and mixed euro coins arranged on a wooden tabletop. Currency numerals and the euro sign may be visible, but all letter text and branding blurred. No wallets or hands hiding the money.",
+    "destination": "public/images/lektion-17-vocabulary/L17-V022-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V001",
+    "target": "die Brust",
+    "meaning": "หน้าอก",
+    "scene": "Educational photograph of an adult wearing a plain light T-shirt, front upper torso from shoulders to upper abdomen. A subtle translucent red highlight identifies only the CHEST area across the upper front torso. Chest fully covered by clothing. Neutral warm background, nonsexual classroom image.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Brust. Scene: Educational photograph of an adult wearing a plain light T-shirt, front upper torso from shoulders to upper abdomen. A subtle translucent red highlight identifies only the CHEST area across the upper front torso. Chest fully covered by clothing. Neutral warm background, nonsexual classroom image.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V001-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V002",
+    "target": "der Rücken",
+    "meaning": "หลัง",
+    "scene": "Educational photograph of an adult viewed from BEHIND wearing a plain fitted light T-shirt, shoulders to hips visible. A subtle translucent red highlight identifies the BACK across the upper and middle rear torso. Entire back region visible, fully clothed, nonsexual.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Rücken. Scene: Educational photograph of an adult viewed from BEHIND wearing a plain fitted light T-shirt, shoulders to hips visible. A subtle translucent red highlight identifies the BACK across the upper and middle rear torso. Entire back region visible, fully clothed, nonsexual.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V002-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V003",
+    "target": "der Bauch",
+    "meaning": "ท้อง",
+    "scene": "Educational photograph of an adult front torso wearing a plain light T-shirt and trousers, chest to hips visible. A subtle translucent red highlight identifies the ABDOMEN below the ribs and above the waist. Fully clothed, nonsexual.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Bauch. Scene: Educational photograph of an adult front torso wearing a plain light T-shirt and trousers, chest to hips visible. A subtle translucent red highlight identifies the ABDOMEN below the ribs and above the waist. Fully clothed, nonsexual.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V003-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V004",
+    "target": "der Arm",
+    "meaning": "แขน",
+    "scene": "Educational photograph of one complete adult ARM, visible from shoulder through elbow to wrist and relaxed hand, wearing a plain short-sleeved shirt. Arm extends sideways against a neutral warm backdrop; subtle translucent red highlight on the arm, not on the hand. No cropped joints.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Arm. Scene: Educational photograph of one complete adult ARM, visible from shoulder through elbow to wrist and relaxed hand, wearing a plain short-sleeved shirt. Arm extends sideways against a neutral warm backdrop; subtle translucent red highlight on the arm, not on the hand. No cropped joints.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V004-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V005",
+    "target": "die Hand",
+    "meaning": "มือ",
+    "scene": "Close educational photograph of one complete human HAND, palm facing camera with all five fingers naturally spread, wrist visible, neutral warm background. All fingers and thumb fully in frame, accurate anatomy, no text.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Hand. Scene: Close educational photograph of one complete human HAND, palm facing camera with all five fingers naturally spread, wrist visible, neutral warm background. All fingers and thumb fully in frame, accurate anatomy, no text.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V005-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V006",
+    "target": "der Finger",
+    "meaning": "นิ้วมือ",
+    "scene": "Close educational photograph of a human hand with the INDEX FINGER extended upward and the other fingers gently curled. A subtle translucent red highlight identifies only the extended index finger from base to tip. Full hand visible, accurate anatomy, no text.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Finger. Scene: Close educational photograph of a human hand with the INDEX FINGER extended upward and the other fingers gently curled. A subtle translucent red highlight identifies only the extended index finger from base to tip. Full hand visible, accurate anatomy, no text.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V006-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V007",
+    "target": "das Bein",
+    "meaning": "ขา",
+    "scene": "Educational photograph of one full adult LEG from hip to ankle, wearing simple fitted sports trousers, standing naturally. A subtle translucent red highlight identifies the whole leg, not just knee or foot. Neutral warm backdrop, nonsexual, full leg in frame.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Bein. Scene: Educational photograph of one full adult LEG from hip to ankle, wearing simple fitted sports trousers, standing naturally. A subtle translucent red highlight identifies the whole leg, not just knee or foot. Neutral warm backdrop, nonsexual, full leg in frame.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V007-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V008",
+    "target": "das Knie",
+    "meaning": "เข่า",
+    "scene": "Educational close photograph of an adult KNEE naturally bent while seated, wearing plain knee-length shorts. Knee centered and completely visible, subtle translucent red highlight around the knee joint only. No injury, no bruising, nonsexual classroom image.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Knie. Scene: Educational close photograph of an adult KNEE naturally bent while seated, wearing plain knee-length shorts. Knee centered and completely visible, subtle translucent red highlight around the knee joint only. No injury, no bruising, nonsexual classroom image.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V008-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V009",
+    "target": "der Fuß",
+    "meaning": "เท้า",
+    "scene": "Educational close photograph of one complete bare human FOOT from ankle through all toes, resting naturally on a clean neutral surface, side/front three-quarter view. All five toes and heel fully in frame, no shoe, no footprints, nonsexual.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Fuß. Scene: Educational close photograph of one complete bare human FOOT from ankle through all toes, resting naturally on a clean neutral surface, side/front three-quarter view. All five toes and heel fully in frame, no shoe, no footprints, nonsexual.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V009-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V010",
+    "target": "das Auge",
+    "meaning": "ตา",
+    "scene": "Educational extreme close photograph of one human EYE with eyebrow and surrounding skin visible, eye open naturally and looking forward, iris sharp. Neutral soft daylight, no makeup emphasis, whole eye in frame.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Auge. Scene: Educational extreme close photograph of one human EYE with eyebrow and surrounding skin visible, eye open naturally and looking forward, iris sharp. Neutral soft daylight, no makeup emphasis, whole eye in frame.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V010-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V011",
+    "target": "der Hals",
+    "meaning": "คอ",
+    "scene": "Educational photograph of an adult head and upper shoulders wearing a plain crewneck T-shirt. A subtle translucent red highlight clearly identifies the NECK between chin and collarbone, not the face or shoulders. Neutral warm backdrop, nonsexual.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Hals. Scene: Educational photograph of an adult head and upper shoulders wearing a plain crewneck T-shirt. A subtle translucent red highlight clearly identifies the NECK between chin and collarbone, not the face or shoulders. Neutral warm backdrop, nonsexual.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V011-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V012",
+    "target": "der Mund",
+    "meaning": "ปาก",
+    "scene": "Educational close photograph of a relaxed human MOUTH with lips gently closed, nose tip and chin partially visible for context, focus sharply on full lips. No smiley face, no lipstick advertisement, no text, nonsexual.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Mund. Scene: Educational close photograph of a relaxed human MOUTH with lips gently closed, nose tip and chin partially visible for context, focus sharply on full lips. No smiley face, no lipstick advertisement, no text, nonsexual.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V012-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V013",
+    "target": "der Kopf",
+    "meaning": "ศีรษะ",
+    "scene": "Educational portrait photograph showing a complete adult HEAD from the top of the hair to beneath the chin, both ears visible, a little neck and shoulders for context. A subtle translucent outline around the entire head identifies the head as a whole rather than a single facial feature. Neutral backdrop.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Kopf. Scene: Educational portrait photograph showing a complete adult HEAD from the top of the hair to beneath the chin, both ears visible, a little neck and shoulders for context. A subtle translucent outline around the entire head identifies the head as a whole rather than a single facial feature. Neutral backdrop.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V013-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V014",
+    "target": "die Nase",
+    "meaning": "จมูก",
+    "scene": "Educational close photograph of the human NOSE, frontal three-quarter view showing the bridge, tip and nostrils clearly. Some cheek and part of eyes visible for context but the nose is the clear focal subject, subtle translucent highlight only on the nose.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Nase. Scene: Educational close photograph of the human NOSE, frontal three-quarter view showing the bridge, tip and nostrils clearly. Some cheek and part of eyes visible for context but the nose is the clear focal subject, subtle translucent highlight only on the nose.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V014-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V015",
+    "target": "das Ohr",
+    "meaning": "หู",
+    "scene": "Educational close photograph of one complete human EAR viewed from the side, all outer ear structures and earlobe fully visible, hair tucked away. Neutral soft light, no jewelry, no text.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Ohr. Scene: Educational close photograph of one complete human EAR viewed from the side, all outer ear structures and earlobe fully visible, hair tucked away. Neutral soft light, no jewelry, no text.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V015-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V016",
+    "target": "die Kopfschmerzen",
+    "meaning": "อาการปวดศีรษะ",
+    "scene": "An adult with a HEADACHE sitting on a sofa, both hands pressing their temples, eyes partly closed and brow tense. Clearly pain in the head rather than ear or throat; upper body and both hands fully visible. Everyday non-graphic health scene.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Kopfschmerzen. Scene: An adult with a HEADACHE sitting on a sofa, both hands pressing their temples, eyes partly closed and brow tense. Clearly pain in the head rather than ear or throat; upper body and both hands fully visible. Everyday non-graphic health scene.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V016-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V017",
+    "target": "die Rückenschmerzen",
+    "meaning": "อาการปวดหลัง",
+    "scene": "An adult experiencing BACK PAIN, viewed three-quarter from behind, one hand pressing their lower back, body slightly bent and face turned enough to show a pained expression. Fully clothed, no injury or medical procedure.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Rückenschmerzen. Scene: An adult experiencing BACK PAIN, viewed three-quarter from behind, one hand pressing their lower back, body slightly bent and face turned enough to show a pained expression. Fully clothed, no injury or medical procedure.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V017-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V018",
+    "target": "die Halsschmerzen",
+    "meaning": "อาการเจ็บคอ",
+    "scene": "An adult with a SORE THROAT gently touching the front of the neck below the chin while swallowing with a mildly pained expression. A glass of water nearby. Clearly throat discomfort, not headache or earache, fully clothed.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Halsschmerzen. Scene: An adult with a SORE THROAT gently touching the front of the neck below the chin while swallowing with a mildly pained expression. A glass of water nearby. Clearly throat discomfort, not headache or earache, fully clothed.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V018-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V019",
+    "target": "die Ohrenschmerzen",
+    "meaning": "อาการปวดหู",
+    "scene": "An adult experiencing EARACHE, gently cupping just one ear with a hand, face showing discomfort, opposite hand relaxed. Side three-quarter view makes the affected ear clear, not a person listening carefully. Non-graphic health scene.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Ohrenschmerzen. Scene: An adult experiencing EARACHE, gently cupping just one ear with a hand, face showing discomfort, opposite hand relaxed. Side three-quarter view makes the affected ear clear, not a person listening carefully. Non-graphic health scene.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V019-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V020",
+    "target": "die Bauchschmerzen",
+    "meaning": "อาการปวดท้อง",
+    "scene": "An adult with a STOMACH ACHE sitting on a chair, both hands holding the abdomen below the ribs, body bent slightly forward and face showing discomfort. Fully clothed, clear abdomen location, no medical procedures.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Bauchschmerzen. Scene: An adult with a STOMACH ACHE sitting on a chair, both hands holding the abdomen below the ribs, body bent slightly forward and face showing discomfort. Fully clothed, clear abdomen location, no medical procedures.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V020-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V021",
+    "target": "der Schnupfen",
+    "meaning": "อาการน้ำมูกไหลหรือคัดจมูก",
+    "scene": "An adult with a RUNNY NOSE blowing their nose into a plain white tissue, nose slightly reddened, a tissue box nearby. Clear common cold symptom, no blood, no graphic mucus, no text.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Schnupfen. Scene: An adult with a RUNNY NOSE blowing their nose into a plain white tissue, nose slightly reddened, a tissue box nearby. Clear common cold symptom, no blood, no graphic mucus, no text.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V021-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V022",
+    "target": "der Husten",
+    "meaning": "อาการไอ",
+    "scene": "An adult COUGHING into the bend of their elbow, mouth slightly open and upper body leaning forward, cough posture clear rather than sneezing. A glass of water nearby. Everyday non-graphic health scene.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Husten. Scene: An adult COUGHING into the bend of their elbow, mouth slightly open and upper body leaning forward, cough posture clear rather than sneezing. A glass of water nearby. Everyday non-graphic health scene.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V022-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V023",
+    "target": "das Fieber",
+    "meaning": "ไข้",
+    "scene": "An adult with FEVER resting in bed with a light blanket, flushed face and a digital thermometer in the foreground clearly displaying 38.5 degrees Celsius. The numeric temperature is the only readable marking, no words or other labels.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Fieber. Scene: An adult with FEVER resting in bed with a light blanket, flushed face and a digital thermometer in the foreground clearly displaying 38.5 degrees Celsius. The numeric temperature is the only readable marking, no words or other labels.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V023-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V024",
+    "target": "die Tablette",
+    "meaning": "ยาเม็ด",
+    "scene": "Clean close product photograph of ONE round white medicine TABLET with a clear scored line, lying beside a single opened blister pocket for scale. Tablet in sharp focus, neutral warm surface, no packaging words, no colored capsules.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Tablette. Scene: Clean close product photograph of ONE round white medicine TABLET with a clear scored line, lying beside a single opened blister pocket for scale. Tablet in sharp focus, neutral warm surface, no packaging words, no colored capsules.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V024-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V025",
+    "target": "das Medikament",
+    "meaning": "ยา",
+    "scene": "Clean product photograph of MEDICATION: a small assortment of tablets in a blister pack and a small medicine container next to a plain unbranded medicine box. All packages blank without text or logos. Clear pharmacy medicine context, not food or cosmetics.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: das Medikament. Scene: Clean product photograph of MEDICATION: a small assortment of tablets in a blister pack and a small medicine container next to a plain unbranded medicine box. All packages blank without text or logos. Clear pharmacy medicine context, not food or cosmetics.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V025-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V026",
+    "target": "die Salbe",
+    "meaning": "ยาทาหรือขี้ผึ้ง",
+    "scene": "Clean product photograph of a real OINTMENT tube with cap removed, a small dab of thick white ointment at the nozzle on a neutral surface. Entire tube, cap and cream visible. Plain unbranded tube, no wording or medical icons.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: die Salbe. Scene: Clean product photograph of a real OINTMENT tube with cap removed, a small dab of thick white ointment at the nozzle on a neutral surface. Entire tube, cap and cream visible. Plain unbranded tube, no wording or medical icons.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V026-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  },
+  {
+    "id": "L18-V027",
+    "target": "der Hustensaft",
+    "meaning": "ยาแก้ไอชนิดน้ำ",
+    "scene": "Clean product photograph of COUGH SYRUP: a small amber medicine bottle containing syrup, cap open, with a medicine dosing spoon holding a little viscous amber liquid beside it. Bottle and spoon fully visible. Blank label with no text, no wine-glass shape.",
+    "prompt": "Create ONE new production German A1 vocabulary learning image. Landscape 3:2, 1536x1024 if available. Realistic natural photography, soft warm daylight, clear simple composition, detailed real materials, matching the established earlier lesson vocabulary pictures. Show the important subject completely without clipping. No icons, no vector drawings, no pictograms, no stick figures, no UI mockups, no collage, no captions, no German or Thai answer labels, no watermark, no logos. Keep the picture semantically specific to the requested target. Target meaning: der Hustensaft. Scene: Clean product photograph of COUGH SYRUP: a small amber medicine bottle containing syrup, cap open, with a medicine dosing spoon holding a little viscous amber liquid beside it. Bottle and spoon fully visible. Blank label with no text, no wine-glass shape.",
+    "destination": "public/images/lektion-18-vocabulary/L18-V027-photo-v2.png",
+    "status": "generated-reviewed",
+    "method": "built-in imagegen"
+  }
+]

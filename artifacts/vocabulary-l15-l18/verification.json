@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-23",
+  "scope": "L15-L18 vocabulary Learn",
+  "targets": {
+    "L15": 24,
+    "L16": 24,
+    "L17": 22,
+    "L18": 27
+  },
+  "unitTestsPassed": 19,
+  "typecheck": "passed",
+  "databaseSuites": [
+    "a13-release-database.mjs",
+    "a13-release-practice-database.mjs"
+  ],
+  "browserChecks": [
+    "97 matches persisted across original and resumed runs",
+    "all lesson pages reload with learned targets",
+    "canonical Practice eligibility",
+    "ordinary-account UI without tester bypass",
+    "separate second account remains unlearned",
+    "historical Learn draft and assistance resume",
+    "first response retained after original trial",
+    "all four after-learning links open a task directly"
+  ],
+  "auth": "simulated local Auth, real project SQL validators and RLS",
+  "interruptionRecovery": "Restored the isolated test snapshot after server interruption; verified saved targets and remaining Practice/account checks",
+  "hostedDeployment": false
+}

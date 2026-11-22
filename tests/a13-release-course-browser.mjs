@@ -46,12 +46,12 @@ try {
     if (data.email) data.email = 'ordinary-learner@deutsch.test';
     return route.fulfill({ response, json: data });
   });
-  await page.goto('http://localhost:3002/learn/L15/vocabulary');
+  await page.goto('http://localhost:3002/learn/L15/grammar');
   await page.getByLabel('อีเมล', { exact: true }).fill('tester2@deutsch.test');
   await page.getByLabel('รหัสผ่าน', { exact: true }).fill('TestOnly123!');
   await page.getByRole('button', { name: 'เข้าสู่ระบบ', exact: true }).click();
   await page.locator('.release-course').waitFor();
-  for (const course of a13ReleaseCourses) {
+  for (const course of a13ReleaseCourses.filter(course => course.skill !== 'vocabulary')) {
     const key = `deutsch-trainer-release-course-v1-${course.lessonId}-${course.skill}`;
     await page.goto(`http://localhost:3002/learn/${course.lessonId}/${course.skill}`);
     await page.getByRole('button', { name: 'ลองใช้สิ่งที่เพิ่งเรียน', exact: true }).waitFor();
@@ -82,5 +82,5 @@ try {
     console.log(`${course.lessonId} ${course.skill}: real account save, draft reload, check, next`);
   }
   assert.deepEqual(failures, []);
-  console.log('All 12 released courses passed through ordinary UI against real local RLS/validators; auth display email adjusted, writes not mocked.');
+  console.log('All 8 grammar and phrase courses passed through ordinary UI against real local RLS/validators; auth display email adjusted, writes not mocked.');
 } finally { await browser.close(); }

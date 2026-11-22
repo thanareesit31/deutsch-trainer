@@ -1,0 +1,13 @@
+{
+  "scope": "Vocabulary image correction L15-L18",
+  "newPhotographs": 67,
+  "retainedRasterPictures": 30,
+  "reviewedAndHashed": 67,
+  "vectorReferences": 0,
+  "typecheck": "passed",
+  "unitTestsPassed": 20,
+  "browserChecks": "L16 help/repair, L17 plans, L18 body and pain at 390/1440px; real images decoded, contain layout and no horizontal overflow",
+  "historyAndEligibility": "Existing IDs, grading, checkpoints and evidence bindings unchanged; existing unit checks pass",
+  "generation": "Built-in imagegen; prompts and destinations in jobs.json",
+  "deployment": "local test website only; not deployed"
+}

@@ -1,0 +1,348 @@
+{
+  "scope": "L15-L18 vocabulary illustrations",
+  "reason": "Icon/Thai-label placeholders do not meet established picture vocabulary principles",
+  "existingRasterAssets": 30,
+  "replacementsRequired": 67,
+  "targets": [
+    {
+      "id": "L16-V001",
+      "image": "/images/lektion-16-vocabulary/L16-V001-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V004",
+      "image": "/images/lektion-16-vocabulary/L16-V004-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V005",
+      "image": "/images/lektion-16-vocabulary/L16-V005-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V006",
+      "image": "/images/lektion-16-vocabulary/L16-V006-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V008",
+      "image": "/images/lektion-16-vocabulary/L16-V008-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V010",
+      "image": "/images/lektion-16-vocabulary/L16-V010-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V011",
+      "image": "/images/lektion-16-vocabulary/L16-V011-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V013",
+      "image": "/images/lektion-16-vocabulary/L16-V013-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V014",
+      "image": "/images/lektion-16-vocabulary/L16-V014-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V016",
+      "image": "/images/lektion-16-vocabulary/L16-V016-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V017",
+      "image": "/images/lektion-16-vocabulary/L16-V017-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V018",
+      "image": "/images/lektion-16-vocabulary/L16-V018-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V019",
+      "image": "/images/lektion-16-vocabulary/L16-V019-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V020",
+      "image": "/images/lektion-16-vocabulary/L16-V020-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V021",
+      "image": "/images/lektion-16-vocabulary/L16-V021-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V022",
+      "image": "/images/lektion-16-vocabulary/L16-V022-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V023",
+      "image": "/images/lektion-16-vocabulary/L16-V023-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L16-V024",
+      "image": "/images/lektion-16-vocabulary/L16-V024-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V001",
+      "image": "/images/lektion-17-vocabulary/L17-V001-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V002",
+      "image": "/images/lektion-17-vocabulary/L17-V002-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V003",
+      "image": "/images/lektion-17-vocabulary/L17-V003-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V004",
+      "image": "/images/lektion-17-vocabulary/L17-V004-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V005",
+      "image": "/images/lektion-17-vocabulary/L17-V005-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V006",
+      "image": "/images/lektion-17-vocabulary/L17-V006-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V007",
+      "image": "/images/lektion-17-vocabulary/L17-V007-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V008",
+      "image": "/images/lektion-17-vocabulary/L17-V008-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V009",
+      "image": "/images/lektion-17-vocabulary/L17-V009-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V010",
+      "image": "/images/lektion-17-vocabulary/L17-V010-photo-v3.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V011",
+      "image": "/images/lektion-17-vocabulary/L17-V011-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V012",
+      "image": "/images/lektion-17-vocabulary/L17-V012-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V013",
+      "image": "/images/lektion-17-vocabulary/L17-V013-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V014",
+      "image": "/images/lektion-17-vocabulary/L17-V014-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V015",
+      "image": "/images/lektion-17-vocabulary/L17-V015-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V016",
+      "image": "/images/lektion-17-vocabulary/L17-V016-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V017",
+      "image": "/images/lektion-17-vocabulary/L17-V017-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V018",
+      "image": "/images/lektion-17-vocabulary/L17-V018-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V019",
+      "image": "/images/lektion-17-vocabulary/L17-V019-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V020",
+      "image": "/images/lektion-17-vocabulary/L17-V020-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V021",
+      "image": "/images/lektion-17-vocabulary/L17-V021-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L17-V022",
+      "image": "/images/lektion-17-vocabulary/L17-V022-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V001",
+      "image": "/images/lektion-18-vocabulary/L18-V001-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V002",
+      "image": "/images/lektion-18-vocabulary/L18-V002-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V003",
+      "image": "/images/lektion-18-vocabulary/L18-V003-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V004",
+      "image": "/images/lektion-18-vocabulary/L18-V004-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V005",
+      "image": "/images/lektion-18-vocabulary/L18-V005-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V006",
+      "image": "/images/lektion-18-vocabulary/L18-V006-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V007",
+      "image": "/images/lektion-18-vocabulary/L18-V007-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V008",
+      "image": "/images/lektion-18-vocabulary/L18-V008-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V009",
+      "image": "/images/lektion-18-vocabulary/L18-V009-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V010",
+      "image": "/images/lektion-18-vocabulary/L18-V010-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V011",
+      "image": "/images/lektion-18-vocabulary/L18-V011-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V012",
+      "image": "/images/lektion-18-vocabulary/L18-V012-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V013",
+      "image": "/images/lektion-18-vocabulary/L18-V013-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V014",
+      "image": "/images/lektion-18-vocabulary/L18-V014-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V015",
+      "image": "/images/lektion-18-vocabulary/L18-V015-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V016",
+      "image": "/images/lektion-18-vocabulary/L18-V016-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V017",
+      "image": "/images/lektion-18-vocabulary/L18-V017-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V018",
+      "image": "/images/lektion-18-vocabulary/L18-V018-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V019",
+      "image": "/images/lektion-18-vocabulary/L18-V019-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V020",
+      "image": "/images/lektion-18-vocabulary/L18-V020-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V021",
+      "image": "/images/lektion-18-vocabulary/L18-V021-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V022",
+      "image": "/images/lektion-18-vocabulary/L18-V022-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V023",
+      "image": "/images/lektion-18-vocabulary/L18-V023-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V024",
+      "image": "/images/lektion-18-vocabulary/L18-V024-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V025",
+      "image": "/images/lektion-18-vocabulary/L18-V025-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V026",
+      "image": "/images/lektion-18-vocabulary/L18-V026-photo-v2.png",
+      "status": "reviewed"
+    },
+    {
+      "id": "L18-V027",
+      "image": "/images/lektion-18-vocabulary/L18-V027-photo-v2.png",
+      "status": "reviewed"
+    }
+  ],
+  "preview": "artifacts/vocabulary-image-correction/L16-V013-photo-v2.png",
+  "status": "All 67 replacements generated with built-in imagegen, visually reviewed and installed in the local image catalog",
+  "visualReviews": "artifacts/vocabulary-image-correction/visual-review.json",
+  "promptSet": "artifacts/vocabulary-image-correction/jobs.json",
+  "authorization": "User approved tool-managed original image files under .codex/generated_images for this task"
+}

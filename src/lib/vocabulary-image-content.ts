@@ -175,6 +175,20 @@ const vocabularyImageGroupThai: Record<string, string> = {
   "Plätze und Wege": "สถานที่และทางในเมือง",
   "Wohnen und Zimmer": "บ้านและห้อง",
   "Teile der Wohnung": "ส่วนต่าง ๆ ของที่อยู่อาศัย",
+  Geräte: "อุปกรณ์",
+  "Hilfe und Reparatur": "การขอความช่วยเหลือและซ่อมแซม",
+  Termine: "การนัดหมาย",
+  "Berufliche Pläne": "แผนอาชีพ",
+  "Reisen und Erlebnisse": "การเดินทางและประสบการณ์",
+  "Lernen und Freizeit": "การเรียนรู้และเวลาว่าง",
+  "Wünsche und Pläne": "ความต้องการและแผน",
+  Rumpf: "ลำตัว",
+  "Arme und Hände": "แขนและมือ",
+  "Beine und Füße": "ขาและเท้า",
+  "Kopf und Gesicht": "ศีรษะและใบหน้า",
+  Schmerzen: "อาการปวด",
+  Beschwerden: "อาการอื่น",
+  Medikamente: "ยาและของใช้ดูแลอาการ",
 };
 
 const l03FamilyImageAliases = new Map([

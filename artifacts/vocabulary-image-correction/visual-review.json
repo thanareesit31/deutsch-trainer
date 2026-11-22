@@ -1,0 +1,672 @@
+{
+  "L16-V001": {
+    "status": "reviewed",
+    "sha256": "51a72f77057c44d5b01cf8e2cee5393fadfaecfe718c0e05795e6f728fc5d00c",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V004": {
+    "status": "reviewed",
+    "sha256": "b84d2e7ce83918d855a5c58b2e5f88781cf9202f4608db5890de1ed378bf0bc9",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V005": {
+    "status": "reviewed",
+    "sha256": "df9a2cfb34789b1b0885917268333a4556c93d449aafb92ae24a2693126b4f50",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V006": {
+    "status": "reviewed",
+    "sha256": "c57f72464ef9b3044c61965e07b058641ae6259c6d38a1a3414e7900af81e478",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V008": {
+    "status": "reviewed",
+    "sha256": "f4d7d1800a3951f422e311d72dd26a092292bd30e5a59c039fbc7e3a566a8e26",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V010": {
+    "status": "reviewed",
+    "sha256": "916839851b40a9f54c777f9b57c51c476dfbe36db68271b103d7e9de4541f895",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V013": {
+    "status": "reviewed",
+    "sha256": "5b11593901624c23b5fe8caba21490b4abc1bca7096b01de47d24cc486fd3024",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V022": {
+    "status": "reviewed",
+    "sha256": "658c16302d1192807cee3145b448dc805ce58fd30ece819970443e58b78e5b83",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V023": {
+    "status": "reviewed",
+    "sha256": "d92b6583bd0c3e8957d1d390bc7c1f0765882e7dd8976b2387c1a82ec6d7b887",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V011": {
+    "status": "reviewed",
+    "sha256": "046e89828fefee62a86bc1359aa45b63b0d6ab05a815b663e7f51fea1db852dc",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V014": {
+    "status": "reviewed",
+    "sha256": "d815c3811ced997ebad14b8cd158f8cbb8b0a74ab9c79b13b534a2cba3a1e5a0",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V016": {
+    "status": "reviewed",
+    "sha256": "5e78b3f454f0fc628472a0091eb70c7e82b0359943fdd95a739529c4d1fbd3d8",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V017": {
+    "status": "reviewed",
+    "sha256": "9339153a2bf5bb4dbc665deee08df26c0707d02495778148be9e17c62adf3cff",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V018": {
+    "status": "reviewed",
+    "sha256": "f9f9c5d3f55e3447ae81ca6ccbaa2c2ec36f7666e37e12dd2c947934757d5bae",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V019": {
+    "status": "reviewed",
+    "sha256": "4d7d62c0a914b7a2378042d5113b842a3495e01219b72b5a46d74535212258a2",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V020": {
+    "status": "reviewed",
+    "sha256": "b13817926995e823a9dabbc543b9504cedcaa00a27a62abf58fe771c1fee4e86",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V021": {
+    "status": "reviewed",
+    "sha256": "ec0a559ff678d14c0f220bfc5a0d786e76b05628d1f374eb18aa6a3f43f6a29c",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L16-V024": {
+    "status": "reviewed",
+    "sha256": "897edc5950850b2c6a47ca7b05371cee843975c11bb140965ab653081958bbeb",
+    "checks": [
+      "meaningful real object or situation",
+      "no answer captions",
+      "complete subject in 3:2 image",
+      "contrast between working, broken and repairing preserved"
+    ]
+  },
+  "L17-V001": {
+    "status": "reviewed",
+    "sha256": "364de7b57663032975e70cf42c4f53ea6426491fbbe189c133027d1d20c67790",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V002": {
+    "status": "reviewed",
+    "sha256": "d6c61285fcb6cce14408412cc1f530cdb1066c212b1785427a52f848d93a9d0e",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V003": {
+    "status": "reviewed",
+    "sha256": "813dbec9a1aa77ff684a36576362501ebcd55a4f5f2abc9d2a349195cb9c74a5",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V004": {
+    "status": "reviewed",
+    "sha256": "6ed2f42e21619e5e487b508c3e586b5f15c3b4ede623566701aaff6aeaa27a53",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V005": {
+    "status": "reviewed",
+    "sha256": "22efd4281b52f7013be57bda463c2b5708f5c9b0bb4454fac7d54d4c0905ebe5",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V006": {
+    "status": "reviewed",
+    "sha256": "c05707c1954be664d4fd35b41fe54de9d4b91bf1a8019d6c78a90f6f00d16544",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V007": {
+    "status": "reviewed",
+    "sha256": "8c997c501929c0664dbb2428deb109128def27cb9e677f6e30d8f6d5c83f94c4",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V008": {
+    "status": "reviewed",
+    "sha256": "3ddbed65f1d61a81b5a53bb5bdd8983d45cd8bdfaf1ca2d96bc70d396d07c72d",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V009": {
+    "status": "reviewed",
+    "sha256": "880692748ac382c6407a3f78171c43c82706263188b781a2f4ee01e4b03f13f7",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V011": {
+    "status": "reviewed",
+    "sha256": "a777dcb0b2cde7879b0279e8d1522cc4a035920e0fafb2826d605922ca970a9f",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V012": {
+    "status": "reviewed",
+    "sha256": "d5604a38ad54c5f4cc3fb0b8e097fb16b85aba1b5357655df464fa250ba0e27a",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V013": {
+    "status": "reviewed",
+    "sha256": "ce9095b8a035a578f7a1e56126bff6f10ddd90dec2504b4507b1196cad80dbde",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V014": {
+    "status": "reviewed",
+    "sha256": "8d0b6b55eb9091136a81b2f0ce099eaea7cd7eaa306bcee7a8870f60a7748d05",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V015": {
+    "status": "reviewed",
+    "sha256": "2b84c1a46c7d41a17dacdc4c5eea6f1992ba6a99208bd7e88cf5cdacaf91d3d5",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V016": {
+    "status": "reviewed",
+    "sha256": "8e0a0cebdc73752ba8b915b69a134fbaee79985c2e69adedf83eaedf9c554815",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V017": {
+    "status": "reviewed",
+    "sha256": "0d9b0fab329100b47b80d78a5726a5b33c81525ce49a4dd494ffc261df15ac4b",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V018": {
+    "status": "reviewed",
+    "sha256": "883ef32f5458dfb0ba36cd0641981c963bb8f50ec92103966b812c2300d64fec",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V019": {
+    "status": "reviewed",
+    "sha256": "fa270c1bead8ebb7a34a588f698b69a32a6e00afaab7745b7c124c36d156476f",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V020": {
+    "status": "reviewed",
+    "sha256": "2bd5c3c86779d7bbdd9ce1c41b8bebed74c07d4ba76c0dabc7a99f379d7bf1de",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V021": {
+    "status": "reviewed",
+    "sha256": "680b2ebdf6b730f482767fd6147a27178ddda35e086101b2f54c0192ee155105",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V022": {
+    "status": "reviewed",
+    "sha256": "bbdd5263c808ac5e51c3e4998d1b894cba0b3a0f3eab7ee310560af0c9f1654a",
+    "checks": [
+      "actual activity or object matches target",
+      "no answer captions",
+      "important subject visible",
+      "warm realistic scene"
+    ]
+  },
+  "L17-V010": {
+    "status": "reviewed",
+    "sha256": "a6aa3eca6d70f201dec08a73a8225a26afef2e4961a075140b8590e213d24f84",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V001": {
+    "status": "reviewed",
+    "sha256": "bdb38fb87b4c8ec6cb7a0d896da889350da4f1185930c36f27a4528c6cc4c1fe",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V002": {
+    "status": "reviewed",
+    "sha256": "70b35e1f15fa7931dbb0c8cab689ad5520c5386f67521401fcd42af0faea6660",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V003": {
+    "status": "reviewed",
+    "sha256": "c64ac7a0552a669b48db16f3042027ac857d5d8c2652e164b92dba9d2892d43e",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V004": {
+    "status": "reviewed",
+    "sha256": "a336d8790a903d5c62f676fc228b370401885891ba457af59aacfda9c8b6fb5d",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V005": {
+    "status": "reviewed",
+    "sha256": "a6e996f30fbee0f5cee154e8b84bef1fb7330e8ea7be28f5a2cf354cfa0a92ee",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V006": {
+    "status": "reviewed",
+    "sha256": "0492fa591342ab842a8387c5558c5be03a25331d34bae0c543bd2660ccbad25d",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V007": {
+    "status": "reviewed",
+    "sha256": "1f1fd58f6e2f347863cfbf9c7c16a21d40ecfc035ae62b2d66a6adad53822975",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V008": {
+    "status": "reviewed",
+    "sha256": "0fddadd8ea1b7752129f8ae4ce651bc27a6dd9434aa4eab2da25c8bb858be343",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V009": {
+    "status": "reviewed",
+    "sha256": "b357cb9676c7ab7881094053e55f5e04b13fbb3bde07a554bc4c3569a744cef5",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V010": {
+    "status": "reviewed",
+    "sha256": "3a001abd6c8d3e3dce84a6718493fb317ed77cd8f3442e14b4771552b00ed555",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V011": {
+    "status": "reviewed",
+    "sha256": "4fb9d81acd8d42875e26b070d1ff855a7c5a0100525d59a5b19bd79c5730fbc1",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V012": {
+    "status": "reviewed",
+    "sha256": "0b0bc0a117c2ec37127c20423e4805da89486f89c46911dc7b4c22e5296eb346",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V013": {
+    "status": "reviewed",
+    "sha256": "0025d181cbaa00884f0001a0478cc58772a252dd5e9c1aa2cbb44b0eda98550d",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V014": {
+    "status": "reviewed",
+    "sha256": "4f897335e3d3a612b4026ca87950fa0a306a696ef5f073f79d32d9d3d218cef6",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V015": {
+    "status": "reviewed",
+    "sha256": "b7a19c6a295936f3c61950de6ca1c512d6218b3013a40460b942e58ed4684f88",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V016": {
+    "status": "reviewed",
+    "sha256": "c832eea3a99b43b0ee4f3bf2e2ba3d95a72ff1939f635f98c154c1691eeadd97",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V017": {
+    "status": "reviewed",
+    "sha256": "48949d394bcc5d5735c234ede7608cb796553e935d603a4f94cf122e72d9bbb0",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V018": {
+    "status": "reviewed",
+    "sha256": "1e1bdba07f9523ad963d685f363a96b266abc6adb7ecf160905520c27586202e",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V019": {
+    "status": "reviewed",
+    "sha256": "a4ae879351f10cb5c466834b1a28c1f9787835ce6384bd23b9e30581b8ce85ed",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V020": {
+    "status": "reviewed",
+    "sha256": "31c7e9f04730621d371870ea6f0709d6c68a60ea34b6364a76af0d85caae4953",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V021": {
+    "status": "reviewed",
+    "sha256": "37543ae8c81c40aee1ef1c0143f15ad5c1a6758b292430690864f76b8e0b48e1",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V022": {
+    "status": "reviewed",
+    "sha256": "14a13969414d8a224c3323ee24e623119db1b781d7375b162635d607a847f63d",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V023": {
+    "status": "reviewed",
+    "sha256": "86dd62c6a457119fa798a159ce4d754907d04b91fe83bfe6d645a7674ba99f1c",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V024": {
+    "status": "reviewed",
+    "sha256": "57bcec3e503e18a44c429a0d5b614f3c5f0874c7f0fa3bf4917027332054438e",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V025": {
+    "status": "reviewed",
+    "sha256": "40052593adb4a9bec5e3e8ccdbf172506c92864f60d04e8babe55f66a53517c5",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V026": {
+    "status": "reviewed",
+    "sha256": "badc32fce46500904f1b9ca531b0fc13a1b2295e6d8613862c888a98cf1b4f85",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  },
+  "L18-V027": {
+    "status": "reviewed",
+    "sha256": "7bc7030265af4c3d0a57ab641f42779004ed7a4cf820b877a169bd6af7a68ccd",
+    "checks": [
+      "correct body part, symptom, medicine or activity",
+      "no answer captions or generic placeholder icons",
+      "important subject visible in 3:2 frame",
+      "actual raster scene inspected"
+    ]
+  }
+}

@@ -1,0 +1,845 @@
+[
+  {
+    "id": "L15-V001",
+    "group": "Wohnen und Zimmer",
+    "groupThai": "Wohnen und Zimmer",
+    "image": "/images/lektion-15-vocabulary/haus.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V002",
+    "group": "Wohnen und Zimmer",
+    "groupThai": "Wohnen und Zimmer",
+    "image": "/images/lektion-13-city/wohnung-places.webp",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V003",
+    "group": "Wohnen und Zimmer",
+    "groupThai": "Wohnen und Zimmer",
+    "image": "/images/lektion-15-vocabulary/zimmer.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V004",
+    "group": "Wohnen und Zimmer",
+    "groupThai": "Wohnen und Zimmer",
+    "image": "/images/lektion-15-vocabulary/arbeitszimmer.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V005",
+    "group": "Wohnen und Zimmer",
+    "groupThai": "Wohnen und Zimmer",
+    "image": "/images/lektion-15-vocabulary/wohnzimmer.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V006",
+    "group": "Wohnen und Zimmer",
+    "groupThai": "Wohnen und Zimmer",
+    "image": "/images/lektion-15-vocabulary/schlafzimmer.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V007",
+    "group": "Wohnen und Zimmer",
+    "groupThai": "Wohnen und Zimmer",
+    "image": "/images/lektion-15-vocabulary/kinderzimmer.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V008",
+    "group": "Wohnen und Zimmer",
+    "groupThai": "Wohnen und Zimmer",
+    "image": "/images/lektion-15-vocabulary/bad.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V009",
+    "group": "Teile der Wohnung",
+    "groupThai": "Teile der Wohnung",
+    "image": "/images/lektion-15-vocabulary/kueche.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V010",
+    "group": "Teile der Wohnung",
+    "groupThai": "Teile der Wohnung",
+    "image": "/images/lektion-15-vocabulary/toilette.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V011",
+    "group": "Teile der Wohnung",
+    "groupThai": "Teile der Wohnung",
+    "image": "/images/lektion-15-vocabulary/flur.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V012",
+    "group": "Teile der Wohnung",
+    "groupThai": "Teile der Wohnung",
+    "image": "/images/lektion-15-vocabulary/balkon.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V013",
+    "group": "Teile der Wohnung",
+    "groupThai": "Teile der Wohnung",
+    "image": "/images/lektion-15-vocabulary/garten.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V014",
+    "group": "Teile der Wohnung",
+    "groupThai": "Teile der Wohnung",
+    "image": "/images/lektion-15-vocabulary/treppe.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V015",
+    "group": "Teile der Wohnung",
+    "groupThai": "Teile der Wohnung",
+    "image": "/images/lektion-15-vocabulary/fenster.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V016",
+    "group": "Teile der Wohnung",
+    "groupThai": "Teile der Wohnung",
+    "image": "/images/lektion-15-vocabulary/tuer.png",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V017",
+    "group": "Möbel",
+    "groupThai": "Möbel",
+    "image": "/images/lektion-04-vocabulary/V045-isolated-v2.jpg",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V018",
+    "group": "Möbel",
+    "groupThai": "Möbel",
+    "image": "/images/lektion-04-vocabulary/V046-isolated-v2.jpg",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V019",
+    "group": "Möbel",
+    "groupThai": "Möbel",
+    "image": "/images/lektion-04-vocabulary/V048-isolated-v2.jpg",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V020",
+    "group": "Möbel",
+    "groupThai": "Möbel",
+    "image": "/images/lektion-04-vocabulary/V050-isolated-v2.jpg",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V021",
+    "group": "Möbel",
+    "groupThai": "Möbel",
+    "image": "/images/lektion-04-vocabulary/V051-isolated-v2.jpg",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V022",
+    "group": "Möbel",
+    "groupThai": "Möbel",
+    "image": "/images/lektion-04-vocabulary/V052-isolated-v2.jpg",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V023",
+    "group": "Möbel",
+    "groupThai": "Möbel",
+    "image": "/images/lektion-04-vocabulary/V053-isolated-v3.jpg",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L15-V024",
+    "group": "Möbel",
+    "groupThai": "Möbel",
+    "image": "/images/lektion-04-vocabulary/V044-isolated-v2.jpg",
+    "source": "docs/lesson-preparation/l15-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L16-V001",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-16-vocabulary/L16-V001-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V002",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-04-vocabulary/V184-framed-v3.webp",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L16-V003",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-04-vocabulary/V182-framed-v3.webp",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L16-V004",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-16-vocabulary/L16-V004-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V005",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-16-vocabulary/L16-V005-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V006",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-16-vocabulary/L16-V006-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V007",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-04-vocabulary/V188-framed-v3.webp",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L16-V008",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-16-vocabulary/L16-V008-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V009",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-04-vocabulary/V183-framed-v3.webp",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L16-V010",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-16-vocabulary/L16-V010-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V011",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-16-vocabulary/L16-V011-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V012",
+    "group": "Geräte",
+    "groupThai": "อุปกรณ์",
+    "image": "/images/lektion-04-vocabulary/V185-framed-v3.webp",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L16-V013",
+    "group": "Hilfe und Reparatur",
+    "groupThai": "การขอความช่วยเหลือ",
+    "image": "/images/lektion-16-vocabulary/L16-V013-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V014",
+    "group": "Hilfe und Reparatur",
+    "groupThai": "การขอความช่วยเหลือ",
+    "image": "/images/lektion-16-vocabulary/L16-V014-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V015",
+    "group": "Termine",
+    "groupThai": "การนัดหมาย",
+    "image": "/images/lektion-06-vocabulary/V078-framed-v3.webp",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "existing-illustration"
+  },
+  {
+    "id": "L16-V016",
+    "group": "Termine",
+    "groupThai": "การนัดหมาย",
+    "image": "/images/lektion-16-vocabulary/L16-V016-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V017",
+    "group": "Termine",
+    "groupThai": "การนัดหมาย",
+    "image": "/images/lektion-16-vocabulary/L16-V017-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V018",
+    "group": "Termine",
+    "groupThai": "การนัดหมาย",
+    "image": "/images/lektion-16-vocabulary/L16-V018-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V019",
+    "group": "Hilfe und Reparatur",
+    "groupThai": "การขอความช่วยเหลือ",
+    "image": "/images/lektion-16-vocabulary/L16-V019-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V020",
+    "group": "Hilfe und Reparatur",
+    "groupThai": "การขอความช่วยเหลือ",
+    "image": "/images/lektion-16-vocabulary/L16-V020-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V021",
+    "group": "Termine",
+    "groupThai": "การนัดหมาย",
+    "image": "/images/lektion-16-vocabulary/L16-V021-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V022",
+    "group": "Termine",
+    "groupThai": "การนัดหมาย",
+    "image": "/images/lektion-16-vocabulary/L16-V022-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V023",
+    "group": "Termine",
+    "groupThai": "การนัดหมาย",
+    "image": "/images/lektion-16-vocabulary/L16-V023-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L16-V024",
+    "group": "Hilfe und Reparatur",
+    "groupThai": "การขอความช่วยเหลือ",
+    "image": "/images/lektion-16-vocabulary/L16-V024-photo-v2.png",
+    "source": "docs/lesson-preparation/l16-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V001",
+    "group": "Berufliche Pläne",
+    "groupThai": "แผนอาชีพ",
+    "image": "/images/lektion-17-vocabulary/L17-V001-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V002",
+    "group": "Berufliche Pläne",
+    "groupThai": "แผนอาชีพ",
+    "image": "/images/lektion-17-vocabulary/L17-V002-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V003",
+    "group": "Berufliche Pläne",
+    "groupThai": "แผนอาชีพ",
+    "image": "/images/lektion-17-vocabulary/L17-V003-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V004",
+    "group": "Berufliche Pläne",
+    "groupThai": "แผนอาชีพ",
+    "image": "/images/lektion-17-vocabulary/L17-V004-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V005",
+    "group": "Berufliche Pläne",
+    "groupThai": "แผนอาชีพ",
+    "image": "/images/lektion-17-vocabulary/L17-V005-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V006",
+    "group": "Familie",
+    "groupThai": "ครอบครัว",
+    "image": "/images/lektion-17-vocabulary/L17-V006-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V007",
+    "group": "Familie",
+    "groupThai": "ครอบครัว",
+    "image": "/images/lektion-17-vocabulary/L17-V007-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V008",
+    "group": "Reisen und Erlebnisse",
+    "groupThai": "การเดินทางและประสบการณ์",
+    "image": "/images/lektion-17-vocabulary/L17-V008-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V009",
+    "group": "Reisen und Erlebnisse",
+    "groupThai": "การเดินทางและประสบการณ์",
+    "image": "/images/lektion-17-vocabulary/L17-V009-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V010",
+    "group": "Reisen und Erlebnisse",
+    "groupThai": "การเดินทางและประสบการณ์",
+    "image": "/images/lektion-17-vocabulary/L17-V010-photo-v3.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V011",
+    "group": "Reisen und Erlebnisse",
+    "groupThai": "การเดินทางและประสบการณ์",
+    "image": "/images/lektion-17-vocabulary/L17-V011-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V012",
+    "group": "Reisen und Erlebnisse",
+    "groupThai": "การเดินทางและประสบการณ์",
+    "image": "/images/lektion-17-vocabulary/L17-V012-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V013",
+    "group": "Reisen und Erlebnisse",
+    "groupThai": "การเดินทางและประสบการณ์",
+    "image": "/images/lektion-17-vocabulary/L17-V013-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V014",
+    "group": "Lernen und Freizeit",
+    "groupThai": "การเรียนรู้และเวลาว่าง",
+    "image": "/images/lektion-17-vocabulary/L17-V014-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V015",
+    "group": "Lernen und Freizeit",
+    "groupThai": "การเรียนรู้และเวลาว่าง",
+    "image": "/images/lektion-17-vocabulary/L17-V015-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V016",
+    "group": "Lernen und Freizeit",
+    "groupThai": "การเรียนรู้และเวลาว่าง",
+    "image": "/images/lektion-17-vocabulary/L17-V016-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V017",
+    "group": "Wünsche und Pläne",
+    "groupThai": "คำประกอบแผน",
+    "image": "/images/lektion-17-vocabulary/L17-V017-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V018",
+    "group": "Wünsche und Pläne",
+    "groupThai": "คำประกอบแผน",
+    "image": "/images/lektion-17-vocabulary/L17-V018-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V019",
+    "group": "Wünsche und Pläne",
+    "groupThai": "คำประกอบแผน",
+    "image": "/images/lektion-17-vocabulary/L17-V019-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V020",
+    "group": "Wünsche und Pläne",
+    "groupThai": "คำประกอบแผน",
+    "image": "/images/lektion-17-vocabulary/L17-V020-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V021",
+    "group": "Wünsche und Pläne",
+    "groupThai": "คำประกอบแผน",
+    "image": "/images/lektion-17-vocabulary/L17-V021-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L17-V022",
+    "group": "Wünsche und Pläne",
+    "groupThai": "คำประกอบแผน",
+    "image": "/images/lektion-17-vocabulary/L17-V022-photo-v2.png",
+    "source": "docs/lesson-preparation/l17-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V001",
+    "group": "Rumpf",
+    "groupThai": "ลำตัว",
+    "image": "/images/lektion-18-vocabulary/L18-V001-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V002",
+    "group": "Rumpf",
+    "groupThai": "ลำตัว",
+    "image": "/images/lektion-18-vocabulary/L18-V002-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V003",
+    "group": "Rumpf",
+    "groupThai": "ลำตัว",
+    "image": "/images/lektion-18-vocabulary/L18-V003-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V004",
+    "group": "Arme und Hände",
+    "groupThai": "แขนและมือ",
+    "image": "/images/lektion-18-vocabulary/L18-V004-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V005",
+    "group": "Arme und Hände",
+    "groupThai": "แขนและมือ",
+    "image": "/images/lektion-18-vocabulary/L18-V005-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V006",
+    "group": "Arme und Hände",
+    "groupThai": "แขนและมือ",
+    "image": "/images/lektion-18-vocabulary/L18-V006-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V007",
+    "group": "Beine und Füße",
+    "groupThai": "ขาและเท้า",
+    "image": "/images/lektion-18-vocabulary/L18-V007-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V008",
+    "group": "Beine und Füße",
+    "groupThai": "ขาและเท้า",
+    "image": "/images/lektion-18-vocabulary/L18-V008-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V009",
+    "group": "Beine und Füße",
+    "groupThai": "ขาและเท้า",
+    "image": "/images/lektion-18-vocabulary/L18-V009-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V010",
+    "group": "Kopf und Gesicht",
+    "groupThai": "ศีรษะและใบหน้า",
+    "image": "/images/lektion-18-vocabulary/L18-V010-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V011",
+    "group": "Kopf und Gesicht",
+    "groupThai": "ศีรษะและใบหน้า",
+    "image": "/images/lektion-18-vocabulary/L18-V011-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V012",
+    "group": "Kopf und Gesicht",
+    "groupThai": "ศีรษะและใบหน้า",
+    "image": "/images/lektion-18-vocabulary/L18-V012-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V013",
+    "group": "Kopf und Gesicht",
+    "groupThai": "ศีรษะและใบหน้า",
+    "image": "/images/lektion-18-vocabulary/L18-V013-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V014",
+    "group": "Kopf und Gesicht",
+    "groupThai": "ศีรษะและใบหน้า",
+    "image": "/images/lektion-18-vocabulary/L18-V014-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V015",
+    "group": "Kopf und Gesicht",
+    "groupThai": "ศีรษะและใบหน้า",
+    "image": "/images/lektion-18-vocabulary/L18-V015-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V016",
+    "group": "Schmerzen",
+    "groupThai": "อาการปวด",
+    "image": "/images/lektion-18-vocabulary/L18-V016-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V017",
+    "group": "Schmerzen",
+    "groupThai": "อาการปวด",
+    "image": "/images/lektion-18-vocabulary/L18-V017-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V018",
+    "group": "Schmerzen",
+    "groupThai": "อาการปวด",
+    "image": "/images/lektion-18-vocabulary/L18-V018-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V019",
+    "group": "Schmerzen",
+    "groupThai": "อาการปวด",
+    "image": "/images/lektion-18-vocabulary/L18-V019-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V020",
+    "group": "Schmerzen",
+    "groupThai": "อาการปวด",
+    "image": "/images/lektion-18-vocabulary/L18-V020-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V021",
+    "group": "Beschwerden",
+    "groupThai": "อาการอื่น",
+    "image": "/images/lektion-18-vocabulary/L18-V021-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V022",
+    "group": "Beschwerden",
+    "groupThai": "อาการอื่น",
+    "image": "/images/lektion-18-vocabulary/L18-V022-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V023",
+    "group": "Beschwerden",
+    "groupThai": "อาการอื่น",
+    "image": "/images/lektion-18-vocabulary/L18-V023-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V024",
+    "group": "Medikamente",
+    "groupThai": "สิ่งของในสถานการณ์",
+    "image": "/images/lektion-18-vocabulary/L18-V024-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V025",
+    "group": "Medikamente",
+    "groupThai": "สิ่งของในสถานการณ์",
+    "image": "/images/lektion-18-vocabulary/L18-V025-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V026",
+    "group": "Medikamente",
+    "groupThai": "สิ่งของในสถานการณ์",
+    "image": "/images/lektion-18-vocabulary/L18-V026-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  },
+  {
+    "id": "L18-V027",
+    "group": "Medikamente",
+    "groupThai": "สิ่งของในสถานการณ์",
+    "image": "/images/lektion-18-vocabulary/L18-V027-photo-v2.png",
+    "source": "docs/lesson-preparation/l18-content.json",
+    "presentation": "generated-scene-photograph",
+    "promptSource": "artifacts/vocabulary-image-correction/jobs.json"
+  }
+]

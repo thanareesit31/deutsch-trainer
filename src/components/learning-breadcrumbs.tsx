@@ -8,6 +8,8 @@ import { getLevel, skills } from "@/lib/content";
 import { grammarDiscoveryLesson } from "@/lib/grammar-discovery";
 import { grammarConjugationTopic } from "@/lib/grammar-conjugation";
 import { useContent } from "./content-provider";
+import { a13ReleaseCourses } from "@/data/a13-release";
+import { releaseVocabularyItems } from "@/lib/release-vocabulary-learning";
 
 // Derive the navigation hierarchy from the route, so direct links and reloads keep it.
 export function LearningBreadcrumbs() {
@@ -19,9 +21,11 @@ export function LearningBreadcrumbs() {
   if (!lesson) return null;
   const level = getLevel(lesson.id);
   const practice = parts[0] === "practice";
+  const vocabularyCourse = a13ReleaseCourses.find(course => course.lessonId === lesson.id && course.skill === "vocabulary");
   const imageGroup = parts[2] === "vocabulary"
     ? lesson.id === "L01" ? vocabularyImageGroups.find((group) => group.route === path)
       : lesson.id === "L13" ? l13VocabularyImageGroups.find((group) => group.route === path)
+        : vocabularyCourse ? lessonVocabularyImageGroups(releaseVocabularyItems(vocabularyCourse), lesson.id).find(group => group.route === path)
         : /^L(?:0[3-9]|1[0-2]|1[4-5])$/u.test(lesson.id) ? lessonVocabularyImageGroups(items, lesson.id).find((group) => group.route === path)
           : undefined
     : undefined;

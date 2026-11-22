@@ -62,7 +62,7 @@ function observations(snapshot: Snapshot): ReleaseAttempt[] {
   return snapshot.sessions.flatMap(s => s.items.flatMap((i, index) => i.attempt ? [{ id: `${s.id}:${index}`, sessionId: s.id, taskId: i.question.id, response: i.attempt.response, correct: i.attempt.correct, helpUsed: i.hintUsed, submittedAt: i.attempt.submittedAt, selectionReason: i.selectionReason }] : []));
 }
 
-export function A13ReleasePractice({ course, userId, guidedCardId, resumeId }: { course: ReleaseCourse; userId: string; guidedCardId?: string; resumeId?: string }) {
+export function A13ReleasePractice({ course, userId, guidedCardId, resumeId, afterLearning = false }: { course: ReleaseCourse; userId: string; guidedCardId?: string; resumeId?: string; afterLearning?: boolean }) {
   const storage = useLessonState();
   const bank = `a13-release-${course.lessonId.toLowerCase()}-${course.skill}`;
   const key = practiceStorageKey(bank, bank, userId);
@@ -106,11 +106,11 @@ export function A13ReleasePractice({ course, userId, guidedCardId, resumeId }: {
   const task = entry ? course.tasks.find(t => t.id === entry.question.id) : undefined;
   // The explicit guided entry is the learner's Learn → Practice action, not an automatic answer.
   useEffect(() => {
-    if (guidedCardId && !guidedConsumed) {
+    if ((guidedCardId || afterLearning) && !guidedConsumed) {
       setGuidedConsumed(true);
       if (!session || session.completed) begin(guidedCardId);
     }
-  }, [guidedCardId, guidedConsumed]);
+  }, [guidedCardId, afterLearning, guidedConsumed]);
   if (!snapshot) return <p role="alert">เปิดประวัติแบบฝึกไม่ได้ ข้อมูลเดิมยังเก็บอยู่ กรุณาโหลดหน้าใหม่</p>;
   function edit(change: (old: Entry) => Entry) {
     if (!snapshot || !session || !entry || entry.attempt) return;

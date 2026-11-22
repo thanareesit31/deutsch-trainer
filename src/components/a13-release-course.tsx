@@ -71,7 +71,7 @@ function releaseSubskillLabel(subskill: string) {
   return labels[subskill] ?? 'เลือกใช้โครงสร้าง';
 }
 
-export function A13ReleaseCourse({ course, mode }: { course: ReleaseCourse; mode: 'learn' | 'practice' }) {
+export function A13ReleaseCourse({ course, mode, onTrialComplete }: { course: ReleaseCourse; mode: 'learn' | 'practice'; onTrialComplete?: () => void }) {
   const storage = useLessonState();
   const [state, setState] = useState<ReleaseState>(() => parseReleaseState(storage.read(releaseStateKey(course)), course));
   const [feedbackId, setFeedbackId] = useState<string | null>(() => state.active ? state.attempts.filter(a => a.taskId === state.active?.taskId && Date.parse(a.submittedAt) >= Date.parse(state.active.startedAt)).at(-1)?.id ?? null : null);
@@ -105,7 +105,7 @@ export function A13ReleaseCourse({ course, mode }: { course: ReleaseCourse; mode
     if (state.active?.origin !== mode) {
       const taughtCurrent = state.active?.origin === 'learn' && state.active.learningCardId === card?.id;
       persist({ ...state, active: null, cursor: taughtCurrent ? Math.min(course.cards.length, state.cursor + 1) : state.cursor });
-      setFeedbackId(null); setPhase('model'); return;
+      setFeedbackId(null); setPhase('model'); onTrialComplete?.(); return;
     }
     if (mode === 'practice') {
       if (state.round && state.attempts.filter(a => Date.parse(a.submittedAt) >= Date.parse(state.round?.startedAt ?? '')).length >= state.round.limit) {
@@ -113,7 +113,7 @@ export function A13ReleaseCourse({ course, mode }: { course: ReleaseCourse; mode
       }
       begin({ ...state, active: null }); return;
     }
-    persist({ ...state, cursor: state.active.learningCardId === card?.id ? Math.min(course.cards.length, state.cursor + 1) : state.cursor, active: null }); setFeedbackId(null); setPhase('model');
+    persist({ ...state, cursor: state.active.learningCardId === card?.id ? Math.min(course.cards.length, state.cursor + 1) : state.cursor, active: null }); setFeedbackId(null); setPhase('model'); onTrialComplete?.();
   }
   const selected = task && state.active ? releaseOrderIndices(state.active.draft, task) : [];
   const canCheck = task && state.active && (task.kind === 'order' ? selected.length === task.tokens.length : !!state.active.draft.trim());
