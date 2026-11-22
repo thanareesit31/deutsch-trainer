@@ -65,3 +65,16 @@ Deployed application commit `b9750850c9b077eef32d7763028f7d0b6d403f4e` through t
 Used the already-authenticated production learner browser session, with no test-workspace banner: all24 L15–18 Learn/Practice routes loaded signed in without save/auth alerts, plus L01,L02,L11,L13/rating,L14 revised Learn renderers. No answer/check/learning-advance actions were clicked on the real account. Four production audio samples (word, grammar model, speaker turn, paired dialogue) returned200 with hashes matching verified local files. The separate local real-account isolated-two-context stale-help browser check also passed, including actual stalefalse RPC normalized to saved assistance and canonical client refresh.
 
 The temporary legacy-bootstrap override found by that browser check was fixed and now has a readiness assertion before migration reapplication. Current execution checklist is complete. Audit: .audit/lesson-release.json and .audit/hosted-lesson-smoke.json. This verifies the scoped release; it does not assert that every historical lesson uses the new adaptive engine or that one-variant targets can establish mastery.
+
+
+## Vocabulary Learn correction deployed, 23 November 2026
+
+Code commit `60396e6b75edbf015f147302807ab4ce2ab04eae` replaces L15–L18
+vocabulary teaching-card entry with the shared grouped picture matching flow and
+67 reviewed scene photographs. A1.3 category entry shortcuts and introductory copy
+were removed as requested. Existing checkpoints, canonical questions and historical
+answers remain. The isolated production build and 20 unit checks passed before
+pushing through Vercel's existing Git integration. Hosted ordinary-account checks,
+RLS, unlearned-task rejection, persistence, resume and all new image URLs passed.
+The two disposable accounts were deleted. No database migration was required.
+See `.audit/vocabulary-release.json` and the scoped Learn assessment document.

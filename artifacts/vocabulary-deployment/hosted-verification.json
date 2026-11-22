@@ -1,0 +1,63 @@
+{
+  "origin": "https://deutsch-trainer-gamma.vercel.app",
+  "commit": "60396e6b75edbf015f147302807ab4ce2ab04eae",
+  "scope": "Two disposable ordinary learner accounts on hosted Supabase; no existing learner modified",
+  "lessons": [
+    {
+      "lesson": "L15",
+      "matchedTargets": 4,
+      "checkpoint": true,
+      "practiceCanonical": true,
+      "firstAnswer": true,
+      "reloadResume": true
+    },
+    {
+      "lesson": "L16",
+      "matchedTargets": 6,
+      "checkpoint": true,
+      "practiceCanonical": true,
+      "firstAnswer": true,
+      "reloadResume": true
+    },
+    {
+      "lesson": "L17",
+      "matchedTargets": 5,
+      "checkpoint": true,
+      "practiceCanonical": true,
+      "firstAnswer": true,
+      "reloadResume": true
+    },
+    {
+      "lesson": "L18",
+      "matchedTargets": 3,
+      "checkpoint": true,
+      "practiceCanonical": true,
+      "firstAnswer": true,
+      "reloadResume": true
+    }
+  ],
+  "errors": [],
+  "health": {
+    "status": "ok",
+    "app": "deutsch-mit-sun",
+    "version": "5.0.0",
+    "runtime": "bun",
+    "contentSource": "supabase",
+    "vocabulary": 326,
+    "exerciseReporting": "v1",
+    "phrasePracticeRelease": "l01-l14-practice-v1",
+    "lessonRelease": "l15-l18-practice-v2"
+  },
+  "accountIsolation": true,
+  "serverRejectsUnlearned": true,
+  "newLoginResume": true,
+  "photoFilesVerified": 67,
+  "samplePhotoHashes": 4,
+  "verifiedAt": "2026-11-22T18:43:36.762Z",
+  "status": "passed",
+  "temporaryAccountCleanup": {
+    "verified": true,
+    "deleted": 2,
+    "unrelatedAccountsTouched": false
+  }
+}

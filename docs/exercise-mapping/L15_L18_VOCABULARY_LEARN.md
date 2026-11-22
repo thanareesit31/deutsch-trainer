@@ -100,3 +100,16 @@ The photo browser check passes L16 help/repair, L17 plans and L18 body/pain at
 390px and 1440px: actual new images decode, use contain layout and do not cause
 horizontal overflow. TypeScript passes. These are presentation checks; they do
 not create learner answers or claim a new hosted release.
+
+
+Production activation, 23 November 2026: commit 60396e6 is deployed through the
+existing Vercel Git integration at https://deutsch-trainer-gamma.vercel.app. The
+release was built from an isolated source tree excluding unrelated local changes.
+Two fresh ordinary accounts on hosted Supabase verified Learn checkpoints across
+18 targets on the first pages of all four lessons, eligible canonical Practice,
+four first answers, reload and new-login resume. A second account could not read
+the first account's state or start an unlearned task. All 67 new image URLs return
+PNG successfully; four downloaded samples match the reviewed local SHA-256.
+Both temporary accounts were deleted and their absence verified. No existing
+learner history was modified and no database migration was needed. This supersedes
+the earlier local-only status. Evidence: `.audit/vocabulary-release.json`.
