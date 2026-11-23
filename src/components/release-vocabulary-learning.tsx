@@ -12,7 +12,7 @@ import { VocabularyImageMatching } from './vocabulary-image-matching';
 import { A13ReleaseCourse } from './a13-release-course';
 import { useLearning } from './learning-store';
 
-export function ReleaseVocabularyLearning({ course, path }: { course: ReleaseCourse; path: string }) {
+export function ReleaseVocabularyLearning({ course, path, resumePrevious = false }: { course: ReleaseCourse; path: string; resumePrevious?: boolean }) {
   const storage = useLessonState();
   const history = useLearning();
   const [, refresh] = useReducer((value: number) => value + 1, 0);
@@ -30,8 +30,7 @@ export function ReleaseVocabularyLearning({ course, path }: { course: ReleaseCou
       refresh();
     }
   }, [storage.read, storage.write, course, history.exposures]);
-  // Finish an existing trial with its original draft and grading, then return here.
-  if (state.active) return <A13ReleaseCourse course={course} mode="learn" onTrialComplete={refresh} />;
+  if (resumePrevious && state.active) return <A13ReleaseCourse course={course} mode="learn" onTrialComplete={refresh} />;
   if (group) return <VocabularyImageMatching key={path} items={items} groupId={group.id} lessonId={course.lessonId} releaseCourse={course} />;
   return <main className="vocabulary-learning">
     <header className="page-heading"><h1>คำศัพท์</h1></header>
@@ -43,5 +42,6 @@ export function ReleaseVocabularyLearning({ course, path }: { course: ReleaseCou
         <span className="alphabet-entry-copy"><span className="eyebrow">BILDER WORTSCHATZ</span><span className="alphabet-entry-title"><strong>{entry.germanTitle}</strong></span><small>{entry.title} · เรียนแล้ว {learned} / {entry.wordOrder.length} คำ</small></span>
       </Link>;
     })}
+    {state.active && <Link href={`/learn/${course.lessonId}/vocabulary?resume=previous`}>ทำโจทย์ที่ค้างไว้ต่อ</Link>}
   </main>;
 }

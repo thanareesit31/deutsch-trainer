@@ -272,7 +272,7 @@ function App() {
     page = course && user ? parts[0] === 'practice'
       ? <A13ReleasePractice key={`${user.id}:${course.lessonId}:${course.skill}`} course={course} userId={user.id} guidedCardId={searchParams.get('guided') ?? undefined} resumeId={searchParams.get('resume') ?? undefined} afterLearning={course.skill === 'vocabulary' && searchParams.get('from') === 'learn'} />
       : course.skill === 'vocabulary'
-      ? <ReleaseVocabularyLearning key={`${user.id}:${course.lessonId}:vocabulary`} course={course} path={path} />
+      ? <ReleaseVocabularyLearning key={`${user.id}:${course.lessonId}:vocabulary`} course={course} path={path} resumePrevious={searchParams.get('resume') === 'previous'} />
       : <A13ReleaseCourse key={`${user.id}:${course.lessonId}:${course.skill}:learn`} course={course} mode="learn" /> : null;
   }
   else if (additionalGrammarPilot)

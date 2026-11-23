@@ -38,6 +38,14 @@ try {
   await page.getByLabel('อีเมล', { exact: true }).fill(user.email);
   await page.getByLabel('รหัสผ่าน', { exact: true }).fill('TestOnly123!');
   await page.getByRole('button', { name: 'เข้าสู่ระบบ', exact: true }).click();
+  await page.locator('.vocabulary-learning, .release-course').first().waitFor();
+  assert.equal(await page.locator('.vocabulary-image-entry-card').count(), 3, 'A pending old trial must not replace the vocabulary category entry');
+  assert.deepEqual((await api.snapshot()).rows.learner_lesson_states.find(row => row.lesson_key === key).state.active, state.active);
+  await page.locator('.vocabulary-image-entry-card').first().click();
+  await page.locator('.vocabulary-image-matching').waitFor();
+  assert.equal(await page.locator('.release-course').count(), 0, 'Picture learning stays available while an old trial is pending');
+  await page.goto('http://localhost:3002/learn/L15/vocabulary');
+  await page.getByRole('link', { name: 'ทำโจทย์ที่ค้างไว้ต่อ', exact: true }).click();
   const input = page.getByRole('textbox', { name: 'คำตอบภาษาเยอรมัน' });
   await input.waitFor();
   assert.equal(await input.inputValue(), 'Ha');

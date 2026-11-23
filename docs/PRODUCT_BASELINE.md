@@ -712,3 +712,5 @@ Vocabulary follows the grouped word/picture matching Learn approach used in earl
 Vocabulary category entry pages in A1.3 (L13–L18) omit the top "ฝึกคำที่เรียนแล้ว" shortcut, matching L01–L12. Keep Practice navigation and practice buttons after learning activities. This presentation change preserves eligibility, assessment bindings and account evidence. User clarification: 23 November 2026.
 
 L15–L18 vocabulary category entry pages also omit the introductory sentence "เลือกหมวด จับคู่คำกับภาพ และกดฟังเสียงคำศัพท์", matching L01–L14. User clarification: 23 November 2026.
+
+Existing pending vocabulary Learn trials never override the normal category entry or picture-learning route in L15–L18. Preserve their drafts/help/first answers and open them only after an explicit saved-trial resume action. This clarification does not change pending Practice-round priority.

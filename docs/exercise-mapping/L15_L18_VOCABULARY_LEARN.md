@@ -40,7 +40,7 @@ No internal source label appears in learner copy.
 | --- | --- | --- |
 | Learn → account exposure | `VocabularyImageMatching` → `learnReleaseVocabulary` → existing `deutsch-trainer-release-course-v1-L15…L18-vocabulary` checkpoint via `LessonStateProvider` | Implemented; uses existing canonical card validator and RLS. |
 | Previous exposure → new Learn | Existing release learned IDs are immediately readable. Existing image-learning IDs/account item exposures map only to matching canonical IDs; merge is additive. | Implemented, no invented answers. |
-| Old pending Learn trial → resume | Existing `active`, draft, first response, help and attempts are retained. Finish that original trial with its original grader, then return to the grouped vocabulary entry. New learners never start the card/check sequence. | Implemented. |
+| Old pending Learn trial → resume | Existing `active`, draft, first response, help and attempts are retained. The standard entry and image-group routes always use the grouped vocabulary UI, even with an old trial pending. Only the explicit saved-trial link (`?resume=previous`) opens that original trial with its original grader. Completing it returns to the grouped entry. | Implemented. |
 | Practice response → account evidence | Existing `A13ReleasePractice`, canonical questions and shared `PracticeAccountSync` | Preserved. |
 | Account evidence → next task | Existing `selectReleaseRound` and vocabulary recommendation paths retain target/subskill separation and taught eligibility | Preserved, no new adaptive policy. |
 | Progress | Existing released-course learned count reads the same checkpoint | Preserved; matching is Learn completion, not mastery. |
@@ -113,3 +113,11 @@ PNG successfully; four downloaded samples match the reviewed local SHA-256.
 Both temporary accounts were deleted and their absence verified. No existing
 learner history was modified and no database migration was needed. This supersedes
 the earlier local-only status. Evidence: `.audit/vocabulary-release.json`.
+
+
+Existing-account route correction: pending legacy Learn trials must not override
+the standard vocabulary entry or image groups. Keep the saved trial untouched and
+show an explicit resume link after the category cards. Practice pending-round
+priority remains unchanged. Regression verification covers a saved draft/help,
+normal category entry, picture learning, explicit resume and immutable first
+response. Fresh-account checks alone did not cover the original defect.
