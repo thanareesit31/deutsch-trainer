@@ -1,4 +1,5 @@
 "use client";
+import {ReleaseGrammarLearning} from './release-grammar-learning';
 import { useContent } from "./content-provider";
 import { A13ReleaseCourse, findReleaseCourse } from './a13-release-course';
 import { A13ReleasePractice } from './a13-release-practice';
@@ -267,6 +268,10 @@ function App() {
     page = (allowUnlearnedPractice || isL13GrammarPracticeAvailable(user)) && user
       ? <GrammarPilot userId={user.id} topic={path.endsWith("/daily") ? "daily" : path.endsWith("/dativ-pilot") ? "dative" : path.endsWith("/es-gibt") ? "esGibt" : path.endsWith("/verbs") ? "verbs" : "basic"} learnedItemIds={history.exposures.map(entry => entry.item_id)} />
       : <div className="page-heading"><h1>ชุดนี้เปิดเฉพาะบัญชีทดลอง</h1><Link href="/practice">กลับไปแบบฝึกหัด</Link></div>;
+  else if ((parts[0]==='learn'&&parts[1]==='L15'&&parts[2]==='grammar')||path==='/learn/L15/grammar/preview-ownership') {
+    const course=findReleaseCourse('L15','grammar');
+    page=course&&user?<ReleaseGrammarLearning course={course} topicSlug={parts[3]==='preview-ownership'?'possessivartikel':parts[3]}/>:null;
+  }
   else if ((parts[0] === 'learn' || parts[0] === 'practice') && /^L1[5-8]$/.test(parts[1] ?? '') && findReleaseCourse(parts[1], parts[2] ?? '')) {
     const course = findReleaseCourse(parts[1], parts[2]);
     page = course && user ? parts[0] === 'practice'

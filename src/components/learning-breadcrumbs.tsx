@@ -85,7 +85,8 @@ export function LearningBreadcrumbs() {
         "L14:vocabulary:directions": "Wege und Richtungen",
         "L14:grammar:lokale-praepositionen": "Lokale Präpositionen",
         "L14:grammar:wo-dativ": "Wo? + Dativ",
-        "L15:grammar:possessivartikel": "Possessivartikel",
+        "L15:grammar:possessivartikel": "Possessivartikel: ihr / sein",
+        "L15:grammar:preview-ownership": "Possessivartikel: ihr / sein",
       } as Record<string, string>)[`${lesson.id}:${parts[2]}:${parts[3]}`];
       const familyLabel = lesson.id === "L03" && parts[2] === "vocabulary" && parts[3] === "familie-plural" ? "Familienplural" : undefined;
       const discoveryLabel = parts[2] === "grammar" ? grammarDiscoveryLesson(lesson.id)?.topics.find((topic) => topic.slug === parts[3])?.title : undefined;

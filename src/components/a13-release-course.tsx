@@ -7,6 +7,8 @@ import { a13ReleaseCourses } from '@/data/a13-release';
 import { gradeReleaseTask, parseReleaseState, releaseOrderIndices, releaseStateKey, selectReleaseTask, type ReleaseCard, type ReleaseCourse, type ReleaseModel, type ReleaseState } from '@/lib/a13-release';
 import { AnnotatedReply } from './phrase-sentence';
 import { DialogueAudio } from './phrase-dialogue-media';
+import {useVocabularyAudio} from './vocabulary-audio';
+import {Volume2} from 'lucide-react';
 import { useLessonState } from './lesson-state-provider';
 import { NounPrefix, NounText } from './noun-text';
 import { ArticleLegend } from './profession-matching';
@@ -22,9 +24,10 @@ export function nounItem(noun: NonNullable<ReleaseCard['noun']>): Item {
   return { id: '', lessonId: '', skill: 'vocabulary', group: '', title: `${noun.article} ${noun.word}`, answer: `${noun.article} ${noun.word}`, meaning: '', word: noun.word, article: noun.article, pluralOnly: noun.plural };
 }
 export function Models({ models, noun }: { models: ReleaseModel[]; noun?: ReleaseCard['noun'] }) {
+  const {play,error}=useVocabularyAudio();
   return <div className="release-models phrase-teaching-models">{models.map((model, index) => <div className="release-model" key={index}>
     {model.speaker && <span className="release-speaker">{model.speaker}</span>}
-    <div>{noun && model.text === `${noun.article} ${noun.word}` ? <p lang="de"><NounText text={model.text} item={nounItem(noun)} /></p> : <AnnotatedReply sentences={model.sentences} />}<p lang="th">{model.meaning}</p><DialogueAudio source={model.audio} label={model.speaker ? `ฟัง ${model.speaker}` : 'ฟังตัวอย่าง'} /></div>
+    <div>{noun && model.text === `${noun.article} ${noun.word}` ? <p lang="de"><NounText text={model.text} item={nounItem(noun)} /></p> : <AnnotatedReply sentences={model.sentences} />}<p lang="th">{model.meaning}</p>{model.audio?<DialogueAudio source={model.audio} label={model.speaker ? `ฟัง ${model.speaker}` : 'ฟังตัวอย่าง'} />:<button className="button secondary" onClick={()=>play(model.text)}><Volume2 size={18}/>ฟังตัวอย่าง</button>}{error&&<p role="alert">{error}</p>}</div>
   </div>)}</div>;
 }
 export function Context({ rows }: { rows: string[][] }) {
@@ -67,7 +70,7 @@ export function ReleaseEvidenceSummary({ lesson = 'all', skill = 'all' }: { less
 }
 
 function releaseSubskillLabel(subskill: string) {
-  const labels: Record<string, string> = { word_meaning: 'ความหมายของคำ', lexical_chunk_meaning: 'ความหมายของวลี', noun_article: 'Artikel เอกพจน์', plural_article: 'Artikel พหูพจน์', word_spelling: 'สะกดคำ', phrase_bounded_production: 'เขียนบทตอบตามข้อมูลที่กำหนด', grammar_bounded_production: 'ใช้โครงสร้างตามข้อมูลที่กำหนด', lexical_chunk_form: 'ประกอบวลี', phrase_dialogue_response: 'เลือกบทตอบ', phrase_word_order: 'เรียงคำถามและคำตอบ', possessor_reference: 'ระบุเจ้าของ', possessive_case_ending: 'รูปท้ายคำแสดงเจ้าของ', possessive_reference_and_inflection: 'เลือกและผันคำแสดงเจ้าของ', declarative_word_order: 'เรียงประโยคบอกเล่า', temporal_relation: 'ความสัมพันธ์ของเวลา', temporal_dative_inflection: 'รูป Dativ หลังคำบอกเวลา', werden_conjugation: 'ผัน werden', wollen_conjugation: 'ผัน wollen', sollen_conjugation: 'ผัน sollen', preposition_case_inflection: 'รูปคำหลังบุพบท', accompaniment_presence_meaning: 'บอกว่ามีหรือไม่มีสิ่งที่ไปด้วย', modal_sentence_word_order: 'เรียงประโยค Modalverb', formal_imperative_form: 'รูปคำสั่งสุภาพ', formal_imperative_word_order: 'เรียงคำสั่งสุภาพ' };
+  const labels: Record<string, string> = { word_meaning: 'ความหมายของคำ', lexical_chunk_meaning: 'ความหมายของวลี', noun_article: 'Artikel เอกพจน์', plural_article: 'Artikel พหูพจน์', word_spelling: 'สะกดคำ', phrase_bounded_production: 'เขียนบทตอบตามข้อมูลที่กำหนด', grammar_bounded_production: 'ใช้โครงสร้างตามข้อมูลที่กำหนด', lexical_chunk_form: 'ประกอบวลี', phrase_dialogue_response: 'เลือกบทตอบ', phrase_word_order: 'เรียงคำถามและคำตอบ', possessor_reference: 'ระบุเจ้าของ', possessor_reference_plural: 'ระบุเจ้าของหลายคน', possessive_case_ending: 'รูปท้ายคำแสดงเจ้าของ', possessive_reference_and_inflection: 'เลือกและผันคำแสดงเจ้าของ', declarative_word_order: 'เรียงประโยคบอกเล่า', temporal_relation: 'ความสัมพันธ์ของเวลา', temporal_dative_inflection: 'รูป Dativ หลังคำบอกเวลา', werden_conjugation: 'ผัน werden', wollen_conjugation: 'ผัน wollen', sollen_conjugation: 'ผัน sollen', preposition_case_inflection: 'รูปคำหลังบุพบท', accompaniment_presence_meaning: 'บอกว่ามีหรือไม่มีสิ่งที่ไปด้วย', modal_sentence_word_order: 'เรียงประโยค Modalverb', formal_imperative_form: 'รูปคำสั่งสุภาพ', formal_imperative_word_order: 'เรียงคำสั่งสุภาพ' };
   return labels[subskill] ?? 'เลือกใช้โครงสร้าง';
 }
 

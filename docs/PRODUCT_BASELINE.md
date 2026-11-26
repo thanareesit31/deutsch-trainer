@@ -714,3 +714,8 @@ Vocabulary category entry pages in A1.3 (L13–L18) omit the top "ฝึกค�
 L15–L18 vocabulary category entry pages also omit the introductory sentence "เลือกหมวด จับคู่คำกับภาพ และกดฟังเสียงคำศัพท์", matching L01–L14. User clarification: 23 November 2026.
 
 Existing pending vocabulary Learn trials never override the normal category entry or picture-learning route in L15–L18. Preserve their drafts/help/first answers and open them only after an explicit saved-trial resume action. This clarification does not change pending Practice-round priority.
+
+
+## L15 grammar account learning, 25 November 2026
+
+The ordinary L15 grammar topic uses the approved five-card teacher with sentence role colors/arrows, finite checks and account-backed drafts/first answers. Do not show the former one-card teacher or redirect learners to a tester-only preview. Retain historical questions, answers and learned eligibility; do not infer mastery from exposure or retroactively mark the new cards complete.

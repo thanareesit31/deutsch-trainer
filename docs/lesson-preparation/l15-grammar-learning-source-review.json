@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-25",
+  "scope": "Five-card L15 grammar account learning",
+  "book": {
+    "label": "Momente A1, Lektion 15",
+    "printedPages": [
+      18,
+      19,
+      20
+    ],
+    "sha256": "bb8a7977f2639eae8a1be626e8b283ada9feaa915171beaef628364738ca9047"
+  },
+  "worksheets": [
+    {
+      "filename": "L15_sein_ihr_Nominativ.pdf",
+      "sha256": "5e021207e63382b4bf7648f36103f484a508ae810dfe711befb2d5d90e797cf1",
+      "reviewedPages": [
+        1
+      ]
+    },
+    {
+      "filename": "L15_Possessiv_Akk.pdf",
+      "sha256": "d9152ab95131ccb0320e1253eb702b62a8d9762e307ad4de0dddcafa75058054",
+      "reviewedPages": [
+        1
+      ]
+    },
+    {
+      "filename": "L15_Possessiv_Nom_Akk.pdf",
+      "sha256": "9059118da6ff122f138f543027cd76ccf4426bbb09aa006dcd26da7082eb62a7",
+      "reviewedPages": [
+        1
+      ]
+    },
+    {
+      "filename": "L15_Possessiv_WH.pdf",
+      "sha256": "2e1e8c780bda7c0e439e42329da9e477e234f3ea335adfad6a8b123f7c49a5da",
+      "reviewedPages": [
+        1
+      ]
+    }
+  ],
+  "adaptation": "Retain approved owner examples and sentence roles/colors; adapt Nominativ, Akkusativ, fronted-object/connected reference and plural-owner contexts. Do not copy the worksheet Auto/sind number error.",
+  "learnerCopyReview": "No source/page/exercise/provenance labels appear in learner-facing cards, prompts or feedback.",
+  "image": "AI-generated owners-in-room-v2.png approved in the local review; original visual retained."
+}

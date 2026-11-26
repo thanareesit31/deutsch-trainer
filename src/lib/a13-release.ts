@@ -1,3 +1,4 @@
+import {parseL15GuidedState,mergeL15GuidedState,type L15GuidedState} from './l15-grammar-state';
 import type { DialogueAnnotatedPart } from './phrase-dialogue-learning';
 
 export type ReleaseSkill = 'vocabulary' | 'grammar' | 'phrases';
@@ -18,9 +19,9 @@ export type ReleaseTask = {
   answerScope?: 'fragment' | 'sentence';
 } & ({ kind: 'choice' | 'order' | 'write'; practice?: ReleasePractice & { stage: 0 | 1 } } | { kind: 'write'; practice: ReleasePractice & { stage: 2 | 3 } });
 export type ReleaseCourse = { lessonId: string; skill: ReleaseSkill; title: string; purpose: string; cards: ReleaseCard[]; tasks: ReleaseTask[]; glossary: { text: string; meaning: string; noun: ReleaseNoun | null; audio: string }[] };
-export type ReleaseAttempt = { id: string; taskId: string; response: string; correct: boolean; helpUsed: boolean; submittedAt: string; selectionReason: string; sessionId?: string };
+export type ReleaseAttempt = { id: string; taskId: string; response: string; correct: boolean; helpUsed: boolean; helpKnown?: boolean; submittedAt: string; selectionReason: string; sessionId?: string };
 export type ReleaseActive = { taskId: string; draft: string; helpUsed: boolean; startedAt: string; selectionReason: string; origin: 'learn' | 'practice' | null; learningCardId: string | null };
-export type ReleaseState = { version: 1; learned: string[]; cursor: number; active: ReleaseActive | null; attempts: ReleaseAttempt[]; round: { id: string; startedAt: string; limit: number } | null };
+export type ReleaseState = { version: 1; learned: string[]; cursor: number; active: ReleaseActive | null; attempts: ReleaseAttempt[]; round: { id: string; startedAt: string; limit: number } | null; guidedL15?: L15GuidedState };
 export const releaseStateKey = (course: Pick<ReleaseCourse, 'lessonId' | 'skill'>) => `deutsch-trainer-release-course-v1-${course.lessonId}-${course.skill}`;
 export const emptyReleaseState = (): ReleaseState => ({ version: 1, learned: [], cursor: 0, active: null, attempts: [], round: null });
 const record = (value: unknown): value is Record<string, unknown> => typeof value === 'object' && value !== null && !Array.isArray(value);
@@ -57,7 +58,8 @@ export function parseReleaseState(raw: string | null, course: ReleaseCourse): Re
     if (!record(r) || !text(r.id) || !text(r.startedAt) || !Number.isFinite(Date.parse(r.startedAt)) || r.limit !== 10) throw Error('ข้อมูลรอบฝึกไม่สมบูรณ์');
     round = { id: r.id, startedAt: r.startedAt, limit: r.limit };
   }
-  return { version: 1, learned, cursor: value.cursor, active, attempts, round };
+  const guidedL15=value.guidedL15===undefined?undefined:parseL15GuidedState(value.guidedL15,attempts);
+  return { version: 1, learned, cursor: value.cursor, active, attempts, round,...(guidedL15?{guidedL15}:{}) };
 }
 
 export { selectReleaseTask, selectReleaseRound, isReleaseTaskUnlocked } from './a13-practice-selection';
@@ -80,5 +82,6 @@ export function mergeReleaseStates(remote: ReleaseState, pending: ReleaseState):
   const sameTrial = remote.active && pending.active && remote.active.taskId === pending.active.taskId && remote.active.startedAt === pending.active.startedAt;
   const active = sameTrial && pending.active ? { ...pending.active, helpUsed: pending.active.helpUsed || remote.active?.helpUsed === true } : pending.active;
   const incoming = pending.attempts.filter(a => !ids.has(a.id)).map(attempt => remote.active?.helpUsed && attempt.taskId === remote.active.taskId && Date.parse(attempt.submittedAt) >= Date.parse(remote.active.startedAt) ? { ...attempt, helpUsed: true } : attempt);
-  return { ...pending, active, learned: [...new Set([...remote.learned, ...pending.learned])], cursor: Math.max(remote.cursor, pending.cursor), attempts: [...remote.attempts, ...incoming] };
+  const guidedL15=mergeL15GuidedState(remote.guidedL15,pending.guidedL15);
+  return { ...pending,...(guidedL15?{guidedL15}:{}), active, learned: [...new Set([...remote.learned, ...pending.learned])], cursor: Math.max(remote.cursor, pending.cursor), attempts: [...remote.attempts, ...incoming] };
 }
