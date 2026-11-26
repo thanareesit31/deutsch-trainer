@@ -1,5 +1,9 @@
 # Requirement & Experience Changelog
 
+## 2026-11-26 - Align release readiness with the new L15 grammar catalog
+
+- Count the five guided cards and ten registered checks alongside the unchanged core and extension banks in the health endpoint. Derive the added counts from the teaching catalog so the deployed new teacher passes readiness without changing baseline task counts or learner evidence.
+
 ## 2026-11-25 - ใช้การ์ดไวยากรณ์บท 15 ชุดใหม่ในบัญชีทั่วไป
 
 - ทางเข้าหมวดไวยากรณ์และหัวข้อ Possessivartikel ใช้การ์ดใหม่ทั้งห้าใบแทนตัวสอนเดิม คงเลย์เอาต์ สี ลูกศร และปุ่มใต้การ์ดที่ตรวจไว้

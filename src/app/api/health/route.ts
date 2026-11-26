@@ -1,5 +1,6 @@
 import phrasePracticeVersion from "@/data/phrase-practice-upgrade-version.json";
 import practiceVersion from "@/data/a13-practice-version.json";
+import { l15GuidedCards, l15GuidedTasks } from "@/lib/l15-grammar-catalog";
 import { createClient } from "@supabase/supabase-js";
 export const dynamic = "force-dynamic";
 export async function GET() {
@@ -21,7 +22,7 @@ export async function GET() {
   const reportingReady = !reporting.error && reporting.data?.ready === true && reporting.data?.schemaVersion === 1;
   const phraseUpgrade = await db.rpc('phrase_practice_upgrade_readiness');
   const phraseReady = !phraseUpgrade.error && phraseUpgrade.data?.schemaVersion >= phrasePracticeVersion.schemaVersion && phraseUpgrade.data?.lessons === 14 && phraseUpgrade.data?.extensionTasks >= phrasePracticeVersion.extensionTasks && phraseUpgrade.data?.metadataTasks >= phrasePracticeVersion.metadataTasks && phraseUpgrade.data?.contextCatalogReady === true;
-  const ready = !release.error && release.data?.courses === 12 && release.data?.cards === 136 && release.data?.tasks === 372 && release.data?.phraseTasks === 64 && release.data?.practiceSyncReady === true && release.data?.practiceVersion === practiceVersion.schemaVersion && release.data?.extensionTasks === practiceVersion.extensionTasks && release.data?.contextCatalogReady === true;
+  const ready = !release.error && release.data?.courses === 12 && release.data?.cards === 136 + l15GuidedCards.length && release.data?.tasks === practiceVersion.coreTasks && release.data?.phraseTasks === 64 && release.data?.practiceSyncReady === true && release.data?.practiceVersion === practiceVersion.schemaVersion && release.data?.extensionTasks === practiceVersion.extensionTasks + l15GuidedTasks.length && release.data?.contextCatalogReady === true;
   return Response.json(
     {
       status: error || !ready || !phraseReady || !reportingReady ? "unavailable" : "ok",
